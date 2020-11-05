@@ -1,0 +1,187 @@
+# This Imakefile creates the encapsulated postscript files for the
+# figures in the GenShell manual.  Convert this Imakefile to a
+# Makefile using 'accmkmf' and then type 'make eps' to generate the
+# eps files.  'make clean' will remove all generated files.
+#
+# All input files are created by this Imakefile.
+
+eps: warp-point.eps warp-yaxis-m.eps warp-yaxis-v.eps spline-sphere.eps
+eps: spline-xsweep.eps spline-ysweep.eps warp-ellipse.eps
+
+NormalFastqRule(.fsq,.g,/**/)
+
+.SUFFIXES: .ps .eps
+
+.ps.eps:
+	pstoepsi $*.ps $*.eps
+	
+GeneralTranslator(translate.gs,    s.g, in.gsh, genshell, -aprepro=\(T=1\))
+GeneralTranslator(warp-point.gs,   s.g, in.gsh, genshell, -aprepro=\(WP=1\))
+GeneralTranslator(warp-yaxis-m.gs, s.g, in.gsh, genshell, -aprepro=\(WYM=1\))
+GeneralTranslator(warp-yaxis-v.gs, s.g, in.gsh, genshell, -aprepro=\(WYV=1\))
+GeneralTranslator(warp-ellipse.gs, s.g, in.gsh, genshell, -aprepro=\(WE=1\))
+GeneralTranslator(spline-sphere.gs,s.g, in.gsh, genshell, -aprepro=\(SS=1\))
+GeneralTranslator(spline-xsweep.gs,s.g, in.gsh, genshell, -aprepro=\(SX=1\))
+GeneralTranslator(spline-ysweep.gs,s.g, in.gsh, genshell, -aprepro=\(SY=1\))
+
+MakeBlotFigure(warp-point.ps,   blot.inp, warp-point.g,   cps, /**/)
+MakeBlotFigure(warp-yaxis-m.ps, blot.inp, warp-yaxis-m.g, cps, /**/)
+MakeBlotFigure(warp-yaxis-v.ps, blot.inp, warp-yaxis-v.g, cps, /**/)
+MakeBlotFigure(warp-ellipse.ps, blot.inp, warp-ellipse.g, cps, /**/)
+MakeBlotFigure(spline-sphere.ps,blot.inp, spline-sphere.g,cps, /**/)
+MakeBlotFigure(spline-xsweep.ps,blot.inp, spline-xsweep.g,cps, /**/)
+MakeBlotFigure(spline-ysweep.ps,blot.inp, spline-ysweep.g,cps, /**/)
+
+GjoinTarget(warp-point.g,   warp-point.gs   translate.gs, warp-point.gji)
+GjoinTarget(warp-yaxis-m.g, warp-yaxis-m.gs translate.gs, warp-yaxis-m.gji)
+GjoinTarget(warp-yaxis-v.g, warp-yaxis-v.gs translate.gs, warp-yaxis-v.gji)
+GjoinTarget(warp-ellipse.g, warp-ellipse.gs translate.gs, warp-ellipse.gji)
+GjoinTarget(spline-sphere.g,spline-sphere.gs translate.gs, spline-sphere.gji)
+GjoinTarget(spline-xsweep.g,spline-xsweep.gs translate.gs, spline-xsweep.gji)
+GjoinTarget(spline-ysweep.g,spline-ysweep.gs translate.gs, spline-ysweep.gji)
+
+ExtraStuffToClean(*.gji blot.inp *.eps in.gsh s.fsq s.g)
+
+warp-point.gji: Imakefile
+	RemoveTarget($@)
+	echo "translate.gs" >$@
+	echo "warp-point.gs" >>$@
+	echo "equiv end" >>$@
+	echo "finish" >>$@
+	echo "warp-point.g" >>$@
+
+warp-yaxis-m.gji: Imakefile
+	RemoveTarget($@)
+	echo "translate.gs" >$@
+	echo "warp-yaxis-m.gs" >>$@
+	echo "equiv end" >>$@
+	echo "finish" >>$@
+	echo "warp-yaxis-m.g" >>$@
+
+warp-yaxis-v.gji: Imakefile
+	RemoveTarget($@)
+	echo "translate.gs" >$@
+	echo "warp-yaxis-v.gs" >>$@
+	echo "equiv end" >>$@
+	echo "finish" >>$@
+	echo "warp-yaxis-v.g" >>$@
+
+warp-ellipse.gji: Imakefile
+	RemoveTarget($@)
+	echo "translate.gs" >$@
+	echo "warp-ellipse.gs" >>$@
+	echo "equiv end" >>$@
+	echo "finish" >>$@
+	echo "warp-ellipse.g" >>$@
+
+spline-sphere.gji: Imakefile
+	RemoveTarget($@)
+	echo "translate.gs" >$@
+	echo "spline-sphere.gs" >>$@
+	echo "equiv end" >>$@
+	echo "finish" >>$@
+	echo "spline-sphere.g" >>$@
+
+spline-xsweep.gji: Imakefile
+	RemoveTarget($@)
+	echo "translate.gs" >$@
+	echo "spline-xsweep.gs" >>$@
+	echo "equiv end" >>$@
+	echo "finish" >>$@
+	echo "spline-xsweep.g" >>$@
+
+spline-ysweep.gji: Imakefile
+	RemoveTarget($@)
+	echo "translate.gs" >$@
+	echo "spline-ysweep.gs" >>$@
+	echo "equiv end" >>$@
+	echo "finish" >>$@
+	echo "spline-ysweep.g" >>$@
+
+blot.inp: Imakefile
+	RemoveTarget($@)
+	echo "DETOUR" >$@
+	echo "Rotate x -90 x 20 y 20" >>$@
+	echo "qa off" >>$@
+	echo "legend off" >>$@
+	echo "hard" >>$@
+	echo "exit" >>$@
+
+in.gsh: Imakefile
+	RemoveTarget($@)
+	echo "{ifdef(T)}" >$@
+	echo "Translate 1" >>$@
+	echo "{endif}" >>$@
+	echo "{ifdef(WP)}" >>$@
+	echo "Warp Point 1 2" >>$@
+	echo "{endif}" >>$@
+	echo "{ifdef(WYM)}" >>$@
+	echo "Warp YAXIS MAP 1 1" >>$@
+	echo "{endif}" >>$@
+	echo "{ifdef(WYV)}" >>$@
+	echo "Warp YAXIS VERTICAL 1 1" >>$@
+	echo "{endif}" >>$@
+	echo "{ifdef(WE)}" >>$@
+	echo "Warp Ellipse 1 2 3 4" >>$@
+	echo "{endif}" >>$@
+	echo "{ifdef(SS)}" >>$@
+	echo "Spline 0.1" >>$@
+	echo "Angular" >>$@
+	echo "FRONT" >>$@
+	echo " 0.0	1.0" >>$@
+	echo "15.0	1.0" >>$@
+	echo "30.0	1.0" >>$@
+	echo "45.0	1.0" >>$@
+	echo "60.0	1.0" >>$@
+	echo "75.0	1.0" >>$@
+	echo "90.0	1.0" >>$@
+	echo "left	0.0" >>$@
+	echo "right	0.0" >>$@
+	echo "spherical" >>$@
+	echo "end" >>$@
+	echo "{endif}" >>$@
+	echo "{ifdef(SX)}" >>$@
+	echo "Spline 0.1" >>$@
+	echo "Angular" >>$@
+	echo "FRONT" >>$@
+	echo " 0.0	1.0" >>$@
+	echo "15.0	1.0" >>$@
+	echo "30.0	1.0" >>$@
+	echo "45.0	1.0" >>$@
+	echo "60.0	1.0" >>$@
+	echo "75.0	1.0" >>$@
+	echo "90.0	1.0" >>$@
+	echo "left	0.0" >>$@
+	echo "right	0.0" >>$@
+	echo "xsweep" >>$@
+	echo "end" >>$@
+	echo "{endif}" >>$@
+	echo "{ifdef(SY)}" >>$@
+	echo "Spline 0.1" >>$@
+	echo "FRONT" >>$@
+	echo " 0.0	0.4" >>$@
+	echo " 0.5	0.2" >>$@
+	echo " 1.0	0.4" >>$@
+	echo "left	0.0" >>$@
+	echo "right	0.0" >>$@
+	echo "ysweep" >>$@
+	echo "end" >>$@
+	echo "{endif}" >>$@
+	echo "EXIT" >>$@
+
+s.fsq: Imakefile
+	RemoveTarget($@)
+	echo "Title">$@
+	echo " Square mesh for genshell examples">>$@
+	echo "point	1	0.0 	0.0">>$@
+	echo "point	2	1.0	0.0">>$@
+	echo "point	3	1.0	1.0">>$@
+	echo "point	4	0.0	1.0">>$@
+	echo "">>$@
+	echo "line	1 str 1 2 0 10">>$@
+	echo "line	2 str 2 3 0 10">>$@
+	echo "line	3 str 3 4 0 10">>$@
+	echo "line	4 str 4 1 0 10">>$@
+	echo "">>$@
+	echo "region 1 1 -1 -2 -3 -4">>$@
+	echo "exit">>$@

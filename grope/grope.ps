@@ -1,0 +1,5079 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 612 792 0 1 12 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Helvetica FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Helvetica-Bold FMFONTDEFINE
+5 0 /Courier FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "3" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+216 648 432 711 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 12 Q
+0 X
+(SAND92-2289) 287.67 703 T
+216 847/G480 FmPA
+(Unlimited Release) 279.5 689 T
+216 833/G479 FmPA
+(Printed December) 265.75 675 T
+(, 1992) 352.25 675 T
+216 819/G483 FmPA
+108 72 540 612 R
+7 X
+V
+1 24 Q
+0 X
+(GR) 277.69 596 T
+(OPE:) 312.97 596 T
+108 740/G481 FmPA
+(A GENESIS/EXODUS) 206.98 566 T
+(Database Examination Pr) 158.89 536 T
+(ogram) 422.46 536 T
+0 18 Q
+(Gregory D. Sjaardema) 242.77 462 T
+108 606/G487 FmPA
+(Solid and Structural Mechanics Department) 166.02 442 T
+108 586/G488 FmPA
+(Sandia National Laboratories) 218.52 422 T
+108 566/G489 FmPA
+(Albuquerque, New Mexico) 198.77 402 T
+(87185) 404.23 402 T
+108 546/G490 FmPA
+1 F
+(Abstract) 290.51 334 T
+108 478/G491 FmPA
+0 12 Q
+2.56 (GR) 135 304 P
+2.56 (OPE is a program that e) 151.19 304 P
+2.56 (xamines the input to a \336nite element analysis) 278.78 304 P
+108 448/G486 FmPA
+0.39 (\050which is in the GENESIS database format\051 or the output from an analysis \050in) 135 290 P
+0.38 (the EXODUS database format\051. GR) 135 276 P
+0.38 (OPE allo) 308.33 276 P
+0.38 (ws the user to e) 352.08 276 P
+0.38 (xamine an) 428.07 276 P
+0.38 (y v) 477.93 276 P
+0.38 (alue) 493.01 276 P
+0.36 (in the database. The display can be directed to the user\325) 135 262 P
+0.36 (s terminal or to a print) 404.21 262 P
+(\336le.) 135 248 T
+432 675 540 711 R
+7 X
+V
+0 X
+(Distrib) 482.23 703 T
+(ution) 515.33 703 T
+432 847/G482 FmPA
+(Cate) 454.52 689 T
+(gory UC-705) 476.34 689 T
+432 833/G484 FmPA
+0 0 0 1 0 0 0 K
+[/Creator(FrameMaker xm5.0P3f)/DOCINFO FmPD2
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.3/DEST FmPD2
+FMENDPAGE
+%%EndPage: "3" 1
+%%Page: "4" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(4) 285 34.67 T
+72 179/G469 FmPA
+72 856/G485 FmPA
+1 18 Q
+(Acknowledgement) 217.01 708 T
+72 852/G492 FmPA
+0 12 Q
+1.55 (The original version of GROPE was written by Amy P. Gilkey and documented in an) 72 678 P
+72 822/G87 FmPA
+0.01 (internal memorandum. The documentation is being rereleased as a SAND Document with) 72 664 P
+(minor changes.) 72 650 T
+72 780/G493 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.4/DEST FmPD2
+FMENDPAGE
+%%EndPage: "4" 2
+%%Page: "5" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(5) 321 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+1 18 Q
+0 X
+(Contents) 289.5 708 T
+108 852/G628 FmPA
+1 12 Q
+(1) 108 678 T
+(Introduction) 122.4 678 T
+(........................................................................................................) 192 678 T
+(7) 516 678 T
+108 822/G629 FmPA
+(2) 108 652 T
+(Command Input) 122.4 652 T
+(.................................................................................................) 213 652 T
+(9) 516 652 T
+108 796/G630 FmPA
+0 F
+(2.1) 118.8 638 T
+(Database Selection and Display Commands) 144 638 T
+(.................................................) 357 638 T
+(10) 510 638 T
+108 782/G631 FmPA
+(2.2) 118.8 624 T
+(Miscellaneous Commands) 144 624 T
+(............................................................................) 276 624 T
+(14) 510 624 T
+108 768/G632 FmPA
+1 F
+(3) 108 598 T
+(Informational and Error Messages) 122.4 598 T
+(..................................................................) 306 598 T
+(15) 510 598 T
+108 742/G633 FmPA
+(4) 108 572 T
+(Executing  GROPE) 122.4 572 T
+(............................................................................................) 228 572 T
+(17) 510 572 T
+108 716/G634 FmPA
+0 F
+(4.1) 118.8 558 T
+(Execution Files) 144 558 T
+(..............................................................................................) 222 558 T
+(17) 510 558 T
+108 702/G635 FmPA
+(4.2) 118.8 544 T
+(Special Software) 144 544 T
+(...........................................................................................) 231 544 T
+(17) 510 544 T
+108 688/G636 FmPA
+1 F
+(5) 108 518 T
+(References) 122.4 518 T
+(...........................................................................................................) 183 518 T
+(19) 510 518 T
+108 662/G637 FmPA
+(A) 108 492 T
+(The EXODUS Database Format) 122.4 492 T
+(.......................................................................) 291 492 T
+(21) 510 492 T
+108 636/G638 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.5/DEST FmPD2
+FMENDPAGE
+%%EndPage: "5" 3
+%%Page: "6" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(6) 285 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.6/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "6" 4
+%%Page: "7" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(7) 321 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+1 18 Q
+0 X
+(1) 108 708 T
+(Introduction) 129.6 708 T
+108 852/G84 FmPA
+0 12 Q
+0.46 (GR) 108 678 P
+0.46 (OPE is a program that e) 124.19 678 P
+0.46 (xamines the input to a \336nite element analysis \050which is in the) 241.29 678 P
+108 822/G89 FmPA
+-0.27 (GENESIS) 108 664 P
+0 8 Q
+-0.18 (1) 157.33 668 P
+0 12 Q
+-0.27 ( database format\051 or the output from an analysis \050in the EXODUS) 161.33 664 P
+0 8 Q
+-0.18 (2) 473.97 668 P
+0 12 Q
+-0.27 (database for-) 477.97 664 P
+1.01 (mat\051. GR) 108 650 P
+1.01 (OPE allo) 153.2 650 P
+1.01 (ws the user to e) 197.58 650 P
+1.01 (xamine an) 276.1 650 P
+1.01 (y v) 326.58 650 P
+1.01 (alue in the database. The display can be) 342.3 650 P
+(directed to the user\325) 108 636 T
+(s terminal or to a print \336le.) 202.98 636 T
+-0.38 (This manual assumes that the reader is familiar with the GENESIS and EXODUS database) 108 610 P
+108 754/G90 FmPA
+-0.1 (formats. The formats are described briefly in appendix A on page 21 . The GENESIS) 108 596 P
+0 8 Q
+-0.07 (1) 515.78 600 P
+0 12 Q
+-0.1 ( and) 519.78 596 P
+(EXODUS) 108 582 T
+0 8 Q
+(2) 156.66 586 T
+0 12 Q
+( manuals describe the formats in detail.) 160.66 582 T
+1.98 (GROPE is very useful for locating database errors that have been flagged by another) 108 556 P
+108 700/G91 FmPA
+1.03 (program. GROPE attempts to give as much information about an erroneous database as) 108 542 P
+0.07 (possible. If a read error occurs, an error message is displayed showing the record that was) 108 528 P
+1.06 (being read and the type of error. If a very minor read error occurs \050such as a short title) 108 514 P
+-0.49 (record\051, GROPE continues reading the database. Most errors cause GROPE to stop reading) 108 500 P
+(the database and prompt for user input.) 108 486 T
+0.4 (When the program moves to a new time step, only the destination time step variables are) 108 460 P
+108 604/G92 FmPA
+1.31 (read; the intermediate time steps are scanned over. The) 108 446 P
+2 F
+1.46 (CHECK) 387.08 446 P
+0 F
+1.31 ( command verifies the) 429.08 446 P
+(correctness of all time step records.) 108 432 T
+0.79 (All record items are set to a default value before each database record is read. If a short) 108 406 P
+108 550/G93 FmPA
+2.27 (record is read, the default values remain in the unread portion of the record and are) 108 392 P
+(displayed when the user requests the contents of the record.) 108 378 T
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.7/DEST FmPD2
+[/Rect[325 592 436 605]/Border[0 0 0]/Page 19/View[/XYZ null 130 864 FmDC exch pop null]/LNK FmPD
+[/Rect[157 660 161 673]/Border[0 0 0]/Page 17/View[/XYZ null 139 830 FmDC exch pop null]/LNK FmPD
+[/Rect[516 592 520 605]/Border[0 0 0]/Page 17/View[/XYZ null 139 830 FmDC exch pop null]/LNK FmPD
+[/Rect[157 578 161 591]/Border[0 0 0]/Page 17/View[/XYZ null 139 780 FmDC exch pop null]/LNK FmPD
+[/Rect[474 660 478 673]/Border[0 0 0]/Page 17/View[/XYZ null 139 780 FmDC exch pop null]/LNK FmPD
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "7" 5
+%%Page: "8" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(8) 285 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.8/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "8" 6
+%%Page: "9" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(9) 321 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+1 18 Q
+0 X
+(2) 108 708 T
+(Command Input) 129.6 708 T
+108 852/G94 FmPA
+0 12 Q
+(The commands are in free-format and must adhere to the follo) 108 678 T
+(wing syntax rules.) 406.3 678 T
+108 822/G95 FmPA
+(\245) 129.6 658 T
+(Valid delimiters are a comma or one or more blanks.) 144 658 T
+108 802/G96 FmPA
+(\245) 129.6 638 T
+0.14 (Either lowercase or uppercase letters are acceptable, but lowercase letters are con-) 144 638 P
+108 782/G97 FmPA
+(verted to uppercase.) 144 624 T
+(\245) 129.6 604 T
+-0.4 (A \322) 144 604 P
+2 F
+-0.44 ($) 160.6 604 P
+0 F
+-0.4 (\323 character in any command line starts a comment. The \322) 167.27 604 P
+2 F
+-0.44 ($) 436.9 604 P
+0 F
+-0.4 (\323 and any characters) 443.57 604 P
+108 748/G98 FmPA
+(following it on the line are ignored.) 144 590 T
+(\245) 129.6 570 T
+-0.73 (A command may be continued over several lines with an \322) 144 570 P
+2 F
+-0.81 (>) 417.97 570 P
+0 F
+-0.73 (\323 character. The \322) 424.98 570 P
+2 F
+-0.81 (>) 508.07 570 P
+0 F
+-0.73 (\323 and) 515.08 570 P
+108 714/G99 FmPA
+0.52 (any characters following it on the current line are ignored and the next line is ap-) 144 556 P
+(pended to the current line.) 144 542 T
+2.75 (Each command has an action keyword or \322verb\323 followed by a variable number of) 108 516 P
+108 660/G100 FmPA
+1.41 (parameters. The command verb is a character string. It may be abbreviated, as long as) 108 502 P
+(enough characters are given to distinguish it from other commands.) 108 488 T
+2.88 (The meaning and type of the parameters is dependent on the command verb. Most) 108 462 P
+108 606/G102 FmPA
+1.34 (command parameters are optional. If an optional parameter field is blank, a command-) 108 448 P
+3.08 (dependent default value is supplied. Below is a description of the valid entries for) 108 434 P
+(parameters.) 108 420 T
+(\245) 129.6 400 T
+-0.14 (A numeric parameter may be a real number or an integer. A real number may be in) 144 400 P
+108 544/G103 FmPA
+0.73 (any legal FORTRAN numeric format \050e.g.,) 144 386 P
+2 F
+0.81 (1,) 358.68 386 P
+0.81 (0.2,) 372.42 386 P
+0.81 (-1E-2\051.) 396.17 386 P
+0 F
+0.73 ( An integer parameter) 432.84 386 P
+(may be in any legal integer format.) 144 372 T
+(\245) 129.6 352 T
+0.42 (A string parameter is a literal character string. Most string parameters may be ab-) 144 352 P
+108 496/G104 FmPA
+(breviated.) 144 338 T
+(\245) 129.6 318 T
+-0.35 (Variable names must be fully specified. The blank delimiter creates a problem with) 144 318 P
+108 462/G106 FmPA
+-0.48 (database variable names with embedded blanks. The program handles this by delet-) 144 304 P
+0.06 (ing all embedded blanks from the input database names. For example, the variable) 144 290 P
+0.22 (name \322) 144 276 P
+2 F
+0.24 (SIG) 178.54 276 P
+0.24 (R) 202.55 276 P
+0 F
+0.22 (\323 must be entered as \322) 211.21 276 P
+2 F
+0.24 (SIGR) 317.95 276 P
+0 F
+0.22 (\323. The blank must be deleted in any ref-) 347.29 276 P
+(erences to the variable. All database names appear exactly as input in all displays.) 144 262 T
+(\245) 129.6 242 T
+1.55 (Several parameters allow a range of values. A range is in one of the following) 144 242 P
+108 386/G110 FmPA
+(forms:) 144 228 T
+(\245) 129.6 208 T
+(\322) 144 208 T
+3 F
+(n) 149.33 208 T
+0 8 Q
+(1) 155.33 203 T
+0 12 Q
+(\323 selects value) 159.33 208 T
+3 F
+(n) 231.64 208 T
+0 8 Q
+(1) 237.64 203 T
+0 12 Q
+(,) 241.64 208 T
+108 352/G111 FmPA
+(\245) 129.6 184.33 T
+(\322) 144 184.33 T
+3 F
+(n) 149.33 184.33 T
+0 8 Q
+(1) 155.33 179.33 T
+2 12 Q
+(TO) 162.33 184.33 T
+3 F
+(n) 182 184.33 T
+0 8 Q
+(2) 188 179.33 T
+0 12 Q
+(\323 selects all values from) 192 184.33 T
+3 F
+(n) 310.3 184.33 T
+0 8 Q
+(1) 316.3 179.33 T
+0 12 Q
+( to) 320.3 184.33 T
+3 F
+(n) 335.64 184.33 T
+0 8 Q
+(2) 341.64 179.33 T
+0 12 Q
+(,) 345.64 184.33 T
+108 328/G112 FmPA
+(\245) 129.6 160.67 T
+0.24 (\322) 144 160.67 P
+3 F
+0.24 (n) 149.33 160.67 P
+0 8 Q
+0.16 (1) 155.33 155.67 P
+2 12 Q
+0.27 (TO) 162.57 160.67 P
+3 F
+0.24 (n) 182.48 160.67 P
+0 8 Q
+0.16 (2) 188.48 155.67 P
+2 12 Q
+0.27 (BY) 195.73 160.67 P
+3 F
+0.24 (n) 214.98 160.67 P
+0 8 Q
+0.16 (3) 220.98 155.67 P
+0 12 Q
+0.24 (\323 selects all values from) 224.98 160.67 P
+3 F
+0.24 (n) 344.5 160.67 P
+0 8 Q
+0.16 (1) 350.5 155.67 P
+0 12 Q
+0.24 ( to) 354.5 160.67 P
+3 F
+0.24 (n) 370.32 160.67 P
+0 8 Q
+0.16 (2) 376.32 155.67 P
+0 12 Q
+0.24 ( stepping by) 380.32 160.67 P
+3 F
+0.24 (n) 442.72 160.67 P
+0 8 Q
+0.16 (3) 448.72 155.67 P
+0 12 Q
+0.24 (, where) 452.72 160.67 P
+3 F
+0.24 (n) 491.52 160.67 P
+0 8 Q
+0.16 (3) 497.52 155.67 P
+0 12 Q
+0.24 ( may be) 501.52 160.67 P
+108 305/G113 FmPA
+(positive or negative.) 144 143 T
+0.38 (If the upper limit of the range is greater than the maximum allowable value, the upper) 122.4 125 P
+108 269/G114 FmPA
+(limit is changed to the maximum without a message.) 122.4 111 T
+(The notation conventions used in the command descriptions are:) 108 85 T
+108 229/G116 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.9/DEST FmPD2
+130 864/M9.24233.1Heading.2.Command.Input FmPA
+130 864/I1.59 FmPA
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "9" 7
+%%Page: "10" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(10) 282 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+0 X
+(\245) 93.6 712 T
+(The command verb is in) 108 712 T
+4 F
+(bold) 227.65 712 T
+0 F
+( type.) 252.98 712 T
+72 856/G117 FmPA
+(\245) 93.6 692 T
+-0.38 (A literal string is in all uppercase) 108 692 P
+2 F
+-0.42 (SANSERIF) 267.67 692 P
+0 F
+-0.38 ( type and should be entered as shown) 327.68 692 P
+72 836/G118 FmPA
+(\050or abbreviated\051.) 108 678 T
+(\245) 93.6 658 T
+(The value of a parameter is represented by the parameter name in) 108 658 T
+3 F
+(italics) 425.23 658 T
+0 F
+(.) 454.57 658 T
+72 802/G119 FmPA
+(\245) 93.6 638 T
+1.21 (A literal string in square brackets \050\322[ ]\323\051 represents a parameter option which is) 108 638 P
+72 782/G121 FmPA
+-0.29 (omitted entirely \050including any following comma\051 if not appropriate. These param-) 108 624 P
+0.92 (eters are distinct from most parameters in that they do not require a comma as a) 108 610 P
+(place holder to request the default value.) 108 596 T
+(\245) 93.6 576 T
+0.01 (The default value of a parameter is in angle brackets \050\322< >\323\051. The initial value of a) 108 576 P
+72 720/G122 FmPA
+-0.61 (parameter set by a command is usually the default parameter value. If not, the initial) 108 562 P
+(setting is given with the default or in the command description.) 108 548 T
+1 14 Q
+(2.1) 72 520.67 T
+(Database Selection and Display Commands) 100.8 520.67 T
+72 665/G123 FmPA
+4 12 Q
+(SELECT) 72 498 T
+3 F
+(option) 122.34 498 T
+0 F
+( <No Def) 153.01 498 T
+(ault>) 198.31 498 T
+72 642/G124 FmPA
+2 F
+0.57 (SELECT) 93.6 474 P
+0 F
+0.52 ( selects the database information for the) 140.28 474 P
+2 F
+0.57 (LIST) 338.18 474 P
+0 F
+0.52 ( and) 363.53 474 P
+2 F
+0.57 (PRINT) 387.89 474 P
+0 F
+0.52 ( commands.) 423.89 474 P
+72 618/G125 FmPA
+1.4 (Items are displayed in the order listed in the) 93.6 460 P
+2 F
+1.55 (SELECT) 319.81 460 P
+0 F
+1.4 ( command. If the) 366.49 460 P
+2 F
+1.55 (ADD) 457.07 460 P
+0 F
+(parameter is present, the listed values are added to the current selection.) 93.6 446 T
+2 F
+(SELECT) 93.6 422 T
+(NODES) 143.28 422 T
+0 F
+( [) 185.95 422 T
+2 F
+(ADD,]) 192.95 422 T
+3 F
+(node_range) 227.95 422 T
+0 8 Q
+(1) 285.28 417 T
+0 12 Q
+(,) 289.28 422 T
+3 F
+(node_range) 295.28 422 T
+0 8 Q
+(2) 352.6 417 T
+0 12 Q
+(, ... <all nodes>) 356.6 422 T
+72 566/G126 FmPA
+0.99 (selects the nodes. Each) 93.6 398 P
+3 F
+0.99 (node_range) 211.2 398 P
+0 F
+0.99 ( must be in the range form described under) 268.52 398 P
+72 542/G127 FmPA
+(Command Input.) 93.6 384 T
+2 F
+(SELECT) 93.6 360 T
+(ELEMENTS) 143.28 360 T
+0 F
+( [) 207.96 360 T
+2 F
+(ADD,]) 214.96 360 T
+3 F
+(element_range) 249.96 360 T
+0 8 Q
+(1) 321.28 355 T
+0 12 Q
+(,) 325.28 360 T
+3 F
+(element_range) 331.28 360 T
+0 8 Q
+(2) 402.59 355 T
+0 12 Q
+(, ...) 406.59 360 T
+36.04 ( <all) 424.59 360 P
+72 504/G128 FmPA
+(elements>) 93.6 346 T
+1.23 (selects the elements. Each) 93.6 322 P
+3 F
+1.23 (element_range) 226.83 322 P
+0 F
+1.23 ( must be in the range form described) 298.15 322 P
+72 466/G130 FmPA
+0.99 (under Command Input. The selected element blocks are changed to select only) 93.6 308 P
+0.02 (those blocks that include a selected element. The selected elements are reordered) 93.6 294 P
+(so that they are grouped by element block.) 93.6 280 T
+2 F
+(SELECT) 93.6 256 T
+(BLOCKS) 143.28 256 T
+0 F
+( or) 191.96 256 T
+2 F
+(MATERIAL) 207.96 256 T
+0 F
+( [) 267.97 256 T
+2 F
+(ADD,]) 274.97 256 T
+3 F
+(block_id) 309.97 256 T
+0 8 Q
+(1) 351.3 251 T
+0 12 Q
+(,) 355.3 256 T
+3 F
+(block_id) 361.3 256 T
+0 8 Q
+(2) 402.63 251 T
+0 12 Q
+(, ...) 406.63 256 T
+39 ( <all) 421.63 256 P
+72 400/G131 FmPA
+(element blocks>) 93.6 242 T
+-0.04 (selects the element blocks. The) 93.6 218 P
+3 F
+-0.04 (block_id) 246.02 218 P
+0 F
+-0.04 ( is the element block identifier displayed) 287.35 218 P
+72 362/G133 FmPA
+-0.12 (by the) 93.6 204 P
+2 F
+-0.14 (LIST) 126.02 204 P
+-0.14 (BLOCKS) 154.24 204 P
+0 F
+-0.12 ( command. The selected elements are changed to select all) 202.92 204 P
+(the elements in the selected blocks and no elements in non-selected blocks.) 93.6 190 T
+2 F
+(SELECT) 93.6 166 T
+(NSETS) 143.28 166 T
+0 F
+( [) 183.29 166 T
+2 F
+(ADD,]) 190.28 166 T
+3 F
+(set_id) 225.29 166 T
+0 8 Q
+(1) 253.96 161 T
+0 12 Q
+(,) 257.96 166 T
+3 F
+(set_id) 263.96 166 T
+0 8 Q
+(2) 292.62 161 T
+0 12 Q
+(, ... <all node sets>) 296.62 166 T
+72 310/G134 FmPA
+0.51 (selects the node sets. The) 93.6 142 P
+3 F
+0.51 (set_id) 220.8 142 P
+0 F
+0.51 ( is the node set identifier displayed by the) 249.47 142 P
+2 F
+0.57 (LIST) 457.06 142 P
+72 286/G135 FmPA
+(NSETS) 93.6 128 T
+0 F
+( command.) 133.61 128 T
+2 F
+(SELECT) 93.6 104 T
+(SSETS) 143.28 104 T
+0 F
+( [) 182.63 104 T
+2 F
+(ADD,]) 189.62 104 T
+3 F
+(set_id) 224.63 104 T
+0 8 Q
+(1) 253.3 99 T
+0 12 Q
+(,) 257.3 104 T
+3 F
+(set_id) 263.3 104 T
+0 8 Q
+(2) 291.96 99 T
+0 12 Q
+(, ... <all side sets>) 295.96 104 T
+72 248/G136 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.10/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "10" 8
+%%Page: "11" 9
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(11) 318 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+0 X
+1.08 (selects the side sets. The) 129.6 712 P
+3 F
+1.08 (set_id) 255.66 712 P
+0 F
+1.08 ( is the side set identifier displayed by the) 284.33 712 P
+2 F
+1.2 (LIST) 493.06 712 P
+108 856/G137 FmPA
+(SSETS) 129.6 698 T
+0 F
+( command.) 168.95 698 T
+2 F
+(SELECT) 129.6 674 T
+(HVARS) 179.28 674 T
+0 F
+( [) 220.62 674 T
+2 F
+(ADD,]) 227.62 674 T
+3 F
+(history_variable) 262.62 674 T
+0 8 Q
+(1) 341.95 669 T
+0 12 Q
+(,) 345.95 674 T
+3 F
+(history_variable) 351.95 674 T
+0 8 Q
+(2) 431.28 669 T
+0 12 Q
+(, ...) 435.28 674 T
+5.01 ( <all history) 450.28 674 P
+108 818/G138 FmPA
+(variables>) 129.6 660 T
+(selects the history variables.) 129.6 636 T
+108 780/G140 FmPA
+2 F
+(SELECT) 129.6 612 T
+(GVARS) 179.28 612 T
+0 F
+( [) 221.29 612 T
+2 F
+(ADD,]) 228.29 612 T
+3 F
+(global_variable) 263.29 612 T
+0 8 Q
+(1) 339.96 607 T
+0 12 Q
+(,) 343.96 612 T
+3 F
+(global_variable) 349.96 612 T
+0 8 Q
+(2) 426.63 607 T
+0 12 Q
+(, ...) 430.63 612 T
+9 ( <all global) 445.63 612 P
+108 756/G141 FmPA
+(variables>) 129.6 598 T
+(selects the global variables.) 129.6 574 T
+108 718/G142 FmPA
+2 F
+(SELECT) 129.6 550 T
+(NVARS) 179.28 550 T
+0 F
+( [) 220.62 550 T
+2 F
+(ADD,]) 227.62 550 T
+3 F
+(nodal_variable) 262.62 550 T
+0 8 Q
+(1) 335.95 545 T
+0 12 Q
+(,) 339.95 550 T
+3 F
+(nodal_variable) 345.95 550 T
+0 8 Q
+(2) 419.28 545 T
+0 12 Q
+(, ...) 423.28 550 T
+14.34 ( <all nodal) 438.28 550 P
+108 694/G143 FmPA
+(variables>) 129.6 536 T
+(selects the nodal variables.) 129.6 512 T
+108 656/G144 FmPA
+2 F
+(SELECT) 129.6 488 T
+(EVARS) 179.28 488 T
+0 F
+( [) 219.96 488 T
+2 F
+(ADD,]) 226.96 488 T
+3 F
+(element_variable) 261.96 488 T
+0 8 Q
+(1) 345.28 483 T
+0 12 Q
+(,) 349.28 488 T
+3 F
+(element_variable) 355.28 488 T
+0 8 Q
+(2) 438.59 483 T
+0 12 Q
+(, ...) 442.59 488 T
+39.04 ( <all) 457.59 488 P
+108 632/G145 FmPA
+(element variables>) 129.6 474 T
+(selects the element variables.) 129.6 450 T
+108 594/G146 FmPA
+2 F
+(SELECT) 129.6 426 T
+(READ) 179.28 426 T
+3 F
+(nstep) 215.62 426 T
+0 F
+( <1>) 240.95 426 T
+108 570/G147 FmPA
+1.84 (changes the selected time step to) 129.6 402 P
+3 F
+1.84 (nstep) 300.58 402 P
+0 F
+1.84 ( steps forward \050if) 325.91 402 P
+3 F
+1.84 (nstep) 418.56 402 P
+0 F
+1.84 ( is positive\051 or) 443.89 402 P
+108 546/G148 FmPA
+(backward \050if) 129.6 388 T
+3 F
+(nstep) 193.57 388 T
+0 F
+( is negative\051 of the current selected step.) 218.9 388 T
+2 F
+(SELECT) 129.6 364 T
+(STEP) 179.28 364 T
+3 F
+(nstep) 213.96 364 T
+0 F
+( <current selected step>) 239.29 364 T
+108 508/G149 FmPA
+(changes the selected time step to step) 129.6 340 T
+3 F
+(nstep) 311.9 340 T
+0 F
+(.) 337.24 340 T
+108 484/G150 FmPA
+2 F
+(SELECT) 129.6 316 T
+(TIME) 179.28 316 T
+3 F
+(time) 210.95 316 T
+0 F
+( <current selected step time>) 231.61 316 T
+108 460/G151 FmPA
+(changes the selected time step to the step that has the time nearest) 129.6 292 T
+3 F
+(time) 448.55 292 T
+0 F
+(.) 469.21 292 T
+108 436/G152 FmPA
+4 F
+(LIST) 108 266 T
+3 F
+(option) 137 266 T
+0 F
+( <No Default>) 167.68 266 T
+108 410/G153 FmPA
+2 F
+-0.59 (LIST) 129.6 242 P
+0 F
+-0.53 ( displays the database information specified by) 154.94 242 P
+3 F
+-0.53 (option) 379.53 242 P
+0 F
+-0.53 ( on the user\325s terminal.) 410.2 242 P
+108 386/G154 FmPA
+(The \322selected\323 items are specified with the) 129.6 228 T
+2 F
+(SELECT) 338.54 228 T
+0 F
+( command.) 385.22 228 T
+2 F
+(LIST) 129.6 204 T
+(VARS) 157.94 204 T
+108 348/G155 FmPA
+0 F
+-0.12 (displays a summary of the database. The summary includes the database title; the) 129.6 180 P
+108 324/G156 FmPA
+-0.22 (number of nodes, elements, and element blocks; the number of node sets and side) 129.6 166 P
+(sets; and the number of each type of variable.) 129.6 152 T
+2 F
+(LIST) 129.6 128 T
+(COORDINA) 157.94 128 T
+108 272/G157 FmPA
+0 F
+(displays the coordinate values for the selected nodes.) 129.6 104 T
+108 248/G158 FmPA
+2 F
+(LIST) 129.6 80 T
+(MAP) 157.94 80 T
+108 224/G159 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.11/DEST FmPD2
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "11" 9
+%%Page: "12" 10
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(12) 282 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+0 X
+(displays the element order map for all elements.) 93.6 712 T
+72 856/G160 FmPA
+2 F
+(LIST) 93.6 688 T
+(BLOCKS) 121.94 688 T
+0 F
+( or) 170.63 688 T
+2 F
+(MATERIAL) 186.62 688 T
+72 832/G161 FmPA
+0 F
+1.17 (displays a summary of the selected element blocks. The summary includes the) 93.6 664 P
+72 808/G162 FmPA
+1.07 (block identifier, the number of elements in the block, the number of nodes per) 93.6 650 P
+(element, and the number of attributes per element.) 93.6 636 T
+2 F
+(LIST) 93.6 612 T
+(LINK) 121.94 612 T
+0 F
+( or) 148.62 612 T
+2 F
+(CONNECTI) 164.62 612 T
+72 756/G163 FmPA
+0 F
+(displays the nodal connectivity of the selected elements.) 93.6 588 T
+72 732/G164 FmPA
+2 F
+(LIST) 93.6 564 T
+(ATTRIBUT) 121.94 564 T
+72 708/G165 FmPA
+0 F
+(displays the attribute values associated with the selected elements.) 93.6 540 T
+72 684/G166 FmPA
+2 F
+(LIST) 93.6 516 T
+(NSETS) 121.94 516 T
+72 660/G167 FmPA
+0 F
+2.04 (displays a summary of the selected node sets. The summary includes the set) 93.6 492 P
+72 636/G168 FmPA
+(identifier and the number of nodes in the set.) 93.6 478 T
+2 F
+(LIST) 93.6 454 T
+(NNODES) 121.94 454 T
+72 598/G169 FmPA
+0 F
+(displays the numbers of the nodes in the selected node sets.) 93.6 430 T
+72 574/G170 FmPA
+2 F
+(LIST) 93.6 406 T
+(NFACTORS) 121.94 406 T
+72 550/G171 FmPA
+0 F
+(displays the distribution factors of the nodes in the selected node sets.) 93.6 382 T
+72 526/G172 FmPA
+2 F
+(LIST) 93.6 358 T
+(SSETS) 121.94 358 T
+72 502/G173 FmPA
+0 F
+2.38 (displays a summary of the selected side sets. The summary includes the set) 93.6 334 P
+72 478/G174 FmPA
+(identifier, the number of elements in the set, and the number of nodes in the set.) 93.6 320 T
+2 F
+(LIST) 93.6 296 T
+(SELEMS) 121.94 296 T
+72 440/G175 FmPA
+0 F
+(displays the numbers of the elements in the selected side sets.) 93.6 272 T
+72 416/G176 FmPA
+2 F
+(LIST) 93.6 248 T
+(SNODES) 121.94 248 T
+72 392/G177 FmPA
+0 F
+(displays the numbers of the nodes in the selected side sets.) 93.6 224 T
+72 368/G178 FmPA
+2 F
+(LIST) 93.6 200 T
+(SFACTORS) 121.94 200 T
+72 344/G179 FmPA
+0 F
+(displays the distribution factors of the nodes in the selected side sets.) 93.6 176 T
+72 320/G180 FmPA
+2 F
+(LIST) 93.6 152 T
+(QA) 121.94 152 T
+72 296/G181 FmPA
+0 F
+(displays the QA records and the information records.) 93.6 128 T
+72 272/G182 FmPA
+2 F
+(LIST) 93.6 104 T
+(NAMES) 121.94 104 T
+72 248/G183 FmPA
+0 F
+(displays the names of the history, global, nodal, and element variables.) 93.6 80 T
+72 224/G184 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.12/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "12" 10
+%%Page: "13" 11
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(13) 318 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+2 F
+0 X
+(LIST) 129.6 712 T
+(HISTORY) 157.94 712 T
+0 F
+( or) 211.28 712 T
+2 F
+(HVARS) 227.28 712 T
+108 856/G185 FmPA
+0 F
+(displays the values of the selected history variables for the selected time step.) 129.6 688 T
+108 832/G186 FmPA
+2 F
+(LIST) 129.6 664 T
+(GLOBALS) 157.94 664 T
+0 F
+( or) 213.97 664 T
+2 F
+(GVARS) 229.97 664 T
+108 808/G187 FmPA
+0 F
+(displays the values of the selected global variables for the selected time step.) 129.6 640 T
+108 784/G188 FmPA
+2 F
+(LIST) 129.6 616 T
+(NODALS) 157.94 616 T
+0 F
+( or) 207.29 616 T
+2 F
+(NVARS) 223.28 616 T
+108 760/G189 FmPA
+0 F
+0.61 (displays the values of the selected nodal variables for the selected nodes for the) 129.6 592 P
+108 736/G190 FmPA
+(selected time step.) 129.6 578 T
+2 F
+(LIST) 129.6 554 T
+(ELEMENTS) 157.94 554 T
+0 F
+( or) 222.62 554 T
+2 F
+(EVARS) 238.62 554 T
+108 698/G191 FmPA
+0 F
+-0.04 (displays the values of the selected element variables for the selected elements for) 129.6 530 P
+108 674/G192 FmPA
+(the selected time step.) 129.6 516 T
+(LIST STEPS) 129.6 492 T
+108 636/G193 FmPA
+1.79 (displays the number of time steps and the minimum and maximum time step) 129.6 468 P
+108 612/G194 FmPA
+(times.) 129.6 454 T
+2 F
+(LIST) 129.6 430 T
+(TIMES) 157.94 430 T
+108 574/G195 FmPA
+0 F
+(displays the step numbers and times for all time steps on the database.) 129.6 406 T
+108 550/G196 FmPA
+4 F
+(PRINT) 108 380 T
+3 F
+(option) 147 380 T
+0 F
+( <no parameter>) 177.67 380 T
+108 524/G197 FmPA
+2 F
+0.42 (PRINT) 129.6 356 P
+0 F
+0.38 ( writes the database information specified by) 165.6 356 P
+3 F
+0.38 (option) 386.52 356 P
+0 F
+0.38 ( to the print file. The) 417.2 356 P
+108 500/G198 FmPA
+-0.57 (valid) 129.6 342 P
+3 F
+-0.57 (options) 156.03 342 P
+0 F
+-0.57 ( are described under the) 191.37 342 P
+2 F
+-0.64 (LIST) 306.12 342 P
+0 F
+-0.57 ( command. If the file cannot be opened,) 331.46 342 P
+(a message is printed and the command is ignored.) 129.6 328 T
+1 14 Q
+(2.2) 108 300.67 T
+(Miscellaneous Commands) 136.8 300.67 T
+108 445/G199 FmPA
+4 12 Q
+(CHECK) 108 278 T
+108 422/G200 FmPA
+2 F
+3.8 (CHECK) 129.6 254 P
+0 F
+3.42 ( checks the database for violations of the GENESIS or EXODUS) 171.6 254 P
+108 398/G201 FmPA
+2.39 (standards [bib:genesis,bib:exodus] and prints a message if any violations are) 129.6 240 P
+(found. The following checks are made:) 129.6 226 T
+(\245) 129.6 206 T
+(The element order map contains each element exactly once.) 144 206 T
+108 350/G202 FmPA
+(\245) 129.6 186 T
+(The element block identifiers are unique.) 144 186 T
+108 330/G203 FmPA
+(\245) 129.6 166 T
+-0.37 (The sum of the number of elements in all element blocks equals the total number of) 144 166 P
+108 310/G204 FmPA
+(elements.) 144 152 T
+(\245) 129.6 132 T
+(The connectivity for each element contains valid node numbers.) 144 132 T
+108 276/G205 FmPA
+(\245) 129.6 112 T
+(The node set identifiers are unique.) 144 112 T
+108 256/G206 FmPA
+(\245) 129.6 92 T
+(The node set maximum node list index equals the length of the node set node list.) 144 92 T
+108 236/G207 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.13/DEST FmPD2
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "13" 11
+%%Page: "14" 12
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(14) 282 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+0 X
+(\245) 93.6 712 T
+(The node set node list contains valid node numbers.) 108 712 T
+72 856/G208 FmPA
+(\245) 93.6 692 T
+(The side set identifiers are unique.) 108 692 T
+72 836/G209 FmPA
+(\245) 93.6 672 T
+0.29 (The side set maximum element list index equals the length of the side set element) 108 672 P
+72 816/G210 FmPA
+(list.) 108 658 T
+(\245) 93.6 638 T
+(The side set element list contains valid element numbers.) 108 638 T
+72 782/G211 FmPA
+(\245) 93.6 618 T
+(The side set maximum node list index equals the length of the side set node list.) 108 618 T
+72 762/G212 FmPA
+(\245) 93.6 598 T
+(The side set node list contains valid node numbers.) 108 598 T
+72 742/G213 FmPA
+2 F
+0.14 (CHECK) 93.6 574 P
+0 F
+0.12 ( also reads all the time step records and displays a message if an error is) 135.6 574 P
+72 718/G214 FmPA
+(found in any record format.) 93.6 560 T
+4 F
+(MINMAX) 72 534 T
+3 F
+(variable) 123.66 534 T
+0 F
+( <No Default> ,) 163.66 534 T
+2 F
+(ALL) 242.84 534 T
+0 F
+( or) 264.19 534 T
+2 F
+(THIS) 280.19 534 T
+0 F
+( <) 307.52 534 T
+2 F
+(THIS) 317.29 534 T
+0 F
+(>) 344.63 534 T
+72 678/G215 FmPA
+2 F
+0.32 (MINMAX) 93.6 510 P
+0 F
+0.29 ( prints the minimum and maximum values of the given variable and at) 141.6 510 P
+72 654/G216 FmPA
+-0.3 (which step and node or element \050if any\051 the first instance of the values was found.) 93.6 496 P
+-0.08 (If the second parameter is) 93.6 482 P
+2 F
+-0.09 (ALL,) 220.15 482 P
+0 F
+-0.08 ( all time steps are searched for the minimums and) 244.84 482 P
+(maximums; otherwise only the current time step is searched.) 93.6 468 T
+4 F
+(HELP) 72 442 T
+3 F
+(command) 107 442 T
+0 F
+( <no parameter>) 153.66 442 T
+72 586/G217 FmPA
+2 F
+-0.02 (HELP) 93.6 418 P
+0 F
+-0.02 ( displays information about the program command given as the parameter.) 124.94 418 P
+72 562/G218 FmPA
+0.3 (If no parameter is given, all the command verbs are displayed.) 93.6 404 P
+2 F
+0.33 (HELP) 399.13 404 P
+0 F
+0.3 ( is system-) 430.47 404 P
+(dependent and may not be available on all systems.) 93.6 390 T
+4 F
+(EXIT) 72 364 T
+72 508/G219 FmPA
+2 F
+(EXIT) 93.6 340 T
+0 F
+( exits from the program.) 120.28 340 T
+72 484/G220 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.14/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "14" 12
+%%Page: "15" 13
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(15) 318 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+1 18 Q
+0 X
+(3) 108 708 T
+(Informational and Error Messages) 129.6 708 T
+108 852/G221 FmPA
+0 12 Q
+0.44 (GR) 108 678 P
+0.44 (OPE \336rst reads the database and scans the time step information. If a database format) 124.19 678 P
+108 822/G222 FmPA
+0.8 (error is disco) 108 664 P
+0.8 (v) 172.07 664 P
+0.8 (ered before the time steps are read, the program prints an error of the fol-) 177.89 664 P
+(lo) 108 650 T
+(wing format:) 117.04 650 T
+2 F
+(DATABASE) 210.16 624 T
+0 F
+( ERROR - Reading) 274.18 624 T
+3 F
+(database) 370.18 624 T
+0 F
+( item) 413.51 624 T
+108 768/G77 FmPA
+0.32 (and the type of error that was detected. If a format error is found while scanning the time) 108 598 P
+108 742/G223 FmPA
+(steps, the following error message is printed:) 108 584 T
+2 F
+(WARNING) 219.01 558 T
+0 F
+( - End-of-file during time steps.) 277.01 558 T
+108 702/G129 FmPA
+0.7 (The program stops reading the database when an error is found, but all information read) 108 532 P
+108 676/G224 FmPA
+2.18 (before the error \050including information about the time step that contains the error\051 is) 108 518 P
+(available for display.) 108 504 T
+1.26 (After the database is read, command input is requested from the user. Most commands) 108 478 P
+108 622/G225 FmPA
+0.12 (request a display of information. The response from GROPE is either an error message or) 108 464 P
+1.64 (the information requested. The print file is opened when the first) 108 450 P
+2 F
+1.83 (PRINT) 439.38 450 P
+0 F
+1.64 ( command is) 475.38 450 P
+(issued. If the print file cannot be opened, the following message appears:) 108 436 T
+2 F
+(WARNING) 225.35 410 T
+0 F
+( - Print file cannot be opened) 283.34 410 T
+108 554/G132 FmPA
+-0.04 (and the) 108 384 P
+2 F
+-0.04 (PRINT) 145.91 384 P
+0 F
+-0.04 ( command is ignored. If the information is directed to the print file, no text) 181.91 384 P
+108 528/G226 FmPA
+0.04 (appears on the user\325s terminal except error messages. An appropriate header identifies the) 108 370 P
+(information on the print file.) 108 356 T
+1.84 (The program allocates memory dynamically as it is needed. If the system runs out of) 108 330 P
+108 474/G227 FmPA
+(memory, the following message is printed:) 108 316 T
+2 F
+(FATAL) 186.17 290 T
+0 F
+( ERROR - Too much dynamic memory requested) 223.52 290 T
+108 434/G139 FmPA
+(and the program aborts. The user should try to obtain more memory on the system.) 108 264 T
+108 408/G228 FmPA
+1.03 (GROPE has certain programmer-defined limitations. The limits are not specified in this) 108 238 P
+108 382/G229 FmPA
+2.27 (manual since they may change. In most cases the limits are chosen to be more than) 108 224 P
+0.21 (adequate. If the user exceeds a limit, a message is printed. If the user feels the limit is too) 108 210 P
+-0.26 (restrictive, the code sponsor should be notified so the limit may be raised in future releases) 108 196 P
+(of GROPE .) 108 182 T
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.15/DEST FmPD2
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "15" 13
+%%Page: "16" 14
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(16) 282 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.16/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "16" 14
+%%Page: "17" 15
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(17) 318 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+1 18 Q
+0 X
+(4) 108 708 T
+(Executing) 129.6 708 T
+0 F
+(GROPE) 215.6 708 T
+108 852/G230 FmPA
+0 12 Q
+1.56 (The details of e) 108 678 P
+1.56 (x) 186.8 678 P
+1.56 (ecuting GR) 192.62 678 P
+1.56 (OPE are dependent on the system being used. The system) 248.7 678 P
+108 822/G231 FmPA
+0.11 (manager of an) 108 664 P
+0.11 (y system that runs GR) 176.68 664 P
+0.11 (OPE should pro) 283.31 664 P
+0.11 (vide a supplement to this manual that) 360.01 664 P
+0.92 (e) 108 650 P
+0.92 (xplains ho) 113.15 650 P
+0.92 (w to run the program on that particular system. Site supplements for all cur-) 163.43 650 P
+(rently supported systems are in Appendix [Ref: appx:site] .) 108 636 T
+1 14 Q
+(4.1) 108 608.67 T
+(Execution Files) 136.8 608.67 T
+108 753/G232 FmPA
+0 12 Q
+(The table belo) 108 586 T
+(w summarizes GR) 176.35 586 T
+(OPE \325) 264.53 586 T
+(s \336le usage.) 293.53 586 T
+108 730/G233 FmPA
+-0.13 (All files must be connected to the appropriate unit before GROPE is run. Each file \050except) 108 434 P
+108 578/G234 FmPA
+0.24 (standard input and output\051 is opened with the name retrieved by the EXNAME routine of) 108 420 P
+(the SUPES library) 108 406 T
+0 8 Q
+(4) 196.67 410 T
+0 12 Q
+(.) 200.67 406 T
+1 14 Q
+(4.2) 108 378.67 T
+(Special Software) 136.8 378.67 T
+108 523/G239 FmPA
+0 12 Q
+0.98 (GR) 108 356 P
+0.98 (OPE is written in ANSI FOR) 124.19 356 P
+0.98 (TRAN-77) 268.68 356 P
+0 8 Q
+0.65 (3) 317.34 360 P
+0 12 Q
+0.98 ( with the e) 321.34 356 P
+0.98 (xception of the follo) 374.41 356 P
+0.98 (wing system-) 474.69 356 P
+108 500/G240 FmPA
+(dependent features:) 108 342 T
+(\245) 129.6 322 T
+(the VAX VMS help facility and) 144 322 T
+108 466/G241 FmPA
+(\245) 129.6 302 T
+(the OPEN options for the files.) 144 302 T
+108 446/G242 FmPA
+(GROPE uses the following software packages:) 108 276 T
+108 420/G243 FmPA
+(\245) 129.6 254.67 T
+-0.6 (the SUPES package) 144 254.67 P
+0 8 Q
+-0.4 (4) 241.19 258.67 P
+0 12 Q
+-0.6 ( which includes dynamic memory allocation, a free-field read-) 245.19 254.67 P
+108 399/G244 FmPA
+(er, and FORTRAN extensions.) 144 240.67 T
+1 F
+(Description) 132 554 T
+126 698/G448 FmPA
+( Unit Number) 249 554 T
+243 698/G449 FmPA
+( T) 348 554 T
+(ype) 358.12 554 T
+342 698/G450 FmPA
+( File F) 447 554 T
+(ormat) 479.36 554 T
+441 698/G451 FmPA
+0 F
+(User input) 132 530 T
+126 674/G452 FmPA
+( standard input) 249 530 T
+243 674/G453 FmPA
+( input) 348 530 T
+342 674/G454 FmPA
+( Section 2) 447 530 T
+441 674/G455 FmPA
+(User output) 132 508 T
+126 652/G456 FmPA
+( standard output) 249 508 T
+243 652/G457 FmPA
+( output) 348 508 T
+342 652/G458 FmPA
+( ASCII) 447 508 T
+441 652/G459 FmPA
+(EXODUS database) 132 486 T
+126 630/G460 FmPA
+( 11) 249 486 T
+243 630/G461 FmPA
+( input) 348 486 T
+342 630/G462 FmPA
+( Appendix A) 447 486 T
+441 630/G463 FmPA
+(Print \336le) 132 464 T
+126 608/G464 FmPA
+( 20) 249 464 T
+243 608/G465 FmPA
+( optional output) 348 464 T
+342 608/G466 FmPA
+( ASCII) 447 464 T
+441 608/G467 FmPA
+126 569.75 126 456.25 2 L
+V
+0.5 H
+0 Z
+N
+243 570.25 243 455.75 2 L
+V
+N
+342 570.25 342 455.75 2 L
+V
+N
+441 570.25 441 455.75 2 L
+V
+N
+522 569.75 522 456.25 2 L
+V
+N
+125.75 570 522.25 570 2 L
+V
+N
+126.25 545.25 521.75 545.25 2 L
+V
+N
+126.25 542.75 521.75 542.75 2 L
+V
+N
+125.75 522 522.25 522 2 L
+V
+N
+125.75 500 522.25 500 2 L
+V
+N
+125.75 478 522.25 478 2 L
+V
+N
+125.75 456 522.25 456 2 L
+V
+N
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.17/DEST FmPD2
+[/Rect[489 526 495 539]/Border[0 0 0]/Page 7/View[/XYZ null 130 864 FmDC exch pop null]/LNK FmPD
+[/Rect[500 482 509 495]/Border[0 0 0]/Page 19/View[/XYZ null 130 864 FmDC exch pop null]/LNK FmPD
+[/Rect[197 402 201 415]/Border[0 0 0]/Page 17/View[/XYZ null 139 694 FmDC exch pop null]/LNK FmPD
+[/Rect[317 352 321 365]/Border[0 0 0]/Page 17/View[/XYZ null 139 730 FmDC exch pop null]/LNK FmPD
+[/Rect[241 251 245 264]/Border[0 0 0]/Page 17/View[/XYZ null 139 694 FmDC exch pop null]/LNK FmPD
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "17" 15
+%%Page: "18" 16
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(18) 282 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.18/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "18" 16
+%%Page: "19" 17
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(19) 318 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+1 18 Q
+0 X
+(5) 108 708 T
+(References) 129.6 708 T
+108 852/G245 FmPA
+0 8 Q
+(1) 135 682 T
+0 12 Q
+(Lee M. T) 139 678 T
+(aylor) 183.03 678 T
+(, Dennis P) 207.21 678 T
+(. Flanag) 255.54 678 T
+(an, and W) 294.15 678 T
+(illiam C. Curran, \322The GENESIS) 342.65 678 T
+108 822/G85 FmPA
+(Finite Element Mesh File F) 140.4 664 T
+(ormat,) 272.23 664 T
+(\323 SAND86-0910, Sandia National) 302.39 664 T
+(Laboratories, Alb) 140.4 650 T
+(uquerque, Ne) 224.81 650 T
+(w Me) 289.15 650 T
+(xico, May 1986.) 316.63 650 T
+0 8 Q
+-0.13 (2) 135 632 P
+0 12 Q
+-0.19 (W) 139 628 P
+-0.19 (illiam C. Mills-Curran, Amy P) 149.85 628 P
+-0.19 (. Gilk) 295.1 628 P
+-0.19 (e) 322.12 628 P
+-0.19 (y) 327.27 628 P
+-0.19 (, Dennis P) 332.49 628 P
+-0.19 (. Flanag) 380.45 628 P
+-0.19 (an, \322EXODUS: A) 418.86 628 P
+108 772/G247 FmPA
+(Finite Element File F) 140.4 614 T
+(ormat for Pre- and Post-Processing,) 242.57 614 T
+(\323 SAND87-2997,) 412.7 614 T
+(Sandia National Laboratories, Alb) 140.4 600 T
+(uquerque, Ne) 304.8 600 T
+(w Me) 369.14 600 T
+(xico, September 1988.) 396.62 600 T
+0 8 Q
+-0.18 (3) 135 582 P
+3 12 Q
+-0.27 (American National Standar) 139 578 P
+-0.27 (d Pr) 270.7 578 P
+-0.27 (o) 290.89 578 P
+-0.27 (gr) 296.77 578 P
+-0.27 (amming Langua) 307.26 578 P
+-0.27 (g) 385.21 578 P
+-0.27 (e FORTRAN) 391.09 578 P
+0 F
+-0.27 (, American) 451.82 578 P
+108 722/G248 FmPA
+(National Standards Institute, ANSI X3.9-1978, Ne) 140.4 564 T
+(w Y) 382.74 564 T
+(ork, 1978.) 401.75 564 T
+0 8 Q
+(4) 135 546 T
+0 12 Q
+(John R. Red-Horse, W) 139 542 T
+(illiam C. Curran, and Dennis P) 247.5 542 T
+(. Flanag) 394.5 542 T
+(an, \322SUPES) 433.11 542 T
+108 686/G249 FmPA
+(V) 140.4 528 T
+(ersion 2.1 \320 A Softw) 147.73 528 T
+(are Utility P) 247.27 528 T
+(ackage for the Engineering Sciences,) 305.76 528 T
+(\323) 482.53 528 T
+(SAND90\3200247, Sandia National Laboratories, Alb) 140.4 514 T
+(uquerque, Ne) 385.46 514 T
+(w Me) 449.81 514 T
+(xico,) 477.29 514 T
+(May 1990.) 140.4 500 T
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.19/DEST FmPD2
+139 830/M9.39471.Reference.1.Lee.M.Taylor.Dennis.P.Flanagan.and.William.C.Curran.The.GENESIS FmPA
+139 830/I1.43 FmPA
+139 780/M9.25388.Reference.2.William.C.MillsCurran.Amy.P.Gilkey.Dennis.P.Flanagan.EXODUS.A FmPA
+139 780/I1.49 FmPA
+139 694/M9.31708.Reference.4.John.R.RedHorse.William.C.Curran.and.Dennis.P.Flanagan.SUPES FmPA
+139 694/I1.66 FmPA
+139 730/M9.38169.Reference.3.American.National.Standard.Programming.Language.FORTRAN.American FmPA
+139 730/I1.70 FmPA
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "19" 17
+%%Page: "20" 18
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(20) 282 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.20/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "20" 18
+%%Page: "21" 19
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(21) 318 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+1 18 Q
+0 X
+(A) 108 708 T
+(The EXODUS Database Format) 129.6 708 T
+108 852/G250 FmPA
+0 12 Q
+0.01 (The follo) 108 678 P
+0.01 (wing code se) 152.03 678 P
+0.01 (gment reads an EXODUS database. The \336rst se) 214.52 678 P
+0.01 (gment is the GENE-) 442.33 678 P
+108 822/G251 FmPA
+(SIS database format.) 108 664 T
+5 10 Q
+(C   --Open the EXODUS database file) 108 645.33 T
+108 789/G252 FmPA
+(      NDB = 9) 108 633.33 T
+108 777/G253 FmPA
+(      OPEN \050UNIT=NDB, ..., STATUS=\325OLD\325, FORM=\325UNFORMATTED\325\051) 108 621.33 T
+108 765/G254 FmPA
+(C   --Read the title) 108 609.33 T
+108 753/G255 FmPA
+(      READ \050NDB\051 TITLE) 108 597.33 T
+108 741/G256 FmPA
+(C      --TITLE - the title of the database \050CHARACTER*80\051) 108 585.33 T
+108 729/G257 FmPA
+(C   --Read the database sizing parameters) 108 573.33 T
+108 717/G258 FmPA
+(      READ \050NDB\051 NUMNP, NDIM, NUMEL, NELBLK,) 108 561.33 T
+108 705/G259 FmPA
+(     &   NUMNPS, LNPSNL, NUMESS, LESSEL, LESSNL, NVERSN) 108 549.33 T
+108 693/G260 FmPA
+(C      --NUMNP - the number of nodes) 108 537.33 T
+108 681/G261 FmPA
+(C      --NDIM - the number of coordinates per node) 108 525.33 T
+108 669/G262 FmPA
+(C      --NUMEL - the number of elements) 108 513.33 T
+108 657/G263 FmPA
+(C      --NELBLK - the number of element blocks) 108 501.33 T
+108 645/G264 FmPA
+(C      --NUMNPS - the number of node sets) 108 489.33 T
+108 633/G265 FmPA
+(C      --LNPSNL - the length of the node sets node list) 108 477.33 T
+108 621/G266 FmPA
+(C      --NUMESS - the number of side sets) 108 465.33 T
+108 609/G267 FmPA
+(C      --LESSEL - the length of the side sets element list) 108 453.33 T
+108 597/G268 FmPA
+(C      --LESSNL - the length of the side sets node list) 108 441.33 T
+108 585/G269 FmPA
+(C      --NVERSN - the file format version number) 108 429.33 T
+108 573/G270 FmPA
+(C   --Read the nodal coordinates) 108 417.33 T
+108 561/G271 FmPA
+(      READ \050NDB\051 \050\050CORD\050INP,I\051, INP=1,NUMNP\051, I=1,NDIM\051) 108 405.33 T
+108 549/G272 FmPA
+(C   --Read the element order map \050each element must be listed once\051) 108 393.33 T
+108 537/G273 FmPA
+(      READ \050NDB\051 \050MAPEL\050IEL\051, IEL=1,NUMEL\051) 108 381.33 T
+108 525/G274 FmPA
+(C   --Read the element blocks) 108 369.33 T
+108 513/G275 FmPA
+(      DO 100 IEB = 1, NELBLK) 108 357.33 T
+108 501/G276 FmPA
+(C      --Read the sizing parameters for this element block) 108 345.33 T
+108 489/G277 FmPA
+(         READ \050NDB\051 IDELB, NUMELB, NUMLNK, NATRIB) 108 333.33 T
+108 477/G278 FmPA
+(C         --IDELB - the element block identification \050must be unique\051) 108 321.33 T
+108 465/G279 FmPA
+(C         --NUMELB - the number of elements in this block) 108 309.33 T
+108 453/G280 FmPA
+(C         --   \050the sum of NUMELB for all blocks must equal NUMEL\051) 108 297.33 T
+108 441/G281 FmPA
+(C         --NUMLNK - the number of nodes defining the connectivity) 108 285.33 T
+108 429/G282 FmPA
+(C         --   for an element in this block) 108 273.33 T
+108 417/G283 FmPA
+(C         --NATRIB - the number of element attributes for an element) 108 261.33 T
+108 405/G284 FmPA
+(C         --   in this block) 108 249.33 T
+108 393/G285 FmPA
+(C      --Read the connectivity for all elements in this block) 108 237.33 T
+108 381/G286 FmPA
+(         READ \050NDB\051 \050\050LINK\050J,I\051, J=1,NUMLNK, I=1,NUMELB\051) 108 225.33 T
+108 369/G287 FmPA
+(C      --Read the attributes for all elements in this block) 108 213.33 T
+108 357/G288 FmPA
+(         READ \050NDB\051 \050\050ATRIB\050J,I\051, J=1,NATRIB, I=1,NUMELB\051) 108 201.33 T
+108 345/G289 FmPA
+(  100 CONTINUE) 108 189.33 T
+108 333/G290 FmPA
+(C   --Read the node sets) 108 177.33 T
+108 321/G291 FmPA
+(      READ \050NDB\051 \050IDNPS\050I\051, I=1,NUMNPS\051) 108 165.33 T
+108 309/G292 FmPA
+(C      --IDNPS - the ID of each node set) 108 153.33 T
+108 297/G293 FmPA
+(      READ \050NDB\051 \050NNNPS\050I\051, I=1,NUMNPS\051) 108 141.33 T
+108 285/G294 FmPA
+(C      --NNNPS - the number of nodes in each node set) 108 129.33 T
+108 273/G295 FmPA
+(      READ \050NDB\051 \050IXNNPS\050I\051, I=1,NUMNPS\051) 108 117.33 T
+108 261/G296 FmPA
+(C      --IXNNPS - the index of the first node in each node set) 108 105.33 T
+108 249/G297 FmPA
+(C      --   \050in LTNNPS and FACNPS\051) 108 93.33 T
+108 237/G298 FmPA
+(      READ \050NDB\051 \050LTNNPS\050I\051, I=1,LNPSNL\051) 108 81.33 T
+108 225/G299 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.21/DEST FmPD2
+130 864/M9.41124.AppHeading.A.The.EXODUS.Database.Format FmPA
+130 864/I1.30 FmPA
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "21" 19
+%%Page: "22" 20
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(22) 282 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+5 10 Q
+0 X
+(C      --LTNNPS - the nodes in all the node sets) 72 713.33 T
+72 857/G300 FmPA
+(      READ \050NDB\051 \050FACNPS\050I\051, I=1,LNPSNL\051) 72 701.33 T
+72 845/G301 FmPA
+(C      --FACNPS - the factor for each node in LTNNPS) 72 689.33 T
+72 833/G302 FmPA
+(C   --Read the side sets) 72 677.33 T
+72 821/G303 FmPA
+(      READ \050NDB\051 \050IDESS\050I\051, I=1,NUMESS\051) 72 665.33 T
+72 809/G304 FmPA
+(C      --IDESS - the ID of each side set) 72 653.33 T
+72 797/G305 FmPA
+(      READ \050NDB\051 \050NEESS\050I\051, I=1,NUMESS\051) 72 641.33 T
+72 785/G306 FmPA
+(C      --NEESS - the number of elements in each side set) 72 629.33 T
+72 773/G307 FmPA
+(      READ \050NDB\051 \050NNESS\050I\051, I=1,NUMESS\051) 72 617.33 T
+72 761/G308 FmPA
+(C      --NNESS - the number of nodes in each side set) 72 605.33 T
+72 749/G309 FmPA
+(      READ \050NDB\051 \050IXEESS\050I\051, I=1,NUMESS\051) 72 593.33 T
+72 737/G310 FmPA
+(C      --IXEESS - the index of the first element in each side set) 72 581.33 T
+72 725/G311 FmPA
+(C      --   \050in LTEESS\051) 72 569.33 T
+72 713/G312 FmPA
+(      READ \050NDB\051 \050IXNESS\050I\051, I=1,NUMESS\051) 72 557.33 T
+72 701/G313 FmPA
+(C      --IXNESS - the index of the first node in each side set) 72 545.33 T
+72 689/G314 FmPA
+(C      --   \050in LTNESS and FACESS\051) 72 533.33 T
+72 677/G315 FmPA
+(      READ \050NDB\051 \050LTEESS\050I\051, I=1,LESSEL\051) 72 521.33 T
+72 665/G316 FmPA
+(C      --LTEESS - the elements in all the side sets) 72 509.33 T
+72 653/G317 FmPA
+(      READ \050NDB\051 \050LTNESS\050I\051, I=1,LESSNL\051) 72 497.33 T
+72 641/G318 FmPA
+(C      --LTNESS - the nodes in all the side sets) 72 485.33 T
+72 629/G319 FmPA
+(      READ \050NDB\051 \050FACESS\050I\051, I=1,LESSNL\051) 72 473.33 T
+72 617/G320 FmPA
+(C      --FACESS - the factor for each node in LTNESS) 72 461.33 T
+72 605/G321 FmPA
+0 12 Q
+1.75 (A valid GENESIS database may end at this point or at any point until the number of) 72 436 P
+72 580/G322 FmPA
+(variables is read.) 72 422 T
+5 10 Q
+(C   --Read the QA header information) 72 409.33 T
+72 553/G323 FmPA
+(      READ \050NDB, END=900\051 NQAREC) 72 397.33 T
+72 541/G324 FmPA
+(C      --NQAREC - the number of QA records \050must be at least 1\051) 72 385.33 T
+72 529/G325 FmPA
+(      DO 110 IQA = 1, MAX\0501,NQAREC\051) 72 373.33 T
+72 517/G326 FmPA
+(         READ \050NDB\051 \050QATITL\050I,IQA\051, I=1,4\051) 72 361.33 T
+72 505/G327 FmPA
+(C         --QATITL - the QA title records; each record contains:) 72 349.33 T
+72 493/G328 FmPA
+(C         --   1\051 analysis code name \050CHARACTER*8\051) 72 337.33 T
+72 481/G329 FmPA
+(C         --   2\051 analysis code qa descriptor \050CHARACTER*8\051) 72 325.33 T
+72 469/G330 FmPA
+(C         --   3\051 analysis date \050CHARACTER*8\051) 72 313.33 T
+72 457/G331 FmPA
+(C         --   4\051 analysis time \050CHARACTER*8\051) 72 301.33 T
+72 445/G332 FmPA
+(  110 CONTINUE) 72 289.33 T
+72 433/G333 FmPA
+(C   --Read the optional header text) 72 277.33 T
+72 421/G334 FmPA
+(      READ \050NDB, END=900\051 NINFO) 72 265.33 T
+72 409/G335 FmPA
+(C      --NINFO - the number of information records) 72 253.33 T
+72 397/G336 FmPA
+(      DO 120 I = 1, NINFO) 72 241.33 T
+72 385/G337 FmPA
+(         READ \050NDB\051 INFO\050I\051) 72 229.33 T
+72 373/G338 FmPA
+(C         --INFO - extra information records \050optional\051 that contain) 72 217.33 T
+72 361/G339 FmPA
+(C         --   any supportive documentation that the analysis code) 72 205.33 T
+72 349/G340 FmPA
+(C         --   developer wishes \050CHARACTER*80\051) 72 193.33 T
+72 337/G341 FmPA
+(  120 CONTINUE) 72 181.33 T
+72 325/G342 FmPA
+(C   --Read the coordinate names) 72 169.33 T
+72 313/G343 FmPA
+(      READ \050NDB, END=900\051 \050NAMECO\050I\051, I=1,NDIM\051) 72 157.33 T
+72 301/G344 FmPA
+(C      --NAMECO - the coordinate names \050CHARACTER*8\051) 72 145.33 T
+72 289/G345 FmPA
+(C   --Read the element type names) 72 133.33 T
+72 277/G346 FmPA
+(      READ \050NDB, END=900\051 \050NAMELB\050I\051, I=1,NELBLK\051) 72 121.33 T
+72 265/G347 FmPA
+(C      --NAMELB - the element type names \050CHARACTER*8\051) 72 109.33 T
+72 253/G348 FmPA
+0 12 Q
+(The GENESIS section of the database ends at this point.) 72 84 T
+72 228/G349 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.22/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "22" 20
+%%Page: "23" 21
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(23) 318 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+5 10 Q
+0 X
+(C   --Read the history, global, nodal, and element variable information) 108 713.33 T
+108 857/G350 FmPA
+(      READ \050NDB, END=900\051 NVARHI, NVARGL, NVARNP, NVAREL) 108 701.33 T
+108 845/G351 FmPA
+(C      --NVARHI - the number of history variables) 108 689.33 T
+108 833/G352 FmPA
+(C      --NVARGL - the number of global variables) 108 677.33 T
+108 821/G353 FmPA
+(C      --NVARNP - the number of nodal variables) 108 665.33 T
+108 809/G354 FmPA
+(C      --NVAREL - the number of element variables) 108 653.33 T
+108 797/G355 FmPA
+(      READ \050NDB\051) 108 641.33 T
+108 785/G356 FmPA
+(     &   \050NAMEHV\050I\051, I=1,NVARHI\051,) 108 629.33 T
+108 773/G357 FmPA
+(     &   \050NAMEGV\050I\051, I=1,NVARGL\051,) 108 617.33 T
+108 761/G358 FmPA
+(     &   \050NAMENV\050I\051, I=1,NVARNP\051,) 108 605.33 T
+108 749/G359 FmPA
+(     &   \050NAMEEV\050I\051, I=1,NVAREL\051) 108 593.33 T
+108 737/G360 FmPA
+(C      --NAMEHI - the history variable names \050CHARACTER*8\051) 108 581.33 T
+108 725/G361 FmPA
+(C      --NAMEGV - the global variable names \050CHARACTER*8\051) 108 569.33 T
+108 713/G362 FmPA
+(C      --NAMENV - the nodal variable names \050CHARACTER*8\051) 108 557.33 T
+108 701/G363 FmPA
+(C      --NAMEEV - the element variable names \050CHARACTER*8\051) 108 545.33 T
+108 689/G364 FmPA
+(      READ \050NDB\051 \050\050ISEVOK\050I,J\051, I=1,NVAREL\051, J=1,NELBLK\051) 108 533.33 T
+108 677/G365 FmPA
+(C      --ISEVOK - the name truth table for the element blocks;) 108 521.33 T
+108 665/G366 FmPA
+(C      --   ISEVOK\050i,j\051 refers to variable i of element block j;) 108 509.33 T
+108 653/G367 FmPA
+(C      --   the value is 0 if and only if data will NOT be output for) 108 497.33 T
+108 641/G368 FmPA
+(C      --   variable i for element block j \050otherwise the value is 1\051) 108 485.33 T
+108 629/G369 FmPA
+(C   --Read the time steps) 108 473.33 T
+108 617/G370 FmPA
+(  130 CONTINUE) 108 461.33 T
+108 605/G371 FmPA
+(         READ \050NDB, END=900\051 TIME, HISTFL) 108 449.33 T
+108 593/G372 FmPA
+(C         --TIME - the time step value) 108 437.33 T
+108 581/G373 FmPA
+(C         --HISTFL - the time step type flag:) 108 425.33 T
+108 569/G374 FmPA
+(C         --   0.0 for all variables output \050"whole" time step\051 else) 108 413.33 T
+108 557/G375 FmPA
+(C         --   only history variables output \050"history-only" time step\051) 108 401.33 T
+108 545/G376 FmPA
+(C) 108 389.33 T
+108 533/G377 FmPA
+(         READ \050NDB\051 \050VALHV\050IVAR\051, IVAR=1,NVARGL\051) 108 377.33 T
+108 521/G378 FmPA
+(C         --VALHV - the history values for the current time step) 108 365.33 T
+108 509/G379 FmPA
+(         IF \050HISTFL .EQ. 0.0\051 THEN) 108 353.33 T
+108 497/G380 FmPA
+(            READ \050NDB\051 \050VALGV\050IVAR\051, IVAR=1,NVARGL\051) 108 341.33 T
+108 485/G381 FmPA
+(C            --VALGV - the global values for the current time step) 108 329.33 T
+108 473/G382 FmPA
+(            DO 140 IVAR = 1, NVARNP) 108 317.33 T
+108 461/G383 FmPA
+(               READ \050NDB\051 \050VALNV\050INP,IVAR\051, INP=1,NUMNP\051) 108 305.33 T
+108 449/G384 FmPA
+(C               --VALNV - the nodal variables at each node) 108 293.33 T
+108 437/G385 FmPA
+(C               --   for the current time step) 108 281.33 T
+108 425/G386 FmPA
+(  140       CONTINUE) 108 269.33 T
+108 413/G387 FmPA
+(            DO 160 IBLK = 1, NELBLK) 108 257.33 T
+108 401/G388 FmPA
+(               DO 150 IVAR = 1, NVAREL) 108 245.33 T
+108 389/G389 FmPA
+(                  IF \050ISEVOK\050IVAR,IBLK\051 .NE. 0\051 THEN) 108 233.33 T
+108 377/G390 FmPA
+(                     READ \050NDB\051 \050VALEV\050IEL,IVAR,IBLK\051,) 108 221.33 T
+108 365/G391 FmPA
+(     &                  IEL=1,NUMELB\050IBLK\051\051) 108 209.33 T
+108 353/G392 FmPA
+(C                     --VALEV - the element variables at each element) 108 197.33 T
+108 341/G393 FmPA
+(C                     --   for the current time step) 108 185.33 T
+108 329/G394 FmPA
+(                  END IF) 108 173.33 T
+108 317/G395 FmPA
+(  150          CONTINUE) 108 161.33 T
+108 305/G396 FmPA
+(  160       CONTINUE) 108 149.33 T
+108 293/G397 FmPA
+(         END IF) 108 137.33 T
+108 281/G398 FmPA
+(C      --Handle time step data) 108 125.33 T
+108 269/G399 FmPA
+(         ...) 108 113.33 T
+108 257/G400 FmPA
+(      GOTO 130) 108 101.33 T
+108 245/G401 FmPA
+(  900 CONTINUE) 108 89.33 T
+108 233/G402 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.23/DEST FmPD2
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "23" 21
+%%Page: "24" 22
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(24) 282 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+5 10 Q
+0 X
+(C   --Handle end of file on database ...) 72 713.33 T
+72 857/G403 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.24/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "24" 22
+%%Page: "25" 23
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(25) 318 34.67 T
+108 179/G81 FmPA
+108 740.81 540 756 R
+7 X
+V
+108 892/G83 FmPA
+108 72 540 720 C
+108 72 540 720 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(Distribution) 107.99 704.67 T
+108 849/G626 FmPA
+0 12 Q
+(1) 122.99 672 T
+108 816/G86 FmPA
+(1400) 140.99 672 T
+135 816/G88 FmPA
+(E. L. Barsis) 194.99 672 T
+189 816/G101 FmPA
+(1) 122.99 656 T
+108 800/G105 FmPA
+(1401) 140.99 656 T
+135 800/G107 FmPA
+(J. R. Asay) 194.99 656 T
+189 800/G108 FmPA
+(1) 122.99 640 T
+108 784/G109 FmPA
+(1402) 140.99 640 T
+135 784/G115 FmPA
+(S. S. Dosanjh) 194.99 640 T
+189 784/G120 FmPA
+(1) 122.99 624 T
+108 768/G246 FmPA
+(1403) 140.99 624 T
+135 768/G404 FmPA
+(G. S. Da) 194.99 624 T
+(vidson) 236.08 624 T
+189 768/G426 FmPA
+(1) 122.99 608 T
+108 752/G427 FmPA
+(1404) 140.99 608 T
+135 752/G428 FmPA
+(J. A. Ang) 194.99 608 T
+189 752/G429 FmPA
+(13) 116.99 592 T
+108 736/G430 FmPA
+(1425) 140.99 592 T
+135 736/G431 FmPA
+(J. H. Bif) 194.99 592 T
+(\337e & staf) 235.36 592 T
+(f) 279.72 592 T
+189 736/G432 FmPA
+(50) 116.99 576 T
+108 720/G433 FmPA
+(1425) 140.99 576 T
+135 720/G434 FmPA
+(M. K. Smith) 194.99 576 T
+189 720/G435 FmPA
+(1) 122.99 560 T
+108 704/G436 FmPA
+(1431) 140.99 560 T
+135 704/G437 FmPA
+(J. M. McGlaun) 194.99 560 T
+189 704/G438 FmPA
+(1) 122.99 544 T
+108 688/G439 FmPA
+(1431) 140.99 544 T
+135 688/G440 FmPA
+(K. G. Budge) 194.99 544 T
+189 688/G441 FmPA
+(1) 122.99 528 T
+108 672/G442 FmPA
+(1431) 140.99 528 T
+135 672/G443 FmPA
+(J. S. Peery) 194.99 528 T
+189 672/G444 FmPA
+(1) 122.99 512 T
+108 656/G445 FmPA
+(1432) 140.99 512 T
+135 656/G446 FmPA
+(W) 194.99 512 T
+(. T) 205.21 512 T
+(. Bro) 217.66 512 T
+(wn) 241.36 512 T
+189 656/G470 FmPA
+(1) 122.99 496 T
+108 640/G494 FmPA
+(1433) 140.99 496 T
+135 640/G495 FmPA
+(J. W) 194.99 496 T
+(. Swe) 215.88 496 T
+(gle) 242.36 496 T
+189 640/G496 FmPA
+(15) 116.99 480 T
+108 624/G497 FmPA
+(1434) 140.99 480 T
+135 624/G498 FmPA
+(D. R. Martinez & staf) 194.99 480 T
+(f) 299.34 480 T
+189 624/G499 FmPA
+(1) 122.99 464 T
+108 608/G500 FmPA
+(1500) 140.99 464 T
+135 608/G501 FmPA
+(D. J. McClosk) 194.99 464 T
+(e) 264.2 464 T
+(y) 269.35 464 T
+189 608/G502 FmPA
+(1) 122.99 448 T
+108 592/G503 FmPA
+(1501) 140.99 448 T
+135 592/G504 FmPA
+(C. W) 194.99 448 T
+(. Peterson) 219.22 448 T
+189 592/G505 FmPA
+(1) 122.99 432 T
+108 576/G506 FmPA
+(1502) 140.99 432 T
+135 576/G507 FmPA
+(P) 194.99 432 T
+(. J. Hommert) 200.33 432 T
+189 576/G508 FmPA
+(1) 122.99 416 T
+108 560/G509 FmPA
+(1503) 140.99 416 T
+135 560/G510 FmPA
+(L. W) 194.99 416 T
+(. Da) 218.54 416 T
+(vison) 238.3 416 T
+189 560/G511 FmPA
+(1) 122.99 400 T
+108 544/G512 FmPA
+(1504) 140.99 400 T
+135 544/G513 FmPA
+(D. J. McClosk) 194.99 400 T
+(e) 264.2 400 T
+(y) 269.35 400 T
+(, actg) 274.57 400 T
+189 544/G514 FmPA
+(1) 122.99 384 T
+108 528/G515 FmPA
+(1511) 140.99 384 T
+135 528/G516 FmPA
+(J. S. Rottler) 194.99 384 T
+189 528/G517 FmPA
+(1) 122.99 368 T
+108 512/G518 FmPA
+(1511) 140.99 368 T
+135 512/G519 FmPA
+(D. K. Gartling) 194.99 368 T
+189 512/G520 FmPA
+(1) 122.99 352 T
+108 496/G521 FmPA
+(1511) 140.99 352 T
+135 496/G522 FmPA
+(M. W) 194.99 352 T
+(. Glass) 221.88 352 T
+189 496/G523 FmPA
+(1) 122.99 336 T
+108 480/G524 FmPA
+(1511) 140.99 336 T
+135 480/G525 FmPA
+(P) 194.99 336 T
+(. L. Hopkins) 200.33 336 T
+189 480/G526 FmPA
+(1) 122.99 320 T
+108 464/G527 FmPA
+(1511) 140.99 320 T
+135 464/G528 FmPA
+(M. J. Martinez) 194.99 320 T
+189 464/G529 FmPA
+(1) 122.99 304 T
+108 448/G530 FmPA
+(1511) 140.99 304 T
+135 448/G531 FmPA
+(P) 194.99 304 T
+(. A. Sackinger) 200.33 304 T
+189 448/G532 FmPA
+(1) 122.99 288 T
+108 432/G533 FmPA
+(1511) 140.99 288 T
+135 432/G534 FmPA
+(P) 194.99 288 T
+(. R. Schunk) 200.33 288 T
+189 432/G535 FmPA
+(1) 122.99 272 T
+108 416/G536 FmPA
+(1511) 140.99 272 T
+135 416/G537 FmPA
+(J. D. Zepper) 194.99 272 T
+189 416/G538 FmPA
+(1) 122.99 256 T
+108 400/G539 FmPA
+(1512) 140.99 256 T
+135 400/G540 FmPA
+(A. C. Ratzel) 194.99 256 T
+189 400/G541 FmPA
+(1) 122.99 240 T
+108 384/G542 FmPA
+(1513) 140.99 240 T
+135 384/G543 FmPA
+(R. D. Sk) 194.99 240 T
+(oc) 236.21 240 T
+(ypec) 247.36 240 T
+189 384/G544 FmPA
+(1) 122.99 224 T
+108 368/G545 FmPA
+(1513) 140.99 224 T
+135 368/G546 FmPA
+(R. G. Baca) 194.99 224 T
+189 368/G547 FmPA
+(1) 122.99 208 T
+108 352/G548 FmPA
+(1513) 140.99 208 T
+135 352/G549 FmPA
+(B. L. Bainbridge) 194.99 208 T
+189 352/G550 FmPA
+(1) 122.99 192 T
+108 336/G551 FmPA
+(1513) 140.99 192 T
+135 336/G552 FmPA
+(R. E. Hog) 194.99 192 T
+(an, Jr) 242.93 192 T
+(.) 268.26 192 T
+189 336/G553 FmPA
+(1) 122.99 176 T
+108 320/G554 FmPA
+(1513) 140.99 176 T
+135 320/G555 FmPA
+(J. L. Mo) 194.99 176 T
+(ya) 235.54 176 T
+189 320/G556 FmPA
+(1) 122.99 160 T
+108 304/G557 FmPA
+(1551) 140.99 160 T
+135 304/G558 FmPA
+(W) 194.99 160 T
+(. P) 205.21 160 T
+(. W) 216.55 160 T
+(olfe) 232.92 160 T
+189 304/G559 FmPA
+(1) 122.99 144 T
+108 288/G560 FmPA
+(1552) 140.99 144 T
+135 288/G561 FmPA
+(C. E. Haile) 194.99 144 T
+(y) 248.14 144 T
+189 288/G562 FmPA
+(1) 122.99 128 T
+108 272/G563 FmPA
+(1553) 140.99 128 T
+135 272/G564 FmPA
+(W) 194.99 128 T
+(. L. Hermina) 205.21 128 T
+189 272/G565 FmPA
+(1) 122.99 112 T
+108 256/G566 FmPA
+(1554) 140.99 112 T
+135 256/G567 FmPA
+(W) 194.99 112 T
+(. H. Rutledge) 205.21 112 T
+189 256/G568 FmPA
+(15) 116.99 96 T
+108 240/G569 FmPA
+(1561) 140.99 96 T
+135 240/G570 FmPA
+(H. S. Mor) 194.99 96 T
+(g) 242.77 96 T
+(an & staf) 248.71 96 T
+(f) 292.4 96 T
+189 240/G571 FmPA
+(13) 116.99 80 T
+108 224/G572 FmPA
+(1562) 140.99 80 T
+135 224/G573 FmPA
+(R. K. Thomas & staf) 194.99 80 T
+(f) 294.68 80 T
+189 224/G574 FmPA
+(10) 341.99 704 T
+333 848/G575 FmPA
+(1562) 365.99 704 T
+360 848/G576 FmPA
+(G. D. Sjaardema) 419.99 704 T
+414 848/G577 FmPA
+(1) 347.99 688 T
+333 832/G578 FmPA
+(1832) 365.99 688 T
+360 832/G579 FmPA
+(J. M. Ramage) 419.99 688 T
+414 832/G580 FmPA
+(1) 347.99 672 T
+333 816/G581 FmPA
+(2565) 365.99 672 T
+360 816/G582 FmPA
+(S. T) 419.99 672 T
+(. Montgomery) 439.1 672 T
+414 816/G583 FmPA
+(1) 347.99 656 T
+333 800/G584 FmPA
+(6313) 365.99 656 T
+360 800/G585 FmPA
+(J. Jung) 419.99 656 T
+414 800/G586 FmPA
+(1) 347.99 640 T
+333 784/G587 FmPA
+(6411) 365.99 640 T
+360 784/G588 FmPA
+(A. S. Benjamin) 419.99 640 T
+414 784/G589 FmPA
+(1) 347.99 624 T
+333 768/G590 FmPA
+(6423) 365.99 624 T
+360 768/G591 FmPA
+(J. F) 419.99 624 T
+(. Dempse) 436.37 624 T
+(y) 481.51 624 T
+414 768/G592 FmPA
+(1) 347.99 608 T
+333 752/G593 FmPA
+(6513) 365.99 608 T
+360 752/G594 FmPA
+(D. S. Oscar) 419.99 608 T
+414 752/G595 FmPA
+(1) 347.99 592 T
+333 736/G596 FmPA
+(6522) 365.99 592 T
+360 736/G597 FmPA
+(J. D. Miller) 419.99 592 T
+414 736/G598 FmPA
+(5) 347.99 576 T
+333 720/G599 FmPA
+(7141) 365.99 576 T
+360 720/G600 FmPA
+(T) 419.99 576 T
+(echnical Library) 426.48 576 T
+414 720/G601 FmPA
+(1) 347.99 560 T
+333 704/G602 FmPA
+(7151) 365.99 560 T
+360 704/G603 FmPA
+(T) 419.99 560 T
+(echnical Publications) 426.48 560 T
+414 704/G604 FmPA
+(10) 341.99 544 T
+333 688/G605 FmPA
+(7613-2) 365.99 544 T
+360 688/G606 FmPA
+(Document Processing) 419.99 544 T
+414 688/G607 FmPA
+(for DOE/OSTI) 419.99 530 T
+(1) 347.99 514 T
+333 658/G608 FmPA
+(8523-2) 365.99 514 T
+360 658/G609 FmPA
+(Central T) 419.99 514 T
+(echnical Files) 464.81 514 T
+414 658/G610 FmPA
+(6) 347.99 498 T
+333 642/G611 FmPA
+(8741) 365.99 498 T
+360 642/G612 FmPA
+(G. A. Benedetti & staf) 419.99 498 T
+(f) 527.68 498 T
+414 642/G613 FmPA
+(1) 347.99 482 T
+333 626/G614 FmPA
+(8742) 365.99 482 T
+360 626/G615 FmPA
+(M. R. Birnbaum) 419.99 482 T
+414 626/G616 FmPA
+(1) 347.99 466 T
+333 610/G617 FmPA
+(8742) 365.99 466 T
+360 610/G618 FmPA
+(J. J. Dik) 419.99 466 T
+(e) 459.2 466 T
+414 610/G619 FmPA
+(1) 347.99 450 T
+333 594/G620 FmPA
+(8742) 365.99 450 T
+360 594/G621 FmPA
+(L. I. W) 419.99 450 T
+(eing) 453.68 450 T
+(arten) 474.29 450 T
+414 594/G622 FmPA
+(5) 347.99 434 T
+333 578/G623 FmPA
+(8743) 365.99 434 T
+360 578/G624 FmPA
+-0.25 (M. L. Callabresi & staf) 419.99 434 P
+-0.25 (f) 529.99 434 P
+414 578/G625 FmPA
+108 72 540 720 C
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.25/DEST FmPD2
+[/Title(A)/Rect[99 63 549 729]/ARTICLE FmPD2
+FMENDPAGE
+%%EndPage: "25" 23
+%%Page: "26" 24
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(26) 282 34.67 T
+72 179/G78 FmPA
+72 740.81 504 756 R
+7 X
+V
+72 892/G80 FmPA
+72 857/G976 FmPA
+0 0 0 1 0 0 0 K
+[/CropBox[0 0 FmDC 612 792 FmDC FmBx]/PAGE FmPD
+[/Dest/P.26/DEST FmPD2
+[/Title(A)/Rect[63 63 513 729]/ARTICLE FmPD2
+[/Page 5/View[/XYZ null 130 864 FmDC exch pop null]/Title(1 Introduction)/OUT FmPD
+[/Page 7/View[/XYZ null 130 864 FmDC exch pop null]/Title(2 Command Input)/Count 2/OUT FmPD
+[/Page 8/View[/XYZ null 101 674 FmDC exch pop null]/Title(2.1 Database Selection and Display Commands)/OUT FmPD
+[/Page 11/View[/XYZ null 137 454 FmDC exch pop null]/Title(2.2 Miscellaneous Commands)/OUT FmPD
+[/Page 13/View[/XYZ null 130 864 FmDC exch pop null]/Title(3 Informational and Error Messages)/OUT FmPD
+[/Page 15/View[/XYZ null 130 864 FmDC exch pop null]/Title(4 Executing GROPE)/Count 2/OUT FmPD
+[/Page 15/View[/XYZ null 137 762 FmDC exch pop null]/Title(4.1 Execution Files)/OUT FmPD
+[/Page 15/View[/XYZ null 137 532 FmDC exch pop null]/Title(4.2 Special Software)/OUT FmPD
+[/Page 17/View[/XYZ null 130 864 FmDC exch pop null]/Title(5 References)/OUT FmPD
+FMENDPAGE
+%%EndPage: "26" 24
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 24
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Helvetica
+%%+ Times-Italic
+%%+ Helvetica-Bold
+%%+ Courier
+%%EOF

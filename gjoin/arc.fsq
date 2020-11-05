@@ -1,0 +1,15 @@
+Title
+ Arc mesh for gjoin example
+point	1	0 	0
+point	2	1	0
+point	4	0	1
+
+line	1 str	1 2 0 10
+line	2 circ	2 4 1 15
+line	4 str	4 1 0 10
+
+scheme 2 x
+region 2 2 -1 -2 -4
+
+nodebc 20 4
+exit

@@ -1,0 +1,146 @@
+<!-- Generated with CERN WebMaker 1.4 -->
+<HTML>
+<HEAD>
+<TITLE> Philosophy</TITLE>
+</HEAD>
+<BODY>
+<A NAME=HEADING3>
+<A HREF="SEACAS_Overview.06_94_5.html">[Next] </A><A HREF="SEACAS_Overview.06_94_3.html">[Previous] </A><A HREF="SEACAS_Overview.06_94_1.html">[Top] </A><P>
+SEACAS System Overview<P>
+<H1> Philosophy</H1>
+<HR>
+ SEACAS is a modular system based upon a common binary datafile format called EXODUS<A HREF="SEACAS_Overview.06_94_6.html#1"><EM>1</EM></A> which includes the mesh description and the timeplanes of the computed results. <P>
+ A subset of this format, called GENESIS<A HREF="SEACAS_Overview.06_94_6.html#2"><EM>2</EM></A>, was a precursor to the EXODUS format. GENESIS is often used in references and reports to refer to the mesh description portion of the EXODUS format.<P>
+ We are currently upgrading the original EXODUS file format. EXODUS now refers to a generic format. When it is important to differentiate, the older sequential database is called EXODUS I and the newer randomly accessible, platform independent database is known as EXODUS II3.<P>
+ Some codes have not yet migrated to the EXODUS II file format. The scripts that control the codes will automatically translate the input files to the required format. so that all of the preprocessing, analysis, and postprocessing codes can read and/or write the EXODUS database files formats as required. A schematic of this is shown in Figure 1.<P>
+FIGURE 1.x13  <A NAME=3>Modular Structure of SEACAS<BR><IMG SRC="SEACAS_Overview.06_94_AFrame_1.gif"><BR>
+<P>
+ With this structure, codes can be tailored for a single function. For example, an analysis code can be added to the system without writing new mesh generation and post processing programs. Also, code to code data transfers and restarts use the EXODUS format. A more complete view of this is shown in <A HREF="#4">Figure 2</A>.<P>
+ <P>
+FIGURE 2.x13  <A NAME=4>Expanded Modular View of SEACAS<BR><IMG SRC="SEACAS_Overview.06_94_AFrame_4.gif"><BR>
+<P>
+ This modular concept is used extensively in the mesh generation process. Several special-purpose codes have been written that each perform a certain mesh generation task. Examples of this are:<P>
+<UL>
+<LI>generate two-dimensional mesh (fastq).<BR>
+<P>
+<LI>transform two-dimensional mesh into a three-dimensional mesh (gen3d, genshell).<BR>
+<P>
+<LI>join two or more 2D or 3D meshes into a single mesh (gjoin).<BR>
+<P>
+<LI>reposition a 2D or 3D mesh (grepos).<P>
+</UL>
+ This structure is shown in <A HREF="#5">Figure 3</A> on the following page. Finite element meshes of complicated three-dimensional geometries have been successfully generated using this system built up of codes that singly provide a limited capability, but when used as a system are very powerful.<P>
+ <P>
+FIGURE 3.x13  <A NAME=5>Structure of Mesh Generation Process<BR><IMG SRC="SEACAS_Overview.06_94_AFrame_13.gif"><BR>
+<P>
+ All of the codes are written in as portable a form as possible. Fortran codes are written in ANSI Standard FORTRAN-77<A HREF="SEACAS_Overview.06_94_6.html#3"><EM>4</EM></A> and C language codes are written in ANSI Standard C<A HREF="SEACAS_Overview.06_94_6.html#4"><EM>5</EM></A> where possible. Machine-specific routines are limited in number and are grouped together to minimize the time required to adapt them to a new system. SEACAS codes have been ported to several Unix systems including Cray, HP, Sun, Dec, Stardent, Convex, IBM, and SGI.<P>
+ A code management system called <CODE>CVS</CODE><A HREF="SEACAS_Overview.06_94_6.html#5"><EM>6</EM></A> is used for all of the SEACAS codes to provide traceability and retrievability for Quality Assurance. The change logs include who changed the code, when it was changed, what was changed, and why the change was made. If required, any previous version can be retrieved.<P>
+<A NAME=HEADING4>
+<H3> SEACAS Code Types</H3>
+ SEACAS is divided into five broad categories of codes: prepost, analysis, translators, libraries, and scripts. The categories can be roughly defined as follows:<P>
+<DL>
+<DT><DD><B>prepost:</B> Pre- and Postprocessing codes including mesh generation, visualization, preprocessors, and database manipulation codes.<P>
+<DT><DD><B>analysis:</B> Finite element analysis codes including quasistatic, transient dynamics, thermal, and electromechanics. Two- and three-dimensional, nonlinear, large deformation.<P>
+<DT><DD><B>translators: </B>Translation codes for editing and viewing output files, inter-machine translation, EXODUS I from/to EXODUS II translation, and EXODUS I from/to commercial database translation.<P>
+<DT><DD><B>libraries:</B> Support libraries including database routines, common machine-specific routines, plot routines, graphics device drivers, and interactive help routines.<P>
+<DT><DD><B>scripts:</B> Unix shell scripts for executing the prepost, analysis, and translation codes. Also includes support and installation routines.<P>
+</DL>
+<A NAME=HEADING5>
+<H3> Preprocessing and Postprocessing Codes</H3>
+ The pre- and postprocessing codes are comprised of the following mesh generation, visualization, and database manipulation codes. <P>
+<DL>
+<DT><DD><B>aprepro:</B> An algebraic preprocessing program.<P>
+<DT><DD><B>blot:</B> The primary graphical two-dimensional and three-dimensional postprocessing code. It includes deformed mesh plots, contour plots, shaded fringe plots, variable versus variable and time history plots, and distance versus variable plots.<P>
+<DT><DD>cubit: Interactive finite element mesh generation tool for creating quadrilateral and hexahedral elements. Contains several two- and three mesh generation meshing algorithms, including mapping and paving, for automated mesh generation.<P>
+<DT><DD><B>fastq:</B> Interactive, unstructured two-dimensional quadrilateral mesh generation program. Includes the paving algorithm for general surface filling with arbitrary sizing, as well as other meshing options.<P>
+<DT><DD><B>gen3d:</B> Transform a two-dimensionaldatabase into a three-dimensional GENESIS database. Several transformations are supported and additional transformations can be easily added.<P>
+<DT><DD><B>genshell:</B> Transform a two-dimensional GENESIS database into a three-dimensional shell GENESIS database. Several transformations are supported and additional transformations can be easily added.<P>
+<DT><DD><B>gjoin: </B>Join together two or more GENESIS databases into a single GENESIS database. <P>
+<DT><DD><B>grepos:</B> Transforms the geometry of a GENESIS database by scaling, mirroring, offsetting, or rotating. It can also modify the database by deleting or renaming material blocks, sideset identifications, or nodeset identifications.<P>
+<DT><DD><B>grope:</B> Interactively examine an EXODUS database. Grope is also contained within the blot program. Grope is primarily used to validate EXODUS files.<P>
+<DT><DD><B>numbers: </B>Calculates several properties of an EXODUS file, including mass properties, timesteps, condition numbers, cavity volumes, and others.<P>
+</DL>
+<A NAME=HEADING6>
+<H3> Analysis Programs</H3>
+ The analysis codes include quasistatic, transient dynamics, thermal, and electromechanics codes.<P>
+<DL>
+<DT><DD><B>conchas</B>: Conchas is a linear structural analysis code for axisymmetric structures with loads that are symmetric about a plane.<P>
+<DT><DD><B>jac2d:</B> Jac2d is a finite element program which uses a nonlinear conjugate gradient technique to solve the large displacement, large strain, temperature dependent and material nonlinear problem for two-dimensional plane or axisymmetric solids.<P>
+<DT><DD><B>jac3d:</B> Jac3d is a finite element program which uses a nonlinear conjugate gradient technique to solve the large displacement, large strain, temperature dependent and material nonlinear problem for three- dimensional solids.<P>
+<DT><DD><B>jacq3d:</B> Jacq3d is a finite element program which uses a nonlinear conjugate gradient technique to solve the thermal conduction problem for three- dimensional solids.<P>
+<DT><DD><B>pronto2d:</B> Pronto2d is a two-dimensional (planar and axisymmetric) transient solid dynamics code. Lagrangian formulation with explicit time integration is used for analyzing large deformations of highly nonlinear materials subjected to extremely high strain rates.<P>
+<DT><DD><B>pronto3d:</B> Pronto3d is a three-dimensional transient solid dynamics code. Lagrangian formulation with explicit time integration is used for analyzing large deformations of highly nonlinear materials subjected to extremely high strain rates. <P>
+<DT><DD><B>sancho:</B> Sancho is a finite element program which uses a dynamic relaxation technique to compute the quasistatic, large deformation, temperature dependent, inelastic response of planar or axisymmetric solids.<P>
+<DT><DD><B>santos: </B>Santos is a two-dimensional finite element program which uses a dynamic relaxation technique to compute the quasistatic, large deformation, temperature dependent, inelastic response of planar or axisymmetric solids. Newer than sancho.<P>
+<DT><DD><B>santos3d:</B> Santos3d is a three-dimensional version of santos. It is currently in development.<P>
+</DL>
+<A NAME=HEADING7>
+<H3> Translation Codes</H3>
+ The translation codes are used to convert EXODUS databases into different formats and to edit EXODUS databases. <P>
+<DL>
+<DT><DD><B>abaexo:</B> Converts ABAQUS (commercial finite element code) results files to EXODUS I.<P>
+<DT><DD><B>algebra: </B>Manipulates EXODUS finite element output data by evaluating algebraic expressions. Equation variables are dependent on the input database variable names.<P>
+<DT><DD><B>conex:</B> Concatenates several EXODUS I files into a single EXODUS I file. Used to create a single EXODUS file from analyses that have been restarted.<P>
+<DT><DD><B>exoexo:</B> A programs which simply translate an EXODUS I file to the same EXODUS I file. It is used as a base program for writing new translators or database manipulation programs.<P>
+<DT><DD><B>ex1ex2v2 </B><B>and </B><B>ex2ex1v2: </B><B>Converts an EXODUS file to its alternate format. </B><B>exo1exo2 </B><B>and </B><B>exo2exo1</B><B> are other format translators with special application.</B><P>
+<DT><DD></B><B>exogen</B>: Creates a GENESIS mesh database from a specific time step of an EXODUS I file. Used when an analysis of a deformed geometry is required. For example, an impact analysis followed by a thermal analysis.<P>
+<DT><DD><B>exopat </B>and <B>patexo:</B> Converts EXODUS I to and from PATRAN (commercial mesh generation program) neutral file format.<P>
+<DT><DD><B>exotxt </B>and <B>txtexo:</B> Converts EXODUS I to and from a specially formatted ASCII text file.<P>
+<DT><DD><B>exoxdr</B> and <B>xdrexo:</B> Converts EXODUS I to and from an external data representation format (XDR) which can be transmitted between computers of different architectures, word lengths, and byte orders.<P>
+<DT><DD><B>merlin2:</B> Transfers (maps) nodal data between finite element meshes. For example, thermal output from a heat conduction code to a thermal input file for a quasistatic mechanics code.<P>
+<DT><DD><B>seaexo:</B> Converts SEACO files (the binary file format that preceded EXODUS) into EXODUS I files.<P>
+<DT><DD><P>
+</DL>
+ In addition to the translation codes listed above, the Cray Unicos system provides the capability to translate EXODUS I files into a VMS and IEEE format using the exoexo code. EXODUS II files, being machine independent, need no such translations.<P>
+<A NAME=HEADING8>
+<H3> Support Libraries</H3>
+ The support libraries include routines which are used in several of the codes.<P>
+<DL>
+<DT><DD><B>exodusii: </B>A library of application interface routines used to store and retrieve EXODUS II files.<P>
+<DT><DD>netcdf: Public domain database routines used to handle low-level data storage for EXODUS II files. Copyrighted, netCDF (C) 1993 University Corporation for Atmospheric Research/Unidata.<P>
+<DT><DD><B>supes:</B> A library of frequently used non-numerical routines for input command parsing, dynamic memory management, and system dependent utilities.<P>
+<DT><DD><B>suplib:</B> A library of routines for reading and writing EXODUS I files, manipulating string, input parsing, and other tasks.<P>
+<DT><DD><B>xhelp:</B> An interactive and code-callable help system.<P>
+<DT><DD><B>plt:</B> A medium-level plot library used by fastq, blot, graph, and post.<P>
+<DT><DD><B>svdi:</B> A low-level device-interface library.<P>
+</DL>
+<A NAME=HEADING9>
+<H3> Scripts</H3>
+ The scripts category is composed of the Unix shell scripts for executing the preprocessing, postprocessing, analysis, and translation codes; and the imake files required to install SEACAS.<P>
+<A NAME=HEADING10>
+<H3> Constitutive Models</H3>
+ Many constitutive models are implemented in the analysis codes.<P>
+<DL>
+<DT><DD><B>Elastic: </B>Typical linear elastic material using Hooke's Law.<P>
+<DT><DD><B>Elastic-Plastic with Combined Hardening:</B> Standard von Mises type yield condition with combined kinematic and isotropic linear hardening.<P>
+<DT><DD><B>Viscoplastic:</B> Simple rate-dependent plasticity.<P>
+<DT><DD><B>Viscoelastic</B><B>: Thermoviscoelastic model for glass solidification</B><P>
+<DT><DD></B><B>Damage: </B>Dynamic fracture of brittle rock.<P>
+<DT><DD><B>Soils and Crushable Foam:</B> Volumetric plasticity model.<P>
+<DT><DD><B>Low Density Foam: </B>Low density polyurethane foam behavior.<P>
+<DT><DD><B>Hydrodynamic:</B> Used with Equations of State in PRONTO<P>
+<DT><DD><B>Elastic-Plastic Hydrodynamic:</B> Combination of elastic-plastic combined hardening with hydrodynamic pressure response.<P>
+<DT><DD><B>Rate and Temperature Dependent Plasticity: </B>Unified creep plasticity.<P>
+<DT><DD><B>Secondary Creep:</B> Power hardening steady state creep with elastic bulk response.<P>
+<DT><DD><B>Isotropic Elastic/Plastic:</B><B> Power-Law Hardening with Luders Strain.</B><P>
+<DT><DD></B><B>Johnson-Cook Strength:</B> Rate and Temperature-dependent plasticity.<P>
+<DT><DD><B>Hyperelastic: </B>Stress based on the principal strains.<P>
+<DT><DD><B>Salt Consolidation: </B>Power hardening steady state creep deviatoric response with consolidation bulk response.<P>
+</DL>
+ Not all of the constitutive models are implemented in all of the analysis codes. The quasistatic analysis codes typically implement the constitutive models using temperature-dependent properties to facilitate thermal-stress calculations.<P>
+<DL>
+<DT><A HREF="SEACAS_Overview.06_94_4.html#HEADING4"><B></B>  SEACAS Code Types</A><DD>
+<DT><A HREF="SEACAS_Overview.06_94_4.html#HEADING5"><B></B>  Preprocessing and Postprocessing Codes</A><DD>
+<DT><A HREF="SEACAS_Overview.06_94_4.html#HEADING6"><B></B>  Analysis Programs</A><DD>
+<DT><A HREF="SEACAS_Overview.06_94_4.html#HEADING7"><B></B>  Translation Codes</A><DD>
+<DT><A HREF="SEACAS_Overview.06_94_4.html#HEADING8"><B></B>  Support Libraries</A><DD>
+<DT><A HREF="SEACAS_Overview.06_94_4.html#HEADING9"><B></B>  Scripts</A><DD>
+<DT><A HREF="SEACAS_Overview.06_94_4.html#HEADING10"><B></B>  Constitutive Models</A><DD>
+</DL>
+
+<HR>
+<ADDRESS>SEACAS System Overview - 24 FEB 95</ADDRESS>
+<A HREF="SEACAS_Overview.06_94_5.html">[Next] </A><A HREF="SEACAS_Overview.06_94_3.html">[Previous] </A><A HREF="SEACAS_Overview.06_94_1.html">[Top] </A><P>
+Generated with <A HREF="AboutWebMaker.html">CERN WebMaker</A>
+</BODY>
+</HTML>

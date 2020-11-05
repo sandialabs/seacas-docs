@@ -1,0 +1,58 @@
+%\documentstyle[12pt,twoside,freqn]{sreport}
+\documentstyle[12pt,twoside,freqn]{tex$1520:sand}
+\input{my$tex:select_page}
+%\includeonly{numerics,analytical,usersm,reference}
+\includeonly{analytical,usersm}
+%\includeonly{header_sand}
+%\includeonly{reference}
+%\includeonly{numerics}
+%
+%  \makeatletter
+%  \typein[\@partlist]{Enter file(s) to process}
+%  \@partswtrue
+%  \makeatother
+%
+%
+\input{my$tex:macro}
+\def\var#1{{\sf #1}}
+\def\SLAP{{\sf Slap\-down}}
+\def\KW#1{{\sf #1}} 
+\def\NEW#1{\marginalstar{\sf #1}}
+\def\N#1{\rlap{$^{#1}$}}
+\long\def\Q#1#2{\llap{$^{#1}$}#2}
+\def\REQ{\sf REQ}
+\def\dis{{\bf u}}
+\def\vel{{\bf \dot u}}
+\def\acc{{\bf \ddot u}}
+\def\fext{{\bf f}_{ext}}
+%%%%%
+%      REVISION MARKING AND FONT STYLE 
+%
+\def\version{1}
+\def\NEW#1#2{\ifnum#1=\version \marginalstar{\sf #2}\else #2\fi}
+\def\N#1{\rlap{$^{#1}$}}
+%
+%%%%%%
+\makeatletter
+\def\@oddhead{\ifnum\version<99 
+      \small\sf DRAFT\hfil\filename, \Today, \Time\hfil REV:\version\fi}
+\let\@evenhead\@oddhead
+\let\@evenfoot\@oddfoot
+\makeatother
+\begin{document}
+%
+%\include{header_sand}
+%\makeqnum
+%\tableofcontents
+%\listoffigures
+%\listoftables
+%
+% INCLUDE FILES
+%
+\include{numerics}
+\include{analytical}
+\appendix
+\include{usersm}
+\include{reference}
+%
+\end{document}

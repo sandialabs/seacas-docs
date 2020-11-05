@@ -1,0 +1,256 @@
+<MML -- created by la2mml>
+<!DefineFont rm
+	<Family Times>
+	<pts 10>
+    <Plain><Normal>
+>
+<!DefineFont bf
+	<Family Times>
+	<pts 10>
+    <Plain><Normal><Bold>
+>
+<!DefineFont em
+	<Family Times>
+	<pts 10>
+    <Plain><Normal><Italic>
+>
+<!DefineFont sy
+	<Family Symbol>
+	<pts 10>
+    <Plain><Normal>
+>
+<!DefineFont h1
+	<Family Times>
+	<pts 18>
+    <Plain><Normal><Bold>
+>
+<!DefineFont h3
+	<Family Times>
+	<pts 12>
+    <Plain><Normal><Bold>
+>
+<!DefineFont eq
+	<Family Times>
+	<pts 10>
+    <Plain><Normal>
+>
+<!DefineFont sc
+	<Family Times>
+	<pts 8>
+    <Plain><Normal>
+>
+<!DefinePar Body
+	<rm>
+	<Alignment LeftRight>
+	<LeftIndent 0.00">
+	<FirstIndent 0.50">
+	<RightIndent 0.00">
+	<Leading 2pt>
+	<SpaceBefore 12pt>
+	<SpaceAfter 6pt>
+	<Autonumber No>
+	<Hyphenate Yes>
+>
+<!DefinePar Equation
+	<eq>
+	<Alignment Center>
+	<LeftIndent 0.00">
+	<FirstIndent 0.00">
+	<RightIndent 0.00">
+	<Leading 0pt>
+	<SpaceBefore 10pt>
+	<SpaceAfter 6pt>
+	<Autonumber No>
+	<Hyphenate No>
+>
+<!DefinePar Extract
+	<rm>
+	<Alignment LeftRight>
+	<LeftIndent 0.80">
+	<FirstIndent 0.80">
+	<RightIndent 0.80">
+	<Leading 2pt>
+	<SpaceBefore 6pt>
+	<SpaceAfter 0pt>
+	<Autonumber No>
+	<Hyphenate Yes>
+>
+<!DefinePar Figure
+	<bf>
+	<Alignment Center>
+	<LeftIndent 0.00">
+	<FirstIndent 0.00">
+	<RightIndent 0.00">
+	<Leading 2pt>
+	<SpaceBefore 8pt>
+	<SpaceAfter 4pt>
+	<Autonumber Yes>
+	<NumberFormat "F:Figure +  ">
+	<Hyphenate No>
+>
+<!DefinePar FirstBody
+	<rm>
+	<Alignment LeftRight>
+	<LeftIndent 0.00">
+	<FirstIndent 0.00">
+	<RightIndent 0.00">
+	<Leading 2pt>
+	<SpaceBefore 6pt>
+	<SpaceAfter 6pt>
+	<Autonumber No>
+	<Hyphenate Yes>
+>
+<!DefinePar 1Heading*
+	<h1>
+	<Alignment Left>
+	<LeftIndent 0.00">
+	<FirstIndent 0.00">
+	<RightIndent 0.00">
+	<Leading 6pt>
+	<SpaceBefore 12pt>
+	<SpaceAfter 10pt>
+	<Autonumber No>
+	<Hyphenate No>
+>
+<!DefinePar 4Heading*
+	<h3>
+	<Alignment Left>
+	<LeftIndent 0.00">
+	<FirstIndent 0.00">
+	<RightIndent 0.00">
+	<Leading 2pt>
+	<SpaceBefore 12pt>
+	<SpaceAfter 2pt>
+	<Autonumber No>
+	<Hyphenate No>
+>
+
+<Body>
+\\to  Distribution
+\\from G. D. Sjaardema, 1521
+\\subject  Modifications to \\slap 
+\\SLAP  is a computer program written to help analysts determine the
+behavior of a body impacting onto an unyielding surface.  The program
+models the body as a three degree-of-freedom system.  The deformation of
+the body is approximated by nonlinear springs at each end of the model.
+The program was written to model the impact behavior of both nuclear
+waste transportation casks (subjected to the regulatory 30-foot drops
+onto an unyielding surface) and laydown weapons. 
+The code documentation and users\xd5  manual are in SAND88-0616, "Numerical
+and Analytical Methods for Approximating the Eccentric Impact Response
+(Slapdown) of Deformable Bodies."  However, several modifications and
+improvements have been added to \\slap  since the users\xd5  manual was
+written.  The modifications and improvements are documented in this
+memo. 
+
+<1Heading*>
+New Commands
+
+<FirstBody>
+A \\slap  analysis normally continues until either both springs have
+unloaded, or the velocities of both the \\cmd NOSE and \\cmd TAIL are
+positive.  Sometimes a longer or shorter time duration is needed for
+special cases; therefore, a command has been added to let the analyst
+control the length of the analysis.  The command syntax is: 
+
+<Extract>
+<rm><Family Helvetica>TERMINATION [TIME] <em>end_time
+
+<Body>
+where the keyword \\cmd TIME is optional, and the parameter
+\\param end_time is the time to terminate the analysis.  
+If \\cmd TERMINATION\x11  TIME is not specified, the calculation will
+continue until either both springs have unloaded, or the velocities of
+both the \\cmd NOSE and \\cmd TAIL are positive. 
+The square end treatment (see Section\x11  3.1, page\x11  19 of the users\xd5  manual)
+can now be specified for both the nose and tail of the body; previously
+it could only be specified for the nose.  The command syntax is:
+
+<Extract>
+<rm><Family Helvetica>TAIL SQUARE 
+\x09 
+
+
+<Body>
+or, if the nose has been specified as \\cmd SQUARE, the \\cmd TAIL
+SYMMETRIC command will also result in a square tail.
+
+<1Heading*>
+Friction Algorithm Improved
+
+<FirstBody>
+The friction algorithm has been extensively modified and improved.  The
+algorithm correctly handles both square and round ends and will
+\xd2 stick\xd3  at the impact point if the coefficient of friction is high
+enough.  The new algorithm also works when both ends are in contact
+simultaneously\xd0 the oscillations that occurred with the old algorithm no
+longer occur.  
+The algorithm uses an iterative approach to determine the lateral force
+required to completely stick the impacting end.  It then compares this
+with the maximum possible lateral force (normal force times the
+coefficient of friction) and returns the minimum of these two values. In
+several test problems and a comparison with an actual test, the new
+algorithm gives much better results. 
+
+<1Heading*>
+Modifications to <rm><pts 18>\\slap<h1>  Output Files
+
+<4Heading*>
+<rm><pts 12>\\exo<h3>  Database Changes:
+
+<FirstBody>
+Two new nodes have been added to
+the \\exo  database file.  The left end contact point is node\x11  4 and the
+right end contact point is node 5. Figure\x11   [Ref: geometry]  shows the node
+and element numberings used in \\slap .  The nodes at the contact points
+were added to provide information about the behavior at these points for
+bodies with square ends. For square ends, the <em>x<rm>-velocities at the
+contact points are not the same as the <em>x<rm>-velocities at the ends of the
+body centerline. 
+The global variable \\cmd DAMKE (damaging kinetic energy) has been added
+to the database.  This variable is sometimes used in laydown weapon
+analysis to indicate the severity of the impact.  The damaging kinetic
+energy is equal to 
+
+<Equation>
+\\cmd <em>DAMKE<rm> = \\sfrac 1/2 (<em>m<rm> <em>v<sc><Italic><Subscript>y<sc><Superscript>2<rm> + <em>I<rm> <sy>\x77 <sc><Superscript>2<rm>)
+
+<Body>
+where <em>m<rm> is the mass, <em>I<rm> is the mass moment of inertia, <em>v<sc><Italic><Subscript>y<rm> is the
+vertical velocity at the center of gravity, and <sy>\x77 <rm> is the angular
+velocity about the center of gravity.
+
+<4Heading*>
+Output File Changes:
+
+<FirstBody>
+The text output file has also been
+modified slightly.  The event sequence summary (see Figure\x11  A.5 in the
+users\xd5  manual) now includes the ratio of the impact velocity to the
+initial velocity which makes it easier to determine the severity of the
+slapdown effect.  
+Also, the maximum strain energy in each of the springs during the impact
+event is output in the results summary.  These values are important
+in determining the severity of the slapdown effect since for some
+geometries the second impact will occur at a velocity greater than the
+initial velocity; however, due to the bodies angular position and
+velocity, the strain energy in the spring will be less than that caused
+by a flat impact.  The opposite effect will also occur (higher strain
+energy at lower impact velocity).
+
+<1Heading*>
+Support and Notification of Modifications
+
+<FirstBody>
+An \\cmd ICER facility has been created for \\slap .  This facility will
+be used to provide a more immediate notification of any future
+modifications or problems. If there are any problems with \\slap , contact
+Greg Sjaardema, 1521, at 844\xd0 7045. 
+<SpaceBefore 36pt>\x11 
+\\unitlength  1in
+<AFrame <BRect 0 0 6" 1">>
+
+
+<Figure>
+<rm>\\SLAP<bf>  Node (N) and Element (E) Numberings (<rm><Family Helvetica>SQUARE
+<bf>end)

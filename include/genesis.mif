@@ -1,0 +1,2409 @@
+<MIFFile 1.01>
+
+<Para
+  <PgfTag `FORTRANsource'>
+  <PgfFont <FFamily Courier> <FSize 10.0 pt>>
+  <TabStop <TSX 0.5">>
+  <TabStop <TSX 1.0">>
+  <TabStop <TSX 1.5">>
+  <TabStop <TSX 2.0">>
+  <TabStop <TSX 2.5">>
+  <TabStop <TSX 3.0">>
+  <TabStop <TSX 3.5">>
+  <TabStop <TSX 4.0">>
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Open'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `GENESIS'>
+    <Char HardSpace>
+    <String `database'>
+    <Char HardSpace>
+    <String `file'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `NDB'>
+    <Char HardSpace>
+    <String `='>
+    <Char HardSpace>
+    <String `9'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `OPEN'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(UNIT=NDB,'>
+    <Char HardSpace>
+    <String `...,'>
+    <Char HardSpace>
+    <String `STATUS=\qOLD\q,'>
+    <Char HardSpace>
+    <String `FORM=\qUNFORMATTED\q)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `title'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `TITLE'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--TITLE'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `title'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `database'>
+    <Char HardSpace>
+    <String `(CHARACTER*80)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `database'>
+    <Char HardSpace>
+    <String `sizing'>
+    <Char HardSpace>
+    <String `parameters'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `NUMNP,'>
+    <Char HardSpace>
+    <String `NDIM,'>
+    <Char HardSpace>
+    <String `NUMEL,'>
+    <Char HardSpace>
+    <String `NELBLK,'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `&'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `NUMNPS,'>
+    <Char HardSpace>
+    <String `LNPSNL,'>
+    <Char HardSpace>
+    <String `NUMESS,'>
+    <Char HardSpace>
+    <String `LESSEL,'>
+    <Char HardSpace>
+    <String `LESSNL'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NUMNP'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `nodes'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NDIM'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `coordinates'>
+    <Char HardSpace>
+    <String `per'>
+    <Char HardSpace>
+    <String `node'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NUMEL'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `elements'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NELBLK'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `blocks'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NUMNPS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `sets'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--LNPSNL'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `length'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `sets'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `list'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NUMESS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `sets'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--LESSEL'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `length'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `sets'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `list'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--LESSNL'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `length'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `sets'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `list'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `nodal'>
+    <Char HardSpace>
+    <String `coordinates'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `((CORD(INP,I),'>
+    <Char HardSpace>
+    <String `INP=1,NUMNP),'>
+    <Char HardSpace>
+    <String `I=1,NDIM)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `order'>
+    <Char HardSpace>
+    <String `map'>
+    <Char HardSpace>
+    <String `(each'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `must'>
+    <Char HardSpace>
+    <String `be'>
+    <Char HardSpace>
+    <String `listed'>
+    <Char HardSpace>
+    <String `once)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(MAPEL(IEL),'>
+    <Char HardSpace>
+    <String `IEL=1,NUMEL)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `blocks'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `DO'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `100'>
+    <Char HardSpace>
+    <String `IEB'>
+    <Char HardSpace>
+    <String `='>
+    <Char HardSpace>
+    <String `1,'>
+    <Char HardSpace>
+    <String `NELBLK'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `sizing'>
+    <Char HardSpace>
+    <String `parameters'>
+    <Char HardSpace>
+    <String `for'>
+    <Char HardSpace>
+    <String `this'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `block'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `IDELB,'>
+    <Char HardSpace>
+    <String `NUMELB,'>
+    <Char HardSpace>
+    <String `NUMLNK,'>
+    <Char HardSpace>
+    <String `NATRIB'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--IDELB'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `block'>
+    <Char HardSpace>
+    <String `identification'>
+    <Char HardSpace>
+    <String `(must'>
+    <Char HardSpace>
+    <String `be'>
+    <Char HardSpace>
+    <String `unique)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NUMELB'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `elements'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `this'>
+    <Char HardSpace>
+    <String `block'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `(the'>
+    <Char HardSpace>
+    <String `sum'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `NUMELB'>
+    <Char HardSpace>
+    <String `for'>
+    <Char HardSpace>
+    <String `all'>
+    <Char HardSpace>
+    <String `blocks'>
+    <Char HardSpace>
+    <String `must'>
+    <Char HardSpace>
+    <String `equal'>
+    <Char HardSpace>
+    <String `NUMEL)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NUMLNK'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `nodes'>
+    <Char HardSpace>
+    <String `defining'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `connectivity'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `for'>
+    <Char HardSpace>
+    <String `an'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `this'>
+    <Char HardSpace>
+    <String `block'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NATRIB'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `attributes'>
+    <Char HardSpace>
+    <String `for'>
+    <Char HardSpace>
+    <String `an'>
+    <Char HardSpace>
+    <String `element'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `this'>
+    <Char HardSpace>
+    <String `block'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `connectivity'>
+    <Char HardSpace>
+    <String `for'>
+    <Char HardSpace>
+    <String `all'>
+    <Char HardSpace>
+    <String `elements'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `this'>
+    <Char HardSpace>
+    <String `block'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `((LINK(J,I),'>
+    <Char HardSpace>
+    <String `J=1,NUMLNK,'>
+    <Char HardSpace>
+    <String `I=1,NUMELB)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `attributes'>
+    <Char HardSpace>
+    <String `for'>
+    <Char HardSpace>
+    <String `all'>
+    <Char HardSpace>
+    <String `elements'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `this'>
+    <Char HardSpace>
+    <String `block'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `((ATRIB(J,I),'>
+    <Char HardSpace>
+    <String `J=1,NATRIB,'>
+    <Char HardSpace>
+    <String `I=1,NUMELB)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `100'>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `CONTINUE'>
+    <Font <FBold No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `sets'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(IDNPS(I),'>
+    <Char HardSpace>
+    <String `I=1,NUMNPS)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--IDNPS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `ID'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `set'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(NNNPS(I),'>
+    <Char HardSpace>
+    <String `I=1,NUMNPS)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NNNPS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `nodes'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `set'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(IXNNPS(I),'>
+    <Char HardSpace>
+    <String `I=1,NUMNPS)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--IXNNPS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `index'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `first'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `set'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `(in'>
+    <Char HardSpace>
+    <String `LTNNPS'>
+    <Char HardSpace>
+    <String `and'>
+    <Char HardSpace>
+    <String `FACNPS)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(LTNNPS(I),'>
+    <Char HardSpace>
+    <String `I=1,LNPSNL)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--LTNNPS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `nodes'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `all'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `sets'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(FACNPS(I),'>
+    <Char HardSpace>
+    <String `I=1,LNPSNL)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--FACNPS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `factor'>
+    <Char HardSpace>
+    <String `for'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `LTNNPS'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `sets'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(IDESS(I),'>
+    <Char HardSpace>
+    <String `I=1,NUMESS)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--IDESS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `ID'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `set'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(NEESS(I),'>
+    <Char HardSpace>
+    <String `I=1,NUMESS)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NEESS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `elements'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `set'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(NNESS(I),'>
+    <Char HardSpace>
+    <String `I=1,NUMESS)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NNESS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `nodes'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `set'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(IXEESS(I),'>
+    <Char HardSpace>
+    <String `I=1,NUMESS)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--IXEESS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `index'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `first'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `set'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `(in'>
+    <Char HardSpace>
+    <String `LTEESS)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(IXNESS(I),'>
+    <Char HardSpace>
+    <String `I=1,NUMESS)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--IXNESS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `index'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `first'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `set'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `(in'>
+    <Char HardSpace>
+    <String `LTNESS'>
+    <Char HardSpace>
+    <String `and'>
+    <Char HardSpace>
+    <String `FACESS)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(LTEESS(I),'>
+    <Char HardSpace>
+    <String `I=1,LESSEL)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--LTEESS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `elements'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `all'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `sets'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(LTNESS(I),'>
+    <Char HardSpace>
+    <String `I=1,LESSNL)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--LTNESS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `nodes'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `all'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `side'>
+    <Char HardSpace>
+    <String `sets'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(FACESS(I),'>
+    <Char HardSpace>
+    <String `I=1,LESSNL)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--FACESS'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `factor'>
+    <Char HardSpace>
+    <String `for'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `node'>
+    <Char HardSpace>
+    <String `in'>
+    <Char HardSpace>
+    <String `LTNESS'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <String `...A'>
+    <Char HardSpace>
+    <String `valid'>
+    <Char HardSpace>
+    <String `GENESIS'>
+    <Char HardSpace>
+    <String `database'>
+    <Char HardSpace>
+    <String `may'>
+    <Char HardSpace>
+    <String `end'>
+    <Char HardSpace>
+    <String `at'>
+    <Char HardSpace>
+    <String `this'>
+    <Char HardSpace>
+    <String `point'>
+    <Char HardSpace>
+    <String `or'>
+    <Char HardSpace>
+    <String `after'>
+    <Char HardSpace>
+    <String `any'>
+    <Char HardSpace>
+    <String `point'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <String `...described'>
+    <Char HardSpace>
+    <String `below.'>
+    <Char HardSpace>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `QA'>
+    <Char HardSpace>
+    <String `header'>
+    <Char HardSpace>
+    <String `information'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB,'>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `END'>
+    <Font <FBold No>>
+    <String `=...)'>
+    <Char HardSpace>
+    <String `NQAREC'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NQAREC'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `QA'>
+    <Char HardSpace>
+    <String `records'>
+    <Char HardSpace>
+    <String `(must'>
+    <Char HardSpace>
+    <String `be'>
+    <Char HardSpace>
+    <String `at'>
+    <Char HardSpace>
+    <String `least'>
+    <Char HardSpace>
+    <String `1)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `DO'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `110'>
+    <Char HardSpace>
+    <String `IQA'>
+    <Char HardSpace>
+    <String `='>
+    <Char HardSpace>
+    <String `1,'>
+    <Char HardSpace>
+    <String `MAX(1,NQAREC)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `(QATITL(I,IQA),'>
+    <Char HardSpace>
+    <String `I=1,4)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--QATITL'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `QA'>
+    <Char HardSpace>
+    <String `title'>
+    <Char HardSpace>
+    <String `records;'>
+    <Char HardSpace>
+    <String `each'>
+    <Char HardSpace>
+    <String `record'>
+    <Char HardSpace>
+    <String `contains:'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `1)'>
+    <Char HardSpace>
+    <String `analysis'>
+    <Char HardSpace>
+    <String `code'>
+    <Char HardSpace>
+    <String `name'>
+    <Char HardSpace>
+    <String `(CHARACTER*8)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `2)'>
+    <Char HardSpace>
+    <String `analysis'>
+    <Char HardSpace>
+    <String `code'>
+    <Char HardSpace>
+    <String `qa'>
+    <Char HardSpace>
+    <String `descriptor'>
+    <Char HardSpace>
+    <String `(CHARACTER*8)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `3)'>
+    <Char HardSpace>
+    <String `analysis'>
+    <Char HardSpace>
+    <String `date'>
+    <Char HardSpace>
+    <String `(CHARACTER*8)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `4)'>
+    <Char HardSpace>
+    <String `analysis'>
+    <Char HardSpace>
+    <String `time'>
+    <Char HardSpace>
+    <String `(CHARACTER*8)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `110'>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `CONTINUE'>
+    <Font <FBold No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `optional'>
+    <Char HardSpace>
+    <String `header'>
+    <Char HardSpace>
+    <String `text'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB,'>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `END'>
+    <Font <FBold No>>
+    <String `=...)'>
+    <Char HardSpace>
+    <String `NINFO'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NINFO'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `number'>
+    <Char HardSpace>
+    <String `of'>
+    <Char HardSpace>
+    <String `information'>
+    <Char HardSpace>
+    <String `records'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `DO'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `120'>
+    <Char HardSpace>
+    <String `I'>
+    <Char HardSpace>
+    <String `='>
+    <Char HardSpace>
+    <String `1,'>
+    <Char HardSpace>
+    <String `NINFO'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB)'>
+    <Char HardSpace>
+    <String `INFO(I)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--INFO'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `extra'>
+    <Char HardSpace>
+    <String `information'>
+    <Char HardSpace>
+    <String `records'>
+    <Char HardSpace>
+    <String `(optional)'>
+    <Char HardSpace>
+    <String `that'>
+    <Char HardSpace>
+    <String `contain'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `any'>
+    <Char HardSpace>
+    <String `supportive'>
+    <Char HardSpace>
+    <String `documentation'>
+    <Char HardSpace>
+    <String `that'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `analysis'>
+    <Char HardSpace>
+    <String `code'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--'>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `developer'>
+    <Char HardSpace>
+    <String `wishes'>
+    <Char HardSpace>
+    <String `(CHARACTER*80)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `120'>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `CONTINUE'>
+    <Font <FBold No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `coordinate'>
+    <Char HardSpace>
+    <String `names'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB,'>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `END'>
+    <Font <FBold No>>
+    <String `=...)'>
+    <Char HardSpace>
+    <String `(NAMECO(I),'>
+    <Char HardSpace>
+    <String `I=1,NDIM)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NAMECO'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `coordinate'>
+    <Char HardSpace>
+    <String `names'>
+    <Char HardSpace>
+    <String `(CHARACTER*8)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--Read'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `type'>
+    <Char HardSpace>
+    <String `names'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `READ'>
+    <Font <FBold No>>
+    <Char HardSpace>
+    <String `(NDB,'>
+    <Char HardSpace>
+    <Font <FBold Yes>>
+    <String `END'>
+    <Font <FBold No>>
+    <String `=...)'>
+    <Char HardSpace>
+    <String `(NAMELB(I),'>
+    <Char HardSpace>
+    <String `I=1,NELBLK)'>
+    <Char HardReturn>
+  > # End of ParaLine
+  <ParaLine
+    <String `C'>
+    <Font <FItalic Yes>>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <Char HardSpace>
+    <String `--NAMELB'>
+    <Char HardSpace>
+    <String `-'>
+    <Char HardSpace>
+    <String `the'>
+    <Char HardSpace>
+    <String `element'>
+    <Char HardSpace>
+    <String `type'>
+    <Char HardSpace>
+    <String `names'>
+    <Char HardSpace>
+    <String `(CHARACTER*8)'>
+    <Font <FItalic No>>
+    <Char HardReturn>
+  > # End of ParaLine
+> # End of Para

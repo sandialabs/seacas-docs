@@ -1,0 +1,36 @@
+\hrule
+\begin{verbatim}
+ ****** S L A P D O W N ******
+
+ M140 - TOP END HIT - LIN ELAS NOSE SPRING                               
+
+ ****** SEQUENCE OF EVENTS ******
+
+ ** NOSE HIT     AT TIME  0.000E+00, VELOCITY = -5.275E+02
+ ** NOSE REBOUND AT TIME  4.036E-03, VELOCITY =  4.421E+01
+ ** NOSE UNLOAD  AT TIME  8.006E-03, VELOCITY =  6.133E+02
+ ** TAIL HIT     AT TIME  5.108E-02, VELOCITY = -7.763E+02
+ ** TAIL REBOUND AT TIME  5.742E-02, VELOCITY =  1.754E+00
+
+
+ ****** RESULTS ******
+
+ Event over at time    5.744E-02, Time step size  2.193E-05
+ Time step multiplier  1.000E-02,    4 Plot times written to database
+
+
+            DISPLACEMENT     VELOCITY     ACCELERATION
+
+    NOSE      1.358E+00      6.200E+02      2.226E+05 (MAX)
+                            -5.275E+02     -3.553E+04 (MIN)
+
+    TAIL      2.706E+00      4.983E+00      1.473E+05 (MAX)
+                            -7.943E+02     -5.022E+04 (MIN)
+
+      CG                     2.178E+02      9.299E+04 (MAX)
+                            -5.275E+02      0.000E+00 (MIN)
+
+ ANGULAR                     0.000E+00      1.121E+03 (MAX)
+                            -8.401E+00     -1.641E+03 (MIN)
+\end{verbatim}
+\hrule

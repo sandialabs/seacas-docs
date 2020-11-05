@@ -1,0 +1,323 @@
+!
+2 Commands
+!
+
+Operational Commands
+   PROPERTIES LOCATE     CAVITY     LIMITS     OVERLAP    GAP       
+
+Parameter Setting Commands
+   AXISYMMETR PLANAR     EXODUS     DENSITY    SELECT     TMIN      
+   TMAX       DELTIME    TIMES     
+
+Database Display Commands
+   LIST       HELP      
+
+Miscellaneous Commands
+   ECHO       PRINT      COMMENT    EXIT      
+
+
+
+!
+3 PROPERTIES
+!
+PROPERTIES {nquad} <1>, [{density}] MASS {nquad} <1>, [{density}]
+
+properties or mass calculates several mass properties of the body.  The
+calculated properties are the volume and mass of each element block; the
+mass moments of inertia of the body; the location of the center of
+gravity; the minimum, maximum, and average element volume for each
+element block; and the number of elements in each element block.  A
+value called the timestep factor is also calculated.  This value can be
+used to estimate the timestep which will be used in an explicit dynamic
+analysis.
+
+The parameter {nquad} sets the number of quadrature (numerical
+integration) points which will be used to calculate mass properties.  It
+must be 1 or 4 for a two-dimensional mesh, and 1 or 8 for a
+three-dimensional mesh.  If it is not entered, it will be set to the
+last entered value, or to 1 if it has never been set.  If all of the
+material densities are equal, they can be set by entering a positive
+value for the optional parameter {density}.  If the densities are not
+equal, they must be input through the density command.
+
+If the exodus flag is true, the mass properties will be calculated for
+the deformed shape of the body at each time step; if exodus is false,
+values will only be calculated for the undeformed geometry.  Section in
+manual describes the algorithms used in this calculation, and the
+resulting output.
+!
+3 LOCATE
+!
+LOCATE {NODES|ELEMENTS} {locate_option}
+
+LOCATE is used to locate NODES or ELEMENTS that are a specified distance
+from a user-defined point, line, or plane.  The several available
+options are defined below.  The algorithms used are described in Section
+in manual.  If ELEMENTS is specified, the distance is measured to the
+element centroid.  In the descriptions of the locate options below, the
+z coordinates are entered only for three-dimensional bodies.  LOCATE
+calculates distances only for the undeformed geometry irregardless of
+the setting of the EXODUS flag.
+
+LOCATE {NODES|ELEMENTS} POINT {x0, y0, z0}, {distance}, {tolerance}
+    outputs all nodes or elements located a distance of
+    {distance}pm{tolerance} from the point {x0, y0, z0}.  If no nodes or
+    elements are located in the specified range, the minimum calculated
+    distance is printed.  The output includes the node or element
+    number, the coordinates of the node or the element centroid, the
+    distance to the point, and the angles theta and phifootnotephi is
+    defined for three-dimensional bodies only.  The angles are defined
+    in Section in manual
+
+LOCATE {NODES|ELEMENTS} LINE {x0, y0, z0}, {x1, y1, z1}, {distance},
+  {tolerance}, [BOUNDED|UNBOUNDED]<UNBOUNDED>
+    outputs all nodes or elements located a distance of
+    {distance}pm{tolerance} from the line defined by the two points {x0,
+    y0, z0}, and {x1, y1, z1}.  If no nodes or elements are located in
+    the specified range, the minimum calculated distance is printed.
+    The output includes the node or element number, the coordinates of
+    the node or the element centroid, and the normal and parametric
+    distances from the node or element centroid to the line.  The
+    distances are defined in Section in manual
+
+LOCATE {NODES|ELEMENTS} PLANE {x0, y0, z0}, {i, j, k}, {distance},
+  {tolerance}
+    outputs all nodes or elements located a distance of
+    {distance}pm{tolerance} from the plane that passes through the point
+    {x0, y0, z0} and has a normal defined by the vector {i, j, k}.  This
+    command is only defined for a three-dimensional body.  If no nodes
+    or elements are located in the specified range, the minimum
+    calculated distance is printed.  The output includes the node or
+    element number, the coordinates of the node or the element centroid,
+    and the normal and radial distances to the plane.  The distances are
+    defined in Section in manual
+!
+3 CAVITY
+!
+CAVITY {sset_{1}}, {sset_{2}}, ..., {sset_n}
+
+CAVITY calculates the volume of a cavity defined by the element sidesets
+{sset_{1}} to {sset_n}.  The cavity volume algorithm, the resulting
+output, and the rules for defining a valid cavity are described in
+Section in manual.
+
+If the EXODUS flag is TRUEfootnoteSee command EXODUS, the cavity volume
+is calculated for each of the selected time steps, else only the
+undeformed cavity volume is calculated.
+!
+3 LIMITS
+!
+LIMITS [ALLTIMES]
+
+limits determines the minimum, maximum, and range of the X, Y, and Z
+coordinates for each of the selected material blocks.  If ALLTIMES is
+specified, the limits are determined for each of the selected time
+steps.  Note that the exodus flag status does not affect this command.
+!
+3 OVERLAP
+!
+OVERLAP {flag_m}, {flag_s}
+
+overlap is used to verify contact surfaces or slidelines.  The command
+determines whether any of the nodes on the surface defined by the
+sideset {flag_s} penetrate the element faces on the surface defined by
+the sideset {flag_m}.  If a node on the {flag_s} surface penetrates the
+{flag_m} surface, the node and element numbers are output along with the
+connectivity array for the penetrated element.  The algorithm and
+assumptions used in this calculation are described in Section in manual.
+overlap checks only the undeformed geometry irregardless of the setting
+of the EXODUS flag.
+!
+3 GAP
+!
+GAP {flag_m}, {flag_s}, {d_{max}}, {[DISTANCE|NORMAL]}
+
+gap calculates the distance between nodes on the surfaces defined by the
+sideset flags {flag_m} and {flag_s}.  For each node on the sideset
+{flag_m}, the program searches for a matching node on the sideset
+{flag_s}.  A matching node is the closest node measured according to the
+method specified by {[DISTANCE|NORMAL]}.  If DISTANCE is specified, the
+distance is simply the actual distance between the two nodes; if normal
+is specified, the distance is the tangential distance to the node on the
+{flag_s} surface measured from a line passing through the node on the
+{flag_m} surface and normal to the surface.  If the distance to the
+closest {flag_s} node is greater than {d_{max}}, then the {flag_m} node
+has no match and is not shown in the output.
+
+For each {flag_m} node with a match, the output shows the matching
+{flag_s} node, the direction cosines of the surface, and the normal and
+tangential distance from the {flag_m} node to the {flag_s} node where
+the normal is defined by the direction cosine vector.
+
+If the EXODUS flag is TRUE, the above information is output for each
+time step.  Note that the node matching process and the determination of
+the surface normal are only performed on the undeformed geometry;
+therefore, the distances output for subsequent time steps are measured
+relative to the undeformed normal.
+
+This command is normally used to calculate the change in distance
+between two surfaces, for example, the closure of a drift in a
+geomechanics problem.  Note that unless {d_{max}} is specified, a match
+will be found for every node on the {flag_m} surface.  This output from
+this command can be very large; it is recommended that echo be turned
+off prior to executing a GAP command.  The algorithm and assumptions
+used for this command are described in Section in manual.
+!
+3 AXISYMMETR
+!
+AXISYMMETRIC
+
+AXISYMMETRIC informs numbers that the two-dimensional body described in
+the EXO database is axisymmetric.  All of the relavent operational
+commands will calculate values based on an axisymmetric geometry.  This
+is the default for two-dimensional bodies.
+!
+3 PLANAR
+!
+PLANAR or PLANE
+
+PLANAR informs numbers that the two-dimensional body described in the
+EXO database is planar or plane strain.  All of the relavent operational
+commands will calculate values based on a planar geometry.
+!
+3 EXODUS
+!
+EXODUS [ON|OFF]
+<ON if timesteps present, else OFF>
+
+EXODUS sets the EXODUS flag to TRUE which indicates that the operational
+commands should calculate values for each of the selected time steps, or
+FALSE which indicates that the operational commands should only
+calculate values for the basic undeformed geometry.
+!
+3 DENSITY
+!
+DENSITY
+
+DENSITY prompts the user for the density of each of the element blocks.
+The material density is used in the mass properties calculation
+(Commands MASS and PROPERTIES).  If densities are not entered prior to
+entering a MASS or PROPERTIES command, the density command will be
+executed automatically.  An optional 16-character label can be entered
+following the density.  The label will be used to identify the material
+blocks in the mass properties output.  The label cannot contain any
+blanks.
+!
+3 SELECT
+!
+SELECT {option}
+
+SELECT selects the materials or material blocks for the operational
+commands.
+
+SELECT BLOCKS [ALL,] {block_id_{1}}, {block_id_{2}}, ... <all element
+  blocks>
+    selects the element blocks.  The {block_id} is the element block
+    identifier displayed by the LIST BLOCKS command.  The relavent
+    operational commands will only calculate values for the selected
+    element blocks.
+!
+3 TMIN
+!
+TMIN {tmin} <minimum database time>
+
+TMIN sets the minimum selected time {tmin} to the specified parameter
+value.
+!
+3 TMAX
+!
+TMAX {tmax} <maximum database time>
+
+TMAX sets the maximum selected time {tmax} to the specified parameter
+value.
+!
+3 DELTIME
+!
+DELTIME {Delta t} <0.0>
+
+DELTIME sets the selected time interval {Delta t} to the specified
+parameter value.
+!
+3 TIMES
+!
+TIMES {tmin} TO {tmax} BY {Delta t}
+
+TIMES sets {tmin}, {tmax}, and {Delta t} with a single command.
+!
+3 LIST
+!
+LIST {option}
+
+LIST displays the database information specified by {option} on the
+user's terminal.  The "selected" items are specified with the SELECT
+command.
+
+LIST {VARS|VARIABLES}
+    displays a summary of the database.  The summary includes the
+    database title; the number of nodes, elements, and element blocks;
+    the number of node sets and side sets; and the number of each type
+    of variable.
+
+LIST {BLOCKS|MATERIALS}
+    displays a summary of the element blocks.  The summary includes the
+    block identifier, the number of elements in the block, the element
+    number of the first and last element in the block, and the block
+    status, either selected or not selected.
+
+LIST {NSETS|NODESETS}
+    displays a summary of the node sets.  The summary includes the set
+    identifier and the number of nodes in the set.
+
+LIST {SSETS|SIDESETS}
+    displays a summary of the side sets.  The summary includes the set
+    identifier, the number of elements in the set, and the number of
+    nodes in the set.
+
+LIST STEPS
+    displays the number of time steps and the minimum and maximum time
+    step times.
+
+LIST TIMES
+    displays the step numbers and times for all time steps on the
+    database.
+!
+3 HELP
+!
+HELP {command} <no parameter>
+
+HELP displays information about the program command given as the
+parameter.  If no parameter is given, all the command verbs are
+displayed.  HELP is system-dependent and may not be available on all
+systems.
+!
+3 ECHO
+!
+ECHO [ON|OFF] <ON>
+
+ECHO controls the output of results to the terminal.  If ON, the results
+are output to the screen.  If OFF, PRINT is automatically set to ON.
+Error messages and information from a LIST command are always output to
+the terminal.
+!
+3 PRINT
+!
+PRINT [ON|OFF] <ON>
+
+PRINT controls the output of results to the output file.  If ON, the
+results are printed to the output file.  If OFF, ECHO is automatically
+set to ON.
+!
+3 COMMENT
+!
+COMMENT [PAGE,] {ncom}<1>
+
+COMMENT prompts the user for a {ncom} comment lines which are written to
+the output file.  If the optional parameter PAGE is present, a page
+eject will be written to the output file prior to writing the comment
+line(s).
+!
+3 EXIT
+!
+EXIT
+
+EXIT exits the program and closes all files.

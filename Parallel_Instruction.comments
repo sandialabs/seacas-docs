@@ -1,0 +1,112 @@
+Kevin -- Looks good. I think I could run a job using the
+instructions. There are a few comments below. May want to put a
+pointer to http://jal.sandia.gov/compute/ which has information about
+the ASCI platforms in general. Also a pointer to
+http://jal.sandia.gov/SEACAS/ which has SEACAS information.
+
+--Greg
+
+Page 2:
+
+--May want to change "ACCESS Setup" to "Sandia Labs ACCESS Setup"
+since this documentation will probably be sent out to outside sites. 
+
+
+Page 3, Table 1:
+
+-- Should have entry for SRD lan. I think it is /usr/local/eng_sci/struct. 
+
+-- Engineering Sciences LAN: ACCESS is /usr/local. On sass2153, you
+   can access the JAL lan ACCESS installation using the path
+   /usr/local/eng_sci/struct. However, that is not currently mounted on
+   users workstations.
+
+-- May want to add a comment similar to "ACCESS may also be installed on
+other systems. You will need to contact the system manager of the
+systems not mentioned here to find out where ACCESS is installed."
+
+Page 4: 
+
+--Before the analyst can visualize the results, these multiple
+{exodusII results} files have to be re-combined.
+
+--For most production calculations, the {slicing} and recombining {of}
+results files...
+
+--convert it to an Exodus{II} file with the
+
+Page 5:
+--Step 3 must be performed on the machine on [on] which the analysis
+(duplicate "on"s)
+
+Page 6: 
+
+--Step 5 can be performed ... Instead, another machine such as a Sun
+workstation {is} used to recombine the results.
+
+Page 7:
+
+--The procedure for slicing a mesh is independent of the
+platform. This is the step where the analyst must determine the number
+of processors he/she wants to use for the analysis. If the analyst
+changes his/her mind, they must come back to this step.
+
+May change to:
+
+The procedure for slicing a mesh is independent of the platform. This
+is the step where the analyst must determine the number of processors
+that will be used for the analysis. If the number of processors is
+changed, this step must be redone.
+
+Page 8:
+
+--If the slice was performed on a machine other than the machine on
+which the analysis will be run, all the files must be tarred up and
+sent to the machine on which the analysis will be performed. To tar up
+the file{s} issue {the command:}
+
+Page 12:
+
+--(currently, bedrock2 on the IRN and Edison on the ISN).
+[should 'bedrock2' be changed to 'atlantis/discovery'? Similar for
+other references to 'bedrock2']
+
+Page 13:
+
+--On Janus, the next step is to spread the mesh. If the job is small
+enough (>200,000 elements), you can spread the mesh with
+        ^--Should that be '<'
+
+--Description of combining mesh and the resulting output filename
+doesn't match earlier description on page 9.
+
+Page 15:
+
+-- The 'cat Imakefile < NormalProblemRule(pronto3d,small)' doesn't
+work (at least on Suns...). Could write as:
+	echo "NormalProblemRule(pronto3d,small)" > Imakefile
+
+-- In "Large Problem" section, may want a little explanation up front
+saying basename=impact, job will be run on 512 processors, ...
+
+Page 16:
+
+-- Instead of logging into Janus and doing the mkdir and then logging
+off, could also do "ssh janus mkdir
+/scratch/username/impact". Probably doesn't save much since people
+will have multiple windows open...
+
+--2) 	Create a script called run_spread {with the contents shown
+below:}  [delete the 'janus% cat run_spread' line]
+
+--Also in this section, mention that the '12' is the number of
+processors that will be used to do the spread and the "2:00:00" is the 
+time limit(?)
+
+--In "Run the analysis in the queue" section:
+	Create a script file with the following information:
+	#!/bin/csh
+	cd /scratch/username/impact
+	pronto3d -parallel -mesh impact.par -- impact
+[does this need to be chmod 755?]
+

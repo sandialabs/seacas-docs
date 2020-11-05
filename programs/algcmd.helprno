@@ -1,0 +1,370 @@
+.NOAUTOPARAGRAPH
+.PARAGRAPH 0,0
+.NO AUTOJUSTIFY .NO JUSTIFY
+.LEFT MARGIN 0 .RIGHT MARGIN 72
+.NO PAGING
+.SET DATE .FLAGS SUBSTITUTE
+.P; !
+.P; 3 TITLE     
+.P; !
+.LM +5 .P -5,0
+TITLE
+.S .LM -5 .P 0,0
+TITLE sets the title to be written to the output database. The
+title is input on the next line. If no TITLE command is issued,
+the input database title is written to the output database.
+.P; !
+.P; 3 SAVE      
+.P; !
+.LM +5 .P -5,0
+SAVE
+{variable__{1}}, {variable__{2}}, _._._.
+   or {option__{1}}, {option__{2}}, _._._.
+<no default>
+.S .LM -5 .P 0,0
+SAVE transfers variables from the input database to the output
+database. An individual variable may be transferred by listing its name
+as a parameter. For example,
+.LM +8 .S .P
+SAVE Y, Z
+.LM -8 .S .P
+has the same effect as the equations (with the exception noted below):
+.LM +8 .S .P
+Y = Y 
+.BR
+Z = Z.
+.LM -8 .S .P
+Assigned variables are affected by the BLOCKS command; SAVEd
+variables are not.
+.S .P
+The following {option}s transfer sets of variables:
+.LM +2 .P -2; SAVE HISTORY
+.LM +2 .P 0
+transfers all input database history variables.
+.LM -4 .P
+.LM +2 .P -2; SAVE GLOBAL
+.LM +2 .P 0
+transfers all input database global variables.
+.LM -4 .P
+.LM +2 .P -2; SAVE NODAL
+.LM +2 .P 0
+transfers all input database nodal variables.
+.LM -4 .P
+.LM +2 .P -2; SAVE ELEMENT
+.LM +2 .P 0
+transfers all input database element variables.
+.LM -4 .P
+.LM +2 .P -2; SAVE ALL
+.LM +2 .P 0
+transfers all input database history, global, nodal, and element
+variables.
+.LM -4 .P
+.S .P
+The SAVE command causes the variables to be output in the same
+order they would be if they were assigned by equations at that point.
+.S .P
+If a SAVEd variable is also an assigned variable, the assigned
+value is written to the output database, regardless of whether the
+SAVE is done before or after the assignment.
+.P; !
+.P; 3 DELETE    
+.P; !
+.LM +5 .P -5,0
+DELETE
+{variable__{1}}, {variable__{2}}, _._._. <no default>
+.S .LM -5 .P 0,0
+DELETE marks an assigned variable as a temporary variable that
+will not be written to the output database. A variable must be assigned
+(or SAVEd) before it is listed in a DELETE command.
+.P; !
+.P; 3 TMIN      
+.P; !
+.LM +5 .P -5,0
+TMIN
+{tmin} <minimum database time>
+.S .LM -5 .P 0,0
+TMIN sets the minimum selected time {tmin} to the specified
+parameter value. If the user-selected-times mode is in effect, the mode
+is changed to the all-available-times mode.
+.S .P
+In interval-times mode, if {nintv} is selected (by a NINTV
+or ZINTV command), {delt} is calculated. If {delt} is
+selected (by a DELTIME command), {nintv} is calculated.
+.P; !
+.P; 3 TMAX      
+.P; !
+.LM +5 .P -5,0
+TMAX
+{tmax} <maximum database time>
+.S .LM -5 .P 0,0
+TMAX sets the maximum selected time {tmax} to the specified
+parameter value. If the user-selected-times mode is in effect, the mode
+is changed to the all-available-times mode.
+.S .P
+In interval-times mode, if {nintv} is selected (by a NINTV
+or ZINTV command), {delt} is calculated. If {delt} is
+selected (by a DELTIME command), {nintv} is calculated.
+.P; !
+.P; 3 NINTV     
+.P; !
+.LM +5 .P -5,0
+NINTV
+{nintv} <10 or the number of database time steps - 1,
+      whichever is smaller>
+.S .LM -5 .P 0,0
+NINTV sets the number of selected time intervals {nintv} to
+the specified parameter value and changes the mode to the interval-times
+mode with a delta offset. The selected time interval {delt} is
+calculated.
+.P; !
+.P; 3 ZINTV     
+.P; !
+.LM +5 .P -5,0
+ZINTV
+{nintv} <10 or the number of database time steps,
+      whichever is smaller>
+.S .LM -5 .P 0,0
+ZINTV sets the number of selected time intervals {nintv} to
+the specified parameter value and changes the mode to the interval-times
+mode with a zero offset. The selected time interval {delt} is
+calculated.
+.P; !
+.P; 3 DELTIME   
+.P; !
+.LM +5 .P -5,0
+DELTIME
+{delt}
+<(tmax-tmin) / (nintv-1), where {nintv} is 10
+      or the number of database time steps, whichever is smaller>
+.S .LM -5 .P 0,0
+DELTIME sets the selected time interval {delt} to the
+specified parameter value and changes the mode to the interval-times
+mode with a zero offset. The number of selected time intervals
+{nintv} is calculated.
+.P; !
+.P; 3 ALLTIMES  
+.P; !
+.LM +5 .P -5,0
+ALLTIMES
+.S .LM -5 .P 0,0
+ALLTIMES changes the mode to the all-available-times mode.
+.P; !
+.P; 3 TIMES     
+.P; !
+.LM +5 .P -5,0
+TIMES
+   [ADD,]
+{t__{1}}, {t__{2}}, _._._.
+<no times selected>
+.S .LM -5 .P 0,0
+TIMES changes the mode to the user-selected-times mode and selects
+times {t__{1}}, {t__{2}}, etc. The closest time step from the
+database is selected for each specified time.
+.S .P
+Normally, a TIMES command selects only the listed time steps. If
+ADD is the first parameter, the listed steps are added to the
+current selected times. Any other time step selection command clears all
+TIMES selected times.
+.S .P
+Up to the maximum number of time steps in the database may be specified.
+Times are selected in the order encountered on the database, regardless
+of the order the times are specified in the command. Duplicate
+references to a time step are ignored.
+.P; !
+.P; 3 STEPS     
+.P; !
+.LM +5 .P -5,0
+STEPS
+   [ADD,]
+{n__{1}}, {n__{2}}, _._._.
+<no steps selected>
+.S .LM -5 .P 0,0
+The STEPS command is equivalent to the TIMES command except
+that it selects time steps by the step number, not by the step time.
+.P; !
+.P; 3 HISTORY   
+.P; !
+.LM +5 .P -5,0
+HISTORY
+ON or OFF <ON>
+.S .LM -5 .P 0,0
+HISTORY controls whether history time steps are included in the
+selected time steps (if ON) or only whole time steps (if
+OFF).
+.P; !
+.P; 3 ZOOM      
+.P; !
+.LM +5 .P -5,0
+ZOOM
+{xmin}, {xmax}, {ymin}, {ymax},
+{zmin}, {zmax} <no default>
+.S .LM -5 .P 0,0
+ZOOM sets the limits of the mesh to be written to the output
+database. Limits {xmin} to {xmax} apply to the first
+coordinate, {ymin} to {ymax} to the second coordinate, and
+{zmin} to {zmax} to the third coordinate (if any). A node is
+deleted if it is not within the rectangle (or brick) defined by these
+limits. An element is deleted if all of its nodes are deleted.
+.P; !
+.P; 3 VISIBLE   
+.P; !
+.LM +5 .P -5,0
+VISIBLE
+   [ADD or DELETE,]
+{block__id__{1}}, {block__id__{2}}, _._._.
+<all element blocks>
+.S .LM -5 .P 0,0
+VISIBLE limits the element blocks to be written to the output
+database. An element that is not in a "visible" element block is
+deleted. A node is deleted if all the elements containing the node are
+deleted.
+.S .P
+The {block__id} refers to the element block identifier (displayed
+by the LIST BLOCKS command).
+.S .P
+If there is no parameter, all element blocks are visible. If the first
+parameter is ADD or DELETE, the element blocks listed are
+added to or deleted from the current visible set. Otherwise, only the
+element blocks listed in the command are visible.
+.P; !
+.P; 3 BLOCKS    
+.P; !
+.LM +5 .P -5,0
+BLOCKS
+   [ADD or DELETE,]
+{block__id__{1}}, {block__id__{2}}, _._._.
+<all element blocks>
+.S .LM -5 .P 0,0
+BLOCKS selects the element blocks which have defined values for
+all following equations. An element variable can be defined for an
+element block only if that block is selected. This command can only mark
+element variables as undefined, it cannot mark previously undefined
+variables as defined. It has no effect on nodal variables.
+.S .P
+The BLOCKS command affects all following equations unless another
+BLOCKS command is entered. The BLOCKS command has no effect
+on the output of SAVEd element variables.
+.S .P
+The {block__id} refers to the element block identifier (displayed
+by the LIST BLOCKS command).
+.S .P
+If there is no parameter, all element blocks are selected. If the first
+parameter is ADD or DELETE, the element blocks listed are
+added to or deleted from the current selected set. Otherwise, only the
+element blocks listed in the command are selected.
+.P; !
+.P; 3 MATERIAL  
+.P; !
+.LM +5 .P -5,0
+MATERIAL
+   [ADD or DELETE,]
+{block__id__{1}}, {block__id__{2}}, _._._.
+<all element blocks>
+.S .LM -5 .P 0,0
+MATERIAL is exactly equivalent to a BLOCKS command.
+.P; !
+.P; 3 SHOW      
+.P; !
+.LM +5 .P -5,0
+SHOW
+{command} <no parameter>
+.S .LM -5 .P 0,0
+SHOW displays the settings of parameters relevant to the
+{command}. For example, SHOW TMIN displays the time step
+selection criteria.
+.S .P
+SHOW with no parameters displays any nondefault command parameters
+and all input equations.
+.P; !
+.P; 3 LIST      
+.P; !
+.LM +5 .P -5,0
+LIST
+{option} <no parameter>
+.S .LM -5 .P 0,0
+LIST displays database information, depending on the
+{option}.
+.S .P
+.LM +2 .P -2; LIST VARS
+.LM +2 .P 0
+displays a summary of the database. The summary includes the database
+title; the number of nodes, elements, and element blocks; the number of
+node sets and side sets; and the number of variables.
+.LM -4 .P
+.LM +2 .P -2; LIST BLOCKS or MATERIAL
+.LM +2 .P 0
+displays a summary of the element blocks. The summary includes the block
+identifier, the number of elements in the block, the number of nodes per
+element, and the number of attributes per element.
+.LM -4 .P
+.LM +2 .P -2; LIST QA
+.LM +2 .P 0
+displays the QA records and the information records.
+.LM -4 .P
+.LM +2 .P -2; LIST NAMES
+.LM +2 .P 0
+displays the names of the history, global, nodal, and element variables.
+.LM -4 .P
+.LM +2 .P -2; LIST STEPS
+.LM +2 .P 0
+displays the number of time steps and the minimum and maximum time step
+times.
+.LM -4 .P
+.LM +2 .P -2; LIST TIMES
+.LM +2 .P 0
+displays the step numbers and times for all time steps on the database.
+.LM -4 .P
+.P; !
+.P; 3 HELP      
+.P; !
+.LM +5 .P -5,0
+HELP
+{option} <no parameter>
+.S .LM -5 .P 0,0
+HELP displays information about the _PROGRAM program,
+depending on the {option}.
+.S .P
+.LM +2 .P -2; HELP RULES
+.LM +2 .P 0
+displays a summary of the equation syntax rules.
+.LM -4 .P
+.LM +2 .P -2; HELP COMMANDS
+.LM +2 .P 0
+displays a summary of the commands.
+.LM -4 .P
+.LM +2 .P -2; HELP FUNCTIONS
+.LM +2 .P 0
+lists the names of all available functions and displays some useful
+equations, such as the equation for effective strain.
+.LM -4 .P
+.LM +2 .P -2; HELP
+.LM +2 .P 0
+lists the available HELP options and displays any nondefault
+command parameters and all input equations.
+.LM -4 .P
+.P; !
+.P; 3 LOG       
+.P; !
+.LM +5 .P -5,0
+LOG
+.S .LM -5 .P 0,0
+LOG requests that the log file be saved when the program is
+exited. Each correct equation and command that the user enters
+(excluding informational commands such as SHOW) is written to the
+log file.
+.P; !
+.P; 3 END       
+.P; !
+.LM +5 .P -5,0
+END
+.S .LM -5 .P 0,0
+END ends the equation input and begins the equation evaluation.
+The word "EXIT" may be used in place of "END".
+.P; !
+.P; 3 QUIT      
+.P; !
+.LM +5 .P -5,0
+QUIT
+.S .LM -5 .P 0,0
+QUIT ends the equation input and exits the program immediately
+without writing an output database.

@@ -1,0 +1,16 @@
+Title
+ Square mesh for gjoin example
+point	1	0 	0
+point	2	1	0
+point	3	1	1
+point	4	0	1
+
+line	1 str	1 2 0 10
+line	2 str	2 3 0 10
+line	3 str	3 4 0 10
+line	4 str	4 1 0 10
+
+region 1 1 -1 -2 -3 -4
+
+nodebc 10 4
+exit

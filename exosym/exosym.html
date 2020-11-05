@@ -1,0 +1,1325 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" CONTENT="Adobe FrameMaker 5/HoTaMaLe Plugin Version 0.81">
+<LINK REL="STYLESHEET" HREF="exosym.css">
+<TITLE>  </TITLE></HEAD>
+<BODY BGCOLOR="#ffffff">
+<P CLASS="Minor">
+<A NAME="pgfId=127">
+ </A>
+Introduction:</P>
+<P CLASS="Body">
+<A NAME="pgfId=160">
+ </A>
+ A program called <EM CLASS="Italic">
+EXOSYM</EM>
+ has been written to help analysts produce more realistic looking visualizations of analysis results and models. <EM CLASS="Italic">
+EXOSYM</EM>
+ reads as input a three-dimensional finite element mesh or results file in EXODUS [1] format and will mirror the geometry and results about the specified coordinate planes. An example may make this more clear. </P>
+<P CLASS="Body">
+<A NAME="pgfId=45">
+ </A>
+Assume that you are analyzing a spherical object that, due to the symmetry of the load, requires that only 1 octant of the sphere be analyzed to fully capture the response of the object. However, to fully explain the problem that was analyzed, it is much easier to show the response of the entire sphere. Previously, your only two alternatives were to:</P>
+<UL>
+<LI CLASS="bullet">
+<A NAME="pgfId=47">
+ </A>
+mesh and analyze the entire object which increases the memory and analysis time by a factor of eight, or</LI>
+<LI CLASS="bullet">
+<A NAME="pgfId=97">
+ </A>
+mesh and analyze one octant of the object and try to explain to your &quot;audience&quot; that the response you are showing actually models the entire object and they just have to &quot;imagine&quot; that the body appears in all of the octants.</LI>
+</UL>
+<P CLASS="Body">
+<A NAME="pgfId=98">
+ </A>
+Although the second alternative is not that bad and many of our customers understand symmetry planes, <EM CLASS="Italic">
+EXOSYM</EM>
+ gives you a relatively painless method to increase the realism of your analyses.</P>
+<P CLASS="Minor">
+<A NAME="pgfId=99">
+ </A>
+Execution:</P>
+<P CLASS="Body1">
+<A NAME="pgfId=100">
+ </A>
+<EM CLASS="Italic">
+EXOSYM</EM>
+ is installed in the SEACAS [2] system and is executed similar to any of the other translator programs:</P>
+<DIV>
+<H3 CLASS="Indent">
+<A NAME="pgfId=101">
+ </A>
+<EM CLASS="computer">
+exosym</EM>
+ <EM CLASS="computer">
+-transform=</EM>
+<EM CLASS="Italic">
+octant_spec </EM>
+<EM CLASS="computer">
+-Material=</EM>
+<EM CLASS="Italic">
+mat_offset input_file output_file</EM>
+</H3>
+<P CLASS="Body1">
+<A NAME="pgfId=102">
+ </A>
+where, <EM CLASS="Italic">
+input_file</EM>
+ is the input exodus file, <EM CLASS="Italic">
+output_file</EM>
+ is the translated output exodus file, octant_spec is an 8 character string which specifies how the translation is to be performed, and <EM CLASS="Italic">
+mat_offset</EM>
+ is the increment that will be added to each input material ID for each replicated output material ID.   Each character position in <EM CLASS="Italic">
+octant_spec</EM>
+ corresponds to an octant in the three-dimensional coordinate space. The origin of the space is assumed to be at X=Y=Z=0.0. <A HREF="exosym.html#40496">
+See Also: Description of EXOSYM Octants</A>
+ describes the numbering of the octants. Each character position in the string can be either an `X', a `1', or a `0'. The `X' signifies that the original body lies in that octant. A `1' signifies that the body will be replicated into that particular octant and a `0' signifies that the body will not be replicated into that particular octant. Only one `X' may appear in the <EM CLASS="Italic">
+octant_spec</EM>
+ string. A few examples will hopefully clarify this:<TABLE BORDER="1">
+<CAPTION>
+<H6 CLASS="TableTitle">
+<A NAME="pgfId=104">
+ </A>
+<A NAME="40496">
+ </A>
+Description of EXOSYM Octants</H6>
+</CAPTION>
+<TR>
+<TH ROWSPAN="1" COLSPAN="1">
+<H6 CLASS="CellHeading">
+<A NAME="pgfId=118">
+ </A>
+Octant</H6>
+</TH>
+<TH ROWSPAN="1" COLSPAN="1">
+<H6 CLASS="CellHeading">
+<A NAME="pgfId=119">
+ </A>
+X Coord</H6>
+</TH>
+<TH ROWSPAN="1" COLSPAN="1">
+<H6 CLASS="CellHeading">
+<A NAME="pgfId=120">
+ </A>
+Y Coord</H6>
+</TH>
+<TH ROWSPAN="1" COLSPAN="1">
+<H6 CLASS="CellHeading">
+<A NAME="pgfId=121">
+ </A>
+Z Coord</H6>
+</TH>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=122">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=123">
+ </A>
+positive</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=124">
+ </A>
+positive</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=125">
+ </A>
+positive</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=126">
+ </A>
+2</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=128">
+ </A>
+negative</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=129">
+ </A>
+positive</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=130">
+ </A>
+positive</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=131">
+ </A>
+3</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=132">
+ </A>
+negative</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=133">
+ </A>
+negative</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=134">
+ </A>
+positive</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=135">
+ </A>
+4</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=136">
+ </A>
+positive</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=137">
+ </A>
+negative</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=138">
+ </A>
+positive</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=139">
+ </A>
+5</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=140">
+ </A>
+positive</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=141">
+ </A>
+positive</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=142">
+ </A>
+negative</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=143">
+ </A>
+6</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=144">
+ </A>
+negative</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=145">
+ </A>
+positive</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=146">
+ </A>
+negative</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=147">
+ </A>
+7</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=148">
+ </A>
+negative</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=149">
+ </A>
+negative</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=150">
+ </A>
+negative</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=151">
+ </A>
+8</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=152">
+ </A>
+positive</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=153">
+ </A>
+negative</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=154">
+ </A>
+negative</P>
+</TD>
+</TR>
+</TABLE>
+</P>
+<UL>
+<LI CLASS="bullet">
+<A NAME="pgfId=155">
+ </A>
+<EM CLASS="san-serif">
+-transform=X0101010 </EM>
+-- Original body in octant 1, replicate to octants 3, 5, and 7.</LI>
+<LI CLASS="bullet">
+<A NAME="pgfId=156">
+ </A>
+<EM CLASS="san-serif">
+-transform=X1000000 </EM>
+-- Original body in octant 1, replicate to octant 2. This is simply a mirroring about the Y-Z coordinate plane.</LI>
+<LI CLASS="bullet">
+<A NAME="pgfId=157">
+ </A>
+<EM CLASS="san-serif">
+-transform=0001000X </EM>
+-- Original body in octant 8, replicate to octant 4. This is simply a mirroring about the X-Y coordinate plane.</LI>
+</UL>
+<P CLASS="Body">
+<A NAME="pgfId=158">
+ </A>
+Note that the octant notation is simply a means of specifying mirroring about any combination of the coordinate planes. Your original object does not have to lie entirely in a single octant to use <EM CLASS="Italic">
+EXOSYM</EM>
+. In fact, for man cases the original body may lie in 4 octants and you simply want it replicated into the other 4 octants. </P>
+<P CLASS="Body">
+<A NAME="pgfId=103">
+ </A>
+<A HREF="exosym.html#40496">
+See Also: Description of EXOSYM Octants</A>
+ can also be used to determine the transformations that will be applied to the original body to replicate it into the selected octant(s) by simply multiplying the original row by the selected row. For example, for the case <EM CLASS="san-serif">
+-transform=0001000X</EM>
+, multiply the values in row 8 (+1, -1,  -1) by the values in row 4 (+1, -1, +1) to get (+1, +1, -1). This means that the transformation will be performed by negating all Z-coordinate values and simply copying the other coordinate values.</P>
+<P CLASS="Body">
+<A NAME="pgfId=162">
+ </A>
+<EM CLASS="Italic">
+EXOSYM</EM>
+ essentially replicates the input geometry the requested number of times without joining the created bodies to the original body. Therefore, each generated element block must have a unique material ID. <EM CLASS="Italic">
+EXOSYM</EM>
+ increments each input material ID by the mat_offset value specified by the <EM CLASS="computer">
+-Material</EM>
+ option. This number may take some experimentation to determine since, for example, for a 8 material input file that is replicated into 8 octants, each of the 64 final element blocks must have a different material ID.</P>
+<P CLASS="Minor">
+<A NAME="pgfId=159">
+ </A>
+Nodal Results Transformation:</P>
+<P CLASS="Body1">
+<A NAME="pgfId=161">
+ </A>
+<EM CLASS="Italic">
+EXOSYM </EM>
+assumes that the nodal results variables are in groups of three, each member of the group corresponding to the X, Y, and Z component of the variable vector. The first group of three is assumed to be the nodal displacements. If the number of nodal variables is not a multiple of three, <EM CLASS="Italic">
+EXOSYM</EM>
+ will issue a fatal error message and stop. Variables are transformed in the same way that the nodal coordinates are transformed. For example, if the transformation is such that the X- and Z-coordinates are negated, then the first and third nodal variable in each variable vector group will also be negated. Simply put, if the X-coordinate is negated, then <EM CLASS="san-serif">
+DISPLX, VELX</EM>
+, and <EM CLASS="san-serif">
+ACCLX</EM>
+ will also be negated.</P>
+<P CLASS="Minor">
+<A NAME="pgfId=163">
+ </A>
+Element Results Transformation:</P>
+<P CLASS="Body1">
+<A NAME="pgfId=164">
+ </A>
+This version of EXOSYM simply copies all of the input element variables to the output element variables. This is clearly not the correct thing to do for tensor variables such as stress and strain, but it works for scalar variables such as von Mises stress, temperature, and equivalent plastic strain. </P>
+<P CLASS="Body">
+<A NAME="pgfId=165">
+ </A>
+This limitation is planned to be removed in a future version of <EM CLASS="Italic">
+EXOSYM</EM>
+.</P>
+<P CLASS="Minor">
+<A NAME="pgfId=166">
+ </A>
+Limitations:</P>
+<UL>
+<LI CLASS="bullet">
+<A NAME="pgfId=167">
+ </A>
+Only three-dimensional exodus files are supported<A HREF="#footnote=404">
+1</A>
+.</LI>
+<LI CLASS="bullet">
+<A NAME="pgfId=169">
+ </A>
+Nodal results are assumed to be vectors with three components corresponding to the three coordinate directions.</LI>
+<LI CLASS="bullet">
+<A NAME="pgfId=170">
+ </A>
+Tensor Element quantities are <EM CLASS="Bold">
+not</EM>
+ translated correctly.</LI>
+<LI CLASS="bullet">
+<A NAME="pgfId=171">
+ </A>
+Element blocks are created with new material IDs rather than joining the created blocks to the original blocks.</LI>
+<LI CLASS="bullet">
+<A NAME="pgfId=172">
+ </A>
+All transformations occur about coordinate planes centered on the X, Y, or Z axis. There is no way to specify both an offset and a mirroring.<A HREF="#footnote=405">
+2</A>
+</LI>
+<LI CLASS="bullet">
+<A NAME="pgfId=176">
+ </A>
+This is a new code that is likely to have some bugs.  Proceed with caution.</LI>
+<LI CLASS="bullet">
+<A NAME="pgfId=178">
+ </A>
+<EM CLASS="Italic">
+EXOSYM</EM>
+ appends its program name and QA string to the QA records in the output EXODUS file.<A HREF="#footnote=406">
+3</A>
+ </LI>
+</UL>
+<P CLASS="Minor">
+<A NAME="pgfId=174">
+ </A>
+Example:</P>
+<P CLASS="Body1">
+<A NAME="pgfId=177">
+ </A>
+The following figure shows the result of a simple execution of <EM CLASS="Italic">
+EXOSYM</EM>
+. The input mesh is simply a 27-element cube in octant 5.  The command line used to create the output mesh is: <EM CLASS="computer">
+exosym -transform=0101X010 input.g output.g</EM>
+</P>
+<P CLASS="Body">
+<A NAME="pgfId=179">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=180">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=181">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=182">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=183">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=184">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=185">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=186">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=187">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=188">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=189">
+ </A>
+&nbsp;</P>
+<P CLASS="Body">
+<A NAME="pgfId=190">
+ </A>
+&nbsp;</P>
+<P CLASS="Minor">
+<A NAME="pgfId=191">
+ </A>
+<BR>
+References</P>
+<P CLASS="Reference">
+<A NAME="pgfId=193">
+ </A>
+[1] 	W. C. Mills-Curran, A. P. Gilkey, and D. P. Flanagan, &quot;EXODUS: A Finite Element File Format for Pre- and Post-processing,&quot; SAND87-2977, Sandia National Laboratories, Albuquerque, NM, September 1988.</P>
+<P CLASS="Reference">
+<A NAME="pgfId=194">
+ </A>
+[2] 	G. D. Sjaardema, &quot;Overview of the Sandia National Laboratories Engineering Analysis Code Access System,&quot; SAND92-2292, Sandia National Laboratories, Albuquerque, NM, January 1993.</P>
+<P CLASS="Minor">
+<A NAME="pgfId=192">
+ </A>
+Distribution:<TABLE>
+<CAPTION>
+</CAPTION>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=195">
+ </A>
+13</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=196">
+ </A>
+1425</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=197">
+ </A>
+J. H. Biffle &amp; staff</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=198">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=199">
+ </A>
+1431</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=200">
+ </A>
+J. M. McGlaun</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=201">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=202">
+ </A>
+1431</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=203">
+ </A>
+K. G. Budge</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=204">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=205">
+ </A>
+1431</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=206">
+ </A>
+J. S. Peery</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=207">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=208">
+ </A>
+1432</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=209">
+ </A>
+W. T. Brown</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=210">
+ </A>
+15</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=211">
+ </A>
+1434</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=212">
+ </A>
+D. R. Martinez &amp; staff</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=213">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=214">
+ </A>
+1500</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=215">
+ </A>
+D. J. McCloskey</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=216">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=217">
+ </A>
+1501</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=218">
+ </A>
+C. W. Peterson</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=219">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=220">
+ </A>
+1502</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=221">
+ </A>
+P. J. Hommert</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=222">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=223">
+ </A>
+1503</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=224">
+ </A>
+L. W. Davison</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=225">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=226">
+ </A>
+1511</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=227">
+ </A>
+J. S. Rottler</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=228">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=229">
+ </A>
+1511</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=230">
+ </A>
+D. K. Gartling</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=231">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=232">
+ </A>
+1511</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=233">
+ </A>
+M. W. Glass</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=234">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=235">
+ </A>
+1511</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=236">
+ </A>
+P. L. Hopkins</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=237">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=238">
+ </A>
+1511</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=239">
+ </A>
+M. J. Martinez</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=240">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=241">
+ </A>
+1511</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=242">
+ </A>
+P. A. Sackinger</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=243">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=244">
+ </A>
+1511</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=245">
+ </A>
+P. R. Schunk</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=246">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=247">
+ </A>
+1512</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=248">
+ </A>
+A. C. Ratzel</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=249">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=250">
+ </A>
+1513</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=251">
+ </A>
+R. D. Skocypec</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=252">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=253">
+ </A>
+1513</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=254">
+ </A>
+R. G. Baca</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=255">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=256">
+ </A>
+1513</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=257">
+ </A>
+B. L. Bainbridge</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=258">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=259">
+ </A>
+1513</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=260">
+ </A>
+R. E. Hogan, Jr.</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=261">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=262">
+ </A>
+1513</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=263">
+ </A>
+J. L. Moya</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=264">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=265">
+ </A>
+1551</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=266">
+ </A>
+W. P. Wolfe</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=267">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=268">
+ </A>
+1552</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=269">
+ </A>
+C. E. Hailey</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=270">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=271">
+ </A>
+1553</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=272">
+ </A>
+W. L. Hermina</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=273">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=274">
+ </A>
+1554</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=275">
+ </A>
+W. H. Rutledge</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=276">
+ </A>
+15</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=277">
+ </A>
+1561</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=278">
+ </A>
+H. S. Morgan &amp; staff</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=279">
+ </A>
+13</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=280">
+ </A>
+1562</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=281">
+ </A>
+R. K. Thomas &amp; staff</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=282">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=283">
+ </A>
+1562</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=284">
+ </A>
+G. D. Sjaardema</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=285">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=286">
+ </A>
+2565</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=287">
+ </A>
+S. T. Montgomery</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=288">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=289">
+ </A>
+6313</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=290">
+ </A>
+J. Jung</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=291">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=292">
+ </A>
+6411</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=293">
+ </A>
+A. S. Benjamin</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=294">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=295">
+ </A>
+6522</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=296">
+ </A>
+J. D. Miller</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=297">
+ </A>
+6</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=298">
+ </A>
+8741</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=299">
+ </A>
+G. A. Benedetti &amp; staff</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=300">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=301">
+ </A>
+8742</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=302">
+ </A>
+M. R. Birnbaum</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=303">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=304">
+ </A>
+8742</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=305">
+ </A>
+J. J. Dike</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=306">
+ </A>
+1</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=307">
+ </A>
+8742</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=308">
+ </A>
+L. I. Weingarten</P>
+</TD>
+</TR>
+<TR>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="Cell-Number">
+<A NAME="pgfId=309">
+ </A>
+5</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=310">
+ </A>
+8743</P>
+</TD>
+<TD ROWSPAN="1" COLSPAN="1">
+<P CLASS="CellBody">
+<A NAME="pgfId=311">
+ </A>
+M. L. Callabresi &amp; staff</P>
+</TD>
+</TR>
+</TABLE>
+</P>
+</DIV>
+<HR>
+<A NAME="footnote=404">
+1 </A>
+<P CLASS="Footnote">
+<A NAME="pgfId=168">
+ </A>
+The BLOT view command can be used to do a similar function for two-dimensional exodus files.</P>
+<A NAME="footnote=405">
+2 </A>
+<P CLASS="Footnote">
+<A NAME="pgfId=173">
+ </A>
+This capability will be added to the next version if there is sufficient need. I have the method for implementing this designed.</P>
+<A NAME="footnote=406">
+3 </A>
+<P CLASS="Footnote">
+<A NAME="pgfId=175">
+ </A>
+ This is a limitation only if you are trying to impress someone with the size of the calculation you performed since they will be able to see that EXOSYM did something to the mesh.</P>
+</BODY>
+</HTML>

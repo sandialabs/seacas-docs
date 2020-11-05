@@ -1,0 +1,78 @@
+\section{Slapdown of a Nuclear Fuel Cask}
+
+Using the results derived in the previous section, the velocity ratio
+for slapdown of a sample cask can be estimated.  The dimensions and
+mass quantities required to evaluate the quantities needed in
+Equation~\eref{eq:vrv0} are shown in Figure 2.  If the cask is dropped at
+an orientation such that the bottom end impacts first (Figure 3a.), the
+product $\beta_L\beta_R$ is approximately equal to 1 which indicates
+that the secondary impact will occur at approximately the initial
+vertical velocity of the cask.  The velocity predicted by
+Equation~\eref{eq:vrv0} for this orientation is 
+\begin{displaymath}
+0.998 = \frac{v_R}{v_0} = -1 + \frac{2\times1.412(1.412+0.7057)}{1+1.412^2}
+\end{displaymath}
+If the cask is dropped at a near horizontal impact angle (Figure 3b.)
+such that the top end of the cask hits first, the predicted velocity
+ratio is 
+\begin{displaymath}
+0.995 = \frac{v_R}{v_0} = -1 + \frac{2\times0.7057(0.7057+1.412)}{1+0.7057^2}
+\end{displaymath}
+
+These velocity ratios will be closer to unity if the actual nonlinear
+force-displacement behavior of the cask is used. 
+
+If the cask is dropped at a slapdown orientation where the top of the
+cask impacts at a point such that the quantity $\beta_L\geq 0.708$, then
+the velocity ratio will be greater than unity.  The maximum possible
+value of $\beta_L$ is approximately 1.4 corresponding to a drop where
+the center of mass is almost directly over the initial impact point. The
+results obtained for several values of $\beta_L$ from 0.706 to 1.20 are
+shown in Table 1.  For larger values of $\beta_L$, the impact velocity
+decreases since the moment arm between the center of mass and the impact
+point is reduced.  This is illustrated in Figure 4. These results were
+obtained assuming a linear elastic force-displacement behavior since the
+actual behavior is not known. This will provide a conservative estimate
+of the impact velocity since there will be considerable plastic
+deformation of the protective dome and head of the cask which will
+dissipate energy.  The difference between the \SLAP\ results and the
+Equation~\eref{eq:vrv0} results are due to the assumptions in the
+analytical equation that $\cos\theta\approx 1$ and that the moment arm
+between the center of mass and the impact point is constant. 
+
+\begin{table}[p]
+\caption{Analysis of Slapdown Velocity for Sample Cask, Top Impacts First}
+\begin{center}
+\begin{tabular}{||r|r|r|r|r|r|r|r||}\hline\hline
+$\beta_L$&$l_L$&$R_L$&$\theta_0$&$v_R$&$[v_R/v_0]_C$&$[v_R/v_0]_P$&
+       $y_{max}$ \\ \hline
+0.71  &  44.2  &  63.0  &   0.00  &  519.2 &  0.98  &  1.00  &  1.65  \\
+1.07  &  67.2  &  63.0  &  -0.01  &  777.9 &  1.47  &  1.48  &  1.37  \\
+1.09  &  68.0  &  63.0  &  -2.26  &  765.3 &  1.45  &  1.49  &  1.39  \\
+1.12  &  70.0  &  62.8  &  -7.55  &  719.3 &  1.36  &  1.52  &  1.44  \\
+1.20  &  75.0  &  61.7  & -20.06  &  519.4 &  0.99  &  1.57  &  1.58  \\
+\hline\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{minipage}{115mm} 
+Where $R_L$ is the radius of the body at the initial impact point,
+$\theta_0$ is the angle at which the body must impact the rigid surface
+to cause the impact point to be at a distance $l_L$ from the center of
+mass, $y_{max}$ is the maximum displacement at the left end, and
+$[v_R/v_0]_C$ and $[v_R/v_0]_P$ designate the velocity ratios calculated
+by \SLAP\ and predicted by Equation~\eref{eq:vrv0}, respectively.  The
+initial vertical velocity $v_0$ is 527.5 inches per second corresponding
+to a drop from a height of 30 feet. 
+\end{minipage} 
+\end{center}
+\end{table} 
+
+These results indicate that the maximum secondary impact velocity for a
+slapdown orientation where the top of the cask initially impacts the
+rigid surface is obtained when the body is dropped at an initial angle
+slightly less than horizontal such that the cask impacts on the lip of
+the protective dome. These results were obtained assuming a linear
+elastic force-displacement behavior which overestimates the impact
+velocity. 
