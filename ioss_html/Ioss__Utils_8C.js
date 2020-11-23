@@ -11,6 +11,7 @@ var Ioss__Utils_8C =
     [ "match", "Ioss__Utils_8C.html#aa93bd21290aa0e8e6aa48257c121f35c", null ],
     [ "match_composite_field", "Ioss__Utils_8C.html#afd4496219bca708ffc5eacc17f33694e", null ],
     [ "match_single_field", "Ioss__Utils_8C.html#ac0bebaf1f1a06a8af4e681f6355246e3", null ],
+    [ "output_boundary_sideset", "Ioss__Utils_8C.html#a86d7aa817e7aa7942a771f12e999c798", null ],
     [ "set_owned_node_count", "Ioss__Utils_8C.html#a5b691dee5492d852305fa35deba55034", null ],
     [ "show_step", "Ioss__Utils_8C.html#a8f83ed6e91bc6aac9c398f33a4b0b6ac", null ],
     [ "transfer_assemblies", "Ioss__Utils_8C.html#a58a63f4f4cf189e5840445278da4a4ef", null ],

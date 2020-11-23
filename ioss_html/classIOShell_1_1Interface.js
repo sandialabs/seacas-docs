@@ -7,6 +7,7 @@ var classIOShell_1_1Interface =
     [ "add_processor_id_field", "classIOShell_1_1Interface.html#ae437523a13f49ee960e451f9d932f761", null ],
     [ "append_step", "classIOShell_1_1Interface.html#affeb223fb335f2b1d8aa9560e7ede37a", null ],
     [ "append_time", "classIOShell_1_1Interface.html#ac2e198f4889ee580ae0515615c062e34", null ],
+    [ "boundary_sideset", "classIOShell_1_1Interface.html#a5646395613fb437e1b698a423c81b4d2", null ],
     [ "compose_output", "classIOShell_1_1Interface.html#a0bebac52793526e98227e21ae44a0c14", null ],
     [ "compression_level", "classIOShell_1_1Interface.html#a9485b29e8885ea8d21fbec90569b0b5c", null ],
     [ "data_storage_type", "classIOShell_1_1Interface.html#ad4030d7390f503e14fea0baae7a41bdb", null ],
