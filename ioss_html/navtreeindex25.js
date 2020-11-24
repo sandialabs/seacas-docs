@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"classScopeGuardImpl0.html":[4,0,99],
 "classScopeGuardImpl0.html#a3cb5a537b9b12b7e2016568893de063f":[4,0,99,1],
 "classScopeGuardImpl0.html#a3ed91c8e48b841c914fceaff09cb591b":[4,0,99,2],
 "classScopeGuardImpl0.html#a4afe9530fdaafed1af655aac1b48f54c":[4,0,99,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "classglob_1_1Lexer.html#a7aa0b06c1feac94bd4ad77d361152610":[4,0,75,12,4],
 "classglob_1_1Lexer.html#a925b136177eccbf653f9f01ee6d45924":[4,0,75,12,8],
 "classglob_1_1Lexer.html#a9fe628d01121c34f105c7fc1f8a9fb0b":[4,0,75,12,6],
-"classglob_1_1Lexer.html#ab6fd82707fc8a64dbe89ba2510f58e4b":[4,0,75,12,1],
-"classglob_1_1Lexer.html#af8a8f4418c41c6a709c8852e84feb38c":[4,0,75,12,9]
+"classglob_1_1Lexer.html#ab6fd82707fc8a64dbe89ba2510f58e4b":[4,0,75,12,1]
 };
