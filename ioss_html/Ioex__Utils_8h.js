@@ -1,10 +1,13 @@
 var Ioex__Utils_8h =
 [
-    [ "TopologyMapCompare", "structIoex_1_1TopologyMapCompare.html", "structIoex_1_1TopologyMapCompare" ],
+    [ "NameTopoKeyCompare", "structIoex_1_1NameTopoKeyCompare.html", "structIoex_1_1NameTopoKeyCompare" ],
+    [ "NameTopoKeyHash", "structIoex_1_1NameTopoKeyHash.html", "structIoex_1_1NameTopoKeyHash" ],
+    [ "EXU_USE_HOPSCOTCH", "Ioex__Utils_8h.html#a8ce267dc1abb8699b36a97425844ece4", null ],
     [ "CoordinateFrameContainer", "Ioex__Utils_8h.html#abf77dade63ce8a4c5cc7af4edea743e9", null ],
+    [ "NameTopoKey", "Ioex__Utils_8h.html#a9e954bc42cea8ce26bfc3881c5da0956", null ],
     [ "SideSetMap", "Ioex__Utils_8h.html#a8ae257784bdfb29603849073259d3098", null ],
     [ "SideSetSet", "Ioex__Utils_8h.html#ac38f7495daa7d3afa4efa4b68561f000", null ],
-    [ "TopologyMap", "Ioex__Utils_8h.html#a0f8c852510f839929e8bd9e9a40b9f36", null ],
+    [ "TopologyMap", "Ioex__Utils_8h.html#a097b68cd900dfefd170c572b7b1d9b6d", null ],
     [ "add_coordinate_frames", "Ioex__Utils_8h.html#a9fda3202405f64b7dd22121e77cbedf0", null ],
     [ "add_map_fields", "Ioex__Utils_8h.html#a831b92f5ced06b2f4f1e98f5ce6e8b95", null ],
     [ "check_processor_info", "Ioex__Utils_8h.html#abf3f04de406da6dea14a72db3b2a0a73", null ],

@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classtsl_1_1robin__set.html',''); init
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -99,8 +100,7 @@ $(document).ready(function(){initNavTree('classtsl_1_1robin__set.html',''); init
 <div class="dynheader">
 Collaboration diagram for tsl::robin_set&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classtsl_1_1robin__set__coll__graph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classtsl_1_1robin__set__coll__graph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -124,13 +124,13 @@ Public Types</h2></td></tr>
 <tr class="separator:a87a4c66bea6d2374a4e672a07dab9cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3df0f3c733fcc6a57eb1a4f8e5cd1e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#ac3df0f3c733fcc6a57eb1a4f8e5cd1e2">allocator_type</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#aeda2cef10fe15ff7953e6aa0433ada6a">ht::allocator_type</a></td></tr>
 <tr class="separator:ac3df0f3c733fcc6a57eb1a4f8e5cd1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73d6e0f76008ad68612fb31b2199f13b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a73d6e0f76008ad68612fb31b2199f13b">reference</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a3d9b970184ac5f9344ceb9c3226a5f78">ht::reference</a></td></tr>
+<tr class="memitem:a73d6e0f76008ad68612fb31b2199f13b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a73d6e0f76008ad68612fb31b2199f13b">reference</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a3ea7411cc9c577ff7e3173376507f8f6">ht::reference</a></td></tr>
 <tr class="separator:a73d6e0f76008ad68612fb31b2199f13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3059ef3803dcf3bf450ee3f0f8baef5a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a3059ef3803dcf3bf450ee3f0f8baef5a">const_reference</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a7423ed6abbd5d0cb8f776617daa60e1a">ht::const_reference</a></td></tr>
+<tr class="memitem:a3059ef3803dcf3bf450ee3f0f8baef5a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a3059ef3803dcf3bf450ee3f0f8baef5a">const_reference</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a60a745268c4df3b28ef154fe0949d0f6">ht::const_reference</a></td></tr>
 <tr class="separator:a3059ef3803dcf3bf450ee3f0f8baef5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a141684c4bc5ec83649a2864ab5dcd461"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a141684c4bc5ec83649a2864ab5dcd461">pointer</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a3ae611dacdc5aa83c3b691c9df9c0e59">ht::pointer</a></td></tr>
+<tr class="memitem:a141684c4bc5ec83649a2864ab5dcd461"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a141684c4bc5ec83649a2864ab5dcd461">pointer</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a1b80d1395ecf1d9c06b6585030eb962f">ht::pointer</a></td></tr>
 <tr class="separator:a141684c4bc5ec83649a2864ab5dcd461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb4e88e615e8086808a6d90315c5dbbe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#abb4e88e615e8086808a6d90315c5dbbe">const_pointer</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0d1686725ed315fe2b2d1bf687b2f1fe">ht::const_pointer</a></td></tr>
+<tr class="memitem:abb4e88e615e8086808a6d90315c5dbbe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#abb4e88e615e8086808a6d90315c5dbbe">const_pointer</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#adf7f923f717c88e6e394dc7e32eb7d1d">ht::const_pointer</a></td></tr>
 <tr class="separator:abb4e88e615e8086808a6d90315c5dbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f039d680a15fc92ea579474f13c19bc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a7f039d680a15fc92ea579474f13c19bc">iterator</a> = typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a72c542e1ad48127eb9d7bf2cd52471e2">ht::iterator</a></td></tr>
 <tr class="separator:a7f039d680a15fc92ea579474f13c19bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,29 +141,29 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a6ae574115f854d5e36587245ccfc6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a3a6ae574115f854d5e36587245ccfc6e">robin_set</a> ()</td></tr>
 <tr class="separator:a3a6ae574115f854d5e36587245ccfc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5c5935d304b08af3dc5fa0e6782e24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a4c5c5935d304b08af3dc5fa0e6782e24">robin_set</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> my_bucket_count, const Hash &amp;hash=Hash(), const KeyEqual &amp;equal=KeyEqual(), const Allocator &amp;alloc=Allocator())</td></tr>
-<tr class="separator:a4c5c5935d304b08af3dc5fa0e6782e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7c53f296165da050d904346ff24b881"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#af7c53f296165da050d904346ff24b881">robin_set</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> my_bucket_count, const Allocator &amp;alloc)</td></tr>
-<tr class="separator:af7c53f296165da050d904346ff24b881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62e93407538083cf7d971ba0156ca765"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a62e93407538083cf7d971ba0156ca765">robin_set</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> my_bucket_count, const Hash &amp;hash, const Allocator &amp;alloc)</td></tr>
-<tr class="separator:a62e93407538083cf7d971ba0156ca765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2244e9c1cdd44e4ff52ea6f77c8ac4c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a2244e9c1cdd44e4ff52ea6f77c8ac4c8">robin_set</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a91f7299125dad4881cf1fc8a313cbee7">bucket_count</a>, const Hash &amp;hash=Hash(), const KeyEqual &amp;equal=KeyEqual(), const Allocator &amp;alloc=Allocator())</td></tr>
+<tr class="separator:a2244e9c1cdd44e4ff52ea6f77c8ac4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2f02ec405d886bf740d6812a232a25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#aaf2f02ec405d886bf740d6812a232a25">robin_set</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a91f7299125dad4881cf1fc8a313cbee7">bucket_count</a>, const Allocator &amp;alloc)</td></tr>
+<tr class="separator:aaf2f02ec405d886bf740d6812a232a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ce804ce882c7b6ad99fbe342cba2bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a64ce804ce882c7b6ad99fbe342cba2bf">robin_set</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a91f7299125dad4881cf1fc8a313cbee7">bucket_count</a>, const Hash &amp;hash, const Allocator &amp;alloc)</td></tr>
+<tr class="separator:a64ce804ce882c7b6ad99fbe342cba2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc606f1ab1714de40574640d8ab4b45e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#acc606f1ab1714de40574640d8ab4b45e">robin_set</a> (const Allocator &amp;alloc)</td></tr>
 <tr class="separator:acc606f1ab1714de40574640d8ab4b45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf509d4019428149b415ba4b56da6e63"><td class="memTemplParams" colspan="2">template&lt;class InputIt &gt; </td></tr>
-<tr class="memitem:abf509d4019428149b415ba4b56da6e63"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#abf509d4019428149b415ba4b56da6e63">robin_set</a> (InputIt first, InputIt last, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> my_bucket_count=<a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0603fdd5f8077d7a47cd94f9f9c1659f">ht::DEFAULT_INIT_BUCKETS_SIZE</a>, const Hash &amp;hash=Hash(), const KeyEqual &amp;equal=KeyEqual(), const Allocator &amp;alloc=Allocator())</td></tr>
-<tr class="separator:abf509d4019428149b415ba4b56da6e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2ab0f65774c51deb73a57802f95cbe"><td class="memTemplParams" colspan="2">template&lt;class InputIt &gt; </td></tr>
-<tr class="memitem:abe2ab0f65774c51deb73a57802f95cbe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#abe2ab0f65774c51deb73a57802f95cbe">robin_set</a> (InputIt first, InputIt last, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> my_bucket_count, const Allocator &amp;alloc)</td></tr>
-<tr class="separator:abe2ab0f65774c51deb73a57802f95cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46e10bdfea1100eff0c17a5683857f9d"><td class="memTemplParams" colspan="2">template&lt;class InputIt &gt; </td></tr>
-<tr class="memitem:a46e10bdfea1100eff0c17a5683857f9d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a46e10bdfea1100eff0c17a5683857f9d">robin_set</a> (InputIt first, InputIt last, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> my_bucket_count, const Hash &amp;hash, const Allocator &amp;alloc)</td></tr>
-<tr class="separator:a46e10bdfea1100eff0c17a5683857f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1217c9e5efe5d27ce104de73661f3340"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a1217c9e5efe5d27ce104de73661f3340">robin_set</a> (std::initializer_list&lt; <a class="el" href="classtsl_1_1robin__set.html#a725215ee4af265be5e8b34278378fd33">value_type</a> &gt; init, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> my_bucket_count=<a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0603fdd5f8077d7a47cd94f9f9c1659f">ht::DEFAULT_INIT_BUCKETS_SIZE</a>, const Hash &amp;hash=Hash(), const KeyEqual &amp;equal=KeyEqual(), const Allocator &amp;alloc=Allocator())</td></tr>
-<tr class="separator:a1217c9e5efe5d27ce104de73661f3340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7892c55f7da51a447b3d39eaa926a57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#ab7892c55f7da51a447b3d39eaa926a57">robin_set</a> (std::initializer_list&lt; <a class="el" href="classtsl_1_1robin__set.html#a725215ee4af265be5e8b34278378fd33">value_type</a> &gt; init, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> my_bucket_count, const Allocator &amp;alloc)</td></tr>
-<tr class="separator:ab7892c55f7da51a447b3d39eaa926a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b337e43ab276416d9582f60243be073"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a8b337e43ab276416d9582f60243be073">robin_set</a> (std::initializer_list&lt; <a class="el" href="classtsl_1_1robin__set.html#a725215ee4af265be5e8b34278378fd33">value_type</a> &gt; init, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> my_bucket_count, const Hash &amp;hash, const Allocator &amp;alloc)</td></tr>
-<tr class="separator:a8b337e43ab276416d9582f60243be073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f2ffb33b7fa2a855ee6fc742b8840e"><td class="memTemplParams" colspan="2">template&lt;class InputIt &gt; </td></tr>
+<tr class="memitem:ad5f2ffb33b7fa2a855ee6fc742b8840e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#ad5f2ffb33b7fa2a855ee6fc742b8840e">robin_set</a> (InputIt first, InputIt last, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a91f7299125dad4881cf1fc8a313cbee7">bucket_count</a>=<a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0603fdd5f8077d7a47cd94f9f9c1659f">ht::DEFAULT_INIT_BUCKETS_SIZE</a>, const Hash &amp;hash=Hash(), const KeyEqual &amp;equal=KeyEqual(), const Allocator &amp;alloc=Allocator())</td></tr>
+<tr class="separator:ad5f2ffb33b7fa2a855ee6fc742b8840e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f4783d8f4573141c52f9a6e91c6d23"><td class="memTemplParams" colspan="2">template&lt;class InputIt &gt; </td></tr>
+<tr class="memitem:a05f4783d8f4573141c52f9a6e91c6d23"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a05f4783d8f4573141c52f9a6e91c6d23">robin_set</a> (InputIt first, InputIt last, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a91f7299125dad4881cf1fc8a313cbee7">bucket_count</a>, const Allocator &amp;alloc)</td></tr>
+<tr class="separator:a05f4783d8f4573141c52f9a6e91c6d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a602130e216f8e8ee1da2d1dc359298cb"><td class="memTemplParams" colspan="2">template&lt;class InputIt &gt; </td></tr>
+<tr class="memitem:a602130e216f8e8ee1da2d1dc359298cb"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a602130e216f8e8ee1da2d1dc359298cb">robin_set</a> (InputIt first, InputIt last, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a91f7299125dad4881cf1fc8a313cbee7">bucket_count</a>, const Hash &amp;hash, const Allocator &amp;alloc)</td></tr>
+<tr class="separator:a602130e216f8e8ee1da2d1dc359298cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab296424a8ac50583c5b6121d39e51c44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#ab296424a8ac50583c5b6121d39e51c44">robin_set</a> (std::initializer_list&lt; <a class="el" href="classtsl_1_1robin__set.html#a725215ee4af265be5e8b34278378fd33">value_type</a> &gt; init, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a91f7299125dad4881cf1fc8a313cbee7">bucket_count</a>=<a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0603fdd5f8077d7a47cd94f9f9c1659f">ht::DEFAULT_INIT_BUCKETS_SIZE</a>, const Hash &amp;hash=Hash(), const KeyEqual &amp;equal=KeyEqual(), const Allocator &amp;alloc=Allocator())</td></tr>
+<tr class="separator:ab296424a8ac50583c5b6121d39e51c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ddaae9e5764f679d41c298f95e9c5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a27ddaae9e5764f679d41c298f95e9c5a">robin_set</a> (std::initializer_list&lt; <a class="el" href="classtsl_1_1robin__set.html#a725215ee4af265be5e8b34278378fd33">value_type</a> &gt; init, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a91f7299125dad4881cf1fc8a313cbee7">bucket_count</a>, const Allocator &amp;alloc)</td></tr>
+<tr class="separator:a27ddaae9e5764f679d41c298f95e9c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece3c79d29353620376c0cb7dca59d4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#aece3c79d29353620376c0cb7dca59d4a">robin_set</a> (std::initializer_list&lt; <a class="el" href="classtsl_1_1robin__set.html#a725215ee4af265be5e8b34278378fd33">value_type</a> &gt; init, <a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a91f7299125dad4881cf1fc8a313cbee7">bucket_count</a>, const Hash &amp;hash, const Allocator &amp;alloc)</td></tr>
+<tr class="separator:aece3c79d29353620376c0cb7dca59d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae312ab98399e06c3340f40bd78fdd0b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1robin__set.html">robin_set</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#ae312ab98399e06c3340f40bd78fdd0b5">operator=</a> (std::initializer_list&lt; <a class="el" href="classtsl_1_1robin__set.html#a725215ee4af265be5e8b34278378fd33">value_type</a> &gt; ilist)</td></tr>
 <tr class="separator:ae312ab98399e06c3340f40bd78fdd0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6d53ce36f50c1d755afd82e37e6e17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1robin__set.html#ac3df0f3c733fcc6a57eb1a4f8e5cd1e2">allocator_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#aaf6d53ce36f50c1d755afd82e37e6e17">get_allocator</a> () const</td></tr>
@@ -255,6 +255,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22f4c432414bf50d914f382e4965a018"><td class="memTemplParams" colspan="2">template&lt;class K , class KE  = KeyEqual, typename std::enable_if&lt; has_is_transparent&lt; KE &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
 <tr class="memitem:a22f4c432414bf50d914f382e4965a018"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1robin__set.html#a60989fb703380eafcf4f952028045189">const_iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a22f4c432414bf50d914f382e4965a018">find</a> (const K &amp;key, std::size_t precalculated_hash) const</td></tr>
 <tr class="separator:a22f4c432414bf50d914f382e4965a018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ce9304b7ebbb92b2b8ae961f3d89bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#ae9ce9304b7ebbb92b2b8ae961f3d89bf">contains</a> (const Key &amp;key) const</td></tr>
+<tr class="separator:ae9ce9304b7ebbb92b2b8ae961f3d89bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd4d95859060848234156f4d649acd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#adbd4d95859060848234156f4d649acd8">contains</a> (const Key &amp;key, std::size_t precalculated_hash) const</td></tr>
+<tr class="separator:adbd4d95859060848234156f4d649acd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71372dea154b9ab713a27aa52552439"><td class="memTemplParams" colspan="2">template&lt;class K , class KE  = KeyEqual, typename std::enable_if&lt; has_is_transparent&lt; KE &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
+<tr class="memitem:aa71372dea154b9ab713a27aa52552439"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#aa71372dea154b9ab713a27aa52552439">contains</a> (const K &amp;key) const</td></tr>
+<tr class="separator:aa71372dea154b9ab713a27aa52552439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef184b7334d440fb7ff915205bfbfb34"><td class="memTemplParams" colspan="2">template&lt;class K , class KE  = KeyEqual, typename std::enable_if&lt; has_is_transparent&lt; KE &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
+<tr class="memitem:aef184b7334d440fb7ff915205bfbfb34"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#aef184b7334d440fb7ff915205bfbfb34">contains</a> (const K &amp;key, std::size_t precalculated_hash) const</td></tr>
+<tr class="separator:aef184b7334d440fb7ff915205bfbfb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca20230c0c5d01285751024a4b798af"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtsl_1_1robin__set.html#a7f039d680a15fc92ea579474f13c19bc">iterator</a>, <a class="el" href="classtsl_1_1robin__set.html#a7f039d680a15fc92ea579474f13c19bc">iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a9ca20230c0c5d01285751024a4b798af">equal_range</a> (const Key &amp;key)</td></tr>
 <tr class="separator:a9ca20230c0c5d01285751024a4b798af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c863ebce6a1bc4c2ad69e67f1331661"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtsl_1_1robin__set.html#a7f039d680a15fc92ea579474f13c19bc">iterator</a>, <a class="el" href="classtsl_1_1robin__set.html#a7f039d680a15fc92ea579474f13c19bc">iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a1c863ebce6a1bc4c2ad69e67f1331661">equal_range</a> (const Key &amp;key, std::size_t precalculated_hash)</td></tr>
@@ -289,16 +299,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a57104ad0c718dcf4a3d94fb94e8cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ecaa65ec84bf3b33aecc891ece46b6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a3ecaa65ec84bf3b33aecc891ece46b6a">max_load_factor</a> (float ml)</td></tr>
 <tr class="separator:a3ecaa65ec84bf3b33aecc891ece46b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa7f8ff6459d0b534e1c25eda1c0ff5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#aaa7f8ff6459d0b534e1c25eda1c0ff5d">rehash</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> new_count)</td></tr>
-<tr class="separator:aaa7f8ff6459d0b534e1c25eda1c0ff5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a541870ca69d47d3ffbff499d1742382c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a541870ca69d47d3ffbff499d1742382c">reserve</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> new_count)</td></tr>
-<tr class="separator:a541870ca69d47d3ffbff499d1742382c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299dc10b59d8fea28916790b3e8c0bdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a299dc10b59d8fea28916790b3e8c0bdb">rehash</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a10b45514e20f2916a386d62fb3adc2ae">count</a>)</td></tr>
+<tr class="separator:a299dc10b59d8fea28916790b3e8c0bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d16e96e07b5618cd330b801b822398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#ac7d16e96e07b5618cd330b801b822398">reserve</a> (<a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a> <a class="el" href="classtsl_1_1robin__set.html#a10b45514e20f2916a386d62fb3adc2ae">count</a>)</td></tr>
+<tr class="separator:ac7d16e96e07b5618cd330b801b822398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87c41abcb19a1442b4038db6edeeec3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1robin__set.html#a2f7364634a24fc8621e75a786a3b8eb3">hasher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#af87c41abcb19a1442b4038db6edeeec3">hash_function</a> () const</td></tr>
 <tr class="separator:af87c41abcb19a1442b4038db6edeeec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7734224edf25d5342a490f22560a9a04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1robin__set.html#a87a4c66bea6d2374a4e672a07dab9cc6">key_equal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a7734224edf25d5342a490f22560a9a04">key_eq</a> () const</td></tr>
 <tr class="separator:a7734224edf25d5342a490f22560a9a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd376e4762e1e4091df9cc19917334e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1robin__set.html#a7f039d680a15fc92ea579474f13c19bc">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#aebd376e4762e1e4091df9cc19917334e">mutable_iterator</a> (<a class="el" href="classtsl_1_1robin__set.html#a60989fb703380eafcf4f952028045189">const_iterator</a> pos)</td></tr>
 <tr class="separator:aebd376e4762e1e4091df9cc19917334e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43927c1d1877053c92ddfd0174e4be35"><td class="memTemplParams" colspan="2">template&lt;class Serializer &gt; </td></tr>
+<tr class="memitem:a43927c1d1877053c92ddfd0174e4be35"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#a43927c1d1877053c92ddfd0174e4be35">serialize</a> (Serializer &amp;serializer) const</td></tr>
+<tr class="separator:a43927c1d1877053c92ddfd0174e4be35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aff0c7adeb3a9b6b0fd208dc434f8f7f3"><td class="memTemplParams" colspan="2">template&lt;class Deserializer &gt; </td></tr>
+<tr class="memitem:aff0c7adeb3a9b6b0fd208dc434f8f7f3"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classtsl_1_1robin__set.html">robin_set</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1robin__set.html#aff0c7adeb3a9b6b0fd208dc434f8f7f3">deserialize</a> (Deserializer &amp;deserializer, bool hash_compatible=false)</td></tr>
+<tr class="separator:aff0c7adeb3a9b6b0fd208dc434f8f7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -326,7 +345,7 @@ Friends</h2></td></tr>
 <div class="textblock"><h3>template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class KeyEqual = std::equal_to&lt;Key&gt;, class Allocator = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt;<br />
 class tsl::robin_set&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;</h3>
 
-<p>Implementation of a hash set using open-adressing and the robin hood hashing algorithm with backward shift deletion.</p>
+<p>Implementation of a hash set using open-addressing and the robin hood hashing algorithm with backward shift deletion.</p>
 <p>For operations modifying the hash set (insert, erase, rehash, ...), the strong exception guarantee is only guaranteed when the expression <code>std::is_nothrow_swappable&lt;Key&gt;\:\:value &amp;&amp; std::is_nothrow_move_constructible&lt;Key&gt;\:\:value</code> is true, otherwise if an exception is thrown during the swap or the move, the hash set may end up in a undefined state. Per the standard a <code>Key</code> with a noexcept copy constructor and no move constructor also satisfies the <code>std::is_nothrow_move_constructible&lt;Key&gt;\:\:value</code> criterion (and will thus guarantee the strong exception for the set).</p>
 <p>When <code>StoreHash</code> is true, 32 bits of the hash are stored alongside the values. It can improve the performance during lookups if the <code>KeyEqual</code> function takes time (or engenders a cache-miss for example) as we then compare the stored hashes before comparing the keys. When <code><a class="el" href="classtsl_1_1rh_1_1power__of__two__growth__policy.html">tsl::rh::power_of_two_growth_policy</a></code> is used as <code>GrowthPolicy</code>, it may also speed-up the rehash process as we can avoid to recalculate the hash. When it is detected that storing the hash will not incur any memory penalty due to alignment (i.e. <code>sizeof(<a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a>&lt;ValueType, true&gt;) == sizeof(<a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a>&lt;ValueType, false&gt;)</code>) and <code><a class="el" href="classtsl_1_1rh_1_1power__of__two__growth__policy.html">tsl::rh::power_of_two_growth_policy</a></code> is used, the hash will be stored even if <code>StoreHash</code> is false so that we can speed-up the rehash (but it will not be used on lookups unless <code>StoreHash</code> is true).</p>
 <p><code>GrowthPolicy</code> defines how the set grows and consequently how a hash value is mapped to a bucket. By default the set uses <code><a class="el" href="classtsl_1_1rh_1_1power__of__two__growth__policy.html">tsl::rh::power_of_two_growth_policy</a></code>. This policy keeps the number of buckets to a power of two and uses a mask to set the hash to a bucket instead of the slow modulo. Other growth policies are available and you may define your own growth policy, check <code><a class="el" href="classtsl_1_1rh_1_1power__of__two__growth__policy.html">tsl::rh::power_of_two_growth_policy</a></code> for the interface.</p>
@@ -380,7 +399,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html#abb4e88e615e8086808a6d90315c5dbbe">const_pointer</a> =  typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0d1686725ed315fe2b2d1bf687b2f1fe">ht::const_pointer</a></td>
+          <td class="memname">using <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html#abb4e88e615e8086808a6d90315c5dbbe">const_pointer</a> =  typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#adf7f923f717c88e6e394dc7e32eb7d1d">ht::const_pointer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -396,7 +415,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html#a3059ef3803dcf3bf450ee3f0f8baef5a">const_reference</a> =  typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a7423ed6abbd5d0cb8f776617daa60e1a">ht::const_reference</a></td>
+          <td class="memname">using <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html#a3059ef3803dcf3bf450ee3f0f8baef5a">const_reference</a> =  typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a60a745268c4df3b28ef154fe0949d0f6">ht::const_reference</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -542,7 +561,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html#a141684c4bc5ec83649a2864ab5dcd461">pointer</a> =  typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a3ae611dacdc5aa83c3b691c9df9c0e59">ht::pointer</a></td>
+          <td class="memname">using <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html#a141684c4bc5ec83649a2864ab5dcd461">pointer</a> =  typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a1b80d1395ecf1d9c06b6585030eb962f">ht::pointer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -558,7 +577,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html#a73d6e0f76008ad68612fb31b2199f13b">reference</a> =  typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a3d9b970184ac5f9344ceb9c3226a5f78">ht::reference</a></td>
+          <td class="memname">using <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html#a73d6e0f76008ad68612fb31b2199f13b">reference</a> =  typename <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a3ea7411cc9c577ff7e3173376507f8f6">ht::reference</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -625,8 +644,8 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 
 </div>
 </div>
-<a id="a4c5c5935d304b08af3dc5fa0e6782e24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c5c5935d304b08af3dc5fa0e6782e24">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[2/11]</span></h2>
+<a id="a2244e9c1cdd44e4ff52ea6f77c8ac4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2244e9c1cdd44e4ff52ea6f77c8ac4c8">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[2/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -640,7 +659,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
           <td class="memname"><a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html">robin_set</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>my_bucket_count</em>, </td>
+          <td class="paramname"><em>bucket_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -675,8 +694,8 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 
 </div>
 </div>
-<a id="af7c53f296165da050d904346ff24b881"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7c53f296165da050d904346ff24b881">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[3/11]</span></h2>
+<a id="aaf2f02ec405d886bf740d6812a232a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf2f02ec405d886bf740d6812a232a25">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[3/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -690,7 +709,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
           <td class="memname"><a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html">robin_set</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>my_bucket_count</em>, </td>
+          <td class="paramname"><em>bucket_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -713,8 +732,8 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 
 </div>
 </div>
-<a id="a62e93407538083cf7d971ba0156ca765"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62e93407538083cf7d971ba0156ca765">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[4/11]</span></h2>
+<a id="a64ce804ce882c7b6ad99fbe342cba2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ce804ce882c7b6ad99fbe342cba2bf">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[4/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -728,7 +747,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
           <td class="memname"><a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::<a class="el" href="classtsl_1_1robin__set.html">robin_set</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>my_bucket_count</em>, </td>
+          <td class="paramname"><em>bucket_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -785,8 +804,8 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 
 </div>
 </div>
-<a id="abf509d4019428149b415ba4b56da6e63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf509d4019428149b415ba4b56da6e63">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[6/11]</span></h2>
+<a id="ad5f2ffb33b7fa2a855ee6fc742b8840e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f2ffb33b7fa2a855ee6fc742b8840e">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[6/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -814,7 +833,7 @@ template&lt;class InputIt &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>my_bucket_count</em> = <code><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0603fdd5f8077d7a47cd94f9f9c1659f">ht::DEFAULT_INIT_BUCKETS_SIZE</a></code>, </td>
+          <td class="paramname"><em>bucket_count</em> = <code><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0603fdd5f8077d7a47cd94f9f9c1659f">ht::DEFAULT_INIT_BUCKETS_SIZE</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -849,8 +868,8 @@ template&lt;class InputIt &gt; </div>
 
 </div>
 </div>
-<a id="abe2ab0f65774c51deb73a57802f95cbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe2ab0f65774c51deb73a57802f95cbe">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[7/11]</span></h2>
+<a id="a05f4783d8f4573141c52f9a6e91c6d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f4783d8f4573141c52f9a6e91c6d23">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[7/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -878,7 +897,7 @@ template&lt;class InputIt &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>my_bucket_count</em>, </td>
+          <td class="paramname"><em>bucket_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -901,8 +920,8 @@ template&lt;class InputIt &gt; </div>
 
 </div>
 </div>
-<a id="a46e10bdfea1100eff0c17a5683857f9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46e10bdfea1100eff0c17a5683857f9d">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[8/11]</span></h2>
+<a id="a602130e216f8e8ee1da2d1dc359298cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a602130e216f8e8ee1da2d1dc359298cb">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -930,7 +949,7 @@ template&lt;class InputIt &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>my_bucket_count</em>, </td>
+          <td class="paramname"><em>bucket_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -959,8 +978,8 @@ template&lt;class InputIt &gt; </div>
 
 </div>
 </div>
-<a id="a1217c9e5efe5d27ce104de73661f3340"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1217c9e5efe5d27ce104de73661f3340">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[9/11]</span></h2>
+<a id="ab296424a8ac50583c5b6121d39e51c44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab296424a8ac50583c5b6121d39e51c44">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[9/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -980,7 +999,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>my_bucket_count</em> = <code><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0603fdd5f8077d7a47cd94f9f9c1659f">ht::DEFAULT_INIT_BUCKETS_SIZE</a></code>, </td>
+          <td class="paramname"><em>bucket_count</em> = <code><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0603fdd5f8077d7a47cd94f9f9c1659f">ht::DEFAULT_INIT_BUCKETS_SIZE</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1015,8 +1034,8 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 
 </div>
 </div>
-<a id="ab7892c55f7da51a447b3d39eaa926a57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7892c55f7da51a447b3d39eaa926a57">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[10/11]</span></h2>
+<a id="a27ddaae9e5764f679d41c298f95e9c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ddaae9e5764f679d41c298f95e9c5a">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[10/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1036,7 +1055,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>my_bucket_count</em>, </td>
+          <td class="paramname"><em>bucket_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1059,8 +1078,8 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 
 </div>
 </div>
-<a id="a8b337e43ab276416d9582f60243be073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b337e43ab276416d9582f60243be073">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[11/11]</span></h2>
+<a id="aece3c79d29353620376c0cb7dca59d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece3c79d29353620376c0cb7dca59d4a">&#9670;&nbsp;</a></span>robin_set() <span class="overload">[11/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1080,7 +1099,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>my_bucket_count</em>, </td>
+          <td class="paramname"><em>bucket_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1272,6 +1291,148 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 
 </div>
 </div>
+<a id="aa71372dea154b9ab713a27aa52552439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71372dea154b9ab713a27aa52552439">&#9670;&nbsp;</a></span>contains() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class K , class KE  = KeyEqual, typename std::enable_if&lt; has_is_transparent&lt; KE &gt;::value &gt;::type *  = nullptr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::contains </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent exists. If so, K must be hashable and comparable to Key. </p>
+
+</div>
+</div>
+<a id="aef184b7334d440fb7ff915205bfbfb34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef184b7334d440fb7ff915205bfbfb34">&#9670;&nbsp;</a></span>contains() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class K , class KE  = KeyEqual, typename std::enable_if&lt; has_is_transparent&lt; KE &gt;::value &gt;::type *  = nullptr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::contains </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>precalculated_hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+<p>This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent exists. If so, K must be hashable and comparable to Key.</p>
+<p>Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1robin__set.html#af87c41abcb19a1442b4038db6edeeec3">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash. </p>
+
+</div>
+</div>
+<a id="ae9ce9304b7ebbb92b2b8ae961f3d89bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ce9304b7ebbb92b2b8ae961f3d89bf">&#9670;&nbsp;</a></span>contains() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::contains </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbd4d95859060848234156f4d649acd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd4d95859060848234156f4d649acd8">&#9670;&nbsp;</a></span>contains() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::contains </td>
+          <td>(</td>
+          <td class="paramtype">const Key &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>precalculated_hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1robin__set.html#af87c41abcb19a1442b4038db6edeeec3">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash. </p>
+
+</div>
+</div>
 <a id="a91ae518053a1ba2ed995498e27cd8649"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91ae518053a1ba2ed995498e27cd8649">&#9670;&nbsp;</a></span>count() <span class="overload">[1/4]</span></h2>
 
@@ -1411,6 +1572,53 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 </table>
 </div><div class="memdoc">
 <p>Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1robin__set.html#af87c41abcb19a1442b4038db6edeeec3">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash. </p>
+
+</div>
+</div>
+<a id="aff0c7adeb3a9b6b0fd208dc434f8f7f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff0c7adeb3a9b6b0fd208dc434f8f7f3">&#9670;&nbsp;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class Deserializer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classtsl_1_1robin__set.html">robin_set</a> <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">Deserializer &amp;&#160;</td>
+          <td class="paramname"><em>deserializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hash_compatible</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Deserialize a previously serialized set through the <code>deserializer</code> parameter.</p>
+<p>The <code>deserializer</code> parameter must be a function object that supports the following call:</p><ul>
+<li><code>template&lt;typename U&gt; U operator()();</code> where the types <code>std::int16_t</code>, <code>std::uint32_t</code>, <code>std::uint64_t</code>, <code>float</code> and <code>Key</code> must be supported for U.</li>
+</ul>
+<p>If the deserialized hash set type is hash compatible with the serialized set, the deserialization process can be sped up by setting <code>hash_compatible</code> to true. To be hash compatible, the Hash, KeyEqual and GrowthPolicy must behave the same way than the ones used on the serialized set and the StoreHash must have the same value. The <code>std::size_t</code> must also be of the same size as the one on the platform used to serialize the set. If these criteria are not met, the behaviour is undefined with <code>hash_compatible</code> sets to true.</p>
+<p>The behaviour is undefined if the type <code>Key</code> of the <code><a class="el" href="classtsl_1_1robin__set.html">robin_set</a></code> is not the same as the type used during serialization.</p>
+<p>The implementation leaves binary compatibility (endianness, IEEE 754 for floats, size of int, ...) of the types it deserializes in the hands of the <code>Deserializer</code> function object if compatibility is required. </p>
 
 </div>
 </div>
@@ -2912,8 +3120,8 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 
 </div>
 </div>
-<a id="aaa7f8ff6459d0b534e1c25eda1c0ff5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa7f8ff6459d0b534e1c25eda1c0ff5d">&#9670;&nbsp;</a></span>rehash()</h2>
+<a id="a299dc10b59d8fea28916790b3e8c0bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299dc10b59d8fea28916790b3e8c0bdb">&#9670;&nbsp;</a></span>rehash()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2927,7 +3135,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
           <td class="memname">void <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::rehash </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>new_count</em></td><td>)</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2940,8 +3148,8 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 
 </div>
 </div>
-<a id="a541870ca69d47d3ffbff499d1742382c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a541870ca69d47d3ffbff499d1742382c">&#9670;&nbsp;</a></span>reserve()</h2>
+<a id="ac7d16e96e07b5618cd330b801b822398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d16e96e07b5618cd330b801b822398">&#9670;&nbsp;</a></span>reserve()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2955,7 +3163,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
           <td class="memname">void <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::reserve </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtsl_1_1robin__set.html#a5190354763170ba325832a003505209a">size_type</a>&#160;</td>
-          <td class="paramname"><em>new_count</em></td><td>)</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2965,6 +3173,41 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43927c1d1877053c92ddfd0174e4be35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43927c1d1877053c92ddfd0174e4be35">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = std::equal_to&lt;Key&gt;, class Allocator  = std::allocator&lt;Key&gt;, bool StoreHash = false, class GrowthPolicy  = tsl::rh::power_of_two_growth_policy&lt;2&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class Serializer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classtsl_1_1robin__set.html">tsl::robin_set</a>&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::serialize </td>
+          <td>(</td>
+          <td class="paramtype">Serializer &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Serialize the set through the <code>serializer</code> parameter.</p>
+<p>The <code>serializer</code> parameter must be a function object that supports the following call:</p><ul>
+<li><code>template&lt;typename U&gt; void operator()(const U&amp; value);</code> where the types <code>std::int16_t</code>, <code>std::uint32_t</code>, <code>std::uint64_t</code>, <code>float</code> and <code>Key</code> must be supported for U.</li>
+</ul>
+<p>The implementation leaves binary compatibility (endianness, IEEE 754 for floats, ...) of the types it serializes in the hands of the <code>Serializer</code> function object if compatibility is required. </p>
 
 </div>
 </div>
@@ -3164,7 +3407,7 @@ template&lt;class Key , class Hash  = std::hash&lt;Key&gt;, class KeyEqual  = st
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/hash/<a class="el" href="robin__set_8h_source.html">robin_set.h</a></li>
+<li>src/<a class="el" href="robin__set_8h_source.html">robin_set.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -132,6 +132,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1Mesh.html">Mesh</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoex_1_1NameTopoKeyCompare.html">NameTopoKeyCompare</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoex_1_1NameTopoKeyHash.html">NameTopoKeyHash</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoex_1_1NodeBlock.html">NodeBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoex_1_1NodeSet.html">NodeSet</a></td></tr>
@@ -141,8 +145,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoex_1_1SideSet.html">SideSet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1SuperElement.html">SuperElement</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoex_1_1TopologyMapCompare.html">TopologyMapCompare</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -159,8 +161,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:ac38f7495daa7d3afa4efa4b68561f000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae257784bdfb29603849073259d3098"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a8ae257784bdfb29603849073259d3098">SideSetMap</a> = std::map&lt; std::string, const std::string, std::less&lt; const std::string &gt; &gt;</td></tr>
 <tr class="separator:a8ae257784bdfb29603849073259d3098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8c852510f839929e8bd9e9a40b9f36"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a0f8c852510f839929e8bd9e9a40b9f36">TopologyMap</a> = std::map&lt; std::pair&lt; std::string, const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> * &gt;, int, <a class="el" href="structIoex_1_1TopologyMapCompare.html">TopologyMapCompare</a> &gt;</td></tr>
-<tr class="separator:a0f8c852510f839929e8bd9e9a40b9f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e954bc42cea8ce26bfc3881c5da0956"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a9e954bc42cea8ce26bfc3881c5da0956">NameTopoKey</a> = std::pair&lt; std::string, const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> * &gt;</td></tr>
+<tr class="separator:a9e954bc42cea8ce26bfc3881c5da0956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097b68cd900dfefd170c572b7b1d9b6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a097b68cd900dfefd170c572b7b1d9b6d">TopologyMap</a> = <a class="el" href="classtsl_1_1hopscotch__map.html">tsl::hopscotch_map</a>&lt; <a class="el" href="namespaceIoex.html#a9e954bc42cea8ce26bfc3881c5da0956">NameTopoKey</a>, int, <a class="el" href="structIoex_1_1NameTopoKeyHash.html">NameTopoKeyHash</a> &gt;</td></tr>
+<tr class="separator:a097b68cd900dfefd170c572b7b1d9b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -206,7 +210,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac5c0e64b4b0dccb28feea29e667146f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971038a7f4069ad89af4a2df7346136d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a971038a7f4069ad89af4a2df7346136d">filter_element_list</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, <a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;elements, <a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;sides, bool remove_omitted_elements)</td></tr>
 <tr class="separator:a971038a7f4069ad89af4a2df7346136d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e441062139555c370269f0550e06ee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a0e441062139555c370269f0550e06ee4">separate_surface_element_sides</a> (<a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;element, <a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;sides, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, <a class="el" href="namespaceIoex.html#a0f8c852510f839929e8bd9e9a40b9f36">Ioex::TopologyMap</a> &amp;topo_map, <a class="el" href="namespaceIoex.html#a0f8c852510f839929e8bd9e9a40b9f36">Ioex::TopologyMap</a> &amp;side_map, <a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a> split_type, const std::string &amp;surface_name)</td></tr>
+<tr class="memitem:a0e441062139555c370269f0550e06ee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a0e441062139555c370269f0550e06ee4">separate_surface_element_sides</a> (<a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;element, <a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;sides, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, <a class="el" href="namespaceIoex.html#a097b68cd900dfefd170c572b7b1d9b6d">Ioex::TopologyMap</a> &amp;topo_map, <a class="el" href="namespaceIoex.html#a097b68cd900dfefd170c572b7b1d9b6d">Ioex::TopologyMap</a> &amp;side_map, <a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a> split_type, const std::string &amp;surface_name)</td></tr>
 <tr class="separator:a0e441062139555c370269f0550e06ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af44f31440d8f92e9e6e59f96f5068a6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#af44f31440d8f92e9e6e59f96f5068a6e">write_reduction_attributes</a> (int exoid, const <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *ge)</td></tr>
 <tr class="separator:af44f31440d8f92e9e6e59f96f5068a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +268,20 @@ ne_put_cmap_params(), </li>
 
 </div>
 </div>
+<a id="a9e954bc42cea8ce26bfc3881c5da0956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e954bc42cea8ce26bfc3881c5da0956">&#9670;&nbsp;</a></span>NameTopoKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceIoex.html#a9e954bc42cea8ce26bfc3881c5da0956">Ioex::NameTopoKey</a> = typedef std::pair&lt;std::string, const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a>*&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8ae257784bdfb29603849073259d3098"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ae257784bdfb29603849073259d3098">&#9670;&nbsp;</a></span>SideSetMap</h2>
 
@@ -292,14 +310,14 @@ ne_put_cmap_params(), </li>
 
 </div>
 </div>
-<a id="a0f8c852510f839929e8bd9e9a40b9f36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f8c852510f839929e8bd9e9a40b9f36">&#9670;&nbsp;</a></span>TopologyMap</h2>
+<a id="a097b68cd900dfefd170c572b7b1d9b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a097b68cd900dfefd170c572b7b1d9b6d">&#9670;&nbsp;</a></span>TopologyMap</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceIoex.html#a0f8c852510f839929e8bd9e9a40b9f36">Ioex::TopologyMap</a> = typedef std::map&lt;std::pair&lt;std::string, const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> *&gt;, int, <a class="el" href="structIoex_1_1TopologyMapCompare.html">TopologyMapCompare</a>&gt;</td>
+          <td class="memname">using <a class="el" href="namespaceIoex.html#a097b68cd900dfefd170c572b7b1d9b6d">Ioex::TopologyMap</a> = typedef <a class="el" href="classtsl_1_1hopscotch__map.html">tsl::hopscotch_map</a>&lt;<a class="el" href="namespaceIoex.html#a9e954bc42cea8ce26bfc3881c5da0956">NameTopoKey</a>, int, <a class="el" href="structIoex_1_1NameTopoKeyHash.html">NameTopoKeyHash</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -928,13 +946,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceIoex.html#a0f8c852510f839929e8bd9e9a40b9f36">Ioex::TopologyMap</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceIoex.html#a097b68cd900dfefd170c572b7b1d9b6d">Ioex::TopologyMap</a> &amp;&#160;</td>
           <td class="paramname"><em>topo_map</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceIoex.html#a0f8c852510f839929e8bd9e9a40b9f36">Ioex::TopologyMap</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceIoex.html#a097b68cd900dfefd170c572b7b1d9b6d">Ioex::TopologyMap</a> &amp;&#160;</td>
           <td class="paramname"><em>side_map</em>, </td>
         </tr>
         <tr>

@@ -16,10 +16,11 @@ var namespaceIoex =
     [ "Internals", "classIoex_1_1Internals.html", "classIoex_1_1Internals" ],
     [ "IOFactory", "classIoex_1_1IOFactory.html", "classIoex_1_1IOFactory" ],
     [ "Mesh", "classIoex_1_1Mesh.html", "classIoex_1_1Mesh" ],
+    [ "NameTopoKeyCompare", "structIoex_1_1NameTopoKeyCompare.html", "structIoex_1_1NameTopoKeyCompare" ],
+    [ "NameTopoKeyHash", "structIoex_1_1NameTopoKeyHash.html", "structIoex_1_1NameTopoKeyHash" ],
     [ "NodeBlock", "structIoex_1_1NodeBlock.html", "structIoex_1_1NodeBlock" ],
     [ "NodeSet", "structIoex_1_1NodeSet.html", "structIoex_1_1NodeSet" ],
     [ "Redefine", "classIoex_1_1Redefine.html", "classIoex_1_1Redefine" ],
     [ "SideSet", "structIoex_1_1SideSet.html", "structIoex_1_1SideSet" ],
-    [ "SuperElement", "classIoex_1_1SuperElement.html", "classIoex_1_1SuperElement" ],
-    [ "TopologyMapCompare", "structIoex_1_1TopologyMapCompare.html", "structIoex_1_1TopologyMapCompare" ]
+    [ "SuperElement", "classIoex_1_1SuperElement.html", "classIoex_1_1SuperElement" ]
 ];

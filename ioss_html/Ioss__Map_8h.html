@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('Ioss__Map_8h.html',''); initResizable(
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Ioss_Map.h File Reference</div>  </div>
@@ -94,19 +95,17 @@ $(document).ready(function(){initNavTree('Ioss__Map_8h.html',''); initResizable(
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;<a class="el" href="bhopscotch__map_8h_source.html">bhopscotch_map.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Ioss_Map.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioss__Map_8h__incl.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioss__Map_8h__incl.svg" width="100%" height="552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioss__Map_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioss__Map_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="Ioss__Map_8h_source.html">Go to the source code of this file.</a></p>
@@ -122,15 +121,33 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespaceIoss"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the <a class="el" href="namespaceIoss.html" title="The main namespace for the Ioss library.">Ioss</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a9a2418820f2fac48f0f28dd709b1cf72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Map_8h.html#a9a2418820f2fac48f0f28dd709b1cf72">MAP_USE_HOPSCOTCH</a></td></tr>
+<tr class="separator:a9a2418820f2fac48f0f28dd709b1cf72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aeb2ff55ad798305efc0cbd9ff990f546"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#aeb2ff55ad798305efc0cbd9ff990f546">Ioss::MapContainer</a> = std::vector&lt; int64_t &gt;</td></tr>
 <tr class="separator:aeb2ff55ad798305efc0cbd9ff990f546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d83bb352d0655b5dc1dfd8bd9a1a17f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a8d83bb352d0655b5dc1dfd8bd9a1a17f">Ioss::IdPair</a> = std::pair&lt; int64_t, int64_t &gt;</td></tr>
-<tr class="separator:a8d83bb352d0655b5dc1dfd8bd9a1a17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad645b2dd6049c5707d2aaf71a9f40614"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ad645b2dd6049c5707d2aaf71a9f40614">Ioss::ReverseMapContainer</a> = std::vector&lt; IdPair &gt;</td></tr>
-<tr class="separator:ad645b2dd6049c5707d2aaf71a9f40614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6517f7a29c8f37fd898a71f84b798503"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a6517f7a29c8f37fd898a71f84b798503">Ioss::ReverseMapContainer</a> = <a class="el" href="classtsl_1_1bhopscotch__map.html">tsl::bhopscotch_map</a>&lt; int64_t, int64_t &gt;</td></tr>
+<tr class="separator:a6517f7a29c8f37fd898a71f84b798503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a9a2418820f2fac48f0f28dd709b1cf72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a2418820f2fac48f0f28dd709b1cf72">&#9670;&nbsp;</a></span>MAP_USE_HOPSCOTCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAP_USE_HOPSCOTCH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

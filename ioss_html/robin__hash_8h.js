@@ -10,7 +10,9 @@ var robin__hash_8h =
     [ "bucket_entry", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html", "classtsl_1_1detail__robin__hash_1_1bucket__entry" ],
     [ "robin_hash", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", "classtsl_1_1detail__robin__hash_1_1robin__hash" ],
     [ "robin_iterator", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator.html", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator" ],
-    [ "truncated_hash_type", "robin__hash_8h.html#a2cbfbac638bc4acedda5558419aeb228", null ],
+    [ "slz_size_type", "robin__hash_8h.html#aa1ce0cd2d4fd92064f653a30575a0ca8", null ],
+    [ "truncated_hash_type", "robin__hash_8h.html#abdab59d9a567358f21b7a030ba4818b9", null ],
     [ "clamp", "robin__hash_8h.html#a4e211f15453efe94c646a3075d909f64", null ],
+    [ "deserialize_value", "robin__hash_8h.html#a746d2a15982651aacf9fe6388d746fc8", null ],
     [ "numeric_cast", "robin__hash_8h.html#a31632fbf0dad3522b6bf7552061f9768", null ]
 ];

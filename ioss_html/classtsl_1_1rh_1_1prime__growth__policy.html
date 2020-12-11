@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9addc80ce655bfefd9ca781fcaaa7b65"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1rh_1_1prime__growth__policy.html#a9addc80ce655bfefd9ca781fcaaa7b65">m_iprime</a> {}</td></tr>
+<tr class="memitem:a9addc80ce655bfefd9ca781fcaaa7b65"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1rh_1_1prime__growth__policy.html#a9addc80ce655bfefd9ca781fcaaa7b65">m_iprime</a></td></tr>
 <tr class="separator:a9addc80ce655bfefd9ca781fcaaa7b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -124,7 +124,9 @@ Private Attributes</h2></td></tr>
 <div class="line">    ...</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Due to the constant variable in the modulo the compiler is able to optimize the operation by a series of multiplications, substractions and shifts.</p>
-<p>The 'hash % 5' could become something like 'hash - (hash * 0xCCCCCCCD) &gt;&gt; 34) * 5' in a 64 bits environment. </p>
+<p>The 'hash % 5' could become something like 'hash - (hash * 0xCCCCCCCD) &gt;&gt; 34)</p><ul>
+<li>5' in a 64 bits environment. </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad1bd24ab6ae0f9015580f1e2e9bc0d73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1bd24ab6ae0f9015580f1e2e9bc0d73">&#9670;&nbsp;</a></span>prime_growth_policy()</h2>
@@ -265,7 +267,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int tsl::rh::prime_growth_policy::m_iprime {}</td>
+          <td class="memname">unsigned int tsl::rh::prime_growth_policy::m_iprime</td>
         </tr>
       </table>
   </td>
@@ -278,7 +280,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/hash/<a class="el" href="robin__growth__policy_8h_source.html">robin_growth_policy.h</a></li>
+<li>src/<a class="el" href="robin__growth__policy_8h_source.html">robin_growth_policy.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

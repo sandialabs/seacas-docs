@@ -1,5 +1,6 @@
 var Ioex__DatabaseIO_8C =
 [
+    [ "NC_HAS_SZIP_WRITE", "Ioex__DatabaseIO_8C.html#a0b5fe0f2fa81ab380ce3e742c9a971ad", null ],
     [ "compute_internal_border_maps", "Ioex__DatabaseIO_8C.html#aed219e91b6f906d7680ced105eec90b0", null ],
     [ "extract_data", "Ioex__DatabaseIO_8C.html#afd5239e8d419dcf4231e6e9e9c9a6780", null ],
     [ "get_connectivity_data", "Ioex__DatabaseIO_8C.html#ae2ab07b594de94db1dbbc2918122b573", null ],

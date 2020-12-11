@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IOSS: src/hash/robin_hash.h File Reference</title>
+<title>IOSS: src/robin_hash.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,8 +91,7 @@ $(document).ready(function(){initNavTree('robin__hash_8h.html',''); initResizabl
 <div class="title">robin_hash.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="robin__growth__policy_8h_source.html">robin_growth_policy.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
@@ -106,17 +105,16 @@ $(document).ready(function(){initNavTree('robin__hash_8h.html',''); initResizabl
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="robin__growth__policy_8h_source.html">robin_growth_policy.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for robin_hash.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="robin__hash_8h__incl.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="robin__hash_8h__incl.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="robin__hash_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="robin__hash_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="robin__hash_8h_source.html">Go to the source code of this file.</a></p>
@@ -153,8 +151,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2cbfbac638bc4acedda5558419aeb228"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetsl_1_1detail__robin__hash.html#a2cbfbac638bc4acedda5558419aeb228">tsl::detail_robin_hash::truncated_hash_type</a> = std::uint_least32_t</td></tr>
-<tr class="separator:a2cbfbac638bc4acedda5558419aeb228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ce0cd2d4fd92064f653a30575a0ca8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetsl_1_1detail__robin__hash.html#aa1ce0cd2d4fd92064f653a30575a0ca8">tsl::detail_robin_hash::slz_size_type</a> = std::uint64_t</td></tr>
+<tr class="separator:aa1ce0cd2d4fd92064f653a30575a0ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdab59d9a567358f21b7a030ba4818b9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetsl_1_1detail__robin__hash.html#abdab59d9a567358f21b7a030ba4818b9">tsl::detail_robin_hash::truncated_hash_type</a> = std::uint32_t</td></tr>
+<tr class="separator:abdab59d9a567358f21b7a030ba4818b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -164,13 +164,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a31632fbf0dad3522b6bf7552061f9768"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:a31632fbf0dad3522b6bf7552061f9768"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetsl_1_1detail__robin__hash.html#a31632fbf0dad3522b6bf7552061f9768">tsl::detail_robin_hash::numeric_cast</a> (U value, const char *error_message=&quot;numeric_cast() failed.&quot;)</td></tr>
 <tr class="separator:a31632fbf0dad3522b6bf7552061f9768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746d2a15982651aacf9fe6388d746fc8"><td class="memTemplParams" colspan="2">template&lt;class T , class Deserializer &gt; </td></tr>
+<tr class="memitem:a746d2a15982651aacf9fe6388d746fc8"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetsl_1_1detail__robin__hash.html#a746d2a15982651aacf9fe6388d746fc8">tsl::detail_robin_hash::deserialize_value</a> (Deserializer &amp;deserializer)</td></tr>
+<tr class="separator:a746d2a15982651aacf9fe6388d746fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_81ff9cf00c749aad2228acad00958fb4.html">hash</a></li><li class="navelem"><a class="el" href="robin__hash_8h.html">robin_hash.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="robin__hash_8h.html">robin_hash.h</a></li>
     <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>

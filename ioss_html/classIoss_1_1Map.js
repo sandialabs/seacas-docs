@@ -31,7 +31,6 @@ var classIoss_1_1Map =
     [ "set_map", "classIoss_1_1Map.html#a2e65d0ea8d6b141ed17a929e4c610b41", null ],
     [ "set_size", "classIoss_1_1Map.html#aeb06d5b955371e06cfaa5cb0f3e2ea7f", null ],
     [ "size", "classIoss_1_1Map.html#a3912e675a8b5e995478e70d239289f80", null ],
-    [ "verify_no_duplicate_ids", "classIoss_1_1Map.html#a25512bfc7eaa63d30a2c68ba3979adbc", null ],
     [ "m_defined", "classIoss_1_1Map.html#a118e717576ca2d18ac89addbe7d2fe4e", null ],
     [ "m_entityType", "classIoss_1_1Map.html#ae5c3b41636f056a08dc7ecba0a0fc3d4", null ],
     [ "m_filename", "classIoss_1_1Map.html#a6d4e799d4c1c50944d325a41b1a8e0f8", null ],

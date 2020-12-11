@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('Ioex__Utils_8h.html',''); initResizabl
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -100,24 +101,25 @@ $(document).ready(function(){initNavTree('Ioex__Utils_8h.html',''); initResizabl
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;<a class="el" href="hopscotch__map_8h_source.html">hopscotch_map.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Ioex_Utils.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioex__Utils_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioex__Utils_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioex__Utils_8h__dep__incl.svg" width="100%" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioex__Utils_8h__dep__incl.svg" width="100%" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="Ioex__Utils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoex_1_1TopologyMapCompare.html">Ioex::TopologyMapCompare</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoex_1_1NameTopoKeyCompare.html">Ioex::NameTopoKeyCompare</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoex_1_1NameTopoKeyHash.html">Ioex::NameTopoKeyHash</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -129,6 +131,11 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespaceIoex"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for the exodus database format. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8ce267dc1abb8699b36a97425844ece4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioex__Utils_8h.html#a8ce267dc1abb8699b36a97425844ece4">EXU_USE_HOPSCOTCH</a></td></tr>
+<tr class="separator:a8ce267dc1abb8699b36a97425844ece4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:abf77dade63ce8a4c5cc7af4edea743e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#abf77dade63ce8a4c5cc7af4edea743e9">Ioss::CoordinateFrameContainer</a> = std::vector&lt; CoordinateFrame &gt;</td></tr>
@@ -137,8 +144,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:ac38f7495daa7d3afa4efa4b68561f000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae257784bdfb29603849073259d3098"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a8ae257784bdfb29603849073259d3098">Ioex::SideSetMap</a> = std::map&lt; std::string, const std::string, std::less&lt; const std::string &gt; &gt;</td></tr>
 <tr class="separator:a8ae257784bdfb29603849073259d3098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8c852510f839929e8bd9e9a40b9f36"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a0f8c852510f839929e8bd9e9a40b9f36">Ioex::TopologyMap</a> = std::map&lt; std::pair&lt; std::string, const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> * &gt;, int, TopologyMapCompare &gt;</td></tr>
-<tr class="separator:a0f8c852510f839929e8bd9e9a40b9f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e954bc42cea8ce26bfc3881c5da0956"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a9e954bc42cea8ce26bfc3881c5da0956">Ioex::NameTopoKey</a> = std::pair&lt; std::string, const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> * &gt;</td></tr>
+<tr class="separator:a9e954bc42cea8ce26bfc3881c5da0956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097b68cd900dfefd170c572b7b1d9b6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a097b68cd900dfefd170c572b7b1d9b6d">Ioex::TopologyMap</a> = <a class="el" href="classtsl_1_1hopscotch__map.html">tsl::hopscotch_map</a>&lt; NameTopoKey, int, NameTopoKeyHash &gt;</td></tr>
+<tr class="separator:a097b68cd900dfefd170c572b7b1d9b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -187,7 +196,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a976d472a06fe6dc9a4e8dceda7a4104d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a976d472a06fe6dc9a4e8dceda7a4104d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a976d472a06fe6dc9a4e8dceda7a4104d">Ioex::filter_node_list</a> (T *data, std::vector&lt; T &gt; &amp;dbvals, const std::vector&lt; int64_t &gt; &amp;active_node_index)</td></tr>
 <tr class="separator:a976d472a06fe6dc9a4e8dceda7a4104d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e441062139555c370269f0550e06ee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a0e441062139555c370269f0550e06ee4">Ioex::separate_surface_element_sides</a> (<a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;element, <a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;sides, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, <a class="el" href="namespaceIoex.html#a0f8c852510f839929e8bd9e9a40b9f36">Ioex::TopologyMap</a> &amp;topo_map, <a class="el" href="namespaceIoex.html#a0f8c852510f839929e8bd9e9a40b9f36">Ioex::TopologyMap</a> &amp;side_map, <a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a> split_type, const std::string &amp;surface_name)</td></tr>
+<tr class="memitem:a0e441062139555c370269f0550e06ee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a0e441062139555c370269f0550e06ee4">Ioex::separate_surface_element_sides</a> (<a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;element, <a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Ioss::Int64Vector</a> &amp;sides, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, <a class="el" href="namespaceIoex.html#a097b68cd900dfefd170c572b7b1d9b6d">Ioex::TopologyMap</a> &amp;topo_map, <a class="el" href="namespaceIoex.html#a097b68cd900dfefd170c572b7b1d9b6d">Ioex::TopologyMap</a> &amp;side_map, <a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a> split_type, const std::string &amp;surface_name)</td></tr>
 <tr class="separator:a0e441062139555c370269f0550e06ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af44f31440d8f92e9e6e59f96f5068a6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#af44f31440d8f92e9e6e59f96f5068a6e">Ioex::write_reduction_attributes</a> (int exoid, const <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *ge)</td></tr>
 <tr class="separator:af44f31440d8f92e9e6e59f96f5068a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +204,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ad9c225adedc812ba8734a7d6c55cdee9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#ad9c225adedc812ba8734a7d6c55cdee9">Ioex::write_reduction_attributes</a> (int exoid, const std::vector&lt; T * &gt; &amp;entities)</td></tr>
 <tr class="separator:ad9c225adedc812ba8734a7d6c55cdee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8ce267dc1abb8699b36a97425844ece4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce267dc1abb8699b36a97425844ece4">&#9670;&nbsp;</a></span>EXU_USE_HOPSCOTCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXU_USE_HOPSCOTCH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

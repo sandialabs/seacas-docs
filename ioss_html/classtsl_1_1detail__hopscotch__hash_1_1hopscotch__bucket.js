@@ -1,7 +1,7 @@
 var classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket =
 [
     [ "bucket_hash", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a2cd697475827d48aae1230897cefd8c5", null ],
-    [ "neighborhood_bitmap", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a600a2172582060b21f2f8ceabd18db83", null ],
+    [ "neighborhood_bitmap", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a83d26172744988fe287bcc1fb5297f13", null ],
     [ "storage", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a79003bdaa8ee81bc1bb8b2cb44c6d930", null ],
     [ "value_type", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a889aa1e71505d643c8452240b9c7a380", null ],
     [ "hopscotch_bucket", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#abf75d64ec78f8b004caa807e2f2747e9", null ],
@@ -19,10 +19,10 @@ var classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket =
     [ "remove_value", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#aebff2fef640b913e76b3e31fcf4d58fb", null ],
     [ "set_empty", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#ad4997662d86d72a65ad39f297417c56b", null ],
     [ "set_overflow", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#afb93ae4ada7f6c825002ef7236b4c651", null ],
-    [ "set_value_of_empty_bucket", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#aa97cad4ed97d9b1dbcd165a384ddee7b", null ],
+    [ "set_value_of_empty_bucket", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a2ec0f960dfb8695f76064dea77726dbf", null ],
     [ "swap_value_into_empty_bucket", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#aad084f464937d2fa0fe12e26476a7ac5", null ],
     [ "toggle_neighbor_presence", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#ab4d64758ab896d3fc2c118e3b0629f49", null ],
-    [ "truncate_hash", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a2ae5dfddec638773974725d97ae14934", null ],
+    [ "truncate_hash", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#abed7c9ee8c9d7de02cd3e6cd1b1fed46", null ],
     [ "value", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#ab445e4bb77d5a84ce9d50f84def1fbfd", null ],
     [ "value", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a6a41cfe2ccfff6668ac78e794d83b893", null ],
     [ "m_neighborhood_infos", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a630644b74495fd4d68f9052a1004e350", null ],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IOSS: src/hash/robin_growth_policy.h File Reference</title>
+<title>IOSS: src/robin_growth_policy.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('robin__growth__policy_8h.html',''); in
 <code>#include &lt;climits&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;ratio&gt;</code><br />
@@ -105,14 +106,12 @@ $(document).ready(function(){initNavTree('robin__growth__policy_8h.html',''); in
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for robin_growth_policy.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="robin__growth__policy_8h__incl.svg" width="100%" height="395"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="robin__growth__policy_8h__incl.svg" width="100%" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="robin__growth__policy_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="robin__growth__policy_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="robin__growth__policy_8h_source.html">Go to the source code of this file.</a></p>
@@ -145,6 +144,10 @@ Macros</h2></td></tr>
 <tr class="separator:a6763b674ae3f1893aa7524c5c8a8e9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15c2bc0fd0ed52be3b0bc91b814b69cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robin__growth__policy_8h.html#a15c2bc0fd0ed52be3b0bc91b814b69cb">TSL_RH_LIKELY</a>(exp)&#160;&#160;&#160;(exp)</td></tr>
 <tr class="separator:a15c2bc0fd0ed52be3b0bc91b814b69cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38c75b536ea7e384aa09dc2ce8e34f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robin__growth__policy_8h.html#ad38c75b536ea7e384aa09dc2ce8e34f8">TSL_RH_UNUSED</a>(x)&#160;&#160;&#160;static_cast&lt;void&gt;(x)</td></tr>
+<tr class="separator:ad38c75b536ea7e384aa09dc2ce8e34f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08451e00a4de2f773fe0a762e39db53d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="robin__growth__policy_8h.html#a08451e00a4de2f773fe0a762e39db53d">TSL_RH_NB_PRIMES</a>&#160;&#160;&#160;51</td></tr>
+<tr class="separator:a08451e00a4de2f773fe0a762e39db53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -154,10 +157,10 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a1f3f95f1cc604b80b44f433a5bdd7947"><td class="memItemLeft" align="right" valign="top">static constexpr const std::array&lt; std::size_t, 40 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetsl_1_1rh_1_1detail.html#a1f3f95f1cc604b80b44f433a5bdd7947">tsl::rh::detail::PRIMES</a></td></tr>
-<tr class="separator:a1f3f95f1cc604b80b44f433a5bdd7947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84830b201debf0332555668c9607fdd2"><td class="memItemLeft" align="right" valign="top">static constexpr const std::array&lt; std::size_t(*)(std::size_t), 40 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetsl_1_1rh_1_1detail.html#a84830b201debf0332555668c9607fdd2">tsl::rh::detail::MOD_PRIME</a></td></tr>
-<tr class="separator:a84830b201debf0332555668c9607fdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3b0a65ca1f9a4cefc548a90899a5e4"><td class="memItemLeft" align="right" valign="top">static constexpr const std::array&lt; std::size_t, <a class="el" href="robin__growth__policy_8h.html#a08451e00a4de2f773fe0a762e39db53d">TSL_RH_NB_PRIMES</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetsl_1_1rh_1_1detail.html#aea3b0a65ca1f9a4cefc548a90899a5e4">tsl::rh::detail::PRIMES</a></td></tr>
+<tr class="separator:aea3b0a65ca1f9a4cefc548a90899a5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334c229f6b81ade91c55cd3b0fa64d9c"><td class="memItemLeft" align="right" valign="top">static constexpr const std::array&lt; std::size_t(*)(std::size_t), <a class="el" href="robin__growth__policy_8h.html#a08451e00a4de2f773fe0a762e39db53d">TSL_RH_NB_PRIMES</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetsl_1_1rh_1_1detail.html#a334c229f6b81ade91c55cd3b0fa64d9c">tsl::rh::detail::MOD_PRIME</a></td></tr>
+<tr class="separator:a334c229f6b81ade91c55cd3b0fa64d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="abf43b6f27a3bf5120e9d61e5f5d0d0ee"></a>
@@ -176,7 +179,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>MIT License</p>
-<p>Copyright (c) 2017 Tessil</p>
+<p>Copyright (c) 2017 Thibaut Goetghebuer-Planchon <a href="#" onclick="location.href='mai'+'lto:'+'tes'+'si'+'l@g'+'mx'+'.co'+'m'; return false;">tessi<span style="display: none;">.nosp@m.</span>l@gm<span style="display: none;">.nosp@m.</span>x.com</a></p>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </p>
@@ -195,6 +198,20 @@ Variables</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">exp</td><td>)</td>
           <td>&#160;&#160;&#160;(exp)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08451e00a4de2f773fe0a762e39db53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08451e00a4de2f773fe0a762e39db53d">&#9670;&nbsp;</a></span>TSL_RH_NB_PRIMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TSL_RH_NB_PRIMES&#160;&#160;&#160;51</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -241,11 +258,29 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                                             \</div>
-<div class="line">    std::cerr &lt;&lt; <a class="code" href="namespaceIodw_1_1Utils.html#a1a405c51258e6b76149f43ac1ae8d613">msg</a> &lt;&lt; std::endl;                                                                 \</div>
-<div class="line">    std::terminate();                                                                              \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                     \</div>
+<div class="line">    std::cerr &lt;&lt; <a class="code" href="namespaceIodw_1_1Utils.html#a1a405c51258e6b76149f43ac1ae8d613">msg</a> &lt;&lt; std::endl;         \</div>
+<div class="line">    std::terminate();                      \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ad38c75b536ea7e384aa09dc2ce8e34f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38c75b536ea7e384aa09dc2ce8e34f8">&#9670;&nbsp;</a></span>TSL_RH_UNUSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TSL_RH_UNUSED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;static_cast&lt;void&gt;(x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 </div><!-- contents -->
@@ -254,7 +289,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_81ff9cf00c749aad2228acad00958fb4.html">hash</a></li><li class="navelem"><a class="el" href="robin__growth__policy_8h.html">robin_growth_policy.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="robin__growth__policy_8h.html">robin_growth_policy.h</a></li>
     <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>

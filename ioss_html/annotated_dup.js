@@ -21,7 +21,6 @@ var annotated_dup =
     [ "anonymous_namespace{Ioss_Hex32.C}", "namespaceanonymous__namespace_02Ioss__Hex32_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex32_8C_03" ],
     [ "anonymous_namespace{Ioss_Hex64.C}", "namespaceanonymous__namespace_02Ioss__Hex64_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex64_8C_03" ],
     [ "anonymous_namespace{Ioss_Hex8.C}", "namespaceanonymous__namespace_02Ioss__Hex8_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex8_8C_03" ],
-    [ "anonymous_namespace{Ioss_Map.C}", "namespaceanonymous__namespace_02Ioss__Map_8C_03.html", "namespaceanonymous__namespace_02Ioss__Map_8C_03" ],
     [ "anonymous_namespace{Ioss_Node.C}", "namespaceanonymous__namespace_02Ioss__Node_8C_03.html", "namespaceanonymous__namespace_02Ioss__Node_8C_03" ],
     [ "anonymous_namespace{Ioss_Pyramid13.C}", "namespaceanonymous__namespace_02Ioss__Pyramid13_8C_03.html", "namespaceanonymous__namespace_02Ioss__Pyramid13_8C_03" ],
     [ "anonymous_namespace{Ioss_Pyramid14.C}", "namespaceanonymous__namespace_02Ioss__Pyramid14_8C_03.html", "namespaceanonymous__namespace_02Ioss__Pyramid14_8C_03" ],
