@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['parseerrorcount_1337',['parseErrorCount',['../classSEAMS_1_1Aprepro.html#a3e9a9f2debef2a47851980ba4b4d529b',1,'SEAMS::Aprepro']]],
-  ['parsewarningcount_1338',['parseWarningCount',['../classSEAMS_1_1Aprepro.html#a9bf25ea95f57d9cb3a257fd3724a79f4',1,'SEAMS::Aprepro']]],
-  ['parsingresults_1339',['parsingResults',['../classSEAMS_1_1Aprepro.html#a98536d77f391fbb28a5448ca9166cd24',1,'SEAMS::Aprepro']]],
-  ['pi_1340',['PI',['../namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#a1fdc6ec0bab3d1a1153dc83a15206f3d',1,'SEAMS::anonymous_namespace{apr_units.cc}']]]
+  ['range_5f_1341',['range_',['../classSEAMS_1_1Parser_1_1stack_1_1slice.html#a1ffc2002eeb1ccc58c73076cc27c940c',1,'SEAMS::Parser::stack::slice']]],
+  ['rd_1342',['rd',['../namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a210b8303fb82ba1cd00e1e45de8ce01b',1,'anonymous_namespace{apr_builtin.cc}']]],
+  ['require_5fdefined_1343',['require_defined',['../structSEAMS_1_1aprepro__options.html#aac7c371845e9efc8da1c87e5511fa9cc',1,'SEAMS::aprepro_options']]],
+  ['rows_1344',['rows',['../structSEAMS_1_1array.html#ac1c98e4393414cf9fbb01ecf0f32e8ce',1,'SEAMS::array']]]
 ];
