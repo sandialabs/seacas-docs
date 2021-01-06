@@ -3,7 +3,7 @@ var searchData=
   ['scanner_867',['Scanner',['../classSEAMS_1_1Scanner.html',1,'SEAMS']]],
   ['seamsflexlexer_868',['SEAMSFlexLexer',['../classSEAMSFlexLexer.html',1,'']]],
   ['semantic_5ftype_869',['semantic_type',['../unionSEAMS_1_1Parser_1_1semantic__type.html',1,'SEAMS::Parser']]],
-  ['slice_870',['slice',['../classSEAMS_1_1Parser_1_1stack_1_1slice.html',1,'SEAMS::Parser::stack']]],
+  ['slice_870',['slice',['../classSEAMS_1_1Parser_1_1stack_1_1slice.html',1,'SEAMS::Parser::stack&lt; T, S &gt;::slice'],['../classstack_3_01stack__symbol__type_01_4_1_1slice.html',1,'SEAMS::Parser::stack&lt; stack_symbol_type &gt;::slice']]],
   ['stack_871',['stack',['../classSEAMS_1_1Parser_1_1stack.html',1,'SEAMS::Parser']]],
   ['stack_3c_20stack_5fsymbol_5ftype_20_3e_872',['stack&lt; stack_symbol_type &gt;',['../classSEAMS_1_1Parser_1_1stack.html',1,'SEAMS::Parser']]],
   ['stack_5fsymbol_5ftype_873',['stack_symbol_type',['../structSEAMS_1_1Parser_1_1stack__symbol__type.html',1,'SEAMS::Parser']]],

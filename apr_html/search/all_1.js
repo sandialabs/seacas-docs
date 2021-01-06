@@ -105,5 +105,5 @@ var searchData=
   ['arrfnct_5fddd_103',['arrfnct_ddd',['../structSEAMS_1_1symrec_1_1value.html#a59212482ef9c31833fdefdfb4a4ec052',1,'SEAMS::symrec::value']]],
   ['arrval_104',['arrval',['../unionSEAMS_1_1Parser_1_1semantic__type.html#a83a0542629fd37300270f70063704786',1,'SEAMS::Parser::semantic_type']]],
   ['attribute_105',['Attribute',['../structtrmclr_1_1Attribute.html',1,'trmclr::Attribute'],['../namespacetrmclr.html#a3d4b31b4bb69c315a75868d562b5feb6a62800974f0e42f278c643cb7500e66cd',1,'trmclr::ATTRIBUTE()']]],
-  ['avar_106',['avar',['../structSEAMS_1_1symrec_1_1value.html#a68d351256d6437e94af29299f17e559b',1,'SEAMS::symrec::value::avar()'],['../structSEAMS_1_1Parser_1_1token.html#ac1559cad2b792d9af450e7ddf114fb82aeb79e28b63fb0c599c3a5986e1639bc1',1,'SEAMS::Parser::token::AVAR()']]]
+  ['avar_106',['AVAR',['../structSEAMS_1_1Parser_1_1token.html#ac1559cad2b792d9af450e7ddf114fb82aeb79e28b63fb0c599c3a5986e1639bc1',1,'SEAMS::Parser::token::AVAR()'],['../structSEAMS_1_1symrec_1_1value.html#a68d351256d6437e94af29299f17e559b',1,'SEAMS::symrec::value::avar()']]]
 ];

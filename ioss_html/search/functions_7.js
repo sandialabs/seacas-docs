@@ -119,7 +119,7 @@ var searchData=
   ['get_5fgen_5fstruc_5fmesh_4942',['get_gen_struc_mesh',['../classIogs_1_1DatabaseIO.html#abdd14aeb29ed28e43265f72043317ced',1,'Iogs::DatabaseIO']]],
   ['get_5fgenerated_5fmesh_4943',['get_generated_mesh',['../classIogn_1_1DatabaseIO.html#a3d480cf4ef8faf94015c74c0f74031a5',1,'Iogn::DatabaseIO']]],
   ['get_5fglobal_5fcell_5fid_4944',['get_global_cell_id',['../classIoss_1_1StructuredBlock.html#a956085919111ef0048f3adfad750e5a3',1,'Ioss::StructuredBlock::get_global_cell_id(int i, int j, int k) const'],['../classIoss_1_1StructuredBlock.html#aca9ce946bf1da4ff3f995519754290fc',1,'Ioss::StructuredBlock::get_global_cell_id(IJK_t index) const']]],
-  ['get_5fglobal_5fcounts_4945',['get_global_counts',['../classIoex_1_1Internals.html#a9ac0a7de832353f0b262ff5ee7ba9c95',1,'Ioex::Internals']]],
+  ['get_5fglobal_5fcounts_4945',['get_global_counts',['../classIoex_1_1Mesh.html#abe74442e9c9d98caabf0732c4ecd9a2e',1,'Ioex::Mesh']]],
   ['get_5fglobal_5fnode_5foffset_4946',['get_global_node_offset',['../classIoss_1_1StructuredBlock.html#a875f0c88a1636d119f079c76757bdb4c',1,'Ioss::StructuredBlock::get_global_node_offset(int i, int j, int k) const'],['../classIoss_1_1StructuredBlock.html#af1c6184a260389e8777eec6751cfb3ad',1,'Ioss::StructuredBlock::get_global_node_offset(IJK_t index) const']]],
   ['get_5fglobals_4947',['get_globals',['../classIoad_1_1DatabaseIO.html#a24182446b6e9d183c927f30ffc821d10',1,'Ioad::DatabaseIO']]],
   ['get_5fhandler_4948',['get_handler',['../structAssert.html#aba605e9b8a9801b9b2ff951380c13ab0',1,'Assert']]],

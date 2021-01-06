@@ -1,4 +1,16 @@
 var namespaceanonymous__namespace_02cgns__decomp_8C_03 =
 [
-    [ "Interface", "classanonymous__namespace_02cgns__decomp_8C_03_1_1Interface.html", "classanonymous__namespace_02cgns__decomp_8C_03_1_1Interface" ]
+    [ "Interface", "classanonymous__namespace_02cgns__decomp_8C_03_1_1Interface.html", "classanonymous__namespace_02cgns__decomp_8C_03_1_1Interface" ],
+    [ "cleanup", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a28d66e8b7dff168f1cedab79d1590b3f", null ],
+    [ "describe_decomposition", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#af0238d38909d7a476363f9acb0929f15", null ],
+    [ "generate_guid", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#af10cc78395aef06a9c581ae4903497f1", null ],
+    [ "output_communications", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a0c5edd7b318137ecade4a15e0e893144", null ],
+    [ "output_histogram", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a2365b58ffcf180fd6975124396894d28", null ],
+    [ "surface_ratio", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a34007321abe9063d5db1af1916ee9c65", null ],
+    [ "term_width", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a6052f89c44b608660fd3a2cf48686c85", null ],
+    [ "update_zgc_data", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#abb9754f8277f717a428b5e2504a4a382", null ],
+    [ "validate_decomposition", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a50121c5859902ea731123f65added958", null ],
+    [ "validate_symmetric_communications", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#ac2c1714e1ac73eba2f92a70e27fa1ff1", null ],
+    [ "codename", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#ac6a0e552e00b0266bc074686f371b88d", null ],
+    [ "version", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a5e85eb76c4a17217b9a637bd5e5923ca", null ]
 ];

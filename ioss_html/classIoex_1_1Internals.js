@@ -3,7 +3,6 @@ var classIoex_1_1Internals =
     [ "Internals", "classIoex_1_1Internals.html#a5f74b43b0014b718e130f167fc48455b", null ],
     [ "Internals", "classIoex_1_1Internals.html#adde3f4788bbbde05ec9a3aba7581a498", null ],
     [ "copy_database", "classIoex_1_1Internals.html#a99a79a201293c287e804803873d5e34e", null ],
-    [ "get_global_counts", "classIoex_1_1Internals.html#a9ac0a7de832353f0b262ff5ee7ba9c95", null ],
     [ "initialize_state_file", "classIoex_1_1Internals.html#a87b30554c9f06f81b42d881700409240", null ],
     [ "max_name_length", "classIoex_1_1Internals.html#a4a2e3842a35da4c4f8b222cdb7820299", null ],
     [ "operator=", "classIoex_1_1Internals.html#ae844888ccff55267133ba91b9f836e33", null ],

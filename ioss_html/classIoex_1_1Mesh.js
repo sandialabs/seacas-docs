@@ -1,7 +1,8 @@
 var classIoex_1_1Mesh =
 [
     [ "Mesh", "classIoex_1_1Mesh.html#a58bd1e09794aec7a8bc7d96576b672ac", null ],
-    [ "Mesh", "classIoex_1_1Mesh.html#ad65f9f4c935e4c4474ba8f5409d4f773", null ],
+    [ "Mesh", "classIoex_1_1Mesh.html#a75d03273fc5f1543fef4848a42443658", null ],
+    [ "get_global_counts", "classIoex_1_1Mesh.html#abe74442e9c9d98caabf0732c4ecd9a2e", null ],
     [ "populate", "classIoex_1_1Mesh.html#a43685cc27b6ae46653b79e9c52cdd68c", null ],
     [ "assemblies", "classIoex_1_1Mesh.html#a4e7dd5ec0cec4d5dd77645ceb5975a93", null ],
     [ "blobs", "classIoex_1_1Mesh.html#abd94e015df61eb27a85b9fba01cdccea", null ],
@@ -16,6 +17,7 @@ var classIoex_1_1Mesh =
     [ "file_per_processor", "classIoex_1_1Mesh.html#abdb22f7d0305077ac686760e16a9d29c", null ],
     [ "nodeblocks", "classIoex_1_1Mesh.html#a6da203f1894582ea62e81d7a4bfce5da", null ],
     [ "nodesets", "classIoex_1_1Mesh.html#a9cdd443d54da3fed3ee0646775a0d193", null ],
+    [ "parallelUtil", "classIoex_1_1Mesh.html#a3699589de2f0ff99386ddca2fb18ffc2", null ],
     [ "sidesets", "classIoex_1_1Mesh.html#a6b510569cf78bcbb2a6322857ba66a37", null ],
     [ "title", "classIoex_1_1Mesh.html#a182b5a4d9e3818dfb19e064936572e96", null ]
 ];

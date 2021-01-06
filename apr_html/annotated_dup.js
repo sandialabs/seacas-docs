@@ -1,7 +1,25 @@
 var annotated_dup =
 [
-    [ "SEAMS", "namespaceSEAMS.html", "namespaceSEAMS" ],
-    [ "trmclr", "namespacetrmclr.html", "namespacetrmclr" ],
+    [ "SEAMS", "namespaceSEAMS.html", [
+      [ "anonymous_namespace{apr_units.cc}", "namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html", [
+        [ "unit_systems", "structSEAMS_1_1anonymous__namespace_02apr__units_8cc_03_1_1unit__systems.html", "structSEAMS_1_1anonymous__namespace_02apr__units_8cc_03_1_1unit__systems" ]
+      ] ],
+      [ "Scanner", "classSEAMS_1_1Scanner.html", "classSEAMS_1_1Scanner" ],
+      [ "Stats", "classSEAMS_1_1Stats.html", "classSEAMS_1_1Stats" ],
+      [ "array", "structSEAMS_1_1array.html", "structSEAMS_1_1array" ],
+      [ "symrec", "structSEAMS_1_1symrec.html", "structSEAMS_1_1symrec" ],
+      [ "aprepro_options", "structSEAMS_1_1aprepro__options.html", "structSEAMS_1_1aprepro__options" ],
+      [ "file_rec", "structSEAMS_1_1file__rec.html", "structSEAMS_1_1file__rec" ],
+      [ "history_data", "structSEAMS_1_1history__data.html", "structSEAMS_1_1history__data" ],
+      [ "Aprepro", "classSEAMS_1_1Aprepro.html", "classSEAMS_1_1Aprepro" ],
+      [ "Parser", "classSEAMS_1_1Parser.html", "classSEAMS_1_1Parser" ]
+    ] ],
+    [ "trmclr", "namespacetrmclr.html", [
+      [ "Style", "structtrmclr_1_1Style.html", "structtrmclr_1_1Style" ],
+      [ "Attribute", "structtrmclr_1_1Attribute.html", "structtrmclr_1_1Attribute" ],
+      [ "Foreground", "structtrmclr_1_1Foreground.html", "structtrmclr_1_1Foreground" ],
+      [ "Background", "structtrmclr_1_1Background.html", "structtrmclr_1_1Background" ]
+    ] ],
     [ "array_a_init", "structarray__a__init.html", "structarray__a__init" ],
     [ "array_c_init", "structarray__c__init.html", "structarray__c__init" ],
     [ "array_cc_init", "structarray__cc__init.html", "structarray__cc__init" ],

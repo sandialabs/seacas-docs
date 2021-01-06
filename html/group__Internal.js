@@ -164,6 +164,7 @@ var group__Internal =
     [ "EX_GRP_ID_MASK", "group__Internal.html#ga9c24166e1a0fc0fb5db5c1c80114c816", null ],
     [ "EX_UNUSED", "group__Internal.html#ga5e1888937cb4d3958176f144bbdda001", null ],
     [ "EXODUS_DEFAULT_SIZE", "group__Internal.html#gabad20b8c0ded668f506f2d23ea8bf7c5", null ],
+    [ "EXODUS_EXPORT", "group__Internal.html#ga2ad34ede20848a9335ec2d30953724dd", null ],
     [ "MAX_VAR_NAME_LENGTH", "group__Internal.html#ga50bd85ce2ed14f876d5f8faac0adba86", null ],
     [ "VAR_ASSEMBLY_PROP", "group__Internal.html#gafc86d3d6cd7a583864dd9ba399bc6a58", null ],
     [ "VAR_ASSEMBLY_TAB", "group__Internal.html#ga703965b911f3836e0a270d1987667987", null ],

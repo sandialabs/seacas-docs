@@ -6,7 +6,7 @@ var searchData=
   ['shock_5flabel_1348',['shock_label',['../namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#a197cf19c3aa1c044c7fae3cd75f62edb',1,'SEAMS::anonymous_namespace{apr_units.cc}']]],
   ['si_1349',['si',['../namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#a15f7cbe92c79fc34ea503064f00950d3',1,'SEAMS::anonymous_namespace{apr_units.cc}']]],
   ['si_5flabel_1350',['si_label',['../namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#ac285675b0d7751c584262ea6149de934',1,'SEAMS::anonymous_namespace{apr_units.cc}']]],
-  ['stack_5f_1351',['stack_',['../classSEAMS_1_1Parser_1_1stack_1_1slice.html#af5eaf3ab92674d82b42d82108b6442cd',1,'SEAMS::Parser::stack::slice']]],
+  ['stack_5f_1351',['stack_',['../classSEAMS_1_1Parser_1_1stack_1_1slice.html#af5eaf3ab92674d82b42d82108b6442cd',1,'SEAMS::Parser::stack::slice::stack_()'],['../classSEAMS_1_1Parser_1_1stack_1_1slice.html#af5eaf3ab92674d82b42d82108b6442cd',1,'SEAMS::Parser::stack&lt; stack_symbol_type &gt;::slice::stack_()']]],
   ['state_1352',['state',['../structSEAMS_1_1Parser_1_1by__state.html#af64b6b82b71edcc1f0a9ef8d5da560f8',1,'SEAMS::Parser::by_state']]],
   ['stateimmutable_1353',['stateImmutable',['../classSEAMS_1_1Aprepro.html#a19e16ef7b79f877088ec07bf8f212718',1,'SEAMS::Aprepro']]],
   ['stddev_1354',['StdDev',['../classSEAMS_1_1Stats.html#a0f9edd96967e4924fde25ab9a8b47a5a',1,'SEAMS::Stats']]],

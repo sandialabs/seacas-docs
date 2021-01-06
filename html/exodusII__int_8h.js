@@ -124,6 +124,7 @@ var exodusII__int_8h =
     [ "EX_GRP_ID_MASK", "group__Internal.html#ga9c24166e1a0fc0fb5db5c1c80114c816", null ],
     [ "EX_UNUSED", "group__Internal.html#ga5e1888937cb4d3958176f144bbdda001", null ],
     [ "EXODUS_DEFAULT_SIZE", "group__Internal.html#gabad20b8c0ded668f506f2d23ea8bf7c5", null ],
+    [ "EXODUS_EXPORT", "group__Internal.html#ga2ad34ede20848a9335ec2d30953724dd", null ],
     [ "MAX_VAR_NAME_LENGTH", "group__Internal.html#ga50bd85ce2ed14f876d5f8faac0adba86", null ],
     [ "snprintf_nowarn", "exodusII__int_8h.html#a425a38fe3982a78848b6f9532df5d61f", null ],
     [ "VAR_ASSEMBLY_PROP", "group__Internal.html#gafc86d3d6cd7a583864dd9ba399bc6a58", null ],

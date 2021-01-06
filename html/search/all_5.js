@@ -1004,7 +1004,7 @@ var searchData=
   ['exodus_2delement_2dtypes_2emd_1136',['exodus-element-types.md',['../exodus-element-types_8md.html',1,'']]],
   ['exodus_2dformats_2emd_1137',['Exodus-Formats.md',['../Exodus-Formats_8md.html',1,'']]],
   ['exodus_5fdefault_5fsize_1138',['EXODUS_DEFAULT_SIZE',['../group__Internal.html#gabad20b8c0ded668f506f2d23ea8bf7c5',1,'exodusII_int.h']]],
-  ['exodus_5fexport_1139',['EXODUS_EXPORT',['../exodusII_8h.html#a2ad34ede20848a9335ec2d30953724dd',1,'exodusII.h']]],
+  ['exodus_5fexport_1139',['EXODUS_EXPORT',['../exodusII_8h.html#a2ad34ede20848a9335ec2d30953724dd',1,'EXODUS_EXPORT():&#160;exodusII.h'],['../group__Internal.html#ga2ad34ede20848a9335ec2d30953724dd',1,'EXODUS_EXPORT():&#160;exodusII_int.h']]],
   ['exodus_20formats_1140',['Exodus Formats',['../exodus_formats.html',1,'']]],
   ['exodus_5frelease_5fdate_1141',['EXODUS_RELEASE_DATE',['../exodusII_8h.html#a37e831b87010d45baccb8af2db1c0143',1,'exodusII.h']]],
   ['exodus_5funused_5fsymbol_5fdummy_5fex_5fcreate_5fpar_1142',['exodus_unused_symbol_dummy_ex_create_par',['../group__Utilities.html#ga8e5ee50efe4c9740f9306ef0c2922c99',1,'ex_create_par.c']]],
