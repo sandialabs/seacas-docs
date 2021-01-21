@@ -13,7 +13,7 @@ var classIotr_1_1Tensor =
     ] ],
     [ "Tensor", "classIotr_1_1Tensor.html#a3af27d95eb230de31466cbcd4baaf15b", null ],
     [ "internal_execute", "classIotr_1_1Tensor.html#abc77d0f2b87d0c810a7d12f2d1001ee5", null ],
-    [ "output_count", "classIotr_1_1Tensor.html#a77f0e10ae56970659befd458e068e155", null ],
+    [ "output_count", "classIotr_1_1Tensor.html#acd077b125a5f538c635e5d2a8f95311f", null ],
     [ "output_storage", "classIotr_1_1Tensor.html#a56f97f6d5b8863275cd9ab424dfe277e", null ],
     [ "Tensor_Factory", "classIotr_1_1Tensor.html#ae269f222108252211044128a481f8d6c", null ],
     [ "type_", "classIotr_1_1Tensor.html#a7badeceaa6e288d823795164413f08c8", null ]

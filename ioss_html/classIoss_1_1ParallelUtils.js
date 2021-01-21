@@ -5,6 +5,7 @@ var classIoss_1_1ParallelUtils =
       [ "DO_MIN", "classIoss_1_1ParallelUtils.html#aecb74d2b4f6d42014acf7d607964dd8fab1e049cec56ec5220aff4ba142b6ed64", null ],
       [ "DO_SUM", "classIoss_1_1ParallelUtils.html#aecb74d2b4f6d42014acf7d607964dd8fac4685d6c20afe7016d6db9fee5e849ff", null ]
     ] ],
+    [ "ParallelUtils", "classIoss_1_1ParallelUtils.html#a15e06e988a72d8b522f447783b9d16bb", null ],
     [ "ParallelUtils", "classIoss_1_1ParallelUtils.html#ae06268d3d46bfe20f6a16049c2386606", null ],
     [ "~ParallelUtils", "classIoss_1_1ParallelUtils.html#a50e51cbf4c649f4105f3769ad53080bc", null ],
     [ "add_environment_properties", "classIoss_1_1ParallelUtils.html#a66ac8857acdf08f232dee3b9442b7b21", null ],

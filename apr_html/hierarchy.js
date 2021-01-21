@@ -50,7 +50,6 @@ var hierarchy =
     ] ],
     [ "SEAMS::Parser::semantic_type", "unionSEAMS_1_1Parser_1_1semantic__type.html", null ],
     [ "SEAMS::Parser::stack< T, S >::slice", "classSEAMS_1_1Parser_1_1stack_1_1slice.html", null ],
-    [ "SEAMS::Parser::stack< stack_symbol_type >::slice", "classstack_3_01stack__symbol__type_01_4_1_1slice.html", null ],
     [ "SEAMS::Parser::stack< T, S >", "classSEAMS_1_1Parser_1_1stack.html", null ],
     [ "SEAMS::Parser::stack< stack_symbol_type >", "classSEAMS_1_1Parser_1_1stack.html", null ],
     [ "SEAMS::Stats", "classSEAMS_1_1Stats.html", null ],
