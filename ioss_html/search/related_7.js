@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tensor_5ffactory_7508',['Tensor_Factory',['../classIotr_1_1Tensor.html#ae269f222108252211044128a481f8d6c',1,'Iotr::Tensor']]]
+  ['minmax_5ffactory_9923',['MinMax_Factory',['../classIotr_1_1MinMax.html#af3ffb1d59c4453d0abb4e114d843bf3b',1,'Iotr::MinMax']]]
 ];

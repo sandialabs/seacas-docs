@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('Ioss__GroupingEntity_8h_source.html','
 <div class="title">Ioss_GroupingEntity.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Ioss__GroupingEntity_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<a href="Ioss__GroupingEntity_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
@@ -617,7 +617,7 @@ $(document).ready(function(){initNavTree('Ioss__GroupingEntity_8h_source.html','
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <a class="code" href="classIoss_1_1Field.html">Ioss::Field</a> field = get_field(field_name);</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160; </div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  <span class="comment">// Resize the view</span></div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <span class="keywordtype">int</span> new_view_size = field.<a class="code" href="classIoss_1_1Field.html#ac24230b1f5a5bda5d68b842c20efa9bb">raw_count</a>() * field.<a class="code" href="classIoss_1_1Field.html#aa50e28cbc6eff5e4056eda686d79f4e1">raw_storage</a>()-&gt;<a class="code" href="classIoss_1_1VariableType.html#ad1e37f24dd5bbe9ed6bee80a93665d6c">component_count</a>();</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <span class="keyword">auto</span> new_view_size = field.<a class="code" href="classIoss_1_1Field.html#ac24230b1f5a5bda5d68b842c20efa9bb">raw_count</a>() * field.<a class="code" href="classIoss_1_1Field.html#aa50e28cbc6eff5e4056eda686d79f4e1">raw_storage</a>()-&gt;<a class="code" href="classIoss_1_1VariableType.html#ad1e37f24dd5bbe9ed6bee80a93665d6c">component_count</a>();</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  Kokkos::resize(<a class="code" href="namespaceanonymous__namespace_02cth__pressure__map_8C_03.html#a13e85c35bb623bd97cff6847698831ba">data</a>, new_view_size);</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  <span class="keywordtype">size_t</span> data_size = new_view_size * <span class="keyword">sizeof</span>(T);</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160; </div>

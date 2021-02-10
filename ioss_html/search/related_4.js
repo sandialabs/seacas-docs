@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['property_7501',['Property',['../classIoss_1_1GroupingEntity.html#a386f5a9cf65610cb62143865e5637272',1,'Ioss::GroupingEntity']]]
+  ['fg_9917',['fg',['../classtext__style.html#a997e6e620a49e3f2a459f74249305136',1,'text_style']]],
+  ['file_9918',['file',['../classbuffered__file.html#a686a90482e62dd1618201a3c79f9aae6',1,'buffered_file']]],
+  ['formatter_3c_20bigint_20_3e_9919',['formatter&lt; bigint &gt;',['../classdetail_1_1bigint.html#a2cd69505524105acb7ee0daf64b55996',1,'detail::bigint']]],
+  ['formatter_3c_20bytes_20_3e_9920',['formatter&lt; bytes &gt;',['../classbytes.html#ad5f40c15775d3701a6c4784dc0c5f6ce',1,'bytes']]]
 ];

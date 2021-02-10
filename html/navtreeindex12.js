@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"structex__init__params.html#aed3ef07dd4f1ecbb945fdb654dbc0df1":[7,6,0,14],
+"structex__init__params.html#af1519720ea373ba198ab0d1e00ed5466":[7,6,0,4],
+"structex__init__params.html#af78401fc73d373f707c6845cf4b7b451":[7,6,0,19],
+"structex__set.html":[7,6,5],
 "structex__set.html#a3b7e3f4d6a16d5bf8b45b75e97bd8fb1":[7,6,5,2],
 "structex__set.html#a55b371867c6117ddf2938c498f5fda32":[7,6,5,0],
 "structex__set.html#a7345b6862081b1e649dc51c39d6accf0":[7,6,5,4],

@@ -1,6 +1,7 @@
 var functions_type =
 [
-    [ "a", "functions_type.html", null ],
+    [ "_", "functions_type.html", null ],
+    [ "a", "functions_type_a.html", null ],
     [ "b", "functions_type_b.html", null ],
     [ "c", "functions_type_c.html", null ],
     [ "d", "functions_type_d.html", null ],

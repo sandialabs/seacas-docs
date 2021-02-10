@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['opttype_7334',['OptType',['../classIoss_1_1GetLongOption.html#a700d115b1f5dfc0a52f00060ab324246',1,'Ioss::GetLongOption']]],
-  ['origin_7335',['Origin',['../classIoss_1_1Property.html#a16338f2d9b5be973401bd8183c8fa0d3',1,'Ioss::Property']]]
+  ['ifdatabaseexistsbehavior_9528',['IfDatabaseExistsBehavior',['../namespaceIoss.html#ae1de565aa8b642bb5a50be439906c74d',1,'Ioss']]]
 ];

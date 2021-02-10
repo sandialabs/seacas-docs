@@ -110,6 +110,7 @@ var group__ModelDescription =
     [ "ex_put_partial_coord", "group__ModelDescription.html#gaf218308aa23e0723e1a1e4e5a42652e5", null ],
     [ "ex_put_partial_coord_component", "group__ModelDescription.html#ga55e7ca571ec29f68054f7087d3b76c79", null ],
     [ "ex_put_partial_id_map", "group__ModelDescription.html#gaf6c1eb5868fc55be97680530215918b5", null ],
+    [ "ex_put_partial_node_cmap", "group__ModelDescription.html#ga7aa39bd550a653b5d591acaaa614b559", null ],
     [ "ex_put_partial_num_map", "group__ModelDescription.html#gaada49660e6b5f9444e2d9c6decb3f7d6", null ],
     [ "ex_put_partial_one_attr", "group__ModelDescription.html#ga612ec00b980c52733108c62c35a66b2c", null ],
     [ "ex_put_partial_set", "group__ModelDescription.html#ga038a1fc6df4a66d7cf25d5540d05e5f9", null ],

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Exodus
-   &#160;<span id="projectnumber">8.09</span>
+   &#160;<span id="projectnumber">7.22</span>
    </div>
   </td>
  </tr>
@@ -323,6 +323,8 @@ Functions</h2></td></tr>
 <tr class="separator:gafde319de5641ae802d523fc63f7e1174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0cc77c3159c314d1b3276fc38793a49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#gac0cc77c3159c314d1b3276fc38793a49">ex_put_node_cmap</a> (int exoid, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> map_id, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *node_ids, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *proc_ids, int processor)</td></tr>
 <tr class="separator:gac0cc77c3159c314d1b3276fc38793a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7aa39bd550a653b5d591acaaa614b559"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga7aa39bd550a653b5d591acaaa614b559">ex_put_partial_node_cmap</a> (int exoid, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> map_id, int64_t start_node, int64_t num_nodes, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *node_ids, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *proc_ids, int processor)</td></tr>
+<tr class="separator:ga7aa39bd550a653b5d591acaaa614b559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6dc4d4ad0b072807fca45c05e68638df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga6dc4d4ad0b072807fca45c05e68638df">ex_get_elem_cmap</a> (int exoid, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> map_id, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *elem_ids, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *side_ids, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *proc_ids, int processor)</td></tr>
 <tr class="separator:ga6dc4d4ad0b072807fca45c05e68638df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0a4dab0afa672ee7ad4d416b7d227bb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga0a4dab0afa672ee7ad4d416b7d227bb5">ex_put_elem_cmap</a> (int exoid, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> map_id, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *elem_ids, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *side_ids, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *proc_ids, int processor)</td></tr>
@@ -6056,7 +6058,88 @@ Functions</h2></td></tr>
     <tr><td class="paramname">map_type</td><td></td></tr>
     <tr><td class="paramname">start_entity_num</td><td></td></tr>
     <tr><td class="paramname">num_entities</td><td></td></tr>
-    <tr><td class="paramname">map</td><td>element numbering map array </td></tr>
+    <tr><td class="paramname">map</td><td>numbering map array </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga7aa39bd550a653b5d591acaaa614b559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7aa39bd550a653b5d591acaaa614b559">&#9670;&nbsp;</a></span>ex_put_partial_node_cmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ex_put_partial_node_cmap </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exoid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a>&#160;</td>
+          <td class="paramname"><em>map_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>start_entity_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>num_entities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *&#160;</td>
+          <td class="paramname"><em>node_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *&#160;</td>
+          <td class="paramname"><em>proc_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>processor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>writes out a portion of the nodal communication map to the database; This map specifies the nodes on a processor boundary and the processors that those nodes are shared with.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exoid</td><td>exodus file id </td></tr>
+    <tr><td class="paramname">map_id</td><td></td></tr>
+    <tr><td class="paramname">start_entity_num</td><td></td></tr>
+    <tr><td class="paramname">num_entities</td><td></td></tr>
+    <tr><td class="paramname">node_ids</td><td>the file-local node ids on the processor boundary </td></tr>
+    <tr><td class="paramname">proc_ids</td><td>the processor ids associated with each of the node_ids </td></tr>
+    <tr><td class="paramname">processor</td><td>the processor the file is being written for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exoid</td><td>NetCDF/Exodus file ID </td></tr>
+    <tr><td class="paramname">map_id</td><td>Nodal comm map ID </td></tr>
+    <tr><td class="paramname">node_ids</td><td>FEM node IDs </td></tr>
+    <tr><td class="paramname">proc_ids</td><td>Processor IDs </td></tr>
+    <tr><td class="paramname">processor</td><td>This processor ID </td></tr>
   </table>
   </dd>
 </dl>

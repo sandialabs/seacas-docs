@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['glob_5fmatch_7493',['glob_match',['../classglob_1_1BasicGlob.html#a5499b5eb63077b4441c6e7ffada691ba',1,'glob::BasicGlob::glob_match()'],['../classglob_1_1BasicGlob.html#ae9bb4519d655164d78723504d73fcf12',1,'glob::BasicGlob::glob_match()'],['../classglob_1_1BasicGlob.html#a7111992ba51a2aca4ce48473072d62b9',1,'glob::BasicGlob::glob_match()'],['../classglob_1_1BasicGlob.html#abc5bf5085110d6a0954c29b508097492',1,'glob::BasicGlob::glob_match()'],['../classglob_1_1MatchResults.html#a5499b5eb63077b4441c6e7ffada691ba',1,'glob::MatchResults::glob_match()'],['../classglob_1_1MatchResults.html#ae9bb4519d655164d78723504d73fcf12',1,'glob::MatchResults::glob_match()'],['../classglob_1_1MatchResults.html#a7111992ba51a2aca4ce48473072d62b9',1,'glob::MatchResults::glob_match()'],['../classglob_1_1MatchResults.html#abc5bf5085110d6a0954c29b508097492',1,'glob::MatchResults::glob_match()']]]
+  ['add_5fcompare_9909',['add_compare',['../classdetail_1_1bigint.html#aa5f9a8e926ca7b38a1d1527f75d79830',1,'detail::bigint']]]
 ];

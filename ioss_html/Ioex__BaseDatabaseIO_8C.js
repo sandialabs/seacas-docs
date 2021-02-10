@@ -9,5 +9,6 @@ var Ioex__BaseDatabaseIO_8C =
     [ "generate_block_truth_table", "Ioex__BaseDatabaseIO_8C.html#a369889bfd6f4b0129975a0f92b6ef38f", null ],
     [ "write_attribute_names", "Ioex__BaseDatabaseIO_8C.html#addea8a83c30e4b39c8e59c3a50f40d1d", null ],
     [ "complex_suffix", "Ioex__BaseDatabaseIO_8C.html#a7ab2dd5c27772474303fd6666297dc88", null ],
-    [ "max_line_length", "Ioex__BaseDatabaseIO_8C.html#af988ac51328995734fce46ba6e237f5a", null ]
+    [ "max_line_length", "Ioex__BaseDatabaseIO_8C.html#af988ac51328995734fce46ba6e237f5a", null ],
+    [ "sixty_four_bit_message_output", "Ioex__BaseDatabaseIO_8C.html#a86f69772c437bdb7850de56a06636dcc", null ]
 ];

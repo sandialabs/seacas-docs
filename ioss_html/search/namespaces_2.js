@@ -1,22 +1,4 @@
 var searchData=
 [
-  ['anonymous_5fnamespace_7biocgns_5fstructuredzonedata_2ec_7d_4109',['anonymous_namespace{Iocgns_StructuredZoneData.C}',['../namespaceIocgns_1_1anonymous__namespace_02Iocgns__StructuredZoneData_8C_03.html',1,'Iocgns']]],
-  ['anonymous_5fnamespace_7bioex_5fbasedatabaseio_2ec_7d_4110',['anonymous_namespace{Ioex_BaseDatabaseIO.C}',['../namespaceIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html',1,'Ioex']]],
-  ['info_4111',['Info',['../namespaceInfo.html',1,'']]],
-  ['init_4112',['Init',['../namespaceIoss_1_1Init.html',1,'Ioss']]],
-  ['ioad_4113',['Ioad',['../namespaceIoad.html',1,'']]],
-  ['iocgns_4114',['Iocgns',['../namespaceIocgns.html',1,'']]],
-  ['iodw_4115',['Iodw',['../namespaceIodw.html',1,'']]],
-  ['ioex_4116',['Ioex',['../namespaceIoex.html',1,'']]],
-  ['iogn_4117',['Iogn',['../namespaceIogn.html',1,'']]],
-  ['iogs_4118',['Iogs',['../namespaceIogs.html',1,'']]],
-  ['iohb_4119',['Iohb',['../namespaceIohb.html',1,'']]],
-  ['iopg_4120',['Iopg',['../namespaceIopg.html',1,'']]],
-  ['ioshell_4121',['IOShell',['../namespaceIOShell.html',1,'']]],
-  ['ioss_4122',['Ioss',['../namespaceIoss.html',1,'']]],
-  ['iotr_4123',['Iotr',['../namespaceIotr.html',1,'']]],
-  ['iovs_4124',['Iovs',['../namespaceIovs.html',1,'']]],
-  ['meta_4125',['meta',['../namespaceIodw_1_1meta.html',1,'Iodw']]],
-  ['private_4126',['Private',['../namespaceIoss_1_1Private.html',1,'Ioss']]],
-  ['utils_4127',['Utils',['../namespaceIodw_1_1Utils.html',1,'Iodw']]]
+  ['glob_5551',['glob',['../namespaceglob.html',1,'']]]
 ];

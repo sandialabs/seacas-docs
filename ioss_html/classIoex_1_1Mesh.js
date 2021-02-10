@@ -15,9 +15,14 @@ var classIoex_1_1Mesh =
     [ "faceblocks", "classIoex_1_1Mesh.html#a23d8c53e1199226b58d5376fa9fd3048", null ],
     [ "facesets", "classIoex_1_1Mesh.html#af4205e2324434b8904ace5a9273b77ec", null ],
     [ "file_per_processor", "classIoex_1_1Mesh.html#abdb22f7d0305077ac686760e16a9d29c", null ],
+    [ "full_nemesis_data", "classIoex_1_1Mesh.html#a5deef64cc6c01dcc28b48a6016e7de65", null ],
     [ "nodeblocks", "classIoex_1_1Mesh.html#a6da203f1894582ea62e81d7a4bfce5da", null ],
     [ "nodesets", "classIoex_1_1Mesh.html#a9cdd443d54da3fed3ee0646775a0d193", null ],
     [ "parallelUtil", "classIoex_1_1Mesh.html#a3699589de2f0ff99386ddca2fb18ffc2", null ],
     [ "sidesets", "classIoex_1_1Mesh.html#a6b510569cf78bcbb2a6322857ba66a37", null ],
-    [ "title", "classIoex_1_1Mesh.html#a182b5a4d9e3818dfb19e064936572e96", null ]
+    [ "title", "classIoex_1_1Mesh.html#a182b5a4d9e3818dfb19e064936572e96", null ],
+    [ "use_edge_map", "classIoex_1_1Mesh.html#ab0e17c91332f2bd3184593ed074609d7", null ],
+    [ "use_elem_map", "classIoex_1_1Mesh.html#acf884a95f25577abfe9d900fb9cff3e5", null ],
+    [ "use_face_map", "classIoex_1_1Mesh.html#a187ee4698d5e14326e990a44e1f32a51", null ],
+    [ "use_node_map", "classIoex_1_1Mesh.html#a60257fa7b9f4d1b180f0df4bdfb6097f", null ]
 ];

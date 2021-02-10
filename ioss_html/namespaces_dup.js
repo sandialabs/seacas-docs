@@ -1,5 +1,14 @@
 var namespaces_dup =
 [
+    [ "align", "namespacealign.html", [
+      [ "type", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759", [
+        [ "none", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a4ba1498ecf6f0de5baac670a264e43eb", null ],
+        [ "left", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd", null ],
+        [ "right", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79", null ],
+        [ "center", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4", null ],
+        [ "numeric", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759af95ea74b65a6ce7cade89d4db5ab5d1b", null ]
+      ] ]
+    ] ],
     [ "anonymous_namespace{cgns_decomp.C}", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html", "namespaceanonymous__namespace_02cgns__decomp_8C_03" ],
     [ "anonymous_namespace{cth_pressure_map.C}", "namespaceanonymous__namespace_02cth__pressure__map_8C_03.html", "namespaceanonymous__namespace_02cth__pressure__map_8C_03" ],
     [ "anonymous_namespace{info_interface.C}", "namespaceanonymous__namespace_02info__interface_8C_03.html", [
@@ -75,7 +84,8 @@ var namespaces_dup =
       [ "generate_block_truth_table", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a369889bfd6f4b0129975a0f92b6ef38f", null ],
       [ "write_attribute_names", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#addea8a83c30e4b39c8e59c3a50f40d1d", null ],
       [ "complex_suffix", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a7ab2dd5c27772474303fd6666297dc88", null ],
-      [ "max_line_length", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#af988ac51328995734fce46ba6e237f5a", null ]
+      [ "max_line_length", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#af988ac51328995734fce46ba6e237f5a", null ],
+      [ "sixty_four_bit_message_output", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a86f69772c437bdb7850de56a06636dcc", null ]
     ] ],
     [ "anonymous_namespace{Ioex_DatabaseIO.C}", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html", [
       [ "compute_internal_border_maps", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#aed219e91b6f906d7680ced105eec90b0", null ],
@@ -180,7 +190,7 @@ var namespaces_dup =
       [ "calc_bounding_box", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#acb8182b7e1a171e2d1a8402a7f282529", null ],
       [ "internal_parallel_consistent", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#abb16e9ce1770ccae6dbccc024cfc1a2a", null ],
       [ "log_field", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a3f5223b8bdd71be3ba720d424ca0bb4e", null ],
-      [ "log_time", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a4682dbceb8a9b6f76917d92169a37a57", null ],
+      [ "log_time", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a7ac44316a0026547ad9dfd7ec60cf8a8", null ],
       [ "my_max", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a0e411dcef03dc583f5fb278caf98eec9", null ],
       [ "my_min", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a42f6daef2d2253c2dd2a79aa9a1a4d32", null ],
       [ "initial_time", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a8b5e1172efa0e2d5d497e0dea0a894c4", null ]
@@ -443,6 +453,7 @@ var namespaces_dup =
       [ "comp_grad12x", "namespaceanonymous__namespace_02volume_8C_03.html#aa2b0c68eb6b5594cb01e2e73bf8d39d8", null ],
       [ "dot8", "namespaceanonymous__namespace_02volume_8C_03.html#af719cf311d0d67e67fdf3884b50d0795", null ]
     ] ],
+    [ "detail", "namespacedetail.html", "namespacedetail" ],
     [ "glob", "namespaceglob.html", "namespaceglob" ],
     [ "Info", "namespaceInfo.html", "namespaceInfo" ],
     [ "Ioad", "namespaceIoad.html", "namespaceIoad" ],
@@ -458,6 +469,19 @@ var namespaces_dup =
     [ "Iotr", "namespaceIotr.html", "namespaceIotr" ],
     [ "Iovs", "namespaceIovs.html", "namespaceIovs" ],
     [ "Modify", "namespaceModify.html", "namespaceModify" ],
+    [ "safe_duration_cast", "namespacesafe__duration__cast.html", [
+      [ "lossless_integral_conversion", "namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9", null ],
+      [ "safe_duration_cast", "namespacesafe__duration__cast.html#a1b2f780f349d616fa841550dc49f59d0", null ],
+      [ "safe_float_conversion", "namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a", null ]
+    ] ],
+    [ "sign", "namespacesign.html", [
+      [ "type", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8", [
+        [ "none", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a75c2aa7fc7b2327c3b1b9e4e0e997440", null ],
+        [ "minus", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a7985fecd36375136e45b9c53928f859a", null ],
+        [ "plus", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a0dfb6f25f723da9360584c01aee74389", null ],
+        [ "space", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d", null ]
+      ] ]
+    ] ],
     [ "Skinner", "namespaceSkinner.html", "namespaceSkinner" ],
     [ "SmartAssert", "namespaceSmartAssert.html", [
       [ "assert_func", "namespaceSmartAssert.html#ae79bd0b6793bdd58e1c6d65aabaec6ad", null ],

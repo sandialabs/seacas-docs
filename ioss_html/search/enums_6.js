@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['meshtype_7332',['MeshType',['../namespaceIoss.html#aa4d4cdd26c26124cb15aad084f4de822',1,'Ioss']]],
-  ['minmax_7333',['MinMax',['../classIoss_1_1ParallelUtils.html#aecb74d2b4f6d42014acf7d607964dd8f',1,'Ioss::ParallelUtils']]]
+  ['grouptype_9527',['GroupType',['../classglob_1_1GroupNode.html#aecbd6805c7c7e9bf4ec8be6cb4cbb70e',1,'glob::GroupNode']]]
 ];

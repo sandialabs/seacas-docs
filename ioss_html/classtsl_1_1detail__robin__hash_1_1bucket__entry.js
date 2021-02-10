@@ -17,7 +17,7 @@ var classtsl_1_1detail__robin__hash_1_1bucket__entry =
     [ "operator=", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a439eb2cc9a2fd3121de320f1230c4904", null ],
     [ "operator=", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#afb375cd59ca6f2d3c0c57136c57b5a23", null ],
     [ "set_as_last_bucket", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#afb0ee5976a76914648f8238fe76a0741", null ],
-    [ "set_value_of_empty_bucket", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#ac04faad1279a09d6f335c21172798d3a", null ],
+    [ "set_value_of_empty_bucket", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#af3482f46b8d5f411d6cfba8bbeadb500", null ],
     [ "swap_with_value_in_bucket", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a1648ffc6d624f42fda266f2ad00c2956", null ],
     [ "truncate_hash", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a827cd16b440c902d67cc275513fc7d50", null ],
     [ "value", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#ab9f9982a0d36165c9062401800eccb0a", null ],
