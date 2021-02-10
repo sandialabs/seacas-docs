@@ -220,50 +220,61 @@ Parallel Execution</h1>
 <p>The <code>-linear</code>, <code>-cyclic</code>, and <code>-random</code> methods are typically used for debugging and testing Zellij and should not be used in a production run, especially the <code>-random</code> method.</p>
 <h2><a class="anchor" id="autotoc_md7"></a>
 Partial Parallel Output Mode</h2>
-<p>There is a <em>partial parallel output</em> mode in which you can tell Zellij to only output a portion of the parallel decomposed files. This is selected with the <code>-start_rank &lt;rank&gt;</code> and <code>-rank_count &lt;count&gt;</code> options. In this case, Zellij will only output the ranks from <code>rank</code> up to <code>rank+count-1</code>. For example, if you run <code>zellij -ranks 10 -start_rank 5 -rank_count 3</code>, then zellij would output files for ranks 5, 6, and 7. This is somewhat inefficient since zellij will do many of the calculations for all ranks and only output the specified ranks; however, it does allow you to run multiple copies of zellij simultaneously. For example, you could run: </p><div class="fragment"><div class="line"> zellij -ranks 16 --start_rank  0 --rank_count 4</div>
-<div class="line"> zellij -ranks 16 --start_rank  4 --rank_count 4</div>
-<div class="line"> zellij -ranks 16 --start_rank  8 --rank_count 4</div>
-<div class="line"> zellij -ranks 16 --start_rank 12 --rank_count 4</div>
-<div class="line">``</div>
-<div class="line">simultaneously and all 16 files should be output faster than running a single execution that wrote all of the files.</div>
+<p>There is a <em>partial parallel output</em> mode in which you can tell Zellij to only output a portion of the parallel decomposed files. This is selected with the <code>-start_rank &lt;rank&gt;</code> and <code>-rank_count &lt;count&gt;</code> options. In this case, Zellij will only output the ranks from <code>rank</code> up to <code>rank+count-1</code>. For example, if you run <code>zellij -ranks 10 -start_rank 5 -rank_count 3</code>, then zellij would output files for ranks 5, 6, and 7. This is somewhat inefficient since zellij will do many of the calculations for all ranks and only output the specified ranks; however, it does allow you to run multiple copies of zellij simultaneously. For example, you could run:</p>
+<div class="fragment"><div class="line">zellij -ranks 16 --start_rank  0 --rank_count 4</div>
+<div class="line">zellij -ranks 16 --start_rank  4 --rank_count 4</div>
+<div class="line">zellij -ranks 16 --start_rank  8 --rank_count 4</div>
+<div class="line">zellij -ranks 16 --start_rank 12 --rank_count 4</div>
+</div><!-- fragment --><p>simultaneously and all 16 files should be output faster than running a single execution that wrote all of the files.</p>
+<p>At some time in the future, this will be able to be handled automatically using <code>mpiexec -np 4 ...</code> and zellij will automatically divide up the work among the 4 mpi ranks.</p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Execution Complexity</h1>
+<p>Zellij is intended to produce extremely large meshes and is therefore very concerned with both memory efficiency and execution time efficiency.</p>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Memory Complexity</h2>
+<p>Zellij stores the following data:</p>
+<ul>
+<li>For each unit cell template mesh:<ul>
+<li>metadata</li>
+<li>64-bit Ids of nodes on each min_I, max_I, min_J, max_J face</li>
+</ul>
+</li>
+<li>For each entry in the lattice definition:<ul>
+<li>metadata (approximately 1KiByte)</li>
+<li>temporarily it will hold 64-bit Ids of nodes on the max_I and max_J faces. This will be deleted once the upper <code>I</code> and upper <code>J</code> "neighbor" entry has been processed (see below)</li>
+</ul>
+</li>
+<li>For the lattice:<ul>
+<li>vector containing the lattice definition.</li>
+</ul>
+</li>
+</ul>
+<p>The main memory use once the output file is being processed is the temporary storage containing the nodes on the <code>max_I</code> and <code>max_J</code> faces. The lattice is processed cell by cell. For an <code>II by JJ</code> sized grid, the cells are processed in the order <code>(1,1), (2,1), ... , (II, 1), (1,2), (2,2), ..., (II, JJ)</code>. The temporary storage on the <code>max_I</code> face is only needed until the next cell is processed. That is, for cell <code>(i,j)</code>, its <code>max_I</code> nodes will be used during the processing of cell <code>(i+1, j)</code> and then deleted.</p>
+<p>The temporary storage on the <code>max_J</code> face is retained for a longer time. For cell <code>(i,j)</code>, the <code>max_J</code> storage is needed for cell <code>(i, j+1)</code> and then deleted.</p>
+<p>For a grid of size <code>(II, JJ)</code>, there will at most be:</p>
+<ul>
+<li>1 temporary vector of size <code>max_I</code> nodes</li>
+<li><code>II</code> temporary vectors of size <code>max_J</code> nodes.</li>
+</ul>
+<p>If you have a lattice that is rectangular (<code>II != JJ</code>), then it is more efficient for memory usage to make the <code>I</code> direction the smallest value if possible.</p>
+<p>In addition to the above memory usage, zellij must also transfer the mesh coordinate data and element block connectivity data for each lattice entry to the output file. Zellij outputs the model using the following pseudo-code:</p>
+<div class="fragment"><div class="line">for each j : J</div>
+<div class="line">  for each i : I</div>
+<div class="line">     read cell(i,j)  x, y, and z local coordinates</div>
+<div class="line">     map coordinates to offset in output mesh</div>
+<div class="line">     eliminate nodes that join to an already output neighbor cell</div>
+<div class="line">     write cell(i,j) x, y, and z global coordinates</div>
 <div class="line"> </div>
-<div class="line">At some time in the future, this will be able to be handled automatically using `mpiexec -np 4 ...` and zellij will automatically divide up the work among the 4 mpi ranks.</div>
-<div class="line"> </div>
-<div class="line">## Execution Complexity</div>
-<div class="line"> </div>
-<div class="line">Zellij is intended to produce extremely large meshes and is therefore very concerned with both memory efficiency and execution time efficiency.</div>
-<div class="line"> </div>
-<div class="line">### Memory Complexity</div>
-<div class="line"> </div>
-<div class="line">Zellij stores the following data:</div>
-<div class="line"> </div>
-<div class="line">* For each unit cell template mesh:</div>
-<div class="line">  * metadata</div>
-<div class="line">  * 64-bit Ids of nodes on each min_I, max_I, min_J, max_J face</div>
-<div class="line">* For each entry in the lattice definition:</div>
-<div class="line">  * metadata (approximately 1KiByte)</div>
-<div class="line">  * temporarily it will hold 64-bit Ids of nodes on the max_I and max_J faces. This will be deleted once the upper `I` and upper `J` &quot;neighbor&quot; entry has been processed (see below)</div>
-<div class="line">* For the lattice:</div>
-<div class="line">  * vector containing the lattice definition.</div>
-<div class="line"> </div>
-<div class="line">The main memory use once the output file is being processed is the temporary storage containing the nodes on the `max_I` and `max_J` faces.  The lattice is processed cell by cell.  For an `II by JJ` sized grid, the cells are processed in the order `(1,1), (2,1), ... , (II, 1), (1,2), (2,2), ..., (II, JJ)`.  The temporary storage on the `max_I` face is only needed until the next cell is processed.  That is, for cell `(i,j)`, its `max_I` nodes will be used during the processing of cell `(i+1, j)` and then deleted.</div>
-<div class="line"> </div>
-<div class="line">The temporary storage on the `max_J` face is retained for a longer time.  For cell `(i,j)`, the `max_J` storage is needed for cell `(i, j+1)` and then deleted.</div>
-<div class="line"> </div>
-<div class="line">For a grid of size `(II, JJ)`, there will at most be:</div>
-<div class="line"> </div>
-<div class="line">* 1 temporary vector of size `max_I` nodes</div>
-<div class="line">* `II` temporary vectors of size `max_J` nodes.</div>
-<div class="line"> </div>
-<div class="line">If you have a lattice that is rectangular (`II != JJ`), then it is more efficient for memory usage to make the `I` direction the smallest value if possible.</div>
-<div class="line"> </div>
-<div class="line">In addition to the above memory usage, zellij must also transfer the mesh coordinate data and element block connectivity data for each lattice entry to the output file.  Zellij outputs the model using the following pseudo-code:</div>
-</div><!-- fragment --><p> for each j : J for each i : I read cell(i,j) x, y, and z local coordinates map coordinates to offset in output mesh eliminate nodes that join to an already output neighbor cell write cell(i,j) x, y, and z global coordinates</p>
-<p>for each j : J for each i : I for each element block in cell(i,j) mesh read block connectivity map local node ids to global node ids write block connectivity ```</p>
-<p>The maximum memory use will be the size of storage needed for the <code>x</code> <code>y</code> and <code>z</code> coordinates of a unit cell mesh or the storage needed to hold the connectivity for a single unit cell element block.</p>
+<div class="line">for each j : J</div>
+<div class="line">   for each i : I</div>
+<div class="line">      for each element block in cell(i,j) mesh</div>
+<div class="line">         read block connectivity</div>
+<div class="line">         map local node ids to global node ids</div>
+<div class="line">         write block connectivity </div>
+</div><!-- fragment --><p>The maximum memory use will be the size of storage needed for the <code>x</code> <code>y</code> and <code>z</code> coordinates of a unit cell mesh or the storage needed to hold the connectivity for a single unit cell element block.</p>
 <p>Note that the memory requirements are proportional to the size of an individual unit cell mesh and not a function of the size of the output mesh. It is possible to create meshes which are much larger than the amount of memory present on the compute system running zellij.</p>
 <p>The memory being used by zellij during execution will be output if the <code>--debug 2</code> argument is specified at execution time.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 Execution Time Complexity</h2>
 <p>For a large model, the majority of the execution time is related to:</p>
 <ul>
@@ -271,24 +282,24 @@ Execution Time Complexity</h2>
 <li>Read/process/write nodal coordinates</li>
 <li>Categorize boundary nodes on each unit cell mesh</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Efficiency at the NetCDF level</h2>
 <p>The Exodus format which is used for the unit cell template meshes and the output mesh uses the NetCDF library for on-disk storage. There are several variants of the NetCDF on-disk storage including the format: <code>netcdf3</code>, <code>netcdf4</code>, and <code>netcdf5</code> and the integer size (32-bit integers or 64-bit integers). Although these details are usually transparent to the user, they can affect the execution time especially when very large meshes are being processed.</p>
-<h3><a class="anchor" id="autotoc_md10"></a>
+<h3><a class="anchor" id="autotoc_md12"></a>
 Format</h3>
 <p>The <code>netcdf3</code> format is the original native NetCDF format. At the time the library was being developed, the <code>byte endianness</code> of data stored on disk was not standard among the computes in use at that time and the NetCDF developers had to pick an <code>endianness</code> for the data. They picked the XDR standard which stood for <em>eXternal Data Representation</em> which was used for communicating between different computer systems. Regretfully, the representation used by XDR turned out to be opposite of the representation used by (almost?) all systems in use today, so each read and write of data in the <code>netcdf3</code> format results in a translation of the endianness. This translation is very fast, but is overhead that would not be needed if the on-disk format was the opposite representation. This representation is also used by the <code>netcdf5</code> format. <br  />
 </p>
 <p>However, the NetCDF <code>netcdf4</code> format is based on using the HDF5 library to manage the underlying data format on disk and it can read and write data using the native endianness of the system on which the data is being read and written and therefore does not incur the cost of transforming the data's endianness.</p>
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md13"></a>
 Integer Size</h3>
 <p>By default, most current mesh generators will output a mesh using 32-bit integer data. This is sufficient to represent a mesh with up to approximately 2.1 billion nodes and elements. <br  />
 </p>
 <p>If the input mesh and the output mesh have the same integer size, then there is no data conversion needed. The data will be read as <code>N</code>-bit integers, processed as <code>N</code>-bit integers, and written as <code>N</code>-bit integers. However, if the input mesh is <code>N</code>-bit integers and the output mesh is <code>M</code>-bit integers, then the NetCDF library will convert all integer data (element block connectivity typically) from <code>N</code> bits to <code>M</code> bits which for large meshes can incur an execution time overhead.</p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+<h3><a class="anchor" id="autotoc_md14"></a>
 Compression</h3>
 <p>The NetCDF library supports compression of the output file. Typically, the <code>zlib</code> compression algorithm is used, but recently NetCDF begain supporting the <code>szip</code> compression and a few more algorithms are starting to be supported.</p>
 <p>The benefit of the compression is that it can result in much smaller output (and input) mesh files; the disadvantage is that the default <code>zlib</code> compression algorithm is not very fast and can increase the execution time of zellij. The <code>szip</code> compression algorithm is faster with typically (but not always) slightly less compression, but it still will incur an overhead in execution time.</p>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md15"></a>
 Recommendations</h3>
 <p>For minimal overhead, it is recommended that:</p>
 <ul>
@@ -328,7 +339,7 @@ Recommendations</h3>
 </table>
 <p>The fastest option is both input and output using 32-bit integers and the <code>netcdf4</code> format. Almost as fast is the case where the input format is <code>netcdf3</code> and the output <code>netcdf4</code>. The <code>64-bit</code> integer options with both input and output using <code>netcdf4</code> are slightly slower, but this is probably due to the doubling of the size of the integer data being read and written.</p>
 <p>The output mesh in this case consisted of 37.3 million elements and 38.5 million nodes in a grid of 46 x 46 unit cells. There were 56 unit cell template meshes.</p>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 TODO</h1>
 <ul>
 <li>Manage number of open files.</li>
