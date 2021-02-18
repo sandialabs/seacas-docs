@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['debug_5flevel_219',['debug_level',['../_cell_8_c.html#aaa02d25ef5eac3392189e2fae80a6fad',1,'debug_level():&#160;Zellij.C'],['../_decompose_8_c.html#aaa02d25ef5eac3392189e2fae80a6fad',1,'debug_level():&#160;Zellij.C'],['../_grid_8_c.html#aaa02d25ef5eac3392189e2fae80a6fad',1,'debug_level():&#160;Zellij.C'],['../_unit_cell_8_c.html#aaa02d25ef5eac3392189e2fae80a6fad',1,'debug_level():&#160;Zellij.C'],['../_zellij_8_c.html#aaa02d25ef5eac3392189e2fae80a6fad',1,'debug_level():&#160;Zellij.C']]],
-  ['debuglevel_5f_220',['debugLevel_',['../class_system_interface.html#aefa988a813a497ee0bde3ddc44828c05',1,'SystemInterface']]],
-  ['decompmethod_5f_221',['decompMethod_',['../class_system_interface.html#a848f98593beff19c47fd320424aa4ddf',1,'SystemInterface']]]
+  ['cell_5fii_286',['cell_II',['../class_unit_cell.html#af95c13363f66b35178c091fca7a523af',1,'UnitCell']]],
+  ['cell_5fjj_287',['cell_JJ',['../class_unit_cell.html#a59dc2c3340ad9c6f64a9c9a86b45e0c6',1,'UnitCell']]],
+  ['cell_5fkk_288',['cell_KK',['../class_unit_cell.html#a56a89b008f4c1a284e2ccecf04b44102',1,'UnitCell']]],
+  ['compressionlevel_5f_289',['compressionLevel_',['../class_system_interface.html#ab664bd4cada919bafae0bcd80ebc1145',1,'SystemInterface']]]
 ];

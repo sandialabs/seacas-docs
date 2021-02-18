@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_grid-members.html">List of all members</a>  </div>
@@ -75,8 +76,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a391b2572d8e0eca5ebd1149ea0c55dbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a391b2572d8e0eca5ebd1149ea0c55dbd">Grid</a> (<a class="el" href="class_system_interface.html">SystemInterface</a> &amp;interFace, size_t extent_i, size_t extent_j)</td></tr>
-<tr class="separator:a391b2572d8e0eca5ebd1149ea0c55dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56c241a7d0600ef89236d0cceae37a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ae56c241a7d0600ef89236d0cceae37a2">Grid</a> (<a class="el" href="class_system_interface.html">SystemInterface</a> &amp;interFace)</td></tr>
+<tr class="separator:ae56c241a7d0600ef89236d0cceae37a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd76ae46e092f640c8225fee36d5b62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a2fd76ae46e092f640c8225fee36d5b62">set_extent</a> (size_t extent_i, size_t extent_j, size_t)</td></tr>
+<tr class="separator:a2fd76ae46e092f640c8225fee36d5b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8782ca9dc42cdb60d1c59916c607c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_unit_cell_8h.html#a9d5b8fbe62f525c7b4f62aea6cde1a3c">UnitCellMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a3e8782ca9dc42cdb60d1c59916c607c4">unit_cells</a> ()</td></tr>
+<tr class="separator:a3e8782ca9dc42cdb60d1c59916c607c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4021ff7ccb9a532c1d2d985b7ba6787a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cell.html">Cell</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a4021ff7ccb9a532c1d2d985b7ba6787a">get_cell</a> (size_t i, size_t j)</td></tr>
 <tr class="separator:a4021ff7ccb9a532c1d2d985b7ba6787a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad8cc5f5fffe1443c429f0622b81a398"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#aad8cc5f5fffe1443c429f0622b81a398">II</a> () const</td></tr>
@@ -90,51 +95,82 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70c9ab941e2e42a44cbf6c7b42222c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e246bc9a762917aa1d3dfd77ebb9ad3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a7e246bc9a762917aa1d3dfd77ebb9ad3">parallel_size</a> () const</td></tr>
 <tr class="separator:a7e246bc9a762917aa1d3dfd77ebb9ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643af393583c07beae39278c0241dfe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a643af393583c07beae39278c0241dfe3">set_start_rank</a> (int start_rank)</td></tr>
+<tr class="memdesc:a643af393583c07beae39278c0241dfe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the rank that the should start processing and outputting (used for subcycling)  <a href="class_grid.html#a643af393583c07beae39278c0241dfe3">More...</a><br /></td></tr>
+<tr class="separator:a643af393583c07beae39278c0241dfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae92d70fe770103d6998f35c290f8d99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#aae92d70fe770103d6998f35c290f8d99">handle_file_count</a> ()</td></tr>
+<tr class="separator:aae92d70fe770103d6998f35c290f8d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3f8c8a1174d3d9cfcfffbcde7ade1bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ac3f8c8a1174d3d9cfcfffbcde7ade1bf">equivalence_nodes</a> () const</td></tr>
 <tr class="memdesc:ac3f8c8a1174d3d9cfcfffbcde7ade1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are nodes at the boundaries of the unit cells equivalenced.  <a href="class_grid.html#ac3f8c8a1174d3d9cfcfffbcde7ade1bf">More...</a><br /></td></tr>
 <tr class="separator:ac3f8c8a1174d3d9cfcfffbcde7ade1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7f98521fb9fdc523dcb247b64903e25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ae7f98521fb9fdc523dcb247b64903e25">initialize</a> (size_t i, size_t j, std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt; unit_cell)</td></tr>
-<tr class="memdesc:ae7f98521fb9fdc523dcb247b64903e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="class_cell.html">Cell</a> object referencing the <a class="el" href="class_unit_cell.html">UnitCell</a> <code>unit_cell</code> at location <code>(i,j)</code>  <a href="class_grid.html#ae7f98521fb9fdc523dcb247b64903e25">More...</a><br /></td></tr>
-<tr class="separator:ae7f98521fb9fdc523dcb247b64903e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71ef5b4345486e480dfdd6fea36f757"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#aa71ef5b4345486e480dfdd6fea36f757">initialize</a> (size_t i, size_t j, const std::string &amp;key)</td></tr>
+<tr class="memdesc:aa71ef5b4345486e480dfdd6fea36f757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="class_cell.html">Cell</a> object referencing the <a class="el" href="class_unit_cell.html">UnitCell</a> specified by <code>key</code> at location <code>(i,j)</code>  <a href="class_grid.html#aa71ef5b4345486e480dfdd6fea36f757">More...</a><br /></td></tr>
+<tr class="separator:aa71ef5b4345486e480dfdd6fea36f757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7508c9d828e3cf4fa9dd4b295c7e7d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ac7508c9d828e3cf4fa9dd4b295c7e7d0">add_unit_cell</a> (const std::string &amp;key, const std::string &amp;unit_filename, bool ints32bit)</td></tr>
+<tr class="separator:ac7508c9d828e3cf4fa9dd4b295c7e7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a913e10525a0b884b6c6ad2dedac3feb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a913e10525a0b884b6c6ad2dedac3feb9">set_coordinate_offsets</a> ()</td></tr>
 <tr class="memdesc:a913e10525a0b884b6c6ad2dedac3feb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the X and Y location of each grid cell in the overall grid space.  <a href="class_grid.html#a913e10525a0b884b6c6ad2dedac3feb9">More...</a><br /></td></tr>
 <tr class="separator:a913e10525a0b884b6c6ad2dedac3feb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a411c3c28c2064afffd77dc4faac52183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a411c3c28c2064afffd77dc4faac52183">finalize</a> (int start_rank, int rank_count)</td></tr>
-<tr class="separator:a411c3c28c2064afffd77dc4faac52183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade7c4be69266f0cc300698762cf52ecb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ade7c4be69266f0cc300698762cf52ecb">decompose</a> (size_t ranks, const std::string &amp;method)</td></tr>
-<tr class="separator:ade7c4be69266f0cc300698762cf52ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2d0c62489b078cf4afe46c4eea3819b"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:ab2d0c62489b078cf4afe46c4eea3819b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#ab2d0c62489b078cf4afe46c4eea3819b">output_model</a> (int start_rank, int num_ranks, INT)</td></tr>
-<tr class="memdesc:ab2d0c62489b078cf4afe46c4eea3819b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output node coordinates and element block connectivities for the output mesh.  <a href="class_grid.html#ab2d0c62489b078cf4afe46c4eea3819b">More...</a><br /></td></tr>
-<tr class="separator:ab2d0c62489b078cf4afe46c4eea3819b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84e56262c6659dd1ac8abaccd5efafc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ab84e56262c6659dd1ac8abaccd5efafc">generate_sidesets</a> ()</td></tr>
+<tr class="separator:ab84e56262c6659dd1ac8abaccd5efafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1195469ac9d6a122b6b4674d3fc8f5"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:afd1195469ac9d6a122b6b4674d3fc8f5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#afd1195469ac9d6a122b6b4674d3fc8f5">process</a> (<a class="el" href="class_system_interface.html">SystemInterface</a> &amp;interFace, INT)</td></tr>
+<tr class="separator:afd1195469ac9d6a122b6b4674d3fc8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412746ad1d7116610a310264de3d68bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a412746ad1d7116610a310264de3d68bf">decompose</a> (const std::string &amp;method)</td></tr>
+<tr class="separator:a412746ad1d7116610a310264de3d68bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7897f4c39e1fbf028f3dfefd848d14eb"><td class="memItemLeft" align="right" valign="top">const Ioss::ParallelUtils &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a7897f4c39e1fbf028f3dfefd848d14eb">util</a> () const</td></tr>
 <tr class="separator:a7897f4c39e1fbf028f3dfefd848d14eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad3edd8539dca2f528f0c34e7c8ff69d"><td class="memItemLeft" align="right" valign="top">Ioss::Region *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#aad3edd8539dca2f528f0c34e7c8ff69d">output_region</a> (int rank=0)</td></tr>
 <tr class="separator:aad3edd8539dca2f528f0c34e7c8ff69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abded2be877267817efa359480c99599c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#abded2be877267817efa359480c99599c">minimize_open_files</a> (<a class="el" href="_z_e___system_interface_8h.html#a548e204a4e2ffae50774910737f11380">Minimize</a> type)</td></tr>
+<tr class="separator:abded2be877267817efa359480c99599c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65f26a3a21321c03ea04cd03bdbbd3c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ab65f26a3a21321c03ea04cd03bdbbd3c">get_generated_sidesets</a> ()</td></tr>
+<tr class="separator:ab65f26a3a21321c03ea04cd03bdbbd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae621a14f966c22916b9aa261fd0d379f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ae621a14f966c22916b9aa261fd0d379f">set_sideset_names</a> (const std::string &amp;names)</td></tr>
+<tr class="separator:ae621a14f966c22916b9aa261fd0d379f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a40e2610e29eca376aed3ad0bb4c46bd5"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::string, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a40e2610e29eca376aed3ad0bb4c46bd5">generated_surface_names</a></td></tr>
+<tr class="separator:a40e2610e29eca376aed3ad0bb4c46bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a34bf6c2a39df3a4bfd17fc612b07309d"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a34bf6c2a39df3a4bfd17fc612b07309d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#a34bf6c2a39df3a4bfd17fc612b07309d">output_model</a> (INT)</td></tr>
+<tr class="memdesc:a34bf6c2a39df3a4bfd17fc612b07309d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output node coordinates and element block connectivities for the output mesh.  <a href="class_grid.html#a34bf6c2a39df3a4bfd17fc612b07309d">More...</a><br /></td></tr>
+<tr class="separator:a34bf6c2a39df3a4bfd17fc612b07309d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcb0e8b696ee306d27c06d9061a9f90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a1fcb0e8b696ee306d27c06d9061a9f90">internal_process</a> ()</td></tr>
+<tr class="separator:a1fcb0e8b696ee306d27c06d9061a9f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5cf5068540cafe6b5569c76ce797eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a3a5cf5068540cafe6b5569c76ce797eb">create_output_regions</a> (<a class="el" href="class_system_interface.html">SystemInterface</a> &amp;interFace)</td></tr>
 <tr class="separator:a3a5cf5068540cafe6b5569c76ce797eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc522bfbf65a2e5ffa3a5caa45f09912"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#adc522bfbf65a2e5ffa3a5caa45f09912">categorize_processor_boundaries</a> ()</td></tr>
 <tr class="separator:adc522bfbf65a2e5ffa3a5caa45f09912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6777ea70f18c0a79eab8d2b44f7d2814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a6777ea70f18c0a79eab8d2b44f7d2814">output_nodal_coordinates</a> (const <a class="el" href="class_cell.html">Cell</a> &amp;cell)</td></tr>
 <tr class="separator:a6777ea70f18c0a79eab8d2b44f7d2814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4799ba3acfebbef1b040d64c6a074091"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:a4799ba3acfebbef1b040d64c6a074091"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#a4799ba3acfebbef1b040d64c6a074091">output_block_connectivity</a> (<a class="el" href="class_cell.html">Cell</a> &amp;cell, const std::vector&lt; INT &gt; &amp;node_map, int start_rank, int num_ranks)</td></tr>
-<tr class="separator:a4799ba3acfebbef1b040d64c6a074091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a8e080f8903b1e95f090e98dbaf708e"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:a3a8e080f8903b1e95f090e98dbaf708e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#a3a8e080f8903b1e95f090e98dbaf708e">output_nodal_communication_map</a> (<a class="el" href="class_cell.html">Cell</a> &amp;cell, const std::vector&lt; INT &gt; &amp;node_map, int start_rank, int num_ranks)</td></tr>
-<tr class="separator:a3a8e080f8903b1e95f090e98dbaf708e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a389e01f62b9e919cc58a9e657c1291d8"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:a389e01f62b9e919cc58a9e657c1291d8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#a389e01f62b9e919cc58a9e657c1291d8">output_element_map</a> (<a class="el" href="class_cell.html">Cell</a> &amp;cell, int start_rank, int num_ranks, INT)</td></tr>
-<tr class="separator:a389e01f62b9e919cc58a9e657c1291d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc45909619282469a94d577e33ec36a"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:a5cc45909619282469a94d577e33ec36a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#a5cc45909619282469a94d577e33ec36a">output_node_map</a> (const <a class="el" href="class_cell.html">Cell</a> &amp;cell, int start_rank, int num_ranks, INT)</td></tr>
-<tr class="separator:a5cc45909619282469a94d577e33ec36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b04590788707b4c288409ac804bd93"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a89b04590788707b4c288409ac804bd93"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#a89b04590788707b4c288409ac804bd93">output_block_connectivity</a> (<a class="el" href="class_cell.html">Cell</a> &amp;cell, const std::vector&lt; INT &gt; &amp;node_map)</td></tr>
+<tr class="separator:a89b04590788707b4c288409ac804bd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae226b0a002fffbeaed648de7a8175819"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:ae226b0a002fffbeaed648de7a8175819"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#ae226b0a002fffbeaed648de7a8175819">output_nodal_communication_map</a> (<a class="el" href="class_cell.html">Cell</a> &amp;cell, const std::vector&lt; INT &gt; &amp;node_map)</td></tr>
+<tr class="separator:ae226b0a002fffbeaed648de7a8175819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac435222f319ce8d8214a00785cf5b53c"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:ac435222f319ce8d8214a00785cf5b53c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#ac435222f319ce8d8214a00785cf5b53c">output_element_map</a> (<a class="el" href="class_cell.html">Cell</a> &amp;cell, INT)</td></tr>
+<tr class="separator:ac435222f319ce8d8214a00785cf5b53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2577e126bfe7816dde3d6dfe2e766b19"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a2577e126bfe7816dde3d6dfe2e766b19"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#a2577e126bfe7816dde3d6dfe2e766b19">output_node_map</a> (const <a class="el" href="class_cell.html">Cell</a> &amp;cell, INT)</td></tr>
+<tr class="separator:a2577e126bfe7816dde3d6dfe2e766b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d92815292cf147db8142ef32f6e656"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a11d92815292cf147db8142ef32f6e656"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#a11d92815292cf147db8142ef32f6e656">output_surfaces</a> (<a class="el" href="class_cell.html">Cell</a> &amp;cell, INT)</td></tr>
+<tr class="separator:a11d92815292cf147db8142ef32f6e656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8363dbfb7c429e4e78766669b0ee14f2"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a8363dbfb7c429e4e78766669b0ee14f2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_grid.html#a8363dbfb7c429e4e78766669b0ee14f2">output_generated_surfaces</a> (<a class="el" href="class_cell.html">Cell</a> &amp;cell, INT)</td></tr>
+<tr class="separator:a8363dbfb7c429e4e78766669b0ee14f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a624410488b13d202b42064d8e0f3fadc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_unit_cell_8h.html#a9d5b8fbe62f525c7b4f62aea6cde1a3c">UnitCellMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a624410488b13d202b42064d8e0f3fadc">m_unitCells</a></td></tr>
+<tr class="separator:a624410488b13d202b42064d8e0f3fadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd474bdc17282ad882de93875251700"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; Ioss::Region &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a3dd474bdc17282ad882de93875251700">m_outputRegions</a></td></tr>
 <tr class="separator:a3dd474bdc17282ad882de93875251700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00c90ba61791ccdb77abf8c3a8ae23fe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_cell.html">Cell</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a00c90ba61791ccdb77abf8c3a8ae23fe">m_grid</a> {}</td></tr>
@@ -147,12 +183,27 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a31d8bacadc482a1c1bc77da06ec4ad70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5a34c5025b45d04821561c62f832012"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ac5a34c5025b45d04821561c62f832012">m_parallelSize</a> {1}</td></tr>
 <tr class="separator:ac5a34c5025b45d04821561c62f832012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a98eb2d687106cb5df6c55642c15db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#aa0a98eb2d687106cb5df6c55642c15db">m_rankCount</a> {1}</td></tr>
+<tr class="memdesc:aa0a98eb2d687106cb5df6c55642c15db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of ranks to decompose for.  <a href="class_grid.html#aa0a98eb2d687106cb5df6c55642c15db">More...</a><br /></td></tr>
+<tr class="separator:aa0a98eb2d687106cb5df6c55642c15db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e432d64d95622d394be67f37ba8840"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ae2e432d64d95622d394be67f37ba8840">m_startRank</a> {0}</td></tr>
+<tr class="memdesc:ae2e432d64d95622d394be67f37ba8840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of ranks to process at a time.  <a href="class_grid.html#ae2e432d64d95622d394be67f37ba8840">More...</a><br /></td></tr>
+<tr class="separator:ae2e432d64d95622d394be67f37ba8840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9923824674840654af8095d361c9f014"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a9923824674840654af8095d361c9f014">m_equivalenceNodes</a> {true}</td></tr>
+<tr class="memdesc:a9923824674840654af8095d361c9f014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which rank to start outputting...  <a href="class_grid.html#a9923824674840654af8095d361c9f014">More...</a><br /></td></tr>
 <tr class="separator:a9923824674840654af8095d361c9f014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c07ee03ef23a1cac570b91181d002a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#ad4c07ee03ef23a1cac570b91181d002a">m_useInternalSidesets</a> {true}</td></tr>
+<tr class="separator:ad4c07ee03ef23a1cac570b91181d002a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01587c49bf0b0fe60567b04899b98d46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a01587c49bf0b0fe60567b04899b98d46">m_subCycle</a> {false}</td></tr>
+<tr class="separator:a01587c49bf0b0fe60567b04899b98d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28691db0d6e7d2959a93814b5e093c3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_z_e___system_interface_8h.html#a548e204a4e2ffae50774910737f11380">Minimize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#a28691db0d6e7d2959a93814b5e093c3e">m_minimizeOpenFiles</a> {<a class="el" href="_z_e___system_interface_8h.html#a548e204a4e2ffae50774910737f11380ab50339a10e1de285ac99d4c3990b8693">Minimize::NONE</a>}</td></tr>
+<tr class="separator:a28691db0d6e7d2959a93814b5e093c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3a2bca3e1f7aa8bb4b490b71703528"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#aff3a2bca3e1f7aa8bb4b490b71703528">m_generatedSideSets</a> {0}</td></tr>
+<tr class="separator:aff3a2bca3e1f7aa8bb4b490b71703528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a391b2572d8e0eca5ebd1149ea0c55dbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a391b2572d8e0eca5ebd1149ea0c55dbd">&#9670;&nbsp;</a></span>Grid()</h2>
+<a id="ae56c241a7d0600ef89236d0cceae37a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56c241a7d0600ef89236d0cceae37a2">&#9670;&nbsp;</a></span>Grid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,24 +212,8 @@ Private Attributes</h2></td></tr>
           <td class="memname">Grid::Grid </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system_interface.html">SystemInterface</a> &amp;&#160;</td>
-          <td class="paramname"><em>interFace</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>interFace</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>extent_i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>extent_j</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -187,6 +222,40 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac7508c9d828e3cf4fa9dd4b295c7e7d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7508c9d828e3cf4fa9dd4b295c7e7d0">&#9670;&nbsp;</a></span>add_unit_cell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::add_unit_cell </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>unit_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ints32bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adc522bfbf65a2e5ffa3a5caa45f09912"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc522bfbf65a2e5ffa3a5caa45f09912">&#9670;&nbsp;</a></span>categorize_processor_boundaries()</h2>
 
@@ -238,8 +307,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ade7c4be69266f0cc300698762cf52ecb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade7c4be69266f0cc300698762cf52ecb">&#9670;&nbsp;</a></span>decompose()</h2>
+<a id="a412746ad1d7116610a310264de3d68bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412746ad1d7116610a310264de3d68bf">&#9670;&nbsp;</a></span>decompose()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,19 +316,9 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Grid::decompose </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>ranks</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>method</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>method</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -293,32 +352,20 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a411c3c28c2064afffd77dc4faac52183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a411c3c28c2064afffd77dc4faac52183">&#9670;&nbsp;</a></span>finalize()</h2>
+<a id="ab84e56262c6659dd1ac8abaccd5efafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84e56262c6659dd1ac8abaccd5efafc">&#9670;&nbsp;</a></span>generate_sidesets()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Grid::finalize </td>
+          <td class="memname">void Grid::generate_sidesets </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start_rank</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rank_count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Once all <a class="el" href="class_cell.html">Cell</a> objects have been initialized, Determine the coordinate extents and offsets of each cell, the size of the output mesh, the node and element id offsets for each cell, the number of nodes and elements in the output mesh and initialize the output mesh. </p>
 
 </div>
 </div>
@@ -359,6 +406,49 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab65f26a3a21321c03ea04cd03bdbbd3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab65f26a3a21321c03ea04cd03bdbbd3c">&#9670;&nbsp;</a></span>get_generated_sidesets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Grid::get_generated_sidesets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae92d70fe770103d6998f35c290f8d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae92d70fe770103d6998f35c290f8d99">&#9670;&nbsp;</a></span>handle_file_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::handle_file_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determine if can keep all files open at all times, or if we need to close some/all after access... </p>
+
+</div>
+</div>
 <a id="aad8cc5f5fffe1443c429f0622b81a398"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad8cc5f5fffe1443c429f0622b81a398">&#9670;&nbsp;</a></span>II()</h2>
 
@@ -386,14 +476,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7f98521fb9fdc523dcb247b64903e25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7f98521fb9fdc523dcb247b64903e25">&#9670;&nbsp;</a></span>initialize()</h2>
+<a id="aa71ef5b4345486e480dfdd6fea36f757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71ef5b4345486e480dfdd6fea36f757">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Grid::initialize </td>
+          <td class="memname">bool Grid::initialize </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>i</em>, </td>
@@ -407,8 +497,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt;&#160;</td>
-          <td class="paramname"><em>unit_cell</em>&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -418,7 +508,32 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a <a class="el" href="class_cell.html">Cell</a> object referencing the <a class="el" href="class_unit_cell.html">UnitCell</a> <code>unit_cell</code> at location <code>(i,j)</code> </p>
+<p>Create a <a class="el" href="class_cell.html">Cell</a> object referencing the <a class="el" href="class_unit_cell.html">UnitCell</a> specified by <code>key</code> at location <code>(i,j)</code> </p>
+
+</div>
+</div>
+<a id="a1fcb0e8b696ee306d27c06d9061a9f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcb0e8b696ee306d27c06d9061a9f90">&#9670;&nbsp;</a></span>internal_process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::internal_process </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -449,8 +564,34 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4799ba3acfebbef1b040d64c6a074091"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4799ba3acfebbef1b040d64c6a074091">&#9670;&nbsp;</a></span>output_block_connectivity()</h2>
+<a id="abded2be877267817efa359480c99599c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abded2be877267817efa359480c99599c">&#9670;&nbsp;</a></span>minimize_open_files()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grid::minimize_open_files </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_z_e___system_interface_8h.html#a548e204a4e2ffae50774910737f11380">Minimize</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89b04590788707b4c288409ac804bd93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b04590788707b4c288409ac804bd93">&#9670;&nbsp;</a></span>output_block_connectivity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,19 +611,7 @@ template&lt;typename INT &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; INT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>node_map</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start_rank</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_ranks</em>&#160;</td>
+          <td class="paramname"><em>node_map</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -499,8 +628,8 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="a389e01f62b9e919cc58a9e657c1291d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a389e01f62b9e919cc58a9e657c1291d8">&#9670;&nbsp;</a></span>output_element_map()</h2>
+<a id="ac435222f319ce8d8214a00785cf5b53c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac435222f319ce8d8214a00785cf5b53c">&#9670;&nbsp;</a></span>output_element_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,14 +648,40 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start_rank</em>, </td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_ranks</em>, </td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8363dbfb7c429e4e78766669b0ee14f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8363dbfb7c429e4e78766669b0ee14f2">&#9670;&nbsp;</a></span>output_generated_surfaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::output_generated_surfaces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cell.html">Cell</a> &amp;&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -549,46 +704,38 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="ab2d0c62489b078cf4afe46c4eea3819b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2d0c62489b078cf4afe46c4eea3819b">&#9670;&nbsp;</a></span>output_model()</h2>
+<a id="a34bf6c2a39df3a4bfd17fc612b07309d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34bf6c2a39df3a4bfd17fc612b07309d">&#9670;&nbsp;</a></span>output_model()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename INT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Grid::output_model </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start_rank</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_ranks</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">INT&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Output node coordinates and element block connectivities for the output mesh. </p>
 
 </div>
 </div>
-<a id="a3a8e080f8903b1e95f090e98dbaf708e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a8e080f8903b1e95f090e98dbaf708e">&#9670;&nbsp;</a></span>output_nodal_communication_map()</h2>
+<a id="ae226b0a002fffbeaed648de7a8175819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae226b0a002fffbeaed648de7a8175819">&#9670;&nbsp;</a></span>output_nodal_communication_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -608,19 +755,7 @@ template&lt;typename INT &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; INT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>node_map</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start_rank</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_ranks</em>&#160;</td>
+          <td class="paramname"><em>node_map</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -663,8 +798,8 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="a5cc45909619282469a94d577e33ec36a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cc45909619282469a94d577e33ec36a">&#9670;&nbsp;</a></span>output_node_map()</h2>
+<a id="a2577e126bfe7816dde3d6dfe2e766b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2577e126bfe7816dde3d6dfe2e766b19">&#9670;&nbsp;</a></span>output_node_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -679,18 +814,6 @@ template&lt;typename INT &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_cell.html">Cell</a> &amp;&#160;</td>
           <td class="paramname"><em>cell</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start_rank</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_ranks</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -739,6 +862,44 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
+<a id="a11d92815292cf147db8142ef32f6e656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d92815292cf147db8142ef32f6e656">&#9670;&nbsp;</a></span>output_surfaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::output_surfaces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cell.html">Cell</a> &amp;&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7e246bc9a762917aa1d3dfd77ebb9ad3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e246bc9a762917aa1d3dfd77ebb9ad3">&#9670;&nbsp;</a></span>parallel_size()</h2>
 
@@ -764,6 +925,37 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
+<a id="afd1195469ac9d6a122b6b4674d3fc8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1195469ac9d6a122b6b4674d3fc8f5">&#9670;&nbsp;</a></span>process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_system_interface.html">SystemInterface</a> &amp;&#160;</td>
+          <td class="paramname"><em>interFace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Once all <a class="el" href="class_cell.html">Cell</a> objects have been initialized, Determine the coordinate extents and offsets of each cell, the size of the output mesh, the node and element id offsets for each cell, the number of nodes and elements in the output mesh and initialize the output mesh. </p>
+
+</div>
+</div>
 <a id="a913e10525a0b884b6c6ad2dedac3feb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a913e10525a0b884b6c6ad2dedac3feb9">&#9670;&nbsp;</a></span>set_coordinate_offsets()</h2>
 
@@ -780,6 +972,86 @@ template&lt;typename INT &gt; </div>
 </div><div class="memdoc">
 
 <p>Specify the X and Y location of each grid cell in the overall grid space. </p>
+
+</div>
+</div>
+<a id="a2fd76ae46e092f640c8225fee36d5b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd76ae46e092f640c8225fee36d5b62">&#9670;&nbsp;</a></span>set_extent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::set_extent </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>extent_i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>extent_j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae621a14f966c22916b9aa261fd0d379f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae621a14f966c22916b9aa261fd0d379f">&#9670;&nbsp;</a></span>set_sideset_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::set_sideset_names </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>names</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a643af393583c07beae39278c0241dfe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a643af393583c07beae39278c0241dfe3">&#9670;&nbsp;</a></span>set_start_rank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::set_start_rank </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start_rank</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the rank that the should start processing and outputting (used for subcycling) </p>
 
 </div>
 </div>
@@ -810,6 +1082,31 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
+<a id="a3e8782ca9dc42cdb60d1c59916c607c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e8782ca9dc42cdb60d1c59916c607c4">&#9670;&nbsp;</a></span>unit_cells()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_unit_cell_8h.html#a9d5b8fbe62f525c7b4f62aea6cde1a3c">UnitCellMap</a>&amp; Grid::unit_cells </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7897f4c39e1fbf028f3dfefd848d14eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7897f4c39e1fbf028f3dfefd848d14eb">&#9670;&nbsp;</a></span>util()</h2>
 
@@ -836,6 +1133,22 @@ template&lt;typename INT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a40e2610e29eca376aed3ad0bb4c46bd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40e2610e29eca376aed3ad0bb4c46bd5">&#9670;&nbsp;</a></span>generated_surface_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;std::string, 6&gt; Grid::generated_surface_names</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">      {<span class="stringliteral">&quot;min_i&quot;</span>, <span class="stringliteral">&quot;max_i&quot;</span>, <span class="stringliteral">&quot;min_j&quot;</span>, <span class="stringliteral">&quot;max_j&quot;</span>, <span class="stringliteral">&quot;min_k&quot;</span>, <span class="stringliteral">&quot;max_k&quot;</span>}}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a9923824674840654af8095d361c9f014"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9923824674840654af8095d361c9f014">&#9670;&nbsp;</a></span>m_equivalenceNodes</h2>
 
@@ -847,6 +1160,30 @@ template&lt;typename INT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool Grid::m_equivalenceNodes {true}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Which rank to start outputting... </p>
+
+</div>
+</div>
+<a id="aff3a2bca3e1f7aa8bb4b490b71703528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3a2bca3e1f7aa8bb4b490b71703528">&#9670;&nbsp;</a></span>m_generatedSideSets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Grid::m_generatedSideSets {0}</td>
         </tr>
       </table>
   </td>
@@ -924,6 +1261,28 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
+<a id="a28691db0d6e7d2959a93814b5e093c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28691db0d6e7d2959a93814b5e093c3e">&#9670;&nbsp;</a></span>m_minimizeOpenFiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_z_e___system_interface_8h.html#a548e204a4e2ffae50774910737f11380">Minimize</a> Grid::m_minimizeOpenFiles {<a class="el" href="_z_e___system_interface_8h.html#a548e204a4e2ffae50774910737f11380ab50339a10e1de285ac99d4c3990b8693">Minimize::NONE</a>}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3dd474bdc17282ad882de93875251700"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3dd474bdc17282ad882de93875251700">&#9670;&nbsp;</a></span>m_outputRegions</h2>
 
@@ -979,6 +1338,120 @@ template&lt;typename INT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">Ioss::ParallelUtils Grid::m_pu {MPI_COMM_WORLD}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0a98eb2d687106cb5df6c55642c15db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a98eb2d687106cb5df6c55642c15db">&#9670;&nbsp;</a></span>m_rankCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grid::m_rankCount {1}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of ranks to decompose for. </p>
+
+</div>
+</div>
+<a id="ae2e432d64d95622d394be67f37ba8840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e432d64d95622d394be67f37ba8840">&#9670;&nbsp;</a></span>m_startRank</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Grid::m_startRank {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of ranks to process at a time. </p>
+
+</div>
+</div>
+<a id="a01587c49bf0b0fe60567b04899b98d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01587c49bf0b0fe60567b04899b98d46">&#9670;&nbsp;</a></span>m_subCycle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grid::m_subCycle {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a624410488b13d202b42064d8e0f3fadc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624410488b13d202b42064d8e0f3fadc">&#9670;&nbsp;</a></span>m_unitCells</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_unit_cell_8h.html#a9d5b8fbe62f525c7b4f62aea6cde1a3c">UnitCellMap</a> Grid::m_unitCells</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4c07ee03ef23a1cac570b91181d002a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4c07ee03ef23a1cac570b91181d002a">&#9670;&nbsp;</a></span>m_useInternalSidesets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Grid::m_useInternalSidesets {true}</td>
         </tr>
       </table>
   </td>

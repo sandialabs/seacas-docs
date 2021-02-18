@@ -78,13 +78,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aba84d82eb520bd29ed3769c17e881ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd759b4a4e89b6646f1f72a2817a14b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_cell.html#a1dd759b4a4e89b6646f1f72a2817a14b">UnitCell</a> (const <a class="el" href="class_unit_cell.html">UnitCell</a> &amp;)=delete</td></tr>
 <tr class="separator:a1dd759b4a4e89b6646f1f72a2817a14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ed92114d5ecbcb0d3e1f86861ac6eaf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_cell.html#a7ed92114d5ecbcb0d3e1f86861ac6eaf">categorize_nodes</a> (bool neighbor_i, bool neighbor_j) const</td></tr>
-<tr class="separator:a7ed92114d5ecbcb0d3e1f86861ac6eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcb3491c715cee47c60e68e1790846f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_cell.html#a5dcb3491c715cee47c60e68e1790846f">categorize_nodes</a> (bool neighbor_i, bool neighbor_j, bool all_faces=false) const</td></tr>
+<tr class="separator:a5dcb3491c715cee47c60e68e1790846f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef551b0b9b3f4ace76d66279aef2f6db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_cell.html#aef551b0b9b3f4ace76d66279aef2f6db">generate_boundary_faces</a> (unsigned int which_faces)</td></tr>
+<tr class="separator:aef551b0b9b3f4ace76d66279aef2f6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d35e124510d8de1fe74628c24ead161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_cell.html#a8d35e124510d8de1fe74628c24ead161">categorize_z_nodes</a> (std::vector&lt; int &gt; &amp;categorized_nodes)</td></tr>
+<tr class="memdesc:a8d35e124510d8de1fe74628c24ead161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by <code><a class="el" href="class_unit_cell.html#aef551b0b9b3f4ace76d66279aef2f6db">generate_boundary_faces()</a></code> to categorize nodes on the +/- Z faces of unit cell.  <a href="class_unit_cell.html#a8d35e124510d8de1fe74628c24ead161">More...</a><br /></td></tr>
+<tr class="separator:a8d35e124510d8de1fe74628c24ead161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab2aa3d3faf5c4a569407f84363ea6b73"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Ioss::Region &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_cell.html#ab2aa3d3faf5c4a569407f84363ea6b73">m_region</a> {nullptr}</td></tr>
 <tr class="separator:ab2aa3d3faf5c4a569407f84363ea6b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1047166dd48b41fb3e20c8f2b3411e93"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="struct_generated_side_block.html">GeneratedSideBlock</a>, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_cell.html#a1047166dd48b41fb3e20c8f2b3411e93">boundary_blocks</a> {}</td></tr>
+<tr class="separator:a1047166dd48b41fb3e20c8f2b3411e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:af83ac9660af7c16e9887fdc161506848"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_cell.html#af83ac9660af7c16e9887fdc161506848">min_I_face</a> {}</td></tr>
 <tr class="separator:af83ac9660af7c16e9887fdc161506848"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,8 +160,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7ed92114d5ecbcb0d3e1f86861ac6eaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ed92114d5ecbcb0d3e1f86861ac6eaf">&#9670;&nbsp;</a></span>categorize_nodes()</h2>
+<a id="a5dcb3491c715cee47c60e68e1790846f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcb3491c715cee47c60e68e1790846f">&#9670;&nbsp;</a></span>categorize_nodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +176,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>neighbor_j</em>&#160;</td>
+          <td class="paramname"><em>neighbor_j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>all_faces</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -182,12 +195,64 @@ Public Attributes</h2></td></tr>
 <li>0: Node that is not shared with any neighbors.</li>
 <li>1: Node on <code>min_I</code> face</li>
 <li>2: Node on <code>min_J</code> face</li>
-<li>3: Node on <code>min_I-min_J</code> line </li>
+<li>3: Node on <code>min_I-min_J</code> line If <code>all_faces</code> is true, then also categorize the max_I (4) and max_J (8) faces and don't consider neighbors (want all boundaries marked). </li>
 </ul>
 
 </div>
 </div>
+<a id="a8d35e124510d8de1fe74628c24ead161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d35e124510d8de1fe74628c24ead161">&#9670;&nbsp;</a></span>categorize_z_nodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitCell::categorize_z_nodes </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>categorized_nodes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used by <code><a class="el" href="class_unit_cell.html#aef551b0b9b3f4ace76d66279aef2f6db">generate_boundary_faces()</a></code> to categorize nodes on the +/- Z faces of unit cell. </p>
+
+</div>
+</div>
+<a id="aef551b0b9b3f4ace76d66279aef2f6db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef551b0b9b3f4ace76d66279aef2f6db">&#9670;&nbsp;</a></span>generate_boundary_faces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnitCell::generate_boundary_faces </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>which_faces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1047166dd48b41fb3e20c8f2b3411e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1047166dd48b41fb3e20c8f2b3411e93">&#9670;&nbsp;</a></span>boundary_blocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="struct_generated_side_block.html">GeneratedSideBlock</a>, 6&gt; UnitCell::boundary_blocks {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af95c13363f66b35178c091fca7a523af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af95c13363f66b35178c091fca7a523af">&#9670;&nbsp;</a></span>cell_II</h2>
 

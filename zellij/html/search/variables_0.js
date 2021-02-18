@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['cell_5fii_215',['cell_II',['../class_unit_cell.html#af95c13363f66b35178c091fca7a523af',1,'UnitCell']]],
-  ['cell_5fjj_216',['cell_JJ',['../class_unit_cell.html#a59dc2c3340ad9c6f64a9c9a86b45e0c6',1,'UnitCell']]],
-  ['cell_5fkk_217',['cell_KK',['../class_unit_cell.html#a56a89b008f4c1a284e2ccecf04b44102',1,'UnitCell']]],
-  ['compressionlevel_5f_218',['compressionLevel_',['../class_system_interface.html#ab664bd4cada919bafae0bcd80ebc1145',1,'SystemInterface']]]
+  ['boundary_5fblocks_285',['boundary_blocks',['../class_unit_cell.html#a1047166dd48b41fb3e20c8f2b3411e93',1,'UnitCell']]]
 ];

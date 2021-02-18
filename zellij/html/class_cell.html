@@ -77,8 +77,14 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad84ca3e6d2a2df084abd62541449f15d"><td class="memItemLeft" align="right" valign="top">std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#ad84ca3e6d2a2df084abd62541449f15d">get_coordinate_range</a> (enum <a class="el" href="_cell_8h.html#ae3996976d8ffb3e58d88f58227473f8e">Axis</a>) const</td></tr>
 <tr class="separator:ad84ca3e6d2a2df084abd62541449f15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3670af22245d86115cfce60febd8489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#ad3670af22245d86115cfce60febd8489">initialize</a> (size_t i, size_t j, std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt; region)</td></tr>
+<tr class="memitem:ad3670af22245d86115cfce60febd8489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#ad3670af22245d86115cfce60febd8489">initialize</a> (size_t i, size_t j, std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt; <a class="el" href="class_cell.html#af8a1a955762f25756378518acc9a1ad9">region</a>)</td></tr>
 <tr class="separator:ad3670af22245d86115cfce60febd8489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7338ee252aec11060cf64605f8244078"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a7338ee252aec11060cf64605f8244078">unit</a> () const</td></tr>
+<tr class="memdesc:a7338ee252aec11060cf64605f8244078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to the <a class="el" href="class_unit_cell.html">UnitCell</a> that this cell uses.  <a href="class_cell.html#a7338ee252aec11060cf64605f8244078">More...</a><br /></td></tr>
+<tr class="separator:a7338ee252aec11060cf64605f8244078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a1a955762f25756378518acc9a1ad9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Ioss::Region &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#af8a1a955762f25756378518acc9a1ad9">region</a> () const</td></tr>
+<tr class="memdesc:af8a1a955762f25756378518acc9a1ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to the Ioss::Region in the unit_cell that this cell uses.  <a href="class_cell.html#af8a1a955762f25756378518acc9a1ad9">More...</a><br /></td></tr>
+<tr class="separator:af8a1a955762f25756378518acc9a1ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a220ee45fbcb545142b02fd611dec7dba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a220ee45fbcb545142b02fd611dec7dba">has_neighbor_i</a> () const</td></tr>
 <tr class="memdesc:a220ee45fbcb545142b02fd611dec7dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if this cell has a neighbor to its "left" (lower i)  <a href="class_cell.html#a220ee45fbcb545142b02fd611dec7dba">More...</a><br /></td></tr>
 <tr class="separator:a220ee45fbcb545142b02fd611dec7dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,9 +125,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1bde579a85087af8bd96faecfd6820ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb33c55b234e7c96a1aff9805f3ac77b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#adb33c55b234e7c96a1aff9805f3ac77b">min_J_nodes</a></td></tr>
 <tr class="separator:adb33c55b234e7c96a1aff9805f3ac77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab91310968b7d513398de9db8cc2299cf"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#ab91310968b7d513398de9db8cc2299cf">m_unitCell</a></td></tr>
-<tr class="memdesc:ab91310968b7d513398de9db8cc2299cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_unit_cell.html">UnitCell</a> that occupies this location in the grid / latice.  <a href="class_cell.html#ab91310968b7d513398de9db8cc2299cf">More...</a><br /></td></tr>
-<tr class="separator:ab91310968b7d513398de9db8cc2299cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8b1af8720f376dc512ae23e00ae1f57"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#aa8b1af8720f376dc512ae23e00ae1f57">m_i</a> {0}</td></tr>
 <tr class="memdesc:aa8b1af8720f376dc512ae23e00ae1f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>i</code> location of this entry in the grid.  <a href="class_cell.html#aa8b1af8720f376dc512ae23e00ae1f57">More...</a><br /></td></tr>
 <tr class="separator:aa8b1af8720f376dc512ae23e00ae1f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +144,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a923157494575c649ce70e8c3db83252d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfdc71b6f336a738b5169fa8777177cf"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#acfdc71b6f336a738b5169fa8777177cf">m_localElementIdOffset</a></td></tr>
 <tr class="separator:acfdc71b6f336a738b5169fa8777177cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4951740a210293f8154706d8d03a471a"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a4951740a210293f8154706d8d03a471a">m_localSurfaceOffset</a></td></tr>
+<tr class="separator:a4951740a210293f8154706d8d03a471a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac38133b8b253d32582a6275d41057b2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#aac38133b8b253d32582a6275d41057b2">m_offX</a> {0.0}</td></tr>
 <tr class="separator:aac38133b8b253d32582a6275d41057b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7107a40b87e8aa079bd5b10c7b4550"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a0d7107a40b87e8aa079bd5b10c7b4550">m_offY</a> {0.0}</td></tr>
@@ -148,6 +153,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ab91310968b7d513398de9db8cc2299cf"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#ab91310968b7d513398de9db8cc2299cf">m_unitCell</a></td></tr>
+<tr class="memdesc:ab91310968b7d513398de9db8cc2299cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_unit_cell.html">UnitCell</a> that occupies this location in the grid / latice.  <a href="class_cell.html#ab91310968b7d513398de9db8cc2299cf">More...</a><br /></td></tr>
+<tr class="separator:ab91310968b7d513398de9db8cc2299cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35fb0731d86f3798588e39c695665155"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 9 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a35fb0731d86f3798588e39c695665155">m_ranks</a> {{0, -1, -1, -1, -1, -1, -1, -1, -1}}</td></tr>
 <tr class="separator:a35fb0731d86f3798588e39c695665155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -538,6 +546,33 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
+<a id="af8a1a955762f25756378518acc9a1ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a1a955762f25756378518acc9a1ad9">&#9670;&nbsp;</a></span>region()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;Ioss::Region&gt; Cell::region </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provide access to the Ioss::Region in the unit_cell that this cell uses. </p>
+
+</div>
+</div>
 <a id="afd578372b164b6939c268893ff452302"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd578372b164b6939c268893ff452302">&#9670;&nbsp;</a></span>set_rank()</h2>
 
@@ -573,6 +608,33 @@ template&lt;typename INT &gt; </div>
 </div><div class="memdoc">
 
 <p>The mpi rank that this cell will be on in a parallel run. </p>
+
+</div>
+</div>
+<a id="a7338ee252aec11060cf64605f8244078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7338ee252aec11060cf64605f8244078">&#9670;&nbsp;</a></span>unit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_unit_cell.html">UnitCell</a>&gt; Cell::unit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provide access to the <a class="el" href="class_unit_cell.html">UnitCell</a> that this cell uses. </p>
 
 </div>
 </div>
@@ -712,6 +774,21 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
+<a id="a4951740a210293f8154706d8d03a471a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4951740a210293f8154706d8d03a471a">&#9670;&nbsp;</a></span>m_localSurfaceOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, size_t&gt; Cell::m_localSurfaceOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For each surface/sideset, this is the offset into the output element/face lists for this cells data. 0-based. Indexed by surface name. </p>
+
+</div>
+</div>
 <a id="aac38133b8b253d32582a6275d41057b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac38133b8b253d32582a6275d41057b2">&#9670;&nbsp;</a></span>m_offX</h2>
 
@@ -770,11 +847,19 @@ template&lt;typename INT &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::shared_ptr&lt;<a class="el" href="class_unit_cell.html">UnitCell</a>&gt; Cell::m_unitCell</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>The <a class="el" href="class_unit_cell.html">UnitCell</a> that occupies this location in the grid / latice. </p>

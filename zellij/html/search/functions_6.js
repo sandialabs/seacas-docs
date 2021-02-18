@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['has_5fneighbor_176',['has_neighbor',['../class_cell.html#a99bb03eff9ffedacc47231f0ffa8474f',1,'Cell']]],
-  ['has_5fneighbor_5fi_177',['has_neighbor_i',['../class_cell.html#a220ee45fbcb545142b02fd611dec7dba',1,'Cell']]],
-  ['has_5fneighbor_5fj_178',['has_neighbor_j',['../class_cell.html#a118b54eb756095d6911ad1829ec82fdb',1,'Cell']]]
+  ['ignore_5finternal_5fsidesets_234',['ignore_internal_sidesets',['../class_system_interface.html#a2629424ce6b20e15f4c321a1cddb4c78',1,'SystemInterface']]],
+  ['ii_235',['II',['../class_grid.html#aad8cc5f5fffe1443c429f0622b81a398',1,'Grid']]],
+  ['initialize_236',['initialize',['../class_cell.html#ad3670af22245d86115cfce60febd8489',1,'Cell::initialize()'],['../class_grid.html#aa71ef5b4345486e480dfdd6fea36f757',1,'Grid::initialize(size_t i, size_t j, const std::string &amp;key)']]],
+  ['internal_5fprocess_237',['internal_process',['../class_grid.html#a1fcb0e8b696ee306d27c06d9061a9f90',1,'Grid']]],
+  ['ints32bit_238',['ints32bit',['../class_system_interface.html#a0a3d6428cdfb93779fbe10949048dd92',1,'SystemInterface']]]
 ];

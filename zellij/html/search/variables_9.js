@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tsformat_259',['tsFormat',['../_zellij_8_c.html#acec45b7571231b3e620ab39d81f9c120',1,'Zellij.C']]]
+  ['rankcount_5f_337',['rankCount_',['../class_system_interface.html#a9f41e3137d679a47225237dab26d4059',1,'SystemInterface']]],
+  ['ranks_5f_338',['ranks_',['../class_system_interface.html#a220579c2ac79cc2750e52458fc05dd1e',1,'SystemInterface']]]
 ];

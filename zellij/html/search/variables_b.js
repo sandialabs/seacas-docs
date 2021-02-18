@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zlib_5f_262',['zlib_',['../class_system_interface.html#a90f3222c407f4ef950d7cbccfafa54c0',1,'SystemInterface']]]
+  ['tsformat_344',['tsFormat',['../_zellij_8_c.html#acec45b7571231b3e620ab39d81f9c120',1,'Zellij.C']]]
 ];

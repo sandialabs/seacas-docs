@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['l_272',['L',['../_cell_8h.html#a68205bc086dabe7bc8d3ff37685c7f1ead20caec3b48a1eef164cb4ca81ba2587',1,'Cell.h']]]
+  ['global_360',['GLOBAL',['../_cell_8h.html#a46c8a310cf4c094f8c80e1cb8dc1f911a6eecfba72d12922ee1dead07a0ef3334',1,'Cell.h']]]
 ];

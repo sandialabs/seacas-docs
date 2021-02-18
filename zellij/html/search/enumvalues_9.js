@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_280',['Z',['../_cell_8h.html#ae3996976d8ffb3e58d88f58227473f8ea21c2e59531c8710156d34a3c30ac81d5',1,'Cell.h']]]
+  ['r_371',['R',['../_cell_8h.html#a68205bc086dabe7bc8d3ff37685c7f1eae1e1d3d40573127e9ee0480caf1283d6',1,'Cell.h']]]
 ];
