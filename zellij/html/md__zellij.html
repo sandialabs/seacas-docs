@@ -65,6 +65,31 @@ $(function() {
 <div class="title">Zellij </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#autotoc_md1">Execution</a></li>
+<li class="level1"><a href="#autotoc_md2">Lattice Description File Format</a><ul><li class="level2"><a href="#autotoc_md3">Unit Cell Dictionary</a></li>
+<li class="level2"><a href="#autotoc_md4">Lattice Definition</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md5">Unit Cell Template Mesh Requirements</a></li>
+<li class="level1"><a href="#autotoc_md6">Sideset Handling</a></li>
+<li class="level1"><a href="#autotoc_md7">Parallel Execution</a><ul><li class="level2"><a href="#autotoc_md8">Partial Parallel Output Mode</a></li>
+<li class="level2"><a href="#autotoc_md9">Parallel Capable Parallel Execution</a></li>
+<li class="level2"><a href="#autotoc_md10">Maximum Open File Complications</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md11">Execution Complexity</a><ul><li class="level2"><a href="#autotoc_md12">Memory Complexity</a></li>
+<li class="level2"><a href="#autotoc_md13">Execution Time Complexity</a></li>
+<li class="level2"><a href="#autotoc_md14">Efficiency at the NetCDF level</a><ul><li class="level3"><a href="#autotoc_md15">Format</a></li>
+<li class="level3"><a href="#autotoc_md16">Integer Size</a></li>
+<li class="level3"><a href="#autotoc_md17">Compression</a></li>
+<li class="level3"><a href="#autotoc_md18">Recommendations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="textblock"><p>Zellij is a "mesh concatenation" application for generating a mesh consisting of a "lattice" containing one or more "unit cell" template meshes. The lattice is a two-dimensional arrangement of the unit cell template meshes.</p>
 <p>The unit cell template meshes are placed by zellij into the specified locations in the lattice and the nodes on the boundaries of the unit cell meshes are united or coincident. Each unit cell mesh must have the same exterior boundary meshes and coordinate extents on the X and Y coordinate faces, but the Z faces are only required to have the same coordinate extent; the Z face meshes are not required to be the same among the different unit cells.</p>
 <p>The lattice can be represented as a IxJ regular grid with each "cell" in the grid or lattice containing one of the unit cell template meshes.</p>
