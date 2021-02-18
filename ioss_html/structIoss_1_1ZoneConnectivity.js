@@ -1,6 +1,7 @@
 var structIoss_1_1ZoneConnectivity =
 [
-    [ "ZoneConnectivity", "structIoss_1_1ZoneConnectivity.html#a1ff3047d92927c80ed455799812c19f8", null ],
+    [ "ZoneConnectivity", "structIoss_1_1ZoneConnectivity.html#a524cb1d680dcd5019838afbdaa52a984", null ],
+    [ "ZoneConnectivity", "structIoss_1_1ZoneConnectivity.html#acbc4ff26a62d30995e349b033ef9a0e3", null ],
     [ "ZoneConnectivity", "structIoss_1_1ZoneConnectivity.html#aa4fbacc7655fb51ceacc7ab53ebd0e3f", null ],
     [ "ZoneConnectivity", "structIoss_1_1ZoneConnectivity.html#a374359cb8c91d73f57bcc2aa3970ee5d", null ],
     [ "get_range", "structIoss_1_1ZoneConnectivity.html#a8c5d5830acdf51cd180f50c2426fac29", null ],
@@ -11,6 +12,7 @@ var structIoss_1_1ZoneConnectivity =
     [ "is_from_decomp", "structIoss_1_1ZoneConnectivity.html#a45ea276c70784d7ceae546f4d3cb6355", null ],
     [ "is_valid", "structIoss_1_1ZoneConnectivity.html#ab35a8f3c0aa1cb7d0dac884ac844b190", null ],
     [ "retain_original", "structIoss_1_1ZoneConnectivity.html#a466b60e4c1c74db6638c651eca0a4a9a", null ],
+    [ "serialize", "structIoss_1_1ZoneConnectivity.html#aa1b097c330901ad368da9286a8be0cca", null ],
     [ "transform", "structIoss_1_1ZoneConnectivity.html#a9df1e293d1477cffb01844dfe59d0565", null ],
     [ "transform_matrix", "structIoss_1_1ZoneConnectivity.html#aaac247ab4518817bfd64deb1e5e4873e", null ],
     [ "operator<<", "structIoss_1_1ZoneConnectivity.html#a67fc847f8cc48413e8206ce8a16d4909", null ],

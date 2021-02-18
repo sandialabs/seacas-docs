@@ -99,11 +99,11 @@ var hierarchy =
       [ "detail::iterator_buffer< OutputIt, T, Traits >", "classdetail_1_1iterator__buffer.html", null ],
       [ "detail::iterator_buffer< T *, T >", "classdetail_1_1iterator__buffer_3_01T_01_5_00_01T_01_4.html", null ]
     ] ],
-    [ "detail::buffer< Char >", "classdetail_1_1buffer.html", [
-      [ "basic_memory_buffer< Char >", "classbasic__memory__buffer.html", null ]
-    ] ],
     [ "detail::buffer< char >", "classdetail_1_1buffer.html", [
       [ "detail::counting_buffer< T >", "classdetail_1_1counting__buffer.html", null ]
+    ] ],
+    [ "detail::buffer< Char >", "classdetail_1_1buffer.html", [
+      [ "basic_memory_buffer< Char >", "classbasic__memory__buffer.html", null ]
     ] ],
     [ "detail::buffer< Container::value_type >", "classdetail_1_1buffer.html", [
       [ "detail::iterator_buffer< std::back_insert_iterator< Container >, enable_if_t< is_contiguous< Container >::value, typename Container::value_type > >", "classdetail_1_1iterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enablea2d579bc6466b5382e01854ff6e2d68f.html", null ]
@@ -208,10 +208,10 @@ var hierarchy =
       [ "Ioad::DatabaseIO", "classIoad_1_1DatabaseIO.html", null ],
       [ "Iocgns::DatabaseIO", "classIocgns_1_1DatabaseIO.html", null ],
       [ "Iocgns::ParallelDatabaseIO", "classIocgns_1_1ParallelDatabaseIO.html", null ],
-      [ "Iodw::DatabaseIO", "classIodw_1_1DatabaseIO.html", null ],
       [ "Ioex::BaseDatabaseIO", "classIoex_1_1BaseDatabaseIO.html", [
         [ "Ioex::DatabaseIO", "classIoex_1_1DatabaseIO.html", null ]
       ] ],
+      [ "Iofaodel::DatabaseIO", "classIofaodel_1_1DatabaseIO.html", null ],
       [ "Iogn::DatabaseIO", "classIogn_1_1DatabaseIO.html", null ],
       [ "Iogs::DatabaseIO", "classIogs_1_1DatabaseIO.html", null ],
       [ "Iohb::DatabaseIO", "classIohb_1_1DatabaseIO.html", null ],
@@ -233,7 +233,6 @@ var hierarchy =
     [ "dynamic_formatter< Char >", "classdynamic__formatter.html", null ],
     [ "Ioex::EdgeBlock", "structIoex_1_1EdgeBlock.html", null ],
     [ "Ioex::EdgeSet", "structIoex_1_1EdgeSet.html", null ],
-    [ "Iodw::Utils::ElemBlock", "structIodw_1_1Utils_1_1ElemBlock.html", null ],
     [ "Ioex::ElemBlock", "structIoex_1_1ElemBlock.html", null ],
     [ "Ioss::ElementTopology", "classIoss_1_1ElementTopology.html", [
       [ "Ioss::Beam2", "classIoss_1_1Beam2.html", null ],
@@ -378,9 +377,8 @@ var hierarchy =
       [ "tsl::detail_robin_hash::has_is_transparent< T, typename >", "structtsl_1_1detail__robin__hash_1_1has__is__transparent.html", null ],
       [ "tsl::detail_robin_hash::is_power_of_two_policy< U >", "structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy.html", null ]
     ] ],
-    [ "Iodw::meta::Field", "structIodw_1_1meta_1_1Field.html", null ],
-    [ "Iodw::Utils::Field", "structIodw_1_1Utils_1_1Field.html", null ],
     [ "Ioss::Field", "classIoss_1_1Field.html", null ],
+    [ "Iofaodel::field_entry_t", "structIofaodel_1_1field__entry__t.html", null ],
     [ "Ioad::DatabaseIO::FieldInfoType", "structIoad_1_1DatabaseIO_1_1FieldInfoType.html", null ],
     [ "Ioss::FieldManager", "classIoss_1_1FieldManager.html", null ],
     [ "Ioss::FileInfo", "classIoss_1_1FileInfo.html", null ],
@@ -436,22 +434,6 @@ var hierarchy =
     [ "anonymous_namespace{shell_to_hex.C}::Globals", "structanonymous__namespace_02shell__to__hex_8C_03_1_1Globals.html", null ],
     [ "anonymous_namespace{sphgen.C}::Globals", "structanonymous__namespace_02sphgen_8C_03_1_1Globals.html", null ],
     [ "anonymous_namespace{io_modify.C}::Graph", "classanonymous__namespace_02io__modify_8C_03_1_1Graph.html", null ],
-    [ "Iodw::meta::GroupingEntity", "structIodw_1_1meta_1_1GroupingEntity.html", [
-      [ "Iodw::meta::EntityBlock", "structIodw_1_1meta_1_1EntityBlock.html", [
-        [ "Iodw::meta::EdgeBlock", "structIodw_1_1meta_1_1EdgeBlock.html", null ],
-        [ "Iodw::meta::ElementBlock", "structIodw_1_1meta_1_1ElementBlock.html", null ],
-        [ "Iodw::meta::FaceBlock", "structIodw_1_1meta_1_1FaceBlock.html", null ],
-        [ "Iodw::meta::NodeBlock", "structIodw_1_1meta_1_1NodeBlock.html", null ],
-        [ "Iodw::meta::SideBlock", "structIodw_1_1meta_1_1SideBlock.html", null ]
-      ] ],
-      [ "Iodw::meta::EntitySet", "structIodw_1_1meta_1_1EntitySet.html", [
-        [ "Iodw::meta::EdgeSet", "structIodw_1_1meta_1_1EdgeSet.html", null ],
-        [ "Iodw::meta::ElementSet", "structIodw_1_1meta_1_1ElementSet.html", null ],
-        [ "Iodw::meta::FaceSet", "structIodw_1_1meta_1_1FaceSet.html", null ],
-        [ "Iodw::meta::NodeSet", "structIodw_1_1meta_1_1NodeSet.html", null ],
-        [ "Iodw::meta::SideSet", "structIodw_1_1meta_1_1SideSet.html", null ]
-      ] ]
-    ] ],
     [ "Ioss::GroupingEntity", "classIoss_1_1GroupingEntity.html", [
       [ "Ioex::SuperElement", "classIoex_1_1SuperElement.html", null ],
       [ "Ioss::Assembly", "classIoss_1_1Assembly.html", null ],
@@ -528,15 +510,14 @@ var hierarchy =
     [ "Ioss::IOFactory", "classIoss_1_1IOFactory.html", [
       [ "Ioad::IOFactory", "classIoad_1_1IOFactory.html", null ],
       [ "Iocgns::IOFactory", "classIocgns_1_1IOFactory.html", null ],
-      [ "Iodw::IOFactory", "classIodw_1_1IOFactory.html", null ],
       [ "Ioex::IOFactory", "classIoex_1_1IOFactory.html", null ],
+      [ "Iofaodel::IOFactory", "classIofaodel_1_1IOFactory.html", null ],
       [ "Iogn::IOFactory", "classIogn_1_1IOFactory.html", null ],
       [ "Iogs::IOFactory", "classIogs_1_1IOFactory.html", null ],
       [ "Iohb::IOFactory", "classIohb_1_1IOFactory.html", null ],
       [ "Iopg::IOFactory", "classIopg_1_1IOFactory.html", null ],
       [ "Iovs::IOFactory", "classIovs_1_1IOFactory.html", null ]
     ] ],
-    [ "Iodw::Utils::IossToDW", "classIodw_1_1Utils_1_1IossToDW.html", null ],
     [ "std::is_base_of", null, [
       [ "detail::is_compiled_string< S >", "structdetail_1_1is__compiled__string.html", null ],
       [ "is_compile_string< S >", "structis__compile__string.html", null ]
@@ -582,6 +563,7 @@ var hierarchy =
     [ "glob::MatchResults< charT >", "classglob_1_1MatchResults.html", null ],
     [ "Ioex::Mesh", "classIoex_1_1Mesh.html", null ],
     [ "Ioss::MeshCopyOptions", "structIoss_1_1MeshCopyOptions.html", null ],
+    [ "Iofaodel::meta_entry_t", "structIofaodel_1_1meta__entry__t.html", null ],
     [ "tsl::hh::mod_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1mod__growth__policy.html", null ],
     [ "tsl::rh::mod_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1mod__growth__policy.html", null ],
     [ "monostate", "structmonostate.html", null ],
@@ -621,16 +603,13 @@ var hierarchy =
     [ "printf_formatter< T >", "structprintf__formatter.html", null ],
     [ "detail::printf_precision_handler", "classdetail_1_1printf__precision__handler.html", null ],
     [ "detail::printf_width_handler< Char >", "classdetail_1_1printf__width__handler.html", null ],
-    [ "Iodw::meta::Property", "structIodw_1_1meta_1_1Property.html", null ],
-    [ "Iodw::Utils::Property", "structIodw_1_1Utils_1_1Property.html", null ],
     [ "Ioss::Property", "classIoss_1_1Property.html", null ],
+    [ "Iofaodel::property_entry_t", "structIofaodel_1_1property__entry__t.html", null ],
     [ "Ioss::PropertyManager", "classIoss_1_1PropertyManager.html", null ],
     [ "anonymous_namespace{Iocgns_StructuredZoneData.C}::Range", "structanonymous__namespace_02Iocgns__StructuredZoneData_8C_03_1_1Range.html", null ],
     [ "anonymous_namespace{Iocgns_Utils.C}::Range", "structanonymous__namespace_02Iocgns__Utils_8C_03_1_1Range.html", null ],
     [ "Ioex::Redefine", "classIoex_1_1Redefine.html", null ],
     [ "RefHolder< T >", "classRefHolder.html", null ],
-    [ "Iodw::meta::Region", "structIodw_1_1meta_1_1Region.html", null ],
-    [ "Iodw::Utils::RegionKeys", "structIodw_1_1Utils_1_1RegionKeys.html", null ],
     [ "Ioss::Registry", "classIoss_1_1Registry.html", null ],
     [ "detail::format_part< Char >::replacement", "structdetail_1_1format__part_1_1replacement.html", null ],
     [ "rgb", "structrgb.html", null ],
@@ -659,6 +638,7 @@ var hierarchy =
       [ "glob::SetItemRange< charT >", "classglob_1_1SetItemRange.html", null ]
     ] ],
     [ "Iogn::SharedNode", "structIogn_1_1SharedNode.html", null ],
+    [ "Iofaodel::sideblock_entry_t", "structIofaodel_1_1sideblock__entry__t.html", null ],
     [ "Ioex::SideSet", "structIoex_1_1SideSet.html", null ],
     [ "glob::SimpleGlob< charT >", "classglob_1_1SimpleGlob.html", null ],
     [ "tsl::detail_hopscotch_hash::smallest_type_for_min_bits< MinBits, Enable >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits.html", null ],
@@ -684,6 +664,7 @@ var hierarchy =
       [ "glob::StateSet< charT >", "classglob_1_1StateSet.html", null ],
       [ "glob::StateStar< charT >", "classglob_1_1StateStar.html", null ]
     ] ],
+    [ "Iofaodel::state_entry_t", "structIofaodel_1_1state__entry__t.html", null ],
     [ "detail::std_string_view< T >", "structdetail_1_1std__string__view.html", null ],
     [ "Ioss::StorageInitializer", "classIoss_1_1StorageInitializer.html", null ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}::stream_holder", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder.html", null ],
@@ -747,6 +728,7 @@ var hierarchy =
     [ "detail::value< basic_printf_context >", "classdetail_1_1value.html", null ],
     [ "detail::value< format_context >", "classdetail_1_1value.html", null ],
     [ "detail::value< wformat_context >", "classdetail_1_1value.html", null ],
+    [ "Iofaodel::value_entry_t", "structIofaodel_1_1value__entry__t.html", null ],
     [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
     [ "tsl::bhopscotch_map< Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >::ValueSelect", "classtsl_1_1bhopscotch__map_1_1ValueSelect.html", null ],
     [ "tsl::hopscotch_map< Key, T, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >::ValueSelect", "classtsl_1_1hopscotch__map_1_1ValueSelect.html", null ],

@@ -98,9 +98,9 @@ Functions</h2></td></tr>
 <tr class="separator:a3d660b7855851774652dbfade559d05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38afeb7ea9372ceddf5ed4f4c57e7746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a38afeb7ea9372ceddf5ed4f4c57e7746">create_face</a> (<a class="el" href="namespaceIoss.html#a098070d2a8062645c46f150cfb467b74">Ioss::FaceUnorderedSet</a> &amp;faces, size_t id, std::array&lt; size_t, 4 &gt; &amp;conn, size_t element, int local_face)</td></tr>
 <tr class="separator:a38afeb7ea9372ceddf5ed4f4c57e7746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb0ad55d6dace9f0918c7b3d7c96eff1"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:adb0ad55d6dace9f0918c7b3d7c96eff1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#adb0ad55d6dace9f0918c7b3d7c96eff1">internal_generate_faces</a> (<a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *eb, <a class="el" href="namespaceIoss.html#a098070d2a8062645c46f150cfb467b74">Ioss::FaceUnorderedSet</a> &amp;faces, const std::vector&lt; <a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a> &gt; &amp;ids, const std::vector&lt; size_t &gt; &amp;hash_ids, <a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a>)</td></tr>
-<tr class="separator:adb0ad55d6dace9f0918c7b3d7c96eff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b113fb33391cdd5bc3e47977aa57b3"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a34b113fb33391cdd5bc3e47977aa57b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a34b113fb33391cdd5bc3e47977aa57b3">internal_generate_faces</a> (<a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *eb, <a class="el" href="namespaceIoss.html#a098070d2a8062645c46f150cfb467b74">Ioss::FaceUnorderedSet</a> &amp;faces, const std::vector&lt; <a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a> &gt; &amp;ids, const std::vector&lt; size_t &gt; &amp;hash_ids, bool local_ids, <a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a>)</td></tr>
+<tr class="separator:a34b113fb33391cdd5bc3e47977aa57b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95e85281e055a9945826f8f20e3af20a"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:a95e85281e055a9945826f8f20e3af20a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a95e85281e055a9945826f8f20e3af20a">resolve_parallel_faces</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="namespaceIoss.html#a098070d2a8062645c46f150cfb467b74">Ioss::FaceUnorderedSet</a> &amp;faces, const std::vector&lt; size_t &gt; &amp;hash_ids, <a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a>)</td></tr>
 <tr class="separator:a95e85281e055a9945826f8f20e3af20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,8 +172,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="adb0ad55d6dace9f0918c7b3d7c96eff1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb0ad55d6dace9f0918c7b3d7c96eff1">&#9670;&nbsp;</a></span>internal_generate_faces()</h2>
+<a id="a34b113fb33391cdd5bc3e47977aa57b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b113fb33391cdd5bc3e47977aa57b3">&#9670;&nbsp;</a></span>internal_generate_faces()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,6 +203,12 @@ template&lt;typename INT &gt; </div>
           <td></td>
           <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>hash_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>local_ids</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

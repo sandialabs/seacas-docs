@@ -71,12 +71,6 @@ var namespaces_dup =
     ] ],
     [ "anonymous_namespace{Iocgns_StructuredZoneData.C}", "namespaceanonymous__namespace_02Iocgns__StructuredZoneData_8C_03.html", "namespaceanonymous__namespace_02Iocgns__StructuredZoneData_8C_03" ],
     [ "anonymous_namespace{Iocgns_Utils.C}", "namespaceanonymous__namespace_02Iocgns__Utils_8C_03.html", "namespaceanonymous__namespace_02Iocgns__Utils_8C_03" ],
-    [ "anonymous_namespace{Iodw_DatabaseIO.C}", "namespaceanonymous__namespace_02Iodw__DatabaseIO_8C_03.html", [
-      [ "datawarehouse_error", "namespaceanonymous__namespace_02Iodw__DatabaseIO_8C_03.html#ad9c7cdd42a6b25ff66973bd110e839d0", null ],
-      [ "get_file_pointer", "namespaceanonymous__namespace_02Iodw__DatabaseIO_8C_03.html#a208b61af9beba1d0ab80bccaf36ab310", null ],
-      [ "unsupported", "namespaceanonymous__namespace_02Iodw__DatabaseIO_8C_03.html#a8a634a67fd334762f148e196b248f052", null ],
-      [ "Version", "namespaceanonymous__namespace_02Iodw__DatabaseIO_8C_03.html#a890128b6b852f7a40849e35ffaa170de", null ]
-    ] ],
     [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html", [
       [ "check_attribute_index_order", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a45c1d1c49b3a3645814b7d03f52530f1", null ],
       [ "check_variable_consistency", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a1a4aeaae8ae122376c4bf66af39fc538", null ],
@@ -209,7 +203,7 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_FaceGenerator.C}", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html", [
       [ "create_face", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a38afeb7ea9372ceddf5ed4f4c57e7746", null ],
       [ "generate_index", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#acbb089bfbe0a592c696905037be60b1a", null ],
-      [ "internal_generate_faces", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#adb0ad55d6dace9f0918c7b3d7c96eff1", null ],
+      [ "internal_generate_faces", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a34b113fb33391cdd5bc3e47977aa57b3", null ],
       [ "MurmurHash64A", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a3d660b7855851774652dbfade559d05b", null ],
       [ "resolve_parallel_faces", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a95e85281e055a9945826f8f20e3af20a", null ]
     ] ],
@@ -458,8 +452,8 @@ var namespaces_dup =
     [ "Info", "namespaceInfo.html", "namespaceInfo" ],
     [ "Ioad", "namespaceIoad.html", "namespaceIoad" ],
     [ "Iocgns", "namespaceIocgns.html", "namespaceIocgns" ],
-    [ "Iodw", "namespaceIodw.html", "namespaceIodw" ],
     [ "Ioex", "namespaceIoex.html", "namespaceIoex" ],
+    [ "Iofaodel", "namespaceIofaodel.html", "namespaceIofaodel" ],
     [ "Iogn", "namespaceIogn.html", "namespaceIogn" ],
     [ "Iogs", "namespaceIogs.html", "namespaceIogs" ],
     [ "Iohb", "namespaceIohb.html", "namespaceIohb" ],

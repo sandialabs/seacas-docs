@@ -425,35 +425,6 @@ var annotated_dup =
       [ "ZoneBC", "structIocgns_1_1ZoneBC.html", "structIocgns_1_1ZoneBC" ],
       [ "Utils", "classIocgns_1_1Utils.html", "classIocgns_1_1Utils" ]
     ] ],
-    [ "Iodw", "namespaceIodw.html", [
-      [ "meta", "namespaceIodw_1_1meta.html", [
-        [ "Property", "structIodw_1_1meta_1_1Property.html", null ],
-        [ "Field", "structIodw_1_1meta_1_1Field.html", null ],
-        [ "GroupingEntity", "structIodw_1_1meta_1_1GroupingEntity.html", "structIodw_1_1meta_1_1GroupingEntity" ],
-        [ "EntityBlock", "structIodw_1_1meta_1_1EntityBlock.html", null ],
-        [ "EntitySet", "structIodw_1_1meta_1_1EntitySet.html", null ],
-        [ "NodeBlock", "structIodw_1_1meta_1_1NodeBlock.html", null ],
-        [ "SideBlock", "structIodw_1_1meta_1_1SideBlock.html", null ],
-        [ "ElementBlock", "structIodw_1_1meta_1_1ElementBlock.html", null ],
-        [ "EdgeBlock", "structIodw_1_1meta_1_1EdgeBlock.html", null ],
-        [ "FaceBlock", "structIodw_1_1meta_1_1FaceBlock.html", null ],
-        [ "NodeSet", "structIodw_1_1meta_1_1NodeSet.html", null ],
-        [ "SideSet", "structIodw_1_1meta_1_1SideSet.html", null ],
-        [ "ElementSet", "structIodw_1_1meta_1_1ElementSet.html", null ],
-        [ "EdgeSet", "structIodw_1_1meta_1_1EdgeSet.html", null ],
-        [ "FaceSet", "structIodw_1_1meta_1_1FaceSet.html", null ],
-        [ "Region", "structIodw_1_1meta_1_1Region.html", "structIodw_1_1meta_1_1Region" ]
-      ] ],
-      [ "Utils", "namespaceIodw_1_1Utils.html", [
-        [ "Property", "structIodw_1_1Utils_1_1Property.html", "structIodw_1_1Utils_1_1Property" ],
-        [ "Field", "structIodw_1_1Utils_1_1Field.html", "structIodw_1_1Utils_1_1Field" ],
-        [ "ElemBlock", "structIodw_1_1Utils_1_1ElemBlock.html", null ],
-        [ "RegionKeys", "structIodw_1_1Utils_1_1RegionKeys.html", "structIodw_1_1Utils_1_1RegionKeys" ],
-        [ "IossToDW", "classIodw_1_1Utils_1_1IossToDW.html", "classIodw_1_1Utils_1_1IossToDW" ]
-      ] ],
-      [ "IOFactory", "classIodw_1_1IOFactory.html", "classIodw_1_1IOFactory" ],
-      [ "DatabaseIO", "classIodw_1_1DatabaseIO.html", "classIodw_1_1DatabaseIO" ]
-    ] ],
     [ "Ioex", "namespaceIoex.html", [
       [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}", "namespaceIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html", [
         [ "EX_attribute", "classIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1EX__attribute.html", "classIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1EX__attribute" ]
@@ -480,6 +451,16 @@ var annotated_dup =
       [ "SuperElement", "classIoex_1_1SuperElement.html", "classIoex_1_1SuperElement" ],
       [ "NameTopoKeyCompare", "structIoex_1_1NameTopoKeyCompare.html", "structIoex_1_1NameTopoKeyCompare" ],
       [ "NameTopoKeyHash", "structIoex_1_1NameTopoKeyHash.html", "structIoex_1_1NameTopoKeyHash" ]
+    ] ],
+    [ "Iofaodel", "namespaceIofaodel.html", [
+      [ "IOFactory", "classIofaodel_1_1IOFactory.html", "classIofaodel_1_1IOFactory" ],
+      [ "DatabaseIO", "classIofaodel_1_1DatabaseIO.html", "classIofaodel_1_1DatabaseIO" ],
+      [ "field_entry_t", "structIofaodel_1_1field__entry__t.html", "structIofaodel_1_1field__entry__t" ],
+      [ "property_entry_t", "structIofaodel_1_1property__entry__t.html", "structIofaodel_1_1property__entry__t" ],
+      [ "value_entry_t", "structIofaodel_1_1value__entry__t.html", "structIofaodel_1_1value__entry__t" ],
+      [ "meta_entry_t", "structIofaodel_1_1meta__entry__t.html", "structIofaodel_1_1meta__entry__t" ],
+      [ "state_entry_t", "structIofaodel_1_1state__entry__t.html", "structIofaodel_1_1state__entry__t" ],
+      [ "sideblock_entry_t", "structIofaodel_1_1sideblock__entry__t.html", "structIofaodel_1_1sideblock__entry__t" ]
     ] ],
     [ "Iogn", "namespaceIogn.html", [
       [ "SharedNode", "structIogn_1_1SharedNode.html", "structIogn_1_1SharedNode" ],

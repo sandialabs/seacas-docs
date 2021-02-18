@@ -100,6 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a38dcec82093e87d5a93d2b4eecb13fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18abf28d428afcd586f9a1b70733566e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1BoundaryCondition.html#a18abf28d428afcd586f9a1b70733566e">BoundaryCondition</a> (std::string name, <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> range_beg, <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> range_end)</td></tr>
 <tr class="separator:a18abf28d428afcd586f9a1b70733566e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e177369e488c839682b6794addb96ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1BoundaryCondition.html#a9e177369e488c839682b6794addb96ff">BoundaryCondition</a> ()=default</td></tr>
+<tr class="separator:a9e177369e488c839682b6794addb96ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9240c7c4dd8f49097ec9ad5f88784bd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1BoundaryCondition.html#a9240c7c4dd8f49097ec9ad5f88784bd9">BoundaryCondition</a> (const <a class="el" href="structIoss_1_1BoundaryCondition.html">BoundaryCondition</a> &amp;copy_from)=default</td></tr>
 <tr class="separator:a9240c7c4dd8f49097ec9ad5f88784bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be05724df2809128210b7099a6a8726"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1BoundaryCondition.html#a5be05724df2809128210b7099a6a8726">which_face</a> () const</td></tr>
@@ -108,6 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb73889996f3236118422cc387470dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0b08ae3e67e738bdf40d1951f52514f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1BoundaryCondition.html#ab0b08ae3e67e738bdf40d1951f52514f">get_face_count</a> () const</td></tr>
 <tr class="separator:ab0b08ae3e67e738bdf40d1951f52514f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a55d1eb1caa02d4eea174d2be92c62"><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
+<tr class="memitem:a12a55d1eb1caa02d4eea174d2be92c62"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structIoss_1_1BoundaryCondition.html#a12a55d1eb1caa02d4eea174d2be92c62">serialize</a> (Archive &amp;archive)</td></tr>
+<tr class="separator:a12a55d1eb1caa02d4eea174d2be92c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -129,7 +134,7 @@ Friends</h2></td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a38dcec82093e87d5a93d2b4eecb13fb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38dcec82093e87d5a93d2b4eecb13fb1">&#9670;&nbsp;</a></span>BoundaryCondition() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a38dcec82093e87d5a93d2b4eecb13fb1">&#9670;&nbsp;</a></span>BoundaryCondition() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +182,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a18abf28d428afcd586f9a1b70733566e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18abf28d428afcd586f9a1b70733566e">&#9670;&nbsp;</a></span>BoundaryCondition() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18abf28d428afcd586f9a1b70733566e">&#9670;&nbsp;</a></span>BoundaryCondition() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,8 +223,33 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a9e177369e488c839682b6794addb96ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e177369e488c839682b6794addb96ff">&#9670;&nbsp;</a></span>BoundaryCondition() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ioss::BoundaryCondition::BoundaryCondition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9240c7c4dd8f49097ec9ad5f88784bd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9240c7c4dd8f49097ec9ad5f88784bd9">&#9670;&nbsp;</a></span>BoundaryCondition() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9240c7c4dd8f49097ec9ad5f88784bd9">&#9670;&nbsp;</a></span>BoundaryCondition() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,6 +305,34 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12a55d1eb1caa02d4eea174d2be92c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a55d1eb1caa02d4eea174d2be92c62">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Archive &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::BoundaryCondition::serialize </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
