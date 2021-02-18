@@ -93,30 +93,6 @@ $(function() {
 <div class="textblock"><p>Zellij is a "mesh concatenation" application for generating a mesh consisting of a "lattice" containing one or more "unit cell" template meshes. The lattice is a two-dimensional arrangement of the unit cell template meshes.</p>
 <p>The unit cell template meshes are placed by zellij into the specified locations in the lattice and the nodes on the boundaries of the unit cell meshes are united or coincident. Each unit cell mesh must have the same exterior boundary meshes and coordinate extents on the X and Y coordinate faces, but the Z faces are only required to have the same coordinate extent; the Z face meshes are not required to be the same among the different unit cells.</p>
 <p>The lattice can be represented as a IxJ regular grid with each "cell" in the grid or lattice containing one of the unit cell template meshes.</p>
-<ul>
-<li><a href="#execution">Execution</a></li>
-<li><a href="#lattice-description-file-format">Lattice Description File Format</a><ul>
-<li><a href="#unit-cell-dictionary">Unit Cell Dictionary</a></li>
-<li><a href="#unit-cell-template-mesh-requirements">Unit Cell Template Mesh Requirements</a></li>
-</ul>
-</li>
-<li><a href="#sideset-handling">Sideset Handling</a></li>
-<li><a href="#parallel-execution">Parallel Execution</a><ul>
-<li><a href="#partial-parallel-output-mode">Partial Parallel Output Mode</a></li>
-</ul>
-</li>
-<li><a href="#execution-complexity">Execution Complexity</a><ul>
-<li><a href="#memory-complexity">Memory Complexity</a></li>
-<li><a href="#execution-time-complexity">Execution Time Complexity</a></li>
-<li><a href="#efficiency-at-the-netcdf-level">Efficiency at the NetCDF level</a></li>
-<li><a href="#format">Format</a></li>
-<li><a href="#integer-size">Integer Size</a></li>
-<li><a href="#compression">Compression</a></li>
-<li><a href="#recommendations">Recommendations</a></li>
-</ul>
-</li>
-<li><a href="#TODO">TODO</a></li>
-</ul>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Execution</h1>
 <p>Executing zellij with the <code>-help</code> option will result in output similar to the following:</p>
