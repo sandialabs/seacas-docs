@@ -272,7 +272,7 @@ Partial Parallel Output Mode</h2>
 </div><!-- fragment --><p>simultaneously and all 16 files should be output faster than running a single execution that wrote all of the files.</p>
 <h2><a class="anchor" id="autotoc_md9"></a>
 Parallel Capable Parallel Execution</h2>
-<p>If Zellij is compiled with parallel capability enabled (This is shown at the beginning of the <code>-help</code> output or the version information output when zellij begins executing as <code>Parallel Capability Enabled</code>), then you can run Zellij in parallel using the normal <code>mpiexec -np &lt;#&gt; zellij &lt;normal zellij options&gt;</code> command. In this case, there will be <code>#</code> copies of zellij running simulataneously and each copy will divide up the output files and work among each process/copy.</p>
+<p>If Zellij is compiled with parallel capability enabled (This is shown at the beginning of the <code>-help</code> output or the version information output when zellij begins executing as <code>Parallel Capability Enabled</code>), then you can run Zellij in parallel using the normal <code>mpiexec -np &lt;#&gt; zellij &lt;normal zellij options&gt;</code> command. In this case, there will be <code>#</code> copies of zellij running simultaneously and each copy will divide up the output files and work among each process/copy.</p>
 <p>For example, if you run <code>mpiexec -np 8 zellij -ranks 1024 -latice lattice.txt</code>, then there will be 8 copies of zellij running and each will output <code>1024/8 = 128</code> output files.</p>
 <h2><a class="anchor" id="autotoc_md10"></a>
 Maximum Open File Complications</h2>
