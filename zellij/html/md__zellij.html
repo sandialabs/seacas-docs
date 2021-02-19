@@ -96,25 +96,9 @@ $(function() {
 <h1><a class="anchor" id="autotoc_md1"></a>
 Execution</h1>
 <p>Executing zellij with the <code>-help</code> option will result in output similar to the following:</p>
-<div class="fragment"><div class="line">zellij -help</div>
-<div class="line"> </div>
-<div class="line">usage: zellij [options] -lattice &lt;lattice_definition_file&gt;</div>
-<div class="line">    -help (Print this summary and exit)</div>
-<div class="line">    -version (Print version and exit)</div>
-<div class="line"> </div>
-<div class="line">    -lattice &lt;$val&gt; (Name of file to read lattice definition from.)</div>
+<div class="fragment"><div class="line">usage: zellij [options] -lattice &lt;lattice_definition_file&gt;</div>
+<div class="line">    -lattice &lt;$val&gt; (Name of file to read lattice definition from. [required])</div>
 <div class="line">    -output &lt;$val&gt; (Name of output file to create. Default is `zellij-out.e`)</div>
-<div class="line"> </div>
-<div class="line">    -netcdf3 (Output database will be a netcdf3 native classical netcdf file format (32-bit only))</div>
-<div class="line">    -netcdf4 (Output database will be a netcdf4 hdf5-based file instead of the classical netcdf file format (default))</div>
-<div class="line">    -netcdf5 (Output database will be a netcdf5 (CDF5) file instead of the classical netcdf file format)</div>
-<div class="line"> </div>
-<div class="line">    -32-bit (True if forcing the use of 32-bit integers for the output file)</div>
-<div class="line">    -64-bit (True if forcing the use of 64-bit integers for the output file (default))</div>
-<div class="line"> </div>
-<div class="line">    -zlib (Use the Zlib / libz compression method if compression is enabled (default) [exodus only].)</div>
-<div class="line">    -szip (Use SZip compression. [exodus only, enables netcdf-4])</div>
-<div class="line">    -compress &lt;$val&gt; (Specify the hdf5 zlib compression level [0..9] or szip [even, 4..32] to be used on the output file.)</div>
 <div class="line"> </div>
 <div class="line">    -rcb (Use recursive coordinate bisection method to decompose the input mesh in a parallel run.)</div>
 <div class="line">    -rib (Use recursive inertial bisection method to decompose the input mesh in a parallel run.)</div>
@@ -129,11 +113,13 @@ Execution</h1>
 <div class="line"> </div>
 <div class="line">    -ranks &lt;$val&gt; (Number of ranks to decompose mesh across)</div>
 <div class="line">    -start_rank &lt;$val&gt; (In partial output mode, start outputting decomposed files at this rank)</div>
-<div class="line">    -rank_count &lt;$val&gt; (In partial output mode, output this number of ranks)</div>
+<div class="line">    -rank_count &lt;$val&gt; (In partial output or subcycle modes, output this number of ranks)</div>
 <div class="line">    -subcycle (Process cells in groups of &#39;-rank_count&#39;.  Helps minimize open files,</div>
 <div class="line">        but is faster than only having a single file open.)</div>
-<div class="line"> </div>
-<div class="line">    -separate_cells (Do not equivalence the nodes between adjacent unit cells.)</div>
+<div class="line">    -minimize_open_files [$val] (Close files after accessing them to avoid issues with too many open files.</div>
+<div class="line">        If argument is &#39;output&#39; then close output, if &#39;unit&#39; then close unit cells;</div>
+<div class="line">        if &#39;all&#39; or no argument close all.</div>
+<div class="line">        Should not need to use this option unless you get an error message indicating this issue.)</div>
 <div class="line"> </div>
 <div class="line">    -ignore_sidesets (Do not copy any sidesets in the unit cells to the output file.)</div>
 <div class="line">    -generate_sidesets &lt;$val&gt; (Which surfaces on the output mesh should have sidesets generated,</div>
@@ -151,11 +137,20 @@ Execution</h1>
 <div class="line">         The default names are &#39;min_i&#39;, &#39;max_i&#39;, &#39;min_j&#39;, &#39;max_j&#39;, &#39;min_k&#39;, &#39;max_k&#39;.</div>
 <div class="line">         For example `x:left,X:right` would name the sidesets on the min x and max X faces &#39;left&#39; and &#39;right&#39;.)</div>
 <div class="line"> </div>
-<div class="line">    -minimize_open_files [$val] (Close files after accessing them to avoid issues with too many open files.</div>
-<div class="line">        If argument is &#39;OUTPUT&#39; then close output, if &#39;UNIT&#39; then close unit cells;</div>
-<div class="line">        if &#39;ALL&#39; or no argument close all.</div>
-<div class="line">        Should not need to use this option unless you get an error message indicating this issue.)</div>
+<div class="line">    -netcdf3 (Output database will be a netcdf3 native classical netcdf file format (32-bit only))</div>
+<div class="line">    -netcdf4 (Output database will be a netcdf4 hdf5-based file instead of the classical netcdf file format (default))</div>
+<div class="line">    -netcdf5 (Output database will be a netcdf5 (CDF5) file instead of the classical netcdf file format)</div>
 <div class="line"> </div>
+<div class="line">    -32-bit (True if forcing the use of 32-bit integers for the output file)</div>
+<div class="line">    -64-bit (True if forcing the use of 64-bit integers for the output file (default))</div>
+<div class="line"> </div>
+<div class="line">    -zlib (Use the Zlib / libz compression method if compression is enabled (default) [exodus only].)</div>
+<div class="line">    -szip (Use SZip compression. [exodus only, enables netcdf-4])</div>
+<div class="line">    -compress &lt;$val&gt; (Specify the hdf5 zlib compression level [0..9] or szip [even, 4..32] to be used on the output file.)</div>
+<div class="line"> </div>
+<div class="line">    -separate_cells (Do not equivalence the nodes between adjacent unit cells.)</div>
+<div class="line">    -help (Print this summary and exit)</div>
+<div class="line">    -version (Print version and exit)</div>
 <div class="line">    -debug &lt;$val&gt; (debug level (values are or&#39;d)</div>
 <div class="line">           1 = Time stamp information.</div>
 <div class="line">           2 = Memory information.</div>
@@ -164,7 +159,6 @@ Execution</h1>
 <div class="line">          16 = Put exodus library into verbose mode.</div>
 <div class="line">          32 = Verbose decomposition information.</div>
 <div class="line">          64 = Verbose output database summary information.)</div>
-<div class="line"> </div>
 <div class="line">    -copyright (Show copyright and license data.)</div>
 <div class="line"> </div>
 <div class="line">    Can also set options via ZELLIJ_OPTIONS environment variable.</div>
