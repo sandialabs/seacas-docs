@@ -201,7 +201,18 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aff3a2bca3e1f7aa8bb4b490b71703528"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid.html#aff3a2bca3e1f7aa8bb4b490b71703528">m_generatedSideSets</a> {0}</td></tr>
 <tr class="separator:aff3a2bca3e1f7aa8bb4b490b71703528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><code>grid</code> stores the data for the tessellation of size <code>IxJ</code></p><ul>
+<li>gridI &ndash; extent in I direction</li>
+<li>gridJ &ndash; extend in J direction</li>
+<li>grid(i,j) &ndash; return database information at i,j location</li>
+<li>grid(index) &ndash; return database information at i,j location corresponding to <code>index</code></li>
+<li>max number of element blocks in a unit_cell mesh</li>
+<li>range of x, y size of unit_cell mesh. (assumes unit_cell minx, miny == 0.0)</li>
+<li>Ti, Tj, Tk &ndash; size of regular mesh on boundary of unit_cell (? may need the 3 <code>Tk</code> values for padding)</li>
+<li>std::vector&lt;Cell&gt; m_grid &ndash; contains database information... </li>
+</ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae56c241a7d0600ef89236d0cceae37a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae56c241a7d0600ef89236d0cceae37a2">&#9670;&nbsp;</a></span>Grid()</h2>
 
