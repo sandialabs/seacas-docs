@@ -201,8 +201,10 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename OutputIt, typename Char&gt;<br />
 class printf_arg_formatter&lt; OutputIt, Char &gt;</h3>
 
-<p>\rst The <code>printf</code> argument formatter. \endrst </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<div class="fragment"><div class="line">The ``<a class="code" href="printf_8h.html#a327ac7247fc1a9193514a9c772eded1b">printf</a>`` argument <a class="code" href="structformatter.html">formatter</a>.</div>
+<div class="ttc" id="aprintf_8h_html_a327ac7247fc1a9193514a9c772eded1b"><div class="ttname"><a href="printf_8h.html#a327ac7247fc1a9193514a9c772eded1b">printf</a></div><div class="ttdeci">FMT_DEPRECATED void printf(detail::buffer&lt; Char &gt; &amp;buf, basic_string_view&lt; Char &gt; format, basic_format_args&lt; Context &gt; args)</div><div class="ttdef"><b>Definition:</b> printf.h:190</div></div>
+<div class="ttc" id="astructformatter_html"><div class="ttname"><a href="structformatter.html">formatter</a></div><div class="ttdef"><b>Definition:</b> core.h:636</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="afaf042b2b2fd67ff20626cc8122291bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afaf042b2b2fd67ff20626cc8122291bc">&#9670;&nbsp;</a></span>base</h2>
 
@@ -349,8 +351,13 @@ template&lt;typename OutputIt , typename Char &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Constructs an argument formatter object. buffer* is a reference to the output buffer and <em>specs</em> contains format specifier information for standard argument types. \endrst </p>
-
+<div class="fragment"><div class="line">Constructs an argument <a class="code" href="structformatter.html">formatter</a> <span class="keywordtype">object</span>.</div>
+<div class="line">*buffer* is a reference to the output buffer and *<a class="code" href="classdetail_1_1arg__formatter__base.html#acd522d85f1c897d22a8d61cf4389c4b7">specs</a>* contains <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a></div>
+<div class="line">specifier information <span class="keywordflow">for</span> <a class="code" href="namespacedetail.html#a4938659a89541ba388c06c6a33e0c8adac00f0c4675b91fb8b918e4079a0b1bac">standard</a> argument types.</div>
+<div class="ttc" id="aclassdetail_1_1arg__formatter__base_html_acd522d85f1c897d22a8d61cf4389c4b7"><div class="ttname"><a href="classdetail_1_1arg__formatter__base.html#acd522d85f1c897d22a8d61cf4389c4b7">detail::arg_formatter_base::specs</a></div><div class="ttdeci">format_specs * specs()</div><div class="ttdef"><b>Definition:</b> format.h:2218</div></div>
+<div class="ttc" id="acolor_8h_html_a5237d5a1dab3f47a095266bf83d2b5ea"><div class="ttname"><a href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:560</div></div>
+<div class="ttc" id="anamespacedetail_html_a4938659a89541ba388c06c6a33e0c8adac00f0c4675b91fb8b918e4079a0b1bac"><div class="ttname"><a href="namespacedetail.html#a4938659a89541ba388c06c6a33e0c8adac00f0c4675b91fb8b918e4079a0b1bac">detail::numeric_system::standard</a></div><div class="ttdeci">@ standard</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>

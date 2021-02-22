@@ -704,10 +704,19 @@ template&lt;typename S , typename... Args, typename Char  = char_t&lt;S&gt;&gt; 
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Formats arguments and returns the result as a string using ANSI escape sequences to specify text formatting.</p>
-<p>Example**::</p>
-<p>#include &lt;<a class="el" href="color_8h.html">fmt/color.h</a>&gt; std::string message = fmt::format(fmt::emphasis::bold | fg(fmt::color::red), "The answer is {}", 42); \endrst </p>
-
+<div class="fragment"><div class="line">Formats arguments and returns the <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> as a <span class="keywordtype">string</span> <span class="keyword">using</span> ANSI</div>
+<div class="line">escape sequences to specify text formatting.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">  #include &lt;<a class="code" href="color_8h.html">fmt/color.h</a>&gt;</span></div>
+<div class="line">  std::string message = <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">fmt::format</a>(fmt::emphasis::bold | <a class="code" href="color_8h.html#a5d8d963ba92d86aa94020c40aa7b3f15">fg</a>(fmt::color::red),</div>
+<div class="line">                                    <span class="stringliteral">&quot;The answer is {}&quot;</span>, 42);</div>
+<div class="ttc" id="acolor_8h_html"><div class="ttname"><a href="color_8h.html">color.h</a></div></div>
+<div class="ttc" id="acolor_8h_html_a5237d5a1dab3f47a095266bf83d2b5ea"><div class="ttname"><a href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:560</div></div>
+<div class="ttc" id="acolor_8h_html_a5d8d963ba92d86aa94020c40aa7b3f15"><div class="ttname"><a href="color_8h.html#a5d8d963ba92d86aa94020c40aa7b3f15">fg</a></div><div class="ttdeci">FMT_CONSTEXPR text_style fg(detail::color_type foreground) FMT_NOEXCEPT</div><div class="ttdef"><b>Definition:</b> color.h:341</div></div>
+<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:1498</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a3c4d8499969f1378aea4db1993e7c319"></a>
@@ -757,10 +766,17 @@ template&lt;typename OutputIt , typename S , typename... Args, bool enable = det
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Formats arguments with the given <a class="el" href="classtext__style.html">text_style</a>, writes the result to the output iterator <code>out</code> and returns the iterator past the end of the output range.</p>
-<p>Example**::</p>
-<p>std::vector&lt;char&gt; out; fmt::format_to(std::back_inserter(out), fmt::emphasis::bold | fg(fmt::color::red), "{}", 42); \endrst </p>
-
+<div class="fragment"><div class="line">Formats arguments with the given <a class="code" href="classtext__style.html">text_style</a>, writes the <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> to the output</div>
+<div class="line">iterator ``out`` and returns the iterator past the end of the output range.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  std::vector&lt;char&gt; out;</div>
+<div class="line">  <a class="code" href="color_8h.html#a3c4d8499969f1378aea4db1993e7c319">fmt::format_to</a>(std::back_inserter(out),</div>
+<div class="line">                 fmt::emphasis::bold | <a class="code" href="color_8h.html#a5d8d963ba92d86aa94020c40aa7b3f15">fg</a>(fmt::color::red), <span class="stringliteral">&quot;{}&quot;</span>, 42);</div>
+<div class="ttc" id="aclasstext__style_html"><div class="ttname"><a href="classtext__style.html">text_style</a></div><div class="ttdef"><b>Definition:</b> color.h:227</div></div>
+<div class="ttc" id="acolor_8h_html_a3c4d8499969f1378aea4db1993e7c319"><div class="ttname"><a href="color_8h.html#a3c4d8499969f1378aea4db1993e7c319">format_to</a></div><div class="ttdeci">auto format_to(OutputIt out, const text_style &amp;ts, const S &amp;format_str, Args &amp;&amp;... args) -&gt; typename std::enable_if&lt; enable, OutputIt &gt;::type</div><div class="ttdef"><b>Definition:</b> color.h:594</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a4cd9786d3693407747f60438359ae533"></a>
@@ -867,10 +883,15 @@ template&lt;typename S , typename... Args, FMT_ENABLE_IF(detail::is_string&lt; S
         </tr>
       </table>
 </div><div class="memdoc">
-<p>\rst Formats a string and prints it to the specified file stream using ANSI escape sequences to specify text formatting.</p>
-<p>Example**::</p>
-<p>fmt::print(fmt::emphasis::bold | fg(fmt::color::red), "Elapsed time: {0:.2f} seconds", 1.23); \endrst </p>
-
+<div class="fragment"><div class="line">Formats a <span class="keywordtype">string</span> and prints it to the specified file stream <span class="keyword">using</span> ANSI</div>
+<div class="line">escape sequences to specify text formatting.</div>
+<div class="line"> </div>
+<div class="line"> *Example**<a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">::</a></div>
+<div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174"></a> </div>
+<div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">  fmt::print</a>(fmt::emphasis::bold | <a class="code" href="color_8h.html#a5d8d963ba92d86aa94020c40aa7b3f15">fg</a>(fmt::color::red),</div>
+<div class="line">             <span class="stringliteral">&quot;Elapsed time: {0:.2f} seconds&quot;</span>, 1.23);</div>
+<div class="ttc" id="acolor_8h_html_a2fead8330d19b9d2f10e6ed9c59e0174"><div class="ttname"><a href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">print</a></div><div class="ttdeci">void print(std::FILE *f, const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:519</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a3098f61d4ebbadbdf87dc109212bb8cb"></a>

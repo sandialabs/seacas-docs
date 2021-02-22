@@ -345,10 +345,21 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>\rst Formats an error returned by an operating system or a language runtime, for example a file opening error, and writes it to <em>out</em> in the following form:</p>
-<p>.. parsed-literal:: &lt;message&gt;*: *&lt;system-message&gt;*</p>
-<p>where *&lt;message&gt;* is the passed message and *&lt;system-message&gt;* is the system message corresponding to the error code. error_code* is a system error code as given by <code>errno</code>. If <em><a class="el" href="classerror__code.html">error_code</a></em> is not a valid error code such as -1, the system message may look like "Unknown error -1" and is platform-dependent. \endrst </p>
-
+<div class="fragment"><div class="line">Formats an <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> returned by an operating system or a language runtime,</div>
+<div class="line"><span class="keywordflow">for</span> example a file opening <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a>, and writes it to *out* in the following</div>
+<div class="line">form:</div>
+<div class="line"> </div>
+<div class="line">.. parsed-literal::</div>
+<div class="line">    &lt;message&gt;*: *&lt;system-message&gt;*</div>
+<div class="line"> </div>
+<div class="line">where *&lt;message&gt;* is the passed message and *&lt;system-message&gt;* is</div>
+<div class="line">the system message corresponding to the <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> code.</div>
+<div class="line">*<a class="code" href="classerror__code.html">error_code</a>* is a system <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> code as given by ``errno``.</div>
+<div class="line">If *<a class="code" href="classerror__code.html">error_code</a>* is not a valid <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> code such as -1, the system message</div>
+<div class="line">may look like <span class="stringliteral">&quot;Unknown error -1&quot;</span> and is platform-dependent.</div>
+<div class="ttc" id="aclasserror__code_html"><div class="ttname"><a href="classerror__code.html">error_code</a></div><div class="ttdef"><b>Definition:</b> os.h:126</div></div>
+<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">detail::digits::error</a></div><div class="ttdeci">@ error</div><div class="ttdef"><b>Definition:</b> format-inl.h:1501</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a82b610312f3005c8480b1d8439b129be"></a>

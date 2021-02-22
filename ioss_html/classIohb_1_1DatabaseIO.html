@@ -411,10 +411,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a14979888aa691450b6cdc5ba6ce06f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0f3172b2fc161f2208945788ea85d65"><td class="memItemLeft" align="right" valign="top">std::ostream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIohb_1_1DatabaseIO.html#ac0f3172b2fc161f2208945788ea85d65">logStream</a> {nullptr}</td></tr>
 <tr class="separator:ac0f3172b2fc161f2208945788ea85d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4cbd1877902f335396d1aa5b1e4218d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIohb_1_1Layout.html">Layout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIohb_1_1DatabaseIO.html#ae4cbd1877902f335396d1aa5b1e4218d">layout_</a> {nullptr}</td></tr>
-<tr class="separator:ae4cbd1877902f335396d1aa5b1e4218d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0425afc6a1c3836a00bcd524385f3b5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIohb_1_1Layout.html">Layout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIohb_1_1DatabaseIO.html#a0425afc6a1c3836a00bcd524385f3b5a">legend_</a> {nullptr}</td></tr>
-<tr class="separator:a0425afc6a1c3836a00bcd524385f3b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8f8912023ef27f4372384041bfbc1b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIohb_1_1Layout.html">Layout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIohb_1_1DatabaseIO.html#a7d8f8912023ef27f4372384041bfbc1b">layout_</a> {}</td></tr>
+<tr class="separator:a7d8f8912023ef27f4372384041bfbc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328ac9e2639308a5f7ca85ca7d9c33af"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classIohb_1_1Layout.html">Layout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIohb_1_1DatabaseIO.html#a328ac9e2639308a5f7ca85ca7d9c33af">legend_</a> {}</td></tr>
+<tr class="separator:a328ac9e2639308a5f7ca85ca7d9c33af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580b65bae1ceb27b8e5380c96ef724d4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIohb_1_1DatabaseIO.html#a580b65bae1ceb27b8e5380c96ef724d4">defaultTsFormat</a> {&quot;[%H:%M:%S]&quot;}</td></tr>
 <tr class="separator:a580b65bae1ceb27b8e5380c96ef724d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab96a03cea2a276884b7e5a60d5730c48"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIohb_1_1DatabaseIO.html#ab96a03cea2a276884b7e5a60d5730c48">tsFormat</a> {}</td></tr>
@@ -2673,8 +2673,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae4cbd1877902f335396d1aa5b1e4218d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4cbd1877902f335396d1aa5b1e4218d">&#9670;&nbsp;</a></span>layout_</h2>
+<a id="a7d8f8912023ef27f4372384041bfbc1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d8f8912023ef27f4372384041bfbc1b">&#9670;&nbsp;</a></span>layout_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2683,7 +2683,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIohb_1_1Layout.html">Layout</a>* Iohb::DatabaseIO::layout_ {nullptr}</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classIohb_1_1Layout.html">Layout</a>&gt; Iohb::DatabaseIO::layout_ {}</td>
         </tr>
       </table>
   </td>
@@ -2695,8 +2695,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0425afc6a1c3836a00bcd524385f3b5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0425afc6a1c3836a00bcd524385f3b5a">&#9670;&nbsp;</a></span>legend_</h2>
+<a id="a328ac9e2639308a5f7ca85ca7d9c33af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328ac9e2639308a5f7ca85ca7d9c33af">&#9670;&nbsp;</a></span>legend_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2705,7 +2705,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIohb_1_1Layout.html">Layout</a>* Iohb::DatabaseIO::legend_ {nullptr}</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classIohb_1_1Layout.html">Layout</a>&gt; Iohb::DatabaseIO::legend_ {}</td>
         </tr>
       </table>
   </td>

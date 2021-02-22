@@ -1043,10 +1043,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>\rst Constructs a compile-time format string from a string literal <em>s</em>.</p>
-<p>Example**::</p>
-<p>A compile-time error because 'd' is an invalid specifier for strings. std::string s = fmt::format(FMT_STRING("{:d}"), "foo"); \endrst </p>
-
+<div class="fragment"><div class="line">Constructs a <a class="code" href="compile_8h.html#a97ae726c0697af04685340d11f77a728">compile</a>-time <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a> <span class="keywordtype">string</span> from a <span class="keywordtype">string</span> literal *s*.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">// A compile-time error because &#39;d&#39; is an invalid specifier for strings.</span></div>
+<div class="line">  std::string s = <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">fmt::format</a>(<a class="code" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<span class="stringliteral">&quot;{:d}&quot;</span>), <span class="stringliteral">&quot;foo&quot;</span>);</div>
+<div class="ttc" id="acompile_8h_html_a97ae726c0697af04685340d11f77a728"><div class="ttname"><a href="compile_8h.html#a97ae726c0697af04685340d11f77a728">compile</a></div><div class="ttdeci">FMT_DEPRECATED auto compile(const Args &amp;... args) -&gt; decltype(detail::compile(args...))</div><div class="ttdef"><b>Definition:</b> compile.h:598</div></div>
+<div class="ttc" id="aformat_8h_html_a09119ad072f708d17b88704fa898aff0"><div class="ttname"><a href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a></div><div class="ttdeci">#define FMT_STRING(s)</div><div class="ttdef"><b>Definition:</b> format.h:3219</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ad258cc73fca14257a1daee6c735a2df2"></a>
@@ -1683,10 +1688,21 @@ template&lt;typename Char , typename ErrorHandler &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>\rst Formats an error returned by an operating system or a language runtime, for example a file opening error, and writes it to <em>out</em> in the following form:</p>
-<p>.. parsed-literal:: &lt;message&gt;*: *&lt;system-message&gt;*</p>
-<p>where *&lt;message&gt;* is the passed message and *&lt;system-message&gt;* is the system message corresponding to the error code. error_code* is a system error code as given by <code>errno</code>. If <em><a class="el" href="classerror__code.html">error_code</a></em> is not a valid error code such as -1, the system message may look like "Unknown error -1" and is platform-dependent. \endrst </p>
-
+<div class="fragment"><div class="line">Formats an <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> returned by an operating system or a language runtime,</div>
+<div class="line"><span class="keywordflow">for</span> example a file opening <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a>, and writes it to *out* in the following</div>
+<div class="line">form:</div>
+<div class="line"> </div>
+<div class="line">.. parsed-literal::</div>
+<div class="line">    &lt;message&gt;*: *&lt;system-message&gt;*</div>
+<div class="line"> </div>
+<div class="line">where *&lt;message&gt;* is the passed message and *&lt;system-message&gt;* is</div>
+<div class="line">the system message corresponding to the <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> code.</div>
+<div class="line">*<a class="code" href="classerror__code.html">error_code</a>* is a system <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> code as given by ``errno``.</div>
+<div class="line">If *<a class="code" href="classerror__code.html">error_code</a>* is not a valid <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> code such as -1, the system message</div>
+<div class="line">may look like <span class="stringliteral">&quot;Unknown error -1&quot;</span> and is platform-dependent.</div>
+<div class="ttc" id="aclasserror__code_html"><div class="ttname"><a href="classerror__code.html">error_code</a></div><div class="ttdef"><b>Definition:</b> os.h:126</div></div>
+<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">detail::digits::error</a></div><div class="ttdeci">@ error</div><div class="ttdef"><b>Definition:</b> format-inl.h:1501</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a81a003fd4c658099243cd9fcbc6a9863"></a>
@@ -1833,12 +1849,21 @@ template&lt;typename Range &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>\rst Returns an object that formats <code>range</code> with elements separated by <code>sep</code>.</p>
-<p>Example**::</p>
-<p>std::vector&lt;int&gt; v = {1, 2, 3}; fmt::print("{}", fmt::join(v, ", ")); Output: "1, 2, 3"</p>
-<p><code>fmt::join</code> applies passed format specifiers to the range elements::</p>
-<p>fmt::print("{:02}", fmt::join(v, ", ")); Output: "01, 02, 03" \endrst </p>
-
+<div class="fragment"><div class="line">Returns an <span class="keywordtype">object</span> that formats `range` with elements separated by `sep`.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  std::vector&lt;int&gt; v = {1, 2, 3};</div>
+<div class="line">  <a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">fmt::print</a>(<span class="stringliteral">&quot;{}&quot;</span>, <a class="code" href="format_8h.html#a2df22f043e68541d268cc74e3ced2886">fmt::join</a>(v, <span class="stringliteral">&quot;, &quot;</span>));</div>
+<div class="line">  <span class="comment">// Output: &quot;1, 2, 3&quot;</span></div>
+<div class="line"> </div>
+<div class="line">``<a class="code" href="format_8h.html#a2df22f043e68541d268cc74e3ced2886">fmt::join</a>`` applies passed <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a> specifiers to the range <a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">elements::</a></div>
+<div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174"></a> </div>
+<div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">  fmt::print</a>(<span class="stringliteral">&quot;{:02}&quot;</span>, <a class="code" href="format_8h.html#a2df22f043e68541d268cc74e3ced2886">fmt::join</a>(v, <span class="stringliteral">&quot;, &quot;</span>));</div>
+<div class="line">  <span class="comment">// Output: &quot;01, 02, 03&quot;</span></div>
+<div class="ttc" id="acolor_8h_html_a2fead8330d19b9d2f10e6ed9c59e0174"><div class="ttname"><a href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">print</a></div><div class="ttdeci">void print(std::FILE *f, const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:519</div></div>
+<div class="ttc" id="aformat_8h_html_a2df22f043e68541d268cc74e3ced2886"><div class="ttname"><a href="format_8h.html#a2df22f043e68541d268cc74e3ced2886">join</a></div><div class="ttdeci">arg_join&lt; It, Sentinel, char &gt; join(It begin, Sentinel end, string_view sep)</div><div class="ttdef"><b>Definition:</b> format.h:3681</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ab8bbd428d20c6e524c478805b997cc85"></a>
@@ -1972,10 +1997,13 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Converts <code>p</code> to <code>const void*</code> for pointer formatting.</p>
-<p>Example**::</p>
-<p>auto s = fmt::format("{}", fmt::ptr(p)); \endrst </p>
-
+<div class="fragment"><div class="line">Converts ``p`` to ``<span class="keyword">const</span> <span class="keywordtype">void</span>*`` <span class="keywordflow">for</span> pointer formatting.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  auto s = <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">fmt::format</a>(<span class="stringliteral">&quot;{}&quot;</span>, <a class="code" href="format_8h.html#ae6bfbee71e8bd00280b2d936f93f7b88">fmt::ptr</a>(p));</div>
+<div class="ttc" id="aformat_8h_html_ae6bfbee71e8bd00280b2d936f93f7b88"><div class="ttname"><a href="format_8h.html#ae6bfbee71e8bd00280b2d936f93f7b88">ptr</a></div><div class="ttdeci">const void * ptr(const T *p)</div><div class="ttdef"><b>Definition:</b> format.h:3603</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="aa87a526a913eeaf54e8d7b16020c8174"></a>
@@ -2051,11 +2079,17 @@ template&lt;typename T , FMT_ENABLE_IF(!std::is_integral&lt; T &gt;::value) &gt;
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Converts <em>value</em> to <code>std::string</code> using the default format for type <em>T</em>.</p>
-<p>Example**::</p>
-<p>#include &lt;<a class="el" href="format_8h.html">fmt/format.h</a>&gt;</p>
-<p>std::string answer = fmt::to_string(42); \endrst </p>
-
+<div class="fragment"><div class="line">Converts *value* to ``std::string`` <span class="keyword">using</span> the <span class="keywordflow">default</span> <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a> <span class="keywordflow">for</span> <a class="code" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a> *T*.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">  #include &lt;<a class="code" href="format_8h.html">fmt/format.h</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line">  std::string answer = <a class="code" href="namespaceIofaodel.html#ac2f6d344b00cda1c7a357f59155c0187">fmt::to_string</a>(42);</div>
+<div class="ttc" id="aformat_8h_html"><div class="ttname"><a href="format_8h.html">format.h</a></div></div>
+<div class="ttc" id="anamespaceIofaodel_html_ac2f6d344b00cda1c7a357f59155c0187"><div class="ttname"><a href="namespaceIofaodel.html#ac2f6d344b00cda1c7a357f59155c0187">Iofaodel::to_string</a></div><div class="ttdeci">std::string to_string(const Ioss::Property::BasicType &amp;t)</div><div class="ttdef"><b>Definition:</b> Iofaodel_Utils.C:438</div></div>
+<div class="ttc" id="anamespacedetail_html_ad46d232fb6116de4dac0c43dbde8e7a9"><div class="ttname"><a href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">detail::type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:983</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="af8d525cc69167d3affdf72ecc6bef282"></a>

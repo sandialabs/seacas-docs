@@ -158,9 +158,18 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename Context&gt;<br />
 class basic_format_args&lt; Context &gt;</h3>
 
-<p>\rst A view of a collection of formatting arguments. To avoid lifetime issues it should only be used as a parameter type in type-erased functions such as <code>vformat</code>::</p>
-<p>void vlog(string_view format_str, format_args args); // OK <a class="el" href="structformat__args.html">format_args</a> args = make_format_args(42); // Error: dangling reference \endrst </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<div class="fragment"><div class="line">A view of a collection of formatting arguments. To avoid lifetime issues it</div>
+<div class="line">should only be used as a parameter <a class="code" href="classbasic__format__args.html#aeb7678a8e92e8b6c1ecd042663401c36">type</a> in <a class="code" href="classbasic__format__args.html#aeb7678a8e92e8b6c1ecd042663401c36">type</a>-erased functions such as</div>
+<div class="line">``<a class="code" href="color_8h.html#a3098f61d4ebbadbdf87dc109212bb8cb">vformat</a>``::</div>
+<div class="line"> </div>
+<div class="line">  void vlog(<a class="code" href="classbasic__string__view.html">string_view</a> format_str, <a class="code" href="structformat__args.html">format_args</a> args);  <span class="comment">// OK</span></div>
+<div class="line">  <a class="code" href="structformat__args.html">format_args</a> args = <a class="code" href="core_8h.html#a0983d26695aca5689c498c766187223d">make_format_args</a>(42);  <span class="comment">// Error: dangling reference</span></div>
+<div class="ttc" id="aclassbasic__format__args_html_aeb7678a8e92e8b6c1ecd042663401c36"><div class="ttname"><a href="classbasic__format__args.html#aeb7678a8e92e8b6c1ecd042663401c36">basic_format_args::type</a></div><div class="ttdeci">detail::type type(int index) const</div><div class="ttdef"><b>Definition:</b> core.h:1860</div></div>
+<div class="ttc" id="aclassbasic__string__view_html"><div class="ttname"><a href="classbasic__string__view.html">basic_string_view&lt; char &gt;</a></div></div>
+<div class="ttc" id="acolor_8h_html_a3098f61d4ebbadbdf87dc109212bb8cb"><div class="ttname"><a href="color_8h.html#a3098f61d4ebbadbdf87dc109212bb8cb">vformat</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; vformat(const text_style &amp;ts, const S &amp;format_str, basic_format_args&lt; buffer_context&lt; type_identity_t&lt; Char &gt;&gt;&gt; args)</div><div class="ttdef"><b>Definition:</b> color.h:539</div></div>
+<div class="ttc" id="acore_8h_html_a0983d26695aca5689c498c766187223d"><div class="ttname"><a href="core_8h.html#a0983d26695aca5689c498c766187223d">make_format_args</a></div><div class="ttdeci">format_arg_store&lt; Context, Args... &gt; make_format_args(const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> core.h:1609</div></div>
+<div class="ttc" id="astructformat__args_html"><div class="ttname"><a href="structformat__args.html">format_args</a></div><div class="ttdef"><b>Definition:</b> core.h:1947</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af22c7ecd69cc9c3dc2a9a113b5ff5088"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af22c7ecd69cc9c3dc2a9a113b5ff5088">&#9670;&nbsp;</a></span>format_arg</h2>
 
@@ -324,8 +333,10 @@ template&lt;typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Constructs a <code><a class="el" href="classbasic__format__args.html">basic_format_args</a></code> object from <code>~fmt<a class="el" href="classformat__arg__store.html">format_arg_store</a></code>. \endrst </p>
-
+<div class="fragment"><div class="line">Constructs a `<a class="code" href="classbasic__format__args.html">basic_format_args</a>` <span class="keywordtype">object</span> from `~fmt<a class="code" href="classformat__arg__store.html">::format_arg_store</a>`.</div>
+<div class="ttc" id="aclassbasic__format__args_html"><div class="ttname"><a href="classbasic__format__args.html">basic_format_args</a></div><div class="ttdef"><b>Definition:</b> core.h:1834</div></div>
+<div class="ttc" id="aclassformat__arg__store_html"><div class="ttname"><a href="classformat__arg__store.html">format_arg_store</a></div><div class="ttdef"><b>Definition:</b> core.h:1565</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a21c22221ad244cd188c21029b79cb9b1"></a>
@@ -353,8 +364,10 @@ template&lt;typename Context &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Constructs a <code><a class="el" href="classbasic__format__args.html">basic_format_args</a></code> object from <code>~fmt<a class="el" href="classdynamic__format__arg__store.html">dynamic_format_arg_store</a></code>. \endrst </p>
-
+<div class="fragment"><div class="line">Constructs a `<a class="code" href="classbasic__format__args.html">basic_format_args</a>` <span class="keywordtype">object</span> from</div>
+<div class="line">`~fmt<a class="code" href="classdynamic__format__arg__store.html">::dynamic_format_arg_store</a>`.</div>
+<div class="ttc" id="aclassdynamic__format__arg__store_html"><div class="ttname"><a href="classdynamic__format__arg__store.html">dynamic_format_arg_store</a></div><div class="ttdef"><b>Definition:</b> core.h:1667</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a6d735ccb56f6c4f64ba1199f223c8a6b"></a>
@@ -392,8 +405,8 @@ template&lt;typename Context &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Constructs a <code><a class="el" href="classbasic__format__args.html">basic_format_args</a></code> object from a dynamic set of arguments. \endrst </p>
-
+<div class="fragment"><div class="line">Constructs a `<a class="code" href="classbasic__format__args.html">basic_format_args</a>` <span class="keywordtype">object</span> from a dynamic set of arguments.</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>

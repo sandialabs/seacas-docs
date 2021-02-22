@@ -210,10 +210,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>\rst Converts a string literal <em>s</em> into a format string that will be parsed at compile time and converted into efficient formatting code. Requires C++17 <code>constexpr if</code> compiler support.</p>
-<p>Example**::</p>
-<p>Converts 42 into std::string using the most efficient method and no runtime format string processing. std::string s = fmt::format(FMT_COMPILE("{}"), 42); \endrst </p>
-
+<div class="fragment"><div class="line">Converts a <span class="keywordtype">string</span> literal *s* into a <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a> <span class="keywordtype">string</span> that will be parsed at</div>
+<div class="line"><a class="code" href="compile_8h.html#a97ae726c0697af04685340d11f77a728">compile</a> time and converted into efficient formatting code. Requires C++17</div>
+<div class="line">``constexpr <span class="keywordflow">if</span>`` compiler support.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">// Converts 42 into std::string using the most efficient method and no</span></div>
+<div class="line">  <span class="comment">// runtime format string processing.</span></div>
+<div class="line">  std::string s = <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">fmt::format</a>(<a class="code" href="compile_8h.html#a7186ba53487a4df4602ae1d75658db29">FMT_COMPILE</a>(<span class="stringliteral">&quot;{}&quot;</span>), 42);</div>
+<div class="ttc" id="acolor_8h_html_a5237d5a1dab3f47a095266bf83d2b5ea"><div class="ttname"><a href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:560</div></div>
+<div class="ttc" id="acompile_8h_html_a7186ba53487a4df4602ae1d75658db29"><div class="ttname"><a href="compile_8h.html#a7186ba53487a4df4602ae1d75658db29">FMT_COMPILE</a></div><div class="ttdeci">#define FMT_COMPILE(s)</div><div class="ttdef"><b>Definition:</b> compile.h:37</div></div>
+<div class="ttc" id="acompile_8h_html_a97ae726c0697af04685340d11f77a728"><div class="ttname"><a href="compile_8h.html#a97ae726c0697af04685340d11f77a728">compile</a></div><div class="ttdeci">FMT_DEPRECATED auto compile(const Args &amp;... args) -&gt; decltype(detail::compile(args...))</div><div class="ttdef"><b>Definition:</b> compile.h:598</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>

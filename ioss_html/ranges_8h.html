@@ -255,10 +255,16 @@ template&lt;typename... T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>\rst Returns an object that formats <code>tuple</code> with elements separated by <code>sep</code>.</p>
-<p>Example**::</p>
-<p>std::tuple&lt;int, char&gt; t = {1, 'a'}; fmt::print("{}", fmt::join(t, ", ")); Output: "1, a" \endrst </p>
-
+<div class="fragment"><div class="line">Returns an <span class="keywordtype">object</span> that formats `tuple` with elements separated by `sep`.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  std::tuple&lt;int, char&gt; t = {1, <span class="charliteral">&#39;a&#39;</span>};</div>
+<div class="line">  <a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">fmt::print</a>(<span class="stringliteral">&quot;{}&quot;</span>, <a class="code" href="format_8h.html#a2df22f043e68541d268cc74e3ced2886">fmt::join</a>(t, <span class="stringliteral">&quot;, &quot;</span>));</div>
+<div class="line">  <span class="comment">// Output: &quot;1, a&quot;</span></div>
+<div class="ttc" id="acolor_8h_html_a2fead8330d19b9d2f10e6ed9c59e0174"><div class="ttname"><a href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">print</a></div><div class="ttdeci">void print(std::FILE *f, const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:519</div></div>
+<div class="ttc" id="aformat_8h_html_a2df22f043e68541d268cc74e3ced2886"><div class="ttname"><a href="format_8h.html#a2df22f043e68541d268cc74e3ced2886">join</a></div><div class="ttdeci">arg_join&lt; It, Sentinel, char &gt; join(It begin, Sentinel end, string_view sep)</div><div class="ttdef"><b>Definition:</b> format.h:3681</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a6d5045c33bc335b68e7d5584a4ce4de5"></a>
@@ -318,10 +324,14 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>\rst Returns an object that formats <code>initializer_list</code> with elements separated by <code>sep</code>.</p>
-<p>Example**::</p>
-<p>fmt::print("{}", fmt::join({1, 2, 3}, ", ")); Output: "1, 2, 3" \endrst </p>
-
+<div class="fragment"><div class="line">Returns an <span class="keywordtype">object</span> that formats `initializer_list` with elements separated by</div>
+<div class="line">`sep`.</div>
+<div class="line"> </div>
+<div class="line"> *Example**<a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">::</a></div>
+<div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174"></a> </div>
+<div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">  fmt::print</a>(<span class="stringliteral">&quot;{}&quot;</span>, <a class="code" href="format_8h.html#a2df22f043e68541d268cc74e3ced2886">fmt::join</a>({1, 2, 3}, <span class="stringliteral">&quot;, &quot;</span>));</div>
+<div class="line">  <span class="comment">// Output: &quot;1, 2, 3&quot;</span></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="aa576000dc4a2b5af56e198eccb49f24b"></a>

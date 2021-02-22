@@ -162,9 +162,14 @@ Friends</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename Context&gt;<br />
 class dynamic_format_arg_store&lt; Context &gt;</h3>
 
-<p>\rst A dynamic version of <code>fmt::format_arg_store</code>. It's equipped with a storage to potentially temporary objects which lifetimes could be shorter than the format arguments object.</p>
-<p>It can be implicitly converted into <code>~fmt<a class="el" href="classbasic__format__args.html">basic_format_args</a></code> for passing into type-erased formatting functions such as <code>~fmt<a class="el" href="locale_8h.html#aafa2cd50cd5c5327f81bd41e1683a1ad">vformat</a></code>. \endrst </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<div class="fragment"><div class="line">A dynamic <a class="code" href="namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a5e85eb76c4a17217b9a637bd5e5923ca">version</a> of `fmt::format_arg_store`.</div>
+<div class="line">It<span class="stringliteral">&#39;s equipped with a storage to potentially temporary objects which lifetimes</span></div>
+<div class="line"><span class="stringliteral">could be shorter than the format arguments object.</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">It can be implicitly converted into `~fmt::basic_format_args` for passing</span></div>
+<div class="line"><span class="stringliteral">into type-erased formatting functions such as `~fmt::vformat`.</span></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02cgns__decomp_8C_03_html_a5e85eb76c4a17217b9a637bd5e5923ca"><div class="ttname"><a href="namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a5e85eb76c4a17217b9a637bd5e5923ca">anonymous_namespace{cgns_decomp.C}::version</a></div><div class="ttdeci">std::string version</div><div class="ttdef"><b>Definition:</b> cgns_decomp.C:213</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2997fb5c2d4ac7205672e7afe550f9c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2997fb5c2d4ac7205672e7afe550f9c1">&#9670;&nbsp;</a></span>char_type</h2>
 
@@ -416,11 +421,22 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Adds an argument into the dynamic store for later passing to a formatting function.</p>
-<p>Note that custom types and string types (but not string views) are copied into the store dynamically allocating memory if necessary.</p>
-<p>Example**::</p>
-<p>fmt::dynamic_format_arg_store&lt;fmt::format_context&gt; store; store.push_back(42); store.push_back("abc"); store.push_back(1.5f); std::string result = fmt::vformat("{} and {} and {}", store); \endrst </p>
-
+<div class="fragment"><div class="line">Adds an argument into the dynamic store <span class="keywordflow">for</span> later passing to a formatting</div>
+<div class="line"><span class="keyword">function</span>.</div>
+<div class="line"> </div>
+<div class="line">Note that custom types and <span class="keywordtype">string</span> types (but not <span class="keywordtype">string</span> views) are copied</div>
+<div class="line">into the store dynamically allocating memory <span class="keywordflow">if</span> necessary.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  fmt::dynamic_format_arg_store&lt;fmt::format_context&gt; store;</div>
+<div class="line">  store.push_back(42);</div>
+<div class="line">  store.push_back(<span class="stringliteral">&quot;abc&quot;</span>);</div>
+<div class="line">  store.push_back(1.5f);</div>
+<div class="line">  std::string <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = <a class="code" href="color_8h.html#a3098f61d4ebbadbdf87dc109212bb8cb">fmt::vformat</a>(<span class="stringliteral">&quot;{} and {} and {}&quot;</span>, store);</div>
+<div class="ttc" id="acolor_8h_html_a3098f61d4ebbadbdf87dc109212bb8cb"><div class="ttname"><a href="color_8h.html#a3098f61d4ebbadbdf87dc109212bb8cb">vformat</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; vformat(const text_style &amp;ts, const S &amp;format_str, basic_format_args&lt; buffer_context&lt; type_identity_t&lt; Char &gt;&gt;&gt; args)</div><div class="ttdef"><b>Definition:</b> color.h:539</div></div>
+<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:1498</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ac58637a7965cbfeab47c2f50e923dc07"></a>
@@ -450,22 +466,26 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">\rst
-Adds a reference to the argument into the dynamic store for later passing to
-a formatting function. Supports named arguments wrapped in
-``std::reference_wrapper`` via ``std::ref()``/``std::cref()``.
-
-  Example**::
-
-  fmt::dynamic_format_arg_store&lt;fmt::format_context&gt; store;
-  char str[] = "1234567890";
-  store.push_back(std::cref(str));
-  int a1_val{42};
-  auto a1 = fmt::arg("a1_", a1_val);
-  store.push_back(std::cref(a1));
-</pre><p> Changing str affects the output but only for string and custom types. str[0] = 'X';</p>
-<p>std::string result = fmt::vformat("{} and {a1_}"); assert(result == "X234567890 and 42"); \endrst </p>
-
+<div class="fragment"><div class="line">Adds a reference to the argument into the dynamic store <span class="keywordflow">for</span> later passing to</div>
+<div class="line">a formatting <span class="keyword">function</span>. Supports named arguments wrapped in</div>
+<div class="line">``std::reference_wrapper`` via ``std::ref()``/``std::cref()``.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  fmt::dynamic_format_arg_store&lt;fmt::format_context&gt; store;</div>
+<div class="line">  <span class="keywordtype">char</span> str[] = <span class="stringliteral">&quot;1234567890&quot;</span>;</div>
+<div class="line">  store.push_back(std::cref(str));</div>
+<div class="line">  <span class="keywordtype">int</span> a1_val{42};</div>
+<div class="line">  <span class="keyword">auto</span> a1 = <a class="code" href="core_8h.html#a488731e44fb25c8aadaf1c02b7630eb4">fmt::arg</a>(<span class="stringliteral">&quot;a1_&quot;</span>, a1_val);</div>
+<div class="line">  store.push_back(std::cref(a1));</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">// Changing str affects the output but only for string and custom types.</span></div>
+<div class="line">  str[0] = <span class="charliteral">&#39;X&#39;</span>;</div>
+<div class="line"> </div>
+<div class="line">  std::string <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = <a class="code" href="color_8h.html#a3098f61d4ebbadbdf87dc109212bb8cb">fmt::vformat</a>(<span class="stringliteral">&quot;{} and {a1_}&quot;</span>);</div>
+<div class="line">  assert(<a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> == <span class="stringliteral">&quot;X234567890 and 42&quot;</span>);</div>
+<div class="ttc" id="acore_8h_html_a488731e44fb25c8aadaf1c02b7630eb4"><div class="ttname"><a href="core_8h.html#a488731e44fb25c8aadaf1c02b7630eb4">arg</a></div><div class="ttdeci">detail::named_arg&lt; Char, T &gt; arg(const Char *name, const T &amp;arg)</div><div class="ttdef"><b>Definition:</b> core.h:1646</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a9c6983c46b69775b5066f6ad748be584"></a>
@@ -503,8 +523,10 @@ template&lt;typename Context &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Reserves space to store at least <em>new_cap</em> arguments including new_cap_named* named arguments. \endrst </p>
-
+<div class="fragment"><div class="line">Reserves <a class="code" href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d">space</a> to store at least *new_cap* arguments including</div>
+<div class="line">*new_cap_named* named arguments.</div>
+<div class="ttc" id="anamespacesign_html_a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d"><div class="ttname"><a href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d">sign::space</a></div><div class="ttdeci">@ space</div><div class="ttdef"><b>Definition:</b> format.h:1180</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['minmax_5ffactory_10000',['MinMax_Factory',['../classIotr_1_1MinMax.html#af3ffb1d59c4453d0abb4e114d843bf3b',1,'Iotr::MinMax']]]
+  ['minmax_5ffactory_9994',['MinMax_Factory',['../classIotr_1_1MinMax.html#af3ffb1d59c4453d0abb4e114d843bf3b',1,'Iotr::MinMax']]]
 ];

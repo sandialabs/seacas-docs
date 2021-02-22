@@ -207,10 +207,23 @@ template&lt;typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\rst Constructs a :class:<code>fmt::system_error</code> object with a description formatted with <code>fmt::format_system_error</code>. <em>message</em> and additional arguments passed into the constructor are formatted similarly to <code>fmt::format</code>.</p>
-<p>Example**::</p>
-<p>This throws a <a class="el" href="classsystem__error.html">system_error</a> with the description cannot open file 'madeup': No such file or directory or similar (system message may vary). const char *filename = "madeup"; std::FILE *file = std::fopen(filename, "r"); if (!file) throw fmt::system_error(errno, "cannot open file '{}'", filename); \endrst </p>
-
+<div class="fragment"><div class="line">Constructs a :<span class="keyword">class</span>:`fmt::system_error` <span class="keywordtype">object</span> with a description</div>
+<div class="line">formatted with `<a class="code" href="format-inl_8h.html#a4d9b8fae3111cc474013ed9bc0cd8c66">fmt::format_system_error</a>`. *message* and additional</div>
+<div class="line">arguments passed into the constructor are formatted similarly to</div>
+<div class="line">`<a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">fmt::format</a>`.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">// This throws a system_error with the description</span></div>
+<div class="line">  <span class="comment">//   cannot open file &#39;madeup&#39;: No such file or directory</span></div>
+<div class="line">  <span class="comment">// or similar (system message may vary).</span></div>
+<div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *filename = <span class="stringliteral">&quot;madeup&quot;</span>;</div>
+<div class="line">  std::FILE *file = std::fopen(filename, <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line">  <span class="keywordflow">if</span> (!file)</div>
+<div class="line">    <span class="keywordflow">throw</span> fmt::system_error(errno, <span class="stringliteral">&quot;cannot open file &#39;{}&#39;&quot;</span>, filename);</div>
+<div class="ttc" id="acolor_8h_html_a5237d5a1dab3f47a095266bf83d2b5ea"><div class="ttname"><a href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:560</div></div>
+<div class="ttc" id="aformat-inl_8h_html_a4d9b8fae3111cc474013ed9bc0cd8c66"><div class="ttname"><a href="format-inl_8h.html#a4d9b8fae3111cc474013ed9bc0cd8c66">format_system_error</a></div><div class="ttdeci">FMT_FUNC void format_system_error(detail::buffer&lt; char &gt; &amp;out, int error_code, string_view message) FMT_NOEXCEPT</div><div class="ttdef"><b>Definition:</b> format-inl.h:2713</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a2186379ae268a19237c14490f47f2d7a"></a>
