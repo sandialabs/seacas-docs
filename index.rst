@@ -66,7 +66,7 @@ assemblies, blobs, and other cleanups.
 **Large File**
   Documentation of the modifications needed to use the "large-file"
   modifications which permit storage of models with more than ~30
-  million elements is found in `Large Model <../../ExodusLargeModel.html>`_
+  million elements is found in `Large Model <../../html/large_model.html>`_
 
 **Polyhedral elements** 
   The documentation for this is in `Polyhedral Element Storage
@@ -76,7 +76,7 @@ assemblies, blobs, and other cleanups.
   The API now supports names longer (or shorter) than 32
   characters. The names include variable names and entity names. The
   changes are documented in `Long Names
-  <../../Exodus-Long-Names.md>`_.
+  <../../html/index.html#db_options>`_.
 
 **Nemesis**
   All nemesis functions have been added to the exodus API. In most
