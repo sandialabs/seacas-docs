@@ -205,9 +205,12 @@ and utilities used by analysts at SNL. The system includes pre- and
 post-processing codes, analysis codes, database translation codes,
 support libraries, UNIX shell scripts, and an installation system.</p>
 <dl class="simple">
-<dt>WIKI: FAQ and Extensions</dt><dd><p>The <a class="reference external" href="https://github.com/gsjaardema/seacas/wiki">SEACAS WIKI</a> contains some FAQ-like answers and also a listing of proposed Exodus extensions.</p>
+<dt>WIKI: FAQ and Extensions</dt><dd><p>The <a class="reference external" href="https://github.com/gsjaardema/seacas/wiki">SEACAS WIKI</a>
+contains some FAQ-like answers and also a listing of proposed
+Exodus extensions.</p>
 </dd>
-<dt><a class="reference external" href="../../changes.html">Recent Changes</a></dt><dd><p>Documents changes to the SEACAS applications and libraries that may not yet be covered in the documentation.</p>
+<dt><a class="reference external" href="../../changes.html">Recent Changes</a> Documents changes to the SEACAS</dt><dd><p>applications and libraries that may not yet be covered in the
+documentation.</p>
 </dd>
 <dt><a class="reference external" href="../../Parallel_Instructions.pdf">Using SEACAS on Parallel Computers</a></dt><dd><p>Out-of-date, but some information is still useful.  Instructions to
 run the SEACAS/ACCESS system on Parallel computers. Currently
@@ -267,10 +270,11 @@ functions.</p>
 <div class="section" id="exodus-python-interfaces">
 <h1>Exodus Python Interfaces<a class="headerlink" href="#exodus-python-interfaces" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference external" href="../../exodus.html">Exodus Python Interface:</a> Exodus.py, a python interface to the Exodus
-library. Python 2 and 3 versions available.</p></li>
-<li><p><a class="reference external" href="../../exomerge.pdf">Exomerge Python Module:</a> ExoMerge.py, a lightweight python interface
-for manipulating Exodus files.  Python 2 and 3 versions available.</p></li>
+<li><p><a class="reference external" href="../../exodus.html">Exodus Python Interface:</a> Exodus.py, a python
+interface to the Exodus library. Python 2 and 3 versions available.</p></li>
+<li><p><a class="reference external" href="../../exomerge.pdf">Exomerge Python Module:</a> ExoMerge.py, a
+lightweight python interface for manipulating Exodus files.  Python
+2 and 3 versions available.</p></li>
 </ul>
 </div>
 <div class="section" id="ioss-library">
@@ -329,7 +333,8 @@ C++ callable functions which compromise the NEMESIS I API.</p>
 <li><p>All nemesis functions have been added to the exodus API. In most
 cases, the name of the exodus function is the same as the original
 nemesis function except that the leading <code class="docutils literal notranslate"><span class="pre">ne_</span></code> has been replaced
-with <code class="docutils literal notranslate"><span class="pre">ex_</span></code>. There are a few exceptions. See <a class="reference external" href="../../Nemesis-To-Exodus-API-Mapping.md">Nemesis-To-Exodus-API-Mapping.md</a> for a complete list of
+with <code class="docutils literal notranslate"><span class="pre">ex_</span></code>. There are a few exceptions. See
+<a class="reference external" href="../../Nemesis-To-Exodus-API-Mapping.md">Nemesis-To-Exodus-API-Mapping.md</a> for a complete list of
 functions.</p></li>
 <li><p><a class="reference external" href="../../nemesis-to-exodus-api-mapping.md">Fortran to C Function Mapping</a></p></li>
 </ul>
@@ -360,11 +365,12 @@ appropriate settings for a variety of code parameters are discussed in
 detail and some suggestions on algorithm selection are offered.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">short</span> <span class="pre">*assignment</span></code> argument to the interface function has been changed to <code class="docutils literal notranslate"><span class="pre">int</span>
-<span class="pre">*assignment</span></code> to permit decompositions with more than 32,768 processors.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">short</span> <span class="pre">*assignment</span></code> argument to the interface function
+has been changed to <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">*assignment</span></code> to permit decompositions
+with more than 32,768 processors.</p>
 </div>
-<p>There are also now a <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_MAJOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_MINOR</span></code>, and
-<code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_PATCH</span></code> defines in <code class="docutils literal notranslate"><span class="pre">chaco.h</span></code>.</p>
+<p>There are also now a <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_MAJOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_MINOR</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_PATCH</span></code> defines in <code class="docutils literal notranslate"><span class="pre">chaco.h</span></code>.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="../../chaco.pdf">Chaco</a></p></li>
 </ul>
@@ -430,11 +436,11 @@ first database contains time data from 0 to 5 seconds, and the second
 database contains time data from 4 to 10 seconds; the output database
 will contain time data from 0 to 4 seconds from the first database and
 time data from 4 to 10 seconds from the second database. If two nodes
-have the same global id and are also collocated, then they are combined
-to a single node in the output. Similarly, elements with the same
-global id and the same nodal connectivity are combined into a single
-element in the output file.  The output database will contain the
-union of the meta and bulk data entities (i.e., nodes, elements,
+have the same global id and are also collocated, then they are
+combined to a single node in the output. Similarly, elements with the
+same global id and the same nodal connectivity are combined into a
+single element in the output file.  The output database will contain
+the union of the meta and bulk data entities (i.e., nodes, elements,
 element blocks, sidesets, and nodesets) from each input database. The
 existence of an entity at a particular timestep is indicated via a
 status variable. Replaces conex</p>
@@ -447,19 +453,20 @@ method for the input mesh database.</p>
 </div>
 <div class="section" id="ejoin">
 <h1>EJoin<a class="headerlink" href="#ejoin" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../exo_util.pdf">EJoin</a> is used to join two or more Exodus databases into a single
-Exodus database. The input databases must have disjoint meta and bulk
-data. That is: element blocks are not combined in the output
-model. Each element block in each input file will produce an element
-block in the output file. Similarly for nodesets and sidesets.  Each
-node in each input file will produce a node in the output file unless
-one of the node matching options (-match node ids or -match node
-coordinates) is specified.  Each element in each input file will
-produce an element in the output file. Elements are never combined
-even if all of the nodes on two elements are combined, the output file
-would have two elements with identical connectivity which is usually
-not desired.  If any of the input databases have timesteps, then the
-timestep values and counts must match on all databases with timesteps.</p>
+<p><a class="reference external" href="../../exo_util.pdf">EJoin</a> is used to join two or more Exodus
+databases into a single Exodus database. The input databases must have
+disjoint meta and bulk data. That is: element blocks are not combined
+in the output model. Each element block in each input file will
+produce an element block in the output file. Similarly for nodesets
+and sidesets.  Each node in each input file will produce a node in the
+output file unless one of the node matching options (-match node ids
+or -match node coordinates) is specified.  Each element in each input
+file will produce an element in the output file. Elements are never
+combined even if all of the nodes on two elements are combined, the
+output file would have two elements with identical connectivity which
+is usually not desired.  If any of the input databases have timesteps,
+then the timestep values and counts must match on all databases with
+timesteps.</p>
 </div>
 <div class="section" id="epu">
 <h1>EPU<a class="headerlink" href="#epu" title="Permalink to this headline">¶</a></h1>
@@ -503,15 +510,15 @@ library versions that the Exodus library was configured with.</p>
 </div>
 <div class="section" id="exodiff">
 <h1>Exodiff<a class="headerlink" href="#exodiff" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../exo_util.pdf">Exodiff</a> compares the results data from two Exodus databases. The
-databases should represent the same model, that is, the Ex odus meta
-data should be identical as should be the Exodus portion of the bulk
-data. The only differences should be in the values of the transient
-bulk data. Exodiff’s main purpose is to detect and report these
-differences. Exodiff will compare global, nodal, element, nodeset, and
-sideset transient variables at each selected timestep; it will also
-compare element attribute variables on each element block containing
-attributes.</p>
+<p><a class="reference external" href="../../exo_util.pdf">Exodiff</a> compares the results data from two
+Exodus databases. The databases should represent the same model, that
+is, the Ex odus meta data should be identical as should be the Exodus
+portion of the bulk data. The only differences should be in the values
+of the transient bulk data. Exodiff’s main purpose is to detect and
+report these differences. Exodiff will compare global, nodal, element,
+nodeset, and sideset transient variables at each selected timestep; it
+will also compare element attribute variables on each element block
+containing attributes.</p>
 </div>
 <div class="section" id="exomatlab">
 <h1>Exomatlab<a class="headerlink" href="#exomatlab" title="Permalink to this headline">¶</a></h1>
@@ -527,31 +534,32 @@ text.)</p>
 </div>
 <div class="section" id="fastq">
 <h1>Fastq<a class="headerlink" href="#fastq" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../FASTQ.pdf">FASTQ</a> is an interactive two-dimensional finite element mesh generation
-program, It is designed to provide a powerful and efficient tool to
-both reduce the time required of an analyst to generate a mesh, and to
-improve the capacity to generate good meshes in arbitrary
-geometries. It is based on a mapping technique and employs a set of
-“higher-order” primitives which have been developed for automatic
-meshing of commonly encountered shapes (i.e. the triangle,
-semi-circle, etc.) and conditions (i.e. mesh transitioning from coarse
-to fine mesh size. ) FASTQ has been designed to allow user flexibility
-and control. The user interface is built on a layered . command level
-structure. Multiple utilities rue provided for input, manipulation,
-and display of the geometric information, as well as for direct
-control, adjustment, and display of the generated mesh. Enhanced
-boundary flagging has been incorporated and multiple element types and
-output formats are supported.</p>
-<p>Memos documenting features (such as paving) not discussed in the sand report are available here</p>
+<p><a class="reference external" href="../../FASTQ.pdf">FASTQ</a> is an interactive two-dimensional finite
+element mesh generation program, It is designed to provide a powerful
+and efficient tool to both reduce the time required of an analyst to
+generate a mesh, and to improve the capacity to generate good meshes
+in arbitrary geometries. It is based on a mapping technique and
+employs a set of “higher-order” primitives which have been developed
+for automatic meshing of commonly encountered shapes (i.e. the
+triangle, semi-circle, etc.) and conditions (i.e. mesh transitioning
+from coarse to fine mesh size. ) FASTQ has been designed to allow user
+flexibility and control. The user interface is built on a layered
+. command level structure. Multiple utilities rue provided for input,
+manipulation, and display of the geometric information, as well as for
+direct control, adjustment, and display of the generated
+mesh. Enhanced boundary flagging has been incorporated and multiple
+element types and output formats are supported.</p>
+<p>Memos documenting features (such as paving) not discussed in the sand
+report are available in <a class="reference external" href="../../FASTQ-memo.pdf">FASTQ-memo</a>.</p>
 </div>
 <div class="section" id="gen3d">
 <h1>Gen3D<a class="headerlink" href="#gen3d" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../Gen3d.pdf">Gen3D</a> is a three-dimensional mesh generation program. The
-three-dimensional mesh is generated by mapping a two-dimensional mesh
-into three-dimensions according to one of four types of
-transformations: translating, rotating, mapping onto a spherical
-surface, and mapping onto a cylindrical surface. The generated
-three-dimensional mesh can then be reoriented by offsetting,
+<p><a class="reference external" href="../../Gen3d.pdf">Gen3D</a> is a three-dimensional mesh generation
+program. The three-dimensional mesh is generated by mapping a
+two-dimensional mesh into three-dimensions according to one of four
+types of transformations: translating, rotating, mapping onto a
+spherical surface, and mapping onto a cylindrical surface. The
+generated three-dimensional mesh can then be reoriented by offsetting,
 reflecting about an axis, and revolving about an axis. GEN3D can be
 used to mesh geometries that are axisymmetric or planar, but, due to
 three-dimensional loading or boundary conditions, require a
@@ -559,47 +567,48 @@ three-dimensional finite element mesh and analysis. More importantly,
 it can be used to mesh complex three-dimensional geometries composed
 of several sections when the sections can be defined in terms of
 transformations of two-dimensional geometries.</p>
-<p>Additional commands not documented in the main report are available here</p>
+<p>Additional commands not documented in the main report are available
+in <a class="reference external" href="../../gen3d-updates.pdf">gen3d-updates</a>.</p>
 </div>
 <div class="section" id="genshell">
 <h1>GenShell<a class="headerlink" href="#genshell" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../GenShell.pdf">GenShell</a> is a three-dimensional shell mesh generation program. The
-three-dimensional shell mesh is generated by mapping a two-dimensional
-quadrilateral mesh into three dimensions according to one of several
-types of transformations: translation, mapping onto a spherical,
-ellipsoidal, or cylindrical surface, and mapping onto a user-defined
-spline surface. The generated three-dimensional mesh can then be
-reoriented by offsetting, reflecting about an axis, revolving about an
-axis, and scaling the coordinates. GENSHELL can be used to mesh
-complex three-dimensional geometries composed of several sections when
-the sections can be defined in terms of transformations of
-two-dimensional geometries.</p>
+<p><a class="reference external" href="../../GenShell.pdf">GenShell</a> is a three-dimensional shell mesh
+generation program. The three-dimensional shell mesh is generated by
+mapping a two-dimensional quadrilateral mesh into three dimensions
+according to one of several types of transformations: translation,
+mapping onto a spherical, ellipsoidal, or cylindrical surface, and
+mapping onto a user-defined spline surface. The generated
+three-dimensional mesh can then be reoriented by offsetting,
+reflecting about an axis, revolving about an axis, and scaling the
+coordinates. GENSHELL can be used to mesh complex three-dimensional
+geometries composed of several sections when the sections can be
+defined in terms of transformations of two-dimensional geometries.</p>
 </div>
 <div class="section" id="gjoin">
 <h1>GJoin<a class="headerlink" href="#gjoin" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../gjoin.pdf">GJoin</a> is a two- or three-dimensional mesh combination program. GJOIN
-combines two or more meshes written in the Exodus mesh database
-format into a single Exodus mesh. Selected nodes in the two meshes
-that are closer than a specified distance can be combined The geometry
-of the mesh databases can be modified by scaling, offsetting,
-revolving, and mirroring. The combined meshes can be further modified
-by deleting, renaming, or combining material blocks, sideset
-identifications, or nodeset identifications.</p>
+<p><a class="reference external" href="../../gjoin.pdf">GJoin</a> is a two- or three-dimensional mesh
+combination program. GJOIN combines two or more meshes written in the
+Exodus mesh database format into a single Exodus mesh. Selected nodes
+in the two meshes that are closer than a specified distance can be
+combined The geometry of the mesh databases can be modified by
+scaling, offsetting, revolving, and mirroring. The combined meshes can
+be further modified by deleting, renaming, or combining material
+blocks, sideset identifications, or nodeset identifications.</p>
 </div>
 <div class="section" id="grepos">
 <h1>Grepos<a class="headerlink" href="#grepos" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../grepos.pdf">Grepos</a> is a mesh utility program that repositions or modifies the
-configuration of a two-dimensional or three-dimensional mesh. GREPOS
-can be used to change the orientation and size of a two-dimensional or
-three-dimensional mesh; change the material block, nodeset, and
-sideset IDs; or “explode” the mesh to facilitate viewing of the
-various parts of the model.</p>
+<p><a class="reference external" href="../../grepos.pdf">Grepos</a> is a mesh utility program that
+repositions or modifies the configuration of a two-dimensional or
+three-dimensional mesh. GREPOS can be used to change the orientation
+and size of a two-dimensional or three-dimensional mesh; change the
+material block, nodeset, and sideset IDs; or “explode” the mesh to
+facilitate viewing of the various parts of the model.</p>
 </div>
 <div class="section" id="explore">
 <h1>Explore<a class="headerlink" href="#explore" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../explore.pdf">Explore</a> is a program that examines the input to a finite element
-analysis or the output from an analysis in the Exodus database
-format. EXPLORE allows the user to examine any value in the
+<p><a class="reference external" href="../../explore.pdf">Explore</a> is a program that examines the input to
+a finite element analysis or the output from an analysis in the Exodus
+database format. EXPLORE allows the user to examine any value in the
 database. The display can be directed to the user’s terminal or to a
 print file.</p>
 </div>
@@ -638,15 +647,15 @@ however, there may be an issue with nodes shared between multiple
 element blocks. Element variable interpolation should be OK in all
 cases.</p>
 </div>
-<p><a class="reference external" href="../../mapvar.pdf">Mapvar</a> is designed to transfer solution results from one
-finite element mesh to another. MAPVAR draws heavily from the
+<p><a class="reference external" href="../../mapvar.pdf">Mapvar</a> is designed to transfer solution results
+from one finite element mesh to another. MAPVAR draws heavily from the
 structure and coding of MERLIN II, but it employs a new finite element
-data base, Exodus, and offers enhanced speed and new capabilities
-not available in MERLIN II. In keeping with the MERLIN II
-documentation, the computational algorithms used in MAPVAR are
-described. User instructions are presented. Example problems are
-included to demonstrate the operation of the code and the effects of
-various input options.</p>
+data base, Exodus, and offers enhanced speed and new capabilities not
+available in MERLIN II. In keeping with the MERLIN II documentation,
+the computational algorithms used in MAPVAR are described. User
+instructions are presented. Example problems are included to
+demonstrate the operation of the code and the effects of various input
+options.</p>
 </div>
 <div class="section" id="mapvar-kd">
 <h1>Mapvar-kd<a class="headerlink" href="#mapvar-kd" title="Permalink to this headline">¶</a></h1>
@@ -659,17 +668,18 @@ however, there may be an issue with nodes shared between multiple
 element blocks. Element variable interpolation should be OK in all
 cases.</p>
 </div>
-<p><a class="reference external" href="../../mapvar.pdf">Mapvar-kd</a> is almost exactly the same as mapvar except that it uses a
-KD algorithm for the internal search. It is much faster than mapvar in
-certain situations, and should never be slower.</p>
+<p><a class="reference external" href="../../mapvar.pdf">Mapvar-kd</a> is almost exactly the same as mapvar
+except that it uses a KD algorithm for the internal search. It is much
+faster than mapvar in certain situations, and should never be slower.</p>
 </div>
 <div class="section" id="mat2exo">
 <h1>Mat2Exo<a class="headerlink" href="#mat2exo" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../mat2exo.pdf">Mat2Exo</a> is a program which translates mesh data from Matlab mat-file
-format to Exodus format. This tool is the inverse of the commonly used
-tool <a class="reference internal" href="#exo2mat">Exo2Mat</a> which translates Exodus data to the Matlab mat-file
-format. These tools provide a means for preprocessing an Exodus model
-file or post-processing an Exodus results file using Matlab.</p>
+<p><a class="reference external" href="../../mat2exo.pdf">Mat2Exo</a> is a program which translates mesh data
+from Matlab mat-file format to Exodus format. This tool is the inverse
+of the commonly used tool <a class="reference internal" href="#exo2mat">Exo2Mat</a> which translates Exodus data to
+the Matlab mat-file format. These tools provide a means for
+preprocessing an Exodus model file or post-processing an Exodus
+results file using Matlab.</p>
 </div>
 <div class="section" id="nas2exo">
 <h1>Nas2Exo<a class="headerlink" href="#nas2exo" title="Permalink to this headline">¶</a></h1>
@@ -684,26 +694,28 @@ file or post-processing an Exodus results file using Matlab.</p>
 </div>
 <div class="section" id="nem-slice">
 <h1>nem_slice<a class="headerlink" href="#nem-slice" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../nem_slice.pdf">nem_slice</a> reads in a FEM description of the geometry of a problem from
-an Exodus file and generates either a nodal or elemental graph of the
-problem, calls <a class="reference external" href="../../chaco.pdf">Chaco</a> to load balance the graph, and outputs a
-<a class="reference internal" href="#nemesis-library">Nemesis Library</a> load-balance file which can be read by</p>
+<p><a class="reference external" href="../../nem_slice.pdf">nem_slice</a> reads in a FEM description of the
+geometry of a problem from an Exodus file and generates either a nodal
+or elemental graph of the problem, calls <a class="reference external" href="../../chaco.pdf">Chaco</a> to load balance the
+graph, and outputs a <a class="reference internal" href="#nemesis-library">Nemesis Library</a> load-balance file which can be
+read by</p>
 </div>
 <div class="section" id="nem-spread">
 <h1>nem_spread<a class="headerlink" href="#nem-spread" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../nem_spread.pdf">Nem_spread</a> reads it’s input command file (default name
-<code class="docutils literal notranslate"><span class="pre">nem_spread.inp</span></code>), takes the named Exodus and spreads out the geometry
-(and optionally results) contained in that file out to a parallel disk
-system. The decomposition is taken from a scalar Nemesis load balance
-file generated by the companion utility <a class="reference external" href="../../nem_slice.pdf">nem_slice</a>. Here is an <a class="reference external" href="../../nem_spread.inp.pdf">example
-nem_spread input file</a>.</p>
+<p><a class="reference external" href="../../nem_spread.pdf">Nem_spread</a> reads it’s input command file
+(default name <code class="docutils literal notranslate"><span class="pre">nem_spread.inp</span></code>), takes the named Exodus and spreads
+out the geometry (and optionally results) contained in that file out
+to a parallel disk system. The decomposition is taken from a scalar
+Nemesis load balance file generated by the companion utility
+<a class="reference external" href="../../nem_slice.pdf">nem_slice</a>. Here is an <a class="reference external" href="../../nem_spread.inp.pdf">example nem_spread input file</a>.</p>
 </div>
 <div class="section" id="numbers">
 <h1>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../numbers.pdf">Numbers</a> is a program which reads and stores data from a finite element
-model described in the Exodus database format. Within this program are
-several utility routines which calculate information about the finite
-element model. It is limited to models with hexahedral elements only.</p>
+<p><a class="reference external" href="../../numbers.pdf">Numbers</a> is a program which reads and stores
+data from a finite element model described in the Exodus database
+format. Within this program are several utility routines which
+calculate information about the finite element model. It is limited to
+models with hexahedral elements only.</p>
 </div>
 <div class="section" id="slice">
 <h1>Slice<a class="headerlink" href="#slice" title="Permalink to this headline">¶</a></h1>
@@ -713,7 +725,8 @@ mesh database. Experimental.</p>
 </div>
 <div class="section" id="skinner">
 <h1>Skinner<a class="headerlink" href="#skinner" title="Permalink to this headline">¶</a></h1>
-<p>Create an Exodus mesh consisting of the _skin_ or surface of the input Exodus database.</p>
+<p>Create an Exodus mesh consisting of the _skin_ or surface of the input
+Exodus database.</p>
 </div>
 <div class="section" id="struc-to-unstruc">
 <h1>Struc_To_Unstruc<a class="headerlink" href="#struc-to-unstruc" title="Permalink to this headline">¶</a></h1>
@@ -729,35 +742,33 @@ an exodus files to/from text.)</p>
 </div>
 <div class="section" id="zellij">
 <h1>Zellij<a class="headerlink" href="#zellij" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../zellij/html/md__zellij.html">Zellij</a> takes 1 or more “unit cell” template databases and tiles them
-into a single output database. The unit cells must have a structured
-boundary on the I-J faces; the K face can have an arbitrary mesh as
-can the interior of the unit cells. A lattice file is parsed to
-specify the unit cells and their arrangement into the output
-database. The output file can be written in a decomposed
-“file-per-rank” set of files for using with a parallel
-application. Zellij is optimized for large files.</p>
+<p><a class="reference external" href="../../zellij/html/md__zellij.html">Zellij</a> takes 1 or more “unit
+cell” template databases and tiles them into a single output
+database. The unit cells must have a structured boundary on the I-J
+faces; the K face can have an arbitrary mesh as can the interior of
+the unit cells. A lattice file is parsed to specify the unit cells and
+their arrangement into the output database. The output file can be
+written in a decomposed “file-per-rank” set of files for using with a
+parallel application. Zellij is optimized for large files.</p>
 </div>
 <div class="section" id="netcdf-library">
 <h1>NetCDF Library<a class="headerlink" href="#netcdf-library" title="Permalink to this headline">¶</a></h1>
 <p>(External, not developed or maintained as part of SEACAS, but is used
 by Exodus, so include here).</p>
-<p>NetCDF The netCDF software functions as an I/O library, callable from
-C or FORTRAN, which stores and retrieves data in self-describing,
-machine-independent files. Each netCDF file can contain an unlimited
-number of multi-dimensional, named variables (with differing types
-that include integers, reals, characters, bytes, etc.), and each
-variable may be accompanied by ancillary data, such as units of
-measure or descriptive text. The interface includes a method for
-appending data to existing netCDF files in prescribed ways,
-functionality that is not unlike a (fixed length) record
-structure. However, the netCDF library also allows direct-access
-storage and retrieval of data by variable name and index and therefore
-is useful only for disk-resident (or memory-resident) files.  NetCDF
-information is available from Unidata.</p>
-<p>Man pages for the ncgen and ncdump utilities are also
-available. (These can be used to convert an exodus file from/to a text
-representation.)</p>
+<p>The <a class="reference external" href="https://github.com/Unidata/netcdf-c">netCDF</a> I/O library stores
+and retrieves data in self-describing, machine-independent files. Each
+netCDF file can contain an unlimited number of multi-dimensional,
+named variables (with differing types that include integers, reals,
+characters, bytes, etc.), and each variable may be accompanied by
+ancillary data, such as units of measure or descriptive text. The
+interface includes a method for appending data to existing netCDF
+files in prescribed ways, functionality that is not unlike a (fixed
+length) record structure. However, the netCDF library also allows
+direct-access storage and retrieval of data by variable name and index
+and therefore is useful only for disk-resident (or memory-resident)
+files.  NetCDF information is available from Unidata.</p>
+<p>The ncgen and ncdump utilities can be used to convert an Exodus file
+from/to a text representation.</p>
 </div>
 
 
