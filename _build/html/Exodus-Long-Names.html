@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>&lt;no title&gt; &mdash; SEACAS 2021/03/02 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SEACAS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul class="simple">
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SEACAS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>&lt;no title&gt;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Exodus-Long-Names.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>On write, you can call:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ex_set_option</span><span class="p">(</span><span class="n">exoid</span><span class="p">,</span> <span class="n">EX_OPT_MAX_NAME_LENGTH</span><span class="p">,</span> <span class="p">{</span><span class="n">max_name_length</span><span class="p">});</span>
+</pre></div>
+</div>
+<p>or equivalently</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ex_set_max_name_length</span><span class="p">(</span><span class="n">exoid</span><span class="p">,</span> <span class="p">{</span><span class="n">max_name_length</span><span class="p">});</span>
+</pre></div>
+</div>
+<p>which tells the database that you will be using names of that length or shorter.</p>
+<p>This same call on read will tell the database to truncate names at
+that length. If not called, then the <code class="docutils literal notranslate"><span class="pre">{max_name_length}</span></code> is assumed to
+be 32 characters which has been the historic maximum name length for
+exodus.</p>
+<p>Following this call, you can define (i.e., read/write) names of any
+size; if the names are longer than <code class="docutils literal notranslate"><span class="pre">{max_name_length}</span></code>, then they will be truncated otherwise they will pass through unchanged.</p>
+<p>There are three queries that can be made to <code class="docutils literal notranslate"><span class="pre">ex_inquire</span></code> or
+<code class="docutils literal notranslate"><span class="pre">ex_inquire_int</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">EX_INQ_DB_MAX_ALLOWED_NAME_LENGTH</span></code> – returns the value of the
+maximum size that can be specified for <code class="docutils literal notranslate"><span class="pre">max_name_length</span></code>
+(netcdf/hdf5 limitation)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EX_INQ_DB_MAX_USED_NAME_LENGTH</span></code> – returns the size of the longest
+name on the database.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EX_INQ_MAX_READ_NAME_LENGTH</span></code> – returns the maximum name length
+size that will be passed back to the client. 32 by default,
+set by the previously mentioned <code class="docutils literal notranslate"><span class="pre">ex_set_option()</span></code> or
+<code class="docutils literal notranslate"><span class="pre">ex_set_max_name_length()</span></code> call.</p></li>
+</ul>
+<p>The length of the QA records is not affected by this setting and each entry in the QA record is still limited to 32 characters.</p>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Gregory Sjaardema.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
