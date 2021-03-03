@@ -139,7 +139,7 @@ Nemesis Library
 ---------------
 
 .. note::
-   NOTE: All of the functionality of the Nemesis library is available
+   All of the functionality of the Nemesis library is available
    in the Exodus library.  The Nemesis library is only maintained for
    backward compatability with older applications. If you need this
    capability, please use the Exodus library instead.
@@ -169,7 +169,7 @@ Chaco Library
 -------------
 
 .. note::
-   NOTE: CHACO is an older library which is not being enhanced.  If
+   CHACO is an older library which is not being enhanced.  If
    you are writing a new code that needs graph partitionin, you should
    use the Zoltan2 library instead.
 
@@ -191,7 +191,7 @@ appropriate settings for a variety of code parameters are discussed in
 detail and some suggestions on algorithm selection are offered.
 
 .. note::
-   NOTE: The ``short *assignment`` argument to the interface function has been changed to ``int
+   The ``short *assignment`` argument to the interface function has been changed to ``int
    *assignment`` to permit decompositions with more than 32,768 processors.
 
 There are also now a ``CHACO_VERSION_MAJOR``, ``CHACO_VERSION_MINOR``, and
@@ -489,7 +489,7 @@ Mapvar
 ------
 
 .. note::
-   NOTE: MAPVAR is buggy and cannot correctly handle the mapping of
+   MAPVAR is buggy and cannot correctly handle the mapping of
    nodal variables in a mesh with multiple element blocks and multiple
    timesteps. It should work OK if there is only a single timestep;
    however, there may be an issue with nodes shared between multiple
@@ -510,7 +510,7 @@ Mapvar-kd
 --------- 
 
 .. note::
-   NOTE: MAPVAR is buggy and cannot correctly handle the mapping of
+   MAPVAR is buggy and cannot correctly handle the mapping of
    nodal variables in a mesh with multiple element blocks and multiple
    timesteps. It should work OK if there is only a single timestep;
    however, there may be an issue with nodes shared between multiple
@@ -537,16 +537,16 @@ Convert Nastran format to Exodus database.
 
 nem_join
 --------
-.. deprecated::
-   Use `EPU`_ instead.
+.. note::
+   nem_join is no longer maintained. Use `EPU`_ instead.
 
 nem_slice
 ---------
 
 `nem_slice <../../nem_slice.pdf>`_ reads in a FEM description of the geometry of a problem from
 an Exodus file and generates either a nodal or elemental graph of the
-problem, calls `Chaco`_ to load balance the graph, and outputs a `Nemesis`_
-load-balance file which can be read by
+problem, calls `Chaco`_ to load balance the graph, and outputs a
+`Nemesis Library`_ load-balance file which can be read by
 
 nem_spread
 ----------

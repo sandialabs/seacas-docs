@@ -309,7 +309,7 @@ features.</p>
 <h1>Nemesis Library<a class="headerlink" href="#nemesis-library" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>NOTE: All of the functionality of the Nemesis library is available
+<p>All of the functionality of the Nemesis library is available
 in the Exodus library.  The Nemesis library is only maintained for
 backward compatability with older applications. If you need this
 capability, please use the Exodus library instead.</p>
@@ -338,7 +338,7 @@ functions.</p></li>
 <h1>Chaco Library<a class="headerlink" href="#chaco-library" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>NOTE: CHACO is an older library which is not being enhanced.  If
+<p>CHACO is an older library which is not being enhanced.  If
 you are writing a new code that needs graph partitionin, you should
 use the Zoltan2 library instead.</p>
 </div>
@@ -360,7 +360,7 @@ appropriate settings for a variety of code parameters are discussed in
 detail and some suggestions on algorithm selection are offered.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>NOTE: The <code class="docutils literal notranslate"><span class="pre">short</span> <span class="pre">*assignment</span></code> argument to the interface function has been changed to <code class="docutils literal notranslate"><span class="pre">int</span>
+<p>The <code class="docutils literal notranslate"><span class="pre">short</span> <span class="pre">*assignment</span></code> argument to the interface function has been changed to <code class="docutils literal notranslate"><span class="pre">int</span>
 <span class="pre">*assignment</span></code> to permit decompositions with more than 32,768 processors.</p>
 </div>
 <p>There are also now a <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_MAJOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_MINOR</span></code>, and
@@ -631,7 +631,7 @@ which will provide additional information on the capabilities.</p>
 <h1>Mapvar<a class="headerlink" href="#mapvar" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>NOTE: MAPVAR is buggy and cannot correctly handle the mapping of
+<p>MAPVAR is buggy and cannot correctly handle the mapping of
 nodal variables in a mesh with multiple element blocks and multiple
 timesteps. It should work OK if there is only a single timestep;
 however, there may be an issue with nodes shared between multiple
@@ -652,7 +652,7 @@ various input options.</p>
 <h1>Mapvar-kd<a class="headerlink" href="#mapvar-kd" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>NOTE: MAPVAR is buggy and cannot correctly handle the mapping of
+<p>MAPVAR is buggy and cannot correctly handle the mapping of
 nodal variables in a mesh with multiple element blocks and multiple
 timesteps. It should work OK if there is only a single timestep;
 however, there may be an issue with nodes shared between multiple
@@ -677,16 +677,17 @@ file or post-processing an Exodus results file using Matlab.</p>
 </div>
 <div class="section" id="nem-join">
 <h1>nem_join<a class="headerlink" href="#nem-join" title="Permalink to this headline">¶</a></h1>
-<div class="deprecated">
-<p><span class="versionmodified deprecated">Deprecated since version Use: </span><a class="reference external" href="../../exo_util.pdf">EPU</a> instead.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>nem_join is no longer maintained. Use <a class="reference external" href="../../exo_util.pdf">EPU</a> instead.</p>
 </div>
 </div>
 <div class="section" id="nem-slice">
 <h1>nem_slice<a class="headerlink" href="#nem-slice" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="../../nem_slice.pdf">nem_slice</a> reads in a FEM description of the geometry of a problem from
 an Exodus file and generates either a nodal or elemental graph of the
-problem, calls <a class="reference external" href="../../chaco.pdf">Chaco</a> to load balance the graph, and outputs a <a class="reference external" href="../../Nemesis_Users_Guide.pdf">Nemesis</a>
-load-balance file which can be read by</p>
+problem, calls <a class="reference external" href="../../chaco.pdf">Chaco</a> to load balance the graph, and outputs a
+<a class="reference internal" href="#nemesis-library">Nemesis Library</a> load-balance file which can be read by</p>
 </div>
 <div class="section" id="nem-spread">
 <h1>nem_spread<a class="headerlink" href="#nem-spread" title="Permalink to this headline">¶</a></h1>
