@@ -29,15 +29,15 @@ WIKI: FAQ and Extensions
   run the SEACAS/ACCESS system on Parallel computers. Currently
   specific to Sandia National Laboratories systems.
 
-Exodus
-------
+Exodus Library
+--------------
 Exodus is a model developed to store and retrieve data for finite
 element analyses. It is used for preprocessing (problem definition),
 postprocessing (results visualization), as well as code to code data
 transfer. An Exodus data file is a random access, machine independent,
 binary file that is written and read via C, C++, or Fortran library
 routines which comprise the Application Programming Interface. Exodus
-uses `NetCDF`_ as the on-disk storage format.
+uses `NetCDF Library`_ as the on-disk storage format.
 
 The new version includes support for names, nodeset variables, sideset
 variables, named attributes, coordinate frames, concatenated element
@@ -48,7 +48,7 @@ assemblies, blobs, and other cleanups.
 * `"New" API Documentation <../../exodusII-new.pdf>`_
 
 **Element Types**
-  A list of all element types supported by Exodus (and `IOSS`_) is
+  A list of all element types supported by Exodus (and `IOSS Library`_) is
   provided in `Exodus Element Types <../../html/element_types.html>`_
 
 **Full Model Topology**
@@ -97,8 +97,8 @@ Exodus Python Interfaces
   for manipulating Exodus files.  Python 2 and 3 versions available.
   
 
-IOSS
----- 
+IOSS Library
+------------
 
 IO System (IOSS) The `documentation <../../IOSystem.pdf>`_ is a
 medium- to low-level view of the IO system (IOSS) targeted at
@@ -118,8 +118,60 @@ and what data is to be written. `Ioss-exodus-mapping.pdf
 <../../Ioss-exodus-mapping.pdf>`_ describes how an Exodus model is
 mapped into the IOSS representation.
 
-Chaco
------
+A list of the properties that can be used to control the behavior of
+the IOSS library is at `Properties
+<../../ioss_html/index.html#properties>`_.
+
+SUPES Library
+-------------
+
+The `SUPES <../../supes.pdf>_` library is a collection of subprograms
+which perform frequently used non-numerical services for the
+engineering applications programmer using FORTRAN-77. The three
+functional categories of SUPES are: (1) input command parsing, (2)
+dynamic memory management, and (3) system dependent utilities. The
+subprograms in categories one and two are written in standard
+FORTRAN-77, while the subprograms in category three are written to
+provide a standardized FORTRAN interface to several system dependent
+features.
+
+Nemesis Library
+---------------
+
+.. note::
+   NOTE: All of the functionality of the Nemesis library is available
+   in the Exodus library.  The Nemesis library is only maintained for
+   backward compatability with older applications. If you need this
+   capability, please use the Exodus library instead.
+
+The `Nemesis <../../Nemesis_Users_Guide.pdf>`_ library is an
+enhancement to the Exodus finite element database model used to store
+and retrieve data for unstructured parallel finite element
+analyses. NEMESIS I adds data structures which facilitate the
+partitioning of a scalar (standard serial) Exodus file onto parallel
+disk systems found on many parallel computers. Since the NEMESIS I
+application programming interface (API) can be used to append
+information to an existing Exodus database, any existing software that
+reads Exodus files can be used on files which contain NEMESIS I
+information. The NEMESIS I information is written and read via C or
+C++ callable functions which compromise the NEMESIS I API.  
+
+* All nemesis functions have been added to the exodus API. In most
+  cases, the name of the exodus function is the same as the original
+  nemesis function except that the leading ``ne_`` has been replaced
+  with ``ex_``. There are a few exceptions. See `Nemesis-To-Exodus-API-Mapping.md
+  <../../Nemesis-To-Exodus-API-Mapping.md>`_ for a complete list of
+  functions.
+
+* `Fortran to C Function Mapping <../../nemesis-to-exodus-api-mapping.md>`_
+
+Chaco Library
+-------------
+
+.. note::
+   NOTE: CHACO is an older library which is not being enhanced.  If
+   you are writing a new code that needs graph partitionin, you should
+   use the Zoltan2 library instead.
 
 Graph partitioning is a fundamental problem in many scientific
 contexts.  This document describes the capabilities and operation of
@@ -146,64 +198,6 @@ There are also now a ``CHACO_VERSION_MAJOR``, ``CHACO_VERSION_MINOR``, and
 ``CHACO_VERSION_PATCH`` defines in ``chaco.h``.
 
 * `Chaco <../../chaco.pdf>`_
-
-NetCDF
-------
-* NetCDF The netCDF software functions as an I/O library, callable
-  from C or FORTRAN, which stores and retrieves data in
-  self-describing, machine-independent files. Each netCDF file can
-  contain an unlimited number of multi-dimensional, named variables
-  (with differing types that include integers, reals, characters,
-  bytes, etc.), and each variable may be accompanied by ancillary
-  data, such as units of measure or descriptive text. The interface
-  includes a method for appending data to existing netCDF files in
-  prescribed ways, functionality that is not unlike a (fixed length)
-  record structure. However, the netCDF library also allows
-  direct-access storage and retrieval of data by variable name and
-  index and therefore is useful only for disk-resident (or
-  memory-resident) files.  NetCDF information is available from
-  Unidata.
-
-  Man pages for the ncgen and ncdump utilities are also
-  available. (These can be used to convert an exodus file from/to a
-  text representation.)
-
-Nemesis
--------
-
-The `Nemesis <../../Nemesis_Users_Guide.pdf>`_ library is an
-enhancement to the Exodus finite element database model used to store
-and retrieve data for unstructured parallel finite element
-analyses. NEMESIS I adds data structures which facilitate the
-partitioning of a scalar (standard serial) Exodus file onto parallel
-disk systems found on many parallel computers. Since the NEMESIS I
-application programming interface (API) can be used to append
-information to an existing Exodus database, any existing software that
-reads Exodus files can be used on files which contain NEMESIS I
-information. The NEMESIS I information is written and read via C or
-C++ callable functions which compromise the NEMESIS I API.  
-
-* All nemesis functions have been added to the exodus API. In most
-  cases, the name of the exodus function is the same as the original
-  nemesis function except that the leading ``ne_`` has been replaced
-  with ``ex_``. There are a few exceptions. See `Nemesis-To-Exodus-API-Mapping.md
-  <../../Nemesis-To-Exodus-API-Mapping.md>`_ for a complete list of
-  functions.
-
-* `Fortran to C Function Mapping <../../nemesis-to-exodus-api-mapping.md>`_
-
-SUPES
------
-
-The `SUPES <../../supes.pdf>_` library is a collection of subprograms
-which perform frequently used non-numerical services for the
-engineering applications programmer using FORTRAN-77. The three
-functional categories of SUPES are: (1) input command parsing, (2)
-dynamic memory management, and (3) system dependent utilities. The
-subprograms in categories one and two are written in standard
-FORTRAN-77, while the subprograms in category three are written to
-provide a standardized FORTRAN interface to several system dependent
-features.
 
 Algebra
 -------
@@ -249,6 +243,14 @@ centers.
 
 CGNS_Decomp
 -----------
+
+An application which will give information on how the parallel CGNS
+structured mesh decomposition will perform.  This application runs in
+serial, but performs the same calculations as the parallel CGNS
+structured mesh decomposition routines.  Various metrics about the
+decomposition will be output to allow comparisons of various options
+and to judge the quality of the decomposition.  The input database
+must be a structured mesh in a CGNS format file.
 
 Conjoin
 -------
@@ -457,11 +459,31 @@ print file.
 IO_Shell
 --------
 
+Utility application which reads a database, possibly applies a
+modification, and then writes that database.  See ``io_shell --help``
+for a list of the capabilities of io_shell.  It can read and write
+datbases in the Exodus and CGNS format.  There is also a generated
+mesh option.  To see the generated mesh options, try: ``io_shell
+--in_type generated 1x1x1+help output.g``
+
+
 IO_Info
 -------
 
+Utility application which reads a database and provides a summary of
+the information in the database. See ``io_info --help``
+for a list of the capabilities of io_modify.  If you enter ``io_info
+--configuration`` it will output a summary of the third-party
+libraries that were used in the build of this installation of SEACAS.
+
 IO_Modify
 ---------
+
+Utility application which can be used to query add assembly and entity
+attribute information to an existing Exodus database.  See ``io_modify
+--help`` for more information.  There is an internal ``HELP`` command
+which will provide additional information on the capabilities.
+
 
 Mapvar
 ------
@@ -484,7 +506,8 @@ described. User instructions are presented. Example problems are
 included to demonstrate the operation of the code and the effects of
 various input options.
 
-Mapvar-kd --------- 
+Mapvar-kd
+--------- 
 
 .. note::
    NOTE: MAPVAR is buggy and cannot correctly handle the mapping of
@@ -558,6 +581,10 @@ Create an Exodus mesh consisting of the _skin_ or surface of the input Exodus da
 Struc_To_Unstruc
 ----------------
 
+An application which will read a structured mesh in CGNS format and
+convert it to an unstructured mesh which can be output in either CGNS
+or Exodus format.
+
 TxtExo
 ------
 
@@ -576,4 +603,28 @@ specify the unit cells and their arrangement into the output
 database. The output file can be written in a decomposed
 "file-per-rank" set of files for using with a parallel
 application. Zellij is optimized for large files. 
+
+NetCDF Library
+--------------
+
+(External, not developed or maintained as part of SEACAS, but is used
+by Exodus, so include here). 
+
+NetCDF The netCDF software functions as an I/O library, callable from
+C or FORTRAN, which stores and retrieves data in self-describing,
+machine-independent files. Each netCDF file can contain an unlimited
+number of multi-dimensional, named variables (with differing types
+that include integers, reals, characters, bytes, etc.), and each
+variable may be accompanied by ancillary data, such as units of
+measure or descriptive text. The interface includes a method for
+appending data to existing netCDF files in prescribed ways,
+functionality that is not unlike a (fixed length) record
+structure. However, the netCDF library also allows direct-access
+storage and retrieval of data by variable name and index and therefore
+is useful only for disk-resident (or memory-resident) files.  NetCDF
+information is available from Unidata.
+
+Man pages for the ncgen and ncdump utilities are also
+available. (These can be used to convert an exodus file from/to a text
+representation.)
 
