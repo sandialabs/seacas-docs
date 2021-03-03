@@ -75,10 +75,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8a4b210b76ae4387021b2632d0c5c3c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a8a4b210b76ae4387021b2632d0c5c3c1">Cell</a> ()=default</td></tr>
+<tr class="separator:a8a4b210b76ae4387021b2632d0c5c3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68055b2d118b4d20c30a4871b60817f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a68055b2d118b4d20c30a4871b60817f0">Cell</a> (const <a class="el" href="class_cell.html">Cell</a> &amp;)=default</td></tr>
+<tr class="separator:a68055b2d118b4d20c30a4871b60817f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad84ca3e6d2a2df084abd62541449f15d"><td class="memItemLeft" align="right" valign="top">std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#ad84ca3e6d2a2df084abd62541449f15d">get_coordinate_range</a> (enum <a class="el" href="_cell_8h.html#ae3996976d8ffb3e58d88f58227473f8e">Axis</a>) const</td></tr>
 <tr class="separator:ad84ca3e6d2a2df084abd62541449f15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3670af22245d86115cfce60febd8489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#ad3670af22245d86115cfce60febd8489">initialize</a> (size_t i, size_t j, std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt; <a class="el" href="class_cell.html#af8a1a955762f25756378518acc9a1ad9">region</a>)</td></tr>
-<tr class="separator:ad3670af22245d86115cfce60febd8489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9119cb2bf9072fadcee6abb0cf94ecd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a9119cb2bf9072fadcee6abb0cf94ecd9">initialize</a> (size_t i, size_t j, std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt; unit_cell)</td></tr>
+<tr class="separator:a9119cb2bf9072fadcee6abb0cf94ecd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7338ee252aec11060cf64605f8244078"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a7338ee252aec11060cf64605f8244078">unit</a> () const</td></tr>
 <tr class="memdesc:a7338ee252aec11060cf64605f8244078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to the <a class="el" href="class_unit_cell.html">UnitCell</a> that this cell uses.  <a href="class_cell.html#a7338ee252aec11060cf64605f8244078">More...</a><br /></td></tr>
 <tr class="separator:a7338ee252aec11060cf64605f8244078"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +163,58 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a35fb0731d86f3798588e39c695665155"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 9 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a35fb0731d86f3798588e39c695665155">m_ranks</a> {{0, -1, -1, -1, -1, -1, -1, -1, -1}}</td></tr>
 <tr class="separator:a35fb0731d86f3798588e39c695665155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8a4b210b76ae4387021b2632d0c5c3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a4b210b76ae4387021b2632d0c5c3c1">&#9670;&nbsp;</a></span>Cell() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cell::Cell </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68055b2d118b4d20c30a4871b60817f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68055b2d118b4d20c30a4871b60817f0">&#9670;&nbsp;</a></span>Cell() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cell::Cell </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_cell.html">Cell</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2e08892066918de5cee1d70ffd51aa25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e08892066918de5cee1d70ffd51aa25">&#9670;&nbsp;</a></span>added_node_count()</h2>
@@ -367,8 +423,8 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="ad3670af22245d86115cfce60febd8489"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3670af22245d86115cfce60febd8489">&#9670;&nbsp;</a></span>initialize()</h2>
+<a id="a9119cb2bf9072fadcee6abb0cf94ecd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9119cb2bf9072fadcee6abb0cf94ecd9">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,7 +445,7 @@ template&lt;typename INT &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_unit_cell.html">UnitCell</a> &gt;&#160;</td>
-          <td class="paramname"><em>region</em>&#160;</td>
+          <td class="paramname"><em>unit_cell</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

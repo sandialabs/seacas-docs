@@ -74,6 +74,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa94087ef70866ccad5279da92a991758"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_generated_side_block.html#aa94087ef70866ccad5279da92a991758">GeneratedSideBlock</a> ()=default</td></tr>
+<tr class="separator:aa94087ef70866ccad5279da92a991758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d4c1f2b1472dfdd86b05e718f9cbd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_generated_side_block.html#ab1d4c1f2b1472dfdd86b05e718f9cbd2">GeneratedSideBlock</a> (const <a class="el" href="struct_generated_side_block.html">GeneratedSideBlock</a> &amp;)=delete</td></tr>
+<tr class="separator:ab1d4c1f2b1472dfdd86b05e718f9cbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc4c7542e1810b88d6fe63942b616c4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_generated_side_block.html#a3fc4c7542e1810b88d6fe63942b616c4">size</a> () const</td></tr>
 <tr class="separator:a3fc4c7542e1810b88d6fe63942b616c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -82,6 +86,60 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae08b3321cab80c0379242ee5d5b99540"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::vector&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_generated_side_block.html#ae08b3321cab80c0379242ee5d5b99540">m_faces</a></td></tr>
 <tr class="separator:ae08b3321cab80c0379242ee5d5b99540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa94087ef70866ccad5279da92a991758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94087ef70866ccad5279da92a991758">&#9670;&nbsp;</a></span>GeneratedSideBlock() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeneratedSideBlock::GeneratedSideBlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>List of faces (10*element_offset + face) in this SideBlock indexed by element block name...</p>
+<p>Note that the <code>element_offset</code> is the 1-based index of the element within the element block that it is a member of </p>
+
+</div>
+</div>
+<a id="ab1d4c1f2b1472dfdd86b05e718f9cbd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d4c1f2b1472dfdd86b05e718f9cbd2">&#9670;&nbsp;</a></span>GeneratedSideBlock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeneratedSideBlock::GeneratedSideBlock </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_generated_side_block.html">GeneratedSideBlock</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3fc4c7542e1810b88d6fe63942b616c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3fc4c7542e1810b88d6fe63942b616c4">&#9670;&nbsp;</a></span>size()</h2>
@@ -120,8 +178,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>List of faces (10*element_offset + face) in this SideBlock indexed by element block name...</p>
-<p>Note that the <code>element_offset</code> is the 1-based index of the element within the element block that it is a member of </p>
 
 </div>
 </div>

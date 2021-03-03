@@ -5,7 +5,7 @@ var searchData=
   ['categorize_5fprocessor_5fboundaries_11',['categorize_processor_boundaries',['../class_grid.html#adc522bfbf65a2e5ffa3a5caa45f09912',1,'Grid']]],
   ['categorize_5fprocessor_5fboundary_5fnodes_12',['categorize_processor_boundary_nodes',['../class_cell.html#a466a9210d7b8e35681a97027beddbfc7',1,'Cell']]],
   ['categorize_5fz_5fnodes_13',['categorize_z_nodes',['../class_unit_cell.html#a8d35e124510d8de1fe74628c24ead161',1,'UnitCell']]],
-  ['cell_14',['Cell',['../class_cell.html',1,'']]],
+  ['cell_14',['Cell',['../class_cell.html',1,'Cell'],['../class_cell.html#a8a4b210b76ae4387021b2632d0c5c3c1',1,'Cell::Cell()=default'],['../class_cell.html#a68055b2d118b4d20c30a4871b60817f0',1,'Cell::Cell(const Cell &amp;)=default']]],
   ['cell_2ec_15',['Cell.C',['../_cell_8_c.html',1,'']]],
   ['cell_2eh_16',['Cell.h',['../_cell_8h.html',1,'']]],
   ['cell_5fii_17',['cell_II',['../class_unit_cell.html#af95c13363f66b35178c091fca7a523af',1,'UnitCell']]],
