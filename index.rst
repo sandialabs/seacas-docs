@@ -25,7 +25,7 @@ WIKI: FAQ and Extensions
    applications and libraries that may not yet be covered in the
    documentation.
 
-`Using SEACAS on Parallel Computers <../../Parallel_Instructions.pdf>`_ 
+`Using SEACAS on Parallel Computers <../../Parallel_Instruction.pdf>`_ 
   Out-of-date, but some information is still useful.  Instructions to
   run the SEACAS/ACCESS system on Parallel computers. Currently
   specific to Sandia National Laboratories systems.
@@ -223,6 +223,8 @@ several mathematical functions, string functions, and flow control
 constructs. In addition, functions are included that, with some
 additional files, implement a units conversion system and a material
 database lookup system.
+
+* The `Aprepro Library <../../apr_html/index.html>`_ API Documentation.
 
 Blot
 ----
@@ -586,7 +588,7 @@ mesh database. Experimental.
 Skinner
 -------
 
-Create an Exodus mesh consisting of the _skin_ or surface of the input
+Create an Exodus mesh consisting of the *skin* or surface of the input
 Exodus database.
 
 Struc_To_Unstruc
