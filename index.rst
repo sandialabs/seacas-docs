@@ -220,9 +220,9 @@ a file containing both general text and algebraic, string, or
 conditional expressions. It interprets the expressions and outputs
 them to the output file along with the general text. Aprepro contains
 several mathematical functions, string functions, and flow control
-constructs. In addition, functions are included that, with some
-additional files, implement a units conversion system and a material
-database lookup system.
+constructs. In addition, functions are included that implement a units
+conversion system, querying of an exodus database, and 2-dimensional
+arrays.
 
 * The `Aprepro Library <../../apr_html/index.html>`_ API Documentation.
 
