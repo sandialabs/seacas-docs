@@ -57,6 +57,13 @@ var NAVTREE =
       [ "Netcdf-4 Non-Classic", "exodus_formats.html#nc4nc", null ],
       [ "CDF5", "exodus_formats.html#cdf5", null ]
     ] ],
+    [ "Large model modifications to the Exodus library", "large_model.html", [
+      [ "Large model modifications to the Exodus library", "large_model.html#large_model_", null ],
+      [ "ex_create():", "large_model.html#ex_create", null ],
+      [ "ex_put_init():", "large_model.html#ex_put_init", null ],
+      [ "ex_put_coord():", "large_model.html#ex_put_coord", null ],
+      [ "ex_put_nodal_var():", "large_model.html#ex_put_nodal_var", null ]
+    ] ],
     [ "Mapping of nemesis API functions to Exodus API functions", "nemesis-mapping.html", [
       [ "Initial Information Routines", "nemesis-mapping.html#initial", null ],
       [ "Loadbalance Parameter Routines", "nemesis-mapping.html#lb", null ],
@@ -110,7 +117,7 @@ var NAVTREEINDEX =
 "group__ModelDescription.html#ga414580b024f2d4d7f2e22e3a14260f87",
 "group__ModelDescription.html#gaeab6d47d696474c59b1e324eb46f9a36",
 "group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f",
-"structex__init__params.html#aed3ef07dd4f1ecbb945fdb654dbc0df1"
+"structex__init__params.html#ac8a101b6459ee916c331a1ee6ce6e203"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
