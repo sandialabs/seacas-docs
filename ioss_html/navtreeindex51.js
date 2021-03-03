@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"structdetail_1_1width__adapter.html#a24f303e0f6aa67576609c4771919c27f":[4,0,74,104,1],
+"structdetail_1_1width__adapter.html#a320ff7cceb2202ffda7c97ed3c423a27":[4,0,74,104,5],
 "structdetail_1_1width__adapter.html#a8e374f042abe43de534afdb3d16d44a0":[4,0,74,104,4],
 "structdetail_1_1width__adapter.html#a934a6268be4a54e08db902eb5cf29cc8":[4,0,74,104,3],
 "structdetail_1_1width__adapter.html#ae05b985c82165240aad20fdaea77dc67":[4,0,74,104,2],
