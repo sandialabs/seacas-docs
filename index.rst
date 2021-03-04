@@ -88,6 +88,11 @@ assemblies, blobs, and other cleanups.
   <../../html/nemesis-mapping.html>`_ for a complete list of
   functions.
 
+**Extensions**
+  Potential and proposed `Exodus extensions
+  <https://github.com/gsjaardema/seacas/wiki#recent-extensions-to-exodus-format>`_
+  and their status.
+ 
 Exodus Python Interfaces
 ------------------------
 
@@ -103,28 +108,35 @@ Exodus Python Interfaces
 IOSS Library
 ------------
 
-IO System (IOSS) The `documentation <../../IOSystem.pdf>`_ is a
-medium- to low-level view of the IO system (IOSS) targeted at
-developers who will be adding or modifying the database IO portion of
-the system. It should give enough detail that a new database type
-could be added by reading this document and looking at an existing
-database class. It is also helpful to have the doxygen-generated
-documentation for the `IOSS class hierarchy
-<../../ioss_html/index.html>`_.
+The `IO Subsystem <../../ioss_html/index.html>`_ (IOSS) is a high-level database 
+access API that has been designed to give a format-agnostic interface
+to I/O capabilities with multiple format-specic backends to output the
+data to a particular format. Currently supported input and output
+formats are Exodus, CGNS, HeartBeat, History, Generated, ADIOS2,
+FAODEL. 
 
-The IO Subsystem has been designed to support multiple database
-formats simultaneously. It is possible to have the finite element
-model read from an Exodus database; two results files being written to
-an Exodus file with a third results file being written to a CGNS file;
-and the restart file being written to yet another Exodus file. Each of
-these output databases can have a different schedule for when to write
-and what data is to be written. `Ioss-exodus-mapping.pdf
-<../../Ioss-exodus-mapping.pdf>`_ describes how an Exodus model is
-mapped into the IOSS representation.
+It has been designed to support multiple database formats
+simultaneously. It is possible to have the finite element model read
+from an Exodus database; two results files being written to an Exodus
+file with a third results file being written to a CGNS file; and the
+restart file being written to yet another Exodus file. Each of these
+output databases can have a different schedule for when to write and
+what data is to be written.
 
-A list of the properties that can be used to control the behavior of
-the IOSS library is at `Properties
-<../../ioss_html/index.html#properties>`_.
+* The `IOSystem.pdf <../../IOSystem.pdf>`_ is a medium- to low-level
+  view of the IO system (IOSS) targeted at developers who will be
+  adding or modifying the database IO portion of the system. It should
+  give enough detail that a new database type could be added by
+  reading this document and looking at an existing database class. It
+  is also helpful to have the doxygen-generated documentation for the
+  .
+
+* `Ioss-exodus-mapping.pdf <../../Ioss-exodus-mapping.pdf>`_ describes
+  how an Exodus model is mapped into the IOSS representation.
+
+* A list of the properties that can be used to control the behavior of
+  the IOSS library is at `Properties
+  <../../ioss_html/index.html#properties>`_.
 
 SUPES Library
 -------------
@@ -173,7 +185,7 @@ Chaco Library
 -------------
 
 .. note:: CHACO is an older library which is not being enhanced.  If
-   you are writing a new code that needs graph partitionin, you should
+   you are writing a new code that needs graph partitioning, you should
    use the Zoltan2 library instead.
 
 Graph partitioning is a fundamental problem in many scientific

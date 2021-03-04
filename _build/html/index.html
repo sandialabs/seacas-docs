@@ -32,7 +32,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -265,6 +264,9 @@ nemesis function except that the leading <code class="docutils literal notransla
 with <code class="docutils literal notranslate"><span class="pre">ex_</span></code>.  There are a few exceptions.  See <a class="reference external" href="../../html/nemesis-mapping.html">Nemesis API Mapping</a> for a complete list of
 functions.</p>
 </dd>
+<dt><strong>Extensions</strong></dt><dd><p>Potential and proposed <a class="reference external" href="https://github.com/gsjaardema/seacas/wiki#recent-extensions-to-exodus-format">Exodus extensions</a>
+and their status.</p>
+</dd>
 </dl>
 </div>
 <div class="section" id="exodus-python-interfaces">
@@ -279,23 +281,32 @@ lightweight python interface for manipulating Exodus files.  Python
 </div>
 <div class="section" id="ioss-library">
 <h1>IOSS Library<a class="headerlink" href="#ioss-library" title="Permalink to this headline">¶</a></h1>
-<p>IO System (IOSS) The <a class="reference external" href="../../IOSystem.pdf">documentation</a> is a
-medium- to low-level view of the IO system (IOSS) targeted at
-developers who will be adding or modifying the database IO portion of
-the system. It should give enough detail that a new database type
-could be added by reading this document and looking at an existing
-database class. It is also helpful to have the doxygen-generated
-documentation for the <a class="reference external" href="../../ioss_html/index.html">IOSS class hierarchy</a>.</p>
-<p>The IO Subsystem has been designed to support multiple database
-formats simultaneously. It is possible to have the finite element
-model read from an Exodus database; two results files being written to
-an Exodus file with a third results file being written to a CGNS file;
-and the restart file being written to yet another Exodus file. Each of
-these output databases can have a different schedule for when to write
-and what data is to be written. <a class="reference external" href="../../Ioss-exodus-mapping.pdf">Ioss-exodus-mapping.pdf</a> describes how an Exodus model is
-mapped into the IOSS representation.</p>
-<p>A list of the properties that can be used to control the behavior of
-the IOSS library is at <a class="reference external" href="../../ioss_html/index.html#properties">Properties</a>.</p>
+<p>The <a class="reference external" href="../../ioss_html/index.html">IO Subsystem</a> (IOSS) is a high-level database
+access API that has been designed to give a format-agnostic interface
+to I/O capabilities with multiple format-specic backends to output the
+data to a particular format. Currently supported input and output
+formats are Exodus, CGNS, HeartBeat, History, Generated, ADIOS2,
+FAODEL.</p>
+<p>It has been designed to support multiple database formats
+simultaneously. It is possible to have the finite element model read
+from an Exodus database; two results files being written to an Exodus
+file with a third results file being written to a CGNS file; and the
+restart file being written to yet another Exodus file. Each of these
+output databases can have a different schedule for when to write and
+what data is to be written.</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="../../IOSystem.pdf">IOSystem.pdf</a> is a medium- to low-level
+view of the IO system (IOSS) targeted at developers who will be
+adding or modifying the database IO portion of the system. It should
+give enough detail that a new database type could be added by
+reading this document and looking at an existing database class. It
+is also helpful to have the doxygen-generated documentation for the
+.</p></li>
+<li><p><a class="reference external" href="../../Ioss-exodus-mapping.pdf">Ioss-exodus-mapping.pdf</a> describes
+how an Exodus model is mapped into the IOSS representation.</p></li>
+<li><p>A list of the properties that can be used to control the behavior of
+the IOSS library is at <a class="reference external" href="../../ioss_html/index.html#properties">Properties</a>.</p></li>
+</ul>
 </div>
 <div class="section" id="supes-library">
 <h1>SUPES Library<a class="headerlink" href="#supes-library" title="Permalink to this headline">¶</a></h1>
@@ -344,7 +355,7 @@ functions.</p></li>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>CHACO is an older library which is not being enhanced.  If
-you are writing a new code that needs graph partitionin, you should
+you are writing a new code that needs graph partitioning, you should
 use the Zoltan2 library instead.</p>
 </div>
 <p>Graph partitioning is a fundamental problem in many scientific
