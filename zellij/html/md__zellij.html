@@ -96,7 +96,12 @@ $(function() {
 <h1><a class="anchor" id="autotoc_md1"></a>
 Execution</h1>
 <p>Executing zellij with the <code>-help</code> option will result in output similar to the following:</p>
-<div class="fragment"><div class="line">usage: zellij [options] -lattice &lt;lattice_definition_file&gt;</div>
+<div class="fragment"><div class="line">Zellij</div>
+<div class="line">    (A code for tiling 1 or more template databases into a single output database.)</div>
+<div class="line">    (Version: 1.4.0) Modified: 2021/03/03</div>
+<div class="line">    Parallel Capability Not Enabled.</div>
+<div class="line"> </div>
+<div class="line">usage: zellij [options] -lattice &lt;lattice_definition_file&gt;</div>
 <div class="line">    -lattice &lt;$val&gt; (Name of file to read lattice definition from. [required])</div>
 <div class="line">    -output &lt;$val&gt; (Name of output file to create. Default is `zellij-out.e`)</div>
 <div class="line"> </div>
@@ -116,6 +121,7 @@ Execution</h1>
 <div class="line">    -rank_count &lt;$val&gt; (In partial output or subcycle modes, output this number of ranks)</div>
 <div class="line">    -subcycle (Process cells in groups of &#39;-rank_count&#39;.  Helps minimize open files,</div>
 <div class="line">        but is faster than only having a single file open.)</div>
+<div class="line">    -scale &lt;$val&gt; (Scale the output mesh coordinates by the specified value)</div>
 <div class="line">    -minimize_open_files [$val] (Close files after accessing them to avoid issues with too many open files.</div>
 <div class="line">        If argument is &#39;output&#39; then close output, if &#39;unit&#39; then close unit cells;</div>
 <div class="line">        if &#39;all&#39; or no argument close all.</div>
@@ -130,12 +136,12 @@ Execution</h1>
 <div class="line">         &#39;X&#39; or &#39;I&#39; for surface on maximum X coordinate, default name = `max_i`</div>
 <div class="line">         &#39;Y&#39; or &#39;J&#39; for surface on maximum Y coordinate, default name = `max_j`</div>
 <div class="line">         &#39;Z&#39; or &#39;K&#39; for surface on maximum Z coordinate, default name = `max_k`</div>
-<div class="line">         For example `xyXY` would generate sideset on min/max X and Y surfaces.)</div>
+<div class="line">         For example `xyXY` would generate sidesets on min/max X and Y surfaces.)</div>
 <div class="line">    -sideset_names &lt;$val&gt; (Specify names for one or more of the generated sidesets.</div>
 <div class="line">         Form is `axis:name,axis:name,...`</div>
 <div class="line">         where &#39;axis&#39; is one of &#39;ijkIJKxyzXYZ&#39;, and &#39;name&#39; is the name of the sideset.</div>
 <div class="line">         The default names are &#39;min_i&#39;, &#39;max_i&#39;, &#39;min_j&#39;, &#39;max_j&#39;, &#39;min_k&#39;, &#39;max_k&#39;.</div>
-<div class="line">         For example `x:left,X:right` would name the sidesets on the min x and max X faces &#39;left&#39; and &#39;right&#39;.)</div>
+<div class="line">         For example `x:left,X:right` would name the sideset on the min x face &#39;left&#39; and the max X face &#39;right&#39;.)</div>
 <div class="line"> </div>
 <div class="line">    -netcdf3 (Output database will be a netcdf3 native classical netcdf file format (32-bit only))</div>
 <div class="line">    -netcdf4 (Output database will be a netcdf4 hdf5-based file instead of the classical netcdf file format (default))</div>
