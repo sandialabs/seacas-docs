@@ -276,7 +276,7 @@ and their status.</p>
 interface to the Exodus library. Python 2 and 3 versions available.</p></li>
 <li><p><a class="reference external" href="../../exomerge.pdf">Exomerge Python Module:</a> ExoMerge.py, a
 lightweight python interface for manipulating Exodus files.  Python
-2 and 3 versions available.</p></li>
+2 and 3 versions available. <a class="reference external" href="../../exomerge.html">Exomerge API</a>.</p></li>
 </ul>
 </div>
 <div class="section" id="ioss-library">
@@ -304,13 +304,13 @@ is also helpful to have the doxygen-generated documentation for the
 .</p></li>
 <li><p><a class="reference external" href="../../Ioss-exodus-mapping.pdf">Ioss-exodus-mapping.pdf</a> describes
 how an Exodus model is mapped into the IOSS representation.</p></li>
-<li><p>A list of the properties that can be used to control the behavior of
-the IOSS library is at <a class="reference external" href="../../ioss_html/index.html#properties">Properties</a>.</p></li>
+<li><p><a class="reference external" href="../../ioss_html/index.html#properties">Properties</a> can be used to
+control the behavior of the IOSS library.</p></li>
 </ul>
 </div>
 <div class="section" id="supes-library">
 <h1>SUPES Library<a class="headerlink" href="#supes-library" title="Permalink to this headline">¶</a></h1>
-<p>The <cite>SUPES &lt;../../supes.pdf&gt;_</cite> library is a collection of subprograms
+<p>The <a class="reference external" href="../../supes.pdf">SUPES</a> library is a collection of subprograms
 which perform frequently used non-numerical services for the
 engineering applications programmer using FORTRAN-77. The three
 functional categories of SUPES are: (1) input command parsing, (2)
@@ -332,22 +332,22 @@ capability, please use the Exodus library instead.</p>
 <p>The <a class="reference external" href="../../Nemesis_Users_Guide.pdf">Nemesis</a> library is an
 enhancement to the Exodus finite element database model used to store
 and retrieve data for unstructured parallel finite element
-analyses. NEMESIS I adds data structures which facilitate the
+analyses. Nemesis adds data structures which facilitate the
 partitioning of a scalar (standard serial) Exodus file onto parallel
-disk systems found on many parallel computers. Since the NEMESIS I
+disk systems found on many parallel computers. Since the Nemesis
 application programming interface (API) can be used to append
 information to an existing Exodus database, any existing software that
-reads Exodus files can be used on files which contain NEMESIS I
-information. The NEMESIS I information is written and read via C or
-C++ callable functions which compromise the NEMESIS I API.</p>
+reads Exodus files can be used on files which contain Nemesis
+information. The Nemesis information is written and read via C or
+C++ callable functions which compromise the Nemesis API.</p>
 <ul class="simple">
 <li><p>All nemesis functions have been added to the exodus API. In most
 cases, the name of the exodus function is the same as the original
 nemesis function except that the leading <code class="docutils literal notranslate"><span class="pre">ne_</span></code> has been replaced
 with <code class="docutils literal notranslate"><span class="pre">ex_</span></code>. There are a few exceptions. See
-<a class="reference external" href="../../Nemesis-To-Exodus-API-Mapping.md">Nemesis-To-Exodus-API-Mapping.md</a> for a complete list of
+<a class="reference external" href="../../html/nemesis-mapping.html">Nemesis API Mapping</a> for a complete list of
 functions.</p></li>
-<li><p><a class="reference external" href="../../nemesis-to-exodus-api-mapping.md">Fortran to C Function Mapping</a></p></li>
+<li><p><a class="reference external" href="../../nemesis-fortran-api.html">Fortran to C Function Mapping</a></p></li>
 </ul>
 </div>
 <div class="section" id="chaco-library">
@@ -440,7 +440,7 @@ must be a structured mesh in a CGNS format file.</p>
 </div>
 <div class="section" id="conjoin">
 <h1>Conjoin<a class="headerlink" href="#conjoin" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../exo_util.pdf">Conjoin</a> joins two or more Exodus databases
+<p><a class="reference external" href="../../exo_util.pdf#page=36">Conjoin</a> joins two or more Exodus databases
 into a single database. The input databases should represent the same
 model geometry with similar variables. The output database will
 contain the model geometry and all of the non-temporally-overlapping
@@ -461,13 +461,14 @@ status variable. Replaces conex</p>
 </div>
 <div class="section" id="decomp">
 <h1>Decomp<a class="headerlink" href="#decomp" title="Permalink to this headline">¶</a></h1>
-<p>A script which calls nem_slice and nem_spread to decompose an Exodus
+<p>A script which calls <a class="reference external" href="../../nem_slice.pdf">nem_slice</a> and <a class="reference external" href="../../nem_spread.pdf">nem_spread</a> to decompose an Exodus
 database for use in a parallel application which uses a file-per-rank
-method for the input mesh database.</p>
+method for the input mesh database.  <a class="reference external" href="../../exo_util.pdf#page=24">EPU</a> can be used to recombine
+decomposed parallel files into a single database.</p>
 </div>
 <div class="section" id="ejoin">
 <h1>EJoin<a class="headerlink" href="#ejoin" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../exo_util.pdf">EJoin</a> is used to join two or more Exodus
+<p><a class="reference external" href="../../exo_util.pdf#page=32">EJoin</a> is used to join two or more Exodus
 databases into a single Exodus database. The input databases must have
 disjoint meta and bulk data. That is: element blocks are not combined
 in the output model. Each element block in each input file will
@@ -484,7 +485,7 @@ timesteps.</p>
 </div>
 <div class="section" id="epu">
 <h1>EPU<a class="headerlink" href="#epu" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../exo_util.pdf">EPU</a> combines multiple Exodus databases
+<p><a class="reference external" href="../../exo_util.pdf#page=24">EPU</a> combines multiple Exodus databases
 produced by a parallel application into a single Exodus
 database. Replaces nem_join.  One of the typical processes for
 performing parallel analyses with Exodus databases is to decompose the
@@ -524,7 +525,7 @@ library versions that the Exodus library was configured with.</p>
 </div>
 <div class="section" id="exodiff">
 <h1>Exodiff<a class="headerlink" href="#exodiff" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../exo_util.pdf">Exodiff</a> compares the results data from two
+<p><a class="reference external" href="../../exo_util.pdf#page=11">Exodiff</a> compares the results data from two
 Exodus databases. The databases should represent the same model, that
 is, the Ex odus meta data should be identical as should be the Exodus
 portion of the bulk data. The only differences should be in the values
@@ -607,7 +608,8 @@ in the two meshes that are closer than a specified distance can be
 combined The geometry of the mesh databases can be modified by
 scaling, offsetting, revolving, and mirroring. The combined meshes can
 be further modified by deleting, renaming, or combining material
-blocks, sideset identifications, or nodeset identifications.</p>
+blocks, sideset identifications, or nodeset identifications. <a class="reference external" href="../../exo_util.pdf#page=32">EJoin</a>
+is a newer application which has some of the capabilities of GJoin.</p>
 </div>
 <div class="section" id="grepos">
 <h1>Grepos<a class="headerlink" href="#grepos" title="Permalink to this headline">¶</a></h1>
@@ -703,7 +705,7 @@ results file using Matlab.</p>
 <h1>nem_join<a class="headerlink" href="#nem-join" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>nem_join is no longer maintained. Use <a class="reference external" href="../../exo_util.pdf">EPU</a> instead.</p>
+<p>nem_join is no longer maintained. Use <a class="reference external" href="../../exo_util.pdf#page=24">EPU</a> instead.</p>
 </div>
 </div>
 <div class="section" id="nem-slice">

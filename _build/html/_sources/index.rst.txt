@@ -102,7 +102,7 @@ Exodus Python Interfaces
 
 * `Exomerge Python Module: <../../exomerge.pdf>`_ ExoMerge.py, a
   lightweight python interface for manipulating Exodus files.  Python
-  2 and 3 versions available.
+  2 and 3 versions available. `Exomerge API <../../exomerge.html>`_.
   
 
 IOSS Library
@@ -134,14 +134,13 @@ what data is to be written.
 * `Ioss-exodus-mapping.pdf <../../Ioss-exodus-mapping.pdf>`_ describes
   how an Exodus model is mapped into the IOSS representation.
 
-* A list of the properties that can be used to control the behavior of
-  the IOSS library is at `Properties
-  <../../ioss_html/index.html#properties>`_.
+* `Properties <../../ioss_html/index.html#properties>`_ can be used to
+  control the behavior of the IOSS library.
 
 SUPES Library
 -------------
 
-The `SUPES <../../supes.pdf>_` library is a collection of subprograms
+The `SUPES <../../supes.pdf>`_ library is a collection of subprograms
 which perform frequently used non-numerical services for the
 engineering applications programmer using FORTRAN-77. The three
 functional categories of SUPES are: (1) input command parsing, (2)
@@ -162,24 +161,23 @@ Nemesis Library
 The `Nemesis <../../Nemesis_Users_Guide.pdf>`_ library is an
 enhancement to the Exodus finite element database model used to store
 and retrieve data for unstructured parallel finite element
-analyses. NEMESIS I adds data structures which facilitate the
+analyses. Nemesis adds data structures which facilitate the
 partitioning of a scalar (standard serial) Exodus file onto parallel
-disk systems found on many parallel computers. Since the NEMESIS I
+disk systems found on many parallel computers. Since the Nemesis
 application programming interface (API) can be used to append
 information to an existing Exodus database, any existing software that
-reads Exodus files can be used on files which contain NEMESIS I
-information. The NEMESIS I information is written and read via C or
-C++ callable functions which compromise the NEMESIS I API.
+reads Exodus files can be used on files which contain Nemesis
+information. The Nemesis information is written and read via C or
+C++ callable functions which compromise the Nemesis API.
 
 * All nemesis functions have been added to the exodus API. In most
   cases, the name of the exodus function is the same as the original
   nemesis function except that the leading ``ne_`` has been replaced
   with ``ex_``. There are a few exceptions. See
-  `Nemesis-To-Exodus-API-Mapping.md
-  <../../Nemesis-To-Exodus-API-Mapping.md>`_ for a complete list of
+  `Nemesis API Mapping`_ for a complete list of
   functions.
 
-* `Fortran to C Function Mapping <../../nemesis-to-exodus-api-mapping.md>`_
+* `Fortran to C Function Mapping <../../nemesis-fortran-api.html>`_
 
 Chaco Library
 -------------
@@ -272,7 +270,7 @@ must be a structured mesh in a CGNS format file.
 Conjoin
 -------
 
-`Conjoin <../../exo_util.pdf>`_ joins two or more Exodus databases
+`Conjoin <../../exo_util.pdf#page=36>`_ joins two or more Exodus databases
 into a single database. The input databases should represent the same
 model geometry with similar variables. The output database will
 contain the model geometry and all of the non-temporally-overlapping
@@ -294,14 +292,15 @@ status variable. Replaces conex
 Decomp
 ------
 
-A script which calls nem_slice and nem_spread to decompose an Exodus
+A script which calls `nem_slice`_ and `nem_spread`_ to decompose an Exodus
 database for use in a parallel application which uses a file-per-rank
-method for the input mesh database.
+method for the input mesh database.  `EPU`_ can be used to recombine
+decomposed parallel files into a single database.
 
 EJoin
 -----
 
-`EJoin <../../exo_util.pdf>`_ is used to join two or more Exodus
+`EJoin <../../exo_util.pdf#page=32>`_ is used to join two or more Exodus
 databases into a single Exodus database. The input databases must have
 disjoint meta and bulk data. That is: element blocks are not combined
 in the output model. Each element block in each input file will
@@ -319,7 +318,7 @@ timesteps.
 EPU
 ---
 
-`EPU <../../exo_util.pdf>`_ combines multiple Exodus databases
+`EPU <../../exo_util.pdf#page=24>`_ combines multiple Exodus databases
 produced by a parallel application into a single Exodus
 database. Replaces nem_join.  One of the typical processes for
 performing parallel analyses with Exodus databases is to decompose the
@@ -365,7 +364,7 @@ Exo2Mat	See `Mat2Exo`_ documentation.
 Exodiff
 -------
 
-`Exodiff <../../exo_util.pdf>`_ compares the results data from two
+`Exodiff <../../exo_util.pdf#page=11>`_ compares the results data from two
 Exodus databases. The databases should represent the same model, that
 is, the Ex odus meta data should be identical as should be the Exodus
 portion of the bulk data. The only differences should be in the values
@@ -455,7 +454,8 @@ in the two meshes that are closer than a specified distance can be
 combined The geometry of the mesh databases can be modified by
 scaling, offsetting, revolving, and mirroring. The combined meshes can
 be further modified by deleting, renaming, or combining material
-blocks, sideset identifications, or nodeset identifications.
+blocks, sideset identifications, or nodeset identifications. `EJoin`_
+is a newer application which has some of the capabilities of GJoin.
 
 Grepos
 ------
