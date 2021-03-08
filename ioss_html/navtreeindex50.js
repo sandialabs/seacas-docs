@@ -1,5 +1,8 @@
 var NAVTREEINDEX50 =
 {
+"structdetail_1_1dragonbox_1_1decimal__fp.html":[4,0,74,0,6],
+"structdetail_1_1dragonbox_1_1decimal__fp.html#a77c491ed8ef6cc88d11a9eaa41d43a2d":[4,0,74,0,6,1],
+"structdetail_1_1dragonbox_1_1decimal__fp.html#a9a1a44ded7f0233dfa196d8b1c101e0e":[4,0,74,0,6,2],
 "structdetail_1_1dragonbox_1_1decimal__fp.html#ac76d233464776427ee705d60eb1a5d9b":[4,0,74,0,6,0],
 "structdetail_1_1dragonbox_1_1float__info.html":[4,0,74,0,3],
 "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html":[4,0,74,0,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX50 =
 "structdetail_1_1uint128__wrapper.html#afca94724679c2d66008ed94b49f24963":[4,0,74,72,6],
 "structdetail_1_1unformattable.html":[4,0,74,45],
 "structdetail_1_1view.html":[4,0,74,33],
-"structdetail_1_1void__t__impl.html":[4,0,74,47],
-"structdetail_1_1void__t__impl.html#a0fd7f5c270cbf220d3894ac0c0d33204":[4,0,74,47,0],
-"structdetail_1_1width__adapter.html":[4,0,74,104],
-"structdetail_1_1width__adapter.html#a0d57a59f95b3ff826dea60cd69925de1":[4,0,74,104,0]
+"structdetail_1_1void__t__impl.html":[4,0,74,47]
 };

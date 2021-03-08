@@ -146,6 +146,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a665bc42f59768e7c3bb093a36671006a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#a665bc42f59768e7c3bb093a36671006a">usage</a> (const char *str)</td></tr>
 <tr class="memdesc:a665bc42f59768e7c3bb093a36671006a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the program usage string.  <a href="classIoss_1_1GetLongOption.html#a665bc42f59768e7c3bb093a36671006a">More...</a><br /></td></tr>
 <tr class="separator:a665bc42f59768e7c3bb093a36671006a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94bcebfc054d6377ed5c8a8e1f3209c"><td class="memTemplParams" colspan="2">template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt;::value, INT &gt;::type *  = nullptr&gt; </td></tr>
+<tr class="memitem:ab94bcebfc054d6377ed5c8a8e1f3209c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#ab94bcebfc054d6377ed5c8a8e1f3209c">get_option_value</a> (const char *option_txt, <a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a> default_value)</td></tr>
+<tr class="separator:ab94bcebfc054d6377ed5c8a8e1f3209c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memTemplParams" colspan="2">template&lt;class DBL , typename std::enable_if&lt; std::is_floating_point&lt; DBL &gt;::value, DBL &gt;::type *  = nullptr&gt; </td></tr>
+<tr class="memitem:a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memTemplItemLeft" align="right" valign="top">DBL&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#a1f736fe56c6d3f7ed90e104e111a8c79">get_option_value</a> (const char *option_txt, DBL default_value)</td></tr>
+<tr class="separator:a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa795da1529976ccf4a1dde0a1d3a62e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#aa795da1529976ccf4a1dde0a1d3a62e0">get_option_value</a> (const char *option_txt, const std::string &amp;default_value)</td></tr>
+<tr class="separator:aa795da1529976ccf4a1dde0a1d3a62e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -351,6 +359,118 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if successful, 0 if unsuccessful. </dd></dl>
+
+</div>
+</div>
+<a id="aa795da1529976ccf4a1dde0a1d3a62e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa795da1529976ccf4a1dde0a1d3a62e0">&#9670;&nbsp;</a></span>get_option_value() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ioss::GetLongOption::get_option_value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>option_txt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>default_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f736fe56c6d3f7ed90e104e111a8c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f736fe56c6d3f7ed90e104e111a8c79">&#9670;&nbsp;</a></span>get_option_value() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DBL , typename std::enable_if&lt; std::is_floating_point&lt; DBL &gt;::value, DBL &gt;::type *  = nullptr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBL Ioss::GetLongOption::get_option_value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>option_txt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DBL&#160;</td>
+          <td class="paramname"><em>default_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab94bcebfc054d6377ed5c8a8e1f3209c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94bcebfc054d6377ed5c8a8e1f3209c">&#9670;&nbsp;</a></span>get_option_value() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt;::value, INT &gt;::type *  = nullptr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a> Ioss::GetLongOption::get_option_value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>option_txt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a>&#160;</td>
+          <td class="paramname"><em>default_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

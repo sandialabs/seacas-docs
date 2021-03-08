@@ -1,5 +1,8 @@
 var NAVTREEINDEX51 =
 {
+"structdetail_1_1void__t__impl.html#a0fd7f5c270cbf220d3894ac0c0d33204":[4,0,74,47,0],
+"structdetail_1_1width__adapter.html":[4,0,74,104],
+"structdetail_1_1width__adapter.html#a0d57a59f95b3ff826dea60cd69925de1":[4,0,74,104,0],
 "structdetail_1_1width__adapter.html#a24f303e0f6aa67576609c4771919c27f":[4,0,74,104,1],
 "structdetail_1_1width__adapter.html#a320ff7cceb2202ffda7c97ed3c423a27":[4,0,74,104,5],
 "structdetail_1_1width__adapter.html#a8e374f042abe43de534afdb3d16d44a0":[4,0,74,104,4],
