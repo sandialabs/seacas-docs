@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classIoss_1_1Field.html',''); initResi
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classIoss_1_1Field-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -155,6 +156,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8781ebef4b9f7aee0a4d4066a2dac25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a655e9f7152caed0e4c31530eb68b822b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a655e9f7152caed0e4c31530eb68b822b">operator&lt;</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;other) const</td></tr>
 <tr class="separator:a655e9f7152caed0e4c31530eb68b822b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d48f6aa0656ce9cffa12e8096b584b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a9d48f6aa0656ce9cffa12e8096b584b1">operator==</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> rhs) const</td></tr>
+<tr class="separator:a9d48f6aa0656ce9cffa12e8096b584b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4e7e40d01a8249304d025a89f6ccfa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a6c4e7e40d01a8249304d025a89f6ccfa">operator!=</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> rhs) const</td></tr>
+<tr class="separator:a6c4e7e40d01a8249304d025a89f6ccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c42dc543cf1aed21afcd9e0bf6090aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a2c42dc543cf1aed21afcd9e0bf6090aa">equal</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> rhs) const</td></tr>
+<tr class="separator:a2c42dc543cf1aed21afcd9e0bf6090aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03126497f47def1d1a657a02b8e9af7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a03126497f47def1d1a657a02b8e9af7d">~Field</a> ()</td></tr>
 <tr class="separator:a03126497f47def1d1a657a02b8e9af7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e948e240fb41b70a41dadad43fca52c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a3e948e240fb41b70a41dadad43fca52c">is_valid</a> () const</td></tr>
@@ -218,6 +225,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:abd8d84f11b25f72329564c50ff13ee00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a720a7203a77ea23808a1776b39300ee0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIoss_1_1Field.html#a43f29f9ba05cb45ed893455c76526c3e">Ioss::Field::BasicType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a720a7203a77ea23808a1776b39300ee0">get_field_type</a> (const std::string &amp;)</td></tr>
 <tr class="separator:a720a7203a77ea23808a1776b39300ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a43922a12fd0d30c474214e55ce75f178"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a43922a12fd0d30c474214e55ce75f178">equal_</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> rhs, bool quiet) const</td></tr>
+<tr class="separator:a43922a12fd0d30c474214e55ce75f178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -607,6 +619,60 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c42dc543cf1aed21afcd9e0bf6090aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c42dc543cf1aed21afcd9e0bf6090aa">&#9670;&nbsp;</a></span>equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::Field::equal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a>&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43922a12fd0d30c474214e55ce75f178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43922a12fd0d30c474214e55ce75f178">&#9670;&nbsp;</a></span>equal_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::Field::equal_ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a>&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>quiet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1043,6 +1109,24 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6c4e7e40d01a8249304d025a89f6ccfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4e7e40d01a8249304d025a89f6ccfa">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::Field::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a>&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a655e9f7152caed0e4c31530eb68b822b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a655e9f7152caed0e4c31530eb68b822b">&#9670;&nbsp;</a></span>operator&lt;()</h2>
 
@@ -1083,6 +1167,24 @@ Private Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d48f6aa0656ce9cffa12e8096b584b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d48f6aa0656ce9cffa12e8096b584b1">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::Field::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a>&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

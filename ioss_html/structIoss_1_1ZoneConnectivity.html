@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('structIoss_1_1ZoneConnectivity.html','
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="structIoss_1_1ZoneConnectivity-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -120,6 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:add4d3bbf265f6801644e9ee6a5fb2eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c5d5830acdf51cd180f50c2426fac29"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1ZoneConnectivity.html#a8c5d5830acdf51cd180f50c2426fac29">get_range</a> (int ordinal) const</td></tr>
 <tr class="separator:a8c5d5830acdf51cd180f50c2426fac29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77761855b0a38d38f90bee8c783d8b26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1ZoneConnectivity.html#a77761855b0a38d38f90bee8c783d8b26">operator==</a> (const <a class="el" href="structIoss_1_1ZoneConnectivity.html">Ioss::ZoneConnectivity</a> &amp;rhs) const</td></tr>
+<tr class="separator:a77761855b0a38d38f90bee8c783d8b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78c56a3d64b39c9a6b9e2f60f02e30b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1ZoneConnectivity.html#ab78c56a3d64b39c9a6b9e2f60f02e30b">operator!=</a> (const <a class="el" href="structIoss_1_1ZoneConnectivity.html">Ioss::ZoneConnectivity</a> &amp;rhs) const</td></tr>
+<tr class="separator:ab78c56a3d64b39c9a6b9e2f60f02e30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec50a371b8ada4ab9be4d84bb9647b85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1ZoneConnectivity.html#aec50a371b8ada4ab9be4d84bb9647b85">equal</a> (const <a class="el" href="structIoss_1_1ZoneConnectivity.html">Ioss::ZoneConnectivity</a> &amp;rhs) const</td></tr>
+<tr class="separator:aec50a371b8ada4ab9be4d84bb9647b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45ea276c70784d7ceae546f4d3cb6355"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1ZoneConnectivity.html#a45ea276c70784d7ceae546f4d3cb6355">is_from_decomp</a> () const</td></tr>
 <tr class="separator:a45ea276c70784d7ceae546f4d3cb6355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2558d8a65d4dcd2871bb00632a2d0ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1ZoneConnectivity.html#ac2558d8a65d4dcd2871bb00632a2d0ed">is_active</a> () const</td></tr>
@@ -168,6 +175,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aeb21d79f1abc0adfdb492c4281228f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98bb413ed2634d244ba99f070dc85110"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1ZoneConnectivity.html#a98bb413ed2634d244ba99f070dc85110">m_isActive</a> {true}</td></tr>
 <tr class="separator:a98bb413ed2634d244ba99f070dc85110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae617f35684b312fd3417eea04efe43e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1ZoneConnectivity.html#ae617f35684b312fd3417eea04efe43e0">equal_</a> (const <a class="el" href="structIoss_1_1ZoneConnectivity.html">Ioss::ZoneConnectivity</a> &amp;rhs, bool quiet) const</td></tr>
+<tr class="separator:ae617f35684b312fd3417eea04efe43e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -407,6 +419,60 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aec50a371b8ada4ab9be4d84bb9647b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec50a371b8ada4ab9be4d84bb9647b85">&#9670;&nbsp;</a></span>equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::ZoneConnectivity::equal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structIoss_1_1ZoneConnectivity.html">Ioss::ZoneConnectivity</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae617f35684b312fd3417eea04efe43e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae617f35684b312fd3417eea04efe43e0">&#9670;&nbsp;</a></span>equal_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::ZoneConnectivity::equal_ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structIoss_1_1ZoneConnectivity.html">Ioss::ZoneConnectivity</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>quiet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8c5d5830acdf51cd180f50c2426fac29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c5d5830acdf51cd180f50c2426fac29">&#9670;&nbsp;</a></span>get_range()</h2>
 
@@ -545,6 +611,42 @@ Friends</h2></td></tr>
           <td class="memname">bool Ioss::ZoneConnectivity::is_valid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab78c56a3d64b39c9a6b9e2f60f02e30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab78c56a3d64b39c9a6b9e2f60f02e30b">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::ZoneConnectivity::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structIoss_1_1ZoneConnectivity.html">Ioss::ZoneConnectivity</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77761855b0a38d38f90bee8c783d8b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77761855b0a38d38f90bee8c783d8b26">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::ZoneConnectivity::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structIoss_1_1ZoneConnectivity.html">Ioss::ZoneConnectivity</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>

@@ -126,6 +126,7 @@ var hierarchy =
     [ "detail::color_type::color_union", "uniondetail_1_1color__type_1_1color__union.html", null ],
     [ "Ioex::CommunicationMap", "structIoex_1_1CommunicationMap.html", null ],
     [ "Ioex::CommunicationMetaData", "structIoex_1_1CommunicationMetaData.html", null ],
+    [ "Ioss::Compare", "classIoss_1_1Compare.html", null ],
     [ "compile_string", "structcompile__string.html", null ],
     [ "detail::compiled_string", "classdetail_1_1compiled__string.html", null ],
     [ "detail::conditional_helper< Ts >", "structdetail_1_1conditional__helper.html", null ],

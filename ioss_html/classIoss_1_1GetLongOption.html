@@ -132,9 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd48b75e881d25887e642c290859cc06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#afd48b75e881d25887e642c290859cc06">parse</a> (char *str, char *p)</td></tr>
 <tr class="memdesc:afd48b75e881d25887e642c290859cc06"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse an argument string.  <a href="classIoss_1_1GetLongOption.html#afd48b75e881d25887e642c290859cc06">More...</a><br /></td></tr>
 <tr class="separator:afd48b75e881d25887e642c290859cc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bc75ebaa8a2bd1773e2ddd97266a032"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#a9bc75ebaa8a2bd1773e2ddd97266a032">enroll</a> (const char *opt, <a class="el" href="classIoss_1_1GetLongOption.html#a700d115b1f5dfc0a52f00060ab324246">OptType</a> t, const char *desc, const char *val, const char *optval=nullptr, bool extra_line=false)</td></tr>
-<tr class="memdesc:a9bc75ebaa8a2bd1773e2ddd97266a032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enroll a command line option into the database.  <a href="classIoss_1_1GetLongOption.html#a9bc75ebaa8a2bd1773e2ddd97266a032">More...</a><br /></td></tr>
-<tr class="separator:a9bc75ebaa8a2bd1773e2ddd97266a032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551fd1f805a2651784885194df3a82de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#a551fd1f805a2651784885194df3a82de">enroll</a> (const char *opt, <a class="el" href="classIoss_1_1GetLongOption.html#a700d115b1f5dfc0a52f00060ab324246">OptType</a> t, const char *desc, const char *val, const char *optval=nullptr, bool extra_line=false)</td></tr>
+<tr class="memdesc:a551fd1f805a2651784885194df3a82de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enroll a command line option into the database.  <a href="classIoss_1_1GetLongOption.html#a551fd1f805a2651784885194df3a82de">More...</a><br /></td></tr>
+<tr class="separator:a551fd1f805a2651784885194df3a82de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63bc8e3bcc4cb7425d3a0c577265fbf"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#ae63bc8e3bcc4cb7425d3a0c577265fbf">retrieve</a> (const char *opt) const</td></tr>
 <tr class="memdesc:ae63bc8e3bcc4cb7425d3a0c577265fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a command line option object.  <a href="classIoss_1_1GetLongOption.html#ae63bc8e3bcc4cb7425d3a0c577265fbf">More...</a><br /></td></tr>
 <tr class="separator:ae63bc8e3bcc4cb7425d3a0c577265fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,10 +176,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a400fe686a4c7a158dfac581026e03ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab139861e8f18db003a4cd9e2d2fa298a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIoss_1_1GetLongOption_1_1Cell.html">Cell</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#ab139861e8f18db003a4cd9e2d2fa298a">last</a> {nullptr}</td></tr>
 <tr class="separator:ab139861e8f18db003a4cd9e2d2fa298a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6a9857687dd9ae99b0fce46e37b66f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#aeb6a9857687dd9ae99b0fce46e37b66f">enroll_done</a> {0}</td></tr>
-<tr class="separator:aeb6a9857687dd9ae99b0fce46e37b66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00b64818ceb6e5bc9a47815a36792a51"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#a00b64818ceb6e5bc9a47815a36792a51">optmarker</a></td></tr>
 <tr class="separator:a00b64818ceb6e5bc9a47815a36792a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb8d4df1356aeb6c0c29c40f1c4ce06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#a8eb8d4df1356aeb6c0c29c40f1c4ce06">options_parsed</a> {false}</td></tr>
+<tr class="separator:a8eb8d4df1356aeb6c0c29c40f1c4ce06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A database of program command line and environment variable options and methods for manipulating them. </p>
@@ -296,14 +296,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9bc75ebaa8a2bd1773e2ddd97266a032"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bc75ebaa8a2bd1773e2ddd97266a032">&#9670;&nbsp;</a></span>enroll()</h2>
+<a id="a551fd1f805a2651784885194df3a82de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a551fd1f805a2651784885194df3a82de">&#9670;&nbsp;</a></span>enroll()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Ioss::GetLongOption::enroll </td>
+          <td class="memname">bool Ioss::GetLongOption::enroll </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>opt</em>, </td>
@@ -705,28 +705,6 @@ template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aeb6a9857687dd9ae99b0fce46e37b66f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb6a9857687dd9ae99b0fce46e37b66f">&#9670;&nbsp;</a></span>enroll_done</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Ioss::GetLongOption::enroll_done {0}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab139861e8f18db003a4cd9e2d2fa298a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab139861e8f18db003a4cd9e2d2fa298a">&#9670;&nbsp;</a></span>last</h2>
 
@@ -738,6 +716,28 @@ template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structIoss_1_1GetLongOption_1_1Cell.html">Cell</a>* Ioss::GetLongOption::last {nullptr}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8eb8d4df1356aeb6c0c29c40f1c4ce06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb8d4df1356aeb6c0c29c40f1c4ce06">&#9670;&nbsp;</a></span>options_parsed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::GetLongOption::options_parsed {false}</td>
         </tr>
       </table>
   </td>

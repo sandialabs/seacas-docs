@@ -13,6 +13,7 @@ var namespaceIoss =
     [ "Blob", "classIoss_1_1Blob.html", "classIoss_1_1Blob" ],
     [ "AxisAlignedBoundingBox", "structIoss_1_1AxisAlignedBoundingBox.html", "structIoss_1_1AxisAlignedBoundingBox" ],
     [ "CommSet", "classIoss_1_1CommSet.html", "classIoss_1_1CommSet" ],
+    [ "Compare", "classIoss_1_1Compare.html", "classIoss_1_1Compare" ],
     [ "CompositeVariableType", "classIoss_1_1CompositeVariableType.html", "classIoss_1_1CompositeVariableType" ],
     [ "StorageInitializer", "classIoss_1_1StorageInitializer.html", "classIoss_1_1StorageInitializer" ],
     [ "Invalid_Storage", "classIoss_1_1Invalid__Storage.html", "classIoss_1_1Invalid__Storage" ],

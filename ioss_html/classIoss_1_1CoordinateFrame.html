@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classIoss_1_1CoordinateFrame.html','')
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classIoss_1_1CoordinateFrame-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -109,6 +110,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aec3f843cefcf71d9733bd5537c335b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cc5381b30c3e38178f0f7903d79edba"><td class="memItemLeft" align="right" valign="top">const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1CoordinateFrame.html#a2cc5381b30c3e38178f0f7903d79edba">plane_1_3_point</a> () const</td></tr>
 <tr class="separator:a2cc5381b30c3e38178f0f7903d79edba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89cf2c7049ccc99aa24cdea7dd64d62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1CoordinateFrame.html#ae89cf2c7049ccc99aa24cdea7dd64d62">operator!=</a> (const <a class="el" href="classIoss_1_1CoordinateFrame.html">Ioss::CoordinateFrame</a> &amp;rhs) const</td></tr>
+<tr class="separator:ae89cf2c7049ccc99aa24cdea7dd64d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5e03e3a2c170854b70605d016a9d78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1CoordinateFrame.html#a4e5e03e3a2c170854b70605d016a9d78">operator==</a> (const <a class="el" href="classIoss_1_1CoordinateFrame.html">Ioss::CoordinateFrame</a> &amp;rhs) const</td></tr>
+<tr class="separator:a4e5e03e3a2c170854b70605d016a9d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60870ab76692c833b8f4db0cce8b9128"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1CoordinateFrame.html#a60870ab76692c833b8f4db0cce8b9128">equal</a> (const <a class="el" href="classIoss_1_1CoordinateFrame.html">Ioss::CoordinateFrame</a> &amp;rhs) const</td></tr>
+<tr class="separator:a60870ab76692c833b8f4db0cce8b9128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5b74e437be87061caf40d0828709afbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1CoordinateFrame.html#a5b74e437be87061caf40d0828709afbf">equal_</a> (const <a class="el" href="classIoss_1_1CoordinateFrame.html">Ioss::CoordinateFrame</a> &amp;rhs, bool quiet) const</td></tr>
+<tr class="separator:a5b74e437be87061caf40d0828709afbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -189,6 +201,60 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a60870ab76692c833b8f4db0cce8b9128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60870ab76692c833b8f4db0cce8b9128">&#9670;&nbsp;</a></span>equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::CoordinateFrame::equal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1CoordinateFrame.html">Ioss::CoordinateFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b74e437be87061caf40d0828709afbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b74e437be87061caf40d0828709afbf">&#9670;&nbsp;</a></span>equal_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::CoordinateFrame::equal_ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1CoordinateFrame.html">Ioss::CoordinateFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>quiet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a903ea7fe08e818ebd1485ac198f900db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a903ea7fe08e818ebd1485ac198f900db">&#9670;&nbsp;</a></span>id()</h2>
 
@@ -199,6 +265,42 @@ Private Attributes</h2></td></tr>
           <td class="memname">int64_t Ioss::CoordinateFrame::id </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae89cf2c7049ccc99aa24cdea7dd64d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89cf2c7049ccc99aa24cdea7dd64d62">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::CoordinateFrame::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1CoordinateFrame.html">Ioss::CoordinateFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e5e03e3a2c170854b70605d016a9d78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5e03e3a2c170854b70605d016a9d78">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::CoordinateFrame::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1CoordinateFrame.html">Ioss::CoordinateFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>

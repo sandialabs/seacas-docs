@@ -56,6 +56,10 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Ioss_CommSet.h", "Ioss__CommSet_8h.html", [
       [ "CommSet", "classIoss_1_1CommSet.html", "classIoss_1_1CommSet" ]
     ] ],
+    [ "Ioss_Compare.C", "Ioss__Compare_8C.html", "Ioss__Compare_8C" ],
+    [ "Ioss_Compare.h", "Ioss__Compare_8h.html", [
+      [ "Compare", "classIoss_1_1Compare.html", "classIoss_1_1Compare" ]
+    ] ],
     [ "Ioss_CompositeVariableType.C", "Ioss__CompositeVariableType_8C.html", null ],
     [ "Ioss_CompositeVariableType.h", "Ioss__CompositeVariableType_8h.html", [
       [ "CompositeVariableType", "classIoss_1_1CompositeVariableType.html", "classIoss_1_1CompositeVariableType" ]
