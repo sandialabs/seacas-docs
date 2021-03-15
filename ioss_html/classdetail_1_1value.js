@@ -1,8 +1,8 @@
 var classdetail_1_1value =
 [
     [ "char_type", "classdetail_1_1value.html#adc382088ef57b6cbcd378c1569e92248", null ],
-    [ "value", "classdetail_1_1value.html#a505b117dac9ba85ec67e5b6f08e39a4e", null ],
-    [ "value", "classdetail_1_1value.html#a6a0a88dd7b211b22dee5863d2438406b", null ],
+    [ "value", "classdetail_1_1value.html#a17352b8487f7596a68c1bdc7de2368cb", null ],
+    [ "value", "classdetail_1_1value.html#a6a5c1b32030fb6aea878cdc74f77bca6", null ],
     [ "value", "classdetail_1_1value.html#a7cae3e113bf59eac824c75cbeb7caea1", null ],
     [ "value", "classdetail_1_1value.html#a0e9aa6aaf95b6b1dc5826828d634fb09", null ],
     [ "value", "classdetail_1_1value.html#a6553f6ed653b670a3bace4c3dcd78d11", null ],
