@@ -12,6 +12,7 @@ var structIoex_1_1ElemBlock =
     [ "elType", "structIoex_1_1ElemBlock.html#a3e81e5c767d8045af838545eb79b4f0e", null ],
     [ "entityCount", "structIoex_1_1ElemBlock.html#a34268834cf4cd7cab70c5f4153bcbab0", null ],
     [ "facesPerEntity", "structIoex_1_1ElemBlock.html#a499b756c945d68de7f4b25101a79baee", null ],
+    [ "globalEntityCount", "structIoex_1_1ElemBlock.html#a580cd8c7215051efd4a56a4961db3b32", null ],
     [ "id", "structIoex_1_1ElemBlock.html#abbb4e01a51c6e2b485942b96e3e3b414", null ],
     [ "name", "structIoex_1_1ElemBlock.html#a762bbfe0c1a53aca461f46a22a37c64b", null ],
     [ "nodesPerEntity", "structIoex_1_1ElemBlock.html#aa00e0572fbf823a5fc50b4c06ff64303", null ],

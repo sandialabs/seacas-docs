@@ -1,5 +1,11 @@
 var NAVTREEINDEX51 =
 {
+"structdetail_1_1format__part.html#aab5c7cff42be7e0c63fc3505a8dd2e19":[4,0,74,9,5],
+"structdetail_1_1format__part.html#ad3ee70c5f808c74ee911bb336274e807":[4,0,74,9,4],
+"structdetail_1_1format__part.html#ada5eb9ce75fcd6e5a04d3a09aac8f8d4":[4,0,74,9,2],
+"structdetail_1_1format__part.html#ada5eb9ce75fcd6e5a04d3a09aac8f8d4a1cb251ec0d568de6a929b520c4aed8d1":[4,0,74,9,2,2],
+"structdetail_1_1format__part.html#ada5eb9ce75fcd6e5a04d3a09aac8f8d4a4c449eecc8bd15774c44597dc02769f0":[4,0,74,9,2,0],
+"structdetail_1_1format__part.html#ada5eb9ce75fcd6e5a04d3a09aac8f8d4ab34fe950850d345156fa313fba35e5cf":[4,0,74,9,2,1],
 "structdetail_1_1format__part.html#ada5eb9ce75fcd6e5a04d3a09aac8f8d4af5300127f646a4550bc4a04fbe393e79":[4,0,74,9,2,3],
 "structdetail_1_1format__part.html#afb72d89f9f25a66aa269273f60dc0871":[4,0,74,9,6],
 "structdetail_1_1format__part_1_1replacement.html":[4,0,74,9,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX51 =
 "structformatting__tuple.html#afe0ff5245dd3f9b567e55b9dd724dba9":[4,0,133,0],
 "structis__char.html":[4,0,134],
 "structis__char_3_01char16__t_01_4.html":[4,0,136],
-"structis__char_3_01char32__t_01_4.html":[4,0,137],
-"structis__char_3_01char_01_4.html":[4,0,135],
-"structis__char_3_01detail_1_1char8__type_01_4.html":[4,0,138],
-"structis__char_3_01wchar__t_01_4.html":[4,0,139],
-"structis__compile__string.html":[4,0,140],
-"structis__contiguous.html":[4,0,141],
-"structis__contiguous_3_01basic__memory__buffer_3_01T_00_01SIZE_00_01Allocator_01_4_01_4.html":[4,0,142]
+"structis__char_3_01char32__t_01_4.html":[4,0,137]
 };

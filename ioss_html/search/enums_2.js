@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['char8_5ftype_9665',['char8_type',['../namespacedetail.html#af2d1c9abcf61fc5c29bb85fdbd0c0153',1,'detail']]],
-  ['color_9666',['color',['../color_8h.html#a80d1dc5f416b97f92939a4166d41203c',1,'color.h']]]
+  ['char8_5ftype_9663',['char8_type',['../namespacedetail.html#af2d1c9abcf61fc5c29bb85fdbd0c0153',1,'detail']]],
+  ['color_9664',['color',['../color_8h.html#a80d1dc5f416b97f92939a4166d41203c',1,'color.h']]]
 ];

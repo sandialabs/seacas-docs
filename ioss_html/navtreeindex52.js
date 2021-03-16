@@ -1,5 +1,11 @@
 var NAVTREEINDEX52 =
 {
+"structis__char_3_01char_01_4.html":[4,0,135],
+"structis__char_3_01detail_1_1char8__type_01_4.html":[4,0,138],
+"structis__char_3_01wchar__t_01_4.html":[4,0,139],
+"structis__compile__string.html":[4,0,140],
+"structis__contiguous.html":[4,0,141],
+"structis__contiguous_3_01basic__memory__buffer_3_01T_00_01SIZE_00_01Allocator_01_4_01_4.html":[4,0,142],
 "structis__contiguous_3_01std_1_1basic__string_3_01Char_01_4_01_4.html":[4,0,143],
 "structis__range.html":[4,0,144],
 "structis__range.html#a7fb8ce1b27032b372bb59ad66e8ae11a":[4,0,144,0],

@@ -101,7 +101,8 @@ var namespaces_dup =
       [ "get_type", "namespaceanonymous__namespace_02Ioex__Internals_8C_03.html#a584658147dc76be7d85c531a8ef9e6e4", null ],
       [ "output_names", "namespaceanonymous__namespace_02Ioex__Internals_8C_03.html#a96588464f4001bb15ac2ad8ed3efb160", null ],
       [ "put_id_array", "namespaceanonymous__namespace_02Ioex__Internals_8C_03.html#a97c399d159544979f324e07bd2f173b5", null ],
-      [ "put_int_array", "namespaceanonymous__namespace_02Ioex__Internals_8C_03.html#ab12673581d25b84f67be8eaa9149497f", null ]
+      [ "put_int_array", "namespaceanonymous__namespace_02Ioex__Internals_8C_03.html#ab12673581d25b84f67be8eaa9149497f", null ],
+      [ "put_int_array", "namespaceanonymous__namespace_02Ioex__Internals_8C_03.html#a08b5e6d6387100bd4fb724c98cf65224", null ]
     ] ],
     [ "anonymous_namespace{Ioex_SuperElement.C}", "namespaceanonymous__namespace_02Ioex__SuperElement_8C_03.html", [
       [ "nc_get_array", "namespaceanonymous__namespace_02Ioex__SuperElement_8C_03.html#ac2f2efee2cd00ece464e9cc657359648", null ],

@@ -13,7 +13,7 @@ var classIOShell_1_1Interface =
     [ "compression_level", "classIOShell_1_1Interface.html#a9485b29e8885ea8d21fbec90569b0b5c", null ],
     [ "data_storage_type", "classIOShell_1_1Interface.html#ad4030d7390f503e14fea0baae7a41bdb", null ],
     [ "debug", "classIOShell_1_1Interface.html#aca48d73739f4fc9c6fc6524784e773d2", null ],
-    [ "decomp_map", "classIOShell_1_1Interface.html#aeaf4ac67b09ce46cd985754e1b353102", null ],
+    [ "decomp_extra", "classIOShell_1_1Interface.html#ad45ca8d0172e791d2928bdf6ef64c228", null ],
     [ "decomp_method", "classIOShell_1_1Interface.html#a814d5360635bb26392a21c0a99a6c4df", null ],
     [ "delete_timesteps", "classIOShell_1_1Interface.html#a14b0660c39361257f0c2c80d9fc07b71", null ],
     [ "disable_field_recognition", "classIOShell_1_1Interface.html#aee414edb0a06902e5662b923a30b0a42", null ],

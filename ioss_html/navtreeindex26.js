@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"classScopeGuardImpl0.html#a3cb5a537b9b12b7e2016568893de063f":[4,0,154,1],
+"classScopeGuardImpl0.html#a3ed91c8e48b841c914fceaff09cb591b":[4,0,154,2],
 "classScopeGuardImpl0.html#a4afe9530fdaafed1af655aac1b48f54c":[4,0,154,3],
 "classScopeGuardImpl0.html#a628fe367cb33d120852ce8e47d64fe1d":[4,0,154,0],
 "classScopeGuardImpl0.html#ae1cf9e0d04f5cdb244852c92db529178":[4,0,154,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "classbasic__string__view.html#adb4ff9b1829cfa037f579b09da4af32f":[4,0,104,9],
 "classbasic__string__view.html#adc883cd4b845af5a54ee609e1eab4ea5":[4,0,104,11],
 "classbasic__string__view.html#aedf856c0793e6307934a63e64e217b64":[4,0,104,21],
-"classbasic__string__view.html#af3f5cdfe71a7ada3227d5702ea456128":[4,0,104,8],
-"classbasic__string__view.html#af8b4574d3a39883f409c858fc1006664":[4,0,104,13],
-"classbuffered__file.html":[4,0,105]
+"classbasic__string__view.html#af3f5cdfe71a7ada3227d5702ea456128":[4,0,104,8]
 };

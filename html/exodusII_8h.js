@@ -172,6 +172,16 @@ var exodusII_8h =
       [ "EX_INQ_THREADSAFE", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcacd44495d1e42143a0b1d8390db3531b9", null ],
       [ "EX_INQ_ASSEMBLY", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaa0b44b5f472e72f3e2c6e41b6d156e63", null ],
       [ "EX_INQ_BLOB", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca85b5d459209567024a7c03e89b1dcf00", null ],
+      [ "EX_INQ_NUM_NODE_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcafbc2e15c85f76b7657217616bcca9eb2", null ],
+      [ "EX_INQ_NUM_EDGE_BLOCK_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca79e3f4d78cf2028408f14e89e1d5be63", null ],
+      [ "EX_INQ_NUM_FACE_BLOCK_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca09b73cdc23f47eb3a3be1a82dc0b5530", null ],
+      [ "EX_INQ_NUM_ELEM_BLOCK_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca0f3796f4f344b99c08fd82490975902e", null ],
+      [ "EX_INQ_NUM_NODE_SET_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaa0e3042fef2ef425ed358092fc3cbcdb", null ],
+      [ "EX_INQ_NUM_EDGE_SET_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaf171a2cd58f23283020b628412713595", null ],
+      [ "EX_INQ_NUM_FACE_SET_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca67a4b1bf8b4935399d000a66966a1a85", null ],
+      [ "EX_INQ_NUM_ELEM_SET_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaff793c00e5bcd1f174d96e0db981be4a", null ],
+      [ "EX_INQ_NUM_SIDE_SET_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcabc1ba7d3b8406934d6ce4dac7c8f5020", null ],
+      [ "EX_INQ_NUM_GLOBAL_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcae29fc8a206f81e0049b6e5d83d8dc5ec", null ],
       [ "EX_INQ_INVALID", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcac6272c03fa5b8f6b09bc130636eaf25d", null ]
     ] ],
     [ "ex_option_type", "group__FileOptions.html#ga790e5d19a7cc9c2f8d4fd5a49a2c5dd0", [
