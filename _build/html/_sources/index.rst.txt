@@ -593,9 +593,9 @@ models with hexahedral elements only.
 Slice
 -----
 
-Decompose an Exodus Database into multiple databases for use in a
-parallel application which uses a file-per-rank method for the input
-mesh database. Experimental.
+`Slice <../../Slice.md>`_ decomposes an Exodus Database into
+multiple databases for use in a parallel application which uses a
+file-per-rank method for the input mesh database. Experimental.
 
 Skinner
 -------

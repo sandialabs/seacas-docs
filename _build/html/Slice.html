@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>&lt;no title&gt; &mdash; SEACAS 2021/03/02 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SEACAS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul class="simple">
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SEACAS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>&lt;no title&gt;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Slice.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>Slice
+(A code for decomposing finite element meshes for running parallel analyses.)
+(Version: 0.9.99) Modified: 2021/03/10</p>
+<p>usage: slice [options] file_to_split
+-help (Print this summary and exit)
+-in_type &lt;$val&gt; (File format for input mesh file (default = exodus))</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>-processors &lt;$val&gt; (Number of processors to decompose the mesh for)
+-method &lt;$val&gt; (Decomposition method
+	&#39;linear&#39;   : #elem/#proc to each processor
+	&#39;scattered&#39;: Shuffle elements to each processor (cyclic)
+	&#39;random&#39;   : Random distribution of elements, maintains balance
+	&#39;rb&#39;       : Metis multilevel recursive bisection
+	&#39;kway&#39;     : Metis multilevel k-way graph partitioning
+	&#39;variable&#39; : Read element-processor assignment from an element variable
+	&#39;map&#39;      : Read element-processor assignment from an element map [processor_id]
+	&#39;file&#39;     : Read element-processor assignment from file)
+-decomposition_name &lt;$val&gt; (The name of the element variable (method = `variable`)
+	or element map (method = `map`) containing the element to processor mapping.
+	If no name is specified, then `processor_id` will be used.
+	If the name is followed by a &#39;,&#39; and an integer or &#39;auto&#39;, then
+	the entries in the map will be divided by the integer value or
+	(if auto) by `int((max_entry+1)/proc_count)`.)
+-decomposition_file &lt;$val&gt; (File containing element to processor mapping
+	when decomposition method &#39;file&#39; specified
+	The file contains multiple lines, each line has 1 or 2 integers.
+	If a single integer, it is the processor for the current element
+	If two integers (count proc), they specify that the next
+		&#39;count&#39; elements are on processor &#39;proc&#39;)
+-contiguous_decomposition (If the input mesh is contiguous, create contiguous decompositions)
+
+-output_path &lt;$val&gt; (Path to where decomposed files will be written.
+	The string %P will be replaced with the processor count
+	The string %M will be replaced with the decomposition method.
+	Default is the location of the input mesh)
+
+-Partial_read_count &lt;$val&gt; (Split the coordinate and connectivity reads into a
+	maximum of this many nodes or elements at a time to reduce memory.)
+-max-files &lt;$val&gt; (Specify maximum number of processor files to write at one time.
+	Usually use default value; this is typically used for debugging.)
+
+-netcdf4 (Output database will be a netcdf4 hdf5-based file instead of the classical netcdf file format)
+-netcdf5 (Output database will be a netcdf5 (CDF5) file instead of the classical netcdf file format)
+-64-bit (Use 64-bit integers on output database)
+
+-shuffle (Use a netcdf4 hdf5-based file and use hdf5s shuffle mode with compression.)
+-zlib (Use the Zlib / libz compression method if compression is enabled (default) [exodus only].)
+-szip (Use SZip compression. [exodus only, enables netcdf-4])
+-compress &lt;$val&gt; (Specify the hdf5 compression level [0..9] to be used on the output file.)
+
+-debug &lt;$val&gt; (Debug level: 0, 1, 2, 4 or&#39;d)
+-version (Print version and exit)
+-copyright (Show copyright and license data.)
+
+   Can also set options via SLICE_OPTIONS environment variable.
+
+-&gt;-&gt;-&gt; Send email to gsjaardema@gmail.com for slice support.&lt;-&lt;-&lt;-
+</pre></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Gregory Sjaardema.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
