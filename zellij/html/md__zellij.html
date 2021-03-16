@@ -98,7 +98,7 @@ Execution</h1>
 <p>Executing zellij with the <code>-help</code> option will result in output similar to the following:</p>
 <div class="fragment"><div class="line">Zellij</div>
 <div class="line">    (A code for tiling 1 or more template databases into a single output database.)</div>
-<div class="line">    (Version: 1.4.0) Modified: 2021/03/03</div>
+<div class="line">    (Version: 1.4.1) Modified: 2021/03/16</div>
 <div class="line">    Parallel Capability Not Enabled.</div>
 <div class="line"> </div>
 <div class="line">usage: zellij [options] -lattice &lt;lattice_definition_file&gt;</div>
@@ -155,6 +155,10 @@ Execution</h1>
 <div class="line">    -compress &lt;$val&gt; (Specify the hdf5 zlib compression level [0..9] or szip [even, 4..32] to be used on the output file.)</div>
 <div class="line"> </div>
 <div class="line">    -separate_cells (Do not equivalence the nodes between adjacent unit cells.)</div>
+<div class="line">    -repeat &lt;$val&gt; (Each lattice entry will be used the specified number of times as will</div>
+<div class="line">        each row in the lattice (for debugging). `-repeat 2` would double the lattice.)</div>
+<div class="line">    -skip &lt;$val&gt; (Skip the specified number of lattice entries and rows. For example, -skip 1</div>
+<div class="line">        would read every other entry on the row and every other row. (for debugging))</div>
 <div class="line">    -help (Print this summary and exit)</div>
 <div class="line">    -version (Print version and exit)</div>
 <div class="line">    -debug &lt;$val&gt; (debug level (values are or&#39;d)</div>
@@ -164,7 +168,8 @@ Execution</h1>
 <div class="line">           8 = Verbose output of Grid finalization calculations.</div>
 <div class="line">          16 = Put exodus library into verbose mode.</div>
 <div class="line">          32 = Verbose decomposition information.</div>
-<div class="line">          64 = Verbose output database summary information.)</div>
+<div class="line">          64 = Verbose output database summary information.</div>
+<div class="line">         128 = Verbose sideset generation information.)</div>
 <div class="line">    -copyright (Show copyright and license data.)</div>
 <div class="line"> </div>
 <div class="line">    Can also set options via ZELLIJ_OPTIONS environment variable.</div>
