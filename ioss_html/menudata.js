@@ -93,7 +93,6 @@ var menudata={children:[
 {text:"n",url:"namespacemembers_vars.html#index_n"},
 {text:"o",url:"namespacemembers_vars.html#index_o"},
 {text:"p",url:"namespacemembers_vars.html#index_p"},
-{text:"q",url:"namespacemembers_vars.html#index_q"},
 {text:"r",url:"namespacemembers_vars.html#index_r"},
 {text:"s",url:"namespacemembers_vars.html#index_s"},
 {text:"t",url:"namespacemembers_vars.html#index_t"},

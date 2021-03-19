@@ -322,6 +322,7 @@ var namespaceIoss =
       [ "SPLIT_BY_DONT_SPLIT", "namespaceIoss.html#aac97d071c77181adce98f1569c36d222a5004c32a6d3b2ac8c5c23ad8ca595c73", null ],
       [ "SPLIT_LAST_ENTRY", "namespaceIoss.html#aac97d071c77181adce98f1569c36d222ac58d9f16883b0615c05af5e380adc68f", null ]
     ] ],
+    [ "copy_database", "namespaceIoss.html#acf60c6566ef8bd6e92e360a0c27daf9d", null ],
     [ "DEBUG", "namespaceIoss.html#acfb56b1b959df967550efa66d30772df", null ],
     [ "int_to_surface_split", "namespaceIoss.html#acba9071b636f35b882f0f11f32e1c855", null ],
     [ "io_info_file_info", "namespaceIoss.html#a54db3aed608cf4f235044d9e4da22977", null ],
@@ -333,6 +334,8 @@ var namespaceIoss =
     [ "operator<<", "namespaceIoss.html#a83f3a4ce65dbb21f537c7a8bce3ee863", null ],
     [ "OUTPUT", "namespaceIoss.html#a840f3d50deca8271542bb64e85bf15bc", null ],
     [ "qsort", "namespaceIoss.html#a4451dd64cac4d40bde7b92f15633f7c6", null ],
+    [ "sort", "namespaceIoss.html#aa95ece641781cd70259cc280a8e7a377", null ],
+    [ "sort", "namespaceIoss.html#a11151386674aa84a48675a4815148cf9", null ],
     [ "tokenize", "namespaceIoss.html#a841de519059ab3e29b12ff99fee464db", null ],
     [ "valid_decomp_methods", "namespaceIoss.html#afe78c69a8455b1ff5ce013580d7f7078", null ],
     [ "Version", "namespaceIoss.html#ab68afc3720611f65cc6891dc67a0e48a", null ],

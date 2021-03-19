@@ -9,7 +9,6 @@ var classIoss_1_1Utils =
     [ "check_non_null", "classIoss_1_1Utils.html#a3cdb54933afe453c3a00a20308c338da", null ],
     [ "check_set_bool_property", "classIoss_1_1Utils.html#a0e73034d93675ce27c3f215cec232691", null ],
     [ "clear", "classIoss_1_1Utils.html#a65686647761a8ee32e4a4d4e866d196f", null ],
-    [ "copy_database", "classIoss_1_1Utils.html#a24de37b7a335e4d98eb046f9ee0adb8d", null ],
     [ "copy_string", "classIoss_1_1Utils.html#a6a57af22ae9c164e8b580b08aac69241", null ],
     [ "copy_string", "classIoss_1_1Utils.html#aed37200b313bc24f17dba6df264c1a0c", null ],
     [ "copy_string", "classIoss_1_1Utils.html#a7aabcc9ce79c881715981438bb409537", null ],

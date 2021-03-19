@@ -738,6 +738,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:acf60c6566ef8bd6e92e360a0c27daf9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#acf60c6566ef8bd6e92e360a0c27daf9d">copy_database</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options)</td></tr>
+<tr class="separator:acf60c6566ef8bd6e92e360a0c27daf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a174e0b297eacb3ab13ae480ddb71303c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a174e0b297eacb3ab13ae480ddb71303c">is_input_event</a> (<a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a> db_usage)</td></tr>
 <tr class="separator:a174e0b297eacb3ab13ae480ddb71303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe78c69a8455b1ff5ce013580d7f7078"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#afe78c69a8455b1ff5ce013580d7f7078">valid_decomp_methods</a> ()</td></tr>
@@ -745,6 +747,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4451dd64cac4d40bde7b92f15633f7c6"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:a4451dd64cac4d40bde7b92f15633f7c6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a4451dd64cac4d40bde7b92f15633f7c6">qsort</a> (std::vector&lt; <a class="el" href="Ioss__StructuredBlock_8h.html#a04c332034f73e7eb3f559958838d3668">INT</a> &gt; &amp;v)</td></tr>
 <tr class="separator:a4451dd64cac4d40bde7b92f15633f7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11151386674aa84a48675a4815148cf9"><td class="memTemplParams" colspan="2">template&lt;class Iter , class Comp &gt; </td></tr>
+<tr class="memitem:a11151386674aa84a48675a4815148cf9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a11151386674aa84a48675a4815148cf9">sort</a> (Iter begin, Iter end, Comp compare)</td></tr>
+<tr class="separator:a11151386674aa84a48675a4815148cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95ece641781cd70259cc280a8e7a377"><td class="memTemplParams" colspan="2">template&lt;class Iter &gt; </td></tr>
+<tr class="memitem:aa95ece641781cd70259cc280a8e7a377"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#aa95ece641781cd70259cc280a8e7a377">sort</a> (Iter begin, Iter end)</td></tr>
+<tr class="separator:aa95ece641781cd70259cc280a8e7a377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210101a8e6b8987f787709cddde5868e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a210101a8e6b8987f787709cddde5868e">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="structIoss_1_1BoundaryCondition.html">BoundaryCondition</a> &amp;bc)</td></tr>
 <tr class="separator:a210101a8e6b8987f787709cddde5868e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba9071b636f35b882f0f11f32e1c855"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">SurfaceSplitType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#acba9071b636f35b882f0f11f32e1c855">int_to_surface_split</a> (int split_int)</td></tr>
@@ -1515,6 +1523,41 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="acf60c6566ef8bd6e92e360a0c27daf9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf60c6566ef8bd6e92e360a0c27daf9d">&#9670;&nbsp;</a></span>copy_database()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::copy_database </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>output_region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy the mesh in <code>region</code> to <code>output_region</code>. Behavior can be controlled via options in <code>options</code> </p>
+
+</div>
+</div>
 <a id="acfb56b1b959df967550efa66d30772df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfb56b1b959df967550efa66d30772df">&#9670;&nbsp;</a></span>DEBUG()</h2>
 
@@ -1790,6 +1833,88 @@ template&lt;typename INT &gt; </div>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa95ece641781cd70259cc280a8e7a377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95ece641781cd70259cc280a8e7a377">&#9670;&nbsp;</a></span>sort() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::sort </td>
+          <td>(</td>
+          <td class="paramtype">Iter&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iter&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11151386674aa84a48675a4815148cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11151386674aa84a48675a4815148cf9">&#9670;&nbsp;</a></span>sort() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iter , class Comp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::sort </td>
+          <td>(</td>
+          <td class="paramtype">Iter&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iter&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Comp&#160;</td>
+          <td class="paramname"><em>compare</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

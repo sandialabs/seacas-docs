@@ -236,8 +236,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e36dabba48e8770c4914a42d648ad3c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a4e36dabba48e8770c4914a42d648ad3c">generate_history_mesh</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region)</td></tr>
 <tr class="memdesc:a4e36dabba48e8770c4914a42d648ad3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a nominal mesh for use in history databases.  <a href="classIoss_1_1Utils.html#a4e36dabba48e8770c4914a42d648ad3c">More...</a><br /></td></tr>
 <tr class="separator:a4e36dabba48e8770c4914a42d648ad3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24de37b7a335e4d98eb046f9ee0adb8d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a24de37b7a335e4d98eb046f9ee0adb8d">copy_database</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options)</td></tr>
-<tr class="separator:a24de37b7a335e4d98eb046f9ee0adb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb0fbd62757711f7f5f7cd50487d975"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a8cb0fbd62757711f7f5f7cd50487d975">info_fields</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *ige, <a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Ioss::Field::RoleType</a> role, const std::string &amp;header, const std::string &amp;suffix=&quot;\n\t&quot;)</td></tr>
 <tr class="separator:a8cb0fbd62757711f7f5f7cd50487d975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35358878414193645009828df8f186f9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a35358878414193645009828df8f186f9">info_property</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *ige, <a class="el" href="classIoss_1_1Property.html#a16338f2d9b5be973401bd8183c8fa0d3">Ioss::Property::Origin</a> origin, const std::string &amp;header, const std::string &amp;suffix=&quot;\n\t&quot;, bool print_empty=false)</td></tr>
@@ -590,49 +588,6 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a24de37b7a335e4d98eb046f9ee0adb8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24de37b7a335e4d98eb046f9ee0adb8d">&#9670;&nbsp;</a></span>copy_database()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Ioss::Utils::copy_database </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
-          <td class="paramname"><em>region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
-          <td class="paramname"><em>output_region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;&#160;</td>
-          <td class="paramname"><em>options</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Copy the mesh in <code>region</code> to <code>output_region</code>. Behavior can be controlled via options in <code>options</code> </p>
 
 </div>
 </div>
