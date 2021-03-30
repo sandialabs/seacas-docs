@@ -4,6 +4,7 @@ var structIoss_1_1MeshCopyOptions =
     [ "boundary_sideset", "structIoss_1_1MeshCopyOptions.html#a5613f3c4b0754ce9ac6a8efb21ca98a5", null ],
     [ "data_storage_type", "structIoss_1_1MeshCopyOptions.html#adbf836dfcb40005e91e022f3631d4cdd", null ],
     [ "debug", "structIoss_1_1MeshCopyOptions.html#a5465dc808e8f6418004d6c271f07037c", null ],
+    [ "define_geometry", "structIoss_1_1MeshCopyOptions.html#a8a58a3b0d7f3c606e05ad16196c72dce", null ],
     [ "delay", "structIoss_1_1MeshCopyOptions.html#a870f812528275cc21b54942d0d6c973e", null ],
     [ "delete_timesteps", "structIoss_1_1MeshCopyOptions.html#ae8bd783a4af12a573089f18eea607ffb", null ],
     [ "ignore_qa_info", "structIoss_1_1MeshCopyOptions.html#a0eedd030321031b92c2a83fcd4e0fbed", null ],

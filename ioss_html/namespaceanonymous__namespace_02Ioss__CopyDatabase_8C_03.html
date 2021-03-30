@@ -128,12 +128,6 @@ Functions</h2></td></tr>
 <tr class="separator:a2056b55b4e0d25ed8f774ff1096cc8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7a0685f872d79ec248a775ee6648e0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ae7a0685f872d79ec248a775ee6648e0d">transfer_commsets</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options, int rank)</td></tr>
 <tr class="separator:ae7a0685f872d79ec248a775ee6648e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a07168d2fb69c595fe0505af6564d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ab8a07168d2fb69c595fe0505af6564d5">transfer_coordinate_frames</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region)</td></tr>
-<tr class="separator:ab8a07168d2fb69c595fe0505af6564d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f21a9047804b1497d0800ee93bd9cd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a4f21a9047804b1497d0800ee93bd9cd9">transfer_assemblies</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options, int rank)</td></tr>
-<tr class="separator:a4f21a9047804b1497d0800ee93bd9cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae880f4ad43e01f637aa5a832293c33b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ae880f4ad43e01f637aa5a832293c33b7">transfer_blobs</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options, int rank)</td></tr>
-<tr class="separator:ae880f4ad43e01f637aa5a832293c33b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea58a20b54fee046876452402b745e89"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aea58a20b54fee046876452402b745e89"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#aea58a20b54fee046876452402b745e89">transfer_fields</a> (const std::vector&lt; T * &gt; &amp;entities, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, <a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Ioss::Field::RoleType</a> role, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options, int rank)</td></tr>
 <tr class="separator:aea58a20b54fee046876452402b745e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -515,86 +509,6 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="a4f21a9047804b1497d0800ee93bd9cd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f21a9047804b1497d0800ee93bd9cd9">&#9670;&nbsp;</a></span>transfer_assemblies()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void anonymous_namespace{Ioss_CopyDatabase.C}::transfer_assemblies </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
-          <td class="paramname"><em>region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
-          <td class="paramname"><em>output_region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;&#160;</td>
-          <td class="paramname"><em>options</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rank</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae880f4ad43e01f637aa5a832293c33b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae880f4ad43e01f637aa5a832293c33b7">&#9670;&nbsp;</a></span>transfer_blobs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void anonymous_namespace{Ioss_CopyDatabase.C}::transfer_blobs </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
-          <td class="paramname"><em>region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
-          <td class="paramname"><em>output_region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;&#160;</td>
-          <td class="paramname"><em>options</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rank</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af4beeea8ace8ad2eb42fb8d243d00bea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4beeea8ace8ad2eb42fb8d243d00bea">&#9670;&nbsp;</a></span>transfer_blocks()</h2>
 
@@ -666,34 +580,6 @@ template&lt;typename T &gt; </div>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>rank</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab8a07168d2fb69c595fe0505af6564d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8a07168d2fb69c595fe0505af6564d5">&#9670;&nbsp;</a></span>transfer_coordinate_frames()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void anonymous_namespace{Ioss_CopyDatabase.C}::transfer_coordinate_frames </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
-          <td class="paramname"><em>region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
-          <td class="paramname"><em>output_region</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -217,11 +217,8 @@ var namespaces_dup =
       [ "output_boundary_sideset", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a653eaa7904b60f9a573ef980d38c9377", null ],
       [ "set_owned_node_count", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#abfb96c5a924b9bfbf483ba73cb649c62", null ],
       [ "show_step", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#aeda0909d6fc276e66250913ddf021e76", null ],
-      [ "transfer_assemblies", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a4f21a9047804b1497d0800ee93bd9cd9", null ],
-      [ "transfer_blobs", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ae880f4ad43e01f637aa5a832293c33b7", null ],
       [ "transfer_blocks", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#af4beeea8ace8ad2eb42fb8d243d00bea", null ],
       [ "transfer_commsets", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ae7a0685f872d79ec248a775ee6648e0d", null ],
-      [ "transfer_coordinate_frames", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ab8a07168d2fb69c595fe0505af6564d5", null ],
       [ "transfer_edgeblocks", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#abbdfa2d7fbc81f8db7f9d2c81bad76a0", null ],
       [ "transfer_edgesets", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ac1ad0971c4a68491fd6228a06ed4bc7e", null ],
       [ "transfer_elementblocks", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a3c40e489e807b7b55f532f1f82b1cb91", null ],
@@ -404,19 +401,16 @@ var namespaces_dup =
       [ "sign", "namespaceanonymous__namespace_02Ioss__ZoneConnectivity_8C_03.html#ac9f1a485619214c244f6f4d4b0f22db9", null ],
       [ "valid_range", "namespaceanonymous__namespace_02Ioss__ZoneConnectivity_8C_03.html#a14cceeba0c349c1043fca16ef139525b", null ]
     ] ],
-    [ "anonymous_namespace{Iovs_DatabaseIO.C}", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html", [
-      [ "entity_type", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#ae5990ebf262b5819bc0724a6628362d3", [
-        [ "NODAL", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#ae5990ebf262b5819bc0724a6628362d3ad0a56035f3937389f4e549d396da1805", null ],
-        [ "ELEM_BLOCK", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#ae5990ebf262b5819bc0724a6628362d3a85b0fc6fa58f6cc333e7e5bd49ca32fc", null ],
-        [ "NODE_SET", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#ae5990ebf262b5819bc0724a6628362d3a39a86db17e1f32175e4bcf2e871c4146", null ],
-        [ "SIDE_SET", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#ae5990ebf262b5819bc0724a6628362d3a71586057e18fdfb01ec948480b8dcaa9", null ]
+    [ "anonymous_namespace{Iovs_exodus_DatabaseIO.C}", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html", [
+      [ "entity_type", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4", [
+        [ "NODAL", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4ad0a56035f3937389f4e549d396da1805", null ],
+        [ "ELEM_BLOCK", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4a85b0fc6fa58f6cc333e7e5bd49ca32fc", null ],
+        [ "NODE_SET", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4a39a86db17e1f32175e4bcf2e871c4146", null ],
+        [ "SIDE_SET", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4a71586057e18fdfb01ec948480b8dcaa9", null ]
       ] ],
-      [ "build_catalyst_plugin_paths", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#ad09f768f9fd49b2c6d9ea1717f6b219d", null ],
-      [ "extract_id", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#aa430ca5d07cd6693aa40e8a3f46064dd", null ],
-      [ "file_exists", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#af4b64002eaf6aa9b285ff04722903230", null ],
-      [ "get_id", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#ae34bd5aa34632073a1919d8abcad0b7c", null ],
-      [ "set_id", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#af45b4430c7a0c377e5b0f1cdd00f909f", null ],
-      [ "number_of_catalyst_blocks", "namespaceanonymous__namespace_02Iovs__DatabaseIO_8C_03.html#ab6a0fd6b90ccdf4e63ea5355f2733784", null ]
+      [ "extract_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a946154e9fa57a575df4c9694a9d6e435", null ],
+      [ "get_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ae60e0458d2a6d9c8819c9de6422c69ab", null ],
+      [ "set_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ac7abeea54c7d9d1910b234ece5a62d62", null ]
     ] ],
     [ "anonymous_namespace{modify_interface.C}", "namespaceanonymous__namespace_02modify__interface_8C_03.html", [
       [ "get_type_from_file", "namespaceanonymous__namespace_02modify__interface_8C_03.html#a4e9e01fe341e418787440665f84c19f7", null ]
@@ -488,8 +482,11 @@ var namespaces_dup =
     [ "Iopg", "namespaceIopg.html", "namespaceIopg" ],
     [ "IOShell", "namespaceIOShell.html", "namespaceIOShell" ],
     [ "Ioss", "namespaceIoss.html", "namespaceIoss" ],
+    [ "ioss_region_report", "namespaceioss__region__report.html", "namespaceioss__region__report" ],
     [ "Iotr", "namespaceIotr.html", "namespaceIotr" ],
     [ "Iovs", "namespaceIovs.html", "namespaceIovs" ],
+    [ "Iovs_cgns", "namespaceIovs__cgns.html", "namespaceIovs__cgns" ],
+    [ "Iovs_exodus", "namespaceIovs__exodus.html", "namespaceIovs__exodus" ],
     [ "Modify", "namespaceModify.html", "namespaceModify" ],
     [ "pdqsort_detail", "namespacepdqsort__detail.html", [
       [ "align_cacheline", "namespacepdqsort__detail.html#a5cfbd74545cae92930540b5042146308", null ],

@@ -740,6 +740,14 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:acf60c6566ef8bd6e92e360a0c27daf9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#acf60c6566ef8bd6e92e360a0c27daf9d">copy_database</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options)</td></tr>
 <tr class="separator:acf60c6566ef8bd6e92e360a0c27daf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a5d32c21563aed283fef261155876e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ab6a5d32c21563aed283fef261155876e">copy_database_v2</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options)</td></tr>
+<tr class="separator:ab6a5d32c21563aed283fef261155876e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800bece8cd1505782c2180b175710b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a800bece8cd1505782c2180b175710b45">transfer_assemblies</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options, int rank)</td></tr>
+<tr class="separator:a800bece8cd1505782c2180b175710b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea13144e7ba9b7fb714b3fb5a54d72d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a4ea13144e7ba9b7fb714b3fb5a54d72d">transfer_blobs</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options, int rank)</td></tr>
+<tr class="separator:a4ea13144e7ba9b7fb714b3fb5a54d72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48498de7d44a659ee823b1432c992738"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a48498de7d44a659ee823b1432c992738">transfer_coordinate_frames</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region)</td></tr>
+<tr class="separator:a48498de7d44a659ee823b1432c992738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a174e0b297eacb3ab13ae480ddb71303c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a174e0b297eacb3ab13ae480ddb71303c">is_input_event</a> (<a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a> db_usage)</td></tr>
 <tr class="separator:a174e0b297eacb3ab13ae480ddb71303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe78c69a8455b1ff5ce013580d7f7078"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#afe78c69a8455b1ff5ce013580d7f7078">valid_decomp_methods</a> ()</td></tr>
@@ -1558,6 +1566,41 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ab6a5d32c21563aed283fef261155876e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a5d32c21563aed283fef261155876e">&#9670;&nbsp;</a></span>copy_database_v2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::copy_database_v2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>output_region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Same as copy_database, but pays attention to the define_geometry variable in <code>options</code>. used to call multiple times with the same database at different timestep ranges </p>
+
+</div>
+</div>
 <a id="acfb56b1b959df967550efa66d30772df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfb56b1b959df967550efa66d30772df">&#9670;&nbsp;</a></span>DEBUG()</h2>
 
@@ -1945,6 +1988,114 @@ template&lt;class Iter , class Comp &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Take the 'str' argument and split it using the list of characters in separators as separators. Use tokens to return the result. </p>
+
+</div>
+</div>
+<a id="a800bece8cd1505782c2180b175710b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800bece8cd1505782c2180b175710b45">&#9670;&nbsp;</a></span>transfer_assemblies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::transfer_assemblies </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>output_region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rank</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ea13144e7ba9b7fb714b3fb5a54d72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea13144e7ba9b7fb714b3fb5a54d72d">&#9670;&nbsp;</a></span>transfer_blobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::transfer_blobs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>output_region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rank</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48498de7d44a659ee823b1432c992738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48498de7d44a659ee823b1432c992738">&#9670;&nbsp;</a></span>transfer_coordinate_frames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::transfer_coordinate_frames </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>output_region</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
