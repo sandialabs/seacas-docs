@@ -1,7 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"ostream_8h.html#a7168f947aaf3559a87c031d4cc60d242":[5,0,0,10,0,8,5],
-"ostream_8h.html#a7a0376e2fc294a1f6660704c9f5d8efb":[5,0,0,10,0,8,7],
 "ostream_8h.html#a8dc9dbf2ac6c18173148a35ea3e6f8c2":[5,0,0,10,0,8,9],
 "ostream_8h.html#ab774ebdb3565689cdc79ab10b0cb16ef":[5,0,0,10,0,8,13],
 "ostream_8h_source.html":[5,0,0,10,0,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX47 =
 "structIoex_1_1EdgeBlock.html#a245e01fc4d3279d5b3cf2bf0b0286bc2":[4,0,79,6,3],
 "structIoex_1_1EdgeBlock.html#a44d94658b157562b2b7e35dd6b2ef37f":[4,0,79,6,4],
 "structIoex_1_1EdgeBlock.html#a4d4461d74a0c95d199925a25289ef1ab":[4,0,79,6,8],
-"structIoex_1_1EdgeBlock.html#a6a72e58f35d512b3642feef7a768e604":[4,0,79,6,5]
+"structIoex_1_1EdgeBlock.html#a6a72e58f35d512b3642feef7a768e604":[4,0,79,6,5],
+"structIoex_1_1EdgeBlock.html#a6e7c30e0b74c80513e547521fff1775b":[4,0,79,6,10],
+"structIoex_1_1EdgeBlock.html#a7354214ea10659663715bcfcff1f6ea9":[4,0,79,6,2]
 };

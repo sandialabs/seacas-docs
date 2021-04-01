@@ -323,7 +323,6 @@ var namespaceIoss =
       [ "SPLIT_LAST_ENTRY", "namespaceIoss.html#aac97d071c77181adce98f1569c36d222ac58d9f16883b0615c05af5e380adc68f", null ]
     ] ],
     [ "copy_database", "namespaceIoss.html#acf60c6566ef8bd6e92e360a0c27daf9d", null ],
-    [ "copy_database_v2", "namespaceIoss.html#ab6a5d32c21563aed283fef261155876e", null ],
     [ "DEBUG", "namespaceIoss.html#acfb56b1b959df967550efa66d30772df", null ],
     [ "int_to_surface_split", "namespaceIoss.html#acba9071b636f35b882f0f11f32e1c855", null ],
     [ "io_info_file_info", "namespaceIoss.html#a54db3aed608cf4f235044d9e4da22977", null ],

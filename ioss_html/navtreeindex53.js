@@ -1,7 +1,5 @@
 var NAVTREEINDEX53 =
 {
-"structdetail_1_1color__type.html#a67495f5571cf7851cb26d408fa5f1758":[4,0,74,5,4],
-"structdetail_1_1color__type.html#a88faf542d6b20b046d332780fb71b2d8":[4,0,74,5,6],
 "structdetail_1_1color__type.html#a93d0794ac093d40e4b4e66d8a5b1e9ee":[4,0,74,5,3],
 "structdetail_1_1color__type.html#a9e788232ec9a3c4e1edf2aba12f79aea":[4,0,74,5,2],
 "structdetail_1_1compiled__format__base.html":[4,0,74,13],
@@ -249,5 +247,7 @@ var NAVTREEINDEX53 =
 "structdetail_1_1is__reference__wrapper.html":[4,0,74,56],
 "structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01T_01_4_01_4.html":[4,0,74,57],
 "structdetail_1_1is__string.html":[4,0,74,20],
-"structdetail_1_1make__integer__sequence.html":[4,0,74,132]
+"structdetail_1_1make__integer__sequence.html":[4,0,74,132],
+"structdetail_1_1make__integer__sequence_3_01T_00_010_00_01Ns_8_8_8_01_4.html":[4,0,74,133],
+"structdetail_1_1make__unsigned__or__bool.html":[4,0,74,119]
 };
