@@ -406,10 +406,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a2f94d002489183f47b78d74ec8a6e11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6e9d7766c5de91ac63568b9c19a6dd"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1BaseDatabaseIO.html#a8f6e9d7766c5de91ac63568b9c19a6dd">put_field_internal</a> (const <a class="el" href="classIoss_1_1Blob.html">Ioss::Blob</a> *blob, const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, void *data, size_t data_size) const override=0</td></tr>
 <tr class="separator:a8f6e9d7766c5de91ac63568b9c19a6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa3d8e09ec67804034231a52359eb4bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1BaseDatabaseIO.html#afa3d8e09ec67804034231a52359eb4bd">write_meta_data</a> (bool appending)=0</td></tr>
-<tr class="separator:afa3d8e09ec67804034231a52359eb4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cb9d80744aa87b7cf75bd8b4e0232f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1BaseDatabaseIO.html#a3cb9d80744aa87b7cf75bd8b4e0232f5">write_results_metadata</a> (bool gather_data, bool appending)</td></tr>
-<tr class="separator:a3cb9d80744aa87b7cf75bd8b4e0232f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530dc3777a70fecbfbcffb2005885e67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1BaseDatabaseIO.html#a530dc3777a70fecbfbcffb2005885e67">write_meta_data</a> (IfDatabaseExistsBehavior behavior)=0</td></tr>
+<tr class="separator:a530dc3777a70fecbfbcffb2005885e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabb96c244a068b29998f2d31a9900f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1BaseDatabaseIO.html#aaabb96c244a068b29998f2d31a9900f2">write_results_metadata</a> (bool gather_data, IfDatabaseExistsBehavior behavior)</td></tr>
+<tr class="separator:aaabb96c244a068b29998f2d31a9900f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be2068c6263caf200b207318fa10be4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1BaseDatabaseIO.html#a3be2068c6263caf200b207318fa10be4">openDatabase__</a> () const override</td></tr>
 <tr class="separator:a3be2068c6263caf200b207318fa10be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8822ae9413076474316571570ce3b241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1BaseDatabaseIO.html#a8822ae9413076474316571570ce3b241">closeDatabase__</a> () const override</td></tr>
@@ -3945,8 +3945,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="afa3d8e09ec67804034231a52359eb4bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa3d8e09ec67804034231a52359eb4bd">&#9670;&nbsp;</a></span>write_meta_data()</h2>
+<a id="a530dc3777a70fecbfbcffb2005885e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a530dc3777a70fecbfbcffb2005885e67">&#9670;&nbsp;</a></span>write_meta_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3957,8 +3957,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">virtual void Ioex::BaseDatabaseIO::write_meta_data </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>appending</em></td><td>)</td>
+          <td class="paramtype">IfDatabaseExistsBehavior&#160;</td>
+          <td class="paramname"><em>behavior</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3969,7 +3969,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classIoex_1_1DatabaseIO.html#a3245be14d372af9b86c6ff146132f36c">Ioex::DatabaseIO</a>.</p>
+<p>Implemented in <a class="el" href="classIoex_1_1DatabaseIO.html#a9ebdf1ee4942df7f1a8d4fc9371dd8aa">Ioex::DatabaseIO</a>.</p>
 
 </div>
 </div>
@@ -3998,8 +3998,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a3cb9d80744aa87b7cf75bd8b4e0232f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cb9d80744aa87b7cf75bd8b4e0232f5">&#9670;&nbsp;</a></span>write_results_metadata()</h2>
+<a id="aaabb96c244a068b29998f2d31a9900f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabb96c244a068b29998f2d31a9900f2">&#9670;&nbsp;</a></span>write_results_metadata()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4016,8 +4016,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>appending</em>&#160;</td>
+          <td class="paramtype">IfDatabaseExistsBehavior&#160;</td>
+          <td class="paramname"><em>behavior</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

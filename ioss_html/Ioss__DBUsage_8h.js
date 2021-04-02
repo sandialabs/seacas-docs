@@ -12,6 +12,7 @@ var Ioss__DBUsage_8h =
       [ "DB_OVERWRITE", "Ioss__DBUsage_8h.html#ae1de565aa8b642bb5a50be439906c74da6ce08f913735cf937818b26228e7f829", null ],
       [ "DB_APPEND", "Ioss__DBUsage_8h.html#ae1de565aa8b642bb5a50be439906c74da654c05e7bfcfccb82b2393fd8b293eb5", null ],
       [ "DB_APPEND_GROUP", "Ioss__DBUsage_8h.html#ae1de565aa8b642bb5a50be439906c74da813e92b878a5b3c8e297bfa389bc262e", null ],
+      [ "DB_MODIFY", "Ioss__DBUsage_8h.html#ae1de565aa8b642bb5a50be439906c74da31b713aaeda8937a4395899f9630d26f", null ],
       [ "DB_ABORT", "Ioss__DBUsage_8h.html#ae1de565aa8b642bb5a50be439906c74da0806efffeab9679e946726a422ea9308", null ],
       [ "DB_ADD_SUFFIX", "Ioss__DBUsage_8h.html#ae1de565aa8b642bb5a50be439906c74da7757f69d3d5c63b21cba5c2ae2694111", null ],
       [ "DB_ADD_SUFFIX_OVERWRITE", "Ioss__DBUsage_8h.html#ae1de565aa8b642bb5a50be439906c74dade9389e226413cd4104dbc0f2a0388a5", null ]
