@@ -16,7 +16,7 @@ var searchData=
   ['aprepro_969',['Aprepro',['../classSEAMS_1_1Aprepro.html#a71eb28ac6e8947910a08133578d62cfd',1,'SEAMS::Aprepro']]],
   ['aprepro_5foptions_970',['aprepro_options',['../structSEAMS_1_1aprepro__options.html#a2e2dd92197d6667bdb8705e07af30b99',1,'SEAMS::aprepro_options']]],
   ['arg_5fcheck_971',['arg_check',['../namespaceSEAMS.html#a8b8e5e7edad57bbde81e0cd87d08b46b',1,'SEAMS']]],
-  ['array_972',['array',['../structSEAMS_1_1array.html#a417139d383fcba5844ff3ce7e1a76a64',1,'SEAMS::array::array(int r, int c)'],['../structSEAMS_1_1array.html#a7c43d352e0a475ba39f7f1c6c0c3c03b',1,'SEAMS::array::array()=default']]],
+  ['array_972',['array',['../structSEAMS_1_1array.html#a417139d383fcba5844ff3ce7e1a76a64',1,'SEAMS::array::array(int r, int c)'],['../structSEAMS_1_1array.html#aa479de061ed2727046e070f7f0429823',1,'SEAMS::array::array(const array &amp;)=default'],['../structSEAMS_1_1array.html#a7c43d352e0a475ba39f7f1c6c0c3c03b',1,'SEAMS::array::array()=default']]],
   ['array_5fadd_973',['array_add',['../namespaceSEAMS.html#af1123a2aee160e3e0732dc1bda35c0b9',1,'SEAMS']]],
   ['array_5finterpolate_974',['array_interpolate',['../namespaceSEAMS.html#af7de01f34f8e3d40ae323dcad46135b2',1,'SEAMS']]],
   ['array_5fmult_975',['array_mult',['../namespaceSEAMS.html#ab202dc3d898933d0253266045261ffc1',1,'SEAMS']]],
