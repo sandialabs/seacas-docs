@@ -1,6 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"format_8h.html#ad9019a08e555fdf86f1b8b30fdeb1b86":[5,0,0,10,0,5,132],
 "format_8h.html#ad946dc05da4b8809e41b8235287838cf":[5,0,0,10,0,5,234],
 "format_8h.html#ad9e2ed6d3b432a04c9622c34a2495304":[5,0,0,10,0,5,80],
 "format_8h.html#addfb1cbe9d72dfe8c4a8b6a68c0c3180":[5,0,0,10,0,5,241],
@@ -113,8 +112,8 @@ var NAVTREEINDEX40 =
 "functions_type_z.html":[4,3,3,20],
 "functions_u.html":[4,3,0,21],
 "functions_v.html":[4,3,0,22],
-"functions_vars.html":[4,3,2,0],
 "functions_vars.html":[4,3,2],
+"functions_vars.html":[4,3,2,0],
 "functions_vars_b.html":[4,3,2,1],
 "functions_vars_c.html":[4,3,2,2],
 "functions_vars_d.html":[4,3,2,3],
@@ -237,8 +236,8 @@ var NAVTREEINDEX40 =
 "hopscotch__set_8h.html":[5,0,0,20],
 "hopscotch__set_8h.html#afe88acbc8c6f26efda106ceb0d529631":[5,0,0,20,2],
 "hopscotch__set_8h_source.html":[5,0,0,20],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md0":[0,1,0],
 "index.html#autotoc_md1":[0,1,1],
 "index.html#autotoc_md10":[0,1,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX40 =
 "index.html#autotoc_md5":[0,1,4],
 "index.html#autotoc_md6":[0,1,5],
 "index.html#autotoc_md7":[0,1,6],
-"index.html#autotoc_md8":[0,1,7]
+"index.html#autotoc_md8":[0,1,7],
+"index.html#autotoc_md9":[0,1,8]
 };

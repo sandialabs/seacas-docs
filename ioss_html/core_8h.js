@@ -80,7 +80,6 @@ var core_8h =
     [ "FMT_CONSTEXPR_DECL", "core_8h.html#af4388801466a5994a363d6005616371a", null ],
     [ "FMT_DEPRECATED", "core_8h.html#a8aba8a78c514e176e0dd0a159de7a369", null ],
     [ "FMT_DEPRECATED_ALIAS", "core_8h.html#a3b8e29edd8a32a2de6f946dfa1b484b1", null ],
-    [ "FMT_DEPRECATED_N_SPECIFIER", "core_8h.html#a7850e21ebbece8ae4d4a6b4995720dfb", null ],
     [ "FMT_DETECTED_NOEXCEPT", "core_8h.html#a809ce36bdf78b55c536fbca340bfec9c", null ],
     [ "FMT_ENABLE_IF", "core_8h.html#ab02671eb0d43965fe2957e844f427451", null ],
     [ "FMT_END_NAMESPACE", "core_8h.html#ae0d2fbdf031547a949fc7e1c0b3c97f1", null ],
