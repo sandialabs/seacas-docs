@@ -1270,11 +1270,11 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    (<a class="code" href="core_8h.html#a749169f277bb21ccf12b1c665e68e88a">FMT_HAS_FEATURE</a>(cxx_relaxed_constexpr) || <a class="code" href="core_8h.html#a363cb0623e6975ff2b357a52a03e4728">FMT_MSC_VER</a> &gt;= 1910 || \</div>
 <div class="line">     (<a class="code" href="core_8h.html#a4f5db4f97e31a127b1236d1ff412bb0c">FMT_GCC_VERSION</a> &gt;= 600 &amp;&amp; __cplusplus &gt;= 201402L)) &amp;&amp;           \</div>
 <div class="line">        !<a class="code" href="core_8h.html#a52376c1ced87b19c8b3ece64cc64f22e">FMT_NVCC</a> &amp;&amp; !<a class="code" href="core_8h.html#a061a90c1c2008acd7b0161cde41c1a11">FMT_ICC_VERSION</a></div>
-<div class="ttc" id="acore_8h_html_a061a90c1c2008acd7b0161cde41c1a11"><div class="ttname"><a href="core_8h.html#a061a90c1c2008acd7b0161cde41c1a11">FMT_ICC_VERSION</a></div><div class="ttdeci">#define FMT_ICC_VERSION</div><div class="ttdef"><b>Definition:</b> core.h:44</div></div>
-<div class="ttc" id="acore_8h_html_a363cb0623e6975ff2b357a52a03e4728"><div class="ttname"><a href="core_8h.html#a363cb0623e6975ff2b357a52a03e4728">FMT_MSC_VER</a></div><div class="ttdeci">#define FMT_MSC_VER</div><div class="ttdef"><b>Definition:</b> core.h:63</div></div>
-<div class="ttc" id="acore_8h_html_a4f5db4f97e31a127b1236d1ff412bb0c"><div class="ttname"><a href="core_8h.html#a4f5db4f97e31a127b1236d1ff412bb0c">FMT_GCC_VERSION</a></div><div class="ttdeci">#define FMT_GCC_VERSION</div><div class="ttdef"><b>Definition:</b> core.h:38</div></div>
-<div class="ttc" id="acore_8h_html_a52376c1ced87b19c8b3ece64cc64f22e"><div class="ttname"><a href="core_8h.html#a52376c1ced87b19c8b3ece64cc64f22e">FMT_NVCC</a></div><div class="ttdeci">#define FMT_NVCC</div><div class="ttdef"><b>Definition:</b> core.h:56</div></div>
-<div class="ttc" id="acore_8h_html_a749169f277bb21ccf12b1c665e68e88a"><div class="ttname"><a href="core_8h.html#a749169f277bb21ccf12b1c665e68e88a">FMT_HAS_FEATURE</a></div><div class="ttdeci">#define FMT_HAS_FEATURE(x)</div><div class="ttdef"><b>Definition:</b> core.h:70</div></div>
+<div class="ttc" id="acore_8h_html_a061a90c1c2008acd7b0161cde41c1a11"><div class="ttname"><a href="core_8h.html#a061a90c1c2008acd7b0161cde41c1a11">FMT_ICC_VERSION</a></div><div class="ttdeci">#define FMT_ICC_VERSION</div><div class="ttdef"><b>Definition:</b> core.h:43</div></div>
+<div class="ttc" id="acore_8h_html_a363cb0623e6975ff2b357a52a03e4728"><div class="ttname"><a href="core_8h.html#a363cb0623e6975ff2b357a52a03e4728">FMT_MSC_VER</a></div><div class="ttdeci">#define FMT_MSC_VER</div><div class="ttdef"><b>Definition:</b> core.h:62</div></div>
+<div class="ttc" id="acore_8h_html_a4f5db4f97e31a127b1236d1ff412bb0c"><div class="ttname"><a href="core_8h.html#a4f5db4f97e31a127b1236d1ff412bb0c">FMT_GCC_VERSION</a></div><div class="ttdeci">#define FMT_GCC_VERSION</div><div class="ttdef"><b>Definition:</b> core.h:37</div></div>
+<div class="ttc" id="acore_8h_html_a52376c1ced87b19c8b3ece64cc64f22e"><div class="ttname"><a href="core_8h.html#a52376c1ced87b19c8b3ece64cc64f22e">FMT_NVCC</a></div><div class="ttdeci">#define FMT_NVCC</div><div class="ttdef"><b>Definition:</b> core.h:55</div></div>
+<div class="ttc" id="acore_8h_html_a749169f277bb21ccf12b1c665e68e88a"><div class="ttname"><a href="core_8h.html#a749169f277bb21ccf12b1c665e68e88a">FMT_HAS_FEATURE</a></div><div class="ttdeci">#define FMT_HAS_FEATURE(x)</div><div class="ttdef"><b>Definition:</b> core.h:69</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1623,7 +1623,7 @@ template&lt;typename Char , typename T &gt; </div>
 <div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174"></a> </div>
 <div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">  fmt::print</a>(<span class="stringliteral">&quot;Elapsed time: {s:.2f} seconds&quot;</span>, <a class="code" href="core_8h.html#a488731e44fb25c8aadaf1c02b7630eb4">fmt::arg</a>(<span class="stringliteral">&quot;s&quot;</span>, 1.23));</div>
 <div class="ttc" id="acolor_8h_html_a2fead8330d19b9d2f10e6ed9c59e0174"><div class="ttname"><a href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">print</a></div><div class="ttdeci">void print(std::FILE *f, const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:519</div></div>
-<div class="ttc" id="acore_8h_html_a488731e44fb25c8aadaf1c02b7630eb4"><div class="ttname"><a href="core_8h.html#a488731e44fb25c8aadaf1c02b7630eb4">arg</a></div><div class="ttdeci">detail::named_arg&lt; Char, T &gt; arg(const Char *name, const T &amp;arg)</div><div class="ttdef"><b>Definition:</b> core.h:1646</div></div>
+<div class="ttc" id="acore_8h_html_a488731e44fb25c8aadaf1c02b7630eb4"><div class="ttname"><a href="core_8h.html#a488731e44fb25c8aadaf1c02b7630eb4">arg</a></div><div class="ttdeci">detail::named_arg&lt; Char, T &gt; arg(const Char *name, const T &amp;arg)</div><div class="ttdef"><b>Definition:</b> core.h:1645</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1850,10 +1850,10 @@ template&lt;typename... Args, typename S , typename Char  = char_t&lt;S&gt;&gt; 
 <div class="line">to arguments and can be implicitly converted to `~fmt<a class="code" href="structformat__args.html">::format_args</a>`.</div>
 <div class="line">If ``format_str`` is a <a class="code" href="compile_8h.html#a97ae726c0697af04685340d11f77a728">compile</a>-time <span class="keywordtype">string</span> then `<a class="code" href="core_8h.html#a31bd1a709984cace984a33b5871ea84e">make_args_checked</a>` checks</div>
 <div class="line">its validity at <a class="code" href="compile_8h.html#a97ae726c0697af04685340d11f77a728">compile</a> time.</div>
-<div class="ttc" id="aclassformat__arg__store_html"><div class="ttname"><a href="classformat__arg__store.html">format_arg_store</a></div><div class="ttdef"><b>Definition:</b> core.h:1565</div></div>
+<div class="ttc" id="aclassformat__arg__store_html"><div class="ttname"><a href="classformat__arg__store.html">format_arg_store</a></div><div class="ttdef"><b>Definition:</b> core.h:1564</div></div>
 <div class="ttc" id="acompile_8h_html_a97ae726c0697af04685340d11f77a728"><div class="ttname"><a href="compile_8h.html#a97ae726c0697af04685340d11f77a728">compile</a></div><div class="ttdeci">FMT_DEPRECATED auto compile(const Args &amp;... args) -&gt; decltype(detail::compile(args...))</div><div class="ttdef"><b>Definition:</b> compile.h:598</div></div>
-<div class="ttc" id="acore_8h_html_a31bd1a709984cace984a33b5871ea84e"><div class="ttname"><a href="core_8h.html#a31bd1a709984cace984a33b5871ea84e">make_args_checked</a></div><div class="ttdeci">auto make_args_checked(const S &amp;format_str, const remove_reference_t&lt; Args &gt; &amp;... args) -&gt; format_arg_store&lt; buffer_context&lt; Char &gt;, remove_reference_t&lt; Args &gt;... &gt;</div><div class="ttdef"><b>Definition:</b> core.h:1623</div></div>
-<div class="ttc" id="astructformat__args_html"><div class="ttname"><a href="structformat__args.html">format_args</a></div><div class="ttdef"><b>Definition:</b> core.h:1947</div></div>
+<div class="ttc" id="acore_8h_html_a31bd1a709984cace984a33b5871ea84e"><div class="ttname"><a href="core_8h.html#a31bd1a709984cace984a33b5871ea84e">make_args_checked</a></div><div class="ttdeci">auto make_args_checked(const S &amp;format_str, const remove_reference_t&lt; Args &gt; &amp;... args) -&gt; format_arg_store&lt; buffer_context&lt; Char &gt;, remove_reference_t&lt; Args &gt;... &gt;</div><div class="ttdef"><b>Definition:</b> core.h:1622</div></div>
+<div class="ttc" id="astructformat__args_html"><div class="ttname"><a href="structformat__args.html">format_args</a></div><div class="ttdef"><b>Definition:</b> core.h:1946</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1931,7 +1931,7 @@ template&lt;typename S , typename... Args, typename Char  = char_t&lt;S&gt;&gt; 
 <div class="line"> *Example**<a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">::</a></div>
 <div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174"></a> </div>
 <div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">  fmt::print</a>(<span class="stringliteral">&quot;Elapsed time: {0:.2f} seconds&quot;</span>, 1.23);</div>
-<div class="ttc" id="acore_8h_html_a24004c4d3ba31dd35664e85862d20061"><div class="ttname"><a href="core_8h.html#a24004c4d3ba31dd35664e85862d20061">FMT_UNICODE</a></div><div class="ttdeci">#define FMT_UNICODE</div><div class="ttdef"><b>Definition:</b> core.h:255</div></div>
+<div class="ttc" id="acore_8h_html_a24004c4d3ba31dd35664e85862d20061"><div class="ttname"><a href="core_8h.html#a24004c4d3ba31dd35664e85862d20061">FMT_UNICODE</a></div><div class="ttdeci">#define FMT_UNICODE</div><div class="ttdef"><b>Definition:</b> core.h:254</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -2052,8 +2052,8 @@ template&lt;typename Char , FMT_ENABLE_IF(is_char&lt; Char &gt;::value) &gt; </d
 <div class="line">  }</div>
 <div class="line">  std::string message = <a class="code" href="color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">fmt::format</a>(my_string(<span class="stringliteral">&quot;The answer is {}&quot;</span>), 42);</div>
 <div class="ttc" id="aclassbasic__string__view_html"><div class="ttname"><a href="classbasic__string__view.html">basic_string_view&lt; char &gt;</a></div></div>
-<div class="ttc" id="acore_8h_html_af3e39e59608f2c7d23f4236f750dd3cb"><div class="ttname"><a href="core_8h.html#af3e39e59608f2c7d23f4236f750dd3cb">to_string_view</a></div><div class="ttdeci">basic_string_view&lt; Char &gt; to_string_view(const Char *s)</div><div class="ttdef"><b>Definition:</b> core.h:474</div></div>
-<div class="ttc" id="anamespacedetail_html_ad46d232fb6116de4dac0c43dbde8e7a9"><div class="ttname"><a href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">detail::type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:983</div></div>
+<div class="ttc" id="acore_8h_html_af3e39e59608f2c7d23f4236f750dd3cb"><div class="ttname"><a href="core_8h.html#af3e39e59608f2c7d23f4236f750dd3cb">to_string_view</a></div><div class="ttdeci">basic_string_view&lt; Char &gt; to_string_view(const Char *s)</div><div class="ttdef"><b>Definition:</b> core.h:473</div></div>
+<div class="ttc" id="anamespacedetail_html_ad46d232fb6116de4dac0c43dbde8e7a9"><div class="ttname"><a href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">detail::type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:982</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"classIoss_1_1Tri9.html#ad52c270d4c97af9edfa9a43f812d9b18":[4,0,86,177,14],
 "classIoss_1_1Tri9.html#ae36eb9da1bc8f528ba6ec13d1a268d4c":[4,0,86,177,18],
 "classIoss_1_1Tri9.html#ae8d1800b8610b727d15efb62f81efe0d":[4,0,86,177,1],
 "classIoss_1_1TriShell3.html":[4,0,86,179],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "classIoss_1_1Wedge15.html#a715129e7ff0b26a157407a828b91c67c":[4,0,86,195,1],
 "classIoss_1_1Wedge15.html#a77037522b02d8982e4a33fd419bedc97":[4,0,86,195,8],
 "classIoss_1_1Wedge15.html#a7a80c335deb128b96289b3dc431399b3":[4,0,86,195,21],
-"classIoss_1_1Wedge15.html#a8213cb05095f87f21e238c231122e9c3":[4,0,86,195,10],
-"classIoss_1_1Wedge15.html#a883a4cb00ec3fbe0e506f4e059e090a0":[4,0,86,195,22]
+"classIoss_1_1Wedge15.html#a8213cb05095f87f21e238c231122e9c3":[4,0,86,195,10]
 };

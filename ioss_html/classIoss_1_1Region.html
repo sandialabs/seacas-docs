@@ -113,6 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aedc2f80eb34a79f822967aa60acd1df6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#aedc2f80eb34a79f822967aa60acd1df6">Region</a> (<a class="el" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> *iodatabase=nullptr, const std::string &amp;my_name=&quot;&quot;)</td></tr>
 <tr class="memdesc:aedc2f80eb34a79f822967aa60acd1df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor reads in all metadata from disk.  <a href="classIoss_1_1Region.html#aedc2f80eb34a79f822967aa60acd1df6">More...</a><br /></td></tr>
 <tr class="separator:aedc2f80eb34a79f822967aa60acd1df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ead77fc48bbe293ee94dbc7ac3f11a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a59ead77fc48bbe293ee94dbc7ac3f11a">Region</a> (std::shared_ptr&lt; <a class="el" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> &gt; iodatabase, const std::string &amp;my_name)</td></tr>
+<tr class="separator:a59ead77fc48bbe293ee94dbc7ac3f11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abda94c3dd88f5f489a2b1165df8e1805"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#abda94c3dd88f5f489a2b1165df8e1805">~Region</a> () override</td></tr>
 <tr class="separator:abda94c3dd88f5f489a2b1165df8e1805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06015c9041ce82771d9a2f7f11a50299"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a06015c9041ce82771d9a2f7f11a50299">type_string</a> () const override</td></tr>
@@ -579,7 +581,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Maintains a list of NodeBlocks, ElementBlocks, NodeLists, CommLists and Surfaces. [Similar to the "Composite Pattern" in Design Patterns] All interface to GroupingEntities is through the <a class="el" href="classIoss_1_1Region.html" title="A grouping entity that contains other grouping entities.">Region</a> class; clients of the IO subsystem have no direct access to the underlying GroupingEntities (other than the <a class="el" href="classIoss_1_1Region.html" title="A grouping entity that contains other grouping entities.">Region</a>). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aedc2f80eb34a79f822967aa60acd1df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedc2f80eb34a79f822967aa60acd1df6">&#9670;&nbsp;</a></span>Region()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc2f80eb34a79f822967aa60acd1df6">&#9670;&nbsp;</a></span>Region() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -621,6 +623,42 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a59ead77fc48bbe293ee94dbc7ac3f11a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ead77fc48bbe293ee94dbc7ac3f11a">&#9670;&nbsp;</a></span>Region() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ioss::Region::Region </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> &gt;&#160;</td>
+          <td class="paramname"><em>iodatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>my_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
