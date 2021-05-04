@@ -1,7 +1,6 @@
 var classIoss_1_1Region =
 [
     [ "Region", "classIoss_1_1Region.html#aedc2f80eb34a79f822967aa60acd1df6", null ],
-    [ "Region", "classIoss_1_1Region.html#a59ead77fc48bbe293ee94dbc7ac3f11a", null ],
     [ "~Region", "classIoss_1_1Region.html#abda94c3dd88f5f489a2b1165df8e1805", null ],
     [ "add", "classIoss_1_1Region.html#a442c853d2730c3f659a96545f7f58b2e", null ],
     [ "add", "classIoss_1_1Region.html#a23ab9efec70497fc04689249934befe1", null ],

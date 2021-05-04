@@ -1,6 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"ostream_8h.html#a649f78c760a4b6c1934ab0bb59ad432b":[5,0,0,10,0,8,8],
 "ostream_8h.html#a6717b2662168acee70dfbbdd3168adf4":[5,0,0,10,0,8,10],
 "ostream_8h.html#a7168f947aaf3559a87c031d4cc60d242":[5,0,0,10,0,8,5],
 "ostream_8h.html#a7a0376e2fc294a1f6660704c9f5d8efb":[5,0,0,10,0,8,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX47 =
 "structIoex_1_1CommunicationMetaData.html#aeac9acfd83e3577e86d8b13c1b8893c7":[4,0,79,15,13],
 "structIoex_1_1EdgeBlock.html":[4,0,79,6],
 "structIoex_1_1EdgeBlock.html#a245e01fc4d3279d5b3cf2bf0b0286bc2":[4,0,79,6,3],
-"structIoex_1_1EdgeBlock.html#a44d94658b157562b2b7e35dd6b2ef37f":[4,0,79,6,4]
+"structIoex_1_1EdgeBlock.html#a44d94658b157562b2b7e35dd6b2ef37f":[4,0,79,6,4],
+"structIoex_1_1EdgeBlock.html#a4d4461d74a0c95d199925a25289ef1ab":[4,0,79,6,8]
 };

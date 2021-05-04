@@ -1,6 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"classdynamic__format__arg__store.html#a94763fc905f02222d575f7c03161c212":[4,0,113,3],
 "classdynamic__format__arg__store.html#a9c6983c46b69775b5066f6ad748be584":[4,0,113,11],
 "classdynamic__format__arg__store.html#ab8e9e33cc7b78829001a86ef6110ebb6":[4,0,113,12],
 "classdynamic__format__arg__store.html#ac58637a7965cbfeab47c2f50e923dc07":[4,0,113,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX31 =
 "classglob_1_1SetItemRange.html#a4f052faeadfb42655b9a1f4faea6769f":[4,0,75,10,2],
 "classglob_1_1SetItemRange.html#aab00d6b7226bb707846b25ced3e8e874":[4,0,75,10,1],
 "classglob_1_1SetItemRange.html#ae706788d96d84fdf22d90cff81184a85":[4,0,75,10,0],
-"classglob_1_1SetItemsNode.html":[4,0,75,19]
+"classglob_1_1SetItemsNode.html":[4,0,75,19],
+"classglob_1_1SetItemsNode.html#a2ddc5c61c168453113ff422a4a3ac7db":[4,0,75,19,0]
 };
