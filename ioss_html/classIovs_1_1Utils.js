@@ -14,7 +14,7 @@ var classIovs_1_1Utils =
     [ "fileExists", "classIovs_1_1Utils.html#a01faaae50bc7b95421b90cb1c3693ca6", null ],
     [ "getCatalystAdapterInstallDirectory", "classIovs_1_1Utils.html#a02aa9c2aad4a1f8bdf21596f5d2e9519", null ],
     [ "getCatalystManager", "classIovs_1_1Utils.html#a675ee8b6c8ed5c18b14ea2f9da2a65f4", null ],
-    [ "getCatalystPluginPath", "classIovs_1_1Utils.html#a1746a25802245b48766da5d56dd1fe33", null ],
+    [ "getCatalystPluginPath", "classIovs_1_1Utils.html#a3fc2c1cbf2f9de37abebca152de856b2", null ],
     [ "getCatalystPythonDriverPath", "classIovs_1_1Utils.html#ae8efaeb2572b1470f11577b25b0b41a3", null ],
     [ "getDatabaseOutputFilePath", "classIovs_1_1Utils.html#a50b4103071e4d28d8a32382c96e033f5", null ],
     [ "getDlHandle", "classIovs_1_1Utils.html#a1f58886cdc31396a0c3abb3ffc8f7d2a", null ],
