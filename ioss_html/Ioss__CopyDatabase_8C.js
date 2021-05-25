@@ -1,8 +1,8 @@
 var Ioss__CopyDatabase_8C =
 [
     [ "add_proc_id", "Ioss__CopyDatabase_8C.html#a2f2b28ce175c39118d1134fb9b18b0cc", null ],
-    [ "calculate_maximum_field_size", "Ioss__CopyDatabase_8C.html#a2ed1b1f1d8b574d9b65a6d54de151185", null ],
-    [ "calculate_maximum_field_size", "Ioss__CopyDatabase_8C.html#aab9edb3a1c815bafe63856265025420a", null ],
+    [ "calculate_maximum_field_size", "Ioss__CopyDatabase_8C.html#aca9d0ac9da90f862c3012cd54cf10098", null ],
+    [ "calculate_maximum_field_size", "Ioss__CopyDatabase_8C.html#aee89ccf2bbac6c7c5133908637611504", null ],
     [ "define_model", "Ioss__CopyDatabase_8C.html#a7a85a11d8d336a42d132150b67b3231e", null ],
     [ "define_transient_fields", "Ioss__CopyDatabase_8C.html#a07119a5ecd3a6082dc9457ba79bc845f", null ],
     [ "generate_boundary_faces", "Ioss__CopyDatabase_8C.html#a6d1187e8db6d9b788637e5d4ce6500c5", null ],
