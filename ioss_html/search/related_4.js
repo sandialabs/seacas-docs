@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['fg_10872',['fg',['../classtext__style.html#a997e6e620a49e3f2a459f74249305136',1,'text_style']]],
-  ['file_10873',['file',['../classbuffered__file.html#a686a90482e62dd1618201a3c79f9aae6',1,'buffered_file']]],
-  ['formatter_3c_20bigint_20_3e_10874',['formatter&lt; bigint &gt;',['../classdetail_1_1bigint.html#a2cd69505524105acb7ee0daf64b55996',1,'detail::bigint']]],
-  ['formatter_3c_20bytes_20_3e_10875',['formatter&lt; bytes &gt;',['../classbytes.html#ad5f40c15775d3701a6c4784dc0c5f6ce',1,'bytes']]]
+  ['fg_10864',['fg',['../classtext__style.html#a997e6e620a49e3f2a459f74249305136',1,'text_style']]],
+  ['file_10865',['file',['../classbuffered__file.html#a686a90482e62dd1618201a3c79f9aae6',1,'buffered_file']]],
+  ['formatter_3c_20bigint_20_3e_10866',['formatter&lt; bigint &gt;',['../classdetail_1_1bigint.html#a2cd69505524105acb7ee0daf64b55996',1,'detail::bigint']]],
+  ['formatter_3c_20bytes_20_3e_10867',['formatter&lt; bytes &gt;',['../classbytes.html#ad5f40c15775d3701a6c4784dc0c5f6ce',1,'bytes']]]
 ];

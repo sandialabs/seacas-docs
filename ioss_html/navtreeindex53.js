@@ -1,15 +1,5 @@
 var NAVTREEINDEX53 =
 {
-"structdetail_1_1color__type.html#a67495f5571cf7851cb26d408fa5f1758":[4,0,74,5,4],
-"structdetail_1_1color__type.html#a88faf542d6b20b046d332780fb71b2d8":[4,0,74,5,6],
-"structdetail_1_1color__type.html#a93d0794ac093d40e4b4e66d8a5b1e9ee":[4,0,74,5,3],
-"structdetail_1_1color__type.html#a9e788232ec9a3c4e1edf2aba12f79aea":[4,0,74,5,2],
-"structdetail_1_1compiled__format__base.html":[4,0,74,13],
-"structdetail_1_1compiled__format__base.html#a16203bc7fe3d4067208fc77d711a8758":[4,0,74,13,3],
-"structdetail_1_1compiled__format__base.html#a56ff9ba78e2a2513c83d23132f6957fe":[4,0,74,13,0],
-"structdetail_1_1compiled__format__base.html#a8fcf91a5cdd43da5b5cb49a6bc9f204d":[4,0,74,13,1],
-"structdetail_1_1compiled__format__base.html#ad8ca1d53459fc9fe381d9bc780b836de":[4,0,74,13,2],
-"structdetail_1_1compiled__format__base.html#afa84fa30819ac21fee34febb1c8dee23":[4,0,74,13,4],
 "structdetail_1_1compiled__format__base_3_01S_00_01enable__if__t_3_01is__compile__string_3_01S_01_4_1_1value_01_4_01_4.html":[4,0,74,15],
 "structdetail_1_1compiled__format__base_3_01S_00_01enable__if__t_3_01is__compile__string_3_01S_01_4_1_1value_01_4_01_4.html#a200d874a008db35e94dd10779d934a8e":[4,0,74,15,3],
 "structdetail_1_1compiled__format__base_3_01S_00_01enable__if__t_3_01is__compile__string_3_01S_01_4_1_1value_01_4_01_4.html#a5ce7466b016c4404b855c329e4d2579f":[4,0,74,15,1],
@@ -249,5 +239,15 @@ var NAVTREEINDEX53 =
 "structdetail_1_1is__reference__wrapper.html":[4,0,74,56],
 "structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01T_01_4_01_4.html":[4,0,74,57],
 "structdetail_1_1is__string.html":[4,0,74,20],
-"structdetail_1_1make__integer__sequence.html":[4,0,74,132]
+"structdetail_1_1make__integer__sequence.html":[4,0,74,132],
+"structdetail_1_1make__integer__sequence_3_01T_00_010_00_01Ns_8_8_8_01_4.html":[4,0,74,133],
+"structdetail_1_1make__unsigned__or__bool.html":[4,0,74,119],
+"structdetail_1_1make__unsigned__or__bool_3_01bool_01_4.html":[4,0,74,120],
+"structdetail_1_1make__unsigned__or__bool_3_01bool_01_4.html#a262bd74f2d79291103ec7bdd2ffb519a":[4,0,74,120,0],
+"structdetail_1_1make__unsigned__or__unchanged.html":[4,0,74,2],
+"structdetail_1_1make__unsigned__or__unchanged.html#a76f8c2352d357582a9521d3e3608bdaf":[4,0,74,2,0],
+"structdetail_1_1make__unsigned__or__unchanged_3_01T_00_01true_01_4.html":[4,0,74,3],
+"structdetail_1_1make__unsigned__or__unchanged_3_01T_00_01true_01_4.html#a80c4e8ddfad700203b4dfbc1b624c928":[4,0,74,3,0],
+"structdetail_1_1named__arg.html":[4,0,74,34],
+"structdetail_1_1named__arg.html#a86ee96947ad6da0f8b44d9d30df28848":[4,0,74,34,2]
 };

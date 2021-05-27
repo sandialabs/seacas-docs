@@ -31,6 +31,7 @@ var classIoss_1_1Utils =
     [ "get_name_array", "classIoss_1_1Utils.html#af25be5c9b86bb94f9c0dcb39bf255250", null ],
     [ "get_number", "classIoss_1_1Utils.html#a181920cd962fcdcaf1f7820df65ddf84", null ],
     [ "get_side_offset", "classIoss_1_1Utils.html#a87d560f7862b2add9fa486ae44f4ab92", null ],
+    [ "get_type_from_file", "classIoss_1_1Utils.html#a93756b9fb462f07e066342f32ed61d27", null ],
     [ "hash", "classIoss_1_1Utils.html#a1ec73edea0e845665ac385f605f4aa99", null ],
     [ "info_fields", "classIoss_1_1Utils.html#a8cb0fbd62757711f7f5f7cd50487d975", null ],
     [ "info_property", "classIoss_1_1Utils.html#a35358878414193645009828df8f186f9", null ],

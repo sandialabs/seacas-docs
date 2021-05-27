@@ -11,9 +11,7 @@ var namespaces_dup =
     ] ],
     [ "anonymous_namespace{cgns_decomp.C}", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html", "namespaceanonymous__namespace_02cgns__decomp_8C_03" ],
     [ "anonymous_namespace{cth_pressure_map.C}", "namespaceanonymous__namespace_02cth__pressure__map_8C_03.html", "namespaceanonymous__namespace_02cth__pressure__map_8C_03" ],
-    [ "anonymous_namespace{info_interface.C}", "namespaceanonymous__namespace_02info__interface_8C_03.html", [
-      [ "get_type_from_file", "namespaceanonymous__namespace_02info__interface_8C_03.html#a1c5d3b4308934427a3e71620d8af9068", null ]
-    ] ],
+    [ "anonymous_namespace{info_interface.C}", "namespaceanonymous__namespace_02info__interface_8C_03.html", null ],
     [ "anonymous_namespace{io_info.C}", "namespaceanonymous__namespace_02io__info_8C_03.html", [
       [ "element_volume", "namespaceanonymous__namespace_02io__info_8C_03.html#a03ddc25a97c9a6c9647a9c15c5a6d5d9", null ],
       [ "file_info", "namespaceanonymous__namespace_02io__info_8C_03.html#aa1c8abea5efac9a37a1a550b6d61063e", null ],
@@ -412,12 +410,6 @@ var namespaces_dup =
       [ "get_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ae60e0458d2a6d9c8819c9de6422c69ab", null ],
       [ "set_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ac7abeea54c7d9d1910b234ece5a62d62", null ]
     ] ],
-    [ "anonymous_namespace{modify_interface.C}", "namespaceanonymous__namespace_02modify__interface_8C_03.html", [
-      [ "get_type_from_file", "namespaceanonymous__namespace_02modify__interface_8C_03.html#a4e9e01fe341e418787440665f84c19f7", null ]
-    ] ],
-    [ "anonymous_namespace{shell_interface.C}", "namespaceanonymous__namespace_02shell__interface_8C_03.html", [
-      [ "get_type_from_file", "namespaceanonymous__namespace_02shell__interface_8C_03.html#a1b8031ed6616016a0063825afb8efe1e", null ]
-    ] ],
     [ "anonymous_namespace{shell_to_hex.C}", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html", "namespaceanonymous__namespace_02shell__to__hex_8C_03" ],
     [ "anonymous_namespace{skinner.C}", "namespaceanonymous__namespace_02skinner_8C_03.html", [
       [ "output_table", "namespaceanonymous__namespace_02skinner_8C_03.html#a6c640b19f085b9609fdaa7369b1a095c", null ],
@@ -425,9 +417,6 @@ var namespaces_dup =
       [ "skinner", "namespaceanonymous__namespace_02skinner_8C_03.html#a5c9647d31b0c4e3b3375570ed26edb27", null ],
       [ "codename", "namespaceanonymous__namespace_02skinner_8C_03.html#a90ec0e098fc16dfc900a43f7069513a3", null ],
       [ "version", "namespaceanonymous__namespace_02skinner_8C_03.html#af3693f53a100020de6e7f48fbcca74f7", null ]
-    ] ],
-    [ "anonymous_namespace{skinner_interface.C}", "namespaceanonymous__namespace_02skinner__interface_8C_03.html", [
-      [ "get_type_from_file", "namespaceanonymous__namespace_02skinner__interface_8C_03.html#a7c1300743a1c23c3b796679b91d7b46a", null ]
     ] ],
     [ "anonymous_namespace{sphgen.C}", "namespaceanonymous__namespace_02sphgen_8C_03.html", "namespaceanonymous__namespace_02sphgen_8C_03" ],
     [ "anonymous_namespace{struc_to_unstruc.C}", "namespaceanonymous__namespace_02struc__to__unstruc_8C_03.html", [

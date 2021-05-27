@@ -120,6 +120,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ga045c5b10deb49ae979c0aaa16e672621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f09e4d2470eab1b903ca420d96e6748"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a7f09e4d2470eab1b903ca420d96e6748">check_dynamic_cast</a> (const void *<a class="el" href="format_8h.html#a3f3cc8de0a7513ebe68ed81778949f8d">ptr</a>)</td></tr>
 <tr class="separator:a7f09e4d2470eab1b903ca420d96e6748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93756b9fb462f07e066342f32ed61d27"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a93756b9fb462f07e066342f32ed61d27">get_type_from_file</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a93756b9fb462f07e066342f32ed61d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">guess file type from extension  <a href="classIoss_1_1Utils.html#a93756b9fb462f07e066342f32ed61d27">More...</a><br /></td></tr>
+<tr class="separator:a93756b9fb462f07e066342f32ed61d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9e8a65a742fa904c9b21ca049616f27"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa9e8a65a742fa904c9b21ca049616f27"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#aa9e8a65a742fa904c9b21ca049616f27">uniquify</a> (std::vector&lt; T &gt; &amp;vec, bool skip_first=false)</td></tr>
 <tr class="separator:aa9e8a65a742fa904c9b21ca049616f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1426,6 +1429,34 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a93756b9fb462f07e066342f32ed61d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93756b9fb462f07e066342f32ed61d27">&#9670;&nbsp;</a></span>get_type_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ioss::Utils::get_type_from_file </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>guess file type from extension </p>
+
+</div>
+</div>
 <a id="a1ec73edea0e845665ac385f605f4aa99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ec73edea0e845665ac385f605f4aa99">&#9670;&nbsp;</a></span>hash()</h2>
 
@@ -1757,7 +1788,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Returns the number of digits required to print the number. If <code>use_commas</code> is specified, then the width will be adjusted to account for the comma used every 3 digits. (1,234,567,890 would return 13) Typically used with the <code>fmt::print()</code> functions as: </p><div class="fragment"><div class="line"><a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">fmt::print</a>(<span class="stringliteral">&quot;{:{}L}&quot;</span>, number, <a class="code" href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">number_width</a>(number,<span class="keyword">true</span>))</div>
 <div class="line">fmt::<a class="code" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">print</a>(&quot;{:{}d}<span class="stringliteral">&quot;, number, number_width(number,false))</span></div>
-<div class="ttc" id="aclassIoss_1_1Utils_html_a875232ab39ecaf79b1b668d28fb590d6"><div class="ttname"><a href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">Ioss::Utils::number_width</a></div><div class="ttdeci">static int number_width(const size_t number, bool use_commas=false)</div><div class="ttdef"><b>Definition:</b> Ioss_Utils.h:210</div></div>
+<div class="ttc" id="aclassIoss_1_1Utils_html_a875232ab39ecaf79b1b668d28fb590d6"><div class="ttname"><a href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">Ioss::Utils::number_width</a></div><div class="ttdeci">static int number_width(const size_t number, bool use_commas=false)</div><div class="ttdef"><b>Definition:</b> Ioss_Utils.h:213</div></div>
 <div class="ttc" id="acolor_8h_html_a2fead8330d19b9d2f10e6ed9c59e0174"><div class="ttname"><a href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">print</a></div><div class="ttdeci">void print(std::FILE *f, const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:519</div></div>
 </div><!-- fragment --> 
 </div>

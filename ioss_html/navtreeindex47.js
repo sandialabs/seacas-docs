@@ -1,13 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"ostream_8h.html#a7168f947aaf3559a87c031d4cc60d242":[5,0,0,10,0,8,5],
-"ostream_8h.html#a7a0376e2fc294a1f6660704c9f5d8efb":[5,0,0,10,0,8,7],
-"ostream_8h.html#a8dc9dbf2ac6c18173148a35ea3e6f8c2":[5,0,0,10,0,8,9],
-"ostream_8h.html#ab774ebdb3565689cdc79ab10b0cb16ef":[5,0,0,10,0,8,13],
-"ostream_8h_source.html":[5,0,0,10,0,8],
-"pages.html":[],
-"pdqsort_8h.html":[5,0,0,263],
-"pdqsort_8h.html#a01d434ba2a54a3abc238517e4cb7519a":[5,0,0,263,4],
 "pdqsort_8h.html#a256e806ad89928e707d145a6282cf049":[5,0,0,263,10],
 "pdqsort_8h.html#a29ab6c05f20769083e8140b392c41189":[5,0,0,263,11],
 "pdqsort_8h.html#a2c5ecdf1abb3b6e3fc02cd157512ac11":[5,0,0,263,12],
@@ -94,7 +86,6 @@ var NAVTREEINDEX47 =
 "robin__set_8h.html#a1759c0a9b912525afb26236b4fb763e8":[5,0,0,267,2],
 "robin__set_8h_source.html":[5,0,0,267],
 "shell__interface_8C.html":[5,0,0,8,12],
-"shell__interface_8C.html#a1b8031ed6616016a0063825afb8efe1e":[5,0,0,8,12,0],
 "shell__interface_8h.html":[5,0,0,8,13],
 "shell__interface_8h_source.html":[5,0,0,8,13],
 "shell__to__hex_8C.html":[5,0,0,8,14],
@@ -117,7 +108,6 @@ var NAVTREEINDEX47 =
 "skinner_8C.html#aae0b7c03b9891c8985688aaa616915a4":[5,0,0,8,15,2],
 "skinner_8C.html#af3693f53a100020de6e7f48fbcca74f7":[5,0,0,8,15,5],
 "skinner__interface_8C.html":[5,0,0,8,16],
-"skinner__interface_8C.html#a7c1300743a1c23c3b796679b91d7b46a":[5,0,0,8,16,0],
 "skinner__interface_8h.html":[5,0,0,8,17],
 "skinner__interface_8h_source.html":[5,0,0,8,17],
 "sphgen_8C.html":[5,0,0,8,18],
@@ -249,5 +239,15 @@ var NAVTREEINDEX47 =
 "structIoex_1_1EdgeBlock.html#a245e01fc4d3279d5b3cf2bf0b0286bc2":[4,0,79,6,3],
 "structIoex_1_1EdgeBlock.html#a44d94658b157562b2b7e35dd6b2ef37f":[4,0,79,6,4],
 "structIoex_1_1EdgeBlock.html#a4d4461d74a0c95d199925a25289ef1ab":[4,0,79,6,8],
-"structIoex_1_1EdgeBlock.html#a6a72e58f35d512b3642feef7a768e604":[4,0,79,6,5]
+"structIoex_1_1EdgeBlock.html#a6a72e58f35d512b3642feef7a768e604":[4,0,79,6,5],
+"structIoex_1_1EdgeBlock.html#a6e7c30e0b74c80513e547521fff1775b":[4,0,79,6,10],
+"structIoex_1_1EdgeBlock.html#a7354214ea10659663715bcfcff1f6ea9":[4,0,79,6,2],
+"structIoex_1_1EdgeBlock.html#a841165bf1233c6315b926069e24d520a":[4,0,79,6,1],
+"structIoex_1_1EdgeBlock.html#a9538f0b1ab5c3f4a06409d68b0cbd400":[4,0,79,6,6],
+"structIoex_1_1EdgeBlock.html#a9fdb6233711ad705cf62a8d0d24dda0e":[4,0,79,6,0],
+"structIoex_1_1EdgeBlock.html#ac38cf44f21e05549ebb09b916169dae2":[4,0,79,6,7],
+"structIoex_1_1EdgeBlock.html#af5f34936dab2adeb0d040064d84e2328":[4,0,79,6,9],
+"structIoex_1_1EdgeSet.html":[4,0,79,10],
+"structIoex_1_1EdgeSet.html#a046b02935fedcfb43d9e4a83c394aa50":[4,0,79,10,0],
+"structIoex_1_1EdgeSet.html#a1e637c833d260bd6ad721b7a52ee0a6e":[4,0,79,10,7]
 };
