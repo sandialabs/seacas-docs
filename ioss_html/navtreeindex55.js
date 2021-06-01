@@ -1,5 +1,11 @@
 var NAVTREEINDEX55 =
 {
+"uniondetail_1_1arg__ref_1_1value.html#adcd0453b74ba39a5f9d6e36215977a7f":[4,0,74,101,0,0],
+"uniondetail_1_1color__type_1_1color__union.html":[4,0,74,5,0],
+"uniondetail_1_1color__type_1_1color__union.html#a66180dd3ddfb2fcfacfe162c0eeacfd2":[4,0,74,5,0,1],
+"uniondetail_1_1color__type_1_1color__union.html#af1f8f66562ac72dbc4f55cdc038d9dd4":[4,0,74,5,0,0],
+"uniondetail_1_1format__part_1_1value.html":[4,0,74,9,1],
+"uniondetail_1_1format__part_1_1value.html#a2f09c62e513f614f06ebc4ca5a068bb8":[4,0,74,9,1,3],
 "uniondetail_1_1format__part_1_1value.html#a76dc947fedaa1e81bca8acbca2b39e19":[4,0,74,9,1,2],
 "uniondetail_1_1format__part_1_1value.html#aca50a68e0fd7b53d8052488a487464c5":[4,0,74,9,1,1],
 "uniondetail_1_1format__part_1_1value.html#acfc2cfebee8fc46a5f9262cea8654d1d":[4,0,74,9,1,4],

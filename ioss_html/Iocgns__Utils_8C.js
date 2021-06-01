@@ -11,5 +11,7 @@ var Iocgns__Utils_8C =
     [ "power_2", "Iocgns__Utils_8C.html#a8b8dc13ccaa987729b8b60d50ded3a80", null ],
     [ "proc_with_minimum_work", "Iocgns__Utils_8C.html#af38cfc06f8a6742dda73059955c1216f", null ],
     [ "subset_range", "Iocgns__Utils_8C.html#a765f362be82c7cf09c6f3cae4981c882", null ],
-    [ "sync_transient_variables_fpp", "Iocgns__Utils_8C.html#a4c54bc0484fe7e8e600447952b9a745d", null ]
+    [ "sync_transient_variables_fpp", "Iocgns__Utils_8C.html#a4c54bc0484fe7e8e600447952b9a745d", null ],
+    [ "CG_CELL_CENTER_FIELD_ID", "Iocgns__Utils_8C.html#adf4e639ce5d9652ed2631fb3fd638a16", null ],
+    [ "CG_VERTEX_FIELD_ID", "Iocgns__Utils_8C.html#a42d955039925fb08693110758bb83c5b", null ]
 ];

@@ -38,6 +38,7 @@ var classIoss_1_1DatabaseIO =
     [ "get_block_adjacencies", "classIoss_1_1DatabaseIO.html#aced27ca42bbc7db5e4d8b059b00fd8cb", null ],
     [ "get_block_adjacencies__", "classIoss_1_1DatabaseIO.html#abd896198f2e53e6403d1620154a89e36", null ],
     [ "get_bounding_box", "classIoss_1_1DatabaseIO.html#a205567b7e63d4568282ded81c2a41899", null ],
+    [ "get_bounding_box", "classIoss_1_1DatabaseIO.html#aca0bee5b896af7dba3b412cb77bb3c13", null ],
     [ "get_bounding_box", "classIoss_1_1DatabaseIO.html#ab0dcbe306c5ba8201795dcb5a7611d2b", null ],
     [ "get_cycle_count", "classIoss_1_1DatabaseIO.html#a89a00fab4e24f2e02108214012c0df05", null ],
     [ "get_dwname", "classIoss_1_1DatabaseIO.html#a647e5041a48ca35ee03cb739333b1bf2", null ],

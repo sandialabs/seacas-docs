@@ -6,6 +6,7 @@ var classIoss_1_1NodeBlock =
     [ "contained_in", "classIoss_1_1NodeBlock.html#a80f95561d7483140d045bf5697956406", null ],
     [ "contains_string", "classIoss_1_1NodeBlock.html#a69334f8aa6d488d751cc8cde4631816e", null ],
     [ "equal", "classIoss_1_1NodeBlock.html#a36d82c8b26ed06edb9e809c650669e91", null ],
+    [ "get_bounding_box", "classIoss_1_1NodeBlock.html#acad24b1b49bcd72b42b8cd6936d2e282", null ],
     [ "get_implicit_property", "classIoss_1_1NodeBlock.html#afae89ab834c357913ca88bdd70f10b07", null ],
     [ "internal_get_field_data", "classIoss_1_1NodeBlock.html#a0a49aaeb2e803bdda23992400a6b8e21", null ],
     [ "internal_put_field_data", "classIoss_1_1NodeBlock.html#a962bab0dd8ee9244d876551c6faa1864", null ],
