@@ -1,6 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"classglob_1_1SetItemRange.html#ae706788d96d84fdf22d90cff81184a85":[4,0,75,10,0],
 "classglob_1_1SetItemsNode.html":[4,0,75,19],
 "classglob_1_1SetItemsNode.html#a2ddc5c61c168453113ff422a4a3ac7db":[4,0,75,19,0],
 "classglob_1_1SetItemsNode.html#a55fb82abffc03a59540a46cdfa01fd88":[4,0,75,19,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX32 =
 "classtsl_1_1bhopscotch__map.html#ac59923644e62988016a28da48472a89a":[4,0,94,4,114],
 "classtsl_1_1bhopscotch__map.html#ac92a8e0ad2ec4e3acae3672373809ff6":[4,0,94,4,28],
 "classtsl_1_1bhopscotch__map.html#ac9929ec2d2b3d4eb14b8d701038c5c65":[4,0,94,4,100],
-"classtsl_1_1bhopscotch__map.html#acf31932fdd34612150858fb8e968d70a":[4,0,94,4,87]
+"classtsl_1_1bhopscotch__map.html#acf31932fdd34612150858fb8e968d70a":[4,0,94,4,87],
+"classtsl_1_1bhopscotch__map.html#ad032e476d2b28d6c102f8c9b1a1aa058":[4,0,94,4,52]
 };

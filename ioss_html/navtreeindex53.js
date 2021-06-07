@@ -1,6 +1,5 @@
 var NAVTREEINDEX53 =
 {
-"structdetail_1_1compiled__format__base.html":[4,0,74,13],
 "structdetail_1_1compiled__format__base.html#a16203bc7fe3d4067208fc77d711a8758":[4,0,74,13,3],
 "structdetail_1_1compiled__format__base.html#a56ff9ba78e2a2513c83d23132f6957fe":[4,0,74,13,0],
 "structdetail_1_1compiled__format__base.html#a8fcf91a5cdd43da5b5cb49a6bc9f204d":[4,0,74,13,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX53 =
 "structdetail_1_1make__integer__sequence_3_01T_00_010_00_01Ns_8_8_8_01_4.html":[4,0,74,133],
 "structdetail_1_1make__unsigned__or__bool.html":[4,0,74,119],
 "structdetail_1_1make__unsigned__or__bool_3_01bool_01_4.html":[4,0,74,120],
-"structdetail_1_1make__unsigned__or__bool_3_01bool_01_4.html#a262bd74f2d79291103ec7bdd2ffb519a":[4,0,74,120,0]
+"structdetail_1_1make__unsigned__or__bool_3_01bool_01_4.html#a262bd74f2d79291103ec7bdd2ffb519a":[4,0,74,120,0],
+"structdetail_1_1make__unsigned__or__unchanged.html":[4,0,74,2]
 };

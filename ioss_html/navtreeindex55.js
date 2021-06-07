@@ -1,6 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"uniondetail_1_1arg__ref_1_1value.html#adcd0453b74ba39a5f9d6e36215977a7f":[4,0,74,101,0,0],
 "uniondetail_1_1color__type_1_1color__union.html":[4,0,74,5,0],
 "uniondetail_1_1color__type_1_1color__union.html#a66180dd3ddfb2fcfacfe162c0eeacfd2":[4,0,74,5,0,1],
 "uniondetail_1_1color__type_1_1color__union.html#af1f8f66562ac72dbc4f55cdc038d9dd4":[4,0,74,5,0,0],

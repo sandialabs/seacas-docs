@@ -26,7 +26,7 @@ var searchData=
   ['realpath_8291',['realpath',['../classIoss_1_1FileInfo.html#acb8e98f3bea6209b406b5c83c6ed3c64',1,'Ioss::FileInfo']]],
   ['redefine_8292',['Redefine',['../classIoex_1_1Redefine.html#a32831e30cab39b337c8874707c2afe67',1,'Ioex::Redefine::Redefine(int exoid)'],['../classIoex_1_1Redefine.html#ade71847cdd6d4c6549a6332aa8427d36',1,'Ioex::Redefine::Redefine(const Redefine &amp;from)=delete']]],
   ['refholder_8293',['RefHolder',['../classRefHolder.html#a62f2e4fcf3a6f190560dbdfcfe61932e',1,'RefHolder']]],
-  ['region_8294',['Region',['../classIoss_1_1Region.html#a53873119c67391fc3942364c13c67f9a',1,'Ioss::Region']]],
+  ['region_8294',['Region',['../classIoss_1_1Region.html#aedc2f80eb34a79f822967aa60acd1df6',1,'Ioss::Region']]],
   ['region_5freport_8295',['region_report',['../namespaceioss__region__report.html#a17098e0772b05261b1b221fe59887baf',1,'ioss_region_report']]],
   ['register_5flibrary_5fversions_8296',['register_library_versions',['../classIovs__exodus_1_1IOFactory.html#a22d1ae21e20e16b55008b3727e5f11b9',1,'Iovs_exodus::IOFactory']]],
   ['registermeshinpipeline_8297',['registerMeshInPipeline',['../classIovs_1_1CatalystManager.html#a2e4224f6f86b6ad1053a540d550ca49c',1,'Iovs::CatalystManager']]],
