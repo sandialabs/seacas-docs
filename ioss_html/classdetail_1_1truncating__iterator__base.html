@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classdetail_1_1truncating__iterator__b
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="format_8h_source.html">format.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="compile_8h_source.html">compile.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for detail::truncating_iterator_base&lt; OutputIt &gt;:</div>
 <div class="dyncontent">
@@ -106,8 +106,8 @@ Public Types</h2></td></tr>
 <tr class="separator:acbcad1d11812d89bba9e8ca0a3ea548c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af557091783791c41c1d475f04a770793"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#af557091783791c41c1d475f04a770793">value_type</a> = typename std::iterator_traits&lt; OutputIt &gt;::<a class="el" href="classdetail_1_1truncating__iterator__base.html#af557091783791c41c1d475f04a770793">value_type</a></td></tr>
 <tr class="separator:af557091783791c41c1d475f04a770793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e7e13bc8d439d705912eb17e386b52e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#a4e7e13bc8d439d705912eb17e386b52e">difference_type</a> = void</td></tr>
-<tr class="separator:a4e7e13bc8d439d705912eb17e386b52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2994483ee29204fbdcc0d55e8a4a9f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#abc2994483ee29204fbdcc0d55e8a4a9f">difference_type</a> = std::ptrdiff_t</td></tr>
+<tr class="separator:abc2994483ee29204fbdcc0d55e8a4a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadb7f1019f339d99b325985354292a81"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#aadb7f1019f339d99b325985354292a81">pointer</a> = void</td></tr>
 <tr class="separator:aadb7f1019f339d99b325985354292a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c38c7ac2672fad4e8ccb12e7eb71ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#ac3c38c7ac2672fad4e8ccb12e7eb71ad">reference</a> = void</td></tr>
@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0ba319a1eb55241ee7c98651f7e277d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#a0ba319a1eb55241ee7c98651f7e277d2">truncating_iterator_base</a> ()</td></tr>
+<tr class="separator:a0ba319a1eb55241ee7c98651f7e277d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de886223ba3391ca8a4618720a1c0e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#a3de886223ba3391ca8a4618720a1c0e6">truncating_iterator_base</a> (OutputIt out, size_t limit)</td></tr>
 <tr class="separator:a3de886223ba3391ca8a4618720a1c0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -133,7 +135,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aabf7031a36137260823898c436bdab3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68f63204e045cd61d118a594108601c5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#a68f63204e045cd61d118a594108601c5">limit_</a></td></tr>
 <tr class="separator:a68f63204e045cd61d118a594108601c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d416994cfe027e1eabf459648542695"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#a1d416994cfe027e1eabf459648542695">count_</a></td></tr>
+<tr class="memitem:a1d416994cfe027e1eabf459648542695"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1truncating__iterator__base.html#a1d416994cfe027e1eabf459648542695">count_</a> = 0</td></tr>
 <tr class="separator:a1d416994cfe027e1eabf459648542695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -153,8 +155,8 @@ template&lt;typename OutputIt &gt; </div>
 
 </div>
 </div>
-<a id="a4e7e13bc8d439d705912eb17e386b52e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e7e13bc8d439d705912eb17e386b52e">&#9670;&nbsp;</a></span>difference_type</h2>
+<a id="abc2994483ee29204fbdcc0d55e8a4a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc2994483ee29204fbdcc0d55e8a4a9f">&#9670;&nbsp;</a></span>difference_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +164,7 @@ template&lt;typename OutputIt &gt; </div>
 template&lt;typename OutputIt &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classdetail_1_1truncating__iterator__base.html">detail::truncating_iterator_base</a>&lt; OutputIt &gt;::<a class="el" href="classdetail_1_1truncating__iterator__base.html#a4e7e13bc8d439d705912eb17e386b52e">difference_type</a> =  void</td>
+          <td class="memname">using <a class="el" href="classdetail_1_1truncating__iterator__base.html">detail::truncating_iterator_base</a>&lt; OutputIt &gt;::<a class="el" href="classdetail_1_1truncating__iterator__base.html#abc2994483ee29204fbdcc0d55e8a4a9f">difference_type</a> =  std::ptrdiff_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -234,8 +236,35 @@ template&lt;typename OutputIt &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0ba319a1eb55241ee7c98651f7e277d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba319a1eb55241ee7c98651f7e277d2">&#9670;&nbsp;</a></span>truncating_iterator_base() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OutputIt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdetail_1_1truncating__iterator__base.html">detail::truncating_iterator_base</a>&lt; OutputIt &gt;::<a class="el" href="classdetail_1_1truncating__iterator__base.html">truncating_iterator_base</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3de886223ba3391ca8a4618720a1c0e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3de886223ba3391ca8a4618720a1c0e6">&#9670;&nbsp;</a></span>truncating_iterator_base()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de886223ba3391ca8a4618720a1c0e6">&#9670;&nbsp;</a></span>truncating_iterator_base() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +369,7 @@ template&lt;typename OutputIt &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="classdetail_1_1truncating__iterator__base.html">detail::truncating_iterator_base</a>&lt; OutputIt &gt;::count_</td>
+          <td class="memname">size_t <a class="el" href="classdetail_1_1truncating__iterator__base.html">detail::truncating_iterator_base</a>&lt; OutputIt &gt;::count_ = 0</td>
         </tr>
       </table>
   </td>
@@ -401,7 +430,7 @@ template&lt;typename OutputIt &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/private_copy_fmt/fmt/<a class="el" href="format_8h_source.html">format.h</a></li>
+<li>src/private_copy_fmt/fmt/<a class="el" href="compile_8h_source.html">compile.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

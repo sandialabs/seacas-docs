@@ -460,6 +460,11 @@ var namespaces_dup =
       [ "dot8", "namespaceanonymous__namespace_02volume_8C_03.html#af719cf311d0d67e67fdf3884b50d0795", null ]
     ] ],
     [ "detail", "namespacedetail.html", "namespacedetail" ],
+    [ "detail_exported", "namespacedetail__exported.html", [
+      [ "compile_string_to_view", "namespacedetail__exported.html#a49a9f461220f70b5fdbdf267b5a92638", null ],
+      [ "compile_string_to_view", "namespacedetail__exported.html#a8ce4671a232e1139c6af8c27e6a41354", null ]
+    ] ],
+    [ "dragonbox", "namespacedragonbox.html", "namespacedragonbox" ],
     [ "glob", "namespaceglob.html", "namespaceglob" ],
     [ "Info", "namespaceInfo.html", "namespaceInfo" ],
     [ "Ioad", "namespaceIoad.html", "namespaceIoad" ],
@@ -477,6 +482,11 @@ var namespaces_dup =
     [ "Iovs", "namespaceIovs.html", "namespaceIovs" ],
     [ "Iovs_cgns", "namespaceIovs__cgns.html", "namespaceIovs__cgns" ],
     [ "Iovs_exodus", "namespaceIovs__exodus.html", "namespaceIovs__exodus" ],
+    [ "literals", "namespaceliterals.html", [
+      [ "operator\"\"_a", "namespaceliterals.html#a1f2c278d22949c1fffce38222165699e", null ],
+      [ "operator\"\"_format", "namespaceliterals.html#a2a8f6d15449acb963b9a702ce59bba6d", null ],
+      [ "operator\"\"_format", "namespaceliterals.html#ad7ee095016dc885b66f19ad3e80f4fc2", null ]
+    ] ],
     [ "Modify", "namespaceModify.html", "namespaceModify" ],
     [ "pdqsort_detail", "namespacepdqsort__detail.html", [
       [ "align_cacheline", "namespacepdqsort__detail.html#a5cfbd74545cae92930540b5042146308", null ],

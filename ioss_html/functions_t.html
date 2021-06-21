@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 : <a class="el" href="classIovs_1_1PhactoriParserInterface.html#aa8c3415390aeb0e11c5f903d2ea1212ca99373df80121216f10fc64ef94e75494">Iovs::PhactoriParserInterface</a>
 </li>
 <li>term_color
-: <a class="el" href="uniondetail_1_1color__type_1_1color__union.html#a66180dd3ddfb2fcfacfe162c0eeacfd2">detail::color_type::color_union</a>
+: <a class="el" href="unioncolor__type_1_1color__union.html#afa1cb6473df93e11e11edc9dfb6ab364">color_type::color_union</a>
 </li>
 <li>term_width()
 : <a class="el" href="classIoss_1_1Utils.html#adda9e39aa8daad5a8d027708d53988a6">Ioss::Utils</a>
@@ -152,8 +152,11 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <li>thickness
 : <a class="el" href="structanonymous__namespace_02shell__to__hex_8C_03_1_1Globals.html#a29b08960933930de21adaa381d82253a">anonymous_namespace{shell_to_hex.C}::Globals</a>
 </li>
+<li>thousands_sep
+: <a class="el" href="structthousands__sep__result.html#a2e564c650f0215c77f13174b5878f888">thousands_sep_result&lt; Char &gt;</a>
+</li>
 <li>time()
-: <a class="el" href="structdetail_1_1chrono__formatter.html#a120f073a8cc67e6e733f8ab56b0743d4">detail::chrono_formatter&lt; FormatContext, OutputIt, Rep, Period &gt;</a>
+: <a class="el" href="structchrono__formatter.html#accee7c1252643d4d76188b16ba4da395">chrono_formatter&lt; FormatContext, OutputIt, Rep, Period &gt;</a>
 </li>
 <li>time_and_date()
 : <a class="el" href="classIoss_1_1Utils.html#acbd41c4c408240d7e09c7c30b3f4bb9d">Ioss::Utils</a>
@@ -189,11 +192,8 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="classIofaodel_1_1DatabaseIO.html#ae840890f34c0b8e1800fd492d650fcfb">Iofaodel::DatabaseIO</a>
 , <a class="el" href="classIopg_1_1DatabaseIO.html#ae17ba440854d1f3c6823bc9caede613b">Iopg::DatabaseIO</a>
 </li>
-<li>tm_format
-: <a class="el" href="structformatter_3_01std_1_1tm_00_01Char_01_4.html#a2a9d9612580cc86f7670f68eb150ca95">formatter&lt; std::tm, Char &gt;</a>
-</li>
 <li>to_esc()
-: <a class="el" href="structdetail_1_1ansi__color__escape.html#abb29af0d6f9663c989f71cd0e171e170">detail::ansi_color_escape&lt; Char &gt;</a>
+: <a class="el" href="structansi__color__escape.html#ad2d5cb1b71956d0c5365052a3034bd42">ansi_color_escape&lt; Char &gt;</a>
 </li>
 <li>to_string()
 : <a class="el" href="classIoss_1_1Utils.html#a990b5cbc6a8633828fea90c8d0378441">Ioss::Utils</a>
@@ -321,11 +321,11 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry__hash_3_01true_01_4.html#afcb0d8745cd742d1cbe85ea5e657ee92">tsl::detail_robin_hash::bucket_entry_hash&lt; true &gt;</a>
 </li>
 <li>truncating_iterator()
-: <a class="el" href="classdetail_1_1truncating__iterator_3_01OutputIt_00_01std_1_1false__type_01_4.html#a3f454dc6284c6f6d1da51d2ff08427ac">detail::truncating_iterator&lt; OutputIt, std::false_type &gt;</a>
-, <a class="el" href="classdetail_1_1truncating__iterator_3_01OutputIt_00_01std_1_1true__type_01_4.html#aa8be28087a64ecee73a3564d860367b5">detail::truncating_iterator&lt; OutputIt, std::true_type &gt;</a>
+: <a class="el" href="classdetail_1_1truncating__iterator_3_01OutputIt_00_01std_1_1false__type_01_4.html#af83fa54c7baa87d400b2fda0caa9729c">detail::truncating_iterator&lt; OutputIt, std::false_type &gt;</a>
+, <a class="el" href="classdetail_1_1truncating__iterator_3_01OutputIt_00_01std_1_1true__type_01_4.html#aa1acb9d237cf3b282132a610533f84d4">detail::truncating_iterator&lt; OutputIt, std::true_type &gt;</a>
 </li>
 <li>truncating_iterator_base()
-: <a class="el" href="classdetail_1_1truncating__iterator__base.html#a3de886223ba3391ca8a4618720a1c0e6">detail::truncating_iterator_base&lt; OutputIt &gt;</a>
+: <a class="el" href="classdetail_1_1truncating__iterator__base.html#a0ba319a1eb55241ee7c98651f7e277d2">detail::truncating_iterator_base&lt; OutputIt &gt;</a>
 </li>
 <li>try_emplace()
 : <a class="el" href="classtsl_1_1bhopscotch__map.html#a5049e25280a0e2c4bd4bdd0c1e66a678">tsl::bhopscotch_map&lt; Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy &gt;</a>
@@ -341,29 +341,25 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 : <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a457793a558d3be680cdb35166851197f">tsl::detail_hopscotch_hash::hopscotch_hash&lt; ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer &gt;</a>
 </li>
 <li>try_reserve()
-: <a class="el" href="classdetail_1_1buffer.html#ae47cda50797d28372c4eae638f572e74">detail::buffer&lt; T &gt;</a>
+: <a class="el" href="classbuffer.html#a78f80df4426cb9a5c474ba6fd318f282">buffer&lt; T &gt;</a>
 </li>
 <li>try_resize()
-: <a class="el" href="classdetail_1_1buffer.html#a96d4d5bdb07a7efe2825cbc7a1995c86">detail::buffer&lt; T &gt;</a>
+: <a class="el" href="classbuffer.html#ac4d155825982ecc22321ba2942672284">buffer&lt; T &gt;</a>
 </li>
 <li>tsFormat
 : <a class="el" href="classIohb_1_1DatabaseIO.html#ab96a03cea2a276884b7e5a60d5730c48">Iohb::DatabaseIO</a>
 </li>
 <li>tuple
-: <a class="el" href="structtuple__arg__join.html#a37a43f7ccd08a8258f6f7da003ab3370">tuple_arg_join&lt; Char, T &gt;</a>
+: <a class="el" href="structtuple__join__view.html#aaf69dbefaf462bf66a7b6a1ba6eabf2c">tuple_join_view&lt; Char, T &gt;</a>
 </li>
-<li>tuple_arg_join()
-: <a class="el" href="structtuple__arg__join.html#aab11e306d534d41d17a52ddef97ffc1e">tuple_arg_join&lt; Char, T &gt;</a>
+<li>tuple_join_view()
+: <a class="el" href="structtuple__join__view.html#a5360614eedaff4fe6375268447769828">tuple_join_view&lt; Char, T &gt;</a>
 </li>
 <li>type()
-: <a class="el" href="classbasic__format__arg.html#a257eb0609f0c95e8514941557b84e8f1">basic_format_arg&lt; Context &gt;</a>
-, <a class="el" href="classbasic__format__args.html#aeb7678a8e92e8b6c1ecd042663401c36">basic_format_args&lt; Context &gt;</a>
+: <a class="el" href="classbasic__format__arg.html#a2697987469a9508737d01b4ab7d4dd42">basic_format_arg&lt; Context &gt;</a>
+, <a class="el" href="classbasic__format__args.html#a4d5e597c31ce51609d7fa770c83dad39">basic_format_args&lt; Context &gt;</a>
 , <a class="el" href="structbasic__format__specs.html#a3e5701aefaa9266a5a2d531f9789167d">basic_format_specs&lt; Char &gt;</a>
-, <a class="el" href="structdetail_1_1char__t__impl_3_01S_00_01enable__if__t_3_01is__string_3_01S_01_4_1_1value_01_4_01_4.html#ab4d37774990a914de9dcde80c584948b">detail::char_t_impl&lt; S, enable_if_t&lt; is_string&lt; S &gt;::value &gt; &gt;</a>
-, <a class="el" href="structdetail_1_1make__unsigned__or__bool_3_01bool_01_4.html#a262bd74f2d79291103ec7bdd2ffb519a">detail::make_unsigned_or_bool&lt; bool &gt;</a>
-, <a class="el" href="structdetail_1_1make__unsigned__or__unchanged.html#a76f8c2352d357582a9521d3e3608bdaf">detail::make_unsigned_or_unchanged&lt; T, INTEGRAL &gt;</a>
-, <a class="el" href="structdetail_1_1make__unsigned__or__unchanged_3_01T_00_01true_01_4.html#a80c4e8ddfad700203b4dfbc1b624c928">detail::make_unsigned_or_unchanged&lt; T, true &gt;</a>
-, <a class="el" href="structdetail_1_1void__t__impl.html#a0fd7f5c270cbf220d3894ac0c0d33204">detail::void_t_impl&lt; Ts &gt;</a>
+, <a class="el" href="structchar__t__impl_3_01S_00_01enable__if__t_3_01is__string_3_01S_01_4_1_1value_01_4_01_4.html#aeffb154f81d18f0e473cda2c9e94ed69">char_t_impl&lt; S, enable_if_t&lt; is_string&lt; S &gt;::value &gt; &gt;</a>
 </li>
 <li>Type
 : <a class="el" href="classglob_1_1AstNode.html#adf77cab1069246a057bbb17c15f5ba9c">glob::AstNode&lt; charT &gt;</a>
@@ -393,6 +389,9 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="classIoss_1_1SideBlock.html#abc8534e5c921bd301828f3c7874e3108">Ioss::SideBlock</a>
 , <a class="el" href="classIoss_1_1SideSet.html#a6a6ed72bbd84a92c9941fea180f8512f">Ioss::SideSet</a>
 , <a class="el" href="classIoss_1_1StructuredBlock.html#a78d4dd9f0fdf1b2a5fb568289ebd21da">Ioss::StructuredBlock</a>
+, <a class="el" href="structmake__unsigned__or__bool_3_01bool_01_4.html#aaa717db908c1a59247a172d02d38304b">make_unsigned_or_bool&lt; bool &gt;</a>
+, <a class="el" href="structmake__unsigned__or__unchanged.html#a1cdb5264b3817c5a8b56d6609f2a66bd">make_unsigned_or_unchanged&lt; T, INTEGRAL &gt;</a>
+, <a class="el" href="structmake__unsigned__or__unchanged_3_01T_00_01true_01_4.html#a09970eb9c095bb53611ceb6eb9422d27">make_unsigned_or_unchanged&lt; T, true &gt;</a>
 , <a class="el" href="classModify_1_1Interface.html#ac6539c2601474df3dc49db29d7b88266">Modify::Interface</a>
 , <a class="el" href="structtsl_1_1detail__hopscotch__hash_1_1make__void.html#af2bc1b5213ef71eb5299801ce5aa6dbc">tsl::detail_hopscotch_hash::make_void&lt; T &gt;</a>
 , <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_34aef3ae34b24d1d6c51f7b75c4e85a1.html#a6f2128ec40cdda0714c42f3b1d45c6e6">tsl::detail_hopscotch_hash::smallest_type_for_min_bits&lt; MinBits, typename std::enable_if&lt;(MinBits &gt; 0) &amp;&amp;(MinBits&lt;=8)&gt;::type &gt;</a>
@@ -403,9 +402,8 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="structtype__identity.html#abe86f80604d12518b04a2195d56136ed">type_identity&lt; T &gt;</a>
 </li>
 <li>type_
-: <a class="el" href="classbasic__format__arg.html#a2562b7353ce325fd7dd69ad8066974b5">basic_format_arg&lt; Context &gt;</a>
-, <a class="el" href="classdetail_1_1arg__converter.html#a2d3b24f1e61c2e6c5014d1fc455c4cea">detail::arg_converter&lt; T, Context &gt;</a>
-, <a class="el" href="classdetail_1_1char__specs__checker.html#aa346f4fe833cd47ff73ed9f6fc73ba29">detail::char_specs_checker&lt; ErrorHandler &gt;</a>
+: <a class="el" href="classarg__converter.html#a196d918adb1e79c24e65001311c39d28">arg_converter&lt; T, Context &gt;</a>
+, <a class="el" href="classbasic__format__arg.html#a2562b7353ce325fd7dd69ad8066974b5">basic_format_arg&lt; Context &gt;</a>
 , <a class="el" href="classglob_1_1AstNode.html#a21f871456a5438a47efe2f93c8765447">glob::AstNode&lt; charT &gt;</a>
 , <a class="el" href="classglob_1_1State.html#a7be30e52160ba534994909d4ee01d985">glob::State&lt; charT &gt;</a>
 , <a class="el" href="classglob_1_1StateGroup.html#a163636b33295dc6ace9e0118df486aee">glob::StateGroup&lt; charT &gt;</a>

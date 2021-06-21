@@ -110,7 +110,7 @@ template&lt;typename T , typename Char &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#af4388801466a5994a363d6005616371a">FMT_CONSTEXPR_DECL</a> const bool <a class="el" href="structis__range.html">is_range</a>&lt; T, Char &gt;::value</td>
+          <td class="memname"><a class="el" href="core_8h.html#af4388801466a5994a363d6005616371a">FMT_CONSTEXPR_DECL</a> const bool <a class="el" href="structis__range.html">is_range</a>&lt; T, Char &gt;::<a class="el" href="classvalue.html">value</a></td>
         </tr>
       </table>
   </td>
@@ -120,12 +120,12 @@ template&lt;typename T , typename Char &gt; </div>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      <a class="code" href="structdetail_1_1is__range__.html">detail::is_range_&lt;T&gt;::value</a> &amp;&amp; !<a class="code" href="classdetail_1_1is__like__std__string.html">detail::is_like_std_string&lt;T&gt;::value</a> &amp;&amp;</div>
-<div class="line">      !std::is_convertible&lt;T, std::basic_string&lt;Char&gt;&gt;<a class="code" href="structis__range.html#a7fb8ce1b27032b372bb59ad66e8ae11a">::value</a> &amp;&amp;</div>
-<div class="line">      !std::is_constructible&lt;detail::std_string_view&lt;Char&gt;, T&gt;<a class="code" href="structis__range.html#a7fb8ce1b27032b372bb59ad66e8ae11a">::value</a></div>
-<div class="ttc" id="aclassdetail_1_1is__like__std__string_html"><div class="ttname"><a href="classdetail_1_1is__like__std__string.html">detail::is_like_std_string</a></div><div class="ttdoc">Return true value if T has std::string interface, like std::string_view.</div><div class="ttdef"><b>Definition:</b> ranges.h:79</div></div>
-<div class="ttc" id="astructdetail_1_1is__range___html"><div class="ttname"><a href="structdetail_1_1is__range__.html">detail::is_range_</a></div><div class="ttdef"><b>Definition:</b> ranges.h:95</div></div>
-<div class="ttc" id="astructis__range_html_a7fb8ce1b27032b372bb59ad66e8ae11a"><div class="ttname"><a href="structis__range.html#a7fb8ce1b27032b372bb59ad66e8ae11a">is_range::value</a></div><div class="ttdeci">static FMT_CONSTEXPR_DECL const bool value</div><div class="ttdef"><b>Definition:</b> ranges.h:245</div></div>
+<div class="line">      <a class="code" href="structdetail_1_1is__range__.html">detail::is_range_&lt;T&gt;::value</a> &amp;&amp; !<a class="code" href="classdetail_1_1is__std__string__like.html">detail::is_std_string_like&lt;T&gt;::value</a> &amp;&amp;</div>
+<div class="line">      !std::is_convertible&lt;T, std::basic_string&lt;Char&gt;&gt;<a class="code" href="classvalue.html">::value</a> &amp;&amp;</div>
+<div class="line">      !std::is_constructible&lt;detail::std_string_view&lt;Char&gt;, T&gt;<a class="code" href="classvalue.html">::value</a></div>
+<div class="ttc" id="aclassdetail_1_1is__std__string__like_html"><div class="ttname"><a href="classdetail_1_1is__std__string__like.html">detail::is_std_string_like</a></div><div class="ttdoc">Return true value if T has std::string interface, like std::string_view.</div><div class="ttdef"><b>Definition:</b> ranges.h:75</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1136</div></div>
+<div class="ttc" id="astructdetail_1_1is__range___html"><div class="ttname"><a href="structdetail_1_1is__range__.html">detail::is_range_</a></div><div class="ttdef"><b>Definition:</b> ranges.h:91</div></div>
 </div><!-- fragment -->
 </div>
 </div>

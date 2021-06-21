@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modify_6069',['Modify',['../namespaceModify.html',1,'']]]
+  ['literals_5966',['literals',['../namespaceliterals.html',1,'']]]
 ];

@@ -11,7 +11,7 @@ var ostream_8h =
     [ "operator<<", "ostream_8h.html#a649f78c760a4b6c1934ab0bb59ad432b", null ],
     [ "operator<<", "ostream_8h.html#a8dc9dbf2ac6c18173148a35ea3e6f8c2", null ],
     [ "operator<<", "ostream_8h.html#a6717b2662168acee70dfbbdd3168adf4", null ],
-    [ "print", "ostream_8h.html#a16b659293cdaa442d9ae9ea94ad713be", null ],
-    [ "vprint", "ostream_8h.html#a481855c4d247152fa52e3d8b64e93555", null ],
+    [ "print", "ostream_8h.html#afc9e3c6c955570aabf9b314a41636925", null ],
+    [ "vprint", "ostream_8h.html#a5d01f8301f0f5fb52898c06bbff4adb4", null ],
     [ "write_buffer", "ostream_8h.html#ab774ebdb3565689cdc79ab10b0cb16ef", null ]
 ];

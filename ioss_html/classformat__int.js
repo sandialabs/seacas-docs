@@ -6,12 +6,12 @@ var classformat__int =
     [ "format_int", "classformat__int.html#ad474137ee4a9d0545f0c8a2b3f6f6cf8", null ],
     [ "format_int", "classformat__int.html#affccebfca726a18d469e726655401d35", null ],
     [ "format_int", "classformat__int.html#a04c207f578ee7611d897c77ab4a34ff0", null ],
-    [ "c_str", "classformat__int.html#a0ae1671f3ddacb00738133f29549b724", null ],
-    [ "data", "classformat__int.html#a4ecc95eeed01911d1e2dcc4fabc5df5a", null ],
-    [ "format_signed", "classformat__int.html#a1c76e62b3b3731627f1f46a7db113792", null ],
-    [ "format_unsigned", "classformat__int.html#a85c4e034c1426aca4b5651315f5f00d0", null ],
-    [ "size", "classformat__int.html#af8b6ce4916195c8c0d0f20496eaa3dc7", null ],
-    [ "str", "classformat__int.html#ab14204962423d35a320f15e673b08e06", null ],
+    [ "c_str", "classformat__int.html#aadfe4e08e0007018df9c78863ad13d23", null ],
+    [ "data", "classformat__int.html#ac8f7ea8ed9a0d5bdfa5cb0661e8851b8", null ],
+    [ "format_signed", "classformat__int.html#a5b51571827ce661c8dda5f93b8983112", null ],
+    [ "format_unsigned", "classformat__int.html#a975c394a7ab31fd2d38861d628652bc7", null ],
+    [ "size", "classformat__int.html#a2f1870d4b535ead8699717fdcb25e997", null ],
+    [ "str", "classformat__int.html#a0f1b5493b06b98edb747737ba864f86f", null ],
     [ "buffer_", "classformat__int.html#a3745ce7628678412e5f38a6fb832af80", null ],
     [ "str_", "classformat__int.html#af8ac92284c699e868144d186a991894a", null ]
 ];

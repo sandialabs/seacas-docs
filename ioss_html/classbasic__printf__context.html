@@ -85,9 +85,6 @@ $(document).ready(function(){initNavTree('classbasic__printf__context.html','');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbasic__printf__context-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -99,15 +96,13 @@ $(document).ready(function(){initNavTree('classbasic__printf__context.html','');
 <div class="dynheader">
 Collaboration diagram for basic_printf_context&lt; OutputIt, Char &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classbasic__printf__context__coll__graph.svg" width="100%" height="514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbasic__printf__context__coll__graph.svg" width="203" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a5ceea5767a393451e5a82b2b75a6f63e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a5ceea5767a393451e5a82b2b75a6f63e">char_type</a> = Char</td></tr>
 <tr class="separator:a5ceea5767a393451e5a82b2b75a6f63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdc741aceecbd5c8710c0b0dd0899df6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#afdc741aceecbd5c8710c0b0dd0899df6">iterator</a> = OutputIt</td></tr>
-<tr class="separator:afdc741aceecbd5c8710c0b0dd0899df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c272a010394b94844440423d86b176f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a3c272a010394b94844440423d86b176f">format_arg</a> = <a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; <a class="el" href="classbasic__printf__context.html">basic_printf_context</a> &gt;</td></tr>
 <tr class="separator:a3c272a010394b94844440423d86b176f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea172cdf06a03ef2950fbff2de5ab3c8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#aea172cdf06a03ef2950fbff2de5ab3c8">parse_context_type</a> = <a class="el" href="classbasic__printf__parse__context.html">basic_printf_parse_context</a>&lt; Char &gt;</td></tr>
@@ -118,40 +113,18 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a70fcf45d0076835d464b8f3fb0cd4e1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a70fcf45d0076835d464b8f3fb0cd4e1c">basic_printf_context</a> (OutputIt <a class="el" href="classbasic__printf__context.html#a32ce7421f1cc208df2ddc815ee3701f4">out</a>, <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; <a class="el" href="classbasic__printf__context.html#a5ceea5767a393451e5a82b2b75a6f63e">char_type</a> &gt; format_str, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="classbasic__printf__context.html">basic_printf_context</a> &gt; args)</td></tr>
-<tr class="separator:a70fcf45d0076835d464b8f3fb0cd4e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdcf4066bb737766d1d1905f7b3e320"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#adfdcf4066bb737766d1d1905f7b3e320">basic_printf_context</a> (OutputIt <a class="el" href="classbasic__printf__context.html#a32ce7421f1cc208df2ddc815ee3701f4">out</a>, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="classbasic__printf__context.html">basic_printf_context</a> &gt; args)</td></tr>
+<tr class="separator:adfdcf4066bb737766d1d1905f7b3e320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32ce7421f1cc208df2ddc815ee3701f4"><td class="memItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a32ce7421f1cc208df2ddc815ee3701f4">out</a> ()</td></tr>
 <tr class="separator:a32ce7421f1cc208df2ddc815ee3701f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9b59dfcc9a9022bbd2e22eacbed7239"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#af9b59dfcc9a9022bbd2e22eacbed7239">advance_to</a> (OutputIt it)</td></tr>
 <tr class="separator:af9b59dfcc9a9022bbd2e22eacbed7239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdf573051f8678653488f1a840db845b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdetail_1_1locale__ref.html">detail::locale_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#abdf573051f8678653488f1a840db845b">locale</a> ()</td></tr>
+<tr class="memitem:abdf573051f8678653488f1a840db845b"><td class="memItemLeft" align="right" valign="top">detail::locale_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#abdf573051f8678653488f1a840db845b">locale</a> ()</td></tr>
 <tr class="separator:abdf573051f8678653488f1a840db845b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d938bba34fe8dda4296a4942f0e5da4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__printf__context.html#a3c272a010394b94844440423d86b176f">format_arg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a9d938bba34fe8dda4296a4942f0e5da4">arg</a> (int id) const</td></tr>
 <tr class="separator:a9d938bba34fe8dda4296a4942f0e5da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97e2af0ad1492a02d645dcdd489cfe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__printf__context.html#aea172cdf06a03ef2950fbff2de5ab3c8">parse_context_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#ad97e2af0ad1492a02d645dcdd489cfe2">parse_context</a> ()</td></tr>
-<tr class="separator:ad97e2af0ad1492a02d645dcdd489cfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a738f65c97827f7d57534c87f5b71903d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a738f65c97827f7d57534c87f5b71903d">on_error</a> (const char *message)</td></tr>
 <tr class="separator:a738f65c97827f7d57534c87f5b71903d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a931a0b93e495c59094d6d401d40b2921"><td class="memTemplParams" colspan="2">template&lt;typename ArgFormatter  = printf_arg_formatter&lt;OutputIt, Char&gt;&gt; </td></tr>
-<tr class="memitem:a931a0b93e495c59094d6d401d40b2921"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a931a0b93e495c59094d6d401d40b2921">format</a> ()</td></tr>
-<tr class="separator:a931a0b93e495c59094d6d401d40b2921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a06e816e1e505aa4b1454e8bf904c6b5b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a06e816e1e505aa4b1454e8bf904c6b5b">format_specs</a> = <a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt; <a class="el" href="classbasic__printf__context.html#a5ceea5767a393451e5a82b2b75a6f63e">char_type</a> &gt;</td></tr>
-<tr class="separator:a06e816e1e505aa4b1454e8bf904c6b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aa9b167a8adb5d70f5a76e4e974b6cdeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__printf__context.html#a3c272a010394b94844440423d86b176f">format_arg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#aa9b167a8adb5d70f5a76e4e974b6cdeb">get_arg</a> (int arg_index=-1)</td></tr>
-<tr class="separator:aa9b167a8adb5d70f5a76e4e974b6cdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8611173836932cd47b213019d8d9511c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a8611173836932cd47b213019d8d9511c">parse_header</a> (const Char *&amp;it, const Char *end, <a class="el" href="classbasic__printf__context.html#a06e816e1e505aa4b1454e8bf904c6b5b">format_specs</a> &amp;specs)</td></tr>
-<tr class="separator:a8611173836932cd47b213019d8d9511c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a498ea4e171a1ff9dade3b3e2bc294223"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a498ea4e171a1ff9dade3b3e2bc294223">parse_flags</a> (<a class="el" href="classbasic__printf__context.html#a06e816e1e505aa4b1454e8bf904c6b5b">format_specs</a> &amp;specs, const Char *&amp;it, const Char *end)</td></tr>
-<tr class="separator:a498ea4e171a1ff9dade3b3e2bc294223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -159,15 +132,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a41528a071b65aac69dc0fcca4a9e947a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a105bbccdfbc72ef873c4b01e20af190a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="classbasic__printf__context.html">basic_printf_context</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a105bbccdfbc72ef873c4b01e20af190a">args_</a></td></tr>
 <tr class="separator:a105bbccdfbc72ef873c4b01e20af190a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98adbb6df70a6cadc8a4bf5f40fc79f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__printf__context.html#aea172cdf06a03ef2950fbff2de5ab3c8">parse_context_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html#a98adbb6df70a6cadc8a4bf5f40fc79f3">parse_ctx_</a></td></tr>
-<tr class="separator:a98adbb6df70a6cadc8a4bf5f40fc79f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename OutputIt, typename Char&gt;<br />
-class basic_printf_context&lt; OutputIt, Char &gt;</h3>
-
-<p>This template formats data and writes the output through an output iterator. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5ceea5767a393451e5a82b2b75a6f63e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ceea5767a393451e5a82b2b75a6f63e">&#9670;&nbsp;</a></span>char_type</h2>
 
@@ -181,7 +147,6 @@ template&lt;typename OutputIt , typename Char &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The character type for the output. </p>
 
 </div>
 </div>
@@ -201,30 +166,6 @@ template&lt;typename OutputIt , typename Char &gt; </div>
 
 </div>
 </div>
-<a id="a06e816e1e505aa4b1454e8bf904c6b5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06e816e1e505aa4b1454e8bf904c6b5b">&#9670;&nbsp;</a></span>format_specs</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OutputIt , typename Char &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::<a class="el" href="classbasic__printf__context.html#a06e816e1e505aa4b1454e8bf904c6b5b">format_specs</a> =  <a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt;<a class="el" href="classbasic__printf__context.html#a5ceea5767a393451e5a82b2b75a6f63e">char_type</a>&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a3c239f1d7f73104a75165b2c415d7009"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c239f1d7f73104a75165b2c415d7009">&#9670;&nbsp;</a></span>formatter_type</h2>
 
@@ -237,22 +178,6 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::<a class="el" href="classbasic__printf__context.html#a3c239f1d7f73104a75165b2c415d7009">formatter_type</a> =  <a class="el" href="structprintf__formatter.html">printf_formatter</a>&lt;T&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afdc741aceecbd5c8710c0b0dd0899df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdc741aceecbd5c8710c0b0dd0899df6">&#9670;&nbsp;</a></span>iterator</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OutputIt , typename Char &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::<a class="el" href="classbasic__printf__context.html#afdc741aceecbd5c8710c0b0dd0899df6">iterator</a> =  OutputIt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -276,8 +201,8 @@ template&lt;typename OutputIt , typename Char &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a70fcf45d0076835d464b8f3fb0cd4e1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70fcf45d0076835d464b8f3fb0cd4e1c">&#9670;&nbsp;</a></span>basic_printf_context()</h2>
+<a id="adfdcf4066bb737766d1d1905f7b3e320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfdcf4066bb737766d1d1905f7b3e320">&#9670;&nbsp;</a></span>basic_printf_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,12 +217,6 @@ template&lt;typename OutputIt , typename Char &gt; </div>
           <td>(</td>
           <td class="paramtype">OutputIt&#160;</td>
           <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; <a class="el" href="classbasic__printf__context.html#a5ceea5767a393451e5a82b2b75a6f63e">char_type</a> &gt;&#160;</td>
-          <td class="paramname"><em>format_str</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -319,7 +238,7 @@ template&lt;typename OutputIt , typename Char &gt; </div>
 </div><div class="memdoc">
 <div class="fragment"><div class="line">Constructs a ``<a class="code" href="classbasic__printf__context.html">printf_context</a>`` <span class="keywordtype">object</span>. References to the arguments are</div>
 <div class="line">stored in the context <span class="keywordtype">object</span> so make sure they have appropriate lifetimes.</div>
-<div class="ttc" id="aclassbasic__printf__context_html"><div class="ttname"><a href="classbasic__printf__context.html">basic_printf_context</a></div><div class="ttdef"><b>Definition:</b> printf.h:336</div></div>
+<div class="ttc" id="aclassbasic__printf__context_html"><div class="ttname"><a href="classbasic__printf__context.html">basic_printf_context</a></div><div class="ttdef"><b>Definition:</b> printf.h:27</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -380,53 +299,6 @@ template&lt;typename OutputIt , typename Char &gt; </div>
 
 </div>
 </div>
-<a id="a931a0b93e495c59094d6d401d40b2921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a931a0b93e495c59094d6d401d40b2921">&#9670;&nbsp;</a></span>format()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OutputIt , typename Char &gt; </div>
-<div class="memtemplate">
-template&lt;typename ArgFormatter &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">OutputIt <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::format</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Formats stored arguments and writes the output to the range. </p>
-
-</div>
-</div>
-<a id="aa9b167a8adb5d70f5a76e4e974b6cdeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9b167a8adb5d70f5a76e4e974b6cdeb">&#9670;&nbsp;</a></span>get_arg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OutputIt , typename Char &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::<a class="el" href="classbasic__printf__context.html#a3c272a010394b94844440423d86b176f">format_arg</a> <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::get_arg </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arg_index</em> = <code>-1</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abdf573051f8678653488f1a840db845b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abdf573051f8678653488f1a840db845b">&#9670;&nbsp;</a></span>locale()</h2>
 
@@ -439,7 +311,7 @@ template&lt;typename OutputIt , typename Char &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdetail_1_1locale__ref.html">detail::locale_ref</a> <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::locale </td>
+          <td class="memname">detail::locale_ref <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::locale </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -509,121 +381,6 @@ template&lt;typename OutputIt , typename Char &gt; </div>
 
 </div>
 </div>
-<a id="ad97e2af0ad1492a02d645dcdd489cfe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad97e2af0ad1492a02d645dcdd489cfe2">&#9670;&nbsp;</a></span>parse_context()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OutputIt , typename Char &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbasic__printf__context.html#aea172cdf06a03ef2950fbff2de5ab3c8">parse_context_type</a>&amp; <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::parse_context </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a498ea4e171a1ff9dade3b3e2bc294223"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a498ea4e171a1ff9dade3b3e2bc294223">&#9670;&nbsp;</a></span>parse_flags()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OutputIt , typename Char &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::parse_flags </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classbasic__printf__context.html#a06e816e1e505aa4b1454e8bf904c6b5b">format_specs</a> &amp;&#160;</td>
-          <td class="paramname"><em>specs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Char *&amp;&#160;</td>
-          <td class="paramname"><em>it</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Char *&#160;</td>
-          <td class="paramname"><em>end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8611173836932cd47b213019d8d9511c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8611173836932cd47b213019d8d9511c">&#9670;&nbsp;</a></span>parse_header()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OutputIt , typename Char &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::parse_header </td>
-          <td>(</td>
-          <td class="paramtype">const Char *&amp;&#160;</td>
-          <td class="paramname"><em>it</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Char *&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classbasic__printf__context.html#a06e816e1e505aa4b1454e8bf904c6b5b">format_specs</a> &amp;&#160;</td>
-          <td class="paramname"><em>specs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a105bbccdfbc72ef873c4b01e20af190a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a105bbccdfbc72ef873c4b01e20af190a">&#9670;&nbsp;</a></span>args_</h2>
@@ -662,30 +419,6 @@ template&lt;typename OutputIt , typename Char &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">OutputIt <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::out_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98adbb6df70a6cadc8a4bf5f40fc79f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98adbb6df70a6cadc8a4bf5f40fc79f3">&#9670;&nbsp;</a></span>parse_ctx_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OutputIt , typename Char &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbasic__printf__context.html#aea172cdf06a03ef2950fbff2de5ab3c8">parse_context_type</a> <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; OutputIt, Char &gt;::parse_ctx_</td>
         </tr>
       </table>
   </td>

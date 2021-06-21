@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('printf_8h.html',''); initResizable(); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -93,55 +92,51 @@ $(document).ready(function(){initNavTree('printf_8h.html',''); initResizable(); 
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
-<code>#include &quot;<a class="el" href="ostream_8h_source.html">ostream.h</a>&quot;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="format_8h_source.html">format.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for printf.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="printf_8h__incl.svg" width="100%" height="563"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="printf_8h__incl.svg" width="100%" height="507"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="printf_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1int__checker.html">detail::int_checker&lt; IsSigned &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1int__checker_3_01true_01_4.html">detail::int_checker&lt; true &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1printf__precision__handler.html">detail::printf_precision_handler</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1is__zero__int.html">detail::is_zero_int</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1make__unsigned__or__bool.html">detail::make_unsigned_or_bool&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1make__unsigned__or__bool_3_01bool_01_4.html">detail::make_unsigned_or_bool&lt; bool &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1arg__converter.html">detail::arg_converter&lt; T, Context &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1char__converter.html">detail::char_converter&lt; Context &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1get__cstring.html">detail::get_cstring&lt; Char &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1printf__width__handler.html">detail::printf_width_handler&lt; Char &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structprintf__formatter.html">printf_formatter&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__parse__context.html">basic_printf_parse_context&lt; Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprintf__arg__formatter.html">printf_arg_formatter&lt; OutputIt, Char &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structprintf__formatter.html">printf_formatter&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__printf__context.html">basic_printf_context&lt; OutputIt, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacedetail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html">detail</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structint__checker.html">int_checker&lt; IsSigned &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structint__checker_3_01true_01_4.html">int_checker&lt; true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprintf__precision__handler.html">printf_precision_handler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classis__zero__int.html">is_zero_int</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmake__unsigned__or__bool.html">make_unsigned_or_bool&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmake__unsigned__or__bool_3_01bool_01_4.html">make_unsigned_or_bool&lt; bool &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarg__converter.html">arg_converter&lt; T, Context &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchar__converter.html">char_converter&lt; Context &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structget__cstring.html">get_cstring&lt; Char &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprintf__width__handler.html">printf_width_handler&lt; Char &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprintf__arg__formatter.html">printf_arg_formatter&lt; OutputIt, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a7721cb26804e73c9c73b908277b42c8c"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
-<tr class="memitem:a7721cb26804e73c9c73b908277b42c8c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a> = <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; <a class="el" href="classdetail_1_1buffer__appender.html">detail::buffer_appender</a>&lt; Char &gt;, Char &gt;</td></tr>
+<tr class="memitem:a7721cb26804e73c9c73b908277b42c8c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a> = <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt; <a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">detail::buffer_appender</a>&lt; Char &gt;, Char &gt;</td></tr>
 <tr class="separator:a7721cb26804e73c9c73b908277b42c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad064b33277ae21e91f72e6666af17daa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="printf_8h.html#ad064b33277ae21e91f72e6666af17daa">printf_context</a> = <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; char &gt;</td></tr>
 <tr class="separator:ad064b33277ae21e91f72e6666af17daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,48 +149,48 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a03c11572c9a664266d6925f327dec7f3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Context , typename Char &gt; </td></tr>
-<tr class="memitem:a03c11572c9a664266d6925f327dec7f3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a03c11572c9a664266d6925f327dec7f3">detail::convert_arg</a> (<a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; Context &gt; &amp;<a class="el" href="core_8h.html#a488731e44fb25c8aadaf1c02b7630eb4">arg</a>, Char type)</td></tr>
-<tr class="separator:a03c11572c9a664266d6925f327dec7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8c2218e4c822aa8f743fb9c573717f"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Context &gt; </td></tr>
-<tr class="memitem:a1c8c2218e4c822aa8f743fb9c573717f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a1c8c2218e4c822aa8f743fb9c573717f">detail::vprintf</a> (buffer&lt; Char &gt; &amp;buf, <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt; <a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; Context &gt; args)</td></tr>
-<tr class="separator:a1c8c2218e4c822aa8f743fb9c573717f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a327ac7247fc1a9193514a9c772eded1b"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Context &gt; </td></tr>
-<tr class="memitem:a327ac7247fc1a9193514a9c772eded1b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a8aba8a78c514e176e0dd0a159de7a369">FMT_DEPRECATED</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a327ac7247fc1a9193514a9c772eded1b">printf</a> (<a class="el" href="classdetail_1_1buffer.html">detail::buffer</a>&lt; Char &gt; &amp;buf, <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt; <a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; Context &gt; args)</td></tr>
-<tr class="separator:a327ac7247fc1a9193514a9c772eded1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac23a7ace53ee8d93c26ccd04d98ed7bd"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ac23a7ace53ee8d93c26ccd04d98ed7bd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt; <a class="el" href="printf_8h.html#ad064b33277ae21e91f72e6666af17daa">printf_context</a>, Args... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#ac23a7ace53ee8d93c26ccd04d98ed7bd">make_printf_args</a> (const Args &amp;... args)</td></tr>
-<tr class="separator:ac23a7ace53ee8d93c26ccd04d98ed7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9199628cf2f44aecab20484d764ed9b"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ab9199628cf2f44aecab20484d764ed9b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt; <a class="el" href="printf_8h.html#a86435ef6c23e5bad804886c34ac81a3a">wprintf_context</a>, Args... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#ab9199628cf2f44aecab20484d764ed9b">make_wprintf_args</a> (const Args &amp;... args)</td></tr>
-<tr class="separator:ab9199628cf2f44aecab20484d764ed9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0566ea5aee91990668956f6d6c59d43f"><td class="memTemplParams" colspan="2">template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </td></tr>
-<tr class="memitem:a0566ea5aee91990668956f6d6c59d43f"><td class="memTemplItemLeft" align="right" valign="top">std::basic_string&lt; Char &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a0566ea5aee91990668956f6d6c59d43f">vsprintf</a> (const S &amp;<a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt; args)</td></tr>
-<tr class="separator:a0566ea5aee91990668956f6d6c59d43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac83e5e9234f750deba83a3bfc040969"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... Args, typename Char  = enable_if_t&lt;detail::is_string&lt;S&gt;::value, char_t&lt;S&gt;&gt;&gt; </td></tr>
-<tr class="memitem:aac83e5e9234f750deba83a3bfc040969"><td class="memTemplItemLeft" align="right" valign="top">std::basic_string&lt; Char &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aac83e5e9234f750deba83a3bfc040969">sprintf</a> (const S &amp;<a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, const Args &amp;... args)</td></tr>
-<tr class="separator:aac83e5e9234f750deba83a3bfc040969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab1c52629bb81f9274deaf31f25cdf9b"><td class="memTemplParams" colspan="2">template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </td></tr>
-<tr class="memitem:aab1c52629bb81f9274deaf31f25cdf9b"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aab1c52629bb81f9274deaf31f25cdf9b">vfprintf</a> (std::FILE *f, const S &amp;<a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt; args)</td></tr>
-<tr class="separator:aab1c52629bb81f9274deaf31f25cdf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d970a1c0b0c846fca9fb724cb76b916"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... Args, typename Char  = enable_if_t&lt;detail::is_string&lt;S&gt;::value, char_t&lt;S&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a3d970a1c0b0c846fca9fb724cb76b916"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a3d970a1c0b0c846fca9fb724cb76b916">fprintf</a> (std::FILE *f, const S &amp;<a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, const Args &amp;... args)</td></tr>
-<tr class="separator:a3d970a1c0b0c846fca9fb724cb76b916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef1f2873678da3363ed8f6336c756500"><td class="memTemplParams" colspan="2">template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </td></tr>
-<tr class="memitem:aef1f2873678da3363ed8f6336c756500"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aef1f2873678da3363ed8f6336c756500">vprintf</a> (const S &amp;<a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt; args)</td></tr>
-<tr class="separator:aef1f2873678da3363ed8f6336c756500"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e0c0e210d2e42ba2eead7337db60b8"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... Args, FMT_ENABLE_IF(detail::is_string&lt; S &gt;::value) &gt; </td></tr>
-<tr class="memitem:a92e0c0e210d2e42ba2eead7337db60b8"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a92e0c0e210d2e42ba2eead7337db60b8">printf</a> (const S &amp;format_str, const Args &amp;... args)</td></tr>
-<tr class="separator:a92e0c0e210d2e42ba2eead7337db60b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8be602b46e94cd8fea0d1eca6a076c"><td class="memTemplParams" colspan="2">template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </td></tr>
-<tr class="memitem:aad8be602b46e94cd8fea0d1eca6a076c"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aad8be602b46e94cd8fea0d1eca6a076c">vfprintf</a> (std::basic_ostream&lt; Char &gt; &amp;os, const S &amp;<a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt; args)</td></tr>
-<tr class="separator:aad8be602b46e94cd8fea0d1eca6a076c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa57b7aea4a77e9d9a44f28afcee5978e"><td class="memTemplParams" colspan="2">template&lt;typename ArgFormatter , typename Char , typename Context  = basic_printf_context&lt;typename ArgFormatter::iterator, Char&gt;&gt; </td></tr>
-<tr class="memitem:aa57b7aea4a77e9d9a44f28afcee5978e"><td class="memTemplItemLeft" align="right" valign="top">ArgFormatter::iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aa57b7aea4a77e9d9a44f28afcee5978e">vprintf</a> (<a class="el" href="classdetail_1_1buffer.html">detail::buffer</a>&lt; Char &gt; &amp;out, <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt; format_str, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Context &gt;&gt; args)</td></tr>
-<tr class="separator:aa57b7aea4a77e9d9a44f28afcee5978e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad1fa2df024dde339b0f9cf0e7a728e5"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... Args, typename Char  = char_t&lt;S&gt;&gt; </td></tr>
-<tr class="memitem:aad1fa2df024dde339b0f9cf0e7a728e5"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aad1fa2df024dde339b0f9cf0e7a728e5">fprintf</a> (std::basic_ostream&lt; Char &gt; &amp;os, const S &amp;format_str, const Args &amp;... args)</td></tr>
-<tr class="separator:aad1fa2df024dde339b0f9cf0e7a728e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1092422aa9ff50b4eaa2068e31ccff0f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Context , typename Char &gt; </td></tr>
+<tr class="memitem:a1092422aa9ff50b4eaa2068e31ccff0f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a1092422aa9ff50b4eaa2068e31ccff0f">convert_arg</a> (<a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; Context &gt; &amp;<a class="el" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>, Char <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr class="separator:a1092422aa9ff50b4eaa2068e31ccff0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d3cd8b7361fc5358f3aec48e2113a1"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
+<tr class="memitem:ad1d3cd8b7361fc5358f3aec48e2113a1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#ad1d3cd8b7361fc5358f3aec48e2113a1">parse_flags</a> (<a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt; Char &gt; &amp;specs, const Char *&amp;it, const Char *end)</td></tr>
+<tr class="separator:ad1d3cd8b7361fc5358f3aec48e2113a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed55e442a2239d9b97bea3f0195d33b1"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename GetArg &gt; </td></tr>
+<tr class="memitem:aed55e442a2239d9b97bea3f0195d33b1"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aed55e442a2239d9b97bea3f0195d33b1">parse_header</a> (const Char *&amp;it, const Char *end, <a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt; Char &gt; &amp;specs, GetArg <a class="el" href="format_8h.html#adb2ffcd76695409fea132e05012853ca">get_arg</a>)</td></tr>
+<tr class="separator:aed55e442a2239d9b97bea3f0195d33b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755ec613824f57d29068751f166ad91b"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Context &gt; </td></tr>
+<tr class="memitem:a755ec613824f57d29068751f166ad91b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a755ec613824f57d29068751f166ad91b">vprintf</a> (<a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;buf, <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt; <a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; Context &gt; args)</td></tr>
+<tr class="separator:a755ec613824f57d29068751f166ad91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece57ac974e070300788ffc59bb5f779"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:aece57ac974e070300788ffc59bb5f779"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aece57ac974e070300788ffc59bb5f779">make_printf_args</a> (const T &amp;... args) -&gt; <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt; <a class="el" href="printf_8h.html#ad064b33277ae21e91f72e6666af17daa">printf_context</a>, T... &gt;</td></tr>
+<tr class="separator:aece57ac974e070300788ffc59bb5f779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579bc9842cdcddbf52f769920d5f6fe2"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a579bc9842cdcddbf52f769920d5f6fe2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a579bc9842cdcddbf52f769920d5f6fe2">make_wprintf_args</a> (const T &amp;... args) -&gt; <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt; <a class="el" href="printf_8h.html#a86435ef6c23e5bad804886c34ac81a3a">wprintf_context</a>, T... &gt;</td></tr>
+<tr class="separator:a579bc9842cdcddbf52f769920d5f6fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ac5682cad35c6610dabd91db6323d6"><td class="memTemplParams" colspan="2">template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </td></tr>
+<tr class="memitem:a02ac5682cad35c6610dabd91db6323d6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a02ac5682cad35c6610dabd91db6323d6">vsprintf</a> (const S &amp;fmt, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt; args) -&gt; std::basic_string&lt; Char &gt;</td></tr>
+<tr class="separator:a02ac5682cad35c6610dabd91db6323d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d2e7e454d3fe606a71504a119dc894"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... T, typename Char  = enable_if_t&lt;detail::is_string&lt;S&gt;::value, char_t&lt;S&gt;&gt;&gt; </td></tr>
+<tr class="memitem:aa7d2e7e454d3fe606a71504a119dc894"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aa7d2e7e454d3fe606a71504a119dc894">sprintf</a> (const S &amp;fmt, const T &amp;... args) -&gt; std::basic_string&lt; Char &gt;</td></tr>
+<tr class="separator:aa7d2e7e454d3fe606a71504a119dc894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147f28e064ae3a469961c07d553bb31e"><td class="memTemplParams" colspan="2">template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </td></tr>
+<tr class="memitem:a147f28e064ae3a469961c07d553bb31e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a147f28e064ae3a469961c07d553bb31e">vfprintf</a> (std::FILE *f, const S &amp;fmt, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt; args) -&gt; int</td></tr>
+<tr class="separator:a147f28e064ae3a469961c07d553bb31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f315126362cae9675de1642105e631e"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... T, typename Char  = char_t&lt;S&gt;&gt; </td></tr>
+<tr class="memitem:a9f315126362cae9675de1642105e631e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a9f315126362cae9675de1642105e631e">fprintf</a> (std::FILE *f, const S &amp;fmt, const T &amp;... args) -&gt; int</td></tr>
+<tr class="separator:a9f315126362cae9675de1642105e631e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e9f3a1a0fd2fefa3a1c17107e6fa79"><td class="memTemplParams" colspan="2">template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </td></tr>
+<tr class="memitem:a89e9f3a1a0fd2fefa3a1c17107e6fa79"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a89e9f3a1a0fd2fefa3a1c17107e6fa79">vprintf</a> (const S &amp;fmt, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt; args) -&gt; int</td></tr>
+<tr class="separator:a89e9f3a1a0fd2fefa3a1c17107e6fa79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3739712ffc6e717626ef803d2782ad5"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... T, FMT_ENABLE_IF(detail::is_string&lt; S &gt;::value) &gt; </td></tr>
+<tr class="memitem:aa3739712ffc6e717626ef803d2782ad5"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">printf</a> (const S &amp;fmt, const T &amp;... args) -&gt; int</td></tr>
+<tr class="separator:aa3739712ffc6e717626ef803d2782ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21b90dad05c02c6d7f542738292c7c8"><td class="memTemplParams" colspan="2">template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </td></tr>
+<tr class="memitem:aa21b90dad05c02c6d7f542738292c7c8"><td class="memTemplItemLeft" align="right" valign="top">FMT_DEPRECATED auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#aa21b90dad05c02c6d7f542738292c7c8">vfprintf</a> (std::basic_ostream&lt; Char &gt; &amp;os, const S &amp;fmt, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt; args) -&gt; int</td></tr>
+<tr class="separator:aa21b90dad05c02c6d7f542738292c7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df97fbc0b4f4d6103d1b2c8eddf94e8"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... T, typename Char  = char_t&lt;S&gt;&gt; </td></tr>
+<tr class="memitem:a6df97fbc0b4f4d6103d1b2c8eddf94e8"><td class="memTemplItemLeft" align="right" valign="top">FMT_DEPRECATED auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="printf_8h.html#a6df97fbc0b4f4d6103d1b2c8eddf94e8">fprintf</a> (std::basic_ostream&lt; Char &gt; &amp;os, const S &amp;fmt, const T &amp;... args) -&gt; int</td></tr>
+<tr class="separator:a6df97fbc0b4f4d6103d1b2c8eddf94e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a7721cb26804e73c9c73b908277b42c8c"></a>
@@ -207,7 +202,7 @@ Functions</h2></td></tr>
 template&lt;typename Char &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a> =  <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt;<a class="el" href="classdetail_1_1buffer__appender.html">detail::buffer_appender</a>&lt;Char&gt;, Char&gt;</td>
+          <td class="memname">using <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a> =  <a class="el" href="classbasic__printf__context.html">basic_printf_context</a>&lt;<a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">detail::buffer_appender</a>&lt;Char&gt;, Char&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -271,19 +266,46 @@ template&lt;typename Char &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aad1fa2df024dde339b0f9cf0e7a728e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad1fa2df024dde339b0f9cf0e7a728e5">&#9670;&nbsp;</a></span>fprintf() <span class="overload">[1/2]</span></h2>
+<a id="a1092422aa9ff50b4eaa2068e31ccff0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1092422aa9ff50b4eaa2068e31ccff0f">&#9670;&nbsp;</a></span>convert_arg()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S , typename... Args, typename Char  = char_t&lt;S&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename T , typename Context , typename Char &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int fprintf </td>
+          <td class="memname">void convert_arg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; Context &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Char&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6df97fbc0b4f4d6103d1b2c8eddf94e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df97fbc0b4f4d6103d1b2c8eddf94e8">&#9670;&nbsp;</a></span>fprintf() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S , typename... T, typename Char  = char_t&lt;S&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">FMT_DEPRECATED auto fprintf </td>
           <td>(</td>
           <td class="paramtype">std::basic_ostream&lt; Char &gt; &amp;&#160;</td>
           <td class="paramname"><em>os</em>, </td>
@@ -292,49 +314,37 @@ template&lt;typename S , typename... Args, typename Char  = char_t&lt;S&gt;&gt; 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>format_str</em>, </td>
+          <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramtype">const T &amp;...&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; int </td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line">Prints formatted <a class="code" href="namespaceanonymous__namespace_02cth__pressure__map_8C_03.html#a13e85c35bb623bd97cff6847698831ba">data</a> to the stream *os*.</div>
-<div class="line"> </div>
-<div class="line"> *Example**<a class="code" href="printf_8h.html#a3d970a1c0b0c846fca9fb724cb76b916">::</a></div>
-<div class="line"><a class="code" href="printf_8h.html#a3d970a1c0b0c846fca9fb724cb76b916"></a> </div>
-<div class="line"><a class="code" href="printf_8h.html#a3d970a1c0b0c846fca9fb724cb76b916">  fmt::fprintf</a>(cerr, <span class="stringliteral">&quot;Don&#39;t %s!&quot;</span>, <span class="stringliteral">&quot;panic&quot;</span>);</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02cth__pressure__map_8C_03_html_a13e85c35bb623bd97cff6847698831ba"><div class="ttname"><a href="namespaceanonymous__namespace_02cth__pressure__map_8C_03.html#a13e85c35bb623bd97cff6847698831ba">anonymous_namespace{cth_pressure_map.C}::data</a></div><div class="ttdeci">std::vector&lt; char &gt; data</div><div class="ttdef"><b>Definition:</b> cth_pressure_map.C:48</div></div>
-<div class="ttc" id="aprintf_8h_html_a3d970a1c0b0c846fca9fb724cb76b916"><div class="ttname"><a href="printf_8h.html#a3d970a1c0b0c846fca9fb724cb76b916">fprintf</a></div><div class="ttdeci">int fprintf(std::FILE *f, const S &amp;format, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> printf.h:681</div></div>
-</div><!-- fragment --> 
+
 </div>
 </div>
-<a id="a3d970a1c0b0c846fca9fb724cb76b916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d970a1c0b0c846fca9fb724cb76b916">&#9670;&nbsp;</a></span>fprintf() <span class="overload">[2/2]</span></h2>
+<a id="a9f315126362cae9675de1642105e631e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f315126362cae9675de1642105e631e">&#9670;&nbsp;</a></span>fprintf() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S , typename... Args, typename Char  = enable_if_t&lt;detail::is_string&lt;S&gt;::value, char_t&lt;S&gt;&gt;&gt; </div>
+template&lt;typename S , typename... T, typename Char  = char_t&lt;S&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int fprintf </td>
+          <td class="memname">auto fprintf </td>
           <td>(</td>
           <td class="paramtype">std::FILE *&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -343,18 +353,18 @@ template&lt;typename S , typename... Args, typename Char  = enable_if_t&lt;detai
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
+          <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramtype">const T &amp;...&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; int </td>
         </tr>
       </table>
   </td>
@@ -363,31 +373,33 @@ template&lt;typename S , typename... Args, typename Char  = enable_if_t&lt;detai
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line">Prints formatted <a class="code" href="namespaceanonymous__namespace_02cth__pressure__map_8C_03.html#a13e85c35bb623bd97cff6847698831ba">data</a> to the file *f*.</div>
+<div class="fragment"><div class="line">Prints formatted <a class="code" href="structdata.html">data</a> to the file *f*.</div>
 <div class="line"> </div>
-<div class="line"> *Example**<a class="code" href="printf_8h.html#a3d970a1c0b0c846fca9fb724cb76b916">::</a></div>
-<div class="line"><a class="code" href="printf_8h.html#a3d970a1c0b0c846fca9fb724cb76b916"></a> </div>
-<div class="line"><a class="code" href="printf_8h.html#a3d970a1c0b0c846fca9fb724cb76b916">  fmt::fprintf</a>(stderr, <span class="stringliteral">&quot;Don&#39;t %s!&quot;</span>, <span class="stringliteral">&quot;panic&quot;</span>);</div>
+<div class="line"> *Example**<a class="code" href="printf_8h.html#a9f315126362cae9675de1642105e631e">::</a></div>
+<div class="line"><a class="code" href="printf_8h.html#a9f315126362cae9675de1642105e631e"></a> </div>
+<div class="line"><a class="code" href="printf_8h.html#a9f315126362cae9675de1642105e631e">  fmt::fprintf</a>(stderr, <span class="stringliteral">&quot;Don&#39;t %s!&quot;</span>, <span class="stringliteral">&quot;panic&quot;</span>);</div>
+<div class="ttc" id="aprintf_8h_html_a9f315126362cae9675de1642105e631e"><div class="ttname"><a href="printf_8h.html#a9f315126362cae9675de1642105e631e">fprintf</a></div><div class="ttdeci">auto fprintf(std::FILE *f, const S &amp;fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition:</b> printf.h:602</div></div>
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:895</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="ac23a7ace53ee8d93c26ccd04d98ed7bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac23a7ace53ee8d93c26ccd04d98ed7bd">&#9670;&nbsp;</a></span>make_printf_args()</h2>
+<a id="aece57ac974e070300788ffc59bb5f779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece57ac974e070300788ffc59bb5f779">&#9670;&nbsp;</a></span>make_printf_args()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename... Args&gt; </div>
+template&lt;typename... T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt;<a class="el" href="printf_8h.html#ad064b33277ae21e91f72e6666af17daa">printf_context</a>, Args...&gt; make_printf_args </td>
+          <td class="memname">auto make_printf_args </td>
           <td>(</td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramtype">const T &amp;...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
-          <td></td>
+          <td> -&gt; <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt;<a class="el" href="printf_8h.html#ad064b33277ae21e91f72e6666af17daa">printf_context</a>, T...&gt; </td>
         </tr>
       </table>
   </td>
@@ -398,28 +410,28 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 <div class="fragment"><div class="line">Constructs an `~fmt<a class="code" href="classformat__arg__store.html">::format_arg_store</a>` <span class="keywordtype">object</span> that contains references to</div>
 <div class="line">arguments and can be implicitly converted to `~fmt<a class="code" href="classbasic__format__args.html">::printf_args</a>`.</div>
-<div class="ttc" id="aclassbasic__format__args_html"><div class="ttname"><a href="classbasic__format__args.html">basic_format_args</a></div><div class="ttdef"><b>Definition:</b> core.h:1833</div></div>
-<div class="ttc" id="aclassformat__arg__store_html"><div class="ttname"><a href="classformat__arg__store.html">format_arg_store</a></div><div class="ttdef"><b>Definition:</b> core.h:1564</div></div>
+<div class="ttc" id="aclassbasic__format__args_html"><div class="ttname"><a href="classbasic__format__args.html">basic_format_args</a></div><div class="ttdef"><b>Definition:</b> core.h:1756</div></div>
+<div class="ttc" id="aclassformat__arg__store_html"><div class="ttname"><a href="classformat__arg__store.html">format_arg_store</a></div><div class="ttdef"><b>Definition:</b> core.h:1680</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="ab9199628cf2f44aecab20484d764ed9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9199628cf2f44aecab20484d764ed9b">&#9670;&nbsp;</a></span>make_wprintf_args()</h2>
+<a id="a579bc9842cdcddbf52f769920d5f6fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a579bc9842cdcddbf52f769920d5f6fe2">&#9670;&nbsp;</a></span>make_wprintf_args()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename... Args&gt; </div>
+template&lt;typename... T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt;<a class="el" href="printf_8h.html#a86435ef6c23e5bad804886c34ac81a3a">wprintf_context</a>, Args...&gt; make_wprintf_args </td>
+          <td class="memname">auto make_wprintf_args </td>
           <td>(</td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramtype">const T &amp;...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
-          <td></td>
+          <td> -&gt; <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt;<a class="el" href="printf_8h.html#a86435ef6c23e5bad804886c34ac81a3a">wprintf_context</a>, T...&gt; </td>
         </tr>
       </table>
   </td>
@@ -433,33 +445,111 @@ template&lt;typename... Args&gt; </div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="a92e0c0e210d2e42ba2eead7337db60b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e0c0e210d2e42ba2eead7337db60b8">&#9670;&nbsp;</a></span>printf() <span class="overload">[1/2]</span></h2>
+<a id="ad1d3cd8b7361fc5358f3aec48e2113a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d3cd8b7361fc5358f3aec48e2113a1">&#9670;&nbsp;</a></span>parse_flags()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename S , typename... Args, FMT_ENABLE_IF(detail::is_string&lt; S &gt;::value) &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename Char &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int printf </td>
+          <td class="memname">void parse_flags </td>
           <td>(</td>
-          <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>format_str</em>, </td>
+          <td class="paramtype"><a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt; Char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>specs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramtype">const Char *&amp;&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Char *&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed55e442a2239d9b97bea3f0195d33b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed55e442a2239d9b97bea3f0195d33b1">&#9670;&nbsp;</a></span>parse_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename GetArg &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int parse_header </td>
+          <td>(</td>
+          <td class="paramtype">const Char *&amp;&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Char *&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt; Char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>specs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetArg&#160;</td>
+          <td class="paramname"><em>get_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3739712ffc6e717626ef803d2782ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3739712ffc6e717626ef803d2782ad5">&#9670;&nbsp;</a></span>printf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S , typename... T, FMT_ENABLE_IF(detail::is_string&lt; S &gt;::value) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto printf </td>
+          <td>(</td>
+          <td class="paramtype">const S &amp;&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; int </td>
         </tr>
       </table>
   </td>
@@ -468,17 +558,142 @@ template&lt;typename S , typename... Args, FMT_ENABLE_IF(detail::is_string&lt; S
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line">Prints formatted <a class="code" href="namespaceanonymous__namespace_02cth__pressure__map_8C_03.html#a13e85c35bb623bd97cff6847698831ba">data</a> to ``stdout``.</div>
+<div class="fragment"><div class="line">Prints formatted <a class="code" href="structdata.html">data</a> to ``stdout``.</div>
 <div class="line"> </div>
-<div class="line"> *Example**<a class="code" href="printf_8h.html#a327ac7247fc1a9193514a9c772eded1b">::</a></div>
-<div class="line"><a class="code" href="printf_8h.html#a327ac7247fc1a9193514a9c772eded1b"></a> </div>
-<div class="line"><a class="code" href="printf_8h.html#a327ac7247fc1a9193514a9c772eded1b">  fmt::printf</a>(<span class="stringliteral">&quot;Elapsed time: %.2f seconds&quot;</span>, 1.23);</div>
-<div class="ttc" id="aprintf_8h_html_a327ac7247fc1a9193514a9c772eded1b"><div class="ttname"><a href="printf_8h.html#a327ac7247fc1a9193514a9c772eded1b">printf</a></div><div class="ttdeci">FMT_DEPRECATED void printf(detail::buffer&lt; Char &gt; &amp;buf, basic_string_view&lt; Char &gt; format, basic_format_args&lt; Context &gt; args)</div><div class="ttdef"><b>Definition:</b> printf.h:190</div></div>
+<div class="line"> *Example**<a class="code" href="printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">::</a></div>
+<div class="line"><a class="code" href="printf_8h.html#aa3739712ffc6e717626ef803d2782ad5"></a> </div>
+<div class="line"><a class="code" href="printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">  fmt::printf</a>(<span class="stringliteral">&quot;Elapsed time: %.2f seconds&quot;</span>, 1.23);</div>
+<div class="ttc" id="aprintf_8h_html_aa3739712ffc6e717626ef803d2782ad5"><div class="ttname"><a href="printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">printf</a></div><div class="ttdeci">auto printf(const S &amp;fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition:</b> printf.h:626</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="a327ac7247fc1a9193514a9c772eded1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a327ac7247fc1a9193514a9c772eded1b">&#9670;&nbsp;</a></span>printf() <span class="overload">[2/2]</span></h2>
+<a id="aa7d2e7e454d3fe606a71504a119dc894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d2e7e454d3fe606a71504a119dc894">&#9670;&nbsp;</a></span>sprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S , typename... T, typename Char  = enable_if_t&lt;detail::is_string&lt;S&gt;::value, char_t&lt;S&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto sprintf </td>
+          <td>(</td>
+          <td class="paramtype">const S &amp;&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::basic_string&lt;Char&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line">Formats arguments and returns the <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> as a <span class="keywordtype">string</span>.</div>
+<div class="line"> </div>
+<div class="line"> *Example**::</div>
+<div class="line"> </div>
+<div class="line">  std::string message = <a class="code" href="printf_8h.html#aa7d2e7e454d3fe606a71504a119dc894">fmt::sprintf</a>(<span class="stringliteral">&quot;The answer is %d&quot;</span>, 42);</div>
+<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:623</div></div>
+<div class="ttc" id="aprintf_8h_html_aa7d2e7e454d3fe606a71504a119dc894"><div class="ttname"><a href="printf_8h.html#aa7d2e7e454d3fe606a71504a119dc894">sprintf</a></div><div class="ttdeci">auto sprintf(const S &amp;fmt, const T &amp;... args) -&gt; std::basic_string&lt; Char &gt;</div><div class="ttdef"><b>Definition:</b> printf.h:574</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="aa21b90dad05c02c6d7f542738292c7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21b90dad05c02c6d7f542738292c7c8">&#9670;&nbsp;</a></span>vfprintf() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">FMT_DEPRECATED auto vfprintf </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; Char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const S &amp;&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt;&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; int </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a147f28e064ae3a469961c07d553bb31e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147f28e064ae3a469961c07d553bb31e">&#9670;&nbsp;</a></span>vfprintf() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto vfprintf </td>
+          <td>(</td>
+          <td class="paramtype">std::FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const S &amp;&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt;&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; int </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a755ec613824f57d29068751f166ad91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a755ec613824f57d29068751f166ad91b">&#9670;&nbsp;</a></span>vprintf() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -486,9 +701,9 @@ template&lt;typename S , typename... Args, FMT_ENABLE_IF(detail::is_string&lt; S
 template&lt;typename Char , typename Context &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a8aba8a78c514e176e0dd0a159de7a369">FMT_DEPRECATED</a> void printf </td>
+          <td class="memname">void vprintf </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdetail_1_1buffer.html">detail::buffer</a>&lt; Char &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
@@ -513,53 +728,8 @@ template&lt;typename Char , typename Context &gt; </div>
 
 </div>
 </div>
-<a id="aac83e5e9234f750deba83a3bfc040969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac83e5e9234f750deba83a3bfc040969">&#9670;&nbsp;</a></span>sprintf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S , typename... Args, typename Char  = enable_if_t&lt;detail::is_string&lt;S&gt;::value, char_t&lt;S&gt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::basic_string&lt;Char&gt; sprintf </td>
-          <td>(</td>
-          <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line">Formats arguments and returns the <a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> as a <span class="keywordtype">string</span>.</div>
-<div class="line"> </div>
-<div class="line"> *Example**::</div>
-<div class="line"> </div>
-<div class="line">  std::string message = <a class="code" href="printf_8h.html#aac83e5e9234f750deba83a3bfc040969">fmt::sprintf</a>(<span class="stringliteral">&quot;The answer is %d&quot;</span>, 42);</div>
-<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:1498</div></div>
-<div class="ttc" id="aprintf_8h_html_aac83e5e9234f750deba83a3bfc040969"><div class="ttname"><a href="printf_8h.html#aac83e5e9234f750deba83a3bfc040969">sprintf</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; sprintf(const S &amp;format, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> printf.h:653</div></div>
-</div><!-- fragment --> 
-</div>
-</div>
-<a id="aad8be602b46e94cd8fea0d1eca6a076c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad8be602b46e94cd8fea0d1eca6a076c">&#9670;&nbsp;</a></span>vfprintf() <span class="overload">[1/2]</span></h2>
+<a id="a89e9f3a1a0fd2fefa3a1c17107e6fa79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e9f3a1a0fd2fefa3a1c17107e6fa79">&#9670;&nbsp;</a></span>vprintf() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -570,16 +740,10 @@ template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int vfprintf </td>
+          <td class="memname">auto vprintf </td>
           <td>(</td>
-          <td class="paramtype">std::basic_ostream&lt; Char &gt; &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
+          <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -590,7 +754,7 @@ template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; int </td>
         </tr>
       </table>
   </td>
@@ -602,8 +766,8 @@ template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </div>
 
 </div>
 </div>
-<a id="aab1c52629bb81f9274deaf31f25cdf9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab1c52629bb81f9274deaf31f25cdf9b">&#9670;&nbsp;</a></span>vfprintf() <span class="overload">[2/2]</span></h2>
+<a id="a02ac5682cad35c6610dabd91db6323d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02ac5682cad35c6610dabd91db6323d6">&#9670;&nbsp;</a></span>vsprintf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -614,16 +778,10 @@ template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int vfprintf </td>
+          <td class="memname">auto vsprintf </td>
           <td>(</td>
-          <td class="paramtype">std::FILE *&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
+          <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -634,120 +792,7 @@ template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aef1f2873678da3363ed8f6336c756500"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef1f2873678da3363ed8f6336c756500">&#9670;&nbsp;</a></span>vprintf() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vprintf </td>
-          <td>(</td>
-          <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt;&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa57b7aea4a77e9d9a44f28afcee5978e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa57b7aea4a77e9d9a44f28afcee5978e">&#9670;&nbsp;</a></span>vprintf() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ArgFormatter , typename Char , typename Context  = basic_printf_context&lt;typename ArgFormatter::iterator, Char&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">ArgFormatter::iterator vprintf </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdetail_1_1buffer.html">detail::buffer</a>&lt; Char &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt;&#160;</td>
-          <td class="paramname"><em>format_str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Context &gt;&gt;&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Formats arguments and writes the output to the range. </p>
-
-</div>
-</div>
-<a id="a0566ea5aee91990668956f6d6c59d43f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0566ea5aee91990668956f6d6c59d43f">&#9670;&nbsp;</a></span>vsprintf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename S , typename Char  = char_t&lt;S&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::basic_string&lt;Char&gt; vsprintf </td>
-          <td>(</td>
-          <td class="paramtype">const S &amp;&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="printf_8h.html#a7721cb26804e73c9c73b908277b42c8c">basic_printf_context_t</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt;&gt;&gt;&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; std::basic_string&lt;Char&gt; </td>
         </tr>
       </table>
   </td>

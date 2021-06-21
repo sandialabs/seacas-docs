@@ -1,0 +1,27 @@
+var structnull__chrono__spec__handler =
+[
+    [ "on_12_hour", "structnull__chrono__spec__handler.html#a9b5fec72875ee8622cbb010ea89ef614", null ],
+    [ "on_12_hour_time", "structnull__chrono__spec__handler.html#aaf8943eaeeedc59172da99904d3f4853", null ],
+    [ "on_24_hour", "structnull__chrono__spec__handler.html#a8c08c91fd037813b3def818b5fbfc920", null ],
+    [ "on_24_hour_time", "structnull__chrono__spec__handler.html#ad0d51aee9bd0e96b83ca44d609f51c22", null ],
+    [ "on_abbr_month", "structnull__chrono__spec__handler.html#a21eba774ffbae59fd8815b6105b4c056", null ],
+    [ "on_abbr_weekday", "structnull__chrono__spec__handler.html#a51e0a2bae55921656a122f412b6a4a6d", null ],
+    [ "on_am_pm", "structnull__chrono__spec__handler.html#a40df1e52fbd267adce685e8b50a56e30", null ],
+    [ "on_datetime", "structnull__chrono__spec__handler.html#a0014d1a6d4551fb9cb10dda3592fcae5", null ],
+    [ "on_dec0_weekday", "structnull__chrono__spec__handler.html#a4a18fff2695c903b63a91fb5efd4e406", null ],
+    [ "on_dec1_weekday", "structnull__chrono__spec__handler.html#ac1f6437c8b4acf48d3b6c46ac9d7b8e9", null ],
+    [ "on_duration_unit", "structnull__chrono__spec__handler.html#a7685ed91053881a270a62b1cc15cb295", null ],
+    [ "on_duration_value", "structnull__chrono__spec__handler.html#aae2080b92bbc4101e6e2985c0af26279", null ],
+    [ "on_full_month", "structnull__chrono__spec__handler.html#a079c07d56f6a924793dd0ee0d2ec833d", null ],
+    [ "on_full_weekday", "structnull__chrono__spec__handler.html#a9bc077c33a34f55e3cea129a6bf0d7cf", null ],
+    [ "on_iso_date", "structnull__chrono__spec__handler.html#a604b7d94705fe9d7f7749f0e7aba7315", null ],
+    [ "on_iso_time", "structnull__chrono__spec__handler.html#ac06ed05e250d1122c0211712106544fd", null ],
+    [ "on_loc_date", "structnull__chrono__spec__handler.html#ab8cac801545d557c8f185990320627a9", null ],
+    [ "on_loc_time", "structnull__chrono__spec__handler.html#adc498e73bbcdea3aa6e68544ead534dd", null ],
+    [ "on_minute", "structnull__chrono__spec__handler.html#ae8c411d57e41b6bfb47f36ba5a7f2824", null ],
+    [ "on_second", "structnull__chrono__spec__handler.html#a14f79fde9e61e87698b2306c9dd7dfe6", null ],
+    [ "on_tz_name", "structnull__chrono__spec__handler.html#afb2571c4d2aea4672ea11d8495d63513", null ],
+    [ "on_us_date", "structnull__chrono__spec__handler.html#a398fb139435585da5bedc27177a884c5", null ],
+    [ "on_utc_offset", "structnull__chrono__spec__handler.html#a5908aadf3cdacb5d43b21410ade87ab3", null ],
+    [ "unsupported", "structnull__chrono__spec__handler.html#aa6c25945b057dc858e71e9c4c5a843c5", null ]
+];

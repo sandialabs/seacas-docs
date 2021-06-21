@@ -85,7 +85,8 @@ $(document).ready(function(){initNavTree('os_8h.html',''); initResizable(); });
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">os.h File Reference</div>  </div>
 </div><!--header-->
@@ -95,6 +96,7 @@ $(document).ready(function(){initNavTree('os_8h.html',''); initResizable(); });
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;system_error&gt;</code><br />
 <code>#include &quot;<a class="el" href="format_8h_source.html">format.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for os.h:</div>
@@ -113,7 +115,7 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__cstring__view.html">basic_cstring_view&lt; Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classerror__code.html">error_code</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01std_1_1error__code_00_01Char_01_4.html">formatter&lt; std::error_code, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuffered__file.html">buffered_file</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +141,11 @@ Typedefs</h2></td></tr>
 <tr class="separator:ab5093e382f19cf769bbb8fed27dd7b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98fc52506266131c4391a72514b66272"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8h.html#a98fc52506266131c4391a72514b66272">wcstring_view</a> = <a class="el" href="classbasic__cstring__view.html">basic_cstring_view</a>&lt; wchar_t &gt;</td></tr>
 <tr class="separator:a98fc52506266131c4391a72514b66272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a01cfa98700f92a24a8048266724e931a"><td class="memItemLeft" align="right" valign="top">const std::error_category &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_8h.html#a01cfa98700f92a24a8048266724e931a">system_category</a> () <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a></td></tr>
+<tr class="separator:a01cfa98700f92a24a8048266724e931a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6fa0773ef89920062fe6ab8b6e3cf337"></a>
@@ -239,7 +246,7 @@ Typedefs</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                  \</div>
 <div class="line">      (<a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>) = (expression);                            \</div>
 <div class="line">    } <span class="keywordflow">while</span> ((<a class="code" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>) == (error_result) &amp;&amp; errno == EINTR)</div>
-<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:1498</div></div>
+<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:623</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -300,6 +307,32 @@ Typedefs</h2></td></tr>
           <td class="memname">using <a class="el" href="os_8h.html#a98fc52506266131c4391a72514b66272">wcstring_view</a> =  <a class="el" href="classbasic__cstring__view.html">basic_cstring_view</a>&lt;wchar_t&gt;</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a01cfa98700f92a24a8048266724e931a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01cfa98700f92a24a8048266724e931a">&#9670;&nbsp;</a></span>system_category()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::error_category&amp; system_category </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

@@ -92,16 +92,16 @@ $(document).ready(function(){initNavTree('chrono_8h.html',''); initResizable(); 
 <div class="title">chrono.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;ctime&gt;</code><br />
 <code>#include &lt;locale&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &quot;<a class="el" href="format_8h_source.html">format.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="locale_8h_source.html">locale.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for chrono.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="chrono_8h__incl.svg" width="100%" height="563"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="chrono_8h__incl.svg" width="100%" height="507"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -113,17 +113,25 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_01_4_00_01Char_01_4.html">formatter&lt; std::chrono::time_point&lt; std::chrono::system_clock &gt;, Char &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1null.html">detail::null&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01Duration_01_4_00_01Char_01_4.html">formatter&lt; std::chrono::time_point&lt; std::chrono::system_clock, Duration &gt;, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01std_1_1tm_00_01Char_01_4.html">formatter&lt; std::tm, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1chrono__format__checker.html">detail::chrono_format_checker</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnull__chrono__spec__handler.html">null_chrono_spec_handler&lt; Derived &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1make__unsigned__or__unchanged.html">detail::make_unsigned_or_unchanged&lt; T, INTEGRAL &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchrono__format__checker.html">chrono_format_checker</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1make__unsigned__or__unchanged_3_01T_00_01true_01_4.html">detail::make_unsigned_or_unchanged&lt; T, true &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmake__unsigned__or__unchanged.html">make_unsigned_or_unchanged&lt; T, INTEGRAL &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1chrono__formatter.html">detail::chrono_formatter&lt; FormatContext, OutputIt, Rep, Period &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmake__unsigned__or__unchanged_3_01T_00_01true_01_4.html">make_unsigned_or_unchanged&lt; T, true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchrono__formatter.html">chrono_formatter&lt; FormatContext, OutputIt, Rep, Period &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classweekday.html">weekday</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01weekday_01_4.html">formatter&lt; weekday &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01std_1_1chrono_1_1duration_3_01Rep_00_01Period_01_4_00_01Char_01_4.html">formatter&lt; std::chrono::duration&lt; Rep, Period &gt;, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,10 +156,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a4938659a89541ba388c06c6a33e0c8ad"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a4938659a89541ba388c06c6a33e0c8ad">detail::numeric_system</a> { <a class="el" href="namespacedetail.html#a4938659a89541ba388c06c6a33e0c8adac00f0c4675b91fb8b918e4079a0b1bac">detail::standard</a>
-, <a class="el" href="namespacedetail.html#a4938659a89541ba388c06c6a33e0c8adaa04fe4e390a7c7d5d4583f85d24e164d">detail::alternative</a>
+<tr class="memitem:a4ed3bdd2ae5dcb224f0e84141a87179d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a4ed3bdd2ae5dcb224f0e84141a87179d">numeric_system</a> { <a class="el" href="chrono_8h.html#a4ed3bdd2ae5dcb224f0e84141a87179dac00f0c4675b91fb8b918e4079a0b1bac">standard</a>
+, <a class="el" href="chrono_8h.html#a4ed3bdd2ae5dcb224f0e84141a87179daa04fe4e390a7c7d5d4583f85d24e164d">alternative</a>
  }</td></tr>
-<tr class="separator:a4938659a89541ba388c06c6a33e0c8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4ed3bdd2ae5dcb224f0e84141a87179d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -172,111 +180,59 @@ Functions</h2></td></tr>
 <tr class="separator:a5f72d5acfa41ae0e7350078cdb72d93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a124e4142bce4975170df82199789b2e1"><td class="memItemLeft" align="right" valign="top">null&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a124e4142bce4975170df82199789b2e1">detail::gmtime_s</a> (...)</td></tr>
 <tr class="separator:a124e4142bce4975170df82199789b2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b11a736f2ef77ba69490af3f5081abf"><td class="memItemLeft" align="right" valign="top">std::tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a2b11a736f2ef77ba69490af3f5081abf">localtime</a> (std::time_t time)</td></tr>
-<tr class="separator:a2b11a736f2ef77ba69490af3f5081abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad120cd935a79c869e7a5b2634311c410"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ad120cd935a79c869e7a5b2634311c410">detail::do_write</a> (const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, char modifier) -&gt; std::string</td></tr>
+<tr class="separator:ad120cd935a79c869e7a5b2634311c410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cb278dcba1d8bd44af0e1f471efb03"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt &gt; </td></tr>
+<tr class="memitem:a74cb278dcba1d8bd44af0e1f471efb03"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a74cb278dcba1d8bd44af0e1f471efb03">detail::write</a> (OutputIt out, const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, char modifier=0) -&gt; OutputIt</td></tr>
+<tr class="separator:a74cb278dcba1d8bd44af0e1f471efb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5420acd34656784c3736b4803efad1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a405a25ede2658f5f1bd426ce7d10f3ee">FMT_MODULE_EXPORT_BEGIN</a> std::tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a5a5420acd34656784c3736b4803efad1">localtime</a> (std::time_t time)</td></tr>
+<tr class="separator:a5a5420acd34656784c3736b4803efad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c61dafa370562015790c9945bb1c045"><td class="memItemLeft" align="right" valign="top">std::tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a6c61dafa370562015790c9945bb1c045">localtime</a> (std::chrono::time_point&lt; std::chrono::system_clock &gt; time_point)</td></tr>
 <tr class="separator:a6c61dafa370562015790c9945bb1c045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf8e0f0ff843757380c35a9ec5321168"><td class="memItemLeft" align="right" valign="top">std::tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chrono_8h.html#aaf8e0f0ff843757380c35a9ec5321168">gmtime</a> (std::time_t time)</td></tr>
 <tr class="separator:aaf8e0f0ff843757380c35a9ec5321168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e245b36b9035cbe9bee8608c920a40a"><td class="memItemLeft" align="right" valign="top">std::tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a1e245b36b9035cbe9bee8608c920a40a">gmtime</a> (std::chrono::time_point&lt; std::chrono::system_clock &gt; time_point)</td></tr>
 <tr class="separator:a1e245b36b9035cbe9bee8608c920a40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f56278fd84d8bc33338c33694a87fb8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a1f56278fd84d8bc33338c33694a87fb8">detail::strftime</a> (char *str, size_t count, const char *<a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, const std::tm *time)</td></tr>
-<tr class="separator:a1f56278fd84d8bc33338c33694a87fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa394945bd077a30102ef2ca015a1540b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#aa394945bd077a30102ef2ca015a1540b">detail::strftime</a> (wchar_t *str, size_t count, const wchar_t *<a class="el" href="locale_8h.html#a5bc4ef9df000061088de5f970684bb01">format</a>, const std::tm *time)</td></tr>
-<tr class="separator:aa394945bd077a30102ef2ca015a1540b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ae34916c3678054d39bc4876d46c73a"><td class="memTemplParams" colspan="2">template&lt;typename Period &gt; </td></tr>
-<tr class="memitem:a9ae34916c3678054d39bc4876d46c73a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a9ae34916c3678054d39bc4876d46c73a">detail::get_units</a> ()</td></tr>
-<tr class="separator:a9ae34916c3678054d39bc4876d46c73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a927d79d7b4fcfb52d701ad1569106fd6"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a927d79d7b4fcfb52d701ad1569106fd6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a927d79d7b4fcfb52d701ad1569106fd6">detail::get_units&lt; std::atto &gt;</a> ()</td></tr>
-<tr class="separator:a927d79d7b4fcfb52d701ad1569106fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a28bd45137dbf13af28080a6f1786c2"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a2a28bd45137dbf13af28080a6f1786c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a2a28bd45137dbf13af28080a6f1786c2">detail::get_units&lt; std::femto &gt;</a> ()</td></tr>
-<tr class="separator:a2a28bd45137dbf13af28080a6f1786c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ffe22c65ccbe6e96444a4a8a0fe97f"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:aa9ffe22c65ccbe6e96444a4a8a0fe97f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#aa9ffe22c65ccbe6e96444a4a8a0fe97f">detail::get_units&lt; std::pico &gt;</a> ()</td></tr>
-<tr class="separator:aa9ffe22c65ccbe6e96444a4a8a0fe97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d24f0e525a4b8092100df693d68a7ed"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a1d24f0e525a4b8092100df693d68a7ed"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a1d24f0e525a4b8092100df693d68a7ed">detail::get_units&lt; std::nano &gt;</a> ()</td></tr>
-<tr class="separator:a1d24f0e525a4b8092100df693d68a7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8f4de080bf291cff7d96c8ce792e266"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:ad8f4de080bf291cff7d96c8ce792e266"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ad8f4de080bf291cff7d96c8ce792e266">detail::get_units&lt; std::micro &gt;</a> ()</td></tr>
-<tr class="separator:ad8f4de080bf291cff7d96c8ce792e266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af778d154e968547a521edc4cdc67a393"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:af778d154e968547a521edc4cdc67a393"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#af778d154e968547a521edc4cdc67a393">detail::get_units&lt; std::milli &gt;</a> ()</td></tr>
-<tr class="separator:af778d154e968547a521edc4cdc67a393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f8f490cb722d71e98996552c0cc4dc"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a06f8f490cb722d71e98996552c0cc4dc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a06f8f490cb722d71e98996552c0cc4dc">detail::get_units&lt; std::centi &gt;</a> ()</td></tr>
-<tr class="separator:a06f8f490cb722d71e98996552c0cc4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f0abdf2e9714aaa7856cc9c72d0471"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a25f0abdf2e9714aaa7856cc9c72d0471"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a25f0abdf2e9714aaa7856cc9c72d0471">detail::get_units&lt; std::deci &gt;</a> ()</td></tr>
-<tr class="separator:a25f0abdf2e9714aaa7856cc9c72d0471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30e7fd44e069e5444e671a5fe9bbbd02"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a30e7fd44e069e5444e671a5fe9bbbd02"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a30e7fd44e069e5444e671a5fe9bbbd02">detail::get_units&lt; std::ratio&lt; 1 &gt; &gt;</a> ()</td></tr>
-<tr class="separator:a30e7fd44e069e5444e671a5fe9bbbd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7075605dc2f5b9d105ceaa1f1392b954"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a7075605dc2f5b9d105ceaa1f1392b954"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a7075605dc2f5b9d105ceaa1f1392b954">detail::get_units&lt; std::deca &gt;</a> ()</td></tr>
-<tr class="separator:a7075605dc2f5b9d105ceaa1f1392b954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b2a47e8b8eb7311756bd4b9d50ca67"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:ae0b2a47e8b8eb7311756bd4b9d50ca67"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ae0b2a47e8b8eb7311756bd4b9d50ca67">detail::get_units&lt; std::hecto &gt;</a> ()</td></tr>
-<tr class="separator:ae0b2a47e8b8eb7311756bd4b9d50ca67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d9703fffea1fb93f266625595beb71f"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a2d9703fffea1fb93f266625595beb71f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a2d9703fffea1fb93f266625595beb71f">detail::get_units&lt; std::kilo &gt;</a> ()</td></tr>
-<tr class="separator:a2d9703fffea1fb93f266625595beb71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affdff4bdfd49414984391841b0dbad84"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:affdff4bdfd49414984391841b0dbad84"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#affdff4bdfd49414984391841b0dbad84">detail::get_units&lt; std::mega &gt;</a> ()</td></tr>
-<tr class="separator:affdff4bdfd49414984391841b0dbad84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d4fbdd26f73f105947fc78ac86c17c2"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a8d4fbdd26f73f105947fc78ac86c17c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a8d4fbdd26f73f105947fc78ac86c17c2">detail::get_units&lt; std::giga &gt;</a> ()</td></tr>
-<tr class="separator:a8d4fbdd26f73f105947fc78ac86c17c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf3e1fd4a46b4033e43bb6531865976"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:aecf3e1fd4a46b4033e43bb6531865976"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#aecf3e1fd4a46b4033e43bb6531865976">detail::get_units&lt; std::tera &gt;</a> ()</td></tr>
-<tr class="separator:aecf3e1fd4a46b4033e43bb6531865976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afef9581884e3fba38a7c6aa5c81da78e"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:afef9581884e3fba38a7c6aa5c81da78e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#afef9581884e3fba38a7c6aa5c81da78e">detail::get_units&lt; std::peta &gt;</a> ()</td></tr>
-<tr class="separator:afef9581884e3fba38a7c6aa5c81da78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0af3767818b4b3e44c8c387ec83dfd59"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a0af3767818b4b3e44c8c387ec83dfd59"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a0af3767818b4b3e44c8c387ec83dfd59">detail::get_units&lt; std::exa &gt;</a> ()</td></tr>
-<tr class="separator:a0af3767818b4b3e44c8c387ec83dfd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a316573d5c9e7a8dc1c5452db2222bce8"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a316573d5c9e7a8dc1c5452db2222bce8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a316573d5c9e7a8dc1c5452db2222bce8">detail::get_units&lt; std::ratio&lt; 60 &gt; &gt;</a> ()</td></tr>
-<tr class="separator:a316573d5c9e7a8dc1c5452db2222bce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a183d804e489ff300e68a8b88265b336c"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a183d804e489ff300e68a8b88265b336c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a183d804e489ff300e68a8b88265b336c">detail::get_units&lt; std::ratio&lt; 3600 &gt; &gt;</a> ()</td></tr>
-<tr class="separator:a183d804e489ff300e68a8b88265b336c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4b2fcda1a7aa1d25d707e0b531c9d6b"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Handler &gt; </td></tr>
-<tr class="memitem:af4b2fcda1a7aa1d25d707e0b531c9d6b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const Char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#af4b2fcda1a7aa1d25d707e0b531c9d6b">detail::parse_chrono_format</a> (const Char *begin, const Char *end, Handler &amp;&amp;handler)</td></tr>
-<tr class="separator:af4b2fcda1a7aa1d25d707e0b531c9d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b3e8f824c374e42174c97c7ffe56841"><td class="memTemplParams" colspan="2">template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </td></tr>
-<tr class="memitem:a2b3e8f824c374e42174c97c7ffe56841"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a2b3e8f824c374e42174c97c7ffe56841">detail::isnan</a> (T)</td></tr>
-<tr class="separator:a2b3e8f824c374e42174c97c7ffe56841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab69f2583a2a167ea0b0e4c333448b113"><td class="memTemplParams" colspan="2">template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </td></tr>
-<tr class="memitem:ab69f2583a2a167ea0b0e4c333448b113"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ab69f2583a2a167ea0b0e4c333448b113">detail::isfinite</a> (T)</td></tr>
-<tr class="separator:ab69f2583a2a167ea0b0e4c333448b113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a929bdeea8b3a0e09b5785f3d12540d58"><td class="memTemplParams" colspan="2">template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </td></tr>
-<tr class="memitem:a929bdeea8b3a0e09b5785f3d12540d58"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a929bdeea8b3a0e09b5785f3d12540d58">detail::to_nonnegative_int</a> (T value, int upper)</td></tr>
-<tr class="separator:a929bdeea8b3a0e09b5785f3d12540d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7415818bbbc5e306422e8a341126ae1"><td class="memTemplParams" colspan="2">template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </td></tr>
-<tr class="memitem:ae7415818bbbc5e306422e8a341126ae1"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ae7415818bbbc5e306422e8a341126ae1">detail::mod</a> (T x, int y)</td></tr>
-<tr class="separator:ae7415818bbbc5e306422e8a341126ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a455d343d67b456f593d31c1b40186bb5"><td class="memTemplParams" colspan="2">template&lt;typename To , typename FromRep , typename FromPeriod &gt; </td></tr>
-<tr class="memitem:a455d343d67b456f593d31c1b40186bb5"><td class="memTemplItemLeft" align="right" valign="top">To&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a455d343d67b456f593d31c1b40186bb5">detail::fmt_safe_duration_cast</a> (std::chrono::duration&lt; FromRep, FromPeriod &gt; from)</td></tr>
-<tr class="separator:a455d343d67b456f593d31c1b40186bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe1ec4d4c96158dd196c3f3eee8d7ed1"><td class="memTemplParams" colspan="2">template&lt;typename Rep , typename Period , FMT_ENABLE_IF(std::is_integral&lt; Rep &gt;::value) &gt; </td></tr>
-<tr class="memitem:afe1ec4d4c96158dd196c3f3eee8d7ed1"><td class="memTemplItemLeft" align="right" valign="top">std::chrono::duration&lt; Rep, std::milli &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#afe1ec4d4c96158dd196c3f3eee8d7ed1">detail::get_milliseconds</a> (std::chrono::duration&lt; Rep, Period &gt; d)</td></tr>
-<tr class="separator:afe1ec4d4c96158dd196c3f3eee8d7ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df2f4acf49861d6cdba35bff3245134"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Rep , typename OutputIt &gt; </td></tr>
-<tr class="memitem:a8df2f4acf49861d6cdba35bff3245134"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a8df2f4acf49861d6cdba35bff3245134">detail::format_duration_value</a> (OutputIt out, Rep val, int precision)</td></tr>
-<tr class="separator:a8df2f4acf49861d6cdba35bff3245134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7594c0bc5a5dd12ad9d1804545f1c36f"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename OutputIt &gt; </td></tr>
-<tr class="memitem:a7594c0bc5a5dd12ad9d1804545f1c36f"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a7594c0bc5a5dd12ad9d1804545f1c36f">detail::copy_unit</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> unit, OutputIt out, Char)</td></tr>
-<tr class="separator:a7594c0bc5a5dd12ad9d1804545f1c36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcecc40fe13a2b872de3b7fc8a871c87"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt &gt; </td></tr>
-<tr class="memitem:adcecc40fe13a2b872de3b7fc8a871c87"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#adcecc40fe13a2b872de3b7fc8a871c87">detail::copy_unit</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> unit, OutputIt out, wchar_t)</td></tr>
-<tr class="separator:adcecc40fe13a2b872de3b7fc8a871c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcf68cff2fcc34231c571f367bbffa3c"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Period , typename OutputIt &gt; </td></tr>
-<tr class="memitem:afcf68cff2fcc34231c571f367bbffa3c"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#afcf68cff2fcc34231c571f367bbffa3c">detail::format_duration_unit</a> (OutputIt out)</td></tr>
-<tr class="separator:afcf68cff2fcc34231c571f367bbffa3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2844bf054cb921d7c6085c4ea719d17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chrono_8h.html#af2844bf054cb921d7c6085c4ea719d17">strftime</a> (char *str, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, const char *<a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, const std::tm *time)</td></tr>
+<tr class="separator:af2844bf054cb921d7c6085c4ea719d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f8e0e74049df064690b926d64ef99f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a86f8e0e74049df064690b926d64ef99f">strftime</a> (wchar_t *str, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, const wchar_t *<a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, const std::tm *time)</td></tr>
+<tr class="separator:a86f8e0e74049df064690b926d64ef99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb2b22a49a81c807939789e1eeb8850"><td class="memTemplParams" colspan="2">template&lt;typename Period &gt; </td></tr>
+<tr class="memitem:adeb2b22a49a81c807939789e1eeb8850"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> <a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#adeb2b22a49a81c807939789e1eeb8850">get_units</a> ()</td></tr>
+<tr class="separator:adeb2b22a49a81c807939789e1eeb8850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb03cad92226d83bdc416362ff6f731"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Handler &gt; </td></tr>
+<tr class="memitem:a4cb03cad92226d83bdc416362ff6f731"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const Char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a4cb03cad92226d83bdc416362ff6f731">parse_chrono_format</a> (const Char *begin, const Char *end, Handler &amp;&amp;handler)</td></tr>
+<tr class="separator:a4cb03cad92226d83bdc416362ff6f731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e13cf798eee1bf79bcc01b8d94047c7"><td class="memTemplParams" colspan="2">template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </td></tr>
+<tr class="memitem:a5e13cf798eee1bf79bcc01b8d94047c7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a5e13cf798eee1bf79bcc01b8d94047c7">isnan</a> (T)</td></tr>
+<tr class="separator:a5e13cf798eee1bf79bcc01b8d94047c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88"><td class="memTemplParams" colspan="2">template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </td></tr>
+<tr class="memitem:ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88">isfinite</a> (T)</td></tr>
+<tr class="separator:ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e12ca3b9987b054cc69548721e9aaf"><td class="memTemplParams" colspan="2">template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </td></tr>
+<tr class="memitem:ab8e12ca3b9987b054cc69548721e9aaf"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#ab8e12ca3b9987b054cc69548721e9aaf">to_nonnegative_int</a> (T <a class="el" href="classvalue.html">value</a>, int upper)</td></tr>
+<tr class="separator:ab8e12ca3b9987b054cc69548721e9aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade692a13be7c7dfac09a8ff2fd00d172"><td class="memTemplParams" colspan="2">template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </td></tr>
+<tr class="memitem:ade692a13be7c7dfac09a8ff2fd00d172"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#ade692a13be7c7dfac09a8ff2fd00d172">mod</a> (T x, int y)</td></tr>
+<tr class="separator:ade692a13be7c7dfac09a8ff2fd00d172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b86c545752440c233fc46cb5fca0e59"><td class="memTemplParams" colspan="2">template&lt;typename To , typename FromRep , typename FromPeriod &gt; </td></tr>
+<tr class="memitem:a0b86c545752440c233fc46cb5fca0e59"><td class="memTemplItemLeft" align="right" valign="top">To&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a0b86c545752440c233fc46cb5fca0e59">fmt_safe_duration_cast</a> (std::chrono::duration&lt; FromRep, FromPeriod &gt; from)</td></tr>
+<tr class="separator:a0b86c545752440c233fc46cb5fca0e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f13cd1ee1d44f9fb07a8a127624609"><td class="memTemplParams" colspan="2">template&lt;typename Rep , typename Period , FMT_ENABLE_IF(std::is_integral&lt; Rep &gt;::value) &gt; </td></tr>
+<tr class="memitem:a90f13cd1ee1d44f9fb07a8a127624609"><td class="memTemplItemLeft" align="right" valign="top">std::chrono::duration&lt; Rep, std::milli &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a90f13cd1ee1d44f9fb07a8a127624609">get_milliseconds</a> (std::chrono::duration&lt; Rep, Period &gt; d)</td></tr>
+<tr class="separator:a90f13cd1ee1d44f9fb07a8a127624609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5807d6bf5c62fc94af79d8a167e3dc89"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Rep , typename OutputIt , FMT_ENABLE_IF(std::is_integral&lt; Rep &gt;::value) &gt; </td></tr>
+<tr class="memitem:a5807d6bf5c62fc94af79d8a167e3dc89"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a5807d6bf5c62fc94af79d8a167e3dc89">format_duration_value</a> (OutputIt out, Rep val, int)</td></tr>
+<tr class="separator:a5807d6bf5c62fc94af79d8a167e3dc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512e46e37ef6814805ea2220069bc967"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename OutputIt &gt; </td></tr>
+<tr class="memitem:a512e46e37ef6814805ea2220069bc967"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a512e46e37ef6814805ea2220069bc967">copy_unit</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> unit, OutputIt out, Char)</td></tr>
+<tr class="separator:a512e46e37ef6814805ea2220069bc967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323b91e14532e6fbadf8059cec3fb7f1"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt &gt; </td></tr>
+<tr class="memitem:a323b91e14532e6fbadf8059cec3fb7f1"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a323b91e14532e6fbadf8059cec3fb7f1">copy_unit</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> unit, OutputIt out, wchar_t)</td></tr>
+<tr class="separator:a323b91e14532e6fbadf8059cec3fb7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939f37f22285d37071036cfe150dc235"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Period , typename OutputIt &gt; </td></tr>
+<tr class="memitem:a939f37f22285d37071036cfe150dc235"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="chrono_8h.html#a939f37f22285d37071036cfe150dc235">format_duration_unit</a> (OutputIt out)</td></tr>
+<tr class="separator:a939f37f22285d37071036cfe150dc235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0c2d874e178da493766bca4f1b898780"></a>
@@ -307,7 +263,237 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a4ed3bdd2ae5dcb224f0e84141a87179d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed3bdd2ae5dcb224f0e84141a87179d">&#9670;&nbsp;</a></span>numeric_system</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="chrono_8h.html#a4ed3bdd2ae5dcb224f0e84141a87179d">numeric_system</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4ed3bdd2ae5dcb224f0e84141a87179dac00f0c4675b91fb8b918e4079a0b1bac"></a>standard&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4ed3bdd2ae5dcb224f0e84141a87179daa04fe4e390a7c7d5d4583f85d24e164d"></a>alternative&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a512e46e37ef6814805ea2220069bc967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512e46e37ef6814805ea2220069bc967">&#9670;&nbsp;</a></span>copy_unit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename OutputIt &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">OutputIt copy_unit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a>&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIt&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Char&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a323b91e14532e6fbadf8059cec3fb7f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323b91e14532e6fbadf8059cec3fb7f1">&#9670;&nbsp;</a></span>copy_unit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OutputIt &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">OutputIt copy_unit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a>&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIt&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wchar_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b86c545752440c233fc46cb5fca0e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b86c545752440c233fc46cb5fca0e59">&#9670;&nbsp;</a></span>fmt_safe_duration_cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename To , typename FromRep , typename FromPeriod &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">To fmt_safe_duration_cast </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::duration&lt; FromRep, FromPeriod &gt;&#160;</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a939f37f22285d37071036cfe150dc235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939f37f22285d37071036cfe150dc235">&#9670;&nbsp;</a></span>format_duration_unit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename Period , typename OutputIt &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">OutputIt format_duration_unit </td>
+          <td>(</td>
+          <td class="paramtype">OutputIt&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5807d6bf5c62fc94af79d8a167e3dc89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5807d6bf5c62fc94af79d8a167e3dc89">&#9670;&nbsp;</a></span>format_duration_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename Rep , typename OutputIt , FMT_ENABLE_IF(std::is_integral&lt; Rep &gt;::value) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">OutputIt format_duration_value </td>
+          <td>(</td>
+          <td class="paramtype">OutputIt&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Rep&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90f13cd1ee1d44f9fb07a8a127624609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f13cd1ee1d44f9fb07a8a127624609">&#9670;&nbsp;</a></span>get_milliseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Rep , typename Period , FMT_ENABLE_IF(std::is_integral&lt; Rep &gt;::value) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::duration&lt; Rep, std::milli &gt; get_milliseconds </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::duration&lt; Rep, Period &gt;&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adeb2b22a49a81c807939789e1eeb8850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb2b22a49a81c807939789e1eeb8850">&#9670;&nbsp;</a></span>get_units()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Period &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> <a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const char* get_units </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1e245b36b9035cbe9bee8608c920a40a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e245b36b9035cbe9bee8608c920a40a">&#9670;&nbsp;</a></span>gmtime() <span class="overload">[1/2]</span></h2>
 
@@ -357,6 +543,63 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Converts given time since epoch as <code>std::time_t</code> value into calendar time, expressed in Coordinated Universal Time (UTC). Unlike <code>std::gmtime</code>, this function is thread-safe on most platforms. </p>
+
+</div>
+</div>
+<a id="ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88">&#9670;&nbsp;</a></span>isfinite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isfinite </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e13cf798eee1bf79bcc01b8d94047c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e13cf798eee1bf79bcc01b8d94047c7">&#9670;&nbsp;</a></span>isnan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isnan </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -386,8 +629,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b11a736f2ef77ba69490af3f5081abf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b11a736f2ef77ba69490af3f5081abf">&#9670;&nbsp;</a></span>localtime() <span class="overload">[2/2]</span></h2>
+<a id="a5a5420acd34656784c3736b4803efad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5420acd34656784c3736b4803efad1">&#9670;&nbsp;</a></span>localtime() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,11 +639,220 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::tm localtime </td>
+          <td class="memname"><a class="el" href="core_8h.html#a405a25ede2658f5f1bd426ce7d10f3ee">FMT_MODULE_EXPORT_BEGIN</a> std::tm localtime </td>
           <td>(</td>
           <td class="paramtype">std::time_t&#160;</td>
           <td class="paramname"><em>time</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Converts given time since epoch as <code>std::time_t</code> value into calendar time, expressed in local time. Unlike <code>std::localtime</code>, this function is thread-safe on most platforms. </p>
+
+</div>
+</div>
+<a id="ade692a13be7c7dfac09a8ff2fd00d172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade692a13be7c7dfac09a8ff2fd00d172">&#9670;&nbsp;</a></span>mod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T mod </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cb03cad92226d83bdc416362ff6f731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb03cad92226d83bdc416362ff6f731">&#9670;&nbsp;</a></span>parse_chrono_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename Handler &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> const Char* parse_chrono_format </td>
+          <td>(</td>
+          <td class="paramtype">const Char *&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Char *&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler &amp;&amp;&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2844bf054cb921d7c6085c4ea719d17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2844bf054cb921d7c6085c4ea719d17">&#9670;&nbsp;</a></span>strftime() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> size_t strftime </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::tm *&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86f8e0e74049df064690b926d64ef99f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86f8e0e74049df064690b926d64ef99f">&#9670;&nbsp;</a></span>strftime() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t strftime </td>
+          <td>(</td>
+          <td class="paramtype">wchar_t *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::tm *&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8e12ca3b9987b054cc69548721e9aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e12ca3b9987b054cc69548721e9aaf">&#9670;&nbsp;</a></span>to_nonnegative_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::value) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int to_nonnegative_int </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>upper</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
