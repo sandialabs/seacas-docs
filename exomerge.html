@@ -3,15 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-<meta name="generator" content="pdoc 0.6.3" />
+<meta name="generator" content="pdoc 0.9.2" />
 <title>exomerge API documentation</title>
 <meta name="description" content="Exomerge is a lightweight Python interface for manipulating ExodusII files …" />
-<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
-<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
-<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase;cursor:pointer}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
-<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
 <style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
 </head>
 <body>
 <main>
@@ -21,45 +23,15 @@
 </header>
 <section id="section-intro">
 <p>Exomerge is a lightweight Python interface for manipulating ExodusII files.</p>
-<p>Copyright (c) 2012-2019, National Technology &amp; Engineering Solutions
+<p>Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions
 of Sandia, LLC (NTESS).
 Under the terms of Contract DE-NA0003525 with
 NTESS, the U.S. Government retains certain rights in this software.</p>
-<p>Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:</p>
-<ul>
-<li>
-<p>Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.</p>
-</li>
-<li>
-<p>Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following
-disclaimer in the documentation and/or other materials provided
-with the distribution.</p>
-</li>
-<li>
-<p>Neither the name of NTESS nor the names of its
-contributors may be used to endorse or promote products derived
-from this software without specific prior written permission.</p>
-</li>
-</ul>
-<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<p>See packages/seacas/LICENSE for details</p>
 <p>Author: Tim Kostka (tdkostk@sandia.gov)
 Created: May 3, 2012</p>
 <p>Simple example:</p>
-<pre><code>&gt;&gt;&gt; import exomerge
+<pre><code class="language-python-repl">&gt;&gt;&gt; import exomerge
 &gt;&gt;&gt; model = exomerge.import_model('results.e')
 &gt;&gt;&gt; model.delete_element_block(1)
 &gt;&gt;&gt; model.export_model('most_results.e')
@@ -74,41 +46,17 @@ Exodus files" (SAND2013-0725)</p>
 contact the author.</p>
 <p>This is the python-3 version</p>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">&#34;&#34;&#34;
 Exomerge is a lightweight Python interface for manipulating ExodusII files.
 
-Copyright (c) 2012-2019, National Technology &amp; Engineering Solutions
+Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions
 of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with
 NTESS, the U.S. Government retains certain rights in this software.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-
-* Redistributions of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above
-  copyright notice, this list of conditions and the following
-  disclaimer in the documentation and/or other materials provided
-  with the distribution.
-
-* Neither the name of NTESS nor the names of its
-  contributors may be used to endorse or promote products derived
-  from this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-&#34;AS IS&#34; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+See packages/seacas/LICENSE for details
 
 Author: Tim Kostka (tdkostk@sandia.gov)
 Created: May 3, 2012
@@ -161,7 +109,7 @@ except:
     import exodus3 as exodus
 
 # informal version number of this module
-__version__ = &#34;8.6.0&#34;
+__version__ = &#34;8.6.1&#34;
 VERSION = __version__
 
 # contact person for issues
@@ -1561,7 +1509,7 @@ class ExodusModel(object):
         self._create_averaged_nodes(new_nodes, [])
         # create the new element block
         self.create_element_block(new_element_block_id,
-                                  [&#39;tri3&#39;, len(connectivity) / 3, 3, 0],
+                                  [&#39;tri3&#39;, len(connectivity) // 3, 3, 0],
                                   connectivity)
 
     @staticmethod
@@ -1704,7 +1652,7 @@ class ExodusModel(object):
                                        len(triangles))
         self.create_element_block(
             new_element_block_id,
-            [&#39;tri3&#39;, len(new_connectivity) / 3, 3, 0], new_connectivity)
+            [&#39;tri3&#39;, len(new_connectivity) // 3, 3, 0], new_connectivity)
         self.create_element_field(&#39;interval&#39;, new_element_block_id, 0.0)
         fields = self._get_element_block_fields(new_element_block_id)
         field = fields[&#39;interval&#39;]
@@ -1951,9 +1899,9 @@ class ExodusModel(object):
         # create the STL file
         connectivity = self.get_connectivity(triangle_element_block_id)
         with open(filename, &#39;wb&#39;) as output:
-            output.write(&#39; &#39; * 80)
-            output.write(struct.pack(&#39;&lt;l&#39;, len(connectivity) / 3))
-            for element_index in range(len(connectivity) / 3):
+            output.write(b&#39; &#39; * 80)
+            output.write(struct.pack(&#39;&lt;l&#39;, len(connectivity) // 3))
+            for element_index in range(len(connectivity) // 3):
                 tri = connectivity[element_index * 3:(element_index + 1) * 3]
                 normal = (c[tri[1]][1] * c[tri[2]][2] -
                           c[tri[2]][1] * c[tri[1]][2],
@@ -2725,7 +2673,7 @@ class ExodusModel(object):
             new_nodes_per_element = self.NODES_PER_ELEMENT[new_element_type]
             self.create_element_block(temporary_element_block_id, [
                 new_element_type,
-                len(new_connectivity) / new_nodes_per_element,
+                len(new_connectivity) // new_nodes_per_element,
                 new_nodes_per_element, 0
             ], new_connectivity)
             temporary_fields = self._get_element_block_fields(
@@ -2894,7 +2842,6 @@ class ExodusModel(object):
         &#34;&#34;&#34;Convert elements within a block to a new type.&#34;&#34;&#34;
         [element_block_id] = self._format_element_block_id_list(
             [element_block_id], single=True)
-        element_count = self.get_element_count(element_block_id)
         old_element_type = self._get_standard_element_type(
             self._get_element_type(element_block_id))
         new_element_type = self._get_standard_element_type(new_element_type)
@@ -2951,7 +2898,7 @@ class ExodusModel(object):
         temporary_element_block_id = self._new_element_block_id()
         self.create_element_block(temporary_element_block_id, [
             new_element_type,
-            len(new_connectivity) / new_nodes_per_element,
+            len(new_connectivity) // new_nodes_per_element,
             new_nodes_per_element, 0
         ], new_connectivity)
         temporary_element_fields = self._get_element_block_fields(
@@ -5077,6 +5024,7 @@ class ExodusModel(object):
         If &#39;element_block_ids&#39; is specified, only faces within those elements
         will be considered.  If &#39;set_of_nodes&#39; is given, only faces which
         contain one or more nodes in that set will be returned.
+        TODO: Not sure this handles &#39;element_block_ids&#39; correctly.
 
         &#34;&#34;&#34;
         element_block_ids = self._format_element_block_id_list(
@@ -5181,7 +5129,6 @@ class ExodusModel(object):
         face_type = set()
         element_types = set()
         for id_, members in list(members_by_block.items()):
-            connectivity = self.get_connectivity(id_)
             element_types.add(self._get_element_type(id_))
             face_mapping = self._get_face_mapping_from_id(id_)
             numbers = set(x for _, x in members)
@@ -5320,7 +5267,7 @@ class ExodusModel(object):
         # create the actual element block
         self.create_element_block(new_element_block_id, [
             formula[0],
-            len(connectivity) / nodes_per_element, nodes_per_element, 0
+            len(connectivity) // nodes_per_element, nodes_per_element, 0
         ], connectivity)
 
     def create_averaged_element_field(self,
@@ -5491,7 +5438,7 @@ class ExodusModel(object):
                 element_field_values = [0.0] * element_count
                 # for each node within each element
                 for connectivity_index, node_index in enumerate(connectivity):
-                    element_index = connectivity_index / nodes_per_element
+                    element_index = connectivity_index // nodes_per_element
                     element_field_values[element_index] += node_field[
                         timestep_index][node_index]
                 # average each value
@@ -5776,7 +5723,7 @@ class ExodusModel(object):
         &#34;&#34;&#34;
         element_block_ids = self._format_element_block_id_list(
             element_block_ids)
-        return sum(self.element_blocks[x][1][1] for x in element_block_ids)
+        return int(sum(self.element_blocks[x][1][1] for x in element_block_ids))
 
     def process_element_fields(self, element_block_ids=&#39;all&#39;):
         &#34;&#34;&#34;
@@ -6477,10 +6424,6 @@ class ExodusModel(object):
                 four_steps[3] = 2 * four_steps[2] - four_steps[1]
             else:
                 four_steps[3] = steps[index + 2]
-            if nearby &lt; timestep:
-                nearby = [nearby, steps[steps.index(nearby) + 1]]
-            else:
-                nearby = [steps[steps.index(nearby) - 1], nearby]
             # find interpolation coefficients
             coefficients = self._cubic_interpolation(timestep, *four_steps)
             formula = [[steps[index], coefficients[1]],
@@ -6899,7 +6842,9 @@ class ExodusModel(object):
                 if node[d] &gt; bounds[d][1]:
                     bounds[d][1] = node[d]
         relative = max([bound[1] - bound[0] for bound in bounds])
-        absolute = max([abs(x) for x in bound for bound in bounds])
+        abs0 = max([abs(bound[0]) for bound in bounds])
+        abs1 = max([abs(bound[1]) for bound in bounds])
+        absolute = max([abs0, abs1])
         return max(relative, absolute)
 
     @staticmethod
@@ -8081,6 +8026,9 @@ class ExodusModel(object):
 
     def _get_thickness_from_volume_and_area(self, volume, area):
         &#34;&#34;&#34;Return the thickness of a disk given the volume and area.&#34;&#34;&#34;
+        if volume == 0.0:
+            return 0
+
         # max phi (for a sphere) is 6^(-1/3) * pi^(-1/6)
         phi = math.pow(volume, 1 / 3.0) / math.pow(area, 1 / 2.0)
         # find a solution, if possible
@@ -8202,7 +8150,7 @@ class ExodusModel(object):
             nodes_per_element = self.NODES_PER_ELEMENT[element_type]
             info = [
                 element_type,
-                len(connectivity) / nodes_per_element, nodes_per_element, 0
+                len(connectivity) // nodes_per_element, nodes_per_element, 0
             ]
             self.create_element_block(new_id, info, connectivity)
             new_block_ids.append(new_id)
@@ -8398,8 +8346,8 @@ class ExodusModel(object):
                 self._input_check_error(argument, arg_format)
             if arg_format[1] &lt;= 0 and len(argument) &lt; -arg_format[1]:
                 self._input_check_error(argument, arg_format)
-            for x in argument:
-                self._input_check(x, arg_format[2:])
+            for arg in argument:
+                self._input_check(arg, arg_format[2:])
         else:
             self._assert(len(arg_format) == 1)
             if arg_format[0] is int:
@@ -8495,7 +8443,7 @@ class ExodusModel(object):
         for element_block_id in element_block_ids:
             _, _, connectivity, _ = self.element_blocks[element_block_id]
             nodes_per_element = self.get_nodes_per_element(element_block_id)
-            element_count = len(connectivity) / nodes_per_element
+            element_count = len(connectivity) // nodes_per_element
             for element_index in range(element_count):
                 local_node = connectivity[element_index *
                                           nodes_per_element:(element_index +
@@ -8806,17 +8754,19 @@ class ExodusModel(object):
 <span>def <span class="ident">import_model</span></span>(<span>filename, *args, **kwargs)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Load information from an ExodusII file.</p>
+<div class="desc"><p>Load information from an ExodusII file.</p>
 <p>This function is a wrapper around 'ExodusModel.import_model(&hellip;)' and is
 provided for convenience.
 Internally, this is equivalent to executing the
 following two statements.</p>
-<pre><code>&gt;&gt;&gt; model = ExodusModel()
+<pre><code class="language-python-repl">&gt;&gt;&gt; model = ExodusModel()
 &gt;&gt;&gt; model.import_model(...)
 </code></pre>
-<p>See 'ExodusModel.import_model' for additional information.</p></section>
+<p>See 'ExodusModel.import_model' for additional information.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def import_model(filename, *args, **kwargs):
     &#34;&#34;&#34;
     Load information from an ExodusII file.
@@ -8843,12 +8793,13 @@ following two statements.</p>
 <dl>
 <dt id="exomerge.DummyFile"><code class="flex name class">
 <span>class <span class="ident">DummyFile</span></span>
-<span>(</span><span>*args, **kwargs)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Dummy class used to suppress output to stdout.</p></section>
+<div class="desc"><p>Dummy class used to suppress output to stdout.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">class DummyFile(object):
     &#34;&#34;&#34;Dummy class used to suppress output to stdout.&#34;&#34;&#34;
     def write(self, x):
@@ -8860,9 +8811,11 @@ following two statements.</p>
 <span>def <span class="ident">write</span></span>(<span>self, x)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Ignore the write command.</p></section>
+<div class="desc"><p>Ignore the write command.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def write(self, x):
     &#34;&#34;&#34;Ignore the write command.&#34;&#34;&#34;</code></pre>
 </details>
@@ -8873,10 +8826,12 @@ following two statements.</p>
 <span>class <span class="ident">ExodusModel</span></span>
 </code></dt>
 <dd>
-<section class="desc"><p>This class holds all information stored within an ExodusII file.</p>
-<p>Initialize the model.</p></section>
+<div class="desc"><p>This class holds all information stored within an ExodusII file.</p>
+<p>Initialize the model.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">class ExodusModel(object):
     &#34;&#34;&#34;This class holds all information stored within an ExodusII file.&#34;&#34;&#34;
 
@@ -10225,7 +10180,7 @@ following two statements.</p>
         self._create_averaged_nodes(new_nodes, [])
         # create the new element block
         self.create_element_block(new_element_block_id,
-                                  [&#39;tri3&#39;, len(connectivity) / 3, 3, 0],
+                                  [&#39;tri3&#39;, len(connectivity) // 3, 3, 0],
                                   connectivity)
 
     @staticmethod
@@ -10368,7 +10323,7 @@ following two statements.</p>
                                        len(triangles))
         self.create_element_block(
             new_element_block_id,
-            [&#39;tri3&#39;, len(new_connectivity) / 3, 3, 0], new_connectivity)
+            [&#39;tri3&#39;, len(new_connectivity) // 3, 3, 0], new_connectivity)
         self.create_element_field(&#39;interval&#39;, new_element_block_id, 0.0)
         fields = self._get_element_block_fields(new_element_block_id)
         field = fields[&#39;interval&#39;]
@@ -10615,9 +10570,9 @@ following two statements.</p>
         # create the STL file
         connectivity = self.get_connectivity(triangle_element_block_id)
         with open(filename, &#39;wb&#39;) as output:
-            output.write(&#39; &#39; * 80)
-            output.write(struct.pack(&#39;&lt;l&#39;, len(connectivity) / 3))
-            for element_index in range(len(connectivity) / 3):
+            output.write(b&#39; &#39; * 80)
+            output.write(struct.pack(&#39;&lt;l&#39;, len(connectivity) // 3))
+            for element_index in range(len(connectivity) // 3):
                 tri = connectivity[element_index * 3:(element_index + 1) * 3]
                 normal = (c[tri[1]][1] * c[tri[2]][2] -
                           c[tri[2]][1] * c[tri[1]][2],
@@ -11389,7 +11344,7 @@ following two statements.</p>
             new_nodes_per_element = self.NODES_PER_ELEMENT[new_element_type]
             self.create_element_block(temporary_element_block_id, [
                 new_element_type,
-                len(new_connectivity) / new_nodes_per_element,
+                len(new_connectivity) // new_nodes_per_element,
                 new_nodes_per_element, 0
             ], new_connectivity)
             temporary_fields = self._get_element_block_fields(
@@ -11558,7 +11513,6 @@ following two statements.</p>
         &#34;&#34;&#34;Convert elements within a block to a new type.&#34;&#34;&#34;
         [element_block_id] = self._format_element_block_id_list(
             [element_block_id], single=True)
-        element_count = self.get_element_count(element_block_id)
         old_element_type = self._get_standard_element_type(
             self._get_element_type(element_block_id))
         new_element_type = self._get_standard_element_type(new_element_type)
@@ -11615,7 +11569,7 @@ following two statements.</p>
         temporary_element_block_id = self._new_element_block_id()
         self.create_element_block(temporary_element_block_id, [
             new_element_type,
-            len(new_connectivity) / new_nodes_per_element,
+            len(new_connectivity) // new_nodes_per_element,
             new_nodes_per_element, 0
         ], new_connectivity)
         temporary_element_fields = self._get_element_block_fields(
@@ -13741,6 +13695,7 @@ following two statements.</p>
         If &#39;element_block_ids&#39; is specified, only faces within those elements
         will be considered.  If &#39;set_of_nodes&#39; is given, only faces which
         contain one or more nodes in that set will be returned.
+        TODO: Not sure this handles &#39;element_block_ids&#39; correctly.
 
         &#34;&#34;&#34;
         element_block_ids = self._format_element_block_id_list(
@@ -13845,7 +13800,6 @@ following two statements.</p>
         face_type = set()
         element_types = set()
         for id_, members in list(members_by_block.items()):
-            connectivity = self.get_connectivity(id_)
             element_types.add(self._get_element_type(id_))
             face_mapping = self._get_face_mapping_from_id(id_)
             numbers = set(x for _, x in members)
@@ -13984,7 +13938,7 @@ following two statements.</p>
         # create the actual element block
         self.create_element_block(new_element_block_id, [
             formula[0],
-            len(connectivity) / nodes_per_element, nodes_per_element, 0
+            len(connectivity) // nodes_per_element, nodes_per_element, 0
         ], connectivity)
 
     def create_averaged_element_field(self,
@@ -14155,7 +14109,7 @@ following two statements.</p>
                 element_field_values = [0.0] * element_count
                 # for each node within each element
                 for connectivity_index, node_index in enumerate(connectivity):
-                    element_index = connectivity_index / nodes_per_element
+                    element_index = connectivity_index // nodes_per_element
                     element_field_values[element_index] += node_field[
                         timestep_index][node_index]
                 # average each value
@@ -14440,7 +14394,7 @@ following two statements.</p>
         &#34;&#34;&#34;
         element_block_ids = self._format_element_block_id_list(
             element_block_ids)
-        return sum(self.element_blocks[x][1][1] for x in element_block_ids)
+        return int(sum(self.element_blocks[x][1][1] for x in element_block_ids))
 
     def process_element_fields(self, element_block_ids=&#39;all&#39;):
         &#34;&#34;&#34;
@@ -15141,10 +15095,6 @@ following two statements.</p>
                 four_steps[3] = 2 * four_steps[2] - four_steps[1]
             else:
                 four_steps[3] = steps[index + 2]
-            if nearby &lt; timestep:
-                nearby = [nearby, steps[steps.index(nearby) + 1]]
-            else:
-                nearby = [steps[steps.index(nearby) - 1], nearby]
             # find interpolation coefficients
             coefficients = self._cubic_interpolation(timestep, *four_steps)
             formula = [[steps[index], coefficients[1]],
@@ -15563,7 +15513,9 @@ following two statements.</p>
                 if node[d] &gt; bounds[d][1]:
                     bounds[d][1] = node[d]
         relative = max([bound[1] - bound[0] for bound in bounds])
-        absolute = max([abs(x) for x in bound for bound in bounds])
+        abs0 = max([abs(bound[0]) for bound in bounds])
+        abs1 = max([abs(bound[1]) for bound in bounds])
+        absolute = max([abs0, abs1])
         return max(relative, absolute)
 
     @staticmethod
@@ -16745,6 +16697,9 @@ following two statements.</p>
 
     def _get_thickness_from_volume_and_area(self, volume, area):
         &#34;&#34;&#34;Return the thickness of a disk given the volume and area.&#34;&#34;&#34;
+        if volume == 0.0:
+            return 0
+
         # max phi (for a sphere) is 6^(-1/3) * pi^(-1/6)
         phi = math.pow(volume, 1 / 3.0) / math.pow(area, 1 / 2.0)
         # find a solution, if possible
@@ -16866,7 +16821,7 @@ following two statements.</p>
             nodes_per_element = self.NODES_PER_ELEMENT[element_type]
             info = [
                 element_type,
-                len(connectivity) / nodes_per_element, nodes_per_element, 0
+                len(connectivity) // nodes_per_element, nodes_per_element, 0
             ]
             self.create_element_block(new_id, info, connectivity)
             new_block_ids.append(new_id)
@@ -17062,8 +17017,8 @@ following two statements.</p>
                 self._input_check_error(argument, arg_format)
             if arg_format[1] &lt;= 0 and len(argument) &lt; -arg_format[1]:
                 self._input_check_error(argument, arg_format)
-            for x in argument:
-                self._input_check(x, arg_format[2:])
+            for arg in argument:
+                self._input_check(arg, arg_format[2:])
         else:
             self._assert(len(arg_format) == 1)
             if arg_format[0] is int:
@@ -17159,7 +17114,7 @@ following two statements.</p>
         for element_block_id in element_block_ids:
             _, _, connectivity, _ = self.element_blocks[element_block_id]
             nodes_per_element = self.get_nodes_per_element(element_block_id)
-            element_count = len(connectivity) / nodes_per_element
+            element_count = len(connectivity) // nodes_per_element
             for element_index in range(element_count):
                 local_node = connectivity[element_index *
                                           nodes_per_element:(element_index +
@@ -17462,55 +17417,55 @@ following two statements.</p>
 <dl>
 <dt id="exomerge.ExodusModel.ALL_MULTI_COMPONENT_FIELD_SUBSCRIPTS"><code class="name">var <span class="ident">ALL_MULTI_COMPONENT_FIELD_SUBSCRIPTS</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.COHESIVE_FORMULA"><code class="name">var <span class="ident">COHESIVE_FORMULA</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.DIMENSION"><code class="name">var <span class="ident">DIMENSION</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.ELEMENT_CONVERSIONS"><code class="name">var <span class="ident">ELEMENT_CONVERSIONS</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.ELEMENT_ORDER"><code class="name">var <span class="ident">ELEMENT_ORDER</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.FACE_MAPPING"><code class="name">var <span class="ident">FACE_MAPPING</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.INVERTED_CONNECTIVITY"><code class="name">var <span class="ident">INVERTED_CONNECTIVITY</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.MULTI_COMPONENT_FIELD_SUBSCRIPTS"><code class="name">var <span class="ident">MULTI_COMPONENT_FIELD_SUBSCRIPTS</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.NODES_PER_ELEMENT"><code class="name">var <span class="ident">NODES_PER_ELEMENT</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.ROTATED_CONNECTIVITY"><code class="name">var <span class="ident">ROTATED_CONNECTIVITY</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.STANDARD_ELEMENT_TYPES"><code class="name">var <span class="ident">STANDARD_ELEMENT_TYPES</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.TRIANGULATED_FACES"><code class="name">var <span class="ident">TRIANGULATED_FACES</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 <dt id="exomerge.ExodusModel.VOLUME_FORMULA"><code class="name">var <span class="ident">VOLUME_FORMULA</span></code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"></div>
 </dd>
 </dl>
 <h3>Methods</h3>
@@ -17519,15 +17474,17 @@ following two statements.</p>
 <span>def <span class="ident">add_faces_to_side_set</span></span>(<span>self, side_set_id, new_side_set_members)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Add the given faces to the side set.</p>
+<div class="desc"><p>Add the given faces to the side set.</p>
 <p>The parameter 'new_side_set_members' should be a list of tuples of the
 form:
 * '(element_block_id, local_element_index, element_side_index)'</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.add_faces_to_side_set(1, [(2, 0, 3), (3, 0, 4)])
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.add_faces_to_side_set(1, [(2, 0, 3), (3, 0, 4)])
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def add_faces_to_side_set(self, side_set_id, new_side_set_members):
     &#34;&#34;&#34;
     Add the given faces to the side set.
@@ -17571,12 +17528,14 @@ form:
 <span>def <span class="ident">add_nodes_to_node_set</span></span>(<span>self, node_set_id, new_node_set_members)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Add nodes to an existing node set.</p>
+<div class="desc"><p>Add nodes to an existing node set.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.add_nodes_to_node_set(1, [4, 5, 6, 7])
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.add_nodes_to_node_set(1, [4, 5, 6, 7])
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def add_nodes_to_node_set(self, node_set_id, new_node_set_members):
     &#34;&#34;&#34;
     Add nodes to an existing node set.
@@ -17616,7 +17575,7 @@ form:
 <span>def <span class="ident">build_hex8_cube</span></span>(<span>self, element_block_id='auto', extents=1.0, divisions=3)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create an element block in the shape of a cuboid.</p>
+<div class="desc"><p>Create an element block in the shape of a cuboid.</p>
 <p>Extent defines the extent of the block in the form
 '[[minx, maxx], [miny, maxy], [minz, maxz]]'.
 If only one value per
@@ -17627,9 +17586,11 @@ for all dimensions.</p>
 <p>Divisions is the number of divisions per dimension.
 This can be
 defined as a single number for all dimensions or as a list of
-3 numbers.</p></section>
+3 numbers.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def build_hex8_cube(self,
                     element_block_id=&#39;auto&#39;,
                     extents=1.0,
@@ -17701,7 +17662,7 @@ defined as a single number for all dimensions or as a list of
 <span>def <span class="ident">calculate_element_centroids</span></span>(<span>self, element_field_name_prefix='centroid_', element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Calculate and store the centroid of each element.</p>
+<div class="desc"><p>Calculate and store the centroid of each element.</p>
 <p>This will approximate the element centroid as the nodal average of each
 element and will store that value in an element field.
 Since a
@@ -17712,10 +17673,12 @@ be created if none exist.</p>
 Alternatively, a prefix can be given
 or a list of three strings can be given.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_element_centroids()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_element_centroids()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_element_centroids(self,
                                 element_field_name_prefix=&#39;centroid_&#39;,
                                 element_block_ids=&#39;all&#39;):
@@ -17777,17 +17740,19 @@ or a list of three strings can be given.</p>
 <span>def <span class="ident">calculate_element_field</span></span>(<span>self, expression, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Store an element field calculated from the given expression.</p>
+<div class="desc"><p>Store an element field calculated from the given expression.</p>
 <p>The expression may include the following variables:
 * 'time' to refer to the current time
 * global variables (by name)
 * element fields (by name)</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_element_field('pressure = (stress_xx + '
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_element_field('pressure = (stress_xx + '
 ...                               'stress_yy + stress_zz) / -3')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_element_field(self, expression, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Store an element field calculated from the given expression.
@@ -17848,17 +17813,19 @@ or a list of three strings can be given.</p>
 <span>def <span class="ident">calculate_element_field_maximum</span></span>(<span>self, element_field_names, element_block_ids='all', calculate_location=False, calculate_block_id=False)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Store an element field maximum as a global variable.</p>
+<div class="desc"><p>Store an element field maximum as a global variable.</p>
 <p>If 'calculate_block_id=True', also store the element block id
 containing the element with this value.</p>
 <p>If 'calculate_location=True', also store the location of the centroid
 of the element with this value.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_element_field_maximum('eqps')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_element_field_maximum('eqps')
 &gt;&gt;&gt; model.global_variables['eqps_max']
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_element_field_maximum(self,
                                     element_field_names,
                                     element_block_ids=&#39;all&#39;,
@@ -17891,17 +17858,19 @@ of the element with this value.</p>
 <span>def <span class="ident">calculate_element_field_minimum</span></span>(<span>self, element_field_names, element_block_ids='all', calculate_location=False, calculate_block_id=False)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Store an element field minimum as a global variable.</p>
+<div class="desc"><p>Store an element field minimum as a global variable.</p>
 <p>If 'calculate_block_id=True', also store the element block id
 containing the element with this value.</p>
 <p>If 'calculate_location=True', also store the location of the centroid
 of the element with this value.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_element_field_minimum('eqps')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_element_field_minimum('eqps')
 &gt;&gt;&gt; model.global_variables['eqps_min']
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_element_field_minimum(self,
                                     element_field_names,
                                     element_block_ids=&#39;all&#39;,
@@ -17934,7 +17903,7 @@ of the element with this value.</p>
 <span>def <span class="ident">calculate_element_volumes</span></span>(<span>self, element_field_name='volume', element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Calculate and store the volume of each element.</p>
+<div class="desc"><p>Calculate and store the volume of each element.</p>
 <p>This will approximate the element volume.
 Since a timestep must be
 defined in order for element fields to exist, one will be created if
@@ -17943,10 +17912,12 @@ none exist.</p>
 For one
 dimensional elements, this calculates the length.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_element_volumes()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_element_volumes()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_element_volumes(self,
                               element_field_name=&#39;volume&#39;,
                               element_block_ids=&#39;all&#39;):
@@ -18060,16 +18031,18 @@ dimensional elements, this calculates the length.</p>
 <span>def <span class="ident">calculate_global_variable</span></span>(<span>self, expression)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Store a global variable calculated from the given expression.</p>
+<div class="desc"><p>Store a global variable calculated from the given expression.</p>
 <p>The expression may include the following variables:
 * 'time' to refer to the current time
 * global variables (by name)</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_global_variable('time_squared = time ^ 2')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_global_variable('time_squared = time ^ 2')
 &gt;&gt;&gt; model.calculate_global_variable('total = potential + kinetic')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_global_variable(self, expression):
     &#34;&#34;&#34;
     Store a global variable calculated from the given expression.
@@ -18114,17 +18087,19 @@ dimensional elements, this calculates the length.</p>
 <span>def <span class="ident">calculate_node_field</span></span>(<span>self, expression)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Store a node field calculated from the given expression.</p>
+<div class="desc"><p>Store a node field calculated from the given expression.</p>
 <p>The expression may include the following variables:
 * 'time' to refer to the current time
 * global variables (by name)
 * node fields (by name)
 * model coordinates ('X', 'Y', and 'Z')</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_node_field('temp_C = temp_K - 273.15')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_node_field('temp_C = temp_K - 273.15')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_node_field(self, expression):
     &#34;&#34;&#34;
     Store a node field calculated from the given expression.
@@ -18184,15 +18159,17 @@ dimensional elements, this calculates the length.</p>
 <span>def <span class="ident">calculate_node_field_maximum</span></span>(<span>self, node_field_names, element_block_ids='auto', calculate_location=False)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Store a node field maximum as a global variable.</p>
+<div class="desc"><p>Store a node field maximum as a global variable.</p>
 <p>If 'calculate_location=True', also store the location of the node with
 this value.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_node_field_maximum('temp')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_node_field_maximum('temp')
 &gt;&gt;&gt; model.global_variables['temp_max']
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_node_field_maximum(self,
                                  node_field_names,
                                  element_block_ids=&#39;auto&#39;,
@@ -18220,15 +18197,17 @@ this value.</p>
 <span>def <span class="ident">calculate_node_field_minimum</span></span>(<span>self, node_field_names, element_block_ids='auto', calculate_location=False)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Store a node field minimum as a global variable.</p>
+<div class="desc"><p>Store a node field minimum as a global variable.</p>
 <p>If 'calculate_location=True', also store the location of the node with
 this value.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_node_field_maximum('temp')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_node_field_maximum('temp')
 &gt;&gt;&gt; model.global_variables['temp_min']
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_node_field_minimum(self,
                                  node_field_names,
                                  element_block_ids=&#39;auto&#39;,
@@ -18256,7 +18235,7 @@ this value.</p>
 <span>def <span class="ident">calculate_node_set_field</span></span>(<span>self, expression, node_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Store a node set field calculated from the given expression.</p>
+<div class="desc"><p>Store a node set field calculated from the given expression.</p>
 <p>The expression may include the following variables:
 * 'time' to refer to the current time
 * global variables (by name)
@@ -18264,10 +18243,12 @@ this value.</p>
 * node set fields (by name)
 * model coordinates ('X', 'Y', and 'Z')</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_node_set_field('temp_C = temp_K - 273.15')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_node_set_field('temp_C = temp_K - 273.15')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_node_set_field(self, expression, node_set_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Store a node set field calculated from the given expression.
@@ -18337,15 +18318,17 @@ this value.</p>
 <span>def <span class="ident">calculate_side_set_field</span></span>(<span>self, expression, side_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Store a side set field calculated from the given expression.</p>
+<div class="desc"><p>Store a side set field calculated from the given expression.</p>
 <p>The expression may include the following variables:
 * 'time' to refer to the current time
 * global variables (by name)</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.calculate_side_set_field('temp_C = temp_K - 273.15')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.calculate_side_set_field('temp_C = temp_K - 273.15')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def calculate_side_set_field(self, expression, side_set_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Store a side set field calculated from the given expression.
@@ -18403,15 +18386,17 @@ this value.</p>
 <span>def <span class="ident">combine_element_blocks</span></span>(<span>self, element_block_ids, target_element_block_id='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Combine multiple element blocks into a single block.</p>
+<div class="desc"><p>Combine multiple element blocks into a single block.</p>
 <p>By default, the target element block id will be the smallest of the
 merged element block ids.</p>
 <p>The element blocks to combine must have the same element type.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.combine_element_blocks('all', 1)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.combine_element_blocks('all', 1)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def combine_element_blocks(self,
                            element_block_ids,
                            target_element_block_id=&#39;auto&#39;):
@@ -18523,9 +18508,11 @@ merged element block ids.</p>
 <span>def <span class="ident">convert_element_blocks</span></span>(<span>self, element_block_ids, new_element_type)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Convert elements within a block to a new element type.</p></section>
+<div class="desc"><p>Convert elements within a block to a new element type.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def convert_element_blocks(self, element_block_ids, new_element_type):
     &#34;&#34;&#34;Convert elements within a block to a new element type.&#34;&#34;&#34;
     element_block_ids = self._format_element_block_id_list(
@@ -18541,17 +18528,19 @@ merged element block ids.</p>
 <span>def <span class="ident">convert_element_field_to_node_field</span></span>(<span>self, element_field_name, node_field_name='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Convert an element field to a node field by performing.</p>
+<div class="desc"><p>Convert an element field to a node field by performing.</p>
 <p>For each node, the value of the field at that node will be the average
 of the values in every element which shares that node for elements on
 which the field is defined.</p>
 <p>By default, the name of the node field will be the same as the element
 field.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.convert_element_field_to_node_field('temperature')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.convert_element_field_to_node_field('temperature')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def convert_element_field_to_node_field(self,
                                         element_field_name,
                                         node_field_name=&#39;auto&#39;):
@@ -18626,16 +18615,18 @@ field.</p>
 <span>def <span class="ident">convert_hex8_block_to_tet4_block</span></span>(<span>self, element_block_id, scheme='hex24tet')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Convert a block of 'hex8' elements to a block of 'tet4' elements.</p>
+<div class="desc"><p>Convert a block of 'hex8' elements to a block of 'tet4' elements.</p>
 <p>Side sets are updated accordingly.</p>
 <p>Node sets are not modified.</p>
 <p>Currently, only the 'hex24tet' scheme is implemented, which creates 24
 'tet4' element for eeach 'hex8' element in the original mesh.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.convert_hex8_block_to_tet4_block(1)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.convert_hex8_block_to_tet4_block(1)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def convert_hex8_block_to_tet4_block(self,
                                      element_block_id,
                                      scheme=&#39;hex24tet&#39;):
@@ -18686,14 +18677,16 @@ field.</p>
 <span>def <span class="ident">convert_node_field_to_element_field</span></span>(<span>self, node_field_name, element_field_name='auto', element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Convert a node field to an element field.</p>
+<div class="desc"><p>Convert a node field to an element field.</p>
 <p>For each element, the value of the field at that element will be the
 average of the values in each node of that element.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.convert_node_field_to_element_field('temperature')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.convert_node_field_to_element_field('temperature')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def convert_node_field_to_element_field(self,
                                         node_field_name,
                                         element_field_name=&#39;auto&#39;,
@@ -18734,7 +18727,7 @@ average of the values in each node of that element.</p>
             element_field_values = [0.0] * element_count
             # for each node within each element
             for connectivity_index, node_index in enumerate(connectivity):
-                element_index = connectivity_index / nodes_per_element
+                element_index = connectivity_index // nodes_per_element
                 element_field_values[element_index] += node_field[
                     timestep_index][node_index]
             # average each value
@@ -18749,7 +18742,7 @@ average of the values in each node of that element.</p>
 <span>def <span class="ident">convert_side_set_to_cohesive_zone</span></span>(<span>self, side_set_ids, new_element_block_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Convert the given side sets into a block of cohesive zone elements.</p>
+<div class="desc"><p>Convert the given side sets into a block of cohesive zone elements.</p>
 <p>The given side set must contain faces which are internal (i.e. shared
 by exactly two elements).
 Support for the following face types is
@@ -18758,10 +18751,12 @@ implemented:
 * 'tri3' creates 'wedge6' cohesive elements
 * 'tri6' creates 'wedge12' cohesive elements</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.convert_side_set_to_cohesive_zone(1, 2)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.convert_side_set_to_cohesive_zone(1, 2)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def convert_side_set_to_cohesive_zone(self, side_set_ids,
                                       new_element_block_id):
     &#34;&#34;&#34;
@@ -18790,7 +18785,6 @@ implemented:
     face_type = set()
     element_types = set()
     for id_, members in list(members_by_block.items()):
-        connectivity = self.get_connectivity(id_)
         element_types.add(self._get_element_type(id_))
         face_mapping = self._get_face_mapping_from_id(id_)
         numbers = set(x for _, x in members)
@@ -18929,7 +18923,7 @@ implemented:
     # create the actual element block
     self.create_element_block(new_element_block_id, [
         formula[0],
-        len(connectivity) / nodes_per_element, nodes_per_element, 0
+        len(connectivity) // nodes_per_element, nodes_per_element, 0
     ], connectivity)</code></pre>
 </details>
 </dd>
@@ -18937,14 +18931,16 @@ implemented:
 <span>def <span class="ident">copy_timestep</span></span>(<span>self, timestep, new_timestep)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a copy of an existing timestep.</p>
+<div class="desc"><p>Create a copy of an existing timestep.</p>
 <p>This copies all information from the old timestep including values
 of global variables, node fields, element fields, node set fields and
 side set fields.</p>
 <p>Example:
-object.copy_timestep(0.0, 1.0)</p></section>
+object.copy_timestep(0.0, 1.0)</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def copy_timestep(self, timestep, new_timestep):
     &#34;&#34;&#34;
     Create a copy of an existing timestep.
@@ -18990,11 +18986,13 @@ object.copy_timestep(0.0, 1.0)</p></section>
 <span>def <span class="ident">count_degenerate_elements</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the number of degenerate elements in the given element blocks.</p>
+<div class="desc"><p>Return the number of degenerate elements in the given element blocks.</p>
 <p>A degenerate element is an element which contains one or more nodes
-which are a duplicate of another node within the same element.</p></section>
+which are a duplicate of another node within the same element.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def count_degenerate_elements(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return the number of degenerate elements in the given element blocks.
@@ -19009,7 +19007,7 @@ which are a duplicate of another node within the same element.</p></section>
     for element_block_id in element_block_ids:
         _, _, connectivity, _ = self.element_blocks[element_block_id]
         nodes_per_element = self.get_nodes_per_element(element_block_id)
-        element_count = len(connectivity) / nodes_per_element
+        element_count = len(connectivity) // nodes_per_element
         for element_index in range(element_count):
             local_node = connectivity[element_index *
                                       nodes_per_element:(element_index +
@@ -19024,11 +19022,13 @@ which are a duplicate of another node within the same element.</p></section>
 <span>def <span class="ident">count_disconnected_blocks</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the number of disconnected blocks.</p>
+<div class="desc"><p>Return the number of disconnected blocks.</p>
 <p>A disconnected block is a group of elements which are connected to
-each other through one or more nodes.</p></section>
+each other through one or more nodes.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def count_disconnected_blocks(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return the number of disconnected blocks.
@@ -19078,14 +19078,16 @@ each other through one or more nodes.</p></section>
 <span>def <span class="ident">create_averaged_element_field</span></span>(<span>self, from_element_field_names, new_element_field_name, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create an element field by averaging the given field values.</p>
+<div class="desc"><p>Create an element field by averaging the given field values.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.create_averaged_element_field(['temp_1', 'temp_2'],
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_averaged_element_field(['temp_1', 'temp_2'],
 ...                                     'temp_avg')
 &gt;&gt;&gt; model.create_averaged_element_field('temp_*', 'temp_avg')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_averaged_element_field(self,
                                   from_element_field_names,
                                   new_element_field_name,
@@ -19150,12 +19152,14 @@ each other through one or more nodes.</p></section>
 <span>def <span class="ident">create_displacement_field</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create the displacement field if it doesn't already exist.</p>
+<div class="desc"><p>Create the displacement field if it doesn't already exist.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_displacement_field()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_displacement_field()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_displacement_field(self):
     &#34;&#34;&#34;
     Create the displacement field if it doesn&#39;t already exist.
@@ -19175,7 +19179,7 @@ each other through one or more nodes.</p></section>
 <span>def <span class="ident">create_element_block</span></span>(<span>self, element_block_id, info, connectivity=None)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a new element block.</p>
+<div class="desc"><p>Create a new element block.</p>
 <p>The nodes for the elements in the block must have already been defined.</p>
 <p>The info list should be comprised of the following information.
 * '[element_type, element_count, nodes_per_element, 0]'</p>
@@ -19187,10 +19191,12 @@ and must be of length 'element_count * nodes_per_element'.</p>
 To name them, use the
 'rename_element_block' function.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_element_block(1, ['hex8', 0, 8, 0])
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_element_block(1, ['hex8', 0, 8, 0])
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_element_block(self, element_block_id, info, connectivity=None):
     &#34;&#34;&#34;
     Create a new element block.
@@ -19227,16 +19233,18 @@ To name them, use the
 <span>def <span class="ident">create_element_field</span></span>(<span>self, element_field_name, element_block_ids='all', value='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create an element field on one or more element blocks.</p>
+<div class="desc"><p>Create an element field on one or more element blocks.</p>
 <p>A default value can be passed.
 If no default value is given, 0.0 will
 be used if the element field appears to be a displacement field.
 Otherwise, NaN will be used.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_element_field('eqps', value=0.0)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_element_field('eqps', value=0.0)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_element_field(self,
                          element_field_name,
                          element_block_ids=&#39;all&#39;,
@@ -19284,12 +19292,14 @@ Otherwise, NaN will be used.</p>
 <span>def <span class="ident">create_global_variable</span></span>(<span>self, global_variable_name, value='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a new global variable.</p>
+<div class="desc"><p>Create a new global variable.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_global_variable('gravitational_acceleration', 9.8)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_global_variable('gravitational_acceleration', 9.8)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_global_variable(self, global_variable_name, value=&#39;auto&#39;):
     &#34;&#34;&#34;
     Create a new global variable.
@@ -19310,18 +19320,20 @@ Otherwise, NaN will be used.</p>
 <span>def <span class="ident">create_interpolated_timestep</span></span>(<span>self, timestep, interpolation='cubic')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a new timestep by interpolating neighboring steps.</p>
+<div class="desc"><p>Create a new timestep by interpolating neighboring steps.</p>
 <p>This does not extrapolate, so the given timestep to be interpolated
 must lie within the range of timesteps already defined.</p>
 <p>By default, 'cubic' interpolation is used.
 This can be changed to
 'linear' interpolation if desired.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.create_interpolated_timestep(0.5)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_interpolated_timestep(0.5)
 &gt;&gt;&gt; model.create_interpolated_timestep(0.5, interpolation='linear')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_interpolated_timestep(self, timestep, interpolation=&#39;cubic&#39;):
     &#34;&#34;&#34;
     Create a new timestep by interpolating neighboring steps.
@@ -19386,10 +19398,6 @@ This can be changed to
             four_steps[3] = 2 * four_steps[2] - four_steps[1]
         else:
             four_steps[3] = steps[index + 2]
-        if nearby &lt; timestep:
-            nearby = [nearby, steps[steps.index(nearby) + 1]]
-        else:
-            nearby = [steps[steps.index(nearby) - 1], nearby]
         # find interpolation coefficients
         coefficients = self._cubic_interpolation(timestep, *four_steps)
         formula = [[steps[index], coefficients[1]],
@@ -19444,16 +19452,18 @@ This can be changed to
 <span>def <span class="ident">create_node_field</span></span>(<span>self, node_field_name, value='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a node field and assign it a default value.</p>
+<div class="desc"><p>Create a node field and assign it a default value.</p>
 <p>A default value can be passed.
 If no default value is given, 0.0 will
 be used if the element field appears to be a displacement field.
 Otherwise, NaN will be used.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_node_field('temperature', 298.15)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_node_field('temperature', 298.15)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_node_field(self, node_field_name, value=&#39;auto&#39;):
     &#34;&#34;&#34;
     Create a node field and assign it a default value.
@@ -19487,15 +19497,17 @@ Otherwise, NaN will be used.</p>
 <span>def <span class="ident">create_node_set</span></span>(<span>self, node_set_id, node_set_members=None)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a node side from the list of node indices.</p>
+<div class="desc"><p>Create a node side from the list of node indices.</p>
 <p>Node sets are unnamed when created.
 To name them, use the
 'rename_node_set' function.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_node_set(1, [0, 1, 2, 3])
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_node_set(1, [0, 1, 2, 3])
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_node_set(self, node_set_id, node_set_members=None):
     &#34;&#34;&#34;
     Create a node side from the list of node indices.
@@ -19530,16 +19542,18 @@ To name them, use the
 <span>def <span class="ident">create_node_set_field</span></span>(<span>self, node_set_field_name, node_set_ids='all', value='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a node set field on the given node sets.</p>
+<div class="desc"><p>Create a node set field on the given node sets.</p>
 <p>A default value can be passed.
 If no default value is given, 0.0 will
 be used if the element field appears to be a displacement field.
 Otherwise, NaN will be used.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_node_set_field('temperature', 13, 298.15)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_node_set_field('temperature', 13, 298.15)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_node_set_field(self,
                           node_set_field_name,
                           node_set_ids=&#39;all&#39;,
@@ -19578,14 +19592,16 @@ Otherwise, NaN will be used.</p>
 <span>def <span class="ident">create_node_set_from_side_set</span></span>(<span>self, node_set_id, side_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a node set from a side set.</p>
+<div class="desc"><p>Create a node set from a side set.</p>
 <p>The created node set will contain all nodes used by faces in the given
 side set.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_node_set_from_side_set(1, 1)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_node_set_from_side_set(1, 1)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_node_set_from_side_set(self, node_set_id, side_set_id):
     &#34;&#34;&#34;
     Create a node set from a side set.
@@ -19605,16 +19621,18 @@ side set.</p>
 <span>def <span class="ident">create_nodes</span></span>(<span>self, new_nodes)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create nodes corresponding to the given coordinate list.</p>
+<div class="desc"><p>Create nodes corresponding to the given coordinate list.</p>
 <p>The list must contain coordinate triples '[x, y, z]' defined for each
 new node.
 The new nodes are assigned a local index starting with the
 current length of the nodes list.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_nodes([[0.0, 0.0, 0.0], [1.0, 2.0, 3.0]])
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_nodes([[0.0, 0.0, 0.0], [1.0, 2.0, 3.0]])
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_nodes(self, new_nodes):
     &#34;&#34;&#34;
     Create nodes corresponding to the given coordinate list.
@@ -19640,7 +19658,7 @@ current length of the nodes list.</p>
 <span>def <span class="ident">create_side_set</span></span>(<span>self, side_set_id, side_set_members=None)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a side set from the given element faces.</p>
+<div class="desc"><p>Create a side set from the given element faces.</p>
 <p>If the side set already exists, the faces will be added.</p>
 <p>side_set_members should be a list of tuples of the form:
 * '(element_block_id, local_element_index, element_side_index)'</p>
@@ -19648,10 +19666,12 @@ current length of the nodes list.</p>
 To name them, use the
 'rename_side_set' function.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_side_set(1, [(1, 0, 1), (1, 0, 2)])
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_side_set(1, [(1, 0, 1), (1, 0, 2)])
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_side_set(self, side_set_id, side_set_members=None):
     &#34;&#34;&#34;
     Create a side set from the given element faces.
@@ -19688,7 +19708,7 @@ To name them, use the
 <span>def <span class="ident">create_side_set_field</span></span>(<span>self, side_set_field_name, side_set_ids='all', value='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a side set field.</p>
+<div class="desc"><p>Create a side set field.</p>
 <p>By default the field will be created on all side sets.
 To create a
 side set field on a particular field, pass in 'side_set_ids'.</p>
@@ -19696,10 +19716,12 @@ side set field on a particular field, pass in 'side_set_ids'.</p>
 By default this is
 0 for displacement fields and NaN for all other fields.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_side_set_field('temperature', 13, 298.15)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_side_set_field('temperature', 13, 298.15)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_side_set_field(self,
                           side_set_field_name,
                           side_set_ids=&#39;all&#39;,
@@ -19740,15 +19762,17 @@ By default this is
 <span>def <span class="ident">create_side_set_from_expression</span></span>(<span>self, side_set_id, expression, element_block_ids='all', tolerance='auto', timesteps='last_if_any', zero_member_warning=True)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a side set from faces which satisfy an expression.</p>
+<div class="desc"><p>Create a side set from faces which satisfy an expression.</p>
 <p>Only external element faces of the given element blocks are checked.</p>
 <p>For example, if the model had a symmetry plane at 'Y = 0', the
 expression 'Y == 0' would select all element faces on this plane.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_side_set_from_expression(1, 'Y == 0')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_side_set_from_expression(1, 'Y == 0')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_side_set_from_expression(self,
                                     side_set_id,
                                     expression,
@@ -19840,13 +19864,15 @@ expression 'Y == 0' would select all element faces on this plane.</p>
 <span>def <span class="ident">create_timestep</span></span>(<span>self, timestep)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create a new timestep.</p>
+<div class="desc"><p>Create a new timestep.</p>
 <p>Field information at the created timestep is set to the default value.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.create_timestep(0)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.create_timestep(0)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def create_timestep(self, timestep):
     &#34;&#34;&#34;
     Create a new timestep.
@@ -19901,11 +19927,13 @@ expression 'Y == 0' would select all element faces on this plane.</p>
 <span>def <span class="ident">delete_duplicate_elements</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete duplicate elements.</p>
+<div class="desc"><p>Delete duplicate elements.</p>
 <p>For this calculation, a duplicate element is an element which shares
-all of its nodes with another element.</p></section>
+all of its nodes with another element.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_duplicate_elements(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Delete duplicate elements.
@@ -19940,7 +19968,7 @@ all of its nodes with another element.</p></section>
 <span>def <span class="ident">delete_element_block</span></span>(<span>self, element_block_ids, delete_orphaned_nodes=True)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete one or more element blocks.</p>
+<div class="desc"><p>Delete one or more element blocks.</p>
 <p>This will also delete any references to elements in that block in
 side sets.</p>
 <p>By default, this will delete any nodes that become unused as a result
@@ -19948,11 +19976,13 @@ of deleting the element blocks.
 To prevent this, set
 'delete_orphaned_nodes=False'.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.delete_element_block(1)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_element_block(1)
 &gt;&gt;&gt; model.delete_element_block([1, 3, 4])
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_element_block(self,
                          element_block_ids,
                          delete_orphaned_nodes=True):
@@ -20013,13 +20043,15 @@ To prevent this, set
 <span>def <span class="ident">delete_element_field</span></span>(<span>self, element_field_names, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete one or more element fields.</p>
+<div class="desc"><p>Delete one or more element fields.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.delete_element_field('eqps')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_element_field('eqps')
 &gt;&gt;&gt; model.delete_element_field('all')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_element_field(self,
                          element_field_names,
                          element_block_ids=&#39;all&#39;):
@@ -20057,12 +20089,14 @@ To prevent this, set
 <span>def <span class="ident">delete_empty_node_sets</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete all side sets with zero members.</p>
+<div class="desc"><p>Delete all side sets with zero members.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.delete_empty_node_sets()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_empty_node_sets()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_empty_node_sets(self):
     &#34;&#34;&#34;
     Delete all side sets with zero members.
@@ -20080,12 +20114,14 @@ To prevent this, set
 <span>def <span class="ident">delete_empty_side_sets</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete all side sets with zero members.</p>
+<div class="desc"><p>Delete all side sets with zero members.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.delete_empty_side_sets()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_empty_side_sets()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_empty_side_sets(self):
     &#34;&#34;&#34;
     Delete all side sets with zero members.
@@ -20103,15 +20139,17 @@ To prevent this, set
 <span>def <span class="ident">delete_global_variable</span></span>(<span>self, global_variable_names)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete one or more global variables.</p>
+<div class="desc"><p>Delete one or more global variables.</p>
 <p>This function may also be called by its plural form
 'delete_global_variables()'.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.delete_global_variable('internal_energy')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_global_variable('internal_energy')
 &gt;&gt;&gt; model.delete_global_variable('all')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_global_variable(self, global_variable_names):
     &#34;&#34;&#34;
     Delete one or more global variables.
@@ -20135,14 +20173,16 @@ To prevent this, set
 <span>def <span class="ident">delete_node_field</span></span>(<span>self, node_field_names)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete one or more node fields.</p>
+<div class="desc"><p>Delete one or more node fields.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.delete_node_field('temperature')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_node_field('temperature')
 &gt;&gt;&gt; model.delete_node_field('all')
 &gt;&gt;&gt; model.delete_node_field('disp_*')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_node_field(self, node_field_names):
     &#34;&#34;&#34;
     Delete one or more node fields.
@@ -20164,14 +20204,16 @@ To prevent this, set
 <span>def <span class="ident">delete_node_set</span></span>(<span>self, node_set_ids)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete the given node set.</p>
+<div class="desc"><p>Delete the given node set.</p>
 <p>This function may also be called by its plural form
 'delete_node_sets()'.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.delete_node_set(1)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_node_set(1)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_node_set(self, node_set_ids):
     &#34;&#34;&#34;
     Delete the given node set.
@@ -20192,12 +20234,14 @@ To prevent this, set
 <span>def <span class="ident">delete_node_set_field</span></span>(<span>self, node_set_field_names, node_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete one or more node set fields.</p>
+<div class="desc"><p>Delete one or more node set fields.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.delete_node_set_field('contact_pressure', 1)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_node_set_field('contact_pressure', 1)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_node_set_field(self, node_set_field_names, node_set_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Delete one or more node set fields.
@@ -20231,15 +20275,17 @@ To prevent this, set
 <span>def <span class="ident">delete_side_set</span></span>(<span>self, side_set_ids)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete one or more side sets.</p>
+<div class="desc"><p>Delete one or more side sets.</p>
 <p>This function may also be called by its plural form
 'delete_side_sets()'.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.delete_side_set(1)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_side_set(1)
 &gt;&gt;&gt; model.delete_side_set('all')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_side_set(self, side_set_ids):
     &#34;&#34;&#34;
     Delete one or more side sets.
@@ -20261,12 +20307,14 @@ To prevent this, set
 <span>def <span class="ident">delete_side_set_field</span></span>(<span>self, side_set_field_names, side_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete one or more side set fields.</p>
+<div class="desc"><p>Delete one or more side set fields.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.delete_side_set_field('contact_pressure', 1)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_side_set_field('contact_pressure', 1)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_side_set_field(self, side_set_field_names, side_set_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Delete one or more side set fields.
@@ -20300,15 +20348,17 @@ To prevent this, set
 <span>def <span class="ident">delete_timestep</span></span>(<span>self, timesteps)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete one or more timesteps.</p>
+<div class="desc"><p>Delete one or more timesteps.</p>
 <p>Because fields are defined on each timestep, this also deletes field
 values for the corresponding timestep.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.delete_timestep(0.0)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_timestep(0.0)
 &gt;&gt;&gt; model.delete_timestep('all')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_timestep(self, timesteps):
     &#34;&#34;&#34;
     Delete one or more timesteps.
@@ -20356,12 +20406,14 @@ values for the corresponding timestep.</p>
 <span>def <span class="ident">delete_unused_nodes</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete nodes which are not used by any elements.</p>
+<div class="desc"><p>Delete nodes which are not used by any elements.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.delete_unused_nodes()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.delete_unused_nodes()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def delete_unused_nodes(self):
     &#34;&#34;&#34;
     Delete nodes which are not used by any elements.
@@ -20378,17 +20430,19 @@ values for the corresponding timestep.</p>
 <span>def <span class="ident">displace_element_blocks</span></span>(<span>self, element_block_ids, offset, timesteps='all', check_for_merged_nodes=True)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Displace all nodes in the given element blocks.</p>
+<div class="desc"><p>Displace all nodes in the given element blocks.</p>
 <p>This function operates on the displacement field rather than the model
 coordinate field.
 To operate on the model coordinates, use
 'translate_element_blocks()'.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.displace_element_blocks(1, [1.0, 2.0, 3.0])
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.displace_element_blocks(1, [1.0, 2.0, 3.0])
 &gt;&gt;&gt; model.displace_element_blocks('all', [1.0, 2.0, 3.0])
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def displace_element_blocks(self,
                             element_block_ids,
                             offset,
@@ -20437,12 +20491,14 @@ To operate on the model coordinates, use
 <span>def <span class="ident">displacement_field_exists</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the displacement field exists.</p>
+<div class="desc"><p>Return 'True' if the displacement field exists.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.displacement_field_exists()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.displacement_field_exists()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def displacement_field_exists(self):
     &#34;&#34;&#34;
     Return &#39;True&#39; if the displacement field exists.
@@ -20461,15 +20517,17 @@ To operate on the model coordinates, use
 <span>def <span class="ident">duplicate_element_block</span></span>(<span>self, element_block_id, new_element_block_id, duplicate_nodes=True)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Create an duplicate of the given element block.</p>
+<div class="desc"><p>Create an duplicate of the given element block.</p>
 <p>Nodes are duplicated by default.
 The new element block references
 these duplicated nodes, not the original ones.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.duplicate_element_block(1, 2)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.duplicate_element_block(1, 2)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def duplicate_element_block(self,
                             element_block_id,
                             new_element_block_id,
@@ -20528,13 +20586,15 @@ these duplicated nodes, not the original ones.</p>
 <span>def <span class="ident">element_block_exists</span></span>(<span>self, element_block_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the given element block exists.</p>
+<div class="desc"><p>Return 'True' if the given element block exists.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.element_block_exists(1)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.element_block_exists(1)
 &gt;&gt;&gt; model.element_block_exists('block_name')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def element_block_exists(self, element_block_id):
     &#34;&#34;&#34;
     Return &#39;True&#39; if the given element block exists.
@@ -20553,12 +20613,14 @@ these duplicated nodes, not the original ones.</p>
 <span>def <span class="ident">element_field_exists</span></span>(<span>self, element_field_name, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the element field exists on the element blocks.</p>
+<div class="desc"><p>Return 'True' if the element field exists on the element blocks.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.element_field_exists('eqps')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.element_field_exists('eqps')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def element_field_exists(self, element_field_name,
                          element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
@@ -20581,19 +20643,21 @@ these duplicated nodes, not the original ones.</p>
 <span>def <span class="ident">export</span></span>(<span>self, filename, *args, **kwargs)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Export a model based on the filename extension.</p>
+<div class="desc"><p>Export a model based on the filename extension.</p>
 <p>The following extensions will call the appropriate functions:
 * 'WRL &ndash;&gt; export_wrl_model'
 * 'STL &ndash;&gt; export_stl_file'
 * 'E, G, EXO &ndash;&gt; export_model'</p>
 <p>Arguments are passed through to the export function.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.export('result.e')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.export('result.e')
 &gt;&gt;&gt; model.export('result.stl')
 &gt;&gt;&gt; model.export('result.wrl', 'eqps')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def export(self, filename, *args, **kwargs):
     &#34;&#34;&#34;
     Export a model based on the filename extension.
@@ -20631,12 +20695,14 @@ these duplicated nodes, not the original ones.</p>
 <span>def <span class="ident">export_model</span></span>(<span>self, filename='output_exomerge.e', element_block_ids='all', timesteps='all', side_set_ids='all', node_set_ids='all', global_variable_names='auto', node_field_names='auto', element_field_names='auto', side_set_field_names='auto', node_set_field_names='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Export the current model to an ExodusII file.</p>
+<div class="desc"><p>Export the current model to an ExodusII file.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.export_model('output.g')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.export_model('output.g')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def export_model(self,
                  filename=&#39;output_exomerge.e&#39;,
                  element_block_ids=&#39;all&#39;,
@@ -20875,14 +20941,16 @@ these duplicated nodes, not the original ones.</p>
 <span>def <span class="ident">export_stl_file</span></span>(<span>self, filename, element_block_ids='all', displacement_timestep='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Export the exterior of the model to an STL file.</p>
+<div class="desc"><p>Export the exterior of the model to an STL file.</p>
 <p>By default, if timesteps exist and a displacement field exists, the
 displacements at the last timestep will be applied.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.export_stl_file('mesh_surface.stl')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.export_stl_file('mesh_surface.stl')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def export_stl_file(self,
                     filename,
                     element_block_ids=&#39;all&#39;,
@@ -20921,9 +20989,9 @@ displacements at the last timestep will be applied.</p>
     # create the STL file
     connectivity = self.get_connectivity(triangle_element_block_id)
     with open(filename, &#39;wb&#39;) as output:
-        output.write(&#39; &#39; * 80)
-        output.write(struct.pack(&#39;&lt;l&#39;, len(connectivity) / 3))
-        for element_index in range(len(connectivity) / 3):
+        output.write(b&#39; &#39; * 80)
+        output.write(struct.pack(&#39;&lt;l&#39;, len(connectivity) // 3))
+        for element_index in range(len(connectivity) // 3):
             tri = connectivity[element_index * 3:(element_index + 1) * 3]
             normal = (c[tri[1]][1] * c[tri[2]][2] -
                       c[tri[2]][1] * c[tri[1]][2],
@@ -20946,13 +21014,15 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">export_wrl_model</span></span>(<span>self, filename, node_field_name, element_block_ids='all', timestep='last', field_range='auto', intervals=9, colorspace='rgb', displacement_timestep='auto', export_exodus_copy=True)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Export the exterior of the model to a colored WRL file.</p>
+<div class="desc"><p>Export the exterior of the model to a colored WRL file.</p>
 <p>The WRL file format is used by 3D printing software.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.export_wrl_model('colored_eqps_model.wrl', 'eqps')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.export_wrl_model('colored_eqps_model.wrl', 'eqps')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def export_wrl_model(self,
                      filename,
                      node_field_name,
@@ -21136,12 +21206,14 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_all_element_block_names</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all element block names.</p>
+<div class="desc"><p>Return a list of all element block names.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_all_element_block_names()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_all_element_block_names()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_all_element_block_names(self):
     &#34;&#34;&#34;
     Return a list of all element block names.
@@ -21157,9 +21229,11 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_all_node_set_names</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all node set names.</p></section>
+<div class="desc"><p>Return a list of all node set names.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_all_node_set_names(self):
     &#34;&#34;&#34;Return a list of all node set names.&#34;&#34;&#34;
     return sorted(x[0] for x in list(self.node_sets.values()) if x[0])</code></pre>
@@ -21169,9 +21243,11 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_all_side_set_names</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all side set names.</p></section>
+<div class="desc"><p>Return a list of all side set names.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_all_side_set_names(self):
     &#34;&#34;&#34;Return a list of all side set names.&#34;&#34;&#34;
     return sorted(x[0] for x in list(self.side_sets.values()) if x[0])</code></pre>
@@ -21181,9 +21257,11 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_closest_node_distance</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the distance between the two closest nodes.</p></section>
+<div class="desc"><p>Return the distance between the two closest nodes.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_closest_node_distance(self):
     &#34;&#34;&#34;Return the distance between the two closest nodes.&#34;&#34;&#34;
     # create list of all nodes
@@ -21195,12 +21273,14 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_connectivity</span></span>(<span>self, element_block_id='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the connectivity list of an element block.</p>
+<div class="desc"><p>Return the connectivity list of an element block.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_connectivity(1)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_connectivity(1)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_connectivity(self, element_block_id=&#39;auto&#39;):
     &#34;&#34;&#34;
     Return the connectivity list of an element block.
@@ -21218,13 +21298,15 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_element_block_centroid</span></span>(<span>self, element_block_ids, element_volume_field_name=None, element_centroid_field_names=None)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the centroid of the given element blocks.</p>
+<div class="desc"><p>Return the centroid of the given element blocks.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_element_block_centroid('all')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_element_block_centroid('all')
 [1.0, 2.0, 3.0]
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_block_centroid(self,
                                element_block_ids,
                                element_volume_field_name=None,
@@ -21292,9 +21374,11 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_element_block_connectivity</span></span>(<span>self, element_block_id='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Alias for 'get_connectivity()'.</p></section>
+<div class="desc"><p>Alias for 'get_connectivity()'.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_block_connectivity(self, element_block_id=&#39;auto&#39;):
     &#34;&#34;&#34;Alias for &#39;get_connectivity()&#39;.&#34;&#34;&#34;
     return self.get_connectivity(element_block_id)</code></pre>
@@ -21304,10 +21388,12 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_element_block_dimension</span></span>(<span>self, element_block_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the dimension of elements within this element block.</p>
-<p>If this cannot be determined, return -1.</p></section>
+<div class="desc"><p>Return the dimension of elements within this element block.</p>
+<p>If this cannot be determined, return -1.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_block_dimension(self, element_block_id):
     &#34;&#34;&#34;
     Return the dimension of elements within this element block.
@@ -21328,11 +21414,13 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_element_block_extents</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the extents of the element blocks as a list.</p>
+<div class="desc"><p>Return the extents of the element blocks as a list.</p>
 <p>The results are returned in the following format:
-[[min_x, max_x], [min_y, max_y], [min_z, max_z]]</p></section>
+[[min_x, max_x], [min_y, max_y], [min_z, max_z]]</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_block_extents(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return the extents of the element blocks as a list.
@@ -21360,12 +21448,14 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_element_block_ids</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all element block ids.</p>
+<div class="desc"><p>Return a list of all element block ids.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_element_block_ids()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_element_block_ids()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_block_ids(self):
     &#34;&#34;&#34;
     Return a list of all element block ids.
@@ -21381,12 +21471,14 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_element_block_name</span></span>(<span>self, element_block_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the given element block name.</p>
+<div class="desc"><p>Return the given element block name.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_element_block_names()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_element_block_names()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_block_name(self, element_block_id):
     &#34;&#34;&#34;
     Return the given element block name.
@@ -21404,12 +21496,14 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_element_block_volume</span></span>(<span>self, element_block_ids, element_volume_field_name=None)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the total volume of the given element blocks.</p>
+<div class="desc"><p>Return the total volume of the given element blocks.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_element_block_volume('all')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_element_block_volume('all')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_block_volume(self,
                              element_block_ids,
                              element_volume_field_name=None):
@@ -21452,12 +21546,14 @@ displacements at the last timestep will be applied.</p>
 <span>def <span class="ident">get_element_count</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the total number of elements in the given element blocks.</p>
+<div class="desc"><p>Return the total number of elements in the given element blocks.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; print((' %d elements' % (object.get_element_count())))
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; print((' %d elements' % (object.get_element_count())))
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_count(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return the total number of elements in the given element blocks.
@@ -21468,19 +21564,21 @@ displacements at the last timestep will be applied.</p>
     &#34;&#34;&#34;
     element_block_ids = self._format_element_block_id_list(
         element_block_ids)
-    return sum(self.element_blocks[x][1][1] for x in element_block_ids)</code></pre>
+    return int(sum(self.element_blocks[x][1][1] for x in element_block_ids))</code></pre>
 </details>
 </dd>
 <dt id="exomerge.ExodusModel.get_element_edge_length_info"><code class="name flex">
 <span>def <span class="ident">get_element_edge_length_info</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the minimum and average element edge lengths.</p>
+<div class="desc"><p>Return the minimum and average element edge lengths.</p>
 <p>Only edges within element in the specified element blocks are counted.
 All element blocks specified must be 3-dimensional.</p>
-<p>The result is returned as [minimum, average].</p></section>
+<p>The result is returned as [minimum, average].</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_edge_length_info(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return the minimum and average element edge lengths.
@@ -21526,17 +21624,19 @@ All element blocks specified must be 3-dimensional.</p>
 <span>def <span class="ident">get_element_field_names</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all element field names.</p>
+<div class="desc"><p>Return a list of all element field names.</p>
 <p>By default, this returns element fields which are defined on any
 element block.
 To return fields which are defined on a particular
 element block, pass an element block id.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.get_element_field_names()
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_element_field_names()
 &gt;&gt;&gt; model.get_element_field_names(1)
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_field_names(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return a list of all element field names.
@@ -21562,18 +21662,20 @@ element block, pass an element block id.</p>
 <span>def <span class="ident">get_element_field_values</span></span>(<span>self, element_field_name, element_block_id='auto', timestep='last')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the list of element field values.</p>
+<div class="desc"><p>Return the list of element field values.</p>
 <p>The actual list of values is returned, so any modifications to it will
 be stored in the model.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.get_element_field_values('strain', element_block_id=1)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_element_field_values('strain', element_block_id=1)
 &gt;&gt;&gt; model.get_element_field_values('strain', timestep=2.0)
 &gt;&gt;&gt; model.get_element_field_values('strain',
 ...                                element_block_id=5,
 ...                                timestep='last')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_element_field_values(self,
                              element_field_name,
                              element_block_id=&#39;auto&#39;,
@@ -21615,12 +21717,14 @@ be stored in the model.</p>
 <span>def <span class="ident">get_global_variable_names</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all global variable names.</p>
+<div class="desc"><p>Return a list of all global variable names.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_global_variable_names()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_global_variable_names()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_global_variable_names(self):
     &#34;&#34;&#34;
     Return a list of all global variable names.
@@ -21636,7 +21740,7 @@ be stored in the model.</p>
 <span>def <span class="ident">get_input_deck</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return each line of the input deck stored in the file.</p>
+<div class="desc"><p>Return each line of the input deck stored in the file.</p>
 <p>Many SIERRA applications, when running a problem, will store the input
 deck within the results file.
 This function retrieves that
@@ -21644,11 +21748,13 @@ information, if it exists.
 Note that due to format restriction, the
 retrieved input deck may not exactly match the original file.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; object = exomerge.import_model('results.e')
+<pre><code class="language-python-repl">&gt;&gt;&gt; object = exomerge.import_model('results.e')
 &gt;&gt;&gt; model.get_input_deck()
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_input_deck(self):
     &#34;&#34;&#34;
     Return each line of the input deck stored in the file.
@@ -21688,15 +21794,17 @@ retrieved input deck may not exactly match the original file.</p>
 <span>def <span class="ident">get_length_scale</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the length scale of the model.</p>
+<div class="desc"><p>Return the length scale of the model.</p>
 <p>The length scale is defined as the largest of the following:
 * absolute nodal coordinate component
 * total range in nodal coordinate component</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_length_scale()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_length_scale()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_length_scale(self):
     &#34;&#34;&#34;
     Return the length scale of the model.
@@ -21719,7 +21827,9 @@ retrieved input deck may not exactly match the original file.</p>
             if node[d] &gt; bounds[d][1]:
                 bounds[d][1] = node[d]
     relative = max([bound[1] - bound[0] for bound in bounds])
-    absolute = max([abs(x) for x in bound for bound in bounds])
+    abs0 = max([abs(bound[0]) for bound in bounds])
+    abs1 = max([abs(bound[1]) for bound in bounds])
+    absolute = max([abs0, abs1])
     return max(relative, absolute)</code></pre>
 </details>
 </dd>
@@ -21727,12 +21837,14 @@ retrieved input deck may not exactly match the original file.</p>
 <span>def <span class="ident">get_node_field_names</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all node field names.</p>
+<div class="desc"><p>Return a list of all node field names.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_node_field_names()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_node_field_names()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_node_field_names(self):
     &#34;&#34;&#34;
     Return a list of all node field names.
@@ -21748,15 +21860,17 @@ retrieved input deck may not exactly match the original file.</p>
 <span>def <span class="ident">get_node_field_values</span></span>(<span>self, node_field_name, timestep='last')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the list of node field values for the given field and timestep.</p>
+<div class="desc"><p>Return the list of node field values for the given field and timestep.</p>
 <p>This returns the actual list of values, so any modifications to the
 list will be retained in the model.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.get_node_field_values('disp_x')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_node_field_values('disp_x')
 &gt;&gt;&gt; model.get_node_field_values('disp_x', 0.0)
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_node_field_values(self, node_field_name, timestep=&#39;last&#39;):
     &#34;&#34;&#34;
     Return the list of node field values for the given field and timestep.
@@ -21781,17 +21895,19 @@ list will be retained in the model.</p>
 <span>def <span class="ident">get_node_set_field_names</span></span>(<span>self, node_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all node set field names.</p>
+<div class="desc"><p>Return a list of all node set field names.</p>
 <p>By default, this returns node set fields which are defined on any
 node set.
 To return fields which are defined on a particular
 node set, pass a node set id.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.get_node_set_field_names()
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_node_set_field_names()
 &gt;&gt;&gt; model.get_node_set_field_names(1)
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_node_set_field_names(self, node_set_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return a list of all node set field names.
@@ -21816,18 +21932,20 @@ node set, pass a node set id.</p>
 <span>def <span class="ident">get_node_set_field_values</span></span>(<span>self, node_set_field_name, node_set_id='auto', timestep='last')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the list of node set field values.</p>
+<div class="desc"><p>Return the list of node set field values.</p>
 <p>The actual list of values is returned, so any modifications to it will
 be stored in the model.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.get_node_set_field_values('contact_pressure', node_set_id=1)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_node_set_field_values('contact_pressure', node_set_id=1)
 &gt;&gt;&gt; model.get_node_set_field_values('contact_pressure', timestep=2.0)
 &gt;&gt;&gt; model.get_node_set_field_values('contact_pressure',
 ...                                 node_set_id=5,
 ...                                 timestep='last')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_node_set_field_values(self,
                               node_set_field_name,
                               node_set_id=&#39;auto&#39;,
@@ -21869,12 +21987,14 @@ be stored in the model.</p>
 <span>def <span class="ident">get_node_set_ids</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all node set ids.</p>
+<div class="desc"><p>Return a list of all node set ids.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_node_set_ids()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_node_set_ids()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_node_set_ids(self):
     &#34;&#34;&#34;
     Return a list of all node set ids.
@@ -21890,12 +22010,14 @@ be stored in the model.</p>
 <span>def <span class="ident">get_node_set_members</span></span>(<span>self, node_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the list of node indices that belong to the given node set.</p>
+<div class="desc"><p>Return the list of node indices that belong to the given node set.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_node_set_members(1)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_node_set_members(1)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_node_set_members(self, node_set_id):
     &#34;&#34;&#34;
     Return the list of node indices that belong to the given node set.
@@ -21912,9 +22034,11 @@ be stored in the model.</p>
 <span>def <span class="ident">get_node_set_name</span></span>(<span>self, node_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the name of the given node set.</p></section>
+<div class="desc"><p>Return the name of the given node set.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_node_set_name(self, node_set_id):
     &#34;&#34;&#34;Return the name of the given node set.&#34;&#34;&#34;
     [node_set_id] = self._format_node_set_id_list([node_set_id], single=True)
@@ -21925,13 +22049,15 @@ be stored in the model.</p>
 <span>def <span class="ident">get_nodes_in_element_block</span></span>(<span>self, element_block_ids)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all node indices used in the given element blocks.</p>
+<div class="desc"><p>Return a list of all node indices used in the given element blocks.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.get_nodes_in_element_block(1)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_nodes_in_element_block(1)
 &gt;&gt;&gt; model.get_nodes_in_element_block([1, 3])
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_nodes_in_element_block(self, element_block_ids):
     &#34;&#34;&#34;
     Return a list of all node indices used in the given element blocks.
@@ -21954,12 +22080,14 @@ be stored in the model.</p>
 <span>def <span class="ident">get_nodes_in_side_set</span></span>(<span>self, side_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of node indices which belong to the given side set.</p>
+<div class="desc"><p>Return a list of node indices which belong to the given side set.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_nodes_in_side_set(1)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_nodes_in_side_set(1)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_nodes_in_side_set(self, side_set_id):
     &#34;&#34;&#34;
     Return a list of node indices which belong to the given side set.
@@ -21995,9 +22123,11 @@ be stored in the model.</p>
 <span>def <span class="ident">get_nodes_per_element</span></span>(<span>self, element_block_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the nodes per element in the given element block.</p></section>
+<div class="desc"><p>Return the nodes per element in the given element block.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_nodes_per_element(self, element_block_id):
     &#34;&#34;&#34;Return the nodes per element in the given element block.&#34;&#34;&#34;
     [element_block_id] = self._format_element_block_id_list(
@@ -22009,12 +22139,14 @@ be stored in the model.</p>
 <span>def <span class="ident">get_side_set_area</span></span>(<span>self, side_set_ids)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the total area of the given side sets.</p>
+<div class="desc"><p>Return the total area of the given side sets.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_side_set_area('all')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_side_set_area('all')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_side_set_area(self, side_set_ids):
     &#34;&#34;&#34;
     Return the total area of the given side sets.
@@ -22038,17 +22170,19 @@ be stored in the model.</p>
 <span>def <span class="ident">get_side_set_field_names</span></span>(<span>self, side_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all side set field names.</p>
+<div class="desc"><p>Return a list of all side set field names.</p>
 <p>By default, this returns side set fields which are defined on any
 side set.
 To return fields which are defined on a particular
 side set, pass a side set id.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.get_side_set_field_names()
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_side_set_field_names()
 &gt;&gt;&gt; model.get_side_set_field_names(1)
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_side_set_field_names(self, side_set_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return a list of all side set field names.
@@ -22073,18 +22207,20 @@ side set, pass a side set id.</p>
 <span>def <span class="ident">get_side_set_field_values</span></span>(<span>self, side_set_field_name, side_set_id='auto', timestep='last')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the list of side set field values.</p>
+<div class="desc"><p>Return the list of side set field values.</p>
 <p>The actual list of values is returned, so any modifications to it will
 be stored in the model.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.get_side_set_field_values('contact_pressure', side_set_id=1)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_side_set_field_values('contact_pressure', side_set_id=1)
 &gt;&gt;&gt; model.get_side_set_field_values('contact_pressure', timestep=2.0)
 &gt;&gt;&gt; model.get_side_set_field_values('contact_pressure',
 ...                                 side_set_id=5,
 ...                                 timestep='last')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_side_set_field_values(self,
                               side_set_field_name,
                               side_set_id=&#39;auto&#39;,
@@ -22126,12 +22262,14 @@ be stored in the model.</p>
 <span>def <span class="ident">get_side_set_ids</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all side set ids.</p>
+<div class="desc"><p>Return a list of all side set ids.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_side_set_ids()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_side_set_ids()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_side_set_ids(self):
     &#34;&#34;&#34;
     Return a list of all side set ids.
@@ -22147,9 +22285,11 @@ be stored in the model.</p>
 <span>def <span class="ident">get_side_set_members</span></span>(<span>self, side_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the members of a side set.</p></section>
+<div class="desc"><p>Return the members of a side set.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_side_set_members(self, side_set_id):
     &#34;&#34;&#34;Return the members of a side set.&#34;&#34;&#34;
     [side_set_id] = self._format_side_set_id_list([side_set_id], single=True)
@@ -22160,9 +22300,11 @@ be stored in the model.</p>
 <span>def <span class="ident">get_side_set_name</span></span>(<span>self, side_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the name of a side set.</p></section>
+<div class="desc"><p>Return the name of a side set.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_side_set_name(self, side_set_id):
     &#34;&#34;&#34;Return the name of a side set.&#34;&#34;&#34;
     [side_set_id] = self._format_side_set_id_list([side_set_id], single=True)
@@ -22173,12 +22315,14 @@ be stored in the model.</p>
 <span>def <span class="ident">get_timesteps</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return a list of all timesteps.</p>
+<div class="desc"><p>Return a list of all timesteps.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.get_timesteps()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.get_timesteps()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def get_timesteps(self):
     &#34;&#34;&#34;
     Return a list of all timesteps.
@@ -22194,12 +22338,14 @@ be stored in the model.</p>
 <span>def <span class="ident">global_variable_exists</span></span>(<span>self, global_variable_name)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the given global variable exists.</p>
+<div class="desc"><p>Return 'True' if the given global variable exists.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.global_variable_exists('timestep')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.global_variable_exists('timestep')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def global_variable_exists(self, global_variable_name):
     &#34;&#34;&#34;
     Return &#39;True&#39; if the given global variable exists.
@@ -22215,31 +22361,33 @@ be stored in the model.</p>
 <span>def <span class="ident">import_model</span></span>(<span>self, filename, element_block_ids='all', timesteps='all', node_field_names='all', element_field_names='all', side_set_ids='all', node_set_ids='all', global_variable_names='all', node_set_field_names='all', side_set_field_names='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Import information from an ExodusII file.</p>
+<div class="desc"><p>Import information from an ExodusII file.</p>
 <p>This will add to the current model in memory, so multiple calls will
 act to merge files.
 As a shortcut, one may use the
 'exomerge.import_model' to create a new model from a file.</p>
-<pre><code>&gt;&gt;&gt; model = exomerge.import_model('output.e')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model = exomerge.import_model('output.e')
 </code></pre>
 <p>By default, this will import all information from the given ExodusII
 results file.
 To import only part of a mesh file, or to load only a
 particular timestep, one can use the following options.</p>
-<pre><code>&gt;&gt;&gt; model.import_model('output.e', element_block_ids=[1, 2])
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.import_model('output.e', element_block_ids=[1, 2])
 &gt;&gt;&gt; model.import_model('output.e', timesteps='last')
 &gt;&gt;&gt; model.import_model('output.e', node_field_names='disp_*')
 </code></pre>
 <p>To import only the mesh without any field information, one can use the
 following syntax.</p>
-<pre><code>&gt;&gt;&gt; model.import_model('output.e', timesteps='none')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.import_model('output.e', timesteps='none')
 </code></pre>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.import_model('mesh_file.g')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.import_model('mesh_file.g')
 &gt;&gt;&gt; model.import_model('results_file.e')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def import_model(self,
                  filename,
                  element_block_ids=&#39;all&#39;,
@@ -22626,14 +22774,16 @@ following syntax.</p>
 <span>def <span class="ident">make_elements_linear</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Convert elements in one or more element blocks to a linear type.</p>
+<div class="desc"><p>Convert elements in one or more element blocks to a linear type.</p>
 <p>This will attempt to find the best element to convert to given the
 conversion schemes involved.
 If more than one element option exists
 for a given element type, this will choose the option that produces
-the fewest nodes.</p></section>
+the fewest nodes.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def make_elements_linear(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Convert elements in one or more element blocks to a linear type.
@@ -22651,14 +22801,16 @@ the fewest nodes.</p></section>
 <span>def <span class="ident">make_elements_quadratic</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Convert elements in one or more element blocks to a quadratic type.</p>
+<div class="desc"><p>Convert elements in one or more element blocks to a quadratic type.</p>
 <p>This will attempt to find the best element to convert to given the
 conversion schemes involved.
 If more than one element option exists
 for a given element type, this will choose the option that produces
-the fewest nodes.</p></section>
+the fewest nodes.</p></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def make_elements_quadratic(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Convert elements in one or more element blocks to a quadratic type.
@@ -22676,17 +22828,19 @@ the fewest nodes.</p></section>
 <span>def <span class="ident">merge_nodes</span></span>(<span>self, tolerance=1e-06, relative_tolerance=True, suppress_warnings=False)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Merge nodes that are closer than the given tolerance.</p>
+<div class="desc"><p>Merge nodes that are closer than the given tolerance.</p>
 <p>Node fields, node sets and node set fields are updated accordingly.
 Using a tolerance of 0 will merge nodes at the exact same location.</p>
 <p>If 'relative_tolerace=True', this will multiply the tolerance by the
 length scale of the model as obtained from 'get_length_scale()'.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.merge_nodes(0)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.merge_nodes(0)
 &gt;&gt;&gt; model.merge_nodes()
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def merge_nodes(self,
                 tolerance=1e-6,
                 relative_tolerance=True,
@@ -22719,12 +22873,14 @@ length scale of the model as obtained from 'get_length_scale()'.</p>
 <span>def <span class="ident">node_field_exists</span></span>(<span>self, node_field_name)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the given node field exists.</p>
+<div class="desc"><p>Return 'True' if the given node field exists.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.node_field_exists('temperature')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.node_field_exists('temperature')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def node_field_exists(self, node_field_name):
     &#34;&#34;&#34;
     Return &#39;True&#39; if the given node field exists.
@@ -22740,13 +22896,15 @@ length scale of the model as obtained from 'get_length_scale()'.</p>
 <span>def <span class="ident">node_set_exists</span></span>(<span>self, node_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the given node set exists.</p>
+<div class="desc"><p>Return 'True' if the given node set exists.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.node_set_exists(1)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.node_set_exists(1)
 &gt;&gt;&gt; model.node_set_exists('nodeset_name')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def node_set_exists(self, node_set_id):
     &#34;&#34;&#34;
     Return &#39;True&#39; if the given node set exists.
@@ -22765,12 +22923,14 @@ length scale of the model as obtained from 'get_length_scale()'.</p>
 <span>def <span class="ident">node_set_field_exists</span></span>(<span>self, node_set_field_name, node_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the node set field is defined on the node sets.</p>
+<div class="desc"><p>Return 'True' if the node set field is defined on the node sets.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.node_set_field_exists('contact_pressure')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.node_set_field_exists('contact_pressure')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def node_set_field_exists(self, node_set_field_name, node_set_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return &#39;True&#39; if the node set field is defined on the node sets.
@@ -22791,7 +22951,7 @@ length scale of the model as obtained from 'get_length_scale()'.</p>
 <span>def <span class="ident">output_global_variables</span></span>(<span>self, filename=None, global_variable_names='all', timesteps='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Output global variables in CSV format.</p>
+<div class="desc"><p>Output global variables in CSV format.</p>
 <p>If 'filename=None', output will be sent to stdout.
 Else, it will be
 output to the given filename.</p>
@@ -22800,11 +22960,13 @@ variables.
 This may be changed by specifying which timesteps and
 variables are output.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.output_global_variables('variables.csv')
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.output_global_variables('variables.csv')
 &gt;&gt;&gt; model.output_global_variables('variables.csv', timesteps='last')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def output_global_variables(self,
                             filename=None,
                             global_variable_names=&#39;all&#39;,
@@ -22853,7 +23015,7 @@ variables are output.</p>
 <span>def <span class="ident">process_element_fields</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Process element field information to create node based fields.</p>
+<div class="desc"><p>Process element field information to create node based fields.</p>
 <p>For element fields with 8 integration points, this takes the average.
 This is useful for fully integrated or selective deviatoric elements
 within the SIERRA/SM code.</p>
@@ -22862,10 +23024,12 @@ This is useful for q1p0 elements within the SIERRA/SM code.</p>
 <p>This function is provided as a convenience for post processing hex8
 elements with multiple integration points.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.process_element_fields()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.process_element_fields()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def process_element_fields(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Process element field information to create node based fields.
@@ -22922,14 +23086,16 @@ elements with multiple integration points.</p>
 <span>def <span class="ident">reflect_element_blocks</span></span>(<span>self, element_block_ids, point, normal, check_for_merged_nodes=True, adjust_displacement_field='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Reflect the specified element blocks about the given plane.</p>
+<div class="desc"><p>Reflect the specified element blocks about the given plane.</p>
 <p>Since an element becomes inverted when it is reflected across a plane,
 this function will also uninvert the elements.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.reflect_element_blocks(1, [0, 0, 0], [1, 0, 0])
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.reflect_element_blocks(1, [0, 0, 0], [1, 0, 0])
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def reflect_element_blocks(self,
                            element_block_ids,
                            point,
@@ -22986,17 +23152,19 @@ this function will also uninvert the elements.</p>
 <span>def <span class="ident">rename_element_block</span></span>(<span>self, element_block_id, new_element_block_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Change an element block id or name.</p>
+<div class="desc"><p>Change an element block id or name.</p>
 <p>This function can be used to change either the element block id or
 name.
 If 'new_element_block_id' is an integer, it will change the id.
 If it is a string, it will change the name.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rename_element_block(1, 100)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rename_element_block(1, 100)
 &gt;&gt;&gt; model.rename_element_block(1, 'block_1')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rename_element_block(self, element_block_id, new_element_block_id):
     &#34;&#34;&#34;
     Change an element block id or name.
@@ -23047,12 +23215,14 @@ If it is a string, it will change the name.</p>
 <span>def <span class="ident">rename_element_field</span></span>(<span>self, element_field_name, new_element_field_name, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Rename an element field.</p>
+<div class="desc"><p>Rename an element field.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rename_element_field('p', 'pressure')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rename_element_field('p', 'pressure')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rename_element_field(self,
                          element_field_name,
                          new_element_field_name,
@@ -23076,12 +23246,14 @@ If it is a string, it will change the name.</p>
 <span>def <span class="ident">rename_global_variable</span></span>(<span>self, global_variable_name, new_global_variable_name)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Rename a global variable.</p>
+<div class="desc"><p>Rename a global variable.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rename_global_variable('ke', 'kinetic_energy')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rename_global_variable('ke', 'kinetic_energy')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rename_global_variable(self, global_variable_name,
                            new_global_variable_name):
     &#34;&#34;&#34;
@@ -23101,12 +23273,14 @@ If it is a string, it will change the name.</p>
 <span>def <span class="ident">rename_node_field</span></span>(<span>self, node_field_name, new_node_field_name)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Rename a node field.</p>
+<div class="desc"><p>Rename a node field.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rename_node_field('temp', 'temperature')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rename_node_field('temp', 'temperature')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rename_node_field(self, node_field_name, new_node_field_name):
     &#34;&#34;&#34;
     Rename a node field.
@@ -23123,16 +23297,18 @@ If it is a string, it will change the name.</p>
 <span>def <span class="ident">rename_node_set</span></span>(<span>self, node_set_id, new_node_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Change a node set id or name.</p>
+<div class="desc"><p>Change a node set id or name.</p>
 <p>This function can be used to change either the node set id or name.
 If 'new_node_set_id' is an integer, it will change the id. If it is a
 string, it will change the name.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rename_node_set(1, 100)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rename_node_set(1, 100)
 &gt;&gt;&gt; model.rename_node_set(1, 'node_group_1')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rename_node_set(self, node_set_id, new_node_set_id):
     &#34;&#34;&#34;
     Change a node set id or name.
@@ -23167,12 +23343,14 @@ string, it will change the name.</p>
 <span>def <span class="ident">rename_node_set_field</span></span>(<span>self, node_set_field_name, new_node_set_field_name, node_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Rename a node set field.</p>
+<div class="desc"><p>Rename a node set field.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rename_node_set_field('cp', 'contact_pressure')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rename_node_set_field('cp', 'contact_pressure')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rename_node_set_field(self,
                           node_set_field_name,
                           new_node_set_field_name,
@@ -23195,16 +23373,18 @@ string, it will change the name.</p>
 <span>def <span class="ident">rename_side_set</span></span>(<span>self, side_set_id, new_side_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Change a side set id or name.</p>
+<div class="desc"><p>Change a side set id or name.</p>
 <p>This function can be used to change either the side set id or name.
 If 'new_side_set_id' is an integer, it will change the id. If it is a
 string, it will change the name.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rename_side_set(1, 100)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rename_side_set(1, 100)
 &gt;&gt;&gt; model.rename_side_set(1, 'surface_1')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rename_side_set(self, side_set_id, new_side_set_id):
     &#34;&#34;&#34;
     Change a side set id or name.
@@ -23238,12 +23418,14 @@ string, it will change the name.</p>
 <span>def <span class="ident">rename_side_set_field</span></span>(<span>self, side_set_field_name, new_side_set_field_name, side_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Rename a side set field.</p>
+<div class="desc"><p>Rename a side set field.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rename_side_set_field('cp', 'contact_pressure')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rename_side_set_field('cp', 'contact_pressure')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rename_side_set_field(self,
                           side_set_field_name,
                           new_side_set_field_name,
@@ -23266,16 +23448,18 @@ string, it will change the name.</p>
 <span>def <span class="ident">rotate_element_blocks</span></span>(<span>self, element_block_ids, axis, angle_in_degrees, check_for_merged_nodes=True, adjust_displacement_field='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Rotate all nodes in the given element blocks by the given amount.</p>
+<div class="desc"><p>Rotate all nodes in the given element blocks by the given amount.</p>
 <p>By default, if a displacement field exists, this will also rotate the
 displacement field.</p>
 <p>The rotation axis includes the origin and points in the direction of
 the 'axis' parameter.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rotate_element_blocks(1, [1, 0, 0], 90)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rotate_element_blocks(1, [1, 0, 0], 90)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rotate_element_blocks(self,
                           element_block_ids,
                           axis,
@@ -23312,14 +23496,16 @@ the 'axis' parameter.</p>
 <span>def <span class="ident">rotate_geometry</span></span>(<span>self, axis, angle_in_degrees, adjust_displacement_field='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Rotate the model about an axis by the given angle.</p>
+<div class="desc"><p>Rotate the model about an axis by the given angle.</p>
 <p>The rotation axis includes the origin and points in the direction of
 the 'axis' parameter.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.rotate_geometry([1, 0, 0], 90)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.rotate_geometry([1, 0, 0], 90)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def rotate_geometry(self,
                     axis,
                     angle_in_degrees,
@@ -23343,14 +23529,16 @@ the 'axis' parameter.</p>
 <span>def <span class="ident">scale_element_blocks</span></span>(<span>self, element_block_ids, scale_factor, check_for_merged_nodes=True, adjust_displacement_field='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Scale all nodes in the given element blocks by the given amount.</p>
+<div class="desc"><p>Scale all nodes in the given element blocks by the given amount.</p>
 <p>By default, if a displacement field exists, this will also scale the
 displacement field.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.scale_element_blocks(1, 0.0254)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.scale_element_blocks(1, 0.0254)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def scale_element_blocks(self,
                          element_block_ids,
                          scale_factor,
@@ -23382,14 +23570,16 @@ displacement field.</p>
 <span>def <span class="ident">scale_geometry</span></span>(<span>self, scale_factor, adjust_displacement_field='auto')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Scale the model by the given factor.</p>
+<div class="desc"><p>Scale the model by the given factor.</p>
 <p>By default, if it exists, the displacement field will also be scaled
 accordingly.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.scale_geometry(0.0254)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.scale_geometry(0.0254)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def scale_geometry(self, scale_factor, adjust_displacement_field=&#39;auto&#39;):
     &#34;&#34;&#34;
     Scale the model by the given factor.
@@ -23409,13 +23599,15 @@ accordingly.</p>
 <span>def <span class="ident">side_set_exists</span></span>(<span>self, side_set_id)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the given side set exists.</p>
+<div class="desc"><p>Return 'True' if the given side set exists.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.side_set_exists(1)
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.side_set_exists(1)
 &gt;&gt;&gt; model.node_set_exists('sideset_name')
-</code></pre></section>
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def side_set_exists(self, side_set_id):
     &#34;&#34;&#34;
     Return &#39;True&#39; if the given side set exists.
@@ -23434,12 +23626,14 @@ accordingly.</p>
 <span>def <span class="ident">side_set_field_exists</span></span>(<span>self, side_set_field_name, side_set_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the side set field exists on the side sets.</p>
+<div class="desc"><p>Return 'True' if the side set field exists on the side sets.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.side_set_field_exists('contact_pressure')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.side_set_field_exists('contact_pressure')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def side_set_field_exists(self, side_set_field_name, side_set_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Return &#39;True&#39; if the side set field exists on the side sets.
@@ -23460,12 +23654,14 @@ accordingly.</p>
 <span>def <span class="ident">summarize</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Print a summary of the information in the current model.</p>
+<div class="desc"><p>Print a summary of the information in the current model.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.summarize()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.summarize()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def summarize(self):
     &#34;&#34;&#34;
     Print a summary of the information in the current model.
@@ -23494,17 +23690,19 @@ accordingly.</p>
 <span>def <span class="ident">threshold_element_blocks</span></span>(<span>self, expression, element_block_ids='all', timestep='last', new_element_block_id=None)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Delete elements which do not satisfy a condition.</p>
+<div class="desc"><p>Delete elements which do not satisfy a condition.</p>
 <p>The expression can contain element field values.</p>
 <p>If 'new_element_block_id' is given, all elements which don't pass
 the threshold will be moved into that element block.
 Else, they are
 deleted.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.threshold_element_block('all', 'eqps &gt;= 0.01')
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.threshold_element_block('all', 'eqps &gt;= 0.01')
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def threshold_element_blocks(self,
                              expression,
                              element_block_ids=&#39;all&#39;,
@@ -23574,12 +23772,14 @@ deleted.</p>
 <span>def <span class="ident">timestep_exists</span></span>(<span>self, timestep)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return 'True' if the given timestep exists.</p>
+<div class="desc"><p>Return 'True' if the given timestep exists.</p>
 <p>Examples:</p>
-<pre><code>&gt;&gt;&gt; model.timestep_exists(0.0)
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.timestep_exists(0.0)
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def timestep_exists(self, timestep):
     &#34;&#34;&#34;
     Return &#39;True&#39; if the given timestep exists.
@@ -23595,14 +23795,16 @@ deleted.</p>
 <span>def <span class="ident">to_lowercase</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Convert the names of all entities within the model to lowercase.</p>
+<div class="desc"><p>Convert the names of all entities within the model to lowercase.</p>
 <p>This affects global variables, node fields, element fields, side set
 fields, and node set fields.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.to_lowercase()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.to_lowercase()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def to_lowercase(self):
     &#34;&#34;&#34;
     Convert the names of all entities within the model to lowercase.
@@ -23638,12 +23840,14 @@ fields, and node set fields.</p>
 <span>def <span class="ident">translate_element_blocks</span></span>(<span>self, element_block_ids, offset, check_for_merged_nodes=True)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Translate the specified element blocks by the given offset.</p>
+<div class="desc"><p>Translate the specified element blocks by the given offset.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.translate_element_blocks(1, [1.0, 2.0, 3.0])
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.translate_element_blocks(1, [1.0, 2.0, 3.0])
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def translate_element_blocks(self,
                              element_block_ids,
                              offset,
@@ -23667,12 +23871,14 @@ fields, and node set fields.</p>
 <span>def <span class="ident">translate_geometry</span></span>(<span>self, offset)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Translate the model by the given offset.</p>
+<div class="desc"><p>Translate the model by the given offset.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.translate_geometry([1, 2, 3])
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.translate_geometry([1, 2, 3])
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def translate_geometry(self, offset):
     &#34;&#34;&#34;
     Translate the model by the given offset.
@@ -23688,7 +23894,7 @@ fields, and node set fields.</p>
 <span>def <span class="ident">unmerge_element_blocks</span></span>(<span>self, element_block_ids='all')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Duplicate nodes to unmerge element blocks.</p>
+<div class="desc"><p>Duplicate nodes to unmerge element blocks.</p>
 <p>For elements blocks that share one or more nodes, duplicate these nodes
 and unmerge the element blocks.
 For example, if element block A and B
@@ -23696,10 +23902,12 @@ share node 1, that node will be duplicated, block A will use the
 original node and block B will use the duplicate.</p>
 <p>Node fields, node sets, and node set fields are updated accordingly.</p>
 <p>Example:</p>
-<pre><code>&gt;&gt;&gt; model.unmerge_element_blocks()
-</code></pre></section>
+<pre><code class="language-python-repl">&gt;&gt;&gt; model.unmerge_element_blocks()
+</code></pre></div>
 <details class="source">
-<summary>Source code</summary>
+<summary>
+<span>Expand source code</span>
+</summary>
 <pre><code class="python">def unmerge_element_blocks(self, element_block_ids=&#39;all&#39;):
     &#34;&#34;&#34;
     Duplicate nodes to unmerge element blocks.
@@ -23923,9 +24131,7 @@ original node and block B will use the duplicate.</p>
 </nav>
 </main>
 <footer id="footer">
-<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.6.3</a>.</p>
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad()</script>
 </body>
 </html>
