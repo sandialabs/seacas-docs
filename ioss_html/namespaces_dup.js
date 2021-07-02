@@ -144,7 +144,7 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_Beam3.C}", "namespaceanonymous__namespace_02Ioss__Beam3_8C_03.html", "namespaceanonymous__namespace_02Ioss__Beam3_8C_03" ],
     [ "anonymous_namespace{Ioss_Beam4.C}", "namespaceanonymous__namespace_02Ioss__Beam4_8C_03.html", "namespaceanonymous__namespace_02Ioss__Beam4_8C_03" ],
     [ "anonymous_namespace{Ioss_Compare.C}", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html", [
-      [ "compare_blocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a983ff8adce78eb73f638ff2a487c482a", null ],
+      [ "compare_blocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#aec5ba63c4ff949c19720524ab878623d", null ],
       [ "compare_commsets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a9f8ac4e6dd8f9b0bcde7ded3534a9720", null ],
       [ "compare_coordinate_frames", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#ae38a1bd71e78b5619319dc425a65fa5b", null ],
       [ "compare_edgeblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a7eff7b42d301cfbdb0cf0b2e705be660", null ],
@@ -162,7 +162,7 @@ var namespaces_dup =
       [ "compare_nodesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a5e8ef6fcb356f1bbb97687952096648e", null ],
       [ "compare_properties", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a9c4d688a97b0fa735565074e1ec39031", null ],
       [ "compare_qa_info", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a0b0e61acac0fcda76c3cd8073c90e016", null ],
-      [ "compare_sets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a70df87c0d155906ad1ac6667498713d4", null ],
+      [ "compare_sets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a801f9a074a95d34a1745799db59d2bee", null ],
       [ "compare_sidesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a81542ed8776e8100983d0e24d4f1fd32", null ],
       [ "compare_structuredblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a8478812ad4b2513397920fdfcea1f574", null ]
     ] ],
@@ -237,8 +237,7 @@ var namespaces_dup =
       [ "transfer_sets", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a9ef12445df5e30913a1957fc4c5c1340", null ],
       [ "transfer_sidesets", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a2056b55b4e0d25ed8f774ff1096cc8b1", null ],
       [ "transfer_step", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a43879aff683dac5c43e1210253065891", null ],
-      [ "transfer_structuredblocks", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a13e4700a80743bc12914d1e5184a7360", null ],
-      [ "initial_time", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ac2735e6cc42ccb1b4446f35460f895be", null ]
+      [ "transfer_structuredblocks", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a13e4700a80743bc12914d1e5184a7360", null ]
     ] ],
     [ "anonymous_namespace{Ioss_DatabaseIO.C}", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html", [
       [ "calc_bounding_box", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a0339a01eb797b5ee7289a393cb2814cc", null ],
@@ -290,9 +289,7 @@ var namespaces_dup =
       [ "is_one2one", "namespaceanonymous__namespace_02Ioss__Map_8C_03.html#aa1a8680ec9949ce1b6ad349b6f0e48ea", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Node.C}", "namespaceanonymous__namespace_02Ioss__Node_8C_03.html", "namespaceanonymous__namespace_02Ioss__Node_8C_03" ],
-    [ "anonymous_namespace{Ioss_ParallelUtils.C}", "namespaceanonymous__namespace_02Ioss__ParallelUtils_8C_03.html", [
-      [ "initial_time", "namespaceanonymous__namespace_02Ioss__ParallelUtils_8C_03.html#a26a4e7bb1c6e97b674b3371c688fca8e", null ]
-    ] ],
+    [ "anonymous_namespace{Ioss_ParallelUtils.C}", "namespaceanonymous__namespace_02Ioss__ParallelUtils_8C_03.html", null ],
     [ "anonymous_namespace{Ioss_Property.C}", "namespaceanonymous__namespace_02Ioss__Property_8C_03.html", [
       [ "error_message", "namespaceanonymous__namespace_02Ioss__Property_8C_03.html#a7e9f404cf974920b115b502313608c02", null ],
       [ "type_string", "namespaceanonymous__namespace_02Ioss__Property_8C_03.html#a33c896c06915d8a83ca1d8886b26d8ed", null ]

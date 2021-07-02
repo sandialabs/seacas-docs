@@ -10,8 +10,8 @@ var cgns__decomp_8C =
     [ "surface_ratio", "cgns__decomp_8C.html#a34007321abe9063d5db1af1916ee9c65", null ],
     [ "term_width", "cgns__decomp_8C.html#a6052f89c44b608660fd3a2cf48686c85", null ],
     [ "update_zgc_data", "cgns__decomp_8C.html#abb9754f8277f717a428b5e2504a4a382", null ],
-    [ "validate_decomposition", "cgns__decomp_8C.html#a50121c5859902ea731123f65added958", null ],
-    [ "validate_symmetric_communications", "cgns__decomp_8C.html#ac2c1714e1ac73eba2f92a70e27fa1ff1", null ],
+    [ "validate_decomposition", "cgns__decomp_8C.html#a2fb21f6339b4115fc72cfe57686d5d58", null ],
+    [ "validate_symmetric_communications", "cgns__decomp_8C.html#a501f1819ac2d0c49f06006ed6b35a829", null ],
     [ "codename", "cgns__decomp_8C.html#ac6a0e552e00b0266bc074686f371b88d", null ],
     [ "version", "cgns__decomp_8C.html#a5e85eb76c4a17217b9a637bd5e5923ca", null ]
 ];

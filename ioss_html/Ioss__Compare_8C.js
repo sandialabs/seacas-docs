@@ -9,7 +9,7 @@ var Ioss__Compare_8C =
     [ "TRANSIENT_FIELD_STEP_VALUE_MISMATCH", "Ioss__Compare_8C.html#a2b897f29428c9561c5220c7548d1bc35", null ],
     [ "TRANSIENT_FIELD_VALUE_MISMATCH", "Ioss__Compare_8C.html#afe951955d2dcc96f9b110532915f80a4", null ],
     [ "VALUE_MISMATCH", "Ioss__Compare_8C.html#acabafecdd11f66d74fea02c1169fecbb", null ],
-    [ "compare_blocks", "Ioss__Compare_8C.html#a983ff8adce78eb73f638ff2a487c482a", null ],
+    [ "compare_blocks", "Ioss__Compare_8C.html#aec5ba63c4ff949c19720524ab878623d", null ],
     [ "compare_commsets", "Ioss__Compare_8C.html#a9f8ac4e6dd8f9b0bcde7ded3534a9720", null ],
     [ "compare_coordinate_frames", "Ioss__Compare_8C.html#ae38a1bd71e78b5619319dc425a65fa5b", null ],
     [ "compare_edgeblocks", "Ioss__Compare_8C.html#a7eff7b42d301cfbdb0cf0b2e705be660", null ],
@@ -27,7 +27,7 @@ var Ioss__Compare_8C =
     [ "compare_nodesets", "Ioss__Compare_8C.html#a5e8ef6fcb356f1bbb97687952096648e", null ],
     [ "compare_properties", "Ioss__Compare_8C.html#a9c4d688a97b0fa735565074e1ec39031", null ],
     [ "compare_qa_info", "Ioss__Compare_8C.html#a0b0e61acac0fcda76c3cd8073c90e016", null ],
-    [ "compare_sets", "Ioss__Compare_8C.html#a70df87c0d155906ad1ac6667498713d4", null ],
+    [ "compare_sets", "Ioss__Compare_8C.html#a801f9a074a95d34a1745799db59d2bee", null ],
     [ "compare_sidesets", "Ioss__Compare_8C.html#a81542ed8776e8100983d0e24d4f1fd32", null ],
     [ "compare_structuredblocks", "Ioss__Compare_8C.html#a8478812ad4b2513397920fdfcea1f574", null ]
 ];

@@ -521,14 +521,14 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="classglob_1_1StateGroup.html#ac8901248b209e5fde67a9ec86055174ea8ab2630ada18b94a005a0c5399d9d483">Type::STAR</a>:</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="classglob_1_1StateGroup.html#ac8901248b209e5fde67a9ec86055174ea883acd43c77567e1c3baced84ccf6ed7">Type::PLUS</a>: {</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordtype">bool</span> r;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        std::tie(r, std::ignore) = <a class="code" href="classglob_1_1StateGroup.html#aa029ea0a7d5dcf9d55fbe97661ff457c">BasicCheck</a>(str, pos);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        std::tie(r, <a class="code" href="core_8h.html#a4aa4531428b23db9666850c9f6665bd8">std::ignore</a>) = <a class="code" href="classglob_1_1StateGroup.html#aa029ea0a7d5dcf9d55fbe97661ff457c">BasicCheck</a>(str, pos);</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      }</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="classglob_1_1StateGroup.html#ac8901248b209e5fde67a9ec86055174ea5dd68b1a7db42a1cce4dce09dbaa179e">Type::NEG</a>: {</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keywordtype">bool</span> r;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        std::tie(r, std::ignore) = <a class="code" href="classglob_1_1StateGroup.html#aa029ea0a7d5dcf9d55fbe97661ff457c">BasicCheck</a>(str, pos);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        std::tie(r, <a class="code" href="core_8h.html#a4aa4531428b23db9666850c9f6665bd8">std::ignore</a>) = <a class="code" href="classglob_1_1StateGroup.html#aa029ea0a7d5dcf9d55fbe97661ff457c">BasicCheck</a>(str, pos);</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="keywordflow">return</span> !r;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      }</div>
@@ -1555,7 +1555,7 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="line"><a name="l01467"></a><span class="lineno"><a class="line" href="classglob_1_1ExtendedGlob.html#aaa27a126ff6037fe1731822aac244cfa"> 1467</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classglob_1_1ExtendedGlob.html#aaa27a126ff6037fe1731822aac244cfa">Exec</a>(<span class="keyword">const</span> <a class="code" href="namespaceglob.html#a024581930d6893837166ddba5e2fb930">String&lt;charT&gt;</a> &amp;str)</div>
 <div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    {</div>
 <div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;      <span class="keywordtype">bool</span> r;</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;      std::tie(r, std::ignore) = <a class="code" href="classglob_1_1ExtendedGlob.html#a85efb42ecbeed13606e0afb11860ca40">automata_</a>.Exec(str);</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;      std::tie(r, <a class="code" href="core_8h.html#a4aa4531428b23db9666850c9f6665bd8">std::ignore</a>) = <a class="code" href="classglob_1_1ExtendedGlob.html#a85efb42ecbeed13606e0afb11860ca40">automata_</a>.Exec(str);</div>
 <div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;      <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;    }</div>
 <div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160; </div>
@@ -1627,7 +1627,7 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="line"><a name="l01539"></a><span class="lineno"><a class="line" href="classglob_1_1SimpleGlob.html#adec5d1a5c0343a849245695e04c4f05c"> 1539</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classglob_1_1SimpleGlob.html#adec5d1a5c0343a849245695e04c4f05c">Exec</a>(<span class="keyword">const</span> <a class="code" href="namespaceglob.html#a024581930d6893837166ddba5e2fb930">String&lt;charT&gt;</a> &amp;str)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;      <span class="keywordtype">bool</span> r;</div>
-<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;      std::tie(r, std::ignore) = <a class="code" href="classglob_1_1SimpleGlob.html#aef8b90c668823b83ea184e0441e4f773">automata_</a>.Exec(str);</div>
+<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;      std::tie(r, <a class="code" href="core_8h.html#a4aa4531428b23db9666850c9f6665bd8">std::ignore</a>) = <a class="code" href="classglob_1_1SimpleGlob.html#aef8b90c668823b83ea184e0441e4f773">automata_</a>.Exec(str);</div>
 <div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;      <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;    }</div>
 <div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160; </div>
@@ -2088,6 +2088,7 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="ttc" id="aclassglob_1_1UnionNode_html_a7bb878d37e661bddb46cffa411e3e845"><div class="ttname"><a href="classglob_1_1UnionNode.html#a7bb878d37e661bddb46cffa411e3e845">glob::UnionNode::GetItems</a></div><div class="ttdeci">std::vector&lt; AstNodePtr&lt; charT &gt; &gt; &amp; GetItems()</div><div class="ttdef"><b>Definition:</b> Ioss_Glob.h:1015</div></div>
 <div class="ttc" id="aclassglob_1_1UnionNode_html_a81e16107b31170a1b080ac03e0c64764"><div class="ttname"><a href="classglob_1_1UnionNode.html#a81e16107b31170a1b080ac03e0c64764">glob::UnionNode::UnionNode</a></div><div class="ttdeci">UnionNode(std::vector&lt; AstNodePtr&lt; charT &gt;&gt; &amp;&amp;items)</div><div class="ttdef"><b>Definition:</b> Ioss_Glob.h:1008</div></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1136</div></div>
+<div class="ttc" id="acore_8h_html_a4aa4531428b23db9666850c9f6665bd8"><div class="ttname"><a href="core_8h.html#a4aa4531428b23db9666850c9f6665bd8">ignore</a></div><div class="ttdeci">void ignore(const T &amp;)</div><div class="ttdef"><b>Definition:</b> core.h:2731</div></div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:1064</div></div>
 <div class="ttc" id="anamespaceglob_html"><div class="ttname"><a href="namespaceglob.html">glob</a></div><div class="ttdef"><b>Definition:</b> Ioss_Glob.h:9</div></div>
 <div class="ttc" id="anamespaceglob_html_a024581930d6893837166ddba5e2fb930"><div class="ttname"><a href="namespaceglob.html#a024581930d6893837166ddba5e2fb930">glob::String</a></div><div class="ttdeci">std::basic_string&lt; charT &gt; String</div><div class="ttdef"><b>Definition:</b> Ioss_Glob.h:11</div></div>

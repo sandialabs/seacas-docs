@@ -1,8 +1,5 @@
 var NAVTREEINDEX44 =
 {
-"namespaceanonymous__namespace_02io__info_8C_03.html#a5bc5f1730a0687c1e28af167157152c6":[3,0,4,13],
-"namespaceanonymous__namespace_02io__info_8C_03.html#a7d2de5b110b6f4431d739fb7270ebced":[3,0,4,5],
-"namespaceanonymous__namespace_02io__info_8C_03.html#a831b37cf0b4b03a36a28b9443f900759":[3,0,4,10],
 "namespaceanonymous__namespace_02io__info_8C_03.html#a8537de034cec0281bae3932568e6c594":[3,0,4,4],
 "namespaceanonymous__namespace_02io__info_8C_03.html#a93004d5461f1dd0ab30b5d52ed0a352c":[3,0,4,19],
 "namespaceanonymous__namespace_02io__info_8C_03.html#a9c46bb69d5bbcc3a371c866eaf8fd5ff":[3,0,4,18],
@@ -28,7 +25,7 @@ var NAVTREEINDEX44 =
 "namespaceanonymous__namespace_02io__modify_8C_03.html#a2353631e6cb4a061774f78d6681719dd":[3,0,6,1],
 "namespaceanonymous__namespace_02io__modify_8C_03.html#a2f1b2ea3cc38a12e072850b5aa66cc5b":[3,0,6,17],
 "namespaceanonymous__namespace_02io__modify_8C_03.html#a39095980b0b77b8ec5ee634c0a1b2634":[3,0,6,13],
-"namespaceanonymous__namespace_02io__modify_8C_03.html#a3bfcb67a7941a2843c3bfc481d3ba792":[3,0,6,23],
+"namespaceanonymous__namespace_02io__modify_8C_03.html#a48d15a6ab60b45ef27e99bc36fc78900":[3,0,6,23],
 "namespaceanonymous__namespace_02io__modify_8C_03.html#a5985569f0f8310bae96ebc52e96c1371":[3,0,6,12],
 "namespaceanonymous__namespace_02io__modify_8C_03.html#a5ccace9ceca28b52fc1f9d0216515c3c":[3,0,6,2],
 "namespaceanonymous__namespace_02io__modify_8C_03.html#a5f27efffeffe710f293ad2a61f71449f":[3,0,6,24],
@@ -249,5 +246,8 @@ var NAVTREEINDEX44 =
 "namespacedetail_1_1dragonbox.html#a7410f369dbec43e4a12b044918aa94c3":[3,0,119,1,20],
 "namespacedetail_1_1dragonbox.html#a768ce4fd2bf7adc5bebeaeae5d3ccf7c":[3,0,119,1,19],
 "namespacedetail_1_1dragonbox.html#a83117db8135a641068152ca16b84f2c8":[3,0,119,1,17],
-"namespacedetail_1_1dragonbox.html#a8a87202b09af0d97cd0c874e43a52f65":[3,0,119,1,15]
+"namespacedetail_1_1dragonbox.html#a8a87202b09af0d97cd0c874e43a52f65":[3,0,119,1,15],
+"namespacedetail_1_1dragonbox.html#a9ca325072ed20c855fe1595b28d9d5c8":[3,0,119,1,11],
+"namespacedetail_1_1dragonbox.html#a9fc2fb80666f3b16561c5e76c6339d5d":[3,0,119,1,18],
+"namespacedetail_1_1dragonbox.html#aba873da3b874c207387e325ad1a05242":[3,0,119,1,27]
 };

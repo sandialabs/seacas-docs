@@ -239,6 +239,7 @@ var core_8h =
     [ "get_container", "core_8h.html#aa42a60eda7a70557cbc4b75b40d5e479", null ],
     [ "get_iterator", "core_8h.html#abcfb1e47d1276db7c3313c512a36c180", null ],
     [ "get_iterator", "core_8h.html#aa0b2a25de3cc16ea39c033e76561b1be", null ],
+    [ "ignore", "core_8h.html#a4aa4531428b23db9666850c9f6665bd8", null ],
     [ "init_named_args", "core_8h.html#a392f70e36dbd911806400ea3886385a3", null ],
     [ "init_named_args", "core_8h.html#a094fff347f100dafed94e2745dbe7ac6", null ],
     [ "init_named_args", "core_8h.html#afd2f97d8696d7ff96540188b2d791623", null ],

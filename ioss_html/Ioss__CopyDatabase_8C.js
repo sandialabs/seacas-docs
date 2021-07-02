@@ -32,6 +32,5 @@ var Ioss__CopyDatabase_8C =
     [ "transfer_sets", "Ioss__CopyDatabase_8C.html#a9ef12445df5e30913a1957fc4c5c1340", null ],
     [ "transfer_sidesets", "Ioss__CopyDatabase_8C.html#a2056b55b4e0d25ed8f774ff1096cc8b1", null ],
     [ "transfer_step", "Ioss__CopyDatabase_8C.html#a43879aff683dac5c43e1210253065891", null ],
-    [ "transfer_structuredblocks", "Ioss__CopyDatabase_8C.html#a13e4700a80743bc12914d1e5184a7360", null ],
-    [ "initial_time", "Ioss__CopyDatabase_8C.html#ac2735e6cc42ccb1b4446f35460f895be", null ]
+    [ "transfer_structuredblocks", "Ioss__CopyDatabase_8C.html#a13e4700a80743bc12914d1e5184a7360", null ]
 ];
