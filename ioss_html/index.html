@@ -204,6 +204,8 @@ Properties related to field interpretation</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">FIELD_SUFFIX_SEPARATOR   </td><td class="markdownTableBodyCenter">char / '_'   </td><td class="markdownTableBodyNone">The character that is used to separate the base field name from the suffix. Default is underscore.    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">FIELD_STRIP_TRAILING_BLANK   </td><td class="markdownTableBodyCenter">on / [off]   </td><td class="markdownTableBodyNone">If <code>FIELD_SUFFIX_SEPARATOR</code> is empty and there are fields that end with an underscore, then strip the underscore. (<code>a_x</code>, <code>a_y</code>, <code>a_z</code> is vector field <code>a</code>).    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">IGNORE_ATTRIBUTE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Do not read the attribute names that may exist on an input database. Instead for an element block with N attributes, the fields will be named <code>attribute_1</code> ... <code>attribute_N</code>   </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md6"></a>

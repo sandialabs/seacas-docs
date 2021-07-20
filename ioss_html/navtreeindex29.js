@@ -1,5 +1,8 @@
 var NAVTREEINDEX29 =
 {
+"classbasic__format__string.html#affea1973363f7ecf99bff7b136f3d247":[4,0,114,1],
+"classbasic__memory__buffer.html":[4,0,115],
+"classbasic__memory__buffer.html#a05e9c75571c728ebcf299c6670f12569":[4,0,115,3],
 "classbasic__memory__buffer.html#a0d2984bd2e6b5a96a09d31ca9d412519":[4,0,115,13],
 "classbasic__memory__buffer.html#a13f688782e6165086485913789b1396f":[4,0,115,0],
 "classbasic__memory__buffer.html#a27f096451ed4e6738d3a33161fda3e90":[4,0,115,11],
@@ -246,8 +249,5 @@ var NAVTREEINDEX29 =
 "classdynamic__format__arg__store.html#ab8e9e33cc7b78829001a86ef6110ebb6":[4,0,140,12],
 "classdynamic__format__arg__store.html#ac58637a7965cbfeab47c2f50e923dc07":[4,0,140,10],
 "classdynamic__format__arg__store.html#ad5a82849fb8ab4f8618d94f19a990457":[4,0,140,14],
-"classdynamic__format__arg__store.html#afcc3f9a3361e1f7a84c6deeb0830a26c":[4,0,140,15],
-"classdynamic__formatter.html":[4,0,142],
-"classdynamic__formatter.html#a02f77d38219eac87de6ab7dcdce7395e":[4,0,142,5],
-"classdynamic__formatter.html#a3473a0919f70f4b9d3e34ee98ba58dc9":[4,0,142,2]
+"classdynamic__format__arg__store.html#afcc3f9a3361e1f7a84c6deeb0830a26c":[4,0,140,15]
 };

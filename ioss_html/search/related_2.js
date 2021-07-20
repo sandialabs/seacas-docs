@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['compare_10696',['compare',['../classdetail_1_1bigint.html#a884a200c3d37a8c8179ae5d04a07cc75',1,'detail::bigint']]]
+  ['compare_10698',['compare',['../classdetail_1_1bigint.html#a884a200c3d37a8c8179ae5d04a07cc75',1,'detail::bigint']]]
 ];

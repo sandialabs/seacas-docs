@@ -171,8 +171,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a76cdc50e03a141726776fea60ba1aad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30682459cf58facf7cf19855e895b3be"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIocgns_1_1Utils.html#a30682459cf58facf7cf19855e895b3be">get_step_times</a> (int cgns_file_ptr, std::vector&lt; double &gt; &amp;timesteps, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, double timeScaleFactor, int myProcessor)</td></tr>
 <tr class="separator:a30682459cf58facf7cf19855e895b3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5b349db022c98769edceed5ab8bbaa4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIocgns_1_1Utils.html#ad5b349db022c98769edceed5ab8bbaa4">add_transient_variables</a> (int cgns_file_ptr, const std::vector&lt; double &gt; &amp;timesteps, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, bool enable_field_recognition, char suffix_separator, int myProcessor, bool is_parallel_io)</td></tr>
-<tr class="separator:ad5b349db022c98769edceed5ab8bbaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbda9e5e301642e8c1cdfebf944eca66"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIocgns_1_1Utils.html#acbda9e5e301642e8c1cdfebf944eca66">add_transient_variables</a> (int cgns_file_ptr, const std::vector&lt; double &gt; &amp;timesteps, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, int myProcessor, bool is_parallel_io)</td></tr>
+<tr class="separator:acbda9e5e301642e8c1cdfebf944eca66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6758b59168543f2ed7dc52559a0f8cc4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIocgns_1_1Utils.html#a6758b59168543f2ed7dc52559a0f8cc4">set_line_decomposition</a> (int cgns_file_ptr, const std::string &amp;line_decomposition, std::vector&lt; <a class="el" href="classIocgns_1_1StructuredZoneData.html">Iocgns::StructuredZoneData</a> * &gt; &amp;zones, int rank, bool verbose)</td></tr>
 <tr class="separator:a6758b59168543f2ed7dc52559a0f8cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00710fb5205a3489fc07482a546bc807"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIocgns_1_1Utils.html#a00710fb5205a3489fc07482a546bc807">decompose_model</a> (std::vector&lt; <a class="el" href="classIocgns_1_1StructuredZoneData.html">Iocgns::StructuredZoneData</a> * &gt; &amp;zones, int proc_count, int rank, double load_balance_threshold, bool verbose)</td></tr>
@@ -479,8 +479,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5b349db022c98769edceed5ab8bbaa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5b349db022c98769edceed5ab8bbaa4">&#9670;&nbsp;</a></span>add_transient_variables()</h2>
+<a id="acbda9e5e301642e8c1cdfebf944eca66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbda9e5e301642e8c1cdfebf944eca66">&#9670;&nbsp;</a></span>add_transient_variables()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,18 +505,6 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *&#160;</td>
           <td class="paramname"><em>region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable_field_recognition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>suffix_separator</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

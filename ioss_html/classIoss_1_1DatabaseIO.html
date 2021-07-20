@@ -259,11 +259,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac344d090f98ae0082547ea7d8e0db7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af616ab4ee470f8a994d2ef35eb1fa100"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#af616ab4ee470f8a994d2ef35eb1fa100">get_field_recognition</a> () const</td></tr>
 <tr class="separator:af616ab4ee470f8a994d2ef35eb1fa100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02ad4c1811472b559a93bcb5fcf2850"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ab02ad4c1811472b559a93bcb5fcf2850">get_field_strip_trailing_</a> () const</td></tr>
+<tr class="separator:ab02ad4c1811472b559a93bcb5fcf2850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe3242a9864a794a758870288a499af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#abfe3242a9864a794a758870288a499af">set_field_separator</a> (char separator)</td></tr>
 <tr class="memdesc:abfe3242a9864a794a758870288a499af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the character used to separate a field suffix from the field basename when recognizing vector, tensor fields.  <a href="classIoss_1_1DatabaseIO.html#abfe3242a9864a794a758870288a499af">More...</a><br /></td></tr>
 <tr class="separator:abfe3242a9864a794a758870288a499af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac078e6793326cd029bc0412d342fb626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ac078e6793326cd029bc0412d342fb626">set_field_recognition</a> (bool yes_no)</td></tr>
 <tr class="separator:ac078e6793326cd029bc0412d342fb626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2235b32ed5a23fc82c670856840a767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ad2235b32ed5a23fc82c670856840a767">set_field_strip_trailing_</a> (bool yes_no)</td></tr>
+<tr class="separator:ad2235b32ed5a23fc82c670856840a767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6ffe8a955335ceb105c2d0a1fee0c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a4d6ffe8a955335ceb105c2d0a1fee0c0">set_lower_case_variable_names</a> (bool true_false) const</td></tr>
 <tr class="separator:a4d6ffe8a955335ceb105c2d0a1fee0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab90f66226b7460db282b835ca60e8a61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ab90f66226b7460db282b835ca60e8a61">set_surface_split_type</a> (<a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a> split_type)</td></tr>
@@ -525,6 +529,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:af4f19171301f0540415efdbe86d6b873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a578fe057681e4aab858717122f6d37bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a578fe057681e4aab858717122f6d37bf">enableFieldRecognition</a> {true}</td></tr>
 <tr class="separator:a578fe057681e4aab858717122f6d37bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1f34d2775b92edcac24e23254c7186"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a3c1f34d2775b92edcac24e23254c7186">fieldStripTrailing_</a> {false}</td></tr>
+<tr class="separator:a3c1f34d2775b92edcac24e23254c7186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f2e5d1bd1d892afd3f0d65209274061"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a4f2e5d1bd1d892afd3f0d65209274061">isInput</a></td></tr>
 <tr class="separator:a4f2e5d1bd1d892afd3f0d65209274061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4119cb674590e0162b5c6da79f22eebe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a4119cb674590e0162b5c6da79f22eebe">isParallelConsistent</a></td></tr>
@@ -2694,6 +2700,31 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">char Ioss::DatabaseIO::get_field_separator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab02ad4c1811472b559a93bcb5fcf2850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02ad4c1811472b559a93bcb5fcf2850">&#9670;&nbsp;</a></span>get_field_strip_trailing_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::DatabaseIO::get_field_strip_trailing_ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -4962,6 +4993,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ad2235b32ed5a23fc82c670856840a767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2235b32ed5a23fc82c670856840a767">&#9670;&nbsp;</a></span>set_field_strip_trailing_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::DatabaseIO::set_field_strip_trailing_ </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>yes_no</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a894af7b5cc9d09b8a880c7a97acdf6b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a894af7b5cc9d09b8a880c7a97acdf6b8">&#9670;&nbsp;</a></span>set_file_per_state()</h2>
 
@@ -5910,6 +5967,28 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">char Ioss::DatabaseIO::fieldSeparator {'_'}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c1f34d2775b92edcac24e23254c7186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1f34d2775b92edcac24e23254c7186">&#9670;&nbsp;</a></span>fieldStripTrailing_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::DatabaseIO::fieldStripTrailing_ {false}</td>
         </tr>
       </table>
   </td>
