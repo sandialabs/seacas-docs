@@ -5,7 +5,7 @@ var structIoex_1_1EdgeBlock =
     [ "EdgeBlock", "structIoex_1_1EdgeBlock.html#a7354214ea10659663715bcfcff1f6ea9", null ],
     [ "~EdgeBlock", "structIoex_1_1EdgeBlock.html#a245e01fc4d3279d5b3cf2bf0b0286bc2", null ],
     [ "attributeCount", "structIoex_1_1EdgeBlock.html#a44d94658b157562b2b7e35dd6b2ef37f", null ],
-    [ "elType", "structIoex_1_1EdgeBlock.html#a5e060659c8e92beda11b663f0d0e04d6", null ],
+    [ "elType", "structIoex_1_1EdgeBlock.html#a6a72e58f35d512b3642feef7a768e604", null ],
     [ "entityCount", "structIoex_1_1EdgeBlock.html#a9538f0b1ab5c3f4a06409d68b0cbd400", null ],
     [ "id", "structIoex_1_1EdgeBlock.html#ac38cf44f21e05549ebb09b916169dae2", null ],
     [ "name", "structIoex_1_1EdgeBlock.html#a4d4461d74a0c95d199925a25289ef1ab", null ],
