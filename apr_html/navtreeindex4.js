@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"namespaceSEAMS.html#aa0c11568985712afa14888ee1404521e":[0,0,4,63],
 "namespaceSEAMS.html#aa17aedebcd9b5674535f3495410d57cf":[0,0,4,94],
 "namespaceSEAMS.html#aa23aa0637776a54c4f76a182d2d72e9c":[0,0,4,173],
 "namespaceSEAMS.html#aa29db3dd54e80cda7af24bac77f20bc2":[0,0,4,171],
@@ -85,10 +86,11 @@ var NAVTREEINDEX4 =
 "namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#af53daf0742462644441db32b7854d5ec":[0,0,4,0,4],
 "namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#af5782839edf6a72b8d08f5dce4d10ce9":[0,0,4,0,7],
 "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html":[0,0,0],
-"namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a3ccb605d7abf7abff225f663dc92d0e3":[0,0,0,2],
-"namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ac1527f21f00b21b4c88dc471caadaa36":[0,0,0,3],
-"namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ad12df308cb43ad0061ad06f13fa3ba6b":[0,0,0,0],
-"namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ad9ce072d71e737f995472c04521ef52c":[0,0,0,1],
+"namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a3ccb605d7abf7abff225f663dc92d0e3":[0,0,0,3],
+"namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a469f5de915567495e6abb171f292b193":[0,0,0,0],
+"namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ac1527f21f00b21b4c88dc471caadaa36":[0,0,0,4],
+"namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ad12df308cb43ad0061ad06f13fa3ba6b":[0,0,0,1],
+"namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ad9ce072d71e737f995472c04521ef52c":[0,0,0,2],
 "namespaceanonymous__namespace_02apr__builtin_8cc_03.html":[0,0,1],
 "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a210b8303fb82ba1cd00e1e45de8ce01b":[0,0,1,3],
 "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a8af8d106c8603c278d56239b3a9ad0e1":[0,0,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "structSEAMS_1_1aprepro__options.html":[1,0,0,5],
 "structSEAMS_1_1aprepro__options.html#a0e428eccf4e68e1a04676f562c3a61ae":[1,0,0,5,14],
 "structSEAMS_1_1aprepro__options.html#a21a037ae8f97df9f1e7cd4d55cc7f8fb":[1,0,0,5,2],
-"structSEAMS_1_1aprepro__options.html#a21f8e18b3dfe7458353bef49fe35b8bb":[1,0,0,5,12],
-"structSEAMS_1_1aprepro__options.html#a2e2dd92197d6667bdb8705e07af30b99":[1,0,0,5,0],
-"structSEAMS_1_1aprepro__options.html#a4e0a17eb6ff5653fcb8f8094531538ee":[1,0,0,5,9]
+"structSEAMS_1_1aprepro__options.html#a21f8e18b3dfe7458353bef49fe35b8bb":[1,0,0,5,12]
 };
