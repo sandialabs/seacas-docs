@@ -112,8 +112,8 @@ Collaboration diagram for tsl::detail_hopscotch_hash::hopscotch_bucket&lt; Value
 Public Types</h2></td></tr>
 <tr class="memitem:a889aa1e71505d643c8452240b9c7a380"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a889aa1e71505d643c8452240b9c7a380">value_type</a> = ValueType</td></tr>
 <tr class="separator:a889aa1e71505d643c8452240b9c7a380"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83d26172744988fe287bcc1fb5297f13"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a83d26172744988fe287bcc1fb5297f13">neighborhood_bitmap</a> = typename <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits.html">smallest_type_for_min_bits</a>&lt; NeighborhoodSize+<a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#ab15ef36b694d0f89612f5ba9409d40a8">NB_RESERVED_BITS_IN_NEIGHBORHOOD</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
-<tr class="separator:a83d26172744988fe287bcc1fb5297f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600a2172582060b21f2f8ceabd18db83"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a600a2172582060b21f2f8ceabd18db83">neighborhood_bitmap</a> = typename <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits.html">smallest_type_for_min_bits</a>&lt; NeighborhoodSize+<a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#ab15ef36b694d0f89612f5ba9409d40a8">NB_RESERVED_BITS_IN_NEIGHBORHOOD</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="separator:a600a2172582060b21f2f8ceabd18db83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeb75fe01818a5f49418f4217160598e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5751d008e1b58618d165e307a5e73da4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a5751d008e1b58618d165e307a5e73da4">~hopscotch_bucket</a> () noexcept</td></tr>
 <tr class="separator:a5751d008e1b58618d165e307a5e73da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8efc76ae0f418d70237c6022f41a4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a83d26172744988fe287bcc1fb5297f13">neighborhood_bitmap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#adb8efc76ae0f418d70237c6022f41a4f">neighborhood_infos</a> () const noexcept</td></tr>
+<tr class="memitem:adb8efc76ae0f418d70237c6022f41a4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a600a2172582060b21f2f8ceabd18db83">neighborhood_bitmap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#adb8efc76ae0f418d70237c6022f41a4f">neighborhood_infos</a> () const noexcept</td></tr>
 <tr class="separator:adb8efc76ae0f418d70237c6022f41a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb93ae4ada7f6c825002ef7236b4c651"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#afb93ae4ada7f6c825002ef7236b4c651">set_overflow</a> (bool <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#aea637da7bd2352657451e35cea455b00">has_overflow</a>) noexcept</td></tr>
 <tr class="separator:afb93ae4ada7f6c825002ef7236b4c651"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,9 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6a41cfe2ccfff6668ac78e794d83b893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab445e4bb77d5a84ce9d50f84def1fbfd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a889aa1e71505d643c8452240b9c7a380">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#ab445e4bb77d5a84ce9d50f84def1fbfd">value</a> () const noexcept</td></tr>
 <tr class="separator:ab445e4bb77d5a84ce9d50f84def1fbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d7757715f9aacdeace0573b8c2c3bd"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a60d7757715f9aacdeace0573b8c2c3bd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a60d7757715f9aacdeace0573b8c2c3bd">set_value_of_empty_bucket</a> (<a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a5019c00d3c234ae72fa0d1d564c8d876">truncated_hash_type</a> my_hash, Args &amp;&amp;... value_type_args)</td></tr>
-<tr class="separator:a60d7757715f9aacdeace0573b8c2c3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97cad4ed97d9b1dbcd165a384ddee7b"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aa97cad4ed97d9b1dbcd165a384ddee7b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#aa97cad4ed97d9b1dbcd165a384ddee7b">set_value_of_empty_bucket</a> (<a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a5019c00d3c234ae72fa0d1d564c8d876">truncated_hash_type</a> my_hash, Args &amp;&amp;...value_type_args)</td></tr>
+<tr class="separator:aa97cad4ed97d9b1dbcd165a384ddee7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad084f464937d2fa0fe12e26476a7ac5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#aad084f464937d2fa0fe12e26476a7ac5">swap_value_into_empty_bucket</a> (<a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html">hopscotch_bucket</a> &amp;empty_bucket)</td></tr>
 <tr class="separator:aad084f464937d2fa0fe12e26476a7ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebff2fef640b913e76b3e31fcf4d58fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#aebff2fef640b913e76b3e31fcf4d58fb">remove_value</a> () noexcept</td></tr>
@@ -181,7 +181,7 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a630644b74495fd4d68f9052a1004e350"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a83d26172744988fe287bcc1fb5297f13">neighborhood_bitmap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a630644b74495fd4d68f9052a1004e350">m_neighborhood_infos</a></td></tr>
+<tr class="memitem:a630644b74495fd4d68f9052a1004e350"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a600a2172582060b21f2f8ceabd18db83">neighborhood_bitmap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a630644b74495fd4d68f9052a1004e350">m_neighborhood_infos</a></td></tr>
 <tr class="separator:a630644b74495fd4d68f9052a1004e350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8afbc8199928235619776ba3a882d3ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a79003bdaa8ee81bc1bb8b2cb44c6d930">storage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a8afbc8199928235619776ba3a882d3ed">m_value</a></td></tr>
 <tr class="separator:a8afbc8199928235619776ba3a882d3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,8 +226,8 @@ template&lt;typename ValueType , unsigned int NeighborhoodSize, bool StoreHash&g
 
 </div>
 </div>
-<a id="a83d26172744988fe287bcc1fb5297f13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83d26172744988fe287bcc1fb5297f13">&#9670;&nbsp;</a></span>neighborhood_bitmap</h2>
+<a id="a600a2172582060b21f2f8ceabd18db83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600a2172582060b21f2f8ceabd18db83">&#9670;&nbsp;</a></span>neighborhood_bitmap</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +235,7 @@ template&lt;typename ValueType , unsigned int NeighborhoodSize, bool StoreHash&g
 template&lt;typename ValueType , unsigned int NeighborhoodSize, bool StoreHash&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html">tsl::detail_hopscotch_hash::hopscotch_bucket</a>&lt; ValueType, NeighborhoodSize, StoreHash &gt;::<a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a83d26172744988fe287bcc1fb5297f13">neighborhood_bitmap</a> =  typename <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits.html">smallest_type_for_min_bits</a>&lt; NeighborhoodSize + <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#ab15ef36b694d0f89612f5ba9409d40a8">NB_RESERVED_BITS_IN_NEIGHBORHOOD</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
+          <td class="memname">using <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html">tsl::detail_hopscotch_hash::hopscotch_bucket</a>&lt; ValueType, NeighborhoodSize, StoreHash &gt;::<a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a600a2172582060b21f2f8ceabd18db83">neighborhood_bitmap</a> =  typename <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits.html">smallest_type_for_min_bits</a>&lt;NeighborhoodSize + <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#ab15ef36b694d0f89612f5ba9409d40a8">NB_RESERVED_BITS_IN_NEIGHBORHOOD</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -542,7 +542,7 @@ template&lt;typename ValueType , unsigned int NeighborhoodSize, bool StoreHash&g
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a83d26172744988fe287bcc1fb5297f13">neighborhood_bitmap</a> <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html">tsl::detail_hopscotch_hash::hopscotch_bucket</a>&lt; ValueType, NeighborhoodSize, StoreHash &gt;::neighborhood_infos </td>
+          <td class="memname"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a600a2172582060b21f2f8ceabd18db83">neighborhood_bitmap</a> <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html">tsl::detail_hopscotch_hash::hopscotch_bucket</a>&lt; ValueType, NeighborhoodSize, StoreHash &gt;::neighborhood_infos </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -696,8 +696,8 @@ template&lt;typename ValueType , unsigned int NeighborhoodSize, bool StoreHash&g
 
 </div>
 </div>
-<a id="a60d7757715f9aacdeace0573b8c2c3bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60d7757715f9aacdeace0573b8c2c3bd">&#9670;&nbsp;</a></span>set_value_of_empty_bucket()</h2>
+<a id="aa97cad4ed97d9b1dbcd165a384ddee7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97cad4ed97d9b1dbcd165a384ddee7b">&#9670;&nbsp;</a></span>set_value_of_empty_bucket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -887,7 +887,7 @@ template&lt;typename ValueType , unsigned int NeighborhoodSize, bool StoreHash&g
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a83d26172744988fe287bcc1fb5297f13">neighborhood_bitmap</a> <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html">tsl::detail_hopscotch_hash::hopscotch_bucket</a>&lt; ValueType, NeighborhoodSize, StoreHash &gt;::m_neighborhood_infos</td>
+          <td class="memname"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a600a2172582060b21f2f8ceabd18db83">neighborhood_bitmap</a> <a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html">tsl::detail_hopscotch_hash::hopscotch_bucket</a>&lt; ValueType, NeighborhoodSize, StoreHash &gt;::m_neighborhood_infos</td>
         </tr>
       </table>
   </td>
@@ -945,9 +945,9 @@ template&lt;typename ValueType , unsigned int NeighborhoodSize, bool StoreHash&g
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      <a class="code" href="namespacetsl_1_1detail__hopscotch__hash.html#a54ac9f89d5ee3307efe2cf81dad56c6e">SMALLEST_TYPE_MAX_BITS_SUPPORTED</a> - <a class="code" href="namespacetsl_1_1detail__hopscotch__hash.html#ab15ef36b694d0f89612f5ba9409d40a8">NB_RESERVED_BITS_IN_NEIGHBORHOOD</a></div>
-<div class="ttc" id="anamespacetsl_1_1detail__hopscotch__hash_html_a54ac9f89d5ee3307efe2cf81dad56c6e"><div class="ttname"><a href="namespacetsl_1_1detail__hopscotch__hash.html#a54ac9f89d5ee3307efe2cf81dad56c6e">tsl::detail_hopscotch_hash::SMALLEST_TYPE_MAX_BITS_SUPPORTED</a></div><div class="ttdeci">static const std::size_t SMALLEST_TYPE_MAX_BITS_SUPPORTED</div><div class="ttdef"><b>Definition:</b> hopscotch_hash.h:102</div></div>
-<div class="ttc" id="anamespacetsl_1_1detail__hopscotch__hash_html_ab15ef36b694d0f89612f5ba9409d40a8"><div class="ttname"><a href="namespacetsl_1_1detail__hopscotch__hash.html#ab15ef36b694d0f89612f5ba9409d40a8">tsl::detail_hopscotch_hash::NB_RESERVED_BITS_IN_NEIGHBORHOOD</a></div><div class="ttdeci">static const std::size_t NB_RESERVED_BITS_IN_NEIGHBORHOOD</div><div class="ttdef"><b>Definition:</b> hopscotch_hash.h:156</div></div>
+<div class="line">          <a class="code" href="namespacetsl_1_1detail__hopscotch__hash.html#a54ac9f89d5ee3307efe2cf81dad56c6e">SMALLEST_TYPE_MAX_BITS_SUPPORTED</a> - <a class="code" href="namespacetsl_1_1detail__hopscotch__hash.html#ab15ef36b694d0f89612f5ba9409d40a8">NB_RESERVED_BITS_IN_NEIGHBORHOOD</a></div>
+<div class="ttc" id="anamespacetsl_1_1detail__hopscotch__hash_html_a54ac9f89d5ee3307efe2cf81dad56c6e"><div class="ttname"><a href="namespacetsl_1_1detail__hopscotch__hash.html#a54ac9f89d5ee3307efe2cf81dad56c6e">tsl::detail_hopscotch_hash::SMALLEST_TYPE_MAX_BITS_SUPPORTED</a></div><div class="ttdeci">static const std::size_t SMALLEST_TYPE_MAX_BITS_SUPPORTED</div><div class="ttdef"><b>Definition:</b> hopscotch_hash.h:108</div></div>
+<div class="ttc" id="anamespacetsl_1_1detail__hopscotch__hash_html_ab15ef36b694d0f89612f5ba9409d40a8"><div class="ttname"><a href="namespacetsl_1_1detail__hopscotch__hash.html#ab15ef36b694d0f89612f5ba9409d40a8">tsl::detail_hopscotch_hash::NB_RESERVED_BITS_IN_NEIGHBORHOOD</a></div><div class="ttdeci">static const std::size_t NB_RESERVED_BITS_IN_NEIGHBORHOOD</div><div class="ttdef"><b>Definition:</b> hopscotch_hash.h:167</div></div>
 </div><!-- fragment -->
 </div>
 </div>
