@@ -108,15 +108,15 @@
 <li><a class="reference internal" href="#exodiff">Exodiff</a></li>
 <li><a class="reference internal" href="#exomatlab">Exomatlab</a></li>
 <li><a class="reference internal" href="#exotxt">Exotxt</a></li>
+<li><a class="reference internal" href="#explore">Explore</a></li>
 <li><a class="reference internal" href="#fastq">Fastq</a></li>
 <li><a class="reference internal" href="#gen3d">Gen3D</a></li>
 <li><a class="reference internal" href="#genshell">GenShell</a></li>
 <li><a class="reference internal" href="#gjoin">GJoin</a></li>
 <li><a class="reference internal" href="#grepos">Grepos</a></li>
-<li><a class="reference internal" href="#explore">Explore</a></li>
-<li><a class="reference internal" href="#io-shell">IO_Shell</a></li>
 <li><a class="reference internal" href="#io-info">IO_Info</a></li>
 <li><a class="reference internal" href="#io-modify">IO_Modify</a></li>
+<li><a class="reference internal" href="#io-shell">IO_Shell</a></li>
 <li><a class="reference internal" href="#mapvar">Mapvar</a></li>
 <li><a class="reference internal" href="#mapvar-kd">Mapvar-kd</a></li>
 <li><a class="reference internal" href="#mat2exo">Mat2Exo</a></li>
@@ -125,8 +125,8 @@
 <li><a class="reference internal" href="#nem-slice">nem_slice</a></li>
 <li><a class="reference internal" href="#nem-spread">nem_spread</a></li>
 <li><a class="reference internal" href="#numbers">Numbers</a></li>
-<li><a class="reference internal" href="#slice">Slice</a></li>
 <li><a class="reference internal" href="#skinner">Skinner</a></li>
+<li><a class="reference internal" href="#slice">Slice</a></li>
 <li><a class="reference internal" href="#struc-to-unstruc">Struc_To_Unstruc</a></li>
 <li><a class="reference internal" href="#txtexo">TxtExo</a></li>
 <li><a class="reference internal" href="#zellij">Zellij</a></li>
@@ -551,6 +551,14 @@ be converted back to exodus using <a class="reference internal" href="#txtexo">T
 ncdump/ncgen can also be used to convert an exodus files to/from
 text.)</p>
 </section>
+<section id="explore">
+<h1>Explore<a class="headerlink" href="#explore" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="../../explore.pdf">Explore</a> is a program that examines the input to
+a finite element analysis or the output from an analysis in the Exodus
+database format. EXPLORE allows the user to examine any value in the
+database. The display can be directed to the user’s terminal or to a
+print file.</p>
+</section>
 <section id="fastq">
 <h1>Fastq<a class="headerlink" href="#fastq" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="../../FASTQ.pdf">FASTQ</a> is an interactive two-dimensional finite
@@ -624,23 +632,6 @@ and size of a two-dimensional or three-dimensional mesh; change the
 material block, nodeset, and sideset IDs; or “explode” the mesh to
 facilitate viewing of the various parts of the model.</p>
 </section>
-<section id="explore">
-<h1>Explore<a class="headerlink" href="#explore" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../../explore.pdf">Explore</a> is a program that examines the input to
-a finite element analysis or the output from an analysis in the Exodus
-database format. EXPLORE allows the user to examine any value in the
-database. The display can be directed to the user’s terminal or to a
-print file.</p>
-</section>
-<section id="io-shell">
-<h1>IO_Shell<a class="headerlink" href="#io-shell" title="Permalink to this headline">¶</a></h1>
-<p>Utility application which reads a database, possibly applies a
-modification, and then writes that database.  See <code class="docutils literal notranslate"><span class="pre">io_shell</span> <span class="pre">--help</span></code>
-for a list of the capabilities of io_shell.  It can read and write
-datbases in the Exodus and CGNS format.  There is also a generated
-mesh option.  To see the generated mesh options, try: <code class="docutils literal notranslate"><span class="pre">io_shell</span>
-<span class="pre">--in_type</span> <span class="pre">generated</span> <span class="pre">1x1x1+help</span> <span class="pre">output.g</span></code></p>
-</section>
 <section id="io-info">
 <h1>IO_Info<a class="headerlink" href="#io-info" title="Permalink to this headline">¶</a></h1>
 <p>Utility application which reads a database and provides a summary of
@@ -655,6 +646,15 @@ libraries that were used in the build of this installation of SEACAS.</p>
 attribute information to an existing Exodus database.  See <code class="docutils literal notranslate"><span class="pre">io_modify</span>
 <span class="pre">--help</span></code> for more information.  There is an internal <code class="docutils literal notranslate"><span class="pre">HELP</span></code> command
 which will provide additional information on the capabilities.</p>
+</section>
+<section id="io-shell">
+<h1>IO_Shell<a class="headerlink" href="#io-shell" title="Permalink to this headline">¶</a></h1>
+<p>Utility application which reads a database, possibly applies a
+modification, and then writes that database.  See <code class="docutils literal notranslate"><span class="pre">io_shell</span> <span class="pre">--help</span></code>
+for a list of the capabilities of io_shell.  It can read and write
+datbases in the Exodus and CGNS format.  There is also a generated
+mesh option.  To see the generated mesh options, try: <code class="docutils literal notranslate"><span class="pre">io_shell</span>
+<span class="pre">--in_type</span> <span class="pre">generated</span> <span class="pre">1x1x1+help</span> <span class="pre">output.g</span></code></p>
 </section>
 <section id="mapvar">
 <h1>Mapvar<a class="headerlink" href="#mapvar" title="Permalink to this headline">¶</a></h1>
@@ -737,16 +737,16 @@ format. Within this program are several utility routines which
 calculate information about the finite element model. It is limited to
 models with hexahedral elements only.</p>
 </section>
+<section id="skinner">
+<h1>Skinner<a class="headerlink" href="#skinner" title="Permalink to this headline">¶</a></h1>
+<p>Create an Exodus mesh consisting of the <em>skin</em> or surface of the input
+Exodus database.</p>
+</section>
 <section id="slice">
 <h1>Slice<a class="headerlink" href="#slice" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="../../Slice.md">Slice</a> decomposes an Exodus Database into
 multiple databases for use in a parallel application which uses a
 file-per-rank method for the input mesh database. Experimental.</p>
-</section>
-<section id="skinner">
-<h1>Skinner<a class="headerlink" href="#skinner" title="Permalink to this headline">¶</a></h1>
-<p>Create an Exodus mesh consisting of the <em>skin</em> or surface of the input
-Exodus database.</p>
 </section>
 <section id="struc-to-unstruc">
 <h1>Struc_To_Unstruc<a class="headerlink" href="#struc-to-unstruc" title="Permalink to this headline">¶</a></h1>

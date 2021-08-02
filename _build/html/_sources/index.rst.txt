@@ -387,6 +387,15 @@ be converted back to exodus using `TxtExo`_. (The netCDF utilities
 ncdump/ncgen can also be used to convert an exodus files to/from
 text.)
 
+Explore
+-------
+
+`Explore <../../explore.pdf>`_ is a program that examines the input to
+a finite element analysis or the output from an analysis in the Exodus
+database format. EXPLORE allows the user to examine any value in the
+database. The display can be directed to the user's terminal or to a
+print file.
+
 Fastq
 -----
 
@@ -467,26 +476,6 @@ and size of a two-dimensional or three-dimensional mesh; change the
 material block, nodeset, and sideset IDs; or "explode" the mesh to
 facilitate viewing of the various parts of the model.
 
-Explore
--------
-
-`Explore <../../explore.pdf>`_ is a program that examines the input to
-a finite element analysis or the output from an analysis in the Exodus
-database format. EXPLORE allows the user to examine any value in the
-database. The display can be directed to the user's terminal or to a
-print file.
-
-IO_Shell
---------
-
-Utility application which reads a database, possibly applies a
-modification, and then writes that database.  See ``io_shell --help``
-for a list of the capabilities of io_shell.  It can read and write
-datbases in the Exodus and CGNS format.  There is also a generated
-mesh option.  To see the generated mesh options, try: ``io_shell
---in_type generated 1x1x1+help output.g``
-
-
 IO_Info
 -------
 
@@ -503,6 +492,17 @@ Utility application which can be used to query add assembly and entity
 attribute information to an existing Exodus database.  See ``io_modify
 --help`` for more information.  There is an internal ``HELP`` command
 which will provide additional information on the capabilities.
+
+
+IO_Shell
+--------
+
+Utility application which reads a database, possibly applies a
+modification, and then writes that database.  See ``io_shell --help``
+for a list of the capabilities of io_shell.  It can read and write
+datbases in the Exodus and CGNS format.  There is also a generated
+mesh option.  To see the generated mesh options, try: ``io_shell
+--in_type generated 1x1x1+help output.g``
 
 
 Mapvar
@@ -590,18 +590,18 @@ format. Within this program are several utility routines which
 calculate information about the finite element model. It is limited to
 models with hexahedral elements only.
 
+Skinner
+-------
+
+Create an Exodus mesh consisting of the *skin* or surface of the input
+Exodus database.
+
 Slice
 -----
 
 `Slice <../../Slice.md>`_ decomposes an Exodus Database into
 multiple databases for use in a parallel application which uses a
 file-per-rank method for the input mesh database. Experimental.
-
-Skinner
--------
-
-Create an Exodus mesh consisting of the *skin* or surface of the input
-Exodus database.
 
 Struc_To_Unstruc
 ----------------
