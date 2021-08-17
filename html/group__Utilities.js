@@ -31,7 +31,7 @@ var group__Utilities =
     [ "ex_open_int", "group__Utilities.html#ga6595a688ca002de77217c2bb7c271147", null ],
     [ "ex_opts", "group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403", null ],
     [ "ex_print_config", "group__Utilities.html#gac89ad2ce316bb7fecf5fab8c9e447347", null ],
-    [ "ex_put_info", "group__Utilities.html#ga16d75c04427a26326070625c5116a934", null ],
+    [ "ex_put_info", "group__Utilities.html#gaa785c12fafcbd7a5df413e0c96f9f31e", null ],
     [ "ex_put_qa", "group__Utilities.html#ga4babf166b2821494be7d9bfcc95234f5", null ],
     [ "ex_set_err", "group__Utilities.html#ga3da0f860c0efa4b115e905c042403346", null ],
     [ "ex_set_int64_status", "group__Utilities.html#ga8be8ae9fd499756ab2dcb94ca4df7743", null ],

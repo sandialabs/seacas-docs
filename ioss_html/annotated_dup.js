@@ -64,6 +64,9 @@ var annotated_dup =
     [ "anonymous_namespace{Ioss_Hex8.C}", "namespaceanonymous__namespace_02Ioss__Hex8_8C_03.html", [
       [ "Constants", "structanonymous__namespace_02Ioss__Hex8_8C_03_1_1Constants.html", "structanonymous__namespace_02Ioss__Hex8_8C_03_1_1Constants" ]
     ] ],
+    [ "anonymous_namespace{Ioss_Hex9.C}", "namespaceanonymous__namespace_02Ioss__Hex9_8C_03.html", [
+      [ "Constants", "structanonymous__namespace_02Ioss__Hex9_8C_03_1_1Constants.html", "structanonymous__namespace_02Ioss__Hex9_8C_03_1_1Constants" ]
+    ] ],
     [ "anonymous_namespace{Ioss_Node.C}", "namespaceanonymous__namespace_02Ioss__Node_8C_03.html", [
       [ "Constants", "structanonymous__namespace_02Ioss__Node_8C_03_1_1Constants.html", "structanonymous__namespace_02Ioss__Node_8C_03_1_1Constants" ]
     ] ],
@@ -496,6 +499,8 @@ var annotated_dup =
       [ "Hex64", "classIoss_1_1Hex64.html", "classIoss_1_1Hex64" ],
       [ "St_Hex8", "classIoss_1_1St__Hex8.html", "classIoss_1_1St__Hex8" ],
       [ "Hex8", "classIoss_1_1Hex8.html", "classIoss_1_1Hex8" ],
+      [ "St_Hex9", "classIoss_1_1St__Hex9.html", "classIoss_1_1St__Hex9" ],
+      [ "Hex9", "classIoss_1_1Hex9.html", "classIoss_1_1Hex9" ],
       [ "Initializer", "classIoss_1_1Initializer.html", "classIoss_1_1Initializer" ],
       [ "IOFactory", "classIoss_1_1IOFactory.html", "classIoss_1_1IOFactory" ],
       [ "Map", "classIoss_1_1Map.html", "classIoss_1_1Map" ],

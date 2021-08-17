@@ -133,7 +133,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000075">Deprecated:</a></b></dt><dd>Use <a class="el" href="group__ResultsData.html#ga332addfae3873a71c38db5465e6bcf0b">ex_put_truth_table()</a>(exoid, EX_ELEM_BLOCK, num_elem_blk, num_elem_var, elem_var_tab)</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000075">Deprecated:</a></b></dt><dd>Use <a class="el" href="group__ResultsData.html#gaec82868a515b0efcce6dadb8352a9712">ex_put_truth_table()</a>(exoid, EX_ELEM_BLOCK, num_elem_blk, num_elem_var, elem_var_tab)</dd></dl>
 <p>The function <a class="el" href="ex__put__elem__var__tab_8c.html#ad074e2725c2fc723dab190555165d4a6">ex_put_elem_var_tab()</a> writes the exodus element variable truth table to the database. The element variable truth table indicates whether a particular element result is written for the elements in a particular element block. A 0 (zero) entry indicates that no results will be output for that element variable for that element block. A non-zero entry indicates that the appropriate results will be output.</p>
 <p>Although writing the element variable truth table is optional, it is encouraged because it creates at one time all the necessary <code>NetCDF</code> variables in which to hold the exodus element variable values. This results in significant time savings.</p>
 <p>The function <a class="el" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param()</a> must be called before this routine in order to define the number of element variables.</p>

@@ -407,7 +407,7 @@ var group__Internal =
     [ "ex__populate_header", "group__Internal.html#ga4ac4f0e7de34bfc525e5c18eeb2f7413", null ],
     [ "ex__put_homogenous_block_params", "group__Internal.html#ga0d9f8df623cd7292e1f775c6032b19f3", null ],
     [ "ex__put_name", "group__Internal.html#ga3ed0cdd23f1f503b24a4b590ce339bbd", null ],
-    [ "ex__put_names", "group__Internal.html#gac071b15c112fb01a896be1eea932e67d", null ],
+    [ "ex__put_names", "group__Internal.html#ga34c2eaa4f435429aba2e6b5f0e64aae8", null ],
     [ "ex__put_nemesis_version", "group__Internal.html#gaaf24b47badc59254147ae53ea21d0a3a", null ],
     [ "ex__put_nodal_var", "group__Internal.html#gadea4cacfe3af0f6245b2d973546bc4ef", null ],
     [ "ex__put_partial_nodal_var", "group__Internal.html#gaafda0a407402616fde3c5e653a2a79c1", null ],

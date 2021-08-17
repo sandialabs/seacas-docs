@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Global <a class="el" href="ex__put__concat__side__sets_8c.html#a8356fda0508bb71180e4a10894b28e29">ex_put_concat_side_sets</a>  (int exoid, void_int *side_set_ids, void_int *num_elem_per_set, void_int *num_dist_per_set, void_int *side_sets_elem_index, void_int *side_sets_dist_index, void_int *side_sets_elem_list, void_int *side_sets_side_list, void *side_sets_dist_fact)</dt>
 <dd><a class="anchor" id="_deprecated000065"></a>Use <a class="el" href="group__ModelDescription.html#gaec4c7de04bc7287beea3da1907cbc768">ex_put_concat_sets()</a>(exoid, EX_SIDE_SET, set_specs)  </dd>
 <dt>Global <a class="el" href="ex__put__concat__var__param_8c.html#aafde035060d6f9cd055f3f1615461c66">ex_put_concat_var_param</a>  (int exoid, int num_g, int num_n, int num_e, int num_elem_blk, int *elem_var_tab)</dt>
-<dd><a class="anchor" id="_deprecated000066"></a>Use <a class="el" href="group__ResultsData.html#ga4e10ac1ef1f40d2941f7918d527e539d">ex_put_all_var_param()</a>(exoid, num_g, num_n, num_e, elem_var_tab, 0, 0, 0, 0)  </dd>
+<dd><a class="anchor" id="_deprecated000066"></a>Use <a class="el" href="group__ResultsData.html#ga935816b7ecb1175e80accec7341c8840">ex_put_all_var_param()</a>(exoid, num_g, num_n, num_e, elem_var_tab, 0, 0, 0, 0)  </dd>
 <dt>Global <a class="el" href="ex__put__elem__attr_8c.html#a4ba88a4c32ad3cd2fcebb6ed74b93c29">ex_put_elem_attr</a>  (int exoid, ex_entity_id elem_blk_id, const void *attrib)</dt>
 <dd><a class="anchor" id="_deprecated000067"></a>Use <a class="el" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr()</a>(exoid, EX_ELEM_BLOCK, elem_blk_id, attrib) </dd>
 <dt>Global <a class="el" href="ex__put__elem__attr__names_8c.html#af26832244ff8dcb03e9e871b32a141f9">ex_put_elem_attr_names</a>  (int exoid, ex_entity_id elem_blk_id, char *names[])</dt>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Global <a class="el" href="ex__put__elem__var__slab_8c.html#afbd5c8831caa4fde4aeccc139b6c3af8">ex_put_elem_var_slab</a>  (int exoid, int time_step, int elem_var_index, ex_entity_id elem_blk_id, int64_t start_pos, int64_t num_vals, void *elem_var_vals)</dt>
 <dd><a class="anchor" id="_deprecated000074"></a>Use <a class="el" href="group__ResultsData.html#ga4acbccad7c694a50b2c5ecdc904fa5e8">ex_put_partial_var()</a>(exoid, time_step, EX_ELEM_BLOCK, elem_var_index, elem_blk_id, start_pos, num_vals, elem_var_vals)  </dd>
 <dt>Global <a class="el" href="ex__put__elem__var__tab_8c.html#ad074e2725c2fc723dab190555165d4a6">ex_put_elem_var_tab</a>  (int exoid, int num_elem_blk, int num_elem_var, int *elem_var_tab)</dt>
-<dd><a class="anchor" id="_deprecated000075"></a>Use <a class="el" href="group__ResultsData.html#ga332addfae3873a71c38db5465e6bcf0b">ex_put_truth_table()</a>(exoid, EX_ELEM_BLOCK, num_elem_blk, num_elem_var, elem_var_tab) </dd>
+<dd><a class="anchor" id="_deprecated000075"></a>Use <a class="el" href="group__ResultsData.html#gaec82868a515b0efcce6dadb8352a9712">ex_put_truth_table()</a>(exoid, EX_ELEM_BLOCK, num_elem_blk, num_elem_var, elem_var_tab) </dd>
 <dt>Global <a class="el" href="ex__put__glob__vars_8c.html#a7a7cc5d748703245cb877bef71e541c0">ex_put_glob_vars</a>  (int exoid, int time_step, int num_glob_vars, const void *glob_var_vals)</dt>
 <dd><a class="anchor" id="_deprecated000076"></a>Use <a class="el" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var()</a>(exoid, time_step, EX_GLOBAL, 1, 0, num_glob_vars, glob_var_vals) </dd>
 <dt>Global <a class="el" href="ex__put__n__attr_8c.html#ad8125950b63811111b9344338aa7d8a7">ex_put_n_attr</a>  (int exoid, ex_entity_type blk_type, ex_entity_id blk_id, int64_t start_entity, int64_t num_entity, const void *attrib)</dt>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Global <a class="el" href="ex__put__nset__var_8c.html#a6a77dfd667724e43394129e93eb1408e">ex_put_nset_var</a>  (int exoid, int time_step, int nset_var_index, ex_entity_id nset_id, int64_t num_nodes_this_nset, const void *nset_var_vals)</dt>
 <dd><a class="anchor" id="_deprecated000094"></a>Use <a class="el" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var()</a>(exoid, time_step, EX_NODE_SET, nset_var_index, nset_id, num_nodes_this_nset, nset_var_vals) </dd>
 <dt>Global <a class="el" href="ex__put__nset__var__tab_8c.html#aac71769577e252a3d2af522a259c735e">ex_put_nset_var_tab</a>  (int exoid, int num_nset, int num_nset_var, int *nset_var_tab)</dt>
-<dd><a class="anchor" id="_deprecated000095"></a>Use <a class="el" href="group__ResultsData.html#ga332addfae3873a71c38db5465e6bcf0b">ex_put_truth_table()</a>(exoid, EX_NODE_SET, num_nset, num_nset_var, nset_var_tab)  </dd>
+<dd><a class="anchor" id="_deprecated000095"></a>Use <a class="el" href="group__ResultsData.html#gaec82868a515b0efcce6dadb8352a9712">ex_put_truth_table()</a>(exoid, EX_NODE_SET, num_nset, num_nset_var, nset_var_tab)  </dd>
 <dt>Global <a class="el" href="ex__put__one__elem__attr_8c.html#af2d9397e8d8048b2b5e63cf22829bed0">ex_put_one_elem_attr</a>  (int exoid, ex_entity_id elem_blk_id, int attrib_index, const void *attrib)</dt>
 <dd><a class="anchor" id="_deprecated000096"></a>Use <a class="el" href="group__ModelDescription.html#ga3ff6ca7454f0ae270fb138c5a4844e37">ex_put_one_attr()</a>(exoid, EX_ELEM_BLOCK, elem_blk_id, attrib_index, attrib) </dd>
 <dt>Global <a class="el" href="ex__put__partial__elem__attr_8c.html#a45b7f5da6992a1e5917a0022d6b03247">ex_put_partial_elem_attr</a>  (int exoid, ex_entity_id elem_blk_id, int64_t start_elem_num, int64_t num_elems, void *attrib)</dt>
@@ -306,15 +306,15 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Global <a class="el" href="ex__put__sset__var_8c.html#a31a3ab2d905b72533f889cabe340f5b9">ex_put_sset_var</a>  (int exoid, int time_step, int sset_var_index, ex_entity_id sset_id, int64_t num_faces_this_sset, const void *sset_var_vals)</dt>
 <dd><a class="anchor" id="_deprecated000110"></a>Use <a class="el" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var()</a>(exoid, time_step, EX_SIDE_SET, sset_var_index, sset_id, num_faces_this_sset, sset_var_vals)  </dd>
 <dt>Global <a class="el" href="ex__put__sset__var__tab_8c.html#a8443483b79fa3459fb99b321bf8fd73e">ex_put_sset_var_tab</a>  (int exoid, int num_sset, int num_sset_var, int *sset_var_tab)</dt>
-<dd><a class="anchor" id="_deprecated000111"></a>Use <a class="el" href="group__ResultsData.html#ga332addfae3873a71c38db5465e6bcf0b">ex_put_truth_table()</a>(exoid, EX_SIDE_SET, num_sset, num_sset_var, sset_var_tab)  </dd>
+<dd><a class="anchor" id="_deprecated000111"></a>Use <a class="el" href="group__ResultsData.html#gaec82868a515b0efcce6dadb8352a9712">ex_put_truth_table()</a>(exoid, EX_SIDE_SET, num_sset, num_sset_var, sset_var_tab)  </dd>
 <dt>Global <a class="el" href="group__ResultsData.html#gab0b72cd46b9655253d699cbb42744c36">ex_put_var_name</a>  (int exoid, const char *var_type, int var_num, const char *var_name)</dt>
 <dd><a class="anchor" id="_deprecated000112"></a>use <a class="el" href="group__ResultsData.html#ga223eafff4a08dd9b2264a82df11050b3">ex_put_variable_name()</a>(exoid, obj_type, var_num, *var_name) </dd>
 <dt>Global <a class="el" href="group__ResultsData.html#gafbd39f5aca69cb3290549efce1ae20d8">ex_put_var_names</a>  (int exoid, const char *var_type, int num_vars, char *var_names[])</dt>
-<dd><a class="anchor" id="_deprecated000113"></a>Use <a class="el" href="group__ResultsData.html#gae487ed3a7cd9dcef6eca2ca6dac0f48b">ex_put_variable_names()</a>(exoid, obj_type, num_vars, var_names) </dd>
+<dd><a class="anchor" id="_deprecated000113"></a>Use <a class="el" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names()</a>(exoid, obj_type, num_vars, var_names) </dd>
 <dt>Global <a class="el" href="group__ResultsData.html#ga18448b8dc46181c45af2abf82f1ec590">ex_put_var_param</a>  (int exoid, const char *var_type, int num_vars)</dt>
 <dd><a class="anchor" id="_deprecated000114"></a>Use <a class="el" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param()</a>(exoid, obj_type, num_vars) </dd>
 <dt>Global <a class="el" href="group__ResultsData.html#ga4f86c43fd1fa75b2e994271851b59d7a">ex_put_var_tab</a>  (int exoid, const char *var_type, int num_blk, int num_var, int *var_tab)</dt>
-<dd><a class="anchor" id="_deprecated000115"></a>Use <a class="el" href="group__ResultsData.html#ga332addfae3873a71c38db5465e6bcf0b">ex_put_truth_table()</a>(exoid, obj_type, num_blk, num_var, var_tab) </dd>
+<dd><a class="anchor" id="_deprecated000115"></a>Use <a class="el" href="group__ResultsData.html#gaec82868a515b0efcce6dadb8352a9712">ex_put_truth_table()</a>(exoid, obj_type, num_blk, num_var, var_tab) </dd>
 <dt>Global <a class="el" href="group__Internal.html#gad5ab2c054b5c3ea8ce03299c9a68a06c">VAR_NOD_VAR</a>  </dt>
 <dd><a class="anchor" id="_deprecated000002"></a> </dd>
 </dl>

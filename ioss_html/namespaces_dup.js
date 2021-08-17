@@ -282,6 +282,7 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_Hex32.C}", "namespaceanonymous__namespace_02Ioss__Hex32_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex32_8C_03" ],
     [ "anonymous_namespace{Ioss_Hex64.C}", "namespaceanonymous__namespace_02Ioss__Hex64_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex64_8C_03" ],
     [ "anonymous_namespace{Ioss_Hex8.C}", "namespaceanonymous__namespace_02Ioss__Hex8_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex8_8C_03" ],
+    [ "anonymous_namespace{Ioss_Hex9.C}", "namespaceanonymous__namespace_02Ioss__Hex9_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex9_8C_03" ],
     [ "anonymous_namespace{Ioss_IOFactory.C}", "namespaceanonymous__namespace_02Ioss__IOFactory_8C_03.html", [
       [ "describe__", "namespaceanonymous__namespace_02Ioss__IOFactory_8C_03.html#ace46c9b2c4f92d9d3c52b4c7d37ea840", null ]
     ] ],
