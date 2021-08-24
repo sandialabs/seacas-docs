@@ -1,6 +1,6 @@
 var Iofaodel__FieldSerialization_8h =
 [
-    [ "field_entry_t", "structIofaodel_1_1field__entry__t.html", "structIofaodel_1_1field__entry__t" ],
+    [ "Iofaodel::field_entry_t", "structIofaodel_1_1field__entry__t.html", "structIofaodel_1_1field__entry__t" ],
     [ "FieldFunction", "Iofaodel__FieldSerialization_8h.html#a4f9396ed3b17aac40778772fe58eb071", null ],
     [ "data_size", "Iofaodel__FieldSerialization_8h.html#ae0e94c0a6f2ad74b6f3537f0323e6d77", null ],
     [ "map_fields", "Iofaodel__FieldSerialization_8h.html#a864ef31352947ce8537182ed9570125b", null ],

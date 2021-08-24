@@ -23,7 +23,7 @@ var classSEAMS_1_1Parser =
     [ "error", "classSEAMS_1_1Parser.html#af312700ef8f77492d7631836174167b8", null ],
     [ "error", "classSEAMS_1_1Parser.html#a7838da59ac247f3a38127dc6d4ed362e", null ],
     [ "operator()", "classSEAMS_1_1Parser.html#afeb3f6140dce46fd65a4a215ea6b4a70", null ],
-    [ "operator=", "classSEAMS_1_1Parser.html#aa433929a7584c39c7d20753ebf704e3b", null ],
+    [ "operator=", "classSEAMS_1_1Parser.html#a1780fedccb8eac4ee2c5bbfeb12b2081", null ],
     [ "parse", "classSEAMS_1_1Parser.html#a2e60c223b1bf222ccb96b6b44ecffc42", null ],
     [ "set_debug_level", "classSEAMS_1_1Parser.html#af82c0b35c0b8f06490c286857cdaffaa", null ],
     [ "set_debug_stream", "classSEAMS_1_1Parser.html#a016d4aeb7f677e3daa0e65257a9bc5b5", null ],

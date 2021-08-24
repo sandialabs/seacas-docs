@@ -10,7 +10,7 @@ var classglob_1_1GroupNode =
     ] ],
     [ "GroupNode", "classglob_1_1GroupNode.html#a872bf43749655763c68ac62587a26106", null ],
     [ "Accept", "classglob_1_1GroupNode.html#a56dc91a339fbb6c0b69cdc9558851fec", null ],
-    [ "GetGlob", "classglob_1_1GroupNode.html#ae75dcb51f9dbbe883f227cfd7592838b", null ],
+    [ "GetGlob", "classglob_1_1GroupNode.html#a31e61dfd06d5f4c6da43b0bcde292828", null ],
     [ "GetGroupType", "classglob_1_1GroupNode.html#a13a51d42e687e47505fcdfecb955bfa1", null ],
     [ "glob_", "classglob_1_1GroupNode.html#a0d65d565cb43251def82fc83c0d2e07b", null ],
     [ "group_type_", "classglob_1_1GroupNode.html#a8211043f0e7df6af385d37f787685c0b", null ]

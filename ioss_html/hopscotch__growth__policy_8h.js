@@ -1,8 +1,8 @@
 var hopscotch__growth__policy_8h =
 [
-    [ "power_of_two_growth_policy", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", "classtsl_1_1hh_1_1power__of__two__growth__policy" ],
-    [ "mod_growth_policy", "classtsl_1_1hh_1_1mod__growth__policy.html", "classtsl_1_1hh_1_1mod__growth__policy" ],
-    [ "prime_growth_policy", "classtsl_1_1hh_1_1prime__growth__policy.html", "classtsl_1_1hh_1_1prime__growth__policy" ],
+    [ "tsl::hh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", "classtsl_1_1hh_1_1power__of__two__growth__policy" ],
+    [ "tsl::hh::mod_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1mod__growth__policy.html", "classtsl_1_1hh_1_1mod__growth__policy" ],
+    [ "tsl::hh::prime_growth_policy", "classtsl_1_1hh_1_1prime__growth__policy.html", "classtsl_1_1hh_1_1prime__growth__policy" ],
     [ "tsl_hh_assert", "hopscotch__growth__policy_8h.html#ae97f95de0bb7d3a5968e6c1b05eda4a9", null ],
     [ "TSL_HH_NB_PRIMES", "hopscotch__growth__policy_8h.html#a58fdaf48bafd2dc00dd30cdc818465c2", null ],
     [ "TSL_HH_NO_EXCEPTIONS", "hopscotch__growth__policy_8h.html#accd42f29910c3b50ab91eb8c07bf95b2", null ],

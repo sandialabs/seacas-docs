@@ -1,7 +1,7 @@
 var Ioss__SmartAssert_8C =
 [
-    [ "stream_holder", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder.html", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder" ],
-    [ "assert_initializer", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer.html", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer" ],
+    [ "anonymous_namespace{Ioss_SmartAssert.C}::stream_holder", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder.html", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder" ],
+    [ "anonymous_namespace{Ioss_SmartAssert.C}::assert_initializer", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer.html", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer" ],
     [ "default_debug_handler", "Ioss__SmartAssert_8C.html#aad03eef491fe8c133f72b64b31ef8525", null ],
     [ "default_error_handler", "Ioss__SmartAssert_8C.html#aff6d59c74bb9b8f3cddb9061696da6d3", null ],
     [ "default_fatal_handler", "Ioss__SmartAssert_8C.html#a3bdc4f869ce64dd3832ac53b9397292f", null ],

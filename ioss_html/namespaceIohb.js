@@ -1,7 +1,7 @@
 var namespaceIohb =
 [
-    [ "IOFactory", "classIohb_1_1IOFactory.html", "classIohb_1_1IOFactory" ],
     [ "DatabaseIO", "classIohb_1_1DatabaseIO.html", "classIohb_1_1DatabaseIO" ],
+    [ "IOFactory", "classIohb_1_1IOFactory.html", "classIohb_1_1IOFactory" ],
     [ "Layout", "classIohb_1_1Layout.html", "classIohb_1_1Layout" ],
     [ "Format", "namespaceIohb.html#a5422f461a6993e2b25c0ece9fe17762b", [
       [ "DEFAULT", "namespaceIohb.html#a5422f461a6993e2b25c0ece9fe17762ba5b39c8b553c821e7cddc6da64b5bd2ee", null ],
@@ -11,5 +11,5 @@ var namespaceIohb =
       [ "CSV", "namespaceIohb.html#a5422f461a6993e2b25c0ece9fe17762bacc8d68c551c4a9a6d5313e07de4deafd", null ],
       [ "TS_CSV", "namespaceIohb.html#a5422f461a6993e2b25c0ece9fe17762babb2d9e42ad4a1613d85209caffb706d3", null ]
     ] ],
-    [ "operator<<", "namespaceIohb.html#af76dad065b26124f5cd157e67e6ef4a1", null ]
+    [ "operator<<", "namespaceIohb.html#ac0f8f9c81aee7ba60e6e0d0b6d200d34", null ]
 ];

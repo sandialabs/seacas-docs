@@ -46,12 +46,8 @@ var hierarchy =
     ] ],
     [ "basic_format_arg< Context >", "classbasic__format__arg.html", null ],
     [ "basic_format_args< Context >", "classbasic__format__args.html", null ],
-    [ "basic_format_args< basic_format_context >", "classbasic__format__args.html", null ],
-    [ "basic_format_args< basic_printf_context >", "classbasic__format__args.html", null ],
     [ "basic_format_context< OutputIt, Char >", "classbasic__format__context.html", null ],
-    [ "basic_format_context< Char >", "classbasic__format__context.html", null ],
     [ "basic_format_specs< Char >", "structbasic__format__specs.html", [
-      [ "dynamic_format_specs< char_type >", "structdynamic__format__specs.html", null ],
       [ "dynamic_format_specs< Char >", "structdynamic__format__specs.html", null ]
     ] ],
     [ "basic_format_string< Char, Args >", "classbasic__format__string.html", null ],
@@ -86,11 +82,8 @@ var hierarchy =
       [ "iterator_buffer< T *, T >", "classiterator__buffer_3_01T_01_5_00_01T_01_4.html", null ]
     ] ],
     [ "detail::buffer", null, [
-      [ "basic_memory_buffer< bigit, bigits_capacity >", "classbasic__memory__buffer.html", null ],
-      [ "basic_memory_buffer< wchar_t >", "classbasic__memory__buffer.html", null ],
       [ "basic_memory_buffer< T, SIZE, Allocator >", "classbasic__memory__buffer.html", null ]
     ] ],
-    [ "buffer< Char >", "classbuffer.html", null ],
     [ "buffer< char >", "classbuffer.html", [
       [ "counting_buffer< T >", "classcounting__buffer.html", null ]
     ] ],
@@ -309,7 +302,12 @@ var hierarchy =
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
     [ "std::equal_to", null, [
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const int64_t, int64_t >, KeySelect, ValueSelect, std::hash< int64_t >, std::equal_to< int64_t >, std::allocator< std::pair< const int64_t, int64_t > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< const Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
+      [ "tsl::detail_robin_hash::robin_hash< std::pair< cgsize_t, cgsize_t >, KeySelect, ValueSelect, std::hash< cgsize_t >, std::equal_to< cgsize_t >, std::allocator< std::pair< cgsize_t, cgsize_t > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
+      [ "tsl::detail_robin_hash::robin_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
     ] ],
     [ "detail::error_handler", null, [
@@ -462,7 +460,12 @@ var hierarchy =
       [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
     ] ],
     [ "std::hash", null, [
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const int64_t, int64_t >, KeySelect, ValueSelect, std::hash< int64_t >, std::equal_to< int64_t >, std::allocator< std::pair< const int64_t, int64_t > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< const Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
+      [ "tsl::detail_robin_hash::robin_hash< std::pair< cgsize_t, cgsize_t >, KeySelect, ValueSelect, std::hash< cgsize_t >, std::equal_to< cgsize_t >, std::allocator< std::pair< cgsize_t, cgsize_t > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
+      [ "tsl::detail_robin_hash::robin_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
     ] ],
     [ "tsl::detail_hopscotch_hash::hopscotch_bucket_hash< StoreHash >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket__hash.html", [
@@ -471,7 +474,6 @@ var hierarchy =
     [ "tsl::detail_hopscotch_hash::hopscotch_bucket_hash< true >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket__hash_3_01true_01_4.html", null ],
     [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >::hopscotch_iterator< IsConst >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator.html", null ],
     [ "tsl::hopscotch_map< Key, T, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1hopscotch__map.html", null ],
-    [ "tsl::hopscotch_map< INT, INT >", "classtsl_1_1hopscotch__map.html", null ],
     [ "tsl::hopscotch_set< Key, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1hopscotch__set.html", null ],
     [ "Ioad::Initializer", "classIoad_1_1Initializer.html", null ],
     [ "Iocgns::Initializer", "classIocgns_1_1Initializer.html", null ],
@@ -562,7 +564,6 @@ var hierarchy =
     [ "monostate", "structmonostate.html", null ],
     [ "named_arg_info< Char >", "structnamed__arg__info.html", null ],
     [ "named_arg_value< Char >", "structnamed__arg__value.html", null ],
-    [ "named_arg_value< char_type >", "structnamed__arg__value.html", null ],
     [ "Ioex::NameTopoKeyCompare", "structIoex_1_1NameTopoKeyCompare.html", null ],
     [ "Ioex::NameTopoKeyHash", "structIoex_1_1NameTopoKeyHash.html", null ],
     [ "dynamic_format_arg_store< Context >::need_copy< T >", "structdynamic__format__arg__store_1_1need__copy.html", null ],
@@ -592,12 +593,17 @@ var hierarchy =
     [ "glob::Parser< charT >", "classglob_1_1Parser.html", null ],
     [ "Iovs::CatalystManagerBase::ParseResult", "structIovs_1_1CatalystManagerBase_1_1ParseResult.html", null ],
     [ "Iovs::PhactoriParserInterface", "classIovs_1_1PhactoriParserInterface.html", null ],
-    [ "tsl::hh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", null ],
-    [ "tsl::rh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", [
-      [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
+    [ "tsl::hh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", [
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const int64_t, int64_t >, KeySelect, ValueSelect, std::hash< int64_t >, std::equal_to< int64_t >, std::allocator< std::pair< const int64_t, int64_t > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< const Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
+      [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ]
     ] ],
-    [ "tsl::hh::power_of_two_growth_policy< 2 >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", [
-      [ "tsl::detail_hopscotch_hash::hopscotch_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ]
+    [ "tsl::rh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", null ],
+    [ "tsl::rh::power_of_two_growth_policy< 2 >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", [
+      [ "tsl::detail_robin_hash::robin_hash< std::pair< cgsize_t, cgsize_t >, KeySelect, ValueSelect, std::hash< cgsize_t >, std::equal_to< cgsize_t >, std::allocator< std::pair< cgsize_t, cgsize_t > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
+      [ "tsl::detail_robin_hash::robin_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
+      [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
     ] ],
     [ "precision_checker< ErrorHandler >", "classprecision__checker.html", null ],
     [ "tsl::hh::prime_growth_policy", "classtsl_1_1hh_1_1prime__growth__policy.html", null ],
@@ -671,7 +677,6 @@ var hierarchy =
     [ "Ioss::StorageInitializer", "classIoss_1_1StorageInitializer.html", null ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}::stream_holder", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder.html", null ],
     [ "string_value< Char >", "structstring__value.html", null ],
-    [ "string_value< char_type >", "structstring__value.html", null ],
     [ "Iocgns::StructuredZoneData", "classIocgns_1_1StructuredZoneData.html", null ],
     [ "Ioss::Suffix", "structIoss_1_1Suffix.html", null ],
     [ "text_style", "classtext__style.html", null ],

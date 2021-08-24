@@ -9,7 +9,7 @@ var classdetail_1_1counting__iterator =
     [ "counting_iterator", "classdetail_1_1counting__iterator.html#aebe1bbada86b5e96eaf27a8d42592ffe", null ],
     [ "count", "classdetail_1_1counting__iterator.html#a511a376d0ec9e7dd0a36d229e44ab3ae", null ],
     [ "operator*", "classdetail_1_1counting__iterator.html#a9bcd0ce51c9f1555a045b3899c406d36", null ],
-    [ "operator++", "classdetail_1_1counting__iterator.html#af3aa635e90072290bbda5068332b0f17", null ],
+    [ "operator++", "classdetail_1_1counting__iterator.html#a3f578b48a06f0e43e87045e22e7e38e9", null ],
     [ "operator++", "classdetail_1_1counting__iterator.html#a32ad422c0fde444538727ee8738db8b4", null ],
     [ "operator+", "classdetail_1_1counting__iterator.html#add841de31cc1e15c60bcd25cbca59ed7", null ],
     [ "count_", "classdetail_1_1counting__iterator.html#a3b492a61648b9a625575983e22ce8db0", null ]

@@ -1,6 +1,6 @@
 var Ioss__Region_8h =
 [
-    [ "Region", "classIoss_1_1Region.html", "classIoss_1_1Region" ],
+    [ "Ioss::Region", "classIoss_1_1Region.html", "classIoss_1_1Region" ],
     [ "AliasMap", "Ioss__Region_8h.html#a72432e62d0395c37e39f70bab00de882", null ],
     [ "AssemblyContainer", "Ioss__Region_8h.html#acc8d17be8da25929560490fda8d3bc05", null ],
     [ "BlobContainer", "Ioss__Region_8h.html#a6d2d9c188b378c1f3af02f8de6b5ed79", null ],

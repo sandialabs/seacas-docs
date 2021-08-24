@@ -5,7 +5,7 @@ var namespacetsl_1_1rh =
       [ "MOD_PRIME", "namespacetsl_1_1rh_1_1detail.html#a334c229f6b81ade91c55cd3b0fa64d9c", null ],
       [ "PRIMES", "namespacetsl_1_1rh_1_1detail.html#aea3b0a65ca1f9a4cefc548a90899a5e4", null ]
     ] ],
-    [ "power_of_two_growth_policy", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", "classtsl_1_1rh_1_1power__of__two__growth__policy" ],
     [ "mod_growth_policy", "classtsl_1_1rh_1_1mod__growth__policy.html", "classtsl_1_1rh_1_1mod__growth__policy" ],
+    [ "power_of_two_growth_policy", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", "classtsl_1_1rh_1_1power__of__two__growth__policy" ],
     [ "prime_growth_policy", "classtsl_1_1rh_1_1prime__growth__policy.html", "classtsl_1_1rh_1_1prime__growth__policy" ]
 ];

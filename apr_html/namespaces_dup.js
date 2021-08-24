@@ -8,7 +8,7 @@ var namespaces_dup =
       [ "version_string", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ac1527f21f00b21b4c88dc471caadaa36", null ]
     ] ],
     [ "anonymous_namespace{apr_builtin.cc}", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html", [
-      [ "get_tokenized_strings", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#acf907345185955f17b5cdbf928cde507", null ],
+      [ "get_tokenized_strings", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a3cd7401dde261c7667a5aa5e0bc38df7", null ],
       [ "reset_error", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a97223934f027610caeba5b309178b354", null ],
       [ "rng", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#afba54e4ae2d3a2369ed3086a983916fa", null ],
       [ "rd", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a210b8303fb82ba1cd00e1e45de8ce01b", null ],

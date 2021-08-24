@@ -58,7 +58,7 @@ var classIoex_1_1BaseDatabaseIO =
     [ "open_input_file", "classIoex_1_1BaseDatabaseIO.html#aa4a4f4c3696aebd4e4c5a2dbb22336a6", null ],
     [ "open_state_file", "classIoex_1_1BaseDatabaseIO.html#a73380406f67e7c0f272c302a2bcab936", null ],
     [ "openDatabase__", "classIoex_1_1BaseDatabaseIO.html#a3be2068c6263caf200b207318fa10be4", null ],
-    [ "operator=", "classIoex_1_1BaseDatabaseIO.html#ac9ad32f93166f856da2231d98dc089cd", null ],
+    [ "operator=", "classIoex_1_1BaseDatabaseIO.html#a0a2617c943263b4fd9e74cd220e58751", null ],
     [ "output_other_meta_data", "classIoex_1_1BaseDatabaseIO.html#a6f5980fe8d93927d450bef6091a8fa18", null ],
     [ "output_results_names", "classIoex_1_1BaseDatabaseIO.html#ac90d257ba114b11c74037ebfe6eb101d", null ],
     [ "put_field_internal", "classIoex_1_1BaseDatabaseIO.html#a2f94d002489183f47b78d74ec8a6e11c", null ],

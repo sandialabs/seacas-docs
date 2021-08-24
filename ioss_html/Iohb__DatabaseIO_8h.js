@@ -1,7 +1,7 @@
 var Iohb__DatabaseIO_8h =
 [
-    [ "IOFactory", "classIohb_1_1IOFactory.html", "classIohb_1_1IOFactory" ],
-    [ "DatabaseIO", "classIohb_1_1DatabaseIO.html", "classIohb_1_1DatabaseIO" ],
+    [ "Iohb::IOFactory", "classIohb_1_1IOFactory.html", "classIohb_1_1IOFactory" ],
+    [ "Iohb::DatabaseIO", "classIohb_1_1DatabaseIO.html", "classIohb_1_1DatabaseIO" ],
     [ "Format", "Iohb__DatabaseIO_8h.html#a5422f461a6993e2b25c0ece9fe17762b", [
       [ "DEFAULT", "Iohb__DatabaseIO_8h.html#a5422f461a6993e2b25c0ece9fe17762ba5b39c8b553c821e7cddc6da64b5bd2ee", null ],
       [ "SPYHIS", "Iohb__DatabaseIO_8h.html#a5422f461a6993e2b25c0ece9fe17762bac3ec1c5fcab24d0874fa37866c67377f", null ],

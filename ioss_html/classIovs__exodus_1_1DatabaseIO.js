@@ -31,7 +31,7 @@ var classIovs__exodus_1_1DatabaseIO =
     [ "handle_element_ids", "classIovs__exodus_1_1DatabaseIO.html#aaff38b0e370bc82b9fce99b826bd8407", null ],
     [ "handle_node_ids", "classIovs__exodus_1_1DatabaseIO.html#aef636222f39dd765df020da390a88159", null ],
     [ "int_byte_size_db", "classIovs__exodus_1_1DatabaseIO.html#a8beb81f6025324ec40654bdcaae502bb", null ],
-    [ "operator=", "classIovs__exodus_1_1DatabaseIO.html#ad7f9f7cb99a0cacf20cd08dfd47294a1", null ],
+    [ "operator=", "classIovs__exodus_1_1DatabaseIO.html#a383013d6323db44119145761a88e39bd", null ],
     [ "put_field_internal", "classIovs__exodus_1_1DatabaseIO.html#a4068621fb61b847cf2c86d1ded65923b", null ],
     [ "put_field_internal", "classIovs__exodus_1_1DatabaseIO.html#aa53971f55f31ffa0c9280ce8151f2fd0", null ],
     [ "put_field_internal", "classIovs__exodus_1_1DatabaseIO.html#ad30db6aebb7761c2e73678ed118ac060", null ],

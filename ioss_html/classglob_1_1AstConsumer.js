@@ -9,11 +9,11 @@ var classglob_1_1AstConsumer =
     [ "ExecNegativeSet", "classglob_1_1AstConsumer.html#aa91aa4696b4b702ebd6ba40a53f7ed08", null ],
     [ "ExecPositiveSet", "classglob_1_1AstConsumer.html#ac9da12243be404400b29780fd8aac7ea", null ],
     [ "ExecStar", "classglob_1_1AstConsumer.html#a0984122b3642084a7739ec86155d4a4b", null ],
-    [ "ExecUnion", "classglob_1_1AstConsumer.html#a572541b12c0fd80545aeff33d5616956", null ],
+    [ "ExecUnion", "classglob_1_1AstConsumer.html#a173211dc3650a3b63c145f4887e2ae06", null ],
     [ "GenAutomata", "classglob_1_1AstConsumer.html#af52c25a1a8f21d1ea97f45745958a350", null ],
     [ "NewState", "classglob_1_1AstConsumer.html#afcbcbae2394da5f4abba889c257f6cbc", null ],
-    [ "ProcessSetItem", "classglob_1_1AstConsumer.html#acba41f846b57af77a34907b8b315d625", null ],
-    [ "ProcessSetItems", "classglob_1_1AstConsumer.html#a87711a480080dd2c51cf4fef09cda309", null ],
+    [ "ProcessSetItem", "classglob_1_1AstConsumer.html#a934d0f1506ea654521e21e16cca5add0", null ],
+    [ "ProcessSetItems", "classglob_1_1AstConsumer.html#a3a5cc5298ad198f276321b06c83841ac", null ],
     [ "current_state_", "classglob_1_1AstConsumer.html#a9c0448dfad1bb60412088cd6ed3f661e", null ],
     [ "preview_state_", "classglob_1_1AstConsumer.html#a82443138c38ad66b4b462a8b20758d9a", null ]
 ];

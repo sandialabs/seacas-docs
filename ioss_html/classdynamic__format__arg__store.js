@@ -4,7 +4,7 @@ var classdynamic__format__arg__store =
     [ "char_type", "classdynamic__format__arg__store.html#a2997fb5c2d4ac7205672e7afe550f9c1", null ],
     [ "stored_type", "classdynamic__format__arg__store.html#a5f96b19d349860ab76908fbce9680d71", null ],
     [ "clear", "classdynamic__format__arg__store.html#a94763fc905f02222d575f7c03161c212", null ],
-    [ "data", "classdynamic__format__arg__store.html#a00e8f5dd051bfb84ac803cb6c091a631", null ],
+    [ "data", "classdynamic__format__arg__store.html#a89c857698fe40e877e0c3a3c1bdb1921", null ],
     [ "emplace_arg", "classdynamic__format__arg__store.html#a013581c49dc10f6184fcc7de015957fc", null ],
     [ "emplace_arg", "classdynamic__format__arg__store.html#a3e3f7af053771a3dff451014a5024c79", null ],
     [ "get_types", "classdynamic__format__arg__store.html#a40956aef27ef510f1a68f45f3e4e0710", null ],

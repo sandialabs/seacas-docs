@@ -1,8 +1,8 @@
 var robin__growth__policy_8h =
 [
-    [ "power_of_two_growth_policy", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", "classtsl_1_1rh_1_1power__of__two__growth__policy" ],
-    [ "mod_growth_policy", "classtsl_1_1rh_1_1mod__growth__policy.html", "classtsl_1_1rh_1_1mod__growth__policy" ],
-    [ "prime_growth_policy", "classtsl_1_1rh_1_1prime__growth__policy.html", "classtsl_1_1rh_1_1prime__growth__policy" ],
+    [ "tsl::rh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", "classtsl_1_1rh_1_1power__of__two__growth__policy" ],
+    [ "tsl::rh::mod_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1mod__growth__policy.html", "classtsl_1_1rh_1_1mod__growth__policy" ],
+    [ "tsl::rh::prime_growth_policy", "classtsl_1_1rh_1_1prime__growth__policy.html", "classtsl_1_1rh_1_1prime__growth__policy" ],
     [ "tsl_rh_assert", "robin__growth__policy_8h.html#abf43b6f27a3bf5120e9d61e5f5d0d0ee", null ],
     [ "TSL_RH_LIKELY", "robin__growth__policy_8h.html#a15c2bc0fd0ed52be3b0bc91b814b69cb", null ],
     [ "TSL_RH_NB_PRIMES", "robin__growth__policy_8h.html#a08451e00a4de2f773fe0a762e39db53d", null ],

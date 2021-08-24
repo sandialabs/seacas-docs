@@ -3,7 +3,7 @@ var classIocgns_1_1DecompositionDataBase =
     [ "ZoneSharedMap", "classIocgns_1_1DecompositionDataBase.html#ad3a18b52235aab83c62c312dd7afc8ec", null ],
     [ "DecompositionDataBase", "classIocgns_1_1DecompositionDataBase.html#a1edbb3582cad87186b69d45c45bfbf29", null ],
     [ "~DecompositionDataBase", "classIocgns_1_1DecompositionDataBase.html#a7079f90bc44e6bc6099cb81d8122d6cf", null ],
-    [ "centroids", "classIocgns_1_1DecompositionDataBase.html#acc9ce2dd3d136de710e0a6d635f69aca", null ],
+    [ "centroids", "classIocgns_1_1DecompositionDataBase.html#aae65acd5efd6b11e351a39de643a80af", null ],
     [ "communicate_element_data", "classIocgns_1_1DecompositionDataBase.html#af7e9316af5bb3184e318c592be734b00", null ],
     [ "communicate_node_data", "classIocgns_1_1DecompositionDataBase.html#aab0e3fdf4561f9561d18ecfb6a6cc97c", null ],
     [ "decomp_elem_count", "classIocgns_1_1DecompositionDataBase.html#a3dc1cf7984fab0e70bb2c72a0e531a57", null ],

@@ -34,7 +34,7 @@ var classIopg_1_1DatabaseIO =
     [ "get_sidesets", "classIopg_1_1DatabaseIO.html#a3e5db0b0f27c271faa50c1f3250dc30c", null ],
     [ "int_byte_size_db", "classIopg_1_1DatabaseIO.html#a14cd714e375b4b0e8d2f6831b1fc1de3", null ],
     [ "maximum_symbol_length", "classIopg_1_1DatabaseIO.html#ae959d972861738d51a8f1d0995bec414", null ],
-    [ "operator=", "classIopg_1_1DatabaseIO.html#a9c34f2ccfa5dcffa900daf95b6e28209", null ],
+    [ "operator=", "classIopg_1_1DatabaseIO.html#a72f2fa1cd2c694a002d2ccca8bab122f", null ],
     [ "put_field_internal", "classIopg_1_1DatabaseIO.html#a62ec410344fe72086c38e73cb41fb679", null ],
     [ "put_field_internal", "classIopg_1_1DatabaseIO.html#a974a183df9e833a02e10f8e5d7e85adf", null ],
     [ "put_field_internal", "classIopg_1_1DatabaseIO.html#aa3dabf58cb5539ebbe601952b1586b8b", null ],

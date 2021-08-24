@@ -1,9 +1,9 @@
 var Iofaodel__Utils_8h =
 [
-    [ "value_entry_t", "structIofaodel_1_1value__entry__t.html", "structIofaodel_1_1value__entry__t" ],
-    [ "meta_entry_t", "structIofaodel_1_1meta__entry__t.html", "structIofaodel_1_1meta__entry__t" ],
-    [ "state_entry_t", "structIofaodel_1_1state__entry__t.html", "structIofaodel_1_1state__entry__t" ],
-    [ "sideblock_entry_t", "structIofaodel_1_1sideblock__entry__t.html", "structIofaodel_1_1sideblock__entry__t" ],
+    [ "Iofaodel::value_entry_t", "structIofaodel_1_1value__entry__t.html", "structIofaodel_1_1value__entry__t" ],
+    [ "Iofaodel::meta_entry_t", "structIofaodel_1_1meta__entry__t.html", "structIofaodel_1_1meta__entry__t" ],
+    [ "Iofaodel::state_entry_t", "structIofaodel_1_1state__entry__t.html", "structIofaodel_1_1state__entry__t" ],
+    [ "Iofaodel::sideblock_entry_t", "structIofaodel_1_1sideblock__entry__t.html", "structIofaodel_1_1sideblock__entry__t" ],
     [ "DataPair", "Iofaodel__Utils_8h.html#a74a2c091cef9af6ceeec3a2067172ff3", null ],
     [ "entity_search_key", "Iofaodel__Utils_8h.html#a3b014e594319e44f23c94677aa3e4a1a", null ],
     [ "entity_search_key", "Iofaodel__Utils_8h.html#a8516874b77fda66bbddd15405a1b7843", null ],

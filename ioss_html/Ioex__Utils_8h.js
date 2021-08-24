@@ -1,7 +1,7 @@
 var Ioex__Utils_8h =
 [
-    [ "NameTopoKeyCompare", "structIoex_1_1NameTopoKeyCompare.html", "structIoex_1_1NameTopoKeyCompare" ],
-    [ "NameTopoKeyHash", "structIoex_1_1NameTopoKeyHash.html", "structIoex_1_1NameTopoKeyHash" ],
+    [ "Ioex::NameTopoKeyCompare", "structIoex_1_1NameTopoKeyCompare.html", "structIoex_1_1NameTopoKeyCompare" ],
+    [ "Ioex::NameTopoKeyHash", "structIoex_1_1NameTopoKeyHash.html", "structIoex_1_1NameTopoKeyHash" ],
     [ "EXU_USE_HOPSCOTCH", "Ioex__Utils_8h.html#a8ce267dc1abb8699b36a97425844ece4", null ],
     [ "CoordinateFrameContainer", "Ioex__Utils_8h.html#abf77dade63ce8a4c5cc7af4edea743e9", null ],
     [ "NameTopoKey", "Ioex__Utils_8h.html#a5c59b8a25307b4d600f6e0e487e3922e", null ],

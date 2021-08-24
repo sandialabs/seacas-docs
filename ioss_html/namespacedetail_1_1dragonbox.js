@@ -1,9 +1,9 @@
 var namespacedetail_1_1dragonbox =
 [
-    [ "divtest_table_entry", "structdetail_1_1dragonbox_1_1divtest__table__entry.html", "structdetail_1_1dragonbox_1_1divtest__table__entry" ],
     [ "cache_accessor", "structdetail_1_1dragonbox_1_1cache__accessor.html", null ],
-    [ "cache_accessor< float >", "structdetail_1_1dragonbox_1_1cache__accessor_3_01float_01_4.html", "structdetail_1_1dragonbox_1_1cache__accessor_3_01float_01_4" ],
     [ "cache_accessor< double >", "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html", "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4" ],
+    [ "cache_accessor< float >", "structdetail_1_1dragonbox_1_1cache__accessor_3_01float_01_4.html", "structdetail_1_1dragonbox_1_1cache__accessor_3_01float_01_4" ],
+    [ "divtest_table_entry", "structdetail_1_1dragonbox_1_1divtest__table__entry.html", "structdetail_1_1dragonbox_1_1divtest__table__entry" ],
     [ "check_divisibility_and_divide_by_pow5", "namespacedetail_1_1dragonbox.html#a56662db442d89210d940e781ffcfcbd8", null ],
     [ "divide_by_10_to_kappa_plus_1", "namespacedetail_1_1dragonbox.html#a502a2e575ece0ceee230a0b0d54ee2b3", null ],
     [ "divide_by_10_to_kappa_plus_1", "namespacedetail_1_1dragonbox.html#a39bbe321b3f84632f470ba10ed90bc61", null ],
@@ -19,9 +19,9 @@ var namespacedetail_1_1dragonbox =
     [ "is_left_endpoint_integer_shorter_interval", "namespacedetail_1_1dragonbox.html#ad4e7b650029fde90c9be7565aeee34c7", null ],
     [ "remove_trailing_zeros", "namespacedetail_1_1dragonbox.html#a83117db8135a641068152ca16b84f2c8", null ],
     [ "remove_trailing_zeros", "namespacedetail_1_1dragonbox.html#a9fc2fb80666f3b16561c5e76c6339d5d", null ],
-    [ "shorter_interval_case", "namespacedetail_1_1dragonbox.html#a768ce4fd2bf7adc5bebeaeae5d3ccf7c", null ],
+    [ "shorter_interval_case", "namespacedetail_1_1dragonbox.html#a0c8c273406af60e3198a0d96d5285f9a", null ],
     [ "small_division_by_pow10", "namespacedetail_1_1dragonbox.html#a7410f369dbec43e4a12b044918aa94c3", null ],
-    [ "to_decimal", "namespacedetail_1_1dragonbox.html#ad038e1eada925e579164b1127fd8eed6", null ],
+    [ "to_decimal", "namespacedetail_1_1dragonbox.html#a10a8a561307cc2baf2062661bbb15249", null ],
     [ "umul128", "namespacedetail_1_1dragonbox.html#acc3e04e4c932b46aa1dae44d6f4426ae", null ],
     [ "umul128_upper64", "namespacedetail_1_1dragonbox.html#a4952ce15e336a399578c2071d45f2099", null ],
     [ "umul192_middle64", "namespacedetail_1_1dragonbox.html#afde421c1c822f4206691876b92d60bc1", null ],

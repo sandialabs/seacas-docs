@@ -13,7 +13,7 @@ var files_dup =
     [ "apr_scanner.h", "apr__scanner_8h.html", "apr__scanner_8h" ],
     [ "apr_stats.cc", "apr__stats_8cc.html", null ],
     [ "apr_stats.h", "apr__stats_8h.html", [
-      [ "Stats", "classSEAMS_1_1Stats.html", "classSEAMS_1_1Stats" ]
+      [ "SEAMS::Stats", "classSEAMS_1_1Stats.html", "classSEAMS_1_1Stats" ]
     ] ],
     [ "apr_test.cc", "apr__test_8cc.html", "apr__test_8cc" ],
     [ "apr_tokenize.cc", "apr__tokenize_8cc.html", null ],

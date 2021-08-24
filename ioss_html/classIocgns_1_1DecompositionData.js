@@ -4,7 +4,7 @@ var classIocgns_1_1DecompositionData =
     [ "~DecompositionData", "classIocgns_1_1DecompositionData.html#afef0f121df17aa44a729916b2dee57ae", null ],
     [ "build_global_to_local_elem_map", "classIocgns_1_1DecompositionData.html#acfbc0f358b68b31b5246077de3e0c97a", null ],
     [ "calculate_element_centroids", "classIocgns_1_1DecompositionData.html#adf85015cfc4eec44f0e9783950c6ca2b", null ],
-    [ "centroids", "classIocgns_1_1DecompositionData.html#a8294404f792313560406aec49cb1f02f", null ],
+    [ "centroids", "classIocgns_1_1DecompositionData.html#a2e01541b6ddecaf5309a9bc95f28c301", null ],
     [ "communicate_block_data", "classIocgns_1_1DecompositionData.html#ac490fba872c27fe24e929ce92309c401", null ],
     [ "communicate_element_data", "classIocgns_1_1DecompositionData.html#a8c45bf944e59985cdd10a23c2413c18e", null ],
     [ "communicate_node_data", "classIocgns_1_1DecompositionData.html#a6a9c4a34ee12fd26d7965f29b27b26e0", null ],

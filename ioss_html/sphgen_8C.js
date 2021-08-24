@@ -1,6 +1,6 @@
 var sphgen_8C =
 [
-    [ "Globals", "structanonymous__namespace_02sphgen_8C_03_1_1Globals.html", "structanonymous__namespace_02sphgen_8C_03_1_1Globals" ],
+    [ "anonymous_namespace{sphgen.C}::Globals", "structanonymous__namespace_02sphgen_8C_03_1_1Globals.html", "structanonymous__namespace_02sphgen_8C_03_1_1Globals" ],
     [ "DO_OUTPUT", "sphgen_8C.html#a6839c46cb9dbbfd7dd87fec222baece1", null ],
     [ "comp_grad12x", "sphgen_8C.html#a0f225ddc9285bee51506e7373399dda5", null ],
     [ "create_sph", "sphgen_8C.html#a635fc71e7fae724eae5e8a0a87b19e98", null ],

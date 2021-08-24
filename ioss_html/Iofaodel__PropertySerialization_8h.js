@@ -1,6 +1,6 @@
 var Iofaodel__PropertySerialization_8h =
 [
-    [ "property_entry_t", "structIofaodel_1_1property__entry__t.html", "structIofaodel_1_1property__entry__t" ],
+    [ "Iofaodel::property_entry_t", "structIofaodel_1_1property__entry__t.html", "structIofaodel_1_1property__entry__t" ],
     [ "PropertyFunction", "Iofaodel__PropertySerialization_8h.html#a9d121ea4603cf07b6825aad55a13b97e", null ],
     [ "data_size", "Iofaodel__PropertySerialization_8h.html#acb01f3034676642ac4936c61d77a22c8", null ],
     [ "map_properties", "Iofaodel__PropertySerialization_8h.html#a33f4b0cb5f1e429005f5ed1e440d8f04", null ],
