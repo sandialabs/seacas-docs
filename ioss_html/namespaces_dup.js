@@ -35,7 +35,7 @@ var namespaces_dup =
       [ "info_sidesets", "namespaceanonymous__namespace_02io__info_8C_03.html#a93004d5461f1dd0ab30b5d52ed0a352c", null ],
       [ "info_structuredblock", "namespaceanonymous__namespace_02io__info_8C_03.html#a332489d9fe862910639e524eb6f5e138", null ],
       [ "name", "namespaceanonymous__namespace_02io__info_8C_03.html#af604a0af17d437ca8a8f1d1c77ee94c1", null ],
-      [ "print_groups", "namespaceanonymous__namespace_02io__info_8C_03.html#afd4ca28915040e201ac803900f6dfd32", null ],
+      [ "print_groups", "namespaceanonymous__namespace_02io__info_8C_03.html#a9e1edabb5a775515503e7cd0c78daf1b", null ],
       [ "set_properties", "namespaceanonymous__namespace_02io__info_8C_03.html#aeafeb24f8ac0b3f2ac4ad6e3bc2f01d0", null ]
     ] ],
     [ "anonymous_namespace{io_info_main.C}", "namespaceanonymous__namespace_02io__info__main_8C_03.html", [
@@ -164,8 +164,7 @@ var namespaces_dup =
       [ "compare_qa_info", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#aaa8bd9d3339ff5cd05bce8997470a2d9", null ],
       [ "compare_sets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a2752fe888aae474b8d3dd365545d1f88", null ],
       [ "compare_sidesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a83236593ca23f20fc36ed68c378d7a93", null ],
-      [ "compare_structuredblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a6b13664b634bb9cb1ace55b3d4232708", null ],
-      [ "type_string", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#ace15b7b35d1960d896320483bdea9ef2", null ]
+      [ "compare_structuredblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a6b13664b634bb9cb1ace55b3d4232708", null ]
     ] ],
     [ "anonymous_namespace{Ioss_ConcreteVariableType.C}", "namespaceanonymous__namespace_02Ioss__ConcreteVariableType_8C_03.html", [
       [ "asym_tensor_01", "namespaceanonymous__namespace_02Ioss__ConcreteVariableType_8C_03.html#a66c7c9996e75d7839d00f424a9deecf6", null ],
@@ -270,8 +269,7 @@ var namespaces_dup =
     ] ],
     [ "anonymous_namespace{Ioss_Field.C}", "namespaceanonymous__namespace_02Ioss__Field_8C_03.html", [
       [ "error_message", "namespaceanonymous__namespace_02Ioss__Field_8C_03.html#a2727026122707bf63a8d0df10075625a", null ],
-      [ "internal_get_size", "namespaceanonymous__namespace_02Ioss__Field_8C_03.html#a6f17c234b0f7c17fe27d6910811e43de", null ],
-      [ "type_string", "namespaceanonymous__namespace_02Ioss__Field_8C_03.html#a54a9e06fd87ef280d7cd5a33d986222e", null ]
+      [ "internal_get_size", "namespaceanonymous__namespace_02Ioss__Field_8C_03.html#a6f17c234b0f7c17fe27d6910811e43de", null ]
     ] ],
     [ "anonymous_namespace{Ioss_FileInfo.C}", "namespaceanonymous__namespace_02Ioss__FileInfo_8C_03.html", [
       [ "do_stat", "namespaceanonymous__namespace_02Ioss__FileInfo_8C_03.html#aef181f38bf657e6f71b1841efeaf7611", null ],
@@ -467,6 +465,7 @@ var namespaces_dup =
     [ "glob", "namespaceglob.html", "namespaceglob" ],
     [ "Info", "namespaceInfo.html", "namespaceInfo" ],
     [ "Ioad", "namespaceIoad.html", "namespaceIoad" ],
+    [ "Iocatalyst", "namespaceIocatalyst.html", "namespaceIocatalyst" ],
     [ "Iocgns", "namespaceIocgns.html", "namespaceIocgns" ],
     [ "Ioex", "namespaceIoex.html", "namespaceIoex" ],
     [ "Iofaodel", "namespaceIofaodel.html", "namespaceIofaodel" ],

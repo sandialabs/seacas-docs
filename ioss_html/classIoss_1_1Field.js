@@ -60,6 +60,8 @@ var classIoss_1_1Field =
     [ "transform", "classIoss_1_1Field.html#acd40e32af496e75b0c416737ed0a97ec", null ],
     [ "transformed_count", "classIoss_1_1Field.html#aa7cd5bf2e559edb98d7a1b888facd140", null ],
     [ "transformed_storage", "classIoss_1_1Field.html#a0790179fab84e13b211bab8470090d93", null ],
+    [ "type_string", "classIoss_1_1Field.html#a85a8e94d2199c67c5fc58cbbc60f0257", null ],
+    [ "type_string", "classIoss_1_1Field.html#aa49ee256c8622e7c6485df9e7f60f26d", null ],
     [ "verify", "classIoss_1_1Field.html#a5bf843c0a14301cbb7b1507a2ee0ccc6", null ],
     [ "index_", "classIoss_1_1Field.html#a0a8248e682419d6722e3f1441e529ee9", null ],
     [ "name_", "classIoss_1_1Field.html#ad3d252e44191c3b8eab9581ca00df287", null ],

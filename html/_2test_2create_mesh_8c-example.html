@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -585,9 +585,36 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">    <span class="comment">/* Extract the local x and y coordinates */</span></div>
 <div class="line">    <span class="keywordflow">if</span> (num_domains &gt; 1) {</div>
 <div class="line">      <span class="keywordflow">if</span> (loc_num_nodes &gt; loc_node_size) {</div>
-<div class="line">        loc_xcoords   = realloc(loc_xcoords, loc_num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
-<div class="line">        loc_ycoords   = realloc(loc_ycoords, loc_num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
-<div class="line">        loc_zcoords   = realloc(loc_zcoords, loc_num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
+<div class="line">        realtyp *tmpx = realloc(loc_xcoords, loc_num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
+<div class="line">        <span class="keywordflow">if</span> (tmpx == NULL) {</div>
+<div class="line">          free(loc_xcoords);</div>
+<div class="line">          fprintf(stderr, <span class="stringliteral">&quot;error realloc&#39;ing loc_xcoords\n&quot;</span>);</div>
+<div class="line">          <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
+<div class="line">          exit(-1);</div>
+<div class="line">        }</div>
+<div class="line">        {</div>
+<div class="line">          loc_xcoords = tmpx;</div>
+<div class="line">        }</div>
+<div class="line">        realtyp *tmpy = realloc(loc_ycoords, loc_num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
+<div class="line">        <span class="keywordflow">if</span> (tmpy == NULL) {</div>
+<div class="line">          free(loc_ycoords);</div>
+<div class="line">          fprintf(stderr, <span class="stringliteral">&quot;error realloc&#39;ing loc_ycoords\n&quot;</span>);</div>
+<div class="line">          <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
+<div class="line">          exit(-1);</div>
+<div class="line">        }</div>
+<div class="line">        {</div>
+<div class="line">          loc_ycoords = tmpy;</div>
+<div class="line">        }</div>
+<div class="line">        realtyp *tmpz = realloc(loc_zcoords, loc_num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
+<div class="line">        <span class="keywordflow">if</span> (tmpz == NULL) {</div>
+<div class="line">          free(loc_zcoords);</div>
+<div class="line">          fprintf(stderr, <span class="stringliteral">&quot;error realloc&#39;ing loc_zcoords\n&quot;</span>);</div>
+<div class="line">          <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
+<div class="line">          exit(-1);</div>
+<div class="line">        }</div>
+<div class="line">        {</div>
+<div class="line">          loc_zcoords = tmpz;</div>
+<div class="line">        }</div>
 <div class="line">        loc_node_size = loc_num_nodes;</div>
 <div class="line">      }</div>
 <div class="line"> </div>
@@ -1002,7 +1029,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="ttc" id="aexodusII_8h_html_a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286"><div class="ttname"><a href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a></div><div class="ttdeci">@ EX_ELEM_BLOCK</div><div class="ttdef"><b>Definition:</b> exodusII.h:269</div></div>
 <div class="ttc" id="aexodusII_8h_html_a8e04765c48d2d3c6806dc89d6c3db1feac85b3327ce99395f3faf0d542b8b3a0a"><div class="ttname"><a href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feac85b3327ce99395f3faf0d542b8b3a0a">EX_ABORT</a></div><div class="ttdeci">@ EX_ABORT</div><div class="ttdef"><b>Definition:</b> exodusII.h:294</div></div>
 <div class="ttc" id="aexodusII_8h_html_a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9"><div class="ttname"><a href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9">EX_VERBOSE</a></div><div class="ttdeci">@ EX_VERBOSE</div><div class="ttdef"><b>Definition:</b> exodusII.h:292</div></div>
-<div class="ttc" id="aexodusII_8h_html_af88999a1f2592617a56db303e090d2d7"><div class="ttname"><a href="exodusII_8h.html#af88999a1f2592617a56db303e090d2d7">ex_copy_string</a></div><div class="ttdeci">char * ex_copy_string(char *dest, char const *source, size_t elements)</div><div class="ttdef"><b>Definition:</b> ex_utils.c:2271</div></div>
+<div class="ttc" id="aexodusII_8h_html_af88999a1f2592617a56db303e090d2d7"><div class="ttname"><a href="exodusII_8h.html#af88999a1f2592617a56db303e090d2d7">ex_copy_string</a></div><div class="ttdeci">char * ex_copy_string(char *dest, char const *source, size_t elements)</div><div class="ttdef"><b>Definition:</b> ex_utils.c:2268</div></div>
 <div class="ttc" id="agroup__FileOptions_html_gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a56598a35ce7443245ddcd3370e7527b2"><div class="ttname"><a href="group__FileOptions.html#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a56598a35ce7443245ddcd3370e7527b2">EX_OPT_COMPRESSION_LEVEL</a></div><div class="ttdeci">@ EX_OPT_COMPRESSION_LEVEL</div><div class="ttdef"><b>Definition:</b> exodusII.h:245</div></div>
 <div class="ttc" id="agroup__FileOptions_html_gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0ad067190db4fac3cbc8f5c4f99a1c322a"><div class="ttname"><a href="group__FileOptions.html#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0ad067190db4fac3cbc8f5c4f99a1c322a">EX_OPT_COMPRESSION_SHUFFLE</a></div><div class="ttdeci">@ EX_OPT_COMPRESSION_SHUFFLE</div><div class="ttdef"><b>Definition:</b> exodusII.h:246</div></div>
 <div class="ttc" id="agroup__FileVars_html_ga01a03e58adddc706f5a34030746d604a"><div class="ttname"><a href="group__FileVars.html#ga01a03e58adddc706f5a34030746d604a">EX_IDS_INT64_DB</a></div><div class="ttdeci">#define EX_IDS_INT64_DB</div><div class="ttdef"><b>Definition:</b> exodusII.h:117</div></div>

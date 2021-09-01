@@ -30,6 +30,5 @@ var Ioss__Compare_8C =
     [ "compare_qa_info", "Ioss__Compare_8C.html#aaa8bd9d3339ff5cd05bce8997470a2d9", null ],
     [ "compare_sets", "Ioss__Compare_8C.html#a2752fe888aae474b8d3dd365545d1f88", null ],
     [ "compare_sidesets", "Ioss__Compare_8C.html#a83236593ca23f20fc36ed68c378d7a93", null ],
-    [ "compare_structuredblocks", "Ioss__Compare_8C.html#a6b13664b634bb9cb1ace55b3d4232708", null ],
-    [ "type_string", "Ioss__Compare_8C.html#ace15b7b35d1960d896320483bdea9ef2", null ]
+    [ "compare_structuredblocks", "Ioss__Compare_8C.html#a6b13664b634bb9cb1ace55b3d4232708", null ]
 ];

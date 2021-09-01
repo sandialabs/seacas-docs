@@ -202,6 +202,7 @@ var hierarchy =
     [ "Iovs::Utils::DatabaseInfo", "structIovs_1_1Utils_1_1DatabaseInfo.html", null ],
     [ "Ioss::DatabaseIO", "classIoss_1_1DatabaseIO.html", [
       [ "Ioad::DatabaseIO", "classIoad_1_1DatabaseIO.html", null ],
+      [ "Iocatalyst::DatabaseIO", "classIocatalyst_1_1DatabaseIO.html", null ],
       [ "Iocgns::DatabaseIO", "classIocgns_1_1DatabaseIO.html", null ],
       [ "Iocgns::ParallelDatabaseIO", "classIocgns_1_1ParallelDatabaseIO.html", null ],
       [ "Ioex::BaseDatabaseIO", "classIoex_1_1BaseDatabaseIO.html", [
@@ -375,6 +376,7 @@ var hierarchy =
     [ "Iofaodel::field_entry_t", "structIofaodel_1_1field__entry__t.html", null ],
     [ "Ioad::DatabaseIO::FieldInfoType", "structIoad_1_1DatabaseIO_1_1FieldInfoType.html", null ],
     [ "Ioss::FieldManager", "classIoss_1_1FieldManager.html", null ],
+    [ "Iocatalyst::detail::FieldNonExistent", "classIocatalyst_1_1detail_1_1FieldNonExistent.html", null ],
     [ "Ioss::FileInfo", "classIoss_1_1FileInfo.html", null ],
     [ "fill_t< Char >", "structfill__t.html", null ],
     [ "fixed_buffer_traits", "classfixed__buffer__traits.html", null ],
@@ -475,7 +477,9 @@ var hierarchy =
     [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >::hopscotch_iterator< IsConst >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator.html", null ],
     [ "tsl::hopscotch_map< Key, T, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1hopscotch__map.html", null ],
     [ "tsl::hopscotch_set< Key, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1hopscotch__set.html", null ],
+    [ "Iocatalyst::DatabaseIO::ImplementationT", "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html", null ],
     [ "Ioad::Initializer", "classIoad_1_1Initializer.html", null ],
+    [ "Iocatalyst::Initializer", "classIocatalyst_1_1Initializer.html", null ],
     [ "Iocgns::Initializer", "classIocgns_1_1Initializer.html", null ],
     [ "Ioss::Init::Initializer", "classIoss_1_1Init_1_1Initializer.html", null ],
     [ "Ioss::Initializer", "classIoss_1_1Initializer.html", null ],
@@ -501,6 +505,7 @@ var hierarchy =
     ] ],
     [ "Ioss::IOFactory", "classIoss_1_1IOFactory.html", [
       [ "Ioad::IOFactory", "classIoad_1_1IOFactory.html", null ],
+      [ "Iocatalyst::IOFactory", "classIocatalyst_1_1IOFactory.html", null ],
       [ "Iocgns::IOFactory", "classIocgns_1_1IOFactory.html", null ],
       [ "Ioex::IOFactory", "classIoex_1_1IOFactory.html", null ],
       [ "Iofaodel::IOFactory", "classIofaodel_1_1IOFactory.html", null ],

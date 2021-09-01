@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -122,65 +122,54 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv)</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">int</span>  exoid, rootid, num_dim, num_nodes, num_elem, num_elem_blk;</div>
-<div class="line">  <span class="keywordtype">int</span>  num_elem_in_block[10], num_nodes_per_elem[10];</div>
-<div class="line">  <span class="keywordtype">int</span>  num_face_in_sset[10], num_nodes_in_nset[10];</div>
-<div class="line">  <span class="keywordtype">int</span>  num_node_sets, num_side_sets, error;</div>
-<div class="line">  <span class="keywordtype">int</span>  i, j, k, m, *elem_map, *connect;</div>
-<div class="line">  <span class="keywordtype">int</span>  node_list[100], elem_list[100], side_list[100];</div>
-<div class="line">  <span class="keywordtype">int</span>  ebids[10], ssids[10], nsids[10];</div>
-<div class="line">  <span class="keywordtype">int</span>  num_qa_rec, num_info;</div>
-<div class="line">  <span class="keywordtype">int</span>  num_glo_vars, num_nod_vars, num_ele_vars, num_sset_vars, num_nset_vars;</div>
-<div class="line">  <span class="keywordtype">int</span> *truth_tab;</div>
-<div class="line">  <span class="keywordtype">int</span>  whole_time_step, num_time_steps;</div>
-<div class="line">  <span class="keywordtype">int</span>  CPU_word_size, IO_word_size;</div>
-<div class="line">  <span class="keywordtype">int</span>  prop_array[2];</div>
+<div class="line">  <span class="keywordtype">int</span> num_elem_in_block[10], num_nodes_per_elem[10];</div>
+<div class="line">  <span class="keywordtype">int</span> num_face_in_sset[10], num_nodes_in_nset[10];</div>
+<div class="line">  <span class="keywordtype">int</span> node_list[100], elem_list[100], side_list[100];</div>
+<div class="line">  <span class="keywordtype">int</span> ebids[10], ssids[10], nsids[10];</div>
+<div class="line">  <span class="keywordtype">int</span> prop_array[2];</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">float</span> *glob_var_vals, *nodal_var_vals, *elem_var_vals;</div>
-<div class="line">  <span class="keywordtype">float</span> *sset_var_vals, *nset_var_vals;</div>
-<div class="line">  <span class="keywordtype">float</span>  time_value;</div>
-<div class="line">  <span class="keywordtype">float</span>  x[100], y[100], z[100];</div>
-<div class="line">  <span class="keywordtype">float</span>  attrib[1], dist_fact[100];</div>
-<div class="line">  <span class="keywordtype">char</span> * coord_names[3], *qa_record[2][4], *info[3], *var_names[3];</div>
-<div class="line">  <span class="keywordtype">char</span> * block_names[10], *nset_names[10], *sset_names[10];</div>
-<div class="line">  <span class="keywordtype">char</span> * prop_names[2], *attrib_names[2];</div>
-<div class="line">  <span class="keywordtype">char</span> * title = <span class="stringliteral">&quot;This is a test&quot;</span>;</div>
-<div class="line">  <span class="keywordtype">int</span>    group, num_groups = 2;</div>
-<div class="line">  <span class="keywordtype">char</span> * group_names[2];</div>
+<div class="line">  <span class="keywordtype">float</span> x[100], y[100], z[100];</div>
+<div class="line">  <span class="keywordtype">float</span> attrib[1], dist_fact[100];</div>
+<div class="line">  <span class="keywordtype">char</span> *coord_names[3], *qa_record[2][4], *info[3], *var_names[3];</div>
+<div class="line">  <span class="keywordtype">char</span> *block_names[10], *nset_names[10], *sset_names[10];</div>
+<div class="line">  <span class="keywordtype">char</span> *prop_names[2], *attrib_names[2];</div>
+<div class="line">  <span class="keywordtype">char</span> *title = <span class="stringliteral">&quot;This is a test&quot;</span>;</div>
+<div class="line">  <span class="keywordtype">char</span> *group_names[2];</div>
 <div class="line">  <a id="a0" name="a0"></a><a class="code hl_function" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts</a>(<a id="a1" name="a1"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9">EX_VERBOSE</a> | <a id="a2" name="a2"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feac85b3327ce99395f3faf0d542b8b3a0a">EX_ABORT</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Specify compute and i/o word size */</span></div>
 <div class="line"> </div>
-<div class="line">  CPU_word_size = 0; <span class="comment">/* sizeof(float) */</span></div>
-<div class="line">  IO_word_size  = 4; <span class="comment">/* (4 bytes) */</span></div>
+<div class="line">  <span class="keywordtype">int</span> CPU_word_size = 0; <span class="comment">/* sizeof(float) */</span></div>
+<div class="line">  <span class="keywordtype">int</span> IO_word_size  = 4; <span class="comment">/* (4 bytes) */</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* create EXODUS II file */</span></div>
 <div class="line"> </div>
-<div class="line">  rootid = <a id="a3" name="a3"></a><a class="code hl_define" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a>(<span class="stringliteral">&quot;test-groups.exo&quot;</span>,                      <span class="comment">/* filename path */</span></div>
-<div class="line">                     <a id="a4" name="a4"></a><a class="code hl_define" href="group__FileVars.html#gadeed66ded179e51a8858254052a76ba4">EX_CLOBBER</a> | <a id="a5" name="a5"></a><a class="code hl_define" href="group__FileVars.html#gad8792dfd3a757cb160760cfe83b549f8">EX_NETCDF4</a> | <a id="a6" name="a6"></a><a class="code hl_define" href="group__FileVars.html#gaa7171fd417f3b492c233738af640d0b6">EX_NOCLASSIC</a>, <span class="comment">/* create mode */</span></div>
-<div class="line">                     &amp;CPU_word_size,                         <span class="comment">/* CPU float word size in bytes */</span></div>
-<div class="line">                     &amp;IO_word_size);                         <span class="comment">/* I/O float word size in bytes */</span></div>
+<div class="line">  <span class="keywordtype">int</span> rootid = <a id="a3" name="a3"></a><a class="code hl_define" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a>(<span class="stringliteral">&quot;test-groups.exo&quot;</span>,                      <span class="comment">/* filename path */</span></div>
+<div class="line">                         <a id="a4" name="a4"></a><a class="code hl_define" href="group__FileVars.html#gadeed66ded179e51a8858254052a76ba4">EX_CLOBBER</a> | <a id="a5" name="a5"></a><a class="code hl_define" href="group__FileVars.html#gad8792dfd3a757cb160760cfe83b549f8">EX_NETCDF4</a> | <a id="a6" name="a6"></a><a class="code hl_define" href="group__FileVars.html#gaa7171fd417f3b492c233738af640d0b6">EX_NOCLASSIC</a>, <span class="comment">/* create mode */</span></div>
+<div class="line">                         &amp;CPU_word_size,                         <span class="comment">/* CPU float word size in bytes */</span></div>
+<div class="line">                         &amp;IO_word_size);                         <span class="comment">/* I/O float word size in bytes */</span></div>
 <div class="line">  printf(<span class="stringliteral">&quot;after ex_create for test-groups.exo, rootid = %d\n&quot;</span>, rootid);</div>
 <div class="line">  printf(<span class="stringliteral">&quot; cpu word size: %d io word size: %d\n&quot;</span>, CPU_word_size, IO_word_size);</div>
 <div class="line"> </div>
+<div class="line">  <span class="keywordtype">int</span> num_groups = 2;</div>
 <div class="line">  group_names[0] = <span class="stringliteral">&quot;Group_0&quot;</span>;</div>
 <div class="line">  group_names[1] = <span class="stringliteral">&quot;Group_1&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (group = 0; group &lt; num_groups; group++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> group = 0; group &lt; num_groups; group++) {</div>
 <div class="line">    <span class="comment">/* Now create a group using netdf direct call... */</span></div>
-<div class="line">    exoid = <a id="a7" name="a7"></a><a class="code hl_function" href="group__ModelDescription.html#ga3ec5c53a8b305d10a09be9617e872543">ex_create_group</a>(rootid, group_names[group]);</div>
+<div class="line">    <span class="keywordtype">int</span> exoid = <a id="a7" name="a7"></a><a class="code hl_function" href="group__ModelDescription.html#ga3ec5c53a8b305d10a09be9617e872543">ex_create_group</a>(rootid, group_names[group]);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;after ex_create_group for group &#39;Group1&#39; in &#39;test-groups.exo&#39;, exoid = %d\n&quot;</span>, exoid);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* initialize file with parameters */</span></div>
-<div class="line">    num_dim       = 3;</div>
-<div class="line">    num_nodes     = 33;</div>
-<div class="line">    num_elem      = 7;</div>
-<div class="line">    num_elem_blk  = 7;</div>
-<div class="line">    num_node_sets = 2;</div>
-<div class="line">    num_side_sets = 5;</div>
+<div class="line">    <span class="keywordtype">int</span> num_dim       = 3;</div>
+<div class="line">    <span class="keywordtype">int</span> num_nodes     = 33;</div>
+<div class="line">    <span class="keywordtype">int</span> num_elem      = 7;</div>
+<div class="line">    <span class="keywordtype">int</span> num_elem_blk  = 7;</div>
+<div class="line">    <span class="keywordtype">int</span> num_node_sets = 2;</div>
+<div class="line">    <span class="keywordtype">int</span> num_side_sets = 5;</div>
 <div class="line"> </div>
-<div class="line">    error = <a id="a8" name="a8"></a><a class="code hl_function" href="group__ModelDescription.html#gaad1d6ddd57d1fa8f94da25d505e8c7ba">ex_put_init</a>(exoid, title, num_dim, num_nodes, num_elem, num_elem_blk, num_node_sets,</div>
-<div class="line">                        num_side_sets);</div>
+<div class="line">    <span class="keywordtype">int</span> error = <a id="a8" name="a8"></a><a class="code hl_function" href="group__ModelDescription.html#gaad1d6ddd57d1fa8f94da25d505e8c7ba">ex_put_init</a>(exoid, title, num_dim, num_nodes, num_elem, num_elem_blk, num_node_sets,</div>
+<div class="line">                            num_side_sets);</div>
 <div class="line"> </div>
 <div class="line">    printf(<span class="stringliteral">&quot;after ex_put_init, error = %d\n&quot;</span>, error);</div>
 <div class="line"> </div>
@@ -357,9 +346,9 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write element order map */</span></div>
 <div class="line"> </div>
-<div class="line">    elem_map = (<span class="keywordtype">int</span> *)calloc(num_elem, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span> *elem_map = (<span class="keywordtype">int</span> *)calloc(num_elem, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span> (i = 1; i &lt;= num_elem; i++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= num_elem; i++) {</div>
 <div class="line">      elem_map[i - 1] = i;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -478,7 +467,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Write element block names */</span></div>
-<div class="line">    <span class="keywordflow">for</span> (i = 0; i &lt; 7; i++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 7; i++) {</div>
 <div class="line">      error = <a class="code hl_function" href="group__ModelDescription.html#ga9f3c7c8c26e49556f86534f4460e0cf0">ex_put_name</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ebids[i], block_names[i]);</div>
 <div class="line">      printf(<span class="stringliteral">&quot;after ex_put_names, error = %d\n&quot;</span>, error);</div>
 <div class="line">    }</div>
@@ -552,11 +541,11 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write element connectivity */</span></div>
 <div class="line"> </div>
-<div class="line">    connect    = (<span class="keywordtype">int</span> *)calloc(8, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">    connect[0] = 1;</div>
-<div class="line">    connect[1] = 2;</div>
-<div class="line">    connect[2] = 3;</div>
-<div class="line">    connect[3] = 4;</div>
+<div class="line">    <span class="keywordtype">int</span> *connect = (<span class="keywordtype">int</span> *)calloc(8, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    connect[0]   = 1;</div>
+<div class="line">    connect[1]   = 2;</div>
+<div class="line">    connect[2]   = 3;</div>
+<div class="line">    connect[3]   = 4;</div>
 <div class="line"> </div>
 <div class="line">    error = <a id="a22" name="a22"></a><a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ebids[0], connect);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;after ex_put_elem_conn, error = %d\n&quot;</span>, error);</div>
@@ -721,7 +710,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    attrib_names[0] = <span class="stringliteral">&quot;THICKNESS&quot;</span>;</div>
-<div class="line">    <span class="keywordflow">for</span> (i = 0; i &lt; 7; i++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 7; i++) {</div>
 <div class="line">      error = <a class="code hl_function" href="group__ModelDescription.html#gae9beb2de2a75649c57a025b0f647cb74">ex_put_attr_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ebids[i], attrib_names);</div>
 <div class="line">      printf(<span class="stringliteral">&quot;after ex_put_elem_attr_names, error = %d\n&quot;</span>, error);</div>
 <div class="line">      <span class="keywordflow">if</span> (error) {</div>
@@ -1093,7 +1082,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write QA records; test empty and just blank-filled records */</span></div>
 <div class="line"> </div>
-<div class="line">    num_qa_rec = 2;</div>
+<div class="line">    <span class="keywordtype">int</span> num_qa_rec = 2;</div>
 <div class="line"> </div>
 <div class="line">    qa_record[0][0] = <span class="stringliteral">&quot;TESTWT&quot;</span>;</div>
 <div class="line">    qa_record[0][1] = <span class="stringliteral">&quot;testwt&quot;</span>;</div>
@@ -1114,7 +1103,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write information records; test empty and just blank-filled records */</span></div>
 <div class="line"> </div>
-<div class="line">    num_info = 3;</div>
+<div class="line">    <span class="keywordtype">int</span> num_info = 3;</div>
 <div class="line"> </div>
 <div class="line">    info[0] = <span class="stringliteral">&quot;This is the first information record.&quot;</span>;</div>
 <div class="line">    info[1] = <span class="stringliteral">&quot;&quot;</span>;</div>
@@ -1130,7 +1119,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write results variables parameters and names */</span></div>
 <div class="line"> </div>
-<div class="line">    num_glo_vars = 1;</div>
+<div class="line">    <span class="keywordtype">int</span> num_glo_vars = 1;</div>
 <div class="line"> </div>
 <div class="line">    var_names[0] = <span class="stringliteral">&quot;glo_vars&quot;</span>;</div>
 <div class="line"> </div>
@@ -1148,7 +1137,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line">      exit(-1);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    num_nod_vars = 2;</div>
+<div class="line">    <span class="keywordtype">int</span> num_nod_vars = 2;</div>
 <div class="line">    <span class="comment">/*              12345678901234567890123456789012 */</span></div>
 <div class="line">    var_names[0] = <span class="stringliteral">&quot;node_variable_a_very_long_name_0&quot;</span>;</div>
 <div class="line">    var_names[1] = <span class="stringliteral">&quot;nod_var1&quot;</span>;</div>
@@ -1167,7 +1156,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line">      exit(-1);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    num_ele_vars = 3;</div>
+<div class="line">    <span class="keywordtype">int</span> num_ele_vars = 3;</div>
 <div class="line">    <span class="comment">/*              0        1         2         3   */</span></div>
 <div class="line">    <span class="comment">/*              12345678901234567890123456789012 */</span></div>
 <div class="line">    var_names[0] = <span class="stringliteral">&quot;this_variable_name_is_short&quot;</span>;</div>
@@ -1188,9 +1177,8 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line">      exit(-1);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
+<div class="line">    <span class="keywordtype">int</span> num_nset_vars = 3;</div>
 <div class="line">    {</div>
-<div class="line">      num_nset_vars = 3;</div>
-<div class="line"> </div>
 <div class="line">      var_names[0] = <span class="stringliteral">&quot;ns_var0&quot;</span>;</div>
 <div class="line">      var_names[1] = <span class="stringliteral">&quot;ns_var1&quot;</span>;</div>
 <div class="line">      var_names[2] = <span class="stringliteral">&quot;ns_var2&quot;</span>;</div>
@@ -1210,9 +1198,8 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
+<div class="line">    <span class="keywordtype">int</span> num_sset_vars = 3;</div>
 <div class="line">    {</div>
-<div class="line">      num_sset_vars = 3;</div>
-<div class="line"> </div>
 <div class="line">      var_names[0] = <span class="stringliteral">&quot;ss_var0&quot;</span>;</div>
 <div class="line">      var_names[1] = <span class="stringliteral">&quot;ss_var1&quot;</span>;</div>
 <div class="line">      var_names[2] = <span class="stringliteral">&quot;ss_var2&quot;</span>;</div>
@@ -1234,12 +1221,14 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write element variable truth table */</span></div>
 <div class="line"> </div>
-<div class="line">    truth_tab = (<span class="keywordtype">int</span> *)calloc((num_elem_blk * num_ele_vars), <span class="keyword">sizeof</span>(int));</div>
+<div class="line">    <span class="keywordtype">int</span> *truth_tab = (<span class="keywordtype">int</span> *)calloc((num_elem_blk * num_ele_vars), <span class="keyword">sizeof</span>(int));</div>
 <div class="line"> </div>
-<div class="line">    k = 0;</div>
-<div class="line">    <span class="keywordflow">for</span> (i = 0; i &lt; num_elem_blk; i++) {</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_ele_vars; j++) {</div>
-<div class="line">        truth_tab[k++] = 1;</div>
+<div class="line">    {</div>
+<div class="line">      <span class="keywordtype">int</span> k = 0;</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_elem_blk; i++) {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_ele_vars; j++) {</div>
+<div class="line">          truth_tab[k++] = 1;</div>
+<div class="line">        }</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -1259,17 +1248,17 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"><span class="comment">     * obviously the analysis code will populate these arrays</span></div>
 <div class="line"><span class="comment">     */</span></div>
 <div class="line"> </div>
-<div class="line">    whole_time_step = 1;</div>
-<div class="line">    num_time_steps  = 10;</div>
+<div class="line">    <span class="keywordtype">int</span> whole_time_step = 1;</div>
+<div class="line">    <span class="keywordtype">int</span> num_time_steps  = 10;</div>
 <div class="line"> </div>
-<div class="line">    glob_var_vals  = (<span class="keywordtype">float</span> *)calloc(num_glo_vars, CPU_word_size);</div>
-<div class="line">    nodal_var_vals = (<span class="keywordtype">float</span> *)calloc(num_nodes, CPU_word_size);</div>
-<div class="line">    elem_var_vals  = (<span class="keywordtype">float</span> *)calloc(4, CPU_word_size);</div>
-<div class="line">    sset_var_vals  = (<span class="keywordtype">float</span> *)calloc(10, CPU_word_size);</div>
-<div class="line">    nset_var_vals  = (<span class="keywordtype">float</span> *)calloc(10, CPU_word_size);</div>
+<div class="line">    <span class="keywordtype">float</span> *glob_var_vals  = (<span class="keywordtype">float</span> *)calloc(num_glo_vars, CPU_word_size);</div>
+<div class="line">    <span class="keywordtype">float</span> *nodal_var_vals = (<span class="keywordtype">float</span> *)calloc(num_nodes, CPU_word_size);</div>
+<div class="line">    <span class="keywordtype">float</span> *elem_var_vals  = (<span class="keywordtype">float</span> *)calloc(4, CPU_word_size);</div>
+<div class="line">    <span class="keywordtype">float</span> *sset_var_vals  = (<span class="keywordtype">float</span> *)calloc(10, CPU_word_size);</div>
+<div class="line">    <span class="keywordtype">float</span> *nset_var_vals  = (<span class="keywordtype">float</span> *)calloc(10, CPU_word_size);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span> (i = 0; i &lt; num_time_steps; i++) {</div>
-<div class="line">      time_value = (float)(i + 1) / 100.;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_time_steps; i++) {</div>
+<div class="line">      <span class="keywordtype">float</span> time_value = (float)(i + 1) / 100.;</div>
 <div class="line"> </div>
 <div class="line">      <span class="comment">/* write time value */</span></div>
 <div class="line"> </div>
@@ -1283,7 +1272,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">      <span class="comment">/* write global variables */</span></div>
 <div class="line"> </div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_glo_vars; j++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_glo_vars; j++) {</div>
 <div class="line">        glob_var_vals[j] = (float)(j + 2) * time_value;</div>
 <div class="line">      }</div>
 <div class="line"> </div>
@@ -1297,8 +1286,8 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">      <span class="comment">/* write nodal variables */</span></div>
 <div class="line"> </div>
-<div class="line">      <span class="keywordflow">for</span> (k = 1; k &lt;= num_nod_vars; k++) {</div>
-<div class="line">        <span class="keywordflow">for</span> (j = 0; j &lt; num_nodes; j++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 1; k &lt;= num_nod_vars; k++) {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_nodes; j++) {</div>
 <div class="line">          nodal_var_vals[j] = (float)k + ((<span class="keywordtype">float</span>)(j + 1) * time_value);</div>
 <div class="line">        }</div>
 <div class="line"> </div>
@@ -1312,9 +1301,9 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">      <span class="comment">/* write element variables */</span></div>
 <div class="line"> </div>
-<div class="line">      <span class="keywordflow">for</span> (k = 1; k &lt;= num_ele_vars; k++) {</div>
-<div class="line">        <span class="keywordflow">for</span> (j = 0; j &lt; num_elem_blk; j++) {</div>
-<div class="line">          <span class="keywordflow">for</span> (m = 0; m &lt; num_elem_in_block[j]; m++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 1; k &lt;= num_ele_vars; k++) {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_elem_blk; j++) {</div>
+<div class="line">          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0; m &lt; num_elem_in_block[j]; m++) {</div>
 <div class="line">            elem_var_vals[m] = (float)(k + 1) + (float)(j + 2) + ((float)(m + 1) * time_value);</div>
 <div class="line">            <span class="comment">/* printf(&quot;elem_var_vals[%d]: %f\n&quot;,m,elem_var_vals[m]); */</span></div>
 <div class="line">          }</div>
@@ -1330,9 +1319,9 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">      <span class="comment">/* write sideset variables */</span></div>
 <div class="line"> </div>
-<div class="line">      <span class="keywordflow">for</span> (k = 1; k &lt;= num_sset_vars; k++) {</div>
-<div class="line">        <span class="keywordflow">for</span> (j = 0; j &lt; num_side_sets; j++) {</div>
-<div class="line">          <span class="keywordflow">for</span> (m = 0; m &lt; num_face_in_sset[j]; m++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 1; k &lt;= num_sset_vars; k++) {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_side_sets; j++) {</div>
+<div class="line">          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0; m &lt; num_face_in_sset[j]; m++) {</div>
 <div class="line">            sset_var_vals[m] = (float)(k + 2) + (float)(j + 3) + ((float)(m + 1) * time_value);</div>
 <div class="line">            <span class="comment">/* printf(&quot;sset_var_vals[%d]: %f\n&quot;,m,sset_var_vals[m]); */</span></div>
 <div class="line">          }</div>
@@ -1348,9 +1337,9 @@ $(document).ready(function(){initNavTree('_2test_2testwt-groups_8c-example.html'
 <div class="line"> </div>
 <div class="line">      <span class="comment">/* write nodeset variables */</span></div>
 <div class="line"> </div>
-<div class="line">      <span class="keywordflow">for</span> (k = 1; k &lt;= num_nset_vars; k++) {</div>
-<div class="line">        <span class="keywordflow">for</span> (j = 0; j &lt; num_node_sets; j++) {</div>
-<div class="line">          <span class="keywordflow">for</span> (m = 0; m &lt; num_nodes_in_nset[j]; m++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 1; k &lt;= num_nset_vars; k++) {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_node_sets; j++) {</div>
+<div class="line">          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0; m &lt; num_nodes_in_nset[j]; m++) {</div>
 <div class="line">            nset_var_vals[m] = (float)(k + 3) + (float)(j + 4) + ((float)(m + 1) * time_value);</div>
 <div class="line">            <span class="comment">/* printf(&quot;nset_var_vals[%d]: %f\n&quot;,m,nset_var_vals[m]); */</span></div>
 <div class="line">          }</div>
