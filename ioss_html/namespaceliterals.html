@@ -90,103 +90,12 @@ $(document).ready(function(){initNavTree('namespaceliterals.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1f2c278d22949c1fffce38222165699e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceliterals.html#a1f2c278d22949c1fffce38222165699e">operator&quot;&quot;_a</a> (const char *s, size_t) -&gt; detail::udl_arg&lt; char &gt;</td></tr>
-<tr class="separator:a1f2c278d22949c1fffce38222165699e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a8f6d15449acb963b9a702ce59bba6d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceliterals.html#a2a8f6d15449acb963b9a702ce59bba6d">operator&quot;&quot;_format</a> (const char *s, size_t n) -&gt; detail::udl_formatter&lt; char &gt;</td></tr>
-<tr class="separator:a2a8f6d15449acb963b9a702ce59bba6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7ee095016dc885b66f19ad3e80f4fc2"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceliterals.html#ad7ee095016dc885b66f19ad3e80f4fc2">operator&quot;&quot;_format</a> (const wchar_t *s, size_t n) -&gt; detail::udl_formatter&lt; wchar_t &gt;</td></tr>
 <tr class="separator:ad7ee095016dc885b66f19ad3e80f4fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1f2c278d22949c1fffce38222165699e" name="a1f2c278d22949c1fffce38222165699e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f2c278d22949c1fffce38222165699e">&#9670;&nbsp;</a></span>operator&quot;&quot;_a()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto literals::operator&quot;&quot;_a </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; detail::udl_arg&lt;char&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line">User-defined literal equivalent of :func:`<a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">fmt::arg</a>`.</div>
-<div class="line"> </div>
-<div class="line"> *Example**::</div>
-<div class="line"> </div>
-<div class="line">  using <span class="keyword">namespace </span>fmt::literals;</div>
-<div class="line">  <a class="code hl_function" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">fmt::print</a>(<span class="stringliteral">&quot;Elapsed time: {s:.2f} seconds&quot;</span>, <span class="stringliteral">&quot;s&quot;</span>_a=1.23);</div>
-<div class="ttc" id="acolor_8h_html_a2fead8330d19b9d2f10e6ed9c59e0174"><div class="ttname"><a href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">print</a></div><div class="ttdeci">void print(std::FILE *f, const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:538</div></div>
-<div class="ttc" id="acore_8h_html_a2c8e80c1b1c8b7747e99b8e9a24a0429"><div class="ttname"><a href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a></div><div class="ttdeci">auto arg(const Char *name, const T &amp;arg) -&gt; detail::named_arg&lt; Char, T &gt;</div><div class="ttdef"><b>Definition:</b> core.h:1741</div></div>
-</div><!-- fragment --> 
-</div>
-</div>
-<a id="a2a8f6d15449acb963b9a702ce59bba6d" name="a2a8f6d15449acb963b9a702ce59bba6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a8f6d15449acb963b9a702ce59bba6d">&#9670;&nbsp;</a></span>operator&quot;&quot;_format() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto literals::operator&quot;&quot;_format </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; detail::udl_formatter&lt;char&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line">User-defined literal equivalent of :func:`<a class="code hl_function" href="color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">fmt::format</a>`.</div>
-<div class="line"> </div>
-<div class="line"> *Example**::</div>
-<div class="line"> </div>
-<div class="line">  using <span class="keyword">namespace </span>fmt::literals;</div>
-<div class="line">  std::string message = <span class="stringliteral">&quot;The answer is {}&quot;</span>_format(42);</div>
-<div class="ttc" id="acolor_8h_html_a8b34a9364f5d6ca43a8a24f96a6db55b"><div class="ttname"><a href="color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:583</div></div>
-</div><!-- fragment --> 
-</div>
-</div>
 <a id="ad7ee095016dc885b66f19ad3e80f4fc2" name="ad7ee095016dc885b66f19ad3e80f4fc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ee095016dc885b66f19ad3e80f4fc2">&#9670;&nbsp;</a></span>operator&quot;&quot;_format() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ee095016dc885b66f19ad3e80f4fc2">&#9670;&nbsp;</a></span>operator&quot;&quot;_format()</h2>
 
 <div class="memitem">
 <div class="memproto">

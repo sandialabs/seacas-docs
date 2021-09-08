@@ -42,7 +42,7 @@ var searchData=
   ['description_39',['description',['../structIoss_1_1GetLongOption_1_1Cell.html#ac091438d2e67b2a320a0d424cf5fbc3f',1,'Ioss::GetLongOption::Cell']]],
   ['dfcount_40',['dfCount',['../structIoex_1_1NodeSet.html#a7a905a93998d693807b2a3e0b9d16669',1,'Ioex::NodeSet::dfCount()'],['../structIoex_1_1EdgeSet.html#abba8c90d8242ce62c02fbc34b9a830e0',1,'Ioex::EdgeSet::dfCount()'],['../structIoex_1_1FaceSet.html#a189199964377263af021883c5c04d988',1,'Ioex::FaceSet::dfCount()'],['../structIoex_1_1ElemSet.html#a404be89c8fc211591903d9e6e6d926b2',1,'Ioex::ElemSet::dfCount()'],['../structIoex_1_1SideSet.html#ac3becbee22fdc88cb9481c5c7cb68edd',1,'Ioex::SideSet::dfCount()']]],
   ['dfprocoffset_41',['dfProcOffset',['../structIoex_1_1SideSet.html#aab32e45a798a03cb521f6f29e9123fc0',1,'Ioex::SideSet']]],
-  ['digits_42',['digits',['../structbasic__data.html#a77b5a9400242639f76162742087d955d',1,'basic_data']]],
+  ['digits_42',['digits',['../structbasic__data.html#a5012a7b8b0b56e512c66039b65daeb3d',1,'basic_data']]],
   ['dimensionality_43',['dimensionality',['../classIoex_1_1Mesh.html#a4be76e037a6ebc840df9997b544f817f',1,'Ioex::Mesh']]],
   ['disable_5ffield_5frecognition_44',['disable_field_recognition',['../classIOShell_1_1Interface.html#aee414edb0a06902e5662b923a30b0a42',1,'IOShell::Interface']]],
   ['disablefieldrecognition_5f_45',['disableFieldRecognition_',['../classInfo_1_1Interface.html#a838bc6b27bcea41cc4b31e40bd68095a',1,'Info::Interface']]],

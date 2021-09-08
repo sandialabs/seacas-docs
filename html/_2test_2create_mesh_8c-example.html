@@ -766,6 +766,11 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">        sprintf(var_name[j], <span class="stringliteral">&quot;element_field_%&quot;</span> PRId64, j + 1);</div>
 <div class="line">      }</div>
 <div class="line">      err = <a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, num_element_fields, var_name);</div>
+<div class="line">      <span class="keywordflow">if</span> (err) {</div>
+<div class="line">        fprintf(stderr, <span class="stringliteral">&quot;after ex_put_variable_names, error = %d\n&quot;</span>, err);</div>
+<div class="line">        <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
+<div class="line">        exit(-1);</div>
+<div class="line">      }</div>
 <div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_element_fields; j++) {</div>
 <div class="line">        free(var_name[j]);</div>
 <div class="line">      }</div>

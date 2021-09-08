@@ -12,7 +12,7 @@ var searchData=
   ['layout_9',['Layout',['../classIohb_1_1Layout.html',1,'Iohb::Layout'],['../classIohb_1_1Layout.html#a811a374fc418a47fd95dd87fd1da43d1',1,'Iohb::Layout::Layout(const Layout &amp;)=delete'],['../classIohb_1_1Layout.html#a239fc494da656cd053af23b3d783db75',1,'Iohb::Layout::Layout(bool show_labels, int precision, std::string separator, int field_width)']]],
   ['layout_5f_10',['layout_',['../classIohb_1_1DatabaseIO.html#a7d8f8912023ef27f4372384041bfbc1b',1,'Iohb::DatabaseIO::layout_()'],['../classIohb_1_1Layout.html#aa8c743a8b36c955de3c0c79af973308f',1,'Iohb::Layout::layout_()']]],
   ['left_11',['left',['../namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd',1,'align']]],
-  ['left_5fpadding_5fshifts_12',['left_padding_shifts',['../structbasic__data.html#aacea3b25006121bce42ebf36a4578ccb',1,'basic_data']]],
+  ['left_5fpadding_5fshifts_12',['left_padding_shifts',['../structbasic__data.html#a0f56fc3864b43703b33aa9e62a1de473',1,'basic_data']]],
   ['legend_5f_13',['legend_',['../classIohb_1_1DatabaseIO.html#a328ac9e2639308a5f7ca85ca7d9c33af',1,'Iohb::DatabaseIO']]],
   ['legendstarted_14',['legendStarted',['../classIohb_1_1Layout.html#a5db9e63309152d635f747ec568858ab4',1,'Iohb::Layout']]],
   ['lemon_5fchiffon_15',['lemon_chiffon',['../color_8h.html#a80d1dc5f416b97f92939a4166d41203ca8c86fbdd95cf7d3a3bf22d7bd34a3e99',1,'color.h']]],
