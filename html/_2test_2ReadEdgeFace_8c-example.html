@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* *** NEW API *** */</span></div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <span class="keyword">sizeof</span>(obj_types) / <span class="keyword">sizeof</span>(obj_types[0]); ++i) {</div>
-<div class="line">    <span class="keywordtype">int</span> *truth_tab      = 0;</div>
+<div class="line">    <span class="keywordtype">int</span> *truth_tab      = NULL;</div>
 <div class="line">    <span class="keywordtype">int</span>  have_var_names = 0;</div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a58" name="a58"></a><a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, obj_sizes[i], &amp;nids, 0, 0),</div>
@@ -245,7 +245,7 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">if</span> (!have_var_names) {</div>
-<div class="line">      var_names = 0;</div>
+<div class="line">      var_names = NULL;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> obj = 0; obj &lt; nids; ++obj) {</div>
@@ -281,9 +281,9 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="line">        }</div>
 <div class="line">        fprintf(stdout, <span class="stringliteral">&quot;\n   &quot;</span>);</div>
 <div class="line">        num_entries = itmp[0];</div>
-<div class="line">        nconn       = itmp[1] ? (<span class="keywordtype">int</span> *)malloc(itmp[1] * num_entries * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)) : 0;</div>
-<div class="line">        econn       = itmp[2] ? (<span class="keywordtype">int</span> *)malloc(itmp[2] * num_entries * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)) : 0;</div>
-<div class="line">        fconn       = itmp[3] ? (<span class="keywordtype">int</span> *)malloc(itmp[3] * num_entries * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)) : 0;</div>
+<div class="line">        nconn       = itmp[1] ? (<span class="keywordtype">int</span> *)malloc(itmp[1] * num_entries * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)) : NULL;</div>
+<div class="line">        econn       = itmp[2] ? (<span class="keywordtype">int</span> *)malloc(itmp[2] * num_entries * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)) : NULL;</div>
+<div class="line">        fconn       = itmp[3] ? (<span class="keywordtype">int</span> *)malloc(itmp[3] * num_entries * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)) : NULL;</div>
 <div class="line">        <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a66" name="a66"></a><a class="code hl_function" href="group__ModelDescription.html#gaeeccbb525d582741af06a06aa275c5fe">ex_get_conn</a>(exoid, obj_types[i], ids[obj], nconn, econn, fconn),</div>
 <div class="line">                <span class="stringliteral">&quot;Could not read connectivity.\n&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">for</span> (ele = 0; ele &lt; num_entries; ++ele) {</div>
@@ -350,7 +350,7 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="line">        <span class="keywordtype">int</span> *set_entry = (<span class="keywordtype">int</span> *)malloc(num_entries * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">        <span class="keywordtype">int</span> *set_extra = (obj_types[i] != <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a> &amp;&amp; obj_types[i] != <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7c93a8f699b07275ce4e335cd951e6c5">EX_ELEM_SET</a>)</div>
 <div class="line">                             ? (<span class="keywordtype">int</span> *)malloc(num_entries * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>))</div>
-<div class="line">                             : 0;</div>
+<div class="line">                             : NULL;</div>
 <div class="line">        <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a70" name="a70"></a><a class="code hl_function" href="group__ModelDescription.html#ga48604d23fc30d70620e1255823e4ff50">ex_get_set</a>(exoid, obj_types[i], ids[obj], set_entry, set_extra),</div>
 <div class="line">                <span class="stringliteral">&quot;Could not read set.\n&quot;</span>);</div>
 <div class="line">        fprintf(stdout, <span class="stringliteral">&quot;Entries: %3d Distribution factors: %3d\n&quot;</span>, num_entries, num_df);</div>
@@ -367,7 +367,7 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="line">        free(set_entry);</div>
 <div class="line">        free(set_extra);</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordtype">double</span> *set_df = num_df ? (<span class="keywordtype">double</span> *)malloc(num_df * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>)) : 0;</div>
+<div class="line">        <span class="keywordtype">double</span> *set_df = num_df ? (<span class="keywordtype">double</span> *)malloc(num_df * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>)) : NULL;</div>
 <div class="line">        <span class="keywordflow">if</span> (set_df) {</div>
 <div class="line">          <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a71" name="a71"></a><a class="code hl_function" href="group__ModelDescription.html#gaba37d22e5d2ec3ac13323c9e7e289812">ex_get_set_dist_fact</a>(exoid, obj_types[i], ids[obj], set_df),</div>
 <div class="line">                  <span class="stringliteral">&quot;Could not read set distribution factors.\n&quot;</span>);</div>
@@ -524,7 +524,7 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="ttc" id="agroup__ModelDescription_html_ga994b3b69829716c677a4a0897c5bccae"><div class="ttname"><a href="group__ModelDescription.html#ga994b3b69829716c677a4a0897c5bccae">ex_get_init_ext</a></div><div class="ttdeci">int ex_get_init_ext(int exoid, ex_init_params *info)</div><div class="ttdef"><b>Definition:</b> ex_get_init_ext.c:77</div></div>
 <div class="ttc" id="agroup__ModelDescription_html_gaba37d22e5d2ec3ac13323c9e7e289812"><div class="ttname"><a href="group__ModelDescription.html#gaba37d22e5d2ec3ac13323c9e7e289812">ex_get_set_dist_fact</a></div><div class="ttdeci">int ex_get_set_dist_fact(int exoid, ex_entity_type set_type, ex_entity_id set_id, void *set_dist_fact)</div><div class="ttdef"><b>Definition:</b> ex_get_set_dist_fact.c:33</div></div>
 <div class="ttc" id="agroup__ModelDescription_html_gabc6e9887581be7b2966db32d998ca648"><div class="ttname"><a href="group__ModelDescription.html#gabc6e9887581be7b2966db32d998ca648">ex_get_block</a></div><div class="ttdeci">int ex_get_block(int exoid, ex_entity_type blk_type, ex_entity_id blk_id, char *elem_type, void_int *num_entries_this_blk, void_int *num_nodes_per_entry, void_int *num_edges_per_entry, void_int *num_faces_per_entry, void_int *num_attr_per_entry)</div><div class="ttdef"><b>Definition:</b> ex_get_block.c:36</div></div>
-<div class="ttc" id="agroup__ModelDescription_html_gad1f33f5a3b24a7e8bc700053aff4c7d1"><div class="ttname"><a href="group__ModelDescription.html#gad1f33f5a3b24a7e8bc700053aff4c7d1">ex_get_ids</a></div><div class="ttdeci">int ex_get_ids(int exoid, ex_entity_type obj_type, void_int *ids)</div><div class="ttdef"><b>Definition:</b> ex_get_ids.c:95</div></div>
+<div class="ttc" id="agroup__ModelDescription_html_gad1f33f5a3b24a7e8bc700053aff4c7d1"><div class="ttname"><a href="group__ModelDescription.html#gad1f33f5a3b24a7e8bc700053aff4c7d1">ex_get_ids</a></div><div class="ttdeci">int ex_get_ids(int exoid, ex_entity_type obj_type, void_int *ids)</div><div class="ttdef"><b>Definition:</b> ex_get_ids.c:96</div></div>
 <div class="ttc" id="agroup__ModelDescription_html_gadd3ac6317bf78162bdc37554c080c1dd"><div class="ttname"><a href="group__ModelDescription.html#gadd3ac6317bf78162bdc37554c080c1dd">ex_get_attr_names</a></div><div class="ttdeci">int ex_get_attr_names(int exoid, ex_entity_type obj_type, ex_entity_id obj_id, char **names)</div><div class="ttdef"><b>Definition:</b> ex_get_attr_names.c:33</div></div>
 <div class="ttc" id="agroup__ModelDescription_html_gaeeccbb525d582741af06a06aa275c5fe"><div class="ttname"><a href="group__ModelDescription.html#gaeeccbb525d582741af06a06aa275c5fe">ex_get_conn</a></div><div class="ttdeci">int ex_get_conn(int exoid, ex_entity_type blk_type, ex_entity_id blk_id, void_int *nodeconn, void_int *edgeconn, void_int *faceconn)</div><div class="ttdef"><b>Definition:</b> ex_get_conn.c:29</div></div>
 <div class="ttc" id="agroup__ResultsData_html_ga200c0e240277523c735987a7bb69cf20"><div class="ttname"><a href="group__ResultsData.html#ga200c0e240277523c735987a7bb69cf20">ex_get_var</a></div><div class="ttdeci">int ex_get_var(int exoid, int time_step, ex_entity_type var_type, int var_index, ex_entity_id obj_id, int64_t num_entry_this_obj, void *var_vals)</div><div class="ttdef"><b>Definition:</b> ex_get_var.c:68</div></div>

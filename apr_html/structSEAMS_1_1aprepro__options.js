@@ -3,6 +3,7 @@ var structSEAMS_1_1aprepro__options =
     [ "aprepro_options", "structSEAMS_1_1aprepro__options.html#a2e2dd92197d6667bdb8705e07af30b99", null ],
     [ "debugging", "structSEAMS_1_1aprepro__options.html#a7f2d4ef53319fc5683d07dddfdf1339a", null ],
     [ "dumpvars", "structSEAMS_1_1aprepro__options.html#a21a037ae8f97df9f1e7cd4d55cc7f8fb", null ],
+    [ "dumpvars_json", "structSEAMS_1_1aprepro__options.html#afb655575e8dc191e234f51fe3ee997db", null ],
     [ "end_on_exit", "structSEAMS_1_1aprepro__options.html#a7829d01ddb7ce49cf31d424de28ba3ab", null ],
     [ "errors_and_warnings_fatal", "structSEAMS_1_1aprepro__options.html#a7abcaaae0d924cf875c934c6b45fabd2", null ],
     [ "errors_fatal", "structSEAMS_1_1aprepro__options.html#a7a2a0ef9e91feb13c6780d58c19d6894", null ],

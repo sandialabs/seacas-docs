@@ -23,6 +23,7 @@ var classSEAMS_1_1Aprepro =
     [ "dumpsym", "classSEAMS_1_1Aprepro.html#afdf0d99b2cc6ecf9d59c8ee7f8538bcd", null ],
     [ "dumpsym", "classSEAMS_1_1Aprepro.html#a1ef7e22068dcfb877b55f1698490d9f7", null ],
     [ "dumpsym", "classSEAMS_1_1Aprepro.html#a5df6bca4d3dfb01f268c7a315c65ab1e", null ],
+    [ "dumpsym_json", "classSEAMS_1_1Aprepro.html#a33728c81dee95d5115f2605f0f1a8b07", null ],
     [ "error", "classSEAMS_1_1Aprepro.html#a08aa25c29a04360531e27b84cd488b3a", null ],
     [ "get_error_count", "classSEAMS_1_1Aprepro.html#a8872d4cfad3b4b402b54f331939b2393", null ],
     [ "get_history", "classSEAMS_1_1Aprepro.html#a1c465bf3dcc27a536f5580bb0b65a278", null ],

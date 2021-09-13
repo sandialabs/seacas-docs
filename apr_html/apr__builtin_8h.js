@@ -33,6 +33,7 @@ var apr__builtin_8h =
     [ "do_dumpfunc1", "apr__builtin_8h.html#a3236d5633743cef584ad09fc89ef9227", null ],
     [ "do_dumpsym", "apr__builtin_8h.html#ab169f8c42da364074afef398d7fc41e5", null ],
     [ "do_dumpsym1", "apr__builtin_8h.html#a91ee3cd38cb04762eb5d8328aab89dd9", null ],
+    [ "do_dumpsym_json", "apr__builtin_8h.html#a2676983006eb388a03d8acb288fcfa17", null ],
     [ "do_dumpvar", "apr__builtin_8h.html#a6384c97695216021b7495e9a6401c123", null ],
     [ "do_dumpvar1", "apr__builtin_8h.html#a1a0216226b61a207cece5317065d1d62", null ],
     [ "do_elseif", "apr__builtin_8h.html#adeb0a281429d350bb91e264298dad23d", null ],
