@@ -228,10 +228,6 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">  <span class="keywordtype">int</span>         int64bit          = 0;</div>
 <div class="line">  <span class="keywordtype">size_t</span>      size;</div>
 <div class="line"> </div>
-<div class="line">  realtyp *x;</div>
-<div class="line">  realtyp *y;</div>
-<div class="line">  realtyp *z;</div>
-<div class="line"> </div>
 <div class="line">  <a id="a0" name="a0"></a><a class="code hl_function" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts</a>(<a id="a1" name="a1"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9">EX_VERBOSE</a> | <a id="a2" name="a2"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feac85b3327ce99395f3faf0d542b8b3a0a">EX_ABORT</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Parse Input */</span></div>
@@ -242,9 +238,9 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">  <span class="comment">/* Create Coordinates and Connectivity Array */</span></div>
 <div class="line">  num_elements_1d = icbrt(num_elements);</div>
 <div class="line">  num_nodes       = (num_elements_1d + 1) * (num_elements_1d + 1) * (num_elements_1d + 1);</div>
-<div class="line">  x               = malloc(num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
-<div class="line">  y               = malloc(num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
-<div class="line">  z               = malloc(num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
+<div class="line">  realtyp *x      = malloc(num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
+<div class="line">  realtyp *y      = malloc(num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
+<div class="line">  realtyp *z      = malloc(num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
 <div class="line">  assert(x != NULL &amp;&amp; y != NULL &amp;&amp; z != NULL);</div>
 <div class="line"> </div>
 <div class="line">  num_elements = num_elements_1d * num_elements_1d * num_elements_1d;</div>
@@ -426,14 +422,11 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"><span class="keywordtype">void</span> make_mesh(realtyp *x, realtyp *y, realtyp *z, INT *connect, INT map_origin,</div>
 <div class="line">               INT num_elements_1d)</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">size_t</span> i, j, k, m, base, cnt;</div>
-<div class="line">  <span class="keywordtype">size_t</span> elp1sq = (num_elements_1d + 1) * (num_elements_1d + 1);</div>
-<div class="line"> </div>
 <div class="line">  <span class="comment">/* create global coordinates */</span></div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (m = 0, k = 0; m &lt; (num_elements_1d + 1); m++) {</div>
-<div class="line">    <span class="keywordflow">for</span> (i = 0; i &lt; (num_elements_1d + 1); i++) {</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; (num_elements_1d + 1); j++, k++) {</div>
+<div class="line">  <span class="keywordtype">size_t</span> k = 0;</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> m = 0, k = 0; m &lt; (num_elements_1d + 1); m++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; (num_elements_1d + 1); i++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; (num_elements_1d + 1); j++, k++) {</div>
 <div class="line">        x[k] = (realtyp)j;</div>
 <div class="line">        y[k] = (realtyp)i;</div>
 <div class="line">        z[k] = (realtyp)m;</div>
@@ -442,11 +435,13 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* build connectivity array (node list) for mesh */</span></div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (m = 0, k = 0, cnt = 0; m &lt; num_elements_1d; m++) {</div>
-<div class="line">    <span class="keywordflow">for</span> (i = 0, k = 0; i &lt; num_elements_1d; i++) {</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_elements_1d; j++, k++) {</div>
-<div class="line">        base           = (m * elp1sq) + k + i + map_origin;</div>
+<div class="line">  <span class="keywordtype">size_t</span> elp1sq = (num_elements_1d + 1) * (num_elements_1d + 1);</div>
+<div class="line">  <span class="keywordtype">size_t</span> cnt    = 0;</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> m = 0; m &lt; num_elements_1d; m++) {</div>
+<div class="line">    k = 0;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; num_elements_1d; i++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; num_elements_1d; j++, k++) {</div>
+<div class="line">        <span class="keywordtype">size_t</span> base    = (m * elp1sq) + k + i + map_origin;</div>
 <div class="line">        connect[cnt++] = base;</div>
 <div class="line">        connect[cnt++] = base + 1;</div>
 <div class="line">        connect[cnt++] = base + num_elements_1d + 2;</div>
@@ -468,34 +463,31 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">                    INT num_element_fields, INT num_timesteps, realtyp *x, realtyp *y, realtyp *z,</div>
 <div class="line">                    INT *connect, <span class="keywordtype">int</span> compression_level, <span class="keywordtype">int</span> shuffle, <span class="keywordtype">int</span> int64bit)</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">int</span>  CPU_word_size = <span class="keyword">sizeof</span>(realtyp);</div>
-<div class="line">  <span class="keywordtype">int</span>  IO_word_size  = <span class="keyword">sizeof</span>(realtyp);</div>
-<div class="line">  <span class="keywordtype">int</span>  exoid, err, num_dim, num_elem_blk, num_node_sets, num_side_sets;</div>
-<div class="line">  INT  i, j, t, index, loc_num_elements, loc_num_nodes, len_connect;</div>
-<div class="line">  INT *elem_map = NULL, *node_map = NULL, *domain_connect = NULL, *loc_connect = NULL;</div>
-<div class="line">  <span class="keywordtype">int</span> *elem_var_tab;</div>
-<div class="line">  INT  accum_num_elements = 0;</div>
-<div class="line">  INT  loc_node_size      = -1;</div>
-<div class="line"> </div>
 <div class="line">  realtyp *loc_xcoords = NULL;</div>
 <div class="line">  realtyp *loc_ycoords = NULL;</div>
 <div class="line">  realtyp *loc_zcoords = NULL;</div>
 <div class="line">  realtyp *globals     = NULL;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">char</span>   temporary_name[MAX_STRING_LEN];</div>
-<div class="line">  <span class="keywordtype">char</span> **var_name;</div>
+<div class="line">  INT  accum_num_elements = 0;</div>
+<div class="line">  INT  loc_num_elements, loc_num_nodes;</div>
+<div class="line">  INT *elem_map       = NULL;</div>
+<div class="line">  INT *node_map       = NULL;</div>
+<div class="line">  INT *domain_connect = NULL;</div>
+<div class="line">  INT *loc_connect    = NULL;</div>
 <div class="line"> </div>
-<div class="line">  accum_num_elements = 0;</div>
-<div class="line">  <span class="keywordflow">for</span> (i = 0; i &lt; num_domains; i++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (INT i = 0; i &lt; num_domains; i++) {</div>
 <div class="line">    <span class="keywordtype">int</span> mymode = <a id="a4" name="a4"></a><a class="code hl_define" href="group__FileVars.html#ga6eb827ba708bd54aa72a5ac8468d4093">EX_MAPS_INT64_API</a> | <a id="a5" name="a5"></a><a class="code hl_define" href="group__FileVars.html#ga0f0209ea697749096d1067c65ad57087">EX_BULK_INT64_API</a> | <a id="a6" name="a6"></a><a class="code hl_define" href="group__FileVars.html#ga8163fd2a9d4320d3a452bbd54ee6a512">EX_IDS_INT64_API</a>;</div>
 <div class="line">    <span class="keywordflow">if</span> (int64bit) {</div>
 <div class="line">      mymode |= <a id="a7" name="a7"></a><a class="code hl_define" href="group__FileVars.html#ga8b79c74f5807228669456780e4cdc6a9">EX_MAPS_INT64_DB</a> | <a id="a8" name="a8"></a><a class="code hl_define" href="group__FileVars.html#ga5527c0f72dbf64338abf0a3e1fc01e10">EX_BULK_INT64_DB</a> | <a id="a9" name="a9"></a><a class="code hl_define" href="group__FileVars.html#ga01a03e58adddc706f5a34030746d604a">EX_IDS_INT64_DB</a>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* create the EXODUSII file */</span></div>
+<div class="line">    <span class="keywordtype">char</span> temporary_name[MAX_STRING_LEN];</div>
 <div class="line">    get_file_name(file_name, <span class="stringliteral">&quot;e&quot;</span>, i, num_domains, NULL, temporary_name);</div>
 <div class="line"> </div>
-<div class="line">    exoid = <a id="a10" name="a10"></a><a class="code hl_define" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a>(temporary_name, <a id="a11" name="a11"></a><a class="code hl_define" href="group__FileVars.html#gadeed66ded179e51a8858254052a76ba4">EX_CLOBBER</a> | mymode, &amp;CPU_word_size, &amp;IO_word_size);</div>
+<div class="line">    <span class="keywordtype">int</span> CPU_word_size = <span class="keyword">sizeof</span>(realtyp);</div>
+<div class="line">    <span class="keywordtype">int</span> IO_word_size  = <span class="keyword">sizeof</span>(realtyp);</div>
+<div class="line">    <span class="keywordtype">int</span> exoid = <a id="a10" name="a10"></a><a class="code hl_define" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a>(temporary_name, <a id="a11" name="a11"></a><a class="code hl_define" href="group__FileVars.html#gadeed66ded179e51a8858254052a76ba4">EX_CLOBBER</a> | mymode, &amp;CPU_word_size, &amp;IO_word_size);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">if</span> (exoid &lt; 0) {</div>
 <div class="line">      fprintf(stderr, <span class="stringliteral">&quot;after ex_create, error = %d\n&quot;</span>, exoid);</div>
@@ -523,10 +515,8 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">        }</div>
 <div class="line">      }</div>
 <div class="line"> </div>
-<div class="line">      len_connect = NUM_NODES_PER_ELEM * loc_num_elements;</div>
-<div class="line"> </div>
 <div class="line">      <span class="comment">/* malloc things we need */</span></div>
-<div class="line"> </div>
+<div class="line">      INT len_connect = NUM_NODES_PER_ELEM * loc_num_elements;</div>
 <div class="line">      <span class="keywordflow">if</span> (i == 0) { <span class="comment">/* first time through; max size arrays occur on</span></div>
 <div class="line"><span class="comment">                       first iteration */</span></div>
 <div class="line">        elem_map       = malloc(loc_num_elements * <span class="keyword">sizeof</span>(INT));</div>
@@ -568,13 +558,13 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">      fprintf(stderr, <span class="stringliteral">&quot;\n loc_num_nodes: %&quot;</span> PRId64 <span class="stringliteral">&quot;\n&quot;</span>, loc_num_nodes);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    num_dim       = 3;</div>
-<div class="line">    num_elem_blk  = 1;</div>
-<div class="line">    num_node_sets = 0;</div>
-<div class="line">    num_side_sets = 0;</div>
+<div class="line">    <span class="keywordtype">int</span> num_dim       = 3;</div>
+<div class="line">    <span class="keywordtype">int</span> num_elem_blk  = 1;</div>
+<div class="line">    <span class="keywordtype">int</span> num_node_sets = 0;</div>
+<div class="line">    <span class="keywordtype">int</span> num_side_sets = 0;</div>
 <div class="line"> </div>
-<div class="line">    err = <a id="a15" name="a15"></a><a class="code hl_function" href="group__ModelDescription.html#gaad1d6ddd57d1fa8f94da25d505e8c7ba">ex_put_init</a>(exoid, <span class="stringliteral">&quot;This is an EXODUSII performance test.&quot;</span>, num_dim, loc_num_nodes,</div>
-<div class="line">                      loc_num_elements, num_elem_blk, num_node_sets, num_side_sets);</div>
+<div class="line">    <span class="keywordtype">int</span> err = <a id="a15" name="a15"></a><a class="code hl_function" href="group__ModelDescription.html#gaad1d6ddd57d1fa8f94da25d505e8c7ba">ex_put_init</a>(exoid, <span class="stringliteral">&quot;This is an EXODUSII performance test.&quot;</span>, num_dim, loc_num_nodes,</div>
+<div class="line">                          loc_num_elements, num_elem_blk, num_node_sets, num_side_sets);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">if</span> (err) {</div>
 <div class="line">      fprintf(stderr, <span class="stringliteral">&quot;after ex_put_init, error = %d\n&quot;</span>, err);</div>
@@ -584,6 +574,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Extract the local x and y coordinates */</span></div>
 <div class="line">    <span class="keywordflow">if</span> (num_domains &gt; 1) {</div>
+<div class="line">      INT loc_node_size = -1;</div>
 <div class="line">      <span class="keywordflow">if</span> (loc_num_nodes &gt; loc_node_size) {</div>
 <div class="line">        realtyp *tmpx = realloc(loc_xcoords, loc_num_nodes * <span class="keyword">sizeof</span>(realtyp));</div>
 <div class="line">        <span class="keywordflow">if</span> (tmpx == NULL) {</div>
@@ -618,8 +609,8 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">        loc_node_size = loc_num_nodes;</div>
 <div class="line">      }</div>
 <div class="line"> </div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; loc_num_nodes; j++) {</div>
-<div class="line">        index          = node_map[j] - map_origin;</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; loc_num_nodes; j++) {</div>
+<div class="line">        INT index      = node_map[j] - map_origin;</div>
 <div class="line">        loc_xcoords[j] = x[index];</div>
 <div class="line">        loc_ycoords[j] = y[index];</div>
 <div class="line">        loc_zcoords[j] = z[index];</div>
@@ -712,14 +703,12 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">      exit(-1);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
+<div class="line">    <span class="keywordtype">int</span> *elem_var_tab = NULL;</div>
 <div class="line">    <span class="keywordflow">if</span> (num_element_fields &gt; 0) {</div>
 <div class="line">      elem_var_tab = malloc(num_element_fields * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_element_fields; j++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_element_fields; j++) {</div>
 <div class="line">        elem_var_tab[j] = 1;</div>
 <div class="line">      }</div>
-<div class="line">    }</div>
-<div class="line">    <span class="keywordflow">else</span> {</div>
-<div class="line">      elem_var_tab = 0;</div>
 <div class="line">    }</div>
 <div class="line">    err = <a id="a25" name="a25"></a><a class="code hl_function" href="group__ResultsData.html#ga935816b7ecb1175e80accec7341c8840">ex_put_all_var_param</a>(exoid, num_global_fields, num_nodal_fields, num_element_fields,</div>
 <div class="line">                               elem_var_tab, 0, 0, 0, 0);</div>
@@ -729,15 +718,21 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">      exit(-1);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
+<div class="line">    <span class="keywordtype">char</span> **var_name;</div>
 <div class="line">    <span class="keywordflow">if</span> (num_nodal_fields &gt; 0) {</div>
 <div class="line"> </div>
 <div class="line">      var_name = malloc(num_nodal_fields * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_nodal_fields; j++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_nodal_fields; j++) {</div>
 <div class="line">        var_name[j] = malloc((MAX_STRING_LEN + 1) * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>));</div>
 <div class="line">        sprintf(var_name[j], <span class="stringliteral">&quot;node_field_%&quot;</span> PRId64, j + 1);</div>
 <div class="line">      }</div>
 <div class="line">      err = <a id="a26" name="a26"></a><a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a id="a27" name="a27"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, num_nodal_fields, var_name);</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_nodal_fields; j++) {</div>
+<div class="line">      <span class="keywordflow">if</span> (err) {</div>
+<div class="line">        fprintf(stderr, <span class="stringliteral">&quot;after ex_put_variable_names (nodal), error = %d\n&quot;</span>, err);</div>
+<div class="line">        <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
+<div class="line">        exit(-1);</div>
+<div class="line">      }</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_nodal_fields; j++) {</div>
 <div class="line">        free(var_name[j]);</div>
 <div class="line">      }</div>
 <div class="line">      free(var_name);</div>
@@ -746,13 +741,18 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">    <span class="keywordflow">if</span> (num_global_fields &gt; 0) {</div>
 <div class="line">      globals  = malloc(num_global_fields * <span class="keyword">sizeof</span>(realtyp));</div>
 <div class="line">      var_name = malloc(num_global_fields * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_global_fields; j++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_global_fields; j++) {</div>
 <div class="line">        var_name[j] = malloc((MAX_STRING_LEN + 1) * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>));</div>
 <div class="line">        sprintf(var_name[j], <span class="stringliteral">&quot;global_field_%&quot;</span> PRId64, j + 1);</div>
 <div class="line">        globals[j] = j;</div>
 <div class="line">      }</div>
 <div class="line">      err = <a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a id="a28" name="a28"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, num_global_fields, var_name);</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_global_fields; j++) {</div>
+<div class="line">      <span class="keywordflow">if</span> (err) {</div>
+<div class="line">        fprintf(stderr, <span class="stringliteral">&quot;after ex_put_variable_names (global), error = %d\n&quot;</span>, err);</div>
+<div class="line">        <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
+<div class="line">        exit(-1);</div>
+<div class="line">      }</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_global_fields; j++) {</div>
 <div class="line">        free(var_name[j]);</div>
 <div class="line">      }</div>
 <div class="line">      free(var_name);</div>
@@ -761,7 +761,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">    <span class="keywordflow">if</span> (num_element_fields &gt; 0) {</div>
 <div class="line">      free(elem_var_tab);</div>
 <div class="line">      var_name = malloc(num_element_fields * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_element_fields; j++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_element_fields; j++) {</div>
 <div class="line">        var_name[j] = malloc((MAX_STRING_LEN + 1) * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>));</div>
 <div class="line">        sprintf(var_name[j], <span class="stringliteral">&quot;element_field_%&quot;</span> PRId64, j + 1);</div>
 <div class="line">      }</div>
@@ -771,7 +771,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">        <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
 <div class="line">        exit(-1);</div>
 <div class="line">      }</div>
-<div class="line">      <span class="keywordflow">for</span> (j = 0; j &lt; num_element_fields; j++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_element_fields; j++) {</div>
 <div class="line">        free(var_name[j]);</div>
 <div class="line">      }</div>
 <div class="line">      free(var_name);</div>
@@ -779,7 +779,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">if</span> (num_nodal_fields + num_global_fields + num_element_fields &gt; 0) {</div>
 <div class="line">      fprintf(stderr, <span class="stringliteral">&quot;Domain %&quot;</span> PRId64 <span class="stringliteral">&quot;/%&quot;</span> PRId64 <span class="stringliteral">&quot;, Writing Timestep: &quot;</span>, i + 1, num_domains);</div>
-<div class="line">      <span class="keywordflow">for</span> (t = 0; t &lt; num_timesteps; t++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (INT t = 0; t &lt; num_timesteps; t++) {</div>
 <div class="line">        realtyp time = t;</div>
 <div class="line">        <a id="a29" name="a29"></a><a class="code hl_function" href="group__ResultsData.html#ga2052c8728dac97589b94d9947e645797">ex_put_time</a>(exoid, t + 1, &amp;time);</div>
 <div class="line">        fprintf(stderr, <span class="stringliteral">&quot;%&quot;</span> PRId64 <span class="stringliteral">&quot;, &quot;</span>, t + 1);</div>
@@ -791,7 +791,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">            exit(-1);</div>
 <div class="line">          }</div>
 <div class="line">        }</div>
-<div class="line">        <span class="keywordflow">for</span> (j = 0; j &lt; num_nodal_fields; j++) {</div>
+<div class="line">        <span class="keywordflow">for</span> (INT j = 0; j &lt; num_nodal_fields; j++) {</div>
 <div class="line">          err = <a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, t + 1, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, j + 1, 0, loc_num_nodes, x);</div>
 <div class="line">          <span class="keywordflow">if</span> (err) {</div>
 <div class="line">            fprintf(stderr, <span class="stringliteral">&quot;after ex_put_nodal_var, error = %d\n&quot;</span>, err);</div>
@@ -799,7 +799,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">            exit(-1);</div>
 <div class="line">          }</div>
 <div class="line">        }</div>
-<div class="line">        <span class="keywordflow">for</span> (j = 0; j &lt; num_element_fields; j++) {</div>
+<div class="line">        <span class="keywordflow">for</span> (INT j = 0; j &lt; num_element_fields; j++) {</div>
 <div class="line">          err = <a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, t + 1, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, j + 1, EBLK_ID, loc_num_elements, x);</div>
 <div class="line">          <span class="keywordflow">if</span> (err) {</div>
 <div class="line">            fprintf(stderr, <span class="stringliteral">&quot;after ex_put_element_var, error = %d\n&quot;</span>, err);</div>
@@ -850,9 +850,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"><span class="comment"> ***********************************************************************/</span></div>
 <div class="line"><span class="keywordtype">void</span> create_elem_map(INT loc_num_elems, INT elem_num, INT *elem_map, INT map_origin)</div>
 <div class="line">{</div>
-<div class="line">  INT i;</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (i = 0; i &lt; loc_num_elems; i++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (INT i = 0; i &lt; loc_num_elems; i++) {</div>
 <div class="line">    elem_map[i] = map_origin + elem_num++;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -870,12 +868,12 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"><span class="keywordtype">void</span> extract_connect(INT element_offset, INT num_elem, INT *elem_map, INT *connect,</div>
 <div class="line">                     INT *domain_connect, INT map_origin)</div>
 <div class="line">{</div>
-<div class="line">  INT i, j, k, m, offset;</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (i = element_offset, j = 0, m = 0; j &lt; num_elem; j++) {</div>
+<div class="line">  INT i = element_offset;</div>
+<div class="line">  INT m = 0;</div>
+<div class="line">  <span class="keywordflow">for</span> (INT j = 0; j &lt; num_elem; j++) {</div>
 <div class="line">    <span class="keywordflow">if</span> (elem_map[j] == i + map_origin) { <span class="comment">/* extract this element */</span></div>
-<div class="line">      offset = (i * NUM_NODES_PER_ELEM);</div>
-<div class="line">      <span class="keywordflow">for</span> (k = offset; k &lt; offset + NUM_NODES_PER_ELEM; k++) {</div>
+<div class="line">      INT offset = (i * NUM_NODES_PER_ELEM);</div>
+<div class="line">      <span class="keywordflow">for</span> (INT k = offset; k &lt; offset + NUM_NODES_PER_ELEM; k++) {</div>
 <div class="line">        domain_connect[m++] = connect[k];</div>
 <div class="line">      }</div>
 <div class="line">      i++;</div>
@@ -893,17 +891,16 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"><span class="keywordtype">void</span> create_node_map(INT len_map, INT len_connect, INT *domain_connect, INT *node_map,</div>
 <div class="line">                     INT *loc_num_nodes, INT map_origin)</div>
 <div class="line">{</div>
-<div class="line">  INT cnt, i;</div>
-<div class="line">  <span class="keywordflow">for</span> (i = 0; i &lt; len_map; i++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (INT i = 0; i &lt; len_map; i++) {</div>
 <div class="line">    node_map[i] = 0;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (i = 0; i &lt; len_connect; i++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (INT i = 0; i &lt; len_connect; i++) {</div>
 <div class="line">    node_map[domain_connect[i] - map_origin] = 1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  cnt = 0;</div>
-<div class="line">  <span class="keywordflow">for</span> (i = 0; i &lt; len_map; i++) {</div>
+<div class="line">  INT cnt = 0;</div>
+<div class="line">  <span class="keywordflow">for</span> (INT i = 0; i &lt; len_map; i++) {</div>
 <div class="line">    <span class="keywordflow">if</span> (node_map[i] &gt; 0) {</div>
 <div class="line">      node_map[cnt++] = i + map_origin;</div>
 <div class="line">    }</div>
@@ -929,10 +926,8 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"><span class="keywordtype">void</span> create_local_connect(INT *node_map, INT len_node_map, INT len_connect, INT *domain_connect,</div>
 <div class="line">                          INT *loc_connect, INT map_origin)</div>
 <div class="line">{</div>
-<div class="line">  INT i, index;</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (i = 0; i &lt; len_connect; i++) {</div>
-<div class="line">    index = bin_search2(domain_connect[i], len_node_map, node_map);</div>
+<div class="line">  <span class="keywordflow">for</span> (INT i = 0; i &lt; len_connect; i++) {</div>
+<div class="line">    INT index = bin_search2(domain_connect[i], len_node_map, node_map);</div>
 <div class="line">    <span class="keywordflow">if</span> (index != -1) { <span class="comment">/* found */</span></div>
 <div class="line">      loc_connect[i] = index + map_origin;</div>
 <div class="line">    }</div>
@@ -956,12 +951,11 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"> </div>
 <div class="line">INT bin_search2(INT value, INT num, INT List[])</div>
 <div class="line">{</div>
-<div class="line">  INT top, bottom = 0, middle, g_mid;</div>
-<div class="line"> </div>
-<div class="line">  top = num - 1;</div>
+<div class="line">  INT bottom = 0;</div>
+<div class="line">  INT top    = num - 1;</div>
 <div class="line">  <span class="keywordflow">while</span> (bottom &lt;= top) {</div>
-<div class="line">    middle = (bottom + top) &gt;&gt; 1;</div>
-<div class="line">    g_mid  = List[middle];</div>
+<div class="line">    INT middle = (bottom + top) &gt;&gt; 1;</div>
+<div class="line">    INT g_mid  = List[middle];</div>
 <div class="line">    <span class="keywordflow">if</span> (value &lt; g_mid) {</div>
 <div class="line">      top = middle - 1;</div>
 <div class="line">    }</div>
@@ -979,9 +973,6 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"><span class="keywordtype">void</span> get_file_name(<span class="keyword">const</span> <span class="keywordtype">char</span> *base, <span class="keyword">const</span> <span class="keywordtype">char</span> *ext, <span class="keywordtype">int</span> rank, <span class="keywordtype">int</span> nprocs, <span class="keyword">const</span> <span class="keywordtype">char</span> *other,</div>
 <div class="line">                   <span class="keywordtype">char</span> *output)</div>
 <div class="line">{</div>
-<div class="line">  INT  i1, iTemp1;</div>
-<div class="line">  INT  iMaxDigit = 0, iMyDigit = 0;</div>
-<div class="line">  <span class="keywordtype">char</span> cTemp[128];</div>
 <div class="line"> </div>
 <div class="line">  output[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line">  <a class="code hl_function" href="exodusII_8h.html#af88999a1f2592617a56db303e090d2d7">ex_copy_string</a>(output, base, MAX_STRING_LEN);</div>
@@ -997,8 +988,8 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"><span class="comment">     * This allows numbers like 01-99, i.e., prepending zeros to the</span></div>
 <div class="line"><span class="comment">     * name to preserve proper alphabetic sorting of the files.</span></div>
 <div class="line"><span class="comment">     */</span></div>
-<div class="line"> </div>
-<div class="line">    iTemp1 = nprocs;</div>
+<div class="line">    INT iMaxDigit = 0, iMyDigit = 0;</div>
+<div class="line">    INT iTemp1 = nprocs;</div>
 <div class="line">    <span class="keywordflow">do</span> {</div>
 <div class="line">      iTemp1 /= 10;</div>
 <div class="line">      iMaxDigit++;</div>
@@ -1010,15 +1001,17 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">      iMyDigit++;</div>
 <div class="line">    } <span class="keywordflow">while</span> (iTemp1 &gt;= 1);</div>
 <div class="line"> </div>
-<div class="line">    strcat(output, <span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line">    <span class="keywordtype">char</span> cTemp[128];</div>
 <div class="line">    sprintf(cTemp, <span class="stringliteral">&quot;%d&quot;</span>, nprocs);</div>
+<div class="line"> </div>
+<div class="line">    strcat(output, <span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line">    strcat(output, cTemp);</div>
 <div class="line">    strcat(output, <span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/*</span></div>
 <div class="line"><span class="comment">     * Append the proper number of zeros to the filename.</span></div>
 <div class="line"><span class="comment">     */</span></div>
-<div class="line">    <span class="keywordflow">for</span> (i1 = 0; i1 &lt; iMaxDigit - iMyDigit; i1++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (INT i1 = 0; i1 &lt; iMaxDigit - iMyDigit; i1++) {</div>
 <div class="line">      strcat(output, <span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
