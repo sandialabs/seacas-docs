@@ -290,7 +290,7 @@ existence of an entity at a particular timestep is indicated via a
 status variable. Replaces conex
 
 CPUP
----
+----
 
 CPUP combines multiple CGNS structured mesh databases
 produced by a parallel application into a single CGNS
