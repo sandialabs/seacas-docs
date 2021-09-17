@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_8c-exampl
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -120,7 +120,6 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_8c-exampl
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> *output_nodal_var(<span class="keywordtype">void</span> *varg)</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">char</span>   name[33];</div>
 <div class="line">  param *arg      = (param *)varg;</div>
 <div class="line">  <span class="keywordtype">int</span>    num_node = <a id="a0" name="a0"></a><a class="code hl_function" href="group__Utilities.html#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int</a>(arg-&gt;exoid, <a id="a1" name="a1"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcab4acc79d4aff51ab6a302a1414f1776b">EX_INQ_NODES</a>);</div>
 <div class="line">  <span class="keywordtype">int</span>    segment  = num_node / NUM_THREADS;</div>
@@ -137,6 +136,7 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_8c-exampl
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (arg-&gt;threadid &lt; NUM_NODAL_VAR) {</div>
+<div class="line">    <span class="keywordtype">char</span> name[33];</div>
 <div class="line">    sprintf(name, <span class="stringliteral">&quot;NodalVar%ld&quot;</span>, arg-&gt;threadid + 1);</div>
 <div class="line">    <a id="a3" name="a3"></a><a class="code hl_function" href="group__ResultsData.html#ga223eafff4a08dd9b2264a82df11050b3">ex_put_variable_name</a>(arg-&gt;exoid, <a id="a4" name="a4"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, arg-&gt;threadid + 1, name);</div>
 <div class="line">  }</div>
@@ -202,28 +202,26 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_8c-exampl
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line">{</div>
-<div class="line">  pthread_t threads[NUM_THREADS];</div>
-<div class="line">  <span class="keywordtype">int</span>       rc;</div>
-<div class="line">  <span class="keywordtype">long</span>      t;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> exoid = init_file(NUM_NODAL_VAR);</div>
 <div class="line"> </div>
-<div class="line">  param arg[NUM_THREADS];</div>
+<div class="line">  param     arg[NUM_THREADS];</div>
+<div class="line">  pthread_t threads[NUM_THREADS];</div>
 <div class="line"> </div>
 <div class="line">  printf(<span class="stringliteral">&quot;Running on %d threads\n&quot;</span>, NUM_THREADS);</div>
-<div class="line">  <span class="keywordflow">for</span> (t = 0; t &lt; NUM_THREADS; t++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">long</span> t = 0; t &lt; NUM_THREADS; t++) {</div>
 <div class="line">    arg[t].exoid    = exoid;</div>
 <div class="line">    arg[t].threadid = t;</div>
 <div class="line">    arg[t].timestep = 1;</div>
 <div class="line"> </div>
-<div class="line">    rc = pthread_create(&amp;threads[t], NULL, output_nodal_var, (<span class="keywordtype">void</span> *)(arg + t));</div>
+<div class="line">    <span class="keywordtype">int</span> rc = pthread_create(&amp;threads[t], NULL, output_nodal_var, (<span class="keywordtype">void</span> *)(arg + t));</div>
 <div class="line">    <span class="keywordflow">if</span> (rc) {</div>
 <div class="line">      printf(<span class="stringliteral">&quot;ERROR; return code from pthread_create() is %d\n&quot;</span>, rc);</div>
 <div class="line">      exit(-1);</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (t = 0; t &lt; NUM_THREADS; t++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">long</span> t = 0; t &lt; NUM_THREADS; t++) {</div>
 <div class="line">    pthread_join(threads[t], NULL);</div>
 <div class="line">  }</div>
 <div class="line"> </div>

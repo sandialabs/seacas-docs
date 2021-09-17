@@ -1270,10 +1270,6 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line"><span class="keywordtype">void</span> get_file_name(<span class="keyword">const</span> <span class="keywordtype">char</span> *base, <span class="keyword">const</span> <span class="keywordtype">char</span> *ext, <span class="keywordtype">int</span> rank, <span class="keywordtype">int</span> nprocs, <span class="keyword">const</span> <span class="keywordtype">char</span> *other,</div>
 <div class="line">                   <span class="keywordtype">char</span> *output)</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">int</span>  i1, iTemp1;</div>
-<div class="line">  <span class="keywordtype">int</span>  iMaxDigit = 0, iMyDigit = 0;</div>
-<div class="line">  <span class="keywordtype">char</span> cTemp[128];</div>
-<div class="line"> </div>
 <div class="line">  output[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line">  <a class="code hl_function" href="exodusII_8h.html#af88999a1f2592617a56db303e090d2d7">ex_copy_string</a>(output, base, MAX_STRING_LEN);</div>
 <div class="line">  strcat(output, <span class="stringliteral">&quot;.&quot;</span>);</div>
@@ -1289,8 +1285,8 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line"><span class="comment">     * This allows numbers like 01-99, i.e., prepending zeros to the</span></div>
 <div class="line"><span class="comment">     * name to preserve proper alphabetic sorting of the files.</span></div>
 <div class="line"><span class="comment">     */</span></div>
-<div class="line"> </div>
-<div class="line">    iTemp1 = nprocs;</div>
+<div class="line">    <span class="keywordtype">int</span> iMaxDigit = 0, iMyDigit = 0;</div>
+<div class="line">    <span class="keywordtype">int</span> iTemp1 = nprocs;</div>
 <div class="line">    <span class="keywordflow">do</span> {</div>
 <div class="line">      iTemp1 /= 10;</div>
 <div class="line">      iMaxDigit++;</div>
@@ -1303,6 +1299,8 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line">    } <span class="keywordflow">while</span> (iTemp1 &gt;= 1);</div>
 <div class="line"> </div>
 <div class="line">    strcat(output, <span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">char</span> cTemp[128];</div>
 <div class="line">    sprintf(cTemp, <span class="stringliteral">&quot;%d&quot;</span>, nprocs);</div>
 <div class="line">    strcat(output, cTemp);</div>
 <div class="line">    strcat(output, <span class="stringliteral">&quot;.&quot;</span>);</div>
@@ -1310,7 +1308,7 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line">    <span class="comment">/*</span></div>
 <div class="line"><span class="comment">     * Append the proper number of zeros to the filename.</span></div>
 <div class="line"><span class="comment">     */</span></div>
-<div class="line">    <span class="keywordflow">for</span> (i1 = 0; i1 &lt; iMaxDigit - iMyDigit; i1++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i1 = 0; i1 &lt; iMaxDigit - iMyDigit; i1++) {</div>
 <div class="line">      strcat(output, <span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line">    }</div>
 <div class="line"> </div>

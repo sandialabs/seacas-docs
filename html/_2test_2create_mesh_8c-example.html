@@ -154,15 +154,12 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line"><span class="comment"> */</span></div>
 <div class="line">INT icbrt(<span class="keywordtype">unsigned</span> x)</div>
 <div class="line">{</div>
-<div class="line">  INT      s;</div>
-<div class="line">  <span class="keywordtype">unsigned</span> y, b;</div>
-<div class="line"> </div>
-<div class="line">  s = 30;</div>
-<div class="line">  y = 0;</div>
+<div class="line">  INT      s = 30;</div>
+<div class="line">  <span class="keywordtype">unsigned</span> y = 0;</div>
 <div class="line">  <span class="keywordflow">while</span> (s &gt;= 0) { <span class="comment">/* Do 11 times. */</span></div>
-<div class="line">    y = 2 * y;</div>
-<div class="line">    b = (3 * y * (y + 1) + 1) &lt;&lt; s;</div>
-<div class="line">    s = s - 3;</div>
+<div class="line">    y          = 2 * y;</div>
+<div class="line">    <span class="keywordtype">unsigned</span> b = (3 * y * (y + 1) + 1) &lt;&lt; s;</div>
+<div class="line">    s          = s - 3;</div>
 <div class="line">    <span class="keywordflow">if</span> (x &gt;= b) {</div>
 <div class="line">      x = x - b;</div>
 <div class="line">      y = y + 1;</div>
@@ -424,7 +421,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">{</div>
 <div class="line">  <span class="comment">/* create global coordinates */</span></div>
 <div class="line">  <span class="keywordtype">size_t</span> k = 0;</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> m = 0, k = 0; m &lt; (num_elements_1d + 1); m++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> m = 0; m &lt; (num_elements_1d + 1); m++) {</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; (num_elements_1d + 1); i++) {</div>
 <div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; (num_elements_1d + 1); j++, k++) {</div>
 <div class="line">        x[k] = (realtyp)j;</div>

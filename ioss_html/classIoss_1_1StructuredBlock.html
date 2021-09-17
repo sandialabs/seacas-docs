@@ -164,6 +164,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67aeeea9efdde2690fb1ee037d7c4987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeed009e315b8127257a4aab9d5faca69"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#aeed009e315b8127257a4aab9d5faca69">get_cell_global_offset</a> () const</td></tr>
 <tr class="separator:aeed009e315b8127257a4aab9d5faca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a911d284858520ea6ecbc0bd9d38e718d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a911d284858520ea6ecbc0bd9d38e718d">set_ijk_offset</a> (int axis, size_t offset)</td></tr>
+<tr class="separator:a911d284858520ea6ecbc0bd9d38e718d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd7a22ee60672f4cfede0be74c1a79b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a1fd7a22ee60672f4cfede0be74c1a79b">set_ijk_global</a> (int axis, size_t global)</td></tr>
+<tr class="separator:a1fd7a22ee60672f4cfede0be74c1a79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4b3c38177e6ef571840fef3c34ef1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a7e4b3c38177e6ef571840fef3c34ef1c">get_ijk_offset</a> () const</td></tr>
+<tr class="separator:a7e4b3c38177e6ef571840fef3c34ef1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addab4af42cf34e3b42ff79cf6620d6e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#addab4af42cf34e3b42ff79cf6620d6e5">get_ijk_local</a> () const</td></tr>
+<tr class="separator:addab4af42cf34e3b42ff79cf6620d6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb39890bcb61cdf13c0919a642c1e86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#adfb39890bcb61cdf13c0919a642c1e86">get_ijk_global</a> () const</td></tr>
+<tr class="separator:adfb39890bcb61cdf13c0919a642c1e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a956085919111ef0048f3adfad750e5a3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a956085919111ef0048f3adfad750e5a3">get_global_cell_id</a> (int i, int j, int k) const</td></tr>
 <tr class="separator:a956085919111ef0048f3adfad750e5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9ce946bf1da4ff3f995519754290fc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#aca9ce946bf1da4ff3f995519754290fc">get_global_cell_id</a> (<a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> index) const</td></tr>
@@ -1208,6 +1218,81 @@ template&lt;typename INT_t &gt; </div>
 
 </div>
 </div>
+<a id="adfb39890bcb61cdf13c0919a642c1e86" name="adfb39890bcb61cdf13c0919a642c1e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb39890bcb61cdf13c0919a642c1e86">&#9670;&nbsp;</a></span>get_ijk_global()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> Ioss::StructuredBlock::get_ijk_global </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addab4af42cf34e3b42ff79cf6620d6e5" name="addab4af42cf34e3b42ff79cf6620d6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addab4af42cf34e3b42ff79cf6620d6e5">&#9670;&nbsp;</a></span>get_ijk_local()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> Ioss::StructuredBlock::get_ijk_local </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e4b3c38177e6ef571840fef3c34ef1c" name="a7e4b3c38177e6ef571840fef3c34ef1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e4b3c38177e6ef571840fef3c34ef1c">&#9670;&nbsp;</a></span>get_ijk_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> Ioss::StructuredBlock::get_ijk_offset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3de445e3604303f2d9dd686af1b961b7" name="a3de445e3604303f2d9dd686af1b961b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3de445e3604303f2d9dd686af1b961b7">&#9670;&nbsp;</a></span>get_implicit_property()</h2>
 
@@ -1634,6 +1719,62 @@ template&lt;class Archive &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fd7a22ee60672f4cfede0be74c1a79b" name="a1fd7a22ee60672f4cfede0be74c1a79b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd7a22ee60672f4cfede0be74c1a79b">&#9670;&nbsp;</a></span>set_ijk_global()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::StructuredBlock::set_ijk_global </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>global</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a911d284858520ea6ecbc0bd9d38e718d" name="a911d284858520ea6ecbc0bd9d38e718d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a911d284858520ea6ecbc0bd9d38e718d">&#9670;&nbsp;</a></span>set_ijk_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::StructuredBlock::set_ijk_offset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
