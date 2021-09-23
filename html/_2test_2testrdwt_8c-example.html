@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_2test_2testrdwt_8c-example.html','');
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv)</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">int</span> num_elem_in_block, num_nodes_per_elem, num_attr;</div>
-<div class="line">  <span class="keywordtype">int</span> num_nodes_in_set, num_elem_in_set;</div>
+<div class="line">  <span class="keywordtype">int</span> num_nodes_in_set;</div>
 <div class="line">  <span class="keywordtype">int</span> num_sides_in_set, num_df_in_set;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">char</span> title[<a id="a0" name="a0"></a><a class="code hl_define" href="group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2">MAX_LINE_LENGTH</a> + 1], elem_type[<a id="a1" name="a1"></a><a class="code hl_define" href="group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f">MAX_STR_LENGTH</a> + 1];</div>
@@ -364,12 +364,12 @@ $(document).ready(function(){initNavTree('_2test_2testrdwt_8c-example.html','');
 <div class="line">    printf(<span class="stringliteral">&quot;after ex_put_side_set_param, error = %d\n&quot;</span>, error);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Note: The # of elements is same as # of sides!  */</span></div>
-<div class="line">    num_elem_in_set      = num_sides_in_set;</div>
-<div class="line">    <span class="keywordtype">int</span> *  elem_list     = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">    <span class="keywordtype">int</span> *  side_list     = (<span class="keywordtype">int</span> *)calloc(num_sides_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">    <span class="keywordtype">int</span> *  node_ctr_list = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">    <span class="keywordtype">int</span> *  node_list     = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set * 21, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">    <span class="keywordtype">float</span> *dist_fact     = (<span class="keywordtype">float</span> *)calloc(num_df_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line">    <span class="keywordtype">int</span>    num_elem_in_set = num_sides_in_set;</div>
+<div class="line">    <span class="keywordtype">int</span> *  elem_list       = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span> *  side_list       = (<span class="keywordtype">int</span> *)calloc(num_sides_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span> *  node_ctr_list   = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span> *  node_list       = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set * 21, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">float</span> *dist_fact       = (<span class="keywordtype">float</span> *)calloc(num_df_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"> </div>
 <div class="line">    error = <a class="code hl_function" href="group__ModelDescription.html#ga48604d23fc30d70620e1255823e4ff50">ex_get_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, ids[i], elem_list, side_list);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_get_side_set, error = %3d\n&quot;</span>, error);</div>

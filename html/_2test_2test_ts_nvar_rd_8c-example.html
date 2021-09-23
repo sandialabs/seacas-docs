@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_nvar_rd_8c-example.htm
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -238,28 +238,25 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_nvar_rd_8c-example.htm
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line">{</div>
-<div class="line">  pthread_t threads[NUM_THREADS];</div>
-<div class="line">  <span class="keywordtype">int</span>       rc;</div>
-<div class="line">  <span class="keywordtype">long</span>      t;</div>
-<div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> exoid = init_file(NUM_THREADS);</div>
 <div class="line"> </div>
 <div class="line">  param arg[NUM_THREADS];</div>
 <div class="line"> </div>
+<div class="line">  pthread_t threads[NUM_THREADS];</div>
 <div class="line">  printf(<span class="stringliteral">&quot;Running on %d threads\n&quot;</span>, NUM_THREADS);</div>
-<div class="line">  <span class="keywordflow">for</span> (t = 0; t &lt; NUM_THREADS; t++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">long</span> t = 0; t &lt; NUM_THREADS; t++) {</div>
 <div class="line">    arg[t].exoid    = exoid;</div>
 <div class="line">    arg[t].threadid = t;</div>
 <div class="line">    arg[t].timestep = 1;</div>
 <div class="line"> </div>
-<div class="line">    rc = pthread_create(&amp;threads[t], NULL, input_nodal_var, (<span class="keywordtype">void</span> *)(arg + t));</div>
+<div class="line">    <span class="keywordtype">int</span> rc = pthread_create(&amp;threads[t], NULL, input_nodal_var, (<span class="keywordtype">void</span> *)(arg + t));</div>
 <div class="line">    <span class="keywordflow">if</span> (rc) {</div>
 <div class="line">      printf(<span class="stringliteral">&quot;ERROR; return code from pthread_create() is %d\n&quot;</span>, rc);</div>
 <div class="line">      exit(-1);</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (t = 0; t &lt; NUM_THREADS; t++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">long</span> t = 0; t &lt; NUM_THREADS; t++) {</div>
 <div class="line">    pthread_join(threads[t], NULL);</div>
 <div class="line">  }</div>
 <div class="line"> </div>

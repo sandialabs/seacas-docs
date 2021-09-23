@@ -1,5 +1,6 @@
 var apr__util_8cc =
 [
+    [ "math_errhandling", "apr__util_8cc.html#aa8618aec27dedcd32f494ccf22f3ed42", null ],
     [ "arg_check", "apr__util_8cc.html#a8b8e5e7edad57bbde81e0cd87d08b46b", null ],
     [ "check_valid_var", "apr__util_8cc.html#a6c303f22d6e6dbd33746bf029d6139bf", null ],
     [ "cleanup_memory", "apr__util_8cc.html#afb5566ed6b22e0cab7cc41693e6dd119", null ],

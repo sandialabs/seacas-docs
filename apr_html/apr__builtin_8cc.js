@@ -1,6 +1,7 @@
 var apr__builtin_8cc =
 [
     [ "d2r", "apr__builtin_8cc.html#aaeeb6e3399ffad67be7d1a4263077ace", null ],
+    [ "math_errhandling", "apr__builtin_8cc.html#aa8618aec27dedcd32f494ccf22f3ed42", null ],
     [ "max", "apr__builtin_8cc.html#ac39d9cef6a5e030ba8d9e11121054268", null ],
     [ "min", "apr__builtin_8cc.html#abb702d8b501669a23aa0ab3b281b9384", null ],
     [ "PI", "apr__builtin_8cc.html#a598a3330b3c21701223ee0ca14316eca", null ],

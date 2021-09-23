@@ -21,7 +21,15 @@ var files_dup =
     [ "apr_units.cc", "apr__units_8cc.html", "apr__units_8cc" ],
     [ "apr_util.cc", "apr__util_8cc.html", "apr__util_8cc" ],
     [ "apr_util.h", "apr__util_8h.html", "apr__util_8h" ],
-    [ "aprepro.h", "aprepro_8h.html", "aprepro_8h" ],
+    [ "aprepro.h", "aprepro_8h.html", [
+      [ "SEAMS::array", "structSEAMS_1_1array.html", "structSEAMS_1_1array" ],
+      [ "SEAMS::symrec", "structSEAMS_1_1symrec.html", "structSEAMS_1_1symrec" ],
+      [ "SEAMS::symrec::value", "structSEAMS_1_1symrec_1_1value.html", "structSEAMS_1_1symrec_1_1value" ],
+      [ "SEAMS::aprepro_options", "structSEAMS_1_1aprepro__options.html", "structSEAMS_1_1aprepro__options" ],
+      [ "SEAMS::file_rec", "structSEAMS_1_1file__rec.html", "structSEAMS_1_1file__rec" ],
+      [ "SEAMS::history_data", "structSEAMS_1_1history__data.html", "structSEAMS_1_1history__data" ],
+      [ "SEAMS::Aprepro", "classSEAMS_1_1Aprepro.html", "classSEAMS_1_1Aprepro" ]
+    ] ],
     [ "aprepro_parser.h", "aprepro__parser_8h.html", "aprepro__parser_8h" ],
     [ "FlexLexer.h", "FlexLexer_8h.html", "FlexLexer_8h" ],
     [ "init_structs.h", "init__structs_8h.html", [

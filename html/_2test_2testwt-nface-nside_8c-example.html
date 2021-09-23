@@ -116,7 +116,6 @@ $(document).ready(function(){initNavTree('_2test_2testwt-nface-nside_8c-example.
 <div class="line">  <span class="keywordtype">char</span> *coord_names[3], *qa_record[2][4], *info[3], *var_names[3];</div>
 <div class="line">  <span class="keywordtype">char</span> *block_names[10], *nset_names[10], *sset_names[10];</div>
 <div class="line">  <span class="keywordtype">char</span> *prop_names[2], *attrib_names[2];</div>
-<div class="line">  <span class="keywordtype">char</span> *title = <span class="stringliteral">&quot;This is a test&quot;</span>;</div>
 <div class="line">  <a id="a0" name="a0"></a><a class="code hl_function" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts</a>(<a id="a1" name="a1"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9">EX_VERBOSE</a> | <a id="a2" name="a2"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feac85b3327ce99395f3faf0d542b8b3a0a">EX_ABORT</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Specify compute and i/o word size */</span></div>
@@ -143,6 +142,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt-nface-nside_8c-example.
 <div class="line">    <span class="keywordtype">int</span> num_elem_blk  = 1;</div>
 <div class="line">    <span class="keywordtype">int</span> num_node_sets = 0;</div>
 <div class="line"> </div>
+<div class="line">    <span class="keywordtype">char</span> *title = <span class="stringliteral">&quot;This is a test&quot;</span>;</div>
 <div class="line">    <a id="a6" name="a6"></a><a class="code hl_function" href="exodusII_8h.html#af88999a1f2592617a56db303e090d2d7">ex_copy_string</a>(par.<a id="a7" name="a7"></a><a class="code hl_variable" href="structex__init__params.html#af78401fc73d373f707c6845cf4b7b451">title</a>, title, <a id="a8" name="a8"></a><a class="code hl_define" href="group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2">MAX_LINE_LENGTH</a> + 1);</div>
 <div class="line">    par.<a id="a9" name="a9"></a><a class="code hl_variable" href="structex__init__params.html#aab62ab1d8e6bd13f2db73bad2bcf82a2">num_dim</a>       = num_dim;</div>
 <div class="line">    par.<a id="a10" name="a10"></a><a class="code hl_variable" href="structex__init__params.html#a413ddc90c850aca237fada9d9779dee3">num_nodes</a>     = num_nodes;</div>

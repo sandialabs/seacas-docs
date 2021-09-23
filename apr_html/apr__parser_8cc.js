@@ -1,5 +1,6 @@
 var apr__parser_8cc =
 [
+    [ "math_errhandling", "apr__parser_8cc.html#aa8618aec27dedcd32f494ccf22f3ed42", null ],
     [ "YY_", "apr__parser_8cc.html#a86f079016f11f0600f4259f3f03f8d43", null ],
     [ "YY_EXCEPTIONS", "apr__parser_8cc.html#a50c42b07435bf2867d707c84388133bf", null ],
     [ "YY_REDUCE_PRINT", "apr__parser_8cc.html#a49ad456240785266cadae498ddae9310", null ],
