@@ -35,6 +35,7 @@ var namespaces_dup =
       [ "info_sidesets", "namespaceanonymous__namespace_02io__info_8C_03.html#a93004d5461f1dd0ab30b5d52ed0a352c", null ],
       [ "info_structuredblock", "namespaceanonymous__namespace_02io__info_8C_03.html#a332489d9fe862910639e524eb6f5e138", null ],
       [ "name", "namespaceanonymous__namespace_02io__info_8C_03.html#af604a0af17d437ca8a8f1d1c77ee94c1", null ],
+      [ "print_bbox", "namespaceanonymous__namespace_02io__info_8C_03.html#af2cce9b20af5f1b4b8a9b0d496dcf7fb", null ],
       [ "print_groups", "namespaceanonymous__namespace_02io__info_8C_03.html#a9e1edabb5a775515503e7cd0c78daf1b", null ],
       [ "set_properties", "namespaceanonymous__namespace_02io__info_8C_03.html#aeafeb24f8ac0b3f2ac4ad6e3bc2f01d0", null ]
     ] ],
@@ -343,7 +344,9 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_Spring2.C}", "namespaceanonymous__namespace_02Ioss__Spring2_8C_03.html", "namespaceanonymous__namespace_02Ioss__Spring2_8C_03" ],
     [ "anonymous_namespace{Ioss_Spring3.C}", "namespaceanonymous__namespace_02Ioss__Spring3_8C_03.html", "namespaceanonymous__namespace_02Ioss__Spring3_8C_03" ],
     [ "anonymous_namespace{Ioss_StructuredBlock.C}", "namespaceanonymous__namespace_02Ioss__StructuredBlock_8C_03.html", [
+      [ "get_cell_count", "namespaceanonymous__namespace_02Ioss__StructuredBlock_8C_03.html#a037e593c0dd45f214ad05adb056242fc", null ],
       [ "get_cell_count", "namespaceanonymous__namespace_02Ioss__StructuredBlock_8C_03.html#ab0bbd9dad27fa519e0c750183e98e019", null ],
+      [ "get_node_count", "namespaceanonymous__namespace_02Ioss__StructuredBlock_8C_03.html#ac6d1ff06f56505323ae81136ceeeb9f9", null ],
       [ "get_node_count", "namespaceanonymous__namespace_02Ioss__StructuredBlock_8C_03.html#a57f21f08949d5844d2b60d8048882d94", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Tet10.C}", "namespaceanonymous__namespace_02Ioss__Tet10_8C_03.html", "namespaceanonymous__namespace_02Ioss__Tet10_8C_03" ],
@@ -447,7 +450,7 @@ var namespaces_dup =
       [ "TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a9748ac8863e3a74d9e32d74ea08c6033", null ],
       [ "TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a74048fc3180a4a3c4ad8a02531feb101", null ],
       [ "test_topology", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#ad31faef7baafdc5624822638a44c9e4a", null ],
-      [ "filename", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a92121405536e32c67f9776e69493e504", null ]
+      [ "input_filename", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a4ce6845112cf47b2b4f414ffe3145710", null ]
     ] ],
     [ "anonymous_namespace{Utst_sort.C}", "namespaceanonymous__namespace_02Utst__sort_8C_03.html", [
       [ "verify_sorted", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#a9bd4ab9e89c61e907870aebca7463075", null ]

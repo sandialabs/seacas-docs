@@ -112,8 +112,8 @@ Collaboration diagram for Ioss::StructuredBlock:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d09d0934111bfd5b0f53c6cc097e3a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a4d09d0934111bfd5b0f53c6cc097e3a4">StructuredBlock</a> (<a class="el" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> *io_database, const std::string &amp;my_name, int index_dim, int ni, int nj, int nk, int off_i, int off_j, int off_k, int glo_ni, int glo_nj, int glo_nk)</td></tr>
 <tr class="separator:a4d09d0934111bfd5b0f53c6cc097e3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e0ab935e9236fb287284f9e5bd3bc96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a8e0ab935e9236fb287284f9e5bd3bc96">StructuredBlock</a> (<a class="el" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> *io_database, const std::string &amp;my_name, int index_dim, <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;ordinal, <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;offset, <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;global_ordinal)</td></tr>
-<tr class="separator:a8e0ab935e9236fb287284f9e5bd3bc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22354c0c9317b3d0edf61d0bd0298973"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a22354c0c9317b3d0edf61d0bd0298973">StructuredBlock</a> (<a class="el" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> *io_database, const std::string &amp;my_name, int index_dim, const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;ordinal, const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;offset, const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;global_ordinal)</td></tr>
+<tr class="separator:a22354c0c9317b3d0edf61d0bd0298973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f866a2c6fbecce732b9bdb7d718c3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a59f866a2c6fbecce732b9bdb7d718c3b">StructuredBlock</a> (<a class="el" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> *io_database, const std::string &amp;my_name, int index_dim, int ni, int nj, int nk)</td></tr>
 <tr class="memdesc:a59f866a2c6fbecce732b9bdb7d718c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a structured block.  <a href="classIoss_1_1StructuredBlock.html#a59f866a2c6fbecce732b9bdb7d718c3b">More...</a><br /></td></tr>
 <tr class="separator:a59f866a2c6fbecce732b9bdb7d718c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +168,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a911d284858520ea6ecbc0bd9d38e718d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd7a22ee60672f4cfede0be74c1a79b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a1fd7a22ee60672f4cfede0be74c1a79b">set_ijk_global</a> (int axis, size_t global)</td></tr>
 <tr class="separator:a1fd7a22ee60672f4cfede0be74c1a79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42e112d14edfbd9e4158860114b5b95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#ab42e112d14edfbd9e4158860114b5b95">set_ijk_offset</a> (const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> &amp;offset)</td></tr>
+<tr class="separator:ab42e112d14edfbd9e4158860114b5b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7617386f56f9834f3c27391ec168a0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#ac7617386f56f9834f3c27391ec168a0a">set_ijk_global</a> (const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> &amp;global)</td></tr>
+<tr class="separator:ac7617386f56f9834f3c27391ec168a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e4b3c38177e6ef571840fef3c34ef1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a7e4b3c38177e6ef571840fef3c34ef1c">get_ijk_offset</a> () const</td></tr>
 <tr class="separator:a7e4b3c38177e6ef571840fef3c34ef1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addab4af42cf34e3b42ff79cf6620d6e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#addab4af42cf34e3b42ff79cf6620d6e5">get_ijk_local</a> () const</td></tr>
@@ -399,24 +403,12 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6f11e504f123e82586a3fb396ffc79ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a6f11e504f123e82586a3fb396ffc79ac">m_ni</a> {}</td></tr>
-<tr class="separator:a6f11e504f123e82586a3fb396ffc79ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e82928b80e6b1e63c4668639f652c3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a7e82928b80e6b1e63c4668639f652c3a">m_nj</a> {}</td></tr>
-<tr class="separator:a7e82928b80e6b1e63c4668639f652c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b5dae8c6fbee42300f9b546de860f60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a0b5dae8c6fbee42300f9b546de860f60">m_nk</a> {}</td></tr>
-<tr class="separator:a0b5dae8c6fbee42300f9b546de860f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cfd746f594c789df110494f3b9cffd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a4cfd746f594c789df110494f3b9cffd5">m_offsetI</a> {}</td></tr>
-<tr class="separator:a4cfd746f594c789df110494f3b9cffd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec7934861bb6912217dc8d8f845fe1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a7ec7934861bb6912217dc8d8f845fe1a">m_offsetJ</a> {}</td></tr>
-<tr class="separator:a7ec7934861bb6912217dc8d8f845fe1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4e9af04cb45131fb45ad037a0b7f035"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#ae4e9af04cb45131fb45ad037a0b7f035">m_offsetK</a> {}</td></tr>
-<tr class="separator:ae4e9af04cb45131fb45ad037a0b7f035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77d195d83795ac3550bd4b7524d482b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a77d195d83795ac3550bd4b7524d482b6">m_niGlobal</a> {}</td></tr>
-<tr class="separator:a77d195d83795ac3550bd4b7524d482b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fe69817a71637e16a0e4d8a9df734f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a9fe69817a71637e16a0e4d8a9df734f2">m_njGlobal</a> {}</td></tr>
-<tr class="separator:a9fe69817a71637e16a0e4d8a9df734f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf999f36b6734797f76fb5b8589bdac9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#adf999f36b6734797f76fb5b8589bdac9">m_nkGlobal</a> {}</td></tr>
-<tr class="separator:adf999f36b6734797f76fb5b8589bdac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8b52cb595e344615aef748fae3c267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a8b8b52cb595e344615aef748fae3c267">m_ijk</a></td></tr>
+<tr class="separator:a8b8b52cb595e344615aef748fae3c267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b8d402d3ed7a9a3f9714ddecf5c9b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#ab9b8d402d3ed7a9a3f9714ddecf5c9b8">m_offset</a></td></tr>
+<tr class="separator:ab9b8d402d3ed7a9a3f9714ddecf5c9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d9899479e75d4024e2d9b2b410e5fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#ad8d9899479e75d4024e2d9b2b410e5fc">m_ijkGlobal</a></td></tr>
+<tr class="separator:ad8d9899479e75d4024e2d9b2b410e5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65aa028d1be0096f5b465c91c0a74757"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a65aa028d1be0096f5b465c91c0a74757">m_nodeOffset</a> {}</td></tr>
 <tr class="separator:a65aa028d1be0096f5b465c91c0a74757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbd851c28e5f15bbd382b97f1759d85"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1StructuredBlock.html#a0fbd851c28e5f15bbd382b97f1759d85">m_cellOffset</a> {}</td></tr>
@@ -534,8 +526,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a8e0ab935e9236fb287284f9e5bd3bc96" name="a8e0ab935e9236fb287284f9e5bd3bc96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e0ab935e9236fb287284f9e5bd3bc96">&#9670;&nbsp;</a></span>StructuredBlock() <span class="overload">[2/4]</span></h2>
+<a id="a22354c0c9317b3d0edf61d0bd0298973" name="a22354c0c9317b3d0edf61d0bd0298973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22354c0c9317b3d0edf61d0bd0298973">&#9670;&nbsp;</a></span>StructuredBlock() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -561,19 +553,19 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;&#160;</td>
           <td class="paramname"><em>ordinal</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;&#160;</td>
           <td class="paramname"><em>offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a> &amp;&#160;</td>
           <td class="paramname"><em>global_ordinal</em>&#160;</td>
         </tr>
         <tr>
@@ -1723,8 +1715,26 @@ template&lt;class Archive &gt; </div>
 
 </div>
 </div>
+<a id="ac7617386f56f9834f3c27391ec168a0a" name="ac7617386f56f9834f3c27391ec168a0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7617386f56f9834f3c27391ec168a0a">&#9670;&nbsp;</a></span>set_ijk_global() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::StructuredBlock::set_ijk_global </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>global</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1fd7a22ee60672f4cfede0be74c1a79b" name="a1fd7a22ee60672f4cfede0be74c1a79b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fd7a22ee60672f4cfede0be74c1a79b">&#9670;&nbsp;</a></span>set_ijk_global()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd7a22ee60672f4cfede0be74c1a79b">&#9670;&nbsp;</a></span>set_ijk_global() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1751,8 +1761,26 @@ template&lt;class Archive &gt; </div>
 
 </div>
 </div>
+<a id="ab42e112d14edfbd9e4158860114b5b95" name="ab42e112d14edfbd9e4158860114b5b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42e112d14edfbd9e4158860114b5b95">&#9670;&nbsp;</a></span>set_ijk_offset() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::StructuredBlock::set_ijk_offset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a911d284858520ea6ecbc0bd9d38e718d" name="a911d284858520ea6ecbc0bd9d38e718d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a911d284858520ea6ecbc0bd9d38e718d">&#9670;&nbsp;</a></span>set_ijk_offset()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a911d284858520ea6ecbc0bd9d38e718d">&#9670;&nbsp;</a></span>set_ijk_offset() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2017,8 +2045,8 @@ template&lt;class Archive &gt; </div>
 
 </div>
 </div>
-<a id="a6f11e504f123e82586a3fb396ffc79ac" name="a6f11e504f123e82586a3fb396ffc79ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f11e504f123e82586a3fb396ffc79ac">&#9670;&nbsp;</a></span>m_ni</h2>
+<a id="a8b8b52cb595e344615aef748fae3c267" name="a8b8b52cb595e344615aef748fae3c267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8b52cb595e344615aef748fae3c267">&#9670;&nbsp;</a></span>m_ijk</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2027,7 +2055,7 @@ template&lt;class Archive &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Ioss::StructuredBlock::m_ni {}</td>
+          <td class="memname"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> Ioss::StructuredBlock::m_ijk</td>
         </tr>
       </table>
   </td>
@@ -2039,8 +2067,8 @@ template&lt;class Archive &gt; </div>
 
 </div>
 </div>
-<a id="a77d195d83795ac3550bd4b7524d482b6" name="a77d195d83795ac3550bd4b7524d482b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77d195d83795ac3550bd4b7524d482b6">&#9670;&nbsp;</a></span>m_niGlobal</h2>
+<a id="ad8d9899479e75d4024e2d9b2b410e5fc" name="ad8d9899479e75d4024e2d9b2b410e5fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d9899479e75d4024e2d9b2b410e5fc">&#9670;&nbsp;</a></span>m_ijkGlobal</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2049,95 +2077,7 @@ template&lt;class Archive &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Ioss::StructuredBlock::m_niGlobal {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7e82928b80e6b1e63c4668639f652c3a" name="a7e82928b80e6b1e63c4668639f652c3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e82928b80e6b1e63c4668639f652c3a">&#9670;&nbsp;</a></span>m_nj</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Ioss::StructuredBlock::m_nj {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9fe69817a71637e16a0e4d8a9df734f2" name="a9fe69817a71637e16a0e4d8a9df734f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fe69817a71637e16a0e4d8a9df734f2">&#9670;&nbsp;</a></span>m_njGlobal</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Ioss::StructuredBlock::m_njGlobal {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0b5dae8c6fbee42300f9b546de860f60" name="a0b5dae8c6fbee42300f9b546de860f60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b5dae8c6fbee42300f9b546de860f60">&#9670;&nbsp;</a></span>m_nk</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Ioss::StructuredBlock::m_nk {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adf999f36b6734797f76fb5b8589bdac9" name="adf999f36b6734797f76fb5b8589bdac9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf999f36b6734797f76fb5b8589bdac9">&#9670;&nbsp;</a></span>m_nkGlobal</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Ioss::StructuredBlock::m_nkGlobal {}</td>
+          <td class="memname"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> Ioss::StructuredBlock::m_ijkGlobal</td>
         </tr>
       </table>
   </td>
@@ -2215,8 +2155,8 @@ template&lt;class Archive &gt; </div>
 
 </div>
 </div>
-<a id="a4cfd746f594c789df110494f3b9cffd5" name="a4cfd746f594c789df110494f3b9cffd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cfd746f594c789df110494f3b9cffd5">&#9670;&nbsp;</a></span>m_offsetI</h2>
+<a id="ab9b8d402d3ed7a9a3f9714ddecf5c9b8" name="ab9b8d402d3ed7a9a3f9714ddecf5c9b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b8d402d3ed7a9a3f9714ddecf5c9b8">&#9670;&nbsp;</a></span>m_offset</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2225,51 +2165,7 @@ template&lt;class Archive &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Ioss::StructuredBlock::m_offsetI {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7ec7934861bb6912217dc8d8f845fe1a" name="a7ec7934861bb6912217dc8d8f845fe1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ec7934861bb6912217dc8d8f845fe1a">&#9670;&nbsp;</a></span>m_offsetJ</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Ioss::StructuredBlock::m_offsetJ {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae4e9af04cb45131fb45ad037a0b7f035" name="ae4e9af04cb45131fb45ad037a0b7f035"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4e9af04cb45131fb45ad037a0b7f035">&#9670;&nbsp;</a></span>m_offsetK</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Ioss::StructuredBlock::m_offsetK {}</td>
+          <td class="memname"><a class="el" href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">IJK_t</a> Ioss::StructuredBlock::m_offset</td>
         </tr>
       </table>
   </td>

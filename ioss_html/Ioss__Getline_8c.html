@@ -89,22 +89,13 @@ $(document).ready(function(){initNavTree('Ioss__Getline_8c.html',''); initResiza
   <div class="headertitle"><div class="title">Ioss_Getline.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dirent.h&gt;</code><br />
-<code>#include &lt;errno.h&gt;</code><br />
-<code>#include &lt;fcntl.h&gt;</code><br />
-<code>#include &lt;pwd.h&gt;</code><br />
-<code>#include &lt;sys/select.h&gt;</code><br />
-<code>#include &lt;sys/stat.h&gt;</code><br />
-<code>#include &lt;sys/time.h&gt;</code><br />
-<code>#include &lt;sys/types.h&gt;</code><br />
-<code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &lt;termios.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;termios.h&gt;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
-<code>#include &lt;signal.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;strings.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Getline_8h_source.html">Ioss_Getline.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Ioss_Getline.c:</div>
@@ -116,31 +107,13 @@ Include dependency graph for Ioss_Getline.c:</div>
 Macros</h2></td></tr>
 <tr class="memitem:aa5be39d362c571d48d6236f0bd58f1fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#aa5be39d362c571d48d6236f0bd58f1fc">__unix__</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:aa5be39d362c571d48d6236f0bd58f1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55e62c01f41f9c5850dfce5f89a6bb98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a55e62c01f41f9c5850dfce5f89a6bb98">HAVE_TERMIOS_H</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a55e62c01f41f9c5850dfce5f89a6bb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eaf3ddcc671788f2be73c5e7addddb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a0eaf3ddcc671788f2be73c5e7addddb6">LOCAL_PATH_DELIM</a>&#160;&#160;&#160;'/'</td></tr>
-<tr class="separator:a0eaf3ddcc671788f2be73c5e7addddb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7dd6b1878c155086957c51f774456f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#af7dd6b1878c155086957c51f774456f4">LOCAL_PATH_DELIM_STR</a>&#160;&#160;&#160;&quot;/&quot;</td></tr>
-<tr class="separator:af7dd6b1878c155086957c51f774456f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a099d962eeabbc716c537d4074b536b62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a099d962eeabbc716c537d4074b536b62">_StrFindLocalPathDelim</a>(a)&#160;&#160;&#160;strchr(a, <a class="el" href="Ioss__Getline_8c.html#a0eaf3ddcc671788f2be73c5e7addddb6">LOCAL_PATH_DELIM</a>)</td></tr>
-<tr class="separator:a099d962eeabbc716c537d4074b536b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f3712d344b9da0472b969b5bbbe9df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a34f3712d344b9da0472b969b5bbbe9df">_StrRFindLocalPathDelim</a>(a)&#160;&#160;&#160;strrchr(a, <a class="el" href="Ioss__Getline_8c.html#a0eaf3ddcc671788f2be73c5e7addddb6">LOCAL_PATH_DELIM</a>)</td></tr>
-<tr class="separator:a34f3712d344b9da0472b969b5bbbe9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad04d40b646a4199e71448a7a573fd7b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ad04d40b646a4199e71448a7a573fd7b0">IsLocalPathDelim</a>(c)&#160;&#160;&#160;(c == <a class="el" href="Ioss__Getline_8c.html#a0eaf3ddcc671788f2be73c5e7addddb6">LOCAL_PATH_DELIM</a>)</td></tr>
-<tr class="separator:ad04d40b646a4199e71448a7a573fd7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac80b5570290923087f74ab1059bf2c4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ac80b5570290923087f74ab1059bf2c4b">_io_getline_c_</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ac80b5570290923087f74ab1059bf2c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf9ed8a71cb6419a072fccde20dd6d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#adaf9ed8a71cb6419a072fccde20dd6d7">IO_GL_BUF_SIZE</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:adaf9ed8a71cb6419a072fccde20dd6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f5fc8a70667ca4c9fc598a30f7e8602"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a7f5fc8a70667ca4c9fc598a30f7e8602">HIST_SIZE</a>&#160;&#160;&#160;100</td></tr>
 <tr class="separator:a7f5fc8a70667ca4c9fc598a30f7e8602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf836fc5e872c945db9877b9e7a6c5fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#acf836fc5e872c945db9877b9e7a6c5fa">IO_GL_COMPLETE_VECTOR_BLOCK_SIZE</a>&#160;&#160;&#160;64</td></tr>
-<tr class="separator:acf836fc5e872c945db9877b9e7a6c5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4539db972bcf3dd8c8b429af0dc3789d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a4539db972bcf3dd8c8b429af0dc3789d">kill</a> (pid_t pid, int sig)</td></tr>
-<tr class="separator:a4539db972bcf3dd8c8b429af0dc3789d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8e66f1cc0b5ab8600af97659d1fdec"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a7c8e66f1cc0b5ab8600af97659d1fdec">io_gl_tab</a> (char *buf, int offset, int *loc, size_t bufsize)</td></tr>
-<tr class="separator:a7c8e66f1cc0b5ab8600af97659d1fdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a774f9041353868148d0df26092c13c0b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a774f9041353868148d0df26092c13c0b">io_gl_init</a> (void)</td></tr>
 <tr class="separator:a774f9041353868148d0df26092c13c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a128eccb9022edfc8bac6734892d92aa0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a128eccb9022edfc8bac6734892d92aa0">io_gl_cleanup</a> (void)</td></tr>
@@ -159,8 +132,6 @@ Functions</h2></td></tr>
 <tr class="separator:a1591b13b0e95975031f85c58cef65b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab729d0b1a47e2f32c4e70faa4d716a4e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ab729d0b1a47e2f32c4e70faa4d716a4e">io_gl_getc</a> (void)</td></tr>
 <tr class="separator:ab729d0b1a47e2f32c4e70faa4d716a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fdda28a48c39049c361234c78599ddd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a0fdda28a48c39049c361234c78599ddd">io_gl_getcx</a> (int)</td></tr>
-<tr class="separator:a0fdda28a48c39049c361234c78599ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec095ef6e616ad5582bd8b3f9472ab9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#adec095ef6e616ad5582bd8b3f9472ab9">io_gl_kill</a> (int pos)</td></tr>
 <tr class="separator:adec095ef6e616ad5582bd8b3f9472ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593037a089dcc5b0c8d945543382f888"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a593037a089dcc5b0c8d945543382f888">io_gl_newline</a> (void)</td></tr>
@@ -175,10 +146,6 @@ Functions</h2></td></tr>
 <tr class="separator:aea1902a46d604f53064fac3521be6888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c70643f31a95b975a00fc36276de49"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a91c70643f31a95b975a00fc36276de49">io_gl_yank</a> (void)</td></tr>
 <tr class="separator:a91c70643f31a95b975a00fc36276de49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bca1ca7d6f1b6bc1366dba08d6a7ee9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a4bca1ca7d6f1b6bc1366dba08d6a7ee9">io_gl_word</a> (int direction)</td></tr>
-<tr class="separator:a4bca1ca7d6f1b6bc1366dba08d6a7ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05f3ddc7f5887f215d2c64af18b140b1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a05f3ddc7f5887f215d2c64af18b140b1">io_gl_killword</a> (int direction)</td></tr>
-<tr class="separator:a05f3ddc7f5887f215d2c64af18b140b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5871b014b1509ec82ed09927eb36940"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#af5871b014b1509ec82ed09927eb36940">hist_init</a> (void)</td></tr>
 <tr class="separator:af5871b014b1509ec82ed09927eb36940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f369c3488452122317a9b6502e036a"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a45f369c3488452122317a9b6502e036a">hist_next</a> (void)</td></tr>
@@ -197,8 +164,6 @@ Functions</h2></td></tr>
 <tr class="separator:a366db04c51a4450beade750ba28d947a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90fb99aceb7c150998aa66e557b71fbf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a90fb99aceb7c150998aa66e557b71fbf">io_gl_beep</a> (void)</td></tr>
 <tr class="separator:a90fb99aceb7c150998aa66e557b71fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5866e63aac786844ccca2017b4d3d7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a7f5866e63aac786844ccca2017b4d3d7">io_gl_do_tab_completion</a> (char *buf, int *loc, size_t bufsize)</td></tr>
-<tr class="separator:a7f5866e63aac786844ccca2017b4d3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c230e1aa635d30f2938de4959b78f43"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a1c230e1aa635d30f2938de4959b78f43">copy_string</a> (char *dest, char const *source, long int elements)</td></tr>
 <tr class="separator:a1c230e1aa635d30f2938de4959b78f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc2598dfbf7d3ea890021eecc567f559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#abc2598dfbf7d3ea890021eecc567f559">io_gl_setwidth</a> (int w)</td></tr>
@@ -207,42 +172,20 @@ Functions</h2></td></tr>
 <tr class="separator:a7b0da79df07e4da148a747417e37090e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab580c8d848bef9264732d66ba04bbb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#aab580c8d848bef9264732d66ba04bbb5">io_gl_histadd</a> (const char *buf)</td></tr>
 <tr class="separator:aab580c8d848bef9264732d66ba04bbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a409e889cf4d565cdc22b018e00692c22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a409e889cf4d565cdc22b018e00692c22">io_gl_histsavefile</a> (const char *const path)</td></tr>
-<tr class="separator:a409e889cf4d565cdc22b018e00692c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72df1ac2cb8779f75527e6154eed6a09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a72df1ac2cb8779f75527e6154eed6a09">io_gl_histloadfile</a> (const char *const path)</td></tr>
-<tr class="separator:a72df1ac2cb8779f75527e6154eed6a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9aee6e0807f83d5c23b7bc2ff16231"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#acd9aee6e0807f83d5c23b7bc2ff16231">search_update</a> (int c)</td></tr>
 <tr class="separator:acd9aee6e0807f83d5c23b7bc2ff16231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a291460abbd03ffa6badbea0ebd204d56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a291460abbd03ffa6badbea0ebd204d56">io_gl_tab_completion</a> (<a class="el" href="Ioss__Getline_8h.html#a96a24ac600a94b2e2d8b691427432f64">io_gl_tab_completion_proc</a> proc)</td></tr>
-<tr class="separator:a291460abbd03ffa6badbea0ebd204d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64be2a4ef16b3148faffa9c0c0a55086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a64be2a4ef16b3148faffa9c0c0a55086">io_gl_set_home_dir</a> (const char *homedir)</td></tr>
-<tr class="separator:a64be2a4ef16b3148faffa9c0c0a55086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb469a2e66e84e3c92f34cee03ddd45b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#abb469a2e66e84e3c92f34cee03ddd45b">io_gl_local_filename_completion_proc</a> (const char *start, int idx)</td></tr>
-<tr class="separator:abb469a2e66e84e3c92f34cee03ddd45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ae51ba0b7c7e038a9020c1bccaf3af738"><td class="memItemLeft" align="right" valign="top">struct termios new_termios&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ae51ba0b7c7e038a9020c1bccaf3af738">old_termios</a></td></tr>
 <tr class="separator:ae51ba0b7c7e038a9020c1bccaf3af738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3689eb60c29fff823c08986e7048122c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__Getline_8h.html#aac3baa8730e1f586b7b1981d83a0803a">io_gl_in_hook_proc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a3689eb60c29fff823c08986e7048122c">io_gl_in_hook</a> = NULL</td></tr>
-<tr class="separator:a3689eb60c29fff823c08986e7048122c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d0df200ad857835e7fd22b47a5e3c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__Getline_8h.html#a517b2df48d52fc42662e282e10417e68">io_gl_out_hook_proc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ac4d0df200ad857835e7fd22b47a5e3c3">io_gl_out_hook</a> = NULL</td></tr>
-<tr class="separator:ac4d0df200ad857835e7fd22b47a5e3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80caa6582f771c42ccc87e5b3f903ecf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__Getline_8h.html#ac58372b1c67a30ee3b64dd6c8caab555">io_gl_tab_hook_proc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a80caa6582f771c42ccc87e5b3f903ecf">io_gl_tab_hook</a> = <a class="el" href="Ioss__Getline_8c.html#a7c8e66f1cc0b5ab8600af97659d1fdec">io_gl_tab</a></td></tr>
-<tr class="separator:a80caa6582f771c42ccc87e5b3f903ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c8cbbd7c1db7c1dabec876e7cd1344"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__Getline_8h.html#a96eb550388274459d4b92465b6db8975">io_gl_strlen_proc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a34c8cbbd7c1db7c1dabec876e7cd1344">io_gl_strlen</a> = (<a class="el" href="Ioss__Getline_8h.html#a96eb550388274459d4b92465b6db8975">io_gl_strlen_proc</a>)strlen</td></tr>
-<tr class="separator:a34c8cbbd7c1db7c1dabec876e7cd1344"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa1d555a9c6fd26707169f5cf66184d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__Getline_8h.html#a96a24ac600a94b2e2d8b691427432f64">io_gl_tab_completion_proc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a4fa1d555a9c6fd26707169f5cf66184d">io_gl_completion_proc</a> = NULL</td></tr>
-<tr class="separator:a4fa1d555a9c6fd26707169f5cf66184d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac493fd96dbd912fcbc9d1cac3749fa52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ac493fd96dbd912fcbc9d1cac3749fa52">io_gl_filename_quoting_desired</a> = -1</td></tr>
 <tr class="separator:ac493fd96dbd912fcbc9d1cac3749fa52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aaa5c688282686cdd985f95ba3f1ef6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a6aaa5c688282686cdd985f95ba3f1ef6">io_gl_filename_quote_characters</a> = &quot; \t*?&lt;&gt;|;&amp;()[]$`&quot;</td></tr>
 <tr class="separator:a6aaa5c688282686cdd985f95ba3f1ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c041f7284a1e8548340b8220d0c66a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a0c041f7284a1e8548340b8220d0c66a7">io_gl_ellipses_during_completion</a> = 1</td></tr>
 <tr class="separator:a0c041f7284a1e8548340b8220d0c66a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a8b882ba785330220aeb95f3caad93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a63a8b882ba785330220aeb95f3caad93">io_gl_completion_exact_match_extra_char</a></td></tr>
-<tr class="separator:a63a8b882ba785330220aeb95f3caad93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae76a491acc164d6f40e2e787512dae33"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ae76a491acc164d6f40e2e787512dae33">io_gl_buf</a> [<a class="el" href="Ioss__Getline_8h.html#adaf9ed8a71cb6419a072fccde20dd6d7">IO_GL_BUF_SIZE</a>]</td></tr>
+<tr class="memitem:ae76a491acc164d6f40e2e787512dae33"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ae76a491acc164d6f40e2e787512dae33">io_gl_buf</a> [<a class="el" href="Ioss__Getline_8c.html#adaf9ed8a71cb6419a072fccde20dd6d7">IO_GL_BUF_SIZE</a>]</td></tr>
 <tr class="separator:ae76a491acc164d6f40e2e787512dae33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25167ce7c041e7679de2231bde1b70c7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a25167ce7c041e7679de2231bde1b70c7">io_gl_init_done</a> = -1</td></tr>
 <tr class="separator:a25167ce7c041e7679de2231bde1b70c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,28 +203,12 @@ Variables</h2></td></tr>
 <tr class="separator:a41b794f4f3337d926b7b1957542b08bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8e6c6eceee8dd633d81242885912248"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ac8e6c6eceee8dd633d81242885912248">io_gl_cnt</a> = 0</td></tr>
 <tr class="separator:ac8e6c6eceee8dd633d81242885912248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad823e764c88e1ad98c9debc8d40b973f"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ad823e764c88e1ad98c9debc8d40b973f">io_gl_killbuf</a> [<a class="el" href="Ioss__Getline_8h.html#adaf9ed8a71cb6419a072fccde20dd6d7">IO_GL_BUF_SIZE</a>] = &quot;&quot;</td></tr>
+<tr class="memitem:ad823e764c88e1ad98c9debc8d40b973f"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ad823e764c88e1ad98c9debc8d40b973f">io_gl_killbuf</a> [<a class="el" href="Ioss__Getline_8c.html#adaf9ed8a71cb6419a072fccde20dd6d7">IO_GL_BUF_SIZE</a>] = &quot;&quot;</td></tr>
 <tr class="separator:ad823e764c88e1ad98c9debc8d40b973f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7796a5b0bf1ff8e2e9e2ad90d94a5957"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a7796a5b0bf1ff8e2e9e2ad90d94a5957">io_gl_prompt</a></td></tr>
 <tr class="separator:a7796a5b0bf1ff8e2e9e2ad90d94a5957"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a165be99a181db220a74c08acdc899672"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a165be99a181db220a74c08acdc899672">io_gl_intrc</a> = 0</td></tr>
-<tr class="separator:a165be99a181db220a74c08acdc899672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601e08ebc9c437cf843ba3ea1211f685"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a601e08ebc9c437cf843ba3ea1211f685">io_gl_quitc</a> = 0</td></tr>
-<tr class="separator:a601e08ebc9c437cf843ba3ea1211f685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab460a739ef5b79a399fe00523efac65e"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ab460a739ef5b79a399fe00523efac65e">io_gl_suspc</a> = 0</td></tr>
-<tr class="separator:ab460a739ef5b79a399fe00523efac65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19edc31aef710967fc52a82284d17edb"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a19edc31aef710967fc52a82284d17edb">io_gl_dsuspc</a> = 0</td></tr>
-<tr class="separator:a19edc31aef710967fc52a82284d17edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a650361103f85049158485d60bad2f503"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a650361103f85049158485d60bad2f503">io_gl_search_mode</a> = 0</td></tr>
 <tr class="separator:a650361103f85049158485d60bad2f503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab355ce9afdedfc228263fe0553dbc455"><td class="memItemLeft" align="right" valign="top">static char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ab355ce9afdedfc228263fe0553dbc455">io_gl_matchlist</a> = NULL</td></tr>
-<tr class="separator:ab355ce9afdedfc228263fe0553dbc455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a980c88d175f6ddb33594854a80d0addb"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a980c88d175f6ddb33594854a80d0addb">io_gl_home_dir</a> = NULL</td></tr>
-<tr class="separator:a980c88d175f6ddb33594854a80d0addb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebea08a45b0d3dbed76a75f0ae0c8836"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#aebea08a45b0d3dbed76a75f0ae0c8836">io_gl_vi_preferred</a> = -1</td></tr>
-<tr class="separator:aebea08a45b0d3dbed76a75f0ae0c8836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98e4d98a090c85ec8dd05ecf57fb612"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ae98e4d98a090c85ec8dd05ecf57fb612">io_gl_vi_mode</a> = 0</td></tr>
-<tr class="separator:ae98e4d98a090c85ec8dd05ecf57fb612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a538589ed0904801d52cc530d17f7e11d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#a538589ed0904801d52cc530d17f7e11d">hist_pos</a> = 0</td></tr>
 <tr class="separator:a538589ed0904801d52cc530d17f7e11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad423cb43eed8acd80db4934961572503"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8c.html#ad423cb43eed8acd80db4934961572503">hist_last</a> = 0</td></tr>
@@ -316,70 +243,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac80b5570290923087f74ab1059bf2c4b" name="ac80b5570290923087f74ab1059bf2c4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac80b5570290923087f74ab1059bf2c4b">&#9670;&nbsp;</a></span>_io_getline_c_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define _io_getline_c_&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a099d962eeabbc716c537d4074b536b62" name="a099d962eeabbc716c537d4074b536b62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a099d962eeabbc716c537d4074b536b62">&#9670;&nbsp;</a></span>_StrFindLocalPathDelim</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define _StrFindLocalPathDelim</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;strchr(a, <a class="el" href="Ioss__Getline_8c.html#a0eaf3ddcc671788f2be73c5e7addddb6">LOCAL_PATH_DELIM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a34f3712d344b9da0472b969b5bbbe9df" name="a34f3712d344b9da0472b969b5bbbe9df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34f3712d344b9da0472b969b5bbbe9df">&#9670;&nbsp;</a></span>_StrRFindLocalPathDelim</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define _StrRFindLocalPathDelim</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;strrchr(a, <a class="el" href="Ioss__Getline_8c.html#a0eaf3ddcc671788f2be73c5e7addddb6">LOCAL_PATH_DELIM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a55e62c01f41f9c5850dfce5f89a6bb98" name="a55e62c01f41f9c5850dfce5f89a6bb98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55e62c01f41f9c5850dfce5f89a6bb98">&#9670;&nbsp;</a></span>HAVE_TERMIOS_H</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HAVE_TERMIOS_H&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7f5fc8a70667ca4c9fc598a30f7e8602" name="a7f5fc8a70667ca4c9fc598a30f7e8602"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f5fc8a70667ca4c9fc598a30f7e8602">&#9670;&nbsp;</a></span>HIST_SIZE</h2>
 
@@ -394,60 +257,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acf836fc5e872c945db9877b9e7a6c5fa" name="acf836fc5e872c945db9877b9e7a6c5fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf836fc5e872c945db9877b9e7a6c5fa">&#9670;&nbsp;</a></span>IO_GL_COMPLETE_VECTOR_BLOCK_SIZE</h2>
+<a id="adaf9ed8a71cb6419a072fccde20dd6d7" name="adaf9ed8a71cb6419a072fccde20dd6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf9ed8a71cb6419a072fccde20dd6d7">&#9670;&nbsp;</a></span>IO_GL_BUF_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IO_GL_COMPLETE_VECTOR_BLOCK_SIZE&#160;&#160;&#160;64</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad04d40b646a4199e71448a7a573fd7b0" name="ad04d40b646a4199e71448a7a573fd7b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad04d40b646a4199e71448a7a573fd7b0">&#9670;&nbsp;</a></span>IsLocalPathDelim</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IsLocalPathDelim</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">c</td><td>)</td>
-          <td>&#160;&#160;&#160;(c == <a class="el" href="Ioss__Getline_8c.html#a0eaf3ddcc671788f2be73c5e7addddb6">LOCAL_PATH_DELIM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0eaf3ddcc671788f2be73c5e7addddb6" name="a0eaf3ddcc671788f2be73c5e7addddb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0eaf3ddcc671788f2be73c5e7addddb6">&#9670;&nbsp;</a></span>LOCAL_PATH_DELIM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LOCAL_PATH_DELIM&#160;&#160;&#160;'/'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af7dd6b1878c155086957c51f774456f4" name="af7dd6b1878c155086957c51f774456f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7dd6b1878c155086957c51f774456f4">&#9670;&nbsp;</a></span>LOCAL_PATH_DELIM_STR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LOCAL_PATH_DELIM_STR&#160;&#160;&#160;&quot;/&quot;</td>
+          <td class="memname">#define IO_GL_BUF_SIZE&#160;&#160;&#160;1024</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -785,48 +602,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f5866e63aac786844ccca2017b4d3d7" name="a7f5866e63aac786844ccca2017b4d3d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f5866e63aac786844ccca2017b4d3d7">&#9670;&nbsp;</a></span>io_gl_do_tab_completion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int io_gl_do_tab_completion </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>loc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bufsize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a73eccae1e3bf652224782264eb588de7" name="a73eccae1e3bf652224782264eb588de7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73eccae1e3bf652224782264eb588de7">&#9670;&nbsp;</a></span>io_gl_error()</h2>
 
@@ -921,32 +696,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0fdda28a48c39049c361234c78599ddd" name="a0fdda28a48c39049c361234c78599ddd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fdda28a48c39049c361234c78599ddd">&#9670;&nbsp;</a></span>io_gl_getcx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int io_gl_getcx </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tlen</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aab580c8d848bef9264732d66ba04bbb5" name="aab580c8d848bef9264732d66ba04bbb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab580c8d848bef9264732d66ba04bbb5">&#9670;&nbsp;</a></span>io_gl_histadd()</h2>
 
@@ -958,42 +707,6 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a72df1ac2cb8779f75527e6154eed6a09" name="a72df1ac2cb8779f75527e6154eed6a09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72df1ac2cb8779f75527e6154eed6a09">&#9670;&nbsp;</a></span>io_gl_histloadfile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void io_gl_histloadfile </td>
-          <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a409e889cf4d565cdc22b018e00692c22" name="a409e889cf4d565cdc22b018e00692c22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a409e889cf4d565cdc22b018e00692c22">&#9670;&nbsp;</a></span>io_gl_histsavefile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void io_gl_histsavefile </td>
-          <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1049,60 +762,6 @@ Variables</h2></td></tr>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05f3ddc7f5887f215d2c64af18b140b1" name="a05f3ddc7f5887f215d2c64af18b140b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05f3ddc7f5887f215d2c64af18b140b1">&#9670;&nbsp;</a></span>io_gl_killword()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void io_gl_killword </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>direction</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abb469a2e66e84e3c92f34cee03ddd45b" name="abb469a2e66e84e3c92f34cee03ddd45b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb469a2e66e84e3c92f34cee03ddd45b">&#9670;&nbsp;</a></span>io_gl_local_filename_completion_proc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * io_gl_local_filename_completion_proc </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1211,24 +870,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a64be2a4ef16b3148faffa9c0c0a55086" name="a64be2a4ef16b3148faffa9c0c0a55086"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64be2a4ef16b3148faffa9c0c0a55086">&#9670;&nbsp;</a></span>io_gl_set_home_dir()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void io_gl_set_home_dir </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>homedir</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abc2598dfbf7d3ea890021eecc567f559" name="abc2598dfbf7d3ea890021eecc567f559"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc2598dfbf7d3ea890021eecc567f559">&#9670;&nbsp;</a></span>io_gl_setwidth()</h2>
 
@@ -1240,72 +881,6 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7c8e66f1cc0b5ab8600af97659d1fdec" name="a7c8e66f1cc0b5ab8600af97659d1fdec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c8e66f1cc0b5ab8600af97659d1fdec">&#9670;&nbsp;</a></span>io_gl_tab()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int io_gl_tab </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>loc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bufsize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a291460abbd03ffa6badbea0ebd204d56" name="a291460abbd03ffa6badbea0ebd204d56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a291460abbd03ffa6badbea0ebd204d56">&#9670;&nbsp;</a></span>io_gl_tab_completion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void io_gl_tab_completion </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="Ioss__Getline_8h.html#a96a24ac600a94b2e2d8b691427432f64">io_gl_tab_completion_proc</a>&#160;</td>
-          <td class="paramname"><em>proc</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1327,32 +902,6 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4bca1ca7d6f1b6bc1366dba08d6a7ee9" name="a4bca1ca7d6f1b6bc1366dba08d6a7ee9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bca1ca7d6f1b6bc1366dba08d6a7ee9">&#9670;&nbsp;</a></span>io_gl_word()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void io_gl_word </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>direction</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1387,34 +936,6 @@ Variables</h2></td></tr>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4539db972bcf3dd8c8b429af0dc3789d" name="a4539db972bcf3dd8c8b429af0dc3789d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4539db972bcf3dd8c8b429af0dc3789d">&#9670;&nbsp;</a></span>kill()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int kill </td>
-          <td>(</td>
-          <td class="paramtype">pid_t&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sig</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1645,7 +1166,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char io_gl_buf[<a class="el" href="Ioss__Getline_8h.html#adaf9ed8a71cb6419a072fccde20dd6d7">IO_GL_BUF_SIZE</a>]</td>
+          <td class="memname">char io_gl_buf[<a class="el" href="Ioss__Getline_8c.html#adaf9ed8a71cb6419a072fccde20dd6d7">IO_GL_BUF_SIZE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1663,56 +1184,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int io_gl_cnt = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a63a8b882ba785330220aeb95f3caad93" name="a63a8b882ba785330220aeb95f3caad93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63a8b882ba785330220aeb95f3caad93">&#9670;&nbsp;</a></span>io_gl_completion_exact_match_extra_char</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int io_gl_completion_exact_match_extra_char</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4fa1d555a9c6fd26707169f5cf66184d" name="a4fa1d555a9c6fd26707169f5cf66184d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fa1d555a9c6fd26707169f5cf66184d">&#9670;&nbsp;</a></span>io_gl_completion_proc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Ioss__Getline_8h.html#a96a24ac600a94b2e2d8b691427432f64">io_gl_tab_completion_proc</a> io_gl_completion_proc = NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a19edc31aef710967fc52a82284d17edb" name="a19edc31aef710967fc52a82284d17edb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19edc31aef710967fc52a82284d17edb">&#9670;&nbsp;</a></span>io_gl_dsuspc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char io_gl_dsuspc = 0</td>
         </tr>
       </table>
   </td>
@@ -1788,42 +1259,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a980c88d175f6ddb33594854a80d0addb" name="a980c88d175f6ddb33594854a80d0addb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a980c88d175f6ddb33594854a80d0addb">&#9670;&nbsp;</a></span>io_gl_home_dir</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* io_gl_home_dir = NULL</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3689eb60c29fff823c08986e7048122c" name="a3689eb60c29fff823c08986e7048122c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3689eb60c29fff823c08986e7048122c">&#9670;&nbsp;</a></span>io_gl_in_hook</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Ioss__Getline_8h.html#aac3baa8730e1f586b7b1981d83a0803a">io_gl_in_hook_proc</a> io_gl_in_hook = NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a25167ce7c041e7679de2231bde1b70c7" name="a25167ce7c041e7679de2231bde1b70c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25167ce7c041e7679de2231bde1b70c7">&#9670;&nbsp;</a></span>io_gl_init_done</h2>
 
@@ -1846,28 +1281,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a165be99a181db220a74c08acdc899672" name="a165be99a181db220a74c08acdc899672"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a165be99a181db220a74c08acdc899672">&#9670;&nbsp;</a></span>io_gl_intrc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char io_gl_intrc = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad823e764c88e1ad98c9debc8d40b973f" name="ad823e764c88e1ad98c9debc8d40b973f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad823e764c88e1ad98c9debc8d40b973f">&#9670;&nbsp;</a></span>io_gl_killbuf</h2>
 
@@ -1878,7 +1291,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char io_gl_killbuf[<a class="el" href="Ioss__Getline_8h.html#adaf9ed8a71cb6419a072fccde20dd6d7">IO_GL_BUF_SIZE</a>] = &quot;&quot;</td>
+          <td class="memname">char io_gl_killbuf[<a class="el" href="Ioss__Getline_8c.html#adaf9ed8a71cb6419a072fccde20dd6d7">IO_GL_BUF_SIZE</a>] = &quot;&quot;</td>
         </tr>
       </table>
   </td>
@@ -1886,42 +1299,6 @@ Variables</h2></td></tr>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab355ce9afdedfc228263fe0553dbc455" name="ab355ce9afdedfc228263fe0553dbc455"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab355ce9afdedfc228263fe0553dbc455">&#9670;&nbsp;</a></span>io_gl_matchlist</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char** io_gl_matchlist = NULL</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac4d0df200ad857835e7fd22b47a5e3c3" name="ac4d0df200ad857835e7fd22b47a5e3c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4d0df200ad857835e7fd22b47a5e3c3">&#9670;&nbsp;</a></span>io_gl_out_hook</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Ioss__Getline_8h.html#a517b2df48d52fc42662e282e10417e68">io_gl_out_hook_proc</a> io_gl_out_hook = NULL</td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1992,28 +1369,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a601e08ebc9c437cf843ba3ea1211f685" name="a601e08ebc9c437cf843ba3ea1211f685"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a601e08ebc9c437cf843ba3ea1211f685">&#9670;&nbsp;</a></span>io_gl_quitc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char io_gl_quitc = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5c5c1e7777d12424d4689930058f22b8" name="a5c5c1e7777d12424d4689930058f22b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c5c1e7777d12424d4689930058f22b8">&#9670;&nbsp;</a></span>io_gl_scroll</h2>
 
@@ -2058,56 +1413,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a34c8cbbd7c1db7c1dabec876e7cd1344" name="a34c8cbbd7c1db7c1dabec876e7cd1344"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34c8cbbd7c1db7c1dabec876e7cd1344">&#9670;&nbsp;</a></span>io_gl_strlen</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Ioss__Getline_8h.html#a96eb550388274459d4b92465b6db8975">io_gl_strlen_proc</a> io_gl_strlen = (<a class="el" href="Ioss__Getline_8h.html#a96eb550388274459d4b92465b6db8975">io_gl_strlen_proc</a>)strlen</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab460a739ef5b79a399fe00523efac65e" name="ab460a739ef5b79a399fe00523efac65e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab460a739ef5b79a399fe00523efac65e">&#9670;&nbsp;</a></span>io_gl_suspc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char io_gl_suspc = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a80caa6582f771c42ccc87e5b3f903ecf" name="a80caa6582f771c42ccc87e5b3f903ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80caa6582f771c42ccc87e5b3f903ecf">&#9670;&nbsp;</a></span>io_gl_tab_hook</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Ioss__Getline_8h.html#ac58372b1c67a30ee3b64dd6c8caab555">io_gl_tab_hook_proc</a> io_gl_tab_hook = <a class="el" href="Ioss__Getline_8c.html#a7c8e66f1cc0b5ab8600af97659d1fdec">io_gl_tab</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab560600ee7d9eb1f95878808697ed806" name="ab560600ee7d9eb1f95878808697ed806"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab560600ee7d9eb1f95878808697ed806">&#9670;&nbsp;</a></span>io_gl_termw</h2>
 
@@ -2119,50 +1424,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int io_gl_termw = 80</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae98e4d98a090c85ec8dd05ecf57fb612" name="ae98e4d98a090c85ec8dd05ecf57fb612"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae98e4d98a090c85ec8dd05ecf57fb612">&#9670;&nbsp;</a></span>io_gl_vi_mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int io_gl_vi_mode = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aebea08a45b0d3dbed76a75f0ae0c8836" name="aebea08a45b0d3dbed76a75f0ae0c8836"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebea08a45b0d3dbed76a75f0ae0c8836">&#9670;&nbsp;</a></span>io_gl_vi_preferred</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int io_gl_vi_preferred = -1</td>
         </tr>
       </table>
   </td>

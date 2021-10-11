@@ -31,6 +31,7 @@ var NAVTREE =
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
@@ -41,7 +42,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -52,7 +53,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
+        [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -65,13 +66,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "FlexLexer_8h.html",
-"apr__builtin_8h.html#adeb0a281429d350bb91e264298dad23d",
-"apr__units_8cc.html#a467b06007c6a2f8eaa8f50c6681fb248",
-"classSEAMS_1_1Aprepro.html#a9b781d8b5e0f382f5086e5988fc2200d",
-"functions_enum.html",
-"namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#a2e17cb56b857779aaeb299f7af83db20",
-"structSEAMS_1_1Parser_1_1token.html#ac1559cad2b792d9af450e7ddf114fb82ab99019e3a33b41e15dd0897b1aa117c3",
-"structinit__d.html#a4efd4a0ef109edd64aaa4e6819e1da4c"
+"apr__builtin_8h.html#ae0e88b0d240f83b134a4de01189cd464",
+"apr__util_8cc.html#ad654db4b411275026f8ded8d5144e5cc",
+"classSEAMS_1_1Aprepro.html#acb32593883b914d09a0f9dd7cceaf3dc",
+"classtsl_1_1detail__robin__hash_1_1bucket__entry.html#af58b4cdc47b342af0afa91a9f36b4d27",
+"classtsl_1_1detail__robin__hash_1_1robin__hash.html#aedda7e60f06c615cbf2106fcd7983c56",
+"classtsl_1_1robin__map.html#a90603aafb683e936dbad92c585ccdeab",
+"classtsl_1_1robin__set.html#aac30ae29e5971fd44ddc98bbdd334c84",
+"namespaceSEAMS.html#a937c6ff37fe391a6169b2e443f01aaab",
+"structSEAMS_1_1Parser_1_1by__type.html#a95b6f70e8a5cfdf784ba414f1ae60dc4",
+"structSEAMS_1_1symrec_1_1value.html#a0a4dda1847644ddc71868ab6afc88ab9",
+"terminal__color_8h.html#a3d4b31b4bb69c315a75868d562b5feb6aff0d54be7c7f3d2641c2bfbd66e25272"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

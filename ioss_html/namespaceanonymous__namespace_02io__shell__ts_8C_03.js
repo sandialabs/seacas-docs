@@ -1,6 +1,5 @@
 var namespaceanonymous__namespace_02io__shell__ts_8C_03 =
 [
-    [ "my_numpunct", "structanonymous__namespace_02io__shell__ts_8C_03_1_1my__numpunct.html", "structanonymous__namespace_02io__shell__ts_8C_03_1_1my__numpunct" ],
     [ "param", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param.html", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param" ],
     [ "file_copy", "namespaceanonymous__namespace_02io__shell__ts_8C_03.html#ae165fe87327e3ca8091f5d08cd898265", null ],
     [ "set_owned_node_count", "namespaceanonymous__namespace_02io__shell__ts_8C_03.html#a0a6a798fb748692a5fe5567671e6d078", null ],

@@ -582,9 +582,6 @@ var hierarchy =
     [ "null_chrono_spec_handler< chrono_format_checker >", "structnull__chrono__spec__handler.html", [
       [ "chrono_format_checker", "structchrono__format__checker.html", null ]
     ] ],
-    [ "std::numpunct", null, [
-      [ "anonymous_namespace{io_shell_ts.C}::my_numpunct", "structanonymous__namespace_02io__shell__ts_8C_03_1_1my__numpunct.html", null ]
-    ] ],
     [ "Ioss::ParallelUtils", "classIoss_1_1ParallelUtils.html", null ],
     [ "anonymous_namespace{io_shell_ts.C}::param", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param.html", null ],
     [ "ParaViewCatalystCGNSAdapterBase", "classParaViewCatalystCGNSAdapterBase.html", [

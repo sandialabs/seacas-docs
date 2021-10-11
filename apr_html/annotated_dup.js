@@ -11,14 +11,34 @@ var annotated_dup =
       [ "history_data", "structSEAMS_1_1history__data.html", "structSEAMS_1_1history__data" ],
       [ "Parser", "classSEAMS_1_1Parser.html", "classSEAMS_1_1Parser" ],
       [ "Scanner", "classSEAMS_1_1Scanner.html", "classSEAMS_1_1Scanner" ],
-      [ "Stats", "classSEAMS_1_1Stats.html", "classSEAMS_1_1Stats" ],
-      [ "symrec", "structSEAMS_1_1symrec.html", "structSEAMS_1_1symrec" ]
+      [ "symrec", "structSEAMS_1_1symrec.html", "structSEAMS_1_1symrec" ],
+      [ "Symtable", "structSEAMS_1_1Symtable.html", "structSEAMS_1_1Symtable" ]
     ] ],
     [ "trmclr", "namespacetrmclr.html", [
       [ "Attribute", "structtrmclr_1_1Attribute.html", "structtrmclr_1_1Attribute" ],
       [ "Background", "structtrmclr_1_1Background.html", "structtrmclr_1_1Background" ],
       [ "Foreground", "structtrmclr_1_1Foreground.html", "structtrmclr_1_1Foreground" ],
       [ "Style", "structtrmclr_1_1Style.html", "structtrmclr_1_1Style" ]
+    ] ],
+    [ "tsl", "namespacetsl.html", [
+      [ "detail_robin_hash", "namespacetsl_1_1detail__robin__hash.html", [
+        [ "bucket_entry", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html", "classtsl_1_1detail__robin__hash_1_1bucket__entry" ],
+        [ "bucket_entry_hash", "classtsl_1_1detail__robin__hash_1_1bucket__entry__hash.html", "classtsl_1_1detail__robin__hash_1_1bucket__entry__hash" ],
+        [ "bucket_entry_hash< true >", "classtsl_1_1detail__robin__hash_1_1bucket__entry__hash_3_01true_01_4.html", "classtsl_1_1detail__robin__hash_1_1bucket__entry__hash_3_01true_01_4" ],
+        [ "has_is_transparent", "structtsl_1_1detail__robin__hash_1_1has__is__transparent.html", null ],
+        [ "has_is_transparent< T, typename make_void< typename T::is_transparent >::type >", "structtsl_1_1detail__robin__hash_1_1has__is__transparent_3_01T_00_01typename_01make__void_3_01ty718636ff8fc74d73885502911b06edfb.html", null ],
+        [ "is_power_of_two_policy", "structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy.html", null ],
+        [ "is_power_of_two_policy< tsl::rh::power_of_two_growth_policy< GrowthFactor > >", "structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy_3_01tsl_1_1rh_1_1power__of__two__a1a28c2963ea7bfc09f131241d081ae6.html", null ],
+        [ "make_void", "structtsl_1_1detail__robin__hash_1_1make__void.html", "structtsl_1_1detail__robin__hash_1_1make__void" ],
+        [ "robin_hash", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", "classtsl_1_1detail__robin__hash_1_1robin__hash" ]
+      ] ],
+      [ "rh", "namespacetsl_1_1rh.html", [
+        [ "mod_growth_policy", "classtsl_1_1rh_1_1mod__growth__policy.html", "classtsl_1_1rh_1_1mod__growth__policy" ],
+        [ "power_of_two_growth_policy", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", "classtsl_1_1rh_1_1power__of__two__growth__policy" ],
+        [ "prime_growth_policy", "classtsl_1_1rh_1_1prime__growth__policy.html", "classtsl_1_1rh_1_1prime__growth__policy" ]
+      ] ],
+      [ "robin_map", "classtsl_1_1robin__map.html", "classtsl_1_1robin__map" ],
+      [ "robin_set", "classtsl_1_1robin__set.html", "classtsl_1_1robin__set" ]
     ] ],
     [ "array_a_init", "structarray__a__init.html", "structarray__a__init" ],
     [ "array_c_init", "structarray__c__init.html", "structarray__c__init" ],

@@ -1,30 +1,6 @@
 var apr__getline__int_8h =
 [
-    [ "AP_GL_BUF_SIZE", "apr__getline__int_8h.html#ab3d1ef240889b934c33ba07d59796665", null ],
-    [ "ap_gl_in_hook_proc", "apr__getline__int_8h.html#aabb5daf8ef1f5124e7cc23625bf9a6c0", null ],
-    [ "ap_gl_out_hook_proc", "apr__getline__int_8h.html#a1f785316f58f0383ed566b7c5b0fbac5", null ],
-    [ "ap_gl_strlen_proc", "apr__getline__int_8h.html#a93ea4db7a6a1b24b690f30133d733210", null ],
-    [ "ap_gl_strwidth_proc", "apr__getline__int_8h.html#a29865815cc4e2c2761d504777c4fb560", null ],
-    [ "ap_gl_tab_completion_proc", "apr__getline__int_8h.html#a4911f751c6f4f3bf7d54a6f101a5ce73", null ],
-    [ "ap_gl_tab_hook_proc", "apr__getline__int_8h.html#a807718ebd12b44f497e77cd75b60b279", null ],
     [ "ap_getline_int", "apr__getline__int_8h.html#ad18eb0173c54c4aeaaacb0c3b82a52b5", null ],
     [ "ap_gl_histadd", "apr__getline__int_8h.html#a6d129a9a8e1dd33c66a033a9f7e49fd9", null ],
-    [ "ap_gl_histloadfile", "apr__getline__int_8h.html#a58bdf6f99b5c7673710003d6c77f9497", null ],
-    [ "ap_gl_histsavefile", "apr__getline__int_8h.html#af571c24f892253a04e7323c3cec235a5", null ],
-    [ "ap_gl_local_filename_completion_proc", "apr__getline__int_8h.html#aa96fccaee0ff44dc324ea07f64a27fdc", null ],
-    [ "ap_gl_set_home_dir", "apr__getline__int_8h.html#a3a704365fe4333736cf615b6dd7acd8b", null ],
-    [ "ap_gl_setwidth", "apr__getline__int_8h.html#af807a7e5c7eea8f7e7166278736cf6dc", null ],
-    [ "ap_gl_strwidth", "apr__getline__int_8h.html#a45486db9d40d03197988a99d35123cd2", null ],
-    [ "ap_gl_tab_completion", "apr__getline__int_8h.html#a78b60a062aa8c314060662bf2f882d65", null ],
-    [ "ap_gl_win_getpass", "apr__getline__int_8h.html#ab3fc2ad66a59fd7abb9f634243913fa2", null ],
-    [ "ap_gl_buf", "apr__getline__int_8h.html#a2113d87374291890781af807441435e9", null ],
-    [ "ap_gl_completion_exact_match_extra_char", "apr__getline__int_8h.html#af99e0d6b9a4d13e51ad921ef2bf7d8b8", null ],
-    [ "ap_gl_completion_proc", "apr__getline__int_8h.html#a2b43c60057c5c7a070649a5d953131b8", null ],
-    [ "ap_gl_ellipses_during_completion", "apr__getline__int_8h.html#aa10e96ad6e05da305623e18ce29e70ef", null ],
-    [ "ap_gl_filename_quote_characters", "apr__getline__int_8h.html#ae0f4d99698dd8334f7f85c6efa918550", null ],
-    [ "ap_gl_filename_quoting_desired", "apr__getline__int_8h.html#aa2de92051284a79ec956247a97a06c07", null ],
-    [ "ap_gl_in_hook", "apr__getline__int_8h.html#aa7deebeb956858fdaf1752283d49bab2", null ],
-    [ "ap_gl_out_hook", "apr__getline__int_8h.html#a712f734cf32822f22350f480547bd20f", null ],
-    [ "ap_gl_strlen", "apr__getline__int_8h.html#a546b12d9e13b29322891d11d9bc7f85a", null ],
-    [ "ap_gl_tab_hook", "apr__getline__int_8h.html#a9898d71412b959c9f56c9a319fdc2351", null ]
+    [ "ap_gl_setwidth", "apr__getline__int_8h.html#af807a7e5c7eea8f7e7166278736cf6dc", null ]
 ];

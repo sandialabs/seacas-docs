@@ -33,6 +33,7 @@ var classSEAMS_1_1Aprepro =
     [ "getsym", "classSEAMS_1_1Aprepro.html#a7bcef598f70b0f55d79bf0a3d425ad80", null ],
     [ "info", "classSEAMS_1_1Aprepro.html#afdf2beeaf3e0dbe69269bb1db0277843", null ],
     [ "init_table", "classSEAMS_1_1Aprepro.html#a9c4aa1802a4355d4e3ff8b4f017dd013", null ],
+    [ "long_version", "classSEAMS_1_1Aprepro.html#a0d8cff84a00d8040f70230cf1ed85272", null ],
     [ "make_array", "classSEAMS_1_1Aprepro.html#a7d5d29ce007a2db86e58fc84d6105034", null ],
     [ "make_array", "classSEAMS_1_1Aprepro.html#a46969190572695bccf65f3a5a0bc994d", null ],
     [ "open_file", "classSEAMS_1_1Aprepro.html#adf9f4ca4007141eba22adeb8adf37c6b", null ],
@@ -70,6 +71,6 @@ var classSEAMS_1_1Aprepro =
     [ "stringInput", "classSEAMS_1_1Aprepro.html#a97b148ef5891a2b473f8a66c539caf6b", null ],
     [ "stringInteractive", "classSEAMS_1_1Aprepro.html#a14772801d5459958e089b1c27062877d", null ],
     [ "stringScanner", "classSEAMS_1_1Aprepro.html#ac90f87dc532694d8d102a06d4fa831fd", null ],
-    [ "sym_table", "classSEAMS_1_1Aprepro.html#afee7ba2bf7cc4316d7f54e204f7bf348", null ],
+    [ "sym_table", "classSEAMS_1_1Aprepro.html#a06f0f3e12221ce15f0aa422939837cca", null ],
     [ "warningStream", "classSEAMS_1_1Aprepro.html#adc097d21991abf4c13e36fa8cca42bed", null ]
 ];

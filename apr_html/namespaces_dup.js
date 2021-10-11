@@ -2,9 +2,7 @@ var namespaces_dup =
 [
     [ "anonymous_namespace{apr_aprepro.cc}", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html", [
       [ "get_value", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a469f5de915567495e6abb171f292b193", null ],
-      [ "hash_symbol", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ad12df308cb43ad0061ad06f13fa3ba6b", null ],
       [ "output_copyright", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ad9ce072d71e737f995472c04521ef52c", null ],
-      [ "HASHSIZE", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a3ccb605d7abf7abff225f663dc92d0e3", null ],
       [ "version_string", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ac1527f21f00b21b4c88dc471caadaa36", null ]
     ] ],
     [ "anonymous_namespace{apr_builtin.cc}", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html", [
@@ -24,5 +22,6 @@ var namespaces_dup =
       [ "allocations", "namespaceanonymous__namespace_02apr__util_8cc_03.html#aded77357317bc83d7cf095bad8674dd7", null ]
     ] ],
     [ "SEAMS", "namespaceSEAMS.html", "namespaceSEAMS" ],
-    [ "trmclr", "namespacetrmclr.html", "namespacetrmclr" ]
+    [ "trmclr", "namespacetrmclr.html", "namespacetrmclr" ],
+    [ "tsl", "namespacetsl.html", "namespacetsl" ]
 ];

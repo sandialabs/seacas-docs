@@ -10,5 +10,7 @@ var searchData=
   ['init_5fdd_7',['init_dd',['../structinit__dd.html',1,'']]],
   ['init_5fddd_8',['init_ddd',['../structinit__ddd.html',1,'']]],
   ['init_5fdddd_9',['init_dddd',['../structinit__dddd.html',1,'']]],
-  ['init_5fdddddd_10',['init_dddddd',['../structinit__dddddd.html',1,'']]]
+  ['init_5fdddddd_10',['init_dddddd',['../structinit__dddddd.html',1,'']]],
+  ['is_5fpower_5fof_5ftwo_5fpolicy_11',['is_power_of_two_policy',['../structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy.html',1,'tsl::detail_robin_hash']]],
+  ['is_5fpower_5fof_5ftwo_5fpolicy_3c_20tsl_3a_3arh_3a_3apower_5fof_5ftwo_5fgrowth_5fpolicy_3c_20growthfactor_20_3e_20_3e_12',['is_power_of_two_policy&lt; tsl::rh::power_of_two_growth_policy&lt; GrowthFactor &gt; &gt;',['../structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy_3_01tsl_1_1rh_1_1power__of__two__a1a28c2963ea7bfc09f131241d081ae6.html',1,'tsl::detail_robin_hash']]]
 ];

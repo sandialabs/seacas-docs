@@ -18,6 +18,5 @@ var searchData=
   ['minmax_15',['MinMax',['../classIotr_1_1MinMax.html',1,'Iotr']]],
   ['minmax_5ffactory_16',['MinMax_Factory',['../classIotr_1_1MinMax__Factory.html',1,'Iotr']]],
   ['mod_5fgrowth_5fpolicy_17',['mod_growth_policy',['../classtsl_1_1hh_1_1mod__growth__policy.html',1,'tsl::hh::mod_growth_policy&lt; GrowthFactor &gt;'],['../classtsl_1_1rh_1_1mod__growth__policy.html',1,'tsl::rh::mod_growth_policy&lt; GrowthFactor &gt;']]],
-  ['monostate_18',['monostate',['../structmonostate.html',1,'']]],
-  ['my_5fnumpunct_19',['my_numpunct',['../structanonymous__namespace_02io__shell__ts_8C_03_1_1my__numpunct.html',1,'anonymous_namespace{io_shell_ts.C}']]]
+  ['monostate_18',['monostate',['../structmonostate.html',1,'']]]
 ];

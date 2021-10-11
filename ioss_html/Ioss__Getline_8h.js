@@ -1,30 +1,6 @@
 var Ioss__Getline_8h =
 [
-    [ "IO_GL_BUF_SIZE", "Ioss__Getline_8h.html#adaf9ed8a71cb6419a072fccde20dd6d7", null ],
-    [ "io_gl_in_hook_proc", "Ioss__Getline_8h.html#aac3baa8730e1f586b7b1981d83a0803a", null ],
-    [ "io_gl_out_hook_proc", "Ioss__Getline_8h.html#a517b2df48d52fc42662e282e10417e68", null ],
-    [ "io_gl_strlen_proc", "Ioss__Getline_8h.html#a96eb550388274459d4b92465b6db8975", null ],
-    [ "io_gl_strwidth_proc", "Ioss__Getline_8h.html#a2b9b805c4b4de3f49379d9f03a0548c8", null ],
-    [ "io_gl_tab_completion_proc", "Ioss__Getline_8h.html#a96a24ac600a94b2e2d8b691427432f64", null ],
-    [ "io_gl_tab_hook_proc", "Ioss__Getline_8h.html#ac58372b1c67a30ee3b64dd6c8caab555", null ],
     [ "io_getline_int", "Ioss__Getline_8h.html#a0f4b02f89b45fd7f8bab8388c7bff3ec", null ],
     [ "io_gl_histadd", "Ioss__Getline_8h.html#adfe376357494552a4ab7115b5a4b43b1", null ],
-    [ "io_gl_histloadfile", "Ioss__Getline_8h.html#a72df1ac2cb8779f75527e6154eed6a09", null ],
-    [ "io_gl_histsavefile", "Ioss__Getline_8h.html#a409e889cf4d565cdc22b018e00692c22", null ],
-    [ "io_gl_local_filename_completion_proc", "Ioss__Getline_8h.html#aa0d0c4418d028df790ebff4f726e17f5", null ],
-    [ "io_gl_set_home_dir", "Ioss__Getline_8h.html#a64be2a4ef16b3148faffa9c0c0a55086", null ],
-    [ "io_gl_setwidth", "Ioss__Getline_8h.html#a35dd57078305a892d1251b231ed6d9cb", null ],
-    [ "io_gl_strwidth", "Ioss__Getline_8h.html#a8ff3fd45699c60bd1a50282e5cb48285", null ],
-    [ "io_gl_tab_completion", "Ioss__Getline_8h.html#a7ba502056a6c73d95c782bf386fe38e7", null ],
-    [ "io_gl_win_getpass", "Ioss__Getline_8h.html#a281269b50badc022cb041994eefe0e76", null ],
-    [ "io_gl_buf", "Ioss__Getline_8h.html#ae76a491acc164d6f40e2e787512dae33", null ],
-    [ "io_gl_completion_exact_match_extra_char", "Ioss__Getline_8h.html#a63a8b882ba785330220aeb95f3caad93", null ],
-    [ "io_gl_completion_proc", "Ioss__Getline_8h.html#a4fa1d555a9c6fd26707169f5cf66184d", null ],
-    [ "io_gl_ellipses_during_completion", "Ioss__Getline_8h.html#a0c041f7284a1e8548340b8220d0c66a7", null ],
-    [ "io_gl_filename_quote_characters", "Ioss__Getline_8h.html#a6aaa5c688282686cdd985f95ba3f1ef6", null ],
-    [ "io_gl_filename_quoting_desired", "Ioss__Getline_8h.html#ac493fd96dbd912fcbc9d1cac3749fa52", null ],
-    [ "io_gl_in_hook", "Ioss__Getline_8h.html#a3689eb60c29fff823c08986e7048122c", null ],
-    [ "io_gl_out_hook", "Ioss__Getline_8h.html#ac4d0df200ad857835e7fd22b47a5e3c3", null ],
-    [ "io_gl_strlen", "Ioss__Getline_8h.html#a34c8cbbd7c1db7c1dabec876e7cd1344", null ],
-    [ "io_gl_tab_hook", "Ioss__Getline_8h.html#a80caa6582f771c42ccc87e5b3f903ecf", null ]
+    [ "io_gl_setwidth", "Ioss__Getline_8h.html#a35dd57078305a892d1251b231ed6d9cb", null ]
 ];

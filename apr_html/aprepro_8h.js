@@ -7,5 +7,6 @@ var aprepro_8h =
     [ "SEAMS::file_rec", "structSEAMS_1_1file__rec.html", "structSEAMS_1_1file__rec" ],
     [ "SEAMS::history_data", "structSEAMS_1_1history__data.html", "structSEAMS_1_1history__data" ],
     [ "SEAMS::Aprepro", "classSEAMS_1_1Aprepro.html", "classSEAMS_1_1Aprepro" ],
-    [ "math_errhandling", "aprepro_8h.html#aa8618aec27dedcd32f494ccf22f3ed42", null ]
+    [ "HASHSIZE", "aprepro_8h.html#a2b4054af9a8f1ec4104846747ded1675", null ],
+    [ "USE_ROBIN_MAP", "aprepro_8h.html#a09c70b92a5bdc0d1a51cb9a3f699acd8", null ]
 ];

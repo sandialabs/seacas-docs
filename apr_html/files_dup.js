@@ -11,9 +11,10 @@ var files_dup =
     [ "apr_parser.cc", "apr__parser_8cc.html", "apr__parser_8cc" ],
     [ "apr_scanner.cc", "apr__scanner_8cc.html", "apr__scanner_8cc" ],
     [ "apr_scanner.h", "apr__scanner_8h.html", "apr__scanner_8h" ],
-    [ "apr_stats.cc", "apr__stats_8cc.html", null ],
-    [ "apr_stats.h", "apr__stats_8h.html", [
-      [ "SEAMS::Stats", "classSEAMS_1_1Stats.html", "classSEAMS_1_1Stats" ]
+    [ "apr_symrec.h", "apr__symrec_8h.html", [
+      [ "SEAMS::array", "structSEAMS_1_1array.html", "structSEAMS_1_1array" ],
+      [ "SEAMS::symrec", "structSEAMS_1_1symrec.html", "structSEAMS_1_1symrec" ],
+      [ "SEAMS::symrec::value", "structSEAMS_1_1symrec_1_1value.html", "structSEAMS_1_1symrec_1_1value" ]
     ] ],
     [ "apr_test.cc", "apr__test_8cc.html", "apr__test_8cc" ],
     [ "apr_tokenize.cc", "apr__tokenize_8cc.html", null ],
@@ -22,9 +23,6 @@ var files_dup =
     [ "apr_util.cc", "apr__util_8cc.html", "apr__util_8cc" ],
     [ "apr_util.h", "apr__util_8h.html", "apr__util_8h" ],
     [ "aprepro.h", "aprepro_8h.html", [
-      [ "SEAMS::array", "structSEAMS_1_1array.html", "structSEAMS_1_1array" ],
-      [ "SEAMS::symrec", "structSEAMS_1_1symrec.html", "structSEAMS_1_1symrec" ],
-      [ "SEAMS::symrec::value", "structSEAMS_1_1symrec_1_1value.html", "structSEAMS_1_1symrec_1_1value" ],
       [ "SEAMS::aprepro_options", "structSEAMS_1_1aprepro__options.html", "structSEAMS_1_1aprepro__options" ],
       [ "SEAMS::file_rec", "structSEAMS_1_1file__rec.html", "structSEAMS_1_1file__rec" ],
       [ "SEAMS::history_data", "structSEAMS_1_1history__data.html", "structSEAMS_1_1history__data" ],
@@ -61,6 +59,10 @@ var files_dup =
       [ "var_init", "structvar__init.html", "structvar__init" ],
       [ "svar_init", "structsvar__init.html", "structsvar__init" ]
     ] ],
+    [ "robin_growth_policy.h", "robin__growth__policy_8h.html", "robin__growth__policy_8h" ],
+    [ "robin_hash.h", "robin__hash_8h.html", "robin__hash_8h" ],
+    [ "robin_map.h", "robin__map_8h.html", "robin__map_8h" ],
+    [ "robin_set.h", "robin__set_8h.html", "robin__set_8h" ],
     [ "strings.cc", "strings_8cc.html", "strings_8cc" ],
     [ "terminal_color.h", "terminal__color_8h.html", "terminal__color_8h" ]
 ];

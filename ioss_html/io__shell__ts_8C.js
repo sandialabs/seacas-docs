@@ -1,6 +1,5 @@
 var io__shell__ts_8C =
 [
-    [ "anonymous_namespace{io_shell_ts.C}::my_numpunct", "structanonymous__namespace_02io__shell__ts_8C_03_1_1my__numpunct.html", "structanonymous__namespace_02io__shell__ts_8C_03_1_1my__numpunct" ],
     [ "anonymous_namespace{io_shell_ts.C}::param", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param.html", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param" ],
     [ "DO_OUTPUT", "io__shell__ts_8C.html#a6839c46cb9dbbfd7dd87fec222baece1", null ],
     [ "file_copy", "io__shell__ts_8C.html#ae165fe87327e3ca8091f5d08cd898265", null ],
