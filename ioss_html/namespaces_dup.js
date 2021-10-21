@@ -307,7 +307,6 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_Quad8.C}", "namespaceanonymous__namespace_02Ioss__Quad8_8C_03.html", "namespaceanonymous__namespace_02Ioss__Quad8_8C_03" ],
     [ "anonymous_namespace{Ioss_Quad9.C}", "namespaceanonymous__namespace_02Ioss__Quad9_8C_03.html", "namespaceanonymous__namespace_02Ioss__Quad9_8C_03" ],
     [ "anonymous_namespace{Ioss_Region.C}", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html", [
-      [ "check_for_duplicate_names", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#ab86bae2d3a1a39742b09e2f68fa0772c", null ],
       [ "check_hashes", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a44c3aef86ea69e9941c3a082cb0e7c7f", null ],
       [ "check_parallel_consistency", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#ab9344721c6bb9a51318aa50e16f4d525", null ],
       [ "compute_hash", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a6656dc24f504bdeebf73ddf5af0bf448", null ],

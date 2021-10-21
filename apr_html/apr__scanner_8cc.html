@@ -132,7 +132,7 @@ Macros</h2></td></tr>
 <tr class="separator:a243ca1d30872935faf05ea5118ed6fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90f9d458829400869e47efb68a865677"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a90f9d458829400869e47efb68a865677">YY_FLEX_MINOR_VERSION</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a90f9d458829400869e47efb68a865677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac676bd06869180ea493e9b6d7c078dbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#ac676bd06869180ea493e9b6d7c078dbb">YY_FLEX_SUBMINOR_VERSION</a>&#160;&#160;&#160;37</td></tr>
+<tr class="memitem:ac676bd06869180ea493e9b6d7c078dbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#ac676bd06869180ea493e9b6d7c078dbb">YY_FLEX_SUBMINOR_VERSION</a>&#160;&#160;&#160;39</td></tr>
 <tr class="separator:ac676bd06869180ea493e9b6d7c078dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9465c9986fdda27730c9dff8d16a0887"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a9465c9986fdda27730c9dff8d16a0887">FLEX_BETA</a></td></tr>
 <tr class="separator:a9465c9986fdda27730c9dff8d16a0887"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +192,8 @@ Macros</h2></td></tr>
 <tr class="separator:ad1a0b5ebcabffe388e9e9ebb2619c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e5f3a76911433480bca7f4edba6119"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a12e5f3a76911433480bca7f4edba6119">YY_LESS_LINENO</a>(n)</td></tr>
 <tr class="separator:a12e5f3a76911433480bca7f4edba6119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5206f64af3a299a0dc820c385cf0c489"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a5206f64af3a299a0dc820c385cf0c489">YY_LINENO_REWIND_TO</a>(ptr)</td></tr>
+<tr class="separator:a5206f64af3a299a0dc820c385cf0c489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae65cb72d09db0abdc4b8e8c4d533ab14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#ae65cb72d09db0abdc4b8e8c4d533ab14">yyless</a>(n)</td></tr>
 <tr class="separator:ae65cb72d09db0abdc4b8e8c4d533ab14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448a4e9041a09588332733c6846c770c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a448a4e9041a09588332733c6846c770c">unput</a>(c)&#160;&#160;&#160;yyunput(c, (<a class="el" href="apr__scanner_8cc.html#a790a191a93ef4d3b8c0bb43fd7480052">yytext_ptr</a>))</td></tr>
@@ -328,8 +330,6 @@ Functions</h2></td></tr>
 <tr class="separator:a2f3f79d3df1ce0ddad42fafcd48e3eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4a65b873df5c05570846b5413b41dfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#ad4a65b873df5c05570846b5413b41dfd">if</a> (!(yy_init))</td></tr>
 <tr class="separator:ad4a65b873df5c05570846b5413b41dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fdafe3be7e00ce3d4f0cb50a9a5eb39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a8fdafe3be7e00ce3d4f0cb50a9a5eb39">while</a> (1)</td></tr>
-<tr class="separator:a8fdafe3be7e00ce3d4f0cb50a9a5eb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -353,6 +353,8 @@ Variables</h2></td></tr>
 <tr class="separator:ad2e2c6982556ff15e98659a34921d046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac44075db924f78eb77253d057864a889"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#ac44075db924f78eb77253d057864a889">file_must_exist</a> = 0</td></tr>
 <tr class="separator:ac44075db924f78eb77253d057864a889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd6ffdf755386e1b1b5c2216228459d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1file__rec.html">SEAMS::file_rec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a1cd6ffdf755386e1b1b5c2216228459d">outer_file</a> = nullptr</td></tr>
+<tr class="separator:a1cd6ffdf755386e1b1b5c2216228459d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9aed7124776285d55163bad041db5ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#ae9aed7124776285d55163bad041db5ee">loop_lvl</a> = 0</td></tr>
 <tr class="separator:ae9aed7124776285d55163bad041db5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa14fc2f02d0c8addf866d993683db1"><td class="memItemLeft" align="right" valign="top">std::fstream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#afaa14fc2f02d0c8addf866d993683db1">tmp_file</a></td></tr>
@@ -996,9 +998,9 @@ Variables</h2></td></tr>
 <div class="line">  *<a class="code hl_variable" href="apr__scanner_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a>         = <span class="charliteral">&#39;\0&#39;</span>;                                                                           \</div>
 <div class="line">  <span class="comment">/* %% [3.0] code to copy yytext_ptr to yytext[] goes here, if %array \ */</span>                        \</div>
 <div class="line">  (yy_c_buf_p) = <a class="code hl_variable" href="apr__scanner_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a>;</div>
-<div class="ttc" id="aapr__scanner_8cc_html_a61b01b6b236b05090b972f8fd95da539"><div class="ttname"><a href="apr__scanner_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a></div><div class="ttdeci">char * yy_cp</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:1216</div></div>
-<div class="ttc" id="aapr__scanner_8cc_html_a790a191a93ef4d3b8c0bb43fd7480052"><div class="ttname"><a href="apr__scanner_8cc.html#a790a191a93ef4d3b8c0bb43fd7480052">yytext_ptr</a></div><div class="ttdeci">#define yytext_ptr</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:380</div></div>
-<div class="ttc" id="aapr__scanner_8cc_html_aa749693ef7d0c10b137e887638fdc5b2"><div class="ttname"><a href="apr__scanner_8cc.html#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a></div><div class="ttdeci">char * yy_bp</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:1216</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_a61b01b6b236b05090b972f8fd95da539"><div class="ttname"><a href="apr__scanner_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a></div><div class="ttdeci">char * yy_cp</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:1220</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_a790a191a93ef4d3b8c0bb43fd7480052"><div class="ttname"><a href="apr__scanner_8cc.html#a790a191a93ef4d3b8c0bb43fd7480052">yytext_ptr</a></div><div class="ttdeci">#define yytext_ptr</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:381</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_aa749693ef7d0c10b137e887638fdc5b2"><div class="ttname"><a href="apr__scanner_8cc.html#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a></div><div class="ttdeci">char * yy_bp</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:1220</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1111,7 +1113,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define YY_FLEX_SUBMINOR_VERSION&#160;&#160;&#160;37</td>
+          <td class="memname">#define YY_FLEX_SUBMINOR_VERSION&#160;&#160;&#160;39</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1196,6 +1198,24 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">n</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5206f64af3a299a0dc820c385cf0c489" name="a5206f64af3a299a0dc820c385cf0c489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5206f64af3a299a0dc820c385cf0c489">&#9670;&nbsp;</a></span>YY_LINENO_REWIND_TO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define YY_LINENO_REWIND_TO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1369,7 +1389,7 @@ Variables</h2></td></tr>
 <div class="line">    }                                                                                              \</div>
 <div class="line">    YY_CURRENT_BUFFER_LVALUE-&gt;yy_at_bol = at_bol;                                                  \</div>
 <div class="line">  }</div>
-<div class="ttc" id="aapr__scanner_8cc_html_aa093d500a6330d06d8e4760c494fac33"><div class="ttname"><a href="apr__scanner_8cc.html#aa093d500a6330d06d8e4760c494fac33">YY_CURRENT_BUFFER</a></div><div class="ttdeci">#define YY_CURRENT_BUFFER</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:331</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_aa093d500a6330d06d8e4760c494fac33"><div class="ttname"><a href="apr__scanner_8cc.html#aa093d500a6330d06d8e4760c494fac33">YY_CURRENT_BUFFER</a></div><div class="ttdeci">#define YY_CURRENT_BUFFER</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:332</div></div>
 <div class="ttc" id="aapr__scanner_8cc_html_ae7e51116e747d3390e7a6cfc6532834c"><div class="ttname"><a href="apr__scanner_8cc.html#ae7e51116e747d3390e7a6cfc6532834c">YY_BUF_SIZE</a></div><div class="ttdeci">#define YY_BUF_SIZE</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:202</div></div>
 </div><!-- fragment -->
 </div>
@@ -1566,7 +1586,7 @@ Variables</h2></td></tr>
 <div class="line">    YY_RESTORE_YY_MORE_OFFSET(yy_c_buf_p) = <a class="code hl_variable" href="apr__scanner_8cc.html#a61b01b6b236b05090b972f8fd95da539">yy_cp</a> = <a class="code hl_variable" href="apr__scanner_8cc.html#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a> + yyless_macro_arg - <a class="code hl_define" href="apr__scanner_8cc.html#a68792d73820bc46a71d3d4e613f0b977">YY_MORE_ADJ</a>;        \</div>
 <div class="line">    YY_DO_BEFORE_ACTION; <span class="comment">/* set up yytext again */</span>                                                 \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aapr__scanner_8cc_html_a68792d73820bc46a71d3d4e613f0b977"><div class="ttname"><a href="apr__scanner_8cc.html#a68792d73820bc46a71d3d4e613f0b977">YY_MORE_ADJ</a></div><div class="ttdeci">#define YY_MORE_ADJ</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:979</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_a68792d73820bc46a71d3d4e613f0b977"><div class="ttname"><a href="apr__scanner_8cc.html#a68792d73820bc46a71d3d4e613f0b977">YY_MORE_ADJ</a></div><div class="ttdeci">#define YY_MORE_ADJ</div><div class="ttdef"><b>Definition:</b> apr_scanner.cc:982</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1859,7 +1879,7 @@ Variables</h2></td></tr>
           <td class="memname">void * SEAMSalloc </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="apr__scanner_8cc.html#ad557845057f187eec4be07e2717d2afa">yy_size_t</a>&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1877,7 +1897,7 @@ Variables</h2></td></tr>
           <td class="memname">void SEAMSfree </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1895,36 +1915,18 @@ Variables</h2></td></tr>
           <td class="memname">void * SEAMSrealloc </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="apr__scanner_8cc.html#ad557845057f187eec4be07e2717d2afa">yy_size_t</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8fdafe3be7e00ce3d4f0cb50a9a5eb39" name="a8fdafe3be7e00ce3d4f0cb50a9a5eb39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fdafe3be7e00ce3d4f0cb50a9a5eb39">&#9670;&nbsp;</a></span>while()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">while </td>
-          <td>(</td>
-          <td class="paramtype">1&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2052,6 +2054,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int loop_lvl = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cd6ffdf755386e1b1b5c2216228459d" name="a1cd6ffdf755386e1b1b5c2216228459d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd6ffdf755386e1b1b5c2216228459d">&#9670;&nbsp;</a></span>outer_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structSEAMS_1_1file__rec.html">SEAMS::file_rec</a>* outer_file = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2410,14 +2426,14 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0,   131, 132, 133, 134, 138, 139, 140, 141, 142, 144, 145, 147, 156, 157, 184, 219,</div>
-<div class="line">    243, 249, 270, 277, 288, 293, 307, 312, 319, 343, 354, 356, 370, 383, 408, 414, 419,</div>
-<div class="line">    424, 429, 439, 447, 455, 464, 492, 513, 514, 515, 516, 518, 523, 548, 550, 552, 590,</div>
-<div class="line">    591, 594, 596, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617,</div>
-<div class="line">    618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634,</div>
-<div class="line">    635, 636, 637, 638, 639, 640, 646, 652, 664, 666, 668, 684, 685, 695, 698, 699,</div>
+<div class="line">    0,   105, 106, 107, 108, 112, 113, 114, 115, 116, 118, 119, 121, 130, 131, 159, 195,</div>
+<div class="line">    219, 225, 246, 253, 264, 269, 283, 288, 295, 318, 329, 331, 345, 358, 383, 389, 394,</div>
+<div class="line">    399, 404, 414, 422, 430, 439, 467, 488, 489, 490, 491, 493, 498, 523, 525, 527, 566,</div>
+<div class="line">    567, 570, 572, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593,</div>
+<div class="line">    594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610,</div>
+<div class="line">    611, 612, 613, 614, 615, 616, 622, 628, 640, 642, 644, 660, 661, 671, 674, 675,</div>
 <div class="line"> </div>
-<div class="line">    701}</div>
+<div class="line">    677}</div>
 </div><!-- fragment -->
 </div>
 </div>

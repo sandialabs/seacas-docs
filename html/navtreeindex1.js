@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"ex__get__partial__elem__conn_8c.html#a56e25a263ec362ff67c99fee630e6680":[10,0,2,0,41,0],
 "ex__get__partial__elem__map_8c.html":[10,0,2,0,42],
 "ex__get__partial__elem__map_8c.html#a1d7f02855333ab6b6ad76ef61f4af22e":[10,0,2,0,42,0],
 "ex__get__partial__elem__num__map_8c.html":[10,0,2,0,43],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "ex__put__reduction__variable__name_8c.html":[10,0,2,160],
 "ex__put__reduction__variable__names_8c.html":[10,0,2,161],
 "ex__put__reduction__variable__names_8c.html#a46380d4fa1b7976542d6f63f6e183756":[10,0,2,161,1],
-"ex__put__reduction__variable__param_8c.html":[10,0,2,162]
+"ex__put__reduction__variable__param_8c.html":[10,0,2,162],
+"ex__put__reduction__vars_8c.html":[10,0,2,163]
 };

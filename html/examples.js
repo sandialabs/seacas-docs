@@ -16,7 +16,6 @@ var examples =
     [ "/test/testcp_nl.c", "_2test_2testcp_nl_8c-example.html", null ],
     [ "/test/testcp_tran.c", "_2test_2testcp_tran_8c-example.html", null ],
     [ "/test/testcpd.c", "_2test_2testcpd_8c-example.html", null ],
-    [ "/test/testrd-groups.c", "_2test_2testrd-groups_8c-example.html", null ],
     [ "/test/testrd-long-name.c", "_2test_2testrd-long-name_8c-example.html", null ],
     [ "/test/testrd-nfaced.c", "_2test_2testrd-nfaced_8c-example.html", null ],
     [ "/test/testrd-nsided.c", "_2test_2testrd-nsided_8c-example.html", null ],
