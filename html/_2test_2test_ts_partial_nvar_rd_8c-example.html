@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_rd_8c-exa
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -211,7 +211,6 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_rd_8c-exa
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> init_file(<span class="keywordtype">int</span> num_nodal_vars)</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">int</span>   exoid;</div>
 <div class="line">  <span class="keywordtype">float</span> version;</div>
 <div class="line">  <span class="keywordtype">int</span>   CPU_word_size = 0; <span class="comment">/* sizeof(float) */</span></div>
 <div class="line">  <span class="keywordtype">int</span>   IO_word_size  = 0; <span class="comment">/* use what is stored in file */</span></div>
@@ -219,7 +218,7 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_rd_8c-exa
 <div class="line">  <a id="a6" name="a6"></a><a class="code hl_function" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts</a>(<a id="a7" name="a7"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9">EX_VERBOSE</a> | <a id="a8" name="a8"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feac85b3327ce99395f3faf0d542b8b3a0a">EX_ABORT</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* open EXODUS II files */</span></div>
-<div class="line">  exoid = <a id="a9" name="a9"></a><a class="code hl_define" href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a>(<span class="stringliteral">&quot;test.exo&quot;</span>,     <span class="comment">/* filename path */</span></div>
+<div class="line">  <span class="keywordtype">int</span> exoid = <a id="a9" name="a9"></a><a class="code hl_define" href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a>(<span class="stringliteral">&quot;test.exo&quot;</span>,     <span class="comment">/* filename path */</span></div>
 <div class="line">                  <a id="a10" name="a10"></a><a class="code hl_define" href="group__FileVars.html#ga49938d96ef78ea1726e9970383bf61b1">EX_READ</a>,        <span class="comment">/* access mode = READ */</span></div>
 <div class="line">                  &amp;CPU_word_size, <span class="comment">/* CPU word size */</span></div>
 <div class="line">                  &amp;IO_word_size,  <span class="comment">/* IO word size */</span></div>
@@ -239,27 +238,25 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_rd_8c-exa
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line">{</div>
 <div class="line">  pthread_t threads[NUM_THREADS];</div>
-<div class="line">  <span class="keywordtype">int</span>       rc;</div>
-<div class="line">  <span class="keywordtype">long</span>      t;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> exoid = init_file(NUM_NODAL_VAR);</div>
 <div class="line"> </div>
 <div class="line">  param arg[NUM_THREADS];</div>
 <div class="line"> </div>
 <div class="line">  printf(<span class="stringliteral">&quot;Running on %d threads\n&quot;</span>, NUM_THREADS);</div>
-<div class="line">  <span class="keywordflow">for</span> (t = 0; t &lt; NUM_THREADS; t++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">long</span> t = 0; t &lt; NUM_THREADS; t++) {</div>
 <div class="line">    arg[t].exoid    = exoid;</div>
 <div class="line">    arg[t].threadid = t;</div>
 <div class="line">    arg[t].timestep = 1;</div>
 <div class="line"> </div>
-<div class="line">    rc = pthread_create(&amp;threads[t], NULL, input_nodal_var, (<span class="keywordtype">void</span> *)(arg + t));</div>
+<div class="line">    <span class="keywordtype">int</span> rc = pthread_create(&amp;threads[t], NULL, input_nodal_var, (<span class="keywordtype">void</span> *)(arg + t));</div>
 <div class="line">    <span class="keywordflow">if</span> (rc) {</div>
 <div class="line">      printf(<span class="stringliteral">&quot;ERROR; return code from pthread_create() is %d\n&quot;</span>, rc);</div>
 <div class="line">      exit(-1);</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (t = 0; t &lt; NUM_THREADS; t++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">long</span> t = 0; t &lt; NUM_THREADS; t++) {</div>
 <div class="line">    pthread_join(threads[t], NULL);</div>
 <div class="line">  }</div>
 <div class="line"> </div>

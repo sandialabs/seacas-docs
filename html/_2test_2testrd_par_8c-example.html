@@ -104,8 +104,8 @@ $(document).ready(function(){initNavTree('_2test_2testrd_par_8c-example.html',''
 <div class="line">  MPI_Comm mpi_comm = MPI_COMM_WORLD;</div>
 <div class="line">  MPI_Info mpi_info = MPI_INFO_NULL;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span>  i, j, k, node_ctr;</div>
-<div class="line">  <span class="keywordtype">int</span> *node_ctr_list, *elem_list, *side_list;</div>
+<div class="line">  <span class="keywordtype">int</span>  i, j, k;</div>
+<div class="line">  <span class="keywordtype">int</span> *elem_list, *side_list;</div>
 <div class="line">  <span class="keywordtype">int</span> *ids;</div>
 <div class="line">  <span class="keywordtype">int</span> *num_nodes_per_set = NULL;</div>
 <div class="line">  <span class="keywordtype">int</span> *num_elem_per_set  = NULL;</div>
@@ -121,11 +121,11 @@ $(document).ready(function(){initNavTree('_2test_2testrd_par_8c-example.html',''
 <div class="line">  <span class="keywordtype">int</span> *num_elem_in_block  = NULL;</div>
 <div class="line">  <span class="keywordtype">int</span> *num_nodes_per_elem = NULL;</div>
 <div class="line">  <span class="keywordtype">int</span> *num_attr           = NULL;</div>
-<div class="line">  <span class="keywordtype">int</span>  num_nodes_in_set, num_elem_in_set;</div>
+<div class="line">  <span class="keywordtype">int</span>  num_nodes_in_set;</div>
 <div class="line">  <span class="keywordtype">int</span>  num_sides_in_set, num_df_in_set;</div>
 <div class="line">  <span class="keywordtype">int</span>  list_len, elem_list_len, node_list_len, df_list_len;</div>
-<div class="line">  <span class="keywordtype">int</span>  node_num, time_step, var_index, beg_time, end_time, elem_num;</div>
-<div class="line">  <span class="keywordtype">int</span>  num_props, prop_value, *prop_values;</div>
+<div class="line">  <span class="keywordtype">int</span>  time_step, var_index, beg_time, end_time, elem_num;</div>
+<div class="line">  <span class="keywordtype">int</span>  num_props, prop_value;</div>
 <div class="line">  <span class="keywordtype">int</span>  idum;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">float</span>  time_value, *time_values, *var_values;</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('_2test_2testrd_par_8c-example.html',''
 <div class="line">  <span class="keywordtype">char</span> *block_names[10], *nset_names[10], *sset_names[10];</div>
 <div class="line">  <span class="keywordtype">char</span> *attrib_names[10];</div>
 <div class="line">  <span class="keywordtype">char</span>  name[<a id="a0" name="a0"></a><a class="code hl_define" href="group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f">MAX_STR_LENGTH</a> + 1];</div>
-<div class="line">  <span class="keywordtype">char</span>  title[<a id="a1" name="a1"></a><a class="code hl_define" href="group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2">MAX_LINE_LENGTH</a> + 1], elem_type[<a class="code hl_define" href="group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f">MAX_STR_LENGTH</a> + 1];</div>
+<div class="line">  <span class="keywordtype">char</span>  title[<a id="a1" name="a1"></a><a class="code hl_define" href="group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2">MAX_LINE_LENGTH</a> + 1];</div>
 <div class="line">  <span class="keywordtype">char</span>  title_chk[<a class="code hl_define" href="group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2">MAX_LINE_LENGTH</a> + 1];</div>
 <div class="line">  <span class="keywordtype">char</span> *cdum = NULL;</div>
 <div class="line">  <span class="keywordtype">char</span> *prop_names[3];</div>
@@ -321,6 +321,7 @@ $(document).ready(function(){initNavTree('_2test_2testrd_par_8c-example.html',''
 <div class="line">    error = <a id="a20" name="a20"></a><a class="code hl_function" href="group__ModelDescription.html#ga6f6ca07ae03a41bafda400917ba9b8b7">ex_get_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, block_names);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_get_names, error = %3d\n&quot;</span>, error);</div>
 <div class="line"> </div>
+<div class="line">    <span class="keywordtype">char</span>  elem_type[<a class="code hl_define" href="group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f">MAX_STR_LENGTH</a> + 1];</div>
 <div class="line">    <span class="keywordflow">for</span> (i = 0; i &lt; num_elem_blk; i++) {</div>
 <div class="line">      <a id="a21" name="a21"></a><a class="code hl_function" href="group__ModelDescription.html#gae561193d21c874769c810196544b71ea">ex_get_name</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ids[i], name);</div>
 <div class="line">      <span class="keywordflow">if</span> (strcmp(name, block_names[i]) != 0) {</div>
@@ -522,7 +523,7 @@ $(document).ready(function(){initNavTree('_2test_2testrd_par_8c-example.html',''
 <div class="line">    <span class="keywordflow">for</span> (i = 0; i &lt; num_props; i++) {</div>
 <div class="line">      prop_names[i] = (<span class="keywordtype">char</span> *)calloc((<a class="code hl_define" href="group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f">MAX_STR_LENGTH</a> + 1), <span class="keyword">sizeof</span>(char));</div>
 <div class="line">    }</div>
-<div class="line">    prop_values = (<span class="keywordtype">int</span> *)calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span> *prop_values = (<span class="keywordtype">int</span> *)calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line"> </div>
 <div class="line">    error = <a class="code hl_function" href="group__ModelDescription.html#gaf5efefd0c9a16732d628ad438db897fa">ex_get_prop_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, prop_names);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;after ex_get_prop_names, error = %d\n&quot;</span>, error);</div>
@@ -627,10 +628,10 @@ $(document).ready(function(){initNavTree('_2test_2testrd_par_8c-example.html',''
 <div class="line">      free(sset_names[i]);</div>
 <div class="line"> </div>
 <div class="line">      <span class="comment">/* Note: The # of elements is same as # of sides!  */</span></div>
-<div class="line">      num_elem_in_set  = num_sides_in_set;</div>
+<div class="line">      <span class="keywordtype">int</span> num_elem_in_set  = num_sides_in_set;</div>
 <div class="line">      elem_list        = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">      side_list        = (<span class="keywordtype">int</span> *)calloc(num_sides_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">      node_ctr_list    = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">      <span class="keywordtype">int</span> *node_ctr_list    = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">      node_list        = (<span class="keywordtype">int</span> *)calloc(num_elem_in_set * 21, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">      <span class="keywordtype">float</span> *dist_fact = (<span class="keywordtype">float</span> *)calloc(num_df_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"> </div>
@@ -655,7 +656,7 @@ $(document).ready(function(){initNavTree('_2test_2testrd_par_8c-example.html',''
 <div class="line">        printf(<span class="stringliteral">&quot;%3d\n&quot;</span>, side_list[j]);</div>
 <div class="line">      }</div>
 <div class="line"> </div>
-<div class="line">      node_ctr = 0;</div>
+<div class="line">      <span class="keywordtype">int</span> node_ctr = 0;</div>
 <div class="line">      printf(<span class="stringliteral">&quot;node list for side set %2d\n&quot;</span>, ids[i]);</div>
 <div class="line">      <span class="keywordflow">for</span> (k = 0; k &lt; num_elem_in_set; k++) {</div>
 <div class="line">        <span class="keywordflow">for</span> (j = 0; j &lt; node_ctr_list[k]; j++) {</div>
@@ -1056,7 +1057,7 @@ $(document).ready(function(){initNavTree('_2test_2testrd_par_8c-example.html',''
 <div class="line"> </div>
 <div class="line">    var_values = (<span class="keywordtype">float</span> *)calloc(num_time_steps, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"> </div>
-<div class="line">    node_num = 1;</div>
+<div class="line">    <span class="keywordtype">int</span> node_num = 1;</div>
 <div class="line">    error = <a id="a60" name="a60"></a><a class="code hl_function" href="group__ResultsData.html#ga65af6a2020057488a89b28238993562b">ex_get_var_time</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, var_index, node_num, beg_time, end_time, var_values);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_get_nodal_var_time, error = %3d\n&quot;</span>, error);</div>
 <div class="line"> </div>
