@@ -25,12 +25,15 @@ var searchData=
   ['localnumberofelementsinblock_22',['localNumberOfElementsInBlock',['../structIogn_1_1ExodusData.html#acc2dc76db9789a95095faf7d0d66fb7b',1,'Iogn::ExodusData']]],
   ['localownedcount_23',['localOwnedCount',['../structIoex_1_1NodeBlock.html#a0e0668e291626e6ba573651ea2f28192',1,'Ioex::NodeBlock::localOwnedCount()'],['../structIoex_1_1Blob.html#a948740a83c3b700357cbe7b2c97bc6a9',1,'Ioex::Blob::localOwnedCount()'],['../structIoex_1_1NodeSet.html#aef1e4371759d9815b83961ce4c80192c',1,'Ioex::NodeSet::localOwnedCount()']]],
   ['log10_5f2_5fsignificand_24',['log10_2_significand',['../structbasic__data.html#a9e30f7176a169465975ba94e47fc6337',1,'basic_data']]],
-  ['logging_25',['logging',['../classIovs_1_1CatalystManager.html#a51f8d618d104a92b8e699cf6088dec8e',1,'Iovs::CatalystManager']]],
-  ['logstream_26',['logStream',['../classIohb_1_1DatabaseIO.html#ac0f3172b2fc161f2208945788ea85d65',1,'Iohb::DatabaseIO']]],
-  ['long_5fdouble_5fvalue_27',['long_double_value',['../classvalue.html#a0947fd5646e07f4da412f775bc2a45a2',1,'value']]],
-  ['long_5flong_5fvalue_28',['long_long_value',['../classvalue.html#a2053ae5a70252c58b4ede4a7288f731d',1,'value']]],
-  ['low_5f_29',['low_',['../structdetail_1_1uint128__wrapper.html#afca94724679c2d66008ed94b49f24963',1,'detail::uint128_wrapper']]],
-  ['lower_30',['lower',['../structdetail_1_1boundaries.html#ab11ba5f99bef25065253041634795b08',1,'detail::boundaries::lower()'],['../structdetail_1_1accumulator.html#afa4c8b84cd1e7c1381b45f340f5b8494',1,'detail::accumulator::lower()']]],
-  ['lower_5fcase_5fvariable_5fnames_31',['lower_case_variable_names',['../classIOShell_1_1Interface.html#ad8414e8c24596433dd4d729047b28a36',1,'IOShell::Interface']]],
-  ['lowercasevariablenames_32',['lowerCaseVariableNames',['../classIoss_1_1DatabaseIO.html#aa3a83f9f43da8caf28ec7cc4b55ef5bc',1,'Ioss::DatabaseIO']]]
+  ['logfilename_25',['logFileName',['../classIovs_1_1CatalystLogging.html#a1945315a48f8b7df1e06107850577e36',1,'Iovs::CatalystLogging']]],
+  ['logging_26',['logging',['../classIovs_1_1CatalystManager.html#a51f8d618d104a92b8e699cf6088dec8e',1,'Iovs::CatalystManager']]],
+  ['logoutputdirectorypath_27',['logOutputDirectoryPath',['../classIovs_1_1CatalystLogging.html#ad3ed0dc1c022f63ac45858b3c9c05fd2',1,'Iovs::CatalystLogging']]],
+  ['logprefix_28',['logPrefix',['../classIovs_1_1CatalystLogging.html#ac57f2df138d9b49b5df5d8958898a8d9',1,'Iovs::CatalystLogging']]],
+  ['logstream_29',['logStream',['../classIohb_1_1DatabaseIO.html#ac0f3172b2fc161f2208945788ea85d65',1,'Iohb::DatabaseIO']]],
+  ['long_5fdouble_5fvalue_30',['long_double_value',['../classvalue.html#a0947fd5646e07f4da412f775bc2a45a2',1,'value']]],
+  ['long_5flong_5fvalue_31',['long_long_value',['../classvalue.html#a2053ae5a70252c58b4ede4a7288f731d',1,'value']]],
+  ['low_5f_32',['low_',['../structdetail_1_1uint128__wrapper.html#afca94724679c2d66008ed94b49f24963',1,'detail::uint128_wrapper']]],
+  ['lower_33',['lower',['../structdetail_1_1boundaries.html#ab11ba5f99bef25065253041634795b08',1,'detail::boundaries::lower()'],['../structdetail_1_1accumulator.html#afa4c8b84cd1e7c1381b45f340f5b8494',1,'detail::accumulator::lower()']]],
+  ['lower_5fcase_5fvariable_5fnames_34',['lower_case_variable_names',['../classIOShell_1_1Interface.html#ad8414e8c24596433dd4d729047b28a36',1,'IOShell::Interface']]],
+  ['lowercasevariablenames_35',['lowerCaseVariableNames',['../classIoss_1_1DatabaseIO.html#aa3a83f9f43da8caf28ec7cc4b55ef5bc',1,'Ioss::DatabaseIO']]]
 ];

@@ -102,7 +102,7 @@ var apr__scanner_8cc =
     [ "SEAMSfree", "apr__scanner_8cc.html#af844507128ff1f4c4605f7adf787c6df", null ],
     [ "SEAMSrealloc", "apr__scanner_8cc.html#ad4a3ff3a58be20fa74dfe21847ae0930", null ],
     [ "yyerror", "apr__scanner_8cc.html#a2f3f79d3df1ce0ddad42fafcd48e3eb0", null ],
-    [ "curr_index", "apr__scanner_8cc.html#a910b122f0b662594fe8125475959bb07", null ],
+    [ "curr_index", "apr__scanner_8cc.html#accf9b292c5dce70026d58801522ebb7d", null ],
     [ "file_must_exist", "apr__scanner_8cc.html#ac44075db924f78eb77253d057864a889", null ],
     [ "hist_start", "apr__scanner_8cc.html#a252fb105ec4adf6ab62197f9e7c30d52", null ],
     [ "history_string", "apr__scanner_8cc.html#a748e6be0ac0614a20c58899ed02aaf8a", null ],

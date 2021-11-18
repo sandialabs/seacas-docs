@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -96,23 +96,8 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> * testwt - test write an ExodusII database file</span></div>
 <div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * author - Sandia National Laboratories</span></div>
-<div class="line"><span class="comment"> *          Larry A. Schoof - Original</span></div>
-<div class="line"><span class="comment"> *          Vic Yarberry    - Added headers and error logging</span></div>
-<div class="line"><span class="comment"> *               7/7/93          Modified for use with Exodus 2.00</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * environment - UNIX</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * entry conditions -</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * exit conditions -</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * revision history -</span></div>
-<div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> *  This is a test program for the C binding of the EXODUS II</span></div>
 <div class="line"><span class="comment"> *  database write routines.</span></div>
-<div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> *****************************************************************************/</span></div>
 <div class="line"> </div>
@@ -123,38 +108,37 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="exodusII_8h.html">exodusII.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="exodusII__int_8h.html">exodusII_int.h</a>&quot;</span></div>
 <div class="line"> </div>
+<div class="line"><span class="preprocessor">#define STRINGIFY(x) #x</span></div>
+<div class="line"><span class="preprocessor">#define TOSTRING(x)  STRINGIFY(x)</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define EXCHECK(funcall)                                                                           \</span></div>
+<div class="line"><span class="preprocessor">  do {                                                                                             \</span></div>
+<div class="line"><span class="preprocessor">    int error = (funcall);                                                                         \</span></div>
+<div class="line"><span class="preprocessor">    printf(&quot;after %s, error = %d\n&quot;</span>, TOSTRING(funcall), error);                                    \</div>
+<div class="line">    if (error != EX_NOERR &amp;&amp; error != EX_WARN) {                                                   \</div>
+<div class="line">      fprintf(stderr, &quot;Error calling %s\n&quot;, TOSTRING(funcall));                                    \</div>
+<div class="line">      ex_close(exoid);                                                                             \</div>
+<div class="line">      exit(-1);                                                                                    \</div>
+<div class="line">    }                                                                                              \</div>
+<div class="line">  } while (0)</div>
+<div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv)</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">int</span> num_face_in_sset[10], num_nodes_in_nset[10];</div>
-<div class="line">  <span class="keywordtype">int</span> node_list[100], elem_list[100], side_list[100];</div>
-<div class="line">  <span class="keywordtype">int</span> ssids[10], nsids[10];</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordtype">float</span> x[100], y[100], z[100];</div>
-<div class="line">  <span class="keywordtype">float</span> attrib[1], dist_fact[100];</div>
-<div class="line">  <span class="keywordtype">char</span> *coord_names[3], *qa_record[2][4], *info[3], *var_names[3];</div>
-<div class="line">  <span class="keywordtype">char</span> *block_names[10], *nset_names[10], *sset_names[10];</div>
-<div class="line">  <span class="keywordtype">char</span> *prop_names[2], *attrib_names[2];</div>
-<div class="line">  <span class="keywordtype">char</span> *title = <span class="stringliteral">&quot;This is a test&quot;</span>;</div>
-<div class="line"> </div>
-<div class="line">  <span class="keyword">struct </span><a id="_a0" name="_a0"></a><a class="code hl_struct" href="structex__block.html">ex_block</a> blocks[10];</div>
-<div class="line"> </div>
-<div class="line">  <a id="a1" name="a1"></a><a class="code hl_function" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts</a>(<a id="a2" name="a2"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9">EX_VERBOSE</a>);</div>
+<div class="line">  <a id="a0" name="a0"></a><a class="code hl_function" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts</a>(<a id="a1" name="a1"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9">EX_VERBOSE</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Specify compute and i/o word size */</span></div>
-<div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> CPU_word_size = 0; <span class="comment">/* sizeof(float) */</span></div>
 <div class="line">  <span class="keywordtype">int</span> IO_word_size  = 4; <span class="comment">/* (4 bytes) */</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* create EXODUS II file */</span></div>
-<div class="line">  <span class="keywordtype">int</span> exoid = <a id="a3" name="a3"></a><a class="code hl_define" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a>(<span class="stringliteral">&quot;test.exo&quot;</span>,     <span class="comment">/* filename path */</span></div>
-<div class="line">                        <a id="a4" name="a4"></a><a class="code hl_define" href="group__FileVars.html#gadeed66ded179e51a8858254052a76ba4">EX_CLOBBER</a>,     <span class="comment">/* create mode */</span></div>
+<div class="line">  <span class="keywordtype">int</span> exoid = <a id="a2" name="a2"></a><a class="code hl_define" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a>(<span class="stringliteral">&quot;test.exo&quot;</span>,     <span class="comment">/* filename path */</span></div>
+<div class="line">                        <a id="a3" name="a3"></a><a class="code hl_define" href="group__FileVars.html#gadeed66ded179e51a8858254052a76ba4">EX_CLOBBER</a>,     <span class="comment">/* create mode */</span></div>
 <div class="line">                        &amp;CPU_word_size, <span class="comment">/* CPU float word size in bytes */</span></div>
 <div class="line">                        &amp;IO_word_size); <span class="comment">/* I/O float word size in bytes */</span></div>
 <div class="line">  printf(<span class="stringliteral">&quot;after ex_create for test.exo, exoid = %d\n&quot;</span>, exoid);</div>
 <div class="line">  printf(<span class="stringliteral">&quot; cpu word size: %d io word size: %d\n&quot;</span>, CPU_word_size, IO_word_size);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* initialize file with parameters */</span></div>
-<div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> num_dim       = 3;</div>
 <div class="line">  <span class="keywordtype">int</span> num_nodes     = 33;</div>
 <div class="line">  <span class="keywordtype">int</span> num_elem      = 7;</div>
@@ -162,180 +146,75 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line">  <span class="keywordtype">int</span> num_node_sets = 2;</div>
 <div class="line">  <span class="keywordtype">int</span> num_side_sets = 5;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> error = <a id="a5" name="a5"></a><a class="code hl_function" href="group__ModelDescription.html#gaad1d6ddd57d1fa8f94da25d505e8c7ba">ex_put_init</a>(exoid, title, num_dim, num_nodes, num_elem, num_elem_blk, num_node_sets,</div>
-<div class="line">                          num_side_sets);</div>
+<div class="line">  <span class="keywordtype">char</span> *title = <span class="stringliteral">&quot;This is a test&quot;</span>;</div>
+<div class="line">  <a id="a4" name="a4"></a><a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a5" name="a5"></a><a class="code hl_function" href="group__ModelDescription.html#gaad1d6ddd57d1fa8f94da25d505e8c7ba">ex_put_init</a>(exoid, title, num_dim, num_nodes, num_elem, num_elem_blk, num_node_sets,</div>
+<div class="line">                      num_side_sets));</div>
 <div class="line"> </div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_init, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a id="a6" name="a6"></a><a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
+<div class="line">  <span class="comment">/* clang-format off */</span></div>
 <div class="line">  <span class="comment">/* write nodal coordinates values and names to database */</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Quad #1 */</span></div>
-<div class="line">  x[0] = 0.0;</div>
-<div class="line">  y[0] = 0.0;</div>
-<div class="line">  z[0] = 0.0;</div>
-<div class="line">  x[1] = 1.0;</div>
-<div class="line">  y[1] = 0.0;</div>
-<div class="line">  z[1] = 0.0;</div>
-<div class="line">  x[2] = 1.0;</div>
-<div class="line">  y[2] = 1.0;</div>
-<div class="line">  z[2] = 0.0;</div>
-<div class="line">  x[3] = 0.0;</div>
-<div class="line">  y[3] = 1.0;</div>
-<div class="line">  z[3] = 0.0;</div>
+<div class="line">  <span class="keywordtype">float</span> x[100], y[100], z[100];</div>
+<div class="line">  x[0] = 0.0;  y[0] = 0.0;  z[0] = 0.0;</div>
+<div class="line">  x[1] = 1.0;  y[1] = 0.0;  z[1] = 0.0;</div>
+<div class="line">  x[2] = 1.0;  y[2] = 1.0;  z[2] = 0.0;</div>
+<div class="line">  x[3] = 0.0;  y[3] = 1.0;  z[3] = 0.0;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Quad #2 */</span></div>
-<div class="line">  x[4] = 1.0;</div>
-<div class="line">  y[4] = 0.0;</div>
-<div class="line">  z[4] = 0.0;</div>
-<div class="line">  x[5] = 2.0;</div>
-<div class="line">  y[5] = 0.0;</div>
-<div class="line">  z[5] = 0.0;</div>
-<div class="line">  x[6] = 2.0;</div>
-<div class="line">  y[6] = 1.0;</div>
-<div class="line">  z[6] = 0.0;</div>
-<div class="line">  x[7] = 1.0;</div>
-<div class="line">  y[7] = 1.0;</div>
-<div class="line">  z[7] = 0.0;</div>
+<div class="line">  x[4] = 1.0;  y[4] = 0.0;  z[4] = 0.0;</div>
+<div class="line">  x[5] = 2.0;  y[5] = 0.0;  z[5] = 0.0;</div>
+<div class="line">  x[6] = 2.0;  y[6] = 1.0;  z[6] = 0.0;</div>
+<div class="line">  x[7] = 1.0;  y[7] = 1.0;  z[7] = 0.0;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Hex #1 */</span></div>
-<div class="line">  x[8]  = 0.0;</div>
-<div class="line">  y[8]  = 0.0;</div>
-<div class="line">  z[8]  = 0.0;</div>
-<div class="line">  x[9]  = 10.0;</div>
-<div class="line">  y[9]  = 0.0;</div>
-<div class="line">  z[9]  = 0.0;</div>
-<div class="line">  x[10] = 10.0;</div>
-<div class="line">  y[10] = 0.0;</div>
-<div class="line">  z[10] = -10.0;</div>
-<div class="line">  x[11] = 1.0;</div>
-<div class="line">  y[11] = 0.0;</div>
-<div class="line">  z[11] = -10.0;</div>
-<div class="line">  x[12] = 1.0;</div>
-<div class="line">  y[12] = 10.0;</div>
-<div class="line">  z[12] = 0.0;</div>
-<div class="line">  x[13] = 10.0;</div>
-<div class="line">  y[13] = 10.0;</div>
-<div class="line">  z[13] = 0.0;</div>
-<div class="line">  x[14] = 10.0;</div>
-<div class="line">  y[14] = 10.0;</div>
-<div class="line">  z[14] = -10.0;</div>
-<div class="line">  x[15] = 1.0;</div>
-<div class="line">  y[15] = 10.0;</div>
-<div class="line">  z[15] = -10.0;</div>
+<div class="line">  x[8]  = 0.0;   y[8]  = 0.0;  z[8]  = 0.0;</div>
+<div class="line">  x[9]  = 10.0;  y[9]  = 0.0;  z[9]  = 0.0;</div>
+<div class="line">  x[10] = 10.0;  y[10] = 0.0;  z[10] = -10.0;</div>
+<div class="line">  x[11] = 1.0;   y[11] = 0.0;  z[11] = -10.0;</div>
+<div class="line">  x[12] = 1.0;   y[12] = 10.0; z[12] = 0.0;</div>
+<div class="line">  x[13] = 10.0;  y[13] = 10.0; z[13] = 0.0;</div>
+<div class="line">  x[14] = 10.0;  y[14] = 10.0; z[14] = -10.0;</div>
+<div class="line">  x[15] = 1.0;   y[15] = 10.0; z[15] = -10.0;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Tetra #1 */</span></div>
-<div class="line">  x[16] = 0.0;</div>
-<div class="line">  y[16] = 0.0;</div>
-<div class="line">  z[16] = 0.0;</div>
-<div class="line">  x[17] = 1.0;</div>
-<div class="line">  y[17] = 0.0;</div>
-<div class="line">  z[17] = 5.0;</div>
-<div class="line">  x[18] = 10.0;</div>
-<div class="line">  y[18] = 0.0;</div>
-<div class="line">  z[18] = 2.0;</div>
-<div class="line">  x[19] = 7.0;</div>
-<div class="line">  y[19] = 5.0;</div>
-<div class="line">  z[19] = 3.0;</div>
+<div class="line">  x[16] = 0.0;  y[16] = 0.0;  z[16] = 0.0;</div>
+<div class="line">  x[17] = 1.0;  y[17] = 0.0;  z[17] = 5.0;</div>
+<div class="line">  x[18] = 10.0; y[18] = 0.0;  z[18] = 2.0;</div>
+<div class="line">  x[19] = 7.0;  y[19] = 5.0;  z[19] = 3.0;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Wedge #1 */</span></div>
-<div class="line">  x[20] = 3.0;</div>
-<div class="line">  y[20] = 0.0;</div>
-<div class="line">  z[20] = 6.0;</div>
-<div class="line">  x[21] = 6.0;</div>
-<div class="line">  y[21] = 0.0;</div>
-<div class="line">  z[21] = 0.0;</div>
-<div class="line">  x[22] = 0.0;</div>
-<div class="line">  y[22] = 0.0;</div>
-<div class="line">  z[22] = 0.0;</div>
-<div class="line">  x[23] = 3.0;</div>
-<div class="line">  y[23] = 2.0;</div>
-<div class="line">  z[23] = 6.0;</div>
-<div class="line">  x[24] = 6.0;</div>
-<div class="line">  y[24] = 2.0;</div>
-<div class="line">  z[24] = 2.0;</div>
-<div class="line">  x[25] = 0.0;</div>
-<div class="line">  y[25] = 2.0;</div>
-<div class="line">  z[25] = 0.0;</div>
+<div class="line">  x[20] = 3.0;  y[20] = 0.0;  z[20] = 6.0;</div>
+<div class="line">  x[21] = 6.0;  y[21] = 0.0;  z[21] = 0.0;</div>
+<div class="line">  x[22] = 0.0;  y[22] = 0.0;  z[22] = 0.0;</div>
+<div class="line">  x[23] = 3.0;  y[23] = 2.0;  z[23] = 6.0;</div>
+<div class="line">  x[24] = 6.0;  y[24] = 2.0;  z[24] = 2.0;</div>
+<div class="line">  x[25] = 0.0;  y[25] = 2.0;  z[25] = 0.0;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Tetra #2 */</span></div>
-<div class="line">  x[26] = 2.7;</div>
-<div class="line">  y[26] = 1.7;</div>
-<div class="line">  z[26] = 2.7;</div>
-<div class="line">  x[27] = 6.0;</div>
-<div class="line">  y[27] = 1.7;</div>
-<div class="line">  z[27] = 3.3;</div>
-<div class="line">  x[28] = 5.7;</div>
-<div class="line">  y[28] = 1.7;</div>
-<div class="line">  z[28] = 1.7;</div>
-<div class="line">  x[29] = 3.7;</div>
-<div class="line">  y[29] = 0.0;</div>
-<div class="line">  z[29] = 2.3;</div>
+<div class="line">  x[26] = 2.7;  y[26] = 1.7;  z[26] = 2.7;</div>
+<div class="line">  x[27] = 6.0;  y[27] = 1.7;  z[27] = 3.3;</div>
+<div class="line">  x[28] = 5.7;  y[28] = 1.7;  z[28] = 1.7;</div>
+<div class="line">  x[29] = 3.7;  y[29] = 0.0;  z[29] = 2.3;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* 3d Tri */</span></div>
-<div class="line">  x[30] = 0.0;</div>
-<div class="line">  y[30] = 0.0;</div>
-<div class="line">  z[30] = 0.0;</div>
-<div class="line">  x[31] = 10.0;</div>
-<div class="line">  y[31] = 0.0;</div>
-<div class="line">  z[31] = 0.0;</div>
-<div class="line">  x[32] = 10.0;</div>
-<div class="line">  y[32] = 10.0;</div>
-<div class="line">  z[32] = 10.0;</div>
+<div class="line">  x[30] = 0.0;  y[30] = 0.0;  z[30] = 0.0;</div>
+<div class="line">  x[31] = 10.0; y[31] = 0.0;  z[31] = 0.0;</div>
+<div class="line">  x[32] = 10.0; y[32] = 10.0; z[32] = 10.0;</div>
+<div class="line">  <span class="comment">/* clang-format on */</span></div>
 <div class="line"> </div>
-<div class="line">  error = <a id="a7" name="a7"></a><a class="code hl_function" href="group__ModelDescription.html#ga7b04e195e3fa979ba07470b860d70145">ex_put_coord</a>(exoid, x, y, z);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_coord, error = %d\n&quot;</span>, error);</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a6" name="a6"></a><a class="code hl_function" href="group__ModelDescription.html#ga7b04e195e3fa979ba07470b860d70145">ex_put_coord</a>(exoid, x, y, z));</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  coord_names[0] = <span class="stringliteral">&quot;xcoor&quot;</span>;</div>
-<div class="line">  coord_names[1] = <span class="stringliteral">&quot;ycoor&quot;</span>;</div>
-<div class="line">  coord_names[2] = <span class="stringliteral">&quot;zcoor&quot;</span>;</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a8" name="a8"></a><a class="code hl_function" href="group__ModelDescription.html#ga59701a01595d0ba630c2e25cf0fedfc1">ex_put_coord_names</a>(exoid, coord_names);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_coord_names, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <span class="keywordtype">char</span> *coord_names[] = {<span class="stringliteral">&quot;xcoor&quot;</span>, <span class="stringliteral">&quot;ycoor&quot;</span>, <span class="stringliteral">&quot;zcoor&quot;</span>};</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a7" name="a7"></a><a class="code hl_function" href="group__ModelDescription.html#ga59701a01595d0ba630c2e25cf0fedfc1">ex_put_coord_names</a>(exoid, coord_names));</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Add nodal attributes */</span></div>
-<div class="line">  error = <a id="a9" name="a9"></a><a class="code hl_function" href="group__ModelDescription.html#gacbe0d2c034655cb912a2ebf761ec89c5">ex_put_attr_param</a>(exoid, <a id="a10" name="a10"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, 0, 2);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_attr_param, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a11" name="a11"></a><a class="code hl_function" href="group__ModelDescription.html#ga3ff6ca7454f0ae270fb138c5a4844e37">ex_put_one_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, 0, 1, x);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga3ff6ca7454f0ae270fb138c5a4844e37">ex_put_one_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, 0, 2, y);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a8" name="a8"></a><a class="code hl_function" href="group__ModelDescription.html#gacbe0d2c034655cb912a2ebf761ec89c5">ex_put_attr_param</a>(exoid, <a id="a9" name="a9"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, 0, 2));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a10" name="a10"></a><a class="code hl_function" href="group__ModelDescription.html#ga3ff6ca7454f0ae270fb138c5a4844e37">ex_put_one_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, 0, 1, x));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga3ff6ca7454f0ae270fb138c5a4844e37">ex_put_one_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, 0, 2, y));</div>
 <div class="line"> </div>
 <div class="line">  {</div>
-<div class="line">    attrib_names[0] = <span class="stringliteral">&quot;Node_attr_1&quot;</span>;</div>
-<div class="line">    attrib_names[1] = <span class="stringliteral">&quot;Node_attr_2&quot;</span>;</div>
-<div class="line">    error           = <a id="a12" name="a12"></a><a class="code hl_function" href="group__ModelDescription.html#gae9beb2de2a75649c57a025b0f647cb74">ex_put_attr_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, 0, attrib_names);</div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
-<div class="line">    }</div>
+<div class="line">    <span class="keywordtype">char</span> *attrib_names[] = {<span class="stringliteral">&quot;Node_attr_1&quot;</span>, <span class="stringliteral">&quot;Node_attr_2&quot;</span>};</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a11" name="a11"></a><a class="code hl_function" href="group__ModelDescription.html#gae9beb2de2a75649c57a025b0f647cb74">ex_put_attr_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, 0, attrib_names));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write element order map */</span></div>
@@ -345,17 +224,12 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line">    elem_map[i - 1] = i;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  error = <a id="a13" name="a13"></a><a class="code hl_function" href="group__ModelDescription.html#ga5ceec0317e895d0d2a435321a0188475">ex_put_map</a>(exoid, elem_map);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_map, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a12" name="a12"></a><a class="code hl_function" href="group__ModelDescription.html#ga5ceec0317e895d0d2a435321a0188475">ex_put_map</a>(exoid, elem_map));</div>
 <div class="line"> </div>
 <div class="line">  free(elem_map);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write element block parameters */</span></div>
+<div class="line">  <span class="keyword">struct </span><a id="_a13" name="_a13"></a><a class="code hl_struct" href="structex__block.html">ex_block</a> blocks[10];</div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 10; i++) {</div>
 <div class="line">    blocks[i].<a id="a14" name="a14"></a><a class="code hl_variable" href="structex__block.html#a243c28a77311f4472780b63102b4a23e">type</a>                = <a id="a15" name="a15"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>;</div>
 <div class="line">    blocks[i].<a id="a16" name="a16"></a><a class="code hl_variable" href="structex__block.html#a5029b0343dfbef84bc2666488a2764db">id</a>                  = 0;</div>
@@ -366,6 +240,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line">    blocks[i].<a id="a21" name="a21"></a><a class="code hl_variable" href="structex__block.html#a246f71ae43b6502a1db60c5d081afa9d">num_attribute</a>       = 0;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
+<div class="line">  <span class="keywordtype">char</span> *block_names[10];</div>
 <div class="line">  block_names[0] = <span class="stringliteral">&quot;block_1&quot;</span>;</div>
 <div class="line">  block_names[1] = <span class="stringliteral">&quot;block_2&quot;</span>;</div>
 <div class="line">  block_names[2] = <span class="stringliteral">&quot;block_3&quot;</span>;</div>
@@ -417,635 +292,197 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line">  <span class="comment">/* Generate an error that name is not found since blocks have not</span></div>
 <div class="line"><span class="comment">     yet been defined</span></div>
 <div class="line"><span class="comment">  */</span></div>
-<div class="line">  error = <a id="a25" name="a25"></a><a class="code hl_function" href="group__ModelDescription.html#ga9f3c7c8c26e49556f86534f4460e0cf0">ex_put_name</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, block_names[0]);</div>
+<div class="line">  <span class="keywordtype">int</span> error = <a id="a25" name="a25"></a><a class="code hl_function" href="group__ModelDescription.html#ga9f3c7c8c26e49556f86534f4460e0cf0">ex_put_name</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, block_names[0]);</div>
 <div class="line">  printf(<span class="stringliteral">&quot;after ex_put_name, error = %d\n&quot;</span>, error);</div>
 <div class="line"> </div>
-<div class="line">  error = <a id="a26" name="a26"></a><a class="code hl_function" href="group__ModelDescription.html#gaca77ecebfa9dad39ba97ec76a14b3364">ex_put_block_params</a>(exoid, num_elem_blk, blocks);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_block_params, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a26" name="a26"></a><a class="code hl_function" href="group__ModelDescription.html#gaca77ecebfa9dad39ba97ec76a14b3364">ex_put_block_params</a>(exoid, num_elem_blk, blocks));</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Write element block names */</span></div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_elem_blk; i++) {</div>
-<div class="line">    error = <a class="code hl_function" href="group__ModelDescription.html#ga9f3c7c8c26e49556f86534f4460e0cf0">ex_put_name</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[i].<span class="keywordtype">id</span>, block_names[i]);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;after ex_put_names, error = %d\n&quot;</span>, error);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga9f3c7c8c26e49556f86534f4460e0cf0">ex_put_name</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[i].<span class="keywordtype">id</span>, block_names[i]));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write element block properties */</span></div>
-<div class="line"> </div>
 <div class="line">  <span class="comment">/*               12345678901234567890123456789012 */</span></div>
+<div class="line">  <span class="keywordtype">char</span> *prop_names[2];</div>
 <div class="line">  prop_names[0] = <span class="stringliteral">&quot;MATERIAL_PROPERTY_LONG_NAME_32CH&quot;</span>;</div>
 <div class="line">  prop_names[1] = <span class="stringliteral">&quot;DENSITY&quot;</span>;</div>
-<div class="line">  error         = <a id="a27" name="a27"></a><a class="code hl_function" href="group__ModelDescription.html#ga40bbb7194ab379a723548d61a62a3096">ex_put_prop_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, 2, prop_names);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop_names, error = %d\n&quot;</span>, error);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a28" name="a28"></a><a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, prop_names[0], 10);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[1].<span class="keywordtype">id</span>, prop_names[0], 20);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[2].<span class="keywordtype">id</span>, prop_names[0], 30);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[3].<span class="keywordtype">id</span>, prop_names[0], 40);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[4].<span class="keywordtype">id</span>, prop_names[0], 50);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[5].<span class="keywordtype">id</span>, prop_names[0], 60);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[6].<span class="keywordtype">id</span>, prop_names[0], 70);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a27" name="a27"></a><a class="code hl_function" href="group__ModelDescription.html#ga40bbb7194ab379a723548d61a62a3096">ex_put_prop_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, 2, prop_names));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a28" name="a28"></a><a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, prop_names[0], 10));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[1].<span class="keywordtype">id</span>, prop_names[0], 20));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[2].<span class="keywordtype">id</span>, prop_names[0], 30));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[3].<span class="keywordtype">id</span>, prop_names[0], 40));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[4].<span class="keywordtype">id</span>, prop_names[0], 50));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[5].<span class="keywordtype">id</span>, prop_names[0], 60));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[6].<span class="keywordtype">id</span>, prop_names[0], 70));</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write element connectivity */</span></div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> *connect = (<span class="keywordtype">int</span> *)calloc(8, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">  connect[0]   = 1;</div>
-<div class="line">  connect[1]   = 2;</div>
-<div class="line">  connect[2]   = 3;</div>
-<div class="line">  connect[3]   = 4;</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a29" name="a29"></a><a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, connect, NULL, NULL);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_conn, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">int</span> connect[] = {1, 2, 3, 4};</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a29" name="a29"></a><a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, connect, NULL, NULL));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  connect[0] = 5;</div>
-<div class="line">  connect[1] = 6;</div>
-<div class="line">  connect[2] = 7;</div>
-<div class="line">  connect[3] = 8;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[1].<span class="keywordtype">id</span>, connect, NULL, NULL);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_conn, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">int</span> connect[] = {5, 6, 7, 8};</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[1].<span class="keywordtype">id</span>, connect, NULL, NULL));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  connect[0] = 9;</div>
-<div class="line">  connect[1] = 10;</div>
-<div class="line">  connect[2] = 11;</div>
-<div class="line">  connect[3] = 12;</div>
-<div class="line">  connect[4] = 13;</div>
-<div class="line">  connect[5] = 14;</div>
-<div class="line">  connect[6] = 15;</div>
-<div class="line">  connect[7] = 16;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[2].<span class="keywordtype">id</span>, connect, NULL, NULL);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_conn, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">int</span> connect[] = {9, 10, 11, 12, 13, 14, 15, 16};</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[2].<span class="keywordtype">id</span>, connect, NULL, NULL));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  connect[0] = 17;</div>
-<div class="line">  connect[1] = 18;</div>
-<div class="line">  connect[2] = 19;</div>
-<div class="line">  connect[3] = 20;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[3].<span class="keywordtype">id</span>, connect, NULL, NULL);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_conn, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">int</span> connect[] = {17, 18, 19, 20};</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[3].<span class="keywordtype">id</span>, connect, NULL, NULL));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  connect[0] = 21;</div>
-<div class="line">  connect[1] = 22;</div>
-<div class="line">  connect[2] = 23;</div>
-<div class="line">  connect[3] = 24;</div>
-<div class="line">  connect[4] = 25;</div>
-<div class="line">  connect[5] = 26;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[4].<span class="keywordtype">id</span>, connect, NULL, NULL);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_conn, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">int</span> connect[] = {21, 22, 23, 24, 25, 26};</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[4].<span class="keywordtype">id</span>, connect, NULL, NULL));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  connect[0] = 17;</div>
-<div class="line">  connect[1] = 18;</div>
-<div class="line">  connect[2] = 19;</div>
-<div class="line">  connect[3] = 20;</div>
-<div class="line">  connect[4] = 27;</div>
-<div class="line">  connect[5] = 28;</div>
-<div class="line">  connect[6] = 30;</div>
-<div class="line">  connect[7] = 29;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[5].<span class="keywordtype">id</span>, connect, NULL, NULL);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_conn, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">int</span> connect[] = {17, 18, 19, 20, 27, 28, 30, 29};</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[5].<span class="keywordtype">id</span>, connect, NULL, NULL));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  connect[0] = 31;</div>
-<div class="line">  connect[1] = 32;</div>
-<div class="line">  connect[2] = 33;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[6].<span class="keywordtype">id</span>, connect, NULL, NULL);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_conn, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">int</span> connect[] = {31, 32, 33};</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga359b6d011348ed04746217e67612f3c1">ex_put_conn</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[6].<span class="keywordtype">id</span>, connect, NULL, NULL));</div>
 <div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  free(connect);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write element block attributes */</span></div>
+<div class="line">  <span class="keywordtype">float</span> attrib[1];</div>
 <div class="line">  attrib[0] = 3.14159;</div>
-<div class="line">  error     = <a id="a30" name="a30"></a><a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, attrib);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_attr, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, attrib);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_attr, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a30" name="a30"></a><a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, attrib));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[0].<span class="keywordtype">id</span>, attrib));</div>
 <div class="line"> </div>
 <div class="line">  attrib[0] = 6.14159;</div>
-<div class="line">  error     = <a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[1].<span class="keywordtype">id</span>, attrib);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_attr, error = %d\n&quot;</span>, error);</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[1].<span class="keywordtype">id</span>, attrib));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[2].<span class="keywordtype">id</span>, attrib));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[3].<span class="keywordtype">id</span>, attrib));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[4].<span class="keywordtype">id</span>, attrib));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[5].<span class="keywordtype">id</span>, attrib));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[6].<span class="keywordtype">id</span>, attrib));</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[2].<span class="keywordtype">id</span>, attrib);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_attr, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[3].<span class="keywordtype">id</span>, attrib);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_attr, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[4].<span class="keywordtype">id</span>, attrib);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_attr, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[5].<span class="keywordtype">id</span>, attrib);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_attr, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[6].<span class="keywordtype">id</span>, attrib);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_attr, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  attrib_names[0] = <span class="stringliteral">&quot;THICKNESS&quot;</span>;</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_elem_blk; i++) {</div>
-<div class="line">    error = <a class="code hl_function" href="group__ModelDescription.html#gae9beb2de2a75649c57a025b0f647cb74">ex_put_attr_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[i].<span class="keywordtype">id</span>, attrib_names);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;after ex_put_elem_attr_names, error = %d\n&quot;</span>, error);</div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">char</span> *attrib_names[] = {<span class="stringliteral">&quot;THICKNESS&quot;</span>};</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_elem_blk; i++) {</div>
+<div class="line">      <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gae9beb2de2a75649c57a025b0f647cb74">ex_put_attr_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, blocks[i].<span class="keywordtype">id</span>, attrib_names));</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write individual node sets */</span></div>
+<div class="line">  <span class="keywordtype">int</span> num_nodes_in_nset[] = {5, 3};</div>
+<div class="line">  <span class="keywordtype">int</span> nsids[]             = {20, 21};</div>
 <div class="line"> </div>
-<div class="line">  num_nodes_in_nset[0] = 5;</div>
-<div class="line">  num_nodes_in_nset[1] = 3;</div>
+<div class="line">  {</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a31" name="a31"></a><a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a id="a32" name="a32"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], 5, 5));</div>
 <div class="line"> </div>
-<div class="line">  nsids[0] = 20;</div>
-<div class="line">  nsids[1] = 21;</div>
+<div class="line">    <span class="keywordtype">int</span>   node_list[] = {10, 11, 12, 13, 14};</div>
+<div class="line">    <span class="keywordtype">float</span> dist_fact[] = {1.0, 2.0, 3.0, 4.0, 5.0};</div>
 <div class="line"> </div>
-<div class="line">  error = <a id="a31" name="a31"></a><a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a id="a32" name="a32"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], 5, 5);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_node_set_param, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  node_list[0] = 10;</div>
-<div class="line">  node_list[1] = 11;</div>
-<div class="line">  node_list[2] = 12;</div>
-<div class="line">  node_list[3] = 13;</div>
-<div class="line">  node_list[4] = 14;</div>
-<div class="line"> </div>
-<div class="line">  dist_fact[0] = 1.0;</div>
-<div class="line">  dist_fact[1] = 2.0;</div>
-<div class="line">  dist_fact[2] = 3.0;</div>
-<div class="line">  dist_fact[3] = 4.0;</div>
-<div class="line">  dist_fact[4] = 5.0;</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a33" name="a33"></a><a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], node_list, NULL);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_node_set, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a34" name="a34"></a><a class="code hl_function" href="group__ModelDescription.html#gadab43f382dc0b6000215baa82097fef5">ex_put_set_dist_fact</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], dist_fact);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_node_set_dist_fact, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[1], 3, 3);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_node_set_param, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  node_list[0] = 20;</div>
-<div class="line">  node_list[1] = 21;</div>
-<div class="line">  node_list[2] = 22;</div>
-<div class="line"> </div>
-<div class="line">  dist_fact[0] = 1.1;</div>
-<div class="line">  dist_fact[1] = 2.1;</div>
-<div class="line">  dist_fact[2] = 3.1;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[1], node_list, NULL);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_node_set, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gadab43f382dc0b6000215baa82097fef5">ex_put_set_dist_fact</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[1], dist_fact);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_node_set_dist_fact, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  <span class="comment">/* Write node set names */</span></div>
-<div class="line">  nset_names[0] = <span class="stringliteral">&quot;nset_1&quot;</span>;</div>
-<div class="line">  nset_names[1] = <span class="stringliteral">&quot;nset_2&quot;</span>;</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a35" name="a35"></a><a class="code hl_function" href="group__ModelDescription.html#ga09fc0ab17277c81ee3b6c8e602cbb6c5">ex_put_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nset_names);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_names, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], <span class="stringliteral">&quot;FACE&quot;</span>, 4);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[1], <span class="stringliteral">&quot;FACE&quot;</span>, 5);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> prop_array[2];</div>
-<div class="line">  prop_array[0] = 1000;</div>
-<div class="line">  prop_array[1] = 2000;</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a36" name="a36"></a><a class="code hl_function" href="group__ModelDescription.html#ga99aa0e6f185e1a7dfdee4f92ea770e8c">ex_put_prop_array</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, <span class="stringliteral">&quot;VELOCITY&quot;</span>, prop_array);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop_array, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  <span class="comment">/* Add nodeset attributes */</span></div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gacbe0d2c034655cb912a2ebf761ec89c5">ex_put_attr_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], 1);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_attr_param, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], x);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a33" name="a33"></a><a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], node_list, NULL));</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a34" name="a34"></a><a class="code hl_function" href="group__ModelDescription.html#gadab43f382dc0b6000215baa82097fef5">ex_put_set_dist_fact</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], dist_fact));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  {</div>
-<div class="line">    attrib_names[0] = <span class="stringliteral">&quot;Nodeset_attribute&quot;</span>;</div>
-<div class="line">    error           = <a class="code hl_function" href="group__ModelDescription.html#gae9beb2de2a75649c57a025b0f647cb74">ex_put_attr_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], attrib_names);</div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
-<div class="line">    }</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[1], 3, 3));</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">int</span>   node_list[] = {20, 21, 22};</div>
+<div class="line">    <span class="keywordtype">float</span> dist_fact[] = {1.1, 2.1, 3.1};</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[1], node_list, NULL));</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gadab43f382dc0b6000215baa82097fef5">ex_put_set_dist_fact</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[1], dist_fact));</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">/* Write node set names */</span></div>
+<div class="line">  <span class="keywordtype">char</span> *nset_names[] = {<span class="stringliteral">&quot;nset_1&quot;</span>, <span class="stringliteral">&quot;nset_2&quot;</span>};</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a35" name="a35"></a><a class="code hl_function" href="group__ModelDescription.html#ga09fc0ab17277c81ee3b6c8e602cbb6c5">ex_put_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nset_names));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], <span class="stringliteral">&quot;FACE&quot;</span>, 4));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[1], <span class="stringliteral">&quot;FACE&quot;</span>, 5));</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordtype">int</span> prop_array[] = {1000, 2000};</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a36" name="a36"></a><a class="code hl_function" href="group__ModelDescription.html#ga99aa0e6f185e1a7dfdee4f92ea770e8c">ex_put_prop_array</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, <span class="stringliteral">&quot;VELOCITY&quot;</span>, prop_array));</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">/* Add nodeset attributes */</span></div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gacbe0d2c034655cb912a2ebf761ec89c5">ex_put_attr_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], 1));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], x));</div>
+<div class="line"> </div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">char</span> *attrib_names[] = {<span class="stringliteral">&quot;Nodeset_attribute&quot;</span>};</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gae9beb2de2a75649c57a025b0f647cb74">ex_put_attr_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, nsids[0], attrib_names));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write individual side sets */</span></div>
-<div class="line">  num_face_in_sset[0] = 2;</div>
-<div class="line">  num_face_in_sset[1] = 2;</div>
-<div class="line">  num_face_in_sset[2] = 7;</div>
-<div class="line">  num_face_in_sset[3] = 8;</div>
-<div class="line">  num_face_in_sset[4] = 10;</div>
+<div class="line">  <span class="keywordtype">int</span> num_face_in_sset[] = {2, 2, 7, 8, 10};</div>
+<div class="line">  <span class="keywordtype">int</span> ssids[]            = {30, 31, 32, 33, 34};</div>
 <div class="line"> </div>
-<div class="line">  ssids[0] = 30;</div>
-<div class="line">  ssids[1] = 31;</div>
-<div class="line">  ssids[2] = 32;</div>
-<div class="line">  ssids[3] = 33;</div>
-<div class="line">  ssids[4] = 34;</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">/* side set #1  - quad */</span></div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a id="a37" name="a37"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, ssids[0], 2, 4));</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">/* side set #1  - quad */</span></div>
+<div class="line">    <span class="keywordtype">int</span>   elem_list[] = {2, 2};</div>
+<div class="line">    <span class="keywordtype">int</span>   side_list[] = {4, 2};</div>
+<div class="line">    <span class="keywordtype">float</span> dist_fact[] = {30.0, 30.1, 30.2, 30.3};</div>
 <div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a id="a37" name="a37"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, ssids[0], 2, 4);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set_param, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 30, elem_list, side_list));</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gadab43f382dc0b6000215baa82097fef5">ex_put_set_dist_fact</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 30, dist_fact));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  elem_list[0] = 2;</div>
-<div class="line">  elem_list[1] = 2;</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">/* side set #2  - quad, spanning 2 elements  */</span></div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 31, 2, 4));</div>
 <div class="line"> </div>
-<div class="line">  side_list[0] = 4;</div>
-<div class="line">  side_list[1] = 2;</div>
+<div class="line">    <span class="keywordtype">int</span>   elem_list[] = {1, 2};</div>
+<div class="line">    <span class="keywordtype">int</span>   side_list[] = {2, 3};</div>
+<div class="line">    <span class="keywordtype">float</span> dist_fact[] = {31.0, 31.1, 31.2, 31.3};</div>
 <div class="line"> </div>
-<div class="line">  dist_fact[0] = 30.0;</div>
-<div class="line">  dist_fact[1] = 30.1;</div>
-<div class="line">  dist_fact[2] = 30.2;</div>
-<div class="line">  dist_fact[3] = 30.3;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 30, elem_list, side_list);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 31, elem_list, side_list));</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gadab43f382dc0b6000215baa82097fef5">ex_put_set_dist_fact</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 31, dist_fact));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gadab43f382dc0b6000215baa82097fef5">ex_put_set_dist_fact</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 30, dist_fact);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set_dist_fact, error = %d\n&quot;</span>, error);</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">/* side set #3  - hex */</span></div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 32, 7, 0));</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <span class="keywordtype">int</span> elem_list[] = {3, 3, 3, 3, 3, 3, 3};</div>
+<div class="line">    <span class="keywordtype">int</span> side_list[] = {5, 3, 3, 2, 4, 1, 6};</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 32, elem_list, side_list));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">/* side set #2  - quad, spanning 2 elements  */</span></div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">/* side set #4  - tetras */</span></div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 33, 8, 0));</div>
 <div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 31, 2, 4);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set_param, error = %d\n&quot;</span>, error);</div>
+<div class="line">    <span class="keywordtype">int</span> elem_list[] = {4, 4, 4, 4, 6, 6, 6, 6};</div>
+<div class="line">    <span class="keywordtype">int</span> side_list[] = {1, 2, 3, 4, 1, 2, 3, 4};</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 33, elem_list, side_list));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  elem_list[0] = 1;</div>
-<div class="line">  elem_list[1] = 2;</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">/* side set #5  - wedges and tris */</span></div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 34, 10, 0));</div>
 <div class="line"> </div>
-<div class="line">  side_list[0] = 2;</div>
-<div class="line">  side_list[1] = 3;</div>
+<div class="line">    <span class="keywordtype">int</span> elem_list[] = {5, 5, 5, 5, 5, 7, 7, 7, 7, 7};</div>
+<div class="line">    <span class="keywordtype">int</span> side_list[] = {1, 2, 3, 4, 5, 1, 2, 3, 4, 5};</div>
 <div class="line"> </div>
-<div class="line">  dist_fact[0] = 31.0;</div>
-<div class="line">  dist_fact[1] = 31.1;</div>
-<div class="line">  dist_fact[2] = 31.2;</div>
-<div class="line">  dist_fact[3] = 31.3;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 31, elem_list, side_list);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gadab43f382dc0b6000215baa82097fef5">ex_put_set_dist_fact</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 31, dist_fact);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set_dist_fact, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  <span class="comment">/* side set #3  - hex */</span></div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 32, 7, 0);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set_param, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  elem_list[0] = 3;</div>
-<div class="line">  elem_list[1] = 3;</div>
-<div class="line">  elem_list[2] = 3;</div>
-<div class="line">  elem_list[3] = 3;</div>
-<div class="line">  elem_list[4] = 3;</div>
-<div class="line">  elem_list[5] = 3;</div>
-<div class="line">  elem_list[6] = 3;</div>
-<div class="line"> </div>
-<div class="line">  side_list[0] = 5;</div>
-<div class="line">  side_list[1] = 3;</div>
-<div class="line">  side_list[2] = 3;</div>
-<div class="line">  side_list[3] = 2;</div>
-<div class="line">  side_list[4] = 4;</div>
-<div class="line">  side_list[5] = 1;</div>
-<div class="line">  side_list[6] = 6;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 32, elem_list, side_list);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  <span class="comment">/* side set #4  - tetras */</span></div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 33, 8, 0);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set_param, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  elem_list[0] = 4;</div>
-<div class="line">  elem_list[1] = 4;</div>
-<div class="line">  elem_list[2] = 4;</div>
-<div class="line">  elem_list[3] = 4;</div>
-<div class="line">  elem_list[4] = 6;</div>
-<div class="line">  elem_list[5] = 6;</div>
-<div class="line">  elem_list[6] = 6;</div>
-<div class="line">  elem_list[7] = 6;</div>
-<div class="line"> </div>
-<div class="line">  side_list[0] = 1;</div>
-<div class="line">  side_list[1] = 2;</div>
-<div class="line">  side_list[2] = 3;</div>
-<div class="line">  side_list[3] = 4;</div>
-<div class="line">  side_list[4] = 1;</div>
-<div class="line">  side_list[5] = 2;</div>
-<div class="line">  side_list[6] = 3;</div>
-<div class="line">  side_list[7] = 4;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 33, elem_list, side_list);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  <span class="comment">/* side set #5  - wedges and tris */</span></div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe">ex_put_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 34, 10, 0);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set_param, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  elem_list[0] = 5;</div>
-<div class="line">  elem_list[1] = 5;</div>
-<div class="line">  elem_list[2] = 5;</div>
-<div class="line">  elem_list[3] = 5;</div>
-<div class="line">  elem_list[4] = 5;</div>
-<div class="line">  elem_list[5] = 7;</div>
-<div class="line">  elem_list[6] = 7;</div>
-<div class="line">  elem_list[7] = 7;</div>
-<div class="line">  elem_list[8] = 7;</div>
-<div class="line">  elem_list[9] = 7;</div>
-<div class="line"> </div>
-<div class="line">  side_list[0] = 1;</div>
-<div class="line">  side_list[1] = 2;</div>
-<div class="line">  side_list[2] = 3;</div>
-<div class="line">  side_list[3] = 4;</div>
-<div class="line">  side_list[4] = 5;</div>
-<div class="line">  side_list[5] = 1;</div>
-<div class="line">  side_list[6] = 2;</div>
-<div class="line">  side_list[7] = 3;</div>
-<div class="line">  side_list[8] = 4;</div>
-<div class="line">  side_list[9] = 5;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 34, elem_list, side_list);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_side_set, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#gae228a5d04b47322f28c458d95edf7f73">ex_put_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 34, elem_list, side_list));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Write side set names */</span></div>
-<div class="line">  sset_names[0] = <span class="stringliteral">&quot;sset_1&quot;</span>;</div>
-<div class="line">  sset_names[1] = <span class="stringliteral">&quot;sset_2&quot;</span>;</div>
-<div class="line">  sset_names[2] = <span class="stringliteral">&quot;sset_3&quot;</span>;</div>
-<div class="line">  sset_names[3] = <span class="stringliteral">&quot;sset_4&quot;</span>;</div>
-<div class="line">  sset_names[4] = <span class="stringliteral">&quot;sset_5&quot;</span>;</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga09fc0ab17277c81ee3b6c8e602cbb6c5">ex_put_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, sset_names);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_names, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 30, <span class="stringliteral">&quot;COLOR&quot;</span>, 100);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 31, <span class="stringliteral">&quot;COLOR&quot;</span>, 101);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_prop, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <span class="keywordtype">char</span> *sset_names[] = {<span class="stringliteral">&quot;sset_1&quot;</span>, <span class="stringliteral">&quot;sset_2&quot;</span>, <span class="stringliteral">&quot;sset_3&quot;</span>, <span class="stringliteral">&quot;sset_4&quot;</span>, <span class="stringliteral">&quot;sset_5&quot;</span>};</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga09fc0ab17277c81ee3b6c8e602cbb6c5">ex_put_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, sset_names));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 30, <span class="stringliteral">&quot;COLOR&quot;</span>, 100));</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga7d8749467a1a567f542d51ae9b465955">ex_put_prop</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, 31, <span class="stringliteral">&quot;COLOR&quot;</span>, 101));</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write QA records; test empty and just blank-filled records */</span></div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> num_qa_rec = 2;</div>
-<div class="line"> </div>
+<div class="line">  <span class="keywordtype">int</span>   num_qa_rec = 2;</div>
+<div class="line">  <span class="keywordtype">char</span> *qa_record[2][4];</div>
 <div class="line">  qa_record[0][0] = <span class="stringliteral">&quot;TESTWT&quot;</span>;</div>
 <div class="line">  qa_record[0][1] = <span class="stringliteral">&quot;testwt&quot;</span>;</div>
 <div class="line">  qa_record[0][2] = <span class="stringliteral">&quot;07/07/93&quot;</span>;</div>
@@ -1055,130 +492,60 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line">  qa_record[1][2] = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line">  qa_record[1][3] = <span class="stringliteral">&quot;                        &quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">  error = <a id="a38" name="a38"></a><a class="code hl_function" href="group__Utilities.html#ga4babf166b2821494be7d9bfcc95234f5">ex_put_qa</a>(exoid, num_qa_rec, qa_record);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_qa, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a38" name="a38"></a><a class="code hl_function" href="group__Utilities.html#ga4babf166b2821494be7d9bfcc95234f5">ex_put_qa</a>(exoid, num_qa_rec, qa_record));</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write information records; test empty and just blank-filled records */</span></div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> num_info = 3;</div>
-<div class="line"> </div>
+<div class="line">  <span class="keywordtype">char</span> *info[3];</div>
 <div class="line">  info[0] = <span class="stringliteral">&quot;This is the first information record.&quot;</span>;</div>
 <div class="line">  info[1] = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line">  info[2] = <span class="stringliteral">&quot;This info record is exactly 80 characters long.  last character should be pipe |&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">  error = <a id="a39" name="a39"></a><a class="code hl_function" href="group__Utilities.html#gaa785c12fafcbd7a5df413e0c96f9f31e">ex_put_info</a>(exoid, num_info, info);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_info, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <span class="keywordtype">int</span> num_info = 3;</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a39" name="a39"></a><a class="code hl_function" href="group__Utilities.html#gaa785c12fafcbd7a5df413e0c96f9f31e">ex_put_info</a>(exoid, num_info, info));</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write results variables parameters and names */</span></div>
-<div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> num_glo_vars = 1;</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">char</span> *var_names[] = {<span class="stringliteral">&quot;glo_vars&quot;</span>};</div>
 <div class="line"> </div>
-<div class="line">  var_names[0] = <span class="stringliteral">&quot;glo_vars&quot;</span>;</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a40" name="a40"></a><a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a id="a41" name="a41"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, num_glo_vars);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_variable_param, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a id="a42" name="a42"></a><a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, num_glo_vars, var_names);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_variable_names, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a40" name="a40"></a><a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a id="a41" name="a41"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, num_glo_vars));</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a42" name="a42"></a><a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, num_glo_vars, var_names));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> num_nod_vars = 2;</div>
-<div class="line">  <span class="comment">/*              12345678901234567890123456789012 */</span></div>
-<div class="line">  var_names[0] = <span class="stringliteral">&quot;node_variable_a_very_long_name_0&quot;</span>;</div>
-<div class="line">  var_names[1] = <span class="stringliteral">&quot;nod_var1&quot;</span>;</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">/*                    12345678901234567890123456789012 */</span></div>
+<div class="line">    <span class="keywordtype">char</span> *var_names[] = {<span class="stringliteral">&quot;node_variable_a_very_long_name_0&quot;</span>, <span class="stringliteral">&quot;nod_var1&quot;</span>};</div>
 <div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, num_nod_vars);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_variable_param, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, num_nod_vars, var_names);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_variable_names, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, num_nod_vars));</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, num_nod_vars, var_names));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> num_ele_vars = 3;</div>
-<div class="line">  <span class="comment">/*              0        1         2         3   */</span></div>
-<div class="line">  <span class="comment">/*              12345678901234567890123456789012 */</span></div>
-<div class="line">  var_names[0] = <span class="stringliteral">&quot;this_variable_name_is_short&quot;</span>;</div>
-<div class="line">  var_names[1] = <span class="stringliteral">&quot;this_variable_name_is_just_right&quot;</span>;</div>
-<div class="line">  var_names[2] = <span class="stringliteral">&quot;this_variable_name_is_tooooo_long&quot;</span>;</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">/* 0        1         2         3   */</span></div>
+<div class="line">    <span class="comment">/* 12345678901234567890123456789012 */</span></div>
+<div class="line">    <span class="keywordtype">char</span> *var_names[] = {<span class="stringliteral">&quot;this_variable_name_is_short&quot;</span>, <span class="stringliteral">&quot;this_variable_name_is_just_right&quot;</span>,</div>
+<div class="line">                         <span class="stringliteral">&quot;this_variable_name_is_tooooo_long&quot;</span>};</div>
 <div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, num_ele_vars);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_variable_param, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, num_ele_vars, var_names);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_variable_names, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, num_ele_vars));</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, num_ele_vars, var_names));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> num_nset_vars = 3;</div>
 <div class="line">  {</div>
-<div class="line">    var_names[0] = <span class="stringliteral">&quot;ns_var0&quot;</span>;</div>
-<div class="line">    var_names[1] = <span class="stringliteral">&quot;ns_var1&quot;</span>;</div>
-<div class="line">    var_names[2] = <span class="stringliteral">&quot;ns_var2&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> *var_names[] = {<span class="stringliteral">&quot;ns_var0&quot;</span>, <span class="stringliteral">&quot;ns_var1&quot;</span>, <span class="stringliteral">&quot;ns_var2&quot;</span>};</div>
 <div class="line"> </div>
-<div class="line">    error = <a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, num_nset_vars);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;after ex_put_variable_param, error = %d\n&quot;</span>, error);</div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    error = <a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, num_nset_vars, var_names);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;after ex_put_variable_names, error = %d\n&quot;</span>, error);</div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
-<div class="line">    }</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, num_nset_vars));</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, num_nset_vars, var_names));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> num_sset_vars = 3;</div>
 <div class="line">  {</div>
-<div class="line">    var_names[0] = <span class="stringliteral">&quot;ss_var0&quot;</span>;</div>
-<div class="line">    var_names[1] = <span class="stringliteral">&quot;ss_var1&quot;</span>;</div>
-<div class="line">    var_names[2] = <span class="stringliteral">&quot;ss_var2&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> *var_names[] = {<span class="stringliteral">&quot;ss_var0&quot;</span>, <span class="stringliteral">&quot;ss_var1&quot;</span>, <span class="stringliteral">&quot;ss_var2&quot;</span>};</div>
 <div class="line"> </div>
-<div class="line">    error = <a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, num_sset_vars);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;after ex_put_variable_param, error = %d\n&quot;</span>, error);</div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    error = <a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, num_sset_vars, var_names);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;after ex_put_variable_names, error = %d\n&quot;</span>, error);</div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
-<div class="line">    }</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, num_sset_vars));</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, num_sset_vars, var_names));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write element variable truth table */</span></div>
@@ -1191,13 +558,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  error = <a id="a43" name="a43"></a><a class="code hl_function" href="group__ResultsData.html#gaec82868a515b0efcce6dadb8352a9712">ex_put_truth_table</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, num_elem_blk, num_ele_vars, truth_tab);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_var_tab, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a43" name="a43"></a><a class="code hl_function" href="group__ResultsData.html#gaec82868a515b0efcce6dadb8352a9712">ex_put_truth_table</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, num_elem_blk, num_ele_vars, truth_tab));</div>
 <div class="line"> </div>
 <div class="line">  free(truth_tab);</div>
 <div class="line"> </div>
@@ -1207,122 +568,74 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line"><span class="comment">   * obviously the analysis code will populate these arrays</span></div>
 <div class="line"><span class="comment">   */</span></div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> whole_time_step = 1;</div>
-<div class="line">  <span class="keywordtype">int</span> num_time_steps  = 10;</div>
-<div class="line"> </div>
 <div class="line">  <span class="keywordtype">float</span> *glob_var_vals  = (<span class="keywordtype">float</span> *)calloc(num_glo_vars, CPU_word_size);</div>
 <div class="line">  <span class="keywordtype">float</span> *nodal_var_vals = (<span class="keywordtype">float</span> *)calloc(num_nodes, CPU_word_size);</div>
-<div class="line">  <span class="keywordtype">float</span> *elem_var_vals  = (<span class="keywordtype">float</span> *)calloc(4, CPU_word_size);</div>
-<div class="line">  <span class="keywordtype">float</span> *sset_var_vals  = (<span class="keywordtype">float</span> *)calloc(10, CPU_word_size);</div>
-<div class="line">  <span class="keywordtype">float</span> *nset_var_vals  = (<span class="keywordtype">float</span> *)calloc(10, CPU_word_size);</div>
+<div class="line">  <span class="keywordtype">float</span> *elem_var_vals  = (<span class="keywordtype">float</span> *)calloc(num_ele_vars, CPU_word_size);</div>
+<div class="line">  <span class="keywordtype">float</span> *sset_var_vals  = (<span class="keywordtype">float</span> *)calloc(10, CPU_word_size); <span class="comment">/* max sides_in_sset */</span></div>
+<div class="line">  <span class="keywordtype">float</span> *nset_var_vals  = (<span class="keywordtype">float</span> *)calloc(5, CPU_word_size);  <span class="comment">/* max nodes_in_nset */</span></div>
 <div class="line"> </div>
+<div class="line">  <span class="keywordtype">int</span> num_time_steps = 10;</div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_time_steps; i++) {</div>
-<div class="line">    <span class="keywordtype">float</span> time_value = (float)(i + 1) / 100.;</div>
+<div class="line">    <span class="keywordtype">int</span>   whole_time_step = i + 1;</div>
+<div class="line">    <span class="keywordtype">float</span> time_value      = (float)(i + 1) / 100.;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write time value */</span></div>
-<div class="line"> </div>
-<div class="line">    error = <a id="a44" name="a44"></a><a class="code hl_function" href="group__ResultsData.html#ga2052c8728dac97589b94d9947e645797">ex_put_time</a>(exoid, whole_time_step, &amp;time_value);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;after ex_put_time, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
-<div class="line">    }</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a44" name="a44"></a><a class="code hl_function" href="group__ResultsData.html#ga2052c8728dac97589b94d9947e645797">ex_put_time</a>(exoid, whole_time_step, &amp;time_value));</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write global variables */</span></div>
-<div class="line"> </div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_glo_vars; j++) {</div>
 <div class="line">      glob_var_vals[j] = (float)(j + 2) * time_value;</div>
 <div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    error = <a id="a45" name="a45"></a><a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, 1, 1, num_glo_vars, glob_var_vals);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;after ex_put_glob_vars, error = %d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
-<div class="line">    }</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a45" name="a45"></a><a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, 1, 1, num_glo_vars, glob_var_vals));</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write nodal variables */</span></div>
-<div class="line"> </div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 1; k &lt;= num_nod_vars; k++) {</div>
 <div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_nodes; j++) {</div>
 <div class="line">        nodal_var_vals[j] = (float)k + ((<span class="keywordtype">float</span>)(j + 1) * time_value);</div>
 <div class="line">      }</div>
-<div class="line"> </div>
-<div class="line">      error = <a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, k, 1, num_nodes, nodal_var_vals);</div>
-<div class="line">      printf(<span class="stringliteral">&quot;after ex_put_nodal_var, error = %d\n&quot;</span>, error);</div>
-<div class="line">      <span class="keywordflow">if</span> (error) {</div>
-<div class="line">        <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">        exit(-1);</div>
-<div class="line">      }</div>
+<div class="line">      <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, k, 1, num_nodes, nodal_var_vals));</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write element variables */</span></div>
-<div class="line"> </div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 1; k &lt;= num_ele_vars; k++) {</div>
 <div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_elem_blk; j++) {</div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0; m &lt; blocks[j].<a class="code hl_variable" href="structex__block.html#a619b2c434a69bf79fd803b318d00a0a3">num_entry</a>; m++) {</div>
 <div class="line">          elem_var_vals[m] = (float)(k + 1) + (float)(j + 2) + ((float)(m + 1) * time_value);</div>
 <div class="line">          <span class="comment">/* printf(&quot;elem_var_vals[%d]: %f\n&quot;,m,elem_var_vals[m]); */</span></div>
 <div class="line">        }</div>
-<div class="line">        error = <a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, k, blocks[j].<span class="keywordtype">id</span>,</div>
-<div class="line">                           blocks[j].<a class="code hl_variable" href="structex__block.html#a619b2c434a69bf79fd803b318d00a0a3">num_entry</a>, elem_var_vals);</div>
-<div class="line">        printf(<span class="stringliteral">&quot;after ex_put_elem_var, error = %d\n&quot;</span>, error);</div>
-<div class="line">        <span class="keywordflow">if</span> (error) {</div>
-<div class="line">          <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">          exit(-1);</div>
-<div class="line">        }</div>
+<div class="line">        <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, k, blocks[j].<span class="keywordtype">id</span>,</div>
+<div class="line">                           blocks[j].<a class="code hl_variable" href="structex__block.html#a619b2c434a69bf79fd803b318d00a0a3">num_entry</a>, elem_var_vals));</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write sideset variables */</span></div>
-<div class="line"> </div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 1; k &lt;= num_sset_vars; k++) {</div>
 <div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_side_sets; j++) {</div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0; m &lt; num_face_in_sset[j]; m++) {</div>
 <div class="line">          sset_var_vals[m] = (float)(k + 2) + (float)(j + 3) + ((float)(m + 1) * time_value);</div>
 <div class="line">          <span class="comment">/* printf(&quot;sset_var_vals[%d]: %f\n&quot;,m,sset_var_vals[m]); */</span></div>
 <div class="line">        }</div>
-<div class="line">        error = <a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, k, ssids[j], num_face_in_sset[j],</div>
-<div class="line">                           sset_var_vals);</div>
-<div class="line">        printf(<span class="stringliteral">&quot;after ex_put_sset_var, error = %d\n&quot;</span>, error);</div>
-<div class="line">        <span class="keywordflow">if</span> (error) {</div>
-<div class="line">          <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">          exit(-1);</div>
-<div class="line">        }</div>
+<div class="line">        <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, k, ssids[j], num_face_in_sset[j],</div>
+<div class="line">                           sset_var_vals));</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* write nodeset variables */</span></div>
-<div class="line"> </div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 1; k &lt;= num_nset_vars; k++) {</div>
 <div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_node_sets; j++) {</div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0; m &lt; num_nodes_in_nset[j]; m++) {</div>
 <div class="line">          nset_var_vals[m] = (float)(k + 3) + (float)(j + 4) + ((float)(m + 1) * time_value);</div>
 <div class="line">          <span class="comment">/* printf(&quot;nset_var_vals[%d]: %f\n&quot;,m,nset_var_vals[m]); */</span></div>
 <div class="line">        }</div>
-<div class="line">        error = <a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, k, nsids[j], num_nodes_in_nset[j],</div>
-<div class="line">                           nset_var_vals);</div>
-<div class="line">        printf(<span class="stringliteral">&quot;after ex_put_nset_var, error = %d\n&quot;</span>, error);</div>
-<div class="line">        <span class="keywordflow">if</span> (error) {</div>
-<div class="line">          <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">          exit(-1);</div>
-<div class="line">        }</div>
+<div class="line">        <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a>(exoid, whole_time_step, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, k, nsids[j], num_nodes_in_nset[j],</div>
+<div class="line">                           nset_var_vals));</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    whole_time_step++;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* update the data file; this should be done at the end of every time step</span></div>
 <div class="line"><span class="comment">     * to ensure that no data is lost if the analysis dies</span></div>
 <div class="line"><span class="comment">     */</span></div>
-<div class="line">    error = <a id="a46" name="a46"></a><a class="code hl_function" href="group__Utilities.html#gafffa0ac5ec86658fb22ed6af7f5530cc">ex_update</a>(exoid);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;after ex_update, error = %d\n&quot;</span>, error);</div>
-<div class="line">    <span class="keywordflow">if</span> (error) {</div>
-<div class="line">      <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">      exit(-1);</div>
-<div class="line">    }</div>
+<div class="line">    <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a46" name="a46"></a><a class="code hl_function" href="group__Utilities.html#gafffa0ac5ec86658fb22ed6af7f5530cc">ex_update</a>(exoid));</div>
 <div class="line">  }</div>
 <div class="line">  free(glob_var_vals);</div>
 <div class="line">  free(nodal_var_vals);</div>
@@ -1332,14 +645,10 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* close the EXODUS files</span></div>
 <div class="line"><span class="comment">   */</span></div>
-<div class="line">  error = <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;after ex_close, error = %d\n&quot;</span>, error);</div>
-<div class="line">  <span class="keywordflow">if</span> (error) {</div>
-<div class="line">    <a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid);</div>
-<div class="line">    exit(-1);</div>
-<div class="line">  }</div>
+<div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a id="a47" name="a47"></a><a class="code hl_function" href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a>(exoid));</div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
+<div class="ttc" id="aex__copy_8c_html_aa2e0fbcf16ac768c9978cff9920e8e9a"><div class="ttname"><a href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a></div><div class="ttdeci">#define EXCHECK(funcall)</div><div class="ttdef"><b>Definition:</b> ex_copy.c:15</div></div>
 <div class="ttc" id="aexodusII_8h_html"><div class="ttname"><a href="exodusII_8h.html">exodusII.h</a></div></div>
 <div class="ttc" id="aexodusII_8h_html_a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14"><div class="ttname"><a href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a></div><div class="ttdeci">@ EX_SIDE_SET</div><div class="ttdef"><b>Definition:</b> exodusII.h:272</div></div>
 <div class="ttc" id="aexodusII_8h_html_a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb"><div class="ttname"><a href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a></div><div class="ttdeci">@ EX_NODE_SET</div><div class="ttdef"><b>Definition:</b> exodusII.h:264</div></div>

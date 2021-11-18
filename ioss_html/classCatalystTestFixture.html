@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classCatalystTestFixture.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classCatalystTestFixture-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CatalystTestFixture Class Reference</div></div>
@@ -94,7 +95,7 @@ $(document).ready(function(){initNavTree('classCatalystTestFixture.html',''); in
 <div class="dynheader">
 Collaboration diagram for CatalystTestFixture:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCatalystTestFixture__coll__graph.svg" width="147" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCatalystTestFixture__coll__graph.svg" width="212" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -113,14 +114,29 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab68e374b41be1b677d08be56a1213803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0c6e84ed4d3cb14295a880dcec34148"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#ab0c6e84ed4d3cb14295a880dcec34148">runParaViewGuiScriptTest</a> (const std::string &amp;pythonScript, const std::string &amp;inputFile)</td></tr>
 <tr class="separator:ab0c6e84ed4d3cb14295a880dcec34148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7147ceb155e4fb533a7e1712b287597"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#af7147ceb155e4fb533a7e1712b287597">checkTestOutputFileExists</a> (const char *fileName)</td></tr>
-<tr class="separator:af7147ceb155e4fb533a7e1712b287597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0652f7904d32cf42f2dec98c81cbea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#aa0652f7904d32cf42f2dec98c81cbea4">runCatalystLoggingTest</a> (<a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> *logging_properties, const std::string &amp;jsonFile, const std::string &amp;inputFile)</td></tr>
+<tr class="separator:aa0652f7904d32cf42f2dec98c81cbea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9f0902912750c53ea81ef55c2e5841b"><td class="memItemLeft" align="right" valign="top">Json::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#ae9f0902912750c53ea81ef55c2e5841b">getDefaultPhactoriJSON</a> ()</td></tr>
 <tr class="separator:ae9f0902912750c53ea81ef55c2e5841b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bef48782909f2aa2de10f53660f5cf4"><td class="memItemLeft" align="right" valign="top">Json::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#a1bef48782909f2aa2de10f53660f5cf4">getDefaultCameraJSON</a> ()</td></tr>
 <tr class="separator:a1bef48782909f2aa2de10f53660f5cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bc8bc97d8f77d0278d83e6b4a7c4c7d"><td class="memItemLeft" align="right" valign="top">Json::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#a9bc8bc97d8f77d0278d83e6b4a7c4c7d">getDefaultImageSetJSON</a> ()</td></tr>
+<tr class="separator:a9bc8bc97d8f77d0278d83e6b4a7c4c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88be3e2421742d8c58ba1e6205937112"><td class="memItemLeft" align="right" valign="top">Json::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#a88be3e2421742d8c58ba1e6205937112">getDefaultImageSetWithCameraJSON</a> ()</td></tr>
+<tr class="separator:a88be3e2421742d8c58ba1e6205937112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e3641d6b28402f2f379b2d03fea2a57"><td class="memItemLeft" align="right" valign="top">Json::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#a4e3641d6b28402f2f379b2d03fea2a57">getDefaultCameraParallelProjectionJSON</a> ()</td></tr>
 <tr class="separator:a4e3641d6b28402f2f379b2d03fea2a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a902e96dd517f999e0201813fdf2415"><td class="memItemLeft" align="right" valign="top">Json::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#a9a902e96dd517f999e0201813fdf2415">getDefaultOperationsJSON</a> ()</td></tr>
+<tr class="separator:a9a902e96dd517f999e0201813fdf2415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5d11e9a0c2e4959825a0c8e5aa1cf105"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#a5d11e9a0c2e4959825a0c8e5aa1cf105">isFileExists</a> (const char *fileName)</td></tr>
+<tr class="separator:a5d11e9a0c2e4959825a0c8e5aa1cf105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989e9c9b258d5d515859e61039496559"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#a989e9c9b258d5d515859e61039496559">checkTestOutputFileExists</a> (const char *fileName)</td></tr>
+<tr class="separator:a989e9c9b258d5d515859e61039496559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac4a53a146724ce7316f06b3e860e36"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalystTestFixture.html#abac4a53a146724ce7316f06b3e860e36">checkTestOutputFileDoesNotExist</a> (const char *fileName)</td></tr>
+<tr class="separator:abac4a53a146724ce7316f06b3e860e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -209,20 +225,54 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af7147ceb155e4fb533a7e1712b287597" name="af7147ceb155e4fb533a7e1712b287597"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7147ceb155e4fb533a7e1712b287597">&#9670;&nbsp;</a></span>checkTestOutputFileExists()</h2>
+<a id="abac4a53a146724ce7316f06b3e860e36" name="abac4a53a146724ce7316f06b3e860e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac4a53a146724ce7316f06b3e860e36">&#9670;&nbsp;</a></span>checkTestOutputFileDoesNotExist()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void CatalystTestFixture::checkTestOutputFileExists </td>
+          <td class="memname">static void CatalystTestFixture::checkTestOutputFileDoesNotExist </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>fileName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a989e9c9b258d5d515859e61039496559" name="a989e9c9b258d5d515859e61039496559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a989e9c9b258d5d515859e61039496559">&#9670;&nbsp;</a></span>checkTestOutputFileExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CatalystTestFixture::checkTestOutputFileExists </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -261,6 +311,57 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9bc8bc97d8f77d0278d83e6b4a7c4c7d" name="a9bc8bc97d8f77d0278d83e6b4a7c4c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc8bc97d8f77d0278d83e6b4a7c4c7d">&#9670;&nbsp;</a></span>getDefaultImageSetJSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Json::Value CatalystTestFixture::getDefaultImageSetJSON </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88be3e2421742d8c58ba1e6205937112" name="a88be3e2421742d8c58ba1e6205937112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88be3e2421742d8c58ba1e6205937112">&#9670;&nbsp;</a></span>getDefaultImageSetWithCameraJSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Json::Value CatalystTestFixture::getDefaultImageSetWithCameraJSON </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a902e96dd517f999e0201813fdf2415" name="a9a902e96dd517f999e0201813fdf2415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a902e96dd517f999e0201813fdf2415">&#9670;&nbsp;</a></span>getDefaultOperationsJSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Json::Value CatalystTestFixture::getDefaultOperationsJSON </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae9f0902912750c53ea81ef55c2e5841b" name="ae9f0902912750c53ea81ef55c2e5841b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9f0902912750c53ea81ef55c2e5841b">&#9670;&nbsp;</a></span>getDefaultPhactoriJSON()</h2>
 
@@ -272,6 +373,66 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d11e9a0c2e4959825a0c8e5aa1cf105" name="a5d11e9a0c2e4959825a0c8e5aa1cf105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d11e9a0c2e4959825a0c8e5aa1cf105">&#9670;&nbsp;</a></span>isFileExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CatalystTestFixture::isFileExists </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0652f7904d32cf42f2dec98c81cbea4" name="aa0652f7904d32cf42f2dec98c81cbea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0652f7904d32cf42f2dec98c81cbea4">&#9670;&nbsp;</a></span>runCatalystLoggingTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CatalystTestFixture::runCatalystLoggingTest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> *&#160;</td>
+          <td class="paramname"><em>logging_properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>jsonFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>inputFile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

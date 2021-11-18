@@ -658,10 +658,10 @@ $(document).ready(function(){initNavTree('_2test_2testrd1_8c-example.html',''); 
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Note: The # of elements is same as # of sides!  */</span></div>
 <div class="line">    <span class="keywordtype">int</span>    num_elem_in_set = num_sides_in_set;</div>
-<div class="line">    <span class="keywordtype">int</span> *  elem_list       = (<span class="keywordtype">int</span> *)my_calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">    <span class="keywordtype">int</span> *  side_list       = (<span class="keywordtype">int</span> *)my_calloc(num_sides_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">    <span class="keywordtype">int</span> *  node_ctr_list   = (<span class="keywordtype">int</span> *)my_calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">    <span class="keywordtype">int</span> *  node_list       = (<span class="keywordtype">int</span> *)my_calloc(num_elem_in_set * 21, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span>   *elem_list       = (<span class="keywordtype">int</span> *)my_calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span>   *side_list       = (<span class="keywordtype">int</span> *)my_calloc(num_sides_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span>   *node_ctr_list   = (<span class="keywordtype">int</span> *)my_calloc(num_elem_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span>   *node_list       = (<span class="keywordtype">int</span> *)my_calloc(num_elem_in_set * 21, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">    <span class="keywordtype">float</span> *dist_fact       = (<span class="keywordtype">float</span> *)my_calloc(num_df_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"> </div>
 <div class="line">    error = <a class="code hl_function" href="group__ModelDescription.html#ga48604d23fc30d70620e1255823e4ff50">ex_get_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>, ids[i], elem_list, side_list);</div>

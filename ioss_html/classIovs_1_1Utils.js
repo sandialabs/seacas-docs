@@ -26,6 +26,7 @@ var classIovs_1_1Utils =
     [ "operator=", "classIovs_1_1Utils.html#a3a330b788b307038adceb691346a4d33", null ],
     [ "reportCatalystErrorMessages", "classIovs_1_1Utils.html#a7ca7abd0e1fce17284fffd1d37f5399f", null ],
     [ "setPythonPathForParaViewPythonZipFile", "classIovs_1_1Utils.html#a8848f61ca77d2de3a3d3d8b1115f38c6", null ],
+    [ "writeToCatalystLogFile", "classIovs_1_1Utils.html#a191917baa34980703548c863e06c3032", null ],
     [ "CATALYST_FILE_SUFFIX", "classIovs_1_1Utils.html#a4b134053ab95089b6b03593959c29377", null ],
     [ "CATALYST_INSTALL_LIB_DIR", "classIovs_1_1Utils.html#ad3a7d86b0a7b61b421e777f674c6fc8d", null ],
     [ "CATALYST_INSTALL_PHACTORI_DIR", "classIovs_1_1Utils.html#ad319ed3135ebc590c60861e8b72b93e8", null ],

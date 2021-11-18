@@ -71,6 +71,7 @@ var hierarchy =
     [ "Ioex::Blob", "structIoex_1_1Blob.html", null ],
     [ "Ioss::BlockDecompositionData", "classIoss_1_1BlockDecompositionData.html", null ],
     [ "Ioad::DatabaseIO::BlockInfoType", "structIoad_1_1DatabaseIO_1_1BlockInfoType.html", null ],
+    [ "Iotm::BlockPartition", "structIotm_1_1BlockPartition.html", null ],
     [ "detail::boundaries", "structdetail_1_1boundaries.html", null ],
     [ "Ioss::BoundaryCondition", "structIoss_1_1BoundaryCondition.html", null ],
     [ "tsl::detail_robin_hash::bucket_entry_hash< StoreHash >", "classtsl_1_1detail__robin__hash_1_1bucket__entry__hash.html", [
@@ -104,6 +105,7 @@ var hierarchy =
     [ "Iovs_exodus::CatalystExodusMeshBase", "classIovs__exodus_1_1CatalystExodusMeshBase.html", [
       [ "Iovs_exodus::CatalystExodusMesh", "classIovs__exodus_1_1CatalystExodusMesh.html", null ]
     ] ],
+    [ "Iovs::CatalystLogging", "classIovs_1_1CatalystLogging.html", null ],
     [ "Iovs::CatalystManagerBase", "classIovs_1_1CatalystManagerBase.html", [
       [ "Iovs::CatalystManager", "classIovs_1_1CatalystManager.html", null ]
     ] ],
@@ -194,6 +196,9 @@ var hierarchy =
     [ "anonymous_namespace{Ioss_Wedge6.C}::Constants", "structanonymous__namespace_02Ioss__Wedge6_8C_03_1_1Constants.html", null ],
     [ "detail::converter", "structdetail_1_1converter.html", null ],
     [ "Ioss::CoordinateFrame", "classIoss_1_1CoordinateFrame.html", null ],
+    [ "Iotm::text_mesh::Coordinates< EntityId, Topology >", "classIotm_1_1text__mesh_1_1Coordinates.html", null ],
+    [ "Iotm::text_mesh::Coordinates< int64_t, TopologyMapEntry >", "classIotm_1_1text__mesh_1_1Coordinates.html", null ],
+    [ "anonymous_namespace{UnitTestIotmDatabaseIO.C}::TextMeshFixture::CoordinateVerifier", "classanonymous__namespace_02UnitTestIotmDatabaseIO_8C_03_1_1TextMeshFixture_1_1CoordinateVerifier.html", null ],
     [ "detail::counting_iterator", "classdetail_1_1counting__iterator.html", null ],
     [ "custom_formatter< Char >", "structcustom__formatter.html", null ],
     [ "custom_value< Context >", "structcustom__value.html", null ],
@@ -204,7 +209,6 @@ var hierarchy =
       [ "Ioad::DatabaseIO", "classIoad_1_1DatabaseIO.html", null ],
       [ "Iocatalyst::DatabaseIO", "classIocatalyst_1_1DatabaseIO.html", null ],
       [ "Iocgns::DatabaseIO", "classIocgns_1_1DatabaseIO.html", null ],
-      [ "Iocgns::ParallelDatabaseIO", "classIocgns_1_1ParallelDatabaseIO.html", null ],
       [ "Ioex::BaseDatabaseIO", "classIoex_1_1BaseDatabaseIO.html", [
         [ "Ioex::DatabaseIO", "classIoex_1_1DatabaseIO.html", null ]
       ] ],
@@ -213,15 +217,13 @@ var hierarchy =
       [ "Iogs::DatabaseIO", "classIogs_1_1DatabaseIO.html", null ],
       [ "Iohb::DatabaseIO", "classIohb_1_1DatabaseIO.html", null ],
       [ "Iopg::DatabaseIO", "classIopg_1_1DatabaseIO.html", null ],
+      [ "Iotm::DatabaseIO", "classIotm_1_1DatabaseIO.html", null ],
       [ "Iovs_cgns::DatabaseIO", "classIovs__cgns_1_1DatabaseIO.html", null ],
       [ "Iovs_exodus::DatabaseIO", "classIovs__exodus_1_1DatabaseIO.html", null ]
     ] ],
     [ "DataPool", "structDataPool.html", null ],
     [ "dragonbox::decimal_fp< T >", "structdragonbox_1_1decimal__fp.html", null ],
     [ "Ioss::Decomposition< INT >", "classIoss_1_1Decomposition.html", null ],
-    [ "Iocgns::DecompositionDataBase", "classIocgns_1_1DecompositionDataBase.html", [
-      [ "Iocgns::DecompositionData< INT >", "classIocgns_1_1DecompositionData.html", null ]
-    ] ],
     [ "default_arg_formatter< Char >", "structdefault__arg__formatter.html", null ],
     [ "detail::dragonbox::divtest_table_entry< T >", "structdetail_1_1dragonbox_1_1divtest__table__entry.html", null ],
     [ "detail::dynamic_arg_list", "classdetail_1_1dynamic__arg__list.html", null ],
@@ -230,6 +232,8 @@ var hierarchy =
     [ "Ioex::EdgeBlock", "structIoex_1_1EdgeBlock.html", null ],
     [ "Ioex::EdgeSet", "structIoex_1_1EdgeSet.html", null ],
     [ "Ioex::ElemBlock", "structIoex_1_1ElemBlock.html", null ],
+    [ "Iotm::text_mesh::ElementData< EntityId, Topology >", "structIotm_1_1text__mesh_1_1ElementData.html", null ],
+    [ "anonymous_namespace{UnitTestIotmDatabaseIO.C}::TextMeshFixture::ElementInfo", "structanonymous__namespace_02UnitTestIotmDatabaseIO_8C_03_1_1TextMeshFixture_1_1ElementInfo.html", null ],
     [ "Ioss::ElementTopology", "classIoss_1_1ElementTopology.html", [
       [ "Ioss::Beam2", "classIoss_1_1Beam2.html", null ],
       [ "Ioss::Beam3", "classIoss_1_1Beam3.html", null ],
@@ -307,7 +311,6 @@ var hierarchy =
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< const Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
-      [ "tsl::detail_robin_hash::robin_hash< std::pair< cgsize_t, cgsize_t >, KeySelect, ValueSelect, std::hash< cgsize_t >, std::equal_to< cgsize_t >, std::allocator< std::pair< cgsize_t, cgsize_t > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
     ] ],
@@ -466,7 +469,6 @@ var hierarchy =
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< const Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
-      [ "tsl::detail_robin_hash::robin_hash< std::pair< cgsize_t, cgsize_t >, KeySelect, ValueSelect, std::hash< cgsize_t >, std::equal_to< cgsize_t >, std::allocator< std::pair< cgsize_t, cgsize_t > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
     ] ],
@@ -513,6 +515,7 @@ var hierarchy =
       [ "Iogs::IOFactory", "classIogs_1_1IOFactory.html", null ],
       [ "Iohb::IOFactory", "classIohb_1_1IOFactory.html", null ],
       [ "Iopg::IOFactory", "classIopg_1_1IOFactory.html", null ],
+      [ "Iotm::IOFactory", "classIotm_1_1IOFactory.html", null ],
       [ "Iovs_cgns::IOFactory", "classIovs__cgns_1_1IOFactory.html", null ],
       [ "Iovs_exodus::IOFactory", "classIovs__exodus_1_1IOFactory.html", null ]
     ] ],
@@ -576,6 +579,7 @@ var hierarchy =
       [ "detail::dynamic_arg_list::typed_node< T >", "structdetail_1_1dynamic__arg__list_1_1typed__node.html", null ]
     ] ],
     [ "Ioex::NodeBlock", "structIoex_1_1NodeBlock.html", null ],
+    [ "Iotm::NodeCommunicationMap", "classIotm_1_1NodeCommunicationMap.html", null ],
     [ "Ioex::NodeSet", "structIoex_1_1NodeSet.html", null ],
     [ "detail::null< T >", "structdetail_1_1null.html", null ],
     [ "null_chrono_spec_handler< Derived >", "structnull__chrono__spec__handler.html", null ],
@@ -594,18 +598,19 @@ var hierarchy =
     [ "Iovs::PhactoriParserInterface::ParseInfo", "structIovs_1_1PhactoriParserInterface_1_1ParseInfo.html", null ],
     [ "glob::Parser< charT >", "classglob_1_1Parser.html", null ],
     [ "Iovs::CatalystManagerBase::ParseResult", "structIovs_1_1CatalystManagerBase_1_1ParseResult.html", null ],
+    [ "Iotm::text_mesh::PartIdMapping", "classIotm_1_1text__mesh_1_1PartIdMapping.html", null ],
+    [ "anonymous_namespace{UnitTestIotmDatabaseIO.C}::TextMeshFixture::PartInfo", "structanonymous__namespace_02UnitTestIotmDatabaseIO_8C_03_1_1TextMeshFixture_1_1PartInfo.html", null ],
     [ "Iovs::PhactoriParserInterface", "classIovs_1_1PhactoriParserInterface.html", null ],
-    [ "tsl::hh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", [
+    [ "tsl::hh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", null ],
+    [ "tsl::rh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", [
+      [ "tsl::detail_robin_hash::robin_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
+      [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
+    ] ],
+    [ "tsl::hh::power_of_two_growth_policy< 2 >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", [
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const int64_t, int64_t >, KeySelect, ValueSelect, std::hash< int64_t >, std::equal_to< int64_t >, std::allocator< std::pair< const int64_t, int64_t > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< const Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ]
-    ] ],
-    [ "tsl::rh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", null ],
-    [ "tsl::rh::power_of_two_growth_policy< 2 >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", [
-      [ "tsl::detail_robin_hash::robin_hash< std::pair< cgsize_t, cgsize_t >, KeySelect, ValueSelect, std::hash< cgsize_t >, std::equal_to< cgsize_t >, std::allocator< std::pair< cgsize_t, cgsize_t > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
-      [ "tsl::detail_robin_hash::robin_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
-      [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
     ] ],
     [ "precision_checker< ErrorHandler >", "classprecision__checker.html", null ],
     [ "tsl::hh::prime_growth_policy", "classtsl_1_1hh_1_1prime__growth__policy.html", null ],
@@ -627,7 +632,6 @@ var hierarchy =
     [ "rgb", "structrgb.html", null ],
     [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::robin_iterator< IsConst >", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator.html", null ],
     [ "tsl::robin_map< Key, T, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1robin__map.html", null ],
-    [ "tsl::robin_map< cgsize_t, cgsize_t >", "classtsl_1_1robin__map.html", null ],
     [ "tsl::robin_set< Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1robin__set.html", null ],
     [ "std::runtime_error", null, [
       [ "format_error", "classformat__error.html", null ]
@@ -682,9 +686,20 @@ var hierarchy =
     [ "Iocgns::StructuredZoneData", "classIocgns_1_1StructuredZoneData.html", null ],
     [ "Ioss::Suffix", "structIoss_1_1Suffix.html", null ],
     [ "text_style", "classtext__style.html", null ],
+    [ "Iotm::TextMesh", "classIotm_1_1TextMesh.html", null ],
+    [ "Iotm::text_mesh::TextMeshData< EntityId, Topology >", "structIotm_1_1text__mesh_1_1TextMeshData.html", null ],
+    [ "Iotm::text_mesh::TextMeshData< int64_t, TopologyMapEntry >", "structIotm_1_1text__mesh_1_1TextMeshData.html", null ],
+    [ "anonymous_namespace{UnitTestIotmDatabaseIO.C}::TextMeshFixture", "classanonymous__namespace_02UnitTestIotmDatabaseIO_8C_03_1_1TextMeshFixture.html", null ],
+    [ "Iotm::text_mesh::TextMeshLexer", "classIotm_1_1text__mesh_1_1TextMeshLexer.html", null ],
+    [ "Iotm::text_mesh::TextMeshParser< EntityId, TopologyMapping >", "classIotm_1_1text__mesh_1_1TextMeshParser.html", null ],
     [ "thousands_sep_result< Char >", "structthousands__sep__result.html", null ],
     [ "glob::Token< charT >", "classglob_1_1Token.html", null ],
     [ "Iopg::TopologyMapCompare", "structIopg_1_1TopologyMapCompare.html", null ],
+    [ "Iotm::TopologyMapEntry", "structIotm_1_1TopologyMapEntry.html", null ],
+    [ "Iotm::text_mesh::TopologyMapping< T >", "classIotm_1_1text__mesh_1_1TopologyMapping.html", null ],
+    [ "Iotm::text_mesh::TopologyMapping< TopologyMapEntry >", "classIotm_1_1text__mesh_1_1TopologyMapping.html", [
+      [ "Iotm::IossTopologyMapping", "classIotm_1_1IossTopologyMapping.html", null ]
+    ] ],
     [ "Ioss::Tracer", "classIoss_1_1Tracer.html", null ],
     [ "Ioss::Transform", "classIoss_1_1Transform.html", [
       [ "Iotr::MinMax", "classIotr_1_1MinMax.html", null ],
@@ -856,6 +871,5 @@ var hierarchy =
     [ "write_int_arg< UInt >", "structwrite__int__arg.html", null ],
     [ "write_int_data< Char >", "structwrite__int__data.html", null ],
     [ "Iocgns::ZoneBC", "structIocgns_1_1ZoneBC.html", null ],
-    [ "Ioss::ZoneConnectivity", "structIoss_1_1ZoneConnectivity.html", null ],
-    [ "Iocgns::ZoneData", "classIocgns_1_1ZoneData.html", null ]
+    [ "Ioss::ZoneConnectivity", "structIoss_1_1ZoneConnectivity.html", null ]
 ];

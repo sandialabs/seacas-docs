@@ -246,7 +246,7 @@ Macros</h2></td></tr>
 <tr class="separator:a10c315f2ac084dfafd0508bd53868f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a041574860a5965bb34cfcaff92e076ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a041574860a5965bb34cfcaff92e076ae">MAX_IF_NESTING</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a041574860a5965bb34cfcaff92e076ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6198b2fcf96178b24ad4efff2a3debb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a6198b2fcf96178b24ad4efff2a3debb0">YY_USER_ACTION</a>&#160;&#160;&#160;<a class="el" href="apr__scanner_8cc.html#a910b122f0b662594fe8125475959bb07">curr_index</a> += <a class="el" href="apr__scanner_8cc.html#a1516a44b66d8b9a552569a8cd010214f">yyleng</a>;</td></tr>
+<tr class="memitem:a6198b2fcf96178b24ad4efff2a3debb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a6198b2fcf96178b24ad4efff2a3debb0">YY_USER_ACTION</a>&#160;&#160;&#160;<a class="el" href="apr__scanner_8cc.html#accf9b292c5dce70026d58801522ebb7d">curr_index</a> += <a class="el" href="apr__scanner_8cc.html#a1516a44b66d8b9a552569a8cd010214f">yyleng</a>;</td></tr>
 <tr class="separator:a6198b2fcf96178b24ad4efff2a3debb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d063564f6ab16f6d408b8369d0e9ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#aa3d063564f6ab16f6d408b8369d0e9ff">INITIAL</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:aa3d063564f6ab16f6d408b8369d0e9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,8 +379,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac3cb0f8a59d6fe8a81ab4529d1b9c0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec10f50d48c71426f0f82298ae0a2c8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#aeec10f50d48c71426f0f82298ae0a2c8">switch_condition</a> = 0.0</td></tr>
 <tr class="separator:aeec10f50d48c71426f0f82298ae0a2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a910b122f0b662594fe8125475959bb07"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a910b122f0b662594fe8125475959bb07">curr_index</a> = 0</td></tr>
-<tr class="separator:a910b122f0b662594fe8125475959bb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf9b292c5dce70026d58801522ebb7d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#accf9b292c5dce70026d58801522ebb7d">curr_index</a> = 0</td></tr>
+<tr class="separator:accf9b292c5dce70026d58801522ebb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a748e6be0ac0614a20c58899ed02aaf8a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a748e6be0ac0614a20c58899ed02aaf8a">history_string</a></td></tr>
 <tr class="separator:a748e6be0ac0614a20c58899ed02aaf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a252fb105ec4adf6ab62197f9e7c30d52"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__scanner_8cc.html#a252fb105ec4adf6ab62197f9e7c30d52">hist_start</a> = 0</td></tr>
@@ -1528,7 +1528,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define YY_USER_ACTION&#160;&#160;&#160;<a class="el" href="apr__scanner_8cc.html#a910b122f0b662594fe8125475959bb07">curr_index</a> += <a class="el" href="apr__scanner_8cc.html#a1516a44b66d8b9a552569a8cd010214f">yyleng</a>;</td>
+          <td class="memname">#define YY_USER_ACTION&#160;&#160;&#160;<a class="el" href="apr__scanner_8cc.html#accf9b292c5dce70026d58801522ebb7d">curr_index</a> += <a class="el" href="apr__scanner_8cc.html#a1516a44b66d8b9a552569a8cd010214f">yyleng</a>;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1934,14 +1934,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a910b122f0b662594fe8125475959bb07" name="a910b122f0b662594fe8125475959bb07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a910b122f0b662594fe8125475959bb07">&#9670;&nbsp;</a></span>curr_index</h2>
+<a id="accf9b292c5dce70026d58801522ebb7d" name="accf9b292c5dce70026d58801522ebb7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf9b292c5dce70026d58801522ebb7d">&#9670;&nbsp;</a></span>curr_index</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ssize_t curr_index = 0</td>
+          <td class="memname">size_t curr_index = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">

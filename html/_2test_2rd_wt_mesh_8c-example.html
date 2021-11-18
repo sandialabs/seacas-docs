@@ -118,15 +118,15 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="exodusII_8h.html">exodusII.h</a>&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#define DEFAULT_NUM_FIELDS 0</span></div>
-<div class="line"><span class="preprocessor">#define DEFAULT_FILE_NAME &quot;mesh&quot;</span></div>
+<div class="line"><span class="preprocessor">#define DEFAULT_NUM_FIELDS     0</span></div>
+<div class="line"><span class="preprocessor">#define DEFAULT_FILE_NAME      &quot;mesh&quot;</span></div>
 <div class="line"><span class="preprocessor">#define DEFAULT_NUM_ITERATIONS 1</span></div>
-<div class="line"><span class="preprocessor">#define EXODUS_FILE_TYPE &quot;e&quot;</span></div>
-<div class="line"><span class="preprocessor">#define MBYTES (1024 * 1024)</span></div>
-<div class="line"><span class="preprocessor">#define MAX_STRING_LEN 128</span></div>
-<div class="line"><span class="preprocessor">#define NUM_NODES_PER_ELEM 8</span></div>
-<div class="line"><span class="preprocessor">#define WRITE_FILE_TYPE &quot;new&quot;</span></div>
-<div class="line"><span class="preprocessor">#define EBLK_ID 100000</span></div>
+<div class="line"><span class="preprocessor">#define EXODUS_FILE_TYPE       &quot;e&quot;</span></div>
+<div class="line"><span class="preprocessor">#define MBYTES                 (1024 * 1024)</span></div>
+<div class="line"><span class="preprocessor">#define MAX_STRING_LEN         128</span></div>
+<div class="line"><span class="preprocessor">#define NUM_NODES_PER_ELEM     8</span></div>
+<div class="line"><span class="preprocessor">#define WRITE_FILE_TYPE        &quot;new&quot;</span></div>
+<div class="line"><span class="preprocessor">#define EBLK_ID                100000</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment"> *      Prototypes</span></div>
@@ -794,7 +794,7 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line">  <span class="keywordtype">int</span>    IO_word_size  = <span class="keyword">sizeof</span>(realtyp);</div>
 <div class="line">  <span class="keywordtype">int</span>    j, t, npd, err, num_elem_blk, num_node_sets, num_side_sets;</div>
 <div class="line">  <span class="keywordtype">int</span>    iter;</div>
-<div class="line">  <span class="keywordtype">int</span> *  elem_var_tab = NULL;</div>
+<div class="line">  <span class="keywordtype">int</span>   *elem_var_tab = NULL;</div>
 <div class="line">  <span class="keywordtype">size_t</span> file_size;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keyword">struct </span>stat file_status;</div>
@@ -893,7 +893,7 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line">      }</div>
 <div class="line"><span class="preprocessor">#else</span></div>
 <div class="line">      err = <a id="a25" name="a25"></a><a class="code hl_function" href="group__ModelDescription.html#gad98c043e0e089bcb7a4f6662f96f7822">ex_put_block</a>(exoid[npd], <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, EBLK_ID, <span class="stringliteral">&quot;hex&quot;</span>, num_elems, NUM_NODES_PER_ELEM,</div>
-<div class="line">                         0, 0, 0);</div>
+<div class="line">                            0, 0, 0);</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line">      <span class="keywordflow">if</span> (err) {</div>
 <div class="line">        printf(<span class="stringliteral">&quot;after ex_put_elem_block, error = %d\n&quot;</span>, err);</div>

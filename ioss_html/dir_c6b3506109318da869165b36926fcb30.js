@@ -8,5 +8,7 @@ var dir_c6b3506109318da869165b36926fcb30 =
       [ "Iogn::DatabaseIO", "classIogn_1_1DatabaseIO.html", "classIogn_1_1DatabaseIO" ]
     ] ],
     [ "Iogn_GeneratedMesh.C", "Iogn__GeneratedMesh_8C.html", null ],
-    [ "Iogn_GeneratedMesh.h", "Iogn__GeneratedMesh_8h.html", "Iogn__GeneratedMesh_8h" ]
+    [ "Iogn_GeneratedMesh.h", "Iogn__GeneratedMesh_8h.html", [
+      [ "Iogn::GeneratedMesh", "classIogn_1_1GeneratedMesh.html", "classIogn_1_1GeneratedMesh" ]
+    ] ]
 ];

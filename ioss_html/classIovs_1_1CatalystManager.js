@@ -22,6 +22,7 @@ var classIovs_1_1CatalystManager =
     [ "incrementOutputCounts", "classIovs_1_1CatalystManager.html#ae33198cf7d26e8d8e979d0983c67c7e2", null ],
     [ "initCatalystLogging", "classIovs_1_1CatalystManager.html#aa526d3a3622a419818da48a4e5383e17", null ],
     [ "initCatalystPipeline", "classIovs_1_1CatalystManager.html#a97fdaa428fc0ef41fa615def062dede7", null ],
+    [ "initCatalystPythonSystemPaths", "classIovs_1_1CatalystManager.html#a0f0a3fec26a651be4f9f6843f339951c", null ],
     [ "initializeIfNeeded", "classIovs_1_1CatalystManager.html#ad9ea356305c18c65e6743247b81c4e65", null ],
     [ "logMemoryUsageAndTakeTimerReading", "classIovs_1_1CatalystManager.html#a42be2d2744ec907ca72769f2f2e1b20c", null ],
     [ "operator=", "classIovs_1_1CatalystManager.html#a65b5b74fdafb90fb76df584c6983428a", null ],

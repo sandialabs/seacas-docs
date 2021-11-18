@@ -4,15 +4,11 @@ var namespaceIocgns =
       [ "update_zgc", "namespaceIocgns_1_1anonymous__namespace_02Iocgns__StructuredZoneData_8C_03.html#ab3619adb221c2fc7e07381016855b25a", null ]
     ] ],
     [ "DatabaseIO", "classIocgns_1_1DatabaseIO.html", "classIocgns_1_1DatabaseIO" ],
-    [ "DecompositionData", "classIocgns_1_1DecompositionData.html", "classIocgns_1_1DecompositionData" ],
-    [ "DecompositionDataBase", "classIocgns_1_1DecompositionDataBase.html", "classIocgns_1_1DecompositionDataBase" ],
     [ "Initializer", "classIocgns_1_1Initializer.html", "classIocgns_1_1Initializer" ],
     [ "IOFactory", "classIocgns_1_1IOFactory.html", "classIocgns_1_1IOFactory" ],
-    [ "ParallelDatabaseIO", "classIocgns_1_1ParallelDatabaseIO.html", "classIocgns_1_1ParallelDatabaseIO" ],
     [ "StructuredZoneData", "classIocgns_1_1StructuredZoneData.html", "classIocgns_1_1StructuredZoneData" ],
     [ "Utils", "classIocgns_1_1Utils.html", "classIocgns_1_1Utils" ],
     [ "ZoneBC", "structIocgns_1_1ZoneBC.html", "structIocgns_1_1ZoneBC" ],
-    [ "ZoneData", "classIocgns_1_1ZoneData.html", "classIocgns_1_1ZoneData" ],
     [ "Ordinal", "namespaceIocgns.html#ae4aa60fa9660815d16948a9bb40ace1f", [
       [ "I", "namespaceIocgns.html#ae4aa60fa9660815d16948a9bb40ace1fa85089150a8fae808ddfafcdcd9a41249", null ],
       [ "J", "namespaceIocgns.html#ae4aa60fa9660815d16948a9bb40ace1fa562c6c2b8297278b9e72c5a0125553d4", null ],

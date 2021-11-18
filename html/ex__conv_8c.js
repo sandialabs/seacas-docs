@@ -10,7 +10,7 @@ var ex__conv_8c =
     [ "ex__conv_init", "group__Internal.html#gaf4c4ea9eafed93693b958a86be8aa783", null ],
     [ "ex__find_file_item", "group__Internal.html#ga91034e2e454fec6f5c620e4d28fee43a", null ],
     [ "ex__is_parallel", "group__Utilities.html#ga06b40abd0ddd2274a9a420417d806ea3", null ],
-    [ "ex_int64_status", "group__Utilities.html#gaf576fc80741a1f568148eaf0cec76b86", null ],
+    [ "ex_int64_status", "group__Utilities.html#ga591d434142fe8ddb34e56281d970b419", null ],
     [ "ex_set_int64_status", "group__Utilities.html#ga8be8ae9fd499756ab2dcb94ca4df7743", null ],
     [ "ex_set_option", "group__Utilities.html#gab9398d414e1316177db89782ed2a08c4", null ],
     [ "ex_set_parallel", "group__Utilities.html#gab9a0caef233c3321be24ecd4c9d51578", null ],

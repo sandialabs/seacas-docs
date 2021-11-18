@@ -1,5 +1,6 @@
 var namespaceIovs =
 [
+    [ "CatalystLogging", "classIovs_1_1CatalystLogging.html", "classIovs_1_1CatalystLogging" ],
     [ "CatalystManager", "classIovs_1_1CatalystManager.html", "classIovs_1_1CatalystManager" ],
     [ "CatalystManagerBase", "classIovs_1_1CatalystManagerBase.html", "classIovs_1_1CatalystManagerBase" ],
     [ "CatalystMeshWriter", "classIovs_1_1CatalystMeshWriter.html", "classIovs_1_1CatalystMeshWriter" ],

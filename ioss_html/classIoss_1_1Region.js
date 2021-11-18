@@ -17,6 +17,7 @@ var classIoss_1_1Region =
     [ "add", "classIoss_1_1Region.html#aa14d4548e40f95842478650e2abf43e1", null ],
     [ "add", "classIoss_1_1Region.html#ae806c321adbbff17490f0d39eb537dbd", null ],
     [ "add_alias", "classIoss_1_1Region.html#a55bc025964aa887d3a8dac9599bdaf79", null ],
+    [ "add_alias", "classIoss_1_1Region.html#aaac1955dc17f419d78ef4f4cd7d44244", null ],
     [ "add_alias", "classIoss_1_1Region.html#a97755b481c472725d622dba6e27c10f4", null ],
     [ "add_alias__", "classIoss_1_1Region.html#aa14f212506863c22b8db6251a3311a62", null ],
     [ "add_alias__", "classIoss_1_1Region.html#af9132ec172f38894c8368da9bb56b968", null ],

@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="line">                     -1};</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define OBJECT_IS_BLOCK(i) (((i) &lt; 3))</span></div>
-<div class="line"><span class="preprocessor">#define OBJECT_IS_SET(i) (((i) &gt; 2) &amp;&amp; ((i) &lt; 8))</span></div>
+<div class="line"><span class="preprocessor">#define OBJECT_IS_SET(i)   (((i) &gt; 2) &amp;&amp; ((i) &lt; 8))</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> <a id="a32" name="a32"></a><a class="code hl_function" href="exodusII__test_8h.html#a7a32fbc02a63f8a7db845d3431945157">cReadEdgeFace</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv)</div>
 <div class="line">{</div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="line"> </div>
 <div class="line">    fprintf(stdout, <span class="stringliteral">&quot;=== %ss: %d\n&quot;</span>, obj_typenames[i], nids);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">int</span> *  ids       = (<span class="keywordtype">int</span> *)malloc(nids * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">int</span>   *ids       = (<span class="keywordtype">int</span> *)malloc(nids * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">    <span class="keywordtype">char</span> **obj_names = (<span class="keywordtype">char</span> **)malloc(nids * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> obj = 0; obj &lt; nids; ++obj) {</div>
 <div class="line">      obj_names[obj] = (<span class="keywordtype">char</span> *)malloc((<a id="a59" name="a59"></a><a class="code hl_define" href="group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f">MAX_STR_LENGTH</a> + 1) * <span class="keyword">sizeof</span>(char));</div>
@@ -309,7 +309,7 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="line">        free(fconn);</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">if</span> (num_attrs) {</div>
-<div class="line">          <span class="keywordtype">char</span> ** attr_names;</div>
+<div class="line">          <span class="keywordtype">char</span>  **attr_names;</div>
 <div class="line">          <span class="keywordtype">double</span> *attr;</div>
 <div class="line">          attr       = (<span class="keywordtype">double</span> *)malloc(num_entries * num_attrs * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div>
 <div class="line">          attr_names = (<span class="keywordtype">char</span> **)malloc(num_attrs * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>

@@ -318,6 +318,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a97755b481c472725d622dba6e27c10f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a97755b481c472725d622dba6e27c10f4">add_alias</a> (const std::string &amp;db_name, const std::string &amp;alias, <a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
 <tr class="memdesc:a97755b481c472725d622dba6e27c10f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an alias for a name in a region.  <a href="classIoss_1_1Region.html#a97755b481c472725d622dba6e27c10f4">More...</a><br /></td></tr>
 <tr class="separator:a97755b481c472725d622dba6e27c10f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac1955dc17f419d78ef4f4cd7d44244"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#aaac1955dc17f419d78ef4f4cd7d44244">add_alias</a> (const std::string &amp;db_name, const std::string &amp;alias)</td></tr>
+<tr class="separator:aaac1955dc17f419d78ef4f4cd7d44244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55bc025964aa887d3a8dac9599bdaf79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a55bc025964aa887d3a8dac9599bdaf79">add_alias</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a> *ge)</td></tr>
 <tr class="memdesc:a55bc025964aa887d3a8dac9599bdaf79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a grouping entity's name as an alias for itself.  <a href="classIoss_1_1Region.html#a55bc025964aa887d3a8dac9599bdaf79">More...</a><br /></td></tr>
 <tr class="separator:a55bc025964aa887d3a8dac9599bdaf79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1030,7 +1032,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a55bc025964aa887d3a8dac9599bdaf79" name="a55bc025964aa887d3a8dac9599bdaf79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55bc025964aa887d3a8dac9599bdaf79">&#9670;&nbsp;</a></span>add_alias() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55bc025964aa887d3a8dac9599bdaf79">&#9670;&nbsp;</a></span>add_alias() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1056,8 +1058,36 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aaac1955dc17f419d78ef4f4cd7d44244" name="aaac1955dc17f419d78ef4f4cd7d44244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaac1955dc17f419d78ef4f4cd7d44244">&#9670;&nbsp;</a></span>add_alias() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::Region::add_alias </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>db_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>alias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a97755b481c472725d622dba6e27c10f4" name="a97755b481c472725d622dba6e27c10f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97755b481c472725d622dba6e27c10f4">&#9670;&nbsp;</a></span>add_alias() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a97755b481c472725d622dba6e27c10f4">&#9670;&nbsp;</a></span>add_alias() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1094,6 +1124,7 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">db_name</td><td>The original name. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">alias</td><td>the alias </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the entity type </td></tr>
   </table>
   </dd>
 </dl>
@@ -1625,6 +1656,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">alias</td><td>The alias name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the entity type </td></tr>
   </table>
   </dd>
 </dl>
@@ -1718,6 +1750,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">my_name</td><td>The original name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the entity type </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">aliases</td><td>On input, any vector of strings. On output, all aliases for my_name are appended. </td></tr>
   </table>
   </dd>

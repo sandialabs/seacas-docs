@@ -110,8 +110,8 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_rd_8c-exa
 <div class="line"><span class="comment"> * -- Each thread handles a portion of the nodes for each coordinate variable</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#define NUM_THREADS 8</span></div>
-<div class="line"><span class="preprocessor">#define NUM_NODES 64 </span><span class="comment">/* should be multiple of NUM_THREADS */</span><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#define NUM_THREADS   8</span></div>
+<div class="line"><span class="preprocessor">#define NUM_NODES     64 </span><span class="comment">/* should be multiple of NUM_THREADS */</span><span class="preprocessor"></span></div>
 <div class="line"><span class="preprocessor">#define NUM_NODAL_VAR 4</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> ulpsDistance(<span class="keywordtype">float</span> a, <span class="keywordtype">float</span> b)</div>
@@ -219,10 +219,10 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_rd_8c-exa
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* open EXODUS II files */</span></div>
 <div class="line">  <span class="keywordtype">int</span> exoid = <a id="a9" name="a9"></a><a class="code hl_define" href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a>(<span class="stringliteral">&quot;test.exo&quot;</span>,     <span class="comment">/* filename path */</span></div>
-<div class="line">                  <a id="a10" name="a10"></a><a class="code hl_define" href="group__FileVars.html#ga49938d96ef78ea1726e9970383bf61b1">EX_READ</a>,        <span class="comment">/* access mode = READ */</span></div>
-<div class="line">                  &amp;CPU_word_size, <span class="comment">/* CPU word size */</span></div>
-<div class="line">                  &amp;IO_word_size,  <span class="comment">/* IO word size */</span></div>
-<div class="line">                  &amp;version);      <span class="comment">/* ExodusII library version */</span></div>
+<div class="line">                      <a id="a10" name="a10"></a><a class="code hl_define" href="group__FileVars.html#ga49938d96ef78ea1726e9970383bf61b1">EX_READ</a>,        <span class="comment">/* access mode = READ */</span></div>
+<div class="line">                      &amp;CPU_word_size, <span class="comment">/* CPU word size */</span></div>
+<div class="line">                      &amp;IO_word_size,  <span class="comment">/* IO word size */</span></div>
+<div class="line">                      &amp;version);      <span class="comment">/* ExodusII library version */</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (exoid &lt; 0)</div>
 <div class="line">    exit(1);</div>

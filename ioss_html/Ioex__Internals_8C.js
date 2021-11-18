@@ -5,7 +5,7 @@ var Ioex__Internals_8C =
     [ "define_netcdf_vars", "Ioex__Internals_8C.html#a855c1fd2bc0c8212e4da4aad5150d7e1", null ],
     [ "define_variable", "Ioex__Internals_8C.html#a6756f82590012cc7d282d2b1928e00e3", null ],
     [ "define_variables", "Ioex__Internals_8C.html#a7a2b5371ad029afa8b0560a0788b42cb", null ],
-    [ "get_max_name_length", "Ioex__Internals_8C.html#a6f367bad8198bf60f14425bacc8556ad", null ],
+    [ "get_max_name_length", "Ioex__Internals_8C.html#a5e550a9d1940452ef60c68b1f46e6352", null ],
     [ "get_type", "Ioex__Internals_8C.html#a584658147dc76be7d85c531a8ef9e6e4", null ],
     [ "output_names", "Ioex__Internals_8C.html#a96588464f4001bb15ac2ad8ed3efb160", null ],
     [ "put_id_array", "Ioex__Internals_8C.html#a97c399d159544979f324e07bd2f173b5", null ],

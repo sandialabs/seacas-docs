@@ -6,5 +6,7 @@ var dir_d9748d221ba7faa83f7fa8169a1d5121 =
       [ "Iogs::DatabaseIO", "classIogs_1_1DatabaseIO.html", "classIogs_1_1DatabaseIO" ]
     ] ],
     [ "Iogs_GeneratedMesh.C", "Iogs__GeneratedMesh_8C.html", null ],
-    [ "Iogs_GeneratedMesh.h", "Iogs__GeneratedMesh_8h.html", "Iogs__GeneratedMesh_8h" ]
+    [ "Iogs_GeneratedMesh.h", "Iogs__GeneratedMesh_8h.html", [
+      [ "Iogs::GeneratedMesh", "classIogs_1_1GeneratedMesh.html", "classIogs_1_1GeneratedMesh" ]
+    ] ]
 ];

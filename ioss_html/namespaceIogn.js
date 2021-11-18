@@ -8,7 +8,6 @@ var namespaceIogn =
     [ "GeneratedMesh", "classIogn_1_1GeneratedMesh.html", "classIogn_1_1GeneratedMesh" ],
     [ "IOFactory", "classIogn_1_1IOFactory.html", "classIogn_1_1IOFactory" ],
     [ "SharedNode", "structIogn_1_1SharedNode.html", "structIogn_1_1SharedNode" ],
-    [ "MapVector", "namespaceIogn.html#ab8cec8a4ecca4ec30840c270713967a1", null ],
     [ "Topology", "namespaceIogn.html#a05c78571e9bf222ffa337fa31ed95006", [
       [ "Beam2", "namespaceIogn.html#a05c78571e9bf222ffa337fa31ed95006a7174327b7d198fca7194a9913617bc8b", null ],
       [ "Shell4", "namespaceIogn.html#a05c78571e9bf222ffa337fa31ed95006a8325bc7391489b0ab010caa5dd552e0b", null ],

@@ -26,7 +26,7 @@ var group__Utilities =
     [ "ex_header_size", "group__Utilities.html#ga5cf345127f80e3bcf813194c15d97030", null ],
     [ "ex_inquire", "group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a", null ],
     [ "ex_inquire_int", "group__Utilities.html#ga1b8122836266615fd2795736dc21e2ae", null ],
-    [ "ex_int64_status", "group__Utilities.html#gaf576fc80741a1f568148eaf0cec76b86", null ],
+    [ "ex_int64_status", "group__Utilities.html#ga591d434142fe8ddb34e56281d970b419", null ],
     [ "ex_large_model", "group__Utilities.html#gaa8231cf6c15bb76730fd5903a3ad5777", null ],
     [ "ex_open_int", "group__Utilities.html#ga6595a688ca002de77217c2bb7c271147", null ],
     [ "ex_opts", "group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403", null ],
