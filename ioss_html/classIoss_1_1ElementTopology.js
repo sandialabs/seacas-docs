@@ -6,6 +6,7 @@ var classIoss_1_1ElementTopology =
     [ "alias", "classIoss_1_1ElementTopology.html#aebb05d3060d648c95e263fb81be6dd84", null ],
     [ "boundary_connectivity", "classIoss_1_1ElementTopology.html#ab9ad470842413049a5cbcb1cac384045", null ],
     [ "boundary_type", "classIoss_1_1ElementTopology.html#a264efcfd8390e25c8fbcafa44c9273da", null ],
+    [ "describe", "classIoss_1_1ElementTopology.html#ab5087262ab815eded898d96def58b049", null ],
     [ "describe", "classIoss_1_1ElementTopology.html#a9390b9af7c68df179a6de191374b5162", null ],
     [ "edge_connectivity", "classIoss_1_1ElementTopology.html#aad976d32c03dfcebc37d540954a0333f", null ],
     [ "edge_type", "classIoss_1_1ElementTopology.html#a2417bf621c659efc92f6096bba4d5dd9", null ],

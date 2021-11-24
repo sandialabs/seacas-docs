@@ -5,6 +5,8 @@ var classIoss_1_1FieldManager =
     [ "~FieldManager", "classIoss_1_1FieldManager.html#ae9d745bfae47daf68de867dce0c3a776", null ],
     [ "add", "classIoss_1_1FieldManager.html#a0da349bf5958db6702137da83f231c6a", null ],
     [ "count", "classIoss_1_1FieldManager.html#a8f1254bde1462683f662caeb566a5be7", null ],
+    [ "describe", "classIoss_1_1FieldManager.html#a18ccfda14cbe06c4945b5bc688d4d233", null ],
+    [ "describe", "classIoss_1_1FieldManager.html#aef21438e857b3189369ebf5351bc6975", null ],
     [ "describe", "classIoss_1_1FieldManager.html#abb9d045bd7c07b9d4c89ac47ed5b616f", null ],
     [ "describe", "classIoss_1_1FieldManager.html#ac8128863f1342eff50221313c5eac88b", null ],
     [ "erase", "classIoss_1_1FieldManager.html#aae5f5c6ff4c0eebc35fc7d08f651c0ce", null ],
