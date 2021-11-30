@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classIoss_1_1SideBlock.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -310,6 +311,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe3ad1b039a979ee0cee14b795e3a73c inherit pub_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec73331378309a5d24601e72b3fb6cb9 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#aec73331378309a5d24601e72b3fb6cb9">equal</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a> &amp;rhs) const</td></tr>
 <tr class="separator:aec73331378309a5d24601e72b3fb6cb9 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9f6b0450a1c5f59c940d3e2ddca2236f"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1SideBlock.html#a9f6b0450a1c5f59c940d3e2ddca2236f">generate_sideblock_name</a> (const std::string &amp;sideset_name, const std::string &amp;block_or_element, const std::string &amp;face_topology_name)</td></tr>
+<tr class="separator:a9f6b0450a1c5f59c940d3e2ddca2236f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -593,6 +599,58 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f6b0450a1c5f59c940d3e2ddca2236f" name="a9f6b0450a1c5f59c940d3e2ddca2236f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f6b0450a1c5f59c940d3e2ddca2236f">&#9670;&nbsp;</a></span>generate_sideblock_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ioss::SideBlock::generate_sideblock_name </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>sideset_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>block_or_element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>face_topology_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >For externally defined sidesets/sideblocks, attempt to provide the sideblock name that will be generated if the database is read and the sideblocks are generated from the sideset at the read phase. Since sideblocks are not explicitly stored on some of the database types (e.g. exodus), the IOSS code generates the sideblocks from the sidesets when reading the database. We want to maximize the possibility that the same sideblock names will be generated at that read step as the application is using for sideblocks that it generates internally to be output to a restart file that is later read...</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sideset_name</td><td>The name of the sideset that this sideblock will be a member of. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block_or_element</td><td>Depending on the <code>SurfaceSplitType</code> behavior for this database, this is either the name of the element block that the sideblock is applied to (SPLIT_BY_ELEMENT_BLOCK) or the topology name of the elements that the sideblock faces are part of (SPLIT_BY_TOPOLOGIES) or "UNKNOWN" if mixed topology (SPLIT_BY_DONT_SPLIT) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">face_topology_name</td><td>The name of the topology of the sideblock faces. "UNKNOWN" if not homogenous. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated sideblock name. </dd></dl>
 
 </div>
 </div>

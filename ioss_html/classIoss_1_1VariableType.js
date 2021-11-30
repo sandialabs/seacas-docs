@@ -8,6 +8,7 @@ var classIoss_1_1VariableType =
     [ "build_variable_type", "classIoss_1_1VariableType.html#abd78d4a71fcc1845b8cf777e597a9120", null ],
     [ "component_count", "classIoss_1_1VariableType.html#ad1e37f24dd5bbe9ed6bee80a93665d6c", null ],
     [ "create_named_suffix_field_type", "classIoss_1_1VariableType.html#a8ec572b6a90f2147d3c5560d7a72f87c", null ],
+    [ "describe", "classIoss_1_1VariableType.html#a0f85afe81c9bc5bf8e18b1444388e91a", null ],
     [ "describe", "classIoss_1_1VariableType.html#a8abe58d456641f1f64346439b6d17d6e", null ],
     [ "factory", "classIoss_1_1VariableType.html#a7c353d05d75cee8aee0028dbc475c63f", null ],
     [ "factory", "classIoss_1_1VariableType.html#afb45f7b097b6073c9ecd1bab9137e19d", null ],

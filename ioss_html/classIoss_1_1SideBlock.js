@@ -7,6 +7,7 @@ var classIoss_1_1SideBlock =
     [ "contains_string", "classIoss_1_1SideBlock.html#aa672ae655e87effecd352dc6618692ae", null ],
     [ "equal", "classIoss_1_1SideBlock.html#a4d6a6416b8b369e58640e7118fefc370", null ],
     [ "equal_", "classIoss_1_1SideBlock.html#a8dacd77a509b3438d90f699c3f68054c", null ],
+    [ "generate_sideblock_name", "classIoss_1_1SideBlock.html#a9f6b0450a1c5f59c940d3e2ddca2236f", null ],
     [ "get_consistent_side_number", "classIoss_1_1SideBlock.html#a8b70618765526012e18bc488a8068fda", null ],
     [ "get_implicit_property", "classIoss_1_1SideBlock.html#a667785b61f8ae1f750b2fb6d0ade815d", null ],
     [ "internal_get_field_data", "classIoss_1_1SideBlock.html#aeb82c56646d1bd6d5ecbe1973197d3a4", null ],
