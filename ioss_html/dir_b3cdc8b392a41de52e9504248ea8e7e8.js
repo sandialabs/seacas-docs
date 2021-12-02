@@ -7,5 +7,9 @@ var dir_b3cdc8b392a41de52e9504248ea8e7e8 =
     ] ],
     [ "Iotm_TextMesh.C", "Iotm__TextMesh_8C.html", "Iotm__TextMesh_8C" ],
     [ "Iotm_TextMesh.h", "Iotm__TextMesh_8h.html", "Iotm__TextMesh_8h" ],
+    [ "Iotm_TextMeshTopologyMapping.h", "Iotm__TextMeshTopologyMapping_8h.html", [
+      [ "Iotm::TopologyMapEntry", "structIotm_1_1TopologyMapEntry.html", "structIotm_1_1TopologyMapEntry" ],
+      [ "Iotm::IossTopologyMapping", "classIotm_1_1IossTopologyMapping.html", "classIotm_1_1IossTopologyMapping" ]
+    ] ],
     [ "Iotm_TextMeshUtils.h", "Iotm__TextMeshUtils_8h.html", "Iotm__TextMeshUtils_8h" ]
 ];

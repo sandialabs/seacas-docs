@@ -136,9 +136,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a25e1cc30e0377fcf00b65548d6cc6f2b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a25e1cc30e0377fcf00b65548d6cc6f2b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a25e1cc30e0377fcf00b65548d6cc6f2b">compare_sets</a> (const std::vector&lt; T * &gt; &amp;in_sets_1, const std::vector&lt; T * &gt; &amp;in_sets_const_2, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;, std::ostringstream &amp;)</td></tr>
 <tr class="separator:a25e1cc30e0377fcf00b65548d6cc6f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60cd2770a21ba9a4ebfb6920278b5265"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a60cd2770a21ba9a4ebfb6920278b5265"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a60cd2770a21ba9a4ebfb6920278b5265">compare_field_data</a> (T *data1, T *data2, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, const std::string &amp;field_name, std::ostringstream &amp;buf)</td></tr>
-<tr class="separator:a60cd2770a21ba9a4ebfb6920278b5265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e1638d2922718a959ad2941dadddbd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a34e1638d2922718a959ad2941dadddbd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a34e1638d2922718a959ad2941dadddbd">compare_field_data</a> (T *data1, T *data2, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, const std::string &amp;field_name, const std::string &amp;entity_name, std::ostringstream &amp;buf)</td></tr>
+<tr class="separator:a34e1638d2922718a959ad2941dadddbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a5d624b50c816e5e87d300ed4040b19fb" name="a5d624b50c816e5e87d300ed4040b19fb"></a>
@@ -615,8 +615,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a60cd2770a21ba9a4ebfb6920278b5265" name="a60cd2770a21ba9a4ebfb6920278b5265"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60cd2770a21ba9a4ebfb6920278b5265">&#9670;&nbsp;</a></span>compare_field_data() <span class="overload">[3/3]</span></h2>
+<a id="a34e1638d2922718a959ad2941dadddbd" name="a34e1638d2922718a959ad2941dadddbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e1638d2922718a959ad2941dadddbd">&#9670;&nbsp;</a></span>compare_field_data() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -646,6 +646,12 @@ template&lt;typename T &gt; </div>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>field_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>entity_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

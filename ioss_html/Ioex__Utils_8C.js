@@ -23,7 +23,6 @@ var Ioex__Utils_8C =
     [ "set_id", "Ioex__Utils_8C.html#a01efffec3077375a3d6bb8cd776bd22a", null ],
     [ "type_match", "Ioex__Utils_8C.html#a4cd46519755e233002d31bb5b693655b", null ],
     [ "update_last_time_attribute", "Ioex__Utils_8C.html#aca78e0f9adbd54d49ed084084f467795", null ],
-    [ "Version", "Ioex__Utils_8C.html#acbd085af44e6af39844775c4a8c679cc", null ],
     [ "write_coordinate_frames", "Ioex__Utils_8C.html#a2e5e78a4d3d70c85f261208700b25fbc", null ],
     [ "write_reduction_attributes", "Ioex__Utils_8C.html#af44f31440d8f92e9e6e59f96f5068a6e", null ]
 ];

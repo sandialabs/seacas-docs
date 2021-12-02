@@ -1,7 +1,5 @@
 var Iotm__TextMesh_8h =
 [
-    [ "Iotm::TopologyMapEntry", "structIotm_1_1TopologyMapEntry.html", "structIotm_1_1TopologyMapEntry" ],
-    [ "Iotm::IossTopologyMapping", "classIotm_1_1IossTopologyMapping.html", "classIotm_1_1IossTopologyMapping" ],
     [ "Iotm::BlockPartition", "structIotm_1_1BlockPartition.html", "structIotm_1_1BlockPartition" ],
     [ "Iotm::TextMesh", "classIotm_1_1TextMesh.html", "classIotm_1_1TextMesh" ],
     [ "Coordinates", "Iotm__TextMesh_8h.html#a8f45a786e6366e5e7bc16a236975e970", null ],
