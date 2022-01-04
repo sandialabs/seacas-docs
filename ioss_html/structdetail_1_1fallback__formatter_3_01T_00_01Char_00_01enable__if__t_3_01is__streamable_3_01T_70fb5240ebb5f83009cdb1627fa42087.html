@@ -103,11 +103,6 @@ Collaboration diagram for detail::fallback_formatter&lt; T, Char, enable_if_t&lt
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a875b3aa825132a00db2db1b23321d7eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1fallback__formatter_3_01T_00_01Char_00_01enable__if__t_3_01is__streamable_3_01T_70fb5240ebb5f83009cdb1627fa42087.html#a875b3aa825132a00db2db1b23321d7eb">parse</a> (<a class="el" href="classbasic__format__parse__context.html">basic_format_parse_context</a>&lt; Char &gt; &amp;ctx) -&gt; decltype(ctx.begin())</td></tr>
-<tr class="separator:a875b3aa825132a00db2db1b23321d7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae53efeeb0dc7f6ee710cb3078fc96cb"><td class="memTemplParams" colspan="2">template&lt;typename ParseCtx , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_same&lt; ParseCtx, <a class="el" href="classbasic__printf__parse__context.html">basic_printf_parse_context</a>&lt; Char &gt; &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:aae53efeeb0dc7f6ee710cb3078fc96cb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdetail_1_1fallback__formatter_3_01T_00_01Char_00_01enable__if__t_3_01is__streamable_3_01T_70fb5240ebb5f83009cdb1627fa42087.html#aae53efeeb0dc7f6ee710cb3078fc96cb">parse</a> (ParseCtx &amp;ctx) -&gt; decltype(ctx.begin())</td></tr>
-<tr class="separator:aae53efeeb0dc7f6ee710cb3078fc96cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78e4634724c9403443b2ff988d637957"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt &gt; </td></tr>
 <tr class="memitem:a78e4634724c9403443b2ff988d637957"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdetail_1_1fallback__formatter_3_01T_00_01Char_00_01enable__if__t_3_01is__streamable_3_01T_70fb5240ebb5f83009cdb1627fa42087.html#a78e4634724c9403443b2ff988d637957">format</a> (const T &amp;<a class="el" href="classvalue.html">value</a>, <a class="el" href="classbasic__format__context.html">basic_format_context</a>&lt; OutputIt, Char &gt; &amp;ctx) -&gt; OutputIt</td></tr>
 <tr class="separator:a78e4634724c9403443b2ff988d637957"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,64 +186,6 @@ template&lt;typename OutputIt &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td> -&gt; OutputIt </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a875b3aa825132a00db2db1b23321d7eb" name="a875b3aa825132a00db2db1b23321d7eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a875b3aa825132a00db2db1b23321d7eb">&#9670;&nbsp;</a></span>parse() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Char &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto detail::fallback_formatter&lt; T, Char, <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a>&lt; <a class="el" href="classdetail_1_1is__streamable.html">is_streamable</a>&lt; T, Char &gt;::<a class="el" href="classvalue.html">value</a> &gt; &gt;::parse </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classbasic__format__parse__context.html">basic_format_parse_context</a>&lt; Char &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ctx</em></td><td>)</td>
-          <td> -&gt; decltype(ctx.begin()) </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aae53efeeb0dc7f6ee710cb3078fc96cb" name="aae53efeeb0dc7f6ee710cb3078fc96cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae53efeeb0dc7f6ee710cb3078fc96cb">&#9670;&nbsp;</a></span>parse() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Char &gt; </div>
-<div class="memtemplate">
-template&lt;typename ParseCtx , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_same&lt; ParseCtx, <a class="el" href="classbasic__printf__parse__context.html">basic_printf_parse_context</a>&lt; Char &gt; &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto detail::fallback_formatter&lt; T, Char, <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a>&lt; <a class="el" href="classdetail_1_1is__streamable.html">is_streamable</a>&lt; T, Char &gt;::<a class="el" href="classvalue.html">value</a> &gt; &gt;::parse </td>
-          <td>(</td>
-          <td class="paramtype">ParseCtx &amp;&#160;</td>
-          <td class="paramname"><em>ctx</em></td><td>)</td>
-          <td> -&gt; decltype(ctx.begin()) </td>
         </tr>
       </table>
   </td>

@@ -108,6 +108,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a48136c185f01d0d7f30a2bb20934d959"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamic__format__arg__store.html#a48136c185f01d0d7f30a2bb20934d959">dynamic_format_arg_store</a> ()=default</td></tr>
+<tr class="separator:a48136c185f01d0d7f30a2bb20934d959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a710e994685e69fd1cd4f56d29efc0d95"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a710e994685e69fd1cd4f56d29efc0d95"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdynamic__format__arg__store.html#a710e994685e69fd1cd4f56d29efc0d95">push_back</a> (const T &amp;<a class="el" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>)</td></tr>
 <tr class="separator:a710e994685e69fd1cd4f56d29efc0d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +219,34 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a48136c185f01d0d7f30a2bb20934d959" name="a48136c185f01d0d7f30a2bb20934d959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48136c185f01d0d7f30a2bb20934d959">&#9670;&nbsp;</a></span>dynamic_format_arg_store()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classdynamic__format__arg__store.html">dynamic_format_arg_store</a>&lt; Context &gt;::<a class="el" href="classdynamic__format__arg__store.html">dynamic_format_arg_store</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a94763fc905f02222d575f7c03161c212" name="a94763fc905f02222d575f7c03161c212"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94763fc905f02222d575f7c03161c212">&#9670;&nbsp;</a></span>clear()</h2>
@@ -258,7 +288,7 @@ template&lt;typename Context &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; Context &gt; * <a class="el" href="classdynamic__format__arg__store.html">dynamic_format_arg_store</a>&lt; Context &gt;::<a class="el" href="structdata.html">data</a> </td>
+          <td class="memname">const <a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; Context &gt; * <a class="el" href="classdynamic__format__arg__store.html">dynamic_format_arg_store</a>&lt; Context &gt;::data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -431,8 +461,8 @@ template&lt;typename T &gt; </div>
 <div class="line">  store.push_back(<span class="stringliteral">&quot;abc&quot;</span>);</div>
 <div class="line">  store.push_back(1.5f);</div>
 <div class="line">  std::string <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = <a class="code hl_function" href="color_8h.html#ac5d92b90676c3ce2a5a4d452b6832c3c">fmt::vformat</a>(<span class="stringliteral">&quot;{} and {} and {}&quot;</span>, store);</div>
-<div class="ttc" id="acolor_8h_html_ac5d92b90676c3ce2a5a4d452b6832c3c"><div class="ttname"><a href="color_8h.html#ac5d92b90676c3ce2a5a4d452b6832c3c">vformat</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; vformat(const text_style &amp;ts, const S &amp;format_str, basic_format_args&lt; buffer_context&lt; type_identity_t&lt; Char &gt; &gt; &gt; args)</div><div class="ttdef"><b>Definition:</b> color.h:562</div></div>
-<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:622</div></div>
+<div class="ttc" id="acolor_8h_html_ac5d92b90676c3ce2a5a4d452b6832c3c"><div class="ttname"><a href="color_8h.html#ac5d92b90676c3ce2a5a4d452b6832c3c">vformat</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; vformat(const text_style &amp;ts, const S &amp;format_str, basic_format_args&lt; buffer_context&lt; type_identity_t&lt; Char &gt; &gt; &gt; args)</div><div class="ttdef"><b>Definition:</b> color.h:573</div></div>
+<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:637</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -514,7 +544,7 @@ template&lt;typename Context &gt; </div>
 </div><div class="memdoc">
 <div class="fragment"><div class="line">Reserves <a class="code hl_enumvalue" href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d">space</a> to store at least *new_cap* arguments including</div>
 <div class="line">*new_cap_named* named arguments.</div>
-<div class="ttc" id="anamespacesign_html_a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d"><div class="ttname"><a href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d">sign::space</a></div><div class="ttdeci">@ space</div><div class="ttdef"><b>Definition:</b> core.h:1868</div></div>
+<div class="ttc" id="anamespacesign_html_a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d"><div class="ttname"><a href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d">sign::space</a></div><div class="ttdeci">@ space</div><div class="ttdef"><b>Definition:</b> core.h:2017</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

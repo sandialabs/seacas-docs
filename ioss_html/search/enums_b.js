@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['result_0',['result',['../namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae',1,'detail::digits']]],
-  ['roletype_1',['RoleType',['../classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75',1,'Ioss::Field']]],
-  ['round_5fdirection_2',['round_direction',['../namespacedetail.html#a85c22d2ea092a6b8340cec5779f4f2e7',1,'detail']]]
+  ['presentation_5ftype_0',['presentation_type',['../core_8h.html#adfa139c9a1902753b3696794759b2c48',1,'core.h']]]
 ];

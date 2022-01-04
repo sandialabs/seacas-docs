@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IOSS: detail::formatbuf&lt; Char &gt; Class Template Reference</title>
+<title>IOSS: detail::formatbuf&lt; Streambuf &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,60 +88,64 @@ $(document).ready(function(){initNavTree('classdetail_1_1formatbuf.html',''); in
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdetail_1_1formatbuf-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">detail::formatbuf&lt; Char &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">detail::formatbuf&lt; Streambuf &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="ostream_8h_source.html">ostream.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="format_8h_source.html">format.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for detail::formatbuf&lt; Char &gt;:</div>
+Inheritance diagram for detail::formatbuf&lt; Streambuf &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdetail_1_1formatbuf__inherit__graph.svg" width="156" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdetail_1_1formatbuf__inherit__graph.svg" width="135" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for detail::formatbuf&lt; Char &gt;:</div>
+Collaboration diagram for detail::formatbuf&lt; Streambuf &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdetail_1_1formatbuf__coll__graph.svg" width="156" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classdetail_1_1formatbuf__coll__graph.svg" width="135" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a79321ceecebcac9bf0bee7c0ad118098"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#a79321ceecebcac9bf0bee7c0ad118098">formatbuf</a> (<a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;buf)</td></tr>
-<tr class="separator:a79321ceecebcac9bf0bee7c0ad118098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ef3aba2f08e3f32504d16457a3ea25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#ac0ef3aba2f08e3f32504d16457a3ea25">formatbuf</a> (<a class="el" href="classbuffer.html">buffer</a>&lt; <a class="el" href="classdetail_1_1formatbuf.html#ae5db392bd4e56f958eb9f0b8a279ff6a">char_type</a> &gt; &amp;buf)</td></tr>
+<tr class="separator:ac0ef3aba2f08e3f32504d16457a3ea25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a8ad10a2c7e5a49801b61f11d7850897a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdetail_1_1formatbuf.html#ae407ff000c51a4b74eedc1efde3c5074">int_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#a8ad10a2c7e5a49801b61f11d7850897a">overflow</a> (<a class="el" href="classdetail_1_1formatbuf.html#ae407ff000c51a4b74eedc1efde3c5074">int_type</a> ch=traits_type::eof()) <a class="el" href="core_8h.html#a023c6c178e254d81d578b90921804b1c">FMT_OVERRIDE</a></td></tr>
-<tr class="separator:a8ad10a2c7e5a49801b61f11d7850897a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad762a3a37c451de55c396478e4e79331"><td class="memItemLeft" align="right" valign="top">std::streamsize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#ad762a3a37c451de55c396478e4e79331">xsputn</a> (const Char *s, std::streamsize <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>) <a class="el" href="core_8h.html#a023c6c178e254d81d578b90921804b1c">FMT_OVERRIDE</a></td></tr>
-<tr class="separator:ad762a3a37c451de55c396478e4e79331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6c7e6320e944974f955d6737140292"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#a6a6c7e6320e944974f955d6737140292">overflow</a> (<a class="el" href="classdetail_1_1formatbuf.html#a271d5192375891b2e5e697d74a0ac487">int_type</a> ch) -&gt; <a class="el" href="classdetail_1_1formatbuf.html#a271d5192375891b2e5e697d74a0ac487">int_type</a> override</td></tr>
+<tr class="separator:a6a6c7e6320e944974f955d6737140292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2edcc4af6bc21378e4d3974356f1a1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#a1a2edcc4af6bc21378e4d3974356f1a1">xsputn</a> (const <a class="el" href="classdetail_1_1formatbuf.html#ae5db392bd4e56f958eb9f0b8a279ff6a">char_type</a> *s, <a class="el" href="classdetail_1_1formatbuf.html#a7cd376d14f863db38b71ee8901d6572c">streamsize</a> <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>) -&gt; <a class="el" href="classdetail_1_1formatbuf.html#a7cd376d14f863db38b71ee8901d6572c">streamsize</a> override</td></tr>
+<tr class="separator:a1a2edcc4af6bc21378e4d3974356f1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:ae407ff000c51a4b74eedc1efde3c5074"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#ae407ff000c51a4b74eedc1efde3c5074">int_type</a> = typename std::basic_streambuf&lt; Char &gt;::<a class="el" href="classdetail_1_1formatbuf.html#ae407ff000c51a4b74eedc1efde3c5074">int_type</a></td></tr>
-<tr class="separator:ae407ff000c51a4b74eedc1efde3c5074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69f16085d1aab165c39dbbf77856bf8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#ad69f16085d1aab165c39dbbf77856bf8">traits_type</a> = typename std::basic_streambuf&lt; Char &gt;::<a class="el" href="classdetail_1_1formatbuf.html#ad69f16085d1aab165c39dbbf77856bf8">traits_type</a></td></tr>
-<tr class="separator:ad69f16085d1aab165c39dbbf77856bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5db392bd4e56f958eb9f0b8a279ff6a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#ae5db392bd4e56f958eb9f0b8a279ff6a">char_type</a> = typename Streambuf::char_type</td></tr>
+<tr class="separator:ae5db392bd4e56f958eb9f0b8a279ff6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd376d14f863db38b71ee8901d6572c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#a7cd376d14f863db38b71ee8901d6572c">streamsize</a> = decltype(std::declval&lt; Streambuf &gt;().sputn(nullptr, 0))</td></tr>
+<tr class="separator:a7cd376d14f863db38b71ee8901d6572c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271d5192375891b2e5e697d74a0ac487"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#a271d5192375891b2e5e697d74a0ac487">int_type</a> = typename Streambuf::int_type</td></tr>
+<tr class="separator:a271d5192375891b2e5e697d74a0ac487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd12e7b5b26416eceb2888840c9897d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#a0dd12e7b5b26416eceb2888840c9897d">traits_type</a> = typename Streambuf::traits_type</td></tr>
+<tr class="separator:a0dd12e7b5b26416eceb2888840c9897d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9b77b8596355b35f7f503d657d786977"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#a9b77b8596355b35f7f503d657d786977">buffer_</a></td></tr>
-<tr class="separator:a9b77b8596355b35f7f503d657d786977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409d25f420bcf114c25ef44f12a2c094"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbuffer.html">buffer</a>&lt; <a class="el" href="classdetail_1_1formatbuf.html#ae5db392bd4e56f958eb9f0b8a279ff6a">char_type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html#a409d25f420bcf114c25ef44f12a2c094">buffer_</a></td></tr>
+<tr class="separator:a409d25f420bcf114c25ef44f12a2c094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ae407ff000c51a4b74eedc1efde3c5074" name="ae407ff000c51a4b74eedc1efde3c5074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae407ff000c51a4b74eedc1efde3c5074">&#9670;&nbsp;</a></span>int_type</h2>
+<a id="ae5db392bd4e56f958eb9f0b8a279ff6a" name="ae5db392bd4e56f958eb9f0b8a279ff6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5db392bd4e56f958eb9f0b8a279ff6a">&#9670;&nbsp;</a></span>char_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Char &gt; </div>
+template&lt;typename Streambuf &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Char &gt;::<a class="el" href="classdetail_1_1formatbuf.html#ae407ff000c51a4b74eedc1efde3c5074">int_type</a> =  typename std::basic_streambuf&lt;Char&gt;::<a class="el" href="classdetail_1_1formatbuf.html#ae407ff000c51a4b74eedc1efde3c5074">int_type</a></td>
+          <td class="memname">using <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Streambuf &gt;::<a class="el" href="classdetail_1_1formatbuf.html#ae5db392bd4e56f958eb9f0b8a279ff6a">char_type</a> =  typename Streambuf::char_type</td>
         </tr>
       </table>
   </td>
@@ -153,19 +157,67 @@ template&lt;class Char &gt; </div>
 
 </div>
 </div>
-<a id="ad69f16085d1aab165c39dbbf77856bf8" name="ad69f16085d1aab165c39dbbf77856bf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad69f16085d1aab165c39dbbf77856bf8">&#9670;&nbsp;</a></span>traits_type</h2>
+<a id="a271d5192375891b2e5e697d74a0ac487" name="a271d5192375891b2e5e697d74a0ac487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271d5192375891b2e5e697d74a0ac487">&#9670;&nbsp;</a></span>int_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Char &gt; </div>
+template&lt;typename Streambuf &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Char &gt;::<a class="el" href="classdetail_1_1formatbuf.html#ad69f16085d1aab165c39dbbf77856bf8">traits_type</a> =  typename std::basic_streambuf&lt;Char&gt;::<a class="el" href="classdetail_1_1formatbuf.html#ad69f16085d1aab165c39dbbf77856bf8">traits_type</a></td>
+          <td class="memname">using <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Streambuf &gt;::<a class="el" href="classdetail_1_1formatbuf.html#a271d5192375891b2e5e697d74a0ac487">int_type</a> =  typename Streambuf::int_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7cd376d14f863db38b71ee8901d6572c" name="a7cd376d14f863db38b71ee8901d6572c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd376d14f863db38b71ee8901d6572c">&#9670;&nbsp;</a></span>streamsize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Streambuf &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Streambuf &gt;::<a class="el" href="classdetail_1_1formatbuf.html#a7cd376d14f863db38b71ee8901d6572c">streamsize</a> =  decltype(std::declval&lt;Streambuf&gt;().sputn(nullptr, 0))</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dd12e7b5b26416eceb2888840c9897d" name="a0dd12e7b5b26416eceb2888840c9897d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd12e7b5b26416eceb2888840c9897d">&#9670;&nbsp;</a></span>traits_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Streambuf &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Streambuf &gt;::<a class="el" href="classdetail_1_1formatbuf.html#a0dd12e7b5b26416eceb2888840c9897d">traits_type</a> =  typename Streambuf::traits_type</td>
         </tr>
       </table>
   </td>
@@ -178,28 +230,28 @@ template&lt;class Char &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a79321ceecebcac9bf0bee7c0ad118098" name="a79321ceecebcac9bf0bee7c0ad118098"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79321ceecebcac9bf0bee7c0ad118098">&#9670;&nbsp;</a></span>formatbuf()</h2>
+<a id="ac0ef3aba2f08e3f32504d16457a3ea25" name="ac0ef3aba2f08e3f32504d16457a3ea25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ef3aba2f08e3f32504d16457a3ea25">&#9670;&nbsp;</a></span>formatbuf()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Char &gt; </div>
+template&lt;typename Streambuf &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Char &gt;::<a class="el" href="classdetail_1_1formatbuf.html">formatbuf</a> </td>
+          <td class="memname"><a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Streambuf &gt;::<a class="el" href="classdetail_1_1formatbuf.html">formatbuf</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classbuffer.html">buffer</a>&lt; <a class="el" href="classdetail_1_1formatbuf.html#ae5db392bd4e56f958eb9f0b8a279ff6a">char_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -207,66 +259,66 @@ template&lt;class Char &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8ad10a2c7e5a49801b61f11d7850897a" name="a8ad10a2c7e5a49801b61f11d7850897a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ad10a2c7e5a49801b61f11d7850897a">&#9670;&nbsp;</a></span>overflow()</h2>
+<a id="a6a6c7e6320e944974f955d6737140292" name="a6a6c7e6320e944974f955d6737140292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6c7e6320e944974f955d6737140292">&#9670;&nbsp;</a></span>overflow()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Char &gt; </div>
+template&lt;typename Streambuf &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdetail_1_1formatbuf.html#ae407ff000c51a4b74eedc1efde3c5074">int_type</a> <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Char &gt;::overflow </td>
+          <td class="memname">auto <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Streambuf &gt;::overflow </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdetail_1_1formatbuf.html#ae407ff000c51a4b74eedc1efde3c5074">int_type</a>&#160;</td>
-          <td class="paramname"><em>ch</em> = <code>traits_type::eof()</code></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classdetail_1_1formatbuf.html#a271d5192375891b2e5e697d74a0ac487">int_type</a>&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="classdetail_1_1formatbuf.html#a271d5192375891b2e5e697d74a0ac487">int_type</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad762a3a37c451de55c396478e4e79331" name="ad762a3a37c451de55c396478e4e79331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad762a3a37c451de55c396478e4e79331">&#9670;&nbsp;</a></span>xsputn()</h2>
+<a id="a1a2edcc4af6bc21378e4d3974356f1a1" name="a1a2edcc4af6bc21378e4d3974356f1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2edcc4af6bc21378e4d3974356f1a1">&#9670;&nbsp;</a></span>xsputn()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Char &gt; </div>
+template&lt;typename Streambuf &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::streamsize <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Char &gt;::xsputn </td>
+          <td class="memname">auto <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Streambuf &gt;::xsputn </td>
           <td>(</td>
-          <td class="paramtype">const Char *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdetail_1_1formatbuf.html#ae5db392bd4e56f958eb9f0b8a279ff6a">char_type</a> *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::streamsize&#160;</td>
+          <td class="paramtype"><a class="el" href="classdetail_1_1formatbuf.html#a7cd376d14f863db38b71ee8901d6572c">streamsize</a>&#160;</td>
           <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="el" href="classdetail_1_1formatbuf.html#a7cd376d14f863db38b71ee8901d6572c">streamsize</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -274,19 +326,19 @@ template&lt;class Char &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9b77b8596355b35f7f503d657d786977" name="a9b77b8596355b35f7f503d657d786977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b77b8596355b35f7f503d657d786977">&#9670;&nbsp;</a></span>buffer_</h2>
+<a id="a409d25f420bcf114c25ef44f12a2c094" name="a409d25f420bcf114c25ef44f12a2c094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409d25f420bcf114c25ef44f12a2c094">&#9670;&nbsp;</a></span>buffer_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Char &gt; </div>
+template&lt;typename Streambuf &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbuffer.html">buffer</a>&lt;Char&gt;&amp; <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Char &gt;::buffer_</td>
+          <td class="memname"><a class="el" href="classbuffer.html">buffer</a>&lt;<a class="el" href="classdetail_1_1formatbuf.html#ae5db392bd4e56f958eb9f0b8a279ff6a">char_type</a>&gt;&amp; <a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf</a>&lt; Streambuf &gt;::buffer_</td>
         </tr>
       </table>
   </td>
@@ -299,7 +351,7 @@ template&lt;class Char &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/private_copy_fmt/fmt/<a class="el" href="ostream_8h_source.html">ostream.h</a></li>
+<li>src/private_copy_fmt/fmt/<a class="el" href="format_8h_source.html">format.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

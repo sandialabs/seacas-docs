@@ -3,6 +3,7 @@ var classdynamic__format__arg__store =
     [ "need_copy", "structdynamic__format__arg__store_1_1need__copy.html", "structdynamic__format__arg__store_1_1need__copy" ],
     [ "char_type", "classdynamic__format__arg__store.html#a2997fb5c2d4ac7205672e7afe550f9c1", null ],
     [ "stored_type", "classdynamic__format__arg__store.html#a5f96b19d349860ab76908fbce9680d71", null ],
+    [ "dynamic_format_arg_store", "classdynamic__format__arg__store.html#a48136c185f01d0d7f30a2bb20934d959", null ],
     [ "clear", "classdynamic__format__arg__store.html#a94763fc905f02222d575f7c03161c212", null ],
     [ "data", "classdynamic__format__arg__store.html#a89c857698fe40e877e0c3a3c1bdb1921", null ],
     [ "emplace_arg", "classdynamic__format__arg__store.html#a013581c49dc10f6184fcc7de015957fc", null ],

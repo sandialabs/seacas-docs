@@ -160,7 +160,7 @@ Functions</h2></td></tr>
 <div class="line">    if (!(expr)) {                                                                                 \</div>
 <div class="line">      std::ostringstream internal_throw_require_oss;                                               \</div>
 <div class="line">      internal_throw_require_oss &lt;&lt; message;                                                       \</div>
-<div class="line">      IOSS_ERROR(internal_throw_require_oss);                                                      \</div>
+<div class="line">      throw std::logic_error(internal_throw_require_oss.str());                                    \</div>
 <div class="line">    }                                                                                              \</div>
 <div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
 </div><!-- fragment -->

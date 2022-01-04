@@ -10,7 +10,6 @@ var dir_f1734a4f4dc0e937b5696463b000bfa0 =
     [ "locale.h", "locale_8h.html", null ],
     [ "os.h", "os_8h.html", "os_8h" ],
     [ "ostream.h", "ostream_8h.html", "ostream_8h" ],
-    [ "posix.h", "posix_8h.html", null ],
     [ "printf.h", "printf_8h.html", "printf_8h" ],
     [ "ranges.h", "ranges_8h.html", "ranges_8h" ],
     [ "xchar.h", "xchar_8h.html", "xchar_8h" ]

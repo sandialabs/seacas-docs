@@ -9,7 +9,7 @@ var classspecs__setter =
     [ "on_localized", "classspecs__setter.html#aab7f1416f0d9e8f6ce1b8ffa2729ca56", null ],
     [ "on_precision", "classspecs__setter.html#a457de63c41845968a727e66ca8a74a70", null ],
     [ "on_sign", "classspecs__setter.html#a0ca08767bae442692ea261dda1f629a3", null ],
-    [ "on_type", "classspecs__setter.html#ad4fa3019b1235f5dd59830d9e69b728b", null ],
+    [ "on_type", "classspecs__setter.html#af6055c383ccd6d3ade50e6a34773d11f", null ],
     [ "on_width", "classspecs__setter.html#ab284bce570afd49505bea53a58f240f2", null ],
     [ "on_zero", "classspecs__setter.html#a87de21f7bb1b0f7f754ce9a1863ba453", null ],
     [ "specs_", "classspecs__setter.html#a3eaab517ce435bcf22b3beccd02fd820", null ]

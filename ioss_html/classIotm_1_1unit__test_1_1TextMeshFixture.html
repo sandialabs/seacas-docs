@@ -115,12 +115,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:aed284544f906d18e673169e857f06ff5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> = int64_t</td></tr>
-<tr class="separator:aed284544f906d18e673169e857f06ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d796af6c0f1a8665d2a5331358d8749"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> = std::vector&lt; <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> &gt;</td></tr>
-<tr class="separator:a1d796af6c0f1a8665d2a5331358d8749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610a8cdd3a0ab3e9787ca6a68ca28d13"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a610a8cdd3a0ab3e9787ca6a68ca28d13">EntityIdSet</a> = std::set&lt; <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> &gt;</td></tr>
-<tr class="separator:a610a8cdd3a0ab3e9787ca6a68ca28d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c4de13d75cd070deffb7bea0257a605"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a2c4de13d75cd070deffb7bea0257a605">PartNameId</a> = std::pair&lt; std::string, unsigned &gt;</td></tr>
 <tr class="separator:a2c4de13d75cd070deffb7bea0257a605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -148,19 +142,19 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:aed6a04b09cd97e13df4fb3a89639a5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6170d8cfdb7ae9697f52cb7433f4b9e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a6170d8cfdb7ae9697f52cb7433f4b9e1">get_mesh_desc</a> (const std::string &amp;textMeshDesc, const std::vector&lt; double &gt; &amp;coordVec, unsigned dimension)</td></tr>
 <tr class="separator:a6170d8cfdb7ae9697f52cb7433f4b9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b7c62d0758bb52aab923b41966fa1cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a4b7c62d0758bb52aab923b41966fa1cf">verify_shared_nodes</a> (const <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> &amp;nodeIds, int sharingProc)</td></tr>
+<tr class="memitem:a4b7c62d0758bb52aab923b41966fa1cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a4b7c62d0758bb52aab923b41966fa1cf">verify_shared_nodes</a> (const <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> &amp;nodeIds, int sharingProc)</td></tr>
 <tr class="separator:a4b7c62d0758bb52aab923b41966fa1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b597ad6afc4f11a69bc7611d2fd71af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a5b597ad6afc4f11a69bc7611d2fd71af">verify_num_elements</a> (size_t goldCount)</td></tr>
 <tr class="separator:a5b597ad6afc4f11a69bc7611d2fd71af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a958ae76faf9e97cc21d59c5249a30cd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a958ae76faf9e97cc21d59c5249a30cd9">verify_single_element</a> (<a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> elemId, const std::string &amp;textMeshTopologyName, const <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> &amp;nodeIds)</td></tr>
+<tr class="memitem:a958ae76faf9e97cc21d59c5249a30cd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a958ae76faf9e97cc21d59c5249a30cd9">verify_single_element</a> (<a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> elemId, const std::string &amp;textMeshTopologyName, const <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> &amp;nodeIds)</td></tr>
 <tr class="separator:a958ae76faf9e97cc21d59c5249a30cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8cf65d1bbb1360a5682420a9f1c70ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#af8cf65d1bbb1360a5682420a9f1c70ed">verify_part_membership</a> (const std::vector&lt; <a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1PartInfo.html">PartInfo</a> &gt; golds)</td></tr>
 <tr class="separator:af8cf65d1bbb1360a5682420a9f1c70ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adee5013d9739f9873d8259e562eb05ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#adee5013d9739f9873d8259e562eb05ae">verify_part_ids</a> (const std::vector&lt; <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a2c4de13d75cd070deffb7bea0257a605">PartNameId</a> &gt; &amp;golds)</td></tr>
 <tr class="separator:adee5013d9739f9873d8259e562eb05ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc4e1275a370d27cbed96f851db6e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#afbc4e1275a370d27cbed96f851db6e99">verify_nodes_on_element</a> (const <a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a> &amp;info, const <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> &amp;goldNodeIds)</td></tr>
+<tr class="memitem:afbc4e1275a370d27cbed96f851db6e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#afbc4e1275a370d27cbed96f851db6e99">verify_nodes_on_element</a> (const <a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a> &amp;info, const <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> &amp;goldNodeIds)</td></tr>
 <tr class="separator:afbc4e1275a370d27cbed96f851db6e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac663cd91650e771553fa9ee96b76c97d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#ac663cd91650e771553fa9ee96b76c97d">verify_coordinates</a> (const <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> &amp;goldNodeIds, const std::vector&lt; double &gt; &amp;goldCoordinates)</td></tr>
+<tr class="memitem:ac663cd91650e771553fa9ee96b76c97d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#ac663cd91650e771553fa9ee96b76c97d">verify_coordinates</a> (const <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> &amp;goldNodeIds, const std::vector&lt; double &gt; &amp;goldCoordinates)</td></tr>
 <tr class="separator:ac663cd91650e771553fa9ee96b76c97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45c13fab40a957613388af160638ab0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aa45c13fab40a957613388af160638ab0">setup_text_mesh</a> (const std::string &amp;textMeshDesc)</td></tr>
 <tr class="separator:aa45c13fab40a957613388af160638ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,17 +167,17 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac3fa346447e4b6b7ad59816e5c850223"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#ac3fa346447e4b6b7ad59816e5c850223">get_node_sharing_count</a> () const</td></tr>
 <tr class="separator:ac3fa346447e4b6b7ad59816e5c850223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a697a8183191ba65771d0d20aa452850c"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:a697a8183191ba65771d0d20aa452850c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a697a8183191ba65771d0d20aa452850c">get_element_ids_from_block_impl</a> (const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *block) const</td></tr>
+<tr class="memitem:a697a8183191ba65771d0d20aa452850c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a697a8183191ba65771d0d20aa452850c">get_element_ids_from_block_impl</a> (const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *block) const</td></tr>
 <tr class="separator:a697a8183191ba65771d0d20aa452850c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad700c3c5927c04371704554c05686398"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#ad700c3c5927c04371704554c05686398">get_element_ids_from_block</a> (const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *block) const</td></tr>
+<tr class="memitem:ad700c3c5927c04371704554c05686398"><td class="memItemLeft" align="right" valign="top"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#ad700c3c5927c04371704554c05686398">get_element_ids_from_block</a> (const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *block) const</td></tr>
 <tr class="separator:ad700c3c5927c04371704554c05686398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae5a23fbf03ca4a057fac6e03502eb1"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:a1ae5a23fbf03ca4a057fac6e03502eb1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1ae5a23fbf03ca4a057fac6e03502eb1">get_element_info_from_block_impl</a> (<a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> elemId, const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *block) const</td></tr>
+<tr class="memitem:a1ae5a23fbf03ca4a057fac6e03502eb1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1ae5a23fbf03ca4a057fac6e03502eb1">get_element_info_from_block_impl</a> (<a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> elemId, const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *block) const</td></tr>
 <tr class="separator:a1ae5a23fbf03ca4a057fac6e03502eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac384df63dede87de8ff5b6e1820beab"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:aac384df63dede87de8ff5b6e1820beab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aac384df63dede87de8ff5b6e1820beab">get_element_info_impl</a> (<a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> elemId) const</td></tr>
+<tr class="memitem:aac384df63dede87de8ff5b6e1820beab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aac384df63dede87de8ff5b6e1820beab">get_element_info_impl</a> (<a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> elemId) const</td></tr>
 <tr class="separator:aac384df63dede87de8ff5b6e1820beab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe3cdf781810077f0368e813119a20e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a8fe3cdf781810077f0368e813119a20e">get_element_info</a> (<a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> elemId) const</td></tr>
+<tr class="memitem:a8fe3cdf781810077f0368e813119a20e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a8fe3cdf781810077f0368e813119a20e">get_element_info</a> (<a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> elemId) const</td></tr>
 <tr class="separator:a8fe3cdf781810077f0368e813119a20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a539c026055541923fa6ff6bf3fd94d29"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:a539c026055541923fa6ff6bf3fd94d29"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a539c026055541923fa6ff6bf3fd94d29">get_element_count_impl</a> () const</td></tr>
@@ -191,9 +185,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5a4b9577e32fc90b0f2b62b38c6296f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a5a4b9577e32fc90b0f2b62b38c6296f8">get_element_count</a> () const</td></tr>
 <tr class="separator:a5a4b9577e32fc90b0f2b62b38c6296f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58a0426cb89e55b261725d98e07f655e"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:a58a0426cb89e55b261725d98e07f655e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a58a0426cb89e55b261725d98e07f655e">node_is_shared_with_proc_impl</a> (<a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> nodeId, int sharingProc) const</td></tr>
+<tr class="memitem:a58a0426cb89e55b261725d98e07f655e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a58a0426cb89e55b261725d98e07f655e">node_is_shared_with_proc_impl</a> (<a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> nodeId, int sharingProc) const</td></tr>
 <tr class="separator:a58a0426cb89e55b261725d98e07f655e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1092a7b27dae485a6d336a06b62c43a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#ad1092a7b27dae485a6d336a06b62c43a">node_is_shared_with_proc</a> (<a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> nodeId, int sharingProc) const</td></tr>
+<tr class="memitem:ad1092a7b27dae485a6d336a06b62c43a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#ad1092a7b27dae485a6d336a06b62c43a">node_is_shared_with_proc</a> (<a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> nodeId, int sharingProc) const</td></tr>
 <tr class="separator:ad1092a7b27dae485a6d336a06b62c43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fb6d6cf3b9d856a7d1683ee80e3cbe6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a6fb6d6cf3b9d856a7d1683ee80e3cbe6">is_valid_element</a> (const <a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a> &amp;info) const</td></tr>
 <tr class="separator:a6fb6d6cf3b9d856a7d1683ee80e3cbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,12 +195,14 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a903f3ee8d90280808373ec66f1486058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68d89896cc28529d3b69131fa2620dee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a68d89896cc28529d3b69131fa2620dee">verify_block</a> (<a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *block)</td></tr>
 <tr class="separator:a68d89896cc28529d3b69131fa2620dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0880b333fc4545d9f6539680fabba58d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a0880b333fc4545d9f6539680fabba58d">verify_elements_on_block</a> (const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *block, const std::set&lt; <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> &gt; &amp;goldIds)</td></tr>
+<tr class="memitem:a0880b333fc4545d9f6539680fabba58d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a0880b333fc4545d9f6539680fabba58d">verify_elements_on_block</a> (const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *block, const std::set&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> &gt; &amp;goldIds)</td></tr>
 <tr class="separator:a0880b333fc4545d9f6539680fabba58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a884b0d52c67f8c782dd82e0d772b4c16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a884b0d52c67f8c782dd82e0d772b4c16">create_ioss_region</a> ()</td></tr>
 <tr class="separator:a884b0d52c67f8c782dd82e0d772b4c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c927fd5ed42c7ac154051fc679b643b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a6c927fd5ed42c7ac154051fc679b643b">create_database</a> (const std::string &amp;fileName, const std::string &amp;meshType)</td></tr>
 <tr class="separator:a6c927fd5ed42c7ac154051fc679b643b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666c0cc965c699d7a7f21aaccbb4cccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a666c0cc965c699d7a7f21aaccbb4cccf">filename_substitution</a> (std::string &amp;filename)</td></tr>
+<tr class="separator:a666c0cc965c699d7a7f21aaccbb4cccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f29b853fc74745a31030b294ec1c54e"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a3f29b853fc74745a31030b294ec1c54e">get_database_type_and_filename</a> (const std::string &amp;meshDesc)</td></tr>
 <tr class="separator:a3f29b853fc74745a31030b294ec1c54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -226,72 +222,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a72d93d8358b90c89884762ab40c425e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aed284544f906d18e673169e857f06ff5" name="aed284544f906d18e673169e857f06ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed284544f906d18e673169e857f06ff5">&#9670;&nbsp;</a></span>EntityId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">Iotm::unit_test::TextMeshFixture::EntityId</a> =  int64_t</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a610a8cdd3a0ab3e9787ca6a68ca28d13" name="a610a8cdd3a0ab3e9787ca6a68ca28d13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a610a8cdd3a0ab3e9787ca6a68ca28d13">&#9670;&nbsp;</a></span>EntityIdSet</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a610a8cdd3a0ab3e9787ca6a68ca28d13">Iotm::unit_test::TextMeshFixture::EntityIdSet</a> =  std::set&lt;<a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a>&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1d796af6c0f1a8665d2a5331358d8749" name="a1d796af6c0f1a8665d2a5331358d8749"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d796af6c0f1a8665d2a5331358d8749">&#9670;&nbsp;</a></span>EntityIdVector</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">Iotm::unit_test::TextMeshFixture::EntityIdVector</a> =  std::vector&lt;<a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a>&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2c4de13d75cd070deffb7bea0257a605" name="a2c4de13d75cd070deffb7bea0257a605"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c4de13d75cd070deffb7bea0257a605">&#9670;&nbsp;</a></span>PartNameId</h2>
 
@@ -442,6 +372,32 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a666c0cc965c699d7a7f21aaccbb4cccf" name="a666c0cc965c699d7a7f21aaccbb4cccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a666c0cc965c699d7a7f21aaccbb4cccf">&#9670;&nbsp;</a></span>filename_substitution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Iotm::unit_test::TextMeshFixture::filename_substitution </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -618,7 +574,7 @@ template&lt;typename INT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> Iotm::unit_test::TextMeshFixture::get_element_ids_from_block </td>
+          <td class="memname"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> Iotm::unit_test::TextMeshFixture::get_element_ids_from_block </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *&#160;</td>
           <td class="paramname"><em>block</em></td><td>)</td>
@@ -646,7 +602,7 @@ template&lt;typename INT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> Iotm::unit_test::TextMeshFixture::get_element_ids_from_block_impl </td>
+          <td class="memname"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> Iotm::unit_test::TextMeshFixture::get_element_ids_from_block_impl </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *&#160;</td>
           <td class="paramname"><em>block</em></td><td>)</td>
@@ -674,7 +630,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a> Iotm::unit_test::TextMeshFixture::get_element_info </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>&#160;</td>
           <td class="paramname"><em>elemId</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -702,7 +658,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a> Iotm::unit_test::TextMeshFixture::get_element_info_from_block_impl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>&#160;</td>
           <td class="paramname"><em>elemId</em>, </td>
         </tr>
         <tr>
@@ -740,7 +696,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html">ElementInfo</a> Iotm::unit_test::TextMeshFixture::get_element_info_impl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>&#160;</td>
           <td class="paramname"><em>elemId</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1033,7 +989,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="memname">bool Iotm::unit_test::TextMeshFixture::node_is_shared_with_proc </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>&#160;</td>
           <td class="paramname"><em>nodeId</em>, </td>
         </tr>
         <tr>
@@ -1071,7 +1027,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="memname">bool Iotm::unit_test::TextMeshFixture::node_is_shared_with_proc_impl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>&#160;</td>
           <td class="paramname"><em>nodeId</em>, </td>
         </tr>
         <tr>
@@ -1221,7 +1177,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="memname">void Iotm::unit_test::TextMeshFixture::verify_coordinates </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> &amp;&#160;</td>
           <td class="paramname"><em>goldNodeIds</em>, </td>
         </tr>
         <tr>
@@ -1263,7 +1219,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::set&lt; <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::set&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>goldIds</em>&#160;</td>
         </tr>
         <tr>
@@ -1299,7 +1255,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> &amp;&#160;</td>
           <td class="paramname"><em>goldNodeIds</em>&#160;</td>
         </tr>
         <tr>
@@ -1407,7 +1363,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="memname">void Iotm::unit_test::TextMeshFixture::verify_shared_nodes </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> &amp;&#160;</td>
           <td class="paramname"><em>nodeIds</em>, </td>
         </tr>
         <tr>
@@ -1443,7 +1399,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="memname">void Iotm::unit_test::TextMeshFixture::verify_single_element </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#aed284544f906d18e673169e857f06ff5">EntityId</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>&#160;</td>
           <td class="paramname"><em>elemId</em>, </td>
         </tr>
         <tr>
@@ -1455,7 +1411,7 @@ template&lt;typename INT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">EntityIdVector</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> &amp;&#160;</td>
           <td class="paramname"><em>nodeIds</em>&#160;</td>
         </tr>
         <tr>

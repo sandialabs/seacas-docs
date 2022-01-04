@@ -86,8 +86,7 @@ $(document).ready(function(){initNavTree('UnitTestIotmTextMeshFixture_8h.html','
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">UnitTestIotmTextMeshFixture.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -162,15 +161,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a19ab2dd7c3c9f2670d9b53ce398a29d6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#a19ab2dd7c3c9f2670d9b53ce398a29d6">TextMeshFixture</a> = <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html">Iotm::unit_test::TextMeshFixture</a></td></tr>
-<tr class="separator:a19ab2dd7c3c9f2670d9b53ce398a29d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab332273b67e1b4c07f341676499f9048"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ab332273b67e1b4c07f341676499f9048">EntityIdVector</a> = <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">TextMeshFixture::EntityIdVector</a></td></tr>
-<tr class="separator:ab332273b67e1b4c07f341676499f9048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a007c0862c3678a3a30004884d6b58a70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1unit__test.html#a007c0862c3678a3a30004884d6b58a70">Iotm::unit_test::filename_substitution</a> (std::string &amp;filename)</td></tr>
-<tr class="separator:a007c0862c3678a3a30004884d6b58a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe16bcc07227f33b534540c0be99a7c3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> = int64_t</td></tr>
+<tr class="separator:afe16bcc07227f33b534540c0be99a7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00f14323ae464c1786e55f70cb8cc68"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> = std::vector&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> &gt;</td></tr>
+<tr class="separator:ad00f14323ae464c1786e55f70cb8cc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860a75f49459f843771256a90dd2005e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UnitTestIotmTextMeshFixture_8h.html#a860a75f49459f843771256a90dd2005e">EntityIdSet</a> = std::set&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> &gt;</td></tr>
+<tr class="separator:a860a75f49459f843771256a90dd2005e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a89ff4f6d9b07d02bb1bc91164a9ff51d" name="a89ff4f6d9b07d02bb1bc91164a9ff51d"></a>
@@ -202,35 +198,49 @@ Functions</h2></td></tr>
 <div class="line">    if ( !(expr) ) {                                                         \</div>
 <div class="line">      std::ostringstream internal_throw_require_oss;                         \</div>
 <div class="line">      internal_throw_require_oss &lt;&lt; message;                                 \</div>
-<div class="line">      IOSS_ERROR(internal_throw_require_oss );                               \</div>
+<div class="line">      throw std::logic_error(internal_throw_require_oss.str());              \</div>
 <div class="line">    }                                                                        \</div>
 <div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ab332273b67e1b4c07f341676499f9048" name="ab332273b67e1b4c07f341676499f9048"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab332273b67e1b4c07f341676499f9048">&#9670;&nbsp;</a></span>EntityIdVector</h2>
+<a id="afe16bcc07227f33b534540c0be99a7c3" name="afe16bcc07227f33b534540c0be99a7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe16bcc07227f33b534540c0be99a7c3">&#9670;&nbsp;</a></span>EntityId</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ab332273b67e1b4c07f341676499f9048">EntityIdVector</a> =  <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html#a1d796af6c0f1a8665d2a5331358d8749">TextMeshFixture::EntityIdVector</a></td>
+          <td class="memname">using <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> =  int64_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a19ab2dd7c3c9f2670d9b53ce398a29d6" name="a19ab2dd7c3c9f2670d9b53ce398a29d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19ab2dd7c3c9f2670d9b53ce398a29d6">&#9670;&nbsp;</a></span>TextMeshFixture</h2>
+<a id="a860a75f49459f843771256a90dd2005e" name="a860a75f49459f843771256a90dd2005e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860a75f49459f843771256a90dd2005e">&#9670;&nbsp;</a></span>EntityIdSet</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#a19ab2dd7c3c9f2670d9b53ce398a29d6">TextMeshFixture</a> =  <a class="el" href="classIotm_1_1unit__test_1_1TextMeshFixture.html">Iotm::unit_test::TextMeshFixture</a></td>
+          <td class="memname">using <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#a860a75f49459f843771256a90dd2005e">EntityIdSet</a> =  std::set&lt;<a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad00f14323ae464c1786e55f70cb8cc68" name="ad00f14323ae464c1786e55f70cb8cc68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00f14323ae464c1786e55f70cb8cc68">&#9670;&nbsp;</a></span>EntityIdVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#ad00f14323ae464c1786e55f70cb8cc68">EntityIdVector</a> =  std::vector&lt;<a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

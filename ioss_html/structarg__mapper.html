@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('structarg__mapper.html',''); initResiz
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structarg__mapper-members.html">List of all members</a>  </div>
@@ -92,10 +93,17 @@ $(document).ready(function(){initNavTree('structarg__mapper.html',''); initResiz
 
 <p><code>#include &lt;<a class="el" href="core_8h_source.html">core.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper_1_1formattable.html">formattable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a23a1f95e29f8ac5f32ad5ef07be65798"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> = typename Context::char_type</td></tr>
 <tr class="separator:a23a1f95e29f8ac5f32ad5ef07be65798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4670a11832ce3e150502825666dc8dec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; std::is_same&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a>, char &gt;::<a class="el" href="classvalue.html">value</a>, const char *, <a class="el" href="structunformattable__pointer.html">unformattable_pointer</a> &gt;</td></tr>
+<tr class="separator:a4670a11832ce3e150502825666dc8dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -125,9 +133,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af5853d60163b4b86174e807d454c9a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a851c9bf2c9931f7fb2422e42281021bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd">map</a> (bool val) -&gt; bool</td></tr>
 <tr class="separator:a851c9bf2c9931f7fb2422e42281021bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6686082a318b1de16e4eb34824820bc"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__char.html">is_char</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:ac6686082a318b1de16e4eb34824820bc"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_same&lt; T, char &gt;::<a class="el" href="classvalue.html">value</a>|| std::is_same&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:ac6686082a318b1de16e4eb34824820bc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#ac6686082a318b1de16e4eb34824820bc">map</a> (T val) -&gt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a></td></tr>
 <tr class="separator:ac6686082a318b1de16e4eb34824820bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814451c2db4b8ff1dd0d63ec14730d26"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a>&lt;(std::is_same&lt; T, wchar_t &gt;::<a class="el" href="classvalue.html">value</a>||std::is_same&lt; T, char16_t &gt;::<a class="el" href="classvalue.html">value</a>||std::is_same&lt; T, char32_t &gt;::<a class="el" href="classvalue.html">value</a>) &amp;&amp;!std::is_same&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>, int &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a814451c2db4b8ff1dd0d63ec14730d26"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a814451c2db4b8ff1dd0d63ec14730d26">map</a> (T) -&gt; <a class="el" href="structunformattable__char.html">unformattable_char</a></td></tr>
+<tr class="separator:a814451c2db4b8ff1dd0d63ec14730d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5fd42160aa65adb46c50c3d04920c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a0e5fd42160aa65adb46c50c3d04920c8">map</a> (float val) -&gt; float</td></tr>
 <tr class="separator:a0e5fd42160aa65adb46c50c3d04920c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cddbdef92190f4b9aaedd7142504d32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a2cddbdef92190f4b9aaedd7142504d32">map</a> (double val) -&gt; double</td></tr>
@@ -138,41 +149,52 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a579bc4d236c988cb800ba15a32b56ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5ef81f5e3666d25aa64c49a92d736d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a3a5ef81f5e3666d25aa64c49a92d736d">map</a> (const <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> *val) -&gt; const <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> *</td></tr>
 <tr class="separator:a3a5ef81f5e3666d25aa64c49a92d736d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!std::is_pointer&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; std::is_same&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a>, <a class="el" href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">char_t</a>&lt; T &gt; &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e">map</a> (const T &amp;val) -&gt; <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;</td></tr>
 <tr class="separator:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c2b1edc6aca421724fe722ecbbd3b2"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!std::is_pointer&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !std::is_same&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a>, <a class="el" href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">char_t</a>&lt; T &gt; &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:ad1c2b1edc6aca421724fe722ecbbd3b2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#ad1c2b1edc6aca421724fe722ecbbd3b2">map</a> (const T &amp;) -&gt; <a class="el" href="structunformattable__char.html">unformattable_char</a></td></tr>
+<tr class="separator:ad1c2b1edc6aca421724fe722ecbbd3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_constructible&lt; <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;, T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; T, Context &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e">map</a> (const T &amp;val) -&gt; <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;</td></tr>
 <tr class="separator:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_constructible&lt; <a class="el" href="structstd__string__view.html">std_string_view</a>&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;, T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !std::is_constructible&lt; <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;, T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; T, Context &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e">map</a> (const T &amp;val) -&gt; <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;</td></tr>
 <tr class="separator:aa46c5ded7f53e8251d3adaa9e65ddf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ccc7b05fa1629a4259127bed5005786"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a8ccc7b05fa1629a4259127bed5005786">map</a> (const signed char *val) -&gt; const char *</td></tr>
-<tr class="separator:a8ccc7b05fa1629a4259127bed5005786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54e1eee07bb1e4b9a9ecd92c30a32007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a54e1eee07bb1e4b9a9ecd92c30a32007">map</a> (const unsigned char *val) -&gt; const char *</td></tr>
-<tr class="separator:a54e1eee07bb1e4b9a9ecd92c30a32007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe54bf41b1887f8ace899b32a1fc091"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#adbe54bf41b1887f8ace899b32a1fc091">map</a> (signed char *val) -&gt; const char *</td></tr>
-<tr class="separator:adbe54bf41b1887f8ace899b32a1fc091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3904a7f58226a7d8b1bd6dfa756eb94a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a3904a7f58226a7d8b1bd6dfa756eb94a">map</a> (unsigned char *val) -&gt; const char *</td></tr>
-<tr class="separator:a3904a7f58226a7d8b1bd6dfa756eb94a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f8b132c67e150ed8dc299f40181a2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a99f8b132c67e150ed8dc299f40181a2d">map</a> (const signed char *val) -&gt; <a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a></td></tr>
+<tr class="separator:a99f8b132c67e150ed8dc299f40181a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb230794204f7990ed8a643d8b6cfbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a7eb230794204f7990ed8a643d8b6cfbc">map</a> (const unsigned char *val) -&gt; <a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a></td></tr>
+<tr class="separator:a7eb230794204f7990ed8a643d8b6cfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29316e5df13406107c7930f00fa29a74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a29316e5df13406107c7930f00fa29a74">map</a> (signed char *val) -&gt; <a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a></td></tr>
+<tr class="separator:a29316e5df13406107c7930f00fa29a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed033c32e8b23a786618b8662aa2473"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a7ed033c32e8b23a786618b8662aa2473">map</a> (unsigned char *val) -&gt; <a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a></td></tr>
+<tr class="separator:a7ed033c32e8b23a786618b8662aa2473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d7f9750eddc29b3eb69fe8b07e1d16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#ab6d7f9750eddc29b3eb69fe8b07e1d16">map</a> (void *val) -&gt; const void *</td></tr>
 <tr class="separator:ab6d7f9750eddc29b3eb69fe8b07e1d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada04473d28d2026bd8a696df0c4db8a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#ada04473d28d2026bd8a696df0c4db8a2">map</a> (const void *val) -&gt; const void *</td></tr>
 <tr class="separator:ada04473d28d2026bd8a696df0c4db8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a556343b552b1370d18446ef1bdd887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a6a556343b552b1370d18446ef1bdd887">map</a> (std::nullptr_t val) -&gt; const void *</td></tr>
 <tr class="separator:a6a556343b552b1370d18446ef1bdd887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0bc2f9ab9a3ca07196813ee0758c318"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae0bc2f9ab9a3ca07196813ee0758c318"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#ae0bc2f9ab9a3ca07196813ee0758c318">map</a> (T) -&gt; <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a>&lt; std::is_pointer&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, int &gt;</td></tr>
-<tr class="separator:ae0bc2f9ab9a3ca07196813ee0758c318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56223048b032b1413aad11bf159e84e8"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
-<tr class="memitem:a56223048b032b1413aad11bf159e84e8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a56223048b032b1413aad11bf159e84e8">map</a> (const T(&amp;values)[N]) -&gt; const T(&amp;)[N]</td></tr>
-<tr class="separator:a56223048b032b1413aad11bf159e84e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ca23b1107e95c90038a32db2611dd6"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_enum&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; T, Context &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:a63512c946ba552a819e3d98345e1ffea"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_member_pointer&lt; T &gt;::<a class="el" href="classvalue.html">value</a>|| std::is_function&lt; typename std::remove_pointer&lt; T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> &gt;::<a class="el" href="classvalue.html">value</a>||(std::is_convertible&lt; const T &amp;, const void * &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !std::is_convertible&lt; const T &amp;, const <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> * &gt;::<a class="el" href="classvalue.html">value</a>)) &gt; </td></tr>
+<tr class="memitem:a63512c946ba552a819e3d98345e1ffea"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a63512c946ba552a819e3d98345e1ffea">map</a> (const T &amp;) -&gt; <a class="el" href="structunformattable__pointer.html">unformattable_pointer</a></td></tr>
+<tr class="separator:a63512c946ba552a819e3d98345e1ffea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f0e3fe09ce54e45f4e63d7a902bde08"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_same&lt; T, wchar_t &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:a1f0e3fe09ce54e45f4e63d7a902bde08"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a1f0e3fe09ce54e45f4e63d7a902bde08">map</a> (const T(&amp;values)[N]) -&gt; const T(&amp;)[N]</td></tr>
+<tr class="separator:a1f0e3fe09ce54e45f4e63d7a902bde08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ca23b1107e95c90038a32db2611dd6"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_enum&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;std::is_convertible&lt; T, int &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; T, Context &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:ab0ca23b1107e95c90038a32db2611dd6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#ab0ca23b1107e95c90038a32db2611dd6">map</a> (const T &amp;val) -&gt; decltype(std::declval&lt; <a class="el" href="structarg__mapper.html">arg_mapper</a> &gt;().map(static_cast&lt; typename std::underlying_type&lt; T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> &gt;(val)))</td></tr>
 <tr class="separator:ab0ca23b1107e95c90038a32db2611dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad51bdd11cbac696cf4a76e9f489938f6"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!<a class="el" href="structis__char.html">is_char</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;(<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; T, Context &gt;::<a class="el" href="classvalue.html">value</a>|| <a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>)) &gt; </td></tr>
-<tr class="memitem:ad51bdd11cbac696cf4a76e9f489938f6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#ad51bdd11cbac696cf4a76e9f489938f6">map</a> (const T &amp;val) -&gt; const T &amp;</td></tr>
-<tr class="separator:ad51bdd11cbac696cf4a76e9f489938f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14ab65add041093bc6f20890e96bff85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a14ab65add041093bc6f20890e96bff85">map</a> (<a class="el" href="core_8h.html#a57d5661a9537aa419c8ebc24667a96e9">detail::byte</a> val) -&gt; unsigned</td></tr>
+<tr class="separator:a14ab65add041093bc6f20890e96bff85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d915613eac10f891ee79c47bfa293d"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structarg__mapper_1_1formattable.html">formattable</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:a27d915613eac10f891ee79c47bfa293d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#a27d915613eac10f891ee79c47bfa293d">do_map</a> (T &amp;&amp;val) -&gt; T &amp;</td></tr>
+<tr class="separator:a27d915613eac10f891ee79c47bfa293d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc52f2be5ef7ec2dcd566aa0101dcbbe"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!<a class="el" href="structarg__mapper_1_1formattable.html">formattable</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:adc52f2be5ef7ec2dcd566aa0101dcbbe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#adc52f2be5ef7ec2dcd566aa0101dcbbe">do_map</a> (T &amp;&amp;) -&gt; <a class="el" href="structunformattable__const.html">unformattable_const</a></td></tr>
+<tr class="separator:adc52f2be5ef7ec2dcd566aa0101dcbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcdde144f8f751365322f26ce20f8616"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U  = remove_cvref_t&lt;T&gt;, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!<a class="el" href="structis__string.html">is_string</a>&lt; U &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!<a class="el" href="structis__char.html">is_char</a>&lt; U &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !std::is_array&lt; U &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;(<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; U, Context &gt;::<a class="el" href="classvalue.html">value</a>|| <a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; U, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>)) &gt; </td></tr>
+<tr class="memitem:abcdde144f8f751365322f26ce20f8616"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#abcdde144f8f751365322f26ce20f8616">map</a> (T &amp;&amp;val) -&gt; decltype(this-&gt;<a class="el" href="structarg__mapper.html#a27d915613eac10f891ee79c47bfa293d">do_map</a>(std::forward&lt; T &gt;(val)))</td></tr>
+<tr class="separator:abcdde144f8f751365322f26ce20f8616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af96190fb2e6bceab02e3d2d28aaef3c8"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__named__arg.html">is_named_arg</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:af96190fb2e6bceab02e3d2d28aaef3c8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structarg__mapper.html#af96190fb2e6bceab02e3d2d28aaef3c8">map</a> (const T &amp;<a class="el" href="structnamed__arg.html">named_arg</a>) -&gt; decltype(std::declval&lt; <a class="el" href="structarg__mapper.html">arg_mapper</a> &gt;().map(<a class="el" href="structnamed__arg.html#a3e4013a4ee9931edb1a1e496a3bcf2d0">named_arg.value</a>))</td></tr>
 <tr class="separator:af96190fb2e6bceab02e3d2d28aaef3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,9 +218,85 @@ template&lt;typename Context &gt; </div>
 
 </div>
 </div>
+<a id="a4670a11832ce3e150502825666dc8dec" name="a4670a11832ce3e150502825666dc8dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4670a11832ce3e150502825666dc8dec">&#9670;&nbsp;</a></span>cstring_result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::<a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;std::is_same&lt;<a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a>, char&gt;::<a class="el" href="classvalue.html">value</a>, const char*, <a class="el" href="structunformattable__pointer.html">unformattable_pointer</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="adc52f2be5ef7ec2dcd566aa0101dcbbe" name="adc52f2be5ef7ec2dcd566aa0101dcbbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc52f2be5ef7ec2dcd566aa0101dcbbe">&#9670;&nbsp;</a></span>do_map() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!<a class="el" href="structarg__mapper_1_1formattable.html">formattable</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::do_map </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; <a class="el" href="structunformattable__const.html">unformattable_const</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27d915613eac10f891ee79c47bfa293d" name="a27d915613eac10f891ee79c47bfa293d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d915613eac10f891ee79c47bfa293d">&#9670;&nbsp;</a></span>do_map() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structarg__mapper_1_1formattable.html">formattable</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::do_map </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td> -&gt; T&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2b124d792d2d61cbf983df726e7300ae" name="a2b124d792d2d61cbf983df726e7300ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b124d792d2d61cbf983df726e7300ae">&#9670;&nbsp;</a></span>map() <span class="overload">[1/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b124d792d2d61cbf983df726e7300ae">&#9670;&nbsp;</a></span>map() <span class="overload">[1/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +324,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a851c9bf2c9931f7fb2422e42281021bd" name="a851c9bf2c9931f7fb2422e42281021bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a851c9bf2c9931f7fb2422e42281021bd">&#9670;&nbsp;</a></span>map() <span class="overload">[2/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a851c9bf2c9931f7fb2422e42281021bd">&#9670;&nbsp;</a></span>map() <span class="overload">[2/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,7 +352,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a579bc4d236c988cb800ba15a32b56ff7" name="a579bc4d236c988cb800ba15a32b56ff7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a579bc4d236c988cb800ba15a32b56ff7">&#9670;&nbsp;</a></span>map() <span class="overload">[3/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a579bc4d236c988cb800ba15a32b56ff7">&#9670;&nbsp;</a></span>map() <span class="overload">[3/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +380,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a3a5ef81f5e3666d25aa64c49a92d736d" name="a3a5ef81f5e3666d25aa64c49a92d736d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a5ef81f5e3666d25aa64c49a92d736d">&#9670;&nbsp;</a></span>map() <span class="overload">[4/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a5ef81f5e3666d25aa64c49a92d736d">&#9670;&nbsp;</a></span>map() <span class="overload">[4/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,8 +407,8 @@ template&lt;typename Context &gt; </div>
 
 </div>
 </div>
-<a id="a8ccc7b05fa1629a4259127bed5005786" name="a8ccc7b05fa1629a4259127bed5005786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ccc7b05fa1629a4259127bed5005786">&#9670;&nbsp;</a></span>map() <span class="overload">[5/35]</span></h2>
+<a id="a99f8b132c67e150ed8dc299f40181a2d" name="a99f8b132c67e150ed8dc299f40181a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99f8b132c67e150ed8dc299f40181a2d">&#9670;&nbsp;</a></span>map() <span class="overload">[5/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +423,67 @@ template&lt;typename Context &gt; </div>
           <td>(</td>
           <td class="paramtype">const signed char *&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
-          <td> -&gt; const char* </td>
+          <td> -&gt; <a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1c2b1edc6aca421724fe722ecbbd3b2" name="ad1c2b1edc6aca421724fe722ecbbd3b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c2b1edc6aca421724fe722ecbbd3b2">&#9670;&nbsp;</a></span>map() <span class="overload">[6/38]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!std::is_pointer&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !std::is_same&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a>, <a class="el" href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">char_t</a>&lt; T &gt; &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::map </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; <a class="el" href="structunformattable__char.html">unformattable_char</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63512c946ba552a819e3d98345e1ffea" name="a63512c946ba552a819e3d98345e1ffea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63512c946ba552a819e3d98345e1ffea">&#9670;&nbsp;</a></span>map() <span class="overload">[7/38]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_member_pointer&lt; T &gt;::<a class="el" href="classvalue.html">value</a>|| std::is_function&lt; typename std::remove_pointer&lt; T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> &gt;::<a class="el" href="classvalue.html">value</a>||(std::is_convertible&lt; const T &amp;, const void * &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !std::is_convertible&lt; const T &amp;, const <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> * &gt;::<a class="el" href="classvalue.html">value</a>)) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::map </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; <a class="el" href="structunformattable__pointer.html">unformattable_pointer</a> </td>
         </tr>
       </table>
   </td>
@@ -338,7 +496,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="af96190fb2e6bceab02e3d2d28aaef3c8" name="af96190fb2e6bceab02e3d2d28aaef3c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af96190fb2e6bceab02e3d2d28aaef3c8">&#9670;&nbsp;</a></span>map() <span class="overload">[6/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af96190fb2e6bceab02e3d2d28aaef3c8">&#9670;&nbsp;</a></span>map() <span class="overload">[8/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,14 +526,14 @@ template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957
 </div>
 </div>
 <a id="aa46c5ded7f53e8251d3adaa9e65ddf5e" name="aa46c5ded7f53e8251d3adaa9e65ddf5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa46c5ded7f53e8251d3adaa9e65ddf5e">&#9670;&nbsp;</a></span>map() <span class="overload">[7/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46c5ded7f53e8251d3adaa9e65ddf5e">&#9670;&nbsp;</a></span>map() <span class="overload">[9/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Context &gt; </div>
 <div class="memtemplate">
-template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!std::is_pointer&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; std::is_same&lt; <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a>, <a class="el" href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">char_t</a>&lt; T &gt; &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -398,7 +556,7 @@ template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957
 </div>
 </div>
 <a id="aa46c5ded7f53e8251d3adaa9e65ddf5e" name="aa46c5ded7f53e8251d3adaa9e65ddf5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa46c5ded7f53e8251d3adaa9e65ddf5e">&#9670;&nbsp;</a></span>map() <span class="overload">[8/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46c5ded7f53e8251d3adaa9e65ddf5e">&#9670;&nbsp;</a></span>map() <span class="overload">[10/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +586,7 @@ template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957
 </div>
 </div>
 <a id="aa46c5ded7f53e8251d3adaa9e65ddf5e" name="aa46c5ded7f53e8251d3adaa9e65ddf5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa46c5ded7f53e8251d3adaa9e65ddf5e">&#9670;&nbsp;</a></span>map() <span class="overload">[9/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46c5ded7f53e8251d3adaa9e65ddf5e">&#9670;&nbsp;</a></span>map() <span class="overload">[11/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -457,45 +615,15 @@ template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957
 
 </div>
 </div>
-<a id="ad51bdd11cbac696cf4a76e9f489938f6" name="ad51bdd11cbac696cf4a76e9f489938f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad51bdd11cbac696cf4a76e9f489938f6">&#9670;&nbsp;</a></span>map() <span class="overload">[10/35]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Context &gt; </div>
-<div class="memtemplate">
-template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!<a class="el" href="structis__string.html">is_string</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!<a class="el" href="structis__char.html">is_char</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;(<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; T, Context &gt;::<a class="el" href="classvalue.html">value</a>|| <a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>)) &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::map </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td> -&gt; const T&amp; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab0ca23b1107e95c90038a32db2611dd6" name="ab0ca23b1107e95c90038a32db2611dd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0ca23b1107e95c90038a32db2611dd6">&#9670;&nbsp;</a></span>map() <span class="overload">[11/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ca23b1107e95c90038a32db2611dd6">&#9670;&nbsp;</a></span>map() <span class="overload">[12/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Context &gt; </div>
 <div class="memtemplate">
-template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_enum&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; T, Context &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_enum&lt; T &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;std::is_convertible&lt; T, int &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; T, Context &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -518,15 +646,15 @@ template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957
 
 </div>
 </div>
-<a id="a56223048b032b1413aad11bf159e84e8" name="a56223048b032b1413aad11bf159e84e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56223048b032b1413aad11bf159e84e8">&#9670;&nbsp;</a></span>map() <span class="overload">[12/35]</span></h2>
+<a id="a1f0e3fe09ce54e45f4e63d7a902bde08" name="a1f0e3fe09ce54e45f4e63d7a902bde08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f0e3fe09ce54e45f4e63d7a902bde08">&#9670;&nbsp;</a></span>map() <span class="overload">[13/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Context &gt; </div>
 <div class="memtemplate">
-template&lt;typename T , std::size_t N&gt; </div>
+template&lt;typename T , std::size_t N, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_same&lt; T, wchar_t &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -548,8 +676,8 @@ template&lt;typename T , std::size_t N&gt; </div>
 
 </div>
 </div>
-<a id="a54e1eee07bb1e4b9a9ecd92c30a32007" name="a54e1eee07bb1e4b9a9ecd92c30a32007"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54e1eee07bb1e4b9a9ecd92c30a32007">&#9670;&nbsp;</a></span>map() <span class="overload">[13/35]</span></h2>
+<a id="a7eb230794204f7990ed8a643d8b6cfbc" name="a7eb230794204f7990ed8a643d8b6cfbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb230794204f7990ed8a643d8b6cfbc">&#9670;&nbsp;</a></span>map() <span class="overload">[14/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,7 +692,7 @@ template&lt;typename Context &gt; </div>
           <td>(</td>
           <td class="paramtype">const unsigned char *&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
-          <td> -&gt; const char* </td>
+          <td> -&gt; <a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a> </td>
         </tr>
       </table>
   </td>
@@ -577,7 +705,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="ada04473d28d2026bd8a696df0c4db8a2" name="ada04473d28d2026bd8a696df0c4db8a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada04473d28d2026bd8a696df0c4db8a2">&#9670;&nbsp;</a></span>map() <span class="overload">[14/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ada04473d28d2026bd8a696df0c4db8a2">&#9670;&nbsp;</a></span>map() <span class="overload">[15/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -604,8 +732,36 @@ template&lt;typename Context &gt; </div>
 
 </div>
 </div>
+<a id="a14ab65add041093bc6f20890e96bff85" name="a14ab65add041093bc6f20890e96bff85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14ab65add041093bc6f20890e96bff85">&#9670;&nbsp;</a></span>map() <span class="overload">[16/38]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::map </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a57d5661a9537aa419c8ebc24667a96e9">detail::byte</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td> -&gt; unsigned </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2cddbdef92190f4b9aaedd7142504d32" name="a2cddbdef92190f4b9aaedd7142504d32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cddbdef92190f4b9aaedd7142504d32">&#9670;&nbsp;</a></span>map() <span class="overload">[15/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cddbdef92190f4b9aaedd7142504d32">&#9670;&nbsp;</a></span>map() <span class="overload">[17/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -633,7 +789,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a0e5fd42160aa65adb46c50c3d04920c8" name="a0e5fd42160aa65adb46c50c3d04920c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e5fd42160aa65adb46c50c3d04920c8">&#9670;&nbsp;</a></span>map() <span class="overload">[16/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5fd42160aa65adb46c50c3d04920c8">&#9670;&nbsp;</a></span>map() <span class="overload">[18/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,7 +817,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a41524f72eef8f9e20a897f3871c8329a" name="a41524f72eef8f9e20a897f3871c8329a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41524f72eef8f9e20a897f3871c8329a">&#9670;&nbsp;</a></span>map() <span class="overload">[17/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a41524f72eef8f9e20a897f3871c8329a">&#9670;&nbsp;</a></span>map() <span class="overload">[19/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -689,7 +845,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a18e6814ea7234f853ea650a5c93ed71c" name="a18e6814ea7234f853ea650a5c93ed71c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18e6814ea7234f853ea650a5c93ed71c">&#9670;&nbsp;</a></span>map() <span class="overload">[18/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e6814ea7234f853ea650a5c93ed71c">&#9670;&nbsp;</a></span>map() <span class="overload">[20/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,7 +873,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a1682c2443b7892553ebb2c67b3ff76b7" name="a1682c2443b7892553ebb2c67b3ff76b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1682c2443b7892553ebb2c67b3ff76b7">&#9670;&nbsp;</a></span>map() <span class="overload">[19/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1682c2443b7892553ebb2c67b3ff76b7">&#9670;&nbsp;</a></span>map() <span class="overload">[21/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -745,7 +901,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a55145e4be1d20261299039eb650192cb" name="a55145e4be1d20261299039eb650192cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55145e4be1d20261299039eb650192cb">&#9670;&nbsp;</a></span>map() <span class="overload">[20/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55145e4be1d20261299039eb650192cb">&#9670;&nbsp;</a></span>map() <span class="overload">[22/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -773,7 +929,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="ac1a0b6aba62957b8602875d03e894a81" name="ac1a0b6aba62957b8602875d03e894a81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1a0b6aba62957b8602875d03e894a81">&#9670;&nbsp;</a></span>map() <span class="overload">[21/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1a0b6aba62957b8602875d03e894a81">&#9670;&nbsp;</a></span>map() <span class="overload">[23/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -801,7 +957,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="ace74acca7a05829782e3d3edaaa22712" name="ace74acca7a05829782e3d3edaaa22712"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace74acca7a05829782e3d3edaaa22712">&#9670;&nbsp;</a></span>map() <span class="overload">[22/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ace74acca7a05829782e3d3edaaa22712">&#9670;&nbsp;</a></span>map() <span class="overload">[24/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -828,8 +984,8 @@ template&lt;typename Context &gt; </div>
 
 </div>
 </div>
-<a id="adbe54bf41b1887f8ace899b32a1fc091" name="adbe54bf41b1887f8ace899b32a1fc091"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbe54bf41b1887f8ace899b32a1fc091">&#9670;&nbsp;</a></span>map() <span class="overload">[23/35]</span></h2>
+<a id="a29316e5df13406107c7930f00fa29a74" name="a29316e5df13406107c7930f00fa29a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29316e5df13406107c7930f00fa29a74">&#9670;&nbsp;</a></span>map() <span class="overload">[25/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -844,7 +1000,7 @@ template&lt;typename Context &gt; </div>
           <td>(</td>
           <td class="paramtype">signed char *&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
-          <td> -&gt; const char* </td>
+          <td> -&gt; <a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a> </td>
         </tr>
       </table>
   </td>
@@ -857,7 +1013,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a5d96e6ed049c2eee679cf5ee1c25d230" name="a5d96e6ed049c2eee679cf5ee1c25d230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d96e6ed049c2eee679cf5ee1c25d230">&#9670;&nbsp;</a></span>map() <span class="overload">[24/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d96e6ed049c2eee679cf5ee1c25d230">&#9670;&nbsp;</a></span>map() <span class="overload">[26/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -885,7 +1041,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a6a556343b552b1370d18446ef1bdd887" name="a6a556343b552b1370d18446ef1bdd887"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a556343b552b1370d18446ef1bdd887">&#9670;&nbsp;</a></span>map() <span class="overload">[25/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a556343b552b1370d18446ef1bdd887">&#9670;&nbsp;</a></span>map() <span class="overload">[27/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -912,15 +1068,45 @@ template&lt;typename Context &gt; </div>
 
 </div>
 </div>
-<a id="ac6686082a318b1de16e4eb34824820bc" name="ac6686082a318b1de16e4eb34824820bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6686082a318b1de16e4eb34824820bc">&#9670;&nbsp;</a></span>map() <span class="overload">[26/35]</span></h2>
+<a id="abcdde144f8f751365322f26ce20f8616" name="abcdde144f8f751365322f26ce20f8616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcdde144f8f751365322f26ce20f8616">&#9670;&nbsp;</a></span>map() <span class="overload">[28/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Context &gt; </div>
 <div class="memtemplate">
-template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__char.html">is_char</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+template&lt;typename T , typename U  = remove_cvref_t&lt;T&gt;, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!<a class="el" href="structis__string.html">is_string</a>&lt; U &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!<a class="el" href="structis__char.html">is_char</a>&lt; U &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !std::is_array&lt; U &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;(<a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a>&lt; U, Context &gt;::<a class="el" href="classvalue.html">value</a>|| <a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a>&lt; U, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>)) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::map </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td> -&gt; decltype(this-&gt;<a class="el" href="structarg__mapper.html#a27d915613eac10f891ee79c47bfa293d">do_map</a>(std::forward&lt;T&gt;(val))) </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6686082a318b1de16e4eb34824820bc" name="ac6686082a318b1de16e4eb34824820bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6686082a318b1de16e4eb34824820bc">&#9670;&nbsp;</a></span>map() <span class="overload">[29/38]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_same&lt; T, char &gt;::<a class="el" href="classvalue.html">value</a>|| std::is_same&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -942,25 +1128,25 @@ template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957
 
 </div>
 </div>
-<a id="ae0bc2f9ab9a3ca07196813ee0758c318" name="ae0bc2f9ab9a3ca07196813ee0758c318"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0bc2f9ab9a3ca07196813ee0758c318">&#9670;&nbsp;</a></span>map() <span class="overload">[27/35]</span></h2>
+<a id="a814451c2db4b8ff1dd0d63ec14730d26" name="a814451c2db4b8ff1dd0d63ec14730d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814451c2db4b8ff1dd0d63ec14730d26">&#9670;&nbsp;</a></span>map() <span class="overload">[30/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Context &gt; </div>
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a>&lt;(std::is_same&lt; T, wchar_t &gt;::<a class="el" href="classvalue.html">value</a>||std::is_same&lt; T, char16_t &gt;::<a class="el" href="classvalue.html">value</a>||std::is_same&lt; T, char32_t &gt;::<a class="el" href="classvalue.html">value</a>) &amp;&amp;!std::is_same&lt; T, <a class="el" href="structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798">char_type</a> &gt;::<a class="el" href="classvalue.html">value</a>, int &gt;  = 0&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::map </td>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto <a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;::map </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a>&lt;std::is_pointer&lt;T&gt;::<a class="el" href="classvalue.html">value</a>, int&gt; </td>
+          <td> -&gt; <a class="el" href="structunformattable__char.html">unformattable_char</a> </td>
         </tr>
       </table>
   </td>
@@ -973,7 +1159,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="af5853d60163b4b86174e807d454c9a42" name="af5853d60163b4b86174e807d454c9a42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5853d60163b4b86174e807d454c9a42">&#9670;&nbsp;</a></span>map() <span class="overload">[28/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af5853d60163b4b86174e807d454c9a42">&#9670;&nbsp;</a></span>map() <span class="overload">[31/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1000,8 +1186,8 @@ template&lt;typename Context &gt; </div>
 
 </div>
 </div>
-<a id="a3904a7f58226a7d8b1bd6dfa756eb94a" name="a3904a7f58226a7d8b1bd6dfa756eb94a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3904a7f58226a7d8b1bd6dfa756eb94a">&#9670;&nbsp;</a></span>map() <span class="overload">[29/35]</span></h2>
+<a id="a7ed033c32e8b23a786618b8662aa2473" name="a7ed033c32e8b23a786618b8662aa2473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ed033c32e8b23a786618b8662aa2473">&#9670;&nbsp;</a></span>map() <span class="overload">[32/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1016,7 +1202,7 @@ template&lt;typename Context &gt; </div>
           <td>(</td>
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
-          <td> -&gt; const char* </td>
+          <td> -&gt; <a class="el" href="structarg__mapper.html#a4670a11832ce3e150502825666dc8dec">cstring_result</a> </td>
         </tr>
       </table>
   </td>
@@ -1029,7 +1215,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="ae16b3fe5a156d3eeb1c3d449d4dacfe9" name="ae16b3fe5a156d3eeb1c3d449d4dacfe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae16b3fe5a156d3eeb1c3d449d4dacfe9">&#9670;&nbsp;</a></span>map() <span class="overload">[30/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16b3fe5a156d3eeb1c3d449d4dacfe9">&#9670;&nbsp;</a></span>map() <span class="overload">[33/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1057,7 +1243,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="aba49e677ad2ec1ce1e49fb888a6df858" name="aba49e677ad2ec1ce1e49fb888a6df858"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba49e677ad2ec1ce1e49fb888a6df858">&#9670;&nbsp;</a></span>map() <span class="overload">[31/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aba49e677ad2ec1ce1e49fb888a6df858">&#9670;&nbsp;</a></span>map() <span class="overload">[34/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1085,7 +1271,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a2ed0800e69ed61072d381e8cebdbf8e7" name="a2ed0800e69ed61072d381e8cebdbf8e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ed0800e69ed61072d381e8cebdbf8e7">&#9670;&nbsp;</a></span>map() <span class="overload">[32/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed0800e69ed61072d381e8cebdbf8e7">&#9670;&nbsp;</a></span>map() <span class="overload">[35/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1113,7 +1299,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a99b7d4f47bbef0dc0255758a84df484b" name="a99b7d4f47bbef0dc0255758a84df484b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99b7d4f47bbef0dc0255758a84df484b">&#9670;&nbsp;</a></span>map() <span class="overload">[33/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b7d4f47bbef0dc0255758a84df484b">&#9670;&nbsp;</a></span>map() <span class="overload">[36/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1141,7 +1327,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="a1f8474167b9620300909fe20a6a2dcc5" name="a1f8474167b9620300909fe20a6a2dcc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f8474167b9620300909fe20a6a2dcc5">&#9670;&nbsp;</a></span>map() <span class="overload">[34/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f8474167b9620300909fe20a6a2dcc5">&#9670;&nbsp;</a></span>map() <span class="overload">[37/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1169,7 +1355,7 @@ template&lt;typename Context &gt; </div>
 </div>
 </div>
 <a id="ab6d7f9750eddc29b3eb69fe8b07e1d16" name="ab6d7f9750eddc29b3eb69fe8b07e1d16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6d7f9750eddc29b3eb69fe8b07e1d16">&#9670;&nbsp;</a></span>map() <span class="overload">[35/35]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d7f9750eddc29b3eb69fe8b07e1d16">&#9670;&nbsp;</a></span>map() <span class="overload">[38/38]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

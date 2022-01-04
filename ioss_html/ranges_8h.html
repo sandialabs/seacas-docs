@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('ranges_8h.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;initializer_list&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &quot;<a class="el" href="format_8h_source.html">format.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -104,14 +105,13 @@ Include dependency graph for ranges.h:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatting__range.html">formatting_range&lt; Char, Enable &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatting__tuple.html">formatting_tuple&lt; Char, Enable &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1is__std__string__like.html">detail::is_std_string_like&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true value if T has std::string interface, like std::string_view.  <a href="classdetail_1_1is__std__string__like.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1is__std__string__like_3_01fmt_1_1basic__string__view_3_01Char_01_4_01_4.html">detail::is_std_string_like&lt; fmt::basic_string_view&lt; Char &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1is__map.html">detail::is_map&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1is__set.html">detail::is_set&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1conditional__helper.html">detail::conditional_helper&lt; Ts &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,28 +125,23 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1has__mutable__begin__end.html">detail::has_mutable_begin_end&lt; T, Enable &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1has__const__begin__end_3_01T_00_01void__t_3_01decltype_07detail_1_1range__begin_27094f48719c379b9775948340277c3e.html">detail::has_const_begin_end&lt; T, void_t&lt; decltype(detail::range_begin(std::declval&lt; const remove_cvref_t&lt; T &gt; &amp; &gt;())), decltype(detail::range_begin(std::declval&lt; const remove_cvref_t&lt; T &gt; &amp; &gt;()))&gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1has__const__begin__end_3_01T_00_01void__t_3_01decltype_07detail_1_1range__begin_da5b8c1778b39196d77eefc293dfa14c.html">detail::has_const_begin_end&lt; T, void_t&lt; decltype(detail::range_begin(std::declval&lt; const remove_cvref_t&lt; T &gt; &amp; &gt;())), decltype(detail::range_end(std::declval&lt; const remove_cvref_t&lt; T &gt; &amp; &gt;()))&gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1has__mutable__begin__end_3_01T_00_01void__t_3_01decltype_07detail_1_1range__begi169586f4f2ce3d97cec0d8f88181ab72.html">detail::has_mutable_begin_end&lt; T, void_t&lt; decltype(detail::range_begin(std::declval&lt; T &gt;())), decltype(detail::range_begin(std::declval&lt; T &gt;())), enable_if_t&lt; std::is_copy_constructible&lt; T &gt;::value &gt; &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1has__mutable__begin__end_3_01T_00_01void__t_3_01decltype_07detail_1_1range__begie1507dfd498d0205567ca248c09742f3.html">detail::has_mutable_begin_end&lt; T, void_t&lt; decltype(detail::range_begin(std::declval&lt; T &gt;())), decltype(detail::range_end(std::declval&lt; T &gt;())), enable_if_t&lt; std::is_copy_constructible&lt; T &gt;::value &gt; &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1is__range___3_01T_00_01void_01_4.html">detail::is_range_&lt; T, void &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4.html">detail::range_to_view&lt; T, enable_if_t&lt; has_const_begin_end&lt; T &gt;::value &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4_1_1view__t.html">detail::range_to_view&lt; T, enable_if_t&lt; has_const_begin_end&lt; T &gt;::value &gt; &gt;::view_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_4751f3aaae3e6906975a7170fa3a99eb.html">detail::range_to_view&lt; T, enable_if_t&lt;!has_const_begin_end&lt; T &gt;::value &amp;&amp;has_mutable_begin_end&lt; T &gt;::value &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html">detail::range_to_view&lt; T, enable_if_t&lt;!has_const_begin_end&lt; T &gt;::value &amp;&amp;has_mutable_begin_end&lt; T &gt;::value &gt; &gt;::view_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1is__tuple__like__.html">detail::is_tuple_like_&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tuple_size and tuple_element check.  <a href="classdetail_1_1is__tuple__like__.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1integer__sequence.html">detail::integer_sequence&lt; T, N &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1make__integer__sequence.html">detail::make_integer_sequence&lt; T, N, Ns &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1make__integer__sequence_3_01T_00_010_00_01Ns_8_8_8_01_4.html">detail::make_integer_sequence&lt; T, 0, Ns... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1singleton.html">detail::singleton</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1find__escape__result.html">detail::find_escape_result&lt; Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__tuple__like.html">is_tuple_like&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,7 +151,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__range.html">is_range&lt; T, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01T_00_01Char_00_01enable__if__t_3_01fmt_1_1is__range_3_01T_00_01Char_01_4_1_10b84b1e37f4e188cd6eeee02f697acfd.html">formatter&lt; T, Char, enable_if_t&lt; fmt::is_range&lt; T, Char &gt;::value &amp;&amp;(has_formatter&lt; detail::value_type&lt; T &gt;, format_context &gt;::value||detail::has_fallback_formatter&lt; detail::value_type&lt; T &gt;, Char &gt;::value) &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01T_00_01Char_00_01enable__if__t_3_01fmt_1_1is__range_3_01T_00_01Char_01_4_1_162b375797f49b4f86253b34c5e6bd78c.html">formatter&lt; T, Char, enable_if_t&lt; fmt::is_range&lt; T, Char &gt;::value &amp;&amp;(is_formattable&lt; detail::value_type&lt; T &gt;, Char &gt;::value||detail::has_fallback_formatter&lt; detail::value_type&lt; T &gt;, Char &gt;::value) &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01T_00_01Char_00_01enable__if__t_3_01detail_1_1is__map_3_01T_01_4_1_1value_01_2c100907ff30018a5098de9a997e1382.html">formatter&lt; T, Char, enable_if_t&lt; detail::is_map&lt; T &gt;::value &amp;&amp;(is_formattable&lt; detail::value_type&lt; T &gt;, Char &gt;::value||detail::has_fallback_formatter&lt; detail::value_type&lt; T &gt;, Char &gt;::value) &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtuple__join__view.html">tuple_join_view&lt; Char, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +169,8 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a19537c5bd4967014ccb1a8e3d396bd13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ranges_8h.html#a19537c5bd4967014ccb1a8e3d396bd13">FMT_DECLTYPE_RETURN</a>(val)</td></tr>
 <tr class="separator:a19537c5bd4967014ccb1a8e3d396bd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6b5efedb1c0f13aab07315758062d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ranges_8h.html#aba6b5efedb1c0f13aab07315758062d5">FMT_TUPLE_JOIN_SPECIFIERS</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aba6b5efedb1c0f13aab07315758062d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -232,12 +231,29 @@ Functions</h2></td></tr>
 <tr class="memitem:a01e20f71930337b925dda0602e4d1101"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt &gt; </td></tr>
 <tr class="memitem:a01e20f71930337b925dda0602e4d1101"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a01e20f71930337b925dda0602e4d1101">detail::write_delimiter</a> (OutputIt out)</td></tr>
 <tr class="separator:a01e20f71930337b925dda0602e4d1101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63faf010886670e43cbab60044df7e82"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename OutputIt , typename Arg , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(is_std_string_like&lt; typename std::decay&lt; Arg &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:a63faf010886670e43cbab60044df7e82"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a63faf010886670e43cbab60044df7e82">detail::write_range_entry</a> (OutputIt out, const Arg &amp;v)</td></tr>
-<tr class="separator:a63faf010886670e43cbab60044df7e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3df1e29ebde78440f3595e480065a59"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ac3df1e29ebde78440f3595e480065a59">detail::is_printable</a> (uint16_t x, const singleton *singletons, size_t singletons_size, const unsigned char *singleton_lowers, const unsigned char *normal, size_t normal_size) -&gt; bool</td></tr>
+<tr class="separator:ac3df1e29ebde78440f3595e480065a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace62a04e017d16a2cbe9c44560490811"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ace62a04e017d16a2cbe9c44560490811">detail::is_printable</a> (uint32_t cp) -&gt; bool</td></tr>
+<tr class="separator:ace62a04e017d16a2cbe9c44560490811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab31cdd3925ccf6312ab598b0a05e9438"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ab31cdd3925ccf6312ab598b0a05e9438">detail::needs_escape</a> (uint32_t cp) -&gt; bool</td></tr>
+<tr class="separator:ab31cdd3925ccf6312ab598b0a05e9438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add58e90244cc9b3ff0ececf663c35b58"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
+<tr class="memitem:add58e90244cc9b3ff0ececf663c35b58"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#add58e90244cc9b3ff0ececf663c35b58">detail::find_escape</a> (const Char *begin, const Char *end) -&gt; find_escape_result&lt; Char &gt;</td></tr>
+<tr class="separator:add58e90244cc9b3ff0ececf663c35b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bd684d97381b18790d598a652a61b9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a58bd684d97381b18790d598a652a61b9">detail::find_escape</a> (const char *begin, const char *end) -&gt; find_escape_result&lt; char &gt;</td></tr>
+<tr class="separator:a58bd684d97381b18790d598a652a61b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96f86102fa0d2577893b4d24eb0c7ac"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename OutputIt &gt; </td></tr>
+<tr class="memitem:aa96f86102fa0d2577893b4d24eb0c7ac"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#aa96f86102fa0d2577893b4d24eb0c7ac">detail::write_range_entry</a> (OutputIt out, <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt; str) -&gt; OutputIt</td></tr>
+<tr class="separator:aa96f86102fa0d2577893b4d24eb0c7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8ad3154e57e8900f133668b2d9ab15"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename OutputIt , typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_convertible&lt; T, <a class="el" href="structstd__string__view.html">std_string_view</a>&lt; char &gt; &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:a6b8ad3154e57e8900f133668b2d9ab15"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a6b8ad3154e57e8900f133668b2d9ab15">detail::write_range_entry</a> (OutputIt out, const T &amp;str) -&gt; OutputIt</td></tr>
+<tr class="separator:a6b8ad3154e57e8900f133668b2d9ab15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbda6999080c4833b25f4d659f9ad63f"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename OutputIt , typename Arg , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_same&lt; Arg, Char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:acbda6999080c4833b25f4d659f9ad63f"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#acbda6999080c4833b25f4d659f9ad63f">detail::write_range_entry</a> (OutputIt out, const Arg v)</td></tr>
 <tr class="separator:acbda6999080c4833b25f4d659f9ad63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63faf010886670e43cbab60044df7e82"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename OutputIt , typename Arg , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!is_std_string_like&lt; typename std::decay&lt; Arg &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !std::is_same&lt; Arg, Char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:a63faf010886670e43cbab60044df7e82"><td class="memTemplItemLeft" align="right" valign="top">OutputIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a63faf010886670e43cbab60044df7e82">detail::write_range_entry</a> (OutputIt out, const Arg &amp;v)</td></tr>
+<tr class="separator:a63faf010886670e43cbab60044df7e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb2cbc0f59eb6ed496738f5e9fa68005"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:aeb2cbc0f59eb6ed496738f5e9fa68005"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a405a25ede2658f5f1bd426ce7d10f3ee">FMT_MODULE_EXPORT_BEGIN</a> <a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ranges_8h.html#aeb2cbc0f59eb6ed496738f5e9fa68005">join</a> (const std::tuple&lt; T... &gt; &amp;tuple, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> sep) -&gt; <a class="el" href="structtuple__join__view.html">tuple_join_view</a>&lt; char, T... &gt;</td></tr>
 <tr class="separator:aeb2cbc0f59eb6ed496738f5e9fa68005"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,6 +284,20 @@ Functions</h2></td></tr>
 <div class="line">    static_assert(                  \</div>
 <div class="line">        <span class="keyword">true</span>, <span class="stringliteral">&quot;&quot;</span>)</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="aba6b5efedb1c0f13aab07315758062d5" name="aba6b5efedb1c0f13aab07315758062d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6b5efedb1c0f13aab07315758062d5">&#9670;&nbsp;</a></span>FMT_TUPLE_JOIN_SPECIFIERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_TUPLE_JOIN_SPECIFIERS&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -352,8 +382,8 @@ template&lt;typename... T&gt; </div>
 <div class="line">  std::tuple&lt;int, char&gt; t = {1, <span class="charliteral">&#39;a&#39;</span>};</div>
 <div class="line">  <a class="code hl_function" href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">fmt::print</a>(<span class="stringliteral">&quot;{}&quot;</span>, <a class="code hl_function" href="format_8h.html#a3a5321fbc6cbf18a53d0bbf5a849dd94">fmt::join</a>(t, <span class="stringliteral">&quot;, &quot;</span>));</div>
 <div class="line">  <span class="comment">// Output: &quot;1, a&quot;</span></div>
-<div class="ttc" id="acolor_8h_html_a2fead8330d19b9d2f10e6ed9c59e0174"><div class="ttname"><a href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">print</a></div><div class="ttdeci">void print(std::FILE *f, const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:538</div></div>
-<div class="ttc" id="aformat_8h_html_a3a5321fbc6cbf18a53d0bbf5a849dd94"><div class="ttname"><a href="format_8h.html#a3a5321fbc6cbf18a53d0bbf5a849dd94">join</a></div><div class="ttdeci">auto join(It begin, Sentinel end, string_view sep) -&gt; join_view&lt; It, Sentinel &gt;</div><div class="ttdef"><b>Definition:</b> format.h:2562</div></div>
+<div class="ttc" id="acolor_8h_html_a2fead8330d19b9d2f10e6ed9c59e0174"><div class="ttname"><a href="color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174">print</a></div><div class="ttdeci">void print(std::FILE *f, const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:549</div></div>
+<div class="ttc" id="aformat_8h_html_a3a5321fbc6cbf18a53d0bbf5a849dd94"><div class="ttname"><a href="format_8h.html#a3a5321fbc6cbf18a53d0bbf5a849dd94">join</a></div><div class="ttdeci">auto join(It begin, Sentinel end, string_view sep) -&gt; join_view&lt; It, Sentinel &gt;</div><div class="ttdef"><b>Definition:</b> format.h:2850</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

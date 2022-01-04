@@ -90,9 +90,6 @@ $(document).ready(function(){initNavTree('classdetail_1_1is__std__string__like.h
 </div><!--header-->
 <div class="contents">
 
-<p>Return true value if T has std::string interface, like std::string_view.  
- <a href="classdetail_1_1is__std__string__like.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="ranges_8h_source.html">ranges.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -103,16 +100,13 @@ Static Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:af010eb255aeba02fdf3def19f1098590"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:af010eb255aeba02fdf3def19f1098590"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdetail_1_1is__std__string__like.html#af010eb255aeba02fdf3def19f1098590">check</a> (U *p) -&gt; decltype((void) p-&gt;<a class="el" href="core_8h.html#a02307ec0131a3aa9df2db7c2f10b69f2">find</a>('a'), p-&gt;length(),(void) p-&gt;<a class="el" href="structdata.html">data</a>(), int())</td></tr>
+<tr class="memitem:af010eb255aeba02fdf3def19f1098590"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdetail_1_1is__std__string__like.html#af010eb255aeba02fdf3def19f1098590">check</a> (U *p) -&gt; decltype((void) p-&gt;<a class="el" href="core_8h.html#a02307ec0131a3aa9df2db7c2f10b69f2">find</a>('a'), p-&gt;length(),(void) p-&gt;data(), int())</td></tr>
 <tr class="separator:af010eb255aeba02fdf3def19f1098590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab58eaad03a29a00f00cc31d705170cc"><td class="memTemplParams" colspan="2">template&lt;typename &gt; </td></tr>
 <tr class="memitem:aab58eaad03a29a00f00cc31d705170cc"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdetail_1_1is__std__string__like.html#aab58eaad03a29a00f00cc31d705170cc">check</a> (...)</td></tr>
 <tr class="separator:aab58eaad03a29a00f00cc31d705170cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class detail::is_std_string_like&lt; T &gt;</div><p >Return true value if T has std::string interface, like std::string_view. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aab58eaad03a29a00f00cc31d705170cc" name="aab58eaad03a29a00f00cc31d705170cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab58eaad03a29a00f00cc31d705170cc">&#9670;&nbsp;</a></span>check() <span class="overload">[1/2]</span></h2>
 
@@ -161,7 +155,7 @@ template&lt;typename U &gt; </div>
           <td>(</td>
           <td class="paramtype">U *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
-          <td> -&gt;  decltype((void) p-&gt;<a class="el" href="core_8h.html#a02307ec0131a3aa9df2db7c2f10b69f2">find</a>('a'), p-&gt;length(),(void) p-&gt;<a class="el" href="structdata.html">data</a>(), int())</td>
+          <td> -&gt;  decltype((void) p-&gt;<a class="el" href="core_8h.html#a02307ec0131a3aa9df2db7c2f10b69f2">find</a>('a'), p-&gt;length(),(void) p-&gt;data(), int())</td>
         </tr>
       </table>
   </td>
@@ -196,9 +190,11 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      <a class="code hl_struct" href="structis__string.html">is_string&lt;T&gt;::value</a> || !std::is_void&lt;decltype(check&lt;T&gt;(<span class="keyword">nullptr</span>))&gt;::<a class="code hl_class" href="classvalue.html">value</a></div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1125</div></div>
-<div class="ttc" id="astructis__string_html"><div class="ttname"><a href="structis__string.html">is_string</a></div><div class="ttdef"><b>Definition:</b> core.h:584</div></div>
+<div class="line">      <a class="code hl_struct" href="structis__string.html">is_string&lt;T&gt;::value</a> ||</div>
+<div class="line">      std::is_convertible&lt;T, std_string_view&lt;char&gt;&gt;<a class="code hl_class" href="classvalue.html">::value</a> ||</div>
+<div class="line">      !std::is_void&lt;decltype(check&lt;T&gt;(<span class="keyword">nullptr</span>))&gt;::<a class="code hl_class" href="classvalue.html">value</a></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1199</div></div>
+<div class="ttc" id="astructis__string_html"><div class="ttname"><a href="structis__string.html">is_string</a></div><div class="ttdef"><b>Definition:</b> core.h:581</div></div>
 </div><!-- fragment -->
 </div>
 </div>

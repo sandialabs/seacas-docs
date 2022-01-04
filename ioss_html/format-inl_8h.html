@@ -87,7 +87,8 @@ $(document).ready(function(){initNavTree('format-inl_8h.html',''); initResizable
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">format-inl.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -117,17 +118,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1basic__impl__data.html">detail::basic_impl_data&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1impl__data.html">detail::impl_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1bits.html">detail::bits&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1boundaries.html">detail::boundaries</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html">detail::fp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1fp.html">detail::fp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1accumulator.html">detail::accumulator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1bigint.html">detail::bigint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1fixed__handler.html">detail::fixed_handler</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1gen__digits__handler.html">detail::gen_digits_handler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1uint128__wrapper.html">detail::uint128_wrapper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +174,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6c6e0604e89fc0ef840b154b8e8b0524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a6c6e0604e89fc0ef840b154b8e8b0524">detail::assert_fail</a> (const char *file, int line, const char *message)</td></tr>
 <tr class="separator:a6c6e0604e89fc0ef840b154b8e8b0524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4a175ed2175e4da7b988e021175317"><td class="memItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a6a4a175ed2175e4da7b988e021175317">detail::throw_format_error</a> (const char *message)</td></tr>
+<tr class="separator:a6a4a175ed2175e4da7b988e021175317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7541af9298f3d86dfce900b0b76c3e4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a7541af9298f3d86dfce900b0b76c3e4f">detail::format_error_code</a> (detail::buffer&lt; char &gt; &amp;out, int error_code, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> message) <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a></td></tr>
 <tr class="separator:a7541af9298f3d86dfce900b0b76c3e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500ea148a2d7d71c2b2ab8888f8f10f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a500ea148a2d7d71c2b2ab8888f8f10f0">detail::report_error</a> (<a class="el" href="format_8h.html#a4d488aa98df4e121b5a4d5ade4a6ff37">format_func</a> func, int error_code, const char *message) <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a></td></tr>
@@ -188,24 +193,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a912bee0567ce268e70a504450145315b"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a912bee0567ce268e70a504450145315b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a912bee0567ce268e70a504450145315b">detail::count_digits&lt; 4 &gt;</a> (<a class="el" href="structdetail_1_1fallback__uintptr.html">detail::fallback_uintptr</a> n)</td></tr>
 <tr class="separator:a912bee0567ce268e70a504450145315b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a955ad02ade4f07084391a60ed80701bf"><td class="memTemplParams" colspan="2">template&lt;int SHIFT = 0&gt; </td></tr>
-<tr class="memitem:a955ad02ade4f07084391a60ed80701bf"><td class="memTemplItemLeft" align="right" valign="top">fp&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a955ad02ade4f07084391a60ed80701bf">detail::normalize</a> (fp <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="separator:a955ad02ade4f07084391a60ed80701bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84740d6d1b1ad9b243c02ee4ec87ac50"><td class="memTemplParams" colspan="2">template&lt;typename Float &gt; </td></tr>
+<tr class="memitem:a84740d6d1b1ad9b243c02ee4ec87ac50"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a84740d6d1b1ad9b243c02ee4ec87ac50">detail::num_significand_bits</a> ()</td></tr>
+<tr class="separator:a84740d6d1b1ad9b243c02ee4ec87ac50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40a12cd9b6144aa27715107d5e75629"><td class="memTemplParams" colspan="2">template&lt;int SHIFT = 0&gt; </td></tr>
+<tr class="memitem:ab40a12cd9b6144aa27715107d5e75629"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> fp&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ab40a12cd9b6144aa27715107d5e75629">detail::normalize</a> (fp <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="separator:ab40a12cd9b6144aa27715107d5e75629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa603b042d25caa96cdd2e68d95948651"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#aa603b042d25caa96cdd2e68d95948651">detail::operator==</a> (fp x, fp y)</td></tr>
 <tr class="separator:aa603b042d25caa96cdd2e68d95948651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23e8738bd890a2f6a9e4a7632489cd25"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a23e8738bd890a2f6a9e4a7632489cd25">detail::multiply</a> (uint64_t lhs, uint64_t rhs)</td></tr>
-<tr class="separator:a23e8738bd890a2f6a9e4a7632489cd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f2429037339f44b8d88e7ccf7ae6347"><td class="memItemLeft" align="right" valign="top">fp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a5f2429037339f44b8d88e7ccf7ae6347">detail::operator*</a> (fp x, fp y)</td></tr>
-<tr class="separator:a5f2429037339f44b8d88e7ccf7ae6347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee075ede5e89acf14c73ec7db239026f"><td class="memItemLeft" align="right" valign="top">fp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#aee075ede5e89acf14c73ec7db239026f">detail::get_cached_power</a> (int min_exponent, int &amp;pow10_exponent)</td></tr>
-<tr class="separator:aee075ede5e89acf14c73ec7db239026f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade6bfb36da17f5116c0f132ff8641506"><td class="memItemLeft" align="right" valign="top">round_direction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ade6bfb36da17f5116c0f132ff8641506">detail::get_round_direction</a> (uint64_t divisor, uint64_t remainder, uint64_t error)</td></tr>
-<tr class="separator:ade6bfb36da17f5116c0f132ff8641506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f3f2c32d9c84acf623c1104cb467143"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a5f3f2c32d9c84acf623c1104cb467143">detail::power_of_10_64</a> (int exp)</td></tr>
-<tr class="separator:a5f3f2c32d9c84acf623c1104cb467143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4483db631de5504de3f05c0e78232536"><td class="memTemplParams" colspan="2">template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:a4483db631de5504de3f05c0e78232536"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> digits::result&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a4483db631de5504de3f05c0e78232536">detail::grisu_gen_digits</a> (fp <a class="el" href="classvalue.html">value</a>, uint64_t error, int &amp;exp, Handler &amp;handler)</td></tr>
-<tr class="separator:a4483db631de5504de3f05c0e78232536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6dc9126f382f866e718091c018874b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a7d6dc9126f382f866e718091c018874b">detail::multiply</a> (uint64_t lhs, uint64_t rhs)</td></tr>
+<tr class="separator:a7d6dc9126f382f866e718091c018874b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d21e54df38b45e955af2ed01b75513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> fp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a80d21e54df38b45e955af2ed01b75513">detail::operator*</a> (fp x, fp y)</td></tr>
+<tr class="separator:a80d21e54df38b45e955af2ed01b75513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c65d19d770059139b66ec6f41b9ed3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> fp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a68c65d19d770059139b66ec6f41b9ed3">detail::get_cached_power</a> (int min_exponent, int &amp;pow10_exponent)</td></tr>
+<tr class="separator:a68c65d19d770059139b66ec6f41b9ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed793200ad538828ee7bd61fd55e312"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> round_direction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a3ed793200ad538828ee7bd61fd55e312">detail::get_round_direction</a> (uint64_t divisor, uint64_t remainder, uint64_t error)</td></tr>
+<tr class="separator:a3ed793200ad538828ee7bd61fd55e312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457df5805d077a073ea5ffc382c848e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> <a class="el" href="core_8h.html#acebe0f930dd6aecc374db251062e9d10">FMT_CONSTEXPR20</a> digits::result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a457df5805d077a073ea5ffc382c848e0">detail::grisu_gen_digits</a> (fp <a class="el" href="classvalue.html">value</a>, uint64_t error, int &amp;exp, gen_digits_handler &amp;handler)</td></tr>
+<tr class="separator:a457df5805d077a073ea5ffc382c848e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3e04e4c932b46aa1dae44d6f4426ae"><td class="memItemLeft" align="right" valign="top">uint128_wrapper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail_1_1dragonbox.html#acc3e04e4c932b46aa1dae44d6f4426ae">detail::dragonbox::umul128</a> (uint64_t x, uint64_t y) <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a></td></tr>
 <tr class="separator:acc3e04e4c932b46aa1dae44d6f4426ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4952ce15e336a399578c2071d45f2099"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail_1_1dragonbox.html#a4952ce15e336a399578c2071d45f2099">detail::dragonbox::umul128_upper64</a> (uint64_t x, uint64_t y) <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a></td></tr>
@@ -261,12 +266,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a10a8a561307cc2baf2062661bbb15249"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a10a8a561307cc2baf2062661bbb15249"><td class="memTemplItemLeft" align="right" valign="top">decimal_fp&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail_1_1dragonbox.html#a10a8a561307cc2baf2062661bbb15249">detail::dragonbox::to_decimal</a> (T x) <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a></td></tr>
 <tr class="separator:a10a8a561307cc2baf2062661bbb15249"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3de3c34415b0820b551f5e0375465f"><td class="memTemplParams" colspan="2">template&lt;typename Double &gt; </td></tr>
-<tr class="memitem:aec3de3c34415b0820b551f5e0375465f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#aec3de3c34415b0820b551f5e0375465f">detail::fallback_format</a> (Double d, int num_digits, bool binary32, <a class="el" href="classbuffer.html">buffer</a>&lt; char &gt; &amp;buf, int &amp;exp10)</td></tr>
-<tr class="separator:aec3de3c34415b0820b551f5e0375465f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a780acb0dc2858109fcb85cc7ec6e06"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1a780acb0dc2858109fcb85cc7ec6e06"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a1a780acb0dc2858109fcb85cc7ec6e06">detail::format_float</a> (T <a class="el" href="classvalue.html">value</a>, int precision, <a class="el" href="structfloat__specs.html">float_specs</a> specs, <a class="el" href="classbuffer.html">buffer</a>&lt; char &gt; &amp;buf)</td></tr>
-<tr class="separator:a1a780acb0dc2858109fcb85cc7ec6e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b5988013f0752371d4955353ffaa6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#acebe0f930dd6aecc374db251062e9d10">FMT_CONSTEXPR20</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a67b5988013f0752371d4955353ffaa6c">detail::format_dragon</a> (fp <a class="el" href="classvalue.html">value</a>, bool is_predecessor_closer, int num_digits, <a class="el" href="classbuffer.html">buffer</a>&lt; char &gt; &amp;buf, int &amp;exp10)</td></tr>
+<tr class="separator:a67b5988013f0752371d4955353ffaa6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c20a301721f7b9d964e79709de5602"><td class="memTemplParams" colspan="2">template&lt;typename Float &gt; </td></tr>
+<tr class="memitem:ae9c20a301721f7b9d964e79709de5602"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a25ff068c01faec5613ccd975a45f6971">FMT_HEADER_ONLY_CONSTEXPR20</a> int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ae9c20a301721f7b9d964e79709de5602">detail::format_float</a> (Float <a class="el" href="classvalue.html">value</a>, int precision, <a class="el" href="structfloat__specs.html">float_specs</a> specs, <a class="el" href="classbuffer.html">buffer</a>&lt; char &gt; &amp;buf)</td></tr>
+<tr class="separator:ae9c20a301721f7b9d964e79709de5602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0377922f56cb72597223fa7bc55545d0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0377922f56cb72597223fa7bc55545d0"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a0377922f56cb72597223fa7bc55545d0">detail::snprintf_float</a> (T <a class="el" href="classvalue.html">value</a>, int precision, <a class="el" href="structfloat__specs.html">float_specs</a> specs, <a class="el" href="classbuffer.html">buffer</a>&lt; char &gt; &amp;buf)</td></tr>
 <tr class="separator:a0377922f56cb72597223fa7bc55545d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +278,7 @@ Functions</h2></td></tr>
 <tr class="separator:a84ddacfb64a5b0b0c8a274d8d883054b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc24cc2cbeebc9810faadf0ae76f7b04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="format-inl_8h.html#acc24cc2cbeebc9810faadf0ae76f7b04">report_system_error</a> (int error_code, const char *message) <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a></td></tr>
 <tr class="separator:acc24cc2cbeebc9810faadf0ae76f7b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8fb67486c1bfcf6a1b50b9dae1ea16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="format-inl_8h.html#acf8fb67486c1bfcf6a1b50b9dae1ea16">vformat</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> fmt, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> args)</td></tr>
+<tr class="memitem:acf8fb67486c1bfcf6a1b50b9dae1ea16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="format-inl_8h.html#acf8fb67486c1bfcf6a1b50b9dae1ea16">vformat</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> fmt, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> args)</td></tr>
 <tr class="separator:acf8fb67486c1bfcf6a1b50b9dae1ea16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b7c06a301760f9866b4d66f5c9386a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a4b7c06a301760f9866b4d66f5c9386a9">detail::print</a> (std::FILE *f, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> text)</td></tr>
 <tr class="separator:a4b7c06a301760f9866b4d66f5c9386a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,6 +286,11 @@ Functions</h2></td></tr>
 <tr class="separator:a9d834f6ef5c0553b6c434f8d9ac105bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77fcf4959d4c69c3800b759696f37248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="format-inl_8h.html#a77fcf4959d4c69c3800b759696f37248">vprint</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> format_str, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> args)</td></tr>
 <tr class="separator:a77fcf4959d4c69c3800b759696f37248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae4ab7836cdbee567958052f2e9b52150"><td class="memItemLeft" align="right" valign="top">static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ae4ab7836cdbee567958052f2e9b52150">detail::log10_2_significand</a> = 0x4d104d427de7fbcc</td></tr>
+<tr class="separator:ae4ab7836cdbee567958052f2e9b52150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9a9bb3caa94066b3adc175bb24cb1783" name="a9a9bb3caa94066b3adc175bb24cb1783"></a>
@@ -342,10 +351,10 @@ Functions</h2></td></tr>
 <div class="line">where *&lt;message&gt;* is the passed message and *&lt;system-message&gt;* is the system</div>
 <div class="line">message corresponding to the <a class="code hl_enumvalue" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> code.</div>
 <div class="line">*error_code* is a system <a class="code hl_enumvalue" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> code as given by ``errno``.</div>
-<div class="ttc" id="acolor_8h_html_a8b34a9364f5d6ca43a8a24f96a6db55b"><div class="ttname"><a href="color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:583</div></div>
-<div class="ttc" id="acore_8h_html_a495f03845608df33e628ac790e76f713"><div class="ttname"><a href="core_8h.html#a495f03845608df33e628ac790e76f713">runtime</a></div><div class="ttdeci">auto runtime(const S &amp;s) -&gt; basic_runtime&lt; char_t&lt; S &gt; &gt;</div><div class="ttdef"><b>Definition:</b> core.h:2871</div></div>
-<div class="ttc" id="aformat_8h_html_a0558467fc6b6aa30ea74d60aafdf7821"><div class="ttname"><a href="format_8h.html#a0558467fc6b6aa30ea74d60aafdf7821">system_error</a></div><div class="ttdeci">auto system_error(int error_code, format_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::system_error</div><div class="ttdef"><b>Definition:</b> format.h:2243</div></div>
-<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">detail::digits::error</a></div><div class="ttdeci">@ error</div><div class="ttdef"><b>Definition:</b> format-inl.h:625</div></div>
+<div class="ttc" id="acolor_8h_html_a8b34a9364f5d6ca43a8a24f96a6db55b"><div class="ttname"><a href="color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> color.h:594</div></div>
+<div class="ttc" id="acore_8h_html_a495f03845608df33e628ac790e76f713"><div class="ttname"><a href="core_8h.html#a495f03845608df33e628ac790e76f713">runtime</a></div><div class="ttdeci">auto runtime(const S &amp;s) -&gt; basic_runtime&lt; char_t&lt; S &gt; &gt;</div><div class="ttdef"><b>Definition:</b> core.h:3090</div></div>
+<div class="ttc" id="aformat_8h_html_a0558467fc6b6aa30ea74d60aafdf7821"><div class="ttname"><a href="format_8h.html#a0558467fc6b6aa30ea74d60aafdf7821">system_error</a></div><div class="ttdeci">auto system_error(int error_code, format_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::system_error</div><div class="ttdef"><b>Definition:</b> format.h:2477</div></div>
+<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">detail::digits::error</a></div><div class="ttdeci">@ error</div><div class="ttdef"><b>Definition:</b> format-inl.h:640</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -384,7 +393,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> std::string vformat </td>
+          <td class="memname"><a class="el" href="format_8h.html#a02c8898388e0ae59aab58be14fcd4e05">FMT_FUNC</a> <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> vformat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a>&#160;</td>
           <td class="paramname"><em>fmt</em>, </td>

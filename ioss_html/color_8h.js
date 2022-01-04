@@ -151,8 +151,12 @@ var color_8h =
     ] ],
     [ "emphasis", "color_8h.html#a535b59b8edc8902bb3c4f254625f91ba", [
       [ "bold", "color_8h.html#a535b59b8edc8902bb3c4f254625f91baa69dcab4a73aeec2113f69b61e6263da8", null ],
+      [ "faint", "color_8h.html#a535b59b8edc8902bb3c4f254625f91baaa2f30af159c87a8828f7d9581ca9e8c8", null ],
       [ "italic", "color_8h.html#a535b59b8edc8902bb3c4f254625f91baa030c5b6d1e5715105943ac111d9671bf", null ],
       [ "underline", "color_8h.html#a535b59b8edc8902bb3c4f254625f91baa6dc7b4483f8c2c701a48e42db552806d", null ],
+      [ "blink", "color_8h.html#a535b59b8edc8902bb3c4f254625f91baa40652ee9ae143f1c1c830f01a5449ecb", null ],
+      [ "reverse", "color_8h.html#a535b59b8edc8902bb3c4f254625f91baa4d9c2073afa3c2abb817dceb22c34de6", null ],
+      [ "conceal", "color_8h.html#a535b59b8edc8902bb3c4f254625f91baaa27efeecfcdb7794476cafb0b362835e", null ],
       [ "strikethrough", "color_8h.html#a535b59b8edc8902bb3c4f254625f91baaae9a363b2dfa9181da7ffde8e37813b5", null ]
     ] ],
     [ "terminal_color", "color_8h.html#a76f7aa9aae46c2ea7333dae7b531d6ac", [

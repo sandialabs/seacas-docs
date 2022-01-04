@@ -94,9 +94,9 @@ $(document).ready(function(){initNavTree('classbasic__format__string.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af3678bccd14e08f563dc4e463677afa3"><td class="memTemplParams" colspan="2">template&lt;typename S , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_convertible&lt; const S &amp;, <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt; &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:af3678bccd14e08f563dc4e463677afa3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a1adadf095006629612166782177c39f2">FMT_CONSTEVAL</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__format__string.html#af3678bccd14e08f563dc4e463677afa3">basic_format_string</a> (const S &amp;s)</td></tr>
-<tr class="separator:af3678bccd14e08f563dc4e463677afa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9361b6999425ca9e9dde8f99119ac45"><td class="memTemplParams" colspan="2">template&lt;typename S , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_convertible&lt; const S &amp;, <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt; &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:af9361b6999425ca9e9dde8f99119ac45"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a1adadf095006629612166782177c39f2">FMT_CONSTEVAL</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__format__string.html#af9361b6999425ca9e9dde8f99119ac45">basic_format_string</a> (const S &amp;s)</td></tr>
+<tr class="separator:af9361b6999425ca9e9dde8f99119ac45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affea1973363f7ecf99bff7b136f3d247"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__format__string.html#affea1973363f7ecf99bff7b136f3d247">basic_format_string</a> (<a class="el" href="structbasic__runtime.html">basic_runtime</a>&lt; Char &gt; r)</td></tr>
 <tr class="separator:affea1973363f7ecf99bff7b136f3d247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af889d1f517385a2f505973f9c63cfeb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__format__string.html#af889d1f517385a2f505973f9c63cfeb4">operator basic_string_view&lt; Char &gt;</a> () const</td></tr>
@@ -107,9 +107,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a05322dcfb4b3d74c9dfe5a377f4e992b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__format__string.html#a05322dcfb4b3d74c9dfe5a377f4e992b">str_</a></td></tr>
 <tr class="separator:a05322dcfb4b3d74c9dfe5a377f4e992b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af3678bccd14e08f563dc4e463677afa3" name="af3678bccd14e08f563dc4e463677afa3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3678bccd14e08f563dc4e463677afa3">&#9670;&nbsp;</a></span>basic_format_string() <span class="overload">[1/2]</span></h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Char, typename... Args&gt;<br />
+class basic_format_string&lt; Char, Args &gt;</div><p >A compile-time format string. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af9361b6999425ca9e9dde8f99119ac45" name="af9361b6999425ca9e9dde8f99119ac45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9361b6999425ca9e9dde8f99119ac45">&#9670;&nbsp;</a></span>basic_format_string() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,7 +125,7 @@ template&lt;typename S , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a1adadf095006629612166782177c39f2">FMT_CONSTEVAL</a> <a class="el" href="classbasic__format__string.html">basic_format_string</a>&lt; Char, Args &gt;::<a class="el" href="classbasic__format__string.html">basic_format_string</a> </td>
+          <td class="memname"><a class="el" href="core_8h.html#a1adadf095006629612166782177c39f2">FMT_CONSTEVAL</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> <a class="el" href="classbasic__format__string.html">basic_format_string</a>&lt; Char, Args &gt;::<a class="el" href="classbasic__format__string.html">basic_format_string</a> </td>
           <td>(</td>
           <td class="paramtype">const S &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
