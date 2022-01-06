@@ -14,6 +14,7 @@ var searchData=
   ['dynamic_5farg_5flist_11',['dynamic_arg_list',['../classdetail_1_1dynamic__arg__list.html',1,'detail']]],
   ['dynamic_5fformat_5farg_5fstore_12',['dynamic_format_arg_store',['../classdynamic__format__arg__store.html',1,'']]],
   ['dynamic_5fformat_5fspecs_13',['dynamic_format_specs',['../structdynamic__format__specs.html',1,'']]],
-  ['dynamic_5fformatter_14',['dynamic_formatter',['../classdynamic__formatter.html',1,'']]],
-  ['dynamic_5fspecs_5fhandler_15',['dynamic_specs_handler',['../classdynamic__specs__handler.html',1,'']]]
+  ['dynamic_5fformat_5fspecs_3c_20char_5ftype_20_3e_14',['dynamic_format_specs&lt; char_type &gt;',['../structdynamic__format__specs.html',1,'']]],
+  ['dynamic_5fformatter_15',['dynamic_formatter',['../classdynamic__formatter.html',1,'']]],
+  ['dynamic_5fspecs_5fhandler_16',['dynamic_specs_handler',['../classdynamic__specs__handler.html',1,'']]]
 ];

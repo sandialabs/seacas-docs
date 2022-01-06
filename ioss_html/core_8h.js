@@ -266,7 +266,7 @@ var core_8h =
     [ "get_iterator", "core_8h.html#aa0b2a25de3cc16ea39c033e76561b1be", null ],
     [ "has_const_formatter", "core_8h.html#af1bd84ed55d3f25b69a382e0e6252131", null ],
     [ "has_const_formatter_impl", "core_8h.html#aceece8f2dee76c77ba701a68e72c4496", null ],
-    [ "has_const_formatter_impl", "core_8h.html#a61cb94144cf48d21c29bc3343e9c11f9", null ],
+    [ "has_const_formatter_impl", "core_8h.html#ae518bedbde1aadfbd1d9632233b3bf7e", null ],
     [ "ignore_unused", "core_8h.html#aa2c46459e52094a4dd8501aebcbefa80", null ],
     [ "init_named_args", "core_8h.html#a392f70e36dbd911806400ea3886385a3", null ],
     [ "init_named_args", "core_8h.html#a094fff347f100dafed94e2745dbe7ac6", null ],

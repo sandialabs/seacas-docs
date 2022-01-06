@@ -62,7 +62,7 @@ var namespaces_dup =
       [ "check_variable_consistency", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a1a4aeaae8ae122376c4bf66af39fc538", null ],
       [ "exodus_types", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a4f0a7b831fa10d7e15f28260fb92cf76", null ],
       [ "generate_block_truth_table", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a369889bfd6f4b0129975a0f92b6ef38f", null ],
-      [ "write_attribute_names", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#addea8a83c30e4b39c8e59c3a50f40d1d", null ],
+      [ "write_attribute_names", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a755ce5b3fcffef4d0990200522091d95", null ],
       [ "complex_suffix", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a7ab2dd5c27772474303fd6666297dc88", null ],
       [ "max_line_length", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#af988ac51328995734fce46ba6e237f5a", null ],
       [ "sixty_four_bit_message_output", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a86f69772c437bdb7850de56a06636dcc", null ]
@@ -356,7 +356,7 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_TriShell7.C}", "namespaceanonymous__namespace_02Ioss__TriShell7_8C_03.html", "namespaceanonymous__namespace_02Ioss__TriShell7_8C_03" ],
     [ "anonymous_namespace{Ioss_Unknown.C}", "namespaceanonymous__namespace_02Ioss__Unknown_8C_03.html", "namespaceanonymous__namespace_02Ioss__Unknown_8C_03" ],
     [ "anonymous_namespace{Ioss_Utils.C}", "namespaceanonymous__namespace_02Ioss__Utils_8C_03.html", [
-      [ "define_field", "namespaceanonymous__namespace_02Ioss__Utils_8C_03.html#a63ff766f723334b28650d593b5097264", null ],
+      [ "define_field", "namespaceanonymous__namespace_02Ioss__Utils_8C_03.html#a8bec7f83590f4ba4e970660ef91dbd52", null ],
       [ "field_tokenize", "namespaceanonymous__namespace_02Ioss__Utils_8C_03.html#aacef5984425e3cbd3a5fc1d5f76c2b34", null ],
       [ "get_next_field", "namespaceanonymous__namespace_02Ioss__Utils_8C_03.html#ae3be9a9f721e0866b475151c770156f4", null ],
       [ "is_separator", "namespaceanonymous__namespace_02Ioss__Utils_8C_03.html#a0e5a53a272b52cbf814f8956fb9b97c8", null ],
@@ -555,11 +555,11 @@ var namespaces_dup =
     [ "pdqsort_detail", "namespacepdqsort__detail.html", [
       [ "align_cacheline", "namespacepdqsort__detail.html#a9c14c46c400c3d91db14fb6500d576a0", null ],
       [ "insertion_sort", "namespacepdqsort__detail.html#adc095280baf9194391b8fd781bf22c05", null ],
-      [ "log2", "namespacepdqsort__detail.html#a92efcfdf1e8d68b3874edff8b80076ed", null ],
       [ "partial_insertion_sort", "namespacepdqsort__detail.html#a01d434ba2a54a3abc238517e4cb7519a", null ],
       [ "partition_left", "namespacepdqsort__detail.html#af7961c01faadc35189ac84f9b03e837f", null ],
       [ "partition_right", "namespacepdqsort__detail.html#a0a55eeeaaea5faef67766c6b65ccfd2e", null ],
       [ "partition_right_branchless", "namespacepdqsort__detail.html#ae07c959114ecfa16ecafac5996f3ff26", null ],
+      [ "pdq_log2", "namespacepdqsort__detail.html#a48ed722006a8dc97ceda8ab11e49e5ac", null ],
       [ "pdqsort_loop", "namespacepdqsort__detail.html#a2c5ecdf1abb3b6e3fc02cd157512ac11", null ],
       [ "sort2", "namespacepdqsort__detail.html#a3daafaa0f44a7507d138749b7311dcaa", null ],
       [ "sort3", "namespacepdqsort__detail.html#ae1afda154c9e98c0f24589f4aa5f703f", null ],

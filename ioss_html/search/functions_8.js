@@ -24,7 +24,7 @@ var searchData=
   ['handlers_21',['handlers',['../structAssert.html#a7996a6514d9e47744302e55970b83610',1,'Assert']]],
   ['has_5fbackground_22',['has_background',['../classtext__style.html#afa9f90cd308a4a4b61ab8f6d6178a581',1,'text_style']]],
   ['has_5fconst_5fformatter_23',['has_const_formatter',['../core_8h.html#af1bd84ed55d3f25b69a382e0e6252131',1,'core.h']]],
-  ['has_5fconst_5fformatter_5fimpl_24',['has_const_formatter_impl',['../core_8h.html#aceece8f2dee76c77ba701a68e72c4496',1,'has_const_formatter_impl(...) -&gt; bool:&#160;core.h'],['../core_8h.html#a61cb94144cf48d21c29bc3343e9c11f9',1,'has_const_formatter_impl(T *) -&gt; decltype(typename Context::template formatter_type&lt; T &gt;().format(std::declval&lt; const T &amp; &gt;(), std::declval&lt; Context &amp; &gt;()), true):&#160;core.h']]],
+  ['has_5fconst_5fformatter_5fimpl_24',['has_const_formatter_impl',['../core_8h.html#aceece8f2dee76c77ba701a68e72c4496',1,'has_const_formatter_impl(...) -&gt; bool:&#160;core.h'],['../core_8h.html#ae518bedbde1aadfbd1d9632233b3bf7e',1,'has_const_formatter_impl(T *) -&gt; decltype(typename Context::template formatter_type&lt; T &gt;().format(std::declval&lt; const T &amp; &gt;(), std::declval&lt; Context &amp; &gt;()), true):&#160;core.h']]],
   ['has_5femphasis_25',['has_emphasis',['../structansi__color__escape.html#a2f88a6a4e8c15f9be3db4ead92220550',1,'ansi_color_escape::has_emphasis()'],['../classtext__style.html#a57443deabb81d0e013d81813fc4d55cb',1,'text_style::has_emphasis()']]],
   ['has_5ffaces_26',['has_faces',['../structIoss_1_1ZoneConnectivity.html#a40c5f8aa682e677f9f735978cfafb965',1,'Ioss::ZoneConnectivity']]],
   ['has_5fforeground_27',['has_foreground',['../classtext__style.html#ad605ce62796a99d87f0e9744617cf402',1,'text_style']]],
