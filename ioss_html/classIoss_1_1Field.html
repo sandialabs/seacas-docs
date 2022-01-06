@@ -121,6 +121,10 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a43f29f9ba05cb45ed893455c76526c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The basic data type held in the field.  <a href="classIoss_1_1Field.html#a43f29f9ba05cb45ed893455c76526c3e">More...</a><br /></td></tr>
 <tr class="separator:a43f29f9ba05cb45ed893455c76526c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2451ef5cd363c3bbcd08fcec559b225"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">InOut</a> { <a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225aa84cc046d48610b05c21fd3670d0c829">INPUT</a>
+, <a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225a50a87f0d71f7221582dad4bf507a0f34">OUTPUT</a>
+ }</td></tr>
+<tr class="separator:af2451ef5cd363c3bbcd08fcec559b225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa15b17d3fc1cd8701ddb1a6171db75"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">RoleType</a> { <br />
 &#160;&#160;<a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75aba56af7ebe9c01e82dee8742672ae3dc">INTERNAL</a>
 , <a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75a5989a7671f8b074c82ca91dd077ce653">MESH</a>
@@ -149,10 +153,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a1888441f1fd44e5e34e468572fc200"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a0a1888441f1fd44e5e34e468572fc200">Field</a> (std::string name, <a class="el" href="classIoss_1_1Field.html#a43f29f9ba05cb45ed893455c76526c3e">BasicType</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, const <a class="el" href="classIoss_1_1VariableType.html">VariableType</a> *storage, <a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">RoleType</a> role, size_t value_count=0, size_t index=0)</td></tr>
 <tr class="memdesc:a0a1888441f1fd44e5e34e468572fc200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a field.  <a href="classIoss_1_1Field.html#a0a1888441f1fd44e5e34e468572fc200">More...</a><br /></td></tr>
 <tr class="separator:a0a1888441f1fd44e5e34e468572fc200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64d8db09afd9d411fc7ae3bb1a15d2c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a64d8db09afd9d411fc7ae3bb1a15d2c6">Field</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;)</td></tr>
-<tr class="separator:a64d8db09afd9d411fc7ae3bb1a15d2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8781ebef4b9f7aee0a4d4066a2dac25f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a8781ebef4b9f7aee0a4d4066a2dac25f">operator=</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;)</td></tr>
-<tr class="separator:a8781ebef4b9f7aee0a4d4066a2dac25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a12f2d6e68fc8fc6fec9b3bee6627c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#ab9a12f2d6e68fc8fc6fec9b3bee6627c">Field</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;from)=default</td></tr>
+<tr class="separator:ab9a12f2d6e68fc8fc6fec9b3bee6627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bd319c2be2ba185be4b2cb5617a8bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#aa0bd319c2be2ba185be4b2cb5617a8bc">operator=</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;from)=default</td></tr>
+<tr class="separator:aa0bd319c2be2ba185be4b2cb5617a8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fc4c4753deb2f59eacfa03578dea03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#af4fc4c4753deb2f59eacfa03578dea03">~Field</a> ()=default</td></tr>
+<tr class="separator:af4fc4c4753deb2f59eacfa03578dea03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a655e9f7152caed0e4c31530eb68b822b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a655e9f7152caed0e4c31530eb68b822b">operator&lt;</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;other) const</td></tr>
 <tr class="separator:a655e9f7152caed0e4c31530eb68b822b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1dfcd7d67494e2b67dfa95efed7deb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#aa1dfcd7d67494e2b67dfa95efed7deb9">operator==</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;rhs) const</td></tr>
@@ -161,23 +167,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a28e0d3fa12f7e34f16e07b9c1769e5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a7fbed983a83865b8c539a1b2cfa9a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a0a7fbed983a83865b8c539a1b2cfa9a8">equal</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;rhs) const</td></tr>
 <tr class="separator:a0a7fbed983a83865b8c539a1b2cfa9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03126497f47def1d1a657a02b8e9af7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a03126497f47def1d1a657a02b8e9af7d">~Field</a> ()</td></tr>
-<tr class="separator:a03126497f47def1d1a657a02b8e9af7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e948e240fb41b70a41dadad43fca52c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a3e948e240fb41b70a41dadad43fca52c">is_valid</a> () const</td></tr>
 <tr class="separator:a3e948e240fb41b70a41dadad43fca52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd2c2775364b6e351667613997ea32f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a3fd2c2775364b6e351667613997ea32f">is_invalid</a> () const</td></tr>
 <tr class="separator:a3fd2c2775364b6e351667613997ea32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83034bb05a0aa3571cc89e7f54669668"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a83034bb05a0aa3571cc89e7f54669668">get_name</a> () const</td></tr>
 <tr class="separator:a83034bb05a0aa3571cc89e7f54669668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa20c52bef2e3e6a1693909b61f4b52e6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#aa20c52bef2e3e6a1693909b61f4b52e6">get_component_name</a> (int component_index, char suffix=1) const</td></tr>
-<tr class="memdesc:aa20c52bef2e3e6a1693909b61f4b52e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of the 'component_indexth` component (1-based)  <a href="classIoss_1_1Field.html#aa20c52bef2e3e6a1693909b61f4b52e6">More...</a><br /></td></tr>
-<tr class="separator:aa20c52bef2e3e6a1693909b61f4b52e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af289aac3cb851d3e6f3fd0c55697550e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#af289aac3cb851d3e6f3fd0c55697550e">get_component_count</a> () const</td></tr>
-<tr class="separator:af289aac3cb851d3e6f3fd0c55697550e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9be0abc9c902cc050ad3b19bdf76a2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#aac9be0abc9c902cc050ad3b19bdf76a2">get_component_name</a> (int component_index, <a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">InOut</a> in_out, char suffix=1) const</td></tr>
+<tr class="memdesc:aac9be0abc9c902cc050ad3b19bdf76a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of the 'component_indexth` component (1-based)  <a href="classIoss_1_1Field.html#aac9be0abc9c902cc050ad3b19bdf76a2">More...</a><br /></td></tr>
+<tr class="separator:aac9be0abc9c902cc050ad3b19bdf76a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5316d7e05f9e17f1fb9ba23fb0367fcd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a5316d7e05f9e17f1fb9ba23fb0367fcd">get_component_count</a> (<a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">InOut</a> in_out) const</td></tr>
+<tr class="separator:a5316d7e05f9e17f1fb9ba23fb0367fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a512ad4c1e7d7eb59455c5d61318d266d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a512ad4c1e7d7eb59455c5d61318d266d">set_suffix_separator</a> (char suffix_separator)</td></tr>
 <tr class="separator:a512ad4c1e7d7eb59455c5d61318d266d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0b7c1b9fec5197097c513907488a3aa"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#ae0b7c1b9fec5197097c513907488a3aa">get_suffix_separator</a> () const</td></tr>
 <tr class="separator:ae0b7c1b9fec5197097c513907488a3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a1198c4f49eb5ad18e4ef6b05669d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a43a1198c4f49eb5ad18e4ef6b05669d7">set_suffices_uppercase</a> (bool true_false)</td></tr>
+<tr class="separator:a43a1198c4f49eb5ad18e4ef6b05669d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b06f7a68f822e4799c3a4da5bd8d25c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a8b06f7a68f822e4799c3a4da5bd8d25c">get_suffices_uppercase</a> () const</td></tr>
+<tr class="separator:a8b06f7a68f822e4799c3a4da5bd8d25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8abb33dcfa0630f6422e7541b36694b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1Field.html#a43f29f9ba05cb45ed893455c76526c3e">BasicType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#a8abb33dcfa0630f6422e7541b36694b4">get_type</a> () const</td></tr>
 <tr class="memdesc:a8abb33dcfa0630f6422e7541b36694b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the basic data type of the data held in the field.  <a href="classIoss_1_1Field.html#a8abb33dcfa0630f6422e7541b36694b4">More...</a><br /></td></tr>
 <tr class="separator:a8abb33dcfa0630f6422e7541b36694b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,6 +275,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a06f29c79ef7fe7dca992167f88c7fb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad221ad8b46c214ddc0e59570d9959d04"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#ad221ad8b46c214ddc0e59570d9959d04">suffixSeparator_</a> {1}</td></tr>
 <tr class="separator:ad221ad8b46c214ddc0e59570d9959d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2dc86e54004333273476d9047e7b2aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Field.html#ac2dc86e54004333273476d9047e7b2aa">sufficesUppercase_</a> {false}</td></tr>
+<tr class="separator:ac2dc86e54004333273476d9047e7b2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Holds metadata for bulk data associated with a <a class="el" href="classIoss_1_1GroupingEntity.html" title="Base class for all &#39;grouping&#39; entities. The following derived classes are typical:">GroupingEntity</a>. </p>
@@ -294,6 +304,32 @@ Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a43f29f9ba05cb45ed893455c76526c3ea22cf8d4e8d2381e83e42b22f1e84be2e" name="a43f29f9ba05cb45ed893455c76526c3ea22cf8d4e8d2381e83e42b22f1e84be2e"></a>COMPLEX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a43f29f9ba05cb45ed893455c76526c3ea80434166156f91e45f8d9d4080fc291d" name="a43f29f9ba05cb45ed893455c76526c3ea80434166156f91e45f8d9d4080fc291d"></a>STRING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a43f29f9ba05cb45ed893455c76526c3eac8a67572123e0c7524d491b3f2e9d31b" name="a43f29f9ba05cb45ed893455c76526c3eac8a67572123e0c7524d491b3f2e9d31b"></a>CHARACTER&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="af2451ef5cd363c3bbcd08fcec559b225" name="af2451ef5cd363c3bbcd08fcec559b225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2451ef5cd363c3bbcd08fcec559b225">&#9670;&nbsp;</a></span>InOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">Ioss::Field::InOut</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af2451ef5cd363c3bbcd08fcec559b225aa84cc046d48610b05c21fd3670d0c829" name="af2451ef5cd363c3bbcd08fcec559b225aa84cc046d48610b05c21fd3670d0c829"></a>INPUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af2451ef5cd363c3bbcd08fcec559b225a50a87f0d71f7221582dad4bf507a0f34" name="af2451ef5cd363c3bbcd08fcec559b225a50a87f0d71f7221582dad4bf507a0f34"></a>OUTPUT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -549,8 +585,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a64d8db09afd9d411fc7ae3bb1a15d2c6" name="a64d8db09afd9d411fc7ae3bb1a15d2c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64d8db09afd9d411fc7ae3bb1a15d2c6">&#9670;&nbsp;</a></span>Field() <span class="overload">[5/5]</span></h2>
+<a id="ab9a12f2d6e68fc8fc6fec9b3bee6627c" name="ab9a12f2d6e68fc8fc6fec9b3bee6627c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a12f2d6e68fc8fc6fec9b3bee6627c">&#9670;&nbsp;</a></span>Field() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -561,8 +597,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">Ioss::Field::Field </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -575,8 +611,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a03126497f47def1d1a657a02b8e9af7d" name="a03126497f47def1d1a657a02b8e9af7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03126497f47def1d1a657a02b8e9af7d">&#9670;&nbsp;</a></span>~Field()</h2>
+<a id="af4fc4c4753deb2f59eacfa03578dea03" name="af4fc4c4753deb2f59eacfa03578dea03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4fc4c4753deb2f59eacfa03578dea03">&#9670;&nbsp;</a></span>~Field()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -691,8 +727,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af289aac3cb851d3e6f3fd0c55697550e" name="af289aac3cb851d3e6f3fd0c55697550e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af289aac3cb851d3e6f3fd0c55697550e">&#9670;&nbsp;</a></span>get_component_count()</h2>
+<a id="a5316d7e05f9e17f1fb9ba23fb0367fcd" name="a5316d7e05f9e17f1fb9ba23fb0367fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5316d7e05f9e17f1fb9ba23fb0367fcd">&#9670;&nbsp;</a></span>get_component_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -700,7 +736,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">int Ioss::Field::get_component_count </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">InOut</a>&#160;</td>
+          <td class="paramname"><em>in_out</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -708,8 +745,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa20c52bef2e3e6a1693909b61f4b52e6" name="aa20c52bef2e3e6a1693909b61f4b52e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa20c52bef2e3e6a1693909b61f4b52e6">&#9670;&nbsp;</a></span>get_component_name()</h2>
+<a id="aac9be0abc9c902cc050ad3b19bdf76a2" name="aac9be0abc9c902cc050ad3b19bdf76a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac9be0abc9c902cc050ad3b19bdf76a2">&#9670;&nbsp;</a></span>get_component_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -719,6 +756,12 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>component_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">InOut</a>&#160;</td>
+          <td class="paramname"><em>in_out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1049,6 +1092,31 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8b06f7a68f822e4799c3a4da5bd8d25c" name="a8b06f7a68f822e4799c3a4da5bd8d25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b06f7a68f822e4799c3a4da5bd8d25c">&#9670;&nbsp;</a></span>get_suffices_uppercase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::Field::get_suffices_uppercase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae0b7c1b9fec5197097c513907488a3aa" name="ae0b7c1b9fec5197097c513907488a3aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0b7c1b9fec5197097c513907488a3aa">&#9670;&nbsp;</a></span>get_suffix_separator()</h2>
 
@@ -1239,8 +1307,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8781ebef4b9f7aee0a4d4066a2dac25f" name="a8781ebef4b9f7aee0a4d4066a2dac25f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8781ebef4b9f7aee0a4d4066a2dac25f">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="aa0bd319c2be2ba185be4b2cb5617a8bc" name="aa0bd319c2be2ba185be4b2cb5617a8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bd319c2be2ba185be4b2cb5617a8bc">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1249,10 +1317,10 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp; Ioss::Field::operator= </td>
+          <td class="memname"><a class="el" href="classIoss_1_1Field.html">Field</a> &amp; Ioss::Field::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1384,6 +1452,32 @@ Private Attributes</h2></td></tr>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43a1198c4f49eb5ad18e4ef6b05669d7" name="a43a1198c4f49eb5ad18e4ef6b05669d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a1198c4f49eb5ad18e4ef6b05669d7">&#9670;&nbsp;</a></span>set_suffices_uppercase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::Field::set_suffices_uppercase </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>true_false</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -1672,6 +1766,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">size_t Ioss::Field::size_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2dc86e54004333273476d9047e7b2aa" name="ac2dc86e54004333273476d9047e7b2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2dc86e54004333273476d9047e7b2aa">&#9670;&nbsp;</a></span>sufficesUppercase_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::Field::sufficesUppercase_ {false}</td>
         </tr>
       </table>
   </td>
