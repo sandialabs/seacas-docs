@@ -242,7 +242,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Ioss_Initializer.h", "Ioss__Initializer_8h.html", [
       [ "Ioss::Initializer", "classIoss_1_1Initializer.html", "classIoss_1_1Initializer" ]
     ] ],
-    [ "Ioss_InputDatabase.h", "Ioss__InputDatabase_8h.html", "Ioss__InputDatabase_8h" ],
+    [ "Ioss_InputDatabase.h", "Ioss__InputDatabase_8h.html", null ],
     [ "Ioss_IOFactory.C", "Ioss__IOFactory_8C.html", "Ioss__IOFactory_8C" ],
     [ "Ioss_IOFactory.h", "Ioss__IOFactory_8h.html", "Ioss__IOFactory_8h" ],
     [ "Ioss_Map.C", "Ioss__Map_8C.html", "Ioss__Map_8C" ],

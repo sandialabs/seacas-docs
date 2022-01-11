@@ -86,26 +86,24 @@ $(document).ready(function(){initNavTree('tokenize_8h_source.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <a href="tokenize_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright(C) 1999-2020, 2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * See packages/seacas/LICENSE for details</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef TOKENIZE_H</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define TOKENIZE_H</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {<span class="comment"></span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">   * Take the &#39;str&#39; argument and split it using the list of characters</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">   * in separators as separators. Use tokens to return the result.</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  std::vector&lt;std::string&gt; <a class="code hl_function" href="namespaceIoss.html#a841de519059ab3e29b12ff99fee464db">tokenize</a>(<span class="keyword">const</span> std::string &amp;str, <span class="keyword">const</span> std::string &amp;separators);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace Ioss</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {<span class="comment"></span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">   * Take the &#39;str&#39; argument and split it using the list of characters</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">   * in separators as separators. Use tokens to return the result.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  std::vector&lt;std::string&gt; <a class="code hl_function" href="namespaceIoss.html#a841de519059ab3e29b12ff99fee464db">tokenize</a>(<span class="keyword">const</span> std::string &amp;str, <span class="keyword">const</span> std::string &amp;separators);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace Ioss</span></div>
 <div class="ttc" id="anamespaceIoss_html"><div class="ttname"><a href="namespaceIoss.html">Ioss</a></div><div class="ttdoc">The main namespace for the Ioss library.</div><div class="ttdef"><b>Definition:</b> Ioad_DatabaseIO.C:40</div></div>
 <div class="ttc" id="anamespaceIoss_html_a841de519059ab3e29b12ff99fee464db"><div class="ttname"><a href="namespaceIoss.html#a841de519059ab3e29b12ff99fee464db">Ioss::tokenize</a></div><div class="ttdeci">std::vector&lt; std::string &gt; tokenize(const std::string &amp;str, const std::string &amp;separators)</div><div class="ttdef"><b>Definition:</b> tokenize.C:11</div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -44,6 +44,7 @@ var classSEAMS_1_1Aprepro =
     [ "parse_strings", "classSEAMS_1_1Aprepro.html#a6026be3e1d19761f02a4e02da0682350", null ],
     [ "parsing_results", "classSEAMS_1_1Aprepro.html#a88809fa3f85ac81f51db69507dd63c71", null ],
     [ "putsym", "classSEAMS_1_1Aprepro.html#a99d76312239bd0aaafb62a73c26edf69", null ],
+    [ "redefine_array", "classSEAMS_1_1Aprepro.html#aa30df74c7661d884bb76fad2c552d77e", null ],
     [ "remove_variable", "classSEAMS_1_1Aprepro.html#ae4ee54a52b8183ebcf4ad74ab7dc4d84", null ],
     [ "set_error_streams", "classSEAMS_1_1Aprepro.html#a81fa3be725377b47666482fd4783133f", null ],
     [ "set_option", "classSEAMS_1_1Aprepro.html#a71039386241d1fc5f547af6d1c6eecaf", null ],

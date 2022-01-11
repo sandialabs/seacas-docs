@@ -86,24 +86,21 @@ $(document).ready(function(){initNavTree('Utst__structured__decomp_8h_source.htm
 </div><!--header-->
 <div class="contents">
 <a href="Utst__structured__decomp_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright(C) 1999-2020, 2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * See packages/seacas/LICENSE for details</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef Utst_structured_decomp_h</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define Utst_structured_decomp_h</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="Iocgns__StructuredZoneData_8h.html">cgns/Iocgns_StructuredZoneData.h</a>&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> <a class="code hl_function" href="Utst__structured__decomp_8h.html#a256a840c43baa6d6644ba4320c4f2bc5">cleanup</a>(std::vector&lt;Iocgns::StructuredZoneData *&gt; &amp;zones);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> <a class="code hl_function" href="Utst__structured__decomp_8h.html#a9631358d47a181d6697be33c73b3aece">check_split_assign</a>(std::vector&lt;Iocgns::StructuredZoneData *&gt; &amp;zones,</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                        <span class="keywordtype">double</span> load_balance_tolerance, <span class="keywordtype">size_t</span> proc_count, <span class="keywordtype">double</span> min_toler = 0.9,</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                        <span class="keywordtype">double</span> max_toler = 1.0);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="Iocgns__StructuredZoneData_8h.html">cgns/Iocgns_StructuredZoneData.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">void</span> <a class="code hl_function" href="Utst__structured__decomp_8h.html#a256a840c43baa6d6644ba4320c4f2bc5">cleanup</a>(std::vector&lt;Iocgns::StructuredZoneData *&gt; &amp;zones);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> <a class="code hl_function" href="Utst__structured__decomp_8h.html#a9631358d47a181d6697be33c73b3aece">check_split_assign</a>(std::vector&lt;Iocgns::StructuredZoneData *&gt; &amp;zones,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                        <span class="keywordtype">double</span> load_balance_tolerance, <span class="keywordtype">size_t</span> proc_count, <span class="keywordtype">double</span> min_toler = 0.9,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                        <span class="keywordtype">double</span> max_toler = 1.0);</div>
 <div class="ttc" id="aIocgns__StructuredZoneData_8h_html"><div class="ttname"><a href="Iocgns__StructuredZoneData_8h.html">Iocgns_StructuredZoneData.h</a></div></div>
 <div class="ttc" id="aUtst__structured__decomp_8h_html_a256a840c43baa6d6644ba4320c4f2bc5"><div class="ttname"><a href="Utst__structured__decomp_8h.html#a256a840c43baa6d6644ba4320c4f2bc5">cleanup</a></div><div class="ttdeci">void cleanup(std::vector&lt; Iocgns::StructuredZoneData * &gt; &amp;zones)</div><div class="ttdef"><b>Definition:</b> Utst_structured_decomp.C:59</div></div>
 <div class="ttc" id="aUtst__structured__decomp_8h_html_a9631358d47a181d6697be33c73b3aece"><div class="ttname"><a href="Utst__structured__decomp_8h.html#a9631358d47a181d6697be33c73b3aece">check_split_assign</a></div><div class="ttdeci">void check_split_assign(std::vector&lt; Iocgns::StructuredZoneData * &gt; &amp;zones, double load_balance_tolerance, size_t proc_count, double min_toler=0.9, double max_toler=1.0)</div><div class="ttdef"><b>Definition:</b> Utst_structured_decomp.C:68</div></div>

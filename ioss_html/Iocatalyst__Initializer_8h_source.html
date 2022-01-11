@@ -85,37 +85,35 @@ $(document).ready(function(){initNavTree('Iocatalyst__Initializer_8h_source.html
   <div class="headertitle"><div class="title">Iocatalyst_Initializer.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Iocatalyst__Initializer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<a href="Iocatalyst__Initializer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// See packages/seacas/LICENSE for details</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef IOSS_Iocatalyst_Initializer_h</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define IOSS_Iocatalyst_Initializer_h</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIocatalyst.html">Iocatalyst</a> {<span class="comment"></span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">  /** \brief Initialization of the Catalyst database parts of the Ioss library.</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">   *  If any input or output type is catalyst, catalyst2 or catalyst_conduit,</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">   *  then an object of this type must be created before using any other functions</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">   *  or methods in the Ioss library except Ioss::Init::Initializer().</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classIocatalyst_1_1Initializer.html">   17</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classIocatalyst_1_1Initializer.html">Initializer</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="classIocatalyst_1_1Initializer.html#a83e5852f44f30c3ff7f42ed150fc6546">Initializer</a>();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="classIocatalyst_1_1Initializer.html#ad34be1da7ddb67efc26ea0e20743393a">~Initializer</a>();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// Copy constructor</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// Assignment operator</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classIocatalyst_1_1Initializer.html#abcbf04d4fae8c9a9e07216cee8f1ea91">   25</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classIocatalyst_1_1Initializer.html#abcbf04d4fae8c9a9e07216cee8f1ea91">useCount</a>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  };</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} <span class="comment">// namespace Iocatalyst</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassIocatalyst_1_1Initializer_html"><div class="ttname"><a href="classIocatalyst_1_1Initializer.html">Iocatalyst::Initializer</a></div><div class="ttdoc">Initialization of the Catalyst database parts of the Ioss library.</div><div class="ttdef"><b>Definition:</b> Iocatalyst_Initializer.h:18</div></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIocatalyst.html">Iocatalyst</a> {<span class="comment"></span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">  /** \brief Initialization of the Catalyst database parts of the Ioss library.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">   *  If any input or output type is catalyst, catalyst2 or catalyst_conduit,</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">   *  then an object of this type must be created before using any other functions</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">   *  or methods in the Ioss library except Ioss::Init::Initializer().</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classIocatalyst_1_1Initializer.html">   16</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classIocatalyst_1_1Initializer.html">Initializer</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_function" href="classIocatalyst_1_1Initializer.html#a83e5852f44f30c3ff7f42ed150fc6546">Initializer</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="classIocatalyst_1_1Initializer.html#ad34be1da7ddb67efc26ea0e20743393a">~Initializer</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">// Copy constructor</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// Assignment operator</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classIocatalyst_1_1Initializer.html#abcbf04d4fae8c9a9e07216cee8f1ea91">   24</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classIocatalyst_1_1Initializer.html#abcbf04d4fae8c9a9e07216cee8f1ea91">useCount</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  };</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} <span class="comment">// namespace Iocatalyst</span></div>
+<div class="ttc" id="aclassIocatalyst_1_1Initializer_html"><div class="ttname"><a href="classIocatalyst_1_1Initializer.html">Iocatalyst::Initializer</a></div><div class="ttdoc">Initialization of the Catalyst database parts of the Ioss library.</div><div class="ttdef"><b>Definition:</b> Iocatalyst_Initializer.h:17</div></div>
 <div class="ttc" id="aclassIocatalyst_1_1Initializer_html_a83e5852f44f30c3ff7f42ed150fc6546"><div class="ttname"><a href="classIocatalyst_1_1Initializer.html#a83e5852f44f30c3ff7f42ed150fc6546">Iocatalyst::Initializer::Initializer</a></div><div class="ttdeci">Initializer()</div><div class="ttdoc">Initialize the adios database parts of the Ioss library.</div><div class="ttdef"><b>Definition:</b> Iocatalyst_Initializer.C:18</div></div>
-<div class="ttc" id="aclassIocatalyst_1_1Initializer_html_abcbf04d4fae8c9a9e07216cee8f1ea91"><div class="ttname"><a href="classIocatalyst_1_1Initializer.html#abcbf04d4fae8c9a9e07216cee8f1ea91">Iocatalyst::Initializer::useCount</a></div><div class="ttdeci">static int useCount</div><div class="ttdef"><b>Definition:</b> Iocatalyst_Initializer.h:25</div></div>
+<div class="ttc" id="aclassIocatalyst_1_1Initializer_html_abcbf04d4fae8c9a9e07216cee8f1ea91"><div class="ttname"><a href="classIocatalyst_1_1Initializer.html#abcbf04d4fae8c9a9e07216cee8f1ea91">Iocatalyst::Initializer::useCount</a></div><div class="ttdeci">static int useCount</div><div class="ttdef"><b>Definition:</b> Iocatalyst_Initializer.h:24</div></div>
 <div class="ttc" id="aclassIocatalyst_1_1Initializer_html_ad34be1da7ddb67efc26ea0e20743393a"><div class="ttname"><a href="classIocatalyst_1_1Initializer.html#ad34be1da7ddb67efc26ea0e20743393a">Iocatalyst::Initializer::~Initializer</a></div><div class="ttdeci">~Initializer()</div><div class="ttdef"><b>Definition:</b> Iocatalyst_Initializer.C:25</div></div>
 <div class="ttc" id="anamespaceIocatalyst_html"><div class="ttname"><a href="namespaceIocatalyst.html">Iocatalyst</a></div><div class="ttdoc">A namespace for the Catalyst 2.0 database format.</div><div class="ttdef"><b>Definition:</b> Iocatalyst_DatabaseIO.C:44</div></div>
 </div><!-- fragment --></div><!-- contents -->

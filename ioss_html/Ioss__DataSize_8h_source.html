@@ -85,26 +85,24 @@ $(document).ready(function(){initNavTree('Ioss__DataSize_8h_source.html',''); in
   <div class="headertitle"><div class="title">Ioss_DataSize.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Ioss__DataSize_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<a href="Ioss__DataSize_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// See packages/seacas/LICENSE for details</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef IOSS_Ioss_DataSize_h</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define IOSS_Ioss_DataSize_h</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">  /** \brief The number of bytes used to store an integer type.</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">   14</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">DataSize</a> { <a class="code hl_enumvalue" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a1ac43d414d9b6b81de11e72b039007ff">USE_INT32_API</a> = 4, <a class="code hl_enumvalue" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a02f7f9908ebd77ce525d9da18db83b94">USE_INT64_API</a> = 8 };</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>} <span class="comment">// namespace Ioss</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif </span><span class="comment">// IOSS_Ioss_DataSize_h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">  /** \brief The number of bytes used to store an integer type.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">   13</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">DataSize</a> { <a class="code hl_enumvalue" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a1ac43d414d9b6b81de11e72b039007ff">USE_INT32_API</a> = 4, <a class="code hl_enumvalue" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a02f7f9908ebd77ce525d9da18db83b94">USE_INT64_API</a> = 8 };</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>} <span class="comment">// namespace Ioss</span></div>
 <div class="ttc" id="anamespaceIoss_html"><div class="ttname"><a href="namespaceIoss.html">Ioss</a></div><div class="ttdoc">The main namespace for the Ioss library.</div><div class="ttdef"><b>Definition:</b> Ioad_DatabaseIO.C:40</div></div>
-<div class="ttc" id="anamespaceIoss_html_a471a5f1fc4d6837c650722e41edb2822"><div class="ttname"><a href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">Ioss::DataSize</a></div><div class="ttdeci">DataSize</div><div class="ttdoc">The number of bytes used to store an integer type.</div><div class="ttdef"><b>Definition:</b> Ioss_DataSize.h:14</div></div>
-<div class="ttc" id="anamespaceIoss_html_a471a5f1fc4d6837c650722e41edb2822a02f7f9908ebd77ce525d9da18db83b94"><div class="ttname"><a href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a02f7f9908ebd77ce525d9da18db83b94">Ioss::USE_INT64_API</a></div><div class="ttdeci">@ USE_INT64_API</div><div class="ttdef"><b>Definition:</b> Ioss_DataSize.h:14</div></div>
-<div class="ttc" id="anamespaceIoss_html_a471a5f1fc4d6837c650722e41edb2822a1ac43d414d9b6b81de11e72b039007ff"><div class="ttname"><a href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a1ac43d414d9b6b81de11e72b039007ff">Ioss::USE_INT32_API</a></div><div class="ttdeci">@ USE_INT32_API</div><div class="ttdef"><b>Definition:</b> Ioss_DataSize.h:14</div></div>
+<div class="ttc" id="anamespaceIoss_html_a471a5f1fc4d6837c650722e41edb2822"><div class="ttname"><a href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">Ioss::DataSize</a></div><div class="ttdeci">DataSize</div><div class="ttdoc">The number of bytes used to store an integer type.</div><div class="ttdef"><b>Definition:</b> Ioss_DataSize.h:13</div></div>
+<div class="ttc" id="anamespaceIoss_html_a471a5f1fc4d6837c650722e41edb2822a02f7f9908ebd77ce525d9da18db83b94"><div class="ttname"><a href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a02f7f9908ebd77ce525d9da18db83b94">Ioss::USE_INT64_API</a></div><div class="ttdeci">@ USE_INT64_API</div><div class="ttdef"><b>Definition:</b> Ioss_DataSize.h:13</div></div>
+<div class="ttc" id="anamespaceIoss_html_a471a5f1fc4d6837c650722e41edb2822a1ac43d414d9b6b81de11e72b039007ff"><div class="ttname"><a href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a1ac43d414d9b6b81de11e72b039007ff">Ioss::USE_INT32_API</a></div><div class="ttdeci">@ USE_INT32_API</div><div class="ttdef"><b>Definition:</b> Ioss_DataSize.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

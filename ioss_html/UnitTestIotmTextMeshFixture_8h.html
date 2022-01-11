@@ -107,12 +107,12 @@ $(document).ready(function(){initNavTree('UnitTestIotmTextMeshFixture_8h.html','
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;<a class="el" href="ostream_8h_source.html">fmt/ostream.h</a>&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;strings.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__CommSet_8h_source.html">Ioss_CommSet.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__ElementTopology_8h_source.html">Ioss_ElementTopology.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Ioss__StandardElementTypes_8h_source.html">Ioss_StandardElementTypes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__ParallelUtils_8h_source.html">Ioss_ParallelUtils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__StandardElementTypes_8h_source.html">Ioss_StandardElementTypes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Iotm__TextMeshTopologyMapping_8h_source.html">text_mesh/Iotm_TextMeshTopologyMapping.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for UnitTestIotmTextMeshFixture.h:</div>
@@ -194,12 +194,12 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">    if ( !(expr) ) {                                                         \</div>
-<div class="line">      std::ostringstream internal_throw_require_oss;                         \</div>
-<div class="line">      internal_throw_require_oss &lt;&lt; message;                                 \</div>
-<div class="line">      throw std::logic_error(internal_throw_require_oss.str());              \</div>
-<div class="line">    }                                                                        \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                                             \</div>
+<div class="line">    if (!(expr)) {                                                                                 \</div>
+<div class="line">      std::ostringstream internal_throw_require_oss;                                               \</div>
+<div class="line">      internal_throw_require_oss &lt;&lt; message;                                                       \</div>
+<div class="line">      throw std::logic_error(internal_throw_require_oss.str());                                    \</div>
+<div class="line">    }                                                                                              \</div>
 <div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
 </div><!-- fragment -->
 </div>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../structex__attribute.html#a6628525d58acf1e4879b35020b06e178',1,'ex_attribute::name()'],['../structex__blob.html#ac0336d24c5a1dc0e9a09ba181f01c0b1',1,'ex_blob::name()'],['../structex__assembly.html#acdd12a84aa8352394d779fc0b0b55957',1,'ex_assembly::name()'],['../structncvar.html#ab5eece38461b442b004904452347250d',1,'ncvar::name()']]],
+  ['name_0',['name',['../structex__attribute.html#a9dc86f0cded09c377f4cbcac5b357b98',1,'ex_attribute::name()'],['../structex__blob.html#ac0336d24c5a1dc0e9a09ba181f01c0b1',1,'ex_blob::name()'],['../structex__assembly.html#acdd12a84aa8352394d779fc0b0b55957',1,'ex_assembly::name()'],['../structncvar.html#ab5eece38461b442b004904452347250d',1,'ncvar::name()']]],
   ['natts_1',['natts',['../structncvar.html#adeafcf9a6d3098858f4c6390939cd6a0',1,'ncvar']]],
   ['nc_5ffloat_5fwordsize_2',['NC_FLOAT_WORDSIZE',['../ex__conv_8c.html#ad496620435dc522e8908edff46c3a2c0',1,'ex_conv.c']]],
   ['nc_5fflt_5fcode_3',['nc_flt_code',['../group__Utilities.html#ga0bcb99c4a23dde165c0a75e9acfb3d55',1,'nc_flt_code(int exoid):&#160;ex_conv.c'],['../group__Internal.html#ga0bcb99c4a23dde165c0a75e9acfb3d55',1,'nc_flt_code(int exoid):&#160;ex_conv.c']]],
