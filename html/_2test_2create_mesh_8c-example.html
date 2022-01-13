@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -281,12 +281,12 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">  <span class="keywordflow">while</span> (++arg &lt; argc) {</div>
 <div class="line">    <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-c&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_nodal_fields = atoi(argv[arg]);</div>
+<div class="line">        *num_nodal_fields = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-compress&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *compression_level = atoi(argv[arg]);</div>
+<div class="line">        *compression_level = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-shuffle&quot;</span>, argv[arg]) == 0) {</div>
@@ -297,22 +297,22 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-nv&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_nodal_fields = atoi(argv[arg]);</div>
+<div class="line">        *num_nodal_fields = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-gv&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_global_fields = atoi(argv[arg]);</div>
+<div class="line">        *num_global_fields = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-ev&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_element_fields = atoi(argv[arg]);</div>
+<div class="line">        *num_element_fields = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-t&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_timesteps = atoi(argv[arg]);</div>
+<div class="line">        *num_timesteps = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-d&quot;</span>, argv[arg]) == 0) {</div>
@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-m&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *map_origin = atoi(argv[arg]);</div>
+<div class="line">        *map_origin = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-n&quot;</span>, argv[arg]) == 0) {</div>
@@ -335,7 +335,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-p&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_domains = atoi(argv[arg]);</div>
+<div class="line">        *num_domains = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-x&quot;</span>, argv[arg]) == 0) {</div>

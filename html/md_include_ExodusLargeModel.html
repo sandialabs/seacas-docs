@@ -131,88 +131,88 @@ ex_create():</h1>
 </div><!-- fragment --><h1><a class="anchor" id="ex_put_init"></a>
 ex_put_init():</h1>
 <p >&ndash; If writing a "large model" capable database, then the coordinates are defined as components instead of an array. The variables are <code>VAR_COORD_X</code>, <code>VAR_COORD_Y</code> (if 2D or 3D), <code>VAR_COORD_Z</code> (if 3D). If not, define the <code>VAR_COORD</code> variable as is currently done.</p>
-<div class="fragment"><div class="line">   if (ex_large_model(exoid) == 1) {</div>
-<div class="line">     /* node coordinate arrays -- separate storage... */</div>
-<div class="line">     dim[0] = numnoddim;</div>
-<div class="line">     if (ncvardef (exoid, VAR_COORD_X, nc_flt_code(exoid), 1, dim) == -1)</div>
-<div class="line">{ ... handle error }</div>
-<div class="line">     </div>
-<div class="line">     if (num_dim &gt; 1) {</div>
-<div class="line">if (ncvardef (exoid, VAR_COORD_Y, nc_flt_code(exoid), 1, dim) == -1)</div>
-<div class="line">  { ... handle error }</div>
-<div class="line">     }</div>
-<div class="line">     </div>
-<div class="line">     if (num_dim &gt; 2) {</div>
-<div class="line">if (ncvardef (exoid, VAR_COORD_Z, nc_flt_code(exoid), 1, dim) == -1)</div>
-<div class="line">  { ... handle error }</div>
-<div class="line">     }</div>
-<div class="line">   } else {</div>
-<div class="line">     /* node coordinate arrays: -- all stored together (old method) */</div>
-<div class="line">     .... define the old way...</div>
-<div class="line">   }       </div>
+<div class="fragment"><div class="line">if (ex_large_model(exoid) == 1) {</div>
+<div class="line">  /* node coordinate arrays -- separate storage... */</div>
+<div class="line">  dim[0] = numnoddim;</div>
+<div class="line">  if (ncvardef (exoid, VAR_COORD_X, nc_flt_code(exoid), 1, dim) == -1)</div>
+<div class="line">    { ... handle error }</div>
+<div class="line">  </div>
+<div class="line">  if (num_dim &gt; 1) {</div>
+<div class="line">    if (ncvardef (exoid, VAR_COORD_Y, nc_flt_code(exoid), 1, dim) == -1)</div>
+<div class="line">      { ... handle error }</div>
+<div class="line">  }</div>
+<div class="line">  </div>
+<div class="line">  if (num_dim &gt; 2) {</div>
+<div class="line">    if (ncvardef (exoid, VAR_COORD_Z, nc_flt_code(exoid), 1, dim) == -1)</div>
+<div class="line">      { ... handle error }</div>
+<div class="line">  }</div>
+<div class="line">} else {</div>
+<div class="line">  /* node coordinate arrays: -- all stored together (old method) */</div>
+<div class="line">  .... define the old way...</div>
+<div class="line">}       </div>
 </div><!-- fragment --><h1><a class="anchor" id="ex_put_coord"></a>
 ex_put_coord():</h1>
 <p >&ndash; If writing a "large model" capable database, then the coordinates are written a component at a time, otherwise write the old way as a single blob.</p>
-<div class="fragment"><div class="line"> if (ex_large_model(exoid) == 0) {</div>
-<div class="line">   ... write coordinates old way...</div>
-<div class="line"> } else {</div>
-<div class="line">   if ((coordidx = ncvarid (exoid, VAR_COORD_X)) == -1)</div>
-<div class="line">     { ... handle error }</div>
-<div class="line">   </div>
-<div class="line">   if (num_dim &gt; 1) {</div>
-<div class="line">     if ((coordidy = ncvarid (exoid, VAR_COORD_Y)) == -1)</div>
-<div class="line">{ ... handle error }</div>
-<div class="line">   } else {</div>
-<div class="line">     coordidy = 0;</div>
-<div class="line">   }</div>
-<div class="line">   if (num_dim &gt; 2) {</div>
-<div class="line">     if ((coordidz = ncvarid (exoid, VAR_COORD_Z)) == -1)</div>
-<div class="line">{ ... handle error }</div>
-<div class="line">   } else {</div>
-<div class="line">     coordidz = 0;</div>
-<div class="line">   }</div>
-<div class="line">   /* write out the coordinates  */</div>
-<div class="line">   for (i=0; i&lt;= num_vars; i++) {</div>
-<div class="line">     dims[0] = time_dim;</div>
-<div class="line">     dims[1] = num_nod_dim;</div>
-<div class="line">     if ((ncvardef (exoid, VAR_NOD_VAR_NEW(i),</div>
-<div class="line">      nc_flt_code(exoid), 2, dims)) == -1)</div>
-<div class="line">{  ... handle error ... }</div>
-<div class="line">   }</div>
-<div class="line"> }</div>
+<div class="fragment"><div class="line">if (ex_large_model(exoid) == 0) {</div>
+<div class="line">  ... write coordinates old way...</div>
+<div class="line">} else {</div>
+<div class="line">  if ((coordidx = ncvarid (exoid, VAR_COORD_X)) == -1)</div>
+<div class="line">    { ... handle error }</div>
+<div class="line">  </div>
+<div class="line">  if (num_dim &gt; 1) {</div>
+<div class="line">    if ((coordidy = ncvarid (exoid, VAR_COORD_Y)) == -1)</div>
+<div class="line">      { ... handle error }</div>
+<div class="line">  } else {</div>
+<div class="line">    coordidy = 0;</div>
+<div class="line">  }</div>
+<div class="line">  if (num_dim &gt; 2) {</div>
+<div class="line">    if ((coordidz = ncvarid (exoid, VAR_COORD_Z)) == -1)</div>
+<div class="line">      { ... handle error }</div>
+<div class="line">  } else {</div>
+<div class="line">    coordidz = 0;</div>
+<div class="line">  }</div>
+<div class="line">  /* write out the coordinates  */</div>
+<div class="line">  for (i=0; i&lt;= num_vars; i++) {</div>
+<div class="line">    dims[0] = time_dim;</div>
+<div class="line">    dims[1] = num_nod_dim;</div>
+<div class="line">    if ((ncvardef (exoid, VAR_NOD_VAR_NEW(i),</div>
+<div class="line">                   nc_flt_code(exoid), 2, dims)) == -1)</div>
+<div class="line">      {  ... handle error ... }</div>
+<div class="line">  }</div>
+<div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="ex_put_nodal_var"></a>
 ex_put_nodal_var():</h1>
 <p >&ndash; If the large model method, write the nodal variable data to the correct variable; if the old method, determine the location within the blob</p>
-<div class="fragment"><div class="line">  if (ex_large_model(exoid) == 0) {</div>
-<div class="line">    /* write values of the nodal variable */</div>
-<div class="line">    if ((varid = ncvarid (exoid, VAR_NOD_VAR)) == -1) {</div>
-<div class="line">      ... handle error...</div>
-<div class="line">    }</div>
-<div class="line">    start[0] = --time_step;</div>
-<div class="line">    start[1] = --nodal_var_index;</div>
-<div class="line">    start[2] = 0;</div>
+<div class="fragment"><div class="line">if (ex_large_model(exoid) == 0) {</div>
+<div class="line">  /* write values of the nodal variable */</div>
+<div class="line">  if ((varid = ncvarid (exoid, VAR_NOD_VAR)) == -1) {</div>
+<div class="line">    ... handle error...</div>
+<div class="line">  }</div>
+<div class="line">  start[0] = --time_step;</div>
+<div class="line">  start[1] = --nodal_var_index;</div>
+<div class="line">  start[2] = 0;</div>
+<div class="line">  </div>
+<div class="line">  count[0] = 1;</div>
+<div class="line">  count[1] = 1;</div>
+<div class="line">  count[2] = num_nodes;</div>
+<div class="line">} else {</div>
+<div class="line">  /* nodal variables stored separately, find variable for this variable</div>
+<div class="line">     index */</div>
+<div class="line">  if ((varid = ncvarid (exoid, VAR_NOD_VAR_NEW(nodal_var_index))) == -1) {</div>
+<div class="line">    ... handle error ...</div>
+<div class="line">  }</div>
 <div class="line">    </div>
-<div class="line">    count[0] = 1;</div>
-<div class="line">    count[1] = 1;</div>
-<div class="line">    count[2] = num_nodes;</div>
-<div class="line">  } else {</div>
-<div class="line">    /* nodal variables stored separately, find variable for this variable</div>
-<div class="line">index */</div>
-<div class="line">    if ((varid = ncvarid (exoid, VAR_NOD_VAR_NEW(nodal_var_index))) == -1) {</div>
-<div class="line">      ... handle error ...</div>
-<div class="line">    }</div>
-<div class="line">      </div>
-<div class="line">    start[0] = --time_step;</div>
-<div class="line">    start[1] = 0;</div>
+<div class="line">  start[0] = --time_step;</div>
+<div class="line">  start[1] = 0;</div>
 <div class="line"> </div>
-<div class="line">    count[0] = 1;</div>
-<div class="line">    count[1] = num_nodes;</div>
-<div class="line">  }</div>
+<div class="line">  count[0] = 1;</div>
+<div class="line">  count[1] = num_nodes;</div>
+<div class="line">}</div>
 <div class="line"> </div>
-<div class="line">  if (ncvarput (exoid, varid, start, count,</div>
-<div class="line">  ex_conv_array(exoid,WRITE_CONVERT,nodal_var_vals,num_nodes)) == -1) {</div>
-<div class="line">    ...handle error ...</div>
-<div class="line">  }</div>
+<div class="line">if (ncvarput (exoid, varid, start, count,</div>
+<div class="line">              ex_conv_array(exoid,WRITE_CONVERT,nodal_var_vals,num_nodes)) == -1) {</div>
+<div class="line">  ...handle error ...</div>
+<div class="line">}</div>
 </div><!-- fragment --><p >There are similar modifications to the reading of the nodal coordinates and the reading of nodal variables. If interested in those functions, see the viewcvs URL listed above.</p>
 <p >If there are any questions, contact: Greg Sjaardema <a href="#" onclick="location.href='mai'+'lto:'+'gds'+'ja'+'ar@'+'sa'+'ndi'+'a.'+'gov'; return false;">gdsja<span class="obfuscator">.nosp@m.</span>ar@s<span class="obfuscator">.nosp@m.</span>andia<span class="obfuscator">.nosp@m.</span>.gov</a> 505-844-2701 </p>
 </div></div><!-- contents -->

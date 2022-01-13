@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -357,22 +357,22 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line">  <span class="keywordflow">while</span> (++arg &lt; argc) {</div>
 <div class="line">    <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-c&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_nodal_fields = atoi(argv[arg]);</div>
+<div class="line">        *num_nodal_fields = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-nv&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_nodal_fields = atoi(argv[arg]);</div>
+<div class="line">        *num_nodal_fields = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-gv&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_global_fields = atoi(argv[arg]);</div>
+<div class="line">        *num_global_fields = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-ev&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_element_fields = atoi(argv[arg]);</div>
+<div class="line">        *num_element_fields = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-f&quot;</span>, argv[arg]) == 0) {</div>
@@ -382,17 +382,17 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-M&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *files_per_domain = atoi(argv[arg]);</div>
+<div class="line">        *files_per_domain = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-i&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *num_iterations = atoi(argv[arg]);</div>
+<div class="line">        *num_iterations = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-w&quot;</span>, argv[arg]) == 0) {</div>
 <div class="line">      <span class="keywordflow">if</span> (++arg &lt; argc) {</div>
-<div class="line">        *sleep_time = atoi(argv[arg]);</div>
+<div class="line">        *sleep_time = strtol(argv[arg], NULL, 10);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp(<span class="stringliteral">&quot;-x&quot;</span>, argv[arg]) == 0) {</div>
