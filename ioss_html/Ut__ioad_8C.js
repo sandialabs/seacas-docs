@@ -4,7 +4,6 @@ var Ut__ioad_8C =
     [ "COMPARE_POINTERS_AND_THROW_WITH_INDEX", "Ut__ioad_8C.html#af24b9c4c200772e4e3003e0b4772c21f", null ],
     [ "COMPARE_VALUES_AND_THROW", "Ut__ioad_8C.html#a62258294fc274a7ef11b6257d409e29f", null ],
     [ "COMPARE_VECTORS_AND_THROW", "Ut__ioad_8C.html#afcef19f855784fcc6361c705ebde4692", null ],
-    [ "MPI_COMM_WORLD", "Ut__ioad_8C.html#a2df6a15627583d5e6f5a48550644cbef", null ],
     [ "CompareAllProperties", "Ut__ioad_8C.html#a3381124b9323c7f60529787973e51018", null ],
     [ "CompareContainers", "Ut__ioad_8C.html#a12f45caf41b398bea7a447bdf26ade7c", null ],
     [ "CompareDB", "Ut__ioad_8C.html#ad349018992e14cf2e4c26c5e4b4918cb", null ],

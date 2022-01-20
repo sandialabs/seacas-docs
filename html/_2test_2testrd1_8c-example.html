@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2testrd1_8c-example.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -144,9 +144,8 @@ $(document).ready(function(){initNavTree('_2test_2testrd1_8c-example.html',''); 
 <div class="line">  <span class="keywordtype">int</span>  num_props, prop_value, *prop_values;</div>
 <div class="line">  <span class="keywordtype">int</span>  idum;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">float</span>  time_value, *time_values, *var_values;</div>
-<div class="line">  <span class="keywordtype">float</span> *dist_fact;</div>
-<div class="line">  <span class="keywordtype">float</span>  version, fdum;</div>
+<div class="line">  <span class="keywordtype">float</span> time_value, *time_values, *var_values;</div>
+<div class="line">  <span class="keywordtype">float</span> version, fdum;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">char</span> *coord_names[3], *qa_record[2][4], *info[3], *var_names[10];</div>
 <div class="line">  <span class="keywordtype">char</span>  title[<a id="a0" name="a0"></a><a class="code hl_define" href="group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2">MAX_LINE_LENGTH</a> + 1], elem_type[<a id="a1" name="a1"></a><a class="code hl_define" href="group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f">MAX_STR_LENGTH</a> + 1];</div>
@@ -496,8 +495,6 @@ $(document).ready(function(){initNavTree('_2test_2testrd1_8c-example.html',''); 
 <div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gad1f33f5a3b24a7e8bc700053aff4c7d1">ex_get_ids</a>(exoid, <a id="a32" name="a32"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, ids);</div>
 <div class="line">  printf(<span class="stringliteral">&quot;\nafter ex_get_node_set_ids, error = %3d\n&quot;</span>, error);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> *node_list = NULL;</div>
-<div class="line">  <span class="keywordtype">int</span> *elem_list = NULL;</div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_node_sets; i++) {</div>
 <div class="line">    error = <a id="a33" name="a33"></a><a class="code hl_function" href="group__ModelDescription.html#ga712b89d54676bfeab4244ac674416ff5">ex_get_set_param</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, ids[i], &amp;num_nodes_in_set, &amp;num_df_in_set);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_get_node_set_param, error = %3d\n&quot;</span>, error);</div>
@@ -505,8 +502,8 @@ $(document).ready(function(){initNavTree('_2test_2testrd1_8c-example.html',''); 
 <div class="line">    printf(<span class="stringliteral">&quot;\nnode set %2d parameters: \n&quot;</span>, ids[i]);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;num_nodes = %2d\n&quot;</span>, num_nodes_in_set);</div>
 <div class="line"> </div>
-<div class="line">    node_list = (<span class="keywordtype">int</span> *)my_calloc(num_nodes_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">    dist_fact = (<span class="keywordtype">float</span> *)my_calloc(num_nodes_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line">    <span class="keywordtype">int</span>   *node_list = (<span class="keywordtype">int</span> *)my_calloc(num_nodes_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    <span class="keywordtype">float</span> *dist_fact = (<span class="keywordtype">float</span> *)my_calloc(num_nodes_in_set, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"> </div>
 <div class="line">    error = <a id="a34" name="a34"></a><a class="code hl_function" href="group__ModelDescription.html#ga48604d23fc30d70620e1255823e4ff50">ex_get_set</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, ids[i], node_list, NULL);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_get_node_set, error = %3d\n&quot;</span>, error);</div>
@@ -572,74 +569,76 @@ $(document).ready(function(){initNavTree('_2test_2testrd1_8c-example.html',''); 
 <div class="line"><span class="comment">   * the above code which reads individual node sets</span></div>
 <div class="line"><span class="comment">   */</span></div>
 <div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a37" name="a37"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca36d5177e34a094002f915141570bb01d">EX_INQ_NODE_SETS</a>, &amp;num_node_sets, &amp;fdum, cdum);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;\nafter ex_inquire, error = %3d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  ids               = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">  num_nodes_per_set = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">  num_df_per_set    = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">  node_ind          = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">  df_ind            = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a38" name="a38"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca0f3032e773408813d00493ee7e9cd6c0">EX_INQ_NS_NODE_LEN</a>, &amp;list_len, &amp;fdum, cdum);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;\nafter ex_inquire: EX_INQ_NS_NODE_LEN = %d, error = %3d\n&quot;</span>, list_len, error);</div>
-<div class="line">  node_list = (<span class="keywordtype">int</span> *)my_calloc(list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a39" name="a39"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaff9d9bc84bf32fe8b10bf782c6e8c5ce">EX_INQ_NS_DF_LEN</a>, &amp;list_len, &amp;fdum, cdum);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;\nafter ex_inquire: EX_INQ_NS_DF_LEN = %d, error = %3d\n&quot;</span>, list_len, error);</div>
-<div class="line">  dist_fact = (<span class="keywordtype">float</span> *)my_calloc(list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"> </div>
 <div class="line">  {</div>
-<div class="line">    <span class="keyword">struct </span><a id="_a40" name="_a40"></a><a class="code hl_struct" href="structex__set__specs.html">ex_set_specs</a> set_specs;</div>
+<div class="line">    error = <a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a37" name="a37"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca36d5177e34a094002f915141570bb01d">EX_INQ_NODE_SETS</a>, &amp;num_node_sets, &amp;fdum, cdum);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_inquire, error = %3d\n&quot;</span>, error);</div>
 <div class="line"> </div>
-<div class="line">    set_specs.<a id="a41" name="a41"></a><a class="code hl_variable" href="structex__set__specs.html#a06ecbec33a9895e028b54d80527eb3f9">sets_ids</a>            = ids;</div>
-<div class="line">    set_specs.num_entries_per_set = num_nodes_per_set;</div>
-<div class="line">    set_specs.num_dist_per_set    = num_df_per_set;</div>
-<div class="line">    set_specs.sets_entry_index    = node_ind;</div>
+<div class="line">    ids               = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    num_nodes_per_set = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    num_df_per_set    = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    node_ind          = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    df_ind            = (<span class="keywordtype">int</span> *)my_calloc(num_node_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line"> </div>
-<div class="line">    set_specs.sets_dist_index = df_ind;</div>
-<div class="line">    set_specs.sets_entry_list = node_list;</div>
-<div class="line">    set_specs.sets_extra_list = NULL;</div>
-<div class="line">    set_specs.sets_dist_fact  = dist_fact;</div>
+<div class="line">    error = <a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a38" name="a38"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca0f3032e773408813d00493ee7e9cd6c0">EX_INQ_NS_NODE_LEN</a>, &amp;list_len, &amp;fdum, cdum);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_inquire: EX_INQ_NS_NODE_LEN = %d, error = %3d\n&quot;</span>, list_len, error);</div>
+<div class="line">    <span class="keywordtype">int</span> *node_list = (<span class="keywordtype">int</span> *)my_calloc(list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line"> </div>
-<div class="line">    error = <a id="a42" name="a42"></a><a class="code hl_function" href="group__ModelDescription.html#ga321a90094ae1063a19e4ca324c4140fa">ex_get_concat_sets</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, &amp;set_specs);</div>
+<div class="line">    error = <a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a39" name="a39"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaff9d9bc84bf32fe8b10bf782c6e8c5ce">EX_INQ_NS_DF_LEN</a>, &amp;list_len, &amp;fdum, cdum);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_inquire: EX_INQ_NS_DF_LEN = %d, error = %3d\n&quot;</span>, list_len, error);</div>
+<div class="line">    <span class="keywordtype">float</span> *dist_fact = (<span class="keywordtype">float</span> *)my_calloc(list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"> </div>
+<div class="line">    {</div>
+<div class="line">      <span class="keyword">struct </span><a id="_a40" name="_a40"></a><a class="code hl_struct" href="structex__set__specs.html">ex_set_specs</a> set_specs;</div>
+<div class="line"> </div>
+<div class="line">      set_specs.<a id="a41" name="a41"></a><a class="code hl_variable" href="structex__set__specs.html#a06ecbec33a9895e028b54d80527eb3f9">sets_ids</a>            = ids;</div>
+<div class="line">      set_specs.num_entries_per_set = num_nodes_per_set;</div>
+<div class="line">      set_specs.num_dist_per_set    = num_df_per_set;</div>
+<div class="line">      set_specs.sets_entry_index    = node_ind;</div>
+<div class="line"> </div>
+<div class="line">      set_specs.sets_dist_index = df_ind;</div>
+<div class="line">      set_specs.sets_entry_list = node_list;</div>
+<div class="line">      set_specs.sets_extra_list = NULL;</div>
+<div class="line">      set_specs.sets_dist_fact  = dist_fact;</div>
+<div class="line"> </div>
+<div class="line">      error = <a id="a42" name="a42"></a><a class="code hl_function" href="group__ModelDescription.html#ga321a90094ae1063a19e4ca324c4140fa">ex_get_concat_sets</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>, &amp;set_specs);</div>
+<div class="line">    }</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_get_concat_node_sets, error = %3d\n&quot;</span>, error);</div>
+<div class="line"> </div>
+<div class="line">    printf(<span class="stringliteral">&quot;\nconcatenated node set info\n&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    printf(<span class="stringliteral">&quot;ids = \n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_node_sets; i++) {</div>
+<div class="line">      printf(<span class="stringliteral">&quot;%3d\n&quot;</span>, ids[i]);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    printf(<span class="stringliteral">&quot;num_nodes_per_set = \n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_node_sets; i++) {</div>
+<div class="line">      printf(<span class="stringliteral">&quot;%3d\n&quot;</span>, num_nodes_per_set[i]);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    printf(<span class="stringliteral">&quot;node_ind = \n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_node_sets; i++) {</div>
+<div class="line">      printf(<span class="stringliteral">&quot;%3d\n&quot;</span>, node_ind[i]);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    printf(<span class="stringliteral">&quot;node_list = \n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; list_len; i++) {</div>
+<div class="line">      printf(<span class="stringliteral">&quot;%3d\n&quot;</span>, node_list[i]);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    printf(<span class="stringliteral">&quot;dist_fact = \n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; list_len; i++) {</div>
+<div class="line">      printf(<span class="stringliteral">&quot;%5.3f\n&quot;</span>, dist_fact[i]);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    free(ids);</div>
+<div class="line">    free(num_nodes_per_set);</div>
+<div class="line">    free(df_ind);</div>
+<div class="line">    free(node_ind);</div>
+<div class="line">    free(num_df_per_set);</div>
+<div class="line">    free(node_list);</div>
+<div class="line">    free(dist_fact);</div>
 <div class="line">  }</div>
-<div class="line">  printf(<span class="stringliteral">&quot;\nafter ex_get_concat_node_sets, error = %3d\n&quot;</span>, error);</div>
-<div class="line"> </div>
-<div class="line">  printf(<span class="stringliteral">&quot;\nconcatenated node set info\n&quot;</span>);</div>
-<div class="line"> </div>
-<div class="line">  printf(<span class="stringliteral">&quot;ids = \n&quot;</span>);</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_node_sets; i++) {</div>
-<div class="line">    printf(<span class="stringliteral">&quot;%3d\n&quot;</span>, ids[i]);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  printf(<span class="stringliteral">&quot;num_nodes_per_set = \n&quot;</span>);</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_node_sets; i++) {</div>
-<div class="line">    printf(<span class="stringliteral">&quot;%3d\n&quot;</span>, num_nodes_per_set[i]);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  printf(<span class="stringliteral">&quot;node_ind = \n&quot;</span>);</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_node_sets; i++) {</div>
-<div class="line">    printf(<span class="stringliteral">&quot;%3d\n&quot;</span>, node_ind[i]);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  printf(<span class="stringliteral">&quot;node_list = \n&quot;</span>);</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; list_len; i++) {</div>
-<div class="line">    printf(<span class="stringliteral">&quot;%3d\n&quot;</span>, node_list[i]);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  printf(<span class="stringliteral">&quot;dist_fact = \n&quot;</span>);</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; list_len; i++) {</div>
-<div class="line">    printf(<span class="stringliteral">&quot;%5.3f\n&quot;</span>, dist_fact[i]);</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  free(ids);</div>
-<div class="line">  free(num_nodes_per_set);</div>
-<div class="line">  free(df_ind);</div>
-<div class="line">  free(node_ind);</div>
-<div class="line">  free(num_df_per_set);</div>
-<div class="line">  free(node_list);</div>
-<div class="line">  free(dist_fact);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* read individual side sets */</span></div>
 <div class="line"> </div>
@@ -759,15 +758,14 @@ $(document).ready(function(){initNavTree('_2test_2testrd1_8c-example.html',''); 
 <div class="line"><span class="comment">   */</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* concatenated side set read */</span></div>
-<div class="line"> </div>
 <div class="line">  ids              = (<span class="keywordtype">int</span> *)my_calloc(num_side_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">  num_elem_per_set = (<span class="keywordtype">int</span> *)my_calloc(num_side_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">  num_df_per_set   = (<span class="keywordtype">int</span> *)my_calloc(num_side_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">  elem_ind         = (<span class="keywordtype">int</span> *)my_calloc(num_side_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">  df_ind           = (<span class="keywordtype">int</span> *)my_calloc(num_side_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">  elem_list        = (<span class="keywordtype">int</span> *)my_calloc(elem_list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">  <span class="keywordtype">int</span> *side_list   = (<span class="keywordtype">int</span> *)my_calloc(elem_list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line">  dist_fact        = (<span class="keywordtype">float</span> *)my_calloc(df_list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line">  <span class="keywordtype">int</span>   *elem_list = (<span class="keywordtype">int</span> *)my_calloc(elem_list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">  <span class="keywordtype">int</span>   *side_list = (<span class="keywordtype">int</span> *)my_calloc(elem_list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">  <span class="keywordtype">float</span> *dist_fact = (<span class="keywordtype">float</span> *)my_calloc(df_list_len, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"> </div>
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">struct </span><a class="code hl_struct" href="structex__set__specs.html">ex_set_specs</a> set_specs;</div>

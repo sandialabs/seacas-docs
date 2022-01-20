@@ -29,6 +29,8 @@ var classIotm_1_1DatabaseIO =
     [ "get_format", "classIotm_1_1DatabaseIO.html#a001cfdb645738289d38daa46b5dcb46f", null ],
     [ "get_node_map", "classIotm_1_1DatabaseIO.html#a22db20d95fdd0b44a2f64f40525ac3d3", null ],
     [ "get_nodeblocks", "classIotm_1_1DatabaseIO.html#a202cc89a3f8b09ebb648d067de37c157", null ],
+    [ "get_nodesets", "classIotm_1_1DatabaseIO.html#a5946e49daa1f130e019460502bddc0dd", null ],
+    [ "get_sidesets", "classIotm_1_1DatabaseIO.html#a838aa7a3834c23065823d0c1a073ed9f", null ],
     [ "get_step_times__", "classIotm_1_1DatabaseIO.html#ad9a161f2dd5c17f56843c00a68ac076a", null ],
     [ "get_text_mesh", "classIotm_1_1DatabaseIO.html#a3635bcdbe02d245fa5c27d8dae737670", null ],
     [ "int_byte_size_db", "classIotm_1_1DatabaseIO.html#a282d162e8e2833d00978dfe9611bdd8b", null ],
@@ -53,5 +55,8 @@ var classIotm_1_1DatabaseIO =
     [ "currentTime", "classIotm_1_1DatabaseIO.html#aad316641cb4be998093cdb449a489dde", null ],
     [ "elementBlockCount", "classIotm_1_1DatabaseIO.html#aef99a23eb94b08ea1021d8911822bc33", null ],
     [ "m_textMesh", "classIotm_1_1DatabaseIO.html#a0081c2b17b85d9c073347835f4b8b758", null ],
+    [ "m_useVariableDf", "classIotm_1_1DatabaseIO.html#a221282d78e10628c45f3259db2d64434", null ],
+    [ "nodesetCount", "classIotm_1_1DatabaseIO.html#afe874090b3449775c28a2fce9cdb90f6", null ],
+    [ "sidesetCount", "classIotm_1_1DatabaseIO.html#a362b511eff9c35c6739f0d258b620cbb", null ],
     [ "spatialDimension", "classIotm_1_1DatabaseIO.html#acff9628771567d4a3b03f907c1ca8083", null ]
 ];

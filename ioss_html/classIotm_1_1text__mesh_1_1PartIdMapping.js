@@ -7,6 +7,7 @@ var classIotm_1_1text__mesh_1_1PartIdMapping =
     [ "get", "classIotm_1_1text__mesh_1_1PartIdMapping.html#aafe442026732bcb5f3697da41671c426", null ],
     [ "get_part_id", "classIotm_1_1text__mesh_1_1PartIdMapping.html#a339b8a5f396996d6252ac15d4d709ada", null ],
     [ "get_part_name", "classIotm_1_1text__mesh_1_1PartIdMapping.html#abfe30b695d5029d8d188d14324e1fd47", null ],
+    [ "get_part_names", "classIotm_1_1text__mesh_1_1PartIdMapping.html#ae1aa671e98ed207e25c85de47ad0a225", null ],
     [ "get_part_names_sorted_by_id", "classIotm_1_1text__mesh_1_1PartIdMapping.html#aea13b647829f757ef70ace4a95a09490", null ],
     [ "handle_block_part", "classIotm_1_1text__mesh_1_1PartIdMapping.html#ab3ebd26e73cd59e33594ba8bbdc00db3", null ],
     [ "is_assigned", "classIotm_1_1text__mesh_1_1PartIdMapping.html#afd7d5db19acebe2600c350b65461b3e9", null ],

@@ -357,6 +357,10 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a202cc89a3f8b09ebb648d067de37c157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7574bb293ac5bf3dd811abc103e36656"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1DatabaseIO.html#a7574bb293ac5bf3dd811abc103e36656">get_elemblocks</a> ()</td></tr>
 <tr class="separator:a7574bb293ac5bf3dd811abc103e36656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5946e49daa1f130e019460502bddc0dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1DatabaseIO.html#a5946e49daa1f130e019460502bddc0dd">get_nodesets</a> ()</td></tr>
+<tr class="separator:a5946e49daa1f130e019460502bddc0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838aa7a3834c23065823d0c1a073ed9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1DatabaseIO.html#a838aa7a3834c23065823d0c1a073ed9f">get_sidesets</a> ()</td></tr>
+<tr class="separator:a838aa7a3834c23065823d0c1a073ed9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae12d808174e7234f9f5fff8b318899fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1DatabaseIO.html#ae12d808174e7234f9f5fff8b318899fb">get_commsets</a> ()</td></tr>
 <tr class="separator:ae12d808174e7234f9f5fff8b318899fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22db20d95fdd0b44a2f64f40525ac3d3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classIoss_1_1Map.html">Ioss::Map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1DatabaseIO.html#a22db20d95fdd0b44a2f64f40525ac3d3">get_node_map</a> () const</td></tr>
@@ -436,6 +440,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:acff9628771567d4a3b03f907c1ca8083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef99a23eb94b08ea1021d8911822bc33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1DatabaseIO.html#aef99a23eb94b08ea1021d8911822bc33">elementBlockCount</a> {0}</td></tr>
 <tr class="separator:aef99a23eb94b08ea1021d8911822bc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe874090b3449775c28a2fce9cdb90f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1DatabaseIO.html#afe874090b3449775c28a2fce9cdb90f6">nodesetCount</a> {0}</td></tr>
+<tr class="separator:afe874090b3449775c28a2fce9cdb90f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362b511eff9c35c6739f0d258b620cbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1DatabaseIO.html#a362b511eff9c35c6739f0d258b620cbb">sidesetCount</a> {0}</td></tr>
+<tr class="separator:a362b511eff9c35c6739f0d258b620cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221282d78e10628c45f3259db2d64434"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1DatabaseIO.html#a221282d78e10628c45f3259db2d64434">m_useVariableDf</a> {true}</td></tr>
+<tr class="separator:a221282d78e10628c45f3259db2d64434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -1682,6 +1692,56 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a5946e49daa1f130e019460502bddc0dd" name="a5946e49daa1f130e019460502bddc0dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5946e49daa1f130e019460502bddc0dd">&#9670;&nbsp;</a></span>get_nodesets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Iotm::DatabaseIO::get_nodesets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a838aa7a3834c23065823d0c1a073ed9f" name="a838aa7a3834c23065823d0c1a073ed9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838aa7a3834c23065823d0c1a073ed9f">&#9670;&nbsp;</a></span>get_sidesets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Iotm::DatabaseIO::get_sidesets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad9a161f2dd5c17f56843c00a68ac076a" name="ad9a161f2dd5c17f56843c00a68ac076a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9a161f2dd5c17f56843c00a68ac076a">&#9670;&nbsp;</a></span>get_step_times__()</h2>
 
@@ -2646,6 +2706,72 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classIotm_1_1TextMesh.html">TextMesh</a>* Iotm::DatabaseIO::m_textMesh {nullptr}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a221282d78e10628c45f3259db2d64434" name="a221282d78e10628c45f3259db2d64434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a221282d78e10628c45f3259db2d64434">&#9670;&nbsp;</a></span>m_useVariableDf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Iotm::DatabaseIO::m_useVariableDf {true}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe874090b3449775c28a2fce9cdb90f6" name="afe874090b3449775c28a2fce9cdb90f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe874090b3449775c28a2fce9cdb90f6">&#9670;&nbsp;</a></span>nodesetCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Iotm::DatabaseIO::nodesetCount {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a362b511eff9c35c6739f0d258b620cbb" name="a362b511eff9c35c6739f0d258b620cbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362b511eff9c35c6739f0d258b620cbb">&#9670;&nbsp;</a></span>sidesetCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Iotm::DatabaseIO::sidesetCount {0}</td>
         </tr>
       </table>
   </td>

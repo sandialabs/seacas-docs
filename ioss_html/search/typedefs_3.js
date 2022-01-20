@@ -22,7 +22,8 @@ var searchData=
   ['context_19',['context',['../structdefault__arg__formatter.html#a7c55fbfae832b0655254a9b5dc47efe8',1,'default_arg_formatter::context()'],['../structarg__formatter.html#a370a39ceab731acd690fe36a1cbcf920',1,'arg_formatter::context()'],['../structformatter_3_01join__view_3_01It_00_01Sentinel_00_01Char_01_4_00_01Char_01_4.html#ad86c1bf09d927363570c47b28e6c2fa0',1,'formatter&lt; join_view&lt; It, Sentinel, Char &gt;, Char &gt;::context()']]],
   ['context_5ftype_20',['context_type',['../classprintf__arg__formatter.html#a70d143adcc5f2e7e647278b9f8a3abcd',1,'printf_arg_formatter']]],
   ['coordinateframecontainer_21',['CoordinateFrameContainer',['../namespaceIoss.html#abf77dade63ce8a4c5cc7af4edea743e9',1,'Ioss']]],
-  ['coordinates_22',['Coordinates',['../namespaceIotm.html#a8f45a786e6366e5e7bc16a236975e970',1,'Iotm']]],
-  ['cstring_5fresult_23',['cstring_result',['../structarg__mapper.html#a4670a11832ce3e150502825666dc8dec',1,'arg_mapper']]],
-  ['cstring_5fview_24',['cstring_view',['../os_8h.html#ab5093e382f19cf769bbb8fed27dd7b1f',1,'os.h']]]
+  ['coordinates_22',['Coordinates',['../namespaceIotm.html#a14562ae9932f39d5aec98d460c1fac9a',1,'Iotm']]],
+  ['criterion_23',['Criterion',['../classIotm_1_1text__mesh_1_1SidesetSplitter.html#a1b9545e50e984152c85d2ae7cd6a01f6',1,'Iotm::text_mesh::SidesetSplitter']]],
+  ['cstring_5fresult_24',['cstring_result',['../structarg__mapper.html#a4670a11832ce3e150502825666dc8dec',1,'arg_mapper']]],
+  ['cstring_5fview_25',['cstring_view',['../os_8h.html#ab5093e382f19cf769bbb8fed27dd7b1f',1,'os.h']]]
 ];

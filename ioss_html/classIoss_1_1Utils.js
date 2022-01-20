@@ -3,7 +3,7 @@ var classIoss_1_1Utils =
     [ "Utils", "classIoss_1_1Utils.html#a7b26e085790c47979ee6fa2b463812c3", null ],
     [ "~Utils", "classIoss_1_1Utils.html#a1fbe21d5a134b19e4c1b30089aab7000", null ],
     [ "block_is_omitted", "classIoss_1_1Utils.html#a933214d50c601b1e2f089f9c981f59da", null ],
-    [ "calculate_sideblock_membership", "classIoss_1_1Utils.html#afae65fbd0ef9900b0208fa5434fede57", null ],
+    [ "calculate_sideblock_membership", "classIoss_1_1Utils.html#a8865309b113cbf641cae049c0c9f67a0", null ],
     [ "check_block_order", "classIoss_1_1Utils.html#a2754e2aa699821549432f2c32305e91e", null ],
     [ "check_dynamic_cast", "classIoss_1_1Utils.html#a7f09e4d2470eab1b903ca420d96e6748", null ],
     [ "check_non_null", "classIoss_1_1Utils.html#a3cdb54933afe453c3a00a20308c338da", null ],

@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classIoss_1_1ParallelUtils.html',''); 
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classIoss_1_1ParallelUtils-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Ioss::ParallelUtils Class Reference</div></div>
@@ -163,9 +164,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeff274320a606f5a7a611d385e5b451c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#aeff274320a606f5a7a611d385e5b451c">progress</a> (const std::string &amp;output) const</td></tr>
 <tr class="separator:aeff274320a606f5a7a611d385e5b451c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afcbab3a35178125df7b3e4866d055b07"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#afcbab3a35178125df7b3e4866d055b07">comm_world</a> ()</td></tr>
+<tr class="separator:afcbab3a35178125df7b3e4866d055b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcaedd09addfb5e834e0e32fad290542"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#abcaedd09addfb5e834e0e32fad290542">comm_self</a> ()</td></tr>
+<tr class="separator:abcaedd09addfb5e834e0e32fad290542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b8820cccc6f7cec3b5b6ce955dee70"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#aa7b8820cccc6f7cec3b5b6ce955dee70">comm_null</a> ()</td></tr>
+<tr class="separator:aa7b8820cccc6f7cec3b5b6ce955dee70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab17672d0da05747fd37a418400ed51df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#ab17672d0da05747fd37a418400ed51df">communicator_</a> {<a class="el" href="Ioss__CodeTypes_8h.html#a2df6a15627583d5e6f5a48550644cbef">MPI_COMM_WORLD</a>}</td></tr>
+<tr class="memitem:ab17672d0da05747fd37a418400ed51df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#ab17672d0da05747fd37a418400ed51df">communicator_</a> {<a class="el" href="classIoss_1_1ParallelUtils.html#afcbab3a35178125df7b3e4866d055b07">comm_world</a>()}</td></tr>
 <tr class="separator:ab17672d0da05747fd37a418400ed51df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -387,6 +397,81 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7b8820cccc6f7cec3b5b6ce955dee70" name="aa7b8820cccc6f7cec3b5b6ce955dee70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b8820cccc6f7cec3b5b6ce955dee70">&#9670;&nbsp;</a></span>comm_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a> Ioss::ParallelUtils::comm_null </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcaedd09addfb5e834e0e32fad290542" name="abcaedd09addfb5e834e0e32fad290542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcaedd09addfb5e834e0e32fad290542">&#9670;&nbsp;</a></span>comm_self()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a> Ioss::ParallelUtils::comm_self </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcbab3a35178125df7b3e4866d055b07" name="afcbab3a35178125df7b3e4866d055b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcbab3a35178125df7b3e4866d055b07">&#9670;&nbsp;</a></span>comm_world()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a> Ioss::ParallelUtils::comm_world </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -924,7 +1009,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a> Ioss::ParallelUtils::communicator_ {<a class="el" href="Ioss__CodeTypes_8h.html#a2df6a15627583d5e6f5a48550644cbef">MPI_COMM_WORLD</a>}</td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7">MPI_Comm</a> Ioss::ParallelUtils::communicator_ {<a class="el" href="classIoss_1_1ParallelUtils.html#afcbab3a35178125df7b3e4866d055b07">comm_world</a>()}</td>
         </tr>
       </table>
   </td>

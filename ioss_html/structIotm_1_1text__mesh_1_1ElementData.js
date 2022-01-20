@@ -1,5 +1,6 @@
 var structIotm_1_1text__mesh_1_1ElementData =
 [
+    [ "operator EntityId", "structIotm_1_1text__mesh_1_1ElementData.html#a96b8ee73c2ce4c914f9d93a39859a2aa", null ],
     [ "identifier", "structIotm_1_1text__mesh_1_1ElementData.html#aea64f397f38b7737632d9c7c6d0a5762", null ],
     [ "nodeIds", "structIotm_1_1text__mesh_1_1ElementData.html#af159045bad03e36f86f1aa70e6307c53", null ],
     [ "partName", "structIotm_1_1text__mesh_1_1ElementData.html#a86605f8373cdf3c87d1df3716128033b", null ],
