@@ -7,6 +7,5 @@ var searchData=
   ['mapper_4',['mapper',['../structformatter_3_01join__view_3_01It_00_01Sentinel_00_01Char_01_4_00_01Char_01_4.html#a4ae7a4a1cb4cd5207096e8e5770357f6',1,'formatter&lt; join_view&lt; It, Sentinel, Char &gt;, Char &gt;']]],
   ['memory_5fbuffer_5',['memory_buffer',['../format_8h.html#aaba5427d5f788f71959666ba2a3bf167',1,'format.h']]],
   ['message_6',['Message',['../namespaceioss__region__report.html#aa341ffac87e6379ece65de4e55b88212',1,'ioss_region_report']]],
-  ['milliseconds_7',['milliseconds',['../structchrono__formatter.html#aa3268d0334d472c112568d6a28d88922',1,'chrono_formatter']]],
-  ['mpi_5fcomm_8',['MPI_Comm',['../Ioss__CodeTypes_8h.html#a161d2f0d69c09838316e4ea9a74f02d7',1,'Ioss_CodeTypes.h']]]
+  ['milliseconds_7',['milliseconds',['../structchrono__formatter.html#aa3268d0334d472c112568d6a28d88922',1,'chrono_formatter']]]
 ];

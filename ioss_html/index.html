@@ -255,11 +255,15 @@ Properties for the heartbeat output</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Property   </th><th class="markdownTableHeadCenter">Value   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">FLUSH_INTERVAL   </td><td class="markdownTableBodyCenter">int   </td><td class="markdownTableBodyNone">Minimum time interval between flushing heartbeat data to disk. Default is 10 seconds    </td></tr>
+<td class="markdownTableBodyNone">FILE_FORMAT   </td><td class="markdownTableBodyCenter">[default], spyhis, csv, ts_csv, text, ts_text   </td><td class="markdownTableBodyNone">predefined formats for heartbeat output. <code>ts_</code> outputs timestamp.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">TIME_STAMP_FORMAT   </td><td class="markdownTableBodyCenter">[H:M:S]   </td><td class="markdownTableBodyNone">Format used to format time stamp. See strftime man page    </td></tr>
+<td class="markdownTableBodyNone">FLUSH_INTERVAL   </td><td class="markdownTableBodyCenter">int   </td><td class="markdownTableBodyNone">Minimum time interval between flushing heartbeat data to disk. Default is 10 seconds    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TIME_STAMP_FORMAT   </td><td class="markdownTableBodyCenter">[H:M:S]   </td><td class="markdownTableBodyNone">Format used to format time stamp. See strftime man page    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">SHOW_TIME_STAMP   </td><td class="markdownTableBodyCenter">on/off   </td><td class="markdownTableBodyNone">Should the output lines be preceded by the timestamp    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">FIELD_SEPARATOR   </td><td class="markdownTableBodyCenter">[, ]   </td><td class="markdownTableBodyNone">separator to be used between output fields.    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">PRECISION   </td><td class="markdownTableBodyCenter">0..16 [5]   </td><td class="markdownTableBodyNone">Precision used for floating point output.    </td></tr>
 <tr class="markdownTableRowOdd">
