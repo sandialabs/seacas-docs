@@ -194,18 +194,22 @@ Properties Related to byte size of reals and integers</h2>
 <td class="markdownTableBodyNone">REAL_SIZE_API   </td><td class="markdownTableBodyCenter">4 / [8]   </td><td class="markdownTableBodyNone">byte size of floating point used in api functions.   </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md5"></a>
-Properties related to field interpretation</h2>
+Properties related to field and sideset/surface interpretation</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Property   </th><th class="markdownTableHeadCenter">Value   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ENABLE_FIELD_RECOGNITION   </td><td class="markdownTableBodyCenter">[on]/off   </td><td class="markdownTableBodyNone">Does the IOSS library combine scalar fields into higher-order fields (tensor, vector) based on suffix interpretation.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">FIELD_SUFFIX_SEPARATOR   </td><td class="markdownTableBodyCenter">char / '_'   </td><td class="markdownTableBodyNone">The character that is used to separate the base field name from the suffix. Default is underscore.    </td></tr>
+<td class="markdownTableBodyNone">IGNORE_REALN_FIELDS   </td><td class="markdownTableBodyCenter">[off]/on   </td><td class="markdownTableBodyNone">Do not recognize var_1, var_2, ..., var_n as an n-component field. Keep as n scalar fields. Currently ignored for composite fields.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">FIELD_STRIP_TRAILING_UNDERSCORE   </td><td class="markdownTableBodyCenter">on / [off]   </td><td class="markdownTableBodyNone">If <code>FIELD_SUFFIX_SEPARATOR</code> is empty and there are fields that end with an underscore, then strip the underscore. (<code>a_x</code>, <code>a_y</code>, <code>a_z</code> is vector field <code>a</code>).    </td></tr>
+<td class="markdownTableBodyNone">FIELD_SUFFIX_SEPARATOR   </td><td class="markdownTableBodyCenter">char / '_'   </td><td class="markdownTableBodyNone">The character that is used to separate the base field name from the suffix. Default is underscore.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">IGNORE_ATTRIBUTE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Do not read the attribute names that may exist on an input database. Instead for an element block with N attributes, the fields will be named <code>attribute_1</code> ... <code>attribute_N</code>   </td></tr>
+<td class="markdownTableBodyNone">FIELD_STRIP_TRAILING_UNDERSCORE   </td><td class="markdownTableBodyCenter">on / [off]   </td><td class="markdownTableBodyNone">If <code>FIELD_SUFFIX_SEPARATOR</code> is empty and there are fields that end with an underscore, then strip the underscore. (<code>a_x</code>, <code>a_y</code>, <code>a_z</code> is vector field <code>a</code>).    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">IGNORE_ATTRIBUTE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Do not read the attribute names that may exist on an input database. Instead for an element block with N attributes, the fields will be named <code>attribute_1</code> ... <code>attribute_N</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">SURFACE_SPLIT_TYPE   </td><td class="markdownTableBodyCenter">{type}   </td><td class="markdownTableBodyNone">Specify how to split sidesets into homogeneous sideblocks. Either an integer or string: 1 or <code>TOPOLOGY</code>, 2 or <code>BLOCK</code>, 3 or <code>NO_SPLIT</code>. Default is <code>TOPOLOGY</code> if not specified.   </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md6"></a>
 Properties related to underlying file type (exodus only)</h2>
@@ -316,7 +320,7 @@ Setting properties via an environment variable</h2>
 <p >Although the properties are usually accessed internally in the application calling the IOSS library, it is possible to set the properties externally prior to running the application via the setting of the environment variable <code>IOSS_PROPERTIES</code>. The value of the variable is one or more colon-separated property/property-value pairs. For example, to set the <code>DECOMPOSITION_METHOD</code> and the <code>FILE_TYPE</code> externally, the following would be used: </p><div class="fragment"><div class="line">export IOSS_PROPERTIES=<span class="stringliteral">&quot;DECOMPOSITION_METHOD=rib:FILE_TYPE=netcdf4&quot;</span></div>
 </div><!-- fragment --><p> If the environment variable is set correctly, there should be an informational message output during running of the application similar to: </p><div class="fragment"><div class="line">IOSS: Adding <span class="keyword">property</span> <span class="stringliteral">&#39;DECOMPOSITION_METHOD&#39;</span> with <a class="code hl_class" href="classvalue.html">value</a> <span class="stringliteral">&#39;rib&#39;</span></div>
 <div class="line">IOSS: Adding <span class="keyword">property</span> <span class="stringliteral">&#39;FILE_TYPE&#39;</span> with <a class="code hl_class" href="classvalue.html">value</a> <span class="stringliteral">&#39;netcdf4&#39;</span></div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1199</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1198</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="license"></a>
 License</h1>
 <p >The IOSS library is licensed under the BSD open source license. </p><pre class="fragment"> Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions

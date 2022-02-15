@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -113,9 +113,9 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define EXCHECK(funcall)                                                                           \</span></div>
 <div class="line"><span class="preprocessor">  do {                                                                                             \</span></div>
-<div class="line"><span class="preprocessor">    int error = (funcall);                                                                         \</span></div>
-<div class="line"><span class="preprocessor">    printf(&quot;after %s, error = %d\n&quot;</span>, TOSTRING(funcall), error);                                    \</div>
-<div class="line">    if (error != EX_NOERR &amp;&amp; error != EX_WARN) {                                                   \</div>
+<div class="line"><span class="preprocessor">    int f_error = (funcall);                                                                       \</span></div>
+<div class="line"><span class="preprocessor">    printf(&quot;after %s, error = %d\n&quot;</span>, TOSTRING(funcall), f_error);                                  \</div>
+<div class="line">    if (f_error != EX_NOERR &amp;&amp; f_error != EX_WARN) {                                               \</div>
 <div class="line">      fprintf(stderr, &quot;Error calling %s\n&quot;, TOSTRING(funcall));                                    \</div>
 <div class="line">      ex_close(exoid);                                                                             \</div>
 <div class="line">      exit(-1);                                                                                    \</div>
@@ -551,10 +551,12 @@ $(document).ready(function(){initNavTree('_2test_2testwt_8c-example.html',''); i
 <div class="line">  <span class="comment">/* write element variable truth table */</span></div>
 <div class="line">  <span class="keywordtype">int</span> *truth_tab = (<span class="keywordtype">int</span> *)calloc((num_elem_blk * num_ele_vars), <span class="keyword">sizeof</span>(int));</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> k = 0;</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_elem_blk; i++) {</div>
-<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_ele_vars; j++) {</div>
-<div class="line">      truth_tab[k++] = 1;</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordtype">int</span> k = 0;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_elem_blk; i++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_ele_vars; j++) {</div>
+<div class="line">        truth_tab[k++] = 1;</div>
+<div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line"> </div>

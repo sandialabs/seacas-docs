@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt_clb_8c-example.html',''
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -431,11 +431,10 @@ $(document).ready(function(){initNavTree('_2test_2testwt_clb_8c-example.html',''
 <div class="line">  <a class="code hl_define" href="ex__copy_8c.html#aa2e0fbcf16ac768c9978cff9920e8e9a">EXCHECK</a>(<a class="code hl_function" href="group__ModelDescription.html#ga995cd1ef78b0873019518411d789be9e">ex_put_attr</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ebids[6], attrib));</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write individual node sets */</span></div>
-<div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> nsids[]             = {20, 21};</div>
 <div class="line">  <span class="keywordtype">int</span> num_nodes_per_set[] = {5, 3};</div>
-<div class="line">  <span class="keywordtype">int</span> num_df_per_set[]    = {5, 3};</div>
 <div class="line">  {</div>
+<div class="line">    <span class="keywordtype">int</span>                 num_df_per_set[] = {5, 3};</div>
 <div class="line">    <span class="keyword">struct </span><a id="_a18" name="_a18"></a><a class="code hl_struct" href="structex__set__specs.html">ex_set_specs</a> set_specs;</div>
 <div class="line"> </div>
 <div class="line">    set_specs.<a id="a19" name="a19"></a><a class="code hl_variable" href="structex__set__specs.html#a06ecbec33a9895e028b54d80527eb3f9">sets_ids</a>            = nsids;</div>
