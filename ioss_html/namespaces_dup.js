@@ -591,7 +591,6 @@ var namespaces_dup =
       [ "compile_string_to_view", "namespacedetail__exported.html#a8ce4671a232e1139c6af8c27e6a41354", null ]
     ] ],
     [ "dragonbox", "namespacedragonbox.html", "namespacedragonbox" ],
-    [ "glob", "namespaceglob.html", "namespaceglob" ],
     [ "Info", "namespaceInfo.html", "namespaceInfo" ],
     [ "Ioad", "namespaceIoad.html", "namespaceIoad" ],
     [ "Iocatalyst", "namespaceIocatalyst.html", "namespaceIocatalyst" ],
