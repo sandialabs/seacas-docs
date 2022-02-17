@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['get_5fnode_0',['get_node',['../ex__cvt__nodes__to__sides_8c.html#a6037c4a24a3b8a4123004291e3ac34ac',1,'ex_cvt_nodes_to_sides.c']]],
-  ['get_5fnodes_1',['get_nodes',['../ex__get__side__set__node__list_8c.html#a2317bb0fb3580e948e01beb271d128b1',1,'ex_get_side_set_node_list.c']]],
-  ['get_5fstatus_5farray_2',['get_status_array',['../ex__put__all__var__param__ext_8c.html#a5613a7426664f47e0625ac68bab38848',1,'ex_put_all_var_param_ext.c']]]
+  ['field_5fstring_5fto_5ffield_5ftype_0',['field_string_to_field_type',['../group__ModelDescription.html#ga25f7991293923293f545cb8b6791bfcd',1,'field_string_to_field_type(const char *field_name):&#160;ex_field_utils.c'],['../group__ModelDescription.html#ga25f7991293923293f545cb8b6791bfcd',1,'field_string_to_field_type(const char *field_name):&#160;ex_field_utils.c']]],
+  ['field_5ftype_5fenum_5fto_5fstring_1',['field_type_enum_to_string',['../group__ModelDescription.html#gad6dfb13e13fd559c81191752483d2dde',1,'field_type_enum_to_string(const ex_field_type field_type):&#160;ex_field_utils.c'],['../group__ModelDescription.html#gad6dfb13e13fd559c81191752483d2dde',1,'field_type_enum_to_string(const ex_field_type field_type):&#160;ex_field_utils.c']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modify_0',['Modify',['../namespaceModify.html',1,'']]]
+  ['literals_0',['literals',['../namespaceliterals.html',1,'']]]
 ];

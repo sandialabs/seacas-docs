@@ -25,7 +25,7 @@ var searchData=
   ['basic_5fruntime_22',['basic_runtime',['../structbasic__runtime.html',1,'']]],
   ['basic_5fstring_5fview_23',['basic_string_view',['../classbasic__string__view.html',1,'']]],
   ['basic_5fstring_5fview_3c_20char_20_3e_24',['basic_string_view&lt; char &gt;',['../classbasic__string__view.html',1,'']]],
-  ['basicglob_25',['BasicGlob',['../classIoss_1_1glob_1_1BasicGlob.html',1,'Ioss::glob']]],
+  ['basicglob_25',['BasicGlob',['../classglob_1_1BasicGlob.html',1,'glob']]],
   ['basis_26',['Basis',['../classIoss_1_1Basis.html',1,'Ioss']]],
   ['basisentry_27',['BasisEntry',['../structIoss_1_1BasisEntry.html',1,'Ioss']]],
   ['beam2_28',['Beam2',['../classIoss_1_1Beam2.html',1,'Ioss']]],

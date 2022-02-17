@@ -113,6 +113,7 @@ var core_8h =
     [ "FMT_NOEXCEPT", "core_8h.html#aef128913e8400683b1cbd1a3a2e11df3", null ],
     [ "FMT_NORETURN", "core_8h.html#ac9411ed6305aee71472718fa55fcc352", null ],
     [ "FMT_NVCC", "core_8h.html#a52376c1ced87b19c8b3ece64cc64f22e", null ],
+    [ "FMT_STATIC_THOUSANDS_SEPARATOR", "core_8h.html#a7c3e52caf09ce5f47ece14c8fb63cb05", null ],
     [ "FMT_TYPE_CONSTANT", "core_8h.html#a1b33b94a68ab12b7b4e7051da8a361f5", null ],
     [ "FMT_UNICODE", "core_8h.html#a24004c4d3ba31dd35664e85862d20061", null ],
     [ "FMT_USE_CONSTEXPR", "core_8h.html#a739a7ff96b6dfd65a4de8fe003f5b233", null ],

@@ -1,6 +1,5 @@
 var namespaceIoss =
 [
-    [ "glob", "namespaceIoss_1_1glob.html", "namespaceIoss_1_1glob" ],
     [ "Init", "namespaceIoss_1_1Init.html", "namespaceIoss_1_1Init" ],
     [ "Private", "namespaceIoss_1_1Private.html", "namespaceIoss_1_1Private" ],
     [ "Assembly", "classIoss_1_1Assembly.html", "classIoss_1_1Assembly" ],
@@ -204,6 +203,7 @@ var namespaceIoss =
     [ "Unknown", "classIoss_1_1Unknown.html", "classIoss_1_1Unknown" ],
     [ "Utils", "classIoss_1_1Utils.html", "classIoss_1_1Utils" ],
     [ "VariableType", "classIoss_1_1VariableType.html", "classIoss_1_1VariableType" ],
+    [ "Vector_1D", "classIoss_1_1Vector__1D.html", "classIoss_1_1Vector__1D" ],
     [ "Vector_2D", "classIoss_1_1Vector__2D.html", "classIoss_1_1Vector__2D" ],
     [ "Vector_3D", "classIoss_1_1Vector__3D.html", "classIoss_1_1Vector__3D" ],
     [ "Wedge12", "classIoss_1_1Wedge12.html", "classIoss_1_1Wedge12" ],

@@ -7,7 +7,7 @@ var searchData=
   ['ap_5fgetline_5fint_4',['ap_getline_int',['../apr__getline__int_8h.html#ad18eb0173c54c4aeaaacb0c3b82a52b5',1,'apr_getline_int.h']]],
   ['ap_5fgl_5fhistadd_5',['ap_gl_histadd',['../apr__getline__int_8h.html#a6d129a9a8e1dd33c66a033a9f7e49fd9',1,'apr_getline_int.h']]],
   ['ap_5fgl_5fsetwidth_6',['ap_gl_setwidth',['../apr__getline__int_8h.html#af807a7e5c7eea8f7e7166278736cf6dc',1,'apr_getline_int.h']]],
-  ['aprepro_7',['Aprepro',['../classSEAMS_1_1Aprepro.html#a71eb28ac6e8947910a08133578d62cfd',1,'SEAMS::Aprepro::Aprepro()'],['../classSEAMS_1_1Aprepro.html#a7c3cc5d1ab124f6c6c7fbb4964ce54c5',1,'SEAMS::Aprepro::Aprepro(const Aprepro &amp;)=delete']]],
+  ['aprepro_7',['Aprepro',['../classSEAMS_1_1Aprepro.html#a71eb28ac6e8947910a08133578d62cfd',1,'SEAMS::Aprepro']]],
   ['aprepro_5foptions_8',['aprepro_options',['../structSEAMS_1_1aprepro__options.html#a2e2dd92197d6667bdb8705e07af30b99',1,'SEAMS::aprepro_options']]],
   ['arg_5fcheck_9',['arg_check',['../namespaceSEAMS.html#a8b8e5e7edad57bbde81e0cd87d08b46b',1,'SEAMS']]],
   ['array_10',['array',['../structSEAMS_1_1array.html#a417139d383fcba5844ff3ce7e1a76a64',1,'SEAMS::array::array(int r, int c)'],['../structSEAMS_1_1array.html#aa479de061ed2727046e070f7f0429823',1,'SEAMS::array::array(const array &amp;)=default'],['../structSEAMS_1_1array.html#a7c43d352e0a475ba39f7f1c6c0c3c03b',1,'SEAMS::array::array()=default']]],

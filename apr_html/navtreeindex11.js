@@ -1,9 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structyy__trans__info.html#a5c9f61e770deef50bd4e697310342fe9":[1,0,33,1],
-"structyy__trans__info.html#ae0715250c2bef261e596e77e0030f13e":[1,0,33,0],
-"terminal__color_8h.html":[2,0,27],
-"terminal__color_8h.html#a3d4b31b4bb69c315a75868d562b5feb6":[2,0,27,4],
 "terminal__color_8h.html#a3d4b31b4bb69c315a75868d562b5feb6a09cbadb2931103c525e2d9999c923aee":[2,0,27,4,2],
 "terminal__color_8h.html#a3d4b31b4bb69c315a75868d562b5feb6a24dedfe1049dd76f091019a695ca263f":[2,0,27,4,3],
 "terminal__color_8h.html#a3d4b31b4bb69c315a75868d562b5feb6a62800974f0e42f278c643cb7500e66cd":[2,0,27,4,1],

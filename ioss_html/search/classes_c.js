@@ -8,7 +8,7 @@ var searchData=
   ['make_5funsigned_5for_5funchanged_3c_20t_2c_20true_20_3e_5',['make_unsigned_or_unchanged&lt; T, true &gt;',['../structmake__unsigned__or__unchanged_3_01T_00_01true_01_4.html',1,'']]],
   ['make_5fvoid_6',['make_void',['../structtsl_1_1detail__hopscotch__hash_1_1make__void.html',1,'tsl::detail_hopscotch_hash::make_void&lt; T &gt;'],['../structtsl_1_1detail__robin__hash_1_1make__void.html',1,'tsl::detail_robin_hash::make_void&lt; T &gt;']]],
   ['map_7',['Map',['../classIoss_1_1Map.html',1,'Ioss']]],
-  ['matchresults_8',['MatchResults',['../classIoss_1_1glob_1_1MatchResults.html',1,'Ioss::glob']]],
+  ['matchresults_8',['MatchResults',['../classglob_1_1MatchResults.html',1,'glob']]],
   ['matrix_5f22_9',['Matrix_22',['../classIoss_1_1Matrix__22.html',1,'Ioss']]],
   ['matrix_5f33_10',['Matrix_33',['../classIoss_1_1Matrix__33.html',1,'Ioss']]],
   ['mesh_11',['Mesh',['../classIoex_1_1Mesh.html',1,'Ioex']]],

@@ -99,12 +99,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad454a360f75f41da2d3c093efab144ff"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ex__field__utils_8c.html#ad454a360f75f41da2d3c093efab144ff">verify_valid_component</a> (int component, size_t suffix_size)</td></tr>
-<tr class="separator:ad454a360f75f41da2d3c093efab144ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2ad3919a416df1738d8ccdd3521812"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ex__field__utils_8c.html#a6d2ad3919a416df1738d8ccdd3521812">verify_valid_component</a> (int component, size_t cardinality, size_t suffix_size)</td></tr>
+<tr class="separator:a6d2ad3919a416df1738d8ccdd3521812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e1a1e73e8caa92c1f5dff48f12ab14a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga0e1a1e73e8caa92c1f5dff48f12ab14a">ex_field_component_name</a> (<a class="el" href="exodusII_8h.html#a58b45f8f43d5757d4171fa3a28fbaee5">ex_field_type</a> field_type, int component)</td></tr>
 <tr class="separator:ga0e1a1e73e8caa92c1f5dff48f12ab14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad236355c6493c83f9d7a8f135f56b2ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#gad236355c6493c83f9d7a8f135f56b2ef">ex_field_component_count</a> (const <a class="el" href="exodusII_8h.html#a58b45f8f43d5757d4171fa3a28fbaee5">ex_field_type</a> field_type)</td></tr>
-<tr class="separator:gad236355c6493c83f9d7a8f135f56b2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00475185e5708086ce9d22c6829be6f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga00475185e5708086ce9d22c6829be6f6">ex_field_cardinality</a> (const <a class="el" href="exodusII_8h.html#a58b45f8f43d5757d4171fa3a28fbaee5">ex_field_type</a> field_type)</td></tr>
+<tr class="separator:ga00475185e5708086ce9d22c6829be6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25f7991293923293f545cb8b6791bfcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exodusII_8h.html#a58b45f8f43d5757d4171fa3a28fbaee5">ex_field_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga25f7991293923293f545cb8b6791bfcd">field_string_to_field_type</a> (const char *field_name)</td></tr>
 <tr class="separator:ga25f7991293923293f545cb8b6791bfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6dfb13e13fd559c81191752483d2dde"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#gad6dfb13e13fd559c81191752483d2dde">field_type_enum_to_string</a> (const <a class="el" href="exodusII_8h.html#a58b45f8f43d5757d4171fa3a28fbaee5">ex_field_type</a> field_type)</td></tr>
@@ -132,8 +132,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad454a360f75f41da2d3c093efab144ff" name="ad454a360f75f41da2d3c093efab144ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad454a360f75f41da2d3c093efab144ff">&#9670;&nbsp;</a></span>verify_valid_component()</h2>
+<a id="a6d2ad3919a416df1738d8ccdd3521812" name="a6d2ad3919a416df1738d8ccdd3521812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d2ad3919a416df1738d8ccdd3521812">&#9670;&nbsp;</a></span>verify_valid_component()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,6 +146,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>cardinality</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
