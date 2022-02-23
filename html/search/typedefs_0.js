@@ -10,14 +10,12 @@ var searchData=
   ['ex_5fcompression_5ftype_7',['ex_compression_type',['../group__FileOptions.html#ga87e0d0f4c6cb6c14212e40803399f0bf',1,'exodusII.h']]],
   ['ex_5fentity_5fid_8',['ex_entity_id',['../exodusII_8h.html#ac03e735ba54b290660f8424399684450',1,'exodusII.h']]],
   ['ex_5fentity_5ftype_9',['ex_entity_type',['../exodusII_8h.html#a36089ec5db710bc43db9ff7d70b38b79',1,'exodusII.h']]],
-  ['ex_5ffield_10',['ex_field',['../exodusII_8h.html#a83d576ff4c07d332dee340f8dd8e7952',1,'exodusII.h']]],
-  ['ex_5ffield_5ftype_11',['ex_field_type',['../exodusII_8h.html#addfc989a6841af1b5e0a8f8b40fa285b',1,'exodusII.h']]],
-  ['ex_5finit_5fparams_12',['ex_init_params',['../group__APIStructs.html#ga22b281d59c8b35651b546081b0daaeb4',1,'exodusII.h']]],
-  ['ex_5finquiry_13',['ex_inquiry',['../exodusII_8h.html#a4ed4d7c08e7044d839e83bf284cd01c3',1,'exodusII.h']]],
-  ['ex_5foption_5ftype_14',['ex_option_type',['../group__FileOptions.html#gac4a53e402cb75c7f820f58feac64cb78',1,'exodusII.h']]],
-  ['ex_5foptions_15',['ex_options',['../exodusII_8h.html#a5d6cbc624c4c4f44d1ff539e83b255d3',1,'exodusII.h']]],
-  ['ex_5fset_16',['ex_set',['../group__APIStructs.html#gaabf4117930e1c6c5201e38b900274cdd',1,'exodusII.h']]],
-  ['ex_5fset_5fspecs_17',['ex_set_specs',['../group__APIStructs.html#ga1d41c6b1174f2d155063110da9f2316d',1,'exodusII.h']]],
-  ['ex_5ftype_18',['ex_type',['../group__APIStructs.html#ga7420aaf40cfc42949ec4463db6652953',1,'exodusII.h']]],
-  ['ex_5fvar_5fparams_19',['ex_var_params',['../group__APIStructs.html#ga2ab4d9b3af86ef8ca0e90afc0bbddd46',1,'exodusII.h']]]
+  ['ex_5finit_5fparams_10',['ex_init_params',['../group__APIStructs.html#ga22b281d59c8b35651b546081b0daaeb4',1,'exodusII.h']]],
+  ['ex_5finquiry_11',['ex_inquiry',['../exodusII_8h.html#a4ed4d7c08e7044d839e83bf284cd01c3',1,'exodusII.h']]],
+  ['ex_5foption_5ftype_12',['ex_option_type',['../group__FileOptions.html#gac4a53e402cb75c7f820f58feac64cb78',1,'exodusII.h']]],
+  ['ex_5foptions_13',['ex_options',['../exodusII_8h.html#a5d6cbc624c4c4f44d1ff539e83b255d3',1,'exodusII.h']]],
+  ['ex_5fset_14',['ex_set',['../group__APIStructs.html#gaabf4117930e1c6c5201e38b900274cdd',1,'exodusII.h']]],
+  ['ex_5fset_5fspecs_15',['ex_set_specs',['../group__APIStructs.html#ga1d41c6b1174f2d155063110da9f2316d',1,'exodusII.h']]],
+  ['ex_5ftype_16',['ex_type',['../group__APIStructs.html#ga7420aaf40cfc42949ec4463db6652953',1,'exodusII.h']]],
+  ['ex_5fvar_5fparams_17',['ex_var_params',['../group__APIStructs.html#ga2ab4d9b3af86ef8ca0e90afc0bbddd46',1,'exodusII.h']]]
 ];

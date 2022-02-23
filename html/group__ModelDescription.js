@@ -2,9 +2,6 @@ var group__ModelDescription =
 [
     [ "ex_add_attr", "group__ModelDescription.html#ga7d542c319e25ff419dfc70c85caff460", null ],
     [ "ex_create_group", "group__ModelDescription.html#ga3ec5c53a8b305d10a09be9617e872543", null ],
-    [ "ex_field_cardinality", "group__ModelDescription.html#ga00475185e5708086ce9d22c6829be6f6", null ],
-    [ "ex_field_component_name", "group__ModelDescription.html#ga0e1a1e73e8caa92c1f5dff48f12ab14a", null ],
-    [ "ex_field_name", "group__ModelDescription.html#ga6030605dfb4c4e54831e21a49c9b7d6f", null ],
     [ "ex_get_assemblies", "group__ModelDescription.html#gae603c9724507e32678fedef3e542748e", null ],
     [ "ex_get_assembly", "group__ModelDescription.html#ga10c0497c477e2b484c7f631c477ab05f", null ],
     [ "ex_get_attr", "group__ModelDescription.html#ga2b1eea67e34b3167bd22febc06081d11", null ],
@@ -128,7 +125,5 @@ var group__ModelDescription =
     [ "ex_put_set_param", "group__ModelDescription.html#ga00b965a438a94c8f5b67fa3c7f8d2ffe", null ],
     [ "ex_put_sets", "group__ModelDescription.html#ga63d5095fbcff69d5bbe3ea69db818489", null ],
     [ "ex_put_ss_param_global", "group__ModelDescription.html#ga0e4043678f07f4643a294b51ea805460", null ],
-    [ "ex_put_text_attribute", "group__ModelDescription.html#ga9c804f3c0318d41e6d38b09bacc88d4a", null ],
-    [ "field_string_to_field_type", "group__ModelDescription.html#ga25f7991293923293f545cb8b6791bfcd", null ],
-    [ "field_type_enum_to_string", "group__ModelDescription.html#gad6dfb13e13fd559c81191752483d2dde", null ]
+    [ "ex_put_text_attribute", "group__ModelDescription.html#ga9c804f3c0318d41e6d38b09bacc88d4a", null ]
 ];

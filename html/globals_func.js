@@ -37,9 +37,7 @@ var globals_func =
     [ "e", "globals_func_e.html", null ],
     [ "err", "globals_func_e.html", null ],
     [ "err_", "globals_func_e.html", null ],
-    [ "f", "globals_func_f.html", null ],
     [ "fcdc", "globals_func_f.html", null ],
-    [ "fiel", "globals_func_f.html", null ],
     [ "fstr", "globals_func_f.html", null ],
     [ "g", "globals_func_g.html", null ],
     [ "get_", "globals_func_g.html", null ],
@@ -62,7 +60,6 @@ var globals_func =
     [ "stre", "globals_func_s.html", null ],
     [ "swap", "globals_func_s.html", null ],
     [ "upda", "globals_func_u.html", null ],
-    [ "v", "globals_func_v.html", null ],
     [ "var_", "globals_func_v.html", null ],
     [ "w", "globals_func_w.html", null ],
     [ "writ", "globals_func_w.html", null ]

@@ -9,7 +9,6 @@ var annotated_dup =
     [ "ex_blob", "structex__blob.html", "structex__blob" ],
     [ "ex_block", "structex__block.html", "structex__block" ],
     [ "ex_block_params", "structex__block__params.html", "structex__block__params" ],
-    [ "ex_field", "structex__field.html", "structex__field" ],
     [ "ex_init_params", "structex__init__params.html", "structex__init__params" ],
     [ "ex_set", "structex__set.html", "structex__set" ],
     [ "ex_set_specs", "structex__set__specs.html", "structex__set__specs" ],

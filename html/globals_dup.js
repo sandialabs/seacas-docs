@@ -50,7 +50,6 @@ var globals_dup =
     [ "err_", "globals_e.html", null ],
     [ "f", "globals_f.html", null ],
     [ "fcdc", "globals_f.html", null ],
-    [ "fiel", "globals_f.html", null ],
     [ "fstr", "globals_f.html", null ],
     [ "g", "globals_g.html", null ],
     [ "get_", "globals_g.html", null ],

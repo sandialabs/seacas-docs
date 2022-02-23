@@ -9,9 +9,8 @@ var searchData=
   ['ex_5fblob_6',['ex_blob',['../structex__blob.html',1,'']]],
   ['ex_5fblock_7',['ex_block',['../structex__block.html',1,'']]],
   ['ex_5fblock_5fparams_8',['ex_block_params',['../structex__block__params.html',1,'']]],
-  ['ex_5ffield_9',['ex_field',['../structex__field.html',1,'']]],
-  ['ex_5finit_5fparams_10',['ex_init_params',['../structex__init__params.html',1,'']]],
-  ['ex_5fset_11',['ex_set',['../structex__set.html',1,'']]],
-  ['ex_5fset_5fspecs_12',['ex_set_specs',['../structex__set__specs.html',1,'']]],
-  ['ex_5fvar_5fparams_13',['ex_var_params',['../structex__var__params.html',1,'']]]
+  ['ex_5finit_5fparams_9',['ex_init_params',['../structex__init__params.html',1,'']]],
+  ['ex_5fset_10',['ex_set',['../structex__set.html',1,'']]],
+  ['ex_5fset_5fspecs_11',['ex_set_specs',['../structex__set__specs.html',1,'']]],
+  ['ex_5fvar_5fparams_12',['ex_var_params',['../structex__var__params.html',1,'']]]
 ];

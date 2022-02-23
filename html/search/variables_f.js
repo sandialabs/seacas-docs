@@ -4,6 +4,5 @@ var searchData=
   ['valid_5fstat_1',['valid_stat',['../structex____obj__stats.html#ad8ffd49df17926dff061bfa6c097c8a5',1,'ex__obj_stats']]],
   ['value_2',['value',['../structex____list__item.html#a248511bb4e8366d8b9d7bc591de9f9d2',1,'ex__list_item']]],
   ['value_5fcount_3',['value_count',['../structex__attribute.html#aa0b09aa2f9d6029d57d7055d5b5a132e',1,'ex_attribute']]],
-  ['values_4',['values',['../structex__attribute.html#a9223a7a71f6be7cebf2b045886728e6e',1,'ex_attribute']]],
-  ['variable_5findex_5',['variable_index',['../structex__attribute.html#a8a73a02d24162399299eb0566177a27c',1,'ex_attribute']]]
+  ['values_4',['values',['../structex__attribute.html#a9223a7a71f6be7cebf2b045886728e6e',1,'ex_attribute']]]
 ];

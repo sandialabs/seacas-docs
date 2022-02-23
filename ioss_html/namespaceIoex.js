@@ -1,6 +1,9 @@
 var namespaceIoex =
 [
     [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}", "namespaceIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html", "namespaceIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03" ],
+    [ "anonymous_namespace{Ioex_DatabaseIO.C}", "namespaceIoex_1_1anonymous__namespace_02Ioex__DatabaseIO_8C_03.html", [
+      [ "get_element_sides_lists", "namespaceIoex_1_1anonymous__namespace_02Ioex__DatabaseIO_8C_03.html#a71709053b6f4e6e0a5a5b4d9106bc4d2", null ]
+    ] ],
     [ "Assembly", "structIoex_1_1Assembly.html", "structIoex_1_1Assembly" ],
     [ "BaseDatabaseIO", "classIoex_1_1BaseDatabaseIO.html", "classIoex_1_1BaseDatabaseIO" ],
     [ "Blob", "structIoex_1_1Blob.html", "structIoex_1_1Blob" ],

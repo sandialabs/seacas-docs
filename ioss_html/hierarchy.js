@@ -18,23 +18,23 @@ var hierarchy =
     [ "Assert", "structAssert.html", null ],
     [ "assert_context", "classassert__context.html", null ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}::assert_initializer", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer.html", null ],
-    [ "glob::AstConsumer< charT >", "classglob_1_1AstConsumer.html", null ],
-    [ "glob::AstNode< charT >", "classglob_1_1AstNode.html", [
-      [ "glob::AnyNode< charT >", "classglob_1_1AnyNode.html", null ],
-      [ "glob::CharNode< charT >", "classglob_1_1CharNode.html", null ],
-      [ "glob::ConcatNode< charT >", "classglob_1_1ConcatNode.html", null ],
-      [ "glob::GlobNode< charT >", "classglob_1_1GlobNode.html", null ],
-      [ "glob::GroupNode< charT >", "classglob_1_1GroupNode.html", null ],
-      [ "glob::NegativeSetNode< charT >", "classglob_1_1NegativeSetNode.html", null ],
-      [ "glob::PositiveSetNode< charT >", "classglob_1_1PositiveSetNode.html", null ],
-      [ "glob::RangeNode< charT >", "classglob_1_1RangeNode.html", null ],
-      [ "glob::SetItemsNode< charT >", "classglob_1_1SetItemsNode.html", null ],
-      [ "glob::StarNode< charT >", "classglob_1_1StarNode.html", null ],
-      [ "glob::UnionNode< charT >", "classglob_1_1UnionNode.html", null ]
+    [ "Ioss::glob::AstConsumer< charT >", "classIoss_1_1glob_1_1AstConsumer.html", null ],
+    [ "Ioss::glob::AstNode< charT >", "classIoss_1_1glob_1_1AstNode.html", [
+      [ "Ioss::glob::AnyNode< charT >", "classIoss_1_1glob_1_1AnyNode.html", null ],
+      [ "Ioss::glob::CharNode< charT >", "classIoss_1_1glob_1_1CharNode.html", null ],
+      [ "Ioss::glob::ConcatNode< charT >", "classIoss_1_1glob_1_1ConcatNode.html", null ],
+      [ "Ioss::glob::GlobNode< charT >", "classIoss_1_1glob_1_1GlobNode.html", null ],
+      [ "Ioss::glob::GroupNode< charT >", "classIoss_1_1glob_1_1GroupNode.html", null ],
+      [ "Ioss::glob::NegativeSetNode< charT >", "classIoss_1_1glob_1_1NegativeSetNode.html", null ],
+      [ "Ioss::glob::PositiveSetNode< charT >", "classIoss_1_1glob_1_1PositiveSetNode.html", null ],
+      [ "Ioss::glob::RangeNode< charT >", "classIoss_1_1glob_1_1RangeNode.html", null ],
+      [ "Ioss::glob::SetItemsNode< charT >", "classIoss_1_1glob_1_1SetItemsNode.html", null ],
+      [ "Ioss::glob::StarNode< charT >", "classIoss_1_1glob_1_1StarNode.html", null ],
+      [ "Ioss::glob::UnionNode< charT >", "classIoss_1_1glob_1_1UnionNode.html", null ]
     ] ],
-    [ "glob::AstVisitor< charT >", "classglob_1_1AstVisitor.html", null ],
+    [ "Ioss::glob::AstVisitor< charT >", "classIoss_1_1glob_1_1AstVisitor.html", null ],
     [ "auto_id", "structauto__id.html", null ],
-    [ "glob::Automata< charT >", "classglob_1_1Automata.html", null ],
+    [ "Ioss::glob::Automata< charT >", "classIoss_1_1glob_1_1Automata.html", null ],
     [ "Ioss::AxisAlignedBoundingBox", "structIoss_1_1AxisAlignedBoundingBox.html", null ],
     [ "std::back_insert_iterator", null, [
       [ "appender", "classappender.html", null ]
@@ -63,7 +63,7 @@ var hierarchy =
     [ "basic_runtime< Char >", "structbasic__runtime.html", null ],
     [ "basic_string_view< Char >", "classbasic__string__view.html", null ],
     [ "basic_string_view< char >", "classbasic__string__view.html", null ],
-    [ "glob::BasicGlob< charT, globT >", "classglob_1_1BasicGlob.html", null ],
+    [ "Ioss::glob::BasicGlob< charT, globT >", "classIoss_1_1glob_1_1BasicGlob.html", null ],
     [ "Ioss::Basis", "classIoss_1_1Basis.html", null ],
     [ "Ioss::BasisEntry", "structIoss_1_1BasisEntry.html", null ],
     [ "tsl::bhopscotch_map< Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1bhopscotch__map.html", null ],
@@ -370,10 +370,10 @@ var hierarchy =
       [ "Ioex::anonymous_namespace{Ioex_BaseDatabaseIO.C}::EX_attribute", "classIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1EX__attribute.html", null ]
     ] ],
     [ "std::exception", null, [
-      [ "glob::Error", "classglob_1_1Error.html", null ]
+      [ "Ioss::glob::Error", "classIoss_1_1glob_1_1Error.html", null ]
     ] ],
     [ "Iogn::ExodusData", "structIogn_1_1ExodusData.html", null ],
-    [ "glob::ExtendedGlob< charT >", "classglob_1_1ExtendedGlob.html", null ],
+    [ "Ioss::glob::ExtendedGlob< charT >", "classIoss_1_1glob_1_1ExtendedGlob.html", null ],
     [ "Ioss::Face", "classIoss_1_1Face.html", null ],
     [ "Ioex::FaceBlock", "structIoex_1_1FaceBlock.html", null ],
     [ "Ioss::FaceEqual", "structIoss_1_1FaceEqual.html", null ],
@@ -602,7 +602,7 @@ var hierarchy =
     [ "tsl::robin_map< Key, T, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::KeySelect", "classtsl_1_1robin__map_1_1KeySelect.html", null ],
     [ "tsl::robin_set< Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::KeySelect", "classtsl_1_1robin__set_1_1KeySelect.html", null ],
     [ "Iohb::Layout", "classIohb_1_1Layout.html", null ],
-    [ "glob::Lexer< charT >", "classglob_1_1Lexer.html", null ],
+    [ "Ioss::glob::Lexer< charT >", "classIoss_1_1glob_1_1Lexer.html", null ],
     [ "locale_ref", "classlocale__ref.html", null ],
     [ "detail::make_integer_sequence< T, N, Ns >", "structdetail_1_1make__integer__sequence.html", null ],
     [ "std::make_unsigned", null, [
@@ -614,7 +614,7 @@ var hierarchy =
     [ "tsl::detail_hopscotch_hash::make_void< T >", "structtsl_1_1detail__hopscotch__hash_1_1make__void.html", null ],
     [ "tsl::detail_robin_hash::make_void< T >", "structtsl_1_1detail__robin__hash_1_1make__void.html", null ],
     [ "Ioss::Map", "classIoss_1_1Map.html", null ],
-    [ "glob::MatchResults< charT >", "classglob_1_1MatchResults.html", null ],
+    [ "Ioss::glob::MatchResults< charT >", "classIoss_1_1glob_1_1MatchResults.html", null ],
     [ "Ioex::Mesh", "classIoex_1_1Mesh.html", null ],
     [ "Ioss::MeshCopyOptions", "structIoss_1_1MeshCopyOptions.html", null ],
     [ "ioss_region_report::Messages", "structioss__region__report_1_1Messages.html", null ],
@@ -655,7 +655,7 @@ var hierarchy =
     ] ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >::parse_range", "structformatter_3_01std_1_1chrono_1_1duration_3_01Rep_00_01Period_01_4_00_01Char_01_4_1_1parse__range.html", null ],
     [ "Iovs::PhactoriParserInterface::ParseInfo", "structIovs_1_1PhactoriParserInterface_1_1ParseInfo.html", null ],
-    [ "glob::Parser< charT >", "classglob_1_1Parser.html", null ],
+    [ "Ioss::glob::Parser< charT >", "classIoss_1_1glob_1_1Parser.html", null ],
     [ "Iovs::CatalystManagerBase::ParseResult", "structIovs_1_1CatalystManagerBase_1_1ParseResult.html", null ],
     [ "Iotm::text_mesh::PartIdMapping", "classIotm_1_1text__mesh_1_1PartIdMapping.html", null ],
     [ "Iotm::unit_test::TextMeshFixture::PartInfo", "structIotm_1_1unit__test_1_1TextMeshFixture_1_1PartInfo.html", null ],
@@ -705,9 +705,9 @@ var hierarchy =
     ] ],
     [ "Ioss::SerializeIO", "classIoss_1_1SerializeIO.html", null ],
     [ "Ioss::SetDecompositionData", "classIoss_1_1SetDecompositionData.html", null ],
-    [ "glob::SetItem< charT >", "classglob_1_1SetItem.html", [
-      [ "glob::SetItemChar< charT >", "classglob_1_1SetItemChar.html", null ],
-      [ "glob::SetItemRange< charT >", "classglob_1_1SetItemRange.html", null ]
+    [ "Ioss::glob::SetItem< charT >", "classIoss_1_1glob_1_1SetItem.html", [
+      [ "Ioss::glob::SetItemChar< charT >", "classIoss_1_1glob_1_1SetItemChar.html", null ],
+      [ "Ioss::glob::SetItemRange< charT >", "classIoss_1_1glob_1_1SetItemRange.html", null ]
     ] ],
     [ "Iogn::SharedNode", "structIogn_1_1SharedNode.html", null ],
     [ "Iofaodel::sideblock_entry_t", "structIofaodel_1_1sideblock__entry__t.html", null ],
@@ -717,7 +717,7 @@ var hierarchy =
     [ "Iotm::text_mesh::SidesetParser< EntityId >", "classIotm_1_1text__mesh_1_1SidesetParser.html", null ],
     [ "Iotm::text_mesh::SidesetSplitter< EntityId, Topology >", "classIotm_1_1text__mesh_1_1SidesetSplitter.html", null ],
     [ "Iotm::text_mesh::SidesetSplitter< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SidesetSplitter.html", null ],
-    [ "glob::SimpleGlob< charT >", "classglob_1_1SimpleGlob.html", null ],
+    [ "Ioss::glob::SimpleGlob< charT >", "classIoss_1_1glob_1_1SimpleGlob.html", null ],
     [ "detail::singleton", "structdetail_1_1singleton.html", null ],
     [ "tsl::detail_hopscotch_hash::smallest_type_for_min_bits< MinBits, Enable >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits.html", null ],
     [ "tsl::detail_hopscotch_hash::smallest_type_for_min_bits< MinBits, typename std::enable_if<(MinBits > 0) &&(MinBits<=8)>::type >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_34aef3ae34b24d1d6c51f7b75c4e85a1.html", null ],
@@ -733,14 +733,14 @@ var hierarchy =
       [ "dynamic_specs_handler< ParseContext >", "classdynamic__specs__handler.html", null ]
     ] ],
     [ "Iotm::text_mesh::SidesetSplitter< EntityId, Topology >::SplitData", "structIotm_1_1text__mesh_1_1SidesetSplitter_1_1SplitData.html", null ],
-    [ "glob::State< charT >", "classglob_1_1State.html", [
-      [ "glob::StateAny< charT >", "classglob_1_1StateAny.html", null ],
-      [ "glob::StateChar< charT >", "classglob_1_1StateChar.html", null ],
-      [ "glob::StateFail< charT >", "classglob_1_1StateFail.html", null ],
-      [ "glob::StateGroup< charT >", "classglob_1_1StateGroup.html", null ],
-      [ "glob::StateMatch< charT >", "classglob_1_1StateMatch.html", null ],
-      [ "glob::StateSet< charT >", "classglob_1_1StateSet.html", null ],
-      [ "glob::StateStar< charT >", "classglob_1_1StateStar.html", null ]
+    [ "Ioss::glob::State< charT >", "classIoss_1_1glob_1_1State.html", [
+      [ "Ioss::glob::StateAny< charT >", "classIoss_1_1glob_1_1StateAny.html", null ],
+      [ "Ioss::glob::StateChar< charT >", "classIoss_1_1glob_1_1StateChar.html", null ],
+      [ "Ioss::glob::StateFail< charT >", "classIoss_1_1glob_1_1StateFail.html", null ],
+      [ "Ioss::glob::StateGroup< charT >", "classIoss_1_1glob_1_1StateGroup.html", null ],
+      [ "Ioss::glob::StateMatch< charT >", "classIoss_1_1glob_1_1StateMatch.html", null ],
+      [ "Ioss::glob::StateSet< charT >", "classIoss_1_1glob_1_1StateSet.html", null ],
+      [ "Ioss::glob::StateStar< charT >", "classIoss_1_1glob_1_1StateStar.html", null ]
     ] ],
     [ "Iofaodel::state_entry_t", "structIofaodel_1_1state__entry__t.html", null ],
     [ "std_string_view< T >", "structstd__string__view.html", null ],
@@ -770,7 +770,7 @@ var hierarchy =
     [ "Iotm::text_mesh::TextMeshParser< EntityId, TopologyMapping >", "classIotm_1_1text__mesh_1_1TextMeshParser.html", null ],
     [ "thousands_sep_result< Char >", "structthousands__sep__result.html", null ],
     [ "tm_writer< OutputIt, Char >", "classtm__writer.html", null ],
-    [ "glob::Token< charT >", "classglob_1_1Token.html", null ],
+    [ "Ioss::glob::Token< charT >", "classIoss_1_1glob_1_1Token.html", null ],
     [ "Iopg::TopologyMapCompare", "structIopg_1_1TopologyMapCompare.html", null ],
     [ "Iotm::TopologyMapEntry", "structIotm_1_1TopologyMapEntry.html", null ],
     [ "Iotm::text_mesh::TopologyMapping< T >", "classIotm_1_1text__mesh_1_1TopologyMapping.html", null ],
@@ -929,7 +929,6 @@ var hierarchy =
       [ "Ioss::Sym_Tensor_21", "classIoss_1_1Sym__Tensor__21.html", null ],
       [ "Ioss::Sym_Tensor_31", "classIoss_1_1Sym__Tensor__31.html", null ],
       [ "Ioss::Sym_Tensor_33", "classIoss_1_1Sym__Tensor__33.html", null ],
-      [ "Ioss::Vector_1D", "classIoss_1_1Vector__1D.html", null ],
       [ "Ioss::Vector_2D", "classIoss_1_1Vector__2D.html", null ],
       [ "Ioss::Vector_3D", "classIoss_1_1Vector__3D.html", null ]
     ] ],
