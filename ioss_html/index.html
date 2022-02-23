@@ -212,8 +212,6 @@ Properties related to field and sideset/surface interpretation</h2>
 <td class="markdownTableBodyNone">SURFACE_SPLIT_TYPE   </td><td class="markdownTableBodyCenter">{type}   </td><td class="markdownTableBodyNone">Specify how to split sidesets into homogeneous sideblocks. Either an integer or string: 1 or <code>TOPOLOGY</code>, 2 or <code>BLOCK</code>, 3 or <code>NO_SPLIT</code>. Default is <code>TOPOLOGY</code> if not specified.   </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md6"></a>
-Properties related to underlying file type (exodus only)</h2>
-<h2><a class="anchor" id="autotoc_md7"></a>
 Output Database-Related Properties</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -253,7 +251,7 @@ Output Database-Related Properties</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ENABLE_DATAWARP   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">If the system supports Cray DataWarp (burst buffer), should it be used for buffering output files.   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Properties for the heartbeat output</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -279,8 +277,8 @@ Properties for the heartbeat output</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">SHOW_TIME_FIELD   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Should the current analysis time be output as the first field.   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md9"></a>
-Experimental</h2>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Experimental / Special Purpose</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Property   </th><th class="markdownTableHeadCenter">Value   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -293,9 +291,11 @@ Experimental</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">MINIMAL_NEMESIS_INFO   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">special case, omit all nemesis data except for nodal communication map    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">OMIT_EXODUS_NUM_MAPS   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">special case, do not output the node and element numbering map.   </td></tr>
+<td class="markdownTableBodyNone">OMIT_EXODUS_NUM_MAPS   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">special case, do not output the node and element numbering map.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">EXODUS_CALL_GET_TIMES   </td><td class="markdownTableBodyCenter">[on] / off   </td><td class="markdownTableBodyNone">special case &ndash; should the <code>ex_get_times()</code> function be called. See below.   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Debugging / Profiling</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -315,13 +315,16 @@ Debugging / Profiling</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">TIME_STATE_INPUT_OUTPUT   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">show the elapsed time for reading/writing each timestep's data   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 Setting properties via an environment variable</h2>
 <p >Although the properties are usually accessed internally in the application calling the IOSS library, it is possible to set the properties externally prior to running the application via the setting of the environment variable <code>IOSS_PROPERTIES</code>. The value of the variable is one or more colon-separated property/property-value pairs. For example, to set the <code>DECOMPOSITION_METHOD</code> and the <code>FILE_TYPE</code> externally, the following would be used: </p><div class="fragment"><div class="line">export IOSS_PROPERTIES=<span class="stringliteral">&quot;DECOMPOSITION_METHOD=rib:FILE_TYPE=netcdf4&quot;</span></div>
 </div><!-- fragment --><p> If the environment variable is set correctly, there should be an informational message output during running of the application similar to: </p><div class="fragment"><div class="line">IOSS: Adding <span class="keyword">property</span> <span class="stringliteral">&#39;DECOMPOSITION_METHOD&#39;</span> with <a class="code hl_class" href="classvalue.html">value</a> <span class="stringliteral">&#39;rib&#39;</span></div>
 <div class="line">IOSS: Adding <span class="keyword">property</span> <span class="stringliteral">&#39;FILE_TYPE&#39;</span> with <a class="code hl_class" href="classvalue.html">value</a> <span class="stringliteral">&#39;netcdf4&#39;</span></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1198</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="license"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md11"></a>
+Further explanation of some of the properties.</h2>
+<p ><code>EXODUS_CALL_GET_TIMES</code>: Typically only used in <code>isSerialParallel</code> mode and the client is responsible for making sure that the step times are handled correctly. All databases will know about the number of timesteps, but if the <code>ex_get_times()</code> function call is skipped, then the times on that database will all be zero. The use case is that in <code>isSerialParallel</code>, each call to <code>ex_get_times()</code> for all files is performed sequentially, so if you have hundreds to thousands of files, the time for the call is additive and since timesteps are record variables in netCDF, accessing the data for all timesteps involves lseeks throughout the file.</p>
+<h1><a class="anchor" id="license"></a>
 License</h1>
 <p >The IOSS library is licensed under the BSD open source license. </p><pre class="fragment"> Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions
  of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with

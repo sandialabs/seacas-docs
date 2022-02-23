@@ -35,12 +35,12 @@ var NAVTREE =
         [ "Output File Composition – Single File output from parallel run instead of file-per-processor", "index.html#autotoc_md3", null ],
         [ "Properties Related to byte size of reals and integers", "index.html#autotoc_md4", null ],
         [ "Properties related to field and sideset/surface interpretation", "index.html#autotoc_md5", null ],
-        [ "Properties related to underlying file type (exodus only)", "index.html#autotoc_md6", null ],
-        [ "Output Database-Related Properties", "index.html#autotoc_md7", null ],
-        [ "Properties for the heartbeat output", "index.html#autotoc_md8", null ],
-        [ "Experimental", "index.html#autotoc_md9", null ],
-        [ "Debugging / Profiling", "index.html#autotoc_md10", null ],
-        [ "Setting properties via an environment variable", "index.html#autotoc_md11", null ]
+        [ "Output Database-Related Properties", "index.html#autotoc_md6", null ],
+        [ "Properties for the heartbeat output", "index.html#autotoc_md7", null ],
+        [ "Experimental / Special Purpose", "index.html#autotoc_md8", null ],
+        [ "Debugging / Profiling", "index.html#autotoc_md9", null ],
+        [ "Setting properties via an environment variable", "index.html#autotoc_md10", null ],
+        [ "Further explanation of some of the properties.", "index.html#autotoc_md11", null ]
       ] ],
       [ "License", "index.html#license", null ]
     ] ],

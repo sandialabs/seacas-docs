@@ -95,12 +95,14 @@ $(document).ready(function(){initNavTree('classIoex_1_1DatabaseIO.html',''); ini
 <div class="dynheader">
 Inheritance diagram for Ioex::DatabaseIO:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classIoex_1_1DatabaseIO__inherit__graph.svg" width="166" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classIoex_1_1DatabaseIO__inherit__graph.svg" width="166" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Ioex::DatabaseIO:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classIoex_1_1DatabaseIO__coll__graph.svg" width="100%" height="566"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classIoex_1_1DatabaseIO__coll__graph.svg" width="100%" height="566"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -497,12 +499,12 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a51ee3e1851015d3459d16d50d2e169a8"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1DatabaseIO.html#a51ee3e1851015d3459d16d50d2e169a8">get_side_field</a> (const <a class="el" href="classIoss_1_1SideBlock.html">Ioss::SideBlock</a> *sd_blk, const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, void *data, size_t data_size) const</td></tr>
 <tr class="separator:a51ee3e1851015d3459d16d50d2e169a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaae0f51bad0e843495a771677641ef0f"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1DatabaseIO.html#aaae0f51bad0e843495a771677641ef0f">put_side_field</a> (const <a class="el" href="classIoss_1_1SideBlock.html">Ioss::SideBlock</a> *sd_blk, const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, void *data, size_t data_size) const</td></tr>
+<tr class="memdesc:aaae0f51bad0e843495a771677641ef0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if application code is controlling the processor id.  <a href="classIoex_1_1DatabaseIO.html#aaae0f51bad0e843495a771677641ef0f">More...</a><br /></td></tr>
 <tr class="separator:aaae0f51bad0e843495a771677641ef0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a16f4ddc690ec5943641346d92ed9dd24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1DatabaseIO.html#a16f4ddc690ec5943641346d92ed9dd24">isSerialParallel</a></td></tr>
-<tr class="memdesc:a16f4ddc690ec5943641346d92ed9dd24"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if application code is controlling the processor id.  <a href="classIoex_1_1DatabaseIO.html#a16f4ddc690ec5943641346d92ed9dd24">More...</a><br /></td></tr>
+<tr class="memitem:a16f4ddc690ec5943641346d92ed9dd24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoex_1_1DatabaseIO.html#a16f4ddc690ec5943641346d92ed9dd24">isSerialParallel</a> {false}</td></tr>
 <tr class="separator:a16f4ddc690ec5943641346d92ed9dd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -3584,6 +3586,8 @@ template&lt;typename INT &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>true if application code is controlling the processor id. </p>
+
 </div>
 </div>
 <a id="a01d0615555d84a3a656ca261a84d82fb" name="a01d0615555d84a3a656ca261a84d82fb"></a>
@@ -4113,7 +4117,7 @@ template&lt;typename INT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioex::DatabaseIO::isSerialParallel</td>
+          <td class="memname">bool Ioex::DatabaseIO::isSerialParallel {false}</td>
         </tr>
       </table>
   </td>
@@ -4122,10 +4126,6 @@ template&lt;typename INT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">        <span class="keyword">false</span>}</div>
-</div><!-- fragment -->
-<p>true if application code is controlling the processor id. </p>
 
 </div>
 </div>
