@@ -14,6 +14,7 @@ var group__ModelDescription =
     [ "ex_get_blob", "group__ModelDescription.html#ga91f160b4fb60fb9acd1e82f192fa755c", null ],
     [ "ex_get_blobs", "group__ModelDescription.html#gadc819d92e01bc3af637cacca6121ab21", null ],
     [ "ex_get_block", "group__ModelDescription.html#gabc6e9887581be7b2966db32d998ca648", null ],
+    [ "ex_get_block_id_map", "group__ModelDescription.html#ga371222151123398848a13247c67c7f4e", null ],
     [ "ex_get_block_param", "group__ModelDescription.html#ga3d70fa3159504a9955d5cbdb5974d07e", null ],
     [ "ex_get_block_params", "group__ModelDescription.html#ga0bdaca0947c7a5a1288b48400f266e5c", null ],
     [ "ex_get_cmap_params", "group__ModelDescription.html#gad30901557b051888e64db80524838a90", null ],

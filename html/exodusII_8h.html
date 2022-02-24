@@ -123,15 +123,15 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1716caad9b47ebafff37a1820196efb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#a1716caad9b47ebafff37a1820196efb0">EXODUS_VERSION</a>&#160;&#160;&#160;&quot;8.14&quot;</td></tr>
+<tr class="memitem:a1716caad9b47ebafff37a1820196efb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#a1716caad9b47ebafff37a1820196efb0">EXODUS_VERSION</a>&#160;&#160;&#160;&quot;8.15&quot;</td></tr>
 <tr class="separator:a1716caad9b47ebafff37a1820196efb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acea302ca351e6f781c53e9affe59dc71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#acea302ca351e6f781c53e9affe59dc71">EXODUS_VERSION_MAJOR</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:acea302ca351e6f781c53e9affe59dc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3bbb36a7bacba53cad6cf944d0314bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#ad3bbb36a7bacba53cad6cf944d0314bf">EXODUS_VERSION_MINOR</a>&#160;&#160;&#160;14</td></tr>
+<tr class="memitem:ad3bbb36a7bacba53cad6cf944d0314bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#ad3bbb36a7bacba53cad6cf944d0314bf">EXODUS_VERSION_MINOR</a>&#160;&#160;&#160;15</td></tr>
 <tr class="separator:ad3bbb36a7bacba53cad6cf944d0314bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37e831b87010d45baccb8af2db1c0143"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#a37e831b87010d45baccb8af2db1c0143">EXODUS_RELEASE_DATE</a>&#160;&#160;&#160;&quot;December 2, 2021&quot;</td></tr>
+<tr class="memitem:a37e831b87010d45baccb8af2db1c0143"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#a37e831b87010d45baccb8af2db1c0143">EXODUS_RELEASE_DATE</a>&#160;&#160;&#160;&quot;February 24, 2022&quot;</td></tr>
 <tr class="separator:a37e831b87010d45baccb8af2db1c0143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa18e08d59faa100114b77fe55900ec49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#aa18e08d59faa100114b77fe55900ec49">EX_API_VERS</a>&#160;&#160;&#160;8.14f</td></tr>
+<tr class="memitem:aa18e08d59faa100114b77fe55900ec49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#aa18e08d59faa100114b77fe55900ec49">EX_API_VERS</a>&#160;&#160;&#160;8.15f</td></tr>
 <tr class="separator:aa18e08d59faa100114b77fe55900ec49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e92e59ab8df2901302fd50bc103fbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exodusII_8h.html#a54e92e59ab8df2901302fd50bc103fbf">EX_API_VERS_NODOT</a>&#160;&#160;&#160;(100 * <a class="el" href="exodusII_8h.html#acea302ca351e6f781c53e9affe59dc71">EXODUS_VERSION_MAJOR</a> + <a class="el" href="exodusII_8h.html#ad3bbb36a7bacba53cad6cf944d0314bf">EXODUS_VERSION_MINOR</a>)</td></tr>
 <tr class="separator:a54e92e59ab8df2901302fd50bc103fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -645,6 +645,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaefc10e2a564e1ed1a926f2fadf5c6a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadae17da907ad55a12bd475a3984777a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#gadae17da907ad55a12bd475a3984777a4">ex_get_partial_id_map</a> (int exoid, <a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a> map_type, int64_t start_entity_num, int64_t num_entities, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *map)</td></tr>
 <tr class="separator:gadae17da907ad55a12bd475a3984777a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga371222151123398848a13247c67c7f4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga371222151123398848a13247c67c7f4e">ex_get_block_id_map</a> (int exoid, <a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a> map_type, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> <a class="el" href="exo__jack_8c.html#a40ad44f36fa869224f44f26e26bbda41">entity_id</a>, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *map)</td></tr>
+<tr class="separator:ga371222151123398848a13247c67c7f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5001d6ee2e6900eda0281434a3f0dde2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga5001d6ee2e6900eda0281434a3f0dde2">ex_put_coordinate_frames</a> (int exoid, int nframes, const <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *cf_ids, const void *pt_coordinates, const char *tags)</td></tr>
 <tr class="separator:ga5001d6ee2e6900eda0281434a3f0dde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d1a64c0b1b5c990f5710b8a41e73acb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga5d1a64c0b1b5c990f5710b8a41e73acb">ex_put_map_param</a> (int exoid, int num_node_maps, int num_elem_maps)</td></tr>
@@ -1073,7 +1075,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EX_API_VERS&#160;&#160;&#160;8.14f</td>
+          <td class="memname">#define EX_API_VERS&#160;&#160;&#160;8.15f</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1172,7 +1174,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EXODUS_RELEASE_DATE&#160;&#160;&#160;&quot;December 2, 2021&quot;</td>
+          <td class="memname">#define EXODUS_RELEASE_DATE&#160;&#160;&#160;&quot;February 24, 2022&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1186,7 +1188,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EXODUS_VERSION&#160;&#160;&#160;&quot;8.14&quot;</td>
+          <td class="memname">#define EXODUS_VERSION&#160;&#160;&#160;&quot;8.15&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1214,7 +1216,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EXODUS_VERSION_MINOR&#160;&#160;&#160;14</td>
+          <td class="memname">#define EXODUS_VERSION_MINOR&#160;&#160;&#160;15</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1648,7 +1650,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000061">Undocumented:</a></b></dt><dd>Safer than strncpy &ndash; guarantees null termination </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2test_2CreateEdgeFace_8c-example.html#a15">/test/CreateEdgeFace.c</a>, <a class="el" href="_2test_2create_mesh_8c-example.html#a3">/test/create_mesh.c</a>, <a class="el" href="_2test_2rd_wt_mesh_8c-example.html#a3">/test/rd_wt_mesh.c</a>, <a class="el" href="_2test_2test_nemesis_8c-example.html#a7">/test/test_nemesis.c</a>, <a class="el" href="_2test_2test_ts_files_8c-example.html#a15">/test/test_ts_files.c</a>, <a class="el" href="_2test_2testwt-compress_8c-example.html#a27">/test/testwt-compress.c</a>, <a class="el" href="_2test_2testwt-nface-nside_8c-example.html#a6">/test/testwt-nface-nside.c</a>, <a class="el" href="_2test_2testwt-nfaced_8c-example.html#a6">/test/testwt-nfaced.c</a>, and <a class="el" href="_2test_2testwt_8c-example.html#a22">/test/testwt.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2test_2CreateEdgeFace_8c-example.html#a15">/test/CreateEdgeFace.c</a>, <a class="el" href="_2test_2create_mesh_8c-example.html#a3">/test/create_mesh.c</a>, <a class="el" href="_2test_2rd_wt_mesh_8c-example.html#a3">/test/rd_wt_mesh.c</a>, <a class="el" href="_2test_2test_nemesis_8c-example.html#a7">/test/test_nemesis.c</a>, <a class="el" href="_2test_2test_ts_files_8c-example.html#a15">/test/test_ts_files.c</a>, <a class="el" href="_2test_2testwt-compress_8c-example.html#a27">/test/testwt-compress.c</a>, <a class="el" href="_2test_2testwt-nface-nside_8c-example.html#a6">/test/testwt-nface-nside.c</a>, <a class="el" href="_2test_2testwt-nfaced_8c-example.html#a6">/test/testwt-nfaced.c</a>, and <a class="el" href="_2test_2testwt_8c-example.html#a23">/test/testwt.c</a>.</dd>
 </dl>
 
 </div>

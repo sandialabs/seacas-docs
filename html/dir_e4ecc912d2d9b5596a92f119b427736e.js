@@ -21,6 +21,7 @@ var dir_e4ecc912d2d9b5596a92f119b427736e =
     [ "ex_get_blob.c", "ex__get__blob_8c.html", "ex__get__blob_8c" ],
     [ "ex_get_blobs.c", "ex__get__blobs_8c.html", "ex__get__blobs_8c" ],
     [ "ex_get_block.c", "ex__get__block_8c.html", "ex__get__block_8c" ],
+    [ "ex_get_block_id_map.c", "ex__get__block__id__map_8c.html", "ex__get__block__id__map_8c" ],
     [ "ex_get_block_param.c", "ex__get__block__param_8c.html", "ex__get__block__param_8c" ],
     [ "ex_get_block_params.c", "ex__get__block__params_8c.html", "ex__get__block__params_8c" ],
     [ "ex_get_cmap_params.c", "ex__get__cmap__params_8c.html", "ex__get__cmap__params_8c" ],
