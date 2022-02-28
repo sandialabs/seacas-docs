@@ -15,6 +15,7 @@ var hierarchy =
     [ "arg_ref< Char >", "structarg__ref.html", null ],
     [ "arg_ref< char_type >", "structarg__ref.html", null ],
     [ "Ioex::Assembly", "structIoex_1_1Assembly.html", null ],
+    [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}::AssemblyTreeFilter", "classanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1AssemblyTreeFilter.html", null ],
     [ "Assert", "structAssert.html", null ],
     [ "assert_context", "classassert__context.html", null ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}::assert_initializer", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer.html", null ],

@@ -82,6 +82,7 @@ var classIoex_1_1BaseDatabaseIO =
     [ "set_int_byte_size_api", "classIoex_1_1BaseDatabaseIO.html#a2fccfbddc62eacce01395fc2b5ce67d9", null ],
     [ "set_maximum_symbol_length", "classIoex_1_1BaseDatabaseIO.html#a8a94ec7bb5ba94cc81b44bbc98523e7d", null ],
     [ "store_reduction_field", "classIoex_1_1BaseDatabaseIO.html#ae2f860244619c327fe2a00d6e9b6f38f", null ],
+    [ "update_block_omissions_from_assemblies", "classIoex_1_1BaseDatabaseIO.html#a783c37085fb3f3804d0c98abaa8de857", null ],
     [ "write_meta_data", "classIoex_1_1BaseDatabaseIO.html#a34cab6dbb111a8403847fa4dfeac6026", null ],
     [ "write_reduction_fields", "classIoex_1_1BaseDatabaseIO.html#a9b66a09ac1c1d7bffeec6ea19ff4baf0", null ],
     [ "write_results_metadata", "classIoex_1_1BaseDatabaseIO.html#ab7d2f07a6f0bdf5507fe6fc8b85c003b", null ],

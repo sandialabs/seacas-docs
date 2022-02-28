@@ -21,6 +21,9 @@ var annotated_dup =
     [ "anonymous_namespace{Iocgns_Utils.C}", "namespaceanonymous__namespace_02Iocgns__Utils_8C_03.html", [
       [ "Range", "structanonymous__namespace_02Iocgns__Utils_8C_03_1_1Range.html", "structanonymous__namespace_02Iocgns__Utils_8C_03_1_1Range" ]
     ] ],
+    [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html", [
+      [ "AssemblyTreeFilter", "classanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1AssemblyTreeFilter.html", "classanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1AssemblyTreeFilter" ]
+    ] ],
     [ "anonymous_namespace{Ioss_Beam2.C}", "namespaceanonymous__namespace_02Ioss__Beam2_8C_03.html", [
       [ "Constants", "structanonymous__namespace_02Ioss__Beam2_8C_03_1_1Constants.html", "structanonymous__namespace_02Ioss__Beam2_8C_03_1_1Constants" ]
     ] ],
