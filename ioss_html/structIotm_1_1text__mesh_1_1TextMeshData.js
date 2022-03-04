@@ -6,6 +6,7 @@ var structIotm_1_1text__mesh_1_1TextMeshData =
     [ "nodes_on_proc", "structIotm_1_1text__mesh_1_1TextMeshData.html#ae7e5ac6411595b8c0902b3fcc2a20309", null ],
     [ "num_nodes_on_proc", "structIotm_1_1text__mesh_1_1TextMeshData.html#ad72ae3d9c9fd750672b0868caebf1b1e", null ],
     [ "procs_for_node", "structIotm_1_1text__mesh_1_1TextMeshData.html#a3e795be16f1369c43fe6262064ee121b", null ],
+    [ "assemblies", "structIotm_1_1text__mesh_1_1TextMeshData.html#a3c26ee55b63e4f4d57c9912c8ec6524a", null ],
     [ "coords", "structIotm_1_1text__mesh_1_1TextMeshData.html#a98f1cedd2283109cf5e34bbd429adf36", null ],
     [ "elementDataVec", "structIotm_1_1text__mesh_1_1TextMeshData.html#a3d0bc95b4932540f42a41222b7ea1c11", null ],
     [ "m_emptyNodes", "structIotm_1_1text__mesh_1_1TextMeshData.html#a52688081544672a914b5f77706b2a22f", null ],

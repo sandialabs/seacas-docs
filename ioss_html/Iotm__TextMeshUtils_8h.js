@@ -4,9 +4,12 @@ var Iotm__TextMeshUtils_8h =
     [ "Iotm::text_mesh::PartIdMapping", "classIotm_1_1text__mesh_1_1PartIdMapping.html", "classIotm_1_1text__mesh_1_1PartIdMapping" ],
     [ "Iotm::text_mesh::Coordinates< EntityId >", "classIotm_1_1text__mesh_1_1Coordinates.html", "classIotm_1_1text__mesh_1_1Coordinates" ],
     [ "Iotm::text_mesh::ElementData< EntityId, Topology >", "structIotm_1_1text__mesh_1_1ElementData.html", "structIotm_1_1text__mesh_1_1ElementData" ],
+    [ "Iotm::text_mesh::ElementDataLess< EntityId, Topology >", "structIotm_1_1text__mesh_1_1ElementDataLess.html", "structIotm_1_1text__mesh_1_1ElementDataLess" ],
     [ "Iotm::text_mesh::SideBlockInfo", "structIotm_1_1text__mesh_1_1SideBlockInfo.html", "structIotm_1_1text__mesh_1_1SideBlockInfo" ],
     [ "Iotm::text_mesh::EntityGroupData< EntityId, T >", "structIotm_1_1text__mesh_1_1EntityGroupData.html", "structIotm_1_1text__mesh_1_1EntityGroupData" ],
     [ "Iotm::text_mesh::EntityGroup< EntityId, GroupData >", "classIotm_1_1text__mesh_1_1EntityGroup.html", "classIotm_1_1text__mesh_1_1EntityGroup" ],
+    [ "Iotm::text_mesh::AssemblyData< EntityId >", "structIotm_1_1text__mesh_1_1AssemblyData.html", "structIotm_1_1text__mesh_1_1AssemblyData" ],
+    [ "Iotm::text_mesh::Assemblies< EntityId >", "classIotm_1_1text__mesh_1_1Assemblies.html", "classIotm_1_1text__mesh_1_1Assemblies" ],
     [ "Iotm::text_mesh::NodesetData< EntityId >", "structIotm_1_1text__mesh_1_1NodesetData.html", "structIotm_1_1text__mesh_1_1NodesetData" ],
     [ "Iotm::text_mesh::Nodesets< EntityId >", "classIotm_1_1text__mesh_1_1Nodesets.html", "classIotm_1_1text__mesh_1_1Nodesets" ],
     [ "Iotm::text_mesh::SidesetSplitter< EntityId, Topology >", "classIotm_1_1text__mesh_1_1SidesetSplitter.html", "classIotm_1_1text__mesh_1_1SidesetSplitter" ],
@@ -17,16 +20,25 @@ var Iotm__TextMeshUtils_8h =
     [ "Iotm::text_mesh::TextMeshLexer", "classIotm_1_1text__mesh_1_1TextMeshLexer.html", "classIotm_1_1text__mesh_1_1TextMeshLexer" ],
     [ "Iotm::text_mesh::SidesetParser< EntityId >", "classIotm_1_1text__mesh_1_1SidesetParser.html", "classIotm_1_1text__mesh_1_1SidesetParser" ],
     [ "Iotm::text_mesh::NodesetParser< EntityId >", "classIotm_1_1text__mesh_1_1NodesetParser.html", "classIotm_1_1text__mesh_1_1NodesetParser" ],
+    [ "Iotm::text_mesh::AssemblyParser", "classIotm_1_1text__mesh_1_1AssemblyParser.html", "classIotm_1_1text__mesh_1_1AssemblyParser" ],
     [ "Iotm::text_mesh::TextMeshOptionParser< EntityId, Topology >", "classIotm_1_1text__mesh_1_1TextMeshOptionParser.html", "classIotm_1_1text__mesh_1_1TextMeshOptionParser" ],
     [ "Iotm::text_mesh::TextMeshParser< EntityId, TopologyMapping >", "classIotm_1_1text__mesh_1_1TextMeshParser.html", "classIotm_1_1text__mesh_1_1TextMeshParser" ],
+    [ "AssemblyDataType", "Iotm__TextMeshUtils_8h.html#ace95b0a184b9b5c119483bd83035e560", null ],
     [ "ErrorHandler", "Iotm__TextMeshUtils_8h.html#ac1f1335ec46156a299a3306299afe000", null ],
     [ "NodesetDataType", "Iotm__TextMeshUtils_8h.html#a76658b2f3fe659927a32a4ec1f69416d", null ],
     [ "SidesetDataType", "Iotm__TextMeshUtils_8h.html#a15bd2c9f2df24a7fc9b9999026fcca43", null ],
+    [ "AssemblyType", "Iotm__TextMeshUtils_8h.html#a7126c023a00abb35e671f794a5df2a11", [
+      [ "ASSEMBLY", "Iotm__TextMeshUtils_8h.html#a7126c023a00abb35e671f794a5df2a11a8b31ddbccfdf15dad88e446055cdb82e", null ],
+      [ "BLOCK", "Iotm__TextMeshUtils_8h.html#a7126c023a00abb35e671f794a5df2a11ad575dd5573fd6de325be09dceac7732e", null ],
+      [ "SIDESET", "Iotm__TextMeshUtils_8h.html#a7126c023a00abb35e671f794a5df2a11acdd79382635de3197687ed4772873b5d", null ],
+      [ "NODESET", "Iotm__TextMeshUtils_8h.html#a7126c023a00abb35e671f794a5df2a11a88332cdd4631a900aa96a9dd97e028f0", null ],
+      [ "INVALID_ASSEMBLY", "Iotm__TextMeshUtils_8h.html#a7126c023a00abb35e671f794a5df2a11a64fe0fdf65f0d19446584b518be687ff", null ]
+    ] ],
     [ "SplitType", "Iotm__TextMeshUtils_8h.html#afd8824c624065866ef81070138d7e817", [
       [ "TOPOLOGY", "Iotm__TextMeshUtils_8h.html#afd8824c624065866ef81070138d7e817a6c3652c1de3d08f323fd7faee9cc5c14", null ],
       [ "ELEMENT_BLOCK", "Iotm__TextMeshUtils_8h.html#afd8824c624065866ef81070138d7e817aec8ec8fbdd69d6f9e916eb7f80ad09ed", null ],
       [ "NO_SPLIT", "Iotm__TextMeshUtils_8h.html#afd8824c624065866ef81070138d7e817ab3f4374c8ed99b082742f1eb4049cdde", null ],
-      [ "INVALID", "Iotm__TextMeshUtils_8h.html#afd8824c624065866ef81070138d7e817a2c0a549b55bfecbb450543c75b4ed0c9", null ]
+      [ "INVALID_SPLIT", "Iotm__TextMeshUtils_8h.html#afd8824c624065866ef81070138d7e817a2aefff499302666aa2a9a20b9515e9da", null ]
     ] ],
     [ "bound_search", "Iotm__TextMeshUtils_8h.html#a0f72a48d698099957625607e18db2908", null ],
     [ "bound_search", "Iotm__TextMeshUtils_8h.html#a3968a1f47bf44e9294e5a5eee530eaf8", null ],
@@ -37,6 +49,7 @@ var Iotm__TextMeshUtils_8h =
     [ "get_tokens", "Iotm__TextMeshUtils_8h.html#a954fd7bca23f46ae7501931707f84e78", null ],
     [ "handle_error", "Iotm__TextMeshUtils_8h.html#a00f1141015d5a82e0caeafd1d89350fc", null ],
     [ "is_number", "Iotm__TextMeshUtils_8h.html#a12588ac7d41f592685c78c38f8d74858", null ],
+    [ "operator<<", "Iotm__TextMeshUtils_8h.html#a71344500c9f83a65b6e90a1c16b1d935", null ],
     [ "operator<<", "Iotm__TextMeshUtils_8h.html#a6fb5e5649f7088aa94fe510bc910399f", null ],
     [ "strip", "Iotm__TextMeshUtils_8h.html#ad3fed8a3ab3277901acd3bda0a98b2ec", null ],
     [ "transform_to_set", "Iotm__TextMeshUtils_8h.html#ab5c47588e091ca82901e092b49dabdd0", null ]

@@ -1,21 +1,12 @@
 var hierarchy =
 [
-    [ "detail::accumulator", "structdetail_1_1accumulator.html", null ],
     [ "adios2::ADIOS", null, [
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
-    [ "ansi_color_escape< Char >", "structansi__color__escape.html", null ],
-    [ "arg_converter< T, Context >", "classarg__converter.html", null ],
-    [ "arg_data< T, Char, NUM_ARGS, NUM_NAMED_ARGS >", "structarg__data.html", null ],
-    [ "arg_data< T, Char, NUM_ARGS, 0 >", "structarg__data_3_01T_00_01Char_00_01NUM__ARGS_00_010_01_4.html", null ],
-    [ "arg_formatter< Char >", "structarg__formatter.html", [
-      [ "printf_arg_formatter< OutputIt, Char >", "classprintf__arg__formatter.html", null ]
-    ] ],
-    [ "arg_mapper< Context >", "structarg__mapper.html", null ],
-    [ "arg_ref< Char >", "structarg__ref.html", null ],
-    [ "arg_ref< char_type >", "structarg__ref.html", null ],
     [ "Ioex::Assembly", "structIoex_1_1Assembly.html", null ],
+    [ "Iotm::text_mesh::AssemblyParser", "classIotm_1_1text__mesh_1_1AssemblyParser.html", null ],
     [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}::AssemblyTreeFilter", "classanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1AssemblyTreeFilter.html", null ],
+    [ "Iotm::unit_test::AssemblyTreeGraph", "classIotm_1_1unit__test_1_1AssemblyTreeGraph.html", null ],
     [ "Assert", "structAssert.html", null ],
     [ "assert_context", "classassert__context.html", null ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}::assert_initializer", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer.html", null ],
@@ -34,82 +25,25 @@ var hierarchy =
       [ "Ioss::glob::UnionNode< charT >", "classIoss_1_1glob_1_1UnionNode.html", null ]
     ] ],
     [ "Ioss::glob::AstVisitor< charT >", "classIoss_1_1glob_1_1AstVisitor.html", null ],
-    [ "auto_id", "structauto__id.html", null ],
     [ "Ioss::glob::Automata< charT >", "classIoss_1_1glob_1_1Automata.html", null ],
     [ "Ioss::AxisAlignedBoundingBox", "structIoss_1_1AxisAlignedBoundingBox.html", null ],
-    [ "std::back_insert_iterator", null, [
-      [ "appender", "classappender.html", null ]
-    ] ],
     [ "Iovs_cgns::CatalystCGNSMesh::base", "structIovs__cgns_1_1CatalystCGNSMesh_1_1base.html", null ],
     [ "vtkCGNSMultiBlockDataSet::base", "structvtkCGNSMultiBlockDataSet_1_1base.html", null ],
-    [ "basic_cstring_view< Char >", "classbasic__cstring__view.html", null ],
-    [ "basic_format_arg< Context >", "classbasic__format__arg.html", null ],
-    [ "basic_format_args< Context >", "classbasic__format__args.html", null ],
-    [ "basic_format_args< basic_format_context >", "classbasic__format__args.html", null ],
-    [ "basic_format_args< basic_printf_context >", "classbasic__format__args.html", null ],
-    [ "basic_format_context< OutputIt, Char >", "classbasic__format__context.html", null ],
-    [ "basic_format_context< Char >", "classbasic__format__context.html", null ],
-    [ "basic_format_specs< Char >", "structbasic__format__specs.html", [
-      [ "dynamic_format_specs< Char >", "structdynamic__format__specs.html", null ]
-    ] ],
-    [ "basic_format_specs< char_type >", "structbasic__format__specs.html", [
-      [ "dynamic_format_specs< char_type >", "structdynamic__format__specs.html", null ]
-    ] ],
-    [ "basic_format_specs< ParseContext::char_type >", "structbasic__format__specs.html", null ],
-    [ "basic_format_string< Char, Args >", "classbasic__format__string.html", null ],
-    [ "detail::basic_impl_data< T >", "structdetail_1_1basic__impl__data.html", [
-      [ "detail::impl_data", "structdetail_1_1impl__data.html", null ]
-    ] ],
-    [ "basic_printf_context< OutputIt, Char >", "classbasic__printf__context.html", null ],
-    [ "basic_runtime< Char >", "structbasic__runtime.html", null ],
-    [ "basic_string_view< Char >", "classbasic__string__view.html", null ],
-    [ "basic_string_view< char >", "classbasic__string__view.html", null ],
     [ "Ioss::glob::BasicGlob< charT, globT >", "classIoss_1_1glob_1_1BasicGlob.html", null ],
     [ "Ioss::Basis", "classIoss_1_1Basis.html", null ],
     [ "Ioss::BasisEntry", "structIoss_1_1BasisEntry.html", null ],
     [ "tsl::bhopscotch_map< Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1bhopscotch__map.html", null ],
     [ "tsl::bhopscotch_map< int64_t, int64_t >", "classtsl_1_1bhopscotch__map.html", null ],
     [ "tsl::bhopscotch_set< Key, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1bhopscotch__set.html", null ],
-    [ "big_decimal_fp", "structbig__decimal__fp.html", null ],
-    [ "detail::bigint", "classdetail_1_1bigint.html", null ],
-    [ "detail::bits< T >", "structdetail_1_1bits.html", null ],
     [ "Ioex::Blob", "structIoex_1_1Blob.html", null ],
     [ "Ioss::BlockDecompositionData", "classIoss_1_1BlockDecompositionData.html", null ],
     [ "Ioad::DatabaseIO::BlockInfoType", "structIoad_1_1DatabaseIO_1_1BlockInfoType.html", null ],
     [ "Iotm::BlockPartition", "structIotm_1_1BlockPartition.html", null ],
-    [ "bool_constant", null, [
-      [ "arg_mapper< Context >::formattable< T, U >", "structarg__mapper_1_1formattable.html", null ]
-    ] ],
     [ "Ioss::BoundaryCondition", "structIoss_1_1BoundaryCondition.html", null ],
     [ "tsl::detail_robin_hash::bucket_entry_hash< StoreHash >", "classtsl_1_1detail__robin__hash_1_1bucket__entry__hash.html", [
       [ "tsl::detail_robin_hash::bucket_entry< ValueType, StoreHash >", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html", null ]
     ] ],
     [ "tsl::detail_robin_hash::bucket_entry_hash< true >", "classtsl_1_1detail__robin__hash_1_1bucket__entry__hash_3_01true_01_4.html", null ],
-    [ "buffer< T >", "classbuffer.html", [
-      [ "iterator_buffer< OutputIt, T, Traits >", "classiterator__buffer.html", null ],
-      [ "iterator_buffer< T *, T >", "classiterator__buffer_3_01T_01_5_00_01T_01_4.html", null ],
-      [ "iterator_buffer< T *, T, fixed_buffer_traits >", "classiterator__buffer_3_01T_01_5_00_01T_00_01fixed__buffer__traits_01_4.html", null ]
-    ] ],
-    [ "detail::buffer", null, [
-      [ "basic_memory_buffer< bigit, bigits_capacity >", "classbasic__memory__buffer.html", null ],
-      [ "basic_memory_buffer< wchar_t >", "classbasic__memory__buffer.html", null ],
-      [ "basic_memory_buffer< T, SIZE, Allocator >", "classbasic__memory__buffer.html", null ]
-    ] ],
-    [ "buffer< char >", "classbuffer.html", [
-      [ "counting_buffer< T >", "classcounting__buffer.html", null ]
-    ] ],
-    [ "buffer< char_type >", "classbuffer.html", null ],
-    [ "buffer< Container::value_type >", "classbuffer.html", [
-      [ "iterator_buffer< std::back_insert_iterator< Container >, enable_if_t< is_contiguous< Container >::value, typename Container::value_type > >", "classiterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enable__if__t_3_35791268f9463b30b303085098f291bc.html", null ]
-    ] ],
-    [ "buffer_traits", "structbuffer__traits.html", [
-      [ "iterator_buffer< OutputIt, T, Traits >", "classiterator__buffer.html", null ]
-    ] ],
-    [ "buffered_file", "classbuffered__file.html", null ],
-    [ "bytes", "classbytes.html", null ],
-    [ "detail::dragonbox::cache_accessor< T >", "structdetail_1_1dragonbox_1_1cache__accessor.html", null ],
-    [ "detail::dragonbox::cache_accessor< double >", "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html", null ],
-    [ "detail::dragonbox::cache_accessor< float >", "structdetail_1_1dragonbox_1_1cache__accessor_3_01float_01_4.html", null ],
     [ "Iovs_cgns::CatalystCGNSMeshBase", "classIovs__cgns_1_1CatalystCGNSMeshBase.html", [
       [ "Iovs_cgns::CatalystCGNSMesh", "classIovs__cgns_1_1CatalystCGNSMesh.html", null ]
     ] ],
@@ -128,19 +62,9 @@ var hierarchy =
     [ "Iovs::CatalystManager::CatalystPipelineState", "classIovs_1_1CatalystManager_1_1CatalystPipelineState.html", null ],
     [ "CatalystTestFixture", "classCatalystTestFixture.html", null ],
     [ "Ioss::GetLongOption::Cell", "structIoss_1_1GetLongOption_1_1Cell.html", null ],
-    [ "char_converter< Context >", "classchar__converter.html", null ],
-    [ "char_t_impl< S, typename >", "structchar__t__impl.html", null ],
-    [ "char_t_impl< S, enable_if_t< is_string< S >::value > >", "structchar__t__impl_3_01S_00_01enable__if__t_3_01is__string_3_01S_01_4_1_1value_01_4_01_4.html", null ],
-    [ "chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structchrono__formatter.html", null ],
-    [ "detail::codecvt_result< CodeUnit >", "structdetail_1_1codecvt__result.html", null ],
-    [ "color_type", "structcolor__type.html", null ],
-    [ "color_type::color_union", "unioncolor__type_1_1color__union.html", null ],
     [ "Ioex::CommunicationMap", "structIoex_1_1CommunicationMap.html", null ],
     [ "Ioex::CommunicationMetaData", "structIoex_1_1CommunicationMetaData.html", null ],
     [ "Ioss::Compare", "classIoss_1_1Compare.html", null ],
-    [ "compile_string", "structcompile__string.html", null ],
-    [ "detail::compiled_string", "classdetail_1_1compiled__string.html", null ],
-    [ "detail::conditional_helper< Ts >", "structdetail_1_1conditional__helper.html", null ],
     [ "anonymous_namespace{Ioss_Beam2.C}::Constants", "structanonymous__namespace_02Ioss__Beam2_8C_03_1_1Constants.html", null ],
     [ "anonymous_namespace{Ioss_Beam3.C}::Constants", "structanonymous__namespace_02Ioss__Beam3_8C_03_1_1Constants.html", null ],
     [ "anonymous_namespace{Ioss_Beam4.C}::Constants", "structanonymous__namespace_02Ioss__Beam4_8C_03_1_1Constants.html", null ],
@@ -210,9 +134,6 @@ var hierarchy =
     [ "Iotm::text_mesh::Coordinates< EntityId >", "classIotm_1_1text__mesh_1_1Coordinates.html", null ],
     [ "Iotm::text_mesh::Coordinates< int64_t >", "classIotm_1_1text__mesh_1_1Coordinates.html", null ],
     [ "Iotm::unit_test::TextMeshFixture::CoordinateVerifier", "classIotm_1_1unit__test_1_1TextMeshFixture_1_1CoordinateVerifier.html", null ],
-    [ "detail::counting_iterator", "classdetail_1_1counting__iterator.html", null ],
-    [ "custom_formatter< Char >", "structcustom__formatter.html", null ],
-    [ "custom_value< Context >", "structcustom__value.html", null ],
     [ "Iogn::DashSurfaceData", "structIogn_1_1DashSurfaceData.html", null ],
     [ "Ioss::Property::Data", "unionIoss_1_1Property_1_1Data.html", null ],
     [ "Iovs::Utils::DatabaseInfo", "structIovs_1_1Utils_1_1DatabaseInfo.html", null ],
@@ -233,18 +154,12 @@ var hierarchy =
       [ "Iovs_exodus::DatabaseIO", "classIovs__exodus_1_1DatabaseIO.html", null ]
     ] ],
     [ "DataPool", "structDataPool.html", null ],
-    [ "dragonbox::decimal_fp< T >", "structdragonbox_1_1decimal__fp.html", null ],
     [ "Ioss::Decomposition< INT >", "classIoss_1_1Decomposition.html", null ],
-    [ "default_arg_formatter< Char >", "structdefault__arg__formatter.html", null ],
-    [ "digit_grouping< Char >", "classdigit__grouping.html", null ],
-    [ "detail::dragonbox::divtest_table_entry< T >", "structdetail_1_1dragonbox_1_1divtest__table__entry.html", null ],
-    [ "detail::dynamic_arg_list", "classdetail_1_1dynamic__arg__list.html", null ],
-    [ "dynamic_format_arg_store< Context >", "classdynamic__format__arg__store.html", null ],
-    [ "dynamic_formatter< Char >", "classdynamic__formatter.html", null ],
     [ "Ioex::EdgeBlock", "structIoex_1_1EdgeBlock.html", null ],
     [ "Ioex::EdgeSet", "structIoex_1_1EdgeSet.html", null ],
     [ "Ioex::ElemBlock", "structIoex_1_1ElemBlock.html", null ],
     [ "Iotm::text_mesh::ElementData< EntityId, Topology >", "structIotm_1_1text__mesh_1_1ElementData.html", null ],
+    [ "Iotm::text_mesh::ElementDataLess< EntityId, Topology >", "structIotm_1_1text__mesh_1_1ElementDataLess.html", null ],
     [ "Iotm::unit_test::TextMeshFixture::ElementInfo", "structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html", null ],
     [ "Ioss::ElementTopology", "classIoss_1_1ElementTopology.html", [
       [ "Ioss::Beam2", "classIoss_1_1Beam2.html", null ],
@@ -319,6 +234,9 @@ var hierarchy =
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
     [ "Iotm::text_mesh::EntityGroup< EntityId, GroupData >", "classIotm_1_1text__mesh_1_1EntityGroup.html", null ],
+    [ "Iotm::text_mesh::EntityGroup< EntityId, AssemblyData< EntityId > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
+      [ "Iotm::text_mesh::Assemblies< EntityId >", "classIotm_1_1text__mesh_1_1Assemblies.html", null ]
+    ] ],
     [ "Iotm::text_mesh::EntityGroup< EntityId, NodesetData< EntityId > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
       [ "Iotm::text_mesh::Nodesets< EntityId >", "classIotm_1_1text__mesh_1_1Nodesets.html", null ]
     ] ],
@@ -328,6 +246,9 @@ var hierarchy =
     [ "Iotm::text_mesh::EntityGroup< EntityId, SidesetData< EntityId, Topology > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
       [ "Iotm::text_mesh::Sidesets< EntityId, Topology >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ]
     ] ],
+    [ "Iotm::text_mesh::EntityGroup< int64_t, AssemblyData< int64_t > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
+      [ "Iotm::text_mesh::Assemblies< int64_t >", "classIotm_1_1text__mesh_1_1Assemblies.html", null ]
+    ] ],
     [ "Iotm::text_mesh::EntityGroup< int64_t, NodesetData< int64_t > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
       [ "Iotm::text_mesh::Nodesets< int64_t >", "classIotm_1_1text__mesh_1_1Nodesets.html", null ]
     ] ],
@@ -335,6 +256,9 @@ var hierarchy =
       [ "Iotm::text_mesh::Sidesets< int64_t, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ]
     ] ],
     [ "Iotm::text_mesh::EntityGroupData< EntityId, T >", "structIotm_1_1text__mesh_1_1EntityGroupData.html", null ],
+    [ "Iotm::text_mesh::EntityGroupData< EntityId, AssemblyDataType >", "structIotm_1_1text__mesh_1_1EntityGroupData.html", [
+      [ "Iotm::text_mesh::AssemblyData< EntityId >", "structIotm_1_1text__mesh_1_1AssemblyData.html", null ]
+    ] ],
     [ "Iotm::text_mesh::EntityGroupData< EntityId, NodesetDataType< EntityId > >", "structIotm_1_1text__mesh_1_1EntityGroupData.html", [
       [ "Iotm::text_mesh::NodesetData< EntityId >", "structIotm_1_1text__mesh_1_1NodesetData.html", null ]
     ] ],
@@ -349,22 +273,6 @@ var hierarchy =
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
-    ] ],
-    [ "detail::error_handler", null, [
-      [ "basic_format_parse_context< Char, ErrorHandler >", "classbasic__format__parse__context.html", [
-        [ "basic_printf_parse_context< Char >", "classbasic__printf__parse__context.html", null ]
-      ] ],
-      [ "dynamic_formatter< Char >::null_handler", "structdynamic__formatter_1_1null__handler.html", null ]
-    ] ],
-    [ "error_handler", "structerror__handler.html", [
-      [ "basic_format_parse_context< Char, error_handler >", "classbasic__format__parse__context.html", [
-        [ "compile_parse_context< Char, ErrorHandler >", "classcompile__parse__context.html", null ]
-      ] ]
-    ] ],
-    [ "ErrorHandler", null, [
-      [ "basic_format_parse_context< Char, ErrorHandler >", "classbasic__format__parse__context.html", [
-        [ "compile_parse_context< Char, ErrorHandler >", "classcompile__parse__context.html", null ]
-      ] ]
     ] ],
     [ "Ioss::ETRegistry", "classIoss_1_1ETRegistry.html", null ],
     [ "ex_attribute", null, [
@@ -390,28 +298,7 @@ var hierarchy =
       [ "Iotr::Tensor_Factory", "classIotr_1_1Tensor__Factory.html", null ],
       [ "Iotr::VM_Factory", "classIotr_1_1VM__Factory.html", null ]
     ] ],
-    [ "fallback_digit_grouping< Char >", "classfallback__digit__grouping.html", null ],
-    [ "fallback_formatter< T, Char, Enable >", "structfallback__formatter.html", null ],
-    [ "detail::fallback_uintptr", "structdetail_1_1fallback__uintptr.html", null ],
     [ "std::false_type", null, [
-      [ "is_contiguous< Container >", "structis__contiguous.html", [
-        [ "is_contiguous_back_insert_iterator< std::back_insert_iterator< Container > >", "structis__contiguous__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01Container_01_4_01_4.html", null ]
-      ] ],
-      [ "detail::has_const_begin_end< T, Enable >", "structdetail_1_1has__const__begin__end.html", null ],
-      [ "detail::has_member_fn_begin_end_t< T, Enable >", "structdetail_1_1has__member__fn__begin__end__t.html", null ],
-      [ "detail::has_mutable_begin_end< T, Enable >", "structdetail_1_1has__mutable__begin__end.html", null ],
-      [ "detail::is_range_< T, _ >", "structdetail_1_1is__range__.html", null ],
-      [ "detail::is_reference_wrapper< T >", "structdetail_1_1is__reference__wrapper.html", null ],
-      [ "detail::is_streamable< T, Char, enable_if_t< std::is_arithmetic< T >::value||std::is_array< T >::value||std::is_pointer< T >::value||std::is_same< T, char8_type >::value||std::is_same< T, std::basic_string< Char > >::value||std::is_same< T, std_string_view< Char > >::value||(std::is_convertible< T, int >::value &&!std::is_enum< T >::value)> >", "structdetail_1_1is__streamable_3_01T_00_01Char_00_01enable__if__t_3_01std_1_1is__arithmetic_3_0175007c9b212b3ceff69b85c0ef72c1db.html", null ],
-      [ "has_member_data_tm_gmtoff< T, typename >", "structhas__member__data__tm__gmtoff.html", null ],
-      [ "has_member_data_tm_zone< T, typename >", "structhas__member__data__tm__zone.html", null ],
-      [ "is_back_insert_iterator< OutputIt >", "structis__back__insert__iterator.html", null ],
-      [ "is_char< T >", "structis__char.html", null ],
-      [ "is_contiguous< T >", "structis__contiguous.html", null ],
-      [ "is_contiguous_back_insert_iterator< OutputIt >", "structis__contiguous__back__insert__iterator.html", null ],
-      [ "is_named_arg< T >", "structis__named__arg.html", null ],
-      [ "is_output_iterator< It, T, Enable >", "structis__output__iterator.html", null ],
-      [ "is_statically_named_arg< T >", "structis__statically__named__arg.html", null ],
       [ "tsl::detail_hopscotch_hash::has_is_transparent< T, typename >", "structtsl_1_1detail__hopscotch__hash_1_1has__is__transparent.html", null ],
       [ "tsl::detail_hopscotch_hash::has_key_compare< T, typename >", "structtsl_1_1detail__hopscotch__hash_1_1has__key__compare.html", null ],
       [ "tsl::detail_hopscotch_hash::is_power_of_two_policy< U >", "structtsl_1_1detail__hopscotch__hash_1_1is__power__of__two__policy.html", null ],
@@ -424,60 +311,16 @@ var hierarchy =
     [ "Ioss::FieldManager", "classIoss_1_1FieldManager.html", null ],
     [ "Iocatalyst::detail::FieldNonExistent", "classIocatalyst_1_1detail_1_1FieldNonExistent.html", null ],
     [ "Ioss::FileInfo", "classIoss_1_1FileInfo.html", null ],
-    [ "fill_t< Char >", "structfill__t.html", null ],
-    [ "detail::find_escape_result< Char >", "structdetail_1_1find__escape__result.html", null ],
-    [ "fixed_buffer_traits", "classfixed__buffer__traits.html", [
-      [ "iterator_buffer< T *, T, fixed_buffer_traits >", "classiterator__buffer_3_01T_01_5_00_01T_00_01fixed__buffer__traits_01_4.html", null ]
-    ] ],
-    [ "dragonbox::float_info< T >", "structdragonbox_1_1float__info.html", null ],
-    [ "dragonbox::float_info< double >", "structdragonbox_1_1float__info_3_01double_01_4.html", null ],
-    [ "dragonbox::float_info< float >", "structdragonbox_1_1float__info_3_01float_01_4.html", null ],
-    [ "float_specs", "structfloat__specs.html", null ],
-    [ "format_arg_store< Context, Args >", "classformat__arg__store.html", null ],
-    [ "format_decimal_result< Iterator >", "structformat__decimal__result.html", null ],
-    [ "formatter< TupleT, Char, enable_if_t< fmt::is_tuple_like< TupleT >::value > >::format_each< FormatContext >", "structformatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01TupleT_017dda5bdd4f9999aa10b91515bc0de86b.html", null ],
-    [ "format_int", "classformat__int.html", null ],
-    [ "format_string_checker< Char, ErrorHandler, Args >", "classformat__string__checker.html", null ],
-    [ "format_to_n_result< OutputIt >", "structformat__to__n__result.html", null ],
-    [ "formatter< T, Char, Enable >", "structformatter.html", [
-      [ "formatter< group_digits_view< T > >", "structformatter_3_01group__digits__view_3_01T_01_4_01_4.html", null ]
-    ] ],
-    [ "formatter< basic_string_view< Char >, Char >", "structformatter.html", [
-      [ "detail::fallback_formatter< T, Char, enable_if_t< is_streamable< T, Char >::value > >", "structdetail_1_1fallback__formatter_3_01T_00_01Char_00_01enable__if__t_3_01is__streamable_3_01T_70fb5240ebb5f83009cdb1627fa42087.html", null ],
-      [ "formatter< Char[N], Char >", "structformatter_3_01Char_0fN_0e_00_01Char_01_4.html", null ]
-    ] ],
-    [ "formatter< bytes >", "structformatter_3_01bytes_01_4.html", null ],
-    [ "formatter< const void *, Char >", "structformatter.html", [
-      [ "formatter< void *, Char >", "structformatter_3_01void_01_5_00_01Char_01_4.html", null ]
-    ] ],
-    [ "formatter< detail::bigint >", "structformatter_3_01detail_1_1bigint_01_4.html", null ],
-    [ "formatter< join_view< It, Sentinel, Char >, Char >", "structformatter_3_01join__view_3_01It_00_01Sentinel_00_01Char_01_4_00_01Char_01_4.html", null ],
-    [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01Rep_00_01Period_01_4_00_01Char_01_4.html", null ],
-    [ "formatter< std::error_code, Char >", "structformatter_3_01std_1_1error__code_00_01Char_01_4.html", null ],
-    [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01Char_01_4.html", [
-      [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01Duration_01_4_00_01Char_01_4.html", null ]
-    ] ],
-    [ "formatter< T, Char, enable_if_t< detail::is_map< T >::value &&(is_formattable< detail::value_type< T >, Char >::value||detail::has_fallback_formatter< detail::value_type< T >, Char >::value) > >", "structformatter_3_01T_00_01Char_00_01enable__if__t_3_01detail_1_1is__map_3_01T_01_4_1_1value_01_2c100907ff30018a5098de9a997e1382.html", null ],
-    [ "formatter< T, Char, enable_if_t< detail::type_constant< T, Char >::value !=detail::type::custom_type > >", "structformatter_3_01T_00_01Char_00_01enable__if__t_3_01detail_1_1type__constant_3_01T_00_01Char_67602321fdfe0eb9cff36125517f1a34.html", null ],
-    [ "formatter< T, Char, enable_if_t< fmt::is_range< T, Char >::value &&(is_formattable< detail::value_type< T >, Char >::value||detail::has_fallback_formatter< detail::value_type< T >, Char >::value) > >", "structformatter_3_01T_00_01Char_00_01enable__if__t_3_01fmt_1_1is__range_3_01T_00_01Char_01_4_1_162b375797f49b4f86253b34c5e6bd78c.html", null ],
-    [ "formatter< tuple_join_view< Char, T... >, Char >", "structformatter_3_01tuple__join__view_3_01Char_00_01T_8_8_8_01_4_00_01Char_01_4.html", null ],
-    [ "formatter< TupleT, Char, enable_if_t< fmt::is_tuple_like< TupleT >::value > >", "structformatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01TupleT_01_4_1_1value_01_4_01_4.html", null ],
-    [ "formatter< weekday, Char >", "structformatter_3_01weekday_00_01Char_01_4.html", null ],
-    [ "detail::fp", "structdetail_1_1fp.html", null ],
-    [ "detail::gen_digits_handler", "structdetail_1_1gen__digits__handler.html", null ],
     [ "Iogn::GeneratedMesh", "classIogn_1_1GeneratedMesh.html", [
       [ "Iogn::DashSurfaceMesh", "classIogn_1_1DashSurfaceMesh.html", null ],
       [ "Iogn::ExodusMesh", "classIogn_1_1ExodusMesh.html", null ]
     ] ],
     [ "Iogs::GeneratedMesh", "classIogs_1_1GeneratedMesh.html", null ],
-    [ "get_cstring< Char >", "structget__cstring.html", null ],
-    [ "get_locale", "classget__locale.html", null ],
     [ "Ioss::GetLongOption", "classIoss_1_1GetLongOption.html", null ],
     [ "anonymous_namespace{cth_pressure_map.C}::Globals", "structanonymous__namespace_02cth__pressure__map_8C_03_1_1Globals.html", null ],
     [ "anonymous_namespace{shell_to_hex.C}::Globals", "structanonymous__namespace_02shell__to__hex_8C_03_1_1Globals.html", null ],
     [ "anonymous_namespace{sphgen.C}::Globals", "structanonymous__namespace_02sphgen_8C_03_1_1Globals.html", null ],
     [ "anonymous_namespace{io_modify.C}::Graph", "classanonymous__namespace_02io__modify_8C_03_1_1Graph.html", null ],
-    [ "group_digits_view< T >", "structgroup__digits__view.html", null ],
     [ "Ioss::GroupingEntity", "classIoss_1_1GroupingEntity.html", [
       [ "Ioex::SuperElement", "classIoex_1_1SuperElement.html", null ],
       [ "Ioss::Assembly", "classIoss_1_1Assembly.html", null ],
@@ -504,10 +347,6 @@ var hierarchy =
     [ "GrowthPolicy", null, [
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
-    ] ],
-    [ "basic_format_arg< Context >::handle", "classbasic__format__arg_1_1handle.html", null ],
-    [ "Handler", null, [
-      [ "specs_checker< Handler >", "classspecs__checker.html", null ]
     ] ],
     [ "Hash", null, [
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
@@ -537,16 +376,6 @@ var hierarchy =
     [ "Ioss::Init::Initializer", "classIoss_1_1Init_1_1Initializer.html", null ],
     [ "Ioss::Initializer", "classIoss_1_1Initializer.html", null ],
     [ "Iotr::Initializer", "classIotr_1_1Initializer.html", null ],
-    [ "int_checker< IsSigned >", "structint__checker.html", null ],
-    [ "int_checker< true >", "structint__checker_3_01true_01_4.html", null ],
-    [ "detail::integer_sequence< T, N >", "structdetail_1_1integer__sequence.html", null ],
-    [ "detail::integer_sequence< T, Ns... >", "structdetail_1_1integer__sequence.html", [
-      [ "detail::make_integer_sequence< T, 0, Ns... >", "structdetail_1_1make__integer__sequence_3_01T_00_010_00_01Ns_8_8_8_01_4.html", null ]
-    ] ],
-    [ "std::integral_constant", null, [
-      [ "detail::is_range_< T, void >", "structdetail_1_1is__range___3_01T_00_01void_01_4.html", null ],
-      [ "type_constant< T, Char >", "structtype__constant.html", null ]
-    ] ],
     [ "anonymous_namespace{cgns_decomp.C}::Interface", "classanonymous__namespace_02cgns__decomp_8C_03_1_1Interface.html", null ],
     [ "Info::Interface", "classInfo_1_1Interface.html", null ],
     [ "IOShell::Interface", "classIOShell_1_1Interface.html", null ],
@@ -571,27 +400,9 @@ var hierarchy =
       [ "Iovs_exodus::IOFactory", "classIovs__exodus_1_1IOFactory.html", null ]
     ] ],
     [ "IossApplication", "classIossApplication.html", null ],
-    [ "std::is_base_of", null, [
-      [ "detail::is_compiled_string< S >", "structdetail_1_1is__compiled__string.html", null ],
-      [ "is_compile_string< S >", "structis__compile__string.html", null ]
-    ] ],
-    [ "std::is_class", null, [
-      [ "is_string< S >", "structis__string.html", null ]
-    ] ],
-    [ "std::is_integral", null, [
-      [ "is_integral< T >", "structis__integral.html", null ]
-    ] ],
-    [ "detail::is_map< T >", "classdetail_1_1is__map.html", null ],
     [ "Ioss::Private::is_null_finder< T >", "structIoss_1_1Private_1_1is__null__finder.html", null ],
     [ "Ioss::Private::is_null_finder< char * >", "structIoss_1_1Private_1_1is__null__finder_3_01char_01_5_01_4.html", null ],
     [ "Ioss::Private::is_null_finder< const char * >", "structIoss_1_1Private_1_1is__null__finder_3_01const_01char_01_5_01_4.html", null ],
-    [ "is_range< T, Char >", "structis__range.html", null ],
-    [ "detail::is_set< T >", "classdetail_1_1is__set.html", null ],
-    [ "detail::is_std_string_like< T >", "classdetail_1_1is__std__string__like.html", null ],
-    [ "detail::is_streamable< T, Char, Enable >", "classdetail_1_1is__streamable.html", null ],
-    [ "is_tuple_like< T >", "structis__tuple__like.html", null ],
-    [ "detail::is_tuple_like_< T >", "classdetail_1_1is__tuple__like__.html", null ],
-    [ "is_zero_int", "classis__zero__int.html", null ],
     [ "KeyEqual", null, [
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
@@ -604,14 +415,6 @@ var hierarchy =
     [ "tsl::robin_set< Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::KeySelect", "classtsl_1_1robin__set_1_1KeySelect.html", null ],
     [ "Iohb::Layout", "classIohb_1_1Layout.html", null ],
     [ "Ioss::glob::Lexer< charT >", "classIoss_1_1glob_1_1Lexer.html", null ],
-    [ "locale_ref", "classlocale__ref.html", null ],
-    [ "detail::make_integer_sequence< T, N, Ns >", "structdetail_1_1make__integer__sequence.html", null ],
-    [ "std::make_unsigned", null, [
-      [ "make_unsigned_or_bool< T >", "structmake__unsigned__or__bool.html", null ]
-    ] ],
-    [ "make_unsigned_or_bool< bool >", "structmake__unsigned__or__bool_3_01bool_01_4.html", null ],
-    [ "make_unsigned_or_unchanged< T, INTEGRAL >", "structmake__unsigned__or__unchanged.html", null ],
-    [ "make_unsigned_or_unchanged< T, true >", "structmake__unsigned__or__unchanged_3_01T_00_01true_01_4.html", null ],
     [ "tsl::detail_hopscotch_hash::make_void< T >", "structtsl_1_1detail__hopscotch__hash_1_1make__void.html", null ],
     [ "tsl::detail_robin_hash::make_void< T >", "structtsl_1_1detail__robin__hash_1_1make__void.html", null ],
     [ "Ioss::Map", "classIoss_1_1Map.html", null ],
@@ -622,30 +425,12 @@ var hierarchy =
     [ "Iofaodel::meta_entry_t", "structIofaodel_1_1meta__entry__t.html", null ],
     [ "tsl::hh::mod_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1mod__growth__policy.html", null ],
     [ "tsl::rh::mod_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1mod__growth__policy.html", null ],
-    [ "monostate", "structmonostate.html", null ],
-    [ "named_arg_info< Char >", "structnamed__arg__info.html", null ],
-    [ "named_arg_info< char_type >", "structnamed__arg__info.html", null ],
-    [ "named_arg_value< Char >", "structnamed__arg__value.html", null ],
-    [ "named_arg_value< char_type >", "structnamed__arg__value.html", null ],
     [ "Ioex::NameTopoKeyCompare", "structIoex_1_1NameTopoKeyCompare.html", null ],
     [ "Ioex::NameTopoKeyHash", "structIoex_1_1NameTopoKeyHash.html", null ],
-    [ "dynamic_format_arg_store< Context >::need_copy< T >", "structdynamic__format__arg__store_1_1need__copy.html", null ],
-    [ "digit_grouping< Char >::next_state", "structdigit__grouping_1_1next__state.html", null ],
-    [ "detail::dynamic_arg_list::node< typename >", "structdetail_1_1dynamic__arg__list_1_1node.html", [
-      [ "detail::dynamic_arg_list::typed_node< T >", "structdetail_1_1dynamic__arg__list_1_1typed__node.html", null ]
-    ] ],
     [ "Ioex::NodeBlock", "structIoex_1_1NodeBlock.html", null ],
     [ "Iotm::NodeCommunicationMap", "classIotm_1_1NodeCommunicationMap.html", null ],
     [ "Ioex::NodeSet", "structIoex_1_1NodeSet.html", null ],
     [ "Iotm::text_mesh::NodesetParser< EntityId >", "classIotm_1_1text__mesh_1_1NodesetParser.html", null ],
-    [ "detail::null< T >", "structdetail_1_1null.html", null ],
-    [ "null_chrono_spec_handler< Derived >", "structnull__chrono__spec__handler.html", null ],
-    [ "null_chrono_spec_handler< chrono_format_checker >", "structnull__chrono__spec__handler.html", [
-      [ "chrono_format_checker", "structchrono__format__checker.html", null ]
-    ] ],
-    [ "null_chrono_spec_handler< tm_format_checker >", "structnull__chrono__spec__handler.html", [
-      [ "tm_format_checker", "structtm__format__checker.html", null ]
-    ] ],
     [ "Ioss::ParallelUtils", "classIoss_1_1ParallelUtils.html", null ],
     [ "anonymous_namespace{io_shell_ts.C}::param", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param.html", null ],
     [ "ParaViewCatalystCGNSAdapterBase", "classParaViewCatalystCGNSAdapterBase.html", [
@@ -654,7 +439,6 @@ var hierarchy =
     [ "ParaViewCatalystIossAdapterBase", "classParaViewCatalystIossAdapterBase.html", [
       [ "ParaViewCatalystIossAdapter", "classParaViewCatalystIossAdapter.html", null ]
     ] ],
-    [ "formatter< std::chrono::duration< Rep, Period >, Char >::parse_range", "structformatter_3_01std_1_1chrono_1_1duration_3_01Rep_00_01Period_01_4_00_01Char_01_4_1_1parse__range.html", null ],
     [ "Iovs::PhactoriParserInterface::ParseInfo", "structIovs_1_1PhactoriParserInterface_1_1ParseInfo.html", null ],
     [ "Ioss::glob::Parser< charT >", "classIoss_1_1glob_1_1Parser.html", null ],
     [ "Iovs::CatalystManagerBase::ParseResult", "structIovs_1_1CatalystManagerBase_1_1ParseResult.html", null ],
@@ -673,12 +457,8 @@ var hierarchy =
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ]
     ] ],
-    [ "precision_checker< ErrorHandler >", "classprecision__checker.html", null ],
     [ "tsl::hh::prime_growth_policy", "classtsl_1_1hh_1_1prime__growth__policy.html", null ],
     [ "tsl::rh::prime_growth_policy", "classtsl_1_1rh_1_1prime__growth__policy.html", null ],
-    [ "printf_formatter< T >", "structprintf__formatter.html", null ],
-    [ "printf_precision_handler", "classprintf__precision__handler.html", null ],
-    [ "printf_width_handler< Char >", "classprintf__width__handler.html", null ],
     [ "Ioss::Property", "classIoss_1_1Property.html", null ],
     [ "Iofaodel::property_entry_t", "structIofaodel_1_1property__entry__t.html", null ],
     [ "Ioss::PropertyManager", "classIoss_1_1PropertyManager.html", null ],
@@ -687,13 +467,9 @@ var hierarchy =
     [ "Ioex::Redefine", "classIoex_1_1Redefine.html", null ],
     [ "RefHolder< T >", "classRefHolder.html", null ],
     [ "Ioss::Registry", "classIoss_1_1Registry.html", null ],
-    [ "rgb", "structrgb.html", null ],
     [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::robin_iterator< IsConst >", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator.html", null ],
     [ "tsl::robin_map< Key, T, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1robin__map.html", null ],
     [ "tsl::robin_set< Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1robin__set.html", null ],
-    [ "std::runtime_error", null, [
-      [ "format_error", "classformat__error.html", null ]
-    ] ],
     [ "anonymous_namespace{Iocgns_DatabaseIO.C}::SBlock", "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html", null ],
     [ "ScopeGuardImplBase", "classScopeGuardImplBase.html", [
       [ "ObjScopeGuardImpl0< Obj, MemFun >", "classObjScopeGuardImpl0.html", null ],
@@ -719,20 +495,12 @@ var hierarchy =
     [ "Iotm::text_mesh::SidesetSplitter< EntityId, Topology >", "classIotm_1_1text__mesh_1_1SidesetSplitter.html", null ],
     [ "Iotm::text_mesh::SidesetSplitter< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SidesetSplitter.html", null ],
     [ "Ioss::glob::SimpleGlob< charT >", "classIoss_1_1glob_1_1SimpleGlob.html", null ],
-    [ "detail::singleton", "structdetail_1_1singleton.html", null ],
     [ "tsl::detail_hopscotch_hash::smallest_type_for_min_bits< MinBits, Enable >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits.html", null ],
     [ "tsl::detail_hopscotch_hash::smallest_type_for_min_bits< MinBits, typename std::enable_if<(MinBits > 0) &&(MinBits<=8)>::type >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_34aef3ae34b24d1d6c51f7b75c4e85a1.html", null ],
     [ "tsl::detail_hopscotch_hash::smallest_type_for_min_bits< MinBits, typename std::enable_if<(MinBits > 16) &&(MinBits<=32)>::type >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_487fdd62c2eb413518534861845581d5.html", null ],
     [ "tsl::detail_hopscotch_hash::smallest_type_for_min_bits< MinBits, typename std::enable_if<(MinBits > 32) &&(MinBits<=64)>::type >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_fe29c6c59c80ed5cd5c6be9f314a950d.html", null ],
     [ "tsl::detail_hopscotch_hash::smallest_type_for_min_bits< MinBits, typename std::enable_if<(MinBits > 8) &&(MinBits<=16)>::type >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_38eb39da08c68efde66083547ec62577.html", null ],
     [ "tsl::detail_hopscotch_hash::smallest_type_for_min_bits< NeighborhoodSize+NB_RESERVED_BITS_IN_NEIGHBORHOOD >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits.html", null ],
-    [ "formatter< std::chrono::duration< Rep, Period >, Char >::spec_handler", "structformatter_3_01std_1_1chrono_1_1duration_3_01Rep_00_01Period_01_4_00_01Char_01_4_1_1spec__handler.html", null ],
-    [ "specs_setter< Char >", "classspecs__setter.html", [
-      [ "specs_handler< Char >", "classspecs__handler.html", null ]
-    ] ],
-    [ "specs_setter< ParseContext::char_type >", "classspecs__setter.html", [
-      [ "dynamic_specs_handler< ParseContext >", "classdynamic__specs__handler.html", null ]
-    ] ],
     [ "Iotm::text_mesh::SidesetSplitter< EntityId, Topology >::SplitData", "structIotm_1_1text__mesh_1_1SidesetSplitter_1_1SplitData.html", null ],
     [ "Ioss::glob::State< charT >", "classIoss_1_1glob_1_1State.html", [
       [ "Ioss::glob::StateAny< charT >", "classIoss_1_1glob_1_1StateAny.html", null ],
@@ -744,14 +512,8 @@ var hierarchy =
       [ "Ioss::glob::StateStar< charT >", "classIoss_1_1glob_1_1StateStar.html", null ]
     ] ],
     [ "Iofaodel::state_entry_t", "structIofaodel_1_1state__entry__t.html", null ],
-    [ "std_string_view< T >", "structstd__string__view.html", null ],
     [ "Ioss::StorageInitializer", "classIoss_1_1StorageInitializer.html", null ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}::stream_holder", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder.html", null ],
-    [ "Streambuf", null, [
-      [ "detail::formatbuf< Streambuf >", "classdetail_1_1formatbuf.html", null ]
-    ] ],
-    [ "string_value< Char >", "structstring__value.html", null ],
-    [ "string_value< char_type >", "structstring__value.html", null ],
     [ "Iocgns::StructuredZoneData", "classIocgns_1_1StructuredZoneData.html", null ],
     [ "Ioss::Suffix", "structIoss_1_1Suffix.html", null ],
     [ "testing::Test", null, [
@@ -761,7 +523,6 @@ var hierarchy =
         [ "anonymous_namespace{UnitTestIotmTextMeshFixture.h}::TestTextMesh2d", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh2d.html", null ]
       ] ]
     ] ],
-    [ "text_style", "classtext__style.html", null ],
     [ "Iotm::TextMesh", "classIotm_1_1TextMesh.html", null ],
     [ "Iotm::text_mesh::TextMeshData< EntityId, Topology >", "structIotm_1_1text__mesh_1_1TextMeshData.html", null ],
     [ "Iotm::text_mesh::TextMeshData< EntityId, Iotm::TopologyMapEntry >", "structIotm_1_1text__mesh_1_1TextMeshData.html", null ],
@@ -769,8 +530,6 @@ var hierarchy =
     [ "Iotm::text_mesh::TextMeshLexer", "classIotm_1_1text__mesh_1_1TextMeshLexer.html", null ],
     [ "Iotm::text_mesh::TextMeshOptionParser< EntityId, Topology >", "classIotm_1_1text__mesh_1_1TextMeshOptionParser.html", null ],
     [ "Iotm::text_mesh::TextMeshParser< EntityId, TopologyMapping >", "classIotm_1_1text__mesh_1_1TextMeshParser.html", null ],
-    [ "thousands_sep_result< Char >", "structthousands__sep__result.html", null ],
-    [ "tm_writer< OutputIt, Char >", "classtm__writer.html", null ],
     [ "Ioss::glob::Token< charT >", "classIoss_1_1glob_1_1Token.html", null ],
     [ "Iopg::TopologyMapCompare", "structIopg_1_1TopologyMapCompare.html", null ],
     [ "Iotm::TopologyMapEntry", "structIotm_1_1TopologyMapEntry.html", null ],
@@ -789,52 +548,16 @@ var hierarchy =
       [ "Iotr::VectorMagnitude", "classIotr_1_1VectorMagnitude.html", null ]
     ] ],
     [ "std::true_type", null, [
-      [ "detail::has_const_begin_end< T, void_t< decltype(detail::range_begin(std::declval< const remove_cvref_t< T > & >())), decltype(detail::range_end(std::declval< const remove_cvref_t< T > & >()))> >", "structdetail_1_1has__const__begin__end_3_01T_00_01void__t_3_01decltype_07detail_1_1range__begin_da5b8c1778b39196d77eefc293dfa14c.html", null ],
-      [ "detail::has_member_fn_begin_end_t< T, void_t< decltype(std::declval< T >().begin()), decltype(std::declval< T >().end())> >", "structdetail_1_1has__member__fn__begin__end__t_3_01T_00_01void__t_3_01decltype_07std_1_1declval_7bfaf74b5a50caef111e70a0e029c9dc.html", null ],
-      [ "detail::has_mutable_begin_end< T, void_t< decltype(detail::range_begin(std::declval< T >())), decltype(detail::range_end(std::declval< T >())), enable_if_t< std::is_copy_constructible< T >::value > > >", "structdetail_1_1has__mutable__begin__end_3_01T_00_01void__t_3_01decltype_07detail_1_1range__begie1507dfd498d0205567ca248c09742f3.html", null ],
-      [ "detail::is_reference_wrapper< std::reference_wrapper< T > >", "structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01T_01_4_01_4.html", null ],
-      [ "detail::is_std_string_like< fmt::basic_string_view< Char > >", "structdetail_1_1is__std__string__like_3_01fmt_1_1basic__string__view_3_01Char_01_4_01_4.html", null ],
-      [ "has_member_data_tm_gmtoff< T, void_t< decltype(T::tm_gmtoff)> >", "structhas__member__data__tm__gmtoff_3_01T_00_01void__t_3_01decltype_07T_1_1tm__gmtoff_08_4_01_4.html", null ],
-      [ "has_member_data_tm_zone< T, void_t< decltype(T::tm_zone)> >", "structhas__member__data__tm__zone_3_01T_00_01void__t_3_01decltype_07T_1_1tm__zone_08_4_01_4.html", null ],
-      [ "is_back_insert_iterator< std::back_insert_iterator< Container > >", "structis__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01Container_01_4_01_4.html", null ],
-      [ "is_char< char >", "structis__char_3_01char_01_4.html", null ],
-      [ "is_char< char16_t >", "structis__char_3_01char16__t_01_4.html", null ],
-      [ "is_char< char32_t >", "structis__char_3_01char32__t_01_4.html", null ],
-      [ "is_char< detail::char8_type >", "structis__char_3_01detail_1_1char8__type_01_4.html", null ],
-      [ "is_char< wchar_t >", "structis__char_3_01wchar__t_01_4.html", null ],
-      [ "is_contiguous< basic_memory_buffer< T, SIZE, Allocator > >", "structis__contiguous_3_01basic__memory__buffer_3_01T_00_01SIZE_00_01Allocator_01_4_01_4.html", null ],
-      [ "is_contiguous< std::basic_string< Char > >", "structis__contiguous_3_01std_1_1basic__string_3_01Char_01_4_01_4.html", null ],
-      [ "is_contiguous_back_insert_iterator< appender >", "structis__contiguous__back__insert__iterator_3_01appender_01_4.html", null ],
-      [ "is_integral< int128_t >", "structis__integral_3_01int128__t_01_4.html", null ],
-      [ "is_integral< uint128_t >", "structis__integral_3_01uint128__t_01_4.html", null ],
-      [ "is_named_arg< named_arg< Char, T > >", "structis__named__arg_3_01named__arg_3_01Char_00_01T_01_4_01_4.html", null ],
-      [ "is_output_iterator< It, T, void_t< typename std::iterator_traits< It >::iterator_category, decltype(*std::declval< It >()=std::declval< T >())> >", "structis__output__iterator_3_01It_00_01T_00_01void__t_3_01typename_01std_1_1iterator__traits_3_0c2b8a446a766330ad0bd6457b4d10481.html", null ],
       [ "tsl::detail_hopscotch_hash::has_is_transparent< T, typename make_void< typename T::is_transparent >::type >", "structtsl_1_1detail__hopscotch__hash_1_1has__is__transparent_3_01T_00_01typename_01make__void_3_4161f4fa4fd3878927de0d276981ca6f.html", null ],
       [ "tsl::detail_hopscotch_hash::has_key_compare< T, typename make_void< typename T::key_compare >::type >", "structtsl_1_1detail__hopscotch__hash_1_1has__key__compare_3_01T_00_01typename_01make__void_3_01t11ab6b781ff7a6e1b9bc460857c74cb1.html", null ],
       [ "tsl::detail_hopscotch_hash::is_power_of_two_policy< tsl::hh::power_of_two_growth_policy< GrowthFactor > >", "structtsl_1_1detail__hopscotch__hash_1_1is__power__of__two__policy_3_01tsl_1_1hh_1_1power__of__te11f121c31544671593cb2afd25c377f.html", null ],
       [ "tsl::detail_robin_hash::has_is_transparent< T, typename make_void< typename T::is_transparent >::type >", "structtsl_1_1detail__robin__hash_1_1has__is__transparent_3_01T_00_01typename_01make__void_3_01ty718636ff8fc74d73885502911b06edfb.html", null ],
       [ "tsl::detail_robin_hash::is_power_of_two_policy< tsl::rh::power_of_two_growth_policy< GrowthFactor > >", "structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy_3_01tsl_1_1rh_1_1power__of__two__a1a28c2963ea7bfc09f131241d081ae6.html", null ]
     ] ],
-    [ "detail::truncating_iterator< OutputIt, Enable >", "classdetail_1_1truncating__iterator.html", null ],
-    [ "detail::truncating_iterator_base< OutputIt >", "classdetail_1_1truncating__iterator__base.html", [
-      [ "detail::truncating_iterator< OutputIt, std::false_type >", "classdetail_1_1truncating__iterator_3_01OutputIt_00_01std_1_1false__type_01_4.html", null ],
-      [ "detail::truncating_iterator< OutputIt, std::true_type >", "classdetail_1_1truncating__iterator_3_01OutputIt_00_01std_1_1true__type_01_4.html", null ]
-    ] ],
-    [ "type_identity< T >", "structtype__identity.html", null ],
-    [ "detail::uint128_wrapper", "structdetail_1_1uint128__wrapper.html", null ],
-    [ "unformattable", "structunformattable.html", [
-      [ "unformattable_char", "structunformattable__char.html", null ],
-      [ "unformattable_const", "structunformattable__const.html", null ],
-      [ "unformattable_pointer", "structunformattable__pointer.html", null ]
-    ] ],
-    [ "utf8_to_utf16", "classutf8__to__utf16.html", null ],
     [ "Iocgns::Utils", "classIocgns_1_1Utils.html", null ],
     [ "Ioss::Utils", "classIoss_1_1Utils.html", null ],
     [ "Iovs::Utils", "classIovs_1_1Utils.html", null ],
-    [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
-    [ "value< Context >", "classvalue.html", null ],
     [ "Iofaodel::value_entry_t", "structIofaodel_1_1value__entry__t.html", null ],
-    [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
     [ "tsl::bhopscotch_map< Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >::ValueSelect", "classtsl_1_1bhopscotch__map_1_1ValueSelect.html", null ],
     [ "tsl::hopscotch_map< Key, T, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >::ValueSelect", "classtsl_1_1hopscotch__map_1_1ValueSelect.html", null ],
     [ "tsl::robin_map< Key, T, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::ValueSelect", "classtsl_1_1robin__map_1_1ValueSelect.html", null ],
@@ -936,22 +659,10 @@ var hierarchy =
     [ "Iovs_exodus::CatalystExodusMesh::Ve2mSideSetInfo", "classIovs__exodus_1_1CatalystExodusMesh_1_1Ve2mSideSetInfo.html", null ],
     [ "Ve2mSideSetInfo", "classVe2mSideSetInfo.html", null ],
     [ "vector3d", "classvector3d.html", null ],
-    [ "detail::view", null, [
-      [ "join_view< It, Sentinel, Char >", "structjoin__view.html", null ],
-      [ "tuple_join_view< Char, T >", "structtuple__join__view.html", null ]
-    ] ],
-    [ "view", "structview.html", [
-      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
-    ] ],
     [ "vtkMultiBlockDataSet", null, [
       [ "vtkCGNSMultiBlockDataSet", "classvtkCGNSMultiBlockDataSet.html", null ],
       [ "vtkExodusIIMultiBlockDataSet", "classvtkExodusIIMultiBlockDataSet.html", null ]
     ] ],
-    [ "weekday", "classweekday.html", null ],
-    [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
-    [ "write_int_arg< UInt >", "structwrite__int__arg.html", null ],
-    [ "write_int_data< Char >", "structwrite__int__data.html", null ],
-    [ "year_month_day", "classyear__month__day.html", null ],
     [ "Iocgns::ZoneBC", "structIocgns_1_1ZoneBC.html", null ],
     [ "Ioss::ZoneConnectivity", "structIoss_1_1ZoneConnectivity.html", null ]
 ];

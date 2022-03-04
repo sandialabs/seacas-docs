@@ -100,12 +100,14 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h.html',''); initResizable
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Ioss_Glob.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Ioss__Glob_8h__incl.svg" width="318" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Ioss__Glob_8h__incl.svg" width="318" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Ioss__Glob_8h__dep__incl.svg" width="155" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Ioss__Glob_8h__dep__incl.svg" width="155" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="Ioss__Glob_8h_source.html">Go to the source code of this file.</a></p>
@@ -197,9 +199,9 @@ Macros</h2></td></tr>
 <tr class="separator:a0aeb99bfd32b3015ade823a2e1a8812e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5051cfeed9c97610b830a7b9854782bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Glob_8h.html#a5051cfeed9c97610b830a7b9854782bc">GLOB_AST_NODE_LIST</a>(V)</td></tr>
 <tr class="separator:a5051cfeed9c97610b830a7b9854782bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33857a4ce8404382584eacc4d32c0085"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Glob_8h.html#a33857a4ce8404382584eacc4d32c0085">DECLARE_TYPE_CLASS</a>(<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)&#160;&#160;&#160;template &lt;class charT&gt; class <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>;</td></tr>
+<tr class="memitem:a33857a4ce8404382584eacc4d32c0085"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Glob_8h.html#a33857a4ce8404382584eacc4d32c0085">DECLARE_TYPE_CLASS</a>(type)&#160;&#160;&#160;template &lt;class charT&gt; class type;</td></tr>
 <tr class="separator:a33857a4ce8404382584eacc4d32c0085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a885f5d3734fb6d96090b588c5af84b61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Glob_8h.html#a885f5d3734fb6d96090b588c5af84b61">DECLARE_VIRTUAL_FUNC</a>(<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)&#160;&#160;&#160;  virtual void Visit##<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>(<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&lt;charT&gt; * /*node*/) {}</td></tr>
+<tr class="memitem:a885f5d3734fb6d96090b588c5af84b61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Glob_8h.html#a885f5d3734fb6d96090b588c5af84b61">DECLARE_VIRTUAL_FUNC</a>(type)&#160;&#160;&#160;  virtual void Visit##type(type&lt;charT&gt; * /*node*/) {}</td></tr>
 <tr class="separator:a885f5d3734fb6d96090b588c5af84b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -286,8 +288,8 @@ Variables</h2></td></tr>
           <td class="memname">#define DECLARE_TYPE_CLASS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td><td>)</td>
-          <td>&#160;&#160;&#160;template &lt;class charT&gt; class <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td>&#160;&#160;&#160;template &lt;class charT&gt; class type;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -304,8 +306,8 @@ Variables</h2></td></tr>
           <td class="memname">#define DECLARE_VIRTUAL_FUNC</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td><td>)</td>
-          <td>&#160;&#160;&#160;  virtual void Visit##<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>(<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&lt;charT&gt; * /*node*/) {}</td>
+          <td class="paramname">type</td><td>)</td>
+          <td>&#160;&#160;&#160;  virtual void Visit##type(type&lt;charT&gt; * /*node*/) {}</td>
         </tr>
       </table>
 </div><div class="memdoc">

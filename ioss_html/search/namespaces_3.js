@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['literals_0',['literals',['../namespaceliterals.html',1,'']]]
+  ['pdqsort_5fdetail_0',['pdqsort_detail',['../namespacepdqsort__detail.html',1,'']]]
 ];

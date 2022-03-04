@@ -95,7 +95,8 @@ $(document).ready(function(){initNavTree('classIotm_1_1TextMesh.html',''); initR
 <div class="dynheader">
 Collaboration diagram for Iotm::TextMesh:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classIotm_1_1TextMesh__coll__graph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classIotm_1_1TextMesh__coll__graph.svg" width="100%" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -144,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae6323d49e53c71a94048764910256bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4ccfbb42f7f7cae21bc3ce079216354"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#ae4ccfbb42f7f7cae21bc3ce079216354">element_count_proc</a> (int64_t block_number) const</td></tr>
 <tr class="separator:ae4ccfbb42f7f7cae21bc3ce079216354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50ac49613593481c07829871d151e8f"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#aa50ac49613593481c07829871d151e8f">assembly_count</a> () const</td></tr>
+<tr class="separator:aa50ac49613593481c07829871d151e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a298540d29fcf2eec1d846eeb76db49c4"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a298540d29fcf2eec1d846eeb76db49c4">topology_type</a> (int64_t block_number) const</td></tr>
 <tr class="separator:a298540d29fcf2eec1d846eeb76db49c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89b869b6150d17d5542957622b90dc4"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#aa89b869b6150d17d5542957622b90dc4">communication_node_count_proc</a> () const</td></tr>
@@ -190,7 +193,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade96b75492bc46102833b908616a2e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b1b17814950a060ae83246e6863f90d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a8b1b17814950a060ae83246e6863f90d">sideset_touching_blocks</a> (int64_t set_id) const</td></tr>
 <tr class="separator:a8b1b17814950a060ae83246e6863f90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5a8754ccf99a230815bc1fe135b8a84"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#ad5a8754ccf99a230815bc1fe135b8a84">get_variable_count</a> (<a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>) const</td></tr>
+<tr class="memitem:ad5a8754ccf99a230815bc1fe135b8a84"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#ad5a8754ccf99a230815bc1fe135b8a84">get_variable_count</a> (<a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a> type) const</td></tr>
 <tr class="separator:ad5a8754ccf99a230815bc1fe135b8a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62d85add5e79614f986598e36c9c4e3b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a62d85add5e79614f986598e36c9c4e3b">get_part_names</a> () const</td></tr>
 <tr class="separator:a62d85add5e79614f986598e36c9c4e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,6 +211,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9701ec48dcfa8554db87699c8757d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8897f05fd38a21d0207e78bb2ddf2233"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a8897f05fd38a21d0207e78bb2ddf2233">get_sideset_id</a> (const std::string &amp;name) const</td></tr>
 <tr class="separator:a8897f05fd38a21d0207e78bb2ddf2233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5cc1baa17f84b425985cc3adaf3591e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#ae5cc1baa17f84b425985cc3adaf3591e">get_assembly_names</a> () const</td></tr>
+<tr class="separator:ae5cc1baa17f84b425985cc3adaf3591e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891aec059285b855a08e3bf68ab4a655"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a891aec059285b855a08e3bf68ab4a655">get_assembly_name</a> (int64_t id) const</td></tr>
+<tr class="separator:a891aec059285b855a08e3bf68ab4a655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a967df85ecb422d11c64e92b534aed7"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a9a967df85ecb422d11c64e92b534aed7">get_assembly_id</a> (const std::string &amp;name) const</td></tr>
+<tr class="separator:a9a967df85ecb422d11c64e92b534aed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f21b1b01f4e7edff01735f95a169ea6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a5f21b1b01f4e7edff01735f95a169ea6">get_assembly_type</a> (const std::string &amp;name) const</td></tr>
+<tr class="separator:a5f21b1b01f4e7edff01735f95a169ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d5ba8ad9de7baac90be363c2c1ff3c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a60d5ba8ad9de7baac90be363c2c1ff3c">get_assembly_members</a> (const std::string &amp;name) const</td></tr>
+<tr class="separator:a60d5ba8ad9de7baac90be363c2c1ff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040e18315e1d478b7f13e5a2c24cf0e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a040e18315e1d478b7f13e5a2c24cf0e6">assembly_type_to_entity_type</a> (const <a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">AssemblyType</a> type) const</td></tr>
+<tr class="separator:a040e18315e1d478b7f13e5a2c24cf0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff35cd45086a83ba0fed4d1469c99f4e"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#aff35cd45086a83ba0fed4d1469c99f4e">spatial_dimension</a> () const</td></tr>
 <tr class="separator:aff35cd45086a83ba0fed4d1469c99f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4989041a9d41fa68a9e3e3063c1ce48c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceIotm.html#ada7409d414434a0e2c84fc4b1b4d6ef2">SideBlockInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a4989041a9d41fa68a9e3e3063c1ce48c">get_side_block_info_for_sideset</a> (const std::string &amp;name) const</td></tr>
@@ -231,7 +246,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ad0696e7b828d0de50e0dd4ac70d8ec1f"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:ad0696e7b828d0de50e0dd4ac70d8ec1f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#ad0696e7b828d0de50e0dd4ac70d8ec1f">raw_node_map</a> (std::vector&lt; INT &gt; &amp;map) const</td></tr>
 <tr class="separator:ad0696e7b828d0de50e0dd4ac70d8ec1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7f470596b2cf4267c62556ca8dd35e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#ace7f470596b2cf4267c62556ca8dd35e">set_variable_count</a> (const std::string &amp;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
+<tr class="memitem:ace7f470596b2cf4267c62556ca8dd35e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#ace7f470596b2cf4267c62556ca8dd35e">set_variable_count</a> (const std::string &amp;type, size_t count)</td></tr>
 <tr class="separator:ace7f470596b2cf4267c62556ca8dd35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cf6756fffed5c1d18de59f7ca538f83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1TextMesh.html#a4cf6756fffed5c1d18de59f7ca538f83">initialize</a> ()</td></tr>
 <tr class="separator:a4cf6756fffed5c1d18de59f7ca538f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -413,6 +428,42 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa50ac49613593481c07829871d151e8f" name="aa50ac49613593481c07829871d151e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50ac49613593481c07829871d151e8f">&#9670;&nbsp;</a></span>assembly_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Iotm::TextMesh::assembly_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Return number of assemblies in the entire model. </p>
+
+</div>
+</div>
+<a id="a040e18315e1d478b7f13e5a2c24cf0e6" name="a040e18315e1d478b7f13e5a2c24cf0e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040e18315e1d478b7f13e5a2c24cf0e6">&#9670;&nbsp;</a></span>assembly_type_to_entity_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a> Iotm::TextMesh::assembly_type_to_entity_type </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">AssemblyType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="add872be5c9c9bc97e6d64bc699a22c68" name="add872be5c9c9bc97e6d64bc699a22c68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add872be5c9c9bc97e6d64bc699a22c68">&#9670;&nbsp;</a></span>block_count()</h2>
 
@@ -1057,6 +1108,95 @@ Private Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a967df85ecb422d11c64e92b534aed7" name="a9a967df85ecb422d11c64e92b534aed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a967df85ecb422d11c64e92b534aed7">&#9670;&nbsp;</a></span>get_assembly_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Iotm::TextMesh::get_assembly_id </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60d5ba8ad9de7baac90be363c2c1ff3c" name="a60d5ba8ad9de7baac90be363c2c1ff3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d5ba8ad9de7baac90be363c2c1ff3c">&#9670;&nbsp;</a></span>get_assembly_members()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Iotm::TextMesh::get_assembly_members </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a891aec059285b855a08e3bf68ab4a655" name="a891aec059285b855a08e3bf68ab4a655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891aec059285b855a08e3bf68ab4a655">&#9670;&nbsp;</a></span>get_assembly_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Iotm::TextMesh::get_assembly_name </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5cc1baa17f84b425985cc3adaf3591e" name="ae5cc1baa17f84b425985cc3adaf3591e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cc1baa17f84b425985cc3adaf3591e">&#9670;&nbsp;</a></span>get_assembly_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Iotm::TextMesh::get_assembly_names </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f21b1b01f4e7edff01735f95a169ea6" name="a5f21b1b01f4e7edff01735f95a169ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f21b1b01f4e7edff01735f95a169ea6">&#9670;&nbsp;</a></span>get_assembly_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a> Iotm::TextMesh::get_assembly_type </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

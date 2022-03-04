@@ -9,6 +9,8 @@ var namespaceIotm =
     [ "NodeCommunicationMap", "classIotm_1_1NodeCommunicationMap.html", "classIotm_1_1NodeCommunicationMap" ],
     [ "TextMesh", "classIotm_1_1TextMesh.html", "classIotm_1_1TextMesh" ],
     [ "TopologyMapEntry", "structIotm_1_1TopologyMapEntry.html", "structIotm_1_1TopologyMapEntry" ],
+    [ "AssemblyData", "namespaceIotm.html#a103936773846ea4b2faa565b1f25990a", null ],
+    [ "AssemblyType", "namespaceIotm.html#afcad16fd48ebc93bae64b38889a08d81", null ],
     [ "Coordinates", "namespaceIotm.html#a14562ae9932f39d5aec98d460c1fac9a", null ],
     [ "ElementData", "namespaceIotm.html#adc217d509f51f2d5838b459310c1d37c", null ],
     [ "ErrorHandler", "namespaceIotm.html#a3e1726f853d160fe3652348409645cf8", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['compare_0',['compare',['../classdetail_1_1bigint.html#a13d78570d65d5e24201e795cea3549f4',1,'detail::bigint']]]
+  ['minmax_5ffactory_0',['MinMax_Factory',['../classIotr_1_1MinMax.html#af3ffb1d59c4453d0abb4e114d843bf3b',1,'Iotr::MinMax']]]
 ];

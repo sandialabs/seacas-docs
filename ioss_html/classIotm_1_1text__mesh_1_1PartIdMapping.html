@@ -109,10 +109,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab5a961a25bc796b831e4c2090b485b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea13b647829f757ef70ace4a95a09490"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#aea13b647829f757ef70ace4a95a09490">get_part_names_sorted_by_id</a> () const</td></tr>
 <tr class="separator:aea13b647829f757ef70ace4a95a09490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645b2fc2934a2ecfb8b02c8fa1229e09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#a645b2fc2934a2ecfb8b02c8fa1229e09">is_registered</a> (const std::string &amp;name) const</td></tr>
+<tr class="separator:a645b2fc2934a2ecfb8b02c8fa1229e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1aa671e98ed207e25c85de47ad0a225"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#ae1aa671e98ed207e25c85de47ad0a225">get_part_names</a> () const</td></tr>
 <tr class="separator:ae1aa671e98ed207e25c85de47ad0a225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b46d1225ca69421de6fe196b16ed38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#ad7b46d1225ca69421de6fe196b16ed38">set_error_handler</a> (<a class="el" href="namespaceIotm_1_1text__mesh.html#ac1f1335ec46156a299a3306299afe000">ErrorHandler</a> errorHandler)</td></tr>
 <tr class="separator:ad7b46d1225ca69421de6fe196b16ed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8811db6bd69f5a1a430252f96e885fd5"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#a8811db6bd69f5a1a430252f96e885fd5">get_group_type</a> () const</td></tr>
+<tr class="separator:a8811db6bd69f5a1a430252f96e885fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1ae999fb08a2fabb92e505afefe347"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#acf1ae999fb08a2fabb92e505afefe347">finalize_parse</a> ()</td></tr>
+<tr class="separator:acf1ae999fb08a2fabb92e505afefe347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -124,8 +130,6 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a6dbdbeec616fa4d0232c1fb9564210ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a871bcd9610d09b03ed39c5f9d83e5026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#a871bcd9610d09b03ed39c5f9d83e5026">validate_name_and_id</a> (const std::string &amp;name, unsigned id) const</td></tr>
 <tr class="separator:a871bcd9610d09b03ed39c5f9d83e5026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a645b2fc2934a2ecfb8b02c8fa1229e09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#a645b2fc2934a2ecfb8b02c8fa1229e09">is_registered</a> (const std::string &amp;name) const</td></tr>
-<tr class="separator:a645b2fc2934a2ecfb8b02c8fa1229e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7d5db19acebe2600c350b65461b3e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#afd7d5db19acebe2600c350b65461b3e9">is_assigned</a> (unsigned id) const</td></tr>
 <tr class="separator:afd7d5db19acebe2600c350b65461b3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a339b8a5f396996d6252ac15d4d709ada"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1PartIdMapping.html#a339b8a5f396996d6252ac15d4d709ada">get_part_id</a> (const std::string &amp;name) const</td></tr>
@@ -234,6 +238,31 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="acf1ae999fb08a2fabb92e505afefe347" name="acf1ae999fb08a2fabb92e505afefe347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1ae999fb08a2fabb92e505afefe347">&#9670;&nbsp;</a></span>finalize_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Iotm::text_mesh::PartIdMapping::finalize_parse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7829b4abd3ce5339d0ce5f91de0f2b4c" name="a7829b4abd3ce5339d0ce5f91de0f2b4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7829b4abd3ce5339d0ce5f91de0f2b4c">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
 
@@ -274,6 +303,31 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8811db6bd69f5a1a430252f96e885fd5" name="a8811db6bd69f5a1a430252f96e885fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8811db6bd69f5a1a430252f96e885fd5">&#9670;&nbsp;</a></span>get_group_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Iotm::text_mesh::PartIdMapping::get_group_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -459,7 +513,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

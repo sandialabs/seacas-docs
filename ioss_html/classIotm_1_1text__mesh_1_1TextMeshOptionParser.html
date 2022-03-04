@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('classIotm_1_1text__mesh_1_1TextMeshOpt
 <div class="dynheader">
 Collaboration diagram for Iotm::text_mesh::TextMeshOptionParser&lt; EntityId, Topology &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classIotm_1_1text__mesh_1_1TextMeshOptionParser__coll__graph.svg" width="100%" height="383"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classIotm_1_1text__mesh_1_1TextMeshOptionParser__coll__graph.svg" width="100%" height="383"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -124,6 +125,7 @@ Private Types</h2></td></tr>
 , <a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#ad4fadde33f8612e6655b9ab6af8e4664aaad60a06b8c4e4bf02f0f58f2fd1c85c">PARSED_SIDESET</a> = 1L &lt;&lt; 2
 , <br />
 &#160;&#160;<a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#ad4fadde33f8612e6655b9ab6af8e4664a8c9a0aaac6000dc9f90c18a2fd5cfd4d">PARSED_NODESET</a> = 1L &lt;&lt; 3
+, <a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#ad4fadde33f8612e6655b9ab6af8e4664a4de310f6bbcd9bf68968bb0a25765f7b">PARSED_ASSEMBLY</a> = 1L &lt;&lt; 4
 <br />
  }</td></tr>
 <tr class="separator:ad4fadde33f8612e6655b9ab6af8e4664"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +153,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a82100459ffc8fbe25699f93bf40f3112"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
 <tr class="memitem:a82100459ffc8fbe25699f93bf40f3112"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a82100459ffc8fbe25699f93bf40f3112">check_name_collision_with_entity_sets</a> (const <a class="el" href="structIotm_1_1text__mesh_1_1EntityGroupData.html">EntityGroupData</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, DataType &gt; &amp;groupData, const std::string &amp;entityType, const std::set&lt; std::string &gt; &amp;entitySetNames)</td></tr>
 <tr class="separator:a82100459ffc8fbe25699f93bf40f3112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae46c3d4aec28a0af09065eed4e93106a"><td class="memTemplParams" colspan="2">template&lt;typename SrcDataGroup , typename DestDataGroup &gt; </td></tr>
+<tr class="memitem:ae46c3d4aec28a0af09065eed4e93106a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#ae46c3d4aec28a0af09065eed4e93106a">check_name_collision_with_group</a> (const SrcDataGroup &amp;srcGroup, const DestDataGroup &amp;destGroup)</td></tr>
+<tr class="separator:ae46c3d4aec28a0af09065eed4e93106a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a9b0e69228dc695065c47eb91747214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a8a9b0e69228dc695065c47eb91747214">check_sideset_element_reference</a> ()</td></tr>
 <tr class="separator:a8a9b0e69228dc695065c47eb91747214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3174692646c9cda87aee4ad3ea292450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a3174692646c9cda87aee4ad3ea292450">check_sideset_name_collision</a> ()</td></tr>
@@ -163,10 +168,23 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:aa067872feee26e478d691d71d8286d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9767ea1e2de79cce81b77576d8fb1a55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a9767ea1e2de79cce81b77576d8fb1a55">validate_nodesets</a> ()</td></tr>
 <tr class="separator:a9767ea1e2de79cce81b77576d8fb1a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bb65f543b6d0e0d18f5911cac9cd35"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af9bb65f543b6d0e0d18f5911cac9cd35"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#af9bb65f543b6d0e0d18f5911cac9cd35">check_assembly_member_reference_in_group</a> (const <a class="el" href="structIotm_1_1text__mesh_1_1AssemblyData.html">AssemblyData</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> &gt; &amp;assemblyData, const T &amp;group)</td></tr>
+<tr class="separator:af9bb65f543b6d0e0d18f5911cac9cd35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e90ce6370297a20e30f0a50f2766790"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a0e90ce6370297a20e30f0a50f2766790">check_assembly_member_reference</a> ()</td></tr>
+<tr class="separator:a0e90ce6370297a20e30f0a50f2766790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5beb12ca4a9144c5239da01920f9ebac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a5beb12ca4a9144c5239da01920f9ebac">check_assembly_name_collision</a> ()</td></tr>
+<tr class="separator:a5beb12ca4a9144c5239da01920f9ebac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5963b7a3f1834b1849d7cf35288845"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a5d5963b7a3f1834b1849d7cf35288845">check_assembly_cyclic_dependency</a> ()</td></tr>
+<tr class="separator:a5d5963b7a3f1834b1849d7cf35288845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e5c50bf6ce68432019e98743ce4afb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a43e5c50bf6ce68432019e98743ce4afb">validate_assemblies</a> ()</td></tr>
+<tr class="separator:a43e5c50bf6ce68432019e98743ce4afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45106719c4a4e338139d08ef24969ba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a45106719c4a4e338139d08ef24969ba4">parse_sideset_option</a> (const std::vector&lt; std::string &gt; &amp;sidesetOptionGroup)</td></tr>
 <tr class="separator:a45106719c4a4e338139d08ef24969ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dadfea0ecedaa83d4b31faa2a4076fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a7dadfea0ecedaa83d4b31faa2a4076fd">parse_nodeset_option</a> (const std::vector&lt; std::string &gt; &amp;nodesetOptionGroup)</td></tr>
 <tr class="separator:a7dadfea0ecedaa83d4b31faa2a4076fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a862a8c0b0f023829dd394233cde2a368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a862a8c0b0f023829dd394233cde2a368">parse_assembly_option</a> (const std::vector&lt; std::string &gt; &amp;assemblyOptionGroup)</td></tr>
+<tr class="separator:a862a8c0b0f023829dd394233cde2a368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefb538aa7d9768d491b761af13ff9a4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#aefb538aa7d9768d491b761af13ff9a4f">print_help_message</a> (std::ostream &amp;out=std::cout)</td></tr>
 <tr class="separator:aefb538aa7d9768d491b761af13ff9a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d2f44f59b1a063472ddf673a1b60c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#ac3d2f44f59b1a063472ddf673a1b60c0">handle_unrecognized_option</a> (const std::string &amp;optionType)</td></tr>
@@ -226,6 +244,7 @@ template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe
 <tr><td class="fieldname"><a id="ad4fadde33f8612e6655b9ab6af8e4664a1c1315019560c5008ee86a4abad49cb9" name="ad4fadde33f8612e6655b9ab6af8e4664a1c1315019560c5008ee86a4abad49cb9"></a>PARSED_COORDINATES&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad4fadde33f8612e6655b9ab6af8e4664aaad60a06b8c4e4bf02f0f58f2fd1c85c" name="ad4fadde33f8612e6655b9ab6af8e4664aaad60a06b8c4e4bf02f0f58f2fd1c85c"></a>PARSED_SIDESET&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad4fadde33f8612e6655b9ab6af8e4664a8c9a0aaac6000dc9f90c18a2fd5cfd4d" name="ad4fadde33f8612e6655b9ab6af8e4664a8c9a0aaac6000dc9f90c18a2fd5cfd4d"></a>PARSED_NODESET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad4fadde33f8612e6655b9ab6af8e4664a4de310f6bbcd9bf68968bb0a25765f7b" name="ad4fadde33f8612e6655b9ab6af8e4664a4de310f6bbcd9bf68968bb0a25765f7b"></a>PARSED_ASSEMBLY&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -298,6 +317,127 @@ template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5d5963b7a3f1834b1849d7cf35288845" name="a5d5963b7a3f1834b1849d7cf35288845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5963b7a3f1834b1849d7cf35288845">&#9670;&nbsp;</a></span>check_assembly_cyclic_dependency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> , typename <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html">Iotm::text_mesh::TextMeshOptionParser</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt;::check_assembly_cyclic_dependency </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e90ce6370297a20e30f0a50f2766790" name="a0e90ce6370297a20e30f0a50f2766790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e90ce6370297a20e30f0a50f2766790">&#9670;&nbsp;</a></span>check_assembly_member_reference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> , typename <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html">Iotm::text_mesh::TextMeshOptionParser</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt;::check_assembly_member_reference </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9bb65f543b6d0e0d18f5911cac9cd35" name="af9bb65f543b6d0e0d18f5911cac9cd35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9bb65f543b6d0e0d18f5911cac9cd35">&#9670;&nbsp;</a></span>check_assembly_member_reference_in_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> , typename <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html">Iotm::text_mesh::TextMeshOptionParser</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt;::check_assembly_member_reference_in_group </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structIotm_1_1text__mesh_1_1AssemblyData.html">AssemblyData</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>assemblyData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5beb12ca4a9144c5239da01920f9ebac" name="a5beb12ca4a9144c5239da01920f9ebac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5beb12ca4a9144c5239da01920f9ebac">&#9670;&nbsp;</a></span>check_assembly_name_collision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> , typename <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html">Iotm::text_mesh::TextMeshOptionParser</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt;::check_assembly_name_collision </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a82100459ffc8fbe25699f93bf40f3112" name="a82100459ffc8fbe25699f93bf40f3112"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82100459ffc8fbe25699f93bf40f3112">&#9670;&nbsp;</a></span>check_name_collision_with_entity_sets()</h2>
 
@@ -328,6 +468,46 @@ template&lt;typename DataType &gt; </div>
           <td></td>
           <td class="paramtype">const std::set&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>entitySetNames</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae46c3d4aec28a0af09065eed4e93106a" name="ae46c3d4aec28a0af09065eed4e93106a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae46c3d4aec28a0af09065eed4e93106a">&#9670;&nbsp;</a></span>check_name_collision_with_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> , typename <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename SrcDataGroup , typename DestDataGroup &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html">Iotm::text_mesh::TextMeshOptionParser</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt;::check_name_collision_with_group </td>
+          <td>(</td>
+          <td class="paramtype">const SrcDataGroup &amp;&#160;</td>
+          <td class="paramname"><em>srcGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DestDataGroup &amp;&#160;</td>
+          <td class="paramname"><em>destGroup</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -610,6 +790,34 @@ template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a862a8c0b0f023829dd394233cde2a368" name="a862a8c0b0f023829dd394233cde2a368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a862a8c0b0f023829dd394233cde2a368">&#9670;&nbsp;</a></span>parse_assembly_option()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> , typename <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html">Iotm::text_mesh::TextMeshOptionParser</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt;::parse_assembly_option </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>assemblyOptionGroup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -914,6 +1122,33 @@ template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43e5c50bf6ce68432019e98743ce4afb" name="a43e5c50bf6ce68432019e98743ce4afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e5c50bf6ce68432019e98743ce4afb">&#9670;&nbsp;</a></span>validate_assemblies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> , typename <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html">Iotm::text_mesh::TextMeshOptionParser</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, <a class="el" href="namespaceIotm.html#adee5d030a523cf8fa91195ddd4ed9898">Topology</a> &gt;::validate_assemblies </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

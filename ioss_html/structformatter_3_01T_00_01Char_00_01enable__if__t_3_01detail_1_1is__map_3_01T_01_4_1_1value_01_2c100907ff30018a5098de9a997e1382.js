@@ -1,5 +1,0 @@
-var structformatter_3_01T_00_01Char_00_01enable__if__t_3_01detail_1_1is__map_3_01T_01_4_1_1value_01_2c100907ff30018a5098de9a997e1382 =
-[
-    [ "format", "structformatter_3_01T_00_01Char_00_01enable__if__t_3_01detail_1_1is__map_3_01T_01_4_1_1value_01_2c100907ff30018a5098de9a997e1382.html#a0c639dcd19b11427220cb22bdcace404", null ],
-    [ "parse", "structformatter_3_01T_00_01Char_00_01enable__if__t_3_01detail_1_1is__map_3_01T_01_4_1_1value_01_2c100907ff30018a5098de9a997e1382.html#a5d8350b9b2a5b783997d79f09f61a710", null ]
-];

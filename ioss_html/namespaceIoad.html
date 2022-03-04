@@ -109,7 +109,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a1df634e87a38498a42a96308d25915d9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1df634e87a38498a42a96308d25915d9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoad.html#a1df634e87a38498a42a96308d25915d9">DerivedFromIossGroupingEntity</a> = typename std::enable_if&lt; std::is_base_of&lt; <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a>, T &gt;<a class="el" href="classvalue.html">::value</a>, bool &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a></td></tr>
+<tr class="memitem:a1df634e87a38498a42a96308d25915d9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoad.html#a1df634e87a38498a42a96308d25915d9">DerivedFromIossGroupingEntity</a> = typename std::enable_if&lt; std::is_base_of&lt; <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a>, T &gt;::value, bool &gt;::type</td></tr>
 <tr class="separator:a1df634e87a38498a42a96308d25915d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2663e75d0da7cdb2715e63fc50d10d16"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a2663e75d0da7cdb2715e63fc50d10d16"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoad.html#a2663e75d0da7cdb2715e63fc50d10d16">IossHas3ParametersConstructor</a> = decltype(<a class="el" href="namespaceIoad.html#a1df634e87a38498a42a96308d25915d9">DerivedFromIossGroupingEntity</a>&lt; T &gt;{}, T(nullptr, std::string{}, int64_t{}))</td></tr>
@@ -227,7 +227,7 @@ Variables</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceIoad.html#a1df634e87a38498a42a96308d25915d9">Ioad::DerivedFromIossGroupingEntity</a> = typedef typename std::enable_if&lt;std::is_base_of&lt;<a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a>, T&gt;<a class="el" href="classvalue.html">::value</a>, bool&gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a></td>
+          <td class="memname">using <a class="el" href="namespaceIoad.html#a1df634e87a38498a42a96308d25915d9">Ioad::DerivedFromIossGroupingEntity</a> = typedef typename std::enable_if&lt;std::is_base_of&lt;<a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a>, T&gt;::value, bool&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">

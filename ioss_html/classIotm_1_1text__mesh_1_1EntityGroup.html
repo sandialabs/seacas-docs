@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classIotm_1_1text__mesh_1_1EntityGroup
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7e1171c59f80cf5185a0cd27f9fd6ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#ab7e1171c59f80cf5185a0cd27f9fd6ea">EntityGroup</a> (const std::string &amp;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, const std::string &amp;standardNamePrefix, const std::vector&lt; std::string &gt; &amp;invalidNamePrefixes)</td></tr>
+<tr class="memitem:ab7e1171c59f80cf5185a0cd27f9fd6ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#ab7e1171c59f80cf5185a0cd27f9fd6ea">EntityGroup</a> (const std::string &amp;type, const std::string &amp;standardNamePrefix, const std::vector&lt; std::string &gt; &amp;invalidNamePrefixes)</td></tr>
 <tr class="separator:ab7e1171c59f80cf5185a0cd27f9fd6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19d6b9503326219577147b43cef1c3ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#a19d6b9503326219577147b43cef1c3ed">~EntityGroup</a> ()</td></tr>
 <tr class="separator:a19d6b9503326219577147b43cef1c3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,10 +106,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad4d058e2657167f8269b5a053a584c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd86217e710ca418b258477ea969e465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#abd86217e710ca418b258477ea969e465">finalize_parse</a> ()</td></tr>
 <tr class="separator:abd86217e710ca418b258477ea969e465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1817d27a161ebfc98ac719fd75dcf4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#ace1817d27a161ebfc98ac719fd75dcf4">size</a> () const</td></tr>
+<tr class="separator:ace1817d27a161ebfc98ac719fd75dcf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85b68330a73be766723ed4fa51393c16"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; GroupData &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#a85b68330a73be766723ed4fa51393c16">get_group_data</a> () const</td></tr>
 <tr class="separator:a85b68330a73be766723ed4fa51393c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc863cc7d6814935cfcba93ab835f833"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#acc863cc7d6814935cfcba93ab835f833">get_part_names</a> () const</td></tr>
 <tr class="separator:acc863cc7d6814935cfcba93ab835f833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03d39eae34ac258f9923688d1ae1875"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#ab03d39eae34ac258f9923688d1ae1875">get_group_type</a> () const</td></tr>
+<tr class="separator:ab03d39eae34ac258f9923688d1ae1875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8755d8cb9e8815d00197dced87e08dcf"><td class="memItemLeft" align="right" valign="top">const GroupData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#a8755d8cb9e8815d00197dced87e08dcf">get_group_data</a> (unsigned id) const</td></tr>
 <tr class="separator:a8755d8cb9e8815d00197dced87e08dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae362326296ea7b95b88f713105073d3b"><td class="memItemLeft" align="right" valign="top">const GroupData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html#ae362326296ea7b95b88f713105073d3b">get_group_data</a> (std::string name) const</td></tr>
@@ -548,6 +552,33 @@ template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe
 
 </div>
 </div>
+<a id="ab03d39eae34ac258f9923688d1ae1875" name="ab03d39eae34ac258f9923688d1ae1875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab03d39eae34ac258f9923688d1ae1875">&#9670;&nbsp;</a></span>get_group_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> , typename GroupData &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; <a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html">Iotm::text_mesh::EntityGroup</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, GroupData &gt;::get_group_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acc863cc7d6814935cfcba93ab835f833" name="acc863cc7d6814935cfcba93ab835f833"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc863cc7d6814935cfcba93ab835f833">&#9670;&nbsp;</a></span>get_part_names()</h2>
 
@@ -685,6 +716,33 @@ template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classIotm_1_1text__mesh_1_1Sidesets.html#a42ec3e14c45bf60b723ab207a7034f06">Iotm::text_mesh::Sidesets&lt; EntityId, Topology &gt;</a>, <a class="el" href="classIotm_1_1text__mesh_1_1Sidesets.html#a42ec3e14c45bf60b723ab207a7034f06">Iotm::text_mesh::Sidesets&lt; int64_t, Iotm::TopologyMapEntry &gt;</a>, and <a class="el" href="classIotm_1_1text__mesh_1_1Sidesets.html#a42ec3e14c45bf60b723ab207a7034f06">Iotm::text_mesh::Sidesets&lt; EntityId, Iotm::TopologyMapEntry &gt;</a>.</p>
+
+</div>
+</div>
+<a id="ace1817d27a161ebfc98ac719fd75dcf4" name="ace1817d27a161ebfc98ac719fd75dcf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace1817d27a161ebfc98ac719fd75dcf4">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> , typename GroupData &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html">Iotm::text_mesh::EntityGroup</a>&lt; <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a>, GroupData &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -101,7 +101,8 @@ $(document).ready(function(){initNavTree('classIoss_1_1GetLongOption.html',''); 
 <div class="dynheader">
 Collaboration diagram for Ioss::GetLongOption:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classIoss_1_1GetLongOption__coll__graph.svg" width="207" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classIoss_1_1GetLongOption__coll__graph.svg" width="207" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -145,10 +146,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a665bc42f59768e7c3bb093a36671006a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#a665bc42f59768e7c3bb093a36671006a">usage</a> (const char *str)</td></tr>
 <tr class="memdesc:a665bc42f59768e7c3bb093a36671006a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the program usage string.  <a href="classIoss_1_1GetLongOption.html#a665bc42f59768e7c3bb093a36671006a">More...</a><br /></td></tr>
 <tr class="separator:a665bc42f59768e7c3bb093a36671006a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab94bcebfc054d6377ed5c8a8e1f3209c"><td class="memTemplParams" colspan="2">template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt;<a class="el" href="classvalue.html">::value</a>, INT &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a> *  = nullptr&gt; </td></tr>
+<tr class="memitem:ab94bcebfc054d6377ed5c8a8e1f3209c"><td class="memTemplParams" colspan="2">template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt;::value, INT &gt;::type *  = nullptr&gt; </td></tr>
 <tr class="memitem:ab94bcebfc054d6377ed5c8a8e1f3209c"><td class="memTemplItemLeft" align="right" valign="top">INT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#ab94bcebfc054d6377ed5c8a8e1f3209c">get_option_value</a> (const char *option_txt, INT default_value)</td></tr>
 <tr class="separator:ab94bcebfc054d6377ed5c8a8e1f3209c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memTemplParams" colspan="2">template&lt;class DBL , typename std::enable_if&lt; std::is_floating_point&lt; DBL &gt;<a class="el" href="classvalue.html">::value</a>, DBL &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a> *  = nullptr&gt; </td></tr>
+<tr class="memitem:a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memTemplParams" colspan="2">template&lt;class DBL , typename std::enable_if&lt; std::is_floating_point&lt; DBL &gt;::value, DBL &gt;::type *  = nullptr&gt; </td></tr>
 <tr class="memitem:a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memTemplItemLeft" align="right" valign="top">DBL&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#a1f736fe56c6d3f7ed90e104e111a8c79">get_option_value</a> (const char *option_txt, DBL default_value)</td></tr>
 <tr class="separator:a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa795da1529976ccf4a1dde0a1d3a62e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GetLongOption.html#aa795da1529976ccf4a1dde0a1d3a62e0">get_option_value</a> (const char *option_txt, const std::string &amp;default_value)</td></tr>
@@ -404,7 +405,7 @@ Private Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DBL , typename std::enable_if&lt; std::is_floating_point&lt; DBL &gt;<a class="el" href="classvalue.html">::value</a>, DBL &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a> *  = nullptr&gt; </div>
+template&lt;class DBL , typename std::enable_if&lt; std::is_floating_point&lt; DBL &gt;::value, DBL &gt;::type *  = nullptr&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -442,7 +443,7 @@ template&lt;class DBL , typename std::enable_if&lt; std::is_floating_point&lt; D
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt;<a class="el" href="classvalue.html">::value</a>, INT &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a> *  = nullptr&gt; </div>
+template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt;::value, INT &gt;::type *  = nullptr&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

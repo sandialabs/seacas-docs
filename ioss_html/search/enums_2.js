@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['char8_5ftype_0',['char8_type',['../namespacedetail.html#af2d1c9abcf61fc5c29bb85fdbd0c0153',1,'detail']]],
-  ['color_1',['color',['../color_8h.html#a80d1dc5f416b97f92939a4166d41203c',1,'color.h']]]
+  ['databaseusage_0',['DatabaseUsage',['../namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f',1,'Ioss']]],
+  ['datasize_1',['DataSize',['../namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822',1,'Ioss']]]
 ];

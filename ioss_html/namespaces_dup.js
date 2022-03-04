@@ -1,14 +1,5 @@
 var namespaces_dup =
 [
-    [ "align", "namespacealign.html", [
-      [ "type", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759", [
-        [ "none", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a4ba1498ecf6f0de5baac670a264e43eb", null ],
-        [ "left", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd", null ],
-        [ "right", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79", null ],
-        [ "center", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4", null ],
-        [ "numeric", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759af95ea74b65a6ce7cade89d4db5ab5d1b", null ]
-      ] ]
-    ] ],
     [ "anonymous_namespace{cgns_decomp.C}", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html", "namespaceanonymous__namespace_02cgns__decomp_8C_03" ],
     [ "anonymous_namespace{cth_pressure_map.C}", "namespaceanonymous__namespace_02cth__pressure__map_8C_03.html", "namespaceanonymous__namespace_02cth__pressure__map_8C_03" ],
     [ "anonymous_namespace{info_interface.C}", "namespaceanonymous__namespace_02info__interface_8C_03.html", null ],
@@ -430,6 +421,28 @@ var namespaces_dup =
     [ "anonymous_namespace{UnitTestTextMesh.C}", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html", [
       [ "add_coords_to_connectivity", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a1de670a6ab941a33f724e492dda6a560", null ],
       [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a7114f406a8753fbe4b6baa01ba5c8c6f", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a5d2e4207e160df29275d58b339939144", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#abf6c0d3c6bc9d40a1d0f02a17abad786", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#ad493a15f356bdb573166816fa385b693", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a01c491dca1a51299843146a1b22f048d", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#ad6814cf3155765e75e64654b7dfbe1eb", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#ac4de5be11aac319f2ecc38b739be6c48", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a69971ecb38d4a90a98ef7f36912c67f2", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#ae4be0e4d67ef4d6d424a6065f0ca26a0", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#ac43d7b64dcfd04d885b1c95db5457134", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a532888ba6cb015dc734d91e19ea127ae", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#ac07bb2fd117fd19bdbe7fe50fadbe2d4", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a48f0e290c4edbc92c5e992a294200859", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#aa6c6a435d8bf6d85351e902e6c5796f2", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a18d14548b0681f9e5926efc1375ce7c0", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#aa6a691f442eff23ec2781f1a2b5e8c26", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a845495d04454b13aec643012c6c66973", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a3ba9babc84bd61b945a64ce324d6cdba", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#aa99686aea41e20156cd7300864a00fad", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#acd06b0b21e8c2e9b3816511f26c487c7", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a85fabcec6ec993c0421a4c2b409cd1d3", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a0e2f444d9edc2fb6fbd2eb1c04368db0", null ],
+      [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#abfd19eabfb0255406b2e3d536706eb8a", null ],
       [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a88d2d8a42810c90d2d02cea5e8534af7", null ],
       [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a6ad10313ff81621deee5ad6a074424cf", null ],
       [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#ac11d5da8011c509eaa83a0c3c4185c61", null ],
@@ -576,12 +589,6 @@ var namespaces_dup =
       [ "comp_grad12x", "namespaceanonymous__namespace_02volume_8C_03.html#aa2b0c68eb6b5594cb01e2e73bf8d39d8", null ],
       [ "dot8", "namespaceanonymous__namespace_02volume_8C_03.html#af719cf311d0d67e67fdf3884b50d0795", null ]
     ] ],
-    [ "detail", "namespacedetail.html", "namespacedetail" ],
-    [ "detail_exported", "namespacedetail__exported.html", [
-      [ "compile_string_to_view", "namespacedetail__exported.html#a49a9f461220f70b5fdbdf267b5a92638", null ],
-      [ "compile_string_to_view", "namespacedetail__exported.html#a8ce4671a232e1139c6af8c27e6a41354", null ]
-    ] ],
-    [ "dragonbox", "namespacedragonbox.html", "namespacedragonbox" ],
     [ "Info", "namespaceInfo.html", "namespaceInfo" ],
     [ "Ioad", "namespaceIoad.html", "namespaceIoad" ],
     [ "Iocatalyst", "namespaceIocatalyst.html", "namespaceIocatalyst" ],
@@ -600,9 +607,6 @@ var namespaces_dup =
     [ "Iovs", "namespaceIovs.html", "namespaceIovs" ],
     [ "Iovs_cgns", "namespaceIovs__cgns.html", "namespaceIovs__cgns" ],
     [ "Iovs_exodus", "namespaceIovs__exodus.html", "namespaceIovs__exodus" ],
-    [ "literals", "namespaceliterals.html", [
-      [ "operator\"\"_format", "namespaceliterals.html#ad7ee095016dc885b66f19ad3e80f4fc2", null ]
-    ] ],
     [ "Modify", "namespaceModify.html", "namespaceModify" ],
     [ "pdqsort_detail", "namespacepdqsort__detail.html", [
       [ "align_cacheline", "namespacepdqsort__detail.html#a9c14c46c400c3d91db14fb6500d576a0", null ],
@@ -617,19 +621,6 @@ var namespaces_dup =
       [ "sort3", "namespacepdqsort__detail.html#ae1afda154c9e98c0f24589f4aa5f703f", null ],
       [ "swap_offsets", "namespacepdqsort__detail.html#a9fb8c4c6e7cae1781d127e70e47a8016", null ],
       [ "unguarded_insertion_sort", "namespacepdqsort__detail.html#a3f1c34cdc137010052833aa50f03950d", null ]
-    ] ],
-    [ "safe_duration_cast", "namespacesafe__duration__cast.html", [
-      [ "lossless_integral_conversion", "namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9", null ],
-      [ "safe_duration_cast", "namespacesafe__duration__cast.html#a1b2f780f349d616fa841550dc49f59d0", null ],
-      [ "safe_float_conversion", "namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a", null ]
-    ] ],
-    [ "sign", "namespacesign.html", [
-      [ "type", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8", [
-        [ "none", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a75c2aa7fc7b2327c3b1b9e4e0e997440", null ],
-        [ "minus", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a7985fecd36375136e45b9c53928f859a", null ],
-        [ "plus", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a0dfb6f25f723da9360584c01aee74389", null ],
-        [ "space", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d", null ]
-      ] ]
     ] ],
     [ "Skinner", "namespaceSkinner.html", "namespaceSkinner" ],
     [ "SmartAssert", "namespaceSmartAssert.html", [

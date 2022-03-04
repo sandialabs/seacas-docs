@@ -106,17 +106,19 @@ $(document).ready(function(){initNavTree('Iotm__TextMeshUtils_8h.html',''); init
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;<a class="el" href="ostream_8h_source.html">fmt/ostream.h</a>&gt;</code><br />
+<code>#include &lt;fmt/ostream.h&gt;</code><br />
 <code>#include &lt;strings.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Iotm_TextMeshUtils.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Iotm__TextMeshUtils_8h__incl.svg" width="100%" height="563"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Iotm__TextMeshUtils_8h__incl.svg" width="100%" height="395"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Iotm__TextMeshUtils_8h__dep__incl.svg" width="508" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Iotm__TextMeshUtils_8h__dep__incl.svg" width="508" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="Iotm__TextMeshUtils_8h_source.html">Go to the source code of this file.</a></p>
@@ -131,11 +133,17 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIotm_1_1text__mesh_1_1ElementData.html">Iotm::text_mesh::ElementData&lt; EntityId, Topology &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIotm_1_1text__mesh_1_1ElementDataLess.html">Iotm::text_mesh::ElementDataLess&lt; EntityId, Topology &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIotm_1_1text__mesh_1_1SideBlockInfo.html">Iotm::text_mesh::SideBlockInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIotm_1_1text__mesh_1_1EntityGroupData.html">Iotm::text_mesh::EntityGroupData&lt; EntityId, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1EntityGroup.html">Iotm::text_mesh::EntityGroup&lt; EntityId, GroupData &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIotm_1_1text__mesh_1_1AssemblyData.html">Iotm::text_mesh::AssemblyData&lt; EntityId &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1Assemblies.html">Iotm::text_mesh::Assemblies&lt; EntityId &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIotm_1_1text__mesh_1_1NodesetData.html">Iotm::text_mesh::NodesetData&lt; EntityId &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +165,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1NodesetParser.html">Iotm::text_mesh::NodesetParser&lt; EntityId &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html">Iotm::text_mesh::AssemblyParser</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshOptionParser.html">Iotm::text_mesh::TextMeshOptionParser&lt; EntityId, Topology &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1TextMeshParser.html">Iotm::text_mesh::TextMeshParser&lt; EntityId, TopologyMapping &gt;</a></td></tr>
@@ -174,6 +184,8 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac1f1335ec46156a299a3306299afe000"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#ac1f1335ec46156a299a3306299afe000">Iotm::text_mesh::ErrorHandler</a> = std::function&lt; void(const std::ostringstream &amp;)&gt;</td></tr>
 <tr class="separator:ac1f1335ec46156a299a3306299afe000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace95b0a184b9b5c119483bd83035e560"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#ace95b0a184b9b5c119483bd83035e560">Iotm::text_mesh::AssemblyDataType</a> = std::string</td></tr>
+<tr class="separator:ace95b0a184b9b5c119483bd83035e560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76658b2f3fe659927a32a4ec1f69416d"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a> &gt; </td></tr>
 <tr class="memitem:a76658b2f3fe659927a32a4ec1f69416d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a76658b2f3fe659927a32a4ec1f69416d">Iotm::text_mesh::NodesetDataType</a> = <a class="el" href="UnitTestIotmTextMeshFixture_8h.html#afe16bcc07227f33b534540c0be99a7c3">EntityId</a></td></tr>
 <tr class="separator:a76658b2f3fe659927a32a4ec1f69416d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,9 +198,19 @@ Enumerations</h2></td></tr>
 <tr class="memitem:afd8824c624065866ef81070138d7e817"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#afd8824c624065866ef81070138d7e817">Iotm::text_mesh::SplitType</a> { <a class="el" href="namespaceIotm_1_1text__mesh.html#afd8824c624065866ef81070138d7e817a6c3652c1de3d08f323fd7faee9cc5c14">Iotm::text_mesh::TOPOLOGY</a>
 , <a class="el" href="namespaceIotm_1_1text__mesh.html#afd8824c624065866ef81070138d7e817aec8ec8fbdd69d6f9e916eb7f80ad09ed">Iotm::text_mesh::ELEMENT_BLOCK</a>
 , <a class="el" href="namespaceIotm_1_1text__mesh.html#afd8824c624065866ef81070138d7e817ab3f4374c8ed99b082742f1eb4049cdde">Iotm::text_mesh::NO_SPLIT</a>
-, <a class="el" href="namespaceIotm_1_1text__mesh.html#afd8824c624065866ef81070138d7e817a2c0a549b55bfecbb450543c75b4ed0c9">Iotm::text_mesh::INVALID</a>
+, <a class="el" href="namespaceIotm_1_1text__mesh.html#afd8824c624065866ef81070138d7e817a2aefff499302666aa2a9a20b9515e9da">Iotm::text_mesh::INVALID_SPLIT</a>
  }</td></tr>
 <tr class="separator:afd8824c624065866ef81070138d7e817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7126c023a00abb35e671f794a5df2a11"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">Iotm::text_mesh::AssemblyType</a> { <br />
+&#160;&#160;<a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11a8b31ddbccfdf15dad88e446055cdb82e">Iotm::text_mesh::ASSEMBLY</a>
+, <a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11ad575dd5573fd6de325be09dceac7732e">Iotm::text_mesh::BLOCK</a>
+, <a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11acdd79382635de3197687ed4772873b5d">Iotm::text_mesh::SIDESET</a>
+, <a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11a88332cdd4631a900aa96a9dd97e028f0">Iotm::text_mesh::NODESET</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11a64fe0fdf65f0d19446584b518be687ff">Iotm::text_mesh::INVALID_ASSEMBLY</a>
+<br />
+ }</td></tr>
+<tr class="separator:a7126c023a00abb35e671f794a5df2a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -198,28 +220,30 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d1db25aea82e2a3c675b523df263ceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a9d1db25aea82e2a3c675b523df263ceb">Iotm::text_mesh::default_error_handler</a> (const std::ostringstream &amp;message)</td></tr>
 <tr class="separator:a9d1db25aea82e2a3c675b523df263ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f72a48d698099957625607e18db2908"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt , class T &gt; </td></tr>
-<tr class="memitem:a0f72a48d698099957625607e18db2908"><td class="memTemplItemLeft" align="right" valign="top">ForwardIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a0f72a48d698099957625607e18db2908">Iotm::text_mesh::bound_search</a> (ForwardIt first, ForwardIt last, const T &amp;<a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a0f72a48d698099957625607e18db2908"><td class="memTemplItemLeft" align="right" valign="top">ForwardIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a0f72a48d698099957625607e18db2908">Iotm::text_mesh::bound_search</a> (ForwardIt first, ForwardIt last, const T &amp;value)</td></tr>
 <tr class="separator:a0f72a48d698099957625607e18db2908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3968a1f47bf44e9294e5a5eee530eaf8"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt , class T , class Compare &gt; </td></tr>
-<tr class="memitem:a3968a1f47bf44e9294e5a5eee530eaf8"><td class="memTemplItemLeft" align="right" valign="top">ForwardIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a3968a1f47bf44e9294e5a5eee530eaf8">Iotm::text_mesh::bound_search</a> (ForwardIt first, ForwardIt last, const T &amp;<a class="el" href="classvalue.html">value</a>, Compare comp)</td></tr>
+<tr class="memitem:a3968a1f47bf44e9294e5a5eee530eaf8"><td class="memTemplItemLeft" align="right" valign="top">ForwardIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a3968a1f47bf44e9294e5a5eee530eaf8">Iotm::text_mesh::bound_search</a> (ForwardIt first, ForwardIt last, const T &amp;value, Compare comp)</td></tr>
 <tr class="separator:a3968a1f47bf44e9294e5a5eee530eaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3fed8a3ab3277901acd3bda0a98b2ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#ad3fed8a3ab3277901acd3bda0a98b2ec">Iotm::text_mesh::strip</a> (const <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &amp;inpt)</td></tr>
+<tr class="memitem:ad3fed8a3ab3277901acd3bda0a98b2ec"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#ad3fed8a3ab3277901acd3bda0a98b2ec">Iotm::text_mesh::strip</a> (const std::string &amp;inpt)</td></tr>
 <tr class="separator:ad3fed8a3ab3277901acd3bda0a98b2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954fd7bca23f46ae7501931707f84e78"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a954fd7bca23f46ae7501931707f84e78">Iotm::text_mesh::get_tokens</a> (const <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &amp;str, const <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &amp;separators)</td></tr>
+<tr class="memitem:a954fd7bca23f46ae7501931707f84e78"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a954fd7bca23f46ae7501931707f84e78">Iotm::text_mesh::get_tokens</a> (const std::string &amp;str, const std::string &amp;separators)</td></tr>
 <tr class="separator:a954fd7bca23f46ae7501931707f84e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a119649d0112f8d69ed2f9ebd5c872f0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a119649d0112f8d69ed2f9ebd5c872f0d">Iotm::text_mesh::convert_to_upper_case</a> (<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &amp;str)</td></tr>
+<tr class="memitem:a119649d0112f8d69ed2f9ebd5c872f0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a119649d0112f8d69ed2f9ebd5c872f0d">Iotm::text_mesh::convert_to_upper_case</a> (std::string &amp;str)</td></tr>
 <tr class="separator:a119649d0112f8d69ed2f9ebd5c872f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5642163fc5a0712afc67d01ff54b326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#aa5642163fc5a0712afc67d01ff54b326">Iotm::text_mesh::convert_to_lower_case</a> (<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &amp;str)</td></tr>
+<tr class="memitem:aa5642163fc5a0712afc67d01ff54b326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#aa5642163fc5a0712afc67d01ff54b326">Iotm::text_mesh::convert_to_lower_case</a> (std::string &amp;str)</td></tr>
 <tr class="separator:aa5642163fc5a0712afc67d01ff54b326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12588ac7d41f592685c78c38f8d74858"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a12588ac7d41f592685c78c38f8d74858">Iotm::text_mesh::is_number</a> (const <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &amp;str)</td></tr>
+<tr class="memitem:a12588ac7d41f592685c78c38f8d74858"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a12588ac7d41f592685c78c38f8d74858">Iotm::text_mesh::is_number</a> (const std::string &amp;str)</td></tr>
 <tr class="separator:a12588ac7d41f592685c78c38f8d74858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c47588e091ca82901e092b49dabdd0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab5c47588e091ca82901e092b49dabdd0"><td class="memTemplItemLeft" align="right" valign="top">std::set&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#ab5c47588e091ca82901e092b49dabdd0">Iotm::text_mesh::transform_to_set</a> (const std::vector&lt; T &gt; &amp;dataAsVector)</td></tr>
 <tr class="separator:ab5c47588e091ca82901e092b49dabdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af22fd307a1db5c0dc2adb4f71552c534"><td class="memItemLeft" align="right" valign="top">std::pair&lt; unsigned, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#af22fd307a1db5c0dc2adb4f71552c534">Iotm::text_mesh::get_id_from_part_name</a> (const <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &amp;name, const <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &amp;prefix)</td></tr>
+<tr class="memitem:af22fd307a1db5c0dc2adb4f71552c534"><td class="memItemLeft" align="right" valign="top">std::pair&lt; unsigned, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#af22fd307a1db5c0dc2adb4f71552c534">Iotm::text_mesh::get_id_from_part_name</a> (const std::string &amp;name, const std::string &amp;prefix)</td></tr>
 <tr class="separator:af22fd307a1db5c0dc2adb4f71552c534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fb5e5649f7088aa94fe510bc910399f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a6fb5e5649f7088aa94fe510bc910399f">Iotm::text_mesh::operator&lt;&lt;</a> (std::ostream &amp;out, const SplitType &amp;t)</td></tr>
 <tr class="separator:a6fb5e5649f7088aa94fe510bc910399f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71344500c9f83a65b6e90a1c16b1d935"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIotm_1_1text__mesh.html#a71344500c9f83a65b6e90a1c16b1d935">Iotm::text_mesh::operator&lt;&lt;</a> (std::ostream &amp;out, const AssemblyType &amp;t)</td></tr>
+<tr class="separator:a71344500c9f83a65b6e90a1c16b1d935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
