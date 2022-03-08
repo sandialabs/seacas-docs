@@ -1,6 +1,6 @@
 var io__info_8C =
 [
-    [ "FMT_DEPRECATED_OSTREAM", "io__info_8C.html#a27fa24cbd315af8cfb2b8bd6e02e2ce5", null ],
+    [ "FMT_DEPRECATED_OSTREAM__1", "io__info_8C.html#a4472a5a543c8608acff335e9e064598b", null ],
     [ "element_volume", "io__info_8C.html#a03ddc25a97c9a6c9647a9c15c5a6d5d9", null ],
     [ "file_info", "io__info_8C.html#aa1c8abea5efac9a37a1a550b6d61063e", null ],
     [ "group_info", "io__info_8C.html#a39fee1c8c257be66cc07362fcaad0000", null ],
