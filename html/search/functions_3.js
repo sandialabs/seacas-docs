@@ -389,7 +389,7 @@ var searchData=
   ['excn2s_386',['excn2s',['../exo__jack_8c.html#a63846e8e9ee44e23e139243aca9dbabe',1,'exo_jack.c']]],
   ['excopy_387',['excopy',['../exo__jack_8c.html#aa06a0f81115321f110b80cb6d2144029',1,'exo_jack.c']]],
   ['excopy_388',['EXCOPY',['../exo__jack-windows_8c.html#af727ce8d21f3307b470ad585697e5194',1,'exo_jack-windows.c']]],
-  ['excpws_389',['excpws',['../exo__jack_8c.html#a8d4cf4a1de8cb0ece87c89d431122e2f',1,'exo_jack.c']]],
+  ['excpws_389',['excpws',['../exo__jack_8c.html#a806db0a6bfe00a7a8ad2b8d9394996b4',1,'exo_jack.c']]],
   ['excpws_390',['EXCPWS',['../exo__jack-windows_8c.html#a18c8d94bbc7e4efc12defc1b6d385289',1,'exo_jack-windows.c']]],
   ['excre_391',['EXCRE',['../exo__jack-windows_8c.html#a91ffdef840b1b551603bd56f4b3aac0b',1,'exo_jack-windows.c']]],
   ['excre_392',['excre',['../exo__jack_8c.html#a06f67015bf820b732ef9e3234e7b3050',1,'exo_jack.c']]],

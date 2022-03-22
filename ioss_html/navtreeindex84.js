@@ -1,5 +1,9 @@
 var NAVTREEINDEX84 =
 {
+"structtsl_1_1detail__hopscotch__hash_1_1has__key__compare.html":[4,0,97,0,2],
+"structtsl_1_1detail__hopscotch__hash_1_1has__key__compare_3_01T_00_01typename_01make__void_3_01t11ab6b781ff7a6e1b9bc460857c74cb1.html":[3,0,143,0,3],
+"structtsl_1_1detail__hopscotch__hash_1_1has__key__compare_3_01T_00_01typename_01make__void_3_01t11ab6b781ff7a6e1b9bc460857c74cb1.html":[4,0,97,0,3],
+"structtsl_1_1detail__hopscotch__hash_1_1is__power__of__two__policy.html":[3,0,143,0,8],
 "structtsl_1_1detail__hopscotch__hash_1_1is__power__of__two__policy.html":[4,0,97,0,8],
 "structtsl_1_1detail__hopscotch__hash_1_1is__power__of__two__policy_3_01tsl_1_1hh_1_1power__of__te11f121c31544671593cb2afd25c377f.html":[3,0,143,0,9],
 "structtsl_1_1detail__hopscotch__hash_1_1is__power__of__two__policy_3_01tsl_1_1hh_1_1power__of__te11f121c31544671593cb2afd25c377f.html":[4,0,97,0,9],

@@ -9,7 +9,7 @@ var exo__jack_8c =
     [ "exclos", "exo__jack_8c.html#a74918dd93224ce49e177832489e058c7", null ],
     [ "excn2s", "exo__jack_8c.html#a63846e8e9ee44e23e139243aca9dbabe", null ],
     [ "excopy", "exo__jack_8c.html#aa06a0f81115321f110b80cb6d2144029", null ],
-    [ "excpws", "exo__jack_8c.html#a8d4cf4a1de8cb0ece87c89d431122e2f", null ],
+    [ "excpws", "exo__jack_8c.html#a806db0a6bfe00a7a8ad2b8d9394996b4", null ],
     [ "excre", "exo__jack_8c.html#a06f67015bf820b732ef9e3234e7b3050", null ],
     [ "exerr", "exo__jack_8c.html#afe6f3b73b4c3b1e5a9d78a73e9df8bc0", null ],
     [ "exgatm", "exo__jack_8c.html#aacaf3ada648417d3b38debbe734d76a6", null ],

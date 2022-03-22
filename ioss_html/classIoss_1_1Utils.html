@@ -190,6 +190,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab183fa0d546a47a1358d47eb0328ae0a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#ab183fa0d546a47a1358d47eb0328ae0a">fixup_type</a> (const std::string &amp;base, int nodes_per_element, int spatial)</td></tr>
 <tr class="memdesc:ab183fa0d546a47a1358d47eb0328ae0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the base element type <code>base</code> which has <code>nodes_per_element</code> nodes and a spatial dimension of <code>spatial</code> into a form that the IO system can (hopefully) recognize.  <a href="classIoss_1_1Utils.html#ab183fa0d546a47a1358d47eb0328ae0a">More...</a><br /></td></tr>
 <tr class="separator:ab183fa0d546a47a1358d47eb0328ae0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046c5951320162d9e87203c2606209fb"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a046c5951320162d9e87203c2606209fb">capitalize</a> (std::string name)</td></tr>
+<tr class="memdesc:a046c5951320162d9e87203c2606209fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uppercase the first letter of the string.  <a href="classIoss_1_1Utils.html#a046c5951320162d9e87203c2606209fb">More...</a><br /></td></tr>
+<tr class="separator:a046c5951320162d9e87203c2606209fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42aa6b77482c4da5ffde6c5980533e22"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a42aa6b77482c4da5ffde6c5980533e22">uppercase</a> (std::string name)</td></tr>
 <tr class="memdesc:a42aa6b77482c4da5ffde6c5980533e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to upper case.  <a href="classIoss_1_1Utils.html#a42aa6b77482c4da5ffde6c5980533e22">More...</a><br /></td></tr>
 <tr class="separator:a42aa6b77482c4da5ffde6c5980533e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +240,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acf20ca98385d9714d71360ea6caaba2b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#acf20ca98385d9714d71360ea6caaba2b">variable_name_kluge</a> (const std::string &amp;name, size_t component_count, size_t copies, size_t max_var_len)</td></tr>
 <tr class="memdesc:acf20ca98385d9714d71360ea6caaba2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to shorten long variable names to an acceptable length, and converts to lowercase and spaces to <code>_</code>  <a href="classIoss_1_1Utils.html#acf20ca98385d9714d71360ea6caaba2b">More...</a><br /></td></tr>
 <tr class="separator:acf20ca98385d9714d71360ea6caaba2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4734f7e770f71e2b6460cc3661cf2c4d"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a4734f7e770f71e2b6460cc3661cf2c4d">shape_to_string</a> (const <a class="el" href="namespaceIoss.html#acc1610b8e37168350b478a07112dffcf">ElementShape</a> &amp;shape)</td></tr>
+<tr class="separator:a4734f7e770f71e2b6460cc3661cf2c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e36dabba48e8770c4914a42d648ad3c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a4e36dabba48e8770c4914a42d648ad3c">generate_history_mesh</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region)</td></tr>
 <tr class="memdesc:a4e36dabba48e8770c4914a42d648ad3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a nominal mesh for use in history databases.  <a href="classIoss_1_1Utils.html#a4e36dabba48e8770c4914a42d648ad3c">More...</a><br /></td></tr>
 <tr class="separator:a4e36dabba48e8770c4914a42d648ad3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -409,6 +414,41 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a046c5951320162d9e87203c2606209fb" name="a046c5951320162d9e87203c2606209fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046c5951320162d9e87203c2606209fb">&#9670;&nbsp;</a></span>capitalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ioss::Utils::capitalize </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Uppercase the first letter of the string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The string to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted string. </dd></dl>
 
 </div>
 </div>
@@ -1819,7 +1859,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p >Returns the number of digits required to print the number. If <code>use_commas</code> is specified, then the width will be adjusted to account for the comma used every 3 digits. (1,234,567,890 would return 13) Typically used with the <code>fmt::print()</code> functions as: </p><div class="fragment"><div class="line">fmt::print(<span class="stringliteral">&quot;{:{}}&quot;</span>, number, <a class="code hl_function" href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">number_width</a>(number,<span class="keyword">true</span>))</div>
 <div class="line">fmt::print(&quot;{:{}d}<span class="stringliteral">&quot;, number, number_width(number,false))</span></div>
-<div class="ttc" id="aclassIoss_1_1Utils_html_a875232ab39ecaf79b1b668d28fb590d6"><div class="ttname"><a href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">Ioss::Utils::number_width</a></div><div class="ttdeci">static int number_width(const size_t number, bool use_commas=false)</div><div class="ttdef"><b>Definition:</b> Ioss_Utils.h:215</div></div>
+<div class="ttc" id="aclassIoss_1_1Utils_html_a875232ab39ecaf79b1b668d28fb590d6"><div class="ttname"><a href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">Ioss::Utils::number_width</a></div><div class="ttdeci">static int number_width(const size_t number, bool use_commas=false)</div><div class="ttdef"><b>Definition:</b> Ioss_Utils.h:216</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1872,6 +1912,32 @@ template&lt;typename T &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4734f7e770f71e2b6460cc3661cf2c4d" name="a4734f7e770f71e2b6460cc3661cf2c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4734f7e770f71e2b6460cc3661cf2c4d">&#9670;&nbsp;</a></span>shape_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ioss::Utils::shape_to_string </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceIoss.html#acc1610b8e37168350b478a07112dffcf">ElementShape</a> &amp;&#160;</td>
+          <td class="paramname"><em>shape</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
