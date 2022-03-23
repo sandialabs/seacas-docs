@@ -11,6 +11,7 @@ var classIotm_1_1text__mesh_1_1AssemblyParser =
     [ "parse_option", "classIotm_1_1text__mesh_1_1AssemblyParser.html#aeac822522a28465297525d1c9da5ff99", null ],
     [ "parse_option_group", "classIotm_1_1text__mesh_1_1AssemblyParser.html#a5f4c856261b63330c8a99476b5d329a7", null ],
     [ "set_error_handler", "classIotm_1_1text__mesh_1_1AssemblyParser.html#aa79ca6310daf3b28da5f22884b5ad766", null ],
+    [ "verify_parse", "classIotm_1_1text__mesh_1_1AssemblyParser.html#aa3961b6395358f49cfbda865b0ec8be5", null ],
     [ "m_assemblyType", "classIotm_1_1text__mesh_1_1AssemblyParser.html#aa45ae89aa99f0a99499151e478d3bb32", null ],
     [ "m_errorHandler", "classIotm_1_1text__mesh_1_1AssemblyParser.html#aaceb6e4379e091d3a44e3fdb17c04bd6", null ],
     [ "m_members", "classIotm_1_1text__mesh_1_1AssemblyParser.html#ad7dfb7bef17fadcace4813b19f7cd11b", null ],

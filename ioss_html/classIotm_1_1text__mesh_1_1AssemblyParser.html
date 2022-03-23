@@ -91,13 +91,13 @@ $(document).ready(function(){initNavTree('classIotm_1_1text__mesh_1_1AssemblyPar
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="Iotm__TextMeshUtils_8h_source.html">Iotm_TextMeshUtils.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Iotm__TextMeshAssembly_8h_source.html">Iotm_TextMeshAssembly.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeaa5942f6b172f03a2f2889ef3eb6bcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#aeaa5942f6b172f03a2f2889ef3eb6bcf">AssemblyParser</a> ()</td></tr>
 <tr class="separator:aeaa5942f6b172f03a2f2889ef3eb6bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa79ca6310daf3b28da5f22884b5ad766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#aa79ca6310daf3b28da5f22884b5ad766">set_error_handler</a> (<a class="el" href="namespaceIotm_1_1text__mesh.html#ac1f1335ec46156a299a3306299afe000">ErrorHandler</a> errorHandler)</td></tr>
+<tr class="memitem:aa79ca6310daf3b28da5f22884b5ad766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#aa79ca6310daf3b28da5f22884b5ad766">set_error_handler</a> (<a class="el" href="namespaceIotm_1_1text__mesh.html#a08bf34cee8dacf7ada325152228acd5e">ErrorHandler</a> errorHandler)</td></tr>
 <tr class="separator:aa79ca6310daf3b28da5f22884b5ad766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa37fa224b7d0b8877ff2b2d0f448a8f0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#aa37fa224b7d0b8877ff2b2d0f448a8f0">get_name</a> ()</td></tr>
 <tr class="separator:aa37fa224b7d0b8877ff2b2d0f448a8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7bc09b8757c9b3083faa550056c96e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27864d1bcbeb72418d00d945cc0ea70c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#a27864d1bcbeb72418d00d945cc0ea70c">parse</a> (const std::string &amp;parseData)</td></tr>
 <tr class="separator:a27864d1bcbeb72418d00d945cc0ea70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3961b6395358f49cfbda865b0ec8be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#aa3961b6395358f49cfbda865b0ec8be5">verify_parse</a> () const</td></tr>
+<tr class="separator:aa3961b6395358f49cfbda865b0ec8be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -123,13 +125,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ad7dfb7bef17fadcace4813b19f7cd11b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#ad7dfb7bef17fadcace4813b19f7cd11b">m_members</a></td></tr>
+<tr class="memitem:ad7dfb7bef17fadcace4813b19f7cd11b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#ad7dfb7bef17fadcace4813b19f7cd11b">m_members</a> {}</td></tr>
 <tr class="separator:ad7dfb7bef17fadcace4813b19f7cd11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af979f11cb83616ddfe3720c5bfda4aa4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#af979f11cb83616ddfe3720c5bfda4aa4">m_name</a></td></tr>
+<tr class="memitem:af979f11cb83616ddfe3720c5bfda4aa4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#af979f11cb83616ddfe3720c5bfda4aa4">m_name</a> {}</td></tr>
 <tr class="separator:af979f11cb83616ddfe3720c5bfda4aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa45ae89aa99f0a99499151e478d3bb32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">AssemblyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#aa45ae89aa99f0a99499151e478d3bb32">m_assemblyType</a></td></tr>
+<tr class="memitem:aa45ae89aa99f0a99499151e478d3bb32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">AssemblyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#aa45ae89aa99f0a99499151e478d3bb32">m_assemblyType</a> {<a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11a64fe0fdf65f0d19446584b518be687ff">INVALID_ASSEMBLY</a>}</td></tr>
 <tr class="separator:aa45ae89aa99f0a99499151e478d3bb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaceb6e4379e091d3a44e3fdb17c04bd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIotm_1_1text__mesh.html#ac1f1335ec46156a299a3306299afe000">ErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#aaceb6e4379e091d3a44e3fdb17c04bd6">m_errorHandler</a></td></tr>
+<tr class="memitem:aaceb6e4379e091d3a44e3fdb17c04bd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIotm_1_1text__mesh.html#a08bf34cee8dacf7ada325152228acd5e">ErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIotm_1_1text__mesh_1_1AssemblyParser.html#aaceb6e4379e091d3a44e3fdb17c04bd6">m_errorHandler</a></td></tr>
 <tr class="separator:aaceb6e4379e091d3a44e3fdb17c04bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -412,9 +414,34 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Iotm::text_mesh::AssemblyParser::set_error_handler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceIotm_1_1text__mesh.html#ac1f1335ec46156a299a3306299afe000">ErrorHandler</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceIotm_1_1text__mesh.html#a08bf34cee8dacf7ada325152228acd5e">ErrorHandler</a>&#160;</td>
           <td class="paramname"><em>errorHandler</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3961b6395358f49cfbda865b0ec8be5" name="aa3961b6395358f49cfbda865b0ec8be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3961b6395358f49cfbda865b0ec8be5">&#9670;&nbsp;</a></span>verify_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Iotm::text_mesh::AssemblyParser::verify_parse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -437,7 +464,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">AssemblyType</a> Iotm::text_mesh::AssemblyParser::m_assemblyType</td>
+          <td class="memname"><a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">AssemblyType</a> Iotm::text_mesh::AssemblyParser::m_assemblyType {<a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11a64fe0fdf65f0d19446584b518be687ff">INVALID_ASSEMBLY</a>}</td>
         </tr>
       </table>
   </td>
@@ -459,7 +486,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceIotm_1_1text__mesh.html#ac1f1335ec46156a299a3306299afe000">ErrorHandler</a> Iotm::text_mesh::AssemblyParser::m_errorHandler</td>
+          <td class="memname"><a class="el" href="namespaceIotm_1_1text__mesh.html#a08bf34cee8dacf7ada325152228acd5e">ErrorHandler</a> Iotm::text_mesh::AssemblyParser::m_errorHandler</td>
         </tr>
       </table>
   </td>
@@ -481,7 +508,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::string&gt; Iotm::text_mesh::AssemblyParser::m_members</td>
+          <td class="memname">std::vector&lt;std::string&gt; Iotm::text_mesh::AssemblyParser::m_members {}</td>
         </tr>
       </table>
   </td>
@@ -503,7 +530,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Iotm::text_mesh::AssemblyParser::m_name</td>
+          <td class="memname">std::string Iotm::text_mesh::AssemblyParser::m_name {}</td>
         </tr>
       </table>
   </td>
@@ -516,7 +543,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/text_mesh/<a class="el" href="Iotm__TextMeshUtils_8h_source.html">Iotm_TextMeshUtils.h</a></li>
+<li>src/text_mesh/<a class="el" href="Iotm__TextMeshAssembly_8h_source.html">Iotm_TextMeshAssembly.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -26,5 +26,6 @@ var searchData=
   ['coordinateframe_23',['CoordinateFrame',['../classIoss_1_1CoordinateFrame.html',1,'Ioss']]],
   ['coordinates_24',['Coordinates',['../classIotm_1_1text__mesh_1_1Coordinates.html',1,'Iotm::text_mesh']]],
   ['coordinates_3c_20int64_5ft_20_3e_25',['Coordinates&lt; int64_t &gt;',['../classIotm_1_1text__mesh_1_1Coordinates.html',1,'Iotm::text_mesh']]],
-  ['coordinateverifier_26',['CoordinateVerifier',['../classIotm_1_1unit__test_1_1TextMeshFixture_1_1CoordinateVerifier.html',1,'Iotm::unit_test::TextMeshFixture']]]
+  ['coordinateverifier_26',['CoordinateVerifier',['../classIotm_1_1unit__test_1_1TextMeshFixture_1_1CoordinateVerifier.html',1,'Iotm::unit_test::TextMeshFixture']]],
+  ['currentadjacency_27',['CurrentAdjacency',['../structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1CurrentAdjacency.html',1,'Iotm::text_mesh::SideAdjacencyGraph']]]
 ];

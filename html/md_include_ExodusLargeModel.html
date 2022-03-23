@@ -136,12 +136,12 @@ ex_put_init():</h1>
 <div class="line">  dim[0] = numnoddim;</div>
 <div class="line">  if (ncvardef (exoid, VAR_COORD_X, nc_flt_code(exoid), 1, dim) == -1)</div>
 <div class="line">    { ... handle error }</div>
-<div class="line">  </div>
+<div class="line"> </div>
 <div class="line">  if (num_dim &gt; 1) {</div>
 <div class="line">    if (ncvardef (exoid, VAR_COORD_Y, nc_flt_code(exoid), 1, dim) == -1)</div>
 <div class="line">      { ... handle error }</div>
 <div class="line">  }</div>
-<div class="line">  </div>
+<div class="line"> </div>
 <div class="line">  if (num_dim &gt; 2) {</div>
 <div class="line">    if (ncvardef (exoid, VAR_COORD_Z, nc_flt_code(exoid), 1, dim) == -1)</div>
 <div class="line">      { ... handle error }</div>
@@ -149,7 +149,7 @@ ex_put_init():</h1>
 <div class="line">} else {</div>
 <div class="line">  /* node coordinate arrays: -- all stored together (old method) */</div>
 <div class="line">  .... define the old way...</div>
-<div class="line">}       </div>
+<div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="ex_put_coord"></a>
 ex_put_coord():</h1>
 <p >&ndash; If writing a "large model" capable database, then the coordinates are written a component at a time, otherwise write the old way as a single blob.</p>
@@ -158,7 +158,7 @@ ex_put_coord():</h1>
 <div class="line">} else {</div>
 <div class="line">  if ((coordidx = ncvarid (exoid, VAR_COORD_X)) == -1)</div>
 <div class="line">    { ... handle error }</div>
-<div class="line">  </div>
+<div class="line"> </div>
 <div class="line">  if (num_dim &gt; 1) {</div>
 <div class="line">    if ((coordidy = ncvarid (exoid, VAR_COORD_Y)) == -1)</div>
 <div class="line">      { ... handle error }</div>
@@ -191,7 +191,7 @@ ex_put_nodal_var():</h1>
 <div class="line">  start[0] = --time_step;</div>
 <div class="line">  start[1] = --nodal_var_index;</div>
 <div class="line">  start[2] = 0;</div>
-<div class="line">  </div>
+<div class="line"> </div>
 <div class="line">  count[0] = 1;</div>
 <div class="line">  count[1] = 1;</div>
 <div class="line">  count[2] = num_nodes;</div>
@@ -201,7 +201,7 @@ ex_put_nodal_var():</h1>
 <div class="line">  if ((varid = ncvarid (exoid, VAR_NOD_VAR_NEW(nodal_var_index))) == -1) {</div>
 <div class="line">    ... handle error ...</div>
 <div class="line">  }</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">  start[0] = --time_step;</div>
 <div class="line">  start[1] = 0;</div>
 <div class="line"> </div>

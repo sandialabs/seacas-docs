@@ -232,7 +232,8 @@ var annotated_dup =
     [ "anonymous_namespace{UnitTestIotmTextMeshFixture.h}", "namespaceanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03.html", [
       [ "TestTextMesh", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh.html", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh" ],
       [ "TestTextMesh1d", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh1d.html", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh1d" ],
-      [ "TestTextMesh2d", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh2d.html", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh2d" ]
+      [ "TestTextMesh2d", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh2d.html", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh2d" ],
+      [ "TestTextMeshGraph", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMeshGraph.html", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMeshGraph" ]
     ] ],
     [ "Info", "namespaceInfo.html", [
       [ "Interface", "classInfo_1_1Interface.html", "classInfo_1_1Interface" ]
@@ -374,8 +375,6 @@ var annotated_dup =
       [ "Asym_Tensor_02", "classIoss_1_1Asym__Tensor__02.html", "classIoss_1_1Asym__Tensor__02" ],
       [ "Asym_Tensor_03", "classIoss_1_1Asym__Tensor__03.html", "classIoss_1_1Asym__Tensor__03" ],
       [ "AxisAlignedBoundingBox", "structIoss_1_1AxisAlignedBoundingBox.html", "structIoss_1_1AxisAlignedBoundingBox" ],
-      [ "Basis", "classIoss_1_1Basis.html", "classIoss_1_1Basis" ],
-      [ "BasisEntry", "structIoss_1_1BasisEntry.html", "structIoss_1_1BasisEntry" ],
       [ "Beam2", "classIoss_1_1Beam2.html", "classIoss_1_1Beam2" ],
       [ "Beam3", "classIoss_1_1Beam3.html", "classIoss_1_1Beam3" ],
       [ "Beam4", "classIoss_1_1Beam4.html", "classIoss_1_1Beam4" ],
@@ -600,10 +599,12 @@ var annotated_dup =
         [ "NodesetParser", "classIotm_1_1text__mesh_1_1NodesetParser.html", "classIotm_1_1text__mesh_1_1NodesetParser" ],
         [ "Nodesets", "classIotm_1_1text__mesh_1_1Nodesets.html", "classIotm_1_1text__mesh_1_1Nodesets" ],
         [ "PartIdMapping", "classIotm_1_1text__mesh_1_1PartIdMapping.html", "classIotm_1_1text__mesh_1_1PartIdMapping" ],
+        [ "SideAdjacencyGraph", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph" ],
         [ "SideBlockInfo", "structIotm_1_1text__mesh_1_1SideBlockInfo.html", "structIotm_1_1text__mesh_1_1SideBlockInfo" ],
         [ "SidesetData", "structIotm_1_1text__mesh_1_1SidesetData.html", "structIotm_1_1text__mesh_1_1SidesetData" ],
         [ "SidesetParser", "classIotm_1_1text__mesh_1_1SidesetParser.html", "classIotm_1_1text__mesh_1_1SidesetParser" ],
         [ "Sidesets", "classIotm_1_1text__mesh_1_1Sidesets.html", "classIotm_1_1text__mesh_1_1Sidesets" ],
+        [ "SidesetSkinner", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", "classIotm_1_1text__mesh_1_1SidesetSkinner" ],
         [ "SidesetSplitter", "classIotm_1_1text__mesh_1_1SidesetSplitter.html", "classIotm_1_1text__mesh_1_1SidesetSplitter" ],
         [ "TextMeshData", "structIotm_1_1text__mesh_1_1TextMeshData.html", "structIotm_1_1text__mesh_1_1TextMeshData" ],
         [ "TextMeshLexer", "classIotm_1_1text__mesh_1_1TextMeshLexer.html", "classIotm_1_1text__mesh_1_1TextMeshLexer" ],
@@ -621,7 +622,7 @@ var annotated_dup =
       [ "IossTopologyMapping", "classIotm_1_1IossTopologyMapping.html", "classIotm_1_1IossTopologyMapping" ],
       [ "NodeCommunicationMap", "classIotm_1_1NodeCommunicationMap.html", "classIotm_1_1NodeCommunicationMap" ],
       [ "TextMesh", "classIotm_1_1TextMesh.html", "classIotm_1_1TextMesh" ],
-      [ "TopologyMapEntry", "structIotm_1_1TopologyMapEntry.html", "structIotm_1_1TopologyMapEntry" ]
+      [ "TopologyMapEntry", "classIotm_1_1TopologyMapEntry.html", "classIotm_1_1TopologyMapEntry" ]
     ] ],
     [ "Iotr", "namespaceIotr.html", [
       [ "Factory", "classIotr_1_1Factory.html", "classIotr_1_1Factory" ],
@@ -714,6 +715,7 @@ var annotated_dup =
       [ "robin_map", "classtsl_1_1robin__map.html", "classtsl_1_1robin__map" ],
       [ "robin_set", "classtsl_1_1robin__set.html", "classtsl_1_1robin__set" ]
     ] ],
+    [ "Adjacency", "structAdjacency.html", "structAdjacency" ],
     [ "Assert", "structAssert.html", "structAssert" ],
     [ "assert_context", "classassert__context.html", "classassert__context" ],
     [ "CatalystTestFixture", "classCatalystTestFixture.html", "classCatalystTestFixture" ],

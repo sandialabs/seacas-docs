@@ -24,10 +24,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "hopscotch_set.h", "hopscotch__set_8h.html", "hopscotch__set_8h" ],
     [ "Ioss_Assembly.C", "Ioss__Assembly_8C.html", "Ioss__Assembly_8C" ],
     [ "Ioss_Assembly.h", "Ioss__Assembly_8h.html", "Ioss__Assembly_8h" ],
-    [ "Ioss_Basis.h", "Ioss__Basis_8h.html", [
-      [ "Ioss::BasisEntry", "structIoss_1_1BasisEntry.html", "structIoss_1_1BasisEntry" ],
-      [ "Ioss::Basis", "classIoss_1_1Basis.html", "classIoss_1_1Basis" ]
-    ] ],
     [ "Ioss_Beam2.C", "Ioss__Beam2_8C.html", [
       [ "Ioss::St_Beam2", "classIoss_1_1St__Beam2.html", "classIoss_1_1St__Beam2" ],
       [ "anonymous_namespace{Ioss_Beam2.C}::Constants", "structanonymous__namespace_02Ioss__Beam2_8C_03_1_1Constants.html", "structanonymous__namespace_02Ioss__Beam2_8C_03_1_1Constants" ]
@@ -241,7 +237,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Ioss_Initializer.h", "Ioss__Initializer_8h.html", [
       [ "Ioss::Initializer", "classIoss_1_1Initializer.html", "classIoss_1_1Initializer" ]
     ] ],
-    [ "Ioss_InputDatabase.h", "Ioss__InputDatabase_8h.html", null ],
     [ "Ioss_IOFactory.C", "Ioss__IOFactory_8C.html", "Ioss__IOFactory_8C" ],
     [ "Ioss_IOFactory.h", "Ioss__IOFactory_8h.html", "Ioss__IOFactory_8h" ],
     [ "Ioss_Map.C", "Ioss__Map_8C.html", "Ioss__Map_8C" ],

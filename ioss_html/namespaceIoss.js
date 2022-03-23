@@ -8,8 +8,6 @@ var namespaceIoss =
     [ "Asym_Tensor_02", "classIoss_1_1Asym__Tensor__02.html", "classIoss_1_1Asym__Tensor__02" ],
     [ "Asym_Tensor_03", "classIoss_1_1Asym__Tensor__03.html", "classIoss_1_1Asym__Tensor__03" ],
     [ "AxisAlignedBoundingBox", "structIoss_1_1AxisAlignedBoundingBox.html", "structIoss_1_1AxisAlignedBoundingBox" ],
-    [ "Basis", "classIoss_1_1Basis.html", "classIoss_1_1Basis" ],
-    [ "BasisEntry", "structIoss_1_1BasisEntry.html", "structIoss_1_1BasisEntry" ],
     [ "Beam2", "classIoss_1_1Beam2.html", "classIoss_1_1Beam2" ],
     [ "Beam3", "classIoss_1_1Beam3.html", "classIoss_1_1Beam3" ],
     [ "Beam4", "classIoss_1_1Beam4.html", "classIoss_1_1Beam4" ],
