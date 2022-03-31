@@ -57,6 +57,16 @@
       <table class="zebra" WIDTH=90% align=center  BGCOLOR=WHITE CELLPADDING=10>
 	<tr align=left><th>Date</th><th>Code</th><th>Version</th><th>Change</tr>
 
+	<tr><td>2022-03-30</td>
+          <td>numbers</td><td>1.30</td>
+
+	  <td>Added `mcavity {ids}` command.  Will treat each id as a
+	  separate cavity, calculates the volume statistics for each
+	  cavity, but only reads the file once resulting in much
+	  faster overall execution compared to the cavity command
+	  which reads the file once for each cavity.
+	</tr>
+
 	<tr><td>2022-02-16</td>
           <td>epu</td><td>6.03</td>
 
