@@ -161,6 +161,19 @@ var hierarchy =
     [ "Iotm::text_mesh::ElementData< EntityId, Topology >", "structIotm_1_1text__mesh_1_1ElementData.html", null ],
     [ "Iotm::text_mesh::ElementDataLess< EntityId, Topology >", "structIotm_1_1text__mesh_1_1ElementDataLess.html", null ],
     [ "Iotm::unit_test::TextMeshFixture::ElementInfo", "structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html", null ],
+    [ "Ioss::ElementPermutation", "classIoss_1_1ElementPermutation.html", [
+      [ "Ioss::HexPermutation", "classIoss_1_1HexPermutation.html", null ],
+      [ "Ioss::LinePermutation", "classIoss_1_1LinePermutation.html", null ],
+      [ "Ioss::NullPermutation", "classIoss_1_1NullPermutation.html", null ],
+      [ "Ioss::PyramidPermutation", "classIoss_1_1PyramidPermutation.html", null ],
+      [ "Ioss::QuadPermutation", "classIoss_1_1QuadPermutation.html", null ],
+      [ "Ioss::SpherePermutation", "classIoss_1_1SpherePermutation.html", null ],
+      [ "Ioss::SpringPermutation", "classIoss_1_1SpringPermutation.html", null ],
+      [ "Ioss::SuperPermutation", "classIoss_1_1SuperPermutation.html", null ],
+      [ "Ioss::TetPermutation", "classIoss_1_1TetPermutation.html", null ],
+      [ "Ioss::TriPermutation", "classIoss_1_1TriPermutation.html", null ],
+      [ "Ioss::WedgePermutation", "classIoss_1_1WedgePermutation.html", null ]
+    ] ],
     [ "Ioss::ElementTopology", "classIoss_1_1ElementTopology.html", [
       [ "Ioss::Beam2", "classIoss_1_1Beam2.html", null ],
       [ "Ioss::Beam3", "classIoss_1_1Beam3.html", null ],
@@ -263,6 +276,7 @@ var hierarchy =
     [ "Iotm::text_mesh::EntityGroupData< SidesetDataType< EntityId > >", "structIotm_1_1text__mesh_1_1EntityGroupData.html", [
       [ "Iotm::text_mesh::SidesetData< EntityId, Topology >", "structIotm_1_1text__mesh_1_1SidesetData.html", null ]
     ] ],
+    [ "Ioss::EPRegistry", "classIoss_1_1EPRegistry.html", null ],
     [ "std::equal_to", null, [
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< INT, INT >, KeySelect, ValueSelect, std::hash< INT >, std::equal_to< INT >, std::allocator< std::pair< INT, INT > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const int64_t, int64_t >, KeySelect, ValueSelect, std::hash< int64_t >, std::equal_to< int64_t >, std::allocator< std::pair< const int64_t, int64_t > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],

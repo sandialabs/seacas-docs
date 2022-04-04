@@ -23,5 +23,6 @@ var searchData=
   ['pyramid14_20',['Pyramid14',['../classIoss_1_1Pyramid14.html',1,'Ioss']]],
   ['pyramid18_21',['Pyramid18',['../classIoss_1_1Pyramid18.html',1,'Ioss']]],
   ['pyramid19_22',['Pyramid19',['../classIoss_1_1Pyramid19.html',1,'Ioss']]],
-  ['pyramid5_23',['Pyramid5',['../classIoss_1_1Pyramid5.html',1,'Ioss']]]
+  ['pyramid5_23',['Pyramid5',['../classIoss_1_1Pyramid5.html',1,'Ioss']]],
+  ['pyramidpermutation_24',['PyramidPermutation',['../classIoss_1_1PyramidPermutation.html',1,'Ioss']]]
 ];

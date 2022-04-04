@@ -9,6 +9,7 @@ var classIoss_1_1Node =
     [ "face_connectivity", "classIoss_1_1Node.html#ac6ed302297a5d11681042c3890492026", null ],
     [ "face_type", "classIoss_1_1Node.html#a48c0b468626dcffcfd0d62fbeeaedc9c", null ],
     [ "factory", "classIoss_1_1Node.html#ae579243912dc1e9dd72b6ae4f6e11432", null ],
+    [ "is_shell", "classIoss_1_1Node.html#a7ac5d204e82f087c461b41c2e99db13a", null ],
     [ "number_corner_nodes", "classIoss_1_1Node.html#acda3295ef9c39e17c4969ff36d889c63", null ],
     [ "number_edges", "classIoss_1_1Node.html#a531200d2eb287581ee523edbabadc907", null ],
     [ "number_edges_face", "classIoss_1_1Node.html#a6ed79ca794944106a954755b53b1f06e", null ],
@@ -20,6 +21,6 @@ var classIoss_1_1Node =
     [ "parametric_dimension", "classIoss_1_1Node.html#a8374de007fb90d624a471516edd1f985", null ],
     [ "shape", "classIoss_1_1Node.html#af415e2d517a9025cae0ab91c3498aee9", null ],
     [ "spatial_dimension", "classIoss_1_1Node.html#a46067b84565ede9f77dc80377cef1975", null ],
-    [ "instance_", "classIoss_1_1Node.html#af9dd4c2a2272d0dd582ec44d7b1e775a", null ],
+    [ "validate_permutation_nodes", "classIoss_1_1Node.html#a4d45ab9f7fdc45be33971c86de5d2fe4", null ],
     [ "name", "classIoss_1_1Node.html#a42b009b7f9adfcd45010becafbb116ed", null ]
 ];

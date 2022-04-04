@@ -10,6 +10,7 @@ var classIoss_1_1Tri7 =
     [ "face_type", "classIoss_1_1Tri7.html#a651838ca5b586bd9419b6f98766c4365", null ],
     [ "factory", "classIoss_1_1Tri7.html#a4fe80cae1ee5fd3070c1b17cade5e59f", null ],
     [ "is_element", "classIoss_1_1Tri7.html#a2e3a4a6d48b34a490df162de77a51988", null ],
+    [ "is_shell", "classIoss_1_1Tri7.html#a621a075b1a6eca01175ea24d3753a324", null ],
     [ "number_corner_nodes", "classIoss_1_1Tri7.html#a08c0d7df5d23b5d167b3da41c471c5a8", null ],
     [ "number_edges", "classIoss_1_1Tri7.html#a6f48eb90ab2f175b55eafc66d0fffff1", null ],
     [ "number_edges_face", "classIoss_1_1Tri7.html#a2e36fa4800efaa5612e5b603bbcd1bd8", null ],
@@ -21,6 +22,5 @@ var classIoss_1_1Tri7 =
     [ "parametric_dimension", "classIoss_1_1Tri7.html#a9797e1b785695a4d26ee4fe2a67677c9", null ],
     [ "shape", "classIoss_1_1Tri7.html#a243a435eb0062b91461ed2a13defc420", null ],
     [ "spatial_dimension", "classIoss_1_1Tri7.html#a023e98ceb4d292a9eb7e859393c73133", null ],
-    [ "instance_", "classIoss_1_1Tri7.html#abfd7a5ef7840894f75b65ae35d45710a", null ],
     [ "name", "classIoss_1_1Tri7.html#a41b476a14e525b6a924ecbafa08499b0", null ]
 ];

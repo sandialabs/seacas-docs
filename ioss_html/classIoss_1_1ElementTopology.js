@@ -4,6 +4,7 @@ var classIoss_1_1ElementTopology =
     [ "~ElementTopology", "classIoss_1_1ElementTopology.html#a7e19160bfc502ba80bec84ef1c9a902c", null ],
     [ "ElementTopology", "classIoss_1_1ElementTopology.html#a20e888db3fe83ffdb9d594a024f8200a", null ],
     [ "alias", "classIoss_1_1ElementTopology.html#aebb05d3060d648c95e263fb81be6dd84", null ],
+    [ "base_topology_permutation_name", "classIoss_1_1ElementTopology.html#aab6e91775c957c01d180a2743bd2106f", null ],
     [ "boundary_connectivity", "classIoss_1_1ElementTopology.html#ab9ad470842413049a5cbcb1cac384045", null ],
     [ "boundary_type", "classIoss_1_1ElementTopology.html#a264efcfd8390e25c8fbcafa44c9273da", null ],
     [ "describe", "classIoss_1_1ElementTopology.html#ab5087262ab815eded898d96def58b049", null ],
@@ -24,6 +25,7 @@ var classIoss_1_1ElementTopology =
     [ "get_unique_id", "classIoss_1_1ElementTopology.html#ab7e73e6abc7346914d86da30fc5395b8", null ],
     [ "is_alias", "classIoss_1_1ElementTopology.html#ab2e5e3bfc95bc38d16098a0f5f382782", null ],
     [ "is_element", "classIoss_1_1ElementTopology.html#a421e791d2692890cb1b59df1721c528f", null ],
+    [ "is_shell", "classIoss_1_1ElementTopology.html#ae11391a597a38b3bc48f9161f2cd8387", null ],
     [ "master_element_name", "classIoss_1_1ElementTopology.html#a60ef4781a92ce294c657964e0b3adcfb", null ],
     [ "name", "classIoss_1_1ElementTopology.html#ae1f0ec6719d0491b4089aa0a3fe0ea66", null ],
     [ "number_boundaries", "classIoss_1_1ElementTopology.html#a8ed5d93f55f9965ad789fd12f7295daa", null ],
@@ -39,9 +41,12 @@ var classIoss_1_1ElementTopology =
     [ "operator==", "classIoss_1_1ElementTopology.html#ad6a3ea2a52f7080a028047c3743cbde5", null ],
     [ "order", "classIoss_1_1ElementTopology.html#a35b8c72c39ed8e311168356ce761d88e", null ],
     [ "parametric_dimension", "classIoss_1_1ElementTopology.html#a14c856ccdd0651d127e4d26433b99f47", null ],
+    [ "permutation", "classIoss_1_1ElementTopology.html#af7857e125ae59c70c611b5ce6ec18999", null ],
     [ "registry", "classIoss_1_1ElementTopology.html#ade04c77d0aba4af5a36b562da02ba1c8", null ],
     [ "shape", "classIoss_1_1ElementTopology.html#a477e1058938f046445651e6072ba605b", null ],
     [ "spatial_dimension", "classIoss_1_1ElementTopology.html#a0b99a087f1e1a7767328af25c8324bb7", null ],
+    [ "topology_shape_to_permutation_name", "classIoss_1_1ElementTopology.html#a024a558d09cd800ad85444717c1f6859", null ],
+    [ "validate_permutation_nodes", "classIoss_1_1ElementTopology.html#abfa975910d6a14c27ac9c1d54afad568", null ],
     [ "masterElementName_", "classIoss_1_1ElementTopology.html#aa758f77708d1aec6fdb0a5c8faaafdcb", null ],
     [ "name_", "classIoss_1_1ElementTopology.html#a8789e652dc0cc61f052fa9b7fa87833c", null ]
 ];

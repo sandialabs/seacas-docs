@@ -11,6 +11,7 @@ var classIoss_1_1TriShell4 =
     [ "face_type", "classIoss_1_1TriShell4.html#a4287b9b457030b490a4383ac36087439", null ],
     [ "factory", "classIoss_1_1TriShell4.html#a98a21bb0323cb09b92909e66f9ed073c", null ],
     [ "is_element", "classIoss_1_1TriShell4.html#a34f96eabcb67dd336f4bba6eae6547ae", null ],
+    [ "is_shell", "classIoss_1_1TriShell4.html#a5de38c938c52cb28f63f0da0d82e27dc", null ],
     [ "number_corner_nodes", "classIoss_1_1TriShell4.html#a7afc1d0da6821aefbe1eb103ff50dab4", null ],
     [ "number_edges", "classIoss_1_1TriShell4.html#a4abc705677e620df0497c6e78b63e7ec", null ],
     [ "number_edges_face", "classIoss_1_1TriShell4.html#af1eb529200e7724ca1df486ab1aca437", null ],
@@ -22,6 +23,5 @@ var classIoss_1_1TriShell4 =
     [ "parametric_dimension", "classIoss_1_1TriShell4.html#aa87c9628c2332642aa96d1e405883238", null ],
     [ "shape", "classIoss_1_1TriShell4.html#a84d116f292724ce2e2112fa850f9b322", null ],
     [ "spatial_dimension", "classIoss_1_1TriShell4.html#a4c20572cd3c4110a436a1e1cbfb2f8a9", null ],
-    [ "instance_", "classIoss_1_1TriShell4.html#aadb36aeda57340bd17137d8783b44e93", null ],
     [ "name", "classIoss_1_1TriShell4.html#a991a24d5a9be3521f24bb13bc2186341", null ]
 ];

@@ -11,6 +11,7 @@ var classIoss_1_1Tet16 =
     [ "face_type", "classIoss_1_1Tet16.html#a5ff8364c02ce0008f4e939e4a30abc5a", null ],
     [ "factory", "classIoss_1_1Tet16.html#afcc952686e31acd899e8c0750124ff3b", null ],
     [ "is_element", "classIoss_1_1Tet16.html#ac5df24cb3277d8fb223130f0caa31a9a", null ],
+    [ "is_shell", "classIoss_1_1Tet16.html#a35ebdc6d7c030ee8ba3a77a078c828e5", null ],
     [ "number_corner_nodes", "classIoss_1_1Tet16.html#ab61622adf67f06d5984f40f645aceadd", null ],
     [ "number_edges", "classIoss_1_1Tet16.html#a46cb847a7c9d649f1c4ff4725b4bfb03", null ],
     [ "number_edges_face", "classIoss_1_1Tet16.html#a0f495e1c67364333df91350e36c85d5c", null ],
@@ -22,6 +23,5 @@ var classIoss_1_1Tet16 =
     [ "parametric_dimension", "classIoss_1_1Tet16.html#a39ef76d9cfb5ac33a8b4297d3865b366", null ],
     [ "shape", "classIoss_1_1Tet16.html#ab9e0452a93eb407e49ec5530836b1a83", null ],
     [ "spatial_dimension", "classIoss_1_1Tet16.html#a3c6d4fa5d44ba5b910dc313e5ad1a457", null ],
-    [ "instance_", "classIoss_1_1Tet16.html#adeae6e776d7e631038e9462dcfc81d0f", null ],
     [ "name", "classIoss_1_1Tet16.html#a3c09a062614e6bd093c5b3784a4da12d", null ]
 ];

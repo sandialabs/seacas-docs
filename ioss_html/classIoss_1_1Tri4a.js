@@ -11,6 +11,7 @@ var classIoss_1_1Tri4a =
     [ "face_type", "classIoss_1_1Tri4a.html#a2a97cb506ec29eb05fc5130982610f92", null ],
     [ "factory", "classIoss_1_1Tri4a.html#af7a441282b97165a2efc948dacd45d34", null ],
     [ "is_element", "classIoss_1_1Tri4a.html#a8de8b020910eaeff60e169696a31b081", null ],
+    [ "is_shell", "classIoss_1_1Tri4a.html#aed961c2e914fc0930f750206dab95814", null ],
     [ "number_corner_nodes", "classIoss_1_1Tri4a.html#aecb707faf827cfa3d7674a50cd8a0e01", null ],
     [ "number_edges", "classIoss_1_1Tri4a.html#a5dfe322ed0a094e93eaa992f99cec871", null ],
     [ "number_edges_face", "classIoss_1_1Tri4a.html#ae189248fdfffb9723f0940a28fba0f59", null ],
@@ -22,6 +23,5 @@ var classIoss_1_1Tri4a =
     [ "parametric_dimension", "classIoss_1_1Tri4a.html#a51beb2b1f3bc2ad9081722e8bb9d75cd", null ],
     [ "shape", "classIoss_1_1Tri4a.html#a424c58fabd60b466719d6faaf0003f1f", null ],
     [ "spatial_dimension", "classIoss_1_1Tri4a.html#a6814569dd48827ad9762bf043666ccdf", null ],
-    [ "instance_", "classIoss_1_1Tri4a.html#a8056802fee146e9590b4f503cc151990", null ],
     [ "name", "classIoss_1_1Tri4a.html#a92742a1fde7bfdc27e4a5c4e5417bd74", null ]
 ];

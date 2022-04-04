@@ -10,6 +10,7 @@ var classIoss_1_1Quad12 =
     [ "face_type", "classIoss_1_1Quad12.html#a927b20cacbf45c6d020bd4da05e0a7df", null ],
     [ "factory", "classIoss_1_1Quad12.html#a536c17c89b5fa2720f751363a87abd2c", null ],
     [ "is_element", "classIoss_1_1Quad12.html#a17399891f163a9c94aba9028ab608ec9", null ],
+    [ "is_shell", "classIoss_1_1Quad12.html#a92ba2e4a01aa4269e354b9cb42d008b1", null ],
     [ "number_corner_nodes", "classIoss_1_1Quad12.html#a9292d1e61134bed71fce6b75f613684b", null ],
     [ "number_edges", "classIoss_1_1Quad12.html#a6b3004642d730b3a4cb2c5364a919796", null ],
     [ "number_edges_face", "classIoss_1_1Quad12.html#a8e7e3572817af48a559e2b47fccc82bb", null ],
@@ -21,6 +22,5 @@ var classIoss_1_1Quad12 =
     [ "parametric_dimension", "classIoss_1_1Quad12.html#a7b6c9c51fa4178f617c1c7eafd7d4ece", null ],
     [ "shape", "classIoss_1_1Quad12.html#ab3bd9b7a720603521597d7f6ff2899e6", null ],
     [ "spatial_dimension", "classIoss_1_1Quad12.html#a29c1094df30d0afc5c30889083759c6c", null ],
-    [ "instance_", "classIoss_1_1Quad12.html#a1175d2998b16cc215760d24beec97078", null ],
     [ "name", "classIoss_1_1Quad12.html#a43cf6b0113ad78853162ad4af816759f", null ]
 ];

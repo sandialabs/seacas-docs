@@ -134,6 +134,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Ioss_ElementBlock.h", "Ioss__ElementBlock_8h.html", [
       [ "Ioss::ElementBlock", "classIoss_1_1ElementBlock.html", "classIoss_1_1ElementBlock" ]
     ] ],
+    [ "Ioss_ElementPermutation.C", "Ioss__ElementPermutation_8C.html", null ],
+    [ "Ioss_ElementPermutation.h", "Ioss__ElementPermutation_8h.html", "Ioss__ElementPermutation_8h" ],
     [ "Ioss_ElementSet.C", "Ioss__ElementSet_8C.html", null ],
     [ "Ioss_ElementSet.h", "Ioss__ElementSet_8h.html", [
       [ "Ioss::ElementSet", "classIoss_1_1ElementSet.html", "classIoss_1_1ElementSet" ]

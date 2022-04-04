@@ -12,6 +12,7 @@ var classIoss_1_1Pyramid14 =
     [ "faces_similar", "classIoss_1_1Pyramid14.html#a6115246b36674779e622e9ea8bcb5dad", null ],
     [ "factory", "classIoss_1_1Pyramid14.html#ae7381f6ea0b1f7e7a35cd07cc854b191", null ],
     [ "is_element", "classIoss_1_1Pyramid14.html#a53e8cf3b0dd053067abb886fb8563253", null ],
+    [ "is_shell", "classIoss_1_1Pyramid14.html#ac9ba39e0904f12680d41500f13b39d69", null ],
     [ "number_corner_nodes", "classIoss_1_1Pyramid14.html#a46ab928075554b2abf1a46c2a131d19a", null ],
     [ "number_edges", "classIoss_1_1Pyramid14.html#aff9df6a10d6a1f4988394d8fd1c55147", null ],
     [ "number_edges_face", "classIoss_1_1Pyramid14.html#a4515b90dd9e17e7089e313323fb073aa", null ],

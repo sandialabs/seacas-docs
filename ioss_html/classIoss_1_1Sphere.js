@@ -3,6 +3,7 @@ var classIoss_1_1Sphere =
     [ "~Sphere", "classIoss_1_1Sphere.html#a77ac901b2cb85e8e11489226a6cb9bc6", null ],
     [ "Sphere", "classIoss_1_1Sphere.html#a5f96c6d69bda30de233e7dee7e9fef78", null ],
     [ "Sphere", "classIoss_1_1Sphere.html#a20e7bcd9f1d9903aa755e34204a6891e", null ],
+    [ "base_topology_permutation_name", "classIoss_1_1Sphere.html#acb015302076711c791c2bb0211d30234", null ],
     [ "edge_connectivity", "classIoss_1_1Sphere.html#afc7507301545a3bb973db0d74eb15e87", null ],
     [ "edge_type", "classIoss_1_1Sphere.html#a36379493784eb71d9287a18ba6ad4ada", null ],
     [ "element_connectivity", "classIoss_1_1Sphere.html#aebc65aad81db9fcafd5ff1a181935333", null ],
@@ -10,6 +11,7 @@ var classIoss_1_1Sphere =
     [ "face_type", "classIoss_1_1Sphere.html#a29f9faa00d3fb8b1f7d5e3318838c469", null ],
     [ "factory", "classIoss_1_1Sphere.html#a7019ea4e77efd463972ac156170b8e6b", null ],
     [ "is_element", "classIoss_1_1Sphere.html#aaae33603e1444a885e568539af6f5811", null ],
+    [ "is_shell", "classIoss_1_1Sphere.html#a2006b9ba3343c060809f62cd73d60ce6", null ],
     [ "number_corner_nodes", "classIoss_1_1Sphere.html#a6177ff96271a624e628af96e44cff270", null ],
     [ "number_edges", "classIoss_1_1Sphere.html#af5e53a57399b4285f3ab10923db89e2e", null ],
     [ "number_edges_face", "classIoss_1_1Sphere.html#a035f0b968207375bc094cbcadea88986", null ],
@@ -21,6 +23,5 @@ var classIoss_1_1Sphere =
     [ "parametric_dimension", "classIoss_1_1Sphere.html#a2dcde5abc046af5df79b2f6cf983be1e", null ],
     [ "shape", "classIoss_1_1Sphere.html#aee61bd5acff7286ed6fb8c3d2c13e617", null ],
     [ "spatial_dimension", "classIoss_1_1Sphere.html#ac6162950f48ea5be1c582b15d3c867cd", null ],
-    [ "instance_", "classIoss_1_1Sphere.html#a2ffd4e029e4fcf37aa802a8de2383a1b", null ],
     [ "name", "classIoss_1_1Sphere.html#aa197cd067718d6bda5b955a86309280f", null ]
 ];

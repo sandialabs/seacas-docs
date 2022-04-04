@@ -10,6 +10,7 @@ var classIoss_1_1ShellLine2D2 =
     [ "face_type", "classIoss_1_1ShellLine2D2.html#a162d6850c018466334ee5f34aa9fd499", null ],
     [ "factory", "classIoss_1_1ShellLine2D2.html#a9c985ad521eb93e6cc27b4cb039fdcf0", null ],
     [ "is_element", "classIoss_1_1ShellLine2D2.html#a21caaafd27368d59400a554df8fe104d", null ],
+    [ "is_shell", "classIoss_1_1ShellLine2D2.html#adf49fdad4dd0288ccccb9d45ac44c493", null ],
     [ "number_corner_nodes", "classIoss_1_1ShellLine2D2.html#afe7762c7a13c324ca0c3defe78f47c9b", null ],
     [ "number_edges", "classIoss_1_1ShellLine2D2.html#aee784947d334ecb07a2029af0ca6e781", null ],
     [ "number_edges_face", "classIoss_1_1ShellLine2D2.html#a02f8e26e7f7f501c4a0bab0c2f4157ee", null ],
@@ -21,6 +22,5 @@ var classIoss_1_1ShellLine2D2 =
     [ "parametric_dimension", "classIoss_1_1ShellLine2D2.html#ae68068f8684eaa0a905cbc0d2cfaa965", null ],
     [ "shape", "classIoss_1_1ShellLine2D2.html#aa432c5268d01d0750536b841ed0604fb", null ],
     [ "spatial_dimension", "classIoss_1_1ShellLine2D2.html#a058c0508576c89ff0d1c570b2097d603", null ],
-    [ "instance_", "classIoss_1_1ShellLine2D2.html#a9ec0efaf0d6959187f9ef0115a287f9f", null ],
     [ "name", "classIoss_1_1ShellLine2D2.html#aa81e558da28b2cc46143030a29eb9aa2", null ]
 ];

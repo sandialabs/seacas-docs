@@ -8,5 +8,6 @@ var searchData=
   ['wedge21_5',['Wedge21',['../classIoss_1_1Wedge21.html',1,'Ioss']]],
   ['wedge24_6',['Wedge24',['../classIoss_1_1Wedge24.html',1,'Ioss']]],
   ['wedge52_7',['Wedge52',['../classIoss_1_1Wedge52.html',1,'Ioss']]],
-  ['wedge6_8',['Wedge6',['../classIoss_1_1Wedge6.html',1,'Ioss']]]
+  ['wedge6_8',['Wedge6',['../classIoss_1_1Wedge6.html',1,'Ioss']]],
+  ['wedgepermutation_9',['WedgePermutation',['../classIoss_1_1WedgePermutation.html',1,'Ioss']]]
 ];

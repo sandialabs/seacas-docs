@@ -10,6 +10,7 @@ var classIoss_1_1Spring2 =
     [ "face_type", "classIoss_1_1Spring2.html#a38397e1ef7f737e1188db42059e2069c", null ],
     [ "factory", "classIoss_1_1Spring2.html#a829555735162ebe635396278b7471acd", null ],
     [ "is_element", "classIoss_1_1Spring2.html#a076b8020a18b767943be571d6bafc390", null ],
+    [ "is_shell", "classIoss_1_1Spring2.html#aba7974a5e23a305838ca41d42336c1c1", null ],
     [ "number_corner_nodes", "classIoss_1_1Spring2.html#aa1f34f5cc57f75250d9531c1afdf68b2", null ],
     [ "number_edges", "classIoss_1_1Spring2.html#a880f590fc30f8db5f9de911d8e976878", null ],
     [ "number_edges_face", "classIoss_1_1Spring2.html#af4227b0d50719e6f4150df3b500a2dc1", null ],
@@ -21,6 +22,5 @@ var classIoss_1_1Spring2 =
     [ "parametric_dimension", "classIoss_1_1Spring2.html#aadfb31d3c1ad9ce9e2fc48706290fb00", null ],
     [ "shape", "classIoss_1_1Spring2.html#a1c046c2d7a0f0a7029a60ba59b429e0c", null ],
     [ "spatial_dimension", "classIoss_1_1Spring2.html#ab74f2f30ede86a73de7529535b45c22f", null ],
-    [ "instance_", "classIoss_1_1Spring2.html#af04335c96e4fdcaf54553a97701fd6d5", null ],
     [ "name", "classIoss_1_1Spring2.html#a9d366fa583f228980aa3c0ea7d30694b", null ]
 ];

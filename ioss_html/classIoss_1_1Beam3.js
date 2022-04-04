@@ -10,6 +10,7 @@ var classIoss_1_1Beam3 =
     [ "face_type", "classIoss_1_1Beam3.html#a7ae83ad02c792feb85192615329f472e", null ],
     [ "factory", "classIoss_1_1Beam3.html#af6e7aa79d890cef5f35aa301b9017e7d", null ],
     [ "is_element", "classIoss_1_1Beam3.html#a063dc37baf28cb92f98ac519a12c53d7", null ],
+    [ "is_shell", "classIoss_1_1Beam3.html#a17b1359455160c6a0e325d869e062855", null ],
     [ "number_corner_nodes", "classIoss_1_1Beam3.html#afcd57e16b4d2011aaa3593f254ba4faf", null ],
     [ "number_edges", "classIoss_1_1Beam3.html#a9007af4f4aea14a0d2343d7e7e9e2388", null ],
     [ "number_edges_face", "classIoss_1_1Beam3.html#a5bf02e9cba4e1c6cf993866dbdba5179", null ],
@@ -21,6 +22,5 @@ var classIoss_1_1Beam3 =
     [ "parametric_dimension", "classIoss_1_1Beam3.html#af54d7a30d4267df3782409716a7a8b47", null ],
     [ "shape", "classIoss_1_1Beam3.html#a93e6fe4e14ad07e6e39e9dcbafd9344c", null ],
     [ "spatial_dimension", "classIoss_1_1Beam3.html#a7ef21a65a4f8c6361fd23111d7b7c361", null ],
-    [ "instance_", "classIoss_1_1Beam3.html#a4b33ea64e8e3cfbcacb050fce56c4f0d", null ],
     [ "name", "classIoss_1_1Beam3.html#a59bd0c49fe0d22e94ed72f77395d42c5", null ]
 ];

@@ -11,6 +11,7 @@ var classIoss_1_1Hex9 =
     [ "face_type", "classIoss_1_1Hex9.html#a82b563194247f3bae48de4a1d286b731", null ],
     [ "factory", "classIoss_1_1Hex9.html#aa69b91d2df99e60b916f44db53fc04c8", null ],
     [ "is_element", "classIoss_1_1Hex9.html#a3a5ddf80be9c54fc0cf13db574054de6", null ],
+    [ "is_shell", "classIoss_1_1Hex9.html#a6832faba2338f8a9981bc90aee1fc326", null ],
     [ "number_corner_nodes", "classIoss_1_1Hex9.html#ad0913b892e40e9e726f67574a2fcb5b0", null ],
     [ "number_edges", "classIoss_1_1Hex9.html#af27859e4c8a812059209ac5b3fd369e2", null ],
     [ "number_edges_face", "classIoss_1_1Hex9.html#aab03b0e32a7ae7607cfe5632ad35c471", null ],
@@ -22,6 +23,5 @@ var classIoss_1_1Hex9 =
     [ "parametric_dimension", "classIoss_1_1Hex9.html#a09ba9da79dced485bdbd2dc6d3733e0f", null ],
     [ "shape", "classIoss_1_1Hex9.html#a0010d0bd6e1f24f9b0481023f323e8c3", null ],
     [ "spatial_dimension", "classIoss_1_1Hex9.html#a3a00765c01482c8e797010eb96106d73", null ],
-    [ "instance_", "classIoss_1_1Hex9.html#a19b4d46552f882395427aca51ddf21d1", null ],
     [ "name", "classIoss_1_1Hex9.html#a24b6c0408ff91aa1abf9bd0ec50e0606", null ]
 ];

@@ -12,6 +12,7 @@ var classIoss_1_1Wedge52 =
     [ "faces_similar", "classIoss_1_1Wedge52.html#aa013745b4f952722b94a6a1074f324d7", null ],
     [ "factory", "classIoss_1_1Wedge52.html#a9ac9bea568266b8617913adec8c78a66", null ],
     [ "is_element", "classIoss_1_1Wedge52.html#a2ed9b88250b8fb93796c2decf8b540ed", null ],
+    [ "is_shell", "classIoss_1_1Wedge52.html#a45c1e7783bd1d501e70611b54c7d2804", null ],
     [ "number_corner_nodes", "classIoss_1_1Wedge52.html#ae2883d747d4af7427e1ebc63fb533d88", null ],
     [ "number_edges", "classIoss_1_1Wedge52.html#a30a74f0544f02eae62678d4249f9016c", null ],
     [ "number_edges_face", "classIoss_1_1Wedge52.html#aae6ae5479ea98d06351657a79f557b36", null ],

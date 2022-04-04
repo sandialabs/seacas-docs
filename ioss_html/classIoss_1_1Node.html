@@ -87,7 +87,6 @@ $(document).ready(function(){initNavTree('classIoss_1_1Node.html',''); initResiz
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classIoss_1_1Node-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Ioss::Node Class Reference</div></div>
 </div><!--header-->
@@ -102,7 +101,7 @@ Inheritance diagram for Ioss::Node:</div>
 <div class="dynheader">
 Collaboration diagram for Ioss::Node:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classIoss_1_1Node__coll__graph.svg" width="218" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classIoss_1_1Node__coll__graph.svg" width="166" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -111,12 +110,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adf7a0347798f10fab61e40b9311176f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1769ee52c8ab0fd9f14b174bbaa7ea6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#a1769ee52c8ab0fd9f14b174bbaa7ea6c">~Node</a> () override=default</td></tr>
 <tr class="separator:a1769ee52c8ab0fd9f14b174bbaa7ea6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af415e2d517a9025cae0ab91c3498aee9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#acc1610b8e37168350b478a07112dffcf">ElementShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#af415e2d517a9025cae0ab91c3498aee9">shape</a> () const override</td></tr>
+<tr class="memitem:af415e2d517a9025cae0ab91c3498aee9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44">ElementShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#af415e2d517a9025cae0ab91c3498aee9">shape</a> () const override</td></tr>
 <tr class="separator:af415e2d517a9025cae0ab91c3498aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46067b84565ede9f77dc80377cef1975"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#a46067b84565ede9f77dc80377cef1975">spatial_dimension</a> () const override</td></tr>
 <tr class="separator:a46067b84565ede9f77dc80377cef1975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8374de007fb90d624a471516edd1f985"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#a8374de007fb90d624a471516edd1f985">parametric_dimension</a> () const override</td></tr>
 <tr class="separator:a8374de007fb90d624a471516edd1f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac5d204e82f087c461b41c2e99db13a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#a7ac5d204e82f087c461b41c2e99db13a">is_shell</a> () const override</td></tr>
+<tr class="separator:a7ac5d204e82f087c461b41c2e99db13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36683f97a2fb8ba6b2180c77e9615c52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#a36683f97a2fb8ba6b2180c77e9615c52">order</a> () const override</td></tr>
 <tr class="separator:a36683f97a2fb8ba6b2180c77e9615c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acda3295ef9c39e17c4969ff36d889c63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#acda3295ef9c39e17c4969ff36d889c63">number_corner_nodes</a> () const override</td></tr>
@@ -158,10 +159,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae1f0ec6719d0491b4089aa0a3fe0ea66 inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ef4781a92ce294c657964e0b3adcfb inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#a60ef4781a92ce294c657964e0b3adcfb">master_element_name</a> () const</td></tr>
 <tr class="separator:a60ef4781a92ce294c657964e0b3adcfb inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a477e1058938f046445651e6072ba605b inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceIoss.html#acc1610b8e37168350b478a07112dffcf">ElementShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#a477e1058938f046445651e6072ba605b">shape</a> () const =0</td></tr>
+<tr class="memitem:a477e1058938f046445651e6072ba605b inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44">ElementShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#a477e1058938f046445651e6072ba605b">shape</a> () const =0</td></tr>
 <tr class="separator:a477e1058938f046445651e6072ba605b inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a421e791d2692890cb1b59df1721c528f inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#a421e791d2692890cb1b59df1721c528f">is_element</a> () const</td></tr>
 <tr class="separator:a421e791d2692890cb1b59df1721c528f inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11391a597a38b3bc48f9161f2cd8387 inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#ae11391a597a38b3bc48f9161f2cd8387">is_shell</a> () const =0</td></tr>
+<tr class="separator:ae11391a597a38b3bc48f9161f2cd8387 inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b99a087f1e1a7767328af25c8324bb7 inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#a0b99a087f1e1a7767328af25c8324bb7">spatial_dimension</a> () const =0</td></tr>
 <tr class="separator:a0b99a087f1e1a7767328af25c8324bb7 inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c856ccdd0651d127e4d26433b99f47 inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#a14c856ccdd0651d127e4d26433b99f47">parametric_dimension</a> () const =0</td></tr>
@@ -212,6 +215,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab6cd2acbb68203f6d983ab4d3f3bbf4f inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2aded8118a9fe599e84a32c39e65e1a inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#aa2aded8118a9fe599e84a32c39e65e1a">equal</a> (const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> &amp;rhs) const</td></tr>
 <tr class="separator:aa2aded8118a9fe599e84a32c39e65e1a inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7857e125ae59c70c611b5ce6ec18999 inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1ElementPermutation.html">ElementPermutation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#af7857e125ae59c70c611b5ce6ec18999">permutation</a> () const</td></tr>
+<tr class="separator:af7857e125ae59c70c611b5ce6ec18999 inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6e91775c957c01d180a2743bd2106f inherit pub_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#aab6e91775c957c01d180a2743bd2106f">base_topology_permutation_name</a> () const</td></tr>
+<tr class="separator:aab6e91775c957c01d180a2743bd2106f inherit pub_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -240,14 +247,13 @@ Static Public Attributes</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aff50412fff5f651be5024cdd6f8ea683"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#aff50412fff5f651be5024cdd6f8ea683">Node</a> ()</td></tr>
 <tr class="separator:aff50412fff5f651be5024cdd6f8ea683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d45ab9f7fdc45be33971c86de5d2fe4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#a4d45ab9f7fdc45be33971c86de5d2fe4">validate_permutation_nodes</a> () const override</td></tr>
+<tr class="separator:a4d45ab9f7fdc45be33971c86de5d2fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classIoss_1_1ElementTopology"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classIoss_1_1ElementTopology')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a></td></tr>
 <tr class="memitem:a20e888db3fe83ffdb9d594a024f8200a inherit pro_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#a20e888db3fe83ffdb9d594a024f8200a">ElementTopology</a> (std::string type, std::string master_elem_name, bool delete_me=false)</td></tr>
 <tr class="separator:a20e888db3fe83ffdb9d594a024f8200a inherit pro_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:af9dd4c2a2272d0dd582ec44d7b1e775a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classIoss_1_1Node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Node.html#af9dd4c2a2272d0dd582ec44d7b1e775a">instance_</a></td></tr>
-<tr class="separator:af9dd4c2a2272d0dd582ec44d7b1e775a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa975910d6a14c27ac9c1d54afad568 inherit pro_methods_classIoss_1_1ElementTopology"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ElementTopology.html#abfa975910d6a14c27ac9c1d54afad568">validate_permutation_nodes</a> () const</td></tr>
+<tr class="separator:abfa975910d6a14c27ac9c1d54afad568 inherit pro_methods_classIoss_1_1ElementTopology"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adf7a0347798f10fab61e40b9311176f2" name="adf7a0347798f10fab61e40b9311176f2"></a>
@@ -488,6 +494,33 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ac5d204e82f087c461b41c2e99db13a" name="a7ac5d204e82f087c461b41c2e99db13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac5d204e82f087c461b41c2e99db13a">&#9670;&nbsp;</a></span>is_shell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::Node::is_shell </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classIoss_1_1ElementTopology.html#ae11391a597a38b3bc48f9161f2cd8387">Ioss::ElementTopology</a>.</p>
 
 </div>
 </div>
@@ -747,7 +780,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceIoss.html#acc1610b8e37168350b478a07112dffcf">ElementShape</a> Ioss::Node::shape </td>
+          <td class="memname"><a class="el" href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44">ElementShape</a> Ioss::Node::shape </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -791,9 +824,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="af9dd4c2a2272d0dd582ec44d7b1e775a" name="af9dd4c2a2272d0dd582ec44d7b1e775a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9dd4c2a2272d0dd582ec44d7b1e775a">&#9670;&nbsp;</a></span>instance_</h2>
+<a id="a4d45ab9f7fdc45be33971c86de5d2fe4" name="a4d45ab9f7fdc45be33971c86de5d2fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d45ab9f7fdc45be33971c86de5d2fe4">&#9670;&nbsp;</a></span>validate_permutation_nodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -802,18 +834,24 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIoss_1_1Node.html">Node</a> Ioss::Node::instance_</td>
+          <td class="memname">bool Ioss::Node::validate_permutation_nodes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Reimplemented from <a class="el" href="classIoss_1_1ElementTopology.html#abfa975910d6a14c27ac9c1d54afad568">Ioss::ElementTopology</a>.</p>
+
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a42b009b7f9adfcd45010becafbb116ed" name="a42b009b7f9adfcd45010becafbb116ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42b009b7f9adfcd45010becafbb116ed">&#9670;&nbsp;</a></span>name</h2>
 
