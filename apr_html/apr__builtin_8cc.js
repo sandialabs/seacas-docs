@@ -64,6 +64,7 @@ var apr__builtin_8cc =
     [ "do_hypot", "apr__builtin_8cc.html#aaea81a89b6d09b1d773b902351a67c3e", null ],
     [ "do_identity", "apr__builtin_8cc.html#a8b49a4ee41c394ed31acefbe49b3ce5f", null ],
     [ "do_if", "apr__builtin_8cc.html#ae2baf4ef350f9e070bb9575542b5db69", null ],
+    [ "do_import", "apr__builtin_8cc.html#a811df7f9aec6a55a70b39db7de752727", null ],
     [ "do_include_path", "apr__builtin_8cc.html#aef198ffd70cf5928486e352fcc97b00c", null ],
     [ "do_int", "apr__builtin_8cc.html#a8a49ddcf35a11f4ae03d4c4ba4e7274b", null ],
     [ "do_intout", "apr__builtin_8cc.html#a316ae4cf755f95c286f7542ff393e37f", null ],

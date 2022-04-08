@@ -1,5 +1,10 @@
 var NAVTREEINDEX11 =
 {
+"structyy__buffer__state.html#a9d60c60af6e1a6f69de16871fd64f85f":[1,0,32,0],
+"structyy__buffer__state.html#abf5c70eea75581b58c0ee7bd31b14490":[1,0,32,9],
+"structyy__buffer__state.html#ad7b8df8d8a4688e57b0b8d3ca75adc85":[1,0,32,6],
+"structyy__buffer__state.html#afcc44872643f513e79b43c2b1f334a67":[1,0,32,11],
+"structyy__trans__info.html":[1,0,33],
 "structyy__trans__info.html#a5c9f61e770deef50bd4e697310342fe9":[1,0,33,1],
 "structyy__trans__info.html#ae0715250c2bef261e596e77e0030f13e":[1,0,33,0],
 "terminal__color_8h.html":[2,0,27],
@@ -25,8 +30,8 @@ var NAVTREEINDEX11 =
 "unionSEAMS_1_1Parser_1_1semantic__type.html#a2cb2e1c32be04eb602ee6d76d72cf627":[0,0,4,6,3,3],
 "unionSEAMS_1_1Parser_1_1semantic__type.html#a83a0542629fd37300270f70063704786":[0,0,4,6,3,0],
 "unionSEAMS_1_1Parser_1_1semantic__type.html#a83a0542629fd37300270f70063704786":[1,0,0,6,3,0],
-"unionSEAMS_1_1Parser_1_1semantic__type.html#a993ad6682d0abf54ead5163287ed5793":[1,0,0,6,3,2],
 "unionSEAMS_1_1Parser_1_1semantic__type.html#a993ad6682d0abf54ead5163287ed5793":[0,0,4,6,3,2],
+"unionSEAMS_1_1Parser_1_1semantic__type.html#a993ad6682d0abf54ead5163287ed5793":[1,0,0,6,3,2],
 "unionSEAMS_1_1Parser_1_1semantic__type.html#ad7f6ad7d6fbcaa537eae12d3335c0023":[1,0,0,6,3,1],
 "unionSEAMS_1_1Parser_1_1semantic__type.html#ad7f6ad7d6fbcaa537eae12d3335c0023":[0,0,4,6,3,1]
 };

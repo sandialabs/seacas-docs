@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['seacas_5fdeprecated_0',['SEACAS_DEPRECATED',['../exodusII_8h.html#aa6f92a73fd4902e97d32ce0acd679896',1,'exodusII.h']]],
-  ['snprintf_5fnowarn_1',['snprintf_nowarn',['../exodusII__int_8h.html#a425a38fe3982a78848b6f9532df5d61f',1,'exodusII_int.h']]],
-  ['stringify_2',['STRINGIFY',['../ex__copy_8c.html#a6df1d22fb5f09eccc23b9f399670cfd7',1,'ex_copy.c']]]
+  ['real_0',['real',['../exo__jack-windows_8c.html#a5f5a64ef503db0fc824df8320929b126',1,'real():&#160;exo_jack-windows.c'],['../exo__jack_8c.html#a5f5a64ef503db0fc824df8320929b126',1,'real():&#160;exo_jack.c']]]
 ];

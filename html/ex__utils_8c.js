@@ -16,6 +16,7 @@ var ex__utils_8c =
     [ "ex__get_name", "group__Internal.html#ga22a8974e2931f0a9895ca71ab01ba634", null ],
     [ "ex__get_names", "group__Internal.html#gada75be624c09c5e43fc21aa20db18b2e", null ],
     [ "ex__get_stat_ptr", "group__Internal.html#ga6e2943363366910aa5238c71d3382c0b", null ],
+    [ "ex__get_varid", "group__Internal.html#gaef3b05c7df0fcb0b07d640332558514d", null ],
     [ "ex__handle_mode", "group__Internal.html#gad944c6f57e961483c31f1d75336573a5", null ],
     [ "ex__id_lkup", "group__Internal.html#ga70aa2d8fa483a41b3fdbaef475526e8d", null ],
     [ "ex__inc_file_item", "group__Internal.html#gabe71209e146a1d0a6cde2fa1bf0507a1", null ],

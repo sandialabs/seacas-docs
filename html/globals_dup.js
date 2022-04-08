@@ -10,6 +10,7 @@ var globals_dup =
     [ "_def", "globals__.html", null ],
     [ "_dim", "globals__.html", null ],
     [ "_ele", "globals__.html", null ],
+    [ "_fie", "globals__.html", null ],
     [ "_fin", "globals__.html", null ],
     [ "_get", "globals__.html", null ],
     [ "_han", "globals__.html", null ],
@@ -32,6 +33,7 @@ var globals_dup =
     [ "asse", "globals_a.html", null ],
     [ "attr", "globals_a.html", null ],
     [ "b", "globals_b.html", null ],
+    [ "basi", "globals_b.html", null ],
     [ "blob", "globals_b.html", null ],
     [ "bloc", "globals_b.html", null ],
     [ "c", "globals_c.html", null ],
@@ -50,6 +52,7 @@ var globals_dup =
     [ "err_", "globals_e.html", null ],
     [ "f", "globals_f.html", null ],
     [ "fcdc", "globals_f.html", null ],
+    [ "fiel", "globals_f.html", null ],
     [ "fstr", "globals_f.html", null ],
     [ "g", "globals_g.html", null ],
     [ "get_", "globals_g.html", null ],
@@ -71,6 +74,8 @@ var globals_dup =
     [ "p", "globals_p.html", null ],
     [ "prin", "globals_p.html", null ],
     [ "put_", "globals_p.html", null ],
+    [ "q", "globals_q.html", null ],
+    [ "quad", "globals_q.html", null ],
     [ "r", "globals_r.html", null ],
     [ "s", "globals_s.html", null ],
     [ "set", "globals_s.html", null ],
@@ -83,5 +88,8 @@ var globals_dup =
     [ "v", "globals_v.html", null ],
     [ "var_", "globals_v.html", null ],
     [ "w", "globals_w.html", null ],
-    [ "writ", "globals_w.html", null ]
+    [ "writ", "globals_w.html", null ],
+    [ "x", "globals_x.html", null ],
+    [ "y", "globals_y.html", null ],
+    [ "z", "globals_z.html", null ]
 ];

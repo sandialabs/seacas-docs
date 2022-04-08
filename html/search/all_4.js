@@ -102,7 +102,8 @@ var searchData=
   ['dim_5fstr_99',['DIM_STR',['../group__Internal.html#gae826ec8d39ea9a6fb53c64e16bfd99ac',1,'exodusII_int.h']]],
   ['dim_5fstr_5fname_100',['DIM_STR_NAME',['../group__Internal.html#ga95d6193c4ed4ad962e5cf643e02a7d87',1,'exodusII_int.h']]],
   ['dim_5ftime_101',['DIM_TIME',['../group__Internal.html#ga2377424094138ff3b6336928de5ae54a',1,'exodusII_int.h']]],
-  ['dims_102',['dims',['../structncvar.html#ad53320e5adc773ef4f72f94b9dbfc5e8',1,'ncvar']]],
-  ['distribution_5ffactor_5flist_103',['distribution_factor_list',['../structex__set.html#a55b371867c6117ddf2938c498f5fda32',1,'ex_set']]],
-  ['doxygen_2eh_104',['doxygen.h',['../doxygen_8h.html',1,'']]]
+  ['dimension_102',['dimension',['../structex__quadrature.html#a13c025c2c26f8049e6211bd9d637f9d4',1,'ex_quadrature']]],
+  ['dims_103',['dims',['../structncvar.html#ad53320e5adc773ef4f72f94b9dbfc5e8',1,'ncvar']]],
+  ['distribution_5ffactor_5flist_104',['distribution_factor_list',['../structex__set.html#a55b371867c6117ddf2938c498f5fda32',1,'ex_set']]],
+  ['doxygen_2eh_105',['doxygen.h',['../doxygen_8h.html',1,'']]]
 ];

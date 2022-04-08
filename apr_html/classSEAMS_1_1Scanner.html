@@ -122,8 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a87008376ed7808f84051274579778f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65156dbce74ddbc8f7feebf02e912955"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Scanner.html#a65156dbce74ddbc8f7feebf02e912955">~Scanner</a> () override</td></tr>
 <tr class="separator:a65156dbce74ddbc8f7feebf02e912955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff91b6fdcf435f60cc883d716ac06c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Scanner.html#abff91b6fdcf435f60cc883d716ac06c1">add_include_file</a> (const std::string &amp;filename, bool must_exist)</td></tr>
-<tr class="separator:abff91b6fdcf435f60cc883d716ac06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4156689d31c3ec09c78ebc37d22e16a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Scanner.html#a4156689d31c3ec09c78ebc37d22e16a4">add_include_file</a> (const std::string &amp;filename, bool must_exist)</td></tr>
+<tr class="separator:a4156689d31c3ec09c78ebc37d22e16a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa947e936dace4638917203977f303bed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Scanner.html#aa947e936dace4638917203977f303bed">yywrap</a> () override</td></tr>
 <tr class="separator:aa947e936dace4638917203977f303bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af796884031cd11e1f9bbc248a0be58f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Scanner.html#af796884031cd11e1f9bbc248a0be58f7">yyerror</a> (const char *s)</td></tr>
@@ -138,6 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca31007249ba78df3deca0776e6ea4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a752a875a5081dce7b554ad5ce53a50"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Scanner.html#a5a752a875a5081dce7b554ad5ce53a50">execute</a> (char *string)</td></tr>
 <tr class="separator:a5a752a875a5081dce7b554ad5ce53a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60bbf0441a206059734279a496db2862"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Scanner.html#a60bbf0441a206059734279a496db2862">import_handler</a> (char *string)</td></tr>
+<tr class="separator:a60bbf0441a206059734279a496db2862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da932c744cbe22b1f388074b67e20d2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Scanner.html#a9da932c744cbe22b1f388074b67e20d2">if_handler</a> (double x)</td></tr>
 <tr class="separator:a9da932c744cbe22b1f388074b67e20d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67c05b40384a3b6617f16c652e02902c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Scanner.html#a67c05b40384a3b6617f16c652e02902c">elseif_handler</a> (double x)</td></tr>
@@ -384,14 +386,14 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abff91b6fdcf435f60cc883d716ac06c1" name="abff91b6fdcf435f60cc883d716ac06c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abff91b6fdcf435f60cc883d716ac06c1">&#9670;&nbsp;</a></span>add_include_file()</h2>
+<a id="a4156689d31c3ec09c78ebc37d22e16a4" name="a4156689d31c3ec09c78ebc37d22e16a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4156689d31c3ec09c78ebc37d22e16a4">&#9670;&nbsp;</a></span>add_include_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SEAMS::Scanner::add_include_file </td>
+          <td class="memname">bool SEAMS::Scanner::add_include_file </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
@@ -477,6 +479,24 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60bbf0441a206059734279a496db2862" name="a60bbf0441a206059734279a496db2862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60bbf0441a206059734279a496db2862">&#9670;&nbsp;</a></span>import_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * SEAMS::Scanner::import_handler </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

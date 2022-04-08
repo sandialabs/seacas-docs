@@ -2,7 +2,7 @@ var searchData=
 [
   ['add_0',['add',['../structSEAMS_1_1Symtable.html#ae97b145a5d337810f084e83dbedba29a',1,'SEAMS::Symtable']]],
   ['add_5fhistory_1',['add_history',['../classSEAMS_1_1Aprepro.html#a56fc3a5e03baa843d4d19be4d7d09ed7',1,'SEAMS::Aprepro']]],
-  ['add_5finclude_5ffile_2',['add_include_file',['../classSEAMS_1_1Scanner.html#abff91b6fdcf435f60cc883d716ac06c1',1,'SEAMS::Scanner']]],
+  ['add_5finclude_5ffile_2',['add_include_file',['../classSEAMS_1_1Scanner.html#a4156689d31c3ec09c78ebc37d22e16a4',1,'SEAMS::Scanner']]],
   ['add_5fvariable_3',['add_variable',['../classSEAMS_1_1Aprepro.html#aa1b66de84d03802ea87656dae43c173c',1,'SEAMS::Aprepro::add_variable(const std::string &amp;sym_name, const std::string &amp;sym_value, bool immutable=false, bool internal=false)'],['../classSEAMS_1_1Aprepro.html#a5bc6eb5d405d1da22a491d56a72b9fc5',1,'SEAMS::Aprepro::add_variable(const std::string &amp;sym_name, double sym_value, bool immutable=false, bool internal=false)'],['../classSEAMS_1_1Aprepro.html#ab95cd5a3702576cd7df74c9b7f8fc765',1,'SEAMS::Aprepro::add_variable(const std::string &amp;sym_name, array *value)']]],
   ['ap_5fgetline_5fint_4',['ap_getline_int',['../apr__getline__int_8h.html#ad18eb0173c54c4aeaaacb0c3b82a52b5',1,'apr_getline_int.h']]],
   ['ap_5fgl_5fhistadd_5',['ap_gl_histadd',['../apr__getline__int_8h.html#a6d129a9a8e1dd33c66a033a9f7e49fd9',1,'apr_getline_int.h']]],

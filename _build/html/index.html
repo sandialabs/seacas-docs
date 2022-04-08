@@ -333,7 +333,7 @@ features.</p>
 in the Exodus library.  The Nemesis library is only maintained for
 backward compatability with older applications. If you need this
 capability, please use the Exodus library instead.</p>
-</aside>
+</div>
 <p>The <a class="reference external" href="../../Nemesis_Users_Guide.pdf">Nemesis</a> library is an
 enhancement to the Exodus finite element database model used to store
 and retrieve data for unstructured parallel finite element
@@ -362,7 +362,7 @@ functions.</p></li>
 <p>CHACO is an older library which is not being enhanced.  If
 you are writing a new code that needs graph partitioning, you should
 use the Zoltan2 library instead.</p>
-</aside>
+</div>
 <p>Graph partitioning is a fundamental problem in many scientific
 contexts.  This document describes the capabilities and operation of
 <a class="reference external" href="../../chaco.pdf">Chaco 2.0</a>, a software package designed to
@@ -384,7 +384,7 @@ detail and some suggestions on algorithm selection are offered.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">short</span> <span class="pre">*assignment</span></code> argument to the interface function
 has been changed to <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">*assignment</span></code> to permit decompositions
 with more than 32,768 processors.</p>
-</aside>
+</div>
 <p>There are also now a <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_MAJOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_MINOR</span></code>,
 and <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_PATCH</span></code> defines in <code class="docutils literal notranslate"><span class="pre">chaco.h</span></code>.</p>
 <ul class="simple">
@@ -673,7 +673,7 @@ timesteps. It should work OK if there is only a single timestep;
 however, there may be an issue with nodes shared between multiple
 element blocks. Element variable interpolation should be OK in all
 cases.</p>
-</aside>
+</div>
 <p><a class="reference external" href="../../mapvar.pdf">Mapvar</a> is designed to transfer solution results
 from one finite element mesh to another. MAPVAR draws heavily from the
 structure and coding of MERLIN II, but it employs a new finite element
@@ -694,7 +694,7 @@ timesteps. It should work OK if there is only a single timestep;
 however, there may be an issue with nodes shared between multiple
 element blocks. Element variable interpolation should be OK in all
 cases.</p>
-</aside>
+</div>
 <p><a class="reference external" href="../../mapvar.pdf">Mapvar-kd</a> is almost exactly the same as mapvar
 except that it uses a KD algorithm for the internal search. It is much
 faster than mapvar in certain situations, and should never be slower.</p>
@@ -717,7 +717,7 @@ results file using Matlab.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>nem_join is no longer maintained. Use <a class="reference external" href="../../exo_util.pdf#page=24">EPU</a> instead.</p>
-</aside>
+</div>
 </section>
 <section id="nem-slice">
 <h1>nem_slice<a class="headerlink" href="#nem-slice" title="Permalink to this headline">¶</a></h1>
