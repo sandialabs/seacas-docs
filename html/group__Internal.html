@@ -746,8 +746,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaef3b05c7df0fcb0b07d640332558514d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Internal.html#gaef3b05c7df0fcb0b07d640332558514d">ex__get_varid</a> (int exoid, <a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a> obj_type, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> id)</td></tr>
-<tr class="separator:gaef3b05c7df0fcb0b07d640332558514d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga74d83c1a81c4c0d3200b31accfcaec04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Internal.html#ga74d83c1a81c4c0d3200b31accfcaec04">ex__reset_error_status</a> (void)</td></tr>
 <tr class="separator:ga74d83c1a81c4c0d3200b31accfcaec04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2421c94208c30f0ac0fa3f634d4c38f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Internal.html#ga2421c94208c30f0ac0fa3f634d4c38f8">ex__iqsort</a> (int v[], int iv[], int N)</td></tr>
@@ -6623,7 +6621,7 @@ ptr --------—&gt; list item structure</h2>
 <div class="line">error = <a class="code hl_function" href="exodusII_8h.html#a4d51e0740116cc60e2daa4aef1757ad2">ex_get_glob_var_time</a>(exoid, var_index, beg_time,</div>
 <div class="line">                             end_time, var_values);</div>
 <div class="ttc" id="aexodusII_8h_html_a4d51e0740116cc60e2daa4aef1757ad2"><div class="ttname"><a href="exodusII_8h.html#a4d51e0740116cc60e2daa4aef1757ad2">ex_get_glob_var_time</a></div><div class="ttdeci">SEACAS_DEPRECATED int ex_get_glob_var_time(int exoid, int glob_var_index, int beg_time_step, int end_time_step, void *glob_var_vals)</div><div class="ttdef"><b>Definition:</b> ex_get_glob_var_time.c:76</div></div>
-<div class="ttc" id="aexodusII_8h_html_adc9d1455c2876b67d008e02c1e9df8dcadbf58af91846cf3492519d171cb27631"><div class="ttname"><a href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcadbf58af91846cf3492519d171cb27631">EX_INQ_TIME</a></div><div class="ttdeci">@ EX_INQ_TIME</div><div class="ttdef"><b>Definition:</b> exodusII.h:161</div></div>
+<div class="ttc" id="aexodusII_8h_html_adc9d1455c2876b67d008e02c1e9df8dcadbf58af91846cf3492519d171cb27631"><div class="ttname"><a href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcadbf58af91846cf3492519d171cb27631">EX_INQ_TIME</a></div><div class="ttdeci">@ EX_INQ_TIME</div><div class="ttdef"><b>Definition:</b> exodusII.h:158</div></div>
 <div class="ttc" id="agroup__Utilities_html_ga1b8122836266615fd2795736dc21e2ae"><div class="ttname"><a href="group__Utilities.html#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int</a></div><div class="ttdeci">int64_t ex_inquire_int(int exoid, ex_inquiry req_info)</div><div class="ttdef"><b>Definition:</b> ex_inquire.c:1023</div></div>
 </div><!-- fragment --> 
 </div>
@@ -6938,7 +6936,7 @@ ptr --------—&gt; list item structure</h2>
 <div class="line">var_index = 1; node_num = 1; beg_time = 1; end_time = -1;</div>
 <div class="line">error = <a class="code hl_function" href="group__ResultsData.html#ga65af6a2020057488a89b28238993562b">ex_get_var_time</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, var_index, node_num, beg_time,</div>
 <div class="line">                              end_time, var_values);</div>
-<div class="ttc" id="aexodusII_8h_html_a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873"><div class="ttname"><a href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a></div><div class="ttdeci">@ EX_NODAL</div><div class="ttdef"><b>Definition:</b> exodusII.h:265</div></div>
+<div class="ttc" id="aexodusII_8h_html_a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873"><div class="ttname"><a href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a></div><div class="ttdeci">@ EX_NODAL</div><div class="ttdef"><b>Definition:</b> exodusII.h:262</div></div>
 <div class="ttc" id="agroup__ResultsData_html_ga65af6a2020057488a89b28238993562b"><div class="ttname"><a href="group__ResultsData.html#ga65af6a2020057488a89b28238993562b">ex_get_var_time</a></div><div class="ttdeci">int ex_get_var_time(int exoid, ex_entity_type var_type, int var_index, int64_t id, int beg_time_step, int end_time_step, void *var_vals)</div><div class="ttdef"><b>Definition:</b> ex_get_var_time.c:44</div></div>
 </div><!-- fragment --> 
 </div>
@@ -7022,40 +7020,6 @@ ptr --------—&gt; list item structure</h2>
       </table>
 </div><div class="memdoc">
 <p >this routine returns a pointer to a structure containing the ids of element blocks, node sets, or side sets according to exoid; if there is not a structure that matches the exoid, one is created </p>
-
-</div>
-</div>
-<a id="gaef3b05c7df0fcb0b07d640332558514d" name="gaef3b05c7df0fcb0b07d640332558514d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaef3b05c7df0fcb0b07d640332558514d">&#9670;&nbsp;</a></span>ex__get_varid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ex__get_varid </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>exoid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a>&#160;</td>
-          <td class="paramname"><em>obj_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a>&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

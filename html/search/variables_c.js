@@ -10,9 +10,5 @@ var searchData=
   ['shuffle_7',['shuffle',['../structex____file__item.html#ab0068bbf837cbcd198f1a427229b0045',1,'ex__file_item']]],
   ['ss_5fctr_5flist_8',['ss_ctr_list',['../ex__utils_8c.html#a9be414fb5e8375f82080f97f1be2077b',1,'ex_utils.c']]],
   ['sset_5fvar_5ftab_9',['sset_var_tab',['../structex__var__params.html#abbb143a69fefc08e10f2373f860697f9',1,'ex_var_params']]],
-  ['stat_5fvals_10',['stat_vals',['../structex____obj__stats.html#a74cc356e2a2d4f64a11bd8bb54ec7403',1,'ex__obj_stats']]],
-  ['subc_5fdim_11',['subc_dim',['../structex__basis.html#a8e38d84865e619a69a2908983953b708',1,'ex_basis']]],
-  ['subc_5fdof_5fordinal_12',['subc_dof_ordinal',['../structex__basis.html#a5b54991516b116c98321ba402d146bc5',1,'ex_basis']]],
-  ['subc_5fnum_5fdof_13',['subc_num_dof',['../structex__basis.html#a5d7f2d4a8fe922a1bef6b3e6c9ff40db',1,'ex_basis']]],
-  ['subc_5fordinal_14',['subc_ordinal',['../structex__basis.html#a073f65170c34de6dd4aceeafe1b06c38',1,'ex_basis']]]
+  ['stat_5fvals_10',['stat_vals',['../structex____obj__stats.html#a74cc356e2a2d4f64a11bd8bb54ec7403',1,'ex__obj_stats']]]
 ];
