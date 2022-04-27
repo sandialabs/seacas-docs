@@ -495,10 +495,11 @@ libraries that were used in the build of this installation of SEACAS.
 IO_Modify
 ---------
 
-Utility application which can be used to query add assembly and entity
-attribute information to an existing Exodus database.  See ``io_modify
---help`` for more information.  There is an internal ``HELP`` command
-which will provide additional information on the capabilities.
+`IO_Modify <../../IO_Modify.html>`_ is an application
+which can be used to query add assembly and entity attribute
+information to an existing Exodus database.  See ``io_modify --help``
+for more information.  There is an internal ``HELP`` command which
+will provide additional information on the capabilities.
 
 
 IO_Shell

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IO_MODIFY Valid Commands &mdash; SEACAS 2021/03/02 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> SEACAS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">IO_MODIFY Valid Commands</a><ul>
+<li><a class="reference internal" href="#regular-expression-help">Regular Expression help</a></li>
+<li><a class="reference internal" href="#glob-help">Glob help</a></li>
+<li><a class="reference internal" href="#glob-examples">Glob Examples</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SEACAS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>IO_MODIFY Valid Commands</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/IO_Modify.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="io-modify-valid-commands">
+<h1>IO_MODIFY Valid Commands<a class="headerlink" href="#io-modify-valid-commands" title="Permalink to this headline"></a></h1>
+<p><strong>HELP</strong> <em>[list | assembly | graph | attribute | regex | glob]</em></p>
+<p><strong>END</strong> | <strong>EXIT</strong></p>
+<blockquote>
+<div><p>End command input and output changed assembly definitions (if any).</p>
+</div></blockquote>
+<p><strong>QUIT</strong></p>
+<blockquote>
+<div><p>End command input and exit with no changes to database.</p>
+</div></blockquote>
+<p><strong>ALLOW MODIFICATIONS</strong></p>
+<blockquote>
+<div><p>By default, io_modify will only allow creation of new assemblies.
+If this command is specified, then can modify assemblies that already exist in database.
+This will cause the database to be rewritten. Without this option, it is updated in place.</p>
+</div></blockquote>
+<p><strong>LIST</strong></p>
+<ul class="simple">
+<li><p>LIST <code class="docutils literal notranslate"><span class="pre">elementblock|block|structuredblock|assembly|nodeset|sideset|blob|times|summary</span></code></p></li>
+<li><p>LIST <code class="docutils literal notranslate"><span class="pre">elementblock|block|structuredblock|assembly|nodeset|sideset|blob</span> <span class="pre">{names...}</span></code></p></li>
+<li><p>LIST <code class="docutils literal notranslate"><span class="pre">elementblock|block|structuredblock|assembly|nodeset|sideset|blob</span> <span class="pre">MATCHES</span> <span class="pre">{regex}</span></code></p></li>
+<li><p>LIST <code class="docutils literal notranslate"><span class="pre">elementblock|block|structuredblock|assembly|nodeset|sideset|blob</span> <span class="pre">GLOB</span> <span class="pre">{glob}</span></code></p></li>
+</ul>
+<p><em>For all commands, if an assembly named <code class="docutils literal notranslate"><span class="pre">name</span></code> does not exist, it will be created.</em></p>
+<p><strong>ASSEMBLY {name}</strong></p>
+<blockquote>
+<div><p>Creates an empty assembly named <code class="docutils literal notranslate"><span class="pre">name</span></code> if it does not exist.</p>
+</div></blockquote>
+<p><strong>ASSEMBLY {name} ADD {name1} {name2} … {nameL}</strong></p>
+<blockquote>
+<div><p>Adds the specified entities to the assembly.  All entities must be the same type.</p>
+</div></blockquote>
+<p><strong>ASSEMBLY {name} REMOVE {name1} {name2} … {nameL}</strong></p>
+<blockquote>
+<div><p>Removes the specified entities from the assembly.</p>
+</div></blockquote>
+<p><strong>ASSEMBLY {name} TYPE {type} MATCHES {regex}</strong></p>
+<blockquote>
+<div><p>Adds the entities of the specified type to the assembly.
+All entities whose name matches the {regex} will be added.</p>
+</div></blockquote>
+<p><strong>ASSEMBLY {name} TYPE {type} GLOB {glob}</strong></p>
+<blockquote>
+<div><p>Adds the entities of the specified type to the assembly.
+All entities whose name matches the {glob} will be added.</p>
+</div></blockquote>
+<p><strong>ASSEMBLY {name} TYPE {type} NAMED {list of one or more names}</strong></p>
+<blockquote>
+<div><p>Adds the entities of the specified type to the assembly.
+All entities whose names are listed will be added.</p>
+</div></blockquote>
+<p><strong>ASSEMBLY {name} TYPE {type} RANGE {id} TO {id} BY {step}</strong></p>
+<blockquote>
+<div><p>Adds the entities of the specified type to the assembly.
+All entities whose id matches the specified range will be added.
+No message will be output for ids not matching an entity.</p>
+</div></blockquote>
+<p><strong>ASSEMBLY {name} TYPE {type} IDS {id}, {id2}, …, {idL}</strong></p>
+<blockquote>
+<div><p>Adds the entities of the specified type to the assembly.
+All entities whose id matches an id in the list will be added.
+A warning message will be output if there is no entity with the requested id.</p>
+</div></blockquote>
+<p><strong>DELETE {name}</strong></p>
+<blockquote>
+<div><p>Remove the assembly with the specified name.
+Currently only supported for assemblies created during this execution; not for assemblies
+existing on the input database.</p>
+</div></blockquote>
+<p><strong>GRAPH OUTPUT [filename]</strong></p>
+<blockquote>
+<div><p>Create a <em>dot</em> input file with the structure of the assembly graph.
+File is named <code class="docutils literal notranslate"><span class="pre">filename</span></code> or defaults to <code class="docutils literal notranslate"><span class="pre">assembly.dot</span></code> if filename not given.</p>
+</div></blockquote>
+<p><strong>GRAPH CHECK</strong></p>
+<blockquote>
+<div><p>Check validity of assembly graph–are there any cycles.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>ATTRIBUTE {ent_name} ADD {att_name} STRING {values…}</strong></p></li>
+<li><p><strong>ATTRIBUTE {ent_name} ADD {att_name} DOUBLE {values…}</strong></p></li>
+<li><p><strong>ATTRIBUTE {ent_name} NAME {att_name} INTEGER {values…}</strong></p></li>
+</ul>
+<blockquote>
+<div><p>Add an attribute to the specified entity (<code class="docutils literal notranslate"><span class="pre">ent_name</span></code>).
+The attribute will be named <code class="docutils literal notranslate"><span class="pre">att_name</span></code> with value(s) <code class="docutils literal notranslate"><span class="pre">values...</span></code>
+Can also modify the values of an existing attribute.’</p>
+</div></blockquote>
+<p><strong>ATTRIBUTE LIST {ent_name…}</strong></p>
+<blockquote>
+<div><p>List attributes for the selected entities</p>
+</div></blockquote>
+<p><strong>ATTRIBUTE {ent_type} LIST</strong></p>
+<blockquote>
+<div><p>List attributes for all entities in the specified entity type</p>
+</div></blockquote>
+<p><strong>ATTRIBUTE {ent_type} MATCH {regex}</strong></p>
+<blockquote>
+<div><p>List attributes for all entities in the specified entity type whose name matches the regex.</p>
+</div></blockquote>
+<p><strong>ATTRIBUTE {ent_type} GLOB {glob}</strong></p>
+<blockquote>
+<div><p>List attributes for all entities in the specified entity type whose name matches the glob.</p>
+</div></blockquote>
+<p><strong>GEOMETRY</strong></p>
+<ul class="simple">
+<li><p><strong>GEOMETRY ROTATE</strong> <code class="docutils literal notranslate"><span class="pre">{X|Y|Z}</span> <span class="pre">{angle}</span></code></p></li>
+<li><p><strong>GEOMETRY SCALE</strong>  <code class="docutils literal notranslate"><span class="pre">{x}</span> <span class="pre">{y}</span> <span class="pre">{z}</span></code></p></li>
+<li><p><strong>GEOMETRY OFFSET</strong> <code class="docutils literal notranslate"><span class="pre">{x}</span> <span class="pre">{y}</span> <span class="pre">{z}</span></code></p></li>
+<li><p><strong>GEOMETRY ROTATE</strong> <code class="docutils literal notranslate"><span class="pre">{ELEMENTBLOCKS|BLOCKS|ASSEMBLY}</span> <span class="pre">{names}</span> <span class="pre">{X|Y|Z}</span> <span class="pre">{angle}</span></code></p></li>
+<li><p><strong>GEOMETRY SCALE</strong>  <code class="docutils literal notranslate"><span class="pre">{ELEMENTBLOCKS|BLOCKS|ASSEMBLY}</span> <span class="pre">{names}</span> <span class="pre">{x}</span> <span class="pre">{y}</span> <span class="pre">{z}</span></code></p></li>
+<li><p><strong>GEOMETRY OFFSET</strong> <code class="docutils literal notranslate"><span class="pre">{ELEMENTBLOCKS|BLOCKS|ASSEMBLY}</span> <span class="pre">{names}</span> <span class="pre">{x}</span> <span class="pre">{y}</span> <span class="pre">{z}</span></code></p></li>
+</ul>
+<p><strong>TIME</strong></p>
+<ul>
+<li><p><strong>TIME SCALE</strong> <code class="docutils literal notranslate"><span class="pre">{scale}</span></code></p>
+<p>T_out = T_in * {scale}</p>
+</li>
+<li><p><strong>TIME OFFSET</strong> <code class="docutils literal notranslate"><span class="pre">{offset}</span></code></p>
+<p>T_out = T_in + {offset}</p>
+</li>
+</ul>
+<section id="regular-expression-help">
+<h2>Regular Expression help<a class="headerlink" href="#regular-expression-help" title="Permalink to this headline"></a></h2>
+<p>(used in <code class="docutils literal notranslate"><span class="pre">ASSEMBLY</span> <span class="pre">MATCHES</span></code> and <code class="docutils literal notranslate"><span class="pre">LIST</span> <span class="pre">MATCHES</span></code> and <code class="docutils literal notranslate"><span class="pre">ATTRIBUTE</span> <span class="pre">LIST</span> <span class="pre">MATCHES</span></code> options)</p>
+<ul class="simple">
+<li><p>Supports “POSIX Extended Regular Expressions” syntax.</p></li>
+<li><p>See <a class="reference external" href="https://www.regular-expressions.info/posix.html">https://www.regular-expressions.info/posix.html</a></p></li>
+<li><p>QuickStart: <a class="reference external" href="https://www.regular-expressions.info/quickstart.html">https://www.regular-expressions.info/quickstart.html</a></p></li>
+</ul>
+</section>
+<section id="glob-help">
+<h2>Glob help<a class="headerlink" href="#glob-help" title="Permalink to this headline"></a></h2>
+<p>(used in <code class="docutils literal notranslate"><span class="pre">ASSEMBLY</span> <span class="pre">GLOB</span></code> and <code class="docutils literal notranslate"><span class="pre">LIST</span> <span class="pre">GLOB</span></code> and <code class="docutils literal notranslate"><span class="pre">ATTRIBUTE</span> <span class="pre">LIST</span> <span class="pre">GLOB</span></code> options)</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">?(pattern-list)</span></code>   Matches zero or one occurrence of the given patterns</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*(pattern-list)</span></code>   Matches zero or more occurrences of the given patterns</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+(pattern-list)</span></code>   Matches one or more occurrences of the given patterns</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&#64;(pattern-list)</span></code>   Matches one of the given patterns</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">!(pattern-list)</span></code>   Matches anything except one of the given patterns</p></li>
+</ul>
+</section>
+<section id="glob-examples">
+<h2>Glob Examples<a class="headerlink" href="#glob-examples" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">block*</span></code>   : All names that start with ‘block’</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[A-Z]*</span></code>   : All names that start with a capital letter</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Gregory Sjaardema.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
