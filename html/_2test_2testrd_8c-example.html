@@ -321,7 +321,9 @@ $(document).ready(function(){initNavTree('_2test_2testrd_8c-example.html',''); i
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Read per-block id map and compare to overall id map... */</span></div>
+<div class="line"><span class="preprocessor">#if 0</span></div>
 <div class="line">    <span class="keywordtype">int</span> offset = 0;</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_elem_blk; i++) {</div>
 <div class="line">      <span class="keywordtype">int</span> *block_map = (<span class="keywordtype">int</span> *)calloc(num_elem_in_block[i], <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">      error          = <a id="a27" name="a27"></a><a class="code hl_function" href="group__ModelDescription.html#ga371222151123398848a13247c67c7f4e">ex_get_block_id_map</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ids[i], block_map);</div>
@@ -331,8 +333,8 @@ $(document).ready(function(){initNavTree('_2test_2testrd_8c-example.html',''); i
 <div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num_elem_in_block[i]; j++) {</div>
 <div class="line"> assert(block_map[j] == elem_map[offset + j]);</div>
 <div class="line">      }</div>
-<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line">      offset += num_elem_in_block[i];</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line">      free(block_map);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
