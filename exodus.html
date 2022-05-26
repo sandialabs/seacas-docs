@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
 <title>exodus3 API documentation</title>
-<meta name="description" content="exodus.py v 1.20.10 (seacas-py3) is a python wrapper of some of the exodus library
+<meta name="description" content="exodus.py v 1.20.11 (seacas-py3) is a python wrapper of some of the exodus library
 (Python 3 Version) …" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
@@ -23,7 +23,7 @@
 <h1 class="title">Module <code>exodus3</code></h1>
 </header>
 <section id="section-intro">
-<p>exodus.py v 1.20.10 (seacas-py3) is a python wrapper of some of the exodus library
+<p>exodus.py v 1.20.11 (seacas-py3) is a python wrapper of some of the exodus library
 (Python 3 Version)</p>
 <p>Exodus is a common database for multiple application codes (mesh
 generators, analysis codes, visualization software, etc.) affording
@@ -91,7 +91,7 @@ NTESS, the U.S. Government retains certain rights in this software.</p>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">&#34;&#34;&#34;
-exodus.py v 1.20.10 (seacas-py3) is a python wrapper of some of the exodus library
+exodus.py v 1.20.11 (seacas-py3) is a python wrapper of some of the exodus library
 (Python 3 Version)
 
 Exodus is a common database for multiple application codes (mesh
@@ -162,10 +162,10 @@ from enum import Enum
 
 EXODUS_PY_COPYRIGHT_AND_LICENSE = __doc__
 
-EXODUS_PY_VERSION = &#34;1.20.10 (seacas-py3)&#34;
+EXODUS_PY_VERSION = &#34;1.20.11 (seacas-py3)&#34;
 
 EXODUS_PY_COPYRIGHT = &#34;&#34;&#34;
-You are using exodus.py v 1.20.10 (seacas-py3), a python wrapper of some of the exodus library.
+You are using exodus.py v 1.20.11 (seacas-py3), a python wrapper of some of the exodus library.
 
 Copyright (c) 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021 National Technology &amp;
 Engineering Solutions of Sandia, LLC (NTESS).  Under the terms of
@@ -886,7 +886,7 @@ class exodus:
         &#34;&#34;&#34;
         put initialization information into exodus file
 
-        &gt;&gt;&gt; e.put_info_ext(self,info_struct)
+        &gt;&gt;&gt; e.put_info_ext(info_struct)
         &#34;&#34;&#34;
         if len(p.title) &gt; MAX_LINE_LENGTH:
             print(&#34;WARNING: Exodus title \&#34;{}\&#34; exceeds maximum line length ({}). It will be truncated.&#34;
@@ -976,7 +976,7 @@ class exodus:
         &#34;&#34;&#34;
         Initialize static metadata for the database.
 
-        &gt;&gt;&gt; status = exo.put_info(self, title, num_dims, num_nodes, num_elems,
+        &gt;&gt;&gt; status = exo.put_info(title, num_dims, num_nodes, num_elems,
         ...                      num_blocks, num_ns, num_ss)
 
         Parameters
@@ -1699,6 +1699,33 @@ class exodus:
 
     # --------------------------------------------------------------------
 
+    def get_block_id_map(self, obj_type, entity_id):
+        &#34;&#34;&#34;
+        Gets the map of elements found in the given entity_id of an object
+        of obj_type.
+
+        *INDEX* ordering, a 1-based system going from 1 to
+        number of elements in the elem_block, used by exodus for
+        storage and input/output of array data stored on the elements;
+        a user or application can optionally use a separate element *ID* numbering system,
+        so the elem_id_map points to the element *ID* for each
+        element *INDEX*
+
+        &gt;&gt;&gt; elem_block_id_map = exo.get_block_id_map(&#34;EX_ELEM_BLOCK&#34;, 100)
+
+        Returns
+        -------
+
+            if array_type == &#39;ctype&#39;:
+              &lt;list&lt;int&gt;&gt;  elem_id_map
+
+            if array_type == &#39;numpy&#39;:
+              &lt;np_array&lt;int&gt;&gt;  elem_id_map
+        &#34;&#34;&#34;
+        return self.__ex_get_block_id_map(obj_type, entity_id)
+
+    # --------------------------------------------------------------------
+
     def get_elem_num_map(self):
         &#34;&#34;&#34;
         **DEPRECATED** use: `get_elem_id_map()`
@@ -1853,9 +1880,9 @@ class exodus:
 
     def put_name(self, object_type, object_id, name):
         &#34;&#34;&#34;
-        get the name of the specified entity_type and entity
+        put the name of the specified entity_type and entity
 
-        &gt;&gt;&gt; exo.put_name(&#39;EX_ELEM_BLOCK&#39;, elem_blk_id)
+        &gt;&gt;&gt; exo.put_name(&#39;EX_ELEM_BLOCK&#39;, elem_blk_id, block_name)
 
         Parameters
         ----------
@@ -2407,7 +2434,7 @@ class exodus:
 
     def get_assembly(self, object_id):
         &#34;&#34;&#34;
-        reads the assembly parameters and assembly data for one assembly 
+        reads the assembly parameters and assembly data for one assembly
         &#34;&#34;&#34;
         assem = ex_assembly(id=object_id)
         self.__ex_get_assembly(assem)
@@ -2418,7 +2445,7 @@ class exodus:
 
     def get_assemblies(self, object_ids):
         &#34;&#34;&#34;
-        reads the assembly parameters and assembly data for all assemblies 
+        reads the assembly parameters and assembly data for all assemblies
         with ids in object_ids
         &#34;&#34;&#34;
         assemblies = [ex_assembly(id=object_id) for object_id in object_ids]
@@ -5522,6 +5549,21 @@ class exodus:
         if self.use_numpy:
             idMap = self.np.array(idMap)
         return idMap
+
+    # --------------------------------------------------------------------
+
+    def __ex_get_block_id_map(self, obj_type, id):
+        obj_type = ctypes.c_int(get_entity_type(obj_type))
+        entity_id = ctypes.c_longlong(id)
+        _, numObjs,_,_ = self.__ex_get_block(&#39;EX_ELEM_BLOCK&#39;, id)
+        if EXODUS_LIB.ex_int64_status(self.fileId) &amp; EX_IDS_INT64_API:
+            id_map = (ctypes.c_longlong * numObjs.value)()
+        else:
+            id_map = (ctypes.c_int * numObjs.value)()
+        EXODUS_LIB.ex_get_block_id_map(self.fileId, obj_type, entity_id, id_map)
+        if self.use_numpy:
+            id_map = ctype_to_numpy(self, id_map)
+        return id_map
 
     # --------------------------------------------------------------------
 
@@ -9530,7 +9572,7 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
         &#34;&#34;&#34;
         put initialization information into exodus file
 
-        &gt;&gt;&gt; e.put_info_ext(self,info_struct)
+        &gt;&gt;&gt; e.put_info_ext(info_struct)
         &#34;&#34;&#34;
         if len(p.title) &gt; MAX_LINE_LENGTH:
             print(&#34;WARNING: Exodus title \&#34;{}\&#34; exceeds maximum line length ({}). It will be truncated.&#34;
@@ -9620,7 +9662,7 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
         &#34;&#34;&#34;
         Initialize static metadata for the database.
 
-        &gt;&gt;&gt; status = exo.put_info(self, title, num_dims, num_nodes, num_elems,
+        &gt;&gt;&gt; status = exo.put_info(title, num_dims, num_nodes, num_elems,
         ...                      num_blocks, num_ns, num_ss)
 
         Parameters
@@ -10343,6 +10385,33 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
 
     # --------------------------------------------------------------------
 
+    def get_block_id_map(self, obj_type, entity_id):
+        &#34;&#34;&#34;
+        Gets the map of elements found in the given entity_id of an object
+        of obj_type.
+
+        *INDEX* ordering, a 1-based system going from 1 to
+        number of elements in the elem_block, used by exodus for
+        storage and input/output of array data stored on the elements;
+        a user or application can optionally use a separate element *ID* numbering system,
+        so the elem_id_map points to the element *ID* for each
+        element *INDEX*
+
+        &gt;&gt;&gt; elem_block_id_map = exo.get_block_id_map(&#34;EX_ELEM_BLOCK&#34;, 100)
+
+        Returns
+        -------
+
+            if array_type == &#39;ctype&#39;:
+              &lt;list&lt;int&gt;&gt;  elem_id_map
+
+            if array_type == &#39;numpy&#39;:
+              &lt;np_array&lt;int&gt;&gt;  elem_id_map
+        &#34;&#34;&#34;
+        return self.__ex_get_block_id_map(obj_type, entity_id)
+
+    # --------------------------------------------------------------------
+
     def get_elem_num_map(self):
         &#34;&#34;&#34;
         **DEPRECATED** use: `get_elem_id_map()`
@@ -10497,9 +10566,9 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
 
     def put_name(self, object_type, object_id, name):
         &#34;&#34;&#34;
-        get the name of the specified entity_type and entity
+        put the name of the specified entity_type and entity
 
-        &gt;&gt;&gt; exo.put_name(&#39;EX_ELEM_BLOCK&#39;, elem_blk_id)
+        &gt;&gt;&gt; exo.put_name(&#39;EX_ELEM_BLOCK&#39;, elem_blk_id, block_name)
 
         Parameters
         ----------
@@ -11051,7 +11120,7 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
 
     def get_assembly(self, object_id):
         &#34;&#34;&#34;
-        reads the assembly parameters and assembly data for one assembly 
+        reads the assembly parameters and assembly data for one assembly
         &#34;&#34;&#34;
         assem = ex_assembly(id=object_id)
         self.__ex_get_assembly(assem)
@@ -11062,7 +11131,7 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
 
     def get_assemblies(self, object_ids):
         &#34;&#34;&#34;
-        reads the assembly parameters and assembly data for all assemblies 
+        reads the assembly parameters and assembly data for all assemblies
         with ids in object_ids
         &#34;&#34;&#34;
         assemblies = [ex_assembly(id=object_id) for object_id in object_ids]
@@ -14169,6 +14238,21 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
 
     # --------------------------------------------------------------------
 
+    def __ex_get_block_id_map(self, obj_type, id):
+        obj_type = ctypes.c_int(get_entity_type(obj_type))
+        entity_id = ctypes.c_longlong(id)
+        _, numObjs,_,_ = self.__ex_get_block(&#39;EX_ELEM_BLOCK&#39;, id)
+        if EXODUS_LIB.ex_int64_status(self.fileId) &amp; EX_IDS_INT64_API:
+            id_map = (ctypes.c_longlong * numObjs.value)()
+        else:
+            id_map = (ctypes.c_int * numObjs.value)()
+        EXODUS_LIB.ex_get_block_id_map(self.fileId, obj_type, entity_id, id_map)
+        if self.use_numpy:
+            id_map = ctype_to_numpy(self, id_map)
+        return id_map
+
+    # --------------------------------------------------------------------
+
     def __ex_put_id_map(self, objType, idMap):
         inqType = ex_obj_to_inq(objType)
         obj_type = ctypes.c_int(get_entity_type(objType))
@@ -15148,7 +15232,7 @@ with ids in object_ids</p></div>
 </summary>
 <pre><code class="python">def get_assemblies(self, object_ids):
     &#34;&#34;&#34;
-    reads the assembly parameters and assembly data for all assemblies 
+    reads the assembly parameters and assembly data for all assemblies
     with ids in object_ids
     &#34;&#34;&#34;
     assemblies = [ex_assembly(id=object_id) for object_id in object_ids]
@@ -15173,7 +15257,7 @@ with ids in object_ids</p></div>
 </summary>
 <pre><code class="python">def get_assembly(self, object_id):
     &#34;&#34;&#34;
-    reads the assembly parameters and assembly data for one assembly 
+    reads the assembly parameters and assembly data for one assembly
     &#34;&#34;&#34;
     assem = ex_assembly(id=object_id)
     self.__ex_get_assembly(assem)
@@ -15268,6 +15352,57 @@ entity <em>ID</em> (not <em>INDEX</em>)</p>
     assem = ex_blob(id=object_id)
     self.__ex_get_blob(assem)
     return assem</code></pre>
+</details>
+</dd>
+<dt id="exodus3.exodus.get_block_id_map"><code class="name flex">
+<span>def <span class="ident">get_block_id_map</span></span>(<span>self, obj_type, entity_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Gets the map of elements found in the given entity_id of an object
+of obj_type.</p>
+<p><em>INDEX</em> ordering, a 1-based system going from 1 to
+number of elements in the elem_block, used by exodus for
+storage and input/output of array data stored on the elements;
+a user or application can optionally use a separate element <em>ID</em> numbering system,
+so the elem_id_map points to the element <em>ID</em> for each
+element <em>INDEX</em></p>
+<pre><code class="language-python-repl">&gt;&gt;&gt; elem_block_id_map = exo.get_block_id_map(&quot;EX_ELEM_BLOCK&quot;, 100)
+</code></pre>
+<h2 id="returns">Returns</h2>
+<pre><code>if array_type == 'ctype':
+  &lt;list&lt;int&gt;&gt;  elem_id_map
+
+if array_type == 'numpy':
+  &lt;np_array&lt;int&gt;&gt;  elem_id_map
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_block_id_map(self, obj_type, entity_id):
+    &#34;&#34;&#34;
+    Gets the map of elements found in the given entity_id of an object
+    of obj_type.
+
+    *INDEX* ordering, a 1-based system going from 1 to
+    number of elements in the elem_block, used by exodus for
+    storage and input/output of array data stored on the elements;
+    a user or application can optionally use a separate element *ID* numbering system,
+    so the elem_id_map points to the element *ID* for each
+    element *INDEX*
+
+    &gt;&gt;&gt; elem_block_id_map = exo.get_block_id_map(&#34;EX_ELEM_BLOCK&#34;, 100)
+
+    Returns
+    -------
+
+        if array_type == &#39;ctype&#39;:
+          &lt;list&lt;int&gt;&gt;  elem_id_map
+
+        if array_type == &#39;numpy&#39;:
+          &lt;np_array&lt;int&gt;&gt;  elem_id_map
+    &#34;&#34;&#34;
+    return self.__ex_get_block_id_map(obj_type, entity_id)</code></pre>
 </details>
 </dd>
 <dt id="exodus3.exodus.get_coord"><code class="name flex">
@@ -20119,7 +20254,7 @@ points to the node <em>ID</em> for each node <em>INDEX</em></p>
 </code></dt>
 <dd>
 <div class="desc"><p>Initialize static metadata for the database.</p>
-<pre><code class="language-python-repl">&gt;&gt;&gt; status = exo.put_info(self, title, num_dims, num_nodes, num_elems,
+<pre><code class="language-python-repl">&gt;&gt;&gt; status = exo.put_info(title, num_dims, num_nodes, num_elems,
 ...                      num_blocks, num_ns, num_ss)
 </code></pre>
 <h2 id="parameters">Parameters</h2>
@@ -20153,7 +20288,7 @@ points to the node <em>ID</em> for each node <em>INDEX</em></p>
     &#34;&#34;&#34;
     Initialize static metadata for the database.
 
-    &gt;&gt;&gt; status = exo.put_info(self, title, num_dims, num_nodes, num_elems,
+    &gt;&gt;&gt; status = exo.put_info(title, num_dims, num_nodes, num_elems,
     ...                      num_blocks, num_ns, num_ss)
 
     Parameters
@@ -20189,7 +20324,7 @@ points to the node <em>ID</em> for each node <em>INDEX</em></p>
 </code></dt>
 <dd>
 <div class="desc"><p>put initialization information into exodus file</p>
-<pre><code class="language-python-repl">&gt;&gt;&gt; e.put_info_ext(self,info_struct)
+<pre><code class="language-python-repl">&gt;&gt;&gt; e.put_info_ext(info_struct)
 </code></pre></div>
 <details class="source">
 <summary>
@@ -20199,7 +20334,7 @@ points to the node <em>ID</em> for each node <em>INDEX</em></p>
     &#34;&#34;&#34;
     put initialization information into exodus file
 
-    &gt;&gt;&gt; e.put_info_ext(self,info_struct)
+    &gt;&gt;&gt; e.put_info_ext(info_struct)
     &#34;&#34;&#34;
     if len(p.title) &gt; MAX_LINE_LENGTH:
         print(&#34;WARNING: Exodus title \&#34;{}\&#34; exceeds maximum line length ({}). It will be truncated.&#34;
@@ -20270,8 +20405,8 @@ one line of info, e.g. a line of an input deck</p>
 <span>def <span class="ident">put_name</span></span>(<span>self, object_type, object_id, name)</span>
 </code></dt>
 <dd>
-<div class="desc"><p>get the name of the specified entity_type and entity</p>
-<pre><code class="language-python-repl">&gt;&gt;&gt; exo.put_name('EX_ELEM_BLOCK', elem_blk_id)
+<div class="desc"><p>put the name of the specified entity_type and entity</p>
+<pre><code class="language-python-repl">&gt;&gt;&gt; exo.put_name('EX_ELEM_BLOCK', elem_blk_id, block_name)
 </code></pre>
 <h2 id="parameters">Parameters</h2>
 <dl>
@@ -20293,9 +20428,9 @@ one line of info, e.g. a line of an input deck</p>
 </summary>
 <pre><code class="python">def put_name(self, object_type, object_id, name):
     &#34;&#34;&#34;
-    get the name of the specified entity_type and entity
+    put the name of the specified entity_type and entity
 
-    &gt;&gt;&gt; exo.put_name(&#39;EX_ELEM_BLOCK&#39;, elem_blk_id)
+    &gt;&gt;&gt; exo.put_name(&#39;EX_ELEM_BLOCK&#39;, elem_blk_id, block_name)
 
     Parameters
     ----------
@@ -22476,6 +22611,7 @@ Number of time steps         = 5
 <li><code><a title="exodus3.exodus.get_attribute_count" href="#exodus3.exodus.get_attribute_count">get_attribute_count</a></code></li>
 <li><code><a title="exodus3.exodus.get_attributes" href="#exodus3.exodus.get_attributes">get_attributes</a></code></li>
 <li><code><a title="exodus3.exodus.get_blob" href="#exodus3.exodus.get_blob">get_blob</a></code></li>
+<li><code><a title="exodus3.exodus.get_block_id_map" href="#exodus3.exodus.get_block_id_map">get_block_id_map</a></code></li>
 <li><code><a title="exodus3.exodus.get_coord" href="#exodus3.exodus.get_coord">get_coord</a></code></li>
 <li><code><a title="exodus3.exodus.get_coord_names" href="#exodus3.exodus.get_coord_names">get_coord_names</a></code></li>
 <li><code><a title="exodus3.exodus.get_coords" href="#exodus3.exodus.get_coords">get_coords</a></code></li>
