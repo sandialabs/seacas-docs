@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['skinner_0',['Skinner',['../namespaceSkinner.html',1,'']]],
-  ['smartassert_1',['SmartAssert',['../namespaceSmartAssert.html',1,'']]]
+  ['pdqsort_5fdetail_0',['pdqsort_detail',['../namespacepdqsort__detail.html',1,'']]]
 ];

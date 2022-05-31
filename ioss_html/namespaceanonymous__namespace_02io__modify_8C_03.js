@@ -14,6 +14,7 @@ var namespaceanonymous__namespace_02io__modify_8C_03 =
     [ "handle_graph", "namespaceanonymous__namespace_02io__modify_8C_03.html#a1a68d0ca2ad414d55999a0283ba1952e", null ],
     [ "handle_help", "namespaceanonymous__namespace_02io__modify_8C_03.html#a0e0c785ea8e73ba62ec5e1bc7b93b034", null ],
     [ "handle_list", "namespaceanonymous__namespace_02io__modify_8C_03.html#ab6bed164b29bd1814f5cf4b98147208f", null ],
+    [ "handle_rename", "namespaceanonymous__namespace_02io__modify_8C_03.html#a77e15b5e3cc5295cbe6a1d4e66761a3a", null ],
     [ "handle_time", "namespaceanonymous__namespace_02io__modify_8C_03.html#a29879d0cc088a9c66258a3adfd801357", null ],
     [ "id", "namespaceanonymous__namespace_02io__modify_8C_03.html#ab22ffb923eada17fe68730a61741da80", null ],
     [ "info_entities", "namespaceanonymous__namespace_02io__modify_8C_03.html#a5985569f0f8310bae96ebc52e96c1371", null ],

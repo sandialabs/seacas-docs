@@ -1,0 +1,4 @@
+var structdoctest_1_1detail_1_1has__insertion__operator__impl_1_1check_3_01T_00_01decltype_07os_07_0e2c4b9cfd5c6239f9132a587c9499e40 =
+[
+    [ "value", "structdoctest_1_1detail_1_1has__insertion__operator__impl_1_1check_3_01T_00_01decltype_07os_07_0e2c4b9cfd5c6239f9132a587c9499e40.html#a542c07271dbf275dad80b0c11a22153c", null ]
+];

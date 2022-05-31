@@ -1,7 +1,7 @@
 var classIotm_1_1text__mesh_1_1SidesetSplitter =
 [
     [ "SplitData", "structIotm_1_1text__mesh_1_1SidesetSplitter_1_1SplitData.html", "structIotm_1_1text__mesh_1_1SidesetSplitter_1_1SplitData" ],
-    [ "Criterion", "classIotm_1_1text__mesh_1_1SidesetSplitter.html#a80580cc1b76a9dd5f6c76ffa713d50b4", null ],
+    [ "Criterion", "classIotm_1_1text__mesh_1_1SidesetSplitter.html#a1b9545e50e984152c85d2ae7cd6a01f6", null ],
     [ "SidesetSplitter", "classIotm_1_1text__mesh_1_1SidesetSplitter.html#a62b4eb24601f01dc8d399a4795757a11", null ],
     [ "SidesetSplitter", "classIotm_1_1text__mesh_1_1SidesetSplitter.html#a62973844bb5e18d0ea44f6a6bd265745", null ],
     [ "build_index_proc_map", "classIotm_1_1text__mesh_1_1SidesetSplitter.html#ac43ec52ec098a2693d18f2bc014d7889", null ],

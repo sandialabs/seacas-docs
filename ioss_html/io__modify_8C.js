@@ -15,6 +15,7 @@ var io__modify_8C =
     [ "handle_graph", "io__modify_8C.html#a1a68d0ca2ad414d55999a0283ba1952e", null ],
     [ "handle_help", "io__modify_8C.html#a0e0c785ea8e73ba62ec5e1bc7b93b034", null ],
     [ "handle_list", "io__modify_8C.html#ab6bed164b29bd1814f5cf4b98147208f", null ],
+    [ "handle_rename", "io__modify_8C.html#a77e15b5e3cc5295cbe6a1d4e66761a3a", null ],
     [ "handle_time", "io__modify_8C.html#a29879d0cc088a9c66258a3adfd801357", null ],
     [ "id", "io__modify_8C.html#ab22ffb923eada17fe68730a61741da80", null ],
     [ "info_entities", "io__modify_8C.html#a5985569f0f8310bae96ebc52e96c1371", null ],

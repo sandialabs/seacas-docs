@@ -79,7 +79,7 @@ var classIotm_1_1TopologyMapEntry =
     [ "initialized", "classIotm_1_1TopologyMapEntry.html#abec2ad4cf4174b1d2bd13defb74872ae", null ],
     [ "InvalidOrdinal", "classIotm_1_1TopologyMapEntry.html#af04ffdfe343d107bb1f13c088b7b7ba0", null ],
     [ "InvalidPermutation", "classIotm_1_1TopologyMapEntry.html#a22871aa479456c293a72bfa142d0c3f7", null ],
-    [ "sideTopologies", "classIotm_1_1TopologyMapEntry.html#aa20eb12b0cee0fcada21fcca3685bf26", null ],
+    [ "sideTopologies", "classIotm_1_1TopologyMapEntry.html#a90816d751eb8dcb121c5d24f39e4d08b", null ],
     [ "topology", "classIotm_1_1TopologyMapEntry.html#aab2c5f9adeb1071f34ac5733aee200b3", null ],
     [ "validSpatialDimensions", "classIotm_1_1TopologyMapEntry.html#af24d9f93ed57335e88b3f74530660da9", null ]
 ];

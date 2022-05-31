@@ -609,8 +609,8 @@ var namespaces_dup =
     [ "anonymous_namespace{Utst_IofxDatabaseIO.C}", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html", [
       [ "create_input_db_io", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#afbf85d61aca1952d420334e50291ea6d", null ],
       [ "create_output_db_io", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a4d0225d534a61052e1270a12903fe108", null ],
-      [ "TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a9748ac8863e3a74d9e32d74ea08c6033", null ],
-      [ "TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a74048fc3180a4a3c4ad8a02531feb101", null ],
+      [ "DOCTEST_TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a054cb824a5433ba319acdae6323aba84", null ],
+      [ "DOCTEST_TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a90f3c945e87312129541ee101230f3dd", null ],
       [ "test_topology", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#ad31faef7baafdc5624822638a44c9e4a", null ],
       [ "input_filename", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a4ce6845112cf47b2b4f414ffe3145710", null ]
     ] ],
@@ -624,6 +624,10 @@ var namespaces_dup =
     [ "anonymous_namespace{volume.C}", "namespaceanonymous__namespace_02volume_8C_03.html", [
       [ "comp_grad12x", "namespaceanonymous__namespace_02volume_8C_03.html#aa2b0c68eb6b5594cb01e2e73bf8d39d8", null ],
       [ "dot8", "namespaceanonymous__namespace_02volume_8C_03.html#af719cf311d0d67e67fdf3884b50d0795", null ]
+    ] ],
+    [ "doctest", "namespacedoctest.html", "namespacedoctest" ],
+    [ "doctest_detail_test_suite_ns", "namespacedoctest__detail__test__suite__ns.html", [
+      [ "getCurrentTestSuite", "namespacedoctest__detail__test__suite__ns.html#a63d04c2e0ba35dff1e33cf0a24ec66c8", null ]
     ] ],
     [ "Info", "namespaceInfo.html", "namespaceInfo" ],
     [ "Ioad", "namespaceIoad.html", "namespaceIoad" ],
@@ -671,5 +675,6 @@ var namespaces_dup =
       [ "get_typeof_level", "namespaceSmartAssert.html#ab9c77e2bf430b103a8ac59d852297f6a", null ],
       [ "make_assert", "namespaceSmartAssert.html#a6fa24100c0c2c3e4bbf5eddba37ee14d", null ]
     ] ],
+    [ "std", "namespacestd.html", "namespacestd" ],
     [ "tsl", "namespacetsl.html", "namespacetsl" ]
 ];

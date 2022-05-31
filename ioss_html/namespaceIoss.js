@@ -348,7 +348,7 @@ var namespaceIoss =
       [ "SPLIT_LAST_ENTRY", "namespaceIoss.html#aac97d071c77181adce98f1569c36d222ac58d9f16883b0615c05af5e380adc68f", null ]
     ] ],
     [ "copy_database", "namespaceIoss.html#acf60c6566ef8bd6e92e360a0c27daf9d", null ],
-    [ "DEBUG", "namespaceIoss.html#ae0fe19b4e98394703970369f5913c2c7", null ],
+    [ "DebugOut", "namespaceIoss.html#a9804f5a9612ff0a28eac05acb897d120", null ],
     [ "int_to_surface_split", "namespaceIoss.html#acba9071b636f35b882f0f11f32e1c855", null ],
     [ "io_info_file_info", "namespaceIoss.html#a54db3aed608cf4f235044d9e4da22977", null ],
     [ "io_info_file_info", "namespaceIoss.html#ab520f7b16b97a54e5d147668baf225bc", null ],
@@ -367,7 +367,7 @@ var namespaceIoss =
     [ "transfer_coordinate_frames", "namespaceIoss.html#a48498de7d44a659ee823b1432c992738", null ],
     [ "valid_decomp_methods", "namespaceIoss.html#afe78c69a8455b1ff5ce013580d7f7078", null ],
     [ "Version", "namespaceIoss.html#acac6ca4c845b7c264498f447d9b5a039", null ],
-    [ "WARNING", "namespaceIoss.html#a888c86a1b4703bdad345e8d6108665af", null ],
+    [ "WarnOut", "namespaceIoss.html#a0db06750c96ddc590a9925892e7b2287", null ],
     [ "entityTypeCount", "namespaceIoss.html#a60ba379fdd8679588ac7c40b32490dc5", null ],
     [ "InvalidOrdinal", "namespaceIoss.html#a47a457e22bc51d3acec38875f6f40c12", null ],
     [ "InvalidPermutation", "namespaceIoss.html#a1aee644974e90ff841669e31e0b4e7ad", null ]
