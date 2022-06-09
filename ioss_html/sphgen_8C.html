@@ -85,7 +85,6 @@ $(document).ready(function(){initNavTree('sphgen_8C.html',''); initResizable(); 
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">sphgen.C File Reference</div></div>
@@ -100,6 +99,7 @@ $(document).ready(function(){initNavTree('sphgen_8C.html',''); initResizable(); 
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;fmt/ostream.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -118,7 +118,8 @@ $(document).ready(function(){initNavTree('sphgen_8C.html',''); initResizable(); 
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sphgen.C:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="sphgen_8C__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="sphgen_8C__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -130,11 +131,6 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceanonymous__namespace_02sphgen_8C_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02sphgen_8C_03.html">anonymous_namespace{sphgen.C}</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a6839c46cb9dbbfd7dd87fec222baece1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphgen_8C.html#a6839c46cb9dbbfd7dd87fec222baece1">DO_OUTPUT</a>&#160;&#160;&#160;std::cerr</td></tr>
-<tr class="separator:a6839c46cb9dbbfd7dd87fec222baece1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -157,24 +153,9 @@ Variables</h2></td></tr>
 <tr class="separator:a298d577455c39a3da058117c7888c92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad33f334bffe7eea89f1106b62011f78"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02sphgen_8C_03.html#aad33f334bffe7eea89f1106b62011f78">anonymous_namespace{sphgen.C}::codename</a></td></tr>
 <tr class="separator:aad33f334bffe7eea89f1106b62011f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71af39d7cefb3c9db653f7ec7580c55f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02sphgen_8C_03.html#a71af39d7cefb3c9db653f7ec7580c55f">anonymous_namespace{sphgen.C}::version</a> = &quot;0.9&quot;</td></tr>
+<tr class="memitem:a71af39d7cefb3c9db653f7ec7580c55f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02sphgen_8C_03.html#a71af39d7cefb3c9db653f7ec7580c55f">anonymous_namespace{sphgen.C}::version</a> = &quot;0.91&quot;</td></tr>
 <tr class="separator:a71af39d7cefb3c9db653f7ec7580c55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a6839c46cb9dbbfd7dd87fec222baece1" name="a6839c46cb9dbbfd7dd87fec222baece1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6839c46cb9dbbfd7dd87fec222baece1">&#9670;&nbsp;</a></span>DO_OUTPUT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DO_OUTPUT&#160;&#160;&#160;std::cerr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>

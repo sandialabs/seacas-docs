@@ -11,6 +11,7 @@ var classIOShell_1_1Interface =
     [ "compare", "classIOShell_1_1Interface.html#aef109535be8aa0229e1d3114288803e7", null ],
     [ "compose_output", "classIOShell_1_1Interface.html#a0bebac52793526e98227e21ae44a0c14", null ],
     [ "compression_level", "classIOShell_1_1Interface.html#a9485b29e8885ea8d21fbec90569b0b5c", null ],
+    [ "customField", "classIOShell_1_1Interface.html#aa4d2c3f98a9b028bfab70088a8e066b6", null ],
     [ "data_storage_type", "classIOShell_1_1Interface.html#ad4030d7390f503e14fea0baae7a41bdb", null ],
     [ "debug", "classIOShell_1_1Interface.html#aca48d73739f4fc9c6fc6524784e773d2", null ],
     [ "decomp_extra", "classIOShell_1_1Interface.html#ad45ca8d0172e791d2928bdf6ef64c228", null ],
