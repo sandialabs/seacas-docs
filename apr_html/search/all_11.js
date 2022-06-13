@@ -1,11 +1,11 @@
 var searchData=
 [
   ['r2d_0',['r2d',['../apr__builtin_8cc.html#a11cb28cf4bfecf5bfbd98ab9e4f2123b',1,'apr_builtin.cc']]],
-  ['range_5f_1',['range_',['../classSEAMS_1_1Parser_1_1stack_1_1slice.html#a1ffc2002eeb1ccc58c73076cc27c940c',1,'SEAMS::Parser::stack::slice']]],
-  ['rbrace_2',['RBRACE',['../structSEAMS_1_1Parser_1_1token.html#ac1559cad2b792d9af450e7ddf114fb82aaaf0328a440091deeef164035075f541',1,'SEAMS::Parser::token']]],
-  ['rbrack_3',['RBRACK',['../structSEAMS_1_1Parser_1_1token.html#ac1559cad2b792d9af450e7ddf114fb82a06249056ea403514ec27cbd6d872903e',1,'SEAMS::Parser::token']]],
+  ['range_5f_1',['range_',['../classSEAMS_1_1Parser_1_1stack_1_1slice.html#ae31b27d6d91ed18665e857322acee30c',1,'SEAMS::Parser::stack::slice']]],
+  ['rbrace_2',['RBRACE',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfaaaf0328a440091deeef164035075f541',1,'SEAMS::Parser::token']]],
+  ['rbrack_3',['RBRACK',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfa06249056ea403514ec27cbd6d872903e',1,'SEAMS::Parser::token']]],
   ['rd_4',['rd',['../namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a210b8303fb82ba1cd00e1e45de8ce01b',1,'anonymous_namespace{apr_builtin.cc}']]],
-  ['red_5',['RED',['../structtrmclr_1_1Background.html#aa96259e93f51806dbf9b4016f45dbfaaa8193e51503d36317e5d7a7f7d0159b6b',1,'trmclr::Background::RED()'],['../structtrmclr_1_1Foreground.html#add2640fff4af2ff8c047db518188fb58ae18e2423babe576e6f48c0e1c9aa80fe',1,'trmclr::Foreground::RED()']]],
+  ['red_5',['RED',['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6ea8193e51503d36317e5d7a7f7d0159b6b',1,'trmclr::Background::RED()'],['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9abae18e2423babe576e6f48c0e1c9aa80fe',1,'trmclr::Foreground::RED()']]],
   ['red_6',['red',['../namespacetrmclr.html#add14279b38ea9e58303202ac84fa0ee4',1,'trmclr']]],
   ['redefine_5farray_7',['redefine_array',['../classSEAMS_1_1Aprepro.html#aa30df74c7661d884bb76fad2c552d77e',1,'SEAMS::Aprepro']]],
   ['redefined_5fwarning_8',['redefined_warning',['../namespaceSEAMS.html#a36fa53fd83f697ce33c330210a3a9ef1',1,'SEAMS']]],
@@ -20,7 +20,7 @@ var searchData=
   ['rescan_17',['rescan',['../classSEAMS_1_1Scanner.html#aca31007249ba78df3deca0776e6ea4ba',1,'SEAMS::Scanner']]],
   ['reserve_18',['reserve',['../classtsl_1_1detail__robin__hash_1_1robin__hash.html#ae28c7b9fea587003fd86224faa0218f6',1,'tsl::detail_robin_hash::robin_hash::reserve()'],['../classtsl_1_1robin__map.html#a7bf899b686ed89344b9d125909eb3744',1,'tsl::robin_map::reserve()'],['../classtsl_1_1robin__set.html#a2e4e21b58bb081ec0083f372e9e73287',1,'tsl::robin_set::reserve()']]],
   ['reset_5ferror_19',['reset_error',['../namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a97223934f027610caeba5b309178b354',1,'anonymous_namespace{apr_builtin.cc}::reset_error()'],['../namespaceanonymous__namespace_02apr__parser_8cc_03.html#af0841fd60e700c2b6ba9c5700889d83b',1,'anonymous_namespace{apr_parser.cc}::reset_error()']]],
-  ['reverse_20',['REVERSE',['../structtrmclr_1_1Attribute.html#a4119ae35c163c96b3a2c44c47da98c0ea8f5e448006fcf0b5f8c04d0ae42720cd',1,'trmclr::Attribute']]],
+  ['reverse_20',['REVERSE',['../structtrmclr_1_1Attribute.html#a83c8ff7e417172a6e0e1a279d5ab25bea8f5e448006fcf0b5f8c04d0ae42720cd',1,'trmclr::Attribute']]],
   ['rng_21',['rng',['../namespaceanonymous__namespace_02apr__builtin_8cc_03.html#afba54e4ae2d3a2369ed3086a983916fa',1,'anonymous_namespace{apr_builtin.cc}']]],
   ['robin_5fgrowth_5fpolicy_2eh_22',['robin_growth_policy.h',['../robin__growth__policy_8h.html',1,'']]],
   ['robin_5fhash_23',['robin_hash',['../classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator.html#a67236abe71c4d039824d9e52c78d3bae',1,'tsl::detail_robin_hash::robin_hash::robin_iterator::robin_hash()'],['../classtsl_1_1detail__robin__hash_1_1robin__hash.html#a568e211761be66669dabd30e2fa071b4',1,'tsl::detail_robin_hash::robin_hash::robin_hash(size_type bucket_count, const Hash &amp;my_hash, const KeyEqual &amp;equal, const Allocator &amp;alloc, float min_load_factor=DEFAULT_MIN_LOAD_FACTOR, float max_load_factor=DEFAULT_MAX_LOAD_FACTOR)'],['../classtsl_1_1detail__robin__hash_1_1robin__hash.html#aaad58cb65e5ddfea6c508bdb6fa76d09',1,'tsl::detail_robin_hash::robin_hash::robin_hash(const robin_hash &amp;other)'],['../classtsl_1_1detail__robin__hash_1_1robin__hash.html#afdf28d523b69f310d550b5e4d5ce6715',1,'tsl::detail_robin_hash::robin_hash::robin_hash(robin_hash &amp;&amp;other) noexcept(std::is_nothrow_move_constructible&lt; Hash &gt;::value &amp;&amp;std::is_nothrow_move_constructible&lt; KeyEqual &gt;::value &amp;&amp;std::is_nothrow_move_constructible&lt; GrowthPolicy &gt;::value &amp;&amp;std::is_nothrow_move_constructible&lt; buckets_container_type &gt;::value)'],['../classtsl_1_1detail__robin__hash_1_1robin__hash.html',1,'tsl::detail_robin_hash::robin_hash&lt; ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;']]],
@@ -38,5 +38,5 @@ var searchData=
   ['robin_5fset_2eh_35',['robin_set.h',['../robin__set_8h.html',1,'']]],
   ['round_5fup_5fto_5fpower_5fof_5ftwo_36',['round_up_to_power_of_two',['../classtsl_1_1rh_1_1power__of__two__growth__policy.html#a8b437c7a824579a9f051c843d7bd0cb6',1,'tsl::rh::power_of_two_growth_policy']]],
   ['rows_37',['rows',['../structSEAMS_1_1array.html#ac1c98e4393414cf9fbb01ecf0f32e8ce',1,'SEAMS::array']]],
-  ['rpar_38',['RPAR',['../structSEAMS_1_1Parser_1_1token.html#ac1559cad2b792d9af450e7ddf114fb82a1ade1535b1bf24d8c989be8963792b80',1,'SEAMS::Parser::token']]]
+  ['rpar_38',['RPAR',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfa1ade1535b1bf24d8c989be8963792b80',1,'SEAMS::Parser::token']]]
 ];

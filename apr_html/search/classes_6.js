@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['make_5fvoid_0',['make_void',['../structtsl_1_1detail__robin__hash_1_1make__void.html',1,'tsl::detail_robin_hash']]],
-  ['mod_5fgrowth_5fpolicy_1',['mod_growth_policy',['../classtsl_1_1rh_1_1mod__growth__policy.html',1,'tsl::rh']]]
+  ['keyselect_0',['KeySelect',['../classtsl_1_1robin__map_1_1KeySelect.html',1,'tsl::robin_map&lt; Key, T, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::KeySelect'],['../classtsl_1_1robin__set_1_1KeySelect.html',1,'tsl::robin_set&lt; Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::KeySelect']]]
 ];
