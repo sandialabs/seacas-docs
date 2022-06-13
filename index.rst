@@ -17,7 +17,7 @@ post-processing codes, analysis codes, database translation codes,
 support libraries, UNIX shell scripts, and an installation system.
 
 WIKI: FAQ and Extensions 
-   The `SEACAS WIKI <https://github.com/gsjaardema/seacas/wiki>`_
+   The `SEACAS WIKI <https://github.com/sandialabs/seacas/wiki>`_
    contains some FAQ-like answers and also a listing of proposed
    Exodus extensions.
 
@@ -90,7 +90,7 @@ assemblies, blobs, and other cleanups.
 
 **Extensions**
   Potential and proposed `Exodus extensions
-  <https://github.com/gsjaardema/seacas/wiki#recent-extensions-to-exodus-format>`_
+  <https://github.com/sandialabs/seacas/wiki#recent-extensions-to-exodus-format>`_
   and their status.
  
 Exodus Python Interfaces
