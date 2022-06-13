@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
 <title>exodus3 API documentation</title>
-<meta name="description" content="exodus.py v 1.20.11 (seacas-py3) is a python wrapper of some of the exodus library
+<meta name="description" content="exodus.py v 1.20.12 (seacas-py3) is a python wrapper of some of the exodus library
 (Python 3 Version) …" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
@@ -23,7 +23,7 @@
 <h1 class="title">Module <code>exodus3</code></h1>
 </header>
 <section id="section-intro">
-<p>exodus.py v 1.20.11 (seacas-py3) is a python wrapper of some of the exodus library
+<p>exodus.py v 1.20.12 (seacas-py3) is a python wrapper of some of the exodus library
 (Python 3 Version)</p>
 <p>Exodus is a common database for multiple application codes (mesh
 generators, analysis codes, visualization software, etc.) affording
@@ -81,7 +81,7 @@ applications, the data format is flexible enough to accommodate a
 spectrum of uses.</p>
 </li>
 </ul>
-<p>Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions
+<p>Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions
 of Sandia, LLC (NTESS).
 Under the terms of Contract DE-NA0003525 with
 NTESS, the U.S. Government retains certain rights in this software.</p>
@@ -91,7 +91,7 @@ NTESS, the U.S. Government retains certain rights in this software.</p>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">&#34;&#34;&#34;
-exodus.py v 1.20.11 (seacas-py3) is a python wrapper of some of the exodus library
+exodus.py v 1.20.12 (seacas-py3) is a python wrapper of some of the exodus library
 (Python 3 Version)
 
 Exodus is a common database for multiple application codes (mesh
@@ -143,7 +143,7 @@ of global variables. Although these examples correspond to typical FE
 applications, the data format is flexible enough to accommodate a
 spectrum of uses.
 
-Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions
+Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions
 of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with
 NTESS, the U.S. Government retains certain rights in this software.
 
@@ -162,12 +162,12 @@ from enum import Enum
 
 EXODUS_PY_COPYRIGHT_AND_LICENSE = __doc__
 
-EXODUS_PY_VERSION = &#34;1.20.11 (seacas-py3)&#34;
+EXODUS_PY_VERSION = &#34;1.20.12 (seacas-py3)&#34;
 
 EXODUS_PY_COPYRIGHT = &#34;&#34;&#34;
-You are using exodus.py v 1.20.11 (seacas-py3), a python wrapper of some of the exodus library.
+You are using exodus.py v 1.20.12 (seacas-py3), a python wrapper of some of the exodus library.
 
-Copyright (c) 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021 National Technology &amp;
+Copyright (c) 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022 National Technology &amp;
 Engineering Solutions of Sandia, LLC (NTESS).  Under the terms of
 Contract DE-NA0003525 with NTESS, the U.S. Government retains certain
 rights in this software.
@@ -802,6 +802,13 @@ class exodus:
         self.coordsZ = None
         self.times = None
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, type, value, traceback):
+        self.close()
+        if not traceback:
+            return True
 
     def summarize(self):
         &#34;&#34;&#34;
@@ -910,12 +917,14 @@ class exodus:
     # copy to a new database
     #
     # --------------------------------------------------------------------
-    def copy(self, fileName, include_transient=False):
+    def copy(self, fileName, include_transient=False, mode=&#39;a&#39;):
         &#34;&#34;&#34;
-        copies exodus database to file_name and returns this copy as a
-        new exodus object
+        Copies exodus database to file_name and returns an opened copy as a
+        new exodus object. This object will need to be closed when it is done
+        being used.
 
         &gt;&gt;&gt; exo_copy = exo.copy(file_name)
+        &gt;&gt;&gt; exo_copy.close()
 
         Parameters
         ----------
@@ -924,7 +933,7 @@ class exodus:
 
         Returns
         -------
-        exo_copy : exodus object
+        exo_copy : exodus object opened in append mode by default
         &#34;&#34;&#34;
         i64Status = EXODUS_LIB.ex_int64_status(self.fileId)
         fileId = EXODUS_LIB.ex_create_int(fileName.encode(&#39;ascii&#39;), EX_NOCLOBBER|i64Status,
@@ -935,7 +944,8 @@ class exodus:
         self.__copy_file(fileId, include_transient)
         EXODUS_LIB.ex_close(fileId)
 
-        return exodus(fileName, &#34;a&#34;)
+        return exodus(fileName, mode)
+
 
     #
     # general info
@@ -9488,6 +9498,13 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
         self.coordsZ = None
         self.times = None
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, type, value, traceback):
+        self.close()
+        if not traceback:
+            return True
 
     def summarize(self):
         &#34;&#34;&#34;
@@ -9596,12 +9613,14 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
     # copy to a new database
     #
     # --------------------------------------------------------------------
-    def copy(self, fileName, include_transient=False):
+    def copy(self, fileName, include_transient=False, mode=&#39;a&#39;):
         &#34;&#34;&#34;
-        copies exodus database to file_name and returns this copy as a
-        new exodus object
+        Copies exodus database to file_name and returns an opened copy as a
+        new exodus object. This object will need to be closed when it is done
+        being used.
 
         &gt;&gt;&gt; exo_copy = exo.copy(file_name)
+        &gt;&gt;&gt; exo_copy.close()
 
         Parameters
         ----------
@@ -9610,7 +9629,7 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
 
         Returns
         -------
-        exo_copy : exodus object
+        exo_copy : exodus object opened in append mode by default
         &#34;&#34;&#34;
         i64Status = EXODUS_LIB.ex_int64_status(self.fileId)
         fileId = EXODUS_LIB.ex_create_int(fileName.encode(&#39;ascii&#39;), EX_NOCLOBBER|i64Status,
@@ -9621,7 +9640,8 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
         self.__copy_file(fileId, include_transient)
         EXODUS_LIB.ex_close(fileId)
 
-        return exodus(fileName, &#34;a&#34;)
+        return exodus(fileName, mode)
+
 
     #
     # general info
@@ -14941,12 +14961,14 @@ all methods for that object become inoperable</p></div>
 </details>
 </dd>
 <dt id="exodus3.exodus.copy"><code class="name flex">
-<span>def <span class="ident">copy</span></span>(<span>self, fileName, include_transient=False)</span>
+<span>def <span class="ident">copy</span></span>(<span>self, fileName, include_transient=False, mode='a')</span>
 </code></dt>
 <dd>
-<div class="desc"><p>copies exodus database to file_name and returns this copy as a
-new exodus object</p>
+<div class="desc"><p>Copies exodus database to file_name and returns an opened copy as a
+new exodus object. This object will need to be closed when it is done
+being used.</p>
 <pre><code class="language-python-repl">&gt;&gt;&gt; exo_copy = exo.copy(file_name)
+&gt;&gt;&gt; exo_copy.close()
 </code></pre>
 <h2 id="parameters">Parameters</h2>
 <dl>
@@ -14955,19 +14977,21 @@ new exodus object</p>
 </dl>
 <h2 id="returns">Returns</h2>
 <dl>
-<dt><strong><code>exo_copy</code></strong> :&ensp;<code><a title="exodus3.exodus" href="#exodus3.exodus">exodus</a> object</code></dt>
+<dt><strong><code>exo_copy</code></strong> :&ensp;<code><a title="exodus3.exodus" href="#exodus3.exodus">exodus</a> object opened in append mode by default</code></dt>
 <dd>&nbsp;</dd>
 </dl></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">def copy(self, fileName, include_transient=False):
+<pre><code class="python">def copy(self, fileName, include_transient=False, mode=&#39;a&#39;):
     &#34;&#34;&#34;
-    copies exodus database to file_name and returns this copy as a
-    new exodus object
+    Copies exodus database to file_name and returns an opened copy as a
+    new exodus object. This object will need to be closed when it is done
+    being used.
 
     &gt;&gt;&gt; exo_copy = exo.copy(file_name)
+    &gt;&gt;&gt; exo_copy.close()
 
     Parameters
     ----------
@@ -14976,7 +15000,7 @@ new exodus object</p>
 
     Returns
     -------
-    exo_copy : exodus object
+    exo_copy : exodus object opened in append mode by default
     &#34;&#34;&#34;
     i64Status = EXODUS_LIB.ex_int64_status(self.fileId)
     fileId = EXODUS_LIB.ex_create_int(fileName.encode(&#39;ascii&#39;), EX_NOCLOBBER|i64Status,
@@ -14987,7 +15011,7 @@ new exodus object</p>
     self.__copy_file(fileId, include_transient)
     EXODUS_LIB.ex_close(fileId)
 
-    return exodus(fileName, &#34;a&#34;)</code></pre>
+    return exodus(fileName, mode)</code></pre>
 </details>
 </dd>
 <dt id="exodus3.exodus.elem_blk_info"><code class="name flex">
