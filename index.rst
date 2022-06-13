@@ -30,6 +30,9 @@ WIKI: FAQ and Extensions
   run the SEACAS/ACCESS system on Parallel computers. Currently
   specific to Sandia National Laboratories systems.
 
+**Download**
+  SEACAS source code and build instructions can be accessed at <https://github.com/sandialabs/seacas>.
+
 Exodus Library
 --------------
 
