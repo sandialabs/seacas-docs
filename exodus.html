@@ -733,7 +733,9 @@ class exodus:
 
         &gt;&gt;&gt; exo = exodus(file_name, mode=mode, title=title,
         ...             array_type=array_type, init_params=ex_pars)
-
+        &gt;&gt;&gt; with exodus(file_name, mode=mode, title=title,\
+        ...             array_type=array_type, init_params=ex_pars) as exo:
+        ...     pass
         &#34;&#34;&#34;
         global SHOW_BANNER
         if SHOW_BANNER:
@@ -6239,10 +6241,9 @@ def collectElemConnectivity(exodusHandle, connectivity):
 
     Usage:
     ------
-    &gt;&gt;&gt; exodusHandle = exodus(&#34;file.g&#34;, &#34;r&#34;)
-    &gt;&gt;&gt; connectivity = []
-    &gt;&gt;&gt; collectElemConnectivity(exodusHandle, connectivity)
-    &gt;&gt;&gt; exodusHandle.close()
+    &gt;&gt;&gt; with exodus(&#34;file.g&#34;, &#34;r&#34;) as exodusHandle:
+    &gt;&gt;&gt;     connectivity = []
+    &gt;&gt;&gt;     collectElemConnectivity(exodusHandle, connectivity)
     &#34;&#34;&#34;
 
     if not isinstance(connectivity, list):
@@ -6274,11 +6275,10 @@ def collectLocalNodeToLocalElems(
 
     Usage:
     ------
-    &gt;&gt;&gt; exodusHandle = exodus(&#34;file.g&#34;, &#34;r&#34;)
     &gt;&gt;&gt; connectivity = [] ## If this is not empty it will assume it is already filled.
     &gt;&gt;&gt; localNodeToLocalElems = []
-    &gt;&gt;&gt; collectLocalNodeToLocalElems(exodusHandle, connectivity, localNodeToLocalElems)
-    &gt;&gt;&gt; exodusHandle.close()
+    &gt;&gt;&gt; with exodus(&#34;file.g&#34;, &#34;r&#34;) as exodusHandle:
+    &gt;&gt;&gt;     collectLocalNodeToLocalElems(exodusHandle, connectivity, localNodeToLocalElems)
     &#34;&#34;&#34;
 
     if not isinstance(connectivity, list):
@@ -6318,13 +6318,12 @@ def collectLocalElemToLocalElems(
 
     Usage:
     ------
-    &gt;&gt;&gt; exodusHandle = exodus(&#34;file.g&#34;, &#34;r&#34;)
     &gt;&gt;&gt; connectivity = [] ## If this is not empty it will assume it is already filled.
     &gt;&gt;&gt; localNodeToLocalElems = [] ## If this is not empty it will assume it is already filled.
     &gt;&gt;&gt; localElemToLocalElems = []
-    &gt;&gt;&gt; collectLocalElemToLocalElems(exodusHandle, connectivity, localNodeToLocalElems,
+    &gt;&gt;&gt; with exodus(&#34;file.g&#34;, &#34;r&#34;) as exodusHandle:
+    &gt;&gt;&gt;     collectLocalElemToLocalElems(exodusHandle, connectivity, localNodeToLocalElems,
     ...                              localElemToLocalElems)
-    &gt;&gt;&gt; exodusHandle.close()
     &#34;&#34;&#34;
 
     if not isinstance(connectivity, list):
@@ -7188,10 +7187,9 @@ See <code>exodus.copy_mesh</code> function for that capability.</p></div>
 <dd>
 <div class="desc"><p>This function generates a list of lists that represent the element connectivity.</p>
 <h2 id="usage">Usage:</h2>
-<pre><code class="language-python-repl">&gt;&gt;&gt; exodusHandle = exodus(&quot;file.g&quot;, &quot;r&quot;)
-&gt;&gt;&gt; connectivity = []
-&gt;&gt;&gt; collectElemConnectivity(exodusHandle, connectivity)
-&gt;&gt;&gt; exodusHandle.close()
+<pre><code class="language-python-repl">&gt;&gt;&gt; with exodus(&quot;file.g&quot;, &quot;r&quot;) as exodusHandle:
+&gt;&gt;&gt;     connectivity = []
+&gt;&gt;&gt;     collectElemConnectivity(exodusHandle, connectivity)
 </code></pre></div>
 <details class="source">
 <summary>
@@ -7203,10 +7201,9 @@ See <code>exodus.copy_mesh</code> function for that capability.</p></div>
 
     Usage:
     ------
-    &gt;&gt;&gt; exodusHandle = exodus(&#34;file.g&#34;, &#34;r&#34;)
-    &gt;&gt;&gt; connectivity = []
-    &gt;&gt;&gt; collectElemConnectivity(exodusHandle, connectivity)
-    &gt;&gt;&gt; exodusHandle.close()
+    &gt;&gt;&gt; with exodus(&#34;file.g&#34;, &#34;r&#34;) as exodusHandle:
+    &gt;&gt;&gt;     connectivity = []
+    &gt;&gt;&gt;     collectElemConnectivity(exodusHandle, connectivity)
     &#34;&#34;&#34;
 
     if not isinstance(connectivity, list):
@@ -7233,13 +7230,12 @@ See <code>exodus.copy_mesh</code> function for that capability.</p></div>
 <div class="desc"><p>This function generates a list of lists to go from local elem id
 to connected local elem ids.</p>
 <h2 id="usage">Usage:</h2>
-<pre><code class="language-python-repl">&gt;&gt;&gt; exodusHandle = exodus(&quot;file.g&quot;, &quot;r&quot;)
-&gt;&gt;&gt; connectivity = [] ## If this is not empty it will assume it is already filled.
+<pre><code class="language-python-repl">&gt;&gt;&gt; connectivity = [] ## If this is not empty it will assume it is already filled.
 &gt;&gt;&gt; localNodeToLocalElems = [] ## If this is not empty it will assume it is already filled.
 &gt;&gt;&gt; localElemToLocalElems = []
-&gt;&gt;&gt; collectLocalElemToLocalElems(exodusHandle, connectivity, localNodeToLocalElems,
+&gt;&gt;&gt; with exodus(&quot;file.g&quot;, &quot;r&quot;) as exodusHandle:
+&gt;&gt;&gt;     collectLocalElemToLocalElems(exodusHandle, connectivity, localNodeToLocalElems,
 ...                              localElemToLocalElems)
-&gt;&gt;&gt; exodusHandle.close()
 </code></pre></div>
 <details class="source">
 <summary>
@@ -7256,13 +7252,12 @@ to connected local elem ids.</p>
 
     Usage:
     ------
-    &gt;&gt;&gt; exodusHandle = exodus(&#34;file.g&#34;, &#34;r&#34;)
     &gt;&gt;&gt; connectivity = [] ## If this is not empty it will assume it is already filled.
     &gt;&gt;&gt; localNodeToLocalElems = [] ## If this is not empty it will assume it is already filled.
     &gt;&gt;&gt; localElemToLocalElems = []
-    &gt;&gt;&gt; collectLocalElemToLocalElems(exodusHandle, connectivity, localNodeToLocalElems,
+    &gt;&gt;&gt; with exodus(&#34;file.g&#34;, &#34;r&#34;) as exodusHandle:
+    &gt;&gt;&gt;     collectLocalElemToLocalElems(exodusHandle, connectivity, localNodeToLocalElems,
     ...                              localElemToLocalElems)
-    &gt;&gt;&gt; exodusHandle.close()
     &#34;&#34;&#34;
 
     if not isinstance(connectivity, list):
@@ -7303,11 +7298,10 @@ to connected local elem ids.</p>
 <div class="desc"><p>This function generates a list of lists to go from local node id
 to local elem id.</p>
 <h2 id="usage">Usage:</h2>
-<pre><code class="language-python-repl">&gt;&gt;&gt; exodusHandle = exodus(&quot;file.g&quot;, &quot;r&quot;)
-&gt;&gt;&gt; connectivity = [] ## If this is not empty it will assume it is already filled.
+<pre><code class="language-python-repl">&gt;&gt;&gt; connectivity = [] ## If this is not empty it will assume it is already filled.
 &gt;&gt;&gt; localNodeToLocalElems = []
-&gt;&gt;&gt; collectLocalNodeToLocalElems(exodusHandle, connectivity, localNodeToLocalElems)
-&gt;&gt;&gt; exodusHandle.close()
+&gt;&gt;&gt; with exodus(&quot;file.g&quot;, &quot;r&quot;) as exodusHandle:
+&gt;&gt;&gt;     collectLocalNodeToLocalElems(exodusHandle, connectivity, localNodeToLocalElems)
 </code></pre></div>
 <details class="source">
 <summary>
@@ -7323,11 +7317,10 @@ to local elem id.</p>
 
     Usage:
     ------
-    &gt;&gt;&gt; exodusHandle = exodus(&#34;file.g&#34;, &#34;r&#34;)
     &gt;&gt;&gt; connectivity = [] ## If this is not empty it will assume it is already filled.
     &gt;&gt;&gt; localNodeToLocalElems = []
-    &gt;&gt;&gt; collectLocalNodeToLocalElems(exodusHandle, connectivity, localNodeToLocalElems)
-    &gt;&gt;&gt; exodusHandle.close()
+    &gt;&gt;&gt; with exodus(&#34;file.g&#34;, &#34;r&#34;) as exodusHandle:
+    &gt;&gt;&gt;     collectLocalNodeToLocalElems(exodusHandle, connectivity, localNodeToLocalElems)
     &#34;&#34;&#34;
 
     if not isinstance(connectivity, list):
@@ -9368,6 +9361,8 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
 </code></pre>
 <pre><code class="language-python-repl">&gt;&gt;&gt; exo = exodus(file_name, mode=mode, title=title,
 ...             array_type=array_type, init_params=ex_pars)
+&gt;&gt;&gt; with exodus(file_name, mode=mode, title=title,        ...             array_type=array_type, init_params=ex_pars) as exo:
+...     pass
 </code></pre></div>
 <details class="source">
 <summary>
@@ -9429,7 +9424,9 @@ and <code>blkIds</code> is a list of block ids to add it to.</dd>
 
         &gt;&gt;&gt; exo = exodus(file_name, mode=mode, title=title,
         ...             array_type=array_type, init_params=ex_pars)
-
+        &gt;&gt;&gt; with exodus(file_name, mode=mode, title=title,\
+        ...             array_type=array_type, init_params=ex_pars) as exo:
+        ...     pass
         &#34;&#34;&#34;
         global SHOW_BANNER
         if SHOW_BANNER:
