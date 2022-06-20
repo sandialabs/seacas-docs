@@ -28,5 +28,6 @@ var searchData=
   ['tsl_5frh_5fno_5fexceptions_25',['TSL_RH_NO_EXCEPTIONS',['../robin__growth__policy_8h.html#aa352528d449223f8086405d2ce4e8f9b',1,'robin_growth_policy.h']]],
   ['tsl_5frh_5fthrow_5for_5fterminate_26',['TSL_RH_THROW_OR_TERMINATE',['../robin__growth__policy_8h.html#a6763b674ae3f1893aa7524c5c8a8e9b2',1,'robin_growth_policy.h']]],
   ['tsl_5frh_5funused_27',['TSL_RH_UNUSED',['../robin__growth__policy_8h.html#ad38c75b536ea7e384aa09dc2ce8e34f8',1,'robin_growth_policy.h']]],
-  ['type_5fto_5fstring_28',['TYPE_TO_STRING',['../doctest_8h.html#a8245b61f7381307d76a1472436d35ebe',1,'doctest.h']]]
+  ['type_5fto_5fstring_28',['TYPE_TO_STRING',['../doctest_8h.html#a8245b61f7381307d76a1472436d35ebe',1,'doctest.h']]],
+  ['type_5fto_5fstring_5fas_29',['TYPE_TO_STRING_AS',['../doctest_8h.html#aa771c8cbf9b94916a2307c77676cd9ff',1,'doctest.h']]]
 ];

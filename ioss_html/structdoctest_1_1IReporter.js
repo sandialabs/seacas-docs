@@ -1,6 +1,5 @@
 var structdoctest_1_1IReporter =
 [
-    [ "~IReporter", "structdoctest_1_1IReporter.html#ae772182e42f2a3b163497f2b8bc3636d", null ],
     [ "get_active_contexts", "structdoctest_1_1IReporter.html#ad34f2f1954ff43b6e8fe2dc595cec53a", null ],
     [ "get_num_active_contexts", "structdoctest_1_1IReporter.html#a7d520de46d9104c0eeb02375fabad32d", null ],
     [ "get_num_stringified_contexts", "structdoctest_1_1IReporter.html#ac8b96fef046edc609a3374a61b84797d", null ],

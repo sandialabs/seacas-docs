@@ -1,6 +1,8 @@
 var Utst__map_8C =
 [
     [ "DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN", "Utst__map_8C.html#a623b8690a262536536a43eab2d7df03d", null ],
+    [ "DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES", "Utst__map_8C.html#a09a4ce466a0a9609a65b05993990a1c1", null ],
+    [ "DOCTEST_CONFIG_SUPER_FAST_ASSERTS", "Utst__map_8C.html#a052f7233cb544c5c0f1c235992fa66cf", null ],
     [ "DOCTEST_TEST_CASE", "Utst__map_8C.html#ab272a9bd1f78382971d865325666be59", null ],
     [ "DOCTEST_TEST_CASE", "Utst__map_8C.html#a6cb378a568351068e8a6b81bc672bbfb", null ],
     [ "DOCTEST_TEST_CASE", "Utst__map_8C.html#a07db70fc9d9e0c684a90e840cfa55f60", null ],

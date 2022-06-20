@@ -1,10 +1,14 @@
 var classdoctest_1_1Context =
 [
     [ "Context", "classdoctest_1_1Context.html#a881bc2d0fe207d672e1debe830768a98", null ],
+    [ "Context", "classdoctest_1_1Context.html#a1d40d57d7b4bee1c8e6e2ebe7eafbb3a", null ],
+    [ "Context", "classdoctest_1_1Context.html#a1feb0418d15238aa805f0c1e16f5197e", null ],
     [ "~Context", "classdoctest_1_1Context.html#a33b344fbc4803dca81147c4a4cc9edbd", null ],
     [ "addFilter", "classdoctest_1_1Context.html#a60ad57a46c19db2b142468c3acac448a", null ],
     [ "applyCommandLine", "classdoctest_1_1Context.html#ad55229220bf9ca74e6e0c6323bf672e1", null ],
     [ "clearFilters", "classdoctest_1_1Context.html#aaa878723e89310d5aa3f516bc7ab3165", null ],
+    [ "operator=", "classdoctest_1_1Context.html#a97f0e90e59fa2b3219446b4c93cca78e", null ],
+    [ "operator=", "classdoctest_1_1Context.html#a20e129f3877bbf913ef546e19cffbc32", null ],
     [ "parseArgs", "classdoctest_1_1Context.html#a90b2f1bbf67ee4da8e8ff0cf7516a06a", null ],
     [ "run", "classdoctest_1_1Context.html#a8059b137ef41cbe6c5d8160806a3cc63", null ],
     [ "setAsDefaultForAssertsOutOfTestCases", "classdoctest_1_1Context.html#ae85cecc7689f009e23cba383484773b2", null ],

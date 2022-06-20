@@ -4,7 +4,7 @@ var hierarchy =
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
     [ "Adjacency", "structAdjacency.html", null ],
-    [ "doctest::Approx", "classdoctest_1_1Approx.html", null ],
+    [ "doctest::Approx", "structdoctest_1_1Approx.html", null ],
     [ "Ioex::Assembly", "structIoex_1_1Assembly.html", null ],
     [ "Iotm::text_mesh::AssemblyParser", "classIotm_1_1text__mesh_1_1AssemblyParser.html", null ],
     [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}::AssemblyTreeFilter", "classanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1AssemblyTreeFilter.html", null ],
@@ -68,8 +68,6 @@ var hierarchy =
     [ "CatalystTestFixture", "classCatalystTestFixture.html", null ],
     [ "Ioss::GetLongOption::Cell", "structIoss_1_1GetLongOption_1_1Cell.html", null ],
     [ "std::char_traits< charT >", "structstd_1_1char__traits.html", null ],
-    [ "doctest::detail::has_insertion_operator_impl::check< class, class >", "structdoctest_1_1detail_1_1has__insertion__operator__impl_1_1check.html", null ],
-    [ "doctest::detail::has_insertion_operator_impl::check< T, decltype(os()<< val< T >(), void())>", "structdoctest_1_1detail_1_1has__insertion__operator__impl_1_1check_3_01T_00_01decltype_07os_07_0e2c4b9cfd5c6239f9132a587c9499e40.html", null ],
     [ "Ioex::CommunicationMap", "structIoex_1_1CommunicationMap.html", null ],
     [ "Ioex::CommunicationMetaData", "structIoex_1_1CommunicationMetaData.html", null ],
     [ "Ioss::Compare", "classIoss_1_1Compare.html", null ],
@@ -138,6 +136,7 @@ var hierarchy =
     [ "anonymous_namespace{Ioss_Wedge24.C}::Constants", "structanonymous__namespace_02Ioss__Wedge24_8C_03_1_1Constants.html", null ],
     [ "anonymous_namespace{Ioss_Wedge52.C}::Constants", "structanonymous__namespace_02Ioss__Wedge52_8C_03_1_1Constants.html", null ],
     [ "anonymous_namespace{Ioss_Wedge6.C}::Constants", "structanonymous__namespace_02Ioss__Wedge6_8C_03_1_1Constants.html", null ],
+    [ "doctest::Contains", "classdoctest_1_1Contains.html", null ],
     [ "doctest::Context", "classdoctest_1_1Context.html", null ],
     [ "doctest::ContextOptions", "structdoctest_1_1ContextOptions.html", null ],
     [ "Ioss::CoordinateFrame", "classIoss_1_1CoordinateFrame.html", null ],
@@ -167,7 +166,6 @@ var hierarchy =
     ] ],
     [ "DataPool", "structDataPool.html", null ],
     [ "Ioss::Decomposition< INT >", "classIoss_1_1Decomposition.html", null ],
-    [ "doctest::detail::deferred_false< T >", "structdoctest_1_1detail_1_1deferred__false.html", null ],
     [ "Ioex::EdgeBlock", "structIoex_1_1EdgeBlock.html", null ],
     [ "Ioex::EdgeSet", "structIoex_1_1EdgeSet.html", null ],
     [ "Ioex::ElemBlock", "structIoex_1_1ElemBlock.html", null ],
@@ -256,8 +254,8 @@ var hierarchy =
       [ "Ioss::Wedge6", "classIoss_1_1Wedge6.html", null ]
     ] ],
     [ "Ioex::ElemSet", "structIoex_1_1ElemSet.html", null ],
-    [ "doctest::detail::enable_if< CONDITION, TYPE >", "structdoctest_1_1detail_1_1enable__if.html", null ],
-    [ "doctest::detail::enable_if< true, TYPE >", "structdoctest_1_1detail_1_1enable__if_3_01true_00_01TYPE_01_4.html", null ],
+    [ "doctest::detail::types::enable_if< COND, T >", "structdoctest_1_1detail_1_1types_1_1enable__if.html", null ],
+    [ "doctest::detail::types::enable_if< true, T >", "structdoctest_1_1detail_1_1types_1_1enable__if_3_01true_00_01T_01_4.html", null ],
     [ "adios2::Engine", null, [
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
@@ -328,6 +326,13 @@ var hierarchy =
       [ "Iotr::Tensor_Factory", "classIotr_1_1Tensor__Factory.html", null ],
       [ "Iotr::VM_Factory", "classIotr_1_1VM__Factory.html", null ]
     ] ],
+    [ "doctest::detail::types::false_type", "structdoctest_1_1detail_1_1types_1_1false__type.html", [
+      [ "doctest::detail::deferred_false< T >", "structdoctest_1_1detail_1_1deferred__false.html", null ],
+      [ "doctest::detail::has_insertion_operator< T, typename >", "structdoctest_1_1detail_1_1has__insertion__operator.html", null ],
+      [ "doctest::detail::types::is_array< T >", "structdoctest_1_1detail_1_1types_1_1is__array.html", null ],
+      [ "doctest::detail::types::is_pointer< T >", "structdoctest_1_1detail_1_1types_1_1is__pointer.html", null ],
+      [ "doctest::detail::types::is_rvalue_reference< T >", "structdoctest_1_1detail_1_1types_1_1is__rvalue__reference.html", null ]
+    ] ],
     [ "std::false_type", null, [
       [ "tsl::detail_hopscotch_hash::has_is_transparent< T, typename >", "structtsl_1_1detail__hopscotch__hash_1_1has__is__transparent.html", null ],
       [ "tsl::detail_hopscotch_hash::has_key_compare< T, typename >", "structtsl_1_1detail__hopscotch__hash_1_1has__key__compare.html", null ],
@@ -343,6 +348,8 @@ var hierarchy =
     [ "Ioss::FileInfo", "classIoss_1_1FileInfo.html", null ],
     [ "doctest::detail::filldata< T >", "structdoctest_1_1detail_1_1filldata.html", null ],
     [ "doctest::detail::filldata< const char[N]>", "structdoctest_1_1detail_1_1filldata_3_01const_01char_0fN_0e_4.html", null ],
+    [ "doctest::detail::filldata< const void * >", "structdoctest_1_1detail_1_1filldata_3_01const_01void_01_5_01_4.html", null ],
+    [ "doctest::detail::filldata< T * >", "structdoctest_1_1detail_1_1filldata_3_01T_01_5_01_4.html", null ],
     [ "doctest::detail::filldata< T[N]>", "structdoctest_1_1detail_1_1filldata_3_01T_0fN_0e_4.html", null ],
     [ "Iogn::GeneratedMesh", "classIogn_1_1GeneratedMesh.html", [
       [ "Iogn::DashSurfaceMesh", "classIogn_1_1DashSurfaceMesh.html", null ],
@@ -403,7 +410,7 @@ var hierarchy =
     [ "tsl::hopscotch_map< INT, INT >", "classtsl_1_1hopscotch__map.html", null ],
     [ "tsl::hopscotch_set< Key, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1hopscotch__set.html", null ],
     [ "doctest::IContextScope", "structdoctest_1_1IContextScope.html", [
-      [ "doctest::detail::ContextScopeBase", "classdoctest_1_1detail_1_1ContextScopeBase.html", [
+      [ "doctest::detail::ContextScopeBase", "structdoctest_1_1detail_1_1ContextScopeBase.html", [
         [ "doctest::detail::ContextScope< L >", "classdoctest_1_1detail_1_1ContextScope.html", null ]
       ] ]
     ] ],
@@ -442,14 +449,11 @@ var hierarchy =
     ] ],
     [ "IossApplication", "classIossApplication.html", null ],
     [ "doctest::IReporter", "structdoctest_1_1IReporter.html", null ],
-    [ "doctest::detail::is_enum< T >", "structdoctest_1_1detail_1_1is__enum.html", null ],
-    [ "doctest::detail::is_lvalue_reference< T >", "structdoctest_1_1detail_1_1is__lvalue__reference.html", null ],
-    [ "doctest::detail::is_lvalue_reference< T & >", "structdoctest_1_1detail_1_1is__lvalue__reference_3_01T_01_6_01_4.html", null ],
+    [ "doctest::detail::types::is_enum< T >", "structdoctest_1_1detail_1_1types_1_1is__enum.html", null ],
     [ "Ioss::Private::is_null_finder< T >", "structIoss_1_1Private_1_1is__null__finder.html", null ],
     [ "Ioss::Private::is_null_finder< char * >", "structIoss_1_1Private_1_1is__null__finder_3_01char_01_5_01_4.html", null ],
     [ "Ioss::Private::is_null_finder< const char * >", "structIoss_1_1Private_1_1is__null__finder_3_01const_01char_01_5_01_4.html", null ],
-    [ "doctest::detail::is_rvalue_reference< T >", "structdoctest_1_1detail_1_1is__rvalue__reference.html", null ],
-    [ "doctest::detail::is_rvalue_reference< T && >", "structdoctest_1_1detail_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html", null ],
+    [ "doctest::IsNaN< F >", "structdoctest_1_1IsNaN.html", null ],
     [ "KeyEqual", null, [
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
@@ -519,11 +523,11 @@ var hierarchy =
     [ "RefHolder< T >", "classRefHolder.html", null ],
     [ "Ioss::Registry", "classIoss_1_1Registry.html", null ],
     [ "doctest::detail::RelationalComparator< int, L, R >", "structdoctest_1_1detail_1_1RelationalComparator.html", null ],
-    [ "doctest::detail::remove_const< T >", "structdoctest_1_1detail_1_1remove__const.html", null ],
-    [ "doctest::detail::remove_const< const T >", "structdoctest_1_1detail_1_1remove__const_3_01const_01T_01_4.html", null ],
-    [ "doctest::detail::remove_reference< T >", "structdoctest_1_1detail_1_1remove__reference.html", null ],
-    [ "doctest::detail::remove_reference< T & >", "structdoctest_1_1detail_1_1remove__reference_3_01T_01_6_01_4.html", null ],
-    [ "doctest::detail::remove_reference< T && >", "structdoctest_1_1detail_1_1remove__reference_3_01T_01_6_6_01_4.html", null ],
+    [ "doctest::detail::types::remove_const< T >", "structdoctest_1_1detail_1_1types_1_1remove__const.html", null ],
+    [ "doctest::detail::types::remove_const< const T >", "structdoctest_1_1detail_1_1types_1_1remove__const_3_01const_01T_01_4.html", null ],
+    [ "doctest::detail::types::remove_reference< T >", "structdoctest_1_1detail_1_1types_1_1remove__reference.html", null ],
+    [ "doctest::detail::types::remove_reference< T & >", "structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_01_4.html", null ],
+    [ "doctest::detail::types::remove_reference< T && >", "structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_6_01_4.html", null ],
     [ "doctest::detail::Result", "structdoctest_1_1detail_1_1Result.html", null ],
     [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::robin_iterator< IsConst >", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator.html", null ],
     [ "tsl::robin_map< Key, T, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1robin__map.html", null ],
@@ -581,18 +585,12 @@ var hierarchy =
     [ "anonymous_namespace{Ioss_SmartAssert.C}::stream_holder", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder.html", null ],
     [ "doctest::String", "classdoctest_1_1String.html", null ],
     [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Topology >::StringCaseCompLess", "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html", null ],
-    [ "doctest::StringMaker< R C::* >", "structdoctest_1_1StringMaker_3_01R_01C_1_1_5_01_4.html", null ],
-    [ "doctest::StringMaker< T * >", "structdoctest_1_1StringMaker_3_01T_01_5_01_4.html", null ],
+    [ "doctest::AssertData::StringContains", "classdoctest_1_1AssertData_1_1StringContains.html", null ],
     [ "doctest::detail::StringMakerBase< C >", "structdoctest_1_1detail_1_1StringMakerBase.html", null ],
-    [ "doctest::detail::StringMakerBase< detail::has_insertion_operator< T >::value >", "structdoctest_1_1detail_1_1StringMakerBase.html", [
+    [ "doctest::detail::StringMakerBase< detail::has_insertion_operator< T >::value||detail::types::is_pointer< T >::value||detail::types::is_array< T >::value >", "structdoctest_1_1detail_1_1StringMakerBase.html", [
       [ "doctest::StringMaker< T >", "structdoctest_1_1StringMaker.html", null ]
     ] ],
     [ "doctest::detail::StringMakerBase< true >", "structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4.html", null ],
-    [ "doctest::detail::StringStreamBase< C >", "structdoctest_1_1detail_1_1StringStreamBase.html", null ],
-    [ "doctest::detail::StringStreamBase< has_insertion_operator< T >::value >", "structdoctest_1_1detail_1_1StringStreamBase.html", [
-      [ "doctest::detail::StringStream< T >", "structdoctest_1_1detail_1_1StringStream.html", null ]
-    ] ],
-    [ "doctest::detail::StringStreamBase< true >", "structdoctest_1_1detail_1_1StringStreamBase_3_01true_01_4.html", null ],
     [ "Iocgns::StructuredZoneData", "classIocgns_1_1StructuredZoneData.html", null ],
     [ "doctest::detail::Subcase", "structdoctest_1_1detail_1_1Subcase.html", null ],
     [ "doctest::SubcaseSignature", "structdoctest_1_1SubcaseSignature.html", null ],
@@ -636,6 +634,12 @@ var hierarchy =
       [ "Iotr::Tensor", "classIotr_1_1Tensor.html", null ],
       [ "Iotr::VectorMagnitude", "classIotr_1_1VectorMagnitude.html", null ]
     ] ],
+    [ "doctest::detail::types::true_type", "structdoctest_1_1detail_1_1types_1_1true__type.html", [
+      [ "doctest::detail::has_insertion_operator< T, decltype(operator<<(declval< std::ostream & >(), declval< const T & >()), void())>", "structdoctest_1_1detail_1_1has__insertion__operator_3_01T_00_01decltype_07operator_3_3_07declvald5a5a279653bbfeef238ad5c984744e2.html", null ],
+      [ "doctest::detail::types::is_array< T[SIZE]>", "structdoctest_1_1detail_1_1types_1_1is__array_3_01T_0fSIZE_0e_4.html", null ],
+      [ "doctest::detail::types::is_pointer< T * >", "structdoctest_1_1detail_1_1types_1_1is__pointer_3_01T_01_5_01_4.html", null ],
+      [ "doctest::detail::types::is_rvalue_reference< T && >", "structdoctest_1_1detail_1_1types_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html", null ]
+    ] ],
     [ "std::true_type", null, [
       [ "tsl::detail_hopscotch_hash::has_is_transparent< T, typename make_void< typename T::is_transparent >::type >", "structtsl_1_1detail__hopscotch__hash_1_1has__is__transparent_3_01T_00_01typename_01make__void_3_4161f4fa4fd3878927de0d276981ca6f.html", null ],
       [ "tsl::detail_hopscotch_hash::has_key_compare< T, typename make_void< typename T::key_compare >::type >", "structtsl_1_1detail__hopscotch__hash_1_1has__key__compare_3_01T_00_01typename_01make__void_3_01t11ab6b781ff7a6e1b9bc460857c74cb1.html", null ],
@@ -644,7 +648,7 @@ var hierarchy =
       [ "tsl::detail_robin_hash::is_power_of_two_policy< tsl::rh::power_of_two_growth_policy< GrowthFactor > >", "structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy_3_01tsl_1_1rh_1_1power__of__two__a1a28c2963ea7bfc09f131241d081ae6.html", null ]
     ] ],
     [ "std::tuple< Types >", "classstd_1_1tuple.html", null ],
-    [ "doctest::detail::underlying_type< T >", "structdoctest_1_1detail_1_1underlying__type.html", null ],
+    [ "doctest::detail::types::underlying_type< T >", "structdoctest_1_1detail_1_1types_1_1underlying__type.html", null ],
     [ "Iocgns::Utils", "classIocgns_1_1Utils.html", null ],
     [ "Ioss::Utils", "classIoss_1_1Utils.html", null ],
     [ "Iovs::Utils", "classIovs_1_1Utils.html", null ],

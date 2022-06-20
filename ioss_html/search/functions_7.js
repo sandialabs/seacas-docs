@@ -292,7 +292,7 @@ var searchData=
   ['get_5fstructuredblocks_289',['get_structuredblocks',['../classIofaodel_1_1DatabaseIO.html#a111cf7b7fd3a0a62948efb227746c01d',1,'Iofaodel::DatabaseIO']]],
   ['get_5fsuffices_5fuppercase_290',['get_suffices_uppercase',['../classIoss_1_1Field.html#a8b06f7a68f822e4799c3a4da5bd8d25c',1,'Ioss::Field']]],
   ['get_5fsuffix_5fseparator_291',['get_suffix_separator',['../classIoss_1_1Field.html#ae0b7c1b9fec5197097c513907488a3aa',1,'Ioss::Field']]],
-  ['get_5fsuper_5fpermutations_292',['get_super_permutations',['../classIoss_1_1SuperPermutation.html#ab496a6902b097e1949f5fa468a4796d4',1,'Ioss::SuperPermutation']]],
+  ['get_5fsuper_5fpermutations_292',['get_super_permutations',['../classIoss_1_1SuperPermutation.html#a2fa0ef6245277e67c74b66befc19b3a7',1,'Ioss::SuperPermutation']]],
   ['get_5fsurface_5fsplit_5ftype_293',['get_surface_split_type',['../classIoss_1_1DatabaseIO.html#a52c4059853eb44042d91f894d08850cb',1,'Ioss::DatabaseIO']]],
   ['get_5ftext_5fmesh_294',['get_text_mesh',['../classIotm_1_1DatabaseIO.html#a3635bcdbe02d245fa5c27d8dae737670',1,'Iotm::DatabaseIO']]],
   ['get_5ftokens_295',['get_tokens',['../namespaceIotm_1_1text__mesh.html#a954fd7bca23f46ae7501931707f84e78',1,'Iotm::text_mesh']]],

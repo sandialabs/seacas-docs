@@ -7,6 +7,6 @@ var searchData=
   ['detail_4',['detail',['../namespacedoctest_1_1detail.html',1,'doctest']]],
   ['doctest_5',['doctest',['../namespacedoctest.html',1,'']]],
   ['doctest_5fdetail_5ftest_5fsuite_5fns_6',['doctest_detail_test_suite_ns',['../namespacedoctest__detail__test__suite__ns.html',1,'']]],
-  ['has_5finsertion_5foperator_5fimpl_7',['has_insertion_operator_impl',['../namespacedoctest_1_1detail_1_1has__insertion__operator__impl.html',1,'doctest::detail']]],
-  ['testcasefailurereason_8',['TestCaseFailureReason',['../namespacedoctest_1_1TestCaseFailureReason.html',1,'doctest']]]
+  ['testcasefailurereason_7',['TestCaseFailureReason',['../namespacedoctest_1_1TestCaseFailureReason.html',1,'doctest']]],
+  ['types_8',['types',['../namespacedoctest_1_1detail_1_1types.html',1,'doctest::detail']]]
 ];

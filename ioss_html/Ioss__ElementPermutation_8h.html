@@ -92,18 +92,21 @@ $(document).ready(function(){initNavTree('Ioss__ElementPermutation_8h.html','');
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="Ioss__CodeTypes_8h_source.html">Ioss_CodeTypes.h</a>&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Ioss_ElementPermutation.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioss__ElementPermutation_8h__incl.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioss__ElementPermutation_8h__incl.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioss__ElementPermutation_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Ioss__ElementPermutation_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div>
 <p><a href="Ioss__ElementPermutation_8h_source.html">Go to the source code of this file.</a></p>
@@ -147,8 +150,8 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a81fa4c6ad9155fb3d1ebaf9bc590a423"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a81fa4c6ad9155fb3d1ebaf9bc590a423">Ioss::Ordinal</a> = uint16_t</td></tr>
 <tr class="separator:a81fa4c6ad9155fb3d1ebaf9bc590a423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44815964b6fa11995dbef46e066ee06"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ad44815964b6fa11995dbef46e066ee06">Ioss::Permutation</a> = uint8_t</td></tr>
-<tr class="separator:ad44815964b6fa11995dbef46e066ee06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46169351225802ba384a5b30b54fed6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ac46169351225802ba384a5b30b54fed6">Ioss::Permutation</a> = uint32_t</td></tr>
+<tr class="separator:ac46169351225802ba384a5b30b54fed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2bc5a7a25696f2707e5d1a321acb042"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ab2bc5a7a25696f2707e5d1a321acb042">Ioss::ElementPermutationMap</a> = std::map&lt; std::string, ElementPermutation *, std::less&lt; std::string &gt; &gt;</td></tr>
 <tr class="separator:ab2bc5a7a25696f2707e5d1a321acb042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad16d0e6f5574a03bde754f26f07f975e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ad16d0e6f5574a03bde754f26f07f975e">Ioss::EPM_VP</a> = ElementPermutationMap::value_type</td></tr>
@@ -156,9 +159,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a47a457e22bc51d3acec38875f6f40c12"><td class="memItemLeft" align="right" valign="top">static constexpr Ordinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a47a457e22bc51d3acec38875f6f40c12">Ioss::InvalidOrdinal</a> = 65535</td></tr>
+<tr class="memitem:a47a457e22bc51d3acec38875f6f40c12"><td class="memItemLeft" align="right" valign="top">static constexpr Ordinal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a47a457e22bc51d3acec38875f6f40c12">Ioss::InvalidOrdinal</a> = std::numeric_limits&lt;Ordinal&gt;::max()</td></tr>
 <tr class="separator:a47a457e22bc51d3acec38875f6f40c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aee644974e90ff841669e31e0b4e7ad"><td class="memItemLeft" align="right" valign="top">static constexpr Permutation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a1aee644974e90ff841669e31e0b4e7ad">Ioss::InvalidPermutation</a> = 128</td></tr>
+<tr class="memitem:a1aee644974e90ff841669e31e0b4e7ad"><td class="memItemLeft" align="right" valign="top">static constexpr Permutation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a1aee644974e90ff841669e31e0b4e7ad">Ioss::InvalidPermutation</a> = std::numeric_limits&lt;Permutation&gt;::max()</td></tr>
 <tr class="separator:a1aee644974e90ff841669e31e0b4e7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

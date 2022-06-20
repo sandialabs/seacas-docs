@@ -3,7 +3,7 @@ var searchData=
   ['adioswrapper_0',['AdiosWrapper',['../classIoad_1_1AdiosWrapper.html',1,'Ioad']]],
   ['adjacency_1',['Adjacency',['../structAdjacency.html',1,'']]],
   ['anynode_2',['AnyNode',['../classIoss_1_1glob_1_1AnyNode.html',1,'Ioss::glob']]],
-  ['approx_3',['Approx',['../classdoctest_1_1Approx.html',1,'doctest']]],
+  ['approx_3',['Approx',['../structdoctest_1_1Approx.html',1,'doctest']]],
   ['assemblies_4',['Assemblies',['../classIotm_1_1text__mesh_1_1Assemblies.html',1,'Iotm::text_mesh']]],
   ['assemblies_3c_20int64_5ft_20_3e_5',['Assemblies&lt; int64_t &gt;',['../classIotm_1_1text__mesh_1_1Assemblies.html',1,'Iotm::text_mesh']]],
   ['assembly_6',['Assembly',['../structIoex_1_1Assembly.html',1,'Ioex::Assembly'],['../classIoss_1_1Assembly.html',1,'Ioss::Assembly']]],

@@ -258,7 +258,7 @@ var namespaceIoss =
     [ "NodeBlockContainer", "namespaceIoss.html#a69c6c346031915d29fd5a56ef0940903", null ],
     [ "NodeSetContainer", "namespaceIoss.html#ad297002786de2eb7b6eb5cb8614831a7", null ],
     [ "Ordinal", "namespaceIoss.html#a81fa4c6ad9155fb3d1ebaf9bc590a423", null ],
-    [ "Permutation", "namespaceIoss.html#ad44815964b6fa11995dbef46e066ee06", null ],
+    [ "Permutation", "namespaceIoss.html#ac46169351225802ba384a5b30b54fed6", null ],
     [ "PropMapType", "namespaceIoss.html#a9282b2dab9f546b5bbc051930d2e2328", null ],
     [ "ReverseMapContainer", "namespaceIoss.html#a6517f7a29c8f37fd898a71f84b798503", null ],
     [ "SideBlockContainer", "namespaceIoss.html#aad0b930d7f96931250d99dd12179ddf8", null ],

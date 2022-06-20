@@ -1,6 +1,7 @@
 var structdoctest_1_1detail_1_1ResultBuilder =
 [
-    [ "ResultBuilder", "structdoctest_1_1detail_1_1ResultBuilder.html#af1af5a8d0991b4fe3548107f111e968d", null ],
+    [ "ResultBuilder", "structdoctest_1_1detail_1_1ResultBuilder.html#a135e00690002d376f3d050700a635680", null ],
+    [ "ResultBuilder", "structdoctest_1_1detail_1_1ResultBuilder.html#ab55660e3aaa5d8fccbe19360f65bb1f3", null ],
     [ "binary_assert", "structdoctest_1_1detail_1_1ResultBuilder.html#aa920a0617a26939d7adcd1ba2dec0e85", null ],
     [ "log", "structdoctest_1_1detail_1_1ResultBuilder.html#a2af75dd1d8db8d3aa949d78025854085", null ],
     [ "react", "structdoctest_1_1detail_1_1ResultBuilder.html#a03686f862471728c2980d72e02980213", null ],

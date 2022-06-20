@@ -1,6 +1,8 @@
 var Utst__structured__decomp_8C =
 [
     [ "DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN", "Utst__structured__decomp_8C.html#a623b8690a262536536a43eab2d7df03d", null ],
+    [ "DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES", "Utst__structured__decomp_8C.html#a09a4ce466a0a9609a65b05993990a1c1", null ],
+    [ "DOCTEST_CONFIG_SUPER_FAST_ASSERTS", "Utst__structured__decomp_8C.html#a052f7233cb544c5c0f1c235992fa66cf", null ],
     [ "check_split_assign", "Utst__structured__decomp_8C.html#a9631358d47a181d6697be33c73b3aece", null ],
     [ "cleanup", "Utst__structured__decomp_8C.html#a256a840c43baa6d6644ba4320c4f2bc5", null ],
     [ "DOCTEST_TEST_CASE", "Utst__structured__decomp_8C.html#ae59e5d13b5d7e2a54342bd6318a4692a", null ],
