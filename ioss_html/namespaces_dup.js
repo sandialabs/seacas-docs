@@ -389,6 +389,13 @@ var namespaces_dup =
       [ "get_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ae60e0458d2a6d9c8819c9de6422c69ab", null ],
       [ "set_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ac7abeea54c7d9d1910b234ece5a62d62", null ]
     ] ],
+    [ "anonymous_namespace{line_decomp.C}", "namespaceanonymous__namespace_02line__decomp_8C_03.html", [
+      [ "output_table", "namespaceanonymous__namespace_02line__decomp_8C_03.html#ab49bedeb0d47ac11de1478550575baa1", null ],
+      [ "set_properties", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a80ec2d43079939d98301982580ce794c", null ],
+      [ "skinner", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a0a535313463eb0b5a5a55fe6525f23c5", null ],
+      [ "codename", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a4ed50ce1e90292e023d6999fc5b444a5", null ],
+      [ "version", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a96a16efb807e2b3b379064dcc6f21511", null ]
+    ] ],
     [ "anonymous_namespace{shell_to_hex.C}", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html", "namespaceanonymous__namespace_02shell__to__hex_8C_03" ],
     [ "anonymous_namespace{skinner.C}", "namespaceanonymous__namespace_02skinner_8C_03.html", [
       [ "output_table", "namespaceanonymous__namespace_02skinner_8C_03.html#adc2a748fea2ae80b2e6ae74b929a413c", null ],

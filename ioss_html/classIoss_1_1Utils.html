@@ -187,6 +187,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a56fceaa229ed64eb198cf7ead779e6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af632d3e14662920c8af2584277e71c02"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#af632d3e14662920c8af2584277e71c02">encode_entity_name</a> (const std::string &amp;entity_type, int64_t id)</td></tr>
 <tr class="separator:af632d3e14662920c8af2584277e71c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356e21a68917c7b46b9a522f8b3d6338"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a356e21a68917c7b46b9a522f8b3d6338">get_trailing_digits</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:a356e21a68917c7b46b9a522f8b3d6338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37781a8a3b1aa3881a764e43ec167d2b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a37781a8a3b1aa3881a764e43ec167d2b">format_id_list</a> (const std::vector&lt; size_t &gt; &amp;ids, const std::string &amp;rng_sep=&quot; to &quot;, const std::string &amp;seq_sep=&quot;, &quot;)</td></tr>
 <tr class="memdesc:a37781a8a3b1aa3881a764e43ec167d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a string that describes the list of input <code>ids</code> collapsing ranges if possible.  <a href="classIoss_1_1Utils.html#a37781a8a3b1aa3881a764e43ec167d2b">More...</a><br /></td></tr>
 <tr class="separator:a37781a8a3b1aa3881a764e43ec167d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,6 +259,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:acf20ca98385d9714d71360ea6caaba2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3055cf38504fbadfa2797034f07abbd0"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a3055cf38504fbadfa2797034f07abbd0">shape_to_string</a> (const <a class="el" href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44">Ioss::ElementShape</a> &amp;shape)</td></tr>
 <tr class="separator:a3055cf38504fbadfa2797034f07abbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45325f8be49cb44fe59a5a33ef26bfc"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#ae45325f8be49cb44fe59a5a33ef26bfc">entity_type_to_string</a> (const <a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a> &amp;type)</td></tr>
+<tr class="separator:ae45325f8be49cb44fe59a5a33ef26bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e36dabba48e8770c4914a42d648ad3c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a4e36dabba48e8770c4914a42d648ad3c">generate_history_mesh</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region)</td></tr>
 <tr class="memdesc:a4e36dabba48e8770c4914a42d648ad3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a nominal mesh for use in history databases.  <a href="classIoss_1_1Utils.html#a4e36dabba48e8770c4914a42d648ad3c">More...</a><br /></td></tr>
 <tr class="separator:a4e36dabba48e8770c4914a42d648ad3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -960,6 +964,32 @@ template&lt;size_t size&gt; </div>
 
 </div>
 </div>
+<a id="ae45325f8be49cb44fe59a5a33ef26bfc" name="ae45325f8be49cb44fe59a5a33ef26bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45325f8be49cb44fe59a5a33ef26bfc">&#9670;&nbsp;</a></span>entity_type_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ioss::Utils::entity_type_to_string </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a56fceaa229ed64eb198cf7ead779e6f0" name="a56fceaa229ed64eb198cf7ead779e6f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56fceaa229ed64eb198cf7ead779e6f0">&#9670;&nbsp;</a></span>extract_id()</h2>
 
@@ -1515,6 +1545,33 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a356e21a68917c7b46b9a522f8b3d6338" name="a356e21a68917c7b46b9a522f8b3d6338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356e21a68917c7b46b9a522f8b3d6338">&#9670;&nbsp;</a></span>get_trailing_digits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ioss::Utils::get_trailing_digits </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Return the trailing digits (if any) from <code>name</code> <code>hex20</code> would return the string <code>20</code> <code>tetra</code> would return an empty string. </p>
+
+</div>
+</div>
 <a id="a93756b9fb462f07e066342f32ed61d27" name="a93756b9fb462f07e066342f32ed61d27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93756b9fb462f07e066342f32ed61d27">&#9670;&nbsp;</a></span>get_type_from_file()</h2>
 
@@ -1874,7 +1931,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p >Returns the number of digits required to print the number. If <code>use_commas</code> is specified, then the width will be adjusted to account for the comma used every 3 digits. (1,234,567,890 would return 13) Typically used with the <code>fmt::print()</code> functions as: </p><div class="fragment"><div class="line">fmt::print(<span class="stringliteral">&quot;{:{}}&quot;</span>, number, <a class="code hl_function" href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">number_width</a>(number,<span class="keyword">true</span>))</div>
 <div class="line">fmt::print(&quot;{:{}d}<span class="stringliteral">&quot;, number, number_width(number,false))</span></div>
-<div class="ttc" id="aclassIoss_1_1Utils_html_a875232ab39ecaf79b1b668d28fb590d6"><div class="ttname"><a href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">Ioss::Utils::number_width</a></div><div class="ttdeci">static int number_width(const size_t number, bool use_commas=false)</div><div class="ttdef"><b>Definition:</b> Ioss_Utils.h:220</div></div>
+<div class="ttc" id="aclassIoss_1_1Utils_html_a875232ab39ecaf79b1b668d28fb590d6"><div class="ttname"><a href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">Ioss::Utils::number_width</a></div><div class="ttdeci">static int number_width(const size_t number, bool use_commas=false)</div><div class="ttdef"><b>Definition:</b> Ioss_Utils.h:221</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
