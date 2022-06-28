@@ -168,6 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2235fb9cdad8b9a8088e3f9386b5387d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a2235fb9cdad8b9a8088e3f9386b5387d">transient_defined</a> () const</td></tr>
 <tr class="memdesc:a2235fb9cdad8b9a8088e3f9386b5387d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the metadata related to the transient data has been set.  <a href="classIoss_1_1Region.html#a2235fb9cdad8b9a8088e3f9386b5387d">More...</a><br /></td></tr>
 <tr class="separator:a2235fb9cdad8b9a8088e3f9386b5387d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae11215e0d9de931f972df6ca07d1a7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#aae11215e0d9de931f972df6ca07d1a7c">erase_fields</a> (<a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Field::RoleType</a> role)</td></tr>
+<tr class="memdesc:aae11215e0d9de931f972df6ca07d1a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all fields of the specified <code>role</code> from all entities in the region.  <a href="classIoss_1_1Region.html#aae11215e0d9de931f972df6ca07d1a7c">More...</a><br /></td></tr>
+<tr class="separator:aae11215e0d9de931f972df6ca07d1a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ca4d531b7d5608896dac3256bb4e3c8"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a4ca4d531b7d5608896dac3256bb4e3c8">get_max_time</a> () const</td></tr>
 <tr class="memdesc:a4ca4d531b7d5608896dac3256bb4e3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum time step index (1-based) and time for the region.  <a href="classIoss_1_1Region.html#a4ca4d531b7d5608896dac3256bb4e3c8">More...</a><br /></td></tr>
 <tr class="separator:a4ca4d531b7d5608896dac3256bb4e3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -462,6 +465,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a92953767e72bb32d4678e144b8672809 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#a92953767e72bb32d4678e144b8672809">field_erase</a> (const std::string &amp;field_name)</td></tr>
 <tr class="memdesc:a92953767e72bb32d4678e144b8672809 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a field from the entity's field manager.  <a href="classIoss_1_1GroupingEntity.html#a92953767e72bb32d4678e144b8672809">More...</a><br /></td></tr>
 <tr class="separator:a92953767e72bb32d4678e144b8672809 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28cb03a8e59a954868ff11f9ac40cf2 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#ad28cb03a8e59a954868ff11f9ac40cf2">field_erase</a> (<a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Field::RoleType</a> role)</td></tr>
+<tr class="memdesc:ad28cb03a8e59a954868ff11f9ac40cf2 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all fields of type <code>role</code> from the entity's field manager.  <a href="classIoss_1_1GroupingEntity.html#ad28cb03a8e59a954868ff11f9ac40cf2">More...</a><br /></td></tr>
+<tr class="separator:ad28cb03a8e59a954868ff11f9ac40cf2 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54edce5713d3439e095c37064a66ea50 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#a54edce5713d3439e095c37064a66ea50">field_exists</a> (const std::string &amp;field_name) const</td></tr>
 <tr class="memdesc:a54edce5713d3439e095c37064a66ea50 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a field with a given name exists in the entity's field manager.  <a href="classIoss_1_1GroupingEntity.html#a54edce5713d3439e095c37064a66ea50">More...</a><br /></td></tr>
 <tr class="separator:a54edce5713d3439e095c37064a66ea50 inherit pub_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1655,6 +1661,26 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The time of this state. </dd></dl>
+
+</div>
+</div>
+<a id="aae11215e0d9de931f972df6ca07d1a7c" name="aae11215e0d9de931f972df6ca07d1a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae11215e0d9de931f972df6ca07d1a7c">&#9670;&nbsp;</a></span>erase_fields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::Region::erase_fields </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Field::RoleType</a>&#160;</td>
+          <td class="paramname"><em>role</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove all fields of the specified <code>role</code> from all entities in the region. </p>
 
 </div>
 </div>

@@ -289,6 +289,7 @@ var namespaces_dup =
       [ "get_reduction_variable_count", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a9a80d47101282ba532a7cbaf0dbf8bd8", null ],
       [ "get_variable_count", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a80d363a92e4cd87d869c68f6f423ba7b", null ],
       [ "id_str", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#aa297e963ead8a61ba334e49f58ef5187", null ],
+      [ "internal_erase_fields", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a5761b6de7ff57bec1fabaa2a99f91459", null ],
       [ "internal_get_variable_count", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a6f8c9f5246a6a19e9f212ccb6bf27077", null ],
       [ "is_input_or_appending_output", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#aae03421eda60874ac48b485e68558e7e", null ],
       [ "numberOfBits", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#aaa7df9904c197f8f00d2ff2658583d09", null ],
@@ -390,9 +391,9 @@ var namespaces_dup =
       [ "set_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ac7abeea54c7d9d1910b234ece5a62d62", null ]
     ] ],
     [ "anonymous_namespace{line_decomp.C}", "namespaceanonymous__namespace_02line__decomp_8C_03.html", [
-      [ "output_table", "namespaceanonymous__namespace_02line__decomp_8C_03.html#ab49bedeb0d47ac11de1478550575baa1", null ],
-      [ "set_properties", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a80ec2d43079939d98301982580ce794c", null ],
-      [ "skinner", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a0a535313463eb0b5a5a55fe6525f23c5", null ],
+      [ "hex_opposite_side", "namespaceanonymous__namespace_02line__decomp_8C_03.html#ad4342bdcbba9f6c1024586035216691d", null ],
+      [ "line_decomp", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a5f28d228a2c4c6e9f61961a4c725c0aa", null ],
+      [ "set_properties", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a27b5f7ef69e78812c328a58fed405099", null ],
       [ "codename", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a4ed50ce1e90292e023d6999fc5b444a5", null ],
       [ "version", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a96a16efb807e2b3b379064dcc6f21511", null ]
     ] ],
@@ -655,6 +656,7 @@ var namespaces_dup =
     [ "Iovs", "namespaceIovs.html", "namespaceIovs" ],
     [ "Iovs_cgns", "namespaceIovs__cgns.html", "namespaceIovs__cgns" ],
     [ "Iovs_exodus", "namespaceIovs__exodus.html", "namespaceIovs__exodus" ],
+    [ "Line_Decomp", "namespaceLine__Decomp.html", "namespaceLine__Decomp" ],
     [ "Modify", "namespaceModify.html", "namespaceModify" ],
     [ "pdqsort_detail", "namespacepdqsort__detail.html", [
       [ "align_cacheline", "namespacepdqsort__detail.html#a9c14c46c400c3d91db14fb6500d576a0", null ],

@@ -108,6 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0da349bf5958db6702137da83f231c6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1FieldManager.html#a0da349bf5958db6702137da83f231c6a">add</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;new_field)</td></tr>
 <tr class="memdesc:a0da349bf5958db6702137da83f231c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a field to the field manager.  <a href="classIoss_1_1FieldManager.html#a0da349bf5958db6702137da83f231c6a">More...</a><br /></td></tr>
 <tr class="separator:a0da349bf5958db6702137da83f231c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e307fb018f72aa7c230d090e1b335d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1FieldManager.html#a6e307fb018f72aa7c230d090e1b335d2">erase</a> (<a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Field::RoleType</a> role)</td></tr>
+<tr class="memdesc:a6e307fb018f72aa7c230d090e1b335d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all fields of type <code>role</code> from the field manager.  <a href="classIoss_1_1FieldManager.html#a6e307fb018f72aa7c230d090e1b335d2">More...</a><br /></td></tr>
+<tr class="separator:a6e307fb018f72aa7c230d090e1b335d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae5f5c6ff4c0eebc35fc7d08f651c0ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1FieldManager.html#aae5f5c6ff4c0eebc35fc7d08f651c0ce">erase</a> (const std::string &amp;field_name)</td></tr>
 <tr class="memdesc:aae5f5c6ff4c0eebc35fc7d08f651c0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a field from the field manager.  <a href="classIoss_1_1FieldManager.html#aae5f5c6ff4c0eebc35fc7d08f651c0ce">More...</a><br /></td></tr>
 <tr class="separator:aae5f5c6ff4c0eebc35fc7d08f651c0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -381,7 +384,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aae5f5c6ff4c0eebc35fc7d08f651c0ce" name="aae5f5c6ff4c0eebc35fc7d08f651c0ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae5f5c6ff4c0eebc35fc7d08f651c0ce">&#9670;&nbsp;</a></span>erase()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5f5c6ff4c0eebc35fc7d08f651c0ce">&#9670;&nbsp;</a></span>erase() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,6 +404,32 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">field_name</td><td>The name of the field to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e307fb018f72aa7c230d090e1b335d2" name="a6e307fb018f72aa7c230d090e1b335d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e307fb018f72aa7c230d090e1b335d2">&#9670;&nbsp;</a></span>erase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::FieldManager::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Field::RoleType</a>&#160;</td>
+          <td class="paramname"><em>role</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove all fields of type <code>role</code> from the field manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">role</td><td>Remove all fields (if any) of type <code>role</code> </td></tr>
   </table>
   </dd>
 </dl>

@@ -35,6 +35,7 @@ var classIoss_1_1Region =
     [ "end_mode", "classIoss_1_1Region.html#a5f455825763ca8a655f3fc3ebe27ba9a", null ],
     [ "end_mode__", "classIoss_1_1Region.html#af029b5cf0dc2d400fe04602dcab631a0", null ],
     [ "end_state", "classIoss_1_1Region.html#ae622a9dcec391a71b26a40553b73d8bb", null ],
+    [ "erase_fields", "classIoss_1_1Region.html#aae11215e0d9de931f972df6ca07d1a7c", null ],
     [ "get_alias", "classIoss_1_1Region.html#af4fc53abbfbf1506887dc6fde160c041", null ],
     [ "get_alias__", "classIoss_1_1Region.html#a8798b07ca70af25b9abcca93cebe0dc6", null ],
     [ "get_alias_map", "classIoss_1_1Region.html#a567573be5e866b24927108b29340ef45", null ],

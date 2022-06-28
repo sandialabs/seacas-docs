@@ -20,6 +20,7 @@ var classIoss_1_1GroupingEntity =
     [ "field_describe", "classIoss_1_1GroupingEntity.html#ad3adc343db0175ee8e847fd9701b6f29", null ],
     [ "field_describe", "classIoss_1_1GroupingEntity.html#a92f4d388db4e0d10b1be6ac7fa69af4a", null ],
     [ "field_erase", "classIoss_1_1GroupingEntity.html#a92953767e72bb32d4678e144b8672809", null ],
+    [ "field_erase", "classIoss_1_1GroupingEntity.html#ad28cb03a8e59a954868ff11f9ac40cf2", null ],
     [ "field_exists", "classIoss_1_1GroupingEntity.html#a54edce5713d3439e095c37064a66ea50", null ],
     [ "field_int_type", "classIoss_1_1GroupingEntity.html#a0178b36d697ce63d54fcab3204c15201", null ],
     [ "generic_name", "classIoss_1_1GroupingEntity.html#a1b90f7f313d6794aef867b1dc44fd2a4", null ],

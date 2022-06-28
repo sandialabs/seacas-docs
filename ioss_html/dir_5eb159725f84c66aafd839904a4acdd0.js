@@ -11,6 +11,8 @@ var dir_5eb159725f84c66aafd839904a4acdd0 =
     [ "io_shell.C", "io__shell_8C.html", "io__shell_8C" ],
     [ "io_shell_ts.C", "io__shell__ts_8C.html", "io__shell__ts_8C" ],
     [ "line_decomp.C", "line__decomp_8C.html", "line__decomp_8C" ],
+    [ "line_decomp_interface.C", "line__decomp__interface_8C.html", null ],
+    [ "line_decomp_interface.h", "line__decomp__interface_8h.html", "line__decomp__interface_8h" ],
     [ "modify_interface.C", "modify__interface_8C.html", null ],
     [ "modify_interface.h", "modify__interface_8h.html", "modify__interface_8h" ],
     [ "shell_interface.C", "shell__interface_8C.html", null ],

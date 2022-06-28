@@ -114,11 +114,11 @@ $(document).ready(function(){initNavTree('line__decomp_8C.html',''); initResizab
 <code>#include &quot;<a class="el" href="Ioss__Property_8h_source.html">Ioss_Property.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Region_8h_source.html">Ioss_Region.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__ScopeGuard_8h_source.html">Ioss_ScopeGuard.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Ioss__SideSet_8h_source.html">Ioss_SideSet.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__SideBlock_8h_source.html">Ioss_SideBlock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__SideSet_8h_source.html">Ioss_SideSet.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Utils_8h_source.html">Ioss_Utils.h</a>&quot;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
-<code>#include &quot;<a class="el" href="skinner__interface_8h_source.html">skinner_interface.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="line__decomp__interface_8h_source.html">line_decomp_interface.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for line_decomp.C:</div>
 <div class="dyncontent">
@@ -132,15 +132,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0a535313463eb0b5a5a55fe6525f23c5"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
-<tr class="memitem:a0a535313463eb0b5a5a55fe6525f23c5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a0a535313463eb0b5a5a55fe6525f23c5">anonymous_namespace{line_decomp.C}::skinner</a> (<a class="el" href="classSkinner_1_1Interface.html">Skinner::Interface</a> &amp;interFace, INT)</td></tr>
-<tr class="separator:a0a535313463eb0b5a5a55fe6525f23c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49bedeb0d47ac11de1478550575baa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#ab49bedeb0d47ac11de1478550575baa1">anonymous_namespace{line_decomp.C}::output_table</a> (const <a class="el" href="namespaceIoss.html#a3b4b5511cc449211e303de0c5c063922">Ioss::ElementBlockContainer</a> &amp;ebs, std::map&lt; std::string, std::vector&lt; <a class="el" href="classIoss_1_1Face.html">Ioss::Face</a> &gt; &gt; &amp;boundary_faces)</td></tr>
-<tr class="separator:ab49bedeb0d47ac11de1478550575baa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f28d228a2c4c6e9f61961a4c725c0aa"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a5f28d228a2c4c6e9f61961a4c725c0aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a5f28d228a2c4c6e9f61961a4c725c0aa">anonymous_namespace{line_decomp.C}::line_decomp</a> (<a class="el" href="classLine__Decomp_1_1Interface.html">Line_Decomp::Interface</a> &amp;interFace, INT)</td></tr>
+<tr class="separator:a5f28d228a2c4c6e9f61961a4c725c0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4342bdcbba9f6c1024586035216691d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#ad4342bdcbba9f6c1024586035216691d">anonymous_namespace{line_decomp.C}::hex_opposite_side</a> (int side)</td></tr>
+<tr class="separator:ad4342bdcbba9f6c1024586035216691d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="line__decomp_8C.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80ec2d43079939d98301982580ce794c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a80ec2d43079939d98301982580ce794c">anonymous_namespace{line_decomp.C}::set_properties</a> (<a class="el" href="classSkinner_1_1Interface.html">Skinner::Interface</a> &amp;interFace)</td></tr>
-<tr class="separator:a80ec2d43079939d98301982580ce794c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b5f7ef69e78812c328a58fed405099"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a27b5f7ef69e78812c328a58fed405099">anonymous_namespace{line_decomp.C}::set_properties</a> (<a class="el" href="classLine__Decomp_1_1Interface.html">Line_Decomp::Interface</a> &amp;interFace)</td></tr>
+<tr class="separator:a27b5f7ef69e78812c328a58fed405099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
