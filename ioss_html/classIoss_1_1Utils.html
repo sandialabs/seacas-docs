@@ -223,6 +223,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1533963ccad2593ae5f10575187c120"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#ab1533963ccad2593ae5f10575187c120">substr_equal</a> (const std::string &amp;prefix, const std::string &amp;str)</td></tr>
 <tr class="memdesc:ab1533963ccad2593ae5f10575187c120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case-insensitive substring comparison.  <a href="classIoss_1_1Utils.html#ab1533963ccad2593ae5f10575187c120">More...</a><br /></td></tr>
 <tr class="separator:ab1533963ccad2593ae5f10575187c120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663589c9f001f68bf7c84f4b24d4860b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a663589c9f001f68bf7c84f4b24d4860b">check_int_to_real_overflow</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, int64_t *data, size_t num_entity)</td></tr>
+<tr class="separator:a663589c9f001f68bf7c84f4b24d4860b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f148e3768f9322640e47ac8c0bc50c0"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#a9f148e3768f9322640e47ac8c0bc50c0">platform_information</a> ()</td></tr>
 <tr class="memdesc:a9f148e3768f9322640e47ac8c0bc50c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string containing <code>uname</code> output.  <a href="classIoss_1_1Utils.html#a9f148e3768f9322640e47ac8c0bc50c0">More...</a><br /></td></tr>
 <tr class="separator:a9f148e3768f9322640e47ac8c0bc50c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -521,6 +523,49 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a663589c9f001f68bf7c84f4b24d4860b" name="a663589c9f001f68bf7c84f4b24d4860b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663589c9f001f68bf7c84f4b24d4860b">&#9670;&nbsp;</a></span>check_int_to_real_overflow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::Utils::check_int_to_real_overflow </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_entity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Check all values in <code>data</code> to make sure that if they are converted to a double and back again, there will be no data loss. This requires that the value be less than 2^53. This is done in the exodus database since it stores all transient data as doubles... </p>
 
 </div>
 </div>

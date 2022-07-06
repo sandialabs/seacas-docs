@@ -390,13 +390,6 @@ var namespaces_dup =
       [ "get_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ae60e0458d2a6d9c8819c9de6422c69ab", null ],
       [ "set_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ac7abeea54c7d9d1910b234ece5a62d62", null ]
     ] ],
-    [ "anonymous_namespace{line_decomp.C}", "namespaceanonymous__namespace_02line__decomp_8C_03.html", [
-      [ "hex_opposite_side", "namespaceanonymous__namespace_02line__decomp_8C_03.html#ad4342bdcbba9f6c1024586035216691d", null ],
-      [ "line_decomp", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a5f28d228a2c4c6e9f61961a4c725c0aa", null ],
-      [ "set_properties", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a27b5f7ef69e78812c328a58fed405099", null ],
-      [ "codename", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a4ed50ce1e90292e023d6999fc5b444a5", null ],
-      [ "version", "namespaceanonymous__namespace_02line__decomp_8C_03.html#a96a16efb807e2b3b379064dcc6f21511", null ]
-    ] ],
     [ "anonymous_namespace{shell_to_hex.C}", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html", "namespaceanonymous__namespace_02shell__to__hex_8C_03" ],
     [ "anonymous_namespace{skinner.C}", "namespaceanonymous__namespace_02skinner_8C_03.html", [
       [ "output_table", "namespaceanonymous__namespace_02skinner_8C_03.html#adc2a748fea2ae80b2e6ae74b929a413c", null ],
@@ -656,7 +649,6 @@ var namespaces_dup =
     [ "Iovs", "namespaceIovs.html", "namespaceIovs" ],
     [ "Iovs_cgns", "namespaceIovs__cgns.html", "namespaceIovs__cgns" ],
     [ "Iovs_exodus", "namespaceIovs__exodus.html", "namespaceIovs__exodus" ],
-    [ "Line_Decomp", "namespaceLine__Decomp.html", "namespaceLine__Decomp" ],
     [ "Modify", "namespaceModify.html", "namespaceModify" ],
     [ "pdqsort_detail", "namespacepdqsort__detail.html", [
       [ "align_cacheline", "namespacepdqsort__detail.html#a9c14c46c400c3d91db14fb6500d576a0", null ],

@@ -83,7 +83,9 @@ $(document).ready(function(){initNavTree('line__decomp_8C.html',''); initResizab
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">line_decomp.C File Reference</div></div>
@@ -102,6 +104,7 @@ $(document).ready(function(){initNavTree('line__decomp_8C.html',''); initResizab
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="Ionit__Initializer_8h_source.html">Ionit_Initializer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__CodeTypes_8h_source.html">Ioss_CodeTypes.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__CopyDatabase_8h_source.html">Ioss_CopyDatabase.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__DBUsage_8h_source.html">Ioss_DBUsage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__DatabaseIO_8h_source.html">Ioss_DatabaseIO.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__ElementBlock_8h_source.html">Ioss_ElementBlock.h</a>&quot;</code><br />
@@ -109,6 +112,7 @@ $(document).ready(function(){initNavTree('line__decomp_8C.html',''); initResizab
 <code>#include &quot;<a class="el" href="Ioss__FaceGenerator_8h_source.html">Ioss_FaceGenerator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__FileInfo_8h_source.html">Ioss_FileInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__IOFactory_8h_source.html">Ioss_IOFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__MeshCopyOptions_8h_source.html">Ioss_MeshCopyOptions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__NodeBlock_8h_source.html">Ioss_NodeBlock.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__ParallelUtils_8h_source.html">Ioss_ParallelUtils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Property_8h_source.html">Ioss_Property.h</a>&quot;</code><br />
@@ -117,6 +121,7 @@ $(document).ready(function(){initNavTree('line__decomp_8C.html',''); initResizab
 <code>#include &quot;<a class="el" href="Ioss__SideBlock_8h_source.html">Ioss_SideBlock.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__SideSet_8h_source.html">Ioss_SideSet.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Utils_8h_source.html">Ioss_Utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tokenize_8h_source.html">tokenize.h</a>&quot;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &quot;<a class="el" href="line__decomp__interface_8h_source.html">line_decomp_interface.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -125,18 +130,46 @@ Include dependency graph for line_decomp.C:</div>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="line__decomp_8C__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchain__entry__t.html">chain_entry_t&lt; INT &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceanonymous__namespace_02line__decomp_8C_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html">anonymous_namespace{line_decomp.C}</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0fce7d39fbfdbb7e02c11fd31fc35911"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a0fce7d39fbfdbb7e02c11fd31fc35911"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="line__decomp_8C.html#a0fce7d39fbfdbb7e02c11fd31fc35911">front_t</a> = std::vector&lt; std::pair&lt; INT, int &gt; &gt;</td></tr>
+<tr class="separator:a0fce7d39fbfdbb7e02c11fd31fc35911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05de97908f8694a3054d494c4d1d9fb0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="line__decomp_8C.html#a05de97908f8694a3054d494c4d1d9fb0">connectivity_t</a> = std::vector&lt; std::array&lt; const <a class="el" href="classIoss_1_1Face.html">Ioss::Face</a> *, 6 &gt; &gt;</td></tr>
+<tr class="separator:a05de97908f8694a3054d494c4d1d9fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd61051a8055d94bad754805b158e07f"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:abd61051a8055d94bad754805b158e07f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="line__decomp_8C.html#abd61051a8055d94bad754805b158e07f">chain_t</a> = std::vector&lt; <a class="el" href="structchain__entry__t.html">chain_entry_t</a>&lt; INT &gt; &gt;</td></tr>
+<tr class="separator:abd61051a8055d94bad754805b158e07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6eadad94c0842d726c61c1f20e0be0e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a6eadad94c0842d726c61c1f20e0be0e4">anonymous_namespace{line_decomp.C}::add_chain_fields</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, const std::vector&lt; std::string &gt; &amp;adj_blocks)</td></tr>
+<tr class="separator:a6eadad94c0842d726c61c1f20e0be0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff4502ecd95a3470d4c17115909121f"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:aeff4502ecd95a3470d4c17115909121f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#aeff4502ecd95a3470d4c17115909121f">anonymous_namespace{line_decomp.C}::output_chain_fields</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *eb, const <a class="el" href="line__decomp_8C.html#abd61051a8055d94bad754805b158e07f">chain_t</a>&lt; INT &gt; &amp;chains)</td></tr>
+<tr class="separator:aeff4502ecd95a3470d4c17115909121f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f28d228a2c4c6e9f61961a4c725c0aa"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:a5f28d228a2c4c6e9f61961a4c725c0aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a5f28d228a2c4c6e9f61961a4c725c0aa">anonymous_namespace{line_decomp.C}::line_decomp</a> (<a class="el" href="classLine__Decomp_1_1Interface.html">Line_Decomp::Interface</a> &amp;interFace, INT)</td></tr>
 <tr class="separator:a5f28d228a2c4c6e9f61961a4c725c0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4342bdcbba9f6c1024586035216691d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#ad4342bdcbba9f6c1024586035216691d">anonymous_namespace{line_decomp.C}::hex_opposite_side</a> (int side)</td></tr>
 <tr class="separator:ad4342bdcbba9f6c1024586035216691d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4b66b204a92498e8ebb4c4f8938fc0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a1a4b66b204a92498e8ebb4c4f8938fc0">anonymous_namespace{line_decomp.C}::get_adjacent_blocks</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, const std::string &amp;surface_list)</td></tr>
+<tr class="separator:a1a4b66b204a92498e8ebb4c4f8938fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9111db93f9ddc76b9d7d4795a493f9"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a2a9111db93f9ddc76b9d7d4795a493f9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="line__decomp_8C.html#a0fce7d39fbfdbb7e02c11fd31fc35911">front_t</a>&lt; INT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a2a9111db93f9ddc76b9d7d4795a493f9">anonymous_namespace{line_decomp.C}::get_line_front</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, const std::string &amp;adj_block, <a class="el" href="line__decomp_8C.html#abd61051a8055d94bad754805b158e07f">chain_t</a>&lt; INT &gt; &amp;element_chains, const std::string &amp;surface_list, INT)</td></tr>
+<tr class="separator:a2a9111db93f9ddc76b9d7d4795a493f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbfd61d945b3e0aa0122bbcacc7342c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a6dbfd61d945b3e0aa0122bbcacc7342c">anonymous_namespace{line_decomp.C}::generate_face_connectivity</a> (const <a class="el" href="namespaceIoss.html#a098070d2a8062645c46f150cfb467b74">Ioss::FaceUnorderedSet</a> &amp;faces, int offset, <a class="el" href="line__decomp_8C.html#a05de97908f8694a3054d494c4d1d9fb0">connectivity_t</a> &amp;face_connectivity)</td></tr>
+<tr class="separator:a6dbfd61d945b3e0aa0122bbcacc7342c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="line__decomp_8C.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27b5f7ef69e78812c328a58fed405099"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a27b5f7ef69e78812c328a58fed405099">anonymous_namespace{line_decomp.C}::set_properties</a> (<a class="el" href="classLine__Decomp_1_1Interface.html">Line_Decomp::Interface</a> &amp;interFace)</td></tr>
@@ -144,11 +177,60 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:add13cb26fdfbc27343a7f6d5d3b73165"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#add13cb26fdfbc27343a7f6d5d3b73165">anonymous_namespace{line_decomp.C}::debug</a> = 0</td></tr>
+<tr class="separator:add13cb26fdfbc27343a7f6d5d3b73165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ed50ce1e90292e023d6999fc5b444a5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a4ed50ce1e90292e023d6999fc5b444a5">anonymous_namespace{line_decomp.C}::codename</a></td></tr>
 <tr class="separator:a4ed50ce1e90292e023d6999fc5b444a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96a16efb807e2b3b379064dcc6f21511"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a96a16efb807e2b3b379064dcc6f21511">anonymous_namespace{line_decomp.C}::version</a> = &quot;0.99&quot;</td></tr>
+<tr class="memitem:a96a16efb807e2b3b379064dcc6f21511"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02line__decomp_8C_03.html#a96a16efb807e2b3b379064dcc6f21511">anonymous_namespace{line_decomp.C}::version</a> = &quot;0.1&quot;</td></tr>
 <tr class="separator:a96a16efb807e2b3b379064dcc6f21511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="abd61051a8055d94bad754805b158e07f" name="abd61051a8055d94bad754805b158e07f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd61051a8055d94bad754805b158e07f">&#9670;&nbsp;</a></span>chain_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="line__decomp_8C.html#abd61051a8055d94bad754805b158e07f">chain_t</a> =  std::vector&lt;<a class="el" href="structchain__entry__t.html">chain_entry_t</a>&lt;INT&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05de97908f8694a3054d494c4d1d9fb0" name="a05de97908f8694a3054d494c4d1d9fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05de97908f8694a3054d494c4d1d9fb0">&#9670;&nbsp;</a></span>connectivity_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="line__decomp_8C.html#a05de97908f8694a3054d494c4d1d9fb0">connectivity_t</a> =  std::vector&lt;std::array&lt;const <a class="el" href="classIoss_1_1Face.html">Ioss::Face</a> *, 6&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fce7d39fbfdbb7e02c11fd31fc35911" name="a0fce7d39fbfdbb7e02c11fd31fc35911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fce7d39fbfdbb7e02c11fd31fc35911">&#9670;&nbsp;</a></span>front_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="line__decomp_8C.html#a0fce7d39fbfdbb7e02c11fd31fc35911">front_t</a> =  std::vector&lt;std::pair&lt;INT, int&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>

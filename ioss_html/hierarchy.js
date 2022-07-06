@@ -427,7 +427,6 @@ var hierarchy =
     [ "anonymous_namespace{cgns_decomp.C}::Interface", "classanonymous__namespace_02cgns__decomp_8C_03_1_1Interface.html", null ],
     [ "Info::Interface", "classInfo_1_1Interface.html", null ],
     [ "IOShell::Interface", "classIOShell_1_1Interface.html", null ],
-    [ "Line_Decomp::Interface", "classLine__Decomp_1_1Interface.html", null ],
     [ "Modify::Interface", "classModify_1_1Interface.html", null ],
     [ "Skinner::Interface", "classSkinner_1_1Interface.html", null ],
     [ "Ioex::Internals", "classIoex_1_1Internals.html", null ],

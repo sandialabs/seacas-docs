@@ -21,7 +21,7 @@ var classIoex_1_1BaseDatabaseIO =
     [ "finalize_write", "classIoex_1_1BaseDatabaseIO.html#ae44cd2cc2678e43ab4f54e33cbdffd15", null ],
     [ "flush_database__", "classIoex_1_1BaseDatabaseIO.html#a1669a12199fbd3df4f9734b8cd844899", null ],
     [ "free_file_pointer", "classIoex_1_1BaseDatabaseIO.html#a9c9ed3f02b40d6b7401e0a73a359dba0", null ],
-    [ "gather_names", "classIoex_1_1BaseDatabaseIO.html#a4f218a0a5de7f0a34dc7a57bf08f7a0c", null ],
+    [ "gather_names", "classIoex_1_1BaseDatabaseIO.html#ad87dcc6b0a5337548bedd6466e8542d6", null ],
     [ "generate_sideset_truth_table", "classIoex_1_1BaseDatabaseIO.html#a8924be63c0cf1af17c64707ecc64a24d", null ],
     [ "get_assemblies", "classIoex_1_1BaseDatabaseIO.html#aaecb9c281925e78ec9d8a3cf1922c3bd", null ],
     [ "get_blobs", "classIoex_1_1BaseDatabaseIO.html#a0db8a660bf4c68adc2dc151454c0cf61", null ],
