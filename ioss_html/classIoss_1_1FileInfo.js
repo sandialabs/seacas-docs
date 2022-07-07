@@ -17,6 +17,7 @@ var classIoss_1_1FileInfo =
     [ "is_dir", "classIoss_1_1FileInfo.html#ace882ea79220ccecfee4fb501ce93602", null ],
     [ "is_executable", "classIoss_1_1FileInfo.html#a2b73d168bd6d053c084a7c4a031f5c29", null ],
     [ "is_file", "classIoss_1_1FileInfo.html#af9c72e5aa459cf0987a9b684590ee190", null ],
+    [ "is_nfs", "classIoss_1_1FileInfo.html#aaee86ac58768c21d2e0174c68deea44c", null ],
     [ "is_readable", "classIoss_1_1FileInfo.html#a2ceacf739ee8aa9067e1ef7086b2ddc0", null ],
     [ "is_symlink", "classIoss_1_1FileInfo.html#a3d95773811cefcaee2f0147f5631ab40", null ],
     [ "is_writable", "classIoss_1_1FileInfo.html#a747d2861c656638f66abeedaf66ee7de", null ],
