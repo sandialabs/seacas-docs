@@ -437,6 +437,14 @@ Functions</h2></td></tr>
 <tr class="separator:a209c35e35a5db70da7ffb2d340908e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac90bb210a708ac63fd12816831fbf1bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exo__jack_8c.html#ac90bb210a708ac63fd12816831fbf1bf">expecm</a> (int *idne, <a class="el" href="exo__jack_8c.html#a40ad44f36fa869224f44f26e26bbda41">entity_id</a> *map_id, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *elem_ids, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *side_ids, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *proc_ids, int *processor, int *ierr)</td></tr>
 <tr class="separator:ac90bb210a708ac63fd12816831fbf1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86757e097e2afcfd334878bcb60813df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exo__jack_8c.html#a86757e097e2afcfd334878bcb60813df">exgpv</a> (int *idexo, int *time_step, int *var_type, int *var_index, <a class="el" href="exo__jack_8c.html#a40ad44f36fa869224f44f26e26bbda41">entity_id</a> *obj_id, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *start_index, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *num_entities, <a class="el" href="exo__jack_8c.html#a5f5a64ef503db0fc824df8320929b126">real</a> *var_vals, int *ierr)</td></tr>
+<tr class="separator:a86757e097e2afcfd334878bcb60813df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519485fe881cd5c5e52a84e5cc94403f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exo__jack_8c.html#a519485fe881cd5c5e52a84e5cc94403f">exgpcc</a> (int *exoid, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *start_node_num, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *num_nodes, int *component, <a class="el" href="exo__jack_8c.html#a5f5a64ef503db0fc824df8320929b126">real</a> *coor, int *ierr)</td></tr>
+<tr class="separator:a519485fe881cd5c5e52a84e5cc94403f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cffe84727c0730f52f701afdf14bf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exo__jack_8c.html#af9cffe84727c0730f52f701afdf14bf2">exppcc</a> (int *exoid, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *start_node_num, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *num_nodes, int *component, <a class="el" href="exo__jack_8c.html#a5f5a64ef503db0fc824df8320929b126">real</a> *coor, int *ierr)</td></tr>
+<tr class="separator:af9cffe84727c0730f52f701afdf14bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8985ad2e4871cf76529fb81462436d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exo__jack_8c.html#aa8985ad2e4871cf76529fb81462436d5">exppv</a> (int *idexo, int *time_step, int *var_type, int *var_index, <a class="el" href="exo__jack_8c.html#a40ad44f36fa869224f44f26e26bbda41">entity_id</a> *obj_id, int64_t *start_index, int64_t *num_entities, <a class="el" href="exo__jack_8c.html#a5f5a64ef503db0fc824df8320929b126">real</a> *var_vals, int *ierr)</td></tr>
+<tr class="separator:aa8985ad2e4871cf76529fb81462436d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a40ad44f36fa869224f44f26e26bbda41" name="a40ad44f36fa869224f44f26e26bbda41"></a>
@@ -3973,6 +3981,59 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a519485fe881cd5c5e52a84e5cc94403f" name="a519485fe881cd5c5e52a84e5cc94403f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519485fe881cd5c5e52a84e5cc94403f">&#9670;&nbsp;</a></span>exgpcc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exgpcc </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>exoid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *&#160;</td>
+          <td class="paramname"><em>start_node_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *&#160;</td>
+          <td class="paramname"><em>num_nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exo__jack_8c.html#a5f5a64ef503db0fc824df8320929b126">real</a> *&#160;</td>
+          <td class="paramname"><em>coor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>ierr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >reads the coordinates of some of the nodes in the model for the specified component </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ModelDescription.html#ga3c3ddda5721f323660a109fb130481b1">ex_get_partial_coord_component</a> </dd></dl>
+
+</div>
+</div>
 <a id="ad81d215d304b242d4cbeb0bc7ffc011e" name="ad81d215d304b242d4cbeb0bc7ffc011e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad81d215d304b242d4cbeb0bc7ffc011e">&#9670;&nbsp;</a></span>exgpem()</h2>
 
@@ -4070,6 +4131,76 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >read property array names </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ModelDescription.html#gaf5efefd0c9a16732d628ad438db897fa">ex_get_prop_names()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a86757e097e2afcfd334878bcb60813df" name="a86757e097e2afcfd334878bcb60813df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86757e097e2afcfd334878bcb60813df">&#9670;&nbsp;</a></span>exgpv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exgpv </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>idexo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>time_step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>var_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>var_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exo__jack_8c.html#a40ad44f36fa869224f44f26e26bbda41">entity_id</a> *&#160;</td>
+          <td class="paramname"><em>obj_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *&#160;</td>
+          <td class="paramname"><em>start_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *&#160;</td>
+          <td class="paramname"><em>num_entities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exo__jack_8c.html#a5f5a64ef503db0fc824df8320929b126">real</a> *&#160;</td>
+          <td class="paramname"><em>var_vals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>ierr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -7904,6 +8035,59 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af9cffe84727c0730f52f701afdf14bf2" name="af9cffe84727c0730f52f701afdf14bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cffe84727c0730f52f701afdf14bf2">&#9670;&nbsp;</a></span>exppcc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exppcc </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>exoid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *&#160;</td>
+          <td class="paramname"><em>start_node_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *&#160;</td>
+          <td class="paramname"><em>num_nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exo__jack_8c.html#a5f5a64ef503db0fc824df8320929b126">real</a> *&#160;</td>
+          <td class="paramname"><em>coor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>ierr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >writes the coordinates of some of the nodes in the model for the specified component </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ModelDescription.html#ga55e7ca571ec29f68054f7087d3b76c79">ex_put_partial_coord_component</a> </dd></dl>
+
+</div>
+</div>
 <a id="ab73f0cc2890ba31e29ab38cc4fb814ae" name="ab73f0cc2890ba31e29ab38cc4fb814ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab73f0cc2890ba31e29ab38cc4fb814ae">&#9670;&nbsp;</a></span>exppem()</h2>
 
@@ -8007,6 +8191,77 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >write property array names </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ModelDescription.html#ga40bbb7194ab379a723548d61a62a3096">ex_put_prop_names()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa8985ad2e4871cf76529fb81462436d5" name="aa8985ad2e4871cf76529fb81462436d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8985ad2e4871cf76529fb81462436d5">&#9670;&nbsp;</a></span>exppv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exppv </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>idexo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>time_step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>var_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>var_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exo__jack_8c.html#a40ad44f36fa869224f44f26e26bbda41">entity_id</a> *&#160;</td>
+          <td class="paramname"><em>obj_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t *&#160;</td>
+          <td class="paramname"><em>start_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t *&#160;</td>
+          <td class="paramname"><em>num_entities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exo__jack_8c.html#a5f5a64ef503db0fc824df8320929b126">real</a> *&#160;</td>
+          <td class="paramname"><em>var_vals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>ierr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >writes the values of a single variable for a partial block at one time step to the database; assume the first time step and variable index are 1 </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ResultsData.html#ga4acbccad7c694a50b2c5ecdc904fa5e8">ex_put_partial_var()</a> </dd></dl>
 
 </div>
 </div>

@@ -11,10 +11,11 @@ SEACAS
 ------
 
 The Sandia National Laboratories (SNL) Engineering Analysis Code
-Access System (SEACAS) is a collection of structural and thermal codes
-and utilities used by analysts at SNL. The system includes pre- and
-post-processing codes, analysis codes, database translation codes,
-support libraries, UNIX shell scripts, and an installation system.
+Access System (SEACAS) contains the Exodus and IOSS finite element
+input/output libraries and supporting meshing, preprocessing,
+postprocessing, graphics, database translation applications, and
+support libraries. It is used by analysts at SNL and elsewhere and
+runs on laptops to large HPC systems.
 
 WIKI: FAQ and Extensions 
    The `SEACAS WIKI <https://github.com/sandialabs/seacas/wiki>`_
