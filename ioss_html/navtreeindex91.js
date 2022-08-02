@@ -1,5 +1,11 @@
 var NAVTREEINDEX91 =
 {
+"structdoctest_1_1Approx.html#af29d79bf1986ba565a688cb97b10efd4":[4,0,77,1,18],
+"structdoctest_1_1Approx.html#af29d79bf1986ba565a688cb97b10efd4":[3,0,121,4,18],
+"structdoctest_1_1Approx.html#af2fef67cf4508a446eeaf38dafae661f":[4,0,77,1,9],
+"structdoctest_1_1Approx.html#af2fef67cf4508a446eeaf38dafae661f":[3,0,121,4,9],
+"structdoctest_1_1AssertData.html":[3,0,121,5],
+"structdoctest_1_1AssertData.html":[4,0,77,2],
 "structdoctest_1_1AssertData.html#a0b3b2866b13ba048c0beea51bd798749":[4,0,77,2,2],
 "structdoctest_1_1AssertData.html#a0b3b2866b13ba048c0beea51bd798749":[3,0,121,5,2],
 "structdoctest_1_1AssertData.html#a1142f5fb5d171964b7677a9d23f81548":[4,0,77,2,10],
@@ -243,11 +249,5 @@ var NAVTREEINDEX91 =
 "structdoctest_1_1TestRunStats.html#a2f4b38f2f6225b798029b64c1d425999":[4,0,77,17,2],
 "structdoctest_1_1TestRunStats.html#a2f4b38f2f6225b798029b64c1d425999":[3,0,121,20,2],
 "structdoctest_1_1TestRunStats.html#a58f52d165ab0af01acb7d69a7fc53c3a":[3,0,121,20,0],
-"structdoctest_1_1TestRunStats.html#a58f52d165ab0af01acb7d69a7fc53c3a":[4,0,77,17,0],
-"structdoctest_1_1TestRunStats.html#adb4acfac3623bf752eff3f8d6ce2ffe7":[3,0,121,20,3],
-"structdoctest_1_1TestRunStats.html#adb4acfac3623bf752eff3f8d6ce2ffe7":[4,0,77,17,3],
-"structdoctest_1_1TestRunStats.html#aecbf62d51a6c96875d72124c27096e1d":[3,0,121,20,5],
-"structdoctest_1_1TestRunStats.html#aecbf62d51a6c96875d72124c27096e1d":[4,0,77,17,5],
-"structdoctest_1_1TestRunStats.html#afd49da305793d2c2622f0b33a63e87b6":[3,0,121,20,4],
-"structdoctest_1_1TestRunStats.html#afd49da305793d2c2622f0b33a63e87b6":[4,0,77,17,4]
+"structdoctest_1_1TestRunStats.html#a58f52d165ab0af01acb7d69a7fc53c3a":[4,0,77,17,0]
 };

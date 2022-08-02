@@ -233,6 +233,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb595dc3b710921210e25a360709f3b4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#afb595dc3b710921210e25a360709f3b4">field_count</a> (<a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Field::RoleType</a> role) const</td></tr>
 <tr class="memdesc:afb595dc3b710921210e25a360709f3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of fields with the given role (MESH, ATTRIBUTE, TRANSIENT, REDUCTION, etc.) in the entity's field manager.  <a href="classIoss_1_1GroupingEntity.html#afb595dc3b710921210e25a360709f3b4">More...</a><br /></td></tr>
 <tr class="separator:afb595dc3b710921210e25a360709f3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba45fcd7ba8c943a9b34f87add4cddac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#aba45fcd7ba8c943a9b34f87add4cddac">check_for_duplicate</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;new_field) const</td></tr>
+<tr class="separator:aba45fcd7ba8c943a9b34f87add4cddac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f3d6b42e6a7f68a61d00afe9132cc80"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#a4f3d6b42e6a7f68a61d00afe9132cc80">get_field_data</a> (const std::string &amp;field_name, void *data, size_t data_size) const</td></tr>
 <tr class="memdesc:a4f3d6b42e6a7f68a61d00afe9132cc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read field data from the database file into memory using a pointer.  <a href="classIoss_1_1GroupingEntity.html#a4f3d6b42e6a7f68a61d00afe9132cc80">More...</a><br /></td></tr>
 <tr class="separator:a4f3d6b42e6a7f68a61d00afe9132cc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,6 +471,24 @@ Friends</h2></td></tr>
 <p >For a <a class="el" href="classIoss_1_1SideSet.html" title="A collection of element sides.">SideSet</a>, returns a list of the element blocks that the elements in the set belong to. For others, it returns an empty vector. Entries are pushed onto the "block_members" vector, so it will be appended to if it is not empty at entry to the function. </p>
 
 <p>Reimplemented in <a class="el" href="classIoss_1_1SideBlock.html#ad31a4170f11254f07e88a6d9accbe7e3">Ioss::SideBlock</a>, <a class="el" href="classIoss_1_1SideSet.html#a96b977141d6eba017e57c18cc5674cdc">Ioss::SideSet</a>, <a class="el" href="classIoss_1_1EdgeSet.html#a093f854f7cbad6dba864053ed7f93965">Ioss::EdgeSet</a>, <a class="el" href="classIoss_1_1ElementSet.html#a6889185068be21aa3d300ac24879db84">Ioss::ElementSet</a>, and <a class="el" href="classIoss_1_1FaceSet.html#a8708839b42e369417e110459159ae766">Ioss::FaceSet</a>.</p>
+
+</div>
+</div>
+<a id="aba45fcd7ba8c943a9b34f87add4cddac" name="aba45fcd7ba8c943a9b34f87add4cddac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba45fcd7ba8c943a9b34f87add4cddac">&#9670;&nbsp;</a></span>check_for_duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::GroupingEntity::check_for_duplicate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>new_field</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

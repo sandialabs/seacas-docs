@@ -177,8 +177,8 @@ Functions</h2></td></tr>
 <tr class="separator:a20d60b6949d4ca86dc5853d8f76514ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa53a87252a9ed704f3ec3c8f7d12a8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#afa53a87252a9ed704f3ec3c8f7d12a8c">read_last_time_attribute</a> (int exodusFilePtr, double *value)</td></tr>
 <tr class="separator:afa53a87252a9ed704f3ec3c8f7d12a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf3f04de406da6dea14a72db3b2a0a73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#abf3f04de406da6dea14a72db3b2a0a73">check_processor_info</a> (int exodusFilePtr, int processor_count, int processor_id)</td></tr>
-<tr class="separator:abf3f04de406da6dea14a72db3b2a0a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c59a0cb8d5ef5335051910be17c806"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a89c59a0cb8d5ef5335051910be17c806">check_processor_info</a> (const std::string &amp;filename, int exodusFilePtr, int processor_count, int processor_id)</td></tr>
+<tr class="separator:a89c59a0cb8d5ef5335051910be17c806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cd46519755e233002d31bb5b693655b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a4cd46519755e233002d31bb5b693655b">type_match</a> (const std::string &amp;type, const char *substring)</td></tr>
 <tr class="separator:a4cd46519755e233002d31bb5b693655b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41e58490b4273d52830e63aa52ec98a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoex.html#a41e58490b4273d52830e63aa52ec98a6">decode_surface_name</a> (<a class="el" href="namespaceIoex.html#a8ae257784bdfb29603849073259d3098">Ioex::SideSetMap</a> &amp;fs_map, <a class="el" href="namespaceIoex.html#ac38f7495daa7d3afa4efa4b68561f000">Ioex::SideSetSet</a> &amp;fs_set, const std::string &amp;name)</td></tr>
@@ -436,8 +436,8 @@ ne_put_cmap_params(), </li>
 
 </div>
 </div>
-<a id="abf3f04de406da6dea14a72db3b2a0a73" name="abf3f04de406da6dea14a72db3b2a0a73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf3f04de406da6dea14a72db3b2a0a73">&#9670;&nbsp;</a></span>check_processor_info()</h2>
+<a id="a89c59a0cb8d5ef5335051910be17c806" name="a89c59a0cb8d5ef5335051910be17c806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c59a0cb8d5ef5335051910be17c806">&#9670;&nbsp;</a></span>check_processor_info()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,6 +445,12 @@ ne_put_cmap_params(), </li>
         <tr>
           <td class="memname">bool Ioex::check_processor_info </td>
           <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>exodusFilePtr</em>, </td>
         </tr>

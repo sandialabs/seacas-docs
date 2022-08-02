@@ -5,6 +5,7 @@ var classIoss_1_1GroupingEntity =
     [ "GroupingEntity", "classIoss_1_1GroupingEntity.html#a85b50f51d88eba68cd6dfdc242eeb912", null ],
     [ "~GroupingEntity", "classIoss_1_1GroupingEntity.html#a785d2133486460416e2d5af05f128c40", null ],
     [ "block_membership", "classIoss_1_1GroupingEntity.html#af0ac0895532e969424faa3d93b80b3a6", null ],
+    [ "check_for_duplicate", "classIoss_1_1GroupingEntity.html#aba45fcd7ba8c943a9b34f87add4cddac", null ],
     [ "contained_in", "classIoss_1_1GroupingEntity.html#ad794fcdc48401216d632f89026bc7a5c", null ],
     [ "contains_string", "classIoss_1_1GroupingEntity.html#ab20e24730ccc508eaceb7fc192fbab33", null ],
     [ "count_attributes", "classIoss_1_1GroupingEntity.html#a187d71a2fe40885b4631d1843bb8deb6", null ],

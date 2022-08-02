@@ -101,6 +101,7 @@ var apr__scanner_8cc =
     [ "SEAMSalloc", "apr__scanner_8cc.html#a66b61d62c93709f63dedf341220dc955", null ],
     [ "SEAMSfree", "apr__scanner_8cc.html#af844507128ff1f4c4605f7adf787c6df", null ],
     [ "SEAMSrealloc", "apr__scanner_8cc.html#ad4a3ff3a58be20fa74dfe21847ae0930", null ],
+    [ "string_is_ascii", "apr__scanner_8cc.html#a84fb4ae62bc8ecf4f7caba62556dcc34", null ],
     [ "yyerror", "apr__scanner_8cc.html#a2f3f79d3df1ce0ddad42fafcd48e3eb0", null ],
     [ "curr_index", "apr__scanner_8cc.html#accf9b292c5dce70026d58801522ebb7d", null ],
     [ "file_must_exist", "apr__scanner_8cc.html#ac44075db924f78eb77253d057864a889", null ],

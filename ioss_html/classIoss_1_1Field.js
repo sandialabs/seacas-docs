@@ -65,6 +65,8 @@ var classIoss_1_1Field =
     [ "raw_storage", "classIoss_1_1Field.html#a3f11ff0a5c57d3c98fcd140e3fa2e635", null ],
     [ "reset_count", "classIoss_1_1Field.html#ab921c05d49de26267b14ab4d8a3368c9", null ],
     [ "reset_type", "classIoss_1_1Field.html#a92eed1e2e74395e83a2c0d18ed1963d1", null ],
+    [ "role_string", "classIoss_1_1Field.html#ad5113bc2700ce647fda7294c681be20e", null ],
+    [ "role_string", "classIoss_1_1Field.html#aa4c4484be13408c1b668ae6f3bb2069b", null ],
     [ "set_index", "classIoss_1_1Field.html#aca6e0fc3a8aa26a38bcbf80545b9bd7b", null ],
     [ "set_suffices_uppercase", "classIoss_1_1Field.html#a43a1198c4f49eb5ad18e4ef6b05669d7", null ],
     [ "set_suffix_separator", "classIoss_1_1Field.html#a512ad4c1e7d7eb59455c5d61318d266d", null ],
