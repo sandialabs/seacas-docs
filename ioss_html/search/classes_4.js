@@ -39,6 +39,7 @@ var searchData=
   ['exceptiontranslator_36',['ExceptionTranslator',['../classdoctest_1_1detail_1_1ExceptionTranslator.html',1,'doctest::detail']]],
   ['exodusdata_37',['ExodusData',['../structIogn_1_1ExodusData.html',1,'Iogn']]],
   ['exodusmesh_38',['ExodusMesh',['../classIogn_1_1ExodusMesh.html',1,'Iogn']]],
-  ['expressiondecomposer_39',['ExpressionDecomposer',['../structdoctest_1_1detail_1_1ExpressionDecomposer.html',1,'doctest::detail']]],
-  ['extendedglob_40',['ExtendedGlob',['../classIoss_1_1glob_1_1ExtendedGlob.html',1,'Ioss::glob']]]
+  ['expression_5flhs_39',['Expression_lhs',['../structdoctest_1_1detail_1_1Expression__lhs.html',1,'doctest::detail']]],
+  ['expressiondecomposer_40',['ExpressionDecomposer',['../structdoctest_1_1detail_1_1ExpressionDecomposer.html',1,'doctest::detail']]],
+  ['extendedglob_41',['ExtendedGlob',['../classIoss_1_1glob_1_1ExtendedGlob.html',1,'Ioss::glob']]]
 ];

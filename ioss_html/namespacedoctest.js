@@ -150,6 +150,7 @@ var namespacedoctest =
     [ "toString", "namespacedoctest.html#a63aa06a8555c5aa34a7a6e76e87a3bca", null ],
     [ "toString", "namespacedoctest.html#af8d23a352e257456ffed49cb3ac11b4e", null ],
     [ "toString", "namespacedoctest.html#a468ff6c2b0a692bcf88a7a97a5de0a53", null ],
+    [ "toString", "namespacedoctest.html#a02de0f664332c46ba05b29b6227ce728", null ],
     [ "toString", "namespacedoctest.html#a43b51978c9505f682cbff9462a02f8af", null ],
     [ "toString", "namespacedoctest.html#ae4e12dd9865bb31f417f9df0c41813cf", null ],
     [ "toString", "namespacedoctest.html#a68660ce630bd88a551ab3108709e6592", null ],

@@ -8,7 +8,6 @@ var apr__scanner_8cc =
     [ "EOB_ACT_CONTINUE_SCAN", "apr__scanner_8cc.html#adf4b0db227e07782e28ade353a7ba7a1", null ],
     [ "EOB_ACT_END_OF_FILE", "apr__scanner_8cc.html#a7f71d7fa2c403eb4b2f38cb9536f3c63", null ],
     [ "EOB_ACT_LAST_MATCH", "apr__scanner_8cc.html#ad1a0b5ebcabffe388e9e9ebb2619c1fb", null ],
-    [ "FLEX_BETA", "apr__scanner_8cc.html#a9465c9986fdda27730c9dff8d16a0887", null ],
     [ "FLEX_DEBUG", "apr__scanner_8cc.html#af74ffd3a8ffec54fabd16b80141a71fc", null ],
     [ "FLEX_SCANNER", "apr__scanner_8cc.html#a3c3d1ef92e93b0bc81d7760a73d5c3b6", null ],
     [ "FLEXINT_H", "apr__scanner_8cc.html#aec980b5a71bbe6d67931df20f0ebaec4", null ],

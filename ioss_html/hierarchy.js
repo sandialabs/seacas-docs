@@ -4,6 +4,7 @@ var hierarchy =
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
     [ "Adjacency", "structAdjacency.html", null ],
+    [ "std::allocator< Ty >", "classstd_1_1allocator.html", null ],
     [ "doctest::Approx", "structdoctest_1_1Approx.html", null ],
     [ "Ioex::Assembly", "structIoex_1_1Assembly.html", null ],
     [ "Iotm::text_mesh::AssemblyParser", "classIotm_1_1text__mesh_1_1AssemblyParser.html", null ],
@@ -36,6 +37,8 @@ var hierarchy =
     [ "vtkCGNSMultiBlockDataSet::base", "structvtkCGNSMultiBlockDataSet_1_1base.html", null ],
     [ "std::basic_istream< charT, traits >", "classstd_1_1basic__istream.html", null ],
     [ "std::basic_ostream< charT, traits >", "classstd_1_1basic__ostream.html", null ],
+    [ "std::basic_string< Elem, Traits, Alloc >", "classstd_1_1basic__string.html", null ],
+    [ "std::basic_string< charT >", "classstd_1_1basic__string.html", null ],
     [ "Ioss::glob::BasicGlob< charT, globT >", "classIoss_1_1glob_1_1BasicGlob.html", null ],
     [ "tsl::bhopscotch_map< Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1bhopscotch__map.html", null ],
     [ "tsl::bhopscotch_map< int64_t, int64_t >", "classtsl_1_1bhopscotch__map.html", null ],
@@ -259,7 +262,11 @@ var hierarchy =
     [ "adios2::Engine", null, [
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
-    [ "Iotm::text_mesh::EntityGroup< GroupData >", "classIotm_1_1text__mesh_1_1EntityGroup.html", null ],
+    [ "Iotm::text_mesh::EntityGroup< GroupData >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
+      [ "Iotm::text_mesh::Nodesets< int64_t >", "classIotm_1_1text__mesh_1_1Nodesets.html", null ],
+      [ "Iotm::text_mesh::Sidesets< int64_t, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ],
+      [ "Iotm::text_mesh::Sidesets< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ]
+    ] ],
     [ "Iotm::text_mesh::EntityGroup< AssemblyData >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
       [ "Iotm::text_mesh::Assemblies< int64_t >", "classIotm_1_1text__mesh_1_1Assemblies.html", null ],
       [ "Iotm::text_mesh::Assemblies< EntityId >", "classIotm_1_1text__mesh_1_1Assemblies.html", null ]
@@ -267,18 +274,12 @@ var hierarchy =
     [ "Iotm::text_mesh::EntityGroup< NodesetData< EntityId > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
       [ "Iotm::text_mesh::Nodesets< EntityId >", "classIotm_1_1text__mesh_1_1Nodesets.html", null ]
     ] ],
-    [ "Iotm::text_mesh::EntityGroup< NodesetData< int64_t > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
-      [ "Iotm::text_mesh::Nodesets< int64_t >", "classIotm_1_1text__mesh_1_1Nodesets.html", null ]
-    ] ],
-    [ "Iotm::text_mesh::EntityGroup< SidesetData< EntityId, Iotm::TopologyMapEntry > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
-      [ "Iotm::text_mesh::Sidesets< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ]
-    ] ],
+    [ "Iotm::text_mesh::EntityGroup< NodesetData< int64_t > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", null ],
+    [ "Iotm::text_mesh::EntityGroup< SidesetData< EntityId, Iotm::TopologyMapEntry > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", null ],
     [ "Iotm::text_mesh::EntityGroup< SidesetData< EntityId, Topology > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
       [ "Iotm::text_mesh::Sidesets< EntityId, Topology >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ]
     ] ],
-    [ "Iotm::text_mesh::EntityGroup< SidesetData< int64_t, Iotm::TopologyMapEntry > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
-      [ "Iotm::text_mesh::Sidesets< int64_t, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ]
-    ] ],
+    [ "Iotm::text_mesh::EntityGroup< SidesetData< int64_t, Iotm::TopologyMapEntry > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", null ],
     [ "Iotm::text_mesh::EntityGroupData< T >", "structIotm_1_1text__mesh_1_1EntityGroupData.html", null ],
     [ "Iotm::text_mesh::EntityGroupData< AssemblyDataType >", "structIotm_1_1text__mesh_1_1EntityGroupData.html", [
       [ "Iotm::text_mesh::AssemblyData", "structIotm_1_1text__mesh_1_1AssemblyData.html", null ]
@@ -307,6 +308,7 @@ var hierarchy =
       [ "Ioss::glob::Error", "classIoss_1_1glob_1_1Error.html", null ]
     ] ],
     [ "Iogn::ExodusData", "structIogn_1_1ExodusData.html", null ],
+    [ "doctest::detail::Expression_lhs< L >", "structdoctest_1_1detail_1_1Expression__lhs.html", null ],
     [ "doctest::detail::ExpressionDecomposer", "structdoctest_1_1detail_1_1ExpressionDecomposer.html", null ],
     [ "Ioss::glob::ExtendedGlob< charT >", "classIoss_1_1glob_1_1ExtendedGlob.html", null ],
     [ "Ioss::Face", "classIoss_1_1Face.html", null ],
@@ -550,12 +552,11 @@ var hierarchy =
     ] ],
     [ "Iogn::SharedNode", "structIogn_1_1SharedNode.html", null ],
     [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Topology >", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html", [
+      [ "Iotm::text_mesh::SidesetSkinner< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", null ],
       [ "Iotm::text_mesh::SidesetSkinner< EntityId, Topology >", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", null ],
       [ "anonymous_namespace{UnitTestIotmTextMeshFixture.h}::TestTextMeshGraph::TextMeshGraph", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMeshGraph_1_1TextMeshGraph.html", null ]
     ] ],
-    [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html", [
-      [ "Iotm::text_mesh::SidesetSkinner< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", null ]
-    ] ],
+    [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html", null ],
     [ "Iofaodel::sideblock_entry_t", "structIofaodel_1_1sideblock__entry__t.html", null ],
     [ "Iotm::text_mesh::SideBlockInfo", "structIotm_1_1text__mesh_1_1SideBlockInfo.html", null ],
     [ "SideEntryLess", "structSideEntryLess.html", null ],

@@ -260,6 +260,7 @@ var annotated_dup =
         [ "ContextScopeBase", "structdoctest_1_1detail_1_1ContextScopeBase.html", "structdoctest_1_1detail_1_1ContextScopeBase" ],
         [ "deferred_false", "structdoctest_1_1detail_1_1deferred__false.html", null ],
         [ "ExceptionTranslator", "classdoctest_1_1detail_1_1ExceptionTranslator.html", "classdoctest_1_1detail_1_1ExceptionTranslator" ],
+        [ "Expression_lhs", "structdoctest_1_1detail_1_1Expression__lhs.html", "structdoctest_1_1detail_1_1Expression__lhs" ],
         [ "ExpressionDecomposer", "structdoctest_1_1detail_1_1ExpressionDecomposer.html", "structdoctest_1_1detail_1_1ExpressionDecomposer" ],
         [ "filldata", "structdoctest_1_1detail_1_1filldata.html", "structdoctest_1_1detail_1_1filldata" ],
         [ "filldata< const char[N]>", "structdoctest_1_1detail_1_1filldata_3_01const_01char_0fN_0e_4.html", "structdoctest_1_1detail_1_1filldata_3_01const_01char_0fN_0e_4" ],
@@ -746,8 +747,10 @@ var annotated_dup =
       [ "Interface", "classSkinner_1_1Interface.html", "classSkinner_1_1Interface" ]
     ] ],
     [ "std", "namespacestd.html", [
+      [ "allocator", "classstd_1_1allocator.html", null ],
       [ "basic_istream", "classstd_1_1basic__istream.html", null ],
       [ "basic_ostream", "classstd_1_1basic__ostream.html", null ],
+      [ "basic_string", "classstd_1_1basic__string.html", null ],
       [ "char_traits", "structstd_1_1char__traits.html", null ],
       [ "tuple", "classstd_1_1tuple.html", null ]
     ] ],
