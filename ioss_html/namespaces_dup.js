@@ -114,6 +114,15 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_Beam2.C}", "namespaceanonymous__namespace_02Ioss__Beam2_8C_03.html", "namespaceanonymous__namespace_02Ioss__Beam2_8C_03" ],
     [ "anonymous_namespace{Ioss_Beam3.C}", "namespaceanonymous__namespace_02Ioss__Beam3_8C_03.html", "namespaceanonymous__namespace_02Ioss__Beam3_8C_03" ],
     [ "anonymous_namespace{Ioss_Beam4.C}", "namespaceanonymous__namespace_02Ioss__Beam4_8C_03.html", "namespaceanonymous__namespace_02Ioss__Beam4_8C_03" ],
+    [ "anonymous_namespace{Ioss_ChainGenerator.C}", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html", [
+      [ "connectivity_t", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#aba4ec55ec15f9fd6513c61d788d9a993", null ],
+      [ "front_t", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a448d55d72d429603b43fc07a2ab75670", null ],
+      [ "generate_face_connectivity", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a7289f376a39ee35a3d5ebc42cb0fa888", null ],
+      [ "get_adjacent_blocks", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a0161ca40a9e6ef0fe7b195946d31235d", null ],
+      [ "get_line_front", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a3148ec70b6c3ddf993467f034c7834bc", null ],
+      [ "hex_opposite_side", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#aae02ec800d49c6a48406518049ce984a", null ],
+      [ "debug", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a0d6b19d7093dd27befc294f6d075e3f9", null ]
+    ] ],
     [ "anonymous_namespace{Ioss_Compare.C}", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html", [
       [ "compare_blocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a5d624b50c816e5e87d300ed4040b19fb", null ],
       [ "compare_commsets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a70ccde15f2e1d055540a5c549636f094", null ],

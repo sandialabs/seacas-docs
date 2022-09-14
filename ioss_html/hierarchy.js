@@ -70,6 +70,7 @@ var hierarchy =
     [ "Iovs::CatalystManager::CatalystPipelineState", "classIovs_1_1CatalystManager_1_1CatalystPipelineState.html", null ],
     [ "CatalystTestFixture", "classCatalystTestFixture.html", null ],
     [ "Ioss::GetLongOption::Cell", "structIoss_1_1GetLongOption_1_1Cell.html", null ],
+    [ "Ioss::chain_entry_t< INT >", "structIoss_1_1chain__entry__t.html", null ],
     [ "std::char_traits< charT >", "structstd_1_1char__traits.html", null ],
     [ "Ioex::CommunicationMap", "structIoex_1_1CommunicationMap.html", null ],
     [ "Ioex::CommunicationMetaData", "structIoex_1_1CommunicationMetaData.html", null ],

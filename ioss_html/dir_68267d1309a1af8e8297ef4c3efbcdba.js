@@ -34,6 +34,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Ioss_Blob.C", "Ioss__Blob_8C.html", null ],
     [ "Ioss_Blob.h", "Ioss__Blob_8h.html", "Ioss__Blob_8h" ],
     [ "Ioss_BoundingBox.h", "Ioss__BoundingBox_8h.html", "Ioss__BoundingBox_8h" ],
+    [ "Ioss_ChainGenerator.C", "Ioss__ChainGenerator_8C.html", "Ioss__ChainGenerator_8C" ],
+    [ "Ioss_ChainGenerator.h", "Ioss__ChainGenerator_8h.html", "Ioss__ChainGenerator_8h" ],
     [ "Ioss_CodeTypes.h", "Ioss__CodeTypes_8h.html", "Ioss__CodeTypes_8h" ],
     [ "Ioss_CommSet.C", "Ioss__CommSet_8C.html", null ],
     [ "Ioss_CommSet.h", "Ioss__CommSet_8h.html", "Ioss__CommSet_8h" ],

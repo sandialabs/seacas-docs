@@ -139,6 +139,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1BoundaryCondition.html">BoundaryCondition</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1chain__entry__t.html">chain_entry_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1CommSet.html">CommSet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Compare.html">Compare</a></td></tr>
@@ -600,6 +602,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:abf77dade63ce8a4c5cc7af4edea743e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04f04299740ef1071aaadb0c6d1042c5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a04f04299740ef1071aaadb0c6d1042c5">EntityContainer</a> = std::vector&lt; const <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> * &gt;</td></tr>
 <tr class="separator:a04f04299740ef1071aaadb0c6d1042c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5a0dc5c3edba35e82fb7a96a06332c"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:aaa5a0dc5c3edba35e82fb7a96a06332c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">chain_t</a> = std::vector&lt; <a class="el" href="structIoss_1_1chain__entry__t.html">chain_entry_t</a>&lt; INT &gt; &gt;</td></tr>
+<tr class="separator:aaa5a0dc5c3edba35e82fb7a96a06332c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c9ce804956e5571c2124a1f67d1f12"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a57c9ce804956e5571c2124a1f67d1f12">IntVector</a> = std::vector&lt; int &gt;</td></tr>
 <tr class="separator:a57c9ce804956e5571c2124a1f67d1f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a715acbaf3ca8e2e82d0d3a0f81ff5f1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b">Int64Vector</a> = std::vector&lt; int64_t &gt;</td></tr>
@@ -792,6 +797,16 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ae17f25250aa7dc84d3915c5bfe07f47e"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">Ioss::chain_t</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ae17f25250aa7dc84d3915c5bfe07f47e">generate_element_chains</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;, int, int)</td></tr>
+<tr class="separator:ae17f25250aa7dc84d3915c5bfe07f47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d80b16f37dc50e9fee43e6937cbc39"><td class="memItemLeft" align="right" valign="top">template <a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">Ioss::chain_t</a>&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a74d80b16f37dc50e9fee43e6937cbc39">generate_element_chains</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;, int, int64_t)</td></tr>
+<tr class="separator:a74d80b16f37dc50e9fee43e6937cbc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6a82767d634f225c45f64df635d8cc"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:a1a6a82767d634f225c45f64df635d8cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">Ioss::chain_t</a>&lt; INT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a1a6a82767d634f225c45f64df635d8cc">generate_element_chains</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;surface_list, int debug_level, INT)</td></tr>
+<tr class="separator:a1a6a82767d634f225c45f64df635d8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4312ae8cd7588aade32fa4ddb821994"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
+<tr class="memitem:ae4312ae8cd7588aade32fa4ddb821994"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">chain_t</a>&lt; INT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ae4312ae8cd7588aade32fa4ddb821994">generate_element_chains</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;surface_list, int debug_level, INT)</td></tr>
+<tr class="separator:ae4312ae8cd7588aade32fa4ddb821994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf60c6566ef8bd6e92e360a0c27daf9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#acf60c6566ef8bd6e92e360a0c27daf9d">copy_database</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options)</td></tr>
 <tr class="separator:acf60c6566ef8bd6e92e360a0c27daf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a800bece8cd1505782c2180b175710b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a800bece8cd1505782c2180b175710b45">transfer_assemblies</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options, int rank)</td></tr>
@@ -887,6 +902,22 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespaceIoss.html#a6d2d9c188b378c1f3af02f8de6b5ed79">Ioss::BlobContainer</a> = typedef std::vector&lt;<a class="el" href="classIoss_1_1Blob.html">Ioss::Blob</a> *&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa5a0dc5c3edba35e82fb7a96a06332c" name="aaa5a0dc5c3edba35e82fb7a96a06332c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa5a0dc5c3edba35e82fb7a96a06332c">&#9670;&#160;</a></span>chain_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">Ioss::chain_t</a> = typedef std::vector&lt;<a class="el" href="structIoss_1_1chain__entry__t.html">chain_entry_t</a>&lt;INT&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1717,6 +1748,170 @@ Variables</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae17f25250aa7dc84d3915c5bfe07f47e" name="ae17f25250aa7dc84d3915c5bfe07f47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17f25250aa7dc84d3915c5bfe07f47e">&#9670;&#160;</a></span>generate_element_chains() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">Ioss::chain_t</a>&lt; int &gt; Ioss::generate_element_chains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74d80b16f37dc50e9fee43e6937cbc39" name="a74d80b16f37dc50e9fee43e6937cbc39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d80b16f37dc50e9fee43e6937cbc39">&#9670;&#160;</a></span>generate_element_chains() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template <a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">Ioss::chain_t</a>&lt; int64_t &gt; Ioss::generate_element_chains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a6a82767d634f225c45f64df635d8cc" name="a1a6a82767d634f225c45f64df635d8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6a82767d634f225c45f64df635d8cc">&#9670;&#160;</a></span>generate_element_chains() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">Ioss::chain_t</a>&lt; INT &gt; Ioss::generate_element_chains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>debug_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4312ae8cd7588aade32fa4ddb821994" name="ae4312ae8cd7588aade32fa4ddb821994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4312ae8cd7588aade32fa4ddb821994">&#9670;&#160;</a></span>generate_element_chains() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceIoss.html#aaa5a0dc5c3edba35e82fb7a96a06332c">chain_t</a>&lt; INT &gt; Ioss::generate_element_chains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>debug_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

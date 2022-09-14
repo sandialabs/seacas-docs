@@ -445,6 +445,7 @@ var annotated_dup =
       [ "Blob", "classIoss_1_1Blob.html", "classIoss_1_1Blob" ],
       [ "BlockDecompositionData", "classIoss_1_1BlockDecompositionData.html", "classIoss_1_1BlockDecompositionData" ],
       [ "BoundaryCondition", "structIoss_1_1BoundaryCondition.html", "structIoss_1_1BoundaryCondition" ],
+      [ "chain_entry_t", "structIoss_1_1chain__entry__t.html", "structIoss_1_1chain__entry__t" ],
       [ "CommSet", "classIoss_1_1CommSet.html", "classIoss_1_1CommSet" ],
       [ "Compare", "classIoss_1_1Compare.html", "classIoss_1_1Compare" ],
       [ "CompositeVariableType", "classIoss_1_1CompositeVariableType.html", "classIoss_1_1CompositeVariableType" ],
