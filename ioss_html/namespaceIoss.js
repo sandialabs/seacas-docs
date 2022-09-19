@@ -350,6 +350,7 @@ var namespaceIoss =
       [ "SPLIT_BY_DONT_SPLIT", "namespaceIoss.html#aac97d071c77181adce98f1569c36d222a5004c32a6d3b2ac8c5c23ad8ca595c73", null ],
       [ "SPLIT_LAST_ENTRY", "namespaceIoss.html#aac97d071c77181adce98f1569c36d222ac58d9f16883b0615c05af5e380adc68f", null ]
     ] ],
+    [ "build_surface_list", "namespaceIoss.html#a4babe55a4a6fc57d71ffc7c5e54c0f8d", null ],
     [ "copy_database", "namespaceIoss.html#acf60c6566ef8bd6e92e360a0c27daf9d", null ],
     [ "DebugOut", "namespaceIoss.html#a9804f5a9612ff0a28eac05acb897d120", null ],
     [ "generate_element_chains", "namespaceIoss.html#ae17f25250aa7dc84d3915c5bfe07f47e", null ],

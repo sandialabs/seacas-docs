@@ -118,8 +118,8 @@ var namespaces_dup =
       [ "connectivity_t", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#aba4ec55ec15f9fd6513c61d788d9a993", null ],
       [ "front_t", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a448d55d72d429603b43fc07a2ab75670", null ],
       [ "generate_face_connectivity", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a7289f376a39ee35a3d5ebc42cb0fa888", null ],
-      [ "get_adjacent_blocks", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a0161ca40a9e6ef0fe7b195946d31235d", null ],
-      [ "get_line_front", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a3148ec70b6c3ddf993467f034c7834bc", null ],
+      [ "get_adjacent_blocks", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a666576bfc3f4dc27b3485c8e272b3a5c", null ],
+      [ "get_line_front", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a88b4b2fc74a64874f24af4cd6321aa64", null ],
       [ "hex_opposite_side", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#aae02ec800d49c6a48406518049ce984a", null ],
       [ "debug", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a0d6b19d7093dd27befc294f6d075e3f9", null ]
     ] ],
