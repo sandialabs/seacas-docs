@@ -169,7 +169,7 @@ var NAVTREEINDEX =
 "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a42b5da03d9006e9d7669fd15bc0579be",
 "namespaceanonymous__namespace_02io__modify_8C_03.html#abbaa7f57eb4b40d886862690a9c758d8",
 "namespacedoctest_1_1detail.html#a0ffd8b760c2a9b355a1df02470fe2281",
-"structAdjacency.html#a1bbb92d9fa4aa24801aa108997a4dead",
+"structAdjacency.html",
 "structIoex_1_1ElemSet.html#a404be89c8fc211591903d9e6e6d926b2",
 "structIogn_1_1ExodusData.html#a1e00c93b859a22e52f51b50e586bcdff",
 "structIoss_1_1ZoneConnectivity.html#aec50a371b8ada4ab9be4d84bb9647b85",

@@ -488,6 +488,10 @@ var hierarchy =
     [ "Iotm::NodeCommunicationMap", "classIotm_1_1NodeCommunicationMap.html", null ],
     [ "Ioex::NodeSet", "structIoex_1_1NodeSet.html", null ],
     [ "Iotm::text_mesh::NodesetParser< EntityId >", "classIotm_1_1text__mesh_1_1NodesetParser.html", null ],
+    [ "ostream_formatter", null, [
+      [ "fmt::formatter< Ioss::BoundaryCondition >", "structfmt_1_1formatter_3_01Ioss_1_1BoundaryCondition_01_4.html", null ],
+      [ "fmt::formatter< Ioss::ZoneConnectivity >", "structfmt_1_1formatter_3_01Ioss_1_1ZoneConnectivity_01_4.html", null ]
+    ] ],
     [ "Ioss::ParallelUtils", "classIoss_1_1ParallelUtils.html", null ],
     [ "anonymous_namespace{io_shell_ts.C}::param", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param.html", null ],
     [ "ParaViewCatalystCGNSAdapterBase", "classParaViewCatalystCGNSAdapterBase.html", [

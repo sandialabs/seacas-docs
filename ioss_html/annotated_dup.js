@@ -299,6 +299,10 @@ var annotated_dup =
       [ "TestCaseException", "structdoctest_1_1TestCaseException.html", "structdoctest_1_1TestCaseException" ],
       [ "TestRunStats", "structdoctest_1_1TestRunStats.html", "structdoctest_1_1TestRunStats" ]
     ] ],
+    [ "fmt", "namespacefmt.html", [
+      [ "formatter< Ioss::BoundaryCondition >", "structfmt_1_1formatter_3_01Ioss_1_1BoundaryCondition_01_4.html", null ],
+      [ "formatter< Ioss::ZoneConnectivity >", "structfmt_1_1formatter_3_01Ioss_1_1ZoneConnectivity_01_4.html", null ]
+    ] ],
     [ "Info", "namespaceInfo.html", [
       [ "Interface", "classInfo_1_1Interface.html", "classInfo_1_1Interface" ]
     ] ],
