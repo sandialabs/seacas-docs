@@ -105,7 +105,8 @@ $(document).ready(function(){initNavTree('classtsl_1_1bhopscotch__map.html','');
 <div class="dynheader">
 Collaboration diagram for tsl::bhopscotch_map&lt; Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classtsl_1_1bhopscotch__map__coll__graph.svg" width="100%" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classtsl_1_1bhopscotch__map__coll__graph.svg" width="100%" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -404,19 +405,7 @@ Friends</h2></td></tr>
 class tsl::bhopscotch_map&lt; Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy &gt;</div><p >Similar to <a class="el" href="classtsl_1_1hopscotch__map.html">tsl::hopscotch_map</a> but instead of using a list for overflowing elements it uses a binary search tree. It thus needs an additional template parameter Compare. Compare should be arithmetically coherent with KeyEqual.</p>
 <p >The binary search tree allows the map to have a worst-case scenario of O(log
 n) for search and delete, even if the hash function maps all the elements to the same bucket. For insert, the amortized worst case is O(log n), but the worst case is O(n) in case of rehash.</p>
-<p >This makes the map resistant to DoS attacks (but doesn't preclude you to have a good hash function, as an element in the bucket array is faster to retrieve than in the tree).</p>
-<p >Implementation of a hash map using the hopscotch hashing algorithm.</p>
-<p >The Key and the value T must be either nothrow move-constructible, copy-constructible or both.</p>
-<p >The size of the neighborhood (NeighborhoodSize) must be &gt; 0 and &lt;= 62 if StoreHash is false. When StoreHash is true, 32-bits of the hash will be stored alongside the neighborhood limiting the NeighborhoodSize to &lt;= 30. There is no memory usage difference between 'NeighborhoodSize 62; StoreHash false' and 'NeighborhoodSize 30; StoreHash true'.</p>
-<p >Storing the hash may improve performance on insert during the rehash process if the hash takes time to compute. It may also improve read performance if the KeyEqual function takes time (or incurs a cache-miss). If used with simple Hash and KeyEqual it may slow things down.</p>
-<p >StoreHash can only be set if the GrowthPolicy is set to tsl::power_of_two_growth_policy.</p>
-<p >GrowthPolicy defines how the map grows and consequently how a hash value is mapped to a bucket. By default the map uses tsl::power_of_two_growth_policy. This policy keeps the number of buckets to a power of two and uses a mask to map the hash to a bucket instead of the slow modulo. You may define your own growth policy, check tsl::power_of_two_growth_policy for the interface.</p>
-<p >If the destructors of Key or T throw an exception, behaviour of the class is undefined.</p>
-<p >Iterators invalidation:</p><ul>
-<li>clear, operator=, reserve, rehash: always invalidate the iterators.</li>
-<li>insert, emplace, emplace_hint, operator[]: if there is an effective insert, invalidate the iterators if a displacement is needed to resolve a collision (which mean that most of the time, insert will invalidate the iterators). Or if there is a rehash.</li>
-<li>erase: iterator on the erased element is the only one which become invalid.  </li>
-</ul>
+<p >This makes the map resistant to DoS attacks (but doesn't preclude you to have a good hash function, as an element in the bucket array is faster to retrieve than in the tree). </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a73abd33b2c870e5400f7b22984f8fdac" name="a73abd33b2c870e5400f7b22984f8fdac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73abd33b2c870e5400f7b22984f8fdac">&#9670;&#160;</a></span>allocator_type</h2>
@@ -1310,9 +1299,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
 </table>
 </div><div class="memdoc">
 
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key.  </p>
-
 </div>
 </div>
 <a id="a7afabc7f550d3550185aa0399e375443" name="a7afabc7f550d3550185aa0399e375443"></a>
@@ -1352,9 +1338,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key. </p>
 <p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash. </p>
 
 </div>
@@ -1396,10 +1379,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key. </p>
-<p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash.  </p>
 
 </div>
 </div>
@@ -1533,9 +1512,6 @@ template&lt;class Key , class T , class Hash  = std::hash&lt;Key&gt;, class KeyE
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash.  </p>
 
 </div>
 </div>
@@ -1769,9 +1745,6 @@ template&lt;class K , class KE  = KeyEqual, typename std::enable_if&lt; <a class
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent exists. If so, K must be hashable and comparable to Key. </p>
 <p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash. </p>
 
 </div>
@@ -1911,9 +1884,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key. </p>
 <p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash. </p>
 
 </div>
@@ -2199,9 +2169,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
 </table>
 </div><div class="memdoc">
 
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key.  </p>
-
 </div>
 </div>
 <a id="a8c5622532e940b647b350113d7055db8" name="a8c5622532e940b647b350113d7055db8"></a>
@@ -2241,9 +2208,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key. </p>
 <p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash. </p>
 
 </div>
@@ -2285,10 +2249,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key. </p>
-<p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash.  </p>
 
 </div>
 </div>
@@ -2423,9 +2383,6 @@ template&lt;class Key , class T , class Hash  = std::hash&lt;Key&gt;, class KeyE
 </table>
 </div><div class="memdoc">
 
-<p></p>
-<p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash.  </p>
-
 </div>
 </div>
 <a id="ae2fdbd0c173d0bcffe20d8590255cb1a" name="ae2fdbd0c173d0bcffe20d8590255cb1a"></a>
@@ -2496,9 +2453,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key. </p>
 <p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup to the value if you already have the hash. </p>
 
 </div>
@@ -2723,9 +2677,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
 </table>
 </div><div class="memdoc">
 
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key.  </p>
-
 </div>
 </div>
 <a id="ad09dc0c4313d33eacf0f79ccbd825535" name="ad09dc0c4313d33eacf0f79ccbd825535"></a>
@@ -2765,9 +2716,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key. </p>
 <p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash. </p>
 
 </div>
@@ -2809,10 +2757,6 @@ template&lt;class K , class KE  = KeyEqual, class CP  = Compare, typename std::e
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >This overload only participates in the overload resolution if the typedef KeyEqual::is_transparent and Compare::is_transparent exist. If so, K must be hashable and comparable to Key. </p>
-<p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash.  </p>
 
 </div>
 </div>
@@ -2946,9 +2890,6 @@ template&lt;class Key , class T , class Hash  = std::hash&lt;Key&gt;, class KeyE
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p></p>
-<p >Use the hash value 'precalculated_hash' instead of hashing the key. The hash value should be the same as <a class="el" href="classtsl_1_1bhopscotch__map.html#a9b8e1e6778d60554f4abf33071965245">hash_function()</a>(key). Useful to speed-up the lookup if you already have the hash.  </p>
 
 </div>
 </div>

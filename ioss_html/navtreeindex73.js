@@ -1,5 +1,7 @@
 var NAVTREEINDEX73 =
 {
+"doctest_8h.html#ae1bb5bed722f34f1c38b83cb19d326d3a4431fd22794b06d854c7f9fbf43b10b8":[5,0,0,18,425,17],
+"doctest_8h.html#ae1bb5bed722f34f1c38b83cb19d326d3a493f8d19aa6056a3e8f475772548349b":[5,0,0,18,425,49],
 "doctest_8h.html#ae1bb5bed722f34f1c38b83cb19d326d3a49c183d4be8babc83bbb3754303f7d45":[5,0,0,18,425,54],
 "doctest_8h.html#ae1bb5bed722f34f1c38b83cb19d326d3a4dbd73b6541c25b5c6fe059e970d937a":[5,0,0,18,425,44],
 "doctest_8h.html#ae1bb5bed722f34f1c38b83cb19d326d3a54599a5076fe992159f2e88cad185682":[5,0,0,18,425,51],
@@ -203,8 +205,8 @@ var NAVTREEINDEX73 =
 "functions_y.html":[4,3,0,24],
 "functions_z.html":[4,3,0,25],
 "functions_~.html":[4,3,0,26],
-"globals.html":[5,1,0,0],
 "globals.html":[5,1,0],
+"globals.html":[5,1,0,0],
 "globals_a.html":[5,1,0,1],
 "globals_b.html":[5,1,0,2],
 "globals_c.html":[5,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX73 =
 "globals_t.html":[5,1,0,17],
 "globals_type.html":[5,1,3],
 "globals_u.html":[5,1,0,18],
-"globals_v.html":[5,1,0,19],
-"globals_vars.html":[5,1,2],
-"globals_w.html":[5,1,0,20]
+"globals_v.html":[5,1,0,19]
 };
