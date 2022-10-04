@@ -440,7 +440,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class ValueType, class KeySelect, class ValueSelect, class Hash, class KeyEqual, class Allocator, bool StoreHash, class GrowthPolicy&gt;<br />
-class tsl::detail_robin_hash::robin_hash&lt; ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;</div><p >Internal common class used by <code><a class="el" href="classtsl_1_1robin__map.html">robin_map</a></code> and <code><a class="el" href="classtsl_1_1robin__set.html">robin_set</a></code>.</p>
+class tsl::detail_robin_hash::robin_hash&lt; ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;</div><p >Internal common class used by <code><a class="el" href="classtsl_1_1robin__map.html">robin_map</a></code> and <code>robin_set</code>.</p>
 <p >ValueType is what will be stored by <code><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html">robin_hash</a></code> (usually <code>std::pair&lt;Key, T&gt;</code> for map and <code>Key</code> for set).</p>
 <p ><code>KeySelect</code> should be a <code>FunctionObject</code> which takes a <code>ValueType</code> in parameter and returns a reference to the key.</p>
 <p ><code>ValueSelect</code> should be a <code>FunctionObject</code> which takes a <code>ValueType</code> in parameter and returns a reference to the value. <code>ValueSelect</code> should be void if there is no value (in a set for example).</p>

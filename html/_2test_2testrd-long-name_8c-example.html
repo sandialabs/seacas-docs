@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2testrd-long-name_8c-example.ht
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -779,15 +779,12 @@ $(document).ready(function(){initNavTree('_2test_2testrd-long-name_8c-example.ht
 <div class="line"> </div>
 <div class="line">      error = <a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a59" name="a59"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca741146dd81c91092051eb4f0e17bae96">EX_INQ_SS_DF_LEN</a>, &amp;df_list_len, &amp;fdum, cdum);</div>
 <div class="line">      printf(<span class="stringliteral">&quot;\nafter ex_inquire: EX_INQ_SS_DF_LEN = %d,  error = %d\n&quot;</span>, df_list_len, error);</div>
-<div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">/* read concatenated side sets; this produces the same information as</span></div>
-<div class="line"><span class="comment">     * the above code which reads individual side sets</span></div>
-<div class="line"><span class="comment">     */</span></div>
+<div class="line">      <span class="comment">/* read concatenated side sets; this produces the same information as</span></div>
+<div class="line"><span class="comment">       * the above code which reads individual side sets</span></div>
+<div class="line"><span class="comment">       */</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">/* concatenated side set read */</span></div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">if</span> (num_side_sets &gt; 0) {</div>
+<div class="line">      <span class="comment">/* concatenated side set read */</span></div>
 <div class="line">      <span class="keyword">struct </span><a class="code hl_struct" href="structex__set__specs.html">ex_set_specs</a> set_specs;</div>
 <div class="line"> </div>
 <div class="line">      ids              = (<span class="keywordtype">int</span> *)calloc(num_side_sets, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>

@@ -37,8 +37,7 @@ var annotated_dup =
         [ "power_of_two_growth_policy", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", "classtsl_1_1rh_1_1power__of__two__growth__policy" ],
         [ "prime_growth_policy", "classtsl_1_1rh_1_1prime__growth__policy.html", "classtsl_1_1rh_1_1prime__growth__policy" ]
       ] ],
-      [ "robin_map", "classtsl_1_1robin__map.html", "classtsl_1_1robin__map" ],
-      [ "robin_set", "classtsl_1_1robin__set.html", "classtsl_1_1robin__set" ]
+      [ "robin_map", "classtsl_1_1robin__map.html", "classtsl_1_1robin__map" ]
     ] ],
     [ "array_a_init", "structarray__a__init.html", "structarray__a__init" ],
     [ "array_c_init", "structarray__c__init.html", "structarray__c__init" ],
