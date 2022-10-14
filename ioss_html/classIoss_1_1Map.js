@@ -29,6 +29,7 @@ var classIoss_1_1Map =
     [ "set_defined", "classIoss_1_1Map.html#a1f454b21053cbe3708f224fd707b0d29", null ],
     [ "set_is_sequential", "classIoss_1_1Map.html#a971600089854c1c40ed4293745978958", null ],
     [ "set_map", "classIoss_1_1Map.html#a2e65d0ea8d6b141ed17a929e4c610b41", null ],
+    [ "set_rank", "classIoss_1_1Map.html#afb43186718b4689fbe6d9c19a78bc060", null ],
     [ "set_size", "classIoss_1_1Map.html#aeb06d5b955371e06cfaa5cb0f3e2ea7f", null ],
     [ "size", "classIoss_1_1Map.html#a3912e675a8b5e995478e70d239289f80", null ],
     [ "m_defined", "classIoss_1_1Map.html#a118e717576ca2d18ac89addbe7d2fe4e", null ],
