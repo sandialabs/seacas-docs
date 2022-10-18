@@ -28,6 +28,7 @@ var classSEAMS_1_1Aprepro =
     [ "error", "classSEAMS_1_1Aprepro.html#a08aa25c29a04360531e27b84cd488b3a", null ],
     [ "get_error_count", "classSEAMS_1_1Aprepro.html#a8872d4cfad3b4b402b54f331939b2393", null ],
     [ "get_history", "classSEAMS_1_1Aprepro.html#a1c465bf3dcc27a536f5580bb0b65a278", null ],
+    [ "get_sorted_sym_table", "classSEAMS_1_1Aprepro.html#af35a34e6efe0dd979b53c39e73712488", null ],
     [ "get_variable_names", "classSEAMS_1_1Aprepro.html#a97fdcabbf11ebd8f4bdb51a996c39751", null ],
     [ "get_warning_count", "classSEAMS_1_1Aprepro.html#af9f57482e3e553824e3c7f07f37e1035", null ],
     [ "getsym", "classSEAMS_1_1Aprepro.html#a7aa74eeb06ef5812d0dbb6418e38667e", null ],
