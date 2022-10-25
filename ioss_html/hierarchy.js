@@ -10,8 +10,8 @@ var hierarchy =
     [ "Iotm::text_mesh::AssemblyParser", "classIotm_1_1text__mesh_1_1AssemblyParser.html", null ],
     [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}::AssemblyTreeFilter", "classanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1AssemblyTreeFilter.html", null ],
     [ "Iotm::unit_test::AssemblyTreeGraph", "classIotm_1_1unit__test_1_1AssemblyTreeGraph.html", null ],
-    [ "Assert", "structAssert.html", null ],
-    [ "assert_context", "classassert__context.html", null ],
+    [ "Ioss::Assert", "structIoss_1_1Assert.html", null ],
+    [ "Ioss::assert_context", "classIoss_1_1assert__context.html", null ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}::assert_initializer", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer.html", null ],
     [ "doctest::AssertData", "structdoctest_1_1AssertData.html", [
       [ "doctest::detail::ResultBuilder", "structdoctest_1_1detail_1_1ResultBuilder.html", null ]
@@ -168,7 +168,7 @@ var hierarchy =
       [ "Iovs_cgns::DatabaseIO", "classIovs__cgns_1_1DatabaseIO.html", null ],
       [ "Iovs_exodus::DatabaseIO", "classIovs__exodus_1_1DatabaseIO.html", null ]
     ] ],
-    [ "DataPool", "structDataPool.html", null ],
+    [ "Ioss::DataPool", "structIoss_1_1DataPool.html", null ],
     [ "Ioss::Decomposition< INT >", "classIoss_1_1Decomposition.html", null ],
     [ "Ioex::EdgeBlock", "structIoex_1_1EdgeBlock.html", null ],
     [ "Ioex::EdgeSet", "structIoex_1_1EdgeSet.html", null ],
@@ -533,7 +533,7 @@ var hierarchy =
     [ "anonymous_namespace{Iocgns_StructuredZoneData.C}::Range", "structanonymous__namespace_02Iocgns__StructuredZoneData_8C_03_1_1Range.html", null ],
     [ "anonymous_namespace{Iocgns_Utils.C}::Range", "structanonymous__namespace_02Iocgns__Utils_8C_03_1_1Range.html", null ],
     [ "Ioex::Redefine", "classIoex_1_1Redefine.html", null ],
-    [ "RefHolder< T >", "classRefHolder.html", null ],
+    [ "Ioss::RefHolder< T >", "classIoss_1_1RefHolder.html", null ],
     [ "Ioss::Registry", "classIoss_1_1Registry.html", null ],
     [ "doctest::detail::RelationalComparator< int, L, R >", "structdoctest_1_1detail_1_1RelationalComparator.html", null ],
     [ "doctest::detail::types::remove_const< T >", "structdoctest_1_1detail_1_1types_1_1remove__const.html", null ],
@@ -548,14 +548,14 @@ var hierarchy =
     [ "tsl::robin_map< std::string, Property >", "classtsl_1_1robin__map.html", null ],
     [ "tsl::robin_set< Key, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1robin__set.html", null ],
     [ "anonymous_namespace{Iocgns_DatabaseIO.C}::SBlock", "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html", null ],
-    [ "ScopeGuardImplBase", "classScopeGuardImplBase.html", [
-      [ "ObjScopeGuardImpl0< Obj, MemFun >", "classObjScopeGuardImpl0.html", null ],
-      [ "ObjScopeGuardImpl1< Obj, MemFun, P1 >", "classObjScopeGuardImpl1.html", null ],
-      [ "ObjScopeGuardImpl2< Obj, MemFun, P1, P2 >", "classObjScopeGuardImpl2.html", null ],
-      [ "ScopeGuardImpl0< F >", "classScopeGuardImpl0.html", null ],
-      [ "ScopeGuardImpl1< F, P1 >", "classScopeGuardImpl1.html", null ],
-      [ "ScopeGuardImpl2< F, P1, P2 >", "classScopeGuardImpl2.html", null ],
-      [ "ScopeGuardImpl3< F, P1, P2, P3 >", "classScopeGuardImpl3.html", null ]
+    [ "Ioss::ScopeGuardImplBase", "classIoss_1_1ScopeGuardImplBase.html", [
+      [ "Ioss::ObjScopeGuardImpl0< Obj, MemFun >", "classIoss_1_1ObjScopeGuardImpl0.html", null ],
+      [ "Ioss::ObjScopeGuardImpl1< Obj, MemFun, P1 >", "classIoss_1_1ObjScopeGuardImpl1.html", null ],
+      [ "Ioss::ObjScopeGuardImpl2< Obj, MemFun, P1, P2 >", "classIoss_1_1ObjScopeGuardImpl2.html", null ],
+      [ "Ioss::ScopeGuardImpl0< F >", "classIoss_1_1ScopeGuardImpl0.html", null ],
+      [ "Ioss::ScopeGuardImpl1< F, P1 >", "classIoss_1_1ScopeGuardImpl1.html", null ],
+      [ "Ioss::ScopeGuardImpl2< F, P1, P2 >", "classIoss_1_1ScopeGuardImpl2.html", null ],
+      [ "Ioss::ScopeGuardImpl3< F, P1, P2, P3 >", "classIoss_1_1ScopeGuardImpl3.html", null ]
     ] ],
     [ "Ioss::SerializeIO", "classIoss_1_1SerializeIO.html", null ],
     [ "Ioss::SetDecompositionData", "classIoss_1_1SetDecompositionData.html", null ],

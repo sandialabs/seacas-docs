@@ -29,6 +29,5 @@ var io__info_8C =
     [ "io_info_set_db_properties", "io__info_8C.html#a9dc3965f5cbe4ce55fee4f7e46941bc3", null ],
     [ "name", "io__info_8C.html#af604a0af17d437ca8a8f1d1c77ee94c1", null ],
     [ "print_bbox", "io__info_8C.html#af2cce9b20af5f1b4b8a9b0d496dcf7fb", null ],
-    [ "print_groups", "io__info_8C.html#a9e1edabb5a775515503e7cd0c78daf1b", null ],
     [ "set_properties", "io__info_8C.html#aeafeb24f8ac0b3f2ac4ad6e3bc2f01d0", null ]
 ];

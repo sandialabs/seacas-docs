@@ -10,6 +10,5 @@ var namespaceIohb =
       [ "TS_TEXT", "namespaceIohb.html#a5422f461a6993e2b25c0ece9fe17762ba5260a1be88c1fa1350cf70a33362a02e", null ],
       [ "CSV", "namespaceIohb.html#a5422f461a6993e2b25c0ece9fe17762bacc8d68c551c4a9a6d5313e07de4deafd", null ],
       [ "TS_CSV", "namespaceIohb.html#a5422f461a6993e2b25c0ece9fe17762babb2d9e42ad4a1613d85209caffb706d3", null ]
-    ] ],
-    [ "operator<<", "namespaceIohb.html#ac0f8f9c81aee7ba60e6e0d0b6d200d34", null ]
+    ] ]
 ];

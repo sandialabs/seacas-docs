@@ -12,6 +12,6 @@ var namespacetsl_1_1detail__robin__hash =
     [ "slz_size_type", "namespacetsl_1_1detail__robin__hash.html#aa1ce0cd2d4fd92064f653a30575a0ca8", null ],
     [ "truncated_hash_type", "namespacetsl_1_1detail__robin__hash.html#abdab59d9a567358f21b7a030ba4818b9", null ],
     [ "clamp", "namespacetsl_1_1detail__robin__hash.html#ac57ab5adf9b472522714229005f7d938", null ],
-    [ "deserialize_value", "namespacetsl_1_1detail__robin__hash.html#a746d2a15982651aacf9fe6388d746fc8", null ],
-    [ "numeric_cast", "namespacetsl_1_1detail__robin__hash.html#a31632fbf0dad3522b6bf7552061f9768", null ]
+    [ "deserialize_value", "namespacetsl_1_1detail__robin__hash.html#a97a254b9639a6e71caf407670e658f72", null ],
+    [ "numeric_cast", "namespacetsl_1_1detail__robin__hash.html#a72acc449d06c29d595fd7cbe90500bf2", null ]
 ];

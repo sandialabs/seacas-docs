@@ -2,6 +2,8 @@ var Ioss__CodeTypes_8h =
 [
     [ "IOSS_DEBUG_OUTPUT", "Ioss__CodeTypes_8h.html#a8ff3a52b4dc0d793a406b707ce67f5c1", null ],
     [ "IOSS_FUNC_ENTER", "Ioss__CodeTypes_8h.html#a5ba470fc516a5c4d3e2c1cf1572491b4", null ],
+    [ "NOOP_GFI", "Ioss__CodeTypes_8h.html#a76e6ee70224a71c448e5b0982b40a0ed", null ],
+    [ "NOOP_PFI", "Ioss__CodeTypes_8h.html#ad2f8c745ddf114f11bd1d3760a574113", null ],
     [ "PAR_UNUSED", "Ioss__CodeTypes_8h.html#ac213f34cfbd4ef8e10d9297df62506c1", null ],
     [ "Complex", "Ioss__CodeTypes_8h.html#a9633ed5e22e786aa99c269f2fb0c005c", null ],
     [ "IJK_t", "Ioss__CodeTypes_8h.html#a530b4479c2b2ba7c8a59596d24e78709", null ],

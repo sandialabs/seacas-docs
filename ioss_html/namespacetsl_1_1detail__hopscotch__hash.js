@@ -17,7 +17,7 @@ var namespacetsl_1_1detail__hopscotch__hash =
     [ "smallest_type_for_min_bits< MinBits, typename std::enable_if<(MinBits > 32) &&(MinBits<=64)>::type >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_fe29c6c59c80ed5cd5c6be9f314a950d.html", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_fe29c6c59c80ed5cd5c6be9f314a950d" ],
     [ "smallest_type_for_min_bits< MinBits, typename std::enable_if<(MinBits > 8) &&(MinBits<=16)>::type >", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_38eb39da08c68efde66083547ec62577.html", "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_38eb39da08c68efde66083547ec62577" ],
     [ "truncated_hash_type", "namespacetsl_1_1detail__hopscotch__hash.html#a5019c00d3c234ae72fa0d1d564c8d876", null ],
-    [ "numeric_cast", "namespacetsl_1_1detail__hopscotch__hash.html#a5cb28f07e69a7c53a0eb90e0fa574dfa", null ],
+    [ "numeric_cast", "namespacetsl_1_1detail__hopscotch__hash.html#af4c3620762b24cd91eb3c24a256fbf57", null ],
     [ "NB_RESERVED_BITS_IN_NEIGHBORHOOD", "namespacetsl_1_1detail__hopscotch__hash.html#ab15ef36b694d0f89612f5ba9409d40a8", null ],
     [ "SMALLEST_TYPE_MAX_BITS_SUPPORTED", "namespacetsl_1_1detail__hopscotch__hash.html#a54ac9f89d5ee3307efe2cf81dad56c6e", null ]
 ];

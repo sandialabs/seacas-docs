@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('classIoss_1_1Utils.html',''); initResi
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="classIoss_1_1Utils-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Ioss::Utils Class Reference</div></div>
 </div><!--header-->
@@ -102,7 +103,8 @@ $(document).ready(function(){initNavTree('classIoss_1_1Utils.html',''); initResi
 <div class="dynheader">
 Collaboration diagram for Ioss::Utils:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classIoss_1_1Utils__coll__graph.svg" width="346" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classIoss_1_1Utils__coll__graph.svg" width="346" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -290,6 +292,12 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:gabf10820381eef7686fcfd93d5ed1564a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaffd080dc749edf50ef715f3a26c32d8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IossStreams.html#gaaffd080dc749edf50ef715f3a26c32d8">m_preWarningText</a> = &quot;\nIOSS WARNING: &quot;</td></tr>
 <tr class="separator:gaaffd080dc749edf50ef715f3a26c32d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:acf65fef76eb7dfd4c7172cf19fde1a8f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acf65fef76eb7dfd4c7172cf19fde1a8f"><td class="memTemplItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1Utils.html#acf65fef76eb7dfd4c7172cf19fde1a8f">unique</a> (std::vector&lt; T &gt; &amp;out, bool skip_first)</td></tr>
+<tr class="separator:acf65fef76eb7dfd4c7172cf19fde1a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7b26e085790c47979ee6fa2b463812c3" name="a7b26e085790c47979ee6fa2b463812c3"></a>
@@ -1982,7 +1990,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p >Returns the number of digits required to print the number. If <code>use_commas</code> is specified, then the width will be adjusted to account for the comma used every 3 digits. (1,234,567,890 would return 13) Typically used with the <code>fmt::print()</code> functions as: </p><div class="fragment"><div class="line">fmt::print(<span class="stringliteral">&quot;{:{}}&quot;</span>, number, <a class="code hl_function" href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">number_width</a>(number,<span class="keyword">true</span>))</div>
 <div class="line"><a class="code hl_namespace" href="namespacefmt.html">fmt</a>::print(&quot;{:{}d}<span class="stringliteral">&quot;, number, number_width(number,false))</span></div>
-<div class="ttc" id="aclassIoss_1_1Utils_html_a875232ab39ecaf79b1b668d28fb590d6"><div class="ttname"><a href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">Ioss::Utils::number_width</a></div><div class="ttdeci">static int number_width(const size_t number, bool use_commas=false)</div><div class="ttdef"><b>Definition:</b> Ioss_Utils.h:221</div></div>
+<div class="ttc" id="aclassIoss_1_1Utils_html_a875232ab39ecaf79b1b668d28fb590d6"><div class="ttname"><a href="classIoss_1_1Utils.html#a875232ab39ecaf79b1b668d28fb590d6">Ioss::Utils::number_width</a></div><div class="ttdeci">static int number_width(const size_t number, bool use_commas=false)</div><div class="ttdef"><b>Definition:</b> Ioss_Utils.h:203</div></div>
 <div class="ttc" id="anamespacefmt_html"><div class="ttname"><a href="namespacefmt.html">fmt</a></div><div class="ttdef"><b>Definition:</b> Ioss_StructuredBlock.h:361</div></div>
 </div><!-- fragment --> 
 </div>
@@ -2285,6 +2293,44 @@ template&lt;class T &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf65fef76eb7dfd4c7172cf19fde1a8f" name="acf65fef76eb7dfd4c7172cf19fde1a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf65fef76eb7dfd4c7172cf19fde1a8f">&#9670;&#160;</a></span>unique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t Ioss::Utils::unique </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skip_first</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

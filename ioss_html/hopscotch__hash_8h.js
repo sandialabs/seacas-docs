@@ -18,7 +18,7 @@ var hopscotch__hash_8h =
     [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash" ],
     [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >::hopscotch_iterator< IsConst >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator.html", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator" ],
     [ "truncated_hash_type", "hopscotch__hash_8h.html#a5019c00d3c234ae72fa0d1d564c8d876", null ],
-    [ "numeric_cast", "hopscotch__hash_8h.html#a5cb28f07e69a7c53a0eb90e0fa574dfa", null ],
+    [ "numeric_cast", "hopscotch__hash_8h.html#af4c3620762b24cd91eb3c24a256fbf57", null ],
     [ "NB_RESERVED_BITS_IN_NEIGHBORHOOD", "hopscotch__hash_8h.html#ab15ef36b694d0f89612f5ba9409d40a8", null ],
     [ "SMALLEST_TYPE_MAX_BITS_SUPPORTED", "hopscotch__hash_8h.html#a54ac9f89d5ee3307efe2cf81dad56c6e", null ]
 ];

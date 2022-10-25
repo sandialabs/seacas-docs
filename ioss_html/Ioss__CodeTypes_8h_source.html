@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('Ioss__CodeTypes_8h_source.html',''); i
   <div class="headertitle"><div class="title">Ioss_CodeTypes.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Ioss__CodeTypes_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<a href="Ioss__CodeTypes_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -187,6 +187,11 @@ $(document).ready(function(){initNavTree('Ioss__CodeTypes_8h_source.html',''); i
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#ifndef IOSS_DEBUG_OUTPUT</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="Ioss__CodeTypes_8h.html#a8ff3a52b4dc0d793a406b707ce67f5c1">   94</a></span><span class="preprocessor">#define IOSS_DEBUG_OUTPUT 0</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// For use to create a no-op get or put_field_internal function...</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="Ioss__CodeTypes_8h.html#a76e6ee70224a71c448e5b0982b40a0ed">   98</a></span><span class="preprocessor">#define NOOP_GFI(type) int64_t get_field_internal(const type *reg, const Ioss::Field &amp;field, void *data, size_t data_size) const override { return -1; }</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="Ioss__CodeTypes_8h.html#ad2f8c745ddf114f11bd1d3760a574113">   99</a></span><span class="preprocessor">#define NOOP_PFI(type) int64_t put_field_internal(const type *reg, const Ioss::Field &amp;field, void *data, size_t data_size) const override { return -1; }</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="ttc" id="aIoss__CodeTypes_8h_html_a4094ace8c7de395d40fdbf13b0691b21"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a4094ace8c7de395d40fdbf13b0691b21">IOSS_SYM_TENSOR</a></div><div class="ttdeci">const std::string IOSS_SYM_TENSOR()</div><div class="ttdef"><b>Definition:</b> Ioss_CodeTypes.h:30</div></div>
 <div class="ttc" id="aIoss__CodeTypes_8h_html_a899db82e09944496877b7f260429c5c3"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a899db82e09944496877b7f260429c5c3">IOSS_SCALAR</a></div><div class="ttdeci">const std::string IOSS_SCALAR()</div><div class="ttdef"><b>Definition:</b> Ioss_CodeTypes.h:27</div></div>
 <div class="ttc" id="aIoss__CodeTypes_8h_html_a9633ed5e22e786aa99c269f2fb0c005c"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a9633ed5e22e786aa99c269f2fb0c005c">Complex</a></div><div class="ttdeci">std::complex&lt; double &gt; Complex</div><div class="ttdef"><b>Definition:</b> Ioss_CodeTypes.h:75</div></div>

@@ -62,6 +62,7 @@ var classIoss_1_1Utils =
     [ "time_and_date", "classIoss_1_1Utils.html#acbd41c4c408240d7e09c7c30b3f4bb9d", null ],
     [ "timer", "classIoss_1_1Utils.html#a244105b001ec84b21566cf42a170269d", null ],
     [ "to_string", "classIoss_1_1Utils.html#a990b5cbc6a8633828fea90c8d0378441", null ],
+    [ "unique", "classIoss_1_1Utils.html#acf65fef76eb7dfd4c7172cf19fde1a8f", null ],
     [ "uniquify", "classIoss_1_1Utils.html#aa9e8a65a742fa904c9b21ca049616f27", null ],
     [ "uppercase", "classIoss_1_1Utils.html#a42aa6b77482c4da5ffde6c5980533e22", null ],
     [ "variable_name_kluge", "classIoss_1_1Utils.html#acf20ca98385d9714d71360ea6caaba2b", null ],

@@ -105,11 +105,8 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a70ffeedfb5f3d1ff4d68b46d4afc878d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Iocgns__DatabaseIO_8C_03.html#a70ffeedfb5f3d1ff4d68b46d4afc878d">global_to_zone_local_idx</a> (size_t i, const <a class="el" href="classIoss_1_1Map.html">Ioss::Map</a> *block_map, const <a class="el" href="classIoss_1_1Map.html">Ioss::Map</a> &amp;nodeMap, bool isParallel)</td></tr>
 <tr class="separator:a70ffeedfb5f3d1ff4d68b46d4afc878d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa6b22b4e74710bdbc5185f90a845ec"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6fa6b22b4e74710bdbc5185f90a845ec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Iocgns__DatabaseIO_8C_03.html#a6fa6b22b4e74710bdbc5185f90a845ec">pack</a> (int &amp;idx, std::vector&lt; int &gt; &amp;pack, T *from, int count)</td></tr>
-<tr class="separator:a6fa6b22b4e74710bdbc5185f90a845ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79737b9b35b0003d9c913159a318710d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a79737b9b35b0003d9c913159a318710d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Iocgns__DatabaseIO_8C_03.html#a79737b9b35b0003d9c913159a318710d">unpack</a> (int &amp;idx, const T *<a class="el" href="namespaceanonymous__namespace_02Iocgns__DatabaseIO_8C_03.html#a6fa6b22b4e74710bdbc5185f90a845ec">pack</a>, T *to, int count)</td></tr>
+<tr class="memitem:a79737b9b35b0003d9c913159a318710d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Iocgns__DatabaseIO_8C_03.html#a79737b9b35b0003d9c913159a318710d">unpack</a> (int &amp;idx, const T *pack, T *to, int count)</td></tr>
 <tr class="separator:a79737b9b35b0003d9c913159a318710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5255667c2c507d6d37ab83ab2d2997c6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Iocgns__DatabaseIO_8C_03.html#a5255667c2c507d6d37ab83ab2d2997c6">handle_block_ids</a> (const <a class="el" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a> *eb, <a class="el" href="classIoss_1_1Map.html">Ioss::Map</a> &amp;entity_map, void *ids, size_t num_to_get, const <a class="el" href="classIoss_1_1Field.html#a43f29f9ba05cb45ed893455c76526c3e">Ioss::Field::BasicType</a> &amp;size)</td></tr>
 <tr class="separator:a5255667c2c507d6d37ab83ab2d2997c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,48 +202,6 @@ Functions</h2></td></tr>
 <p >But, this assumes 1..numel elements are being output at the same time; we are actually outputting a blocks worth of elements at a time, so we need to consider the block offsets. So... local-in-block position 'i' is index 'eb_offset+i' in 'entity_map.map' and the 'local_position' within the element blocks data arrays is 'local_position-eb_offset'. With this, the position within the data array of this element block is:</p>
 <p >int eb_position = entity_map.reverse[entity_map.map[eb_offset+i+1]]-eb_offset-1</p>
 <p >NOTE: the maps are built an element block at a time...</p>
-
-</div>
-</div>
-<a id="a6fa6b22b4e74710bdbc5185f90a845ec" name="a6fa6b22b4e74710bdbc5185f90a845ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fa6b22b4e74710bdbc5185f90a845ec">&#9670;&#160;</a></span>pack()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void anonymous_namespace{Iocgns_DatabaseIO.C}::pack </td>
-          <td>(</td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>idx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pack</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>from</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

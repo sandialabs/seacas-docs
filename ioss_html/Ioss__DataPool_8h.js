@@ -1,4 +1,4 @@
 var Ioss__DataPool_8h =
 [
-    [ "DataPool", "structDataPool.html", "structDataPool" ]
+    [ "Ioss::DataPool", "structIoss_1_1DataPool.html", "structIoss_1_1DataPool" ]
 ];
