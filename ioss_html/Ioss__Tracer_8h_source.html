@@ -100,20 +100,22 @@ $(document).ready(function(){initNavTree('Ioss__Tracer_8h_source.html',''); init
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * See packages/seacas/LICENSE for details</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classIoss_1_1Tracer.html">   10</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classIoss_1_1Tracer.html">Tracer</a></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classIoss_1_1Tracer.html">Tracer</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *function);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="classIoss_1_1Tracer.html#a162b60918f354c5b578dd176db7d18b5">~Tracer</a>();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classIoss_1_1Tracer.html#a0424194979de9618ae5aa5ace9238059">   17</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classIoss_1_1Tracer.html#a0424194979de9618ae5aa5ace9238059">level</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  };</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace Ioss</span></div>
-<div class="ttc" id="aclassIoss_1_1Tracer_html"><div class="ttname"><a href="classIoss_1_1Tracer.html">Ioss::Tracer</a></div><div class="ttdef"><b>Definition:</b> Ioss_Tracer.h:11</div></div>
-<div class="ttc" id="aclassIoss_1_1Tracer_html_a0424194979de9618ae5aa5ace9238059"><div class="ttname"><a href="classIoss_1_1Tracer.html#a0424194979de9618ae5aa5ace9238059">Ioss::Tracer::level</a></div><div class="ttdeci">static int level</div><div class="ttdef"><b>Definition:</b> Ioss_Tracer.h:17</div></div>
-<div class="ttc" id="aclassIoss_1_1Tracer_html_a162b60918f354c5b578dd176db7d18b5"><div class="ttname"><a href="classIoss_1_1Tracer.html#a162b60918f354c5b578dd176db7d18b5">Ioss::Tracer::~Tracer</a></div><div class="ttdeci">~Tracer()</div><div class="ttdef"><b>Definition:</b> Ioss_Tracer.C:22</div></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;ioss_export.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classIoss_1_1Tracer.html">   13</a></span>  <span class="keyword">class </span>IOSS_EXPORT <a class="code hl_class" href="classIoss_1_1Tracer.html">Tracer</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classIoss_1_1Tracer.html">Tracer</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *function);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="classIoss_1_1Tracer.html">~Tracer</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classIoss_1_1Tracer.html#a0424194979de9618ae5aa5ace9238059">   20</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classIoss_1_1Tracer.html#a0424194979de9618ae5aa5ace9238059">level</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  };</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace Ioss</span></div>
+<div class="ttc" id="aclassIoss_1_1Tracer_html"><div class="ttname"><a href="classIoss_1_1Tracer.html">Ioss::Tracer</a></div><div class="ttdef"><b>Definition:</b> Ioss_Tracer.h:14</div></div>
+<div class="ttc" id="aclassIoss_1_1Tracer_html_a0424194979de9618ae5aa5ace9238059"><div class="ttname"><a href="classIoss_1_1Tracer.html#a0424194979de9618ae5aa5ace9238059">Ioss::Tracer::level</a></div><div class="ttdeci">static int level</div><div class="ttdef"><b>Definition:</b> Ioss_Tracer.h:20</div></div>
 <div class="ttc" id="anamespaceIoss_html"><div class="ttname"><a href="namespaceIoss.html">Ioss</a></div><div class="ttdoc">The main namespace for the Ioss library.</div><div class="ttdef"><b>Definition:</b> Ioad_DatabaseIO.C:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
