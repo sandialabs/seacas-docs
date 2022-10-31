@@ -78,7 +78,7 @@ var searchData=
   ['writemesh_75',['writeMesh',['../classIovs_1_1CatalystManager.html#a5278d4e0446c08f70e10628aae04a902',1,'Iovs::CatalystManager']]],
   ['writemeshon_76',['writeMeshON',['../classIovs_1_1CatalystManager.html#a23bd83b8102db76f1e44bab3ebe0cf51',1,'Iovs::CatalystManager']]],
   ['writetocatalystlogfile_77',['writeToCatalystLogFile',['../classIovs_1_1Utils.html#a191917baa34980703548c863e06c3032',1,'Iovs::Utils']]],
-  ['writetologfile_78',['WriteToLogFile',['../classIovs_1_1CatalystManager.html#aaa78a1dbda3caa49c88ec0407d28b42e',1,'Iovs::CatalystManager']]],
-  ['writetologfile_79',['writeToLogFile',['../classIovs_1_1CatalystLogging.html#a2c456e632c17fcfe473cab993fc39af9',1,'Iovs::CatalystLogging']]],
+  ['writetologfile_78',['writeToLogFile',['../classIovs_1_1CatalystLogging.html#a2c456e632c17fcfe473cab993fc39af9',1,'Iovs::CatalystLogging']]],
+  ['writetologfile_79',['WriteToLogFile',['../classIovs_1_1CatalystManager.html#aaa78a1dbda3caa49c88ec0407d28b42e',1,'Iovs::CatalystManager']]],
   ['writevectorwithdelimeter_80',['writeVectorWithDelimeter',['../classIovs_1_1CatalystLogging.html#a4a7923ada1c014587a24d519d69e2667',1,'Iovs::CatalystLogging']]]
 ];

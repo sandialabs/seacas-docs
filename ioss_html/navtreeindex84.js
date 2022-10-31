@@ -1,5 +1,7 @@
 var NAVTREEINDEX84 =
 {
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#a72212d4e3b52cf239dc7aa8a82d11684":[4,0,92,0,12,1,2],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#a7e2875c4bbe8d97e310e306089cbc6f4":[3,0,138,0,12,1,7],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#a7e2875c4bbe8d97e310e306089cbc6f4":[4,0,92,0,12,1,7],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#ac206fe476ca8f6fb1c9f9cd2b66cb8c3":[4,0,92,0,12,1,5],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#ac206fe476ca8f6fb1c9f9cd2b66cb8c3":[3,0,138,0,12,1,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX84 =
 "structSideEntryLess.html#a9ea6fd645c1cc8a89dc038b39775896c":[4,0,108,0],
 "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html":[4,0,4,0],
 "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html":[3,0,8,0],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a05e558859b5f9be8f7beb57d4507e505":[3,0,8,0,9],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a05e558859b5f9be8f7beb57d4507e505":[4,0,4,0,9],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a1705c1e20931cf44bcf8fa4403889f10":[4,0,4,0,6]
+"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a05e558859b5f9be8f7beb57d4507e505":[3,0,8,0,9]
 };
