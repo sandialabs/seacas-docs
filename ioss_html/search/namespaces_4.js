@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modify_0',['Modify',['../namespaceModify.html',1,'']]]
+  ['pdqsort_5fdetail_0',['pdqsort_detail',['../namespacepdqsort__detail.html',1,'']]]
 ];

@@ -242,11 +242,13 @@ $(document).ready(function(){initNavTree('Ioss__ZoneConnectivity_8h_source.html'
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  IOSS_EXPORT <a class="code hl_class" href="classstd_1_1basic__ostream.html">std::ostream</a> &amp;<a class="code hl_function" href="namespaceIoss.html#a9e03a0380698a41f9026a61639171a07">operator&lt;&lt;</a>(<a class="code hl_class" href="classstd_1_1basic__ostream.html">std::ostream</a> &amp;os, <span class="keyword">const</span> ZoneConnectivity &amp;zgc);</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>} <span class="comment">// namespace Ioss</span></div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefmt.html">fmt</a> {</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="structfmt_1_1formatter_3_01Ioss_1_1ZoneConnectivity_01_4.html">  152</a></span>  <span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>formatter&lt;<a class="code hl_namespace" href="namespaceIoss.html">Ioss</a>::ZoneConnectivity&gt; : ostream_formatter</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  {</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  };</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>} <span class="comment">// namespace fmt</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#if FMT_VERSION &gt;= 90000</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">namespace </span>fmt {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>formatter&lt;<a class="code hl_namespace" href="namespaceIoss.html">Ioss</a>::ZoneConnectivity&gt; : ostream_formatter</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  };</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>} <span class="comment">// namespace fmt</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aIoss__CodeTypes_8h_html"><div class="ttname"><a href="Ioss__CodeTypes_8h.html">Ioss_CodeTypes.h</a></div></div>
 <div class="ttc" id="aIoss__ZoneConnectivity_8h_html_a1e05453d203c326cea9c664bd8162a74"><div class="ttname"><a href="Ioss__ZoneConnectivity_8h.html#a1e05453d203c326cea9c664bd8162a74">IOSS_ZC_INT</a></div><div class="ttdeci">int IOSS_ZC_INT</div><div class="ttdef"><b>Definition:</b> Ioss_ZoneConnectivity.h:24</div></div>
 <div class="ttc" id="aclassstd_1_1basic__ostream_html"><div class="ttname"><a href="classstd_1_1basic__ostream.html">std::basic_ostream</a></div><div class="ttdef"><b>Definition:</b> doctest.h:507</div></div>
@@ -254,7 +256,6 @@ $(document).ready(function(){initNavTree('Ioss__ZoneConnectivity_8h_source.html'
 <div class="ttc" id="anamespaceIoss_html"><div class="ttname"><a href="namespaceIoss.html">Ioss</a></div><div class="ttdoc">The main namespace for the Ioss library.</div><div class="ttdef"><b>Definition:</b> Ioad_DatabaseIO.C:40</div></div>
 <div class="ttc" id="anamespaceIoss_html_a530b4479c2b2ba7c8a59596d24e78709"><div class="ttname"><a href="namespaceIoss.html#a530b4479c2b2ba7c8a59596d24e78709">Ioss::IJK_t</a></div><div class="ttdeci">std::array&lt; int, 3 &gt; IJK_t</div><div class="ttdef"><b>Definition:</b> Ioss_CodeTypes.h:24</div></div>
 <div class="ttc" id="anamespaceIoss_html_a9e03a0380698a41f9026a61639171a07"><div class="ttname"><a href="namespaceIoss.html#a9e03a0380698a41f9026a61639171a07">Ioss::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const BoundaryCondition &amp;bc)</div><div class="ttdef"><b>Definition:</b> Ioss_StructuredBlock.C:354</div></div>
-<div class="ttc" id="anamespacefmt_html"><div class="ttname"><a href="namespacefmt.html">fmt</a></div><div class="ttdef"><b>Definition:</b> Ioss_StructuredBlock.h:365</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> doctest.h:499</div></div>
 <div class="ttc" id="astructIoss_1_1ZoneConnectivity_html"><div class="ttname"><a href="structIoss_1_1ZoneConnectivity.html">Ioss::ZoneConnectivity</a></div><div class="ttdef"><b>Definition:</b> Ioss_ZoneConnectivity.h:31</div></div>
 <div class="ttc" id="astructIoss_1_1ZoneConnectivity_html_a374359cb8c91d73f57bcc2aa3970ee5d"><div class="ttname"><a href="structIoss_1_1ZoneConnectivity.html#a374359cb8c91d73f57bcc2aa3970ee5d">Ioss::ZoneConnectivity::ZoneConnectivity</a></div><div class="ttdeci">ZoneConnectivity(const ZoneConnectivity &amp;copy_from)=default</div></div>
