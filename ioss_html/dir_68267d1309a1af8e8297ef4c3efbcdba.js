@@ -99,7 +99,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Ioss_FieldManager.h", "Ioss__FieldManager_8h.html", "Ioss__FieldManager_8h" ],
     [ "Ioss_FileInfo.C", "Ioss__FileInfo_8C.html", "Ioss__FileInfo_8C" ],
     [ "Ioss_FileInfo.h", "Ioss__FileInfo_8h.html", "Ioss__FileInfo_8h" ],
-    [ "Ioss_Getline.c", "Ioss__Getline_8c.html", "Ioss__Getline_8c" ],
+    [ "Ioss_Getline.C", "Ioss__Getline_8C.html", "Ioss__Getline_8C" ],
     [ "Ioss_Getline.h", "Ioss__Getline_8h.html", "Ioss__Getline_8h" ],
     [ "Ioss_GetLongOpt.C", "Ioss__GetLongOpt_8C.html", null ],
     [ "Ioss_GetLongOpt.h", "Ioss__GetLongOpt_8h.html", "Ioss__GetLongOpt_8h" ],

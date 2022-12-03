@@ -14,6 +14,7 @@ var structIoss_1_1ZoneConnectivity =
     [ "is_from_decomp", "structIoss_1_1ZoneConnectivity.html#a45ea276c70784d7ceae546f4d3cb6355", null ],
     [ "is_valid", "structIoss_1_1ZoneConnectivity.html#ab35a8f3c0aa1cb7d0dac884ac844b190", null ],
     [ "operator!=", "structIoss_1_1ZoneConnectivity.html#ab78c56a3d64b39c9a6b9e2f60f02e30b", null ],
+    [ "operator=", "structIoss_1_1ZoneConnectivity.html#ab6f8df6f5620edae6fd5fcd365a9f713", null ],
     [ "operator==", "structIoss_1_1ZoneConnectivity.html#a77761855b0a38d38f90bee8c783d8b26", null ],
     [ "retain_original", "structIoss_1_1ZoneConnectivity.html#a466b60e4c1c74db6638c651eca0a4a9a", null ],
     [ "serialize", "structIoss_1_1ZoneConnectivity.html#aa1b097c330901ad368da9286a8be0cca", null ],

@@ -29,6 +29,7 @@ var classIotm_1_1TopologyMapEntry =
     [ "num_positive_permutations", "classIotm_1_1TopologyMapEntry.html#a3209ae5b641e7b1eee65de63e0d21996", null ],
     [ "num_sides", "classIotm_1_1TopologyMapEntry.html#a6e1588e714385ffb396398358c598d14", null ],
     [ "operator!=", "classIotm_1_1TopologyMapEntry.html#af21688ec43d64480da02449fab2353d5", null ],
+    [ "operator=", "classIotm_1_1TopologyMapEntry.html#a3fa0421a2e9ca6303bbf7da78c7f47c4", null ],
     [ "operator==", "classIotm_1_1TopologyMapEntry.html#a4e12ec3f738d4f2722d37c3a8cd7b477", null ],
     [ "operator==", "classIotm_1_1TopologyMapEntry.html#a09c3f0b3566bbbd12de5390a18a7a5b0", null ],
     [ "particle_factory", "classIotm_1_1TopologyMapEntry.html#ab0534ebaeb9f8cd390d7a4bd97bb6ec5", null ],

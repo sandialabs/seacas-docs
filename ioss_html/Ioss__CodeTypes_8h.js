@@ -2,9 +2,10 @@ var Ioss__CodeTypes_8h =
 [
     [ "IOSS_DEBUG_OUTPUT", "Ioss__CodeTypes_8h.html#a8ff3a52b4dc0d793a406b707ce67f5c1", null ],
     [ "IOSS_FUNC_ENTER", "Ioss__CodeTypes_8h.html#a5ba470fc516a5c4d3e2c1cf1572491b4", null ],
-    [ "NOOP_GFI", "Ioss__CodeTypes_8h.html#a76e6ee70224a71c448e5b0982b40a0ed", null ],
-    [ "NOOP_PFI", "Ioss__CodeTypes_8h.html#ad2f8c745ddf114f11bd1d3760a574113", null ],
-    [ "PAR_UNUSED", "Ioss__CodeTypes_8h.html#ac213f34cfbd4ef8e10d9297df62506c1", null ],
+    [ "IOSS_MAYBE_UNUSED", "Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11", null ],
+    [ "IOSS_NOOP_GFI", "Ioss__CodeTypes_8h.html#ab4fc25120249ef3e451a6543f1351144", null ],
+    [ "IOSS_NOOP_PFI", "Ioss__CodeTypes_8h.html#a8b087b20a3bac9207f6f19a8545e7d64", null ],
+    [ "IOSS_PAR_UNUSED", "Ioss__CodeTypes_8h.html#ade618da39381934d0f1a32f3206d8369", null ],
     [ "Complex", "Ioss__CodeTypes_8h.html#a9633ed5e22e786aa99c269f2fb0c005c", null ],
     [ "IJK_t", "Ioss__CodeTypes_8h.html#a530b4479c2b2ba7c8a59596d24e78709", null ],
     [ "Int64Vector", "Ioss__CodeTypes_8h.html#a715acbaf3ca8e2e82d0d3a0f81ff5f1b", null ],

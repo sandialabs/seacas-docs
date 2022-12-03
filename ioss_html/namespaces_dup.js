@@ -243,7 +243,7 @@ var namespaces_dup =
       [ "create_face", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a38afeb7ea9372ceddf5ed4f4c57e7746", null ],
       [ "internal_generate_faces", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a34b113fb33391cdd5bc3e47977aa57b3", null ],
       [ "MurmurHash64A", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a3d660b7855851774652dbfade559d05b", null ],
-      [ "resolve_parallel_faces", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a95e85281e055a9945826f8f20e3af20a", null ]
+      [ "resolve_parallel_faces", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#af49dc419ca6b09a2490617d21c7a0188", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Field.C}", "namespaceanonymous__namespace_02Ioss__Field_8C_03.html", [
       [ "error_message", "namespaceanonymous__namespace_02Ioss__Field_8C_03.html#a2727026122707bf63a8d0df10075625a", null ],
@@ -252,6 +252,55 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_FileInfo.C}", "namespaceanonymous__namespace_02Ioss__FileInfo_8C_03.html", [
       [ "do_stat", "namespaceanonymous__namespace_02Ioss__FileInfo_8C_03.html#aef181f38bf657e6f71b1841efeaf7611", null ],
       [ "internal_access", "namespaceanonymous__namespace_02Ioss__FileInfo_8C_03.html#a426debc1dbfaddb25aa6eeab5d5c9c75", null ]
+    ] ],
+    [ "anonymous_namespace{Ioss_Getline.C}", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html", [
+      [ "copy_string", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#abf0c11ec6023e07c1fa58a64f3eb0e9a", null ],
+      [ "hist_init", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#af4dba5f904b2980941feff4bae47e594", null ],
+      [ "hist_next", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ac86a0bbc60ccf045d29a1c44d1872ebc", null ],
+      [ "hist_prev", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ad96f9fd47b5e1684490e2a9cdc4da81f", null ],
+      [ "hist_save", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a11b57c15e42908870af3a4117faa4600", null ],
+      [ "io_gl_addchar", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ab06dc596f4f441e6cf15bc04ef9590a0", null ],
+      [ "io_gl_beep", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a7e815976e44f17ebc6f234ca4ac6fd0a", null ],
+      [ "io_gl_char_cleanup", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a299491e344edf05cd13ac9b88a47233b", null ],
+      [ "io_gl_char_init", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a55fc846f5da36eafcdca591734acabe6", null ],
+      [ "io_gl_cleanup", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a25e3211a66dbafc1ffe8477ed1375c93", null ],
+      [ "io_gl_del", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a416ac52be6b5b690f2b31b9752a7035d", null ],
+      [ "io_gl_error", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ab513da4d1814c7b5ba4e3bd0ccc2a695", null ],
+      [ "io_gl_fixup", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a9980547962134d38ad9fddf360e06411", null ],
+      [ "io_gl_getc", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a7fb9c3308d4568286831a7f07bdbe6b6", null ],
+      [ "io_gl_init", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#aaedb7848217fe18c6114bb87497855b8", null ],
+      [ "io_gl_kill", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ae4765c64a6a8d26e33e012c9618ece2b", null ],
+      [ "io_gl_newline", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#abf1a533d928942a7a425f43f7d96265f", null ],
+      [ "io_gl_putc", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a749870ec426105c343a4487664ee7b15", null ],
+      [ "io_gl_puts", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ab4c96e9f446f69c414118a699629b60a", null ],
+      [ "io_gl_redraw", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a68d0ba719ec4bbfdaa38d98110dbac3f", null ],
+      [ "io_gl_transpose", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#aabfa82a25503aa867ebcb5137fa334bd", null ],
+      [ "io_gl_yank", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a6995369a96c7c3cc2916a79ec0757dce", null ],
+      [ "search_addchar", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a3594cf764e8b400b61b57ccada65a725", null ],
+      [ "search_back", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a375083f61b6b8048655ef6e6ea77d159", null ],
+      [ "search_forw", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ac896f653a484d9044476c0e28e196745", null ],
+      [ "search_term", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a03e2e45b659bc95a0812b72de53d1056", null ],
+      [ "search_update", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a92630603d0b3abffa4a251bbab608d07", null ],
+      [ "hist_buf", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#aa84af8a7e1084c2de456ec30c41730ab", null ],
+      [ "hist_empty_elem", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a11e15dacccbcdef1d7b83112dbb9a2e0", null ],
+      [ "hist_last", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ad95a9cff0f47b6e85aaf1e2377b1513f", null ],
+      [ "hist_pos", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a823c87e4d0b6259c69a2130f6fa6f617", null ],
+      [ "io_gl_cnt", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a5609cb34f3c0874b3d619cc6aac55a2f", null ],
+      [ "io_gl_extent", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a288380acaa54265c5c9f834c97a20a2d", null ],
+      [ "io_gl_init_done", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ac61cab770baf0e9e8541e8ce260e6b6c", null ],
+      [ "io_gl_killbuf", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a2e986506d797c3b9e0a9a81587540211", null ],
+      [ "io_gl_overwrite", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a2d0a72a6bc6c80d57f4f58a926b343b6", null ],
+      [ "io_gl_pos", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#add48febb10111f4bd2bfac4aa0c55ad4", null ],
+      [ "io_gl_prompt", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a2d9d6fffbaf491d5e566075ce6b0f1b0", null ],
+      [ "io_gl_scroll", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a9e2799ccb9b1bb06cd59161a46ba9214", null ],
+      [ "io_gl_search_mode", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a9e739f20bb01ba67a5535258278290be", null ],
+      [ "io_gl_termw", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a2e33b6082a2b2d7fa24fa911e784ba36", null ],
+      [ "io_gl_width", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#adac540f73d3389665e7d6d2c4a199b88", null ],
+      [ "search_forw_flg", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a62ef259ae619a934b2df526cc177fa08", null ],
+      [ "search_last", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#aff72e5fa7d5f562eb7ada1532266b0ac", null ],
+      [ "search_pos", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#abe01fde43d53b9452bc14d8471c0f465", null ],
+      [ "search_prompt", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a994233019b0aaed831ed61f374774278", null ],
+      [ "search_string", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a4b9830f02b464b2d37e40a34b8882e09", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Hex16.C}", "namespaceanonymous__namespace_02Ioss__Hex16_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex16_8C_03" ],
     [ "anonymous_namespace{Ioss_Hex20.C}", "namespaceanonymous__namespace_02Ioss__Hex20_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex20_8C_03" ],
@@ -613,7 +662,7 @@ var namespaces_dup =
     [ "anonymous_namespace{Utst_heartbeat.C}", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html", [
       [ "create_heartbeat", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#a4d28be65239097c327c4ce1fb32e2374", null ],
       [ "DOCTEST_TEST_CASE", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#a7c57a7dcd9a84041678739dcad24cd37", null ],
-      [ "filename", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#ab18bc448946cf5dccf59d7f90bbae574", null ]
+      [ "tst_filename", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#aec3f711041b1f9a992d0ee253d640afc", null ]
     ] ],
     [ "anonymous_namespace{Utst_IofxDatabaseIO.C}", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html", [
       [ "create_input_db_io", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#afbf85d61aca1952d420334e50291ea6d", null ],

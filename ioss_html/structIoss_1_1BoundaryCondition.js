@@ -9,6 +9,7 @@ var structIoss_1_1BoundaryCondition =
     [ "get_face_count", "structIoss_1_1BoundaryCondition.html#ab0b08ae3e67e738bdf40d1951f52514f", null ],
     [ "is_valid", "structIoss_1_1BoundaryCondition.html#adb73889996f3236118422cc387470dbe", null ],
     [ "operator!=", "structIoss_1_1BoundaryCondition.html#a625511e85debebb344eeb9404c3ba8ea", null ],
+    [ "operator=", "structIoss_1_1BoundaryCondition.html#a46aa0792477b4d313b1c4a86016221a4", null ],
     [ "operator==", "structIoss_1_1BoundaryCondition.html#a2269e6acd4eb9236a2296bba2ba89f25", null ],
     [ "serialize", "structIoss_1_1BoundaryCondition.html#a12a55d1eb1caa02d4eea174d2be92c62", null ],
     [ "which_face", "structIoss_1_1BoundaryCondition.html#a5be05724df2809128210b7099a6a8726", null ],

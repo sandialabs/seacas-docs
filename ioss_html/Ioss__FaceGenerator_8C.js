@@ -6,5 +6,5 @@ var Ioss__FaceGenerator_8C =
     [ "create_face", "Ioss__FaceGenerator_8C.html#a38afeb7ea9372ceddf5ed4f4c57e7746", null ],
     [ "internal_generate_faces", "Ioss__FaceGenerator_8C.html#a34b113fb33391cdd5bc3e47977aa57b3", null ],
     [ "MurmurHash64A", "Ioss__FaceGenerator_8C.html#a3d660b7855851774652dbfade559d05b", null ],
-    [ "resolve_parallel_faces", "Ioss__FaceGenerator_8C.html#a95e85281e055a9945826f8f20e3af20a", null ]
+    [ "resolve_parallel_faces", "Ioss__FaceGenerator_8C.html#af49dc419ca6b09a2490617d21c7a0188", null ]
 ];
