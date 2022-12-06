@@ -92,28 +92,24 @@ $(document).ready(function(){initNavTree('apr__getline__int_8h_source.html','');
   <div class="headertitle"><div class="title">apr_getline_int.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="apr__getline__int_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<a href="apr__getline__int_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// See packages/seacas/LICENSE for details</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef APREPRO_GETLINE_H</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define APREPRO_GETLINE_H</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="apr__getline__int_8h.html#ad18eb0173c54c4aeaaacb0c3b82a52b5">   14</a></span><span class="keywordtype">char</span> *<a class="code hl_function" href="apr__getline__int_8h.html#ad18eb0173c54c4aeaaacb0c3b82a52b5">ap_getline_int</a>(<span class="keywordtype">char</span> *); <span class="comment">/* read a line of input */</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="apr__getline__int_8h.html#af807a7e5c7eea8f7e7166278736cf6dc">   15</a></span><span class="keywordtype">void</span>  <a class="code hl_function" href="apr__getline__int_8h.html#af807a7e5c7eea8f7e7166278736cf6dc">ap_gl_setwidth</a>(<span class="keywordtype">int</span>);    <span class="comment">/* specify width of screen */</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="apr__getline__int_8h.html#a6d129a9a8e1dd33c66a033a9f7e49fd9">   16</a></span><span class="keywordtype">void</span>  <a class="code hl_function" href="apr__getline__int_8h.html#a6d129a9a8e1dd33c66a033a9f7e49fd9">ap_gl_histadd</a>(<span class="keywordtype">char</span> *);  <span class="comment">/* adds entries to hist */</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">/* close brackets on extern &quot;C&quot; declaration */</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">/* APREPRO_GETLINE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="apr__getline__int_8h.html#ad18eb0173c54c4aeaaacb0c3b82a52b5">   12</a></span><span class="keywordtype">char</span> *<a class="code hl_function" href="apr__getline__int_8h.html#ad18eb0173c54c4aeaaacb0c3b82a52b5">ap_getline_int</a>(<span class="keywordtype">char</span> *); <span class="comment">/* read a line of input */</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="apr__getline__int_8h.html#af807a7e5c7eea8f7e7166278736cf6dc">   13</a></span><span class="keywordtype">void</span>  <a class="code hl_function" href="apr__getline__int_8h.html#af807a7e5c7eea8f7e7166278736cf6dc">ap_gl_setwidth</a>(<span class="keywordtype">int</span>);    <span class="comment">/* specify width of screen */</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="apr__getline__int_8h.html#a6d129a9a8e1dd33c66a033a9f7e49fd9">   14</a></span><span class="keywordtype">void</span>  <a class="code hl_function" href="apr__getline__int_8h.html#a6d129a9a8e1dd33c66a033a9f7e49fd9">ap_gl_histadd</a>(<span class="keywordtype">char</span> *);  <span class="comment">/* adds entries to hist */</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>} <span class="comment">/* close brackets on extern &quot;C&quot; declaration */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aapr__getline__int_8h_html_a6d129a9a8e1dd33c66a033a9f7e49fd9"><div class="ttname"><a href="apr__getline__int_8h.html#a6d129a9a8e1dd33c66a033a9f7e49fd9">ap_gl_histadd</a></div><div class="ttdeci">void ap_gl_histadd(char *)</div></div>
 <div class="ttc" id="aapr__getline__int_8h_html_ad18eb0173c54c4aeaaacb0c3b82a52b5"><div class="ttname"><a href="apr__getline__int_8h.html#ad18eb0173c54c4aeaaacb0c3b82a52b5">ap_getline_int</a></div><div class="ttdeci">char * ap_getline_int(char *)</div></div>
 <div class="ttc" id="aapr__getline__int_8h_html_af807a7e5c7eea8f7e7166278736cf6dc"><div class="ttname"><a href="apr__getline__int_8h.html#af807a7e5c7eea8f7e7166278736cf6dc">ap_gl_setwidth</a></div><div class="ttdeci">void ap_gl_setwidth(int)</div></div>
