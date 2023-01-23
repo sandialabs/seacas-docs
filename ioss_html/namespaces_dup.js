@@ -431,12 +431,6 @@ var namespaces_dup =
       [ "map_global_to_local", "namespaceanonymous__namespace_02Iotm__DatabaseIO_8C_03.html#a82b8cafccf7e0bf0ff462f865c0d6f0d", null ]
     ] ],
     [ "anonymous_namespace{Iovs_exodus_DatabaseIO.C}", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html", [
-      [ "entity_type", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4", [
-        [ "NODAL", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4ad0a56035f3937389f4e549d396da1805", null ],
-        [ "ELEM_BLOCK", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4a85b0fc6fa58f6cc333e7e5bd49ca32fc", null ],
-        [ "NODE_SET", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4a39a86db17e1f32175e4bcf2e871c4146", null ],
-        [ "SIDE_SET", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a1829f6acb51214ba6a8aae24df51ebb4a71586057e18fdfb01ec948480b8dcaa9", null ]
-      ] ],
       [ "extract_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a946154e9fa57a575df4c9694a9d6e435", null ],
       [ "get_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ae60e0458d2a6d9c8819c9de6422c69ab", null ],
       [ "set_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ac7abeea54c7d9d1910b234ece5a62d62", null ]

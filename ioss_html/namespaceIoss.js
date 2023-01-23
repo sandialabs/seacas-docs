@@ -286,7 +286,7 @@ var namespaceIoss =
     [ "Ordinal", "namespaceIoss.html#a81fa4c6ad9155fb3d1ebaf9bc590a423", null ],
     [ "Permutation", "namespaceIoss.html#ac46169351225802ba384a5b30b54fed6", null ],
     [ "PropMapType", "namespaceIoss.html#ae86bf993e1d9f7bb969dcfc2bb628032", null ],
-    [ "ReverseMapContainer", "namespaceIoss.html#a6517f7a29c8f37fd898a71f84b798503", null ],
+    [ "ReverseMapContainer", "namespaceIoss.html#ad66bd626328598cabbbc4ad7dd878656", null ],
     [ "SideBlockContainer", "namespaceIoss.html#aad0b930d7f96931250d99dd12179ddf8", null ],
     [ "SideSetContainer", "namespaceIoss.html#a7a217826e0632a196124bf8d5e4f39e9", null ],
     [ "StateTimeContainer", "namespaceIoss.html#a089f9d23b46bc02131c42189f3cac2e6", null ],
@@ -306,6 +306,12 @@ var namespaceIoss =
     [ "DataSize", "namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822", [
       [ "USE_INT32_API", "namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a1ac43d414d9b6b81de11e72b039007ff", null ],
       [ "USE_INT64_API", "namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a02f7f9908ebd77ce525d9da18db83b94", null ]
+    ] ],
+    [ "DuplicateFieldBehavior", "namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8f", [
+      [ "UNSET_", "namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8faa39409f16fd0d80463cdca4eac8d2035", null ],
+      [ "IGNORE_", "namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8fa3a4cb4ea2966a8b8f0e21069a7c69b18", null ],
+      [ "WARNING_", "namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8fab4bb47288b53e0e06cd04f0d5b684c17", null ],
+      [ "ERROR_", "namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8fa162d603f1336f9bcce489741b75986cf", null ]
     ] ],
     [ "ElementShape", "namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44", [
       [ "UNKNOWN", "namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44a696b031073e74bf2cb98e5ef201d4aa3", null ],
@@ -411,7 +417,7 @@ var namespaceIoss =
     [ "transfer_assemblies", "namespaceIoss.html#a800bece8cd1505782c2180b175710b45", null ],
     [ "transfer_blobs", "namespaceIoss.html#a4ea13144e7ba9b7fb714b3fb5a54d72d", null ],
     [ "transfer_coordinate_frames", "namespaceIoss.html#a48498de7d44a659ee823b1432c992738", null ],
-    [ "valid_decomp_methods", "namespaceIoss.html#afe78c69a8455b1ff5ce013580d7f7078", null ],
+    [ "valid_decomp_methods", "namespaceIoss.html#afc8a55ef023ee9aa5702d62e1b3a7917", null ],
     [ "Version", "namespaceIoss.html#acac6ca4c845b7c264498f447d9b5a039", null ],
     [ "WarnOut", "namespaceIoss.html#a04b906e115b08518d981a1710a2ff767", null ],
     [ "entityTypeCount", "namespaceIoss.html#a60ba379fdd8679588ac7c40b32490dc5", null ],

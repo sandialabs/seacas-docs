@@ -738,6 +738,7 @@ var annotated_dup =
       [ "CatalystManager", "classIovs_1_1CatalystManager.html", "classIovs_1_1CatalystManager" ],
       [ "CatalystManagerBase", "classIovs_1_1CatalystManagerBase.html", "classIovs_1_1CatalystManagerBase" ],
       [ "CatalystMeshWriter", "classIovs_1_1CatalystMeshWriter.html", "classIovs_1_1CatalystMeshWriter" ],
+      [ "CatalystVersion", "classIovs_1_1CatalystVersion.html", "classIovs_1_1CatalystVersion" ],
       [ "PhactoriParserInterface", "classIovs_1_1PhactoriParserInterface.html", "classIovs_1_1PhactoriParserInterface" ],
       [ "Utils", "classIovs_1_1Utils.html", "classIovs_1_1Utils" ]
     ] ],
@@ -817,13 +818,6 @@ var annotated_dup =
     [ "Adjacency", "structAdjacency.html", "structAdjacency" ],
     [ "CatalystTestFixture", "classCatalystTestFixture.html", "classCatalystTestFixture" ],
     [ "IossApplication", "classIossApplication.html", "classIossApplication" ],
-    [ "ParaViewCatalystCGNSAdapter", "classParaViewCatalystCGNSAdapter.html", "classParaViewCatalystCGNSAdapter" ],
-    [ "ParaViewCatalystCGNSAdapterBase", "classParaViewCatalystCGNSAdapterBase.html", "classParaViewCatalystCGNSAdapterBase" ],
-    [ "ParaViewCatalystIossAdapter", "classParaViewCatalystIossAdapter.html", "classParaViewCatalystIossAdapter" ],
-    [ "ParaViewCatalystIossAdapterBase", "classParaViewCatalystIossAdapterBase.html", "classParaViewCatalystIossAdapterBase" ],
     [ "SideEntryLess", "structSideEntryLess.html", "structSideEntryLess" ],
-    [ "Ve2mSideSetInfo", "classVe2mSideSetInfo.html", "classVe2mSideSetInfo" ],
-    [ "vector3d", "classvector3d.html", "classvector3d" ],
-    [ "vtkCGNSMultiBlockDataSet", "classvtkCGNSMultiBlockDataSet.html", "classvtkCGNSMultiBlockDataSet" ],
-    [ "vtkExodusIIMultiBlockDataSet", "classvtkExodusIIMultiBlockDataSet.html", "classvtkExodusIIMultiBlockDataSet" ]
+    [ "vector3d", "classvector3d.html", "classvector3d" ]
 ];

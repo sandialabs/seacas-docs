@@ -25,19 +25,7 @@
 var NAVTREE =
 [
   [ "Exodus", "index.html", [
-    [ "Exodus API Documentation", "index.html", [
-      [ "Introduction", "index.html#intro", null ],
-      [ "Availability", "index.html#avail", null ],
-      [ "License", "index.html#license", null ],
-      [ "Development of EXODUS", "index.html#devel", null ],
-      [ "Description of Data Objects", "index.html#descrip", null ],
-      [ "Integer Bulkdata Storage Details (32-bit and 64-bit integers)", "index.html#int64", [
-        [ "Fortran API", "index.html#int64_fortran_api", null ],
-        [ "Fortran Implementation", "index.html#int64_fortran_imp", null ]
-      ] ],
-      [ "Database Options (Compression, Name Length, File Type)", "index.html#db_options", null ],
-      [ "Variable, Attribute, and Entity Block/Set Names", "index.html#names", null ]
-    ] ],
+    [ "Exodus API Documentation", "index.html", "index" ],
     [ "Exodus Element Types", "md_include_exodus_element_types.html", [
       [ "Element Types", "md_include_exodus_element_types.html#types", null ],
       [ "Exodus Node Ordering Convention", "md_include_exodus_element_types.html#ordering", null ],
@@ -110,10 +98,10 @@ var NAVTREEINDEX =
 "ex__put__side__set__param_8c.html#a45bd6771e89c2beb1d56e6a80ac9c7ff",
 "exo__jack_8c.html#a29e332a05bfc2da36a915c1b34c485ec",
 "exodusII_8h.html#a9bc38e18c82866515ddc4041dcf21ba5",
-"globals_func_n.html",
-"group__Internal.html#ga524f424b0bf527e65878a983378798e6",
-"group__Internal.html#ggac775a5a0df48df4d0094526cdd600f8ca6c8db608a7b819d6c904a173e0a6474d",
-"group__Utilities.html#gaa785c12fafcbd7a5df413e0c96f9f31e"
+"group__FileVars.html#ga5527c0f72dbf64338abf0a3e1fc01e10",
+"group__Internal.html#gaaab2e9f7dc41c0fdbc7236117850a490",
+"group__ModelDescription.html#gad49e49442bfbff3a7590ce6221bdb710",
+"structex__assembly.html#a406cbc6929fe760f0e30431c053a95c0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
