@@ -731,6 +731,7 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34fa983656e2b5f5ad2aca3428e5102d93ed">WRITE_HISTORY</a>
 , <a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34fa45cb99fae5721361f428d885a2826b16">WRITE_HEARTBEAT</a>
+, <a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34faff5db9807979a4b0ad416c532a92d89d">QUERY_TIMESTEPS_ONLY</a> = 64
 <br />
  }</td></tr>
 <tr class="memdesc:a4ec41517502e82a7291184cd7b68b34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies how an <a class="el" href="classIoss_1_1DatabaseIO.html" title="An input or output Database.">Ioss::DatabaseIO</a> object will be used.  <a href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f">More...</a><br /></td></tr>
@@ -857,6 +858,12 @@ Functions</h2></td></tr>
 <tr class="separator:a174e0b297eacb3ab13ae480ddb71303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8a55ef023ee9aa5702d62e1b3a7917"><td class="memItemLeft" align="right" valign="top">IOSS_EXPORT const std::vector&lt; <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#afc8a55ef023ee9aa5702d62e1b3a7917">valid_decomp_methods</a> ()</td></tr>
 <tr class="separator:afc8a55ef023ee9aa5702d62e1b3a7917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a408426f370417e7929f00200480f47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a0a408426f370417e7929f00200480f47">gl_setwidth</a> (int w)</td></tr>
+<tr class="separator:a0a408426f370417e7929f00200480f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7a5b02b8740e6df478b2befab18ef7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#abc7a5b02b8740e6df478b2befab18ef7">getline_int</a> (const char *prompt)</td></tr>
+<tr class="separator:abc7a5b02b8740e6df478b2befab18ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0defceab6d0d0989a291f6fa1db869"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#afd0defceab6d0d0989a291f6fa1db869">gl_histadd</a> (const char *buf)</td></tr>
+<tr class="separator:afd0defceab6d0d0989a291f6fa1db869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ddf7014f08b92cb05554092ef597920"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a8ddf7014f08b92cb05554092ef597920"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1RefHolder.html">RefHolder</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a8ddf7014f08b92cb05554092ef597920">ByRef</a> (T &amp;t)</td></tr>
 <tr class="separator:a8ddf7014f08b92cb05554092ef597920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1585,6 +1592,8 @@ template&lt;typename INT &gt; </div>
 </td></tr>
 <tr><td class="fieldname"><a id="a4ec41517502e82a7291184cd7b68b34fa45cb99fae5721361f428d885a2826b16" name="a4ec41517502e82a7291184cd7b68b34fa45cb99fae5721361f428d885a2826b16"></a>WRITE_HEARTBEAT&#160;</td><td class="fielddoc"><p>Text-based results data for particular nodes, edges, faces, elements, or global variables at particular times will be written to this database. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a4ec41517502e82a7291184cd7b68b34faff5db9807979a4b0ad416c532a92d89d" name="a4ec41517502e82a7291184cd7b68b34faff5db9807979a4b0ad416c532a92d89d"></a>QUERY_TIMESTEPS_ONLY&#160;</td><td class="fielddoc"><p>Special mode where the application is <em>only</em> going to query the number of timesteps and the timestep values on the database. All other region data will not exist. </p>
+</td></tr>
 </table>
 
 </div>
@@ -2086,6 +2095,60 @@ template&lt;typename INT &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc7a5b02b8740e6df478b2befab18ef7" name="abc7a5b02b8740e6df478b2befab18ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7a5b02b8740e6df478b2befab18ef7">&#9670;&#160;</a></span>getline_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IOSS_EXPORT char * Ioss::getline_int </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>prompt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd0defceab6d0d0989a291f6fa1db869" name="afd0defceab6d0d0989a291f6fa1db869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0defceab6d0d0989a291f6fa1db869">&#9670;&#160;</a></span>gl_histadd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IOSS_EXPORT void Ioss::gl_histadd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a408426f370417e7929f00200480f47" name="a0a408426f370417e7929f00200480f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a408426f370417e7929f00200480f47">&#9670;&#160;</a></span>gl_setwidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IOSS_EXPORT void Ioss::gl_setwidth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

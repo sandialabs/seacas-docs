@@ -301,7 +301,8 @@ var namespaceIoss =
       [ "WRITE_RESULTS", "namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34fa58f800f38c4411306d7a254bff043ab6", null ],
       [ "READ_MODEL", "namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34fa7be51ffcb170ced3fac8122805108b11", null ],
       [ "WRITE_HISTORY", "namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34fa983656e2b5f5ad2aca3428e5102d93ed", null ],
-      [ "WRITE_HEARTBEAT", "namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34fa45cb99fae5721361f428d885a2826b16", null ]
+      [ "WRITE_HEARTBEAT", "namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34fa45cb99fae5721361f428d885a2826b16", null ],
+      [ "QUERY_TIMESTEPS_ONLY", "namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34faff5db9807979a4b0ad416c532a92d89d", null ]
     ] ],
     [ "DataSize", "namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822", [
       [ "USE_INT32_API", "namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822a1ac43d414d9b6b81de11e72b039007ff", null ],
@@ -388,6 +389,9 @@ var namespaceIoss =
     [ "generate_element_chains", "namespaceIoss.html#aca0909ca3a73cb81245d2c731eef2a74", null ],
     [ "generate_element_chains", "namespaceIoss.html#a1a6a82767d634f225c45f64df635d8cc", null ],
     [ "generate_element_chains", "namespaceIoss.html#ae4312ae8cd7588aade32fa4ddb821994", null ],
+    [ "getline_int", "namespaceIoss.html#abc7a5b02b8740e6df478b2befab18ef7", null ],
+    [ "gl_histadd", "namespaceIoss.html#afd0defceab6d0d0989a291f6fa1db869", null ],
+    [ "gl_setwidth", "namespaceIoss.html#a0a408426f370417e7929f00200480f47", null ],
     [ "int_to_surface_split", "namespaceIoss.html#acba9071b636f35b882f0f11f32e1c855", null ],
     [ "io_info_file_info", "namespaceIoss.html#a8a98473ccd36dab1888b02a70d610a6c", null ],
     [ "io_info_file_info", "namespaceIoss.html#a7e6412be2a8d433f48360924f089007e", null ],

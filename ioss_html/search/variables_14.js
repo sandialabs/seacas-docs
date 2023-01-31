@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['underscorevectors_0',['UnderscoreVectors',['../classIovs__exodus_1_1CatalystExodusMesh.html#a7f3c67e1d2950188c13b81cf13bfb184',1,'Iovs_exodus::CatalystExodusMesh']]],
-  ['underscorevectors_1',['underScoreVectors',['../structIovs_1_1CatalystManagerBase_1_1CatalystExodusMeshInit.html#acfc11de936643d396ceccd36aa6a6d1e',1,'Iovs::CatalystManagerBase::CatalystExodusMeshInit']]],
+  ['underscorevectors_0',['underScoreVectors',['../structIovs_1_1CatalystManagerBase_1_1CatalystExodusMeshInit.html#acfc11de936643d396ceccd36aa6a6d1e',1,'Iovs::CatalystManagerBase::CatalystExodusMeshInit']]],
+  ['underscorevectors_1',['UnderscoreVectors',['../classIovs__exodus_1_1CatalystExodusMesh.html#a7f3c67e1d2950188c13b81cf13bfb184',1,'Iovs_exodus::CatalystExodusMesh']]],
   ['use_5fedge_5fmap_2',['use_edge_map',['../classIoex_1_1Mesh.html#ab0e17c91332f2bd3184593ed074609d7',1,'Ioex::Mesh']]],
   ['use_5felem_5fmap_3',['use_elem_map',['../classIoex_1_1Mesh.html#acf884a95f25577abfe9d900fb9cff3e5',1,'Ioex::Mesh']]],
   ['use_5fface_5fmap_4',['use_face_map',['../classIoex_1_1Mesh.html#a187ee4698d5e14326e990a44e1f32a51',1,'Ioex::Mesh']]],

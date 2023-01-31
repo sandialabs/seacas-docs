@@ -8,9 +8,18 @@ var searchData=
   ['hasher_5',['hasher',['../classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0b9227d7a66492cef157cd8c9dc8e319',1,'tsl::detail_robin_hash::robin_hash::hasher()'],['../classtsl_1_1robin__map.html#a27eb24e5f5c5343b7c83cb6dfd8b2d4a',1,'tsl::robin_map::hasher()']]],
   ['hashsize_6',['HASHSIZE',['../apr__aprepro_8cc.html#a2b4054af9a8f1ec4104846747ded1675',1,'apr_aprepro.cc']]],
   ['hidden_7',['HIDDEN',['../structtrmclr_1_1Attribute.html#a83c8ff7e417172a6e0e1a279d5ab25bea4b8353c56a5f3912ee168211d9a365f7',1,'trmclr::Attribute']]],
-  ['hist_5fstart_8',['hist_start',['../apr__scanner_8cc.html#a252fb105ec4adf6ab62197f9e7c30d52',1,'apr_scanner.cc']]],
-  ['history_9',['history',['../classSEAMS_1_1Aprepro.html#a337c8c2410d7ad5ddef1eb6593a19132',1,'SEAMS::Aprepro']]],
-  ['history_5fdata_10',['history_data',['../structSEAMS_1_1history__data.html',1,'SEAMS']]],
-  ['history_5fstring_11',['history_string',['../apr__scanner_8cc.html#a748e6be0ac0614a20c58899ed02aaf8a',1,'apr_scanner.cc']]],
-  ['ht_12',['ht',['../classtsl_1_1robin__map.html#a0906d4407f7334eabb15315beab91c4a',1,'tsl::robin_map']]]
+  ['hist_5fbuf_8',['hist_buf',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a635c196147ff5ef71b74a2d368f59ce2',1,'anonymous_namespace{apr_getline.cc}']]],
+  ['hist_5fempty_5felem_9',['hist_empty_elem',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a867d32b1d6418b59bbf6a3b06f87e021',1,'anonymous_namespace{apr_getline.cc}']]],
+  ['hist_5finit_10',['hist_init',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a222f39a262efc83efcfff7c29f646ca6',1,'anonymous_namespace{apr_getline.cc}']]],
+  ['hist_5flast_11',['hist_last',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#af63f7c998fe0cc7774866156af01e822',1,'anonymous_namespace{apr_getline.cc}']]],
+  ['hist_5fnext_12',['hist_next',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a394eae01e3214759c354b818d1fde39b',1,'anonymous_namespace{apr_getline.cc}']]],
+  ['hist_5fpos_13',['hist_pos',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a5cb49c6589af95d7a67f08bbd7fa7fda',1,'anonymous_namespace{apr_getline.cc}']]],
+  ['hist_5fprev_14',['hist_prev',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#ae5d492c10db74d20e22c12b146ece9bd',1,'anonymous_namespace{apr_getline.cc}']]],
+  ['hist_5fsave_15',['hist_save',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a17db0091d65706b95ac07ed09ef8e5ba',1,'anonymous_namespace{apr_getline.cc}']]],
+  ['hist_5fsize_16',['HIST_SIZE',['../apr__getline_8cc.html#a7f5fc8a70667ca4c9fc598a30f7e8602',1,'apr_getline.cc']]],
+  ['hist_5fstart_17',['hist_start',['../apr__scanner_8cc.html#a252fb105ec4adf6ab62197f9e7c30d52',1,'apr_scanner.cc']]],
+  ['history_18',['history',['../classSEAMS_1_1Aprepro.html#a337c8c2410d7ad5ddef1eb6593a19132',1,'SEAMS::Aprepro']]],
+  ['history_5fdata_19',['history_data',['../structSEAMS_1_1history__data.html',1,'SEAMS']]],
+  ['history_5fstring_20',['history_string',['../apr__scanner_8cc.html#a748e6be0ac0614a20c58899ed02aaf8a',1,'apr_scanner.cc']]],
+  ['ht_21',['ht',['../classtsl_1_1robin__map.html#a0906d4407f7334eabb15315beab91c4a',1,'tsl::robin_map']]]
 ];
