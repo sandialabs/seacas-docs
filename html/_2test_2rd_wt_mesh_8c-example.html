@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -333,14 +333,13 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line">                     num_element_fields, num_timesteps, files_per_domain, sleep_time,</div>
 <div class="line">                     num_iterations, loc_num_nodes, node_map, loc_num_elems, elem_map, x_coords,</div>
 <div class="line">                     y_coords, z_coords, loc_connect, close_files);</div>
-<div class="line"> </div>
-<div class="line">      free(elem_map);</div>
-<div class="line">      free(loc_connect);</div>
-<div class="line">      free(node_map);</div>
-<div class="line">      free(x_coords);</div>
-<div class="line">      free(y_coords);</div>
-<div class="line">      free(z_coords);</div>
 <div class="line">    }</div>
+<div class="line">    free(elem_map);</div>
+<div class="line">    free(loc_connect);</div>
+<div class="line">    free(node_map);</div>
+<div class="line">    free(x_coords);</div>
+<div class="line">    free(y_coords);</div>
+<div class="line">    free(z_coords);</div>
 <div class="line">  }</div>
 <div class="line"><span class="preprocessor">#ifdef PARALLEL_AWARE_EXODUS</span></div>
 <div class="line">  MPI_Finalize();</div>
@@ -868,6 +867,14 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">if</span> (exoid[npd] &lt; 0) {</div>
 <div class="line">          printf(<span class="stringliteral">&quot;after ex_create\n&quot;</span>);</div>
+<div class="line">          <span class="keywordflow">if</span> (elem_var_tab) {</div>
+<div class="line">            free(elem_var_tab);</div>
+<div class="line">            elem_var_tab = NULL;</div>
+<div class="line">          }</div>
+<div class="line">          <span class="keywordflow">if</span> (globals) {</div>
+<div class="line">            free(globals);</div>
+<div class="line">            globals = NULL;</div>
+<div class="line">          }</div>
 <div class="line">          free(exoid);</div>
 <div class="line">          <span class="keywordflow">return</span> (1);</div>
 <div class="line">        }</div>
@@ -1046,6 +1053,7 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">if</span> (npd == files_per_domain - 1) {</div>
 <div class="line">          free(elem_var_tab);</div>
+<div class="line">          elem_var_tab = NULL;</div>
 <div class="line">          <span class="keywordflow">for</span> (j = 0; j &lt; num_element_fields; j++) {</div>
 <div class="line">            free(evar_name[j]);</div>
 <div class="line">          }</div>
@@ -1268,6 +1276,7 @@ $(document).ready(function(){initNavTree('_2test_2rd_wt_mesh_8c-example.html',''
 <div class="line">  free(exoid);</div>
 <div class="line">  <span class="keywordflow">if</span> (num_global_fields &gt; 0) {</div>
 <div class="line">    free(globals);</div>
+<div class="line">    globals = NULL;</div>
 <div class="line">  }</div>
 <div class="line">  <span class="keywordflow">return</span> (0);</div>
 <div class="line">}</div>

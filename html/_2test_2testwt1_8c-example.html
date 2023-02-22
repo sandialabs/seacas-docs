@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt1_8c-example.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2020, 2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -382,16 +382,16 @@ $(document).ready(function(){initNavTree('_2test_2testwt1_8c-example.html',''); 
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* write element block parameters */</span></div>
 <div class="line"> </div>
-<div class="line">  num_elem_in_block[0] = 1; <span class="comment">/* element 1: Quad 1 */</span></div>
-<div class="line">  num_elem_in_block[1] = 2; <span class="comment">/* elements 2, 3: Quad 1 &amp; 2 */</span></div>
+<div class="line">  num_elem_in_block[0] = 1; <span class="comment">/* element 1: Shell 1 */</span></div>
+<div class="line">  num_elem_in_block[1] = 2; <span class="comment">/* elements 2, 3: Shell 1 &amp; 2 */</span></div>
 <div class="line">  num_elem_in_block[2] = 1; <span class="comment">/* element 4: Hex    */</span></div>
 <div class="line">  num_elem_in_block[3] = 1; <span class="comment">/* element 5: Tetra  */</span></div>
 <div class="line">  num_elem_in_block[4] = 1; <span class="comment">/* element 6: Circle */</span></div>
 <div class="line">  num_elem_in_block[5] = 1; <span class="comment">/* element 7: Sphere */</span></div>
 <div class="line">  num_elem_in_block[6] = 1; <span class="comment">/* element 8: Wedge  */</span></div>
 <div class="line"> </div>
-<div class="line">  num_nodes_per_elem[0] = 4; <span class="comment">/* elements in block #1 are 4-node quads  */</span></div>
-<div class="line">  num_nodes_per_elem[1] = 4; <span class="comment">/* elements in block #2 are 4-node quads  */</span></div>
+<div class="line">  num_nodes_per_elem[0] = 4; <span class="comment">/* elements in block #1 are 4-node shells  */</span></div>
+<div class="line">  num_nodes_per_elem[1] = 4; <span class="comment">/* elements in block #2 are 4-node shells  */</span></div>
 <div class="line">  num_nodes_per_elem[2] = 8; <span class="comment">/* elements in block #3 are 8-node hexes  */</span></div>
 <div class="line">  num_nodes_per_elem[3] = 4; <span class="comment">/* elements in block #3 are 4-node tetras */</span></div>
 <div class="line">  num_nodes_per_elem[4] = 1; <span class="comment">/* elements in block #4 are 1-node circles */</span></div>
@@ -414,11 +414,11 @@ $(document).ready(function(){initNavTree('_2test_2testwt1_8c-example.html',''); 
 <div class="line">  num_attr[5] = 3;</div>
 <div class="line">  num_attr[6] = 3;</div>
 <div class="line"> </div>
-<div class="line">  error = <a id="a17" name="a17"></a><a class="code hl_function" href="group__ModelDescription.html#gad98c043e0e089bcb7a4f6662f96f7822">ex_put_block</a>(exoid, <a id="a18" name="a18"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ebids[0], <span class="stringliteral">&quot;quad&quot;</span>, num_elem_in_block[0],</div>
+<div class="line">  error = <a id="a17" name="a17"></a><a class="code hl_function" href="group__ModelDescription.html#gad98c043e0e089bcb7a4f6662f96f7822">ex_put_block</a>(exoid, <a id="a18" name="a18"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ebids[0], <span class="stringliteral">&quot;shell&quot;</span>, num_elem_in_block[0],</div>
 <div class="line">                       num_nodes_per_elem[0], 0, 0, num_attr[0]);</div>
 <div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_block, error = %d\n&quot;</span>, error);</div>
 <div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gad98c043e0e089bcb7a4f6662f96f7822">ex_put_block</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ebids[1], <span class="stringliteral">&quot;quad&quot;</span>, num_elem_in_block[1],</div>
+<div class="line">  error = <a class="code hl_function" href="group__ModelDescription.html#gad98c043e0e089bcb7a4f6662f96f7822">ex_put_block</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, ebids[1], <span class="stringliteral">&quot;shell&quot;</span>, num_elem_in_block[1],</div>
 <div class="line">                       num_nodes_per_elem[1], 0, 0, num_attr[1]);</div>
 <div class="line">  printf(<span class="stringliteral">&quot;after ex_put_elem_block, error = %d\n&quot;</span>, error);</div>
 <div class="line"> </div>
@@ -648,7 +648,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt1_8c-example.html',''); 
 <div class="line">  ids[4] = 34;</div>
 <div class="line">  ids[5] = 35;</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">/* side set #1  - quad */</span></div>
+<div class="line">  <span class="comment">/* side set #1  - shell */</span></div>
 <div class="line">  node_list[0] = 8;</div>
 <div class="line">  node_list[1] = 5;</div>
 <div class="line">  elem_list[0] = 3;</div>
@@ -656,7 +656,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt1_8c-example.html',''); 
 <div class="line">  node_list[3] = 7;</div>
 <div class="line">  elem_list[1] = 3;</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">/* side set #2  - quad/hex, spanning 2 element types  */</span></div>
+<div class="line">  <span class="comment">/* side set #2  - shell/hex, spanning 2 element types  */</span></div>
 <div class="line">  node_list[4] = 2;</div>
 <div class="line">  node_list[5] = 3;</div>
 <div class="line">  elem_list[2] = 1;</div>
@@ -1006,7 +1006,7 @@ $(document).ready(function(){initNavTree('_2test_2testwt1_8c-example.html',''); 
 <div class="ttc" id="agroup__ResultsData_html_ga2328bf98ac13a64d14c722dd7d12a695"><div class="ttname"><a href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a></div><div class="ttdeci">int ex_put_variable_names(int exoid, ex_entity_type obj_type, int num_vars, char *const var_names[])</div><div class="ttdef"><b>Definition:</b> ex_put_variable_names.c:125</div></div>
 <div class="ttc" id="agroup__ResultsData_html_gac8b76bb57f2ab1e4cbca7aef29b6ae91"><div class="ttname"><a href="group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91">ex_put_variable_param</a></div><div class="ttdeci">int ex_put_variable_param(int exoid, ex_entity_type obj_type, int num_vars)</div><div class="ttdef"><b>Definition:</b> ex_put_variable_param.c:126</div></div>
 <div class="ttc" id="agroup__ResultsData_html_gafa1d828867b436631e99a63fd5ddbf05"><div class="ttname"><a href="group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05">ex_put_var</a></div><div class="ttdeci">int ex_put_var(int exoid, int time_step, ex_entity_type var_type, int var_index, ex_entity_id obj_id, int64_t num_entries_this_obj, const void *var_vals)</div><div class="ttdef"><b>Definition:</b> ex_put_var.c:234</div></div>
-<div class="ttc" id="agroup__Utilities_html_ga27866a3e7d0d04c5849cd34ccd13b579"><div class="ttname"><a href="group__Utilities.html#ga27866a3e7d0d04c5849cd34ccd13b579">ex_cvt_nodes_to_sides</a></div><div class="ttdeci">int ex_cvt_nodes_to_sides(int exoid, void_int *num_elem_per_set, void_int *num_nodes_per_set, void_int *side_sets_elem_index, void_int *side_sets_node_index, void_int *side_sets_elem_list, void_int *side_sets_node_list, void_int *side_sets_side_list)</div><div class="ttdef"><b>Definition:</b> ex_cvt_nodes_to_sides.c:167</div></div>
+<div class="ttc" id="agroup__Utilities_html_ga27866a3e7d0d04c5849cd34ccd13b579"><div class="ttname"><a href="group__Utilities.html#ga27866a3e7d0d04c5849cd34ccd13b579">ex_cvt_nodes_to_sides</a></div><div class="ttdeci">int ex_cvt_nodes_to_sides(int exoid, void_int *num_elem_per_set, void_int *num_nodes_per_set, void_int *side_sets_elem_index, void_int *side_sets_node_index, void_int *side_sets_elem_list, void_int *side_sets_node_list, void_int *side_sets_side_list)</div><div class="ttdef"><b>Definition:</b> ex_cvt_nodes_to_sides.c:168</div></div>
 <div class="ttc" id="agroup__Utilities_html_ga37c928f7e30c333ee7c704d04f7e3a87"><div class="ttname"><a href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a></div><div class="ttdeci">#define ex_create(path, mode, comp_ws, io_ws)</div><div class="ttdef"><b>Definition:</b> exodusII.h:488</div></div>
 <div class="ttc" id="agroup__Utilities_html_ga4babf166b2821494be7d9bfcc95234f5"><div class="ttname"><a href="group__Utilities.html#ga4babf166b2821494be7d9bfcc95234f5">ex_put_qa</a></div><div class="ttdeci">int ex_put_qa(int exoid, int num_qa_records, char *qa_record[][4])</div><div class="ttdef"><b>Definition:</b> ex_put_qa.c:63</div></div>
 <div class="ttc" id="agroup__Utilities_html_ga8f47bbb035d32bbafc594c5ed3c00403"><div class="ttname"><a href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts</a></div><div class="ttdeci">int ex_opts(int options)</div><div class="ttdef"><b>Definition:</b> ex_opts.c:56</div></div>

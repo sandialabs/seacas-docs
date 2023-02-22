@@ -53,8 +53,8 @@ var namespaces_dup =
       [ "compute_internal_border_maps", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#aed219e91b6f906d7680ced105eec90b0", null ],
       [ "extract_data", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#afd5239e8d419dcf4231e6e9e9c9a6780", null ],
       [ "get_connectivity_data", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#ae2ab07b594de94db1dbbc2918122b573", null ],
-      [ "SEP", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#a7f93f418a449caef3ccd1eee796bdf92", null ],
-      [ "complex_suffix", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#a756b4cdcd8565306fc1a6c20bd5ffef2", null ],
+      [ "SEP", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#a6afc832f7345e424ac61527f7be691e1", null ],
+      [ "complex_suffix", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#adca31ef5ad2bba0ab57d54ffa6e58a34", null ],
       [ "max_line_length", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#aa46c0ef881bbcda9aa7b23ad9441e812", null ]
     ] ],
     [ "anonymous_namespace{Ioex_Internals.C}", "namespaceanonymous__namespace_02Ioex__Internals_8C_03.html", [
@@ -437,6 +437,7 @@ var namespaces_dup =
     [ "anonymous_namespace{Iovs_exodus_DatabaseIO.C}", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html", [
       [ "extract_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a946154e9fa57a575df4c9694a9d6e435", null ],
       [ "get_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ae60e0458d2a6d9c8819c9de6422c69ab", null ],
+      [ "get_num_to_get", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#a2deabefc37c21145413abdc53b172504", null ],
       [ "set_id", "namespaceanonymous__namespace_02Iovs__exodus__DatabaseIO_8C_03.html#ac7abeea54c7d9d1910b234ece5a62d62", null ]
     ] ],
     [ "anonymous_namespace{shell_to_hex.C}", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html", "namespaceanonymous__namespace_02shell__to__hex_8C_03" ],
