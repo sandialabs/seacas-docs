@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_8c-exampl
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021, 2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_partial_nvar_8c-exampl
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (arg-&gt;threadid &lt; NUM_NODAL_VAR) {</div>
 <div class="line">    <span class="keywordtype">char</span> name[33];</div>
-<div class="line">    sprintf(name, <span class="stringliteral">&quot;NodalVar%ld&quot;</span>, arg-&gt;threadid + 1);</div>
+<div class="line">    snprintf(name, 33, <span class="stringliteral">&quot;NodalVar%ld&quot;</span>, arg-&gt;threadid + 1);</div>
 <div class="line">    <a id="a3" name="a3"></a><a class="code hl_function" href="group__ResultsData.html#ga223eafff4a08dd9b2264a82df11050b3">ex_put_variable_name</a>(arg-&gt;exoid, <a id="a4" name="a4"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, arg-&gt;threadid + 1, name);</div>
 <div class="line">  }</div>
 <div class="line"> </div>

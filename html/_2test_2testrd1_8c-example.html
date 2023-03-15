@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2testrd1_8c-example.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -887,17 +887,19 @@ $(document).ready(function(){initNavTree('_2test_2testrd1_8c-example.html',''); 
 <div class="line">  error = <a id="a54" name="a54"></a><a class="code hl_function" href="group__ResultsData.html#gaf2a7063b5637ebee5cc50af7bed8de94">ex_get_variable_param</a>(exoid, <a id="a55" name="a55"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, &amp;num_glo_vars);</div>
 <div class="line">  printf(<span class="stringliteral">&quot;\nafter ex_get_variable_param, error = %3d\n&quot;</span>, error);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_glo_vars; i++) {</div>
-<div class="line">    var_names[i] = (<span class="keywordtype">char</span> *)my_calloc((<a class="code hl_define" href="group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f">MAX_STR_LENGTH</a> + 1), <span class="keyword">sizeof</span>(char));</div>
-<div class="line">  }</div>
+<div class="line">  <span class="keywordflow">if</span> (num_glo_vars &gt; 0) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_glo_vars; i++) {</div>
+<div class="line">      var_names[i] = (<span class="keywordtype">char</span> *)my_calloc((<a class="code hl_define" href="group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f">MAX_STR_LENGTH</a> + 1), <span class="keyword">sizeof</span>(char));</div>
+<div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">  error = <a id="a56" name="a56"></a><a class="code hl_function" href="group__ResultsData.html#gabd0cc67d7e853e95c257878adbfff961">ex_get_variable_name</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, 1, var_names[0]);</div>
-<div class="line">  printf(<span class="stringliteral">&quot;\nafter ex_get_variable_name, error = %3d\n&quot;</span>, error);</div>
+<div class="line">    error = <a id="a56" name="a56"></a><a class="code hl_function" href="group__ResultsData.html#gabd0cc67d7e853e95c257878adbfff961">ex_get_variable_name</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, 1, var_names[0]);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\nafter ex_get_variable_name, error = %3d\n&quot;</span>, error);</div>
 <div class="line"> </div>
-<div class="line">  printf(<span class="stringliteral">&quot;There are %2d global variables; their names are :\n&quot;</span>, num_glo_vars);</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_glo_vars; i++) {</div>
-<div class="line">    printf(<span class="stringliteral">&quot; &#39;%s&#39;\n&quot;</span>, var_names[i]);</div>
-<div class="line">    free(var_names[i]);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;There are %2d global variables; their names are :\n&quot;</span>, num_glo_vars);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_glo_vars; i++) {</div>
+<div class="line">      printf(<span class="stringliteral">&quot; &#39;%s&#39;\n&quot;</span>, var_names[i]);</div>
+<div class="line">      free(var_names[i]);</div>
+<div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* read nodal variables parameters and names */</span></div>

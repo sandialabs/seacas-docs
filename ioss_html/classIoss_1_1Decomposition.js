@@ -1,6 +1,8 @@
 var classIoss_1_1Decomposition =
 [
     [ "Decomposition", "classIoss_1_1Decomposition.html#a760ebbacb368990b0527b3692f76b7fb", null ],
+    [ "Decomposition", "classIoss_1_1Decomposition.html#a9e95ab57a0bc2e87793c8d2a809f7072", null ],
+    [ "Decomposition", "classIoss_1_1Decomposition.html#abc0b0cf5f6f8cd8a992061bf95e1f0fb", null ],
     [ "build_global_to_local_elem_map", "classIoss_1_1Decomposition.html#a20814db08f4690ab383cf1e9f113ff60", null ],
     [ "calculate_element_centroids", "classIoss_1_1Decomposition.html#ae1167474f6a979a4edd144a2a62556cd", null ],
     [ "communicate_block_data", "classIoss_1_1Decomposition.html#a971abd166ba8021c8714fb763aadddfa", null ],
@@ -30,6 +32,8 @@ var classIoss_1_1Decomposition =
     [ "metis_decompose", "classIoss_1_1Decomposition.html#a07163869ec455fcb55d000c1a93ee20b", null ],
     [ "needs_centroids", "classIoss_1_1Decomposition.html#a51353af2e4d75c5573ce45d5c66b7a69", null ],
     [ "node_global_to_local", "classIoss_1_1Decomposition.html#adadfc48b12e85a1c41d8d593a6b28e8c", null ],
+    [ "operator=", "classIoss_1_1Decomposition.html#ae7a8dee6075c3fb4e33b6af0dab1fed6", null ],
+    [ "operator=", "classIoss_1_1Decomposition.html#a90f28f03e7bf604696523b471fb4c4c8", null ],
     [ "release_memory", "classIoss_1_1Decomposition.html#acc889732ceb2a2f969e93549a3093ac8", null ],
     [ "show_progress", "classIoss_1_1Decomposition.html#a6601c1ffc3b352378b9b042a19e093b5", null ],
     [ "simple_decompose", "classIoss_1_1Decomposition.html#a7c75d0f15d796ff944e70fba13ad7697", null ],

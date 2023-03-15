@@ -58,6 +58,7 @@ var namespaces_dup =
       [ "hist_empty_elem", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a867d32b1d6418b59bbf6a3b06f87e021", null ],
       [ "hist_last", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#af63f7c998fe0cc7774866156af01e822", null ],
       [ "hist_pos", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a5cb49c6589af95d7a67f08bbd7fa7fda", null ],
+      [ "io_old_termios", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a3d6d4f1fcd8c3cffe2961fa19dcdb3ba", null ],
       [ "search_forw_flg", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#ac622121c545ecc2e090918181a905fed", null ],
       [ "search_last", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a895a410b5b0d101a7dc60cb8b0589c02", null ],
       [ "search_pos", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a18bbfa5b82174d0eea7ed1714daebc75", null ],

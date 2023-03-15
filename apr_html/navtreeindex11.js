@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structstr__dcc__init.html#a6d924d9a8092e13189904a689d3e32ee":[1,0,28,0],
 "structstr__dcc__init.html#a952e65d6a3681a4f10c64a4172c9a74d":[1,0,28,3],
 "structstr__dcc__init.html#af9eb7de0189b8e6f67152e9898c576cd":[1,0,28,2],
 "structstr__init.html":[1,0,29],

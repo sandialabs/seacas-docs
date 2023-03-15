@@ -2,6 +2,7 @@ var ex__utils_8c =
 [
     [ "EX_QSORT_CUTOFF", "ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468", null ],
     [ "MAGIC_NUMBER_LEN", "ex__utils_8c.html#ac9417fa0bdbbdb8ed8ab47ef644a4097", null ],
+    [ "ex__canonicalize_filename", "group__Internal.html#gad86c75e23c6f9d35ee2d785dd43943da", null ],
     [ "ex__catstr", "group__Internal.html#ga7c556487fc00b25c3aaf8b974a081de5", null ],
     [ "ex__catstr2", "group__Internal.html#ga1410c89f8bc4667e76ff7945251d793f", null ],
     [ "ex__check_file_type", "group__Utilities.html#ga59bdd5d8964c479f6029c276d6a6d097", null ],

@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -728,7 +728,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">      var_name = malloc(num_nodal_fields * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
 <div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_nodal_fields; j++) {</div>
 <div class="line">        var_name[j] = malloc((MAX_STRING_LEN + 1) * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>));</div>
-<div class="line">        sprintf(var_name[j], <span class="stringliteral">&quot;node_field_%&quot;</span> PRId64, j + 1);</div>
+<div class="line">        snprintf(var_name[j], MAX_STRING_LEN + 1, <span class="stringliteral">&quot;node_field_%&quot;</span> PRId64, j + 1);</div>
 <div class="line">      }</div>
 <div class="line">      err = <a id="a26" name="a26"></a><a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a id="a27" name="a27"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7976e7fb59368794c38ff5da95b19873">EX_NODAL</a>, num_nodal_fields, var_name);</div>
 <div class="line">      <span class="keywordflow">if</span> (err) {</div>
@@ -747,7 +747,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">      var_name = malloc(num_global_fields * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
 <div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_global_fields; j++) {</div>
 <div class="line">        var_name[j] = malloc((MAX_STRING_LEN + 1) * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>));</div>
-<div class="line">        sprintf(var_name[j], <span class="stringliteral">&quot;global_field_%&quot;</span> PRId64, j + 1);</div>
+<div class="line">        snprintf(var_name[j], MAX_STRING_LEN + 1, <span class="stringliteral">&quot;global_field_%&quot;</span> PRId64, j + 1);</div>
 <div class="line">        globals[j] = j;</div>
 <div class="line">      }</div>
 <div class="line">      err = <a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a id="a28" name="a28"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a890b3a596358b8fe3bee8771f4ac84ac">EX_GLOBAL</a>, num_global_fields, var_name);</div>
@@ -767,7 +767,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">      var_name = malloc(num_element_fields * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
 <div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_element_fields; j++) {</div>
 <div class="line">        var_name[j] = malloc((MAX_STRING_LEN + 1) * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>));</div>
-<div class="line">        sprintf(var_name[j], <span class="stringliteral">&quot;element_field_%&quot;</span> PRId64, j + 1);</div>
+<div class="line">        snprintf(var_name[j], MAX_STRING_LEN + 1, <span class="stringliteral">&quot;element_field_%&quot;</span> PRId64, j + 1);</div>
 <div class="line">      }</div>
 <div class="line">      err = <a class="code hl_function" href="group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695">ex_put_variable_names</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, num_element_fields, var_name);</div>
 <div class="line">      <span class="keywordflow">if</span> (err) {</div>
@@ -1006,7 +1006,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">    } <span class="keywordflow">while</span> (iTemp1 &gt;= 1);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">char</span> cTemp[128];</div>
-<div class="line">    sprintf(cTemp, <span class="stringliteral">&quot;%d&quot;</span>, nprocs);</div>
+<div class="line">    snprintf(cTemp, 128, <span class="stringliteral">&quot;%d&quot;</span>, nprocs);</div>
 <div class="line"> </div>
 <div class="line">    strcat(output, <span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line">    strcat(output, cTemp);</div>
@@ -1019,7 +1019,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="line">      strcat(output, <span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    sprintf(cTemp, <span class="stringliteral">&quot;%d&quot;</span>, rank);</div>
+<div class="line">    snprintf(cTemp, 128, <span class="stringliteral">&quot;%d&quot;</span>, rank);</div>
 <div class="line">    strcat(output, cTemp);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -1031,7 +1031,7 @@ $(document).ready(function(){initNavTree('_2test_2create_mesh_8c-example.html','
 <div class="ttc" id="aexodusII_8h_html_a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286"><div class="ttname"><a href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a></div><div class="ttdeci">@ EX_ELEM_BLOCK</div><div class="ttdef"><b>Definition:</b> exodusII.h:267</div></div>
 <div class="ttc" id="aexodusII_8h_html_a8e04765c48d2d3c6806dc89d6c3db1feac85b3327ce99395f3faf0d542b8b3a0a"><div class="ttname"><a href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feac85b3327ce99395f3faf0d542b8b3a0a">EX_ABORT</a></div><div class="ttdeci">@ EX_ABORT</div><div class="ttdef"><b>Definition:</b> exodusII.h:292</div></div>
 <div class="ttc" id="aexodusII_8h_html_a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9"><div class="ttname"><a href="exodusII_8h.html#a8e04765c48d2d3c6806dc89d6c3db1feae2153f7d84ce02bf6947dae81018d5d9">EX_VERBOSE</a></div><div class="ttdeci">@ EX_VERBOSE</div><div class="ttdef"><b>Definition:</b> exodusII.h:290</div></div>
-<div class="ttc" id="aexodusII_8h_html_af88999a1f2592617a56db303e090d2d7"><div class="ttname"><a href="exodusII_8h.html#af88999a1f2592617a56db303e090d2d7">ex_copy_string</a></div><div class="ttdeci">char * ex_copy_string(char *dest, char const *source, size_t elements)</div><div class="ttdef"><b>Definition:</b> ex_utils.c:2278</div></div>
+<div class="ttc" id="aexodusII_8h_html_af88999a1f2592617a56db303e090d2d7"><div class="ttname"><a href="exodusII_8h.html#af88999a1f2592617a56db303e090d2d7">ex_copy_string</a></div><div class="ttdeci">char * ex_copy_string(char *dest, char const *source, size_t elements)</div><div class="ttdef"><b>Definition:</b> ex_utils.c:2283</div></div>
 <div class="ttc" id="agroup__FileOptions_html_gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a56598a35ce7443245ddcd3370e7527b2"><div class="ttname"><a href="group__FileOptions.html#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a56598a35ce7443245ddcd3370e7527b2">EX_OPT_COMPRESSION_LEVEL</a></div><div class="ttdeci">@ EX_OPT_COMPRESSION_LEVEL</div><div class="ttdef"><b>Definition:</b> exodusII.h:243</div></div>
 <div class="ttc" id="agroup__FileOptions_html_gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0ad067190db4fac3cbc8f5c4f99a1c322a"><div class="ttname"><a href="group__FileOptions.html#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0ad067190db4fac3cbc8f5c4f99a1c322a">EX_OPT_COMPRESSION_SHUFFLE</a></div><div class="ttdeci">@ EX_OPT_COMPRESSION_SHUFFLE</div><div class="ttdef"><b>Definition:</b> exodusII.h:244</div></div>
 <div class="ttc" id="agroup__FileVars_html_ga01a03e58adddc706f5a34030746d604a"><div class="ttname"><a href="group__FileVars.html#ga01a03e58adddc706f5a34030746d604a">EX_IDS_INT64_DB</a></div><div class="ttdeci">#define EX_IDS_INT64_DB</div><div class="ttdef"><b>Definition:</b> exodusII.h:115</div></div>

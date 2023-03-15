@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_errval_8c-example.html
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021, 2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('_2test_2test_ts_errval_8c-example.html
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span> *message;</div>
 <div class="line">  <span class="keywordtype">int</span>         err_num;</div>
 <div class="line">  <span class="comment">/*  ex_opts(EX_VERBOSE); */</span></div>
-<div class="line">  sprintf(name, <span class="stringliteral">&quot;Thread%ld&quot;</span>, arg-&gt;threadid);</div>
+<div class="line">  snprintf(name, 32, <span class="stringliteral">&quot;Thread%ld&quot;</span>, arg-&gt;threadid);</div>
 <div class="line">  <span class="keywordflow">for</span> (i = <a id="a0" name="a0"></a><a class="code hl_define" href="group__ErrorReturnCodes.html#ga26d51919515703fd6f6bdb38a14d05dd">EX_MEMFAIL</a>; i &lt;= <a id="a1" name="a1"></a><a class="code hl_define" href="group__ErrorReturnCodes.html#gafe8240aedf90aa7fd776027351a60afd">EX_INTERNAL</a>; i++) {</div>
 <div class="line">    <a id="a2" name="a2"></a><a class="code hl_function" href="group__Utilities.html#ga73924582d1725b8f8672ce292dde53e5">ex_err</a>(name, <span class="stringliteral">&quot;Testing thread-safe exodus&quot;</span>, i);</div>
 <div class="line">    <a id="a3" name="a3"></a><a class="code hl_function" href="group__Utilities.html#ga30160a81eb1aff6befe3890bea4f3bae">ex_get_err</a>(&amp;message, &amp;routine, &amp;err_num);</div>

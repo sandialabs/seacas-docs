@@ -300,6 +300,8 @@ var namespaces_dup =
       [ "hist_empty_elem", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a11e15dacccbcdef1d7b83112dbb9a2e0", null ],
       [ "hist_last", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ad95a9cff0f47b6e85aaf1e2377b1513f", null ],
       [ "hist_pos", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a823c87e4d0b6259c69a2130f6fa6f617", null ],
+      [ "io_new_termios", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a2919c38b9e7e2ac0b651f81c85cabdcd", null ],
+      [ "io_old_termios", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a9b10e410831e96b2781207e057fa6c81", null ],
       [ "search_forw_flg", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a62ef259ae619a934b2df526cc177fa08", null ],
       [ "search_last", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#aff72e5fa7d5f562eb7ada1532266b0ac", null ],
       [ "search_pos", "namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#abe01fde43d53b9452bc14d8471c0f465", null ],

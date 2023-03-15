@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2testwtm_8c-example.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2020 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2020, 2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('_2test_2testwtm_8c-example.html',''); 
 <div class="line">  printf(<span class="stringliteral">&quot; cpu word size: %d io word size: %d\n&quot;</span>, CPU_word_size, IO_word_size);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span> (n = 0; n &lt; nexofiles; n++) {</div>
-<div class="line">    sprintf(exofname, <span class="stringliteral">&quot;test%d.exo&quot;</span>, n);</div>
+<div class="line">    snprintf(exofname, 256, <span class="stringliteral">&quot;test%d.exo&quot;</span>, n);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;test file name: %s\n&quot;</span>, exofname);</div>
 <div class="line">    exoidm[n] = <a class="code hl_define" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a>(exofname,       <span class="comment">/* filename path */</span></div>
 <div class="line">                          <a class="code hl_define" href="group__FileVars.html#gadeed66ded179e51a8858254052a76ba4">EX_CLOBBER</a>,     <span class="comment">/* create mode */</span></div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('_2test_2testwtm_8c-example.html',''); 
 <div class="line">  num_side_sets2 = 5;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span> (n = 0; n &lt; nexofiles; n++) {</div>
-<div class="line">    sprintf(tmpstr, <span class="stringliteral">&quot;This is test %d&quot;</span>, n);</div>
+<div class="line">    snprintf(tmpstr, 80, <span class="stringliteral">&quot;This is test %d&quot;</span>, n);</div>
 <div class="line"> </div>
 <div class="line">    error = <a class="code hl_function" href="group__ModelDescription.html#gaad1d6ddd57d1fa8f94da25d505e8c7ba">ex_put_init</a>(exoidm[n], tmpstr, num_dim2, num_nodes2, num_elem2, num_elem_blk2,</div>
 <div class="line">                        num_node_sets2, num_side_sets2);</div>

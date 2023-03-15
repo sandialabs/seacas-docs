@@ -367,6 +367,7 @@ var group__Internal =
       [ "EX_EL_PYRAMID", "group__Internal.html#ggac775a5a0df48df4d0094526cdd600f8ca574b57337f424f8a349646c0f1ed33fb", null ]
     ] ],
     [ "ex__add_file_item", "group__Internal.html#ga31818be073113d94cc8d98cc9c71c370", null ],
+    [ "ex__canonicalize_filename", "group__Internal.html#gad86c75e23c6f9d35ee2d785dd43943da", null ],
     [ "ex__catstr", "group__Internal.html#ga7c556487fc00b25c3aaf8b974a081de5", null ],
     [ "ex__catstr2", "group__Internal.html#ga1410c89f8bc4667e76ff7945251d793f", null ],
     [ "ex__check_file_type", "group__Internal.html#ga59bdd5d8964c479f6029c276d6a6d097", null ],

@@ -97,14 +97,14 @@ $(document).ready(function(){initNavTree('Ioss__Getline_8C.html',''); initResiza
   <div class="headertitle"><div class="title">Ioss_Getline.C File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;termios.h&gt;</code><br />
-<code>#include &lt;cctype&gt;</code><br />
+<div class="textblock"><code>#include &lt;cctype&gt;</code><br />
 <code>#include &lt;cerrno&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Getline_8h_source.html">Ioss_Getline.h</a>&quot;</code><br />
+<code>#include &lt;termios.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Ioss_Getline.C:</div>
 <div class="dyncontent">
@@ -191,8 +191,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0dd8753c88a9219daa7296c675ac2064"><td class="memItemLeft" align="right" valign="top">struct termios io_new_termios&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__Getline_8C.html#a0dd8753c88a9219daa7296c675ac2064">io_old_termios</a></td></tr>
-<tr class="separator:a0dd8753c88a9219daa7296c675ac2064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6bb9478021a8c541afbeb5b3896c15"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a1d6bb9478021a8c541afbeb5b3896c15">anonymous_namespace{Ioss_Getline.C}::GL_BUF_SIZE</a> {1024}</td></tr>
 <tr class="separator:a1d6bb9478021a8c541afbeb5b3896c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d52d01e4ac8c1fdaeaac9c685b842a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a55d52d01e4ac8c1fdaeaac9c685b842a">anonymous_namespace{Ioss_Getline.C}::gl_ellipses_during_completion</a> = true</td></tr>
@@ -221,6 +219,10 @@ Variables</h2></td></tr>
 <tr class="separator:aa9a7851ff4e5e114d51246b38124b80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e82e598c6a19f87d489dc224a24995d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a3e82e598c6a19f87d489dc224a24995d">anonymous_namespace{Ioss_Getline.C}::gl_search_mode</a> = 0</td></tr>
 <tr class="separator:a3e82e598c6a19f87d489dc224a24995d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2919c38b9e7e2ac0b651f81c85cabdcd"><td class="memItemLeft" align="right" valign="top">struct termios&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a2919c38b9e7e2ac0b651f81c85cabdcd">anonymous_namespace{Ioss_Getline.C}::io_new_termios</a></td></tr>
+<tr class="separator:a2919c38b9e7e2ac0b651f81c85cabdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b10e410831e96b2781207e057fa6c81"><td class="memItemLeft" align="right" valign="top">struct termios&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a9b10e410831e96b2781207e057fa6c81">anonymous_namespace{Ioss_Getline.C}::io_old_termios</a></td></tr>
+<tr class="separator:a9b10e410831e96b2781207e057fa6c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a823c87e4d0b6259c69a2130f6fa6f617"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#a823c87e4d0b6259c69a2130f6fa6f617">anonymous_namespace{Ioss_Getline.C}::hist_pos</a> = 0</td></tr>
 <tr class="separator:a823c87e4d0b6259c69a2130f6fa6f617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad95a9cff0f47b6e85aaf1e2377b1513f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Getline_8C_03.html#ad95a9cff0f47b6e85aaf1e2377b1513f">anonymous_namespace{Ioss_Getline.C}::hist_last</a> = 0</td></tr>
@@ -263,21 +265,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define HIST_SIZE&#160;&#160;&#160;100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a0dd8753c88a9219daa7296c675ac2064" name="a0dd8753c88a9219daa7296c675ac2064"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dd8753c88a9219daa7296c675ac2064">&#9670;&#160;</a></span>io_old_termios</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct termios io_new_termios io_old_termios</td>
         </tr>
       </table>
 </div><div class="memdoc">
