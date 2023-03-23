@@ -1,6 +1,7 @@
 var index =
 [
     [ "Availability", "index.html#avail", null ],
+    [ "Database Types", "index.html#db_types", null ],
     [ "Properties", "index.html#properties", [
       [ "General Properties", "index.html#autotoc_md0", null ],
       [ "Auto-Decomposition-Related Properties", "index.html#autotoc_md1", [

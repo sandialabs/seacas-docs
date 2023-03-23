@@ -2,7 +2,6 @@ var classtsl_1_1detail__robin__hash_1_1bucket__entry =
 [
     [ "bucket_hash", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#aabafa3819701976752393badeba57027", null ],
     [ "distance_type", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a12c0c4111ec7091bb76f077ea27c3995", null ],
-    [ "storage", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#aae185a80f2a2de9340cfd8761b21c152", null ],
     [ "value_type", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a47ea807152a9961777b99cb42513935b", null ],
     [ "bucket_entry", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a6f08f244a044583e5781de95c5894f7e", null ],
     [ "bucket_entry", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a02b183ad60395bb88562e8166d153759", null ],
@@ -26,5 +25,5 @@ var classtsl_1_1detail__robin__hash_1_1bucket__entry =
     [ "EMPTY_MARKER_DIST_FROM_IDEAL_BUCKET", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#af92abe69705ca28c2e20f2cc15595303", null ],
     [ "m_dist_from_ideal_bucket", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a830c454a25ad5f3294a4bb2e3b724641", null ],
     [ "m_last_bucket", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a9cc043e4f0acfc60aa5dde2dee0147da", null ],
-    [ "m_value", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a5f7d11d8ad4b90215acc18d9c498d7f0", null ]
+    [ "m_value", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a46b91dd983c0d1afaf9cf8442527c6bf", null ]
 ];

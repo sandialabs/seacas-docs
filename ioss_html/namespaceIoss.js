@@ -84,6 +84,7 @@ var namespaceIoss =
     [ "Map", "classIoss_1_1Map.html", "classIoss_1_1Map" ],
     [ "Matrix_22", "classIoss_1_1Matrix__22.html", "classIoss_1_1Matrix__22" ],
     [ "Matrix_33", "classIoss_1_1Matrix__33.html", "classIoss_1_1Matrix__33" ],
+    [ "MemoryUtils", "classIoss_1_1MemoryUtils.html", "classIoss_1_1MemoryUtils" ],
     [ "MeshCopyOptions", "structIoss_1_1MeshCopyOptions.html", "structIoss_1_1MeshCopyOptions" ],
     [ "NamedSuffixVariableType", "classIoss_1_1NamedSuffixVariableType.html", "classIoss_1_1NamedSuffixVariableType" ],
     [ "Node", "classIoss_1_1Node.html", "classIoss_1_1Node" ],

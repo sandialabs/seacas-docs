@@ -12,7 +12,6 @@ var Ioex__BaseDatabaseIO_8C =
     [ "get_exodus_assemblies", "Ioex__BaseDatabaseIO_8C.html#ad1894f0ea59565ce55adec7d1fb0df2a", null ],
     [ "insert_sort_and_unique", "Ioex__BaseDatabaseIO_8C.html#ad0e4ceeb87e8eaabfa0bc03aa232ebfd", null ],
     [ "write_attribute_names", "Ioex__BaseDatabaseIO_8C.html#a755ce5b3fcffef4d0990200522091d95", null ],
-    [ "complex_suffix", "Ioex__BaseDatabaseIO_8C.html#a7ab2dd5c27772474303fd6666297dc88", null ],
     [ "max_line_length", "Ioex__BaseDatabaseIO_8C.html#af988ac51328995734fce46ba6e237f5a", null ],
     [ "sixty_four_bit_message_output", "Ioex__BaseDatabaseIO_8C.html#a86f69772c437bdb7850de56a06636dcc", null ]
 ];

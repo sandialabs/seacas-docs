@@ -102,6 +102,47 @@ Availability</h1>
 <li>EMAIL: <a href="#" onclick="location.href='mai'+'lto:'+'gsj'+'aa'+'rde'+'ma'+'@gm'+'ai'+'l.c'+'om'; return false;">gsjaa<span class="obfuscator">.nosp@m.</span>rdem<span class="obfuscator">.nosp@m.</span>a@gma<span class="obfuscator">.nosp@m.</span>il.c<span class="obfuscator">.nosp@m.</span>om</a></li>
 <li>PHONE: (505) 844-2701 (office)</li>
 </ul>
+<h1><a class="anchor" id="db_types"></a>
+Database Types</h1>
+<p>The IOSS system supports multiple database formats. The default format is the Sandia-developed Exodus format. The list below shows all supported database input and/or output formats. Not all of these may be available on all builds; the supported databases on a particular installation can be determined by running the <code>io_info --config</code> program.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Input/Output   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">catalyst_cgns   </td><td class="markdownTableBodyNone">Output   </td><td class="markdownTableBodyNone">Visualization pipeline, cgns-based    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">catalyst_exodus   </td><td class="markdownTableBodyNone">Output   </td><td class="markdownTableBodyNone">Visualization pipeline, exodus-based    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cgns   </td><td class="markdownTableBodyNone">Input/Output   </td><td class="markdownTableBodyNone">CFD General Notation System (<a href="https://cgns.github.io/">https://cgns.github.io/</a>)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">exodus   </td><td class="markdownTableBodyNone">Input/Output   </td><td class="markdownTableBodyNone">Sandia-developed database system for unstructured mesh input/output (<a href="https://sandialabs.github.io/seacas-docs/sphinx/html/index.html#exodus-library">https://sandialabs.github.io/seacas-docs/sphinx/html/index.html#exodus-library</a>)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">exodusII   </td><td class="markdownTableBodyNone">Input/Output   </td><td class="markdownTableBodyNone">alias for exodus    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">exodusii   </td><td class="markdownTableBodyNone">Input/Output   </td><td class="markdownTableBodyNone">alias for exodus    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">genesis   </td><td class="markdownTableBodyNone">Input/Output   </td><td class="markdownTableBodyNone">alias for exodus    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">gen_struc   </td><td class="markdownTableBodyNone">Input   </td><td class="markdownTableBodyNone">Generate a structured mesh using a token string (IxJxK)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">generated   </td><td class="markdownTableBodyNone">Input   </td><td class="markdownTableBodyNone">Generate an unstructured hex/shell mesh using a token string    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">heartbeat   </td><td class="markdownTableBodyNone">Output   </td><td class="markdownTableBodyNone">A text based output for global values    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">exonull   </td><td class="markdownTableBodyNone">Output   </td><td class="markdownTableBodyNone">No data written to disk, but uses all of the exodus io database infrastructure/calculations    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">null   </td><td class="markdownTableBodyNone">Output   </td><td class="markdownTableBodyNone">No data written to disk, no calculations done by ioss    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pamgen   </td><td class="markdownTableBodyNone">Input   </td><td class="markdownTableBodyNone">(<a href="https://trilinos.github.io/pamgen.html">https://trilinos.github.io/pamgen.html</a>)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">par_cgns   </td><td class="markdownTableBodyNone">Input/Output   </td><td class="markdownTableBodyNone">alias for parallel CGNS    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">textmesh   </td><td class="markdownTableBodyNone">Input   </td><td class="markdownTableBodyNone">Generate an unstructured mesh using a token string    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">adios   </td><td class="markdownTableBodyNone">Input/Output   </td><td class="markdownTableBodyNone">Adaptable Input/Output system, (<a href="https://adios2.readthedocs.io/en/latest/">https://adios2.readthedocs.io/en/latest/</a>)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">faodel   </td><td class="markdownTableBodyNone">Input/Output   </td><td class="markdownTableBodyNone">(<a href="https://github.com/faodel/faodel">https://github.com/faodel/faodel</a>)   </td></tr>
+</table>
 <h1><a class="anchor" id="properties"></a>
 Properties</h1>
 <h2><a class="anchor" id="autotoc_md0"></a>

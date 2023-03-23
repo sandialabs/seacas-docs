@@ -36,6 +36,7 @@ var namespacedoctest_1_1detail =
     [ "RelationalComparator", "structdoctest_1_1detail_1_1RelationalComparator.html", "structdoctest_1_1detail_1_1RelationalComparator" ],
     [ "Result", "structdoctest_1_1detail_1_1Result.html", "structdoctest_1_1detail_1_1Result" ],
     [ "ResultBuilder", "structdoctest_1_1detail_1_1ResultBuilder.html", "structdoctest_1_1detail_1_1ResultBuilder" ],
+    [ "should_stringify_as_underlying_type", "structdoctest_1_1detail_1_1should__stringify__as__underlying__type.html", "structdoctest_1_1detail_1_1should__stringify__as__underlying__type" ],
     [ "StringMakerBase", "structdoctest_1_1detail_1_1StringMakerBase.html", "structdoctest_1_1detail_1_1StringMakerBase" ],
     [ "StringMakerBase< true >", "structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4.html", "structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4" ],
     [ "Subcase", "structdoctest_1_1detail_1_1Subcase.html", "structdoctest_1_1detail_1_1Subcase" ],

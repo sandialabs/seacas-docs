@@ -171,15 +171,13 @@ Static Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:af92abe69705ca28c2e20f2cc15595303"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a12c0c4111ec7091bb76f077ea27c3995">distance_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#af92abe69705ca28c2e20f2cc15595303">EMPTY_MARKER_DIST_FROM_IDEAL_BUCKET</a> = -1</td></tr>
 <tr class="separator:af92abe69705ca28c2e20f2cc15595303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af58b4cdc47b342af0afa91a9f36b4d27"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a12c0c4111ec7091bb76f077ea27c3995">distance_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#af58b4cdc47b342af0afa91a9f36b4d27">DIST_FROM_IDEAL_BUCKET_LIMIT</a> = 4096</td></tr>
+<tr class="memitem:af58b4cdc47b342af0afa91a9f36b4d27"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a12c0c4111ec7091bb76f077ea27c3995">distance_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#af58b4cdc47b342af0afa91a9f36b4d27">DIST_FROM_IDEAL_BUCKET_LIMIT</a> = 8192</td></tr>
 <tr class="separator:af58b4cdc47b342af0afa91a9f36b4d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:aabafa3819701976752393badeba57027"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#aabafa3819701976752393badeba57027">bucket_hash</a> = <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry__hash.html">bucket_entry_hash</a>&lt; StoreHash &gt;</td></tr>
 <tr class="separator:aabafa3819701976752393badeba57027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae185a80f2a2de9340cfd8761b21c152"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#aae185a80f2a2de9340cfd8761b21c152">storage</a> = typename std::aligned_storage&lt; sizeof(<a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a47ea807152a9961777b99cb42513935b">value_type</a>), alignof(<a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a47ea807152a9961777b99cb42513935b">value_type</a>)&gt;::type</td></tr>
-<tr class="separator:aae185a80f2a2de9340cfd8761b21c152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -192,8 +190,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a830c454a25ad5f3294a4bb2e3b724641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc043e4f0acfc60aa5dde2dee0147da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a9cc043e4f0acfc60aa5dde2dee0147da">m_last_bucket</a></td></tr>
 <tr class="separator:a9cc043e4f0acfc60aa5dde2dee0147da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7d11d8ad4b90215acc18d9c498d7f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#aae185a80f2a2de9340cfd8761b21c152">storage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a5f7d11d8ad4b90215acc18d9c498d7f0">m_value</a></td></tr>
-<tr class="separator:a5f7d11d8ad4b90215acc18d9c498d7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b91dd983c0d1afaf9cf8442527c6bf"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a46b91dd983c0d1afaf9cf8442527c6bf">m_value</a> [sizeof(<a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a47ea807152a9961777b99cb42513935b">value_type</a>)]</td></tr>
+<tr class="separator:a46b91dd983c0d1afaf9cf8442527c6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -246,30 +244,6 @@ template&lt;typename ValueType , bool StoreHash&gt; </div>
           <td class="memname">using <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a>&lt; ValueType, StoreHash &gt;::distance_type =  std::int16_t</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aae185a80f2a2de9340cfd8761b21c152" name="aae185a80f2a2de9340cfd8761b21c152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae185a80f2a2de9340cfd8761b21c152">&#9670;&#160;</a></span>storage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ValueType , bool StoreHash&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a>&lt; ValueType, StoreHash &gt;::storage =  typename std::aligned_storage&lt;sizeof(<a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a47ea807152a9961777b99cb42513935b">value_type</a>), alignof(<a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a47ea807152a9961777b99cb42513935b">value_type</a>)&gt;::type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -834,7 +808,7 @@ template&lt;typename ValueType , bool StoreHash&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a12c0c4111ec7091bb76f077ea27c3995">distance_type</a> <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a>&lt; ValueType, StoreHash &gt;::DIST_FROM_IDEAL_BUCKET_LIMIT = 4096</td>
+          <td class="memname">const <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a12c0c4111ec7091bb76f077ea27c3995">distance_type</a> <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a>&lt; ValueType, StoreHash &gt;::DIST_FROM_IDEAL_BUCKET_LIMIT = 8192</td>
         </tr>
       </table>
   </td>
@@ -918,8 +892,8 @@ template&lt;typename ValueType , bool StoreHash&gt; </div>
 
 </div>
 </div>
-<a id="a5f7d11d8ad4b90215acc18d9c498d7f0" name="a5f7d11d8ad4b90215acc18d9c498d7f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f7d11d8ad4b90215acc18d9c498d7f0">&#9670;&#160;</a></span>m_value</h2>
+<a id="a46b91dd983c0d1afaf9cf8442527c6bf" name="a46b91dd983c0d1afaf9cf8442527c6bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b91dd983c0d1afaf9cf8442527c6bf">&#9670;&#160;</a></span>m_value</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -930,7 +904,7 @@ template&lt;typename ValueType , bool StoreHash&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#aae185a80f2a2de9340cfd8761b21c152">storage</a> <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a>&lt; ValueType, StoreHash &gt;::m_value</td>
+          <td class="memname">unsigned char <a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a>&lt; ValueType, StoreHash &gt;::m_value[sizeof(<a class="el" href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a47ea807152a9961777b99cb42513935b">value_type</a>)]</td>
         </tr>
       </table>
   </td>

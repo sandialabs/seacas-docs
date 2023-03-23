@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('Ioex__DecompositionData_8h_source.html
 </div><!--header-->
 <div class="contents">
 <a href="Ioex__DecompositionData_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright(C) 1999-2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
@@ -101,10 +101,10 @@ $(document).ready(function(){initNavTree('Ioex__DecompositionData_8h_source.html
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;ioex_export.h&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;exodusII.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#if defined PARALLEL_AWARE_EXODUS</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;exodusII.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#if defined PARALLEL_AWARE_EXODUS</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;ioex_export.h&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;<a class="code" href="Ioss__CodeTypes_8h.html">Ioss_CodeTypes.h</a>&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -129,8 +129,8 @@ $(document).ready(function(){initNavTree('Ioex__DecompositionData_8h_source.html
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    DecompositionDataBase(<a class="code hl_typedef" href="Ioss__CodeTypes_8h.html#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a> comm) : comm_(comm) {}</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    DecompositionDataBase(<span class="keyword">const</span> DecompositionDataBase&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    DecompositionDataBase&amp; operator=(<span class="keyword">const</span> DecompositionDataBase&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    DecompositionDataBase(<span class="keyword">const</span> DecompositionDataBase &amp;)            = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    DecompositionDataBase &amp;operator=(<span class="keyword">const</span> DecompositionDataBase &amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">virtual</span> ~DecompositionDataBase()            = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span>    int_size() <span class="keyword">const</span>             = 0;</div>
@@ -311,14 +311,14 @@ $(document).ready(function(){initNavTree('Ioex__DecompositionData_8h_source.html
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordtype">int</span> get_set_var(<span class="keywordtype">int</span> filePtr, <span class="keywordtype">int</span> step, <span class="keywordtype">int</span> var_index, ex_entity_type type, ex_entity_id <span class="keywordtype">id</span>,</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                    int64_t num_entity, std::vector&lt;double&gt; &amp;ioss_data) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordtype">bool</span> i_own_node(<span class="keywordtype">size_t</span> node)</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="keyword">const</span> <span class="comment">// T/F if node with global index node owned by this processors ioss-decomp.</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordtype">bool</span> i_own_node(<span class="keywordtype">size_t</span> node)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      <span class="comment">// T/F if the node with global index `node` is owned by this processors ioss-decomp.</span></div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      <span class="keywordflow">return</span> m_decomposition.i_own_node(node);</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    }</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordtype">bool</span> i_own_elem(<span class="keywordtype">size_t</span> elem)</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keyword">const</span> <span class="comment">// T/F if node with global index elem owned by this processors ioss-decomp.</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordtype">bool</span> i_own_elem(<span class="keywordtype">size_t</span> elem) <span class="keyword">const</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="comment">// T/F if the element with global index `elem` is owned by this processors ioss-decomp.</span></div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    {</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>      <span class="keywordflow">return</span> m_decomposition.i_own_elem(elem);</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    }</div>
@@ -382,8 +382,8 @@ $(document).ready(function(){initNavTree('Ioex__DecompositionData_8h_source.html
 <div class="ttc" id="aclassIoss_1_1Map_html"><div class="ttname"><a href="classIoss_1_1Map.html">Ioss::Map</a></div><div class="ttdef"><b>Definition:</b> Ioss_Map.h:49</div></div>
 <div class="ttc" id="aclassIoss_1_1PropertyManager_html"><div class="ttname"><a href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a></div><div class="ttdoc">A collection of Ioss::Property objects.</div><div class="ttdef"><b>Definition:</b> Ioss_PropertyManager.h:35</div></div>
 <div class="ttc" id="aclassIoss_1_1SetDecompositionData_html"><div class="ttname"><a href="classIoss_1_1SetDecompositionData.html">Ioss::SetDecompositionData</a></div><div class="ttdef"><b>Definition:</b> Ioss_Decomposition.h:89</div></div>
-<div class="ttc" id="aclassstd_1_1basic__string_html"><div class="ttname"><a href="classstd_1_1basic__string.html">std::basic_string</a></div><div class="ttdef"><b>Definition:</b> doctest.h:522</div></div>
-<div class="ttc" id="anamespaceIoex_html"><div class="ttname"><a href="namespaceIoex.html">Ioex</a></div><div class="ttdoc">A namespace for the exodus database format.</div><div class="ttdef"><b>Definition:</b> Ioex_BaseDatabaseIO.C:213</div></div>
+<div class="ttc" id="aclassstd_1_1basic__string_html"><div class="ttname"><a href="classstd_1_1basic__string.html">std::basic_string</a></div><div class="ttdef"><b>Definition:</b> doctest.h:545</div></div>
+<div class="ttc" id="anamespaceIoex_html"><div class="ttname"><a href="namespaceIoex.html">Ioex</a></div><div class="ttdoc">A namespace for the exodus database format.</div><div class="ttdef"><b>Definition:</b> Ioex_BaseDatabaseIO.C:211</div></div>
 <div class="ttc" id="anamespaceIoss_html"><div class="ttname"><a href="namespaceIoss.html">Ioss</a></div><div class="ttdoc">The main namespace for the Ioss library.</div><div class="ttdef"><b>Definition:</b> Ioad_DatabaseIO.C:40</div></div>
 <div class="ttc" id="anamespaceIoss_html_aeb2ff55ad798305efc0cbd9ff990f546"><div class="ttname"><a href="namespaceIoss.html#aeb2ff55ad798305efc0cbd9ff990f546">Ioss::MapContainer</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; MapContainer</div><div class="ttdef"><b>Definition:</b> Ioss_Map.h:32</div></div>
 </div><!-- fragment --></div><!-- contents -->

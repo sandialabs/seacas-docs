@@ -378,8 +378,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a3341d27c1ed75c67768f56fa2ad1c4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa786a241ab5bbe76f5f2e19a7feab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a4aa786a241ab5bbe76f5f2e19a7feab8">insert_value_on_rehash</a> (<a class="el" href="namespacestd.html#aa30247b5e1a6e192c486364692e37832">std::size_t</a> ibucket, <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#ac8dcb93f0312a72b6eeab127cddf27af">distance_type</a> dist_from_ideal_bucket, <a class="el" href="namespacetsl_1_1detail__robin__hash.html#abdab59d9a567358f21b7a030ba4818b9">truncated_hash_type</a> my_hash, <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#a7040c9dfa801bb5b4e8c0333a8df43f0">value_type</a> &amp;&amp;value)</td></tr>
 <tr class="separator:a4aa786a241ab5bbe76f5f2e19a7feab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec6a75c9119fad87b38e6ed9bcef2f81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#aec6a75c9119fad87b38e6ed9bcef2f81">rehash_on_extreme_load</a> ()</td></tr>
-<tr class="separator:aec6a75c9119fad87b38e6ed9bcef2f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9562c0908ab87d5302a041caf397d4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#ac9562c0908ab87d5302a041caf397d4e">rehash_on_extreme_load</a> (<a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#ac8dcb93f0312a72b6eeab127cddf27af">distance_type</a> curr_dist_from_ideal_bucket)</td></tr>
+<tr class="separator:ac9562c0908ab87d5302a041caf397d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbda59585974e383a5e84701e490dbbf"><td class="memTemplParams" colspan="2">template&lt;class Serializer &gt; </td></tr>
 <tr class="memitem:acbda59585974e383a5e84701e490dbbf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#acbda59585974e383a5e84701e490dbbf">serialize_impl</a> (Serializer &amp;serializer) const</td></tr>
 <tr class="separator:acbda59585974e383a5e84701e490dbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3180,8 +3180,8 @@ template&lt;class ValueType , class KeySelect , class ValueSelect , class Hash ,
 
 </div>
 </div>
-<a id="aec6a75c9119fad87b38e6ed9bcef2f81" name="aec6a75c9119fad87b38e6ed9bcef2f81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec6a75c9119fad87b38e6ed9bcef2f81">&#9670;&#160;</a></span>rehash_on_extreme_load()</h2>
+<a id="ac9562c0908ab87d5302a041caf397d4e" name="ac9562c0908ab87d5302a041caf397d4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9562c0908ab87d5302a041caf397d4e">&#9670;&#160;</a></span>rehash_on_extreme_load()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3194,7 +3194,8 @@ template&lt;class ValueType , class KeySelect , class ValueSelect , class Hash ,
         <tr>
           <td class="memname">bool <a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html">tsl::detail_robin_hash::robin_hash</a>&lt; ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy &gt;::rehash_on_extreme_load </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classtsl_1_1detail__robin__hash_1_1robin__hash.html#ac8dcb93f0312a72b6eeab127cddf27af">distance_type</a>&#160;</td>
+          <td class="paramname"><em>curr_dist_from_ideal_bucket</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3938,9 +3939,9 @@ template&lt;class ValueType , class KeySelect , class ValueSelect , class Hash ,
 <div class="line">                        </div>
 <div class="line">                        (!std::is_arithmetic&lt;key_type&gt;::value ||</div>
 <div class="line">                         !std::is_same&lt;Hash, std::hash&lt;key_type&gt;&gt;::value))</div>
-<div class="ttc" id="aclasstsl_1_1detail__robin__hash_1_1bucket__entry_html"><div class="ttname"><a href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a></div><div class="ttdef"><b>Definition:</b> robin_hash.h:171</div></div>
-<div class="ttc" id="anamespacestd_html_aa30247b5e1a6e192c486364692e37832"><div class="ttname"><a href="namespacestd.html#aa30247b5e1a6e192c486364692e37832">std::size_t</a></div><div class="ttdeci">decltype(sizeof(void *) size_t)</div><div class="ttdef"><b>Definition:</b> doctest.h:501</div></div>
-<div class="ttc" id="anamespacetsl_1_1detail__robin__hash_html_abdab59d9a567358f21b7a030ba4818b9"><div class="ttname"><a href="namespacetsl_1_1detail__robin__hash.html#abdab59d9a567358f21b7a030ba4818b9">tsl::detail_robin_hash::truncated_hash_type</a></div><div class="ttdeci">std::uint32_t truncated_hash_type</div><div class="ttdef"><b>Definition:</b> robin_hash.h:117</div></div>
+<div class="ttc" id="aclasstsl_1_1detail__robin__hash_1_1bucket__entry_html"><div class="ttname"><a href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html">tsl::detail_robin_hash::bucket_entry</a></div><div class="ttdef"><b>Definition:</b> robin_hash.h:172</div></div>
+<div class="ttc" id="anamespacestd_html_aa30247b5e1a6e192c486364692e37832"><div class="ttname"><a href="namespacestd.html#aa30247b5e1a6e192c486364692e37832">std::size_t</a></div><div class="ttdeci">decltype(sizeof(void *) size_t)</div><div class="ttdef"><b>Definition:</b> doctest.h:524</div></div>
+<div class="ttc" id="anamespacetsl_1_1detail__robin__hash_html_abdab59d9a567358f21b7a030ba4818b9"><div class="ttname"><a href="namespacetsl_1_1detail__robin__hash.html#abdab59d9a567358f21b7a030ba4818b9">tsl::detail_robin_hash::truncated_hash_type</a></div><div class="ttdeci">std::uint32_t truncated_hash_type</div><div class="ttdef"><b>Definition:</b> robin_hash.h:118</div></div>
 </div><!-- fragment --><p>Either store the hash because we are asked by the <code>StoreHash</code> template parameter or store the hash because it doesn't cost us anything in size and can be used to speed up rehash. </p>
 
 </div>

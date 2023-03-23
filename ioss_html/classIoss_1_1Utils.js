@@ -31,8 +31,6 @@ var classIoss_1_1Utils =
     [ "generate_index", "classIoss_1_1Utils.html#ab28da0b4314af388924ebb706fc3c758", null ],
     [ "get_debug_stream", "group__IossStreams.html#gaf4caf83158168ce0d3d11d71b460c38a", null ],
     [ "get_fields", "classIoss_1_1Utils.html#a69e05dfc38ab4a3f212afa09ed9ceb6c", null ],
-    [ "get_hwm_memory_info", "classIoss_1_1Utils.html#abb44fc3fded3b090db47018f7511192d", null ],
-    [ "get_memory_info", "classIoss_1_1Utils.html#af780d50a6bc0c7b6d3fa8579343e4abf", null ],
     [ "get_name_array", "classIoss_1_1Utils.html#af25be5c9b86bb94f9c0dcb39bf255250", null ],
     [ "get_number", "classIoss_1_1Utils.html#a346c26d1b8b5b2cde7bd2410e622abfa", null ],
     [ "get_output_stream", "group__IossStreams.html#gab93167333d785a25a6c38c9c5950aba2", null ],
