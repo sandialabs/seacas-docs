@@ -2,6 +2,7 @@ var group__ErrorReturnCodes =
 [
     [ "EX_BADFILEID", "group__ErrorReturnCodes.html#ga7bba3a67bb670d1fb467ba108056cf65", null ],
     [ "EX_BADFILEMODE", "group__ErrorReturnCodes.html#ga0b6d7cb981a483315e52da3f27120104", null ],
+    [ "EX_BADFILENAME", "group__ErrorReturnCodes.html#ga4da3c3672956b0691871a573a7de01d7", null ],
     [ "EX_BADPARAM", "group__ErrorReturnCodes.html#gae05a7d5244d793919820910c63200669", null ],
     [ "EX_DUPLICATEID", "group__ErrorReturnCodes.html#ga57a66c1583e9cc3c166cbf0e615a6feb", null ],
     [ "EX_DUPLICATEOPEN", "group__ErrorReturnCodes.html#ga22ccc4d61b8498c0c3c1e5f374dbe4a6", null ],
