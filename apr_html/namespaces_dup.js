@@ -54,7 +54,7 @@ var namespaces_dup =
       [ "gl_search_mode", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a88e2ca231edd51721614e6bba81c1576", null ],
       [ "gl_termw", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a3e04aabf5cb14d301a31bfb261c5328e", null ],
       [ "gl_width", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#ae14af29f591eea93c375ce6d22129817", null ],
-      [ "hist_buf", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a635c196147ff5ef71b74a2d368f59ce2", null ],
+      [ "hist_buf", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#ae9711d50d27ae5b35e0f6ec442a5f8c5", null ],
       [ "hist_empty_elem", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a867d32b1d6418b59bbf6a3b06f87e021", null ],
       [ "hist_last", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#af63f7c998fe0cc7774866156af01e822", null ],
       [ "hist_pos", "namespaceanonymous__namespace_02apr__getline_8cc_03.html#a5cb49c6589af95d7a67f08bbd7fa7fda", null ],
