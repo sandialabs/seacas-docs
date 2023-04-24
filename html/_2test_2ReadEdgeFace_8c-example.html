@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021, 2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -107,19 +107,23 @@ $(document).ready(function(){initNavTree('_2test_2ReadEdgeFace_8c-example.html',
 <div class="line"><span class="preprocessor">#define EX_TEST_FILENAME &quot;edgeFace.exo&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define EXCHECK(funcall, errmsg)                                                                   \</span></div>
-<div class="line"><span class="preprocessor">  if ((funcall) &lt; 0) {                                                                             \</span></div>
-<div class="line"><span class="preprocessor">    fprintf(stderr, errmsg);                                                                       \</span></div>
-<div class="line"><span class="preprocessor">    return 1;                                                                                      \</span></div>
-<div class="line"><span class="preprocessor">  }</span></div>
+<div class="line"><span class="preprocessor">  do {                                                                                             \</span></div>
+<div class="line"><span class="preprocessor">    if ((funcall) &lt; 0) {                                                                           \</span></div>
+<div class="line"><span class="preprocessor">      fprintf(stderr, errmsg);                                                                     \</span></div>
+<div class="line"><span class="preprocessor">      return 1;                                                                                    \</span></div>
+<div class="line"><span class="preprocessor">    }                                                                                              \</span></div>
+<div class="line"><span class="preprocessor">  } while (0)</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define EXCHKPI(funcall, errmsg, sucmsg, ival)                                                     \</span></div>
-<div class="line"><span class="preprocessor">  if ((funcall) &lt; 0) {                                                                             \</span></div>
-<div class="line"><span class="preprocessor">    fprintf(stderr, errmsg);                                                                       \</span></div>
-<div class="line"><span class="preprocessor">    return 1;                                                                                      \</span></div>
-<div class="line"><span class="preprocessor">  }                                                                                                \</span></div>
-<div class="line"><span class="preprocessor">  else {                                                                                           \</span></div>
-<div class="line"><span class="preprocessor">    fprintf(stdout, sucmsg, ival);                                                                 \</span></div>
-<div class="line"><span class="preprocessor">  }</span></div>
+<div class="line"><span class="preprocessor">  do {                                                                                             \</span></div>
+<div class="line"><span class="preprocessor">    if ((funcall) &lt; 0) {                                                                           \</span></div>
+<div class="line"><span class="preprocessor">      fprintf(stderr, errmsg);                                                                     \</span></div>
+<div class="line"><span class="preprocessor">      return 1;                                                                                    \</span></div>
+<div class="line"><span class="preprocessor">    }                                                                                              \</span></div>
+<div class="line"><span class="preprocessor">    else {                                                                                         \</span></div>
+<div class="line"><span class="preprocessor">      fprintf(stdout, sucmsg, ival);                                                               \</span></div>
+<div class="line"><span class="preprocessor">    }                                                                                              \</span></div>
+<div class="line"><span class="preprocessor">  } while (0)</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_enumeration" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a> obj_types[] = {<a id="a0" name="a0"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a0545aa5bf16712b8cfb3df0f03d17f65">EX_EDGE_BLOCK</a>, <a id="a1" name="a1"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a874689df09da1bd5faefcd6ec6350391">EX_FACE_BLOCK</a>, <a id="a2" name="a2"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490aecdd2cbb9f2805c308dedb77c6ebe286">EX_ELEM_BLOCK</a>, <a id="a3" name="a3"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a689f369480f6fa94bb48b2a4883e55eb">EX_NODE_SET</a>,</div>
 <div class="line">                              <a id="a4" name="a4"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a2cb06b0c979985302d634fb014b2feba">EX_EDGE_SET</a>,   <a id="a5" name="a5"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a0bd66a762fd0281609f7be23a1ec5ee5">EX_FACE_SET</a>,   <a id="a6" name="a6"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a54efd13e0c9055244e2a8cb84dd09d14">EX_SIDE_SET</a>,   <a id="a7" name="a7"></a><a class="code hl_enumvalue" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490a7c93a8f699b07275ce4e335cd951e6c5">EX_ELEM_SET</a>,</div>

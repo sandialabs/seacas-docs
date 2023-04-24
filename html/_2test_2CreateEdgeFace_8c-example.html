@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_2test_2CreateEdgeFace_8c-example.html
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2020, 2022 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2020, 2022, 2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -221,14 +221,16 @@ $(document).ready(function(){initNavTree('_2test_2CreateEdgeFace_8c-example.html
 <div class="line"><span class="keywordtype">double</span> vals_fset_var1fs1[2][2] = {{1., 3.}, {9., 27.}};</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define EXCHECK(funcall, errmsg)                                                                   \</span></div>
-<div class="line"><span class="preprocessor">  if ((funcall) &lt; 0) {                                                                             \</span></div>
-<div class="line"><span class="preprocessor">    fprintf(stderr, errmsg);                                                                       \</span></div>
-<div class="line"><span class="preprocessor">    free(varParams.edge_var_tab);                                                                  \</span></div>
-<div class="line"><span class="preprocessor">    free(varParams.face_var_tab);                                                                  \</span></div>
-<div class="line"><span class="preprocessor">    free(varParams.elem_var_tab);                                                                  \</span></div>
-<div class="line"><span class="preprocessor">    free(varParams.fset_var_tab);                                                                  \</span></div>
-<div class="line"><span class="preprocessor">    return 1;                                                                                      \</span></div>
-<div class="line"><span class="preprocessor">  }</span></div>
+<div class="line"><span class="preprocessor">  do {                                                                                             \</span></div>
+<div class="line"><span class="preprocessor">    if ((funcall) &lt; 0) {                                                                           \</span></div>
+<div class="line"><span class="preprocessor">      fprintf(stderr, errmsg);                                                                     \</span></div>
+<div class="line"><span class="preprocessor">      free(varParams.edge_var_tab);                                                                \</span></div>
+<div class="line"><span class="preprocessor">      free(varParams.face_var_tab);                                                                \</span></div>
+<div class="line"><span class="preprocessor">      free(varParams.elem_var_tab);                                                                \</span></div>
+<div class="line"><span class="preprocessor">      free(varParams.fset_var_tab);                                                                \</span></div>
+<div class="line"><span class="preprocessor">      return 1;                                                                                    \</span></div>
+<div class="line"><span class="preprocessor">    }                                                                                              \</span></div>
+<div class="line"><span class="preprocessor">  } while (0)</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> ex_have_arg(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[], <span class="keyword">const</span> <span class="keywordtype">char</span> *aname)</div>
 <div class="line">{</div>
