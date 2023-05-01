@@ -17,6 +17,7 @@ var classIOShell_1_1Interface =
     [ "decomp_extra", "classIOShell_1_1Interface.html#ad45ca8d0172e791d2928bdf6ef64c228", null ],
     [ "decomp_method", "classIOShell_1_1Interface.html#a814d5360635bb26392a21c0a99a6c4df", null ],
     [ "delete_timesteps", "classIOShell_1_1Interface.html#a14b0660c39361257f0c2c80d9fc07b71", null ],
+    [ "detect_nans", "classIOShell_1_1Interface.html#ae2961f55acb5eab3aa80e0f467076c6e", null ],
     [ "disable_field_recognition", "classIOShell_1_1Interface.html#aee414edb0a06902e5662b923a30b0a42", null ],
     [ "do_transform_fields", "classIOShell_1_1Interface.html#a9cf155c21c5f3c3edeca035474b5ad1f", null ],
     [ "fieldSuffixSeparator", "classIOShell_1_1Interface.html#a0dd20bf7388c5c19368fafd741d10f86", null ],

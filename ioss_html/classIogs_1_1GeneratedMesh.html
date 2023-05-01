@@ -160,13 +160,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afdd1f7e5035b4b42829fce77ef06572c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0b60cc2dbaa32186909c7614ea0d61a"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIogs_1_1GeneratedMesh.html#ad0b60cc2dbaa32186909c7614ea0d61a">element_count</a> () const</td></tr>
 <tr class="separator:ad0b60cc2dbaa32186909c7614ea0d61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abae3de064c139fd5e2ef017632354d95"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIogs_1_1GeneratedMesh.html#abae3de064c139fd5e2ef017632354d95">element_count_proc</a> () const</td></tr>
+<tr class="memitem:abae3de064c139fd5e2ef017632354d95"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIogs_1_1GeneratedMesh.html#abae3de064c139fd5e2ef017632354d95">element_count_proc</a> () const</td></tr>
 <tr class="separator:abae3de064c139fd5e2ef017632354d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3bc93ece4a71eb15d1335dc873f2884"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIogs_1_1GeneratedMesh.html#aa3bc93ece4a71eb15d1335dc873f2884">timestep_count</a> () const</td></tr>
 <tr class="separator:aa3bc93ece4a71eb15d1335dc873f2884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3adde9f8aa2fe74985b8b37e8bc98417"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIogs_1_1GeneratedMesh.html#a3adde9f8aa2fe74985b8b37e8bc98417">element_count</a> (int64_t block_number) const</td></tr>
 <tr class="separator:a3adde9f8aa2fe74985b8b37e8bc98417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5052b0555f68c663cd9823899c0dd2b0"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIogs_1_1GeneratedMesh.html#a5052b0555f68c663cd9823899c0dd2b0">element_count_proc</a> (int64_t block_number) const</td></tr>
+<tr class="memitem:a5052b0555f68c663cd9823899c0dd2b0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIogs_1_1GeneratedMesh.html#a5052b0555f68c663cd9823899c0dd2b0">element_count_proc</a> (int64_t block_number) const</td></tr>
 <tr class="separator:a5052b0555f68c663cd9823899c0dd2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a783ff0a7d5e96c7e50b2d4e2d3759531"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIogs_1_1GeneratedMesh.html#a783ff0a7d5e96c7e50b2d4e2d3759531">topology_type</a> (int64_t block_number) const</td></tr>
 <tr class="separator:a783ff0a7d5e96c7e50b2d4e2d3759531"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1016,9 +1016,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int64_t Iogs::GeneratedMesh::element_count_proc </td>
@@ -1027,11 +1024,6 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Return number of elements in all structured blocks on this processor. </p>
 
@@ -1042,9 +1034,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int64_t Iogs::GeneratedMesh::element_count_proc </td>
@@ -1054,11 +1043,6 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Return number of elements on this processor in the structured block with id 'block_number'. The 'block_number' ranges from '1' to 'block_count()'. </p>
 

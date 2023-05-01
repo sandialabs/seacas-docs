@@ -238,6 +238,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a48942e443c4c83a30c30167d444bd034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed550ada84092956918c1011949239e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#aed550ada84092956918c1011949239e8">set_logging</a> (bool on_off)</td></tr>
 <tr class="separator:aed550ada84092956918c1011949239e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21660182da8c8a5e1504eeb0fa94cb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#aa21660182da8c8a5e1504eeb0fa94cb7">get_nan_detection</a> () const</td></tr>
+<tr class="separator:aa21660182da8c8a5e1504eeb0fa94cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531fc8cace7d926381ca126ec76e0534"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a531fc8cace7d926381ca126ec76e0534">set_nan_detection</a> (bool on_off)</td></tr>
+<tr class="separator:a531fc8cace7d926381ca126ec76e0534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedf2b3f4a5e779049c507620bd934445"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aedf2b3f4a5e779049c507620bd934445"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#aedf2b3f4a5e779049c507620bd934445">get_field</a> (const T *reg, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const</td></tr>
 <tr class="separator:aedf2b3f4a5e779049c507620bd934445"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -474,6 +478,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:af9c65230f8cba6eddc74ae7a2ccbfd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2d8f1ea9b2fd9f2a85a54b40e809045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ad2d8f1ea9b2fd9f2a85a54b40e809045">compute_block_adjacencies</a> () const</td></tr>
 <tr class="separator:ad2d8f1ea9b2fd9f2a85a54b40e809045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad287197da8ba0cb0f28de49b5c859778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ad287197da8ba0cb0f28de49b5c859778">verify_field_data</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a> *ge, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, <a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">Ioss::Field::InOut</a> in_out, void *data) const</td></tr>
+<tr class="separator:ad287197da8ba0cb0f28de49b5c859778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a618aca6d29316cd72a2af28b9867ac56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a618aca6d29316cd72a2af28b9867ac56">verify_and_log</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a> *ge, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, int in_out) const</td></tr>
 <tr class="separator:a618aca6d29316cd72a2af28b9867ac56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec872641b68e8ff228e5f318424d831c"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#aec872641b68e8ff228e5f318424d831c">get_field_internal</a> (const <a class="el" href="classIoss_1_1Region.html">Region</a> *reg, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
@@ -563,6 +569,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a561fc1406fc4309ea89668da4e0b7678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364e1592a80c9227429bb0be6866b98e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a364e1592a80c9227429bb0be6866b98e">doLogging</a> {false}</td></tr>
 <tr class="separator:a364e1592a80c9227429bb0be6866b98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030a6f7f6e8976ffe41de5c62d904f05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a030a6f7f6e8976ffe41de5c62d904f05">doNanDetection</a> {false}</td></tr>
+<tr class="separator:a030a6f7f6e8976ffe41de5c62d904f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a060c6b928c5684bf23e12ec4d6b15a79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a060c6b928c5684bf23e12ec4d6b15a79">useGenericCanonicalName</a></td></tr>
 <tr class="separator:a060c6b928c5684bf23e12ec4d6b15a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56d169a81de30315f561fae97e8b7ff9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a56d169a81de30315f561fae97e8b7ff9">ignoreDatabaseNames</a> {false}</td></tr>
@@ -3011,6 +3019,31 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="aa21660182da8c8a5e1504eeb0fa94cb7" name="aa21660182da8c8a5e1504eeb0fa94cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21660182da8c8a5e1504eeb0fa94cb7">&#9670;&#160;</a></span>get_nan_detection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::DatabaseIO::get_nan_detection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad8a19a9995d541f47f116b83bacecb76" name="ad8a19a9995d541f47f116b83bacecb76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8a19a9995d541f47f116b83bacecb76">&#9670;&#160;</a></span>get_overlay_count()</h2>
 
@@ -5328,6 +5361,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a531fc8cace7d926381ca126ec76e0534" name="a531fc8cace7d926381ca126ec76e0534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531fc8cace7d926381ca126ec76e0534">&#9670;&#160;</a></span>set_nan_detection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::DatabaseIO::set_nan_detection </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on_off</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a080866da3d76c319db24c1351062f6be" name="a080866da3d76c319db24c1351062f6be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a080866da3d76c319db24c1351062f6be">&#9670;&#160;</a></span>set_overlay_count()</h2>
 
@@ -5640,6 +5699,54 @@ template&lt;typename T &gt; </div>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>in_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad287197da8ba0cb0f28de49b5c859778" name="ad287197da8ba0cb0f28de49b5c859778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad287197da8ba0cb0f28de49b5c859778">&#9670;&#160;</a></span>verify_field_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::DatabaseIO::verify_field_data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a> *&#160;</td>
+          <td class="paramname"><em>ge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">Ioss::Field::InOut</a>&#160;</td>
+          <td class="paramname"><em>in_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -6001,6 +6108,28 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool Ioss::DatabaseIO::doLogging {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a030a6f7f6e8976ffe41de5c62d904f05" name="a030a6f7f6e8976ffe41de5c62d904f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030a6f7f6e8976ffe41de5c62d904f05">&#9670;&#160;</a></span>doNanDetection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::DatabaseIO::doNanDetection {false}</td>
         </tr>
       </table>
   </td>

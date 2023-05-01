@@ -1,5 +1,15 @@
 var NAVTREEINDEX95 =
 {
+"structdoctest_1_1ContextOptions.html#a8c6275483e0d57f1ec012b3ddceaec3a":[3,0,128,8,16],
+"structdoctest_1_1ContextOptions.html#a8cd276e86a209f3d5486eb6c5a2a29bf":[3,0,128,8,9],
+"structdoctest_1_1ContextOptions.html#a8cd276e86a209f3d5486eb6c5a2a29bf":[4,0,77,5,9],
+"structdoctest_1_1ContextOptions.html#a93281aa958eed5c2a1533d404b1ebeff":[3,0,128,8,34],
+"structdoctest_1_1ContextOptions.html#a93281aa958eed5c2a1533d404b1ebeff":[4,0,77,5,34],
+"structdoctest_1_1ContextOptions.html#a9d542a95ee03f61c233fff51e7461400":[3,0,128,8,11],
+"structdoctest_1_1ContextOptions.html#a9d542a95ee03f61c233fff51e7461400":[4,0,77,5,11],
+"structdoctest_1_1ContextOptions.html#a9f26ee60a5259e73f9f25ce3f4883a97":[3,0,128,8,8],
+"structdoctest_1_1ContextOptions.html#a9f26ee60a5259e73f9f25ce3f4883a97":[4,0,77,5,8],
+"structdoctest_1_1ContextOptions.html#aab894e731a6fc86cf095288ec7d0c0f2":[4,0,77,5,10],
 "structdoctest_1_1ContextOptions.html#aab894e731a6fc86cf095288ec7d0c0f2":[3,0,128,8,10],
 "structdoctest_1_1ContextOptions.html#aad35f517c65f792ddc72a672d9014222":[3,0,128,8,24],
 "structdoctest_1_1ContextOptions.html#aad35f517c65f792ddc72a672d9014222":[4,0,77,5,24],
@@ -239,15 +249,5 @@ var NAVTREEINDEX95 =
 "structdoctest_1_1detail_1_1RelationalComparator.html":[4,0,77,0,16],
 "structdoctest_1_1detail_1_1RelationalComparator.html#a51062ad46cd23c982838a0a51df70512":[3,0,128,2,18,0],
 "structdoctest_1_1detail_1_1RelationalComparator.html#a51062ad46cd23c982838a0a51df70512":[4,0,77,0,16,0],
-"structdoctest_1_1detail_1_1Result.html":[3,0,128,2,19],
-"structdoctest_1_1detail_1_1Result.html":[4,0,77,0,17],
-"structdoctest_1_1detail_1_1Result.html#a03ff571186856a429ada967ddfdf3006":[4,0,77,0,17,3],
-"structdoctest_1_1detail_1_1Result.html#a03ff571186856a429ada967ddfdf3006":[3,0,128,2,19,3],
-"structdoctest_1_1detail_1_1Result.html#a97968e037266580a799ab3deb9365b79":[4,0,77,0,17,2],
-"structdoctest_1_1detail_1_1Result.html#a97968e037266580a799ab3deb9365b79":[3,0,128,2,19,2],
-"structdoctest_1_1detail_1_1Result.html#ae38382da1a2d2f8e33aebc7da15febc9":[4,0,77,0,17,0],
-"structdoctest_1_1detail_1_1Result.html#ae38382da1a2d2f8e33aebc7da15febc9":[3,0,128,2,19,0],
-"structdoctest_1_1detail_1_1Result.html#ae4d2e8633aedaffa31f5c8b8530f522c":[4,0,77,0,17,1],
-"structdoctest_1_1detail_1_1Result.html#ae4d2e8633aedaffa31f5c8b8530f522c":[3,0,128,2,19,1],
-"structdoctest_1_1detail_1_1ResultBuilder.html":[4,0,77,0,18]
+"structdoctest_1_1detail_1_1Result.html":[3,0,128,2,19]
 };
