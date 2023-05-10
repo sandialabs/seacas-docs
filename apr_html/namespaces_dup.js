@@ -3,7 +3,7 @@ var namespaces_dup =
     [ "anonymous_namespace{apr_aprepro.cc}", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html", [
       [ "get_value", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a469f5de915567495e6abb171f292b193", null ],
       [ "output_copyright", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ad9ce072d71e737f995472c04521ef52c", null ],
-      [ "version_string", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ac1527f21f00b21b4c88dc471caadaa36", null ]
+      [ "version_string", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a3f238c29108c4e19f0a26d3fc103b480", null ]
     ] ],
     [ "anonymous_namespace{apr_builtin.cc}", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html", [
       [ "get_tokenized_strings", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a3cd7401dde261c7667a5aa5e0bc38df7", null ],

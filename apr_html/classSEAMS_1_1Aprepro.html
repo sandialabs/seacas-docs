@@ -201,6 +201,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afdf2beeaf3e0dbe69269bb1db0277843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81fa3be725377b47666482fd4783133f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a81fa3be725377b47666482fd4783133f">set_error_streams</a> (std::ostream *c_error, std::ostream *c_warning, std::ostream *c_info)</td></tr>
 <tr class="separator:a81fa3be725377b47666482fd4783133f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0d564187e0a552c77196f1e9560462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a0c0d564187e0a552c77196f1e9560462">set_error_streams</a> (std::ostream *c_error, std::ostream *c_warning, std::ostream *c_info, bool close_error, bool close_warning, bool close_info)</td></tr>
+<tr class="separator:a0c0d564187e0a552c77196f1e9560462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdf0d99b2cc6ecf9d59c8ee7f8538bcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#afdf0d99b2cc6ecf9d59c8ee7f8538bcd">dumpsym</a> (const char *type, bool doInternal) const</td></tr>
 <tr class="separator:afdf0d99b2cc6ecf9d59c8ee7f8538bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ef7e22068dcfb877b55f1698490d9f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a1ef7e22068dcfb877b55f1698490d9f7">dumpsym</a> (int type, bool doInternal) const</td></tr>
@@ -237,6 +239,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5b9d51de085bb62b355d588b29074887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a266abdce68ab33552f8fd2370bce16"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classSEAMS_1_1Scanner.html">Scanner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a0a266abdce68ab33552f8fd2370bce16">lexer</a> {nullptr}</td></tr>
 <tr class="separator:a0a266abdce68ab33552f8fd2370bce16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5bb1aed638a5138224d5faddf40bedf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#ab5bb1aed638a5138224d5faddf40bedf">closeInfo</a> {false}</td></tr>
+<tr class="separator:ab5bb1aed638a5138224d5faddf40bedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a222e6d28a093de32e15469cbe876d6db"><td class="memItemLeft" align="right" valign="top">std::ostream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a222e6d28a093de32e15469cbe876d6db">infoStream</a> {&amp;std::cout}</td></tr>
 <tr class="separator:a222e6d28a093de32e15469cbe876d6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19e16ef7b79f877088ec07bf8f212718"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a19e16ef7b79f877088ec07bf8f212718">stateImmutable</a> {false}</td></tr>
@@ -275,6 +279,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1ff0e3b423acfc5c6ae2d0c2b4895009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc097d21991abf4c13e36fa8cca42bed"><td class="memItemLeft" align="right" valign="top">std::ostream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#adc097d21991abf4c13e36fa8cca42bed">warningStream</a> {&amp;std::cerr}</td></tr>
 <tr class="separator:adc097d21991abf4c13e36fa8cca42bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b64fd65bd9b91ae9f7f48037331ed8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a02b64fd65bd9b91ae9f7f48037331ed8">closeError</a> {false}</td></tr>
+<tr class="separator:a02b64fd65bd9b91ae9f7f48037331ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06eb888f614c95c69753d27a7cb1a11c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a06eb888f614c95c69753d27a7cb1a11c">closeWarning</a> {false}</td></tr>
+<tr class="separator:a06eb888f614c95c69753d27a7cb1a11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a337c8c2410d7ad5ddef1eb6593a19132"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structSEAMS_1_1history__data.html">history_data</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a337c8c2410d7ad5ddef1eb6593a19132">history</a> {}</td></tr>
 <tr class="separator:a337c8c2410d7ad5ddef1eb6593a19132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e9a9f2debef2a47851980ba4b4d529b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a3e9a9f2debef2a47851980ba4b4d529b">parseErrorCount</a> {0}</td></tr>
@@ -1303,7 +1311,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a81fa3be725377b47666482fd4783133f" name="a81fa3be725377b47666482fd4783133f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81fa3be725377b47666482fd4783133f">&#9670;&#160;</a></span>set_error_streams()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a81fa3be725377b47666482fd4783133f">&#9670;&#160;</a></span>set_error_streams() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1325,6 +1333,58 @@ Private Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">std::ostream *&#160;</td>
           <td class="paramname"><em>c_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c0d564187e0a552c77196f1e9560462" name="a0c0d564187e0a552c77196f1e9560462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0d564187e0a552c77196f1e9560462">&#9670;&#160;</a></span>set_error_streams() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SEAMS::Aprepro::set_error_streams </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream *&#160;</td>
+          <td class="paramname"><em>c_error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream *&#160;</td>
+          <td class="paramname"><em>c_warning</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream *&#160;</td>
+          <td class="paramname"><em>c_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>close_error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>close_warning</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>close_info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1534,6 +1594,64 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;<a class="el" href="structSEAMS_1_1array.html">array</a> *&gt; SEAMS::Aprepro::array_allocations {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02b64fd65bd9b91ae9f7f48037331ed8" name="a02b64fd65bd9b91ae9f7f48037331ed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b64fd65bd9b91ae9f7f48037331ed8">&#9670;&#160;</a></span>closeError</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SEAMS::Aprepro::closeError {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5bb1aed638a5138224d5faddf40bedf" name="ab5bb1aed638a5138224d5faddf40bedf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5bb1aed638a5138224d5faddf40bedf">&#9670;&#160;</a></span>closeInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SEAMS::Aprepro::closeInfo {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06eb888f614c95c69753d27a7cb1a11c" name="a06eb888f614c95c69753d27a7cb1a11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06eb888f614c95c69753d27a7cb1a11c">&#9670;&#160;</a></span>closeWarning</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SEAMS::Aprepro::closeWarning {false}</td>
         </tr>
       </table>
   </td>
