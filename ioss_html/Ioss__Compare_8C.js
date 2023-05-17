@@ -20,7 +20,7 @@ var Ioss__Compare_8C =
     [ "compare_facesets", "Ioss__Compare_8C.html#af47690297a791f869ad0b6ddda14a1e0", null ],
     [ "compare_field_data", "Ioss__Compare_8C.html#a36edd7a8a033c758c0dae848340506a4", null ],
     [ "compare_field_data", "Ioss__Compare_8C.html#a613bb4b4888f9054e594a5acf02e4d69", null ],
-    [ "compare_field_data", "Ioss__Compare_8C.html#a34e1638d2922718a959ad2941dadddbd", null ],
+    [ "compare_field_data", "Ioss__Compare_8C.html#adf483a035e3d2364b1a698a0bc10c69e", null ],
     [ "compare_field_data_internal", "Ioss__Compare_8C.html#ac2fb98a2852890f803834f218b100902", null ],
     [ "compare_fields", "Ioss__Compare_8C.html#ad7d029eead3033542478cf3475e6d267", null ],
     [ "compare_fields", "Ioss__Compare_8C.html#a527ddd87dd5c89d77aa39c54c13a053f", null ],
@@ -30,5 +30,8 @@ var Ioss__Compare_8C =
     [ "compare_qa_info", "Ioss__Compare_8C.html#aaa8bd9d3339ff5cd05bce8997470a2d9", null ],
     [ "compare_sets", "Ioss__Compare_8C.html#a25e1cc30e0377fcf00b65548d6cc6f2b", null ],
     [ "compare_sidesets", "Ioss__Compare_8C.html#a83236593ca23f20fc36ed68c378d7a93", null ],
-    [ "compare_structuredblocks", "Ioss__Compare_8C.html#a6b13664b634bb9cb1ace55b3d4232708", null ]
+    [ "compare_structuredblocks", "Ioss__Compare_8C.html#a6b13664b634bb9cb1ace55b3d4232708", null ],
+    [ "abs_tolerance", "Ioss__Compare_8C.html#a2278749d5403e79a9cb5279391264bf3", null ],
+    [ "rel_tolerance", "Ioss__Compare_8C.html#afe29abd0985d30b1d10a2f475db5f5ff", null ],
+    [ "tol_floor", "Ioss__Compare_8C.html#a7ba4f0d14bf6cb1e964f554f6efc6a6e", null ]
 ];

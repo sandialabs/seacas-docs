@@ -148,6 +148,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac2e198f4889ee580ae0515615c062e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba99b9eafd33df10d19b68be0d8019f0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOShell_1_1Interface.html#aba99b9eafd33df10d19b68be0d8019f0">timestep_delay</a> {0.0}</td></tr>
 <tr class="separator:aba99b9eafd33df10d19b68be0d8019f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c8cdc4ee393685460b351bdfa79b48"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOShell_1_1Interface.html#a34c8cdc4ee393685460b351bdfa79b48">rel_tolerance</a> {0.0}</td></tr>
+<tr class="separator:a34c8cdc4ee393685460b351bdfa79b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eefb2ed30b07125a19ce0237bffd06e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOShell_1_1Interface.html#a9eefb2ed30b07125a19ce0237bffd06e">abs_tolerance</a> {0.0}</td></tr>
+<tr class="separator:a9eefb2ed30b07125a19ce0237bffd06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64da87da210e71d8ce5bd3a0041c12f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOShell_1_1Interface.html#aa64da87da210e71d8ce5bd3a0041c12f">tol_floor</a> {0.0}</td></tr>
+<tr class="separator:aa64da87da210e71d8ce5bd3a0041c12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affeb223fb335f2b1d8aa9560e7ede37a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOShell_1_1Interface.html#affeb223fb335f2b1d8aa9560e7ede37a">append_step</a> {std::numeric_limits&lt;int&gt;::max()}</td></tr>
 <tr class="separator:affeb223fb335f2b1d8aa9560e7ede37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f2736a290e6c99b4a17b5ec8940b1f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOShell_1_1Interface.html#a6f2736a290e6c99b4a17b5ec8940b1f0">surface_split_type</a> {-1}</td></tr>
@@ -332,6 +338,20 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9eefb2ed30b07125a19ce0237bffd06e" name="a9eefb2ed30b07125a19ce0237bffd06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eefb2ed30b07125a19ce0237bffd06e">&#9670;&#160;</a></span>abs_tolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double IOShell::Interface::abs_tolerance {0.0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae437523a13f49ee960e451f9d932f761" name="ae437523a13f49ee960e451f9d932f761"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae437523a13f49ee960e451f9d932f761">&#9670;&#160;</a></span>add_processor_id_field</h2>
 
@@ -878,6 +898,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a34c8cdc4ee393685460b351bdfa79b48" name="a34c8cdc4ee393685460b351bdfa79b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c8cdc4ee393685460b351bdfa79b48">&#9670;&#160;</a></span>rel_tolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double IOShell::Interface::rel_tolerance {0.0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa08b5cb260f2f9ea0d1f1b3c89bacda8" name="aa08b5cb260f2f9ea0d1f1b3c89bacda8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa08b5cb260f2f9ea0d1f1b3c89bacda8">&#9670;&#160;</a></span>retain_empty_blocks</h2>
 
@@ -1031,6 +1065,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">double IOShell::Interface::timestep_delay {0.0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa64da87da210e71d8ce5bd3a0041c12f" name="aa64da87da210e71d8ce5bd3a0041c12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa64da87da210e71d8ce5bd3a0041c12f">&#9670;&#160;</a></span>tol_floor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double IOShell::Interface::tol_floor {0.0}</td>
         </tr>
       </table>
 </div><div class="memdoc">

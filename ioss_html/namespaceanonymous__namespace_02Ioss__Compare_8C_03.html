@@ -90,7 +90,8 @@ $(document).ready(function(){initNavTree('namespaceanonymous__namespace_02Ioss__
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">anonymous_namespace{Ioss_Compare.C} Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -143,9 +144,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a25e1cc30e0377fcf00b65548d6cc6f2b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a25e1cc30e0377fcf00b65548d6cc6f2b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a25e1cc30e0377fcf00b65548d6cc6f2b">compare_sets</a> (const std::vector&lt; T * &gt; &amp;in_sets_1, const std::vector&lt; T * &gt; &amp;in_sets_const_2, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;, std::ostringstream &amp;)</td></tr>
 <tr class="separator:a25e1cc30e0377fcf00b65548d6cc6f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e1638d2922718a959ad2941dadddbd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a34e1638d2922718a959ad2941dadddbd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a34e1638d2922718a959ad2941dadddbd">compare_field_data</a> (T *data1, T *data2, size_t count, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;field_name, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;entity_name, std::ostringstream &amp;buf)</td></tr>
-<tr class="separator:a34e1638d2922718a959ad2941dadddbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf483a035e3d2364b1a698a0bc10c69e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adf483a035e3d2364b1a698a0bc10c69e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#adf483a035e3d2364b1a698a0bc10c69e">compare_field_data</a> (T *data1, T *data2, size_t count, size_t component_count, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;field_name, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;entity_name, std::ostringstream &amp;buf)</td></tr>
+<tr class="separator:adf483a035e3d2364b1a698a0bc10c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afe29abd0985d30b1d10a2f475db5f5ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#afe29abd0985d30b1d10a2f475db5f5ff">rel_tolerance</a> = 0.0</td></tr>
+<tr class="separator:afe29abd0985d30b1d10a2f475db5f5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2278749d5403e79a9cb5279391264bf3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a2278749d5403e79a9cb5279391264bf3">abs_tolerance</a> = 0.0</td></tr>
+<tr class="separator:a2278749d5403e79a9cb5279391264bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba4f0d14bf6cb1e964f554f6efc6a6e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a7ba4f0d14bf6cb1e964f554f6efc6a6e">tol_floor</a> = 0.0</td></tr>
+<tr class="separator:a7ba4f0d14bf6cb1e964f554f6efc6a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a6a20cc01572fb7e286ec345eb55bd07b" name="a6a20cc01572fb7e286ec345eb55bd07b"></a>
@@ -622,8 +632,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a34e1638d2922718a959ad2941dadddbd" name="a34e1638d2922718a959ad2941dadddbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34e1638d2922718a959ad2941dadddbd">&#9670;&#160;</a></span>compare_field_data() <span class="overload">[3/3]</span></h2>
+<a id="adf483a035e3d2364b1a698a0bc10c69e" name="adf483a035e3d2364b1a698a0bc10c69e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf483a035e3d2364b1a698a0bc10c69e">&#9670;&#160;</a></span>compare_field_data() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -647,6 +657,12 @@ template&lt;typename T &gt; </div>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>component_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1074,6 +1090,49 @@ template&lt;typename T &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2278749d5403e79a9cb5279391264bf3" name="a2278749d5403e79a9cb5279391264bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2278749d5403e79a9cb5279391264bf3">&#9670;&#160;</a></span>abs_tolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anonymous_namespace{Ioss_Compare.C}::abs_tolerance = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe29abd0985d30b1d10a2f475db5f5ff" name="afe29abd0985d30b1d10a2f475db5f5ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe29abd0985d30b1d10a2f475db5f5ff">&#9670;&#160;</a></span>rel_tolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anonymous_namespace{Ioss_Compare.C}::rel_tolerance = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ba4f0d14bf6cb1e964f554f6efc6a6e" name="a7ba4f0d14bf6cb1e964f554f6efc6a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba4f0d14bf6cb1e964f554f6efc6a6e">&#9670;&#160;</a></span>tol_floor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anonymous_namespace{Ioss_Compare.C}::tol_floor = 0.0</td>
         </tr>
       </table>
 </div><div class="memdoc">

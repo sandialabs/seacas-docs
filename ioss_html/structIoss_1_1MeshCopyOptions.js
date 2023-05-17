@@ -1,5 +1,6 @@
 var structIoss_1_1MeshCopyOptions =
 [
+    [ "abs_tolerance", "structIoss_1_1MeshCopyOptions.html#a22f654fcb0ecb78c27e284d9254c451f", null ],
     [ "add_proc_id", "structIoss_1_1MeshCopyOptions.html#aaffb05734d481e9d95a04a71fd5bdeb7", null ],
     [ "boundary_sideset", "structIoss_1_1MeshCopyOptions.html#a5613f3c4b0754ce9ac6a8efb21ca98a5", null ],
     [ "data_storage_type", "structIoss_1_1MeshCopyOptions.html#adbf836dfcb40005e91e022f3631d4cdd", null ],
@@ -13,7 +14,9 @@ var structIoss_1_1MeshCopyOptions =
     [ "memory_statistics", "structIoss_1_1MeshCopyOptions.html#aa0fe21d58fece15a33366f5b39414ff7", null ],
     [ "minimum_time", "structIoss_1_1MeshCopyOptions.html#a58e5e3cf2b8d91fed8e31a0ccc6c7a17", null ],
     [ "output_summary", "structIoss_1_1MeshCopyOptions.html#aa12a83de10e5485f252d827040f74226", null ],
+    [ "rel_tolerance", "structIoss_1_1MeshCopyOptions.html#ab01c2f567590661271f500d2903023df", null ],
     [ "reverse", "structIoss_1_1MeshCopyOptions.html#a5cd2a4b3cce1d898aaa16ebefbf363b1", null ],
     [ "selected_times", "structIoss_1_1MeshCopyOptions.html#a520f814ef5b792a1d4dc2e93882ea82b", null ],
+    [ "tol_floor", "structIoss_1_1MeshCopyOptions.html#a61adfc71a8b58855e8f63bf1ba85196a", null ],
     [ "verbose", "structIoss_1_1MeshCopyOptions.html#aaf51f54f274e24589adecac085e30d4e", null ]
 ];
