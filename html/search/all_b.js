@@ -1,7 +1,7 @@
 var searchData=
 [
   ['magic_5fnumber_5flen_0',['MAGIC_NUMBER_LEN',['../ex__utils_8c.html#ac9417fa0bdbbdb8ed8ab47ef644a4097',1,'ex_utils.c']]],
-  ['mapping_20of_20nemesis_20api_20functions_20to_20exodus_20api_20functions_1',['Mapping of nemesis API functions to Exodus API functions',['../md_include_nemesis_to_exodus_api_mapping.html',1,'']]],
+  ['mapping_20of_20nemesis_20api_20functions_20to_20exodus_20api_20functions_1',['Mapping of nemesis API functions to Exodus API functions',['../nemesis-mapping.html',1,'']]],
   ['max_5ferr_5flength_2',['MAX_ERR_LENGTH',['../group__StringLengths.html#ga3e81d99126d7d910227927550fc32288',1,'exodusII.h']]],
   ['max_5fline_5flength_3',['MAX_LINE_LENGTH',['../group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2',1,'exodusII.h']]],
   ['max_5fname_5flength_4',['MAX_NAME_LENGTH',['../group__StringLengths.html#ga0c397a708cec89c74029582574516b30',1,'exodusII.h']]],

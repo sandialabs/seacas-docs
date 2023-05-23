@@ -1,7 +1,5 @@
 var NAVTREEINDEX74 =
 {
-"doctest_8h.html#aa1809c66cb75c89b5c07afba26f1bf46":[5,0,0,20,403],
-"doctest_8h.html#aa1b8f66e23790ed5d9643075197eaf5f":[5,0,0,20,437],
 "doctest_8h.html#aa25a354bc0f83e31ec1184eff29ec0d9":[5,0,0,20,169],
 "doctest_8h.html#aa30247b5e1a6e192c486364692e37832":[5,0,0,20,426],
 "doctest_8h.html#aa32aa864d1d9c8d04ec8b27a202f679a":[5,0,0,20,147],
@@ -249,5 +247,7 @@ var NAVTREEINDEX74 =
 "functions_eval.html":[4,3,5],
 "functions_f.html":[4,3,0,5],
 "functions_func.html":[4,3,1,0],
-"functions_func.html":[4,3,1]
+"functions_func.html":[4,3,1],
+"functions_func_b.html":[4,3,1,1],
+"functions_func_c.html":[4,3,1,2]
 };

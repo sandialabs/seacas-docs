@@ -26,43 +26,43 @@ var NAVTREE =
 [
   [ "Exodus", "index.html", [
     [ "Exodus API Documentation", "index.html", "index" ],
-    [ "Exodus Element Types", "md_include_exodus_element_types.html", [
-      [ "Element Types", "md_include_exodus_element_types.html#types", null ],
-      [ "Exodus Node Ordering Convention", "md_include_exodus_element_types.html#ordering", null ],
-      [ "Circle and Sphere", "md_include_exodus_element_types.html#circle", null ],
-      [ "Bar, Truss, Beam", "md_include_exodus_element_types.html#bar", null ],
-      [ "Triangular", "md_include_exodus_element_types.html#tri", null ],
-      [ "Quadrilateral", "md_include_exodus_element_types.html#quad", null ],
-      [ "Tetrahedral", "md_include_exodus_element_types.html#tet", null ],
-      [ "Pyramidal", "md_include_exodus_element_types.html#pyr", null ],
-      [ "Wedge", "md_include_exodus_element_types.html#wedge", null ],
-      [ "Hexahedral", "md_include_exodus_element_types.html#hex", null ]
+    [ "Exodus Element Types", "element_types.html", [
+      [ "Element Types", "element_types.html#types", null ],
+      [ "Exodus Node Ordering Convention", "element_types.html#ordering", null ],
+      [ "Circle and Sphere", "element_types.html#circle", null ],
+      [ "Bar, Truss, Beam", "element_types.html#bar", null ],
+      [ "Triangular", "element_types.html#tri", null ],
+      [ "Quadrilateral", "element_types.html#quad", null ],
+      [ "Tetrahedral", "element_types.html#tet", null ],
+      [ "Pyramidal", "element_types.html#pyr", null ],
+      [ "Wedge", "element_types.html#wedge", null ],
+      [ "Hexahedral", "element_types.html#hex", null ]
     ] ],
-    [ "Exodus Formats", "md_include_Exodus_Formats.html", [
-      [ "Large Model (64-bit offset)", "md_include_Exodus_Formats.html#large", null ],
-      [ "Normal, or Classic", "md_include_Exodus_Formats.html#normal", null ],
-      [ "Netcdf-4 Classic", "md_include_Exodus_Formats.html#nc4", null ],
-      [ "Netcdf-4 Non-Classic", "md_include_Exodus_Formats.html#nc4nc", null ],
-      [ "CDF5", "md_include_Exodus_Formats.html#cdf5", null ]
+    [ "Exodus Formats", "exodus_formats.html", [
+      [ "Large Model (64-bit offset)", "exodus_formats.html#large", null ],
+      [ "Normal, or Classic", "exodus_formats.html#normal", null ],
+      [ "Netcdf-4 Classic", "exodus_formats.html#nc4", null ],
+      [ "Netcdf-4 Non-Classic", "exodus_formats.html#nc4nc", null ],
+      [ "CDF5", "exodus_formats.html#cdf5", null ]
     ] ],
-    [ "Large model modifications to the Exodus library", "md_include_ExodusLargeModel.html", [
-      [ "Large model modifications to the Exodus library", "md_include_ExodusLargeModel.html#large_model_", null ],
-      [ "ex_create():", "md_include_ExodusLargeModel.html#ex_create", null ],
-      [ "ex_put_init():", "md_include_ExodusLargeModel.html#ex_put_init", null ],
-      [ "ex_put_coord():", "md_include_ExodusLargeModel.html#ex_put_coord", null ],
-      [ "ex_put_nodal_var():", "md_include_ExodusLargeModel.html#ex_put_nodal_var", null ]
+    [ "Large model modifications to the Exodus library", "large_model.html", [
+      [ "Large model modifications to the Exodus library", "large_model.html#large_model_", null ],
+      [ "ex_create():", "large_model.html#ex_create", null ],
+      [ "ex_put_init():", "large_model.html#ex_put_init", null ],
+      [ "ex_put_coord():", "large_model.html#ex_put_coord", null ],
+      [ "ex_put_nodal_var():", "large_model.html#ex_put_nodal_var", null ]
     ] ],
-    [ "Mapping of nemesis API functions to Exodus API functions", "md_include_nemesis_to_exodus_api_mapping.html", [
-      [ "Initial Information Routines", "md_include_nemesis_to_exodus_api_mapping.html#initial", null ],
-      [ "Loadbalance Parameter Routines", "md_include_nemesis_to_exodus_api_mapping.html#lb", null ],
-      [ "Nodeset, Sideset & Element Block Global Parameter Routines", "md_include_nemesis_to_exodus_api_mapping.html#param", null ],
-      [ "Nodeset, Sideset & Element Block Subset Routines", "md_include_nemesis_to_exodus_api_mapping.html#subset", null ],
-      [ "Variable Routines", "md_include_nemesis_to_exodus_api_mapping.html#variable", null ],
-      [ "Number Map Routines", "md_include_nemesis_to_exodus_api_mapping.html#map", null ],
-      [ "Communications Maps Routines", "md_include_nemesis_to_exodus_api_mapping.html#comm", null ]
+    [ "Mapping of nemesis API functions to Exodus API functions", "nemesis-mapping.html", [
+      [ "Initial Information Routines", "nemesis-mapping.html#initial", null ],
+      [ "Loadbalance Parameter Routines", "nemesis-mapping.html#lb", null ],
+      [ "Nodeset, Sideset & Element Block Global Parameter Routines", "nemesis-mapping.html#param", null ],
+      [ "Nodeset, Sideset & Element Block Subset Routines", "nemesis-mapping.html#subset", null ],
+      [ "Variable Routines", "nemesis-mapping.html#variable", null ],
+      [ "Number Map Routines", "nemesis-mapping.html#map", null ],
+      [ "Communications Maps Routines", "nemesis-mapping.html#comm", null ]
     ] ],
-    [ "Polyhedral Element Support", "md_include_polyhedra.html", [
-      [ "Storage of 3D arbitrary polyhedra elements in Exodus.", "md_include_polyhedra.html#poly", null ]
+    [ "Polyhedral Element Support", "polyhedra.html", [
+      [ "Storage of 3D arbitrary polyhedra elements in Exodus.", "polyhedra.html#poly", null ]
     ] ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Undocumented", "undoc.html", null ],
@@ -94,13 +94,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_2exodus_for_2test_2test_nem_8f-example.html",
-"ex__get__partial__node__set_8c.html",
-"ex__put__side__set__param_8c.html#a45bd6771e89c2beb1d56e6a80ac9c7ff",
-"exo__jack_8c.html#a29e332a05bfc2da36a915c1b34c485ec",
-"exodusII_8h.html#a9bc38e18c82866515ddc4041dcf21ba5",
-"group__FileVars.html#ga4c9d2f948dec1720393a9c24850656ee",
-"group__Internal.html#gaa89cbebe05d8410a0fee455b5ccf12d4",
-"group__ModelDescription.html#gad30901557b051888e64db80524838a90",
+"ex__get__partial__elem__conn_8c.html#a56e25a263ec362ff67c99fee630e6680",
+"ex__put__reduction__vars_8c.html",
+"exo__jack_8c.html#a1b58cbb1440ceb0ec2586346ecae2520",
+"exodusII_8h.html#a90130942d7848cc0aec33da2931625e8",
+"group__FileOptions.html#gga74ed4d0f70c2a2e257a7d57289d15668aab24c7e8887ba97fe7465a07f135f7ef",
+"group__Internal.html#ga94c35e8660461efcd1aee51c8dbb4908",
+"group__ModelDescription.html#gaac433b5f2541520f68a9d303fa232228",
 "structex____obj__stats.html#ae8c3a54c8acafa85c97e9e1b7e975833"
 ];
 

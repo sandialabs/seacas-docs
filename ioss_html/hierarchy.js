@@ -13,7 +13,6 @@ var hierarchy =
     [ "Iotm::unit_test::AssemblyTreeGraph", "classIotm_1_1unit__test_1_1AssemblyTreeGraph.html", null ],
     [ "Ioss::Assert", "structIoss_1_1Assert.html", null ],
     [ "Ioss::assert_context", "classIoss_1_1assert__context.html", null ],
-    [ "anonymous_namespace{Ioss_SmartAssert.C}::assert_initializer", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer.html", null ],
     [ "doctest::AssertData", "structdoctest_1_1AssertData.html", [
       [ "doctest::detail::ResultBuilder", "structdoctest_1_1detail_1_1ResultBuilder.html", null ]
     ] ],

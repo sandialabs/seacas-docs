@@ -121,7 +121,6 @@ var annotated_dup =
       [ "Constants", "structanonymous__namespace_02Ioss__ShellLine2D3_8C_03_1_1Constants.html", "structanonymous__namespace_02Ioss__ShellLine2D3_8C_03_1_1Constants" ]
     ] ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}", "namespaceanonymous__namespace_02Ioss__SmartAssert_8C_03.html", [
-      [ "assert_initializer", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer.html", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1assert__initializer" ],
       [ "stream_holder", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder.html", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder" ]
     ] ],
     [ "anonymous_namespace{Ioss_Sphere.C}", "namespaceanonymous__namespace_02Ioss__Sphere_8C_03.html", [
