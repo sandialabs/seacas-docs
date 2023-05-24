@@ -72,11 +72,11 @@ assemblies, blobs, and other cleanups.
 **Large File**
   Documentation of the modifications needed to use the "large-file"
   modifications which permit storage of models with more than ~30
-  million elements is found in `Large Model <../../html/md_include_ExodusLargeModel.html>`_
+  million elements is found in `Large Model <../../html/large_model.html>`_
 
 **Polyhedral elements** 
   The documentation for this is in `Polyhedral Element Storage
-  <../../html/md_include_polyhedra.html>`_
+  <../../html/polyhedra.html>`_
   
 **Long Names** 
   The API now supports names longer (or shorter) than 32
@@ -89,7 +89,7 @@ assemblies, blobs, and other cleanups.
   cases, the name of the exodus function is the same as the original
   nemesis function except that the leading ``ne_`` has been replaced
   with ``ex_``.  There are a few exceptions.  See `Nemesis API Mapping
-  <../../html/md_include_nemesis_to_exodus_api_mapping.html>`_ for a complete list of
+  <../../html/nemesis-mapping.html>`_ for a complete list of
   functions.
 
 **Extensions**
