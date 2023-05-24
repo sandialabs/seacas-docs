@@ -55,7 +55,7 @@ assemblies, blobs, and other cleanups.
 
 **Element Types**
   A list of all element types supported by Exodus (and `IOSS Library`_) is
-  provided in `Exodus Element Types <../../html/md_include_exodus_element_types.html>`_
+  provided in `Exodus Element Types <../../html/element_types.html>`_
 
 **Full Model Topology**
   The API has also been modified to store the full model topology
