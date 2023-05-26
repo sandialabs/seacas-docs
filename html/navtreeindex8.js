@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"structex____obj__stats.html#ad8ffd49df17926dff061bfa6c097c8a5":[8,8,4,7],
 "structex____obj__stats.html#ae8c3a54c8acafa85c97e9e1b7e975833":[8,8,4,1],
 "structex__assembly.html":[8,6,3],
 "structex__assembly.html#a406cbc6929fe760f0e30431c053a95c0":[8,6,3,1],

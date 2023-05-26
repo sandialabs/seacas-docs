@@ -183,6 +183,7 @@ var NAVTREEINDEX1 =
 "ex__put__n__side__set__df_8c.html#a9b720407d850ce3ae8b8037515cf6826":[10,0,2,0,85,0],
 "ex__put__n__var_8c.html":[10,0,2,0,86],
 "ex__put__name_8c.html":[10,0,2,135],
+"ex__put__name_8c.html#ad95aa4cacc8bd564abc7a0b918440c84":[10,0,2,135,0],
 "ex__put__names_8c.html":[10,0,2,136],
 "ex__put__nodal__var_8c.html":[10,0,2,137],
 "ex__put__nodal__var_8c.html#a295aba6f56b209f0a8d5c2208a3bbc39":[10,0,2,137,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "ex__put__qa_8c.html":[10,0,2,160],
 "ex__put__reduction__variable__name_8c.html":[10,0,2,161],
 "ex__put__reduction__variable__names_8c.html":[10,0,2,162],
-"ex__put__reduction__variable__names_8c.html#a46380d4fa1b7976542d6f63f6e183756":[10,0,2,162,1],
-"ex__put__reduction__variable__param_8c.html":[10,0,2,163]
+"ex__put__reduction__variable__names_8c.html#a46380d4fa1b7976542d6f63f6e183756":[10,0,2,162,1]
 };
