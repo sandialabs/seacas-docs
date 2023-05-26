@@ -323,6 +323,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ab1b957c32a77b45cb04263dc482f3057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0275f41f7fc0bfb5ea0d3287b086a25"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1FaceBlock.html#ab0275f41f7fc0bfb5ea0d3287b086a25">internal_put_field_data</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const override</td></tr>
 <tr class="separator:ab0275f41f7fc0bfb5ea0d3287b086a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ace68f7e775e5a75565d95345c2239"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1FaceBlock.html#ae4ace68f7e775e5a75565d95345c2239">internal_get_zc_field_data</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const override</td></tr>
+<tr class="separator:ae4ace68f7e775e5a75565d95345c2239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classIoss_1_1EntityBlock"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classIoss_1_1EntityBlock')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a></td></tr>
 <tr class="memitem:ad7c43e4da16a491558fc0302ba3c2b7b inherit pro_methods_classIoss_1_1EntityBlock"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1EntityBlock.html#ad7c43e4da16a491558fc0302ba3c2b7b">EntityBlock</a> (<a class="el" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> *io_database, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;my_name, const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;entity_type, size_t entity_cnt)</td></tr>
 <tr class="memdesc:ad7c43e4da16a491558fc0302ba3c2b7b inherit pro_methods_classIoss_1_1EntityBlock"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor adds "name" and "entity_count" properties to the entity and specifies the topology type for the entity block.  <br /></td></tr>
@@ -345,8 +347,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a10d928049d7663eae3e3af47efb00654 inherit pro_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f5d067d20febccdca9235fbf382a2de inherit pro_methods_classIoss_1_1GroupingEntity"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#a8f5d067d20febccdca9235fbf382a2de">internal_put_field_data</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size=0) const =0</td></tr>
 <tr class="separator:a8f5d067d20febccdca9235fbf382a2de inherit pro_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a94079d670c012ebdb683e068a9e12 inherit pro_methods_classIoss_1_1GroupingEntity"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#ab3a94079d670c012ebdb683e068a9e12">internal_get_zc_field_data</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
-<tr class="separator:ab3a94079d670c012ebdb683e068a9e12 inherit pro_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0edbc79df411714206c618a029e972e inherit pro_methods_classIoss_1_1GroupingEntity"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#af0edbc79df411714206c618a029e972e">internal_get_zc_field_data</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const =0</td></tr>
+<tr class="separator:af0edbc79df411714206c618a029e972e inherit pro_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a615085bd3df7fc437e4401584d3f5673 inherit pro_methods_classIoss_1_1GroupingEntity"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#a615085bd3df7fc437e4401584d3f5673">equal_</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a> &amp;rhs, const bool quiet) const</td></tr>
 <tr class="separator:a615085bd3df7fc437e4401584d3f5673 inherit pro_methods_classIoss_1_1GroupingEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -573,6 +575,50 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classIoss_1_1GroupingEntity.html#a10d928049d7663eae3e3af47efb00654">Ioss::GroupingEntity</a>.</p>
+
+</div>
+</div>
+<a id="ae4ace68f7e775e5a75565d95345c2239" name="ae4ace68f7e775e5a75565d95345c2239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ace68f7e775e5a75565d95345c2239">&#9670;&#160;</a></span>internal_get_zc_field_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::FaceBlock::internal_get_zc_field_data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classIoss_1_1GroupingEntity.html#af0edbc79df411714206c618a029e972e">Ioss::GroupingEntity</a>.</p>
 
 </div>
 </div>

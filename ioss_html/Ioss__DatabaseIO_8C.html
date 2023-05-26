@@ -98,26 +98,12 @@ $(document).ready(function(){initNavTree('Ioss__DatabaseIO_8C.html',''); initRes
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="Ioss__BoundingBox_8h_source.html">Ioss_BoundingBox.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Ioss__CodeTypes_8h_source.html">Ioss_CodeTypes.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__CommSet_8h_source.html">Ioss_CommSet.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__DBUsage_8h_source.html">Ioss_DBUsage.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__DatabaseIO_8h_source.html">Ioss_DatabaseIO.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Ioss__ElementTopology_8h_source.html">Ioss_ElementTopology.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__EntityBlock_8h_source.html">Ioss_EntityBlock.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__Field_8h_source.html">Ioss_Field.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Ioss__FileInfo_8h_source.html">Ioss_FileInfo.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__GroupingEntity_8h_source.html">Ioss_GroupingEntity.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__NodeBlock_8h_source.html">Ioss_NodeBlock.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Ioss__ParallelUtils_8h_source.html">Ioss_ParallelUtils.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__Property_8h_source.html">Ioss_Property.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__Region_8h_source.html">Ioss_Region.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__SerializeIO_8h_source.html">Ioss_SerializeIO.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__SideBlock_8h_source.html">Ioss_SideBlock.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__SideSet_8h_source.html">Ioss_SideSet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Ioss__Sort_8h_source.html">Ioss_Sort.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Ioss__State_8h_source.html">Ioss_State.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__StructuredBlock_8h_source.html">Ioss_StructuredBlock.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__SurfaceSplit_8h_source.html">Ioss_SurfaceSplit.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Ioss__Utils_8h_source.html">Ioss_Utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Ioss__SubSystem_8h_source.html">Ioss_SubSystem.h</a>&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cfloat&gt;</code><br />
@@ -164,6 +150,9 @@ Functions</h2></td></tr>
 <tr class="separator:acb8182b7e1a171e2d1a8402a7f282529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0339a01eb797b5ee7289a393cb2814cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a0339a01eb797b5ee7289a393cb2814cc">anonymous_namespace{Ioss_DatabaseIO.C}::calc_bounding_box</a> (size_t ndim, size_t node_count, std::vector&lt; double &gt; &amp;coordinates, double &amp;xmin, double &amp;ymin, double &amp;zmin, double &amp;xmax, double &amp;ymax, double &amp;zmax)</td></tr>
 <tr class="separator:a0339a01eb797b5ee7289a393cb2814cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0b70554daa960e6a7bcc5ad42940e5"><td class="memTemplParams" colspan="2">template&lt;typename ENTITY &gt; </td></tr>
+<tr class="memitem:a3e0b70554daa960e6a7bcc5ad42940e5"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a3e0b70554daa960e6a7bcc5ad42940e5">anonymous_namespace{Ioss_DatabaseIO.C}::zero_copy_not_enabled</a> (const ENTITY *entity, const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, const <a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *db)</td></tr>
+<tr class="separator:a3e0b70554daa960e6a7bcc5ad42940e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

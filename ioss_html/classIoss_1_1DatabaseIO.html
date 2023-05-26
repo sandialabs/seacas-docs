@@ -248,6 +248,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af3241b32b369d4cb5b749891eb0c6a29"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af3241b32b369d4cb5b749891eb0c6a29"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#af3241b32b369d4cb5b749891eb0c6a29">put_field</a> (const T *reg, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const</td></tr>
 <tr class="separator:af3241b32b369d4cb5b749891eb0c6a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe3b7c18b71095a001bdb3f437f02ef"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7fe3b7c18b71095a001bdb3f437f02ef"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a7fe3b7c18b71095a001bdb3f437f02ef">get_zc_field</a> (const T *reg, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:a7fe3b7c18b71095a001bdb3f437f02ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b5eac4575eb2e8585dc09df3c09833"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a09b5eac4575eb2e8585dc09df3c09833">is_parallel_consistent</a> () const</td></tr>
 <tr class="separator:a09b5eac4575eb2e8585dc09df3c09833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a1d498ef146eb2997c63a3475f08ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a55a1d498ef146eb2997c63a3475f08ef">set_parallel_consistency</a> (bool on_off)</td></tr>
@@ -506,12 +509,12 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a0efddd17881f772fbbb433c727fd2268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a56becb7604898202373504a63a711"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a99a56becb7604898202373504a63a711">get_field_internal</a> (const <a class="el" href="classIoss_1_1CommSet.html">CommSet</a> *cs, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
 <tr class="separator:a99a56becb7604898202373504a63a711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac18acc3dbcc3600139284714556c285b"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ac18acc3dbcc3600139284714556c285b">get_field_internal</a> (const <a class="el" href="classIoss_1_1Assembly.html">Assembly</a> *, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;, void *, size_t) const =0</td></tr>
-<tr class="separator:ac18acc3dbcc3600139284714556c285b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cf5df9d1c32d613c75d8db77bd8bd0b"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a1cf5df9d1c32d613c75d8db77bd8bd0b">get_field_internal</a> (const <a class="el" href="classIoss_1_1Blob.html">Blob</a> *, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;, void *, size_t) const =0</td></tr>
-<tr class="separator:a1cf5df9d1c32d613c75d8db77bd8bd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0661089dede984eb835a061dea2bd5"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a4a0661089dede984eb835a061dea2bd5">get_field_internal</a> (const <a class="el" href="classIoss_1_1StructuredBlock.html">StructuredBlock</a> *, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;, void *, size_t) const =0</td></tr>
-<tr class="separator:a4a0661089dede984eb835a061dea2bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda55adb8137e6e7d46d38904e5ba997"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#adda55adb8137e6e7d46d38904e5ba997">get_field_internal</a> (const <a class="el" href="classIoss_1_1Assembly.html">Assembly</a> *as, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
+<tr class="separator:adda55adb8137e6e7d46d38904e5ba997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120fb5940a221a46cda5e15fc06884f6"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a120fb5940a221a46cda5e15fc06884f6">get_field_internal</a> (const <a class="el" href="classIoss_1_1Blob.html">Blob</a> *bl, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
+<tr class="separator:a120fb5940a221a46cda5e15fc06884f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78233ed943eeb9f2eabea786b811affe"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a78233ed943eeb9f2eabea786b811affe">get_field_internal</a> (const <a class="el" href="classIoss_1_1StructuredBlock.html">StructuredBlock</a> *sb, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
+<tr class="separator:a78233ed943eeb9f2eabea786b811affe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ca44c5ea33ebf21a324b3d89e46e5e0"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a2ca44c5ea33ebf21a324b3d89e46e5e0">put_field_internal</a> (const <a class="el" href="classIoss_1_1Region.html">Region</a> *reg, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
 <tr class="separator:a2ca44c5ea33ebf21a324b3d89e46e5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a947acc0cabfcde288800ba9a3f66a16e"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a947acc0cabfcde288800ba9a3f66a16e">put_field_internal</a> (const <a class="el" href="classIoss_1_1NodeBlock.html">NodeBlock</a> *nb, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
@@ -536,12 +539,42 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a511248e250602ca772ab9b4c32c6190c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9384e5b9f0ac96cef9c156b0ed4dbf7b"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a9384e5b9f0ac96cef9c156b0ed4dbf7b">put_field_internal</a> (const <a class="el" href="classIoss_1_1CommSet.html">CommSet</a> *cs, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
 <tr class="separator:a9384e5b9f0ac96cef9c156b0ed4dbf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3797326cba696b1f5fe85ec4cdb26103"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a3797326cba696b1f5fe85ec4cdb26103">put_field_internal</a> (const <a class="el" href="classIoss_1_1Assembly.html">Assembly</a> *, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;, void *, size_t) const =0</td></tr>
-<tr class="separator:a3797326cba696b1f5fe85ec4cdb26103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4937ce880cd3ee0a76beffe6129f2a50"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a4937ce880cd3ee0a76beffe6129f2a50">put_field_internal</a> (const <a class="el" href="classIoss_1_1Blob.html">Blob</a> *, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;, void *, size_t) const =0</td></tr>
-<tr class="separator:a4937ce880cd3ee0a76beffe6129f2a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e7a26219484d64cda3d2215aba09a3"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a64e7a26219484d64cda3d2215aba09a3">put_field_internal</a> (const <a class="el" href="classIoss_1_1StructuredBlock.html">StructuredBlock</a> *, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;, void *, size_t) const =0</td></tr>
-<tr class="separator:a64e7a26219484d64cda3d2215aba09a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add576822f1e2f74ef7e2d9d7896568ce"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#add576822f1e2f74ef7e2d9d7896568ce">put_field_internal</a> (const <a class="el" href="classIoss_1_1Assembly.html">Assembly</a> *as, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
+<tr class="separator:add576822f1e2f74ef7e2d9d7896568ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd4fa74a368e6819e39dadc4b71596b"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#abbd4fa74a368e6819e39dadc4b71596b">put_field_internal</a> (const <a class="el" href="classIoss_1_1Blob.html">Blob</a> *bl, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
+<tr class="separator:abbd4fa74a368e6819e39dadc4b71596b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6439bb9747e723e7c173b85bb27fb2"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#acc6439bb9747e723e7c173b85bb27fb2">put_field_internal</a> (const <a class="el" href="classIoss_1_1StructuredBlock.html">StructuredBlock</a> *sb, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size) const =0</td></tr>
+<tr class="separator:acc6439bb9747e723e7c173b85bb27fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0061e926bc83dc2f86f311eacd64a41"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ab0061e926bc83dc2f86f311eacd64a41">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1Region.html">Region</a> *reg, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:ab0061e926bc83dc2f86f311eacd64a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1209dad17eddc0f29e616cd7b80c6c2e"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a1209dad17eddc0f29e616cd7b80c6c2e">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1NodeBlock.html">NodeBlock</a> *nb, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:a1209dad17eddc0f29e616cd7b80c6c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9381ff7f82d585a3d98eb06acf9d7eb"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ac9381ff7f82d585a3d98eb06acf9d7eb">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1EdgeBlock.html">EdgeBlock</a> *nb, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:ac9381ff7f82d585a3d98eb06acf9d7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ff318e72433368de3a11d7a7145dd8"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a69ff318e72433368de3a11d7a7145dd8">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1FaceBlock.html">FaceBlock</a> *nb, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:a69ff318e72433368de3a11d7a7145dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17b085d259ed464c1d61f2c51b86015"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ab17b085d259ed464c1d61f2c51b86015">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1ElementBlock.html">ElementBlock</a> *eb, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:ab17b085d259ed464c1d61f2c51b86015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec829a91c4ff3a5b6ebf9c90ead69e6"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#aeec829a91c4ff3a5b6ebf9c90ead69e6">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1SideBlock.html">SideBlock</a> *fb, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:aeec829a91c4ff3a5b6ebf9c90ead69e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499e04d43739b03ca292797f200040a1"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a499e04d43739b03ca292797f200040a1">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1NodeSet.html">NodeSet</a> *ns, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:a499e04d43739b03ca292797f200040a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0d984fa299e6d0e564dae9de78d9c5"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#aaf0d984fa299e6d0e564dae9de78d9c5">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1EdgeSet.html">EdgeSet</a> *ns, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:aaf0d984fa299e6d0e564dae9de78d9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125927deaaa323ccecf827a786e8bf0b"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a125927deaaa323ccecf827a786e8bf0b">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1FaceSet.html">FaceSet</a> *ns, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:a125927deaaa323ccecf827a786e8bf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96b1f2cbe02b44020c7e5d0de3a502b"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ac96b1f2cbe02b44020c7e5d0de3a502b">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1ElementSet.html">ElementSet</a> *ns, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:ac96b1f2cbe02b44020c7e5d0de3a502b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da716ba5a94cc69ca2ba892712cfca8"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a2da716ba5a94cc69ca2ba892712cfca8">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1SideSet.html">SideSet</a> *fs, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:a2da716ba5a94cc69ca2ba892712cfca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa815ddcbeecf20f8b6b77f93835568"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a3aa815ddcbeecf20f8b6b77f93835568">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1CommSet.html">CommSet</a> *cs, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:a3aa815ddcbeecf20f8b6b77f93835568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25e442112e8eb1ef6fa72c0d97f665d"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ae25e442112e8eb1ef6fa72c0d97f665d">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1Assembly.html">Assembly</a> *as, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:ae25e442112e8eb1ef6fa72c0d97f665d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e83bb5e0af576c3b9ac7917e33d513"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#ab2e83bb5e0af576c3b9ac7917e33d513">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1Blob.html">Blob</a> *bl, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:ab2e83bb5e0af576c3b9ac7917e33d513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a038953d807765aa5952534bb35dd3"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DatabaseIO.html#a48a038953d807765aa5952534bb35dd3">get_zc_field_internal</a> (const <a class="el" href="classIoss_1_1StructuredBlock.html">StructuredBlock</a> *sb, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
+<tr class="separator:a48a038953d807765aa5952534bb35dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -2007,8 +2040,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac18acc3dbcc3600139284714556c285b" name="ac18acc3dbcc3600139284714556c285b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac18acc3dbcc3600139284714556c285b">&#9670;&#160;</a></span>get_field_internal() <span class="overload">[1/15]</span></h2>
+<a id="adda55adb8137e6e7d46d38904e5ba997" name="adda55adb8137e6e7d46d38904e5ba997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda55adb8137e6e7d46d38904e5ba997">&#9670;&#160;</a></span>get_field_internal() <span class="overload">[1/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2020,25 +2053,25 @@ template&lt;typename T &gt; </div>
           <td class="memname">virtual int64_t Ioss::DatabaseIO::get_field_internal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Assembly.html">Assembly</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>as</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>field</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2057,8 +2090,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a1cf5df9d1c32d613c75d8db77bd8bd0b" name="a1cf5df9d1c32d613c75d8db77bd8bd0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cf5df9d1c32d613c75d8db77bd8bd0b">&#9670;&#160;</a></span>get_field_internal() <span class="overload">[2/15]</span></h2>
+<a id="a120fb5940a221a46cda5e15fc06884f6" name="a120fb5940a221a46cda5e15fc06884f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120fb5940a221a46cda5e15fc06884f6">&#9670;&#160;</a></span>get_field_internal() <span class="overload">[2/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2070,25 +2103,25 @@ template&lt;typename T &gt; </div>
           <td class="memname">virtual int64_t Ioss::DatabaseIO::get_field_internal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Blob.html">Blob</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>bl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>field</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2707,8 +2740,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a4a0661089dede984eb835a061dea2bd5" name="a4a0661089dede984eb835a061dea2bd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a0661089dede984eb835a061dea2bd5">&#9670;&#160;</a></span>get_field_internal() <span class="overload">[15/15]</span></h2>
+<a id="a78233ed943eeb9f2eabea786b811affe" name="a78233ed943eeb9f2eabea786b811affe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78233ed943eeb9f2eabea786b811affe">&#9670;&#160;</a></span>get_field_internal() <span class="overload">[15/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2720,25 +2753,25 @@ template&lt;typename T &gt; </div>
           <td class="memname">virtual int64_t Ioss::DatabaseIO::get_field_internal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1StructuredBlock.html">StructuredBlock</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>sb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>field</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3276,6 +3309,776 @@ template&lt;typename T &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fe3b7c18b71095a001bdb3f437f02ef" name="a7fe3b7c18b71095a001bdb3f437f02ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe3b7c18b71095a001bdb3f437f02ef">&#9670;&#160;</a></span>get_zc_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae25e442112e8eb1ef6fa72c0d97f665d" name="ae25e442112e8eb1ef6fa72c0d97f665d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25e442112e8eb1ef6fa72c0d97f665d">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[1/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Assembly.html">Assembly</a> *&#160;</td>
+          <td class="paramname"><em>as</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2e83bb5e0af576c3b9ac7917e33d513" name="ab2e83bb5e0af576c3b9ac7917e33d513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e83bb5e0af576c3b9ac7917e33d513">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[2/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Blob.html">Blob</a> *&#160;</td>
+          <td class="paramname"><em>bl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3aa815ddcbeecf20f8b6b77f93835568" name="a3aa815ddcbeecf20f8b6b77f93835568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa815ddcbeecf20f8b6b77f93835568">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[3/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1CommSet.html">CommSet</a> *&#160;</td>
+          <td class="paramname"><em>cs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9381ff7f82d585a3d98eb06acf9d7eb" name="ac9381ff7f82d585a3d98eb06acf9d7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9381ff7f82d585a3d98eb06acf9d7eb">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[4/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1EdgeBlock.html">EdgeBlock</a> *&#160;</td>
+          <td class="paramname"><em>nb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf0d984fa299e6d0e564dae9de78d9c5" name="aaf0d984fa299e6d0e564dae9de78d9c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf0d984fa299e6d0e564dae9de78d9c5">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[5/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1EdgeSet.html">EdgeSet</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab17b085d259ed464c1d61f2c51b86015" name="ab17b085d259ed464c1d61f2c51b86015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab17b085d259ed464c1d61f2c51b86015">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[6/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1ElementBlock.html">ElementBlock</a> *&#160;</td>
+          <td class="paramname"><em>eb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96b1f2cbe02b44020c7e5d0de3a502b" name="ac96b1f2cbe02b44020c7e5d0de3a502b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96b1f2cbe02b44020c7e5d0de3a502b">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[7/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1ElementSet.html">ElementSet</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69ff318e72433368de3a11d7a7145dd8" name="a69ff318e72433368de3a11d7a7145dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ff318e72433368de3a11d7a7145dd8">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[8/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1FaceBlock.html">FaceBlock</a> *&#160;</td>
+          <td class="paramname"><em>nb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a125927deaaa323ccecf827a786e8bf0b" name="a125927deaaa323ccecf827a786e8bf0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125927deaaa323ccecf827a786e8bf0b">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[9/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1FaceSet.html">FaceSet</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1209dad17eddc0f29e616cd7b80c6c2e" name="a1209dad17eddc0f29e616cd7b80c6c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1209dad17eddc0f29e616cd7b80c6c2e">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[10/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1NodeBlock.html">NodeBlock</a> *&#160;</td>
+          <td class="paramname"><em>nb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a499e04d43739b03ca292797f200040a1" name="a499e04d43739b03ca292797f200040a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a499e04d43739b03ca292797f200040a1">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[11/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1NodeSet.html">NodeSet</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0061e926bc83dc2f86f311eacd64a41" name="ab0061e926bc83dc2f86f311eacd64a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0061e926bc83dc2f86f311eacd64a41">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[12/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Region.html">Region</a> *&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeec829a91c4ff3a5b6ebf9c90ead69e6" name="aeec829a91c4ff3a5b6ebf9c90ead69e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec829a91c4ff3a5b6ebf9c90ead69e6">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[13/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1SideBlock.html">SideBlock</a> *&#160;</td>
+          <td class="paramname"><em>fb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2da716ba5a94cc69ca2ba892712cfca8" name="a2da716ba5a94cc69ca2ba892712cfca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da716ba5a94cc69ca2ba892712cfca8">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[14/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1SideSet.html">SideSet</a> *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48a038953d807765aa5952534bb35dd3" name="a48a038953d807765aa5952534bb35dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a038953d807765aa5952534bb35dd3">&#9670;&#160;</a></span>get_zc_field_internal() <span class="overload">[15/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Ioss::DatabaseIO::get_zc_field_internal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1StructuredBlock.html">StructuredBlock</a> *&#160;</td>
+          <td class="paramname"><em>sb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -4118,8 +4921,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a3797326cba696b1f5fe85ec4cdb26103" name="a3797326cba696b1f5fe85ec4cdb26103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3797326cba696b1f5fe85ec4cdb26103">&#9670;&#160;</a></span>put_field_internal() <span class="overload">[1/15]</span></h2>
+<a id="add576822f1e2f74ef7e2d9d7896568ce" name="add576822f1e2f74ef7e2d9d7896568ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add576822f1e2f74ef7e2d9d7896568ce">&#9670;&#160;</a></span>put_field_internal() <span class="overload">[1/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4131,25 +4934,25 @@ template&lt;typename T &gt; </div>
           <td class="memname">virtual int64_t Ioss::DatabaseIO::put_field_internal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Assembly.html">Assembly</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>as</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>field</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4168,8 +4971,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a4937ce880cd3ee0a76beffe6129f2a50" name="a4937ce880cd3ee0a76beffe6129f2a50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4937ce880cd3ee0a76beffe6129f2a50">&#9670;&#160;</a></span>put_field_internal() <span class="overload">[2/15]</span></h2>
+<a id="abbd4fa74a368e6819e39dadc4b71596b" name="abbd4fa74a368e6819e39dadc4b71596b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd4fa74a368e6819e39dadc4b71596b">&#9670;&#160;</a></span>put_field_internal() <span class="overload">[2/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4181,25 +4984,25 @@ template&lt;typename T &gt; </div>
           <td class="memname">virtual int64_t Ioss::DatabaseIO::put_field_internal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Blob.html">Blob</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>bl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>field</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4818,8 +5621,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a64e7a26219484d64cda3d2215aba09a3" name="a64e7a26219484d64cda3d2215aba09a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e7a26219484d64cda3d2215aba09a3">&#9670;&#160;</a></span>put_field_internal() <span class="overload">[15/15]</span></h2>
+<a id="acc6439bb9747e723e7c173b85bb27fb2" name="acc6439bb9747e723e7c173b85bb27fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6439bb9747e723e7c173b85bb27fb2">&#9670;&#160;</a></span>put_field_internal() <span class="overload">[15/15]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4831,25 +5634,25 @@ template&lt;typename T &gt; </div>
           <td class="memname">virtual int64_t Ioss::DatabaseIO::put_field_internal </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1StructuredBlock.html">StructuredBlock</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>sb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>field</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>data_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

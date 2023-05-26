@@ -11,5 +11,6 @@ var cgns__decomp_8C =
     [ "update_zgc_data", "cgns__decomp_8C.html#abb9754f8277f717a428b5e2504a4a382", null ],
     [ "validate_decomposition", "cgns__decomp_8C.html#a2fb21f6339b4115fc72cfe57686d5d58", null ],
     [ "validate_symmetric_communications", "cgns__decomp_8C.html#a501f1819ac2d0c49f06006ed6b35a829", null ],
-    [ "codename", "cgns__decomp_8C.html#ac6a0e552e00b0266bc074686f371b88d", null ]
+    [ "codename", "cgns__decomp_8C.html#ac6a0e552e00b0266bc074686f371b88d", null ],
+    [ "version", "cgns__decomp_8C.html#a5e85eb76c4a17217b9a637bd5e5923ca", null ]
 ];

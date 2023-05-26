@@ -82,6 +82,7 @@ var classIoss_1_1Region =
     [ "get_structured_block", "classIoss_1_1Region.html#acb3b03d618bc38217f98071304aad3e3", null ],
     [ "get_structured_blocks", "classIoss_1_1Region.html#a5a26433379cf3beaf59906c4b2f5e406", null ],
     [ "internal_get_field_data", "classIoss_1_1Region.html#a2c267586f5001d61b7c79e414b13ee19", null ],
+    [ "internal_get_zc_field_data", "classIoss_1_1Region.html#a88474979dbfd28378b744f83f9affaa0", null ],
     [ "internal_put_field_data", "classIoss_1_1Region.html#a579560af4833cae5fdf133f19245ed4c", null ],
     [ "is_valid_io_entity", "classIoss_1_1Region.html#a940c5e1b73091c70d2a310020b2e031e", null ],
     [ "mesh_type", "classIoss_1_1Region.html#a262a3711348d41c15667c54db62ebedc", null ],

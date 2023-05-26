@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('Ioss__EdgeSet_8h_source.html',''); ini
   <div class="headertitle"><div class="title">Ioss_EdgeSet.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Ioss__EdgeSet_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022 National Technology &amp; Engineering Solutions</span></div>
+<a href="Ioss__EdgeSet_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022, 2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -145,8 +145,11 @@ $(document).ready(function(){initNavTree('Ioss__EdgeSet_8h_source.html',''); ini
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    int64_t internal_put_field_data(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1Field.html">Field</a> &amp;field, <span class="keywordtype">void</span> *data,</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                                    <span class="keywordtype">size_t</span> data_size) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  };</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace Ioss</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    int64_t internal_get_zc_field_data(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1Field.html">Field</a> &amp;field, <span class="keywordtype">void</span> **data,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                       <span class="keywordtype">size_t</span> *data_size) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  };</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace Ioss</span></div>
 <div class="ttc" id="aIoss__EntitySet_8h_html"><div class="ttname"><a href="Ioss__EntitySet_8h.html">Ioss_EntitySet.h</a></div></div>
 <div class="ttc" id="aIoss__EntityType_8h_html"><div class="ttname"><a href="Ioss__EntityType_8h.html">Ioss_EntityType.h</a></div></div>
 <div class="ttc" id="aIoss__Property_8h_html"><div class="ttname"><a href="Ioss__Property_8h.html">Ioss_Property.h</a></div></div>

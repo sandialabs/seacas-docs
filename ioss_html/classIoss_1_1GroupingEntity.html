@@ -289,8 +289,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a10d928049d7663eae3e3af47efb00654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f5d067d20febccdca9235fbf382a2de"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#a8f5d067d20febccdca9235fbf382a2de">internal_put_field_data</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void *data, size_t data_size=0) const =0</td></tr>
 <tr class="separator:a8f5d067d20febccdca9235fbf382a2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a94079d670c012ebdb683e068a9e12"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#ab3a94079d670c012ebdb683e068a9e12">internal_get_zc_field_data</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
-<tr class="separator:ab3a94079d670c012ebdb683e068a9e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0edbc79df411714206c618a029e972e"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#af0edbc79df411714206c618a029e972e">internal_get_zc_field_data</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const =0</td></tr>
+<tr class="separator:af0edbc79df411714206c618a029e972e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a615085bd3df7fc437e4401584d3f5673"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1GroupingEntity.html#a615085bd3df7fc437e4401584d3f5673">equal_</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a> &amp;rhs, const bool quiet) const</td></tr>
 <tr class="separator:a615085bd3df7fc437e4401584d3f5673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1517,8 +1517,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab3a94079d670c012ebdb683e068a9e12" name="ab3a94079d670c012ebdb683e068a9e12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3a94079d670c012ebdb683e068a9e12">&#9670;&#160;</a></span>internal_get_zc_field_data()</h2>
+<a id="af0edbc79df411714206c618a029e972e" name="af0edbc79df411714206c618a029e972e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0edbc79df411714206c618a029e972e">&#9670;&#160;</a></span>internal_get_zc_field_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1527,7 +1527,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t Ioss::GroupingEntity::internal_get_zc_field_data </td>
+          <td class="memname">virtual int64_t Ioss::GroupingEntity::internal_get_zc_field_data </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td>
           <td class="paramname"><em>field</em>, </td>
@@ -1552,10 +1552,12 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classIoss_1_1NullEntity.html#a1c519ed184a574f6522ac32cef3b54f0">Ioss::NullEntity</a>, <a class="el" href="classIoss_1_1Assembly.html#aad26dd4aa4c72c75f4218529df3a08e1">Ioss::Assembly</a>, <a class="el" href="classIoss_1_1Blob.html#a275178438e8644d935d4d41d4572fc8d">Ioss::Blob</a>, <a class="el" href="classIoss_1_1CommSet.html#ad4537e67ae5088421f69c694ef3e102e">Ioss::CommSet</a>, <a class="el" href="classIoss_1_1EdgeBlock.html#aa1ddccfc1afd4736be40d2b794cd9917">Ioss::EdgeBlock</a>, <a class="el" href="classIoss_1_1EdgeSet.html#a46631c57645df35b20450a6a8492559b">Ioss::EdgeSet</a>, <a class="el" href="classIoss_1_1ElementBlock.html#ab67af0ec50bfe7172c54f54a945dc872">Ioss::ElementBlock</a>, <a class="el" href="classIoss_1_1ElementSet.html#a66fc08044151765bef228f4181bddb79">Ioss::ElementSet</a>, <a class="el" href="classIoss_1_1FaceBlock.html#ae4ace68f7e775e5a75565d95345c2239">Ioss::FaceBlock</a>, <a class="el" href="classIoss_1_1FaceSet.html#a9ba090eba3b703f3e67ab2a2a59ded26">Ioss::FaceSet</a>, <a class="el" href="classIoss_1_1NodeBlock.html#a5059828fd3760bab4975db7f00d703cf">Ioss::NodeBlock</a>, <a class="el" href="classIoss_1_1NodeSet.html#a333dd68d1bce1945fc505dd037aadc15">Ioss::NodeSet</a>, <a class="el" href="classIoss_1_1Region.html#a88474979dbfd28378b744f83f9affaa0">Ioss::Region</a>, <a class="el" href="classIoss_1_1SideBlock.html#ad5ba944a49cc2d14265aeb71025093d3">Ioss::SideBlock</a>, <a class="el" href="classIoss_1_1SideSet.html#a07676111348d6147d2df1e7da4d80301">Ioss::SideSet</a>, <a class="el" href="classIoss_1_1StructuredBlock.html#ad705fd7ecb4e56581e3dbb5ba4aa9ebb">Ioss::StructuredBlock</a>, and <a class="el" href="classIoex_1_1SuperElement.html#ae8ce19386a4ec1fa3d52d8446aab83e8">Ioex::SuperElement</a>.</p>
 
 </div>
 </div>

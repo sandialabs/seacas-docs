@@ -7,6 +7,5 @@ var namespaceanonymous__namespace_02sphgen_8C_03 =
     [ "hex_volume", "namespaceanonymous__namespace_02sphgen_8C_03.html#a87bf9b538eeb31d4379d6acb4bed381b", null ],
     [ "show_usage", "namespaceanonymous__namespace_02sphgen_8C_03.html#adbecfa8fc93743ca0252933370dc4161", null ],
     [ "codename", "namespaceanonymous__namespace_02sphgen_8C_03.html#aad33f334bffe7eea89f1106b62011f78", null ],
-    [ "data", "namespaceanonymous__namespace_02sphgen_8C_03.html#a298d577455c39a3da058117c7888c92f", null ],
     [ "version", "namespaceanonymous__namespace_02sphgen_8C_03.html#a71af39d7cefb3c9db653f7ec7580c55f", null ]
 ];

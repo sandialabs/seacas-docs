@@ -8,6 +8,5 @@ var sphgen_8C =
     [ "main", "sphgen_8C.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
     [ "show_usage", "sphgen_8C.html#adbecfa8fc93743ca0252933370dc4161", null ],
     [ "codename", "sphgen_8C.html#aad33f334bffe7eea89f1106b62011f78", null ],
-    [ "data", "sphgen_8C.html#a298d577455c39a3da058117c7888c92f", null ],
     [ "version", "sphgen_8C.html#a71af39d7cefb3c9db653f7ec7580c55f", null ]
 ];
