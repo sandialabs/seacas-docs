@@ -309,7 +309,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000027">Undocumented:</a></b></dt><dd></dd></dl>
+<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000025">Undocumented:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000047">Undocumented:</a></b></dt><dd></dd></dl>
+<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000045">Undocumented:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -461,7 +461,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000029">Undocumented:</a></b></dt><dd></dd></dl>
+<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000027">Undocumented:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -515,7 +515,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000026">Undocumented:</a></b></dt><dd></dd></dl>
+<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000024">Undocumented:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -886,8 +886,36 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000006">Undocumented:</a></b></dt><dd></dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2test_2test_ts_errval_8c-example.html#a2">/test/test_ts_errval.c</a>.</dd>
+<p>The function ex_err(exoid, ...) logs an error to stderr. It is intended to provide explanatory messages for error codes returned from other exodus routines.</p>
+<p>The passed in error codes and corresponding messages are listed in <code><a class="el" href="exodusII_8h.html">exodusII.h</a></code>. The programmer may supplement the error message printed for standard errors by providing an error message. If the error code is provided with no error message, the predefined message will be used. The error code <code>EX_MSG</code> is available to log application specific messages.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">module_name</td><td>This is a string containing the name of the calling function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>This is a string containing a message explaining the error or problem. If <code>EX_VERBOSE</code> (see <a class="el" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts()</a>) is true, this message will be printed to stderr. Otherwise, nothing will be printed. Maximum length is <code>MAX_ERR_LENGTH</code>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">err_num</td><td>This is an integer code identifying the error. exodus C functions place an error code value in exerrval, an external integer. Negative values are considered fatal errors while positive values are warnings. There is a set of predefined values defined in <code><a class="el" href="exodusII_8h.html">exodusII.h</a></code>. The predefined constant <code>EX_PRTLASTMSG</code> will cause the last error message to be output, regardless of the setting of the error reporting level (see <a class="el" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts()</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The following is an example of the use of this function:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> exoid, CPU_word_size, IO_word_size, errval;</div>
+<div class="line"><span class="keywordtype">float</span> version;</div>
+<div class="line"><span class="keywordtype">char</span> errmsg[<a class="code hl_define" href="group__StringLengths.html#ga3e81d99126d7d910227927550fc32288">MAX_ERR_LENGTH</a>];</div>
+<div class="line"> </div>
+<div class="line">CPU_word_size = <span class="keyword">sizeof</span>(float);</div>
+<div class="line">IO_word_size = 0;</div>
+<div class="line"> </div>
+<div class="line">\comment{open exodus file}</div>
+<div class="line"><span class="keywordflow">if</span> (exoid = <a class="code hl_define" href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a> (<span class="stringliteral">&quot;test.exo&quot;</span>, <a class="code hl_define" href="group__FileVars.html#ga49938d96ef78ea1726e9970383bf61b1">EX_READ</a>, &amp;CPU_word_size,</div>
+<div class="line">                     &amp;IO_word_size, &amp;version)) {</div>
+<div class="line">   errval = 999;</div>
+<div class="line">   snprintf(errmsg, <a class="code hl_define" href="group__StringLengths.html#ga3e81d99126d7d910227927550fc32288">MAX_ERR_LENGTH</a>,<span class="stringliteral">&quot;ERROR: cannot open file test.exo&quot;</span>);</div>
+<div class="line">   <a class="code hl_function" href="group__Utilities.html#ga73924582d1725b8f8672ce292dde53e5">ex_err</a>(__func__, errmsg, errval);</div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__FileVars_html_ga49938d96ef78ea1726e9970383bf61b1"><div class="ttname"><a href="group__FileVars.html#ga49938d96ef78ea1726e9970383bf61b1">EX_READ</a></div><div class="ttdeci">#define EX_READ</div><div class="ttdef"><b>Definition</b> exodusII.h:95</div></div>
+<div class="ttc" id="agroup__StringLengths_html_ga3e81d99126d7d910227927550fc32288"><div class="ttname"><a href="group__StringLengths.html#ga3e81d99126d7d910227927550fc32288">MAX_ERR_LENGTH</a></div><div class="ttdeci">#define MAX_ERR_LENGTH</div><div class="ttdef"><b>Definition</b> exodusII.h:320</div></div>
+<div class="ttc" id="agroup__Utilities_html_ga73924582d1725b8f8672ce292dde53e5"><div class="ttname"><a href="group__Utilities.html#ga73924582d1725b8f8672ce292dde53e5">ex_err</a></div><div class="ttdeci">void ex_err(const char *module_name, const char *message, int err_num)</div><div class="ttdef"><b>Definition</b> ex_err.c:90</div></div>
+<div class="ttc" id="agroup__Utilities_html_ga9a940cd55241b5c5e7960a123d79c94c"><div class="ttname"><a href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a></div><div class="ttdeci">#define ex_open(path, mode, comp_ws, io_ws, version)</div><div class="ttdef"><b>Definition</b> exodusII.h:494</div></div>
+</div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2test_2test_ts_errval_8c-example.html#a2">/test/test_ts_errval.c</a>.</dd>
 </dl>
 
 </div>
@@ -929,8 +957,34 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000007">Undocumented:</a></b></dt><dd></dd></dl>
-
+<p>The function <a class="el" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn()</a> logs an error to stderr. It is intended to provide explanatory messages for error codes returned from other exodus routines. The main difference between <a class="el" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn()</a> and <a class="el" href="group__Utilities.html#ga73924582d1725b8f8672ce292dde53e5">ex_err()</a> is that <a class="el" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn()</a> will print the name of the exodus file that the error occured on.</p>
+<p>The passed in error codes and corresponding messages are listed in <code><a class="el" href="exodusII_8h.html">exodusII.h</a></code>. The programmer may supplement the error message printed for standard errors by providing an error message. If the error code is provided with no error message, the predefined message will be used. The error code <code>EX_MSG</code> is available to log application specific messages.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">exoid</td><td>exodus file ID returned from a previous call to <a class="el" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create()</a> or <a class="el" href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open()</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">module_name</td><td>This is a string containing the name of the calling function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>This is a string containing a message explaining the error or problem. If <code>EX_VERBOSE</code> (see <a class="el" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts()</a>) is true, this message will be printed to stderr. Otherwise, nothing will be printed. Maximum length is <code>MAX_ERR_LENGTH</code>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">err_num</td><td>This is an integer code identifying the error. exodus C functions place an error code value in exerrval, an external integer. Negative values are considered fatal errors while positive values are warnings. There is a set of predefined values defined in <code><a class="el" href="exodusII_8h.html">exodusII.h</a></code>. The predefined constant <code>EX_PRTLASTMSG</code> will cause the last error message to be output, regardless of the setting of the error reporting level (see <a class="el" href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts()</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The following is an example of the use of this function:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> exoid, CPU_word_size, IO_word_size, errval;</div>
+<div class="line"><span class="keywordtype">float</span> version;</div>
+<div class="line"><span class="keywordtype">char</span> errmsg[<a class="code hl_define" href="group__StringLengths.html#ga3e81d99126d7d910227927550fc32288">MAX_ERR_LENGTH</a>];</div>
+<div class="line"> </div>
+<div class="line">CPU_word_size = <span class="keyword">sizeof</span>(float);</div>
+<div class="line">IO_word_size = 0;</div>
+<div class="line"> </div>
+<div class="line">\comment{open exodus file}</div>
+<div class="line"><span class="keywordflow">if</span> (exoid = <a class="code hl_define" href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a> (<span class="stringliteral">&quot;test.exo&quot;</span>, <a class="code hl_define" href="group__FileVars.html#ga49938d96ef78ea1726e9970383bf61b1">EX_READ</a>, &amp;CPU_word_size,</div>
+<div class="line">                     &amp;IO_word_size, &amp;version)) {</div>
+<div class="line">   errval = 999;</div>
+<div class="line">   snprintf(errmsg, <a class="code hl_define" href="group__StringLengths.html#ga3e81d99126d7d910227927550fc32288">MAX_ERR_LENGTH</a>,<span class="stringliteral">&quot;ERROR: cannot open file test.exo&quot;</span>);</div>
+<div class="line">   <a class="code hl_function" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn</a>(exoid, __func__, errmsg, errval);</div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__Utilities_html_gad80ad976010b0653dd981c3c7867475f"><div class="ttname"><a href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn</a></div><div class="ttdeci">void ex_err_fn(int exoid, const char *module_name, const char *message, int err_num)</div><div class="ttdef"><b>Definition</b> ex_err.c:196</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ga30160a81eb1aff6befe3890bea4f3bae" name="ga30160a81eb1aff6befe3890bea4f3bae"></a>
@@ -964,7 +1018,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000009">Undocumented:</a></b></dt><dd></dd></dl>
+<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000007">Undocumented:</a></b></dt><dd></dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2test_2test_ts_errval_8c-example.html#a3">/test/test_ts_errval.c</a>.</dd>
 </dl>
 
@@ -1120,7 +1174,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000046">Undocumented:</a></b></dt><dd></dd></dl>
+<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000044">Undocumented:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -1481,8 +1535,6 @@ Variables</h2></td></tr>
 <div class="line">                 &amp;CPU_word_size, \co{CPU word size}</div>
 <div class="line">                 &amp;IO_word_size,  \co{IO word size}</div>
 <div class="line">                 &amp;version);      \co{ExodusII library version}</div>
-<div class="ttc" id="agroup__FileVars_html_ga49938d96ef78ea1726e9970383bf61b1"><div class="ttname"><a href="group__FileVars.html#ga49938d96ef78ea1726e9970383bf61b1">EX_READ</a></div><div class="ttdeci">#define EX_READ</div><div class="ttdef"><b>Definition</b> exodusII.h:95</div></div>
-<div class="ttc" id="agroup__Utilities_html_ga9a940cd55241b5c5e7960a123d79c94c"><div class="ttname"><a href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a></div><div class="ttdeci">#define ex_open(path, mode, comp_ws, io_ws, version)</div><div class="ttdef"><b>Definition</b> exodusII.h:494</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1731,7 +1783,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000008">Undocumented:</a></b></dt><dd></dd></dl>
+<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000006">Undocumented:</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -1806,7 +1858,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000028">Undocumented:</a></b></dt><dd></dd></dl>
+<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000026">Undocumented:</a></b></dt><dd></dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2test_2testrd-long-name_8c-example.html#a11">/test/testrd-long-name.c</a>, and <a class="el" href="_2test_2testwt-oned_8c-example.html#a6">/test/testwt-oned.c</a>.</dd>
 </dl>
 
@@ -1900,7 +1952,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000010">Undocumented:</a></b></dt><dd>Returns a pointer to a string which gives a text description of the error code err_num. If the error code refers to a NetCDF error, then that string is returned.</dd></dl>
+<dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000008">Undocumented:</a></b></dt><dd>Returns a pointer to a string which gives a text description of the error code err_num. If the error code refers to a NetCDF error, then that string is returned.</dd></dl>
 <div class="fragment"><div class="line">std::ostringstream errmsg;</div>
 <div class="line">\comment{Create errmsg here so that the <a class="code hl_variable" href="exodusII_8h.html#a2afcad8a32ffecb9237121f272c06ad6">exerrval</a> doesn<span class="stringliteral">&#39;t get cleared by}</span></div>
 <div class="line"><span class="stringliteral">\comment{the ex_close call.}</span></div>
@@ -1908,7 +1960,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="stringliteral">ex_get_err(nullptr, nullptr, &amp;status);</span></div>
 <div class="line"><span class="stringliteral">fmt::print(errmsg, &quot;Exodus error ({}) {} at line {} of file &#39;</span>{}<span class="stringliteral">&#39; in function &#39;</span>{}<span class="stringliteral">&#39;.&quot;, status,</span></div>
 <div class="line"><span class="stringliteral">           ex_strerror(status), lineno, filename, function);</span></div>
-<div class="ttc" id="aexodusII_8h_html_a2afcad8a32ffecb9237121f272c06ad6"><div class="ttname"><a href="exodusII_8h.html#a2afcad8a32ffecb9237121f272c06ad6">exerrval</a></div><div class="ttdeci">int exerrval</div><div class="ttdef"><b>Definition</b> ex_err.c:77</div></div>
+<div class="ttc" id="aexodusII_8h_html_a2afcad8a32ffecb9237121f272c06ad6"><div class="ttname"><a href="exodusII_8h.html#a2afcad8a32ffecb9237121f272c06ad6">exerrval</a></div><div class="ttdeci">int exerrval</div><div class="ttdef"><b>Definition</b> ex_err.c:18</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
