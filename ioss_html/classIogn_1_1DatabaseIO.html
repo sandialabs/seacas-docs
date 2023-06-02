@@ -569,6 +569,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The <code>filename</code> string for the generated mesh specifies the option string that will be passed to <a class="el" href="classIogn_1_1GeneratedMesh.html">GeneratedMesh</a> to generate the mesh. For example </p><div class="fragment"><div class="line"><a class="code hl_function" href="classIoss_1_1DatabaseIO.html#ae2eee344fe7c543bf672d031678516cb">DatabaseIO</a>(region, <span class="stringliteral">&quot;10x12x8|shell:xX|nodeset:xyz|sideset:XYZ&quot;</span>, ...);</div>
+<div class="ttc" id="aclassIoss_1_1DatabaseIO_html_ae2eee344fe7c543bf672d031678516cb"><div class="ttname"><a href="classIoss_1_1DatabaseIO.html#ae2eee344fe7c543bf672d031678516cb">Ioss::DatabaseIO::DatabaseIO</a></div><div class="ttdeci">DatabaseIO()=delete</div></div>
+</div><!-- fragment --><p> Would generate a cube mesh with sides of 10 elements in X, 12 elements in Y, and 8 elements in Z with shells on the min and max X extent. There would be a nodeset on each of the minimum x, y, and z faces and sidesets on the maximum x, y, z faces. See the <a class="el" href="classIogn_1_1GeneratedMesh.html#afb85c3f28b89a17725a0fae633f1e5a3">Iogn::GeneratedMesh::GeneratedMesh</a> documentation for more details. </p>
 
 </div>
 </div>

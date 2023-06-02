@@ -1,5 +1,6 @@
 var NAVTREEINDEX95 =
 {
+"structdoctest_1_1Approx.html#a97a6e92b9c9dacc0adb2f76f9faf2924":[3,0,128,4,13],
 "structdoctest_1_1Approx.html#aa313c36a9170e7e3157e390a8839396d":[4,0,77,1,17],
 "structdoctest_1_1Approx.html#aa313c36a9170e7e3157e390a8839396d":[3,0,128,4,17],
 "structdoctest_1_1Approx.html#aae907c5ea1c4ac94e134db9e35da7dce":[4,0,77,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX95 =
 "structdoctest_1_1TestCaseData.html#ae264da66ff0e88a34c467d364dd18840":[3,0,128,18,10],
 "structdoctest_1_1TestCaseException.html":[3,0,128,19],
 "structdoctest_1_1TestCaseException.html":[4,0,77,16],
-"structdoctest_1_1TestCaseException.html#a656c8971ccbedc7d3a0a38f7c6af927e":[3,0,128,19,0],
-"structdoctest_1_1TestCaseException.html#a656c8971ccbedc7d3a0a38f7c6af927e":[4,0,77,16,0]
+"structdoctest_1_1TestCaseException.html#a656c8971ccbedc7d3a0a38f7c6af927e":[3,0,128,19,0]
 };

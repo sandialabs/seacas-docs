@@ -1,5 +1,6 @@
 var NAVTREEINDEX96 =
 {
+"structdoctest_1_1TestCaseException.html#a656c8971ccbedc7d3a0a38f7c6af927e":[4,0,77,16,0],
 "structdoctest_1_1TestCaseException.html#af30d801dae6dd2f4ea01690bbf5faeca":[4,0,77,16,1],
 "structdoctest_1_1TestCaseException.html#af30d801dae6dd2f4ea01690bbf5faeca":[3,0,128,19,1],
 "structdoctest_1_1TestRunStats.html":[4,0,77,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX96 =
 "structdoctest_1_1detail_1_1types_1_1is__array.html":[4,0,77,0,0,3],
 "structdoctest_1_1detail_1_1types_1_1is__array_3_01T_0fSIZE_0e_4.html":[3,0,128,2,2,4],
 "structdoctest_1_1detail_1_1types_1_1is__array_3_01T_0fSIZE_0e_4.html":[4,0,77,0,0,4],
-"structdoctest_1_1detail_1_1types_1_1is__enum.html":[3,0,128,2,2,5],
-"structdoctest_1_1detail_1_1types_1_1is__enum.html":[4,0,77,0,0,5]
+"structdoctest_1_1detail_1_1types_1_1is__enum.html":[3,0,128,2,2,5]
 };
