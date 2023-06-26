@@ -5,7 +5,7 @@ var Ioex__Utils_8h =
     [ "EXU_USE_HOPSCOTCH", "Ioex__Utils_8h.html#a8ce267dc1abb8699b36a97425844ece4", null ],
     [ "CoordinateFrameContainer", "Ioex__Utils_8h.html#abf77dade63ce8a4c5cc7af4edea743e9", null ],
     [ "NameTopoKey", "Ioex__Utils_8h.html#a5c59b8a25307b4d600f6e0e487e3922e", null ],
-    [ "SideSetMap", "Ioex__Utils_8h.html#a8ae257784bdfb29603849073259d3098", null ],
+    [ "SideSetMap", "Ioex__Utils_8h.html#a5e5652487f6bb7196884f192b2d69aa3", null ],
     [ "SideSetSet", "Ioex__Utils_8h.html#ac38f7495daa7d3afa4efa4b68561f000", null ],
     [ "TopologyMap", "Ioex__Utils_8h.html#a097b68cd900dfefd170c572b7b1d9b6d", null ],
     [ "add_coordinate_frames", "Ioex__Utils_8h.html#a5c35b6fb95e8f3d2c291d96034c94250", null ],

@@ -1,8 +1,8 @@
 var classIoss_1_1Wedge16 =
 [
     [ "~Wedge16", "classIoss_1_1Wedge16.html#ab5d7b8b0895486e32e255fab75cff823", null ],
-    [ "Wedge16", "classIoss_1_1Wedge16.html#af5f26af87f4843be0793d60a1b6ed286", null ],
     [ "Wedge16", "classIoss_1_1Wedge16.html#a308a9ac94bb71ab581d99b7ca135d6a6", null ],
+    [ "Wedge16", "classIoss_1_1Wedge16.html#af5f26af87f4843be0793d60a1b6ed286", null ],
     [ "edge_connectivity", "classIoss_1_1Wedge16.html#ae0aaa97ad77dd382704588116cae67a7", null ],
     [ "edge_type", "classIoss_1_1Wedge16.html#a685eb098e645f743f67b6cd651465ad9", null ],
     [ "element_connectivity", "classIoss_1_1Wedge16.html#a2f2b9385ca3fe1945ba08ce4e841892f", null ],

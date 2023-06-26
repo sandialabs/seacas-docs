@@ -1,8 +1,8 @@
 var classIoss_1_1Hex64 =
 [
     [ "~Hex64", "classIoss_1_1Hex64.html#adf5f969076124e9d1b33cddbd6700533", null ],
-    [ "Hex64", "classIoss_1_1Hex64.html#a568bd5df45b687dd5dea650c373afd91", null ],
     [ "Hex64", "classIoss_1_1Hex64.html#ac7aac9538dcac08a69674f80a1110958", null ],
+    [ "Hex64", "classIoss_1_1Hex64.html#a568bd5df45b687dd5dea650c373afd91", null ],
     [ "edge_connectivity", "classIoss_1_1Hex64.html#a8a6434b0b9b8ae4cfe45ade5b21d4b50", null ],
     [ "edge_type", "classIoss_1_1Hex64.html#a1fc1f7e4aecfcd85325a854a656292a6", null ],
     [ "element_connectivity", "classIoss_1_1Hex64.html#a45f24aa44e144b4b1adf14bc18a93fbb", null ],

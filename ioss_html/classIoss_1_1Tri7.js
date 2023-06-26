@@ -1,8 +1,8 @@
 var classIoss_1_1Tri7 =
 [
     [ "~Tri7", "classIoss_1_1Tri7.html#a0aee2f821a7f9acea3128ccc2569f08f", null ],
-    [ "Tri7", "classIoss_1_1Tri7.html#a0fd12222086391d13953446553357e24", null ],
     [ "Tri7", "classIoss_1_1Tri7.html#a398c635a1787e692ab31c4cad5add040", null ],
+    [ "Tri7", "classIoss_1_1Tri7.html#a0fd12222086391d13953446553357e24", null ],
     [ "edge_connectivity", "classIoss_1_1Tri7.html#ac4c3eb039489a5f276e9a1492267502e", null ],
     [ "edge_type", "classIoss_1_1Tri7.html#a8de757a487f8f32ae082a216078abaf2", null ],
     [ "element_connectivity", "classIoss_1_1Tri7.html#a47d03409072406d0d2a45f0cc2d7b86b", null ],

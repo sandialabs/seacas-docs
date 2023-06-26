@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('pdqsort_8h_source.html',''); initResiz
 <a href="pdqsort_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">    pdqsort.h - Pattern-defeating quicksort.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"></span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">    Copyright (c) 2021, 2022 Orson Peters</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">    Copyright (c) 2021, 2022, 2023 Orson Peters</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">    This software is provided &#39;as-is&#39;, without any express or implied warranty. In no event will the</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">    authors be held liable for any damages arising from the use of this software.</span></div>
@@ -273,9 +273,9 @@ $(document).ready(function(){initNavTree('pdqsort_8h_source.html',''); initResiz
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="namespacepdqsort__detail.html#a9c14c46c400c3d91db14fb6500d576a0">  179</a></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">inline</span> T *<a class="code hl_function" href="namespacepdqsort__detail.html#a9c14c46c400c3d91db14fb6500d576a0">align_cacheline</a>(T *p)</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  {</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="preprocessor">#if defined(UINTPTR_MAX) &amp;&amp; __cplusplus &gt;= 201103L</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    std::uintptr_t ip = <span class="keyword">reinterpret_cast&lt;</span>std::uintptr_t<span class="keyword">&gt;</span>(p);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keyword">auto</span> ip = <span class="keyword">reinterpret_cast&lt;</span>std::uintptr_t<span class="keyword">&gt;</span>(p);</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <a class="code hl_typedef" href="namespacestd.html#aa30247b5e1a6e192c486364692e37832">std::size_t</a> ip = <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="namespacestd.html#aa30247b5e1a6e192c486364692e37832">std::size_t</a><span class="keyword">&gt;</span>(p);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">auto</span> ip = <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="namespacestd.html#aa30247b5e1a6e192c486364692e37832">std::size_t</a><span class="keyword">&gt;</span>(p);</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordtype">int</span> icacheline_size = int(<a class="code hl_enumvalue" href="namespacepdqsort__detail.html#ab47b9aa1b44986aeb27300079573ab98ae9d9eaf23e2582ffabe6d5c94635932d">cacheline_size</a>);</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    ip                  = (ip + icacheline_size - 1) &amp; -icacheline_size;</div>

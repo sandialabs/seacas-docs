@@ -1,8 +1,8 @@
 var classIoss_1_1Shell8 =
 [
     [ "~Shell8", "classIoss_1_1Shell8.html#ad20f9830d055eda396ab4b8db15b49f0", null ],
-    [ "Shell8", "classIoss_1_1Shell8.html#a62167b87c011ede66e0e3cb6e5028f39", null ],
     [ "Shell8", "classIoss_1_1Shell8.html#a3072b4071999082a7a54808b746d28eb", null ],
+    [ "Shell8", "classIoss_1_1Shell8.html#a62167b87c011ede66e0e3cb6e5028f39", null ],
     [ "edge_connectivity", "classIoss_1_1Shell8.html#a242543d5f070c465ef554be64ef05f81", null ],
     [ "edge_type", "classIoss_1_1Shell8.html#a0a91dde622c468d09a72d890a909941e", null ],
     [ "element_connectivity", "classIoss_1_1Shell8.html#a4ea917dd13eb9628480afb0d36d90bcc", null ],

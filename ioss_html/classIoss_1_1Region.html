@@ -338,7 +338,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af4fc53abbfbf1506887dc6fde160c041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8798b07ca70af25b9abcca93cebe0dc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a8798b07ca70af25b9abcca93cebe0dc6">get_alias__</a> (const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;alias, <a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a> <a class="el" href="classIoss_1_1Region.html#a2f5662c7cab9909fde0b386acecbd0c5">type</a>) const</td></tr>
 <tr class="separator:a8798b07ca70af25b9abcca93cebe0dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a567573be5e866b24927108b29340ef45"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceIoss.html#a72432e62d0395c37e39f70bab00de882">AliasMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a567573be5e866b24927108b29340ef45">get_alias_map</a> (<a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a> entity_type) const</td></tr>
+<tr class="memitem:a567573be5e866b24927108b29340ef45"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceIoss.html#ad46fca88dfb7753ea0ade572e84bad67">AliasMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a567573be5e866b24927108b29340ef45">get_alias_map</a> (<a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a> entity_type) const</td></tr>
 <tr class="memdesc:a567573be5e866b24927108b29340ef45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all original name / alias pairs for the region.  <br /></td></tr>
 <tr class="separator:a567573be5e866b24927108b29340ef45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e954f1c0a336527dc436640b7397154"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a4e954f1c0a336527dc436640b7397154">get_aliases</a> (const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;my_name, <a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a> <a class="el" href="classIoss_1_1Region.html#a2f5662c7cab9909fde0b386acecbd0c5">type</a>, std::vector&lt; <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &gt; &amp;aliases) const</td></tr>
@@ -578,7 +578,7 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab8a40477ad0268ace475e4bdab15783f"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a>, <a class="el" href="namespaceIoss.html#a72432e62d0395c37e39f70bab00de882">AliasMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#ab8a40477ad0268ace475e4bdab15783f">aliases_</a></td></tr>
+<tr class="memitem:ab8a40477ad0268ace475e4bdab15783f"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a>, <a class="el" href="namespaceIoss.html#ad46fca88dfb7753ea0ade572e84bad67">AliasMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#ab8a40477ad0268ace475e4bdab15783f">aliases_</a></td></tr>
 <tr class="memdesc:ab8a40477ad0268ace475e4bdab15783f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores alias mappings.  <br /></td></tr>
 <tr class="separator:ab8a40477ad0268ace475e4bdab15783f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d5d827d86d16fe21d6692204912c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a69c6c346031915d29fd5a56ef0940903">NodeBlockContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Region.html#a97d5d827d86d16fe21d6692204912c05">nodeBlocks</a></td></tr>
@@ -1772,7 +1772,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespaceIoss.html#a72432e62d0395c37e39f70bab00de882">AliasMap</a> &amp; Ioss::Region::get_alias_map </td>
+          <td class="memname">const <a class="el" href="namespaceIoss.html#ad46fca88dfb7753ea0ade572e84bad67">AliasMap</a> &amp; Ioss::Region::get_alias_map </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
@@ -3457,7 +3457,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a>, <a class="el" href="namespaceIoss.html#a72432e62d0395c37e39f70bab00de882">AliasMap</a>&gt; Ioss::Region::aliases_</td>
+          <td class="memname">std::map&lt;<a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">EntityType</a>, <a class="el" href="namespaceIoss.html#ad46fca88dfb7753ea0ade572e84bad67">AliasMap</a>&gt; Ioss::Region::aliases_</td>
         </tr>
       </table>
   </td>

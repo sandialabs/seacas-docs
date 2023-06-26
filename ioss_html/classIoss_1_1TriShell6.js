@@ -1,8 +1,8 @@
 var classIoss_1_1TriShell6 =
 [
     [ "~TriShell6", "classIoss_1_1TriShell6.html#ac73018ece35671a169ff43ff165c7bf1", null ],
-    [ "TriShell6", "classIoss_1_1TriShell6.html#a6dc97da5fc3471ae20d19f680c3734a5", null ],
     [ "TriShell6", "classIoss_1_1TriShell6.html#a2c2ab11aa74661eb2f1f419ca3c380e6", null ],
+    [ "TriShell6", "classIoss_1_1TriShell6.html#a6dc97da5fc3471ae20d19f680c3734a5", null ],
     [ "edge_connectivity", "classIoss_1_1TriShell6.html#a76944b1105fd6956ee4a1657fcca3c8e", null ],
     [ "edge_type", "classIoss_1_1TriShell6.html#a46b0355e6ca9e177b1b5b346062a8356", null ],
     [ "element_connectivity", "classIoss_1_1TriShell6.html#a0ce4c50290a2f86e7df1e6399b03f046", null ],

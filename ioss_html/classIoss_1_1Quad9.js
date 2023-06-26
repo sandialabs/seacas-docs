@@ -1,8 +1,8 @@
 var classIoss_1_1Quad9 =
 [
     [ "~Quad9", "classIoss_1_1Quad9.html#a8c8cd837a4fca3edeb9cc16af6dbbd43", null ],
-    [ "Quad9", "classIoss_1_1Quad9.html#ac0b0187bba198b57d3a0c9d1d0b3a5df", null ],
     [ "Quad9", "classIoss_1_1Quad9.html#a241e68468ef873b231081e16a24f0888", null ],
+    [ "Quad9", "classIoss_1_1Quad9.html#ac0b0187bba198b57d3a0c9d1d0b3a5df", null ],
     [ "edge_connectivity", "classIoss_1_1Quad9.html#a34a75c55ddbd093e0db624d9afb8bba4", null ],
     [ "edge_type", "classIoss_1_1Quad9.html#a52b0368ca848d98253d5ddc27ef7efb6", null ],
     [ "element_connectivity", "classIoss_1_1Quad9.html#a7f8013a27fb41f501c81d49cf47a10eb", null ],

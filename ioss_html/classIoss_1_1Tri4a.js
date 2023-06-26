@@ -1,8 +1,8 @@
 var classIoss_1_1Tri4a =
 [
     [ "~Tri4a", "classIoss_1_1Tri4a.html#aaca13d4be54b8e27346d28889b5dc75d", null ],
-    [ "Tri4a", "classIoss_1_1Tri4a.html#a2815b2cd0b48f3dfc6f1c5a2b61d1178", null ],
     [ "Tri4a", "classIoss_1_1Tri4a.html#a59649ebbd2ddf4a5e14a6ae3f645f20e", null ],
+    [ "Tri4a", "classIoss_1_1Tri4a.html#a2815b2cd0b48f3dfc6f1c5a2b61d1178", null ],
     [ "edge_connectivity", "classIoss_1_1Tri4a.html#a6c328ee45b3fe18d94942c14002d7dc4", null ],
     [ "edge_type", "classIoss_1_1Tri4a.html#a7bb3df352e69e1b9dae27f72dd45de04", null ],
     [ "edges_similar", "classIoss_1_1Tri4a.html#a25910996f609d6f00a3ba71f7ccb5fc3", null ],

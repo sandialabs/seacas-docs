@@ -1,5 +1,8 @@
 var namespaceSEAMS =
 [
+    [ "anonymous_namespace{apr_aprepro.cc}", "namespaceSEAMS_1_1anonymous__namespace_02apr__aprepro_8cc_03.html", [
+      [ "match_option", "namespaceSEAMS_1_1anonymous__namespace_02apr__aprepro_8cc_03.html#a21444f3b8ddbf52917484be9a7f7f8cf", null ]
+    ] ],
     [ "anonymous_namespace{apr_units.cc}", "namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html", "namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03" ],
     [ "Aprepro", "classSEAMS_1_1Aprepro.html", "classSEAMS_1_1Aprepro" ],
     [ "aprepro_options", "structSEAMS_1_1aprepro__options.html", "structSEAMS_1_1aprepro__options" ],

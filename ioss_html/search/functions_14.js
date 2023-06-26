@@ -6,7 +6,7 @@ var searchData=
   ['unionnode_3',['UnionNode',['../classIoss_1_1glob_1_1UnionNode.html#a3e40796022136288091c64a609546fdc',1,'Ioss::glob::UnionNode']]],
   ['unique_4',['unique',['../classIoss_1_1Utils.html#acf65fef76eb7dfd4c7172cf19fde1a8f',1,'Ioss::Utils']]],
   ['uniquify_5',['uniquify',['../classIoss_1_1Utils.html#aa9e8a65a742fa904c9b21ca049616f27',1,'Ioss::Utils']]],
-  ['unknown_6',['Unknown',['../classIoss_1_1Unknown.html#a5a49b9e278931e8e3881938cd36e4cc9',1,'Ioss::Unknown::Unknown()'],['../classIoss_1_1Unknown.html#abce1ab2ee8856174959b93cc1d612869',1,'Ioss::Unknown::Unknown(const Unknown &amp;)=delete']]],
+  ['unknown_6',['Unknown',['../classIoss_1_1Unknown.html#abce1ab2ee8856174959b93cc1d612869',1,'Ioss::Unknown::Unknown(const Unknown &amp;)=delete'],['../classIoss_1_1Unknown.html#a5a49b9e278931e8e3881938cd36e4cc9',1,'Ioss::Unknown::Unknown()']]],
   ['unmap_5fcgns_5fconnectivity_7',['unmap_cgns_connectivity',['../classIocgns_1_1Utils.html#a1b9d639bd4b3346f42a9563d98b7ae36',1,'Iocgns::Utils']]],
   ['unpack_8',['unpack',['../namespaceanonymous__namespace_02Iocgns__DatabaseIO_8C_03.html#a79737b9b35b0003d9c913159a318710d',1,'anonymous_namespace{Iocgns_DatabaseIO.C}']]],
   ['unpack_5fsideblocks_9',['unpack_sideblocks',['../namespaceIofaodel.html#a7623fc963c41ec7bb5befce54d8159f7',1,'Iofaodel']]],

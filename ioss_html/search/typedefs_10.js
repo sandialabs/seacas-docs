@@ -7,7 +7,7 @@ var searchData=
   ['sidesetcontainer_4',['SideSetContainer',['../namespaceIoss.html#a7a217826e0632a196124bf8d5e4f39e9',1,'Ioss']]],
   ['sidesetdata_5',['SidesetData',['../UnitTestIotmTextMeshFixture_8h.html#ab27064fab7d0554c1c71bc2a5be9a269',1,'SidesetData:&#160;UnitTestIotmTextMeshFixture.h'],['../namespaceIotm.html#a181666aeb8c78db3ddd76148bd3a4cab',1,'Iotm::SidesetData']]],
   ['sidesetdatatype_6',['SidesetDataType',['../namespaceIotm_1_1text__mesh.html#a15bd2c9f2df24a7fc9b9999026fcca43',1,'Iotm::text_mesh']]],
-  ['sidesetmap_7',['SideSetMap',['../namespaceIopg.html#a8f2a6273f7d997eb2b5b7a8e3b56c7d8',1,'Iopg::SideSetMap'],['../namespaceIoexnl.html#afc8b5bafbb7c246eee6e5cfc9b275454',1,'Ioexnl::SideSetMap'],['../namespaceIoex.html#a8ae257784bdfb29603849073259d3098',1,'Ioex::SideSetMap']]],
+  ['sidesetmap_7',['SideSetMap',['../namespaceIopg.html#a8f2a6273f7d997eb2b5b7a8e3b56c7d8',1,'Iopg::SideSetMap'],['../namespaceIoexnl.html#ae8b2e52c37ff48ae2c2fe591895b6489',1,'Ioexnl::SideSetMap'],['../namespaceIoex.html#a5e5652487f6bb7196884f192b2d69aa3',1,'Ioex::SideSetMap']]],
   ['sidesetset_8',['SideSetSet',['../namespaceIopg.html#a27a7a5d083e0cd993784022c0b9788b3',1,'Iopg::SideSetSet'],['../namespaceIoexnl.html#a65ff976675780bffd22a1743bd8a85f4',1,'Ioexnl::SideSetSet'],['../namespaceIoex.html#ac38f7495daa7d3afa4efa4b68561f000',1,'Ioex::SideSetSet']]],
   ['sidevector_9',['SideVector',['../UnitTestIotmTextMeshFixture_8h.html#ae180f1764bfd644e3b924914ff7b2b9b',1,'UnitTestIotmTextMeshFixture.h']]],
   ['simpleneighborvector_10',['SimpleNeighborVector',['../structAdjacency.html#a3a803f0e524157c2a08878a6b69511e4',1,'Adjacency']]],

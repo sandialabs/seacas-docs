@@ -1,8 +1,8 @@
 var classIoss_1_1ShellLine2D2 =
 [
     [ "~ShellLine2D2", "classIoss_1_1ShellLine2D2.html#a1d7afb6fde206e4c5cc8288c59efc02a", null ],
-    [ "ShellLine2D2", "classIoss_1_1ShellLine2D2.html#a2e3d4349ead96bc9a8108a14c1ab401c", null ],
     [ "ShellLine2D2", "classIoss_1_1ShellLine2D2.html#afd5d5becf123eaca02493156f286f855", null ],
+    [ "ShellLine2D2", "classIoss_1_1ShellLine2D2.html#a2e3d4349ead96bc9a8108a14c1ab401c", null ],
     [ "edge_connectivity", "classIoss_1_1ShellLine2D2.html#aedb563c0e2a5036ff2fa5b1aaa075173", null ],
     [ "edge_type", "classIoss_1_1ShellLine2D2.html#abe74ad917c4c50972323f9ce6128d8ac", null ],
     [ "element_connectivity", "classIoss_1_1ShellLine2D2.html#aa30560157041f457b32a5c4ee9fcb5db", null ],

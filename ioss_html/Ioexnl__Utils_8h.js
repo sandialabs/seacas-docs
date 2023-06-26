@@ -4,7 +4,7 @@ var Ioexnl__Utils_8h =
     [ "Ioexnl::NameTopoKeyHash", "structIoexnl_1_1NameTopoKeyHash.html", "structIoexnl_1_1NameTopoKeyHash" ],
     [ "EXU_USE_HOPSCOTCH", "Ioexnl__Utils_8h.html#a8ce267dc1abb8699b36a97425844ece4", null ],
     [ "NameTopoKey", "Ioexnl__Utils_8h.html#a562afddedbec9c703a9243aff4f68ec3", null ],
-    [ "SideSetMap", "Ioexnl__Utils_8h.html#afc8b5bafbb7c246eee6e5cfc9b275454", null ],
+    [ "SideSetMap", "Ioexnl__Utils_8h.html#ae8b2e52c37ff48ae2c2fe591895b6489", null ],
     [ "SideSetSet", "Ioexnl__Utils_8h.html#a65ff976675780bffd22a1743bd8a85f4", null ],
     [ "TopologyMap", "Ioexnl__Utils_8h.html#a36aedf3048ede437298f0750bf4511a9", null ],
     [ "add_coordinate_frames", "Ioexnl__Utils_8h.html#a0df26d03cd55702c3935d4f38f949029", null ],

@@ -1,8 +1,8 @@
 var classIoss_1_1Tet10 =
 [
     [ "~Tet10", "classIoss_1_1Tet10.html#a1e25a64c4a75b24c01df6f768d81e894", null ],
-    [ "Tet10", "classIoss_1_1Tet10.html#aa7a09a4226ee3e0c15c0399478820632", null ],
     [ "Tet10", "classIoss_1_1Tet10.html#a6de9e591607e967773c7f563fdff9ac5", null ],
+    [ "Tet10", "classIoss_1_1Tet10.html#aa7a09a4226ee3e0c15c0399478820632", null ],
     [ "edge_connectivity", "classIoss_1_1Tet10.html#a49e85d8a10fb988c940f0424352cfa7a", null ],
     [ "edge_type", "classIoss_1_1Tet10.html#aa8feeff959a19f68abdcb907be8730c0", null ],
     [ "element_connectivity", "classIoss_1_1Tet10.html#af675e2f9547fc8fb0318d799947546f2", null ],
