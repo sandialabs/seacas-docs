@@ -36,6 +36,7 @@ var classIoss_1_1Field =
     [ "check_type", "classIoss_1_1Field.html#ad4f3aa9b1f18f9f3eb29e1db399d01f4", null ],
     [ "equal", "classIoss_1_1Field.html#a0a7fbed983a83865b8c539a1b2cfa9a8", null ],
     [ "equal_", "classIoss_1_1Field.html#a0c5599a4c5b866c47796d69fbe6691e1", null ],
+    [ "get_basic_size", "classIoss_1_1Field.html#a93b8da60461276c5a3957e11edbcc615", null ],
     [ "get_component_count", "classIoss_1_1Field.html#a5316d7e05f9e17f1fb9ba23fb0367fcd", null ],
     [ "get_component_name", "classIoss_1_1Field.html#aac9be0abc9c902cc050ad3b19bdf76a2", null ],
     [ "get_field_type", "classIoss_1_1Field.html#ae837f52a8c5b1cf6ce76113f4dd793d9", null ],

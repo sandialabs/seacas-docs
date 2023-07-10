@@ -26,7 +26,7 @@ var classIoexnl_1_1BaseDatabaseIO =
     [ "get_current_state", "classIoexnl_1_1BaseDatabaseIO.html#aa80932e923c738aad668a5765e6c9eb4", null ],
     [ "get_database_step", "classIoexnl_1_1BaseDatabaseIO.html#a9b80116ec8da3e7049c6a6623b3f5071", null ],
     [ "get_file_pointer", "classIoexnl_1_1BaseDatabaseIO.html#a15c530a2fa66f578aa4019d73b47c693", null ],
-    [ "get_format", "classIoexnl_1_1BaseDatabaseIO.html#a6156ebb765958e756d9b197b47d44cea", null ],
+    [ "get_format", "classIoexnl_1_1BaseDatabaseIO.html#a105062b207561b4c78744111535159c5", null ],
     [ "get_nodeblocks", "classIoexnl_1_1BaseDatabaseIO.html#a6be2fdb00cd65e89c06ba06a3b91aad8", null ],
     [ "get_reduction_field", "classIoexnl_1_1BaseDatabaseIO.html#ac0c69363dd3391d822e74e730c51c54e", null ],
     [ "get_step_times__", "classIoexnl_1_1BaseDatabaseIO.html#a80833893e77671d9d6c116c29813e204", null ],

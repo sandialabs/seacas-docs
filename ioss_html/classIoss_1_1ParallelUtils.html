@@ -168,12 +168,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a245a20b2ce39df7d0429e9d4ec6fce60"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a245a20b2ce39df7d0429e9d4ec6fce60"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#a245a20b2ce39df7d0429e9d4ec6fce60">gather</a> (int vals_count, int size_per_val, std::vector&lt; T &gt; &amp;my_values, std::vector&lt; T &gt; &amp;result) const</td></tr>
 <tr class="separator:a245a20b2ce39df7d0429e9d4ec6fce60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34449a1dddb8b3807a85b828464846b1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a34449a1dddb8b3807a85b828464846b1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#a34449a1dddb8b3807a85b828464846b1">broadcast</a> (T &amp;value, int root=0) const</td></tr>
-<tr class="separator:a34449a1dddb8b3807a85b828464846b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8b0a7a2c52ddb01eab2634ca6e3cc5a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa8b0a7a2c52ddb01eab2634ca6e3cc5a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#aa8b0a7a2c52ddb01eab2634ca6e3cc5a">broadcast</a> (std::vector&lt; T &gt; &amp;value, int root=0) const</td></tr>
-<tr class="separator:aa8b0a7a2c52ddb01eab2634ca6e3cc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1491c008fca4d2029f7e40f8bd9846"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abf1491c008fca4d2029f7e40f8bd9846"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#abf1491c008fca4d2029f7e40f8bd9846">broadcast</a> (T &amp;my_value, int root=0) const</td></tr>
+<tr class="separator:abf1491c008fca4d2029f7e40f8bd9846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36054d095613c61bfe179dc1ffa03430"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a36054d095613c61bfe179dc1ffa03430"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#a36054d095613c61bfe179dc1ffa03430">broadcast</a> (std::vector&lt; T &gt; &amp;my_value, int root=0) const</td></tr>
+<tr class="separator:a36054d095613c61bfe179dc1ffa03430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff274320a606f5a7a611d385e5b451c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ParallelUtils.html#aeff274320a606f5a7a611d385e5b451c">progress</a> (const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;output) const</td></tr>
 <tr class="separator:aeff274320a606f5a7a611d385e5b451c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a223fa799711635bb5b1b0d2c34dee499"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -556,8 +556,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aa8b0a7a2c52ddb01eab2634ca6e3cc5a" name="aa8b0a7a2c52ddb01eab2634ca6e3cc5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8b0a7a2c52ddb01eab2634ca6e3cc5a">&#9670;&#160;</a></span>broadcast() <span class="overload">[5/6]</span></h2>
+<a id="a36054d095613c61bfe179dc1ffa03430" name="a36054d095613c61bfe179dc1ffa03430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36054d095613c61bfe179dc1ffa03430">&#9670;&#160;</a></span>broadcast() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,7 +568,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void Ioss::ParallelUtils::broadcast </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
+          <td class="paramname"><em>my_value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -586,8 +586,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a34449a1dddb8b3807a85b828464846b1" name="a34449a1dddb8b3807a85b828464846b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34449a1dddb8b3807a85b828464846b1">&#9670;&#160;</a></span>broadcast() <span class="overload">[6/6]</span></h2>
+<a id="abf1491c008fca4d2029f7e40f8bd9846" name="abf1491c008fca4d2029f7e40f8bd9846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1491c008fca4d2029f7e40f8bd9846">&#9670;&#160;</a></span>broadcast() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -598,7 +598,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void Ioss::ParallelUtils::broadcast </td>
           <td>(</td>
           <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
+          <td class="paramname"><em>my_value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

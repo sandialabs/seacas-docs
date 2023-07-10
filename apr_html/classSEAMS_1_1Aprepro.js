@@ -54,7 +54,7 @@ var classSEAMS_1_1Aprepro =
     [ "set_option", "classSEAMS_1_1Aprepro.html#a71039386241d1fc5f547af6d1c6eecaf", null ],
     [ "state_is_immutable", "classSEAMS_1_1Aprepro.html#a5d028beb608570c87d41c1bcb42f58f4", null ],
     [ "statistics", "classSEAMS_1_1Aprepro.html#a6c271fa53d065ce13d607af77e971503", null ],
-    [ "string_interactive", "classSEAMS_1_1Aprepro.html#acb32593883b914d09a0f9dd7cceaf3dc", null ],
+    [ "string_interactive", "classSEAMS_1_1Aprepro.html#a793adde8e829938699c9a403ace87a90", null ],
     [ "version", "classSEAMS_1_1Aprepro.html#a71029178b259a3835dbf0b3c5a9219f1", null ],
     [ "warning", "classSEAMS_1_1Aprepro.html#a3b83e64769dd8f9f5785c79097071e83", null ],
     [ "ap_file_list", "classSEAMS_1_1Aprepro.html#a11dd4393e792bc5fe8c7763a6c0c41ad", null ],

@@ -113,6 +113,9 @@ Functions</h2></td></tr>
 <tr class="separator:acb8182b7e1a171e2d1a8402a7f282529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0339a01eb797b5ee7289a393cb2814cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a0339a01eb797b5ee7289a393cb2814cc">calc_bounding_box</a> (size_t ndim, size_t node_count, std::vector&lt; double &gt; &amp;coordinates, double &amp;xmin, double &amp;ymin, double &amp;zmin, double &amp;xmax, double &amp;ymax, double &amp;zmax)</td></tr>
 <tr class="separator:a0339a01eb797b5ee7289a393cb2814cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d757463578cddcf6bc3bc93620aae35"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4d757463578cddcf6bc3bc93620aae35"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a4d757463578cddcf6bc3bc93620aae35">get_all_block_offsets</a> (const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;field_name, const std::vector&lt; T * &gt; &amp;entity_container)</td></tr>
+<tr class="separator:a4d757463578cddcf6bc3bc93620aae35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e0b70554daa960e6a7bcc5ad42940e5"><td class="memTemplParams" colspan="2">template&lt;typename ENTITY &gt; </td></tr>
 <tr class="memitem:a3e0b70554daa960e6a7bcc5ad42940e5"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a3e0b70554daa960e6a7bcc5ad42940e5">zero_copy_not_enabled</a> (const ENTITY *entity, const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, const <a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *db)</td></tr>
 <tr class="separator:a3e0b70554daa960e6a7bcc5ad42940e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +263,36 @@ template&lt;typename INT &gt; </div>
           <td></td>
           <td class="paramtype">double &amp;&#160;</td>
           <td class="paramname"><em>zmax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d757463578cddcf6bc3bc93620aae35" name="a4d757463578cddcf6bc3bc93620aae35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d757463578cddcf6bc3bc93620aae35">&#9670;&#160;</a></span>get_all_block_offsets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; size_t &gt; anonymous_namespace{Ioss_DatabaseIO.C}::get_all_block_offsets </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>field_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entity_container</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

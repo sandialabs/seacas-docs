@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('Ioss__Decomposition_8h.html',''); init
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;<a class="el" href="Ioss__Utils_8h_source.html">Ioss_Utils.h</a>&gt;</code><br />
 <code>#include &lt;parmetis.h&gt;</code><br />
 <code>#include &lt;zoltan_cpp.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="hopscotch__map_8h_source.html">hopscotch_map.h</a>&gt;</code><br />
@@ -147,6 +148,22 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:afc8a55ef023ee9aa5702d62e1b3a7917"><td class="memItemLeft" align="right" valign="top">IOSS_EXPORT const std::vector&lt; <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#afc8a55ef023ee9aa5702d62e1b3a7917">Ioss::valid_decomp_methods</a> ()</td></tr>
 <tr class="separator:afc8a55ef023ee9aa5702d62e1b3a7917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f93cce5c38f868ed203f8078248cefb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a1f93cce5c38f868ed203f8078248cefb">Ioss::get_all_block_ioss_element_size</a> (const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks)</td></tr>
+<tr class="separator:a1f93cce5c38f868ed203f8078248cefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b9a63af94fe6912ca1061456c70c98"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ab6b9a63af94fe6912ca1061456c70c98">Ioss::get_all_block_ioss_offset_size</a> (const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks, const std::vector&lt; int &gt; &amp;block_field_component_count)</td></tr>
+<tr class="separator:ab6b9a63af94fe6912ca1061456c70c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd97868214b8513893af9c42409058a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a0bd97868214b8513893af9c42409058a">Ioss::get_all_block_ioss_offset</a> (const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks, const std::vector&lt; int &gt; &amp;block_component_count)</td></tr>
+<tr class="separator:a0bd97868214b8513893af9c42409058a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d5a7cd29481be039b32352128533dd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a14d5a7cd29481be039b32352128533dd">Ioss::get_all_block_import_offset</a> (const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks, const std::vector&lt; int &gt; &amp;block_component_count)</td></tr>
+<tr class="separator:a14d5a7cd29481be039b32352128533dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587ffb5df449d2653238b9d5fffd8eb6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a587ffb5df449d2653238b9d5fffd8eb6">Ioss::get_all_block_connectivity_ioss_component_count</a> (const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks)</td></tr>
+<tr class="separator:a587ffb5df449d2653238b9d5fffd8eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf5ba280780b8237cf1c605156d4ee50"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#aaf5ba280780b8237cf1c605156d4ee50">Ioss::get_all_block_connectivity_ioss_offset_size</a> (const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks)</td></tr>
+<tr class="separator:aaf5ba280780b8237cf1c605156d4ee50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10187ee327b33c834144e9358f7326c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#af10187ee327b33c834144e9358f7326c">Ioss::get_all_block_connectivity_ioss_offset</a> (const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks)</td></tr>
+<tr class="separator:af10187ee327b33c834144e9358f7326c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a13c64f3428406f33e9060535b6d138"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a3a13c64f3428406f33e9060535b6d138">Ioss::get_all_block_connectivity_import_offset</a> (const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks)</td></tr>
+<tr class="separator:a3a13c64f3428406f33e9060535b6d138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a63eae7a57499ff8194421b977d70e77d" name="a63eae7a57499ff8194421b977d70e77d"></a>
