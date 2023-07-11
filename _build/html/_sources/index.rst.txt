@@ -103,6 +103,9 @@ Exodus Python Interfaces
 * `Exodus Python Interface: <../../exodus.html>`_ Exodus.py, a python
   interface to the Exodus library. Python 2 and 3 versions available.
   
+* `Exodus Python Interface (experimental): <../../exodus-py/exodus3.html>`_ Exodus.py, a python
+  interface to the Exodus library. Python 2 and 3 versions available.
+  
 
 * `Exomerge Python Module: <../../exomerge.pdf>`_ ExoMerge.py, a
   lightweight python interface for manipulating Exodus files.  Python
