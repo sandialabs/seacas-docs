@@ -2000,6 +2000,35 @@
 
     <span class="c1"># --------------------------------------------------------------------</span>
 
+<div class="viewcode-block" id="exodus.get_ids"><a class="viewcode-back" href="../exodus3.html#exodus3.exodus.get_ids">[docs]</a>    <span class="k">def</span> <span class="nf">get_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">objType</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        get mapping of exodus block/set index to user- or application-</span>
+<span class="sd">        defined block/set id; ids is ordered</span>
+<span class="sd">        by the *INDEX* ordering, a 1-based system going from</span>
+<span class="sd">        1 to number_set_or_block, used by exodus for storage</span>
+<span class="sd">        and input/output of array data stored on the blocks/sets; a</span>
+<span class="sd">        user or application can optionally use a separate block/set</span>
+<span class="sd">        *ID* numbering system, so the ids array points to the</span>
+<span class="sd">        block/set *ID* for each set *INDEX*</span>
+
+<span class="sd">        &gt;&gt;&gt; node_set_ids = exo.get_ids(&#39;EX_NODE_SET&#39;)</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+
+<span class="sd">            if array_type == &#39;ctype&#39;:</span>
+<span class="sd">              &lt;list&lt;int&gt;&gt;  ids</span>
+
+<span class="sd">            if array_type == &#39;numpy&#39;:</span>
+<span class="sd">              &lt;np_array&lt;int&gt;&gt;  ids</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ex_get_ids</span><span class="p">(</span><span class="n">objType</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_numpy</span><span class="p">:</span>
+            <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">ids</span></div>
+
+    <span class="c1"># --------------------------------------------------------------------</span>
+
 <div class="viewcode-block" id="exodus.get_names"><a class="viewcode-back" href="../exodus3.html#exodus3.exodus.get_names">[docs]</a>    <span class="k">def</span> <span class="nf">get_names</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">object_type</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        get a list of all block/set names ordered by block/set *INDEX*;</span>
@@ -2100,35 +2129,6 @@
         <span class="n">numVals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_reduction_variable_number</span><span class="p">(</span><span class="n">objType</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__ex_put_reduction_vars</span><span class="p">(</span><span class="n">step</span><span class="p">,</span> <span class="n">objType</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">numVals</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">True</span></div>
-
-    <span class="c1"># --------------------------------------------------------------------</span>
-
-<div class="viewcode-block" id="exodus.get_ids"><a class="viewcode-back" href="../exodus3.html#exodus3.exodus.get_ids">[docs]</a>    <span class="k">def</span> <span class="nf">get_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">objType</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        get mapping of exodus block/set index to user- or application-</span>
-<span class="sd">        defined block/set id; ids is ordered</span>
-<span class="sd">        by the *INDEX* ordering, a 1-based system going from</span>
-<span class="sd">        1 to number_set_or_block, used by exodus for storage</span>
-<span class="sd">        and input/output of array data stored on the blocks/sets; a</span>
-<span class="sd">        user or application can optionally use a separate block/set</span>
-<span class="sd">        *ID* numbering system, so the ids array points to the</span>
-<span class="sd">        block/set *ID* for each set *INDEX*</span>
-
-<span class="sd">        &gt;&gt;&gt; node_set_ids = exo.get_ids(&#39;EX_NODE_SET&#39;)</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-
-<span class="sd">            if array_type == &#39;ctype&#39;:</span>
-<span class="sd">              &lt;list&lt;int&gt;&gt;  ids</span>
-
-<span class="sd">            if array_type == &#39;numpy&#39;:</span>
-<span class="sd">              &lt;np_array&lt;int&gt;&gt;  ids</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ex_get_ids</span><span class="p">(</span><span class="n">objType</span><span class="p">)</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_numpy</span><span class="p">:</span>
-            <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">ids</span></div>
 
     <span class="c1"># --------------------------------------------------------------------</span>
 <div class="viewcode-block" id="exodus.get_variable_truth_table"><a class="viewcode-back" href="../exodus3.html#exodus3.exodus.get_variable_truth_table">[docs]</a>    <span class="k">def</span> <span class="nf">get_variable_truth_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">objType</span><span class="p">,</span> <span class="n">entId</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
