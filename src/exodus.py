@@ -1,1 +1,0 @@
-../../seacas/lib/exodus.py
