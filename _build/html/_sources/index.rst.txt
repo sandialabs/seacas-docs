@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
    :caption: Contents:
 
 SEACAS
@@ -102,10 +102,11 @@ Exodus Python Modules
 
 Two python modules are available for accessing exodus databases:
 
-* Exodus.py, which is a lower-level python interface similar to the Exodus C API.
-* `Exomerge <../../exomerge.pdf>`_ which is a lightweight python interface for manipulating Exodus files.
-* `Module Documentation <../../exodus-py/index.html>`_
+* `Exodus.py (API) <exodus.html>`_: a lower-level python interface similar to the Exodus C API.
+* `Exomerge.py (API) <exomerge.html>`_: a lightweight python interface for manipulating Exodus files.  
+* `Exomerge Users Manual <../../exomerge.pdf>`_ 
 
+* :ref:`genindex`
 
 IOSS Library
 ------------
