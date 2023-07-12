@@ -97,20 +97,14 @@ assemblies, blobs, and other cleanups.
   <https://github.com/sandialabs/seacas/wiki#recent-extensions-to-exodus-format>`_
   and their status.
  
-Exodus Python Interfaces
-------------------------
+Exodus Python Modules
+---------------------
 
-* `Exodus Python Interface: <../../exodus.html>`_ Exodus.py, a python
-  interface to the Exodus library. Python 2 and 3 versions available.
-  
-* `Exodus Python Interface (experimental doc): <../../exodus-py/exodus.html>`_ Exodus.py, a python
-  interface to the Exodus library. Python 2 and 3 versions available.
-  
+Two python modules are available for accessing exodus databases:
 
-* `Exomerge Python Module: <../../exomerge.pdf>`_ ExoMerge.py, a
-  lightweight python interface for manipulating Exodus files.  Python
-  2 and 3 versions available. `Exomerge API <../../exomerge.html>`_ or
-  experimental API documentation `Exomerge API (sphinx) <../../exodus-py/exomerge.html>`_.
+* Exodus.py, which is a lower-level python interface similar to the Exodus C API.
+* `Exomerge <../../exomerge.pdf>`_ which is a lightweight python interface for manipulating Exodus files.
+* `Module Documentation <../../exodus-py/index.html>`_
 
 
 IOSS Library
