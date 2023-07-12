@@ -93,8 +93,8 @@
 <span class="sd">  data interrogation, and analysis tracking.</span>
 
 <span class="sd">The data in Exodus files can be divided into three primary categories:</span>
-<span class="sd">* initialization data, </span>
-<span class="sd">* model data, and </span>
+<span class="sd">* initialization data,</span>
+<span class="sd">* model data, and</span>
 <span class="sd">* results data.</span>
 
 <span class="sd">* Initialization data includes sizing parameters (number of</span>
@@ -114,18 +114,18 @@
 
 <span class="sd">  * Nodal results are output (at each time step) for all the</span>
 <span class="sd">    nodes in the model. An example of a nodal variable is displacement in</span>
-<span class="sd">    the X direction. </span>
+<span class="sd">    the X direction.</span>
 <span class="sd">  * Element, nodeset, and sideset results are output (at</span>
 <span class="sd">    each time step) for all entities (elements, nodes, sides) in one or</span>
 <span class="sd">    more entity block. For example, stress may be an element</span>
-<span class="sd">    variable. </span>
+<span class="sd">    variable.</span>
 <span class="sd">  * Another use of element variables is to record element status</span>
 <span class="sd">    (a binary flag indicating whether each element is &quot;alive&quot; or &quot;dead&quot;)</span>
-<span class="sd">    through time. </span>
+<span class="sd">    through time.</span>
 <span class="sd">  * Global results are output (at each time step) for a</span>
 <span class="sd">    single element or node, or for a single property. Linear momentum of a</span>
 <span class="sd">    structure and the acceleration at a particular point are both examples</span>
-<span class="sd">    of global variables. </span>
+<span class="sd">    of global variables.</span>
 <span class="sd">  * Although these examples correspond to typical FE</span>
 <span class="sd">    applications, the data format is flexible enough to accommodate a</span>
 <span class="sd">    spectrum of uses.</span>
@@ -825,7 +825,7 @@
 
 <span class="sd">           Database: base_ioshell_copy.e</span>
 <span class="sd">           Title:  This is the title</span>
-<span class="sd">        </span>
+
 <span class="sd">           Number of spatial dimensions = 3                                                 Number of global variables     = 10</span>
 <span class="sd">           Number of node blocks        = 1         Number of nodes              = 1,331    Number of nodal variables      =  2</span>
 <span class="sd">           Number of element blocks     = 1         Number of elements           = 1,000    Number of element variables    =  5</span>
@@ -1281,7 +1281,7 @@
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
-<span class="sd">        coord_names : list&lt;string&gt;  </span>
+<span class="sd">        coord_names : list&lt;string&gt;</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ex_get_coord_names</span><span class="p">()</span></div>
 
@@ -1425,7 +1425,7 @@
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
-<span class="sd">        node_id_map : list&lt;ctypes.c_int&gt;  </span>
+<span class="sd">        node_id_map : list&lt;ctypes.c_int&gt;</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ex_get_node_num_map</span><span class="p">()</span></div>
 
@@ -1464,7 +1464,7 @@
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
-<span class="sd">        nvar_names : list&lt;string&gt;  </span>
+<span class="sd">        nvar_names : list&lt;string&gt;</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ex_get_variable_param</span><span class="p">(</span><span class="s1">&#39;EX_NODAL&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="k">return</span> <span class="p">[]</span>
@@ -1517,7 +1517,7 @@
 <span class="sd">        ----------</span>
 <span class="sd">        nvar_name : string</span>
 <span class="sd">            name of new nodal variable</span>
-<span class="sd">        nvar_index : int </span>
+<span class="sd">        nvar_index : int</span>
 <span class="sd">            1-based index of new nodal variable</span>
 
 <span class="sd">        Returns</span>
@@ -1594,7 +1594,7 @@
 <span class="sd">             1-based index of time step</span>
 <span class="sd">        start_index : int</span>
 <span class="sd">             1-based index of node to start returning data</span>
-<span class="sd">        num_nodes : int  </span>
+<span class="sd">        num_nodes : int</span>
 <span class="sd">             number of nodes to return data for.</span>
 
 <span class="sd">        Returns</span>
@@ -1831,7 +1831,7 @@
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
-<span class="sd">            map_type : ex_entity_type   </span>
+<span class="sd">            map_type : ex_entity_type</span>
 <span class="sd">                        type of map being queried (&#39;EX_ELEM_MAP&#39;, &#39;EX_NODE_MAP&#39;, &#39;EX_FACE_MAP&#39;, &#39;EX_EDGE_MAP&#39;)</span>
 <span class="sd">            elem_id_map : list&lt;int&gt;</span>
 
@@ -2040,7 +2040,7 @@
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
-<span class="sd">        names : list&lt;string&gt;  </span>
+<span class="sd">        names : list&lt;string&gt;</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ex_get_names</span><span class="p">(</span><span class="n">object_type</span><span class="p">)</span></div>
 
@@ -2784,15 +2784,15 @@
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
-<span class="sd">        elem_blk_ids : list&lt;int&gt;    </span>
+<span class="sd">        elem_blk_ids : list&lt;int&gt;</span>
 <span class="sd">              element block *ID* (not *INDEX*) for each block</span>
-<span class="sd">        elem_types   : list&lt;string&gt;    </span>
+<span class="sd">        elem_types   : list&lt;string&gt;</span>
 <span class="sd">              element type for each block</span>
 <span class="sd">        num_blk_elems : list&lt;int&gt;</span>
 <span class="sd">              number of elements for each block</span>
 <span class="sd">        num_elem_nodes : list&lt;int&gt;</span>
 <span class="sd">              number of nodes per element for each block</span>
-<span class="sd">        num_elem_attrs : list&lt;int&gt;  </span>
+<span class="sd">        num_elem_attrs : list&lt;int&gt;</span>
 <span class="sd">              number of attributes per element for each block</span>
 
 <span class="sd">        Returns</span>
@@ -3806,7 +3806,7 @@
 <span class="sd">        ----------</span>
 <span class="sd">        node_set_id : ex_entity_id</span>
 <span class="sd">           node set *ID* (not *INDEX*)</span>
-<span class="sd">        nsvar_name  : string  </span>
+<span class="sd">        nsvar_name  : string</span>
 <span class="sd">           name of node set variable</span>
 <span class="sd">        time_step   : int</span>
 <span class="sd">           1-based index of time step</span>
@@ -4696,7 +4696,7 @@
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
-<span class="sd">        gvar_names : list&lt;string&gt;  </span>
+<span class="sd">        gvar_names : list&lt;string&gt;</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_variable_number</span><span class="p">(</span><span class="s1">&#39;EX_GLOBAL&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="k">return</span> <span class="p">[]</span>

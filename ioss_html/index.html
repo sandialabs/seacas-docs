@@ -324,14 +324,16 @@ Properties for the heartbeat output</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">FIELD_SEPARATOR   </td><td class="markdownTableBodyCenter">[, ]   </td><td class="markdownTableBodyNone">separator to be used between output fields.    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">FULL_PRECISION   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">output will contain as many digits as needed to fully represent the doubles value. FIELD_WIDTH will be ignored for doubles if this is specified.    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">PRECISION   </td><td class="markdownTableBodyCenter">-1..16 [5]   </td><td class="markdownTableBodyNone">Precision used for floating point output. If set to <code>-1</code>, then the output will contain as many digits as needed to fully represent the doubles value. FIELD_WIDTH will be ignored for doubles if precision is set to -1.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">FIELD_WIDTH   </td><td class="markdownTableBodyCenter">0..   </td><td class="markdownTableBodyNone">Width of an output field. If 0, then use natural width.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">SHOW_LABELS   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Should each field be preceded by its name (ke=1.3e9, ie=2.0e9)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">SHOW_LEGEND   </td><td class="markdownTableBodyCenter">[on]/off   </td><td class="markdownTableBodyNone">Should a legend be printed at the beginning of the output showing the field names for each column of data.    </td></tr>
+<td class="markdownTableBodyNone">SHOW_LABELS   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Should each field be preceded by its name (ke=1.3e9, ie=2.0e9)    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">SHOW_LEGEND   </td><td class="markdownTableBodyCenter">[on]/off   </td><td class="markdownTableBodyNone">Should a legend be printed at the beginning of the output showing the field names for each column of data.    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">SHOW_TIME_FIELD   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Should the current analysis time be output as the first field.   </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md9"></a>
