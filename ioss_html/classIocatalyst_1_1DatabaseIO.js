@@ -28,7 +28,7 @@ var classIocatalyst_1_1DatabaseIO =
     [ "get_field_internal", "classIocatalyst_1_1DatabaseIO.html#aa4c259df5f2b559f047f56906f92fefb", null ],
     [ "get_field_internal", "classIocatalyst_1_1DatabaseIO.html#aa38163036720447996f8d04b6e286082", null ],
     [ "get_field_internal", "classIocatalyst_1_1DatabaseIO.html#aeccc60c486f93f599f91ec1e0db05dc7", null ],
-    [ "get_format", "classIocatalyst_1_1DatabaseIO.html#ab2603be976fc6402ae155dc9092471f5", null ],
+    [ "get_format", "classIocatalyst_1_1DatabaseIO.html#af78a9caba2b5086f239ac89e209c95f1", null ],
     [ "get_step_times__", "classIocatalyst_1_1DatabaseIO.html#a617d4f9d4009b1385293afe841ecb3a9", null ],
     [ "int_byte_size_db", "classIocatalyst_1_1DatabaseIO.html#ac56b2bfc6e9c6fe2f0de7bab88f70737", null ],
     [ "internal_edges_available", "classIocatalyst_1_1DatabaseIO.html#a844ddd9160520aca80a442d2582d020b", null ],
