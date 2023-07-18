@@ -191,376 +191,233 @@ Lattice Description File Format</h1>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Unit Cell Dictionary</h2>
 <p>The unit cell dictionary defines the unit cell template meshes that will be placed in the lattice. The dictionary begins with a line containing <code>BEGIN_DICTIONARY</code> followed by one or more lines defining the unit cells and is then ended with a line containing <code>END_DICTIONARY</code></p>
-<p>The syntax of the lines defining the unit cells consists of two fields &ndash; an arbitrary <em>key</em> and the filename containing the Exodus file defining the mesh for this unit cell. The only restriction on the <em>key</em> is that it must be unique in the dictionary. The filenames must specify the path (either absolute or relative to the current execution directory) to the Exodus file; it can optionally be delimited by double quotes (<code>"&lt;/tt&gt;).  The filenames do not need to be unique, but it is more efficient in both memory and time if each unit cell template mesh is unique.
-
-As an example, here is a valid dictionary definition:
-
-@icode 
-BEGIN_DICTIONARY
-  0001 "../zellij-example/xatom-1b.e"
-  0002 "../zellij-example/xatom-Y.e"
-  0003 "../zellij-example/xatom-X.e"
-  0004 "../zellij-example/xatom-2b.e"
-END_DICTIONARY
-@endicode 
-The unit cell dictionary must appear before the lattice definition in the lattice description file.
-
-If an error is detected during the parsing of the unit cell dictionary, the code will output an error message and terminate.  Errors can be incorrect syntax, missing unit cell template meshes, duplicate keys, or problems reading the mesh description from a unit cell template mesh.  The unit cell template mesh file is accessed and partially read at the time that zellij parses the corresponding unit cell dictionary line.
-
-@subsection autotoc_md4 Lattice Definition
-
-The lattice definition specifies the size of the lattice and the distribution of the unit cell(s) within that lattice.  The lattice definition must follow the unit cell dictionary in the lattice description file.
-
-The first line of the lattice definition begins with the line &lt;tt&gt;BEGIN_LATTICE {i} {j} 1&lt;/tt&gt; where &lt;tt&gt;{i}&lt;/tt&gt; and &lt;tt&gt;{j}&lt;/tt&gt; specify the size of the &lt;tt&gt;IxJ&lt;/tt&gt; arrangement of unit cells.  For example, the line &lt;tt&gt;BEGIN_LATTICE 5 5 1&lt;/tt&gt; would define a lattice containing 25 unit cell instances arranged in a 5 by 5 regular grid.
-
-The last line of the lattice definition is the line &lt;tt&gt;END_LATTICE&lt;/tt&gt;.  When that line is encountered, zellij will begin outputting the mesh.
-
-Between the &lt;tt&gt;BEGIN_LATTICE&lt;/tt&gt; and &lt;tt&gt;END_LATTICE&lt;/tt&gt; are &lt;tt&gt;{j}&lt;/tt&gt; lines with &lt;tt&gt;{i}&lt;/tt&gt; entries per line.  The entries are any of the _key_s that were specified in the unit cell dictionary.
-
-As an example, here is a valid lattice definition using the keys of the example dictionary from the previous section:
-
-@icode 
-BEGIN_LATTICE 5  5  1
-  0001 0002 0003 0002 0001
-  0002 0003 0003 0003 0002
-  0003 0003 0004 0003 0003
-  0002 0003 0003 0003 0002
-  0001 0002 0003 0002 0001
-END_LATTICE
-@endicode 
-
-Although the lattice is typically symmetric and square, this is not a requirement and is not checked.
-
-If an error is detected during the parsing of the &lt;em&gt;lattice&lt;/em&gt;, the code will output an error message and terminate.  Errors can include invalid keys, incorrect number of lattice definition lines, or incorrect number of keys on a definition line.
-
-Note that zellij does not require that the unit cell keys be numeric; the following example shows a different method for specifying the same lattice definition file as the previous example:
-
-@icode 
-BEGIN_DICTIONARY
-  - "../zellij-example/xatom-1b.e"
-  | "../zellij-example/xatom-Y.e"
-  + "../zellij-example/xatom-X.e"
-  * "../zellij-example/xatom-2b.e"
-END_DICTIONARY
-
-BEGIN_LATTICE 5  5  1
-  - | + | -
-  | + + + |
-  + + * + +
-  | + + + |
-  - | + | -
-END_LATTICE
-@endicode 
-
-@section autotoc_md5 Unit Cell Template Mesh Requirements
-Zellij requires that the boundary mesh (&lt;tt&gt;X&lt;/tt&gt; and &lt;tt&gt;Y&lt;/tt&gt; faces) of each of the unit cell templates be a &lt;em&gt;regular&lt;/em&gt; "structured" mesh.  Basically this means that the faces of the mesh elements on the boundary are in a regular rectangular grid such that each mesh face is rectangular (90 degree corners) and that the boundary mesh on the minimum &lt;tt&gt;X&lt;/tt&gt; face is the same as that on the maximum &lt;tt&gt;X&lt;/tt&gt; face and similarly for the minimum &lt;tt&gt;Y&lt;/tt&gt; face and the maximum &lt;tt&gt;Y&lt;/tt&gt; face.
-
-Additionally, the X faces on &lt;em&gt;all&lt;/em&gt; unit cells must match and the Y faces on &lt;em&gt;all&lt;/em&gt;
-unit cells must match both in structure and in coordinate extent. This requirement is verified during execution. The &lt;tt&gt;Z&lt;/tt&gt; faces are less constrained with the only requirement being that the coordinate extents of all &lt;tt&gt;Z&lt;/tt&gt; faces must be the same (which follows from the &lt;tt&gt;X&lt;/tt&gt; and &lt;tt&gt;Y&lt;/tt&gt; face requirement); the structure of the mesh on the &lt;tt&gt;Z&lt;/tt&gt; faces is arbitrary.
-
-The unit cell meshes can contain any number of element blocks; however, each element block &lt;em&gt;must&lt;/em&gt; contain hexahedral elements with 8-nodes per element.  The element blocks do not need to be the same in each unit cell mesh, but if they do share the same element block &lt;tt&gt;id&lt;/tt&gt;, then those elements will be combined into the same element block in the output mesh with the same &lt;tt&gt;id&lt;/tt&gt;.
-
-The output mesh will contain the union of all element blocks existing on the input mesh unit cells.  For example, if:
-
-*  unit cell &lt;tt&gt;0001&lt;/tt&gt; has element blocks &lt;tt&gt;1 10 100&lt;/tt&gt;
-*  unit cell &lt;tt&gt;0002&lt;/tt&gt; has element blocks &lt;tt&gt;2 20 200&lt;/tt&gt;
-*  unit cell &lt;tt&gt;0003&lt;/tt&gt; has element blocks &lt;tt&gt;1 2 10 20&lt;/tt&gt;
-*  unit cell &lt;tt&gt;0004&lt;/tt&gt; has element blocks &lt;tt&gt;10 20 100 200&lt;/tt&gt;
-
-The output mesh will have element blocks &lt;tt&gt;1 2 10 20 100 200&lt;/tt&gt;
-
-@section autotoc_md6 Sideset Handling
-By default, zellij will replicate any sidesets that are defined on the
-input unit cell meshes to the output mesh file.  The sidesets will
-have the same names and ids as the sidesets on the input unit cell
-meshes.  If you do not want the sidesets replicated, you can add the
-command line option &lt;tt&gt;-ignore_sidesets&lt;/tt&gt; and any sidesets on the input
-unit cell meshes will be ignored.
-
-Zellij can also generate new sidesets on the boundaries of the output
-mesh via the command line option &lt;tt&gt;-generate_sidesets \&lt;axes\&gt;&lt;/tt&gt; where
-&lt;tt&gt;axes&lt;/tt&gt; is one or more letters specifying the face of the output mesh
-on which to generate a sideset.  Valid letters are &lt;tt&gt;xyzXYZ&lt;/tt&gt; or
-&lt;tt&gt;ijkIJK&lt;/tt&gt; which correspond to:
-
-*  &lt;tt&gt;x&lt;/tt&gt; or &lt;tt&gt;i&lt;/tt&gt; for surface on minimum X coordinate (default name = &lt;tt&gt;min_i&lt;/tt&gt;)
-*  &lt;tt&gt;y&lt;/tt&gt; or &lt;tt&gt;j&lt;/tt&gt; for surface on minimum Y coordinate (default name = &lt;tt&gt;min_j&lt;/tt&gt;)
-*  &lt;tt&gt;z&lt;/tt&gt; or &lt;tt&gt;k&lt;/tt&gt; for surface on minimum Z coordinate (default name = &lt;tt&gt;min_k&lt;/tt&gt;)
-*  &lt;tt&gt;X&lt;/tt&gt; or &lt;tt&gt;I&lt;/tt&gt; for surface on maximum X coordinate (default name = &lt;tt&gt;max_i&lt;/tt&gt;)
-*  &lt;tt&gt;Y&lt;/tt&gt; or &lt;tt&gt;J&lt;/tt&gt; for surface on maximum Y coordinate (default name = &lt;tt&gt;max_j&lt;/tt&gt;)
-*  &lt;tt&gt;Z&lt;/tt&gt; or &lt;tt&gt;K&lt;/tt&gt; for surface on maximum Z coordinate (default name = &lt;tt&gt;max_k&lt;/tt&gt;)
-
-For example &lt;tt&gt;-generate_sidesets xyXY&lt;/tt&gt; would generate sideset on the
-surfaces corresponding to the minimum and maximum X and Y coordinates
-on the output mesh.
-
-By default, the generated sidesets will be named as shown in the list
-above.  The names can be changed with the &lt;tt&gt;-sideset_names \&lt;arg\&gt;&lt;/tt&gt;
-command line option.  The syntax of &lt;tt&gt;\&lt;arg\&gt;&lt;/tt&gt; is
-&lt;tt&gt;axis:name,axis:name,...&lt;/tt&gt; where &lt;tt&gt;axis&lt;/tt&gt; is one of &lt;tt&gt;ijkIJK&lt;/tt&gt; or &lt;tt&gt;xyzXYZ&lt;/tt&gt;
-and &lt;tt&gt;name&lt;/tt&gt; is the name of the specified sideset.  For example,
-&lt;tt&gt;-sideset_names x:left,X:right&lt;/tt&gt;  would name the sidesets on the
-minimum x and maximum X faces &lt;tt&gt;left&lt;/tt&gt; and &lt;tt&gt;right&lt;/tt&gt; respectively.  There
-will be an error if two or more sidesets have the same name.
-
-@section autotoc_md7 Parallel Execution
-Zellij can produce a mesh decomposed into a file-per-rank for use in a
-parallel analysis application.  Note that Zellij itself is run
-serially.  The main option that tells Zellij to produce the decomposed
-files is &lt;tt&gt;-ranks \&lt;number_of_ranks\&gt;&lt;/tt&gt;.  If this is specified, then
-Zellij will create &lt;tt&gt;number_of_ranks&lt;/tt&gt; individual files each containing
-a portion of the complete model.  The files will have the information
-needed by a parallel application to read the data and set up the
-correct communication paths and identify the nodes that are shared
-across processor boundaries.
-
-The decomposition method can also be specified.  This determines the
-algorithm that is used to break the lattice into &lt;tt&gt;number_of_ranks&lt;/tt&gt;
-pieces each with approximately the same computational complexity.  The
-decomposition methods are:
-
-*   &lt;tt&gt;-rcb&lt;/tt&gt; Use recursive coordinate bisection method to decompose the input mesh in a parallel run.
-*   &lt;tt&gt;-rib&lt;/tt&gt; Use recursive inertial bisection method to decompose the input mesh in a parallel run.
-*   &lt;tt&gt;-hsfc&lt;/tt&gt; Use hilbert space-filling curve method to decompose the input mesh in a parallel run.
-*   &lt;tt&gt;-linear&lt;/tt&gt; Use the linear method to decompose the input mesh in a parallel run. Elements in order first &lt;tt&gt;n/p&lt;/tt&gt; to proc 0, next to proc 1.
-*   &lt;tt&gt;-cyclic&lt;/tt&gt; Use the cyclic method to decompose the input mesh in a parallel run.      Elements handed out to &lt;tt&gt;id % proc_count&lt;/tt&gt;.
-*   &lt;tt&gt;-random&lt;/tt&gt; Use the random method to decompose the input mesh in a parallel run.      Elements are assigned randomly to processors in a way that preserves balance (do &lt;em&gt;not&lt;/em&gt; use for a real run))
-
-The &lt;tt&gt;-hsfc&lt;/tt&gt; method is the default if no other decomposition method is
-specified. Note that the decomposition occurs at the &lt;em&gt;grid&lt;/em&gt; level so
-the elements of each grid cell will not be split across multiple ranks.  The grid
-cells are weighted by the number of elements in the cell which should
-produce a balanced decomposition if there are unit cells of varying
-element counts.
-
-The &lt;tt&gt;-linear&lt;/tt&gt;, &lt;tt&gt;-cyclic&lt;/tt&gt;, and &lt;tt&gt;-random&lt;/tt&gt; methods are typically used for
-debugging and testing Zellij and should not be used in a production
-run, especially the &lt;tt&gt;-random&lt;/tt&gt; method.
-
-@subsection autotoc_md8 Partial Parallel Output Mode
-There is a &lt;em&gt;partial parallel output&lt;/em&gt; mode in which you can tell Zellij to only output a portion of the parallel decomposed files.  This is selected with the &lt;tt&gt;-start_rank \&lt;rank\&gt;&lt;/tt&gt; and &lt;tt&gt;-rank_count \&lt;count\&gt;&lt;/tt&gt; options.  In this case, Zellij will only output the ranks from &lt;tt&gt;rank&lt;/tt&gt; up to &lt;tt&gt;rank+count-1&lt;/tt&gt;.  For example, if you run &lt;tt&gt;zellij -ranks 10 -start_rank 5 -rank_count 3&lt;/tt&gt;, then zellij would output files for ranks 5, 6, and 7.  This is somewhat inefficient since zellij will do many of the calculations for all ranks and only output the specified ranks; however, it does allow you to run multiple copies of zellij simultaneously.  For example, you could run:
-
-@icode 
- zellij -ranks 16 --start_rank  0 --rank_count 4
- zellij -ranks 16 --start_rank  4 --rank_count 4
- zellij -ranks 16 --start_rank  8 --rank_count 4
- zellij -ranks 16 --start_rank 12 --rank_count 4
-@endicode 
-
-simultaneously and all 16 files should be output faster than running a single execution that wrote all of the files.
-
-@subsection autotoc_md9 Parallel Capable Parallel Execution
-
-If Zellij is compiled with parallel capability enabled (This is shown at the beginning of the &lt;tt&gt;-help&lt;/tt&gt; output or the version
-information output when zellij begins executing as &lt;tt&gt;Parallel Capability Enabled&lt;/tt&gt;), then you can run Zellij in parallel using the
-normal &lt;tt&gt;mpiexec -np \&lt;\#\&gt; zellij \&lt;normal zellij options\&gt;&lt;/tt&gt; command.  In this case, there will be &lt;tt&gt;\#&lt;/tt&gt; copies of zellij running
-simultaneously and each copy will divide up the output files and work among each process/copy.
-
-For example, if you run &lt;tt&gt;mpiexec -np 8 zellij -ranks 1024 -latice lattice.txt&lt;/tt&gt;, then there will be 8 copies of zellij running
-and each will output &lt;tt&gt;1024/8 = 128&lt;/tt&gt; output files.
-
-@subsection autotoc_md10 Maximum Open File Complications
-
-Most compute systems have a limit on the number of files that a program can have open simultaneously.  For many systems, this
-limit is 1024.  The files that zellij deals with are (1) the unit cell meshes and (2) the per-rank output files, and (3) the
-standard input, output, and error files. Because of this, it is somewhat easy for a zellij execution to exceed the open file
-limit.  Zellij attempts to handle this automatically using logic similar to:
-
-*  If the unit cell count exceeds the open file limit, then close each unit cell after each access before opening the next unit
-cell mesh.
-
-*  If the number of &lt;tt&gt;-ranks&lt;/tt&gt; that zellij is creating exceeds the open file count, then determine how many output files can be
-open at one time (max_open = open file limit - 3 - number of unit cells open simultaneously) and run zellij in a &lt;tt&gt;subcycle&lt;/tt&gt; mode
-where it is only writing to &lt;tt&gt;max_open&lt;/tt&gt; files at one time.
-
-*  If the &lt;tt&gt;max_open&lt;/tt&gt; calculated in the above bullet is too small, then set the mode to only open a single unit cell mesh at a
-time and redo the calculation.
-
-*  If all else fails, run with only a single unit cell file open and only a single output mesh rank file open.
-
-If the above logic fails and Zellij is unable to run without exceeding the open file count, you can specify the behavior
-manually using a combination of the &lt;tt&gt;-minimize_open_files=\&lt;UNIT|OUTPUT|ALL\&gt;&lt;/tt&gt; option and the &lt;tt&gt;-subcycle&lt;/tt&gt; and &lt;tt&gt;-rank_count \&lt;\#\&gt;&lt;/tt&gt;
-options.
-
-The options to &lt;tt&gt;-minimize_open_files&lt;/tt&gt; are:
-
-*  &lt;tt&gt;UNIT&lt;/tt&gt; - only have a single unit cell mesh open at one time; close before accessing another unit cell mesh.
-*  &lt;tt&gt;OUTPUT&lt;/tt&gt; - only have a single output rank mesh file open at one time.
-*  &lt;tt&gt;ALL&lt;/tt&gt; - both of the above options.
-
-The &lt;tt&gt;-subcycle&lt;/tt&gt; and &lt;tt&gt;-rank_count \&lt;\#\&gt;&lt;/tt&gt; options cause zellij to output &lt;tt&gt;\#&lt;/tt&gt; output files at a time and then cycle to the next &lt;tt&gt;\#&lt;/tt&gt;
-output files until all files have been output.  For example, &lt;tt&gt;zellij -ranks 1024 -subcycle -rank_count 256&lt;/tt&gt; would do the
-following:
-
-*  First cycle would output ranks 0 to 255,
-*  Second cycle would output ranks 256 to 511,
-*  Third cycle would output ranks 512 to 767,
-*  Fourth cycle would output ranks 768 to 1023.
-
-In this mode, there will the &lt;tt&gt;\#&lt;/tt&gt; output files open simultaneously (unless
-&lt;tt&gt;-minimize_open_files=OUTPUT|ALL&lt;/tt&gt; was specified also).  So the total number of open files will be &lt;tt&gt;unit cell count + 3 + \#&lt;/tt&gt; or
-&lt;tt&gt;1 + 3 + \#&lt;/tt&gt; if &lt;tt&gt;-minimize_open_files=UNIT&lt;/tt&gt; was specified.
-
-@section autotoc_md11 Execution Complexity
-
-Zellij is intended to produce extremely large meshes and is therefore very concerned with both memory efficiency and execution
-time efficiency.
-
-@subsection autotoc_md12 Memory Complexity
-
-Zellij stores the following data:
-
-*  For each unit cell template mesh:
-  *  metadata
-  *  64-bit Ids of nodes on each min_I, max_I, min_J, max_J face
-*  For each entry in the lattice definition:
-  *  metadata (approximately 1KiByte)
-  *  temporarily it will hold 64-bit Ids of nodes on the max_I and max_J faces. This will be deleted once the upper &lt;tt&gt;I&lt;/tt&gt; and upper &lt;tt&gt;J&lt;/tt&gt; "neighbor" entry has been processed (see below)
-*  For the lattice:
-  *  vector containing the lattice definition.
-
-The main memory use once the output file is being processed is the temporary storage containing the nodes on the &lt;tt&gt;max_I&lt;/tt&gt; and &lt;tt&gt;max_J&lt;/tt&gt; faces.  The lattice is processed cell by cell.  For an &lt;tt&gt;II by JJ&lt;/tt&gt; sized grid, the cells are processed in the order &lt;tt&gt;(1,1), (2,1), ... , (II, 1), (1,2), (2,2), ..., (II, JJ)&lt;/tt&gt;.  The temporary storage on the &lt;tt&gt;max_I&lt;/tt&gt; face is only needed until the next cell is processed.  That is, for cell &lt;tt&gt;(i,j)&lt;/tt&gt;, its &lt;tt&gt;max_I&lt;/tt&gt; nodes will be used during the processing of cell &lt;tt&gt;(i+1, j)&lt;/tt&gt; and then deleted.
-
-The temporary storage on the &lt;tt&gt;max_J&lt;/tt&gt; face is retained for a longer time.  For cell &lt;tt&gt;(i,j)&lt;/tt&gt;, the &lt;tt&gt;max_J&lt;/tt&gt; storage is needed for cell &lt;tt&gt;(i, j+1)&lt;/tt&gt; and then deleted.
-
-For a grid of size &lt;tt&gt;(II, JJ)&lt;/tt&gt;, there will at most be:
-
-*  1 temporary vector of size &lt;tt&gt;max_I&lt;/tt&gt; nodes
-*  &lt;tt&gt;II&lt;/tt&gt; temporary vectors of size &lt;tt&gt;max_J&lt;/tt&gt; nodes.
-
-If you have a lattice that is rectangular (&lt;tt&gt;II != JJ&lt;/tt&gt;), then it is more efficient for memory usage to make the &lt;tt&gt;I&lt;/tt&gt; direction the smallest value if possible.
-
-In addition to the above memory usage, zellij must also transfer the mesh coordinate data and element block connectivity data for each lattice entry to the output file.  Zellij outputs the model using the following pseudo-code:
-
-@icode 
-for each j : J
-  for each i : I
-     read cell(i,j)  x, y, and z local coordinates
-     map coordinates to offset in output mesh
-     eliminate nodes that join to an already output neighbor cell
-     write cell(i,j) x, y, and z global coordinates
-
-for each j : J
-   for each i : I
-      for each element block in cell(i,j) mesh
-         read block connectivity
-         map local node ids to global node ids
-         write block connectivity
-@endicode 
-
-The maximum memory use will be the size of storage needed for the &lt;tt&gt;x&lt;/tt&gt; &lt;tt&gt;y&lt;/tt&gt; and &lt;tt&gt;z&lt;/tt&gt; coordinates of a unit cell mesh or the storage needed to hold the connectivity for a single unit cell element block.
-
-Note that the memory requirements are proportional to the size of an individual unit cell mesh and not a function of the size of the output mesh.  It is possible to create meshes which are much larger than the amount of memory present on the compute system running zellij.
-
-The memory being used by zellij during execution will be output if the &lt;tt&gt;--debug 2&lt;/tt&gt; argument is specified at execution time.
-
-@subsection autotoc_md13 Execution Time Complexity
-
-For a large model, the majority of the execution time is related to:
-
-*  Read/process/write element block connectivity
-*  Read/process/write nodal coordinates
-*  Categorize boundary nodes on each unit cell mesh
-
-@subsection autotoc_md14 Efficiency at the NetCDF level
-The Exodus format which is used for the unit cell template meshes and the output mesh uses the NetCDF library for on-disk storage.  There are several variants of the NetCDF on-disk storage including the format: &lt;tt&gt;netcdf3&lt;/tt&gt;, &lt;tt&gt;netcdf4&lt;/tt&gt;, and &lt;tt&gt;netcdf5&lt;/tt&gt; and the integer size (32-bit integers or 64-bit integers).  Although these details are usually transparent to the user, they can affect the execution time especially when very large meshes are being processed.
-
-@subsubsection autotoc_md15 Format
-The &lt;tt&gt;netcdf3&lt;/tt&gt; format is the original native NetCDF format.  At the time the library was being developed, the &lt;tt&gt;byte endianness&lt;/tt&gt; of data stored on disk was not standard among the computes in use at that time and the NetCDF developers had to pick an &lt;tt&gt;endianness&lt;/tt&gt; for the data.  They picked the XDR standard which stood for &lt;em&gt;eXternal Data Representation&lt;/em&gt; which was used for communicating between different computer systems.  Regretfully, the representation used by XDR turned out to be opposite of the representation used by (almost?) all systems in use today, so each read and write of data in the &lt;tt&gt;netcdf3&lt;/tt&gt; format results in a translation of the endianness.  This translation is very fast, but is overhead that would not be needed if the on-disk format was the opposite representation.  This representation is also used by the &lt;tt&gt;netcdf5&lt;/tt&gt; format.
-
-However, the NetCDF &lt;tt&gt;netcdf4&lt;/tt&gt; format is based on using the HDF5 library to manage the underlying data format on disk and it can read and write data using the native endianness of the system on which the data is being read and written and therefore does not incur the cost of transforming the data's endianness.
-
-@subsubsection autotoc_md16 Integer Size
-By default, most current mesh generators will output a mesh using 32-bit integer data.  This is sufficient to represent a mesh with up to approximately 2.1 billion nodes and elements.
-
-If the input mesh and the output mesh have the same integer size, then there is no data conversion needed.  The data will be read as &lt;tt&gt;N&lt;/tt&gt;-bit integers, processed as &lt;tt&gt;N&lt;/tt&gt;-bit integers, and written as &lt;tt&gt;N&lt;/tt&gt;-bit integers.  However, if the input mesh is &lt;tt&gt;N&lt;/tt&gt;-bit integers and the output mesh is &lt;tt&gt;M&lt;/tt&gt;-bit integers, then the NetCDF library will convert all integer data (element block connectivity typically) from &lt;tt&gt;N&lt;/tt&gt; bits to &lt;tt&gt;M&lt;/tt&gt; bits which for large meshes can incur an execution time overhead.
-
-@subsubsection autotoc_md17 Compression
-The NetCDF library supports compression of the output file.  Typically, the &lt;tt&gt;zlib&lt;/tt&gt; compression algorithm is used, but recently NetCDF begain supporting the &lt;tt&gt;szip&lt;/tt&gt; compression and a few more algorithms are starting to be supported.
-
-The benefit of the compression is that it can result in much smaller output (and input) mesh files; the disadvantage is that the default &lt;tt&gt;zlib&lt;/tt&gt; compression algorithm is not very fast and can increase the execution time of zellij.  The &lt;tt&gt;szip&lt;/tt&gt; compression algorithm is faster with typically (but not always) slightly less compression, but it still will incur an overhead in execution time.
-
-@subsubsection autotoc_md18 Recommendations
-For minimal overhead, it is recommended that:
-
-*  Use the &lt;tt&gt;netcdf4&lt;/tt&gt; format for all input and output meshes
-*  Use the same integer size for all input and output meshes
-  *  The integer size of the output mesh can be specified using the &lt;tt&gt;-32&lt;/tt&gt; or &lt;tt&gt;-64&lt;/tt&gt; options.
-  *  The &lt;tt&gt;-64&lt;/tt&gt; option is the default.
-
-It is most efficient if the format and integer size of the input mesh matches the output mesh.  The format of the input meshes can be converted using the &lt;tt&gt;io_shell&lt;/tt&gt; application with the &lt;tt&gt;-netcdf4&lt;/tt&gt; and &lt;tt&gt;-64&lt;/tt&gt; or &lt;tt&gt;-32&lt;/tt&gt; options. The format and integer size of a mesh can be queried using the &lt;tt&gt;exo_format&lt;/tt&gt; application.
-
-For illustration, here is the execution time for several runs with different format and integer size.  In all cases, the input and output mesh sizes are the same:
-
-&lt;table class="markdownTable"&gt;
-  &lt;tr class="markdownTableHead"&gt;    &lt;th class="markdownTableHeadCenter"&gt; input   </code></p>
-<p><code> output   </code></p>
-<p><code> integer input   </code></p>
-<p><code> integer output   </code></p>
-<p><code> execution time    </code></p>
-<p><code> </code></p>
-<p><code> netcdf3   </code></p>
-<p><code> netcdf3   </code></p>
-<p><code> 32   </code></p>
-<p><code> 32   </code></p>
-<p><code> 7.0    </code></p>
-<p><code> </code></p>
-<p><code> netcdf3   </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> 32   </code></p>
-<p><code> 32   </code></p>
-<p><code> 2.6    </code></p>
-<p><code> </code></p>
-<p><code> netcdf3   </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> 32   </code></p>
-<p><code> 64   </code></p>
-<p><code> 3.8    </code></p>
-<p><code> </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> netcdf3   </code></p>
-<p><code> 32   </code></p>
-<p><code> 32   </code></p>
-<p><code> 6.5    </code></p>
-<p><code> </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> netcdf3   </code></p>
-<p><code> 64   </code></p>
-<p><code> 32   </code></p>
-<p><code> 7.4    </code></p>
-<p><code> </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> netcdf5   </code></p>
-<p><code> 64   </code></p>
-<p><code> 64   </code></p>
-<p><code> 9.4    </code></p>
-<p><code> </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> 32   </code></p>
-<p><code> 32   </code></p>
-<p><code> 2.4    </code></p>
-<p><code> </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> 32   </code></p>
-<p><code> 64   </code></p>
-<p><code> 3.6    </code></p>
-<p><code> </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> 64   </code></p>
-<p><code> 32   </code></p>
-<p><code> 3.2    </code></p>
-<p><code> </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> netcdf4   </code></p>
-<p><code> 64   </code></p>
-<p><code> 64   </code></p>
-<p><code> 3.3   </code></p>
-<p><code></code></p>
-<p><code>The fastest option is both input and output using 32-bit integers and the <code>netcdf4</code> format. Almost as fast is the case where the input format is <code>netcdf3</code> and the output <code>netcdf4</code>. The <code>64-bit</code> integer options with both input and output using <code>netcdf4</code> are slightly slower, but this is probably due to the doubling of the size of the integer data being read and written.</code></p>
-<p><code>The output mesh in this case consisted of 37.3 million elements and 38.5 million nodes in a grid of 46 x 46 unit cells. There were 56 unit cell template meshes. </code></p>
+<p>The syntax of the lines defining the unit cells consists of two fields &ndash; an arbitrary <em>key</em> and the filename containing the Exodus file defining the mesh for this unit cell. The only restriction on the <em>key</em> is that it must be unique in the dictionary. The filenames must specify the path (either absolute or relative to the current execution directory) to the Exodus file; it can optionally be delimited by double quotes. The filenames do not need to be unique, but it is more efficient in both memory and time if each unit cell template mesh is unique.</p>
+<p>As an example, here is a valid dictionary definition:</p>
+<div class="fragment"><div class="line">BEGIN_DICTIONARY</div>
+<div class="line">  0001 &quot;../zellij-example/xatom-1b.e&quot;</div>
+<div class="line">  0002 &quot;../zellij-example/xatom-Y.e&quot;</div>
+<div class="line">  0003 &quot;../zellij-example/xatom-X.e&quot;</div>
+<div class="line">  0004 &quot;../zellij-example/xatom-2b.e&quot;</div>
+<div class="line">END_DICTIONARY</div>
+</div><!-- fragment --><p> The unit cell dictionary must appear before the lattice definition in the lattice description file.</p>
+<p>If an error is detected during the parsing of the unit cell dictionary, the code will output an error message and terminate. Errors can be incorrect syntax, missing unit cell template meshes, duplicate keys, or problems reading the mesh description from a unit cell template mesh. The unit cell template mesh file is accessed and partially read at the time that zellij parses the corresponding unit cell dictionary line.</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Lattice Definition</h2>
+<p>The lattice definition specifies the size of the lattice and the distribution of the unit cell(s) within that lattice. The lattice definition must follow the unit cell dictionary in the lattice description file.</p>
+<p>The first line of the lattice definition begins with the line <code>BEGIN_LATTICE {i} {j} 1</code> where <code>{i}</code> and <code>{j}</code> specify the size of the <code>IxJ</code> arrangement of unit cells. For example, the line <code>BEGIN_LATTICE 5 5 1</code> would define a lattice containing 25 unit cell instances arranged in a 5 by 5 regular grid.</p>
+<p>The last line of the lattice definition is the line <code>END_LATTICE</code>. When that line is encountered, zellij will begin outputting the mesh.</p>
+<p>Between the <code>BEGIN_LATTICE</code> and <code>END_LATTICE</code> are <code>{j}</code> lines with <code>{i}</code> entries per line. The entries are any of the _key_s that were specified in the unit cell dictionary.</p>
+<p>As an example, here is a valid lattice definition using the keys of the example dictionary from the previous section:</p>
+<div class="fragment"><div class="line">BEGIN_LATTICE 5  5  1</div>
+<div class="line">  0001 0002 0003 0002 0001</div>
+<div class="line">  0002 0003 0003 0003 0002</div>
+<div class="line">  0003 0003 0004 0003 0003</div>
+<div class="line">  0002 0003 0003 0003 0002</div>
+<div class="line">  0001 0002 0003 0002 0001</div>
+<div class="line">END_LATTICE</div>
+</div><!-- fragment --><p>Although the lattice is typically symmetric and square, this is not a requirement and is not checked.</p>
+<p>If an error is detected during the parsing of the <em>lattice</em>, the code will output an error message and terminate. Errors can include invalid keys, incorrect number of lattice definition lines, or incorrect number of keys on a definition line.</p>
+<p>Note that zellij does not require that the unit cell keys be numeric; the following example shows a different method for specifying the same lattice definition file as the previous example:</p>
+<div class="fragment"><div class="line">BEGIN_DICTIONARY</div>
+<div class="line">  - &quot;../zellij-example/xatom-1b.e&quot;</div>
+<div class="line">  | &quot;../zellij-example/xatom-Y.e&quot;</div>
+<div class="line">  + &quot;../zellij-example/xatom-X.e&quot;</div>
+<div class="line">  * &quot;../zellij-example/xatom-2b.e&quot;</div>
+<div class="line">END_DICTIONARY</div>
+<div class="line"> </div>
+<div class="line">BEGIN_LATTICE 5  5  1</div>
+<div class="line">  - | + | -</div>
+<div class="line">  | + + + |</div>
+<div class="line">  + + * + +</div>
+<div class="line">  | + + + |</div>
+<div class="line">  - | + | -</div>
+<div class="line">END_LATTICE</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+Unit Cell Template Mesh Requirements</h1>
+<p>Zellij requires that the boundary mesh (<code>X</code> and <code>Y</code> faces) of each of the unit cell templates be a <em>regular</em> "structured" mesh. Basically this means that the faces of the mesh elements on the boundary are in a regular rectangular grid such that each mesh face is rectangular (90 degree corners) and that the boundary mesh on the minimum <code>X</code> face is the same as that on the maximum <code>X</code> face and similarly for the minimum <code>Y</code> face and the maximum <code>Y</code> face.</p>
+<p>Additionally, the X faces on <em>all</em> unit cells must match and the Y faces on <em>all</em> unit cells must match both in structure and in coordinate extent. This requirement is verified during execution. The <code>Z</code> faces are less constrained with the only requirement being that the coordinate extents of all <code>Z</code> faces must be the same (which follows from the <code>X</code> and <code>Y</code> face requirement); the structure of the mesh on the <code>Z</code> faces is arbitrary.</p>
+<p>The unit cell meshes can contain any number of element blocks; however, each element block <em>must</em> contain hexahedral elements with 8-nodes per element. The element blocks do not need to be the same in each unit cell mesh, but if they do share the same element block <code>id</code>, then those elements will be combined into the same element block in the output mesh with the same <code>id</code>.</p>
+<p>The output mesh will contain the union of all element blocks existing on the input mesh unit cells. For example, if:</p>
+<ul>
+<li>unit cell <code>0001</code> has element blocks <code>1 10 100</code></li>
+<li>unit cell <code>0002</code> has element blocks <code>2 20 200</code></li>
+<li>unit cell <code>0003</code> has element blocks <code>1 2 10 20</code></li>
+<li>unit cell <code>0004</code> has element blocks <code>10 20 100 200</code></li>
+</ul>
+<p>The output mesh will have element blocks <code>1 2 10 20 100 200</code></p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Sideset Handling</h1>
+<p>By default, zellij will replicate any sidesets that are defined on the input unit cell meshes to the output mesh file. The sidesets will have the same names and ids as the sidesets on the input unit cell meshes. If you do not want the sidesets replicated, you can add the command line option <code>-ignore_sidesets</code> and any sidesets on the input unit cell meshes will be ignored.</p>
+<p>Zellij can also generate new sidesets on the boundaries of the output mesh via the command line option <code>-generate_sidesets &lt;axes&gt;</code> where <code>axes</code> is one or more letters specifying the face of the output mesh on which to generate a sideset. Valid letters are <code>xyzXYZ</code> or <code>ijkIJK</code> which correspond to:</p>
+<ul>
+<li><code>x</code> or <code>i</code> for surface on minimum X coordinate (default name = <code>min_i</code>)</li>
+<li><code>y</code> or <code>j</code> for surface on minimum Y coordinate (default name = <code>min_j</code>)</li>
+<li><code>z</code> or <code>k</code> for surface on minimum Z coordinate (default name = <code>min_k</code>)</li>
+<li><code>X</code> or <code>I</code> for surface on maximum X coordinate (default name = <code>max_i</code>)</li>
+<li><code>Y</code> or <code>J</code> for surface on maximum Y coordinate (default name = <code>max_j</code>)</li>
+<li><code>Z</code> or <code>K</code> for surface on maximum Z coordinate (default name = <code>max_k</code>)</li>
+</ul>
+<p>For example <code>-generate_sidesets xyXY</code> would generate sideset on the surfaces corresponding to the minimum and maximum X and Y coordinates on the output mesh.</p>
+<p>By default, the generated sidesets will be named as shown in the list above. The names can be changed with the <code>-sideset_names &lt;arg&gt;</code> command line option. The syntax of <code>&lt;arg&gt;</code> is <code>axis:name,axis:name,...</code> where <code>axis</code> is one of <code>ijkIJK</code> or <code>xyzXYZ</code> and <code>name</code> is the name of the specified sideset. For example, <code>-sideset_names x:left,X:right</code> would name the sidesets on the minimum x and maximum X faces <code>left</code> and <code>right</code> respectively. There will be an error if two or more sidesets have the same name.</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Parallel Execution</h1>
+<p>Zellij can produce a mesh decomposed into a file-per-rank for use in a parallel analysis application. Note that Zellij itself is run serially. The main option that tells Zellij to produce the decomposed files is <code>-ranks &lt;number_of_ranks&gt;</code>. If this is specified, then Zellij will create <code>number_of_ranks</code> individual files each containing a portion of the complete model. The files will have the information needed by a parallel application to read the data and set up the correct communication paths and identify the nodes that are shared across processor boundaries.</p>
+<p>The decomposition method can also be specified. This determines the algorithm that is used to break the lattice into <code>number_of_ranks</code> pieces each with approximately the same computational complexity. The decomposition methods are:</p>
+<ul>
+<li><code>-rcb</code> Use recursive coordinate bisection method to decompose the input mesh in a parallel run.</li>
+<li><code>-rib</code> Use recursive inertial bisection method to decompose the input mesh in a parallel run.</li>
+<li><code>-hsfc</code> Use hilbert space-filling curve method to decompose the input mesh in a parallel run.</li>
+<li><code>-linear</code> Use the linear method to decompose the input mesh in a parallel run. Elements in order first <code>n/p</code> to proc 0, next to proc 1.</li>
+<li><code>-cyclic</code> Use the cyclic method to decompose the input mesh in a parallel run. Elements handed out to <code>id % proc_count</code>.</li>
+<li><code>-random</code> Use the random method to decompose the input mesh in a parallel run. Elements are assigned randomly to processors in a way that preserves balance (do <em>not</em> use for a real run))</li>
+</ul>
+<p>The <code>-hsfc</code> method is the default if no other decomposition method is specified. Note that the decomposition occurs at the <em>grid</em> level so the elements of each grid cell will not be split across multiple ranks. The grid cells are weighted by the number of elements in the cell which should produce a balanced decomposition if there are unit cells of varying element counts.</p>
+<p>The <code>-linear</code>, <code>-cyclic</code>, and <code>-random</code> methods are typically used for debugging and testing Zellij and should not be used in a production run, especially the <code>-random</code> method.</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Partial Parallel Output Mode</h2>
+<p>There is a <em>partial parallel output</em> mode in which you can tell Zellij to only output a portion of the parallel decomposed files. This is selected with the <code>-start_rank &lt;rank&gt;</code> and <code>-rank_count &lt;count&gt;</code> options. In this case, Zellij will only output the ranks from <code>rank</code> up to <code>rank+count-1</code>. For example, if you run <code>zellij -ranks 10 -start_rank 5 -rank_count 3</code>, then zellij would output files for ranks 5, 6, and 7. This is somewhat inefficient since zellij will do many of the calculations for all ranks and only output the specified ranks; however, it does allow you to run multiple copies of zellij simultaneously. For example, you could run:</p>
+<div class="fragment"><div class="line">zellij -ranks 16 --start_rank  0 --rank_count 4</div>
+<div class="line">zellij -ranks 16 --start_rank  4 --rank_count 4</div>
+<div class="line">zellij -ranks 16 --start_rank  8 --rank_count 4</div>
+<div class="line">zellij -ranks 16 --start_rank 12 --rank_count 4</div>
+</div><!-- fragment --><p>simultaneously and all 16 files should be output faster than running a single execution that wrote all of the files.</p>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Parallel Capable Parallel Execution</h2>
+<p>If Zellij is compiled with parallel capability enabled (This is shown at the beginning of the <code>-help</code> output or the version information output when zellij begins executing as <code>Parallel Capability Enabled</code>), then you can run Zellij in parallel using the normal <code>mpiexec -np &lt;#&gt; zellij &lt;normal zellij options&gt;</code> command. In this case, there will be <code>#</code> copies of zellij running simultaneously and each copy will divide up the output files and work among each process/copy.</p>
+<p>For example, if you run <code>mpiexec -np 8 zellij -ranks 1024 -latice lattice.txt</code>, then there will be 8 copies of zellij running and each will output <code>1024/8 = 128</code> output files.</p>
+<h2><a class="anchor" id="autotoc_md10"></a>
+Maximum Open File Complications</h2>
+<p>Most compute systems have a limit on the number of files that a program can have open simultaneously. For many systems, this limit is 1024. The files that zellij deals with are (1) the unit cell meshes and (2) the per-rank output files, and (3) the standard input, output, and error files. Because of this, it is somewhat easy for a zellij execution to exceed the open file limit. Zellij attempts to handle this automatically using logic similar to:</p>
+<ul>
+<li>If the unit cell count exceeds the open file limit, then close each unit cell after each access before opening the next unit cell mesh.</li>
+<li>If the number of <code>-ranks</code> that zellij is creating exceeds the open file count, then determine how many output files can be open at one time (max_open = open file limit - 3 - number of unit cells open simultaneously) and run zellij in a <code>subcycle</code> mode where it is only writing to <code>max_open</code> files at one time.</li>
+<li>If the <code>max_open</code> calculated in the above bullet is too small, then set the mode to only open a single unit cell mesh at a time and redo the calculation.</li>
+<li>If all else fails, run with only a single unit cell file open and only a single output mesh rank file open.</li>
+</ul>
+<p>If the above logic fails and Zellij is unable to run without exceeding the open file count, you can specify the behavior manually using a combination of the <code>-minimize_open_files=&lt;UNIT|OUTPUT|ALL&gt;</code> option and the <code>-subcycle</code> and <code>-rank_count &lt;#&gt;</code> options.</p>
+<p>The options to <code>-minimize_open_files</code> are:</p>
+<ul>
+<li><code>UNIT</code> - only have a single unit cell mesh open at one time; close before accessing another unit cell mesh.</li>
+<li><code>OUTPUT</code> - only have a single output rank mesh file open at one time.</li>
+<li><code>ALL</code> - both of the above options.</li>
+</ul>
+<p>The <code>-subcycle</code> and <code>-rank_count &lt;#&gt;</code> options cause zellij to output <code>#</code> output files at a time and then cycle to the next <code>#</code> output files until all files have been output. For example, <code>zellij -ranks 1024 -subcycle -rank_count 256</code> would do the following:</p>
+<ul>
+<li>First cycle would output ranks 0 to 255,</li>
+<li>Second cycle would output ranks 256 to 511,</li>
+<li>Third cycle would output ranks 512 to 767,</li>
+<li>Fourth cycle would output ranks 768 to 1023.</li>
+</ul>
+<p>In this mode, there will the <code>#</code> output files open simultaneously (unless <code>-minimize_open_files=OUTPUT|ALL</code> was specified also). So the total number of open files will be <code>unit cell count + 3 + #</code> or <code>1 + 3 + #</code> if <code>-minimize_open_files=UNIT</code> was specified.</p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Execution Complexity</h1>
+<p>Zellij is intended to produce extremely large meshes and is therefore very concerned with both memory efficiency and execution time efficiency.</p>
+<h2><a class="anchor" id="autotoc_md12"></a>
+Memory Complexity</h2>
+<p>Zellij stores the following data:</p>
+<ul>
+<li>For each unit cell template mesh:<ul>
+<li>metadata</li>
+<li>64-bit Ids of nodes on each min_I, max_I, min_J, max_J face</li>
+</ul>
+</li>
+<li>For each entry in the lattice definition:<ul>
+<li>metadata (approximately 1KiByte)</li>
+<li>temporarily it will hold 64-bit Ids of nodes on the max_I and max_J faces. This will be deleted once the upper <code>I</code> and upper <code>J</code> "neighbor" entry has been processed (see below)</li>
+</ul>
+</li>
+<li>For the lattice:<ul>
+<li>vector containing the lattice definition.</li>
+</ul>
+</li>
+</ul>
+<p>The main memory use once the output file is being processed is the temporary storage containing the nodes on the <code>max_I</code> and <code>max_J</code> faces. The lattice is processed cell by cell. For an <code>II by JJ</code> sized grid, the cells are processed in the order <code>(1,1), (2,1), ... , (II, 1), (1,2), (2,2), ..., (II, JJ)</code>. The temporary storage on the <code>max_I</code> face is only needed until the next cell is processed. That is, for cell <code>(i,j)</code>, its <code>max_I</code> nodes will be used during the processing of cell <code>(i+1, j)</code> and then deleted.</p>
+<p>The temporary storage on the <code>max_J</code> face is retained for a longer time. For cell <code>(i,j)</code>, the <code>max_J</code> storage is needed for cell <code>(i, j+1)</code> and then deleted.</p>
+<p>For a grid of size <code>(II, JJ)</code>, there will at most be:</p>
+<ul>
+<li>1 temporary vector of size <code>max_I</code> nodes</li>
+<li><code>II</code> temporary vectors of size <code>max_J</code> nodes.</li>
+</ul>
+<p>If you have a lattice that is rectangular (<code>II != JJ</code>), then it is more efficient for memory usage to make the <code>I</code> direction the smallest value if possible.</p>
+<p>In addition to the above memory usage, zellij must also transfer the mesh coordinate data and element block connectivity data for each lattice entry to the output file. Zellij outputs the model using the following pseudo-code:</p>
+<div class="fragment"><div class="line">for each j : J</div>
+<div class="line">  for each i : I</div>
+<div class="line">     read cell(i,j)  x, y, and z local coordinates</div>
+<div class="line">     map coordinates to offset in output mesh</div>
+<div class="line">     eliminate nodes that join to an already output neighbor cell</div>
+<div class="line">     write cell(i,j) x, y, and z global coordinates</div>
+<div class="line"> </div>
+<div class="line">for each j : J</div>
+<div class="line">   for each i : I</div>
+<div class="line">      for each element block in cell(i,j) mesh</div>
+<div class="line">         read block connectivity</div>
+<div class="line">         map local node ids to global node ids</div>
+<div class="line">         write block connectivity</div>
+</div><!-- fragment --><p>The maximum memory use will be the size of storage needed for the <code>x</code> <code>y</code> and <code>z</code> coordinates of a unit cell mesh or the storage needed to hold the connectivity for a single unit cell element block.</p>
+<p>Note that the memory requirements are proportional to the size of an individual unit cell mesh and not a function of the size of the output mesh. It is possible to create meshes which are much larger than the amount of memory present on the compute system running zellij.</p>
+<p>The memory being used by zellij during execution will be output if the <code>--debug 2</code> argument is specified at execution time.</p>
+<h2><a class="anchor" id="autotoc_md13"></a>
+Execution Time Complexity</h2>
+<p>For a large model, the majority of the execution time is related to:</p>
+<ul>
+<li>Read/process/write element block connectivity</li>
+<li>Read/process/write nodal coordinates</li>
+<li>Categorize boundary nodes on each unit cell mesh</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md14"></a>
+Efficiency at the NetCDF level</h2>
+<p>The Exodus format which is used for the unit cell template meshes and the output mesh uses the NetCDF library for on-disk storage. There are several variants of the NetCDF on-disk storage including the format: <code>netcdf3</code>, <code>netcdf4</code>, and <code>netcdf5</code> and the integer size (32-bit integers or 64-bit integers). Although these details are usually transparent to the user, they can affect the execution time especially when very large meshes are being processed.</p>
+<h3><a class="anchor" id="autotoc_md15"></a>
+Format</h3>
+<p>The <code>netcdf3</code> format is the original native NetCDF format. At the time the library was being developed, the <code>byte endianness</code> of data stored on disk was not standard among the computes in use at that time and the NetCDF developers had to pick an <code>endianness</code> for the data. They picked the XDR standard which stood for <em>eXternal Data Representation</em> which was used for communicating between different computer systems. Regretfully, the representation used by XDR turned out to be opposite of the representation used by (almost?) all systems in use today, so each read and write of data in the <code>netcdf3</code> format results in a translation of the endianness. This translation is very fast, but is overhead that would not be needed if the on-disk format was the opposite representation. This representation is also used by the <code>netcdf5</code> format.</p>
+<p>However, the NetCDF <code>netcdf4</code> format is based on using the HDF5 library to manage the underlying data format on disk and it can read and write data using the native endianness of the system on which the data is being read and written and therefore does not incur the cost of transforming the data's endianness.</p>
+<h3><a class="anchor" id="autotoc_md16"></a>
+Integer Size</h3>
+<p>By default, most current mesh generators will output a mesh using 32-bit integer data. This is sufficient to represent a mesh with up to approximately 2.1 billion nodes and elements.</p>
+<p>If the input mesh and the output mesh have the same integer size, then there is no data conversion needed. The data will be read as <code>N</code>-bit integers, processed as <code>N</code>-bit integers, and written as <code>N</code>-bit integers. However, if the input mesh is <code>N</code>-bit integers and the output mesh is <code>M</code>-bit integers, then the NetCDF library will convert all integer data (element block connectivity typically) from <code>N</code> bits to <code>M</code> bits which for large meshes can incur an execution time overhead.</p>
+<h3><a class="anchor" id="autotoc_md17"></a>
+Compression</h3>
+<p>The NetCDF library supports compression of the output file. Typically, the <code>zlib</code> compression algorithm is used, but recently NetCDF begain supporting the <code>szip</code> compression and a few more algorithms are starting to be supported.</p>
+<p>The benefit of the compression is that it can result in much smaller output (and input) mesh files; the disadvantage is that the default <code>zlib</code> compression algorithm is not very fast and can increase the execution time of zellij. The <code>szip</code> compression algorithm is faster with typically (but not always) slightly less compression, but it still will incur an overhead in execution time.</p>
+<h3><a class="anchor" id="autotoc_md18"></a>
+Recommendations</h3>
+<p>For minimal overhead, it is recommended that:</p>
+<ul>
+<li>Use the <code>netcdf4</code> format for all input and output meshes</li>
+<li>Use the same integer size for all input and output meshes<ul>
+<li>The integer size of the output mesh can be specified using the <code>-32</code> or <code>-64</code> options.</li>
+<li>The <code>-64</code> option is the default.</li>
+</ul>
+</li>
+</ul>
+<p>It is most efficient if the format and integer size of the input mesh matches the output mesh. The format of the input meshes can be converted using the <code>io_shell</code> application with the <code>-netcdf4</code> and <code>-64</code> or <code>-32</code> options. The format and integer size of a mesh can be queried using the <code>exo_format</code> application.</p>
+<p>For illustration, here is the execution time for several runs with different format and integer size. In all cases, the input and output mesh sizes are the same:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">input   </th><th class="markdownTableHeadCenter">output   </th><th class="markdownTableHeadCenter">integer input   </th><th class="markdownTableHeadCenter">integer output   </th><th class="markdownTableHeadCenter">execution time    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">netcdf3   </td><td class="markdownTableBodyCenter">netcdf3   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">7.0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">netcdf3   </td><td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">2.6    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">netcdf3   </td><td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">64   </td><td class="markdownTableBodyCenter">3.8    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">netcdf3   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">6.5    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">netcdf3   </td><td class="markdownTableBodyCenter">64   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">7.4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">netcdf5   </td><td class="markdownTableBodyCenter">64   </td><td class="markdownTableBodyCenter">64   </td><td class="markdownTableBodyCenter">9.4    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">2.4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">64   </td><td class="markdownTableBodyCenter">3.6    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">64   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">3.2    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">netcdf4   </td><td class="markdownTableBodyCenter">64   </td><td class="markdownTableBodyCenter">64   </td><td class="markdownTableBodyCenter">3.3   </td></tr>
+</table>
+<p>The fastest option is both input and output using 32-bit integers and the <code>netcdf4</code> format. Almost as fast is the case where the input format is <code>netcdf3</code> and the output <code>netcdf4</code>. The <code>64-bit</code> integer options with both input and output using <code>netcdf4</code> are slightly slower, but this is probably due to the doubling of the size of the integer data being read and written.</p>
+<p>The output mesh in this case consisted of 37.3 million elements and 38.5 million nodes in a grid of 46 x 46 unit cells. There were 56 unit cell template meshes. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
