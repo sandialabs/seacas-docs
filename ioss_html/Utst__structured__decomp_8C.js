@@ -6,6 +6,7 @@ var Utst__structured__decomp_8C =
     [ "DOCTEST_CONFIG_SUPER_FAST_ASSERTS", "Utst__structured__decomp_8C.html#a052f7233cb544c5c0f1c235992fa66cf", null ],
     [ "check_split_assign", "Utst__structured__decomp_8C.html#a9631358d47a181d6697be33c73b3aece", null ],
     [ "cleanup", "Utst__structured__decomp_8C.html#a256a840c43baa6d6644ba4320c4f2bc5", null ],
+    [ "DOCTEST_TEST_CASE", "Utst__structured__decomp_8C.html#a8fb8ed54815d66dae3af49731f3b4646", null ],
     [ "DOCTEST_TEST_CASE", "Utst__structured__decomp_8C.html#ae59e5d13b5d7e2a54342bd6318a4692a", null ],
     [ "DOCTEST_TEST_CASE", "Utst__structured__decomp_8C.html#a3ded1fff61091e285f1a5f99c889da93", null ],
     [ "DOCTEST_TEST_CASE", "Utst__structured__decomp_8C.html#aef6a161f4717b37a8d76a24ce7ed7494", null ],

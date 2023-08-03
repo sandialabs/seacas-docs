@@ -181,6 +181,7 @@ var hierarchy =
     [ "Ioexnl::EdgeSet", "structIoexnl_1_1EdgeSet.html", null ],
     [ "Ioex::ElemBlock", "structIoex_1_1ElemBlock.html", null ],
     [ "Ioexnl::ElemBlock", "structIoexnl_1_1ElemBlock.html", null ],
+    [ "Ioss::ElementBlockBatchOffset", "classIoss_1_1ElementBlockBatchOffset.html", null ],
     [ "Iotm::text_mesh::ElementData< EntityId, Topology >", "structIotm_1_1text__mesh_1_1ElementData.html", null ],
     [ "Iotm::text_mesh::ElementDataLess< EntityId, Topology >", "structIotm_1_1text__mesh_1_1ElementDataLess.html", null ],
     [ "Iotm::unit_test::TextMeshFixture::ElementInfo", "structIotm_1_1unit__test_1_1TextMeshFixture_1_1ElementInfo.html", null ],

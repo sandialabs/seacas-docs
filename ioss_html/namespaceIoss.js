@@ -1,6 +1,9 @@
 var namespaceIoss =
 [
     [ "glob", "namespaceIoss_1_1glob.html", "namespaceIoss_1_1glob" ],
+    [ "impl", "namespaceIoss_1_1impl.html", [
+      [ "get_field_data_count_for_entities", "namespaceIoss_1_1impl.html#ad48235df5292e723542d95c0c8c297f6", null ]
+    ] ],
     [ "Init", "namespaceIoss_1_1Init.html", "namespaceIoss_1_1Init" ],
     [ "Private", "namespaceIoss_1_1Private.html", "namespaceIoss_1_1Private" ],
     [ "SmartAssert", "namespaceIoss_1_1SmartAssert.html", [
@@ -45,6 +48,7 @@ var namespaceIoss =
     [ "EdgeBlock", "classIoss_1_1EdgeBlock.html", "classIoss_1_1EdgeBlock" ],
     [ "EdgeSet", "classIoss_1_1EdgeSet.html", "classIoss_1_1EdgeSet" ],
     [ "ElementBlock", "classIoss_1_1ElementBlock.html", "classIoss_1_1ElementBlock" ],
+    [ "ElementBlockBatchOffset", "classIoss_1_1ElementBlockBatchOffset.html", "classIoss_1_1ElementBlockBatchOffset" ],
     [ "ElementPermutation", "classIoss_1_1ElementPermutation.html", "classIoss_1_1ElementPermutation" ],
     [ "ElementSet", "classIoss_1_1ElementSet.html", "classIoss_1_1ElementSet" ],
     [ "ElementTopology", "classIoss_1_1ElementTopology.html", "classIoss_1_1ElementTopology" ],
@@ -390,14 +394,6 @@ var namespaceIoss =
     [ "generate_element_chains", "namespaceIoss.html#aca0909ca3a73cb81245d2c731eef2a74", null ],
     [ "generate_element_chains", "namespaceIoss.html#a1a6a82767d634f225c45f64df635d8cc", null ],
     [ "generate_element_chains", "namespaceIoss.html#ae4312ae8cd7588aade32fa4ddb821994", null ],
-    [ "get_all_block_connectivity_import_offset", "namespaceIoss.html#a3a13c64f3428406f33e9060535b6d138", null ],
-    [ "get_all_block_connectivity_ioss_component_count", "namespaceIoss.html#a587ffb5df449d2653238b9d5fffd8eb6", null ],
-    [ "get_all_block_connectivity_ioss_offset", "namespaceIoss.html#af10187ee327b33c834144e9358f7326c", null ],
-    [ "get_all_block_connectivity_ioss_offset_size", "namespaceIoss.html#aaf5ba280780b8237cf1c605156d4ee50", null ],
-    [ "get_all_block_import_offset", "namespaceIoss.html#a14d5a7cd29481be039b32352128533dd", null ],
-    [ "get_all_block_ioss_element_size", "namespaceIoss.html#a1f93cce5c38f868ed203f8078248cefb", null ],
-    [ "get_all_block_ioss_offset", "namespaceIoss.html#a0bd97868214b8513893af9c42409058a", null ],
-    [ "get_all_block_ioss_offset_size", "namespaceIoss.html#ab6b9a63af94fe6912ca1061456c70c98", null ],
     [ "getline_int", "namespaceIoss.html#abc7a5b02b8740e6df478b2befab18ef7", null ],
     [ "gl_histadd", "namespaceIoss.html#afd0defceab6d0d0989a291f6fa1db869", null ],
     [ "gl_setwidth", "namespaceIoss.html#a0a408426f370417e7929f00200480f47", null ],
@@ -431,6 +427,7 @@ var namespaceIoss =
     [ "transfer_blobs", "namespaceIoss.html#a4ea13144e7ba9b7fb714b3fb5a54d72d", null ],
     [ "transfer_coordinate_frames", "namespaceIoss.html#a48498de7d44a659ee823b1432c992738", null ],
     [ "valid_decomp_methods", "namespaceIoss.html#afc8a55ef023ee9aa5702d62e1b3a7917", null ],
+    [ "verify_field_exists_in_entity_group", "namespaceIoss.html#a53576bac923bfd5f882addee17be00f1", null ],
     [ "Version", "namespaceIoss.html#acac6ca4c845b7c264498f447d9b5a039", null ],
     [ "WarnOut", "namespaceIoss.html#a04b906e115b08518d981a1710a2ff767", null ],
     [ "entityTypeCount", "namespaceIoss.html#a60ba379fdd8679588ac7c40b32490dc5", null ],

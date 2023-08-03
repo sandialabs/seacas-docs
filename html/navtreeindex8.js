@@ -1,5 +1,12 @@
 var NAVTREEINDEX8 =
 {
+"structex____obj__stats.html":[8,8,4],
+"structex____obj__stats.html#a4bf60b41ca4d6fa4365e880cc7e56f1e":[8,8,4,2],
+"structex____obj__stats.html#a5e90a3fbe2667e7166d28d4a98c8f31f":[8,8,4,6],
+"structex____obj__stats.html#a74cc356e2a2d4f64a11bd8bb54ec7403":[8,8,4,5],
+"structex____obj__stats.html#a78efc24efc9edf45482f9dd9d0a486ae":[8,8,4,0],
+"structex____obj__stats.html#a917e0029157c452308e0818ead4ebf4e":[8,8,4,3],
+"structex____obj__stats.html#abfad6178d33939cb5bbf206687a44147":[8,8,4,4],
 "structex____obj__stats.html#ad8ffd49df17926dff061bfa6c097c8a5":[8,8,4,7],
 "structex____obj__stats.html#ae8c3a54c8acafa85c97e9e1b7e975833":[8,8,4,1],
 "structex__assembly.html":[8,6,3],

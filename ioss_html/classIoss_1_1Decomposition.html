@@ -187,12 +187,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a971abd166ba8021c8714fb763aadddfa"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:a971abd166ba8021c8714fb763aadddfa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1Decomposition.html#a971abd166ba8021c8714fb763aadddfa">communicate_block_data</a> (T *file_data, U *ioss_data, const <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &amp;block, size_t comp_count) const</td></tr>
 <tr class="separator:a971abd166ba8021c8714fb763aadddfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28648f8f0686c96f76eb7403cc3ed0e4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:a28648f8f0686c96f76eb7403cc3ed0e4"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1Decomposition.html#a28648f8f0686c96f76eb7403cc3ed0e4">do_communicate_all_block_data</a> (T *file_data, U *ioss_data, const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks, const std::vector&lt; size_t &gt; &amp;file_offset, const std::vector&lt; int &gt; &amp;block_component_count) const</td></tr>
-<tr class="separator:a28648f8f0686c96f76eb7403cc3ed0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76c1a388b31e1052f5d1ed06dd04e14c"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:a76c1a388b31e1052f5d1ed06dd04e14c"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1Decomposition.html#a76c1a388b31e1052f5d1ed06dd04e14c">communicate_all_block_data</a> (T *file_data, U *ioss_data, const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks, const std::vector&lt; size_t &gt; &amp;file_offset, const std::vector&lt; int &gt; &amp;block_component_count) const</td></tr>
-<tr class="separator:a76c1a388b31e1052f5d1ed06dd04e14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b95bf8897ca13a5acf990efe63d13dd"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a7b95bf8897ca13a5acf990efe63d13dd"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1Decomposition.html#a7b95bf8897ca13a5acf990efe63d13dd">do_communicate_entity_data</a> (T *file_data, U *ioss_data, const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks, const std::vector&lt; int64_t &gt; &amp;blockSubsetIndex, const std::vector&lt; size_t &gt; &amp;fileOffset, const std::vector&lt; int &gt; &amp;blockComponentCount) const</td></tr>
+<tr class="separator:a7b95bf8897ca13a5acf990efe63d13dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f84b8dad7a52e1a18b764b8a5d78a9b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a6f84b8dad7a52e1a18b764b8a5d78a9b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1Decomposition.html#a6f84b8dad7a52e1a18b764b8a5d78a9b">communicate_entity_data</a> (T *file_data, U *ioss_data, const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;blocks, const std::vector&lt; int64_t &gt; &amp;blockSubsetIndex, const std::vector&lt; size_t &gt; &amp;fileOffset, const std::vector&lt; int &gt; &amp;blockComponentCount) const</td></tr>
+<tr class="separator:a6f84b8dad7a52e1a18b764b8a5d78a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a739d4131f487caeb5102c48fcd795772"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a739d4131f487caeb5102c48fcd795772"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classIoss_1_1Decomposition.html#a739d4131f487caeb5102c48fcd795772">communicate_node_data</a> (T *file_data, T *ioss_data, size_t comp_count) const</td></tr>
 <tr class="separator:a739d4131f487caeb5102c48fcd795772"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,64 +431,6 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="a76c1a388b31e1052f5d1ed06dd04e14c" name="a76c1a388b31e1052f5d1ed06dd04e14c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76c1a388b31e1052f5d1ed06dd04e14c">&#9670;&#160;</a></span>communicate_all_block_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename INT &gt; </div>
-<div class="memtemplate">
-template&lt;typename T , typename U &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; size_t &gt; <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::communicate_all_block_data </td>
-          <td>(</td>
-          <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>file_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U *&#160;</td>
-          <td class="paramname"><em>ioss_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>blocks</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>file_offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>block_component_count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a971abd166ba8021c8714fb763aadddfa" name="a971abd166ba8021c8714fb763aadddfa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a971abd166ba8021c8714fb763aadddfa">&#9670;&#160;</a></span>communicate_block_data()</h2>
 
@@ -571,6 +513,70 @@ template&lt;typename T &gt; </div>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>comp_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f84b8dad7a52e1a18b764b8a5d78a9b" name="a6f84b8dad7a52e1a18b764b8a5d78a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f84b8dad7a52e1a18b764b8a5d78a9b">&#9670;&#160;</a></span>communicate_entity_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; size_t &gt; <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::communicate_entity_data </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>file_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U *&#160;</td>
+          <td class="paramname"><em>ioss_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classIoss_1_1BlockDecompositionData.html">BlockDecompositionData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blockSubsetIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fileOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blockComponentCount</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -715,8 +721,8 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="a28648f8f0686c96f76eb7403cc3ed0e4" name="a28648f8f0686c96f76eb7403cc3ed0e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28648f8f0686c96f76eb7403cc3ed0e4">&#9670;&#160;</a></span>do_communicate_all_block_data()</h2>
+<a id="a7b95bf8897ca13a5acf990efe63d13dd" name="a7b95bf8897ca13a5acf990efe63d13dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b95bf8897ca13a5acf990efe63d13dd">&#9670;&#160;</a></span>do_communicate_entity_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -729,7 +735,7 @@ template&lt;typename T , typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; size_t &gt; <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::do_communicate_all_block_data </td>
+          <td class="memname">std::vector&lt; size_t &gt; <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::do_communicate_entity_data </td>
           <td>(</td>
           <td class="paramtype">T *&#160;</td>
           <td class="paramname"><em>file_data</em>, </td>
@@ -749,14 +755,20 @@ template&lt;typename T , typename U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>blockSubsetIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>file_offset</em>, </td>
+          <td class="paramname"><em>fileOffset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>block_component_count</em>&#160;</td>
+          <td class="paramname"><em>blockComponentCount</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -253,7 +253,7 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_DatabaseIO.C}", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html", [
       [ "calc_bounding_box", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a0339a01eb797b5ee7289a393cb2814cc", null ],
       [ "calc_bounding_box", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#acb8182b7e1a171e2d1a8402a7f282529", null ],
-      [ "get_all_block_offsets", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a4d757463578cddcf6bc3bc93620aae35", null ],
+      [ "get_entity_offsets", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a558f4371b20afaab9b39216097849d04", null ],
       [ "internal_parallel_consistent", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#abb16e9ce1770ccae6dbccc024cfc1a2a", null ],
       [ "log_field", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a3f5223b8bdd71be3ba720d424ca0bb4e", null ],
       [ "log_time", "namespaceanonymous__namespace_02Ioss__DatabaseIO_8C_03.html#a7ac44316a0026547ad9dfd7ec60cf8a8", null ],
@@ -378,7 +378,6 @@ var namespaces_dup =
       [ "compute_hash", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a6656dc24f504bdeebf73ddf5af0bf448", null ],
       [ "compute_hashes", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#aae5204bc476b0c52db06f247173b475c", null ],
       [ "db_name_str", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#add5239e51c21797c59c7276851c986df", null ],
-      [ "get_all_block_field_data_count", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#aa85de0f20de5fff9d4e7bb60c1d27394", null ],
       [ "get_entity_count", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a5ee57762c7c97cee640a574133de0ad2", null ],
       [ "get_entity_internal", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#ab70b2880638b25e5abf2582d4703ee8a", null ],
       [ "get_reduction_variable_count", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a9a80d47101282ba532a7cbaf0dbf8bd8", null ],
@@ -392,8 +391,7 @@ var namespaces_dup =
       [ "orig_topo_str", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a294e2a63b62275998c3021cf3ef3f0a8", null ],
       [ "report_inconsistency", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a2f8c4edf9fcba5a6ace342c7f9231727", null ],
       [ "update_database", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a7869ea069d410d6981424b0e3078b7fa", null ],
-      [ "update_database", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#acfc3362c77d7c0156bae6bc47f462607", null ],
-      [ "verify_field_exists_on_any_entity_group", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#aa50e9e1fe798e0af048bb103e8e1beb6", null ]
+      [ "update_database", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#acfc3362c77d7c0156bae6bc47f462607", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Shell4.C}", "namespaceanonymous__namespace_02Ioss__Shell4_8C_03.html", "namespaceanonymous__namespace_02Ioss__Shell4_8C_03" ],
     [ "anonymous_namespace{Ioss_Shell8.C}", "namespaceanonymous__namespace_02Ioss__Shell8_8C_03.html", "namespaceanonymous__namespace_02Ioss__Shell8_8C_03" ],
@@ -507,19 +505,24 @@ var namespaces_dup =
       [ "rank", "namespaceanonymous__namespace_02struc__to__unstruc_8C_03.html#a9268c646b97401720e90e8ff5a97c2d1", null ],
       [ "version", "namespaceanonymous__namespace_02struc__to__unstruc_8C_03.html#a42dded60d1ffdea09c9302a5a535d801", null ]
     ] ],
-    [ "anonymous_namespace{UnitTestIotmTextMeshFixture.h}", "namespaceanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03.html", "namespaceanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03" ],
-    [ "anonymous_namespace{UnitTestReadAllBlockData.C}", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html", [
-      [ "define_model", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#a330aaaf29b59dcc61c7bc6f56ee818f6", null ],
-      [ "define_transient", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#a09b56a44eb24b8d0ac4986151da2b1aa", null ],
-      [ "do_connectivity_timing", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#a90fcc5414236ee7f4401f1aa52e9a6e2", null ],
-      [ "do_connectivity_timing_impl", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#a7d25934bd1d30e459d4dce2979dd5141", null ],
-      [ "do_field_timing_and_verification", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#afd95910031802b0494f2522e146ac821", null ],
-      [ "generate_randomized_many_block_mesh_from_textmesh", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#a6a568fe5f11128b57e3e5011ffb1b27c", null ],
-      [ "get_randomized_many_block_mesh_desc", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#a8f02439704ca8633b999148e17c38044", null ],
-      [ "TEST", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#a8e38a9c6485ba32f9ac1343c8cd33777", null ],
-      [ "write_model", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#aad04db96eb8aa8b999aa689f68348e50", null ],
-      [ "write_transient", "namespaceanonymous__namespace_02UnitTestReadAllBlockData_8C_03.html#a15061047e4ae72dba9cb04104544ac11", null ]
+    [ "anonymous_namespace{UnitTestElementBlockBatchRead.C}", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html", [
+      [ "ElemBlockFunc", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a032ec6bfb18b5af726243fd2ea3464a4", null ],
+      [ "define_model", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a41db306a259ca0a36718ca2fb8703464", null ],
+      [ "define_transient", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#aab9412b8f1ee3d408d87053e4e68db90", null ],
+      [ "do_connectivity_timing", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#aef869a2c44d3aa796a756520353d8315", null ],
+      [ "do_connectivity_timing_impl", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a9000339df8e571d3382284e85c7ea0a1", null ],
+      [ "do_field_timing_and_verification", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a8a4d1d5cf81a6c8d539cf159721202ed", null ],
+      [ "generate_randomized_many_block_mesh_from_textmesh", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#af66b72e6189552e1c617378cb39f41db", null ],
+      [ "get_all_blocks", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a1bc1f9fb929f929e7112c0d0765d606a", null ],
+      [ "get_alternate_blocks", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a426c4e4993d099b049b0c93ddb871702", null ],
+      [ "get_randomized_many_block_mesh_desc", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#ac4bea12e93371906d2e965f59ae3703b", null ],
+      [ "run_block_batch_test", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a085e66527826b25e725651e41738017d", null ],
+      [ "TEST", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a5c5406091043c31c97bc45e80c8ed423", null ],
+      [ "TEST", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a310aa4f3e9716a3514cbe39469372abd", null ],
+      [ "write_model", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#aafad2fc0eaf3ca134e1d0c0ba7711b9f", null ],
+      [ "write_transient", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#aaa87eadad535f147b7994711ad63663b", null ]
     ] ],
+    [ "anonymous_namespace{UnitTestIotmTextMeshFixture.h}", "namespaceanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03.html", "namespaceanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03" ],
     [ "anonymous_namespace{UnitTestTextMesh.C}", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html", [
       [ "add_coords_to_connectivity", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a1de670a6ab941a33f724e492dda6a560", null ],
       [ "TEST_F", "namespaceanonymous__namespace_02UnitTestTextMesh_8C_03.html#a7114f406a8753fbe4b6baa01ba5c8c6f", null ],

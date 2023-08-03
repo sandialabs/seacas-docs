@@ -491,6 +491,7 @@ var annotated_dup =
       [ "EdgeBlock", "classIoss_1_1EdgeBlock.html", "classIoss_1_1EdgeBlock" ],
       [ "EdgeSet", "classIoss_1_1EdgeSet.html", "classIoss_1_1EdgeSet" ],
       [ "ElementBlock", "classIoss_1_1ElementBlock.html", "classIoss_1_1ElementBlock" ],
+      [ "ElementBlockBatchOffset", "classIoss_1_1ElementBlockBatchOffset.html", "classIoss_1_1ElementBlockBatchOffset" ],
       [ "ElementPermutation", "classIoss_1_1ElementPermutation.html", "classIoss_1_1ElementPermutation" ],
       [ "ElementSet", "classIoss_1_1ElementSet.html", "classIoss_1_1ElementSet" ],
       [ "ElementTopology", "classIoss_1_1ElementTopology.html", "classIoss_1_1ElementTopology" ],

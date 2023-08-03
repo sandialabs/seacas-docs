@@ -1,8 +1,8 @@
 var group__ResultsData =
 [
-    [ "ex__get_nodal_var", "group__ResultsData.html#ga7cca4d9d3deb736eb3c01ad6dff35ae6", null ],
+    [ "ex__get_nodal_var_multi_time", "group__ResultsData.html#gaae3cb27aafc1015c3c74688dd6524209", null ],
     [ "ex__get_partial_nodal_var", "group__ResultsData.html#ga70d0037bf3c12d4ba5ab09eb956e19e9", null ],
-    [ "ex__put_nodal_var", "group__ResultsData.html#gadea4cacfe3af0f6245b2d973546bc4ef", null ],
+    [ "ex__put_nodal_var_time", "group__ResultsData.html#ga2758464fd8a0f2c4fabfdd931247185f", null ],
     [ "ex__put_partial_nodal_var", "group__ResultsData.html#gaafda0a407402616fde3c5e653a2a79c1", null ],
     [ "ex_get_all_times", "group__ResultsData.html#ga25705723a510ee4c6b23959925eca4ec", null ],
     [ "ex_get_glob_vars", "group__ResultsData.html#gaab1f1155881d0b4d3ac442472297daab", null ],
@@ -21,6 +21,7 @@ var group__ResultsData =
     [ "ex_get_time", "group__ResultsData.html#ga043918d9caf73f8dcdb41e23ddc9b914", null ],
     [ "ex_get_truth_table", "group__ResultsData.html#ga90ac12b9e78cbb4305f07d27cffeb780", null ],
     [ "ex_get_var", "group__ResultsData.html#ga200c0e240277523c735987a7bb69cf20", null ],
+    [ "ex_get_var_multi_time", "group__ResultsData.html#ga63ce63f4c1772e23e8284726795e5d6a", null ],
     [ "ex_get_var_name", "group__ResultsData.html#gaa4a7899cf4fc72d8d43925185a0ef419", null ],
     [ "ex_get_var_names", "group__ResultsData.html#gac69d69f51ed0ff5fca3956b926b1c880", null ],
     [ "ex_get_var_param", "group__ResultsData.html#ga67d65beae3a94e472a7c6b1982644bd4", null ],
@@ -43,6 +44,7 @@ var group__ResultsData =
     [ "ex_put_time", "group__ResultsData.html#ga2052c8728dac97589b94d9947e645797", null ],
     [ "ex_put_truth_table", "group__ResultsData.html#gaec82868a515b0efcce6dadb8352a9712", null ],
     [ "ex_put_var", "group__ResultsData.html#gafa1d828867b436631e99a63fd5ddbf05", null ],
+    [ "ex_put_var_multi_time", "group__ResultsData.html#ga361ca6887b1ab77fd69eeca818aa59fe", null ],
     [ "ex_put_var_name", "group__ResultsData.html#gab0b72cd46b9655253d699cbb42744c36", null ],
     [ "ex_put_var_names", "group__ResultsData.html#gafbd39f5aca69cb3290549efce1ae20d8", null ],
     [ "ex_put_var_param", "group__ResultsData.html#ga18448b8dc46181c45af2abf82f1ec590", null ],

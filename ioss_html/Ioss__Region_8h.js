@@ -15,5 +15,7 @@ var Ioss__Region_8h =
     [ "NodeSetContainer", "Ioss__Region_8h.html#ad297002786de2eb7b6eb5cb8614831a7", null ],
     [ "SideSetContainer", "Ioss__Region_8h.html#a7a217826e0632a196124bf8d5e4f39e9", null ],
     [ "StateTimeContainer", "Ioss__Region_8h.html#a089f9d23b46bc02131c42189f3cac2e6", null ],
-    [ "StructuredBlockContainer", "Ioss__Region_8h.html#ac6d9b5dfaf7eb587cbd2b6b32262cbe3", null ]
+    [ "StructuredBlockContainer", "Ioss__Region_8h.html#ac6d9b5dfaf7eb587cbd2b6b32262cbe3", null ],
+    [ "get_field_data_count_for_entities", "Ioss__Region_8h.html#ad48235df5292e723542d95c0c8c297f6", null ],
+    [ "verify_field_exists_in_entity_group", "Ioss__Region_8h.html#a53576bac923bfd5f882addee17be00f1", null ]
 ];
