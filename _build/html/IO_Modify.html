@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IO_MODIFY Valid Commands &mdash; SEACAS 2023/07/12 documentation</title>
@@ -12,10 +12,11 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
         <script src="_static/clipboard.min.js"></script>
         <script src="_static/copybutton.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -77,7 +78,7 @@
            <div itemprop="articleBody">
              
   <section id="io-modify-valid-commands">
-<h1>IO_MODIFY Valid Commands<a class="headerlink" href="#io-modify-valid-commands" title="Permalink to this headline"></a></h1>
+<h1>IO_MODIFY Valid Commands<a class="headerlink" href="#io-modify-valid-commands" title="Permalink to this heading"></a></h1>
 <p><strong>HELP</strong> <em>[list | assembly | graph | attribute | regex | glob]</em></p>
 <p><strong>END</strong> | <strong>EXIT</strong></p>
 <blockquote>
@@ -200,7 +201,7 @@ Can also modify the values of an existing attribute.’</p>
 </li>
 </ul>
 <section id="regular-expression-help">
-<h2>Regular Expression help<a class="headerlink" href="#regular-expression-help" title="Permalink to this headline"></a></h2>
+<h2>Regular Expression help<a class="headerlink" href="#regular-expression-help" title="Permalink to this heading"></a></h2>
 <p>(used in <code class="docutils literal notranslate"><span class="pre">ASSEMBLY</span> <span class="pre">MATCHES</span></code> and <code class="docutils literal notranslate"><span class="pre">LIST</span> <span class="pre">MATCHES</span></code> and <code class="docutils literal notranslate"><span class="pre">ATTRIBUTE</span> <span class="pre">LIST</span> <span class="pre">MATCHES</span></code> options)</p>
 <ul class="simple">
 <li><p>Supports “POSIX Extended Regular Expressions” syntax.</p></li>
@@ -209,7 +210,7 @@ Can also modify the values of an existing attribute.’</p>
 </ul>
 </section>
 <section id="glob-help">
-<h2>Glob help<a class="headerlink" href="#glob-help" title="Permalink to this headline"></a></h2>
+<h2>Glob help<a class="headerlink" href="#glob-help" title="Permalink to this heading"></a></h2>
 <p>(used in <code class="docutils literal notranslate"><span class="pre">ASSEMBLY</span> <span class="pre">GLOB</span></code> and <code class="docutils literal notranslate"><span class="pre">LIST</span> <span class="pre">GLOB</span></code> and <code class="docutils literal notranslate"><span class="pre">ATTRIBUTE</span> <span class="pre">LIST</span> <span class="pre">GLOB</span></code> options)</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">?(pattern-list)</span></code>   Matches zero or one occurrence of the given patterns</p></li>
@@ -220,7 +221,7 @@ Can also modify the values of an existing attribute.’</p>
 </ul>
 </section>
 <section id="glob-examples">
-<h2>Glob Examples<a class="headerlink" href="#glob-examples" title="Permalink to this headline"></a></h2>
+<h2>Glob Examples<a class="headerlink" href="#glob-examples" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">block*</span></code>   : All names that start with ‘block’</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">[A-Z]*</span></code>   : All names that start with a capital letter</p></li>
