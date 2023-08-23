@@ -478,9 +478,14 @@ var namespaces_dup =
     ] ],
     [ "anonymous_namespace{shell_to_hex.C}", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html", "namespaceanonymous__namespace_02shell__to__hex_8C_03" ],
     [ "anonymous_namespace{skinner.C}", "namespaceanonymous__namespace_02skinner_8C_03.html", [
+      [ "get_selected_steps", "namespaceanonymous__namespace_02skinner_8C_03.html#a23c4cf1aa336e71a8c4ad8294016e1fb", null ],
       [ "output_table", "namespaceanonymous__namespace_02skinner_8C_03.html#adc2a748fea2ae80b2e6ae74b929a413c", null ],
       [ "set_properties", "namespaceanonymous__namespace_02skinner_8C_03.html#aae0b7c03b9891c8985688aaa616915a4", null ],
       [ "skinner", "namespaceanonymous__namespace_02skinner_8C_03.html#a5c9647d31b0c4e3b3375570ed26edb27", null ],
+      [ "transfer_field_data", "namespaceanonymous__namespace_02skinner_8C_03.html#aacd46451d877a29db2dadfd892a94a4d", null ],
+      [ "transfer_field_data", "namespaceanonymous__namespace_02skinner_8C_03.html#a25df5f70a9f5838f8c92c521a8988a97", null ],
+      [ "transfer_field_data_internal", "namespaceanonymous__namespace_02skinner_8C_03.html#ab6a3056d96ae03ebfc3209d9c6972ad4", null ],
+      [ "transfer_field_data_internal", "namespaceanonymous__namespace_02skinner_8C_03.html#a42080e06dabdca865ce5a8302914bdfe", null ],
       [ "codename", "namespaceanonymous__namespace_02skinner_8C_03.html#a90ec0e098fc16dfc900a43f7069513a3", null ],
       [ "version", "namespaceanonymous__namespace_02skinner_8C_03.html#af3693f53a100020de6e7f48fbcca74f7", null ]
     ] ],

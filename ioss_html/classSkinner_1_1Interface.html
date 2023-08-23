@@ -119,6 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af525445f885a0e3cc29fcd030e8f7976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a02b50acd0675bbfbc576740cfc7846"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a9a02b50acd0675bbfbc576740cfc7846">no_output</a> () const</td></tr>
 <tr class="separator:a9a02b50acd0675bbfbc576740cfc7846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3de447e75b679b7c16d8cc949569dbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#ae3de447e75b679b7c16d8cc949569dbe">output_transient</a> () const</td></tr>
+<tr class="separator:ae3de447e75b679b7c16d8cc949569dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc3b2d3c8b93ec3b2f9dd535f0f0deb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#adc3b2d3c8b93ec3b2f9dd535f0f0deb7">input_filename</a> () const</td></tr>
 <tr class="separator:adc3b2d3c8b93ec3b2f9dd535f0f0deb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8b54afc984d50199163d051bab241c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a1b8b54afc984d50199163d051bab241c">output_filename</a> () const</td></tr>
@@ -134,6 +136,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a73a4f6a152499a25e6e4337d22dbc82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c5d87cff80b6b9e337aad4e18fccf40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a7c5d87cff80b6b9e337aad4e18fccf40">compose_output</a> {&quot;default&quot;}</td></tr>
 <tr class="separator:a7c5d87cff80b6b9e337aad4e18fccf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca18e7a9c8384dae81eadec6db4a9ba"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a1ca18e7a9c8384dae81eadec6db4a9ba">maximum_time</a> {std::numeric_limits&lt;double&gt;::max()}</td></tr>
+<tr class="separator:a1ca18e7a9c8384dae81eadec6db4a9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db0b86854aa489a9105e6560e2f6ec1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a0db0b86854aa489a9105e6560e2f6ec1">minimum_time</a> {-std::numeric_limits&lt;double&gt;::max()}</td></tr>
+<tr class="separator:a0db0b86854aa489a9105e6560e2f6ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07976bcda95a56530c26aa47ca637d60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a07976bcda95a56530c26aa47ca637d60">compression_level</a> {0}</td></tr>
 <tr class="separator:a07976bcda95a56530c26aa47ca637d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4150a85afd8a53aadb7c754fe7d8cb9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a4150a85afd8a53aadb7c754fe7d8cb9a">shuffle</a> {false}</td></tr>
@@ -150,8 +156,13 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a71bc55127c99356817da5a5a92a77304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde492c353ff17a6f75a62ff0ad4f71d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#acde492c353ff17a6f75a62ff0ad4f71d">noOutput_</a> {false}</td></tr>
 <tr class="separator:acde492c353ff17a6f75a62ff0ad4f71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0fda9793d7d18019f8382b238e713a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a4f0fda9793d7d18019f8382b238e713a">outputTransient_</a> {false}</td></tr>
+<tr class="separator:a4f0fda9793d7d18019f8382b238e713a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a582b9a7c0df36d828913ec012dc83ab5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a582b9a7c0df36d828913ec012dc83ab5">blocks_</a> {false}</td></tr>
 <tr class="separator:a582b9a7c0df36d828913ec012dc83ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599e0a514d0b5d757dc248a097068c89"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkinner_1_1Interface.html#a599e0a514d0b5d757dc248a097068c89">selected_times</a> {}</td></tr>
+<tr class="memdesc:a599e0a514d0b5d757dc248a097068c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">If non-empty, then it is a list of times that should be transferred to the output file.  <br /></td></tr>
+<tr class="separator:a599e0a514d0b5d757dc248a097068c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -365,6 +376,31 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae3de447e75b679b7c16d8cc949569dbe" name="ae3de447e75b679b7c16d8cc949569dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3de447e75b679b7c16d8cc949569dbe">&#9670;&#160;</a></span>output_transient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Skinner::Interface::output_transient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af58a2b89b2dc6c73631945811611a4d3" name="af58a2b89b2dc6c73631945811611a4d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af58a2b89b2dc6c73631945811611a4d3">&#9670;&#160;</a></span>output_type()</h2>
 
@@ -547,6 +583,34 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1ca18e7a9c8384dae81eadec6db4a9ba" name="a1ca18e7a9c8384dae81eadec6db4a9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca18e7a9c8384dae81eadec6db4a9ba">&#9670;&#160;</a></span>maximum_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Skinner::Interface::maximum_time {std::numeric_limits&lt;double&gt;::max()}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0db0b86854aa489a9105e6560e2f6ec1" name="a0db0b86854aa489a9105e6560e2f6ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db0b86854aa489a9105e6560e2f6ec1">&#9670;&#160;</a></span>minimum_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Skinner::Interface::minimum_time {-std::numeric_limits&lt;double&gt;::max()}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4669edeeb7e5590d14519a90fd85b85e" name="a4669edeeb7e5590d14519a90fd85b85e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4669edeeb7e5590d14519a90fd85b85e">&#9670;&#160;</a></span>netcdf4_</h2>
 
@@ -638,6 +702,36 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f0fda9793d7d18019f8382b238e713a" name="a4f0fda9793d7d18019f8382b238e713a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f0fda9793d7d18019f8382b238e713a">&#9670;&#160;</a></span>outputTransient_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Skinner::Interface::outputTransient_ {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a599e0a514d0b5d757dc248a097068c89" name="a599e0a514d0b5d757dc248a097068c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a599e0a514d0b5d757dc248a097068c89">&#9670;&#160;</a></span>selected_times</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; Skinner::Interface::selected_times {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If non-empty, then it is a list of times that should be transferred to the output file. </p>
 
 </div>
 </div>
