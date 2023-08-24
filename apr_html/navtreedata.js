@@ -68,15 +68,15 @@ var NAVTREEINDEX =
 "FlexLexer_8h.html",
 "apr__builtin_8h.html#ad80b67f429ac3e8671c738c1c0af8864",
 "apr__scanner_8cc.html#ae9aed7124776285d55163bad041db5ee",
-"classSEAMS_1_1Aprepro.html#a71039386241d1fc5f547af6d1c6eecaf",
-"classSEAMS_1_1Scanner.html#a14ea77dbc7aa2089f6bfcd014898feb5",
+"classSEAMS_1_1Aprepro.html#a71029178b259a3835dbf0b3c5a9219f1",
+"classSEAMS_1_1Scanner.html#a0882985cf9639ea710c00f71da4598c8",
 "classtsl_1_1detail__robin__hash_1_1robin__hash.html#a82d07c98305050461c5e853f3734434b",
 "classtsl_1_1robin__map.html#a37f47824e4d915497871a4c390545832",
-"functions_type.html",
-"namespaceanonymous__namespace_02apr__getline_8cc_03.html#a0e29748e663558273c43b4c6a67557ed",
-"structSEAMS_1_1Parser_1_1symbol__kind.html#ac56f226c39755733fe503407ab7203f9a40178c05bc7ca4ede3f41e17562f0d3c",
-"structSEAMS_1_1aprepro__options.html#a7abcaaae0d924cf875c934c6b45fabd2",
-"structstr__ccc__init.html#a0a004cec7fd374c2e7a2ca57c2ebb8e1"
+"functions_t.html",
+"namespaceanonymous__namespace_02apr__getline_8cc_03.html#a02c84de5bd0243598262504b500db1a1",
+"structSEAMS_1_1Parser_1_1symbol__kind.html#ac56f226c39755733fe503407ab7203f9a3d78d06ae9b9a4bb860d49643fcc6d16",
+"structSEAMS_1_1aprepro__options.html#a7a2a0ef9e91feb13c6780d58c19d6894",
+"structstr__cc__init.html#ac0abb80e9b4f5fe51b0c450ecbf44761"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
