@@ -1,5 +1,5 @@
 var strings_8cc =
 [
-    [ "main", "strings_8cc.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
-    [ "succ", "strings_8cc.html#ad15723334fab77cc43861210acda2d36", null ]
+    [ "build_strings", "strings_8cc.html#a9c90f966118277a13b04a34249264471", null ],
+    [ "main", "strings_8cc.html#a2c3f6775325c30275d11c6abee2db6a0", null ]
 ];

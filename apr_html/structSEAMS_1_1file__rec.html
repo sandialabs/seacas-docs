@@ -99,6 +99,21 @@ $(document).ready(function(){initNavTree('structSEAMS_1_1file__rec.html',''); in
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="aprepro_8h_source.html">aprepro.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for SEAMS::file_rec:</div>
+<div class="dyncontent">
+<div class="center"><img src="structSEAMS_1_1file__rec__coll__graph.gif" border="0" usemap="#aSEAMS_1_1file__rec_coll__map" alt="Collaboration graph"/></div>
+<map name="aSEAMS_1_1file__rec_coll__map" id="aSEAMS_1_1file__rec_coll__map">
+<area shape="rect" title=" " alt="" coords="25,376,144,402"/>
+<area shape="rect" href="structSEAMS_1_1symrec.html" title=" " alt="" coords="25,288,144,313"/>
+<area shape="poly" title=" " alt="" coords="87,328,87,376,82,376,82,328"/>
+<area shape="poly" title=" " alt="" coords="160,292,171,300,163,308,145,311,144,306,160,304,166,301,157,296"/>
+<area shape="rect" href="structSEAMS_1_1symrec_1_1value.html" title=" " alt="" coords="5,199,164,225"/>
+<area shape="poly" title=" " alt="" coords="87,239,87,287,82,287,82,239"/>
+<area shape="rect" href="structSEAMS_1_1array.html" title=" " alt="" coords="32,5,137,31"/>
+<area shape="poly" title=" " alt="" coords="87,46,87,199,82,199,82,46"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -111,10 +126,16 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a666983c21e101d7afac3c147b74787d7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEAMS_1_1file__rec.html#a666983c21e101d7afac3c147b74787d7">name</a> {&quot;STDIN&quot;}</td></tr>
 <tr class="separator:a666983c21e101d7afac3c147b74787d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f420433db6020a3d0548a1818d307ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1symrec.html">symrec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEAMS_1_1file__rec.html#a0f420433db6020a3d0548a1818d307ad">loop_index</a> {nullptr}</td></tr>
+<tr class="separator:a0f420433db6020a3d0548a1818d307ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b965e698bcba29bbd763fd56b313b76"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEAMS_1_1file__rec.html#a7b965e698bcba29bbd763fd56b313b76">loop_increment</a> {1}</td></tr>
+<tr class="separator:a7b965e698bcba29bbd763fd56b313b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9820e9d1885f3d2dd4acf0f107a680f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEAMS_1_1file__rec.html#a9820e9d1885f3d2dd4acf0f107a680f8">lineno</a> {1}</td></tr>
 <tr class="separator:a9820e9d1885f3d2dd4acf0f107a680f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a8c584039bcaf6d76bab5a26df1af2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEAMS_1_1file__rec.html#a5a8c584039bcaf6d76bab5a26df1af2f">loop_count</a> {0}</td></tr>
 <tr class="separator:a5a8c584039bcaf6d76bab5a26df1af2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace565c9cd48bbd545d5aeef69a2e7b09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEAMS_1_1file__rec.html#ace565c9cd48bbd545d5aeef69a2e7b09">loop_level</a> {0}</td></tr>
+<tr class="separator:ace565c9cd48bbd545d5aeef69a2e7b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ce6f034248543e15f95718031b27475"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEAMS_1_1file__rec.html#a9ce6f034248543e15f95718031b27475">tmp_file</a> {false}</td></tr>
 <tr class="separator:a9ce6f034248543e15f95718031b27475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -215,6 +236,48 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int SEAMS::file_rec::loop_count {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b965e698bcba29bbd763fd56b313b76" name="a7b965e698bcba29bbd763fd56b313b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b965e698bcba29bbd763fd56b313b76">&#9670;&#160;</a></span>loop_increment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SEAMS::file_rec::loop_increment {1}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f420433db6020a3d0548a1818d307ad" name="a0f420433db6020a3d0548a1818d307ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f420433db6020a3d0548a1818d307ad">&#9670;&#160;</a></span>loop_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structSEAMS_1_1symrec.html">symrec</a>* SEAMS::file_rec::loop_index {nullptr}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace565c9cd48bbd545d5aeef69a2e7b09" name="ace565c9cd48bbd545d5aeef69a2e7b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace565c9cd48bbd545d5aeef69a2e7b09">&#9670;&#160;</a></span>loop_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SEAMS::file_rec::loop_level {0}</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['magenta_0',['magenta',['../namespacetrmclr.html#a87195018207ae60756c9e7f9d716f540',1,'trmclr']]],
-  ['main_1',['main',['../apr__test_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;apr_test.cc'],['../strings_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;strings.cc']]],
+  ['main_1',['main',['../apr__test_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;apr_test.cc'],['../strings_8cc.html#a2c3f6775325c30275d11c6abee2db6a0',1,'main(int, char **):&#160;strings.cc']]],
   ['make_5farray_2',['make_array',['../classSEAMS_1_1Aprepro.html#a46969190572695bccf65f3a5a0bc994d',1,'SEAMS::Aprepro::make_array(int r, int c)'],['../classSEAMS_1_1Aprepro.html#a7d5d29ce007a2db86e58fc84d6105034',1,'SEAMS::Aprepro::make_array(const array &amp;from)']]],
   ['match_5foption_3',['match_option',['../namespaceSEAMS_1_1anonymous__namespace_02apr__aprepro_8cc_03.html#a21444f3b8ddbf52917484be9a7f7f8cf',1,'SEAMS::anonymous_namespace{apr_aprepro.cc}']]],
   ['math_5ferror_4',['math_error',['../namespaceSEAMS.html#af028977ba40c76ef326936906fe9b0e0',1,'SEAMS::math_error(const SEAMS::Aprepro &amp;apr, const char *function)'],['../namespaceSEAMS.html#a15b05eb7930a143bdb17dfeb860ec129',1,'SEAMS::math_error(const char *function)']]],

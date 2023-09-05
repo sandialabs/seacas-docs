@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"functions_rela.html":[1,3,6],
+"functions_s.html":[1,3,0,18],
 "functions_t.html":[1,3,0,19],
 "functions_type.html":[1,3,3],
 "functions_u.html":[1,3,0,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a8af8d106c8603c278d56239b3a9ad0e1":[0,0,1,4],
 "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a97223934f027610caeba5b309178b354":[0,0,1,1],
 "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#afba54e4ae2d3a2369ed3086a983916fa":[0,0,1,2],
-"namespaceanonymous__namespace_02apr__getline_8cc_03.html":[0,0,2],
-"namespaceanonymous__namespace_02apr__getline_8cc_03.html#a01188944bf690d07a5610fe812dc4a07":[0,0,2,30],
-"namespaceanonymous__namespace_02apr__getline_8cc_03.html#a028e2819340199ca3c4a7fb54fb8b104":[0,0,2,5]
+"namespaceanonymous__namespace_02apr__getline_8cc_03.html":[0,0,2]
 };

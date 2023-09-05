@@ -5,5 +5,8 @@ var searchData=
   ['lexer_2',['lexer',['../classSEAMS_1_1Aprepro.html#a0a266abdce68ab33552f8fd2370bce16',1,'SEAMS::Aprepro']]],
   ['lineno_3',['lineno',['../structSEAMS_1_1file__rec.html#a9820e9d1885f3d2dd4acf0f107a680f8',1,'SEAMS::file_rec']]],
   ['loop_5fcount_4',['loop_count',['../structSEAMS_1_1file__rec.html#a5a8c584039bcaf6d76bab5a26df1af2f',1,'SEAMS::file_rec']]],
-  ['loop_5flvl_5',['loop_lvl',['../apr__scanner_8cc.html#ae9aed7124776285d55163bad041db5ee',1,'apr_scanner.cc']]]
+  ['loop_5fincrement_5',['loop_increment',['../structSEAMS_1_1file__rec.html#a7b965e698bcba29bbd763fd56b313b76',1,'SEAMS::file_rec']]],
+  ['loop_5findex_6',['loop_index',['../structSEAMS_1_1file__rec.html#a0f420433db6020a3d0548a1818d307ad',1,'SEAMS::file_rec']]],
+  ['loop_5flevel_7',['loop_level',['../structSEAMS_1_1file__rec.html#ace565c9cd48bbd545d5aeef69a2e7b09',1,'SEAMS::file_rec']]],
+  ['loop_5flvl_8',['loop_lvl',['../apr__scanner_8cc.html#ae9aed7124776285d55163bad041db5ee',1,'apr_scanner.cc']]]
 ];

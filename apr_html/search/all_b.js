@@ -16,8 +16,8 @@ var searchData=
   ['light_5fcyan_13',['LIGHT_CYAN',['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9abaea4d626c13c516e8944749901b8f431f',1,'trmclr::Foreground::LIGHT_CYAN'],['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6eae36fbeb18946ad415b897ae15287cbc4',1,'trmclr::Background::LIGHT_CYAN']]],
   ['light_5fgray_14',['LIGHT_GRAY',['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9abaad7111bcfed531a3fdbaf1a389251f5c',1,'trmclr::Foreground::LIGHT_GRAY'],['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6eab5252ecebd1de7a1dfd557572c8ac443',1,'trmclr::Background::LIGHT_GRAY']]],
   ['light_5fgreen_15',['LIGHT_GREEN',['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9abab2c83e19f5a756f08ce471cea40a4a29',1,'trmclr::Foreground::LIGHT_GREEN'],['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6ea5f69fb01d8b1e7013f557b24af638064',1,'trmclr::Background::LIGHT_GREEN']]],
-  ['light_5fmagenta_16',['LIGHT_MAGENTA',['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6eac712427aeb64908eec8fa8e5b471fd47',1,'trmclr::Background::LIGHT_MAGENTA'],['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9abae1d9e69d44282d06bbbe31f5283177bb',1,'trmclr::Foreground::LIGHT_MAGENTA']]],
-  ['light_5fred_17',['LIGHT_RED',['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9aba18c0858710e02c7f4398f0a5eea731f9',1,'trmclr::Foreground::LIGHT_RED'],['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6ea3f2d59d41c5e0feb24fa1cea1f2a9607',1,'trmclr::Background::LIGHT_RED']]],
+  ['light_5fmagenta_16',['LIGHT_MAGENTA',['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9abae1d9e69d44282d06bbbe31f5283177bb',1,'trmclr::Foreground::LIGHT_MAGENTA'],['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6eac712427aeb64908eec8fa8e5b471fd47',1,'trmclr::Background::LIGHT_MAGENTA']]],
+  ['light_5fred_17',['LIGHT_RED',['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6ea3f2d59d41c5e0feb24fa1cea1f2a9607',1,'trmclr::Background::LIGHT_RED'],['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9aba18c0858710e02c7f4398f0a5eea731f9',1,'trmclr::Foreground::LIGHT_RED']]],
   ['light_5fyellow_18',['LIGHT_YELLOW',['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9abad47496a36c964844f8fe8f96578bef41',1,'trmclr::Foreground::LIGHT_YELLOW'],['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6eab685cf472b69bbce228c0e4c8e6a97e9',1,'trmclr::Background::LIGHT_YELLOW']]],
   ['lineno_19',['lineno',['../structSEAMS_1_1file__rec.html#a9820e9d1885f3d2dd4acf0f107a680f8',1,'SEAMS::file_rec::lineno'],['../classFlexLexer.html#a835d3243729ffa4912949ea44b241f3b',1,'FlexLexer::lineno()']]],
   ['load_5fconstants_20',['load_constants',['../namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#a6b7823a692c8b87090d14a4b8f30cfa2',1,'SEAMS::anonymous_namespace{apr_units.cc}']]],
@@ -27,9 +27,12 @@ var searchData=
   ['lookahead_24',['lookahead',['../classSEAMS_1_1Parser_1_1context.html#a1d38b522d7f5e37bb78ae955c38e2aa3',1,'SEAMS::Parser::context']]],
   ['loop_25',['LOOP',['../apr__scanner_8cc.html#a8e8f11caf539de9555d07b4e7ef5b1da',1,'apr_scanner.cc']]],
   ['loop_5fcount_26',['loop_count',['../structSEAMS_1_1file__rec.html#a5a8c584039bcaf6d76bab5a26df1af2f',1,'SEAMS::file_rec']]],
-  ['loop_5flvl_27',['loop_lvl',['../apr__scanner_8cc.html#ae9aed7124776285d55163bad041db5ee',1,'apr_scanner.cc']]],
-  ['loop_5fskip_28',['LOOP_SKIP',['../apr__scanner_8cc.html#aa73a50172e72ed53e3c2a2ec01664bb9',1,'apr_scanner.cc']]],
-  ['lor_29',['LOR',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfabd99ecaf2c24c8eecafdb701f9e5766a',1,'SEAMS::Parser::token']]],
-  ['lpar_30',['LPAR',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfaf1bac263715b0206f4715d2222b33577',1,'SEAMS::Parser::token']]],
-  ['lt_31',['LT',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfa192cd4431f6c67b7e9692e4e5ce98785',1,'SEAMS::Parser::token']]]
+  ['loop_5fincrement_27',['loop_increment',['../structSEAMS_1_1file__rec.html#a7b965e698bcba29bbd763fd56b313b76',1,'SEAMS::file_rec']]],
+  ['loop_5findex_28',['loop_index',['../structSEAMS_1_1file__rec.html#a0f420433db6020a3d0548a1818d307ad',1,'SEAMS::file_rec']]],
+  ['loop_5flevel_29',['loop_level',['../structSEAMS_1_1file__rec.html#ace565c9cd48bbd545d5aeef69a2e7b09',1,'SEAMS::file_rec']]],
+  ['loop_5flvl_30',['loop_lvl',['../apr__scanner_8cc.html#ae9aed7124776285d55163bad041db5ee',1,'apr_scanner.cc']]],
+  ['loop_5fskip_31',['LOOP_SKIP',['../apr__scanner_8cc.html#aa73a50172e72ed53e3c2a2ec01664bb9',1,'apr_scanner.cc']]],
+  ['lor_32',['LOR',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfabd99ecaf2c24c8eecafdb701f9e5766a',1,'SEAMS::Parser::token']]],
+  ['lpar_33',['LPAR',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfaf1bac263715b0206f4715d2222b33577',1,'SEAMS::Parser::token']]],
+  ['lt_34',['LT',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfa192cd4431f6c67b7e9692e4e5ce98785',1,'SEAMS::Parser::token']]]
 ];

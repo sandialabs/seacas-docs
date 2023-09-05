@@ -30,7 +30,7 @@ var searchData=
   ['string_5finteractive_27',['string_interactive',['../classSEAMS_1_1Aprepro.html#a793adde8e829938699c9a403ace87a90',1,'SEAMS::Aprepro']]],
   ['string_5fis_5fascii_28',['string_is_ascii',['../namespaceanonymous__namespace_02apr__scanner_8cc_03.html#a84fb4ae62bc8ecf4f7caba62556dcc34',1,'anonymous_namespace{apr_scanner.cc}']]],
   ['style_29',['Style',['../structtrmclr_1_1Style.html#ac20eb00e5a27bfd94cf125e94608f3e7',1,'trmclr::Style']]],
-  ['succ_30',['succ',['../apr__test_8cc.html#ad15723334fab77cc43861210acda2d36',1,'succ(double i):&#160;apr_test.cc'],['../strings_8cc.html#ad15723334fab77cc43861210acda2d36',1,'succ(double i):&#160;strings.cc']]],
+  ['succ_30',['succ',['../apr__test_8cc.html#ad15723334fab77cc43861210acda2d36',1,'apr_test.cc']]],
   ['swap_31',['swap',['../classtsl_1_1robin__map.html#ab5459876ab168b748e224224acae053e',1,'tsl::robin_map::swap()'],['../classtsl_1_1detail__robin__hash_1_1robin__hash.html#a8fc4c65d400177124ac70f5a54a536f9',1,'tsl::detail_robin_hash::robin_hash::swap()']]],
   ['swap_5fwith_5fvalue_5fin_5fbucket_32',['swap_with_value_in_bucket',['../classtsl_1_1detail__robin__hash_1_1bucket__entry.html#ae14dfd7138e190684d0e0d17cec3582d',1,'tsl::detail_robin_hash::bucket_entry']]],
   ['switch_5fhandler_33',['switch_handler',['../classSEAMS_1_1Scanner.html#ab5f6e36a6047342f7a1a98bae4d8a69e',1,'SEAMS::Scanner']]],

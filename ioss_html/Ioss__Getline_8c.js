@@ -46,7 +46,7 @@ var Ioss__Getline_8C =
     [ "gl_search_mode", "Ioss__Getline_8C.html#a3e82e598c6a19f87d489dc224a24995d", null ],
     [ "gl_termw", "Ioss__Getline_8C.html#a4d320214107699dbf56794f765eef659", null ],
     [ "gl_width", "Ioss__Getline_8C.html#a17e9e4d37db0e96e31c4298a0115780b", null ],
-    [ "hist_buf", "Ioss__Getline_8C.html#aa84af8a7e1084c2de456ec30c41730ab", null ],
+    [ "hist_buf", "Ioss__Getline_8C.html#a8e39a42895c8913b51e8c2d18b95e973", null ],
     [ "hist_empty_elem", "Ioss__Getline_8C.html#a11e15dacccbcdef1d7b83112dbb9a2e0", null ],
     [ "hist_last", "Ioss__Getline_8C.html#ad95a9cff0f47b6e85aaf1e2377b1513f", null ],
     [ "hist_pos", "Ioss__Getline_8C.html#a823c87e4d0b6259c69a2130f6fa6f617", null ],
