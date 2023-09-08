@@ -1503,7 +1503,7 @@
                                                              <span class="mi">1</span><span class="p">)</span> <span class="o">*</span>
                                           <span class="n">nodes_per_element</span><span class="p">]</span>
                 <span class="n">local_node</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">local_node</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">face_element_map</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-                <span class="k">if</span> <span class="ow">not</span> <span class="n">face_element_map</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">faces</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">face_element_map</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">faces</span><span class="p">:</span>
                     <span class="n">faces</span><span class="p">[</span><span class="n">face_element_map</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">local_node</span><span class="p">]</span>
                 <span class="k">else</span><span class="p">:</span>
                     <span class="n">faces</span><span class="p">[</span><span class="n">face_element_map</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">local_node</span><span class="p">)</span>
@@ -6616,7 +6616,7 @@
                 <span class="s1">&#39;identical lowercase representations.  One will be &#39;</span>
                 <span class="s1">&#39;chosen at random.&#39;</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">new_list</span><span class="p">:</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">original_case</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">original_case</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_bug</span><span class="p">(</span>
                     <span class="s1">&#39;Unrecognized string.&#39;</span><span class="p">,</span>
                     <span class="s1">&#39;The string &quot;</span><span class="si">%s</span><span class="s1">&quot; appears in the new list but &#39;</span>

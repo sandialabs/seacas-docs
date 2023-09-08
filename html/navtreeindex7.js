@@ -202,7 +202,6 @@ var NAVTREEINDEX7 =
 "large_model.html#ex_put_init":[3,2],
 "large_model.html#ex_put_nodal_var":[3,4],
 "large_model.html#large_model_":[3,0],
-"modules.html":[8],
 "nemesis-mapping.html":[4],
 "nemesis-mapping.html#comm":[4,6],
 "nemesis-mapping.html#initial":[4,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "structex____list__item.html":[8,8,3],
 "structex____list__item.html#a248511bb4e8366d8b9d7bc591de9f9d2":[8,8,3,2],
 "structex____list__item.html#a2ece9f5e001342b59ef07426b1523e5f":[8,8,3,0],
-"structex____list__item.html#ae5b5d9150bf35ba376ebb9bb07c8a941":[8,8,3,1]
+"structex____list__item.html#ae5b5d9150bf35ba376ebb9bb07c8a941":[8,8,3,1],
+"structex____obj__stats.html":[8,8,4]
 };

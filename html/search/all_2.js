@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['blob_5fcount_0',['blob_count',['../structex____file__item.html#afa535ba6f5773c6d4652a40eb6746c08',1,'ex__file_item']]],
-  ['blob_5fctr_5flist_1',['blob_ctr_list',['../ex__utils_8c.html#a793560730ed759e1a440d0778b1bc352',1,'ex_utils.c']]]
+  ['64_20bit_20integers_0',['Integer Bulkdata Storage Details (32-bit and 64-bit integers)',['../index.html#int64',1,'']]],
+  ['64_20bit_20offset_1',['Large Model (64-bit offset)',['../exodus_formats.html#large',1,'']]]
 ];

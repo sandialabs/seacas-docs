@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_20return_20codes_20_2d_20_23exerrval_20return_20values_0',['Error return codes - #exerrval return values',['../group__ErrorReturnCodes.html',1,'']]]
+  ['by_20external_20api_20functions_0',['Structures used by external API functions.',['../group__APIStructs.html',1,'']]]
 ];

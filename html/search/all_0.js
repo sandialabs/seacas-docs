@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_5fgnu_5fsource_0',['_GNU_SOURCE',['../ex__threadsafe_8c.html#a369266c24eacffb87046522897a570d5',1,'ex_threadsafe.c']]]
+  ['32_20bit_20and_2064_20bit_20integers_0',['Integer Bulkdata Storage Details (32-bit and 64-bit integers)',['../index.html#int64',1,'']]],
+  ['3d_20arbitrary_20polyhedra_20elements_20in_20exodus_1',['Storage of 3D arbitrary polyhedra elements in Exodus.',['../polyhedra.html#poly',1,'']]]
 ];
