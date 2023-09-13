@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classIoss_1_1glob_1_1Error.html">   22</a></span>  <span class="keyword">class </span>IOSS_EXPORT <a class="code hl_class" href="classIoss_1_1glob_1_1Error.html">Error</a> : <span class="keyword">public</span> std::exception</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classIoss_1_1glob_1_1Error.html#ab0a71a5a1f4422612e0ea8ef9cdc5a7b">   25</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classIoss_1_1glob_1_1Error.html#ab0a71a5a1f4422612e0ea8ef9cdc5a7b">Error</a>(<span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> &amp;msg) : msg_{msg} {}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classIoss_1_1glob_1_1Error.html#a680fbc370618f29fd6b1b2aed8decc3a">   25</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classIoss_1_1glob_1_1Error.html#a680fbc370618f29fd6b1b2aed8decc3a">Error</a>(<a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> msg) : msg_{<a class="code hl_namespace" href="namespacestd.html">std</a>::move(msg)} {}</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classIoss_1_1glob_1_1Error.html#a255df8eacfab61ef8f24a9a2e246a088">   26</a></span>    <a class="code hl_function" href="classIoss_1_1glob_1_1Error.html#a255df8eacfab61ef8f24a9a2e246a088">~Error</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classIoss_1_1glob_1_1Error.html#af7c1d104d984c7455ace7762341289b8">   28</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="classIoss_1_1glob_1_1Error.html#af7c1d104d984c7455ace7762341289b8">what</a>() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> msg_.c_str(); }</div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classIoss_1_1glob_1_1StateFail.html#aeea16b89f0eadf01cdf7359c35ab069c">   95</a></span>    <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;size_t, size_t&gt;</a> <a class="code hl_function" href="classIoss_1_1glob_1_1StateFail.html#aeea16b89f0eadf01cdf7359c35ab069c">Next</a>(<span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">String&lt;charT&gt;</a> &amp;, <span class="keywordtype">size_t</span> pos)<span class="keyword"> override</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keywordflow">return</span> <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;size_t, size_t&gt;</a>(0, ++pos);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keywordflow">return</span> {0, ++pos};</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
 </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  };</div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classIoss_1_1glob_1_1StateMatch.html#ac83905266d60dfd00326798cbf9cfed5">  108</a></span>    <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;size_t, size_t&gt;</a> <a class="code hl_function" href="classIoss_1_1glob_1_1StateMatch.html#ac83905266d60dfd00326798cbf9cfed5">Next</a>(<span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">String&lt;charT&gt;</a> &amp;, <span class="keywordtype">size_t</span> pos)<span class="keyword"> override</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      <span class="keywordflow">return</span> <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;size_t, size_t&gt;</a>(0, ++pos);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      <span class="keywordflow">return</span> {0, ++pos};</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
 </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  };</div>
@@ -338,14 +338,14 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="comment">// the string</span></div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      <span class="keywordflow">if</span> (comp_end) {</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">if</span> ((state_pos == <a class="code hl_variable" href="classIoss_1_1glob_1_1Automata.html#a147f9f3b4f22f42f4b2440c5fe9db55f">match_state_</a>) &amp;&amp; (str_pos == str.length())) {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>          <span class="keywordflow">return</span> <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;bool, size_t&gt;</a>(state_pos == <a class="code hl_variable" href="classIoss_1_1glob_1_1Automata.html#a147f9f3b4f22f42f4b2440c5fe9db55f">match_state_</a>, str_pos);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>          <span class="keywordflow">return</span> {state_pos == <a class="code hl_variable" href="classIoss_1_1glob_1_1Automata.html#a147f9f3b4f22f42f4b2440c5fe9db55f">match_state_</a>, str_pos};</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;bool, size_t&gt;</a>(<span class="keyword">false</span>, str_pos);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> {<span class="keyword">false</span>, str_pos};</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      }</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      <span class="comment">// if comp_end is false, compare only if the states reached the</span></div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      <span class="comment">// match state</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      <span class="keywordflow">return</span> <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;bool, size_t&gt;</a>(state_pos == <a class="code hl_variable" href="classIoss_1_1glob_1_1Automata.html#a147f9f3b4f22f42f4b2440c5fe9db55f">match_state_</a>, str_pos);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      <span class="keywordflow">return</span> {state_pos == <a class="code hl_variable" href="classIoss_1_1glob_1_1Automata.html#a147f9f3b4f22f42f4b2440c5fe9db55f">match_state_</a>, str_pos};</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
 </div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
@@ -597,11 +597,11 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;automata : <a class="code hl_variable" href="classIoss_1_1glob_1_1StateGroup.html#a1e46f3b8745370d9abdc08f4bd2b3f14">automatas_</a>) {</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        std::tie(r, str_pos) = automata-&gt;Exec(str_part, <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        <span class="keywordflow">if</span> (r) {</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>          <span class="keywordflow">return</span> <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;bool, size_t&gt;</a>(r, pos + str_pos);</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>          <span class="keywordflow">return</span> {r, pos + str_pos};</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        }</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>      }</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span> </div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>      <span class="keywordflow">return</span> <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;bool, size_t&gt;</a>(<span class="keyword">false</span>, pos + str_pos);</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>      <span class="keywordflow">return</span> {<span class="keyword">false</span>, pos + str_pos};</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    }</div>
 </div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
@@ -651,7 +651,7 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classIoss_1_1glob_1_1StateGroup.html#a7dbf514cea39793c960093b0992916b0">NextNeg</a>(str, pos);</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>      }</div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>      }</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>      <span class="keywordflow">return</span> <a class="code hl_class" href="classstd_1_1tuple.html">std::tuple&lt;size_t, size_t&gt;</a>(0, 0);</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>      <span class="keywordflow">return</span> {0, 0};</div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    }</div>
 </div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span> </div>
@@ -2099,7 +2099,7 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="ttc" id="aclassIoss_1_1glob_1_1Error_html"><div class="ttname"><a href="classIoss_1_1glob_1_1Error.html">Ioss::glob::Error</a></div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:23</div></div>
 <div class="ttc" id="aclassIoss_1_1glob_1_1Error_html_a20cd6e4b962679e2efa2030f929de4cc"><div class="ttname"><a href="classIoss_1_1glob_1_1Error.html#a20cd6e4b962679e2efa2030f929de4cc">Ioss::glob::Error::msg_</a></div><div class="ttdeci">std::string msg_</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:31</div></div>
 <div class="ttc" id="aclassIoss_1_1glob_1_1Error_html_a255df8eacfab61ef8f24a9a2e246a088"><div class="ttname"><a href="classIoss_1_1glob_1_1Error.html#a255df8eacfab61ef8f24a9a2e246a088">Ioss::glob::Error::~Error</a></div><div class="ttdeci">~Error() override</div></div>
-<div class="ttc" id="aclassIoss_1_1glob_1_1Error_html_ab0a71a5a1f4422612e0ea8ef9cdc5a7b"><div class="ttname"><a href="classIoss_1_1glob_1_1Error.html#ab0a71a5a1f4422612e0ea8ef9cdc5a7b">Ioss::glob::Error::Error</a></div><div class="ttdeci">Error(const std::string &amp;msg)</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:25</div></div>
+<div class="ttc" id="aclassIoss_1_1glob_1_1Error_html_a680fbc370618f29fd6b1b2aed8decc3a"><div class="ttname"><a href="classIoss_1_1glob_1_1Error.html#a680fbc370618f29fd6b1b2aed8decc3a">Ioss::glob::Error::Error</a></div><div class="ttdeci">Error(std::string msg)</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:25</div></div>
 <div class="ttc" id="aclassIoss_1_1glob_1_1Error_html_af7c1d104d984c7455ace7762341289b8"><div class="ttname"><a href="classIoss_1_1glob_1_1Error.html#af7c1d104d984c7455ace7762341289b8">Ioss::glob::Error::what</a></div><div class="ttdeci">const char * what() const noexcept override</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:28</div></div>
 <div class="ttc" id="aclassIoss_1_1glob_1_1ExtendedGlob_html"><div class="ttname"><a href="classIoss_1_1glob_1_1ExtendedGlob.html">Ioss::glob::ExtendedGlob</a></div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:1413</div></div>
 <div class="ttc" id="aclassIoss_1_1glob_1_1ExtendedGlob_html_a0e94d02fce6163a1f5bee25edbea5cb4"><div class="ttname"><a href="classIoss_1_1glob_1_1ExtendedGlob.html#a0e94d02fce6163a1f5bee25edbea5cb4">Ioss::glob::ExtendedGlob::automata_</a></div><div class="ttdeci">Automata&lt; charT &gt; automata_</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:1447</div></div>
@@ -2313,9 +2313,9 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="ttc" id="aclassIoss_1_1glob_1_1UnionNode_html_a5b548525011407d21a05de112753cc3c"><div class="ttname"><a href="classIoss_1_1glob_1_1UnionNode.html#a5b548525011407d21a05de112753cc3c">Ioss::glob::UnionNode::Accept</a></div><div class="ttdeci">void Accept(AstVisitor&lt; charT &gt; *visitor) override</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:995</div></div>
 <div class="ttc" id="aclassIoss_1_1glob_1_1UnionNode_html_aa0afd4847ad8cf5f6cd0ffaab0e24c96"><div class="ttname"><a href="classIoss_1_1glob_1_1UnionNode.html#aa0afd4847ad8cf5f6cd0ffaab0e24c96">Ioss::glob::UnionNode::items_</a></div><div class="ttdeci">std::vector&lt; AstNodePtr&lt; charT &gt; &gt; items_</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:1000</div></div>
 <div class="ttc" id="aclassIoss_1_1glob_1_1UnionNode_html_ad043481c7a1a5822c7941c8c88017010"><div class="ttname"><a href="classIoss_1_1glob_1_1UnionNode.html#ad043481c7a1a5822c7941c8c88017010">Ioss::glob::UnionNode::GetItems</a></div><div class="ttdeci">std::vector&lt; AstNodePtr&lt; charT &gt; &gt; &amp; GetItems()</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:997</div></div>
-<div class="ttc" id="aclassstd_1_1basic__ostream_html"><div class="ttname"><a href="classstd_1_1basic__ostream.html">std::basic_ostream</a></div><div class="ttdef"><b>Definition</b> doctest.h:530</div></div>
+<div class="ttc" id="aclassstd_1_1basic__ostream_html"><div class="ttname"><a href="classstd_1_1basic__ostream.html">std::basic_ostream</a></div><div class="ttdef"><b>Definition</b> doctest.h:533</div></div>
 <div class="ttc" id="aclassstd_1_1basic__string_html"><div class="ttname"><a href="classstd_1_1basic__string.html">std::basic_string&lt; charT &gt;</a></div></div>
-<div class="ttc" id="aclassstd_1_1tuple_html"><div class="ttname"><a href="classstd_1_1tuple.html">std::tuple</a></div><div class="ttdef"><b>Definition</b> doctest.h:539</div></div>
+<div class="ttc" id="aclassstd_1_1tuple_html"><div class="ttname"><a href="classstd_1_1tuple.html">std::tuple</a></div><div class="ttdef"><b>Definition</b> doctest.h:540</div></div>
 <div class="ttc" id="anamespaceIoss_1_1glob_html"><div class="ttname"><a href="namespaceIoss_1_1glob.html">Ioss::glob</a></div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:16</div></div>
 <div class="ttc" id="anamespaceIoss_1_1glob_html_a0edd2961ad19341754282b74e5c07679"><div class="ttname"><a href="namespaceIoss_1_1glob.html#a0edd2961ad19341754282b74e5c07679">Ioss::glob::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;stream, const Token&lt; charT &gt; &amp;token)</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:619</div></div>
 <div class="ttc" id="anamespaceIoss_1_1glob_html_a2e586b86f01c6ef40d67d8b752285826"><div class="ttname"><a href="namespaceIoss_1_1glob.html#a2e586b86f01c6ef40d67d8b752285826">Ioss::glob::token_name_str</a></div><div class="ttdeci">static const char * token_name_str[]</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:583</div></div>
@@ -2335,7 +2335,7 @@ $(document).ready(function(){initNavTree('Ioss__Glob_8h_source.html',''); initRe
 <div class="ttc" id="anamespaceIoss_1_1glob_html_ab0256b4b651901098269afee855b814fa94c8aa2452bccd82ee129b46f7c4be79"><div class="ttname"><a href="namespaceIoss_1_1glob.html#ab0256b4b651901098269afee855b814fa94c8aa2452bccd82ee129b46f7c4be79">Ioss::glob::TokenKind::TOKEN</a></div><div class="ttdeci">@ TOKEN</div></div>
 <div class="ttc" id="anamespaceIoss_1_1glob_html_abe46abfdba9a4655b364f8e6f12e21c2"><div class="ttname"><a href="namespaceIoss_1_1glob.html#abe46abfdba9a4655b364f8e6f12e21c2">Ioss::glob::glob_match</a></div><div class="ttdeci">bool glob_match(const String&lt; charT &gt; &amp;str, BasicGlob&lt; charT, globT &gt; &amp;glob)</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:1626</div></div>
 <div class="ttc" id="anamespaceIoss_1_1glob_html_ad7098419717223642d04c3bbe65d3fdf"><div class="ttname"><a href="namespaceIoss_1_1glob.html#ad7098419717223642d04c3bbe65d3fdf">Ioss::glob::exchange</a></div><div class="ttdeci">T exchange(T &amp;obj, U &amp;&amp;new_value)</div><div class="ttdef"><b>Definition</b> Ioss_Glob.h:46</div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> doctest.h:522</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> doctest.h:528</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

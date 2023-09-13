@@ -302,21 +302,21 @@ $(document).ready(function(){initNavTree('Iocgns__Utils_8h_source.html',''); ini
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      <span class="keywordflow">switch</span> (parent_topo-&gt;<a class="code hl_function" href="classIoss_1_1ElementTopology.html#a477e1058938f046445651e6072ba605b">shape</a>()) {</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44a58c9566f3c750ce7147b045fdd14202b">Ioss::ElementShape::HEX</a>: {</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> hex_map[] = {0, 5, 1, 2, 3, 4, 6};</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keyword">static</span> std::array&lt;int, 7&gt; hex_map = {0, 5, 1, 2, 3, 4, 6};</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; num_to_get; i++) {</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>          idata[2 * i + 1] = hex_map[idata[2 * i + 1]];</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        }</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      } <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44a268c4b76ec894ec6ad3c119ad7cc2170">Ioss::ElementShape::TET</a>: {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> tet_map[] = {0, 4, 1, 2, 3};</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keyword">static</span> std::array&lt;int, 5&gt; tet_map = {0, 4, 1, 2, 3};</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; num_to_get; i++) {</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>          idata[2 * i + 1] = tet_map[idata[2 * i + 1]];</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>      } <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44acd996d3184761601a0e44e587a012d4f">Ioss::ElementShape::PYRAMID</a>: {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> pyr_map[] = {0, 5, 1, 2, 3, 4};</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keyword">static</span> std::array&lt;int, 6&gt; pyr_map = {0, 5, 1, 2, 3, 4};</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; num_to_get; i++) {</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>          idata[2 * i + 1] = pyr_map[idata[2 * i + 1]];</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        }</div>
@@ -324,7 +324,7 @@ $(document).ready(function(){initNavTree('Iocgns__Utils_8h_source.html',''); ini
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44a42bd365c1ecdb0302894b3ff434de056">Ioss::ElementShape::WEDGE</a>:</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>          <span class="keyword">static</span> <span class="keywordtype">int</span> wed_map[] = {0, 1, 2, 3, 4, 5}; <span class="comment">// Same</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> <span class="keyword">static</span> std::array&lt;int, 6&gt; wed_map = {0, 1, 2, 3, 4, 5}; <span class="comment">// Same</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>          <span class="comment">// Not needed -- maps 1 to 1</span></div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>          <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i &lt; num_to_get; i++) {</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            idata[2*i+1] = wed_map[idata[2*i+1]];</div>
@@ -479,7 +479,7 @@ $(document).ready(function(){initNavTree('Iocgns__Utils_8h_source.html',''); ini
 <div class="ttc" id="aclassIoss_1_1GroupingEntity_html"><div class="ttname"><a href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a></div><div class="ttdoc">Base class for all 'grouping' entities. The following derived classes are typical:</div><div class="ttdef"><b>Definition</b> Ioss_GroupingEntity.h:69</div></div>
 <div class="ttc" id="aclassIoss_1_1Region_html"><div class="ttname"><a href="classIoss_1_1Region.html">Ioss::Region</a></div><div class="ttdoc">A grouping entity that contains other grouping entities.</div><div class="ttdef"><b>Definition</b> Ioss_Region.h:83</div></div>
 <div class="ttc" id="aclassIoss_1_1StructuredBlock_html"><div class="ttname"><a href="classIoss_1_1StructuredBlock.html">Ioss::StructuredBlock</a></div><div class="ttdoc">A structured zone – i,j,k.</div><div class="ttdef"><b>Definition</b> Ioss_StructuredBlock.h:98</div></div>
-<div class="ttc" id="aclassstd_1_1basic__string_html"><div class="ttname"><a href="classstd_1_1basic__string.html">std::basic_string</a></div><div class="ttdef"><b>Definition</b> doctest.h:545</div></div>
+<div class="ttc" id="aclassstd_1_1basic__string_html"><div class="ttname"><a href="classstd_1_1basic__string.html">std::basic_string</a></div><div class="ttdef"><b>Definition</b> doctest.h:544</div></div>
 <div class="ttc" id="aclasstsl_1_1robin__set_html"><div class="ttname"><a href="classtsl_1_1robin__set.html">tsl::robin_set</a></div><div class="ttdef"><b>Definition</b> robin_set.h:90</div></div>
 <div class="ttc" id="anamespaceIocgns_html"><div class="ttname"><a href="namespaceIocgns.html">Iocgns</a></div><div class="ttdoc">A namespace for the CGNS database format.</div><div class="ttdef"><b>Definition</b> Iocgns_DatabaseIO.C:528</div></div>
 <div class="ttc" id="anamespaceIoss_html_a485ebe6da7fb755a092fa8876c35bd44a268c4b76ec894ec6ad3c119ad7cc2170"><div class="ttname"><a href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44a268c4b76ec894ec6ad3c119ad7cc2170">Ioss::ElementShape::TET</a></div><div class="ttdeci">@ TET</div></div>
@@ -487,7 +487,7 @@ $(document).ready(function(){initNavTree('Iocgns__Utils_8h_source.html',''); ini
 <div class="ttc" id="anamespaceIoss_html_a485ebe6da7fb755a092fa8876c35bd44a58c9566f3c750ce7147b045fdd14202b"><div class="ttname"><a href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44a58c9566f3c750ce7147b045fdd14202b">Ioss::ElementShape::HEX</a></div><div class="ttdeci">@ HEX</div></div>
 <div class="ttc" id="anamespaceIoss_html_a485ebe6da7fb755a092fa8876c35bd44acd996d3184761601a0e44e587a012d4f"><div class="ttname"><a href="namespaceIoss.html#a485ebe6da7fb755a092fa8876c35bd44acd996d3184761601a0e44e587a012d4f">Ioss::ElementShape::PYRAMID</a></div><div class="ttdeci">@ PYRAMID</div></div>
 <div class="ttc" id="anamespaceIoss_html_aa4d4cdd26c26124cb15aad084f4de822"><div class="ttname"><a href="namespaceIoss.html#aa4d4cdd26c26124cb15aad084f4de822">Ioss::MeshType</a></div><div class="ttdeci">MeshType</div><div class="ttdoc">The mesh type – structured, unstructured, hybrid (future), or unknown.</div><div class="ttdef"><b>Definition</b> Ioss_MeshType.h:12</div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> doctest.h:522</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> doctest.h:528</div></div>
 <div class="ttc" id="astructIocgns_1_1ZoneBC_html"><div class="ttname"><a href="structIocgns_1_1ZoneBC.html">Iocgns::ZoneBC</a></div><div class="ttdef"><b>Definition</b> Iocgns_Utils.h:71</div></div>
 <div class="ttc" id="astructIocgns_1_1ZoneBC_html_a18fb5b6b89424a35fcdad673e3068b3e"><div class="ttname"><a href="structIocgns_1_1ZoneBC.html#a18fb5b6b89424a35fcdad673e3068b3e">Iocgns::ZoneBC::range_beg</a></div><div class="ttdeci">cgsize_t range_beg</div><div class="ttdef"><b>Definition</b> Iocgns_Utils.h:78</div></div>
 <div class="ttc" id="astructIocgns_1_1ZoneBC_html_a4638c5b63f42efb7cdd3664e9f45ced9"><div class="ttname"><a href="structIocgns_1_1ZoneBC.html#a4638c5b63f42efb7cdd3664e9f45ced9">Iocgns::ZoneBC::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> Iocgns_Utils.h:77</div></div>
