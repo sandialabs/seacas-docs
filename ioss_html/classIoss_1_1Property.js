@@ -1,6 +1,5 @@
 var classIoss_1_1Property =
 [
-    [ "Data", "unionIoss_1_1Property_1_1Data.html", "unionIoss_1_1Property_1_1Data" ],
     [ "BasicType", "classIoss_1_1Property.html#a7d449056671a2fa99f35d68c49be6614", [
       [ "INVALID", "classIoss_1_1Property.html#a7d449056671a2fa99f35d68c49be6614a7c77036968c09a64e82cf76763feb19f", null ],
       [ "REAL", "classIoss_1_1Property.html#a7d449056671a2fa99f35d68c49be6614a7aec0042c870c77a9d3b639ef2623f63", null ],
@@ -26,8 +25,8 @@ var classIoss_1_1Property =
     [ "Property", "classIoss_1_1Property.html#a37e1f2e2bbc4aa23b74926f6c57a76a1", null ],
     [ "Property", "classIoss_1_1Property.html#a1d40bcb16124afb46b928901495dedf3", null ],
     [ "Property", "classIoss_1_1Property.html#aede2b6e67e3d16e4ad8238a236a949e6", null ],
-    [ "Property", "classIoss_1_1Property.html#af028c8fad820f298b8ffb37615cf1cd1", null ],
-    [ "~Property", "classIoss_1_1Property.html#a95dcf7990bef49c2e49f082aed30a57a", null ],
+    [ "Property", "classIoss_1_1Property.html#a32b972fa8e1b78df116b419b741db4a2", null ],
+    [ "~Property", "classIoss_1_1Property.html#a4ae7dd216490b1c68228931d59f2c438", null ],
     [ "get_int", "classIoss_1_1Property.html#a45bcbc7137a296f3eda52c92c04da39f", null ],
     [ "get_name", "classIoss_1_1Property.html#a33f2d36f732d7504f12116b285c2ccb2", null ],
     [ "get_origin", "classIoss_1_1Property.html#a7bded0c6ebe3ed4cd72b8b637ae3dd1b", null ],
@@ -48,10 +47,11 @@ var classIoss_1_1Property =
     [ "is_invalid", "classIoss_1_1Property.html#aff8c0e802d7b91788a44c83406454db6", null ],
     [ "is_valid", "classIoss_1_1Property.html#ab0d9ca8f677de7c18f7256ccc0b474fa", null ],
     [ "operator!=", "classIoss_1_1Property.html#a0e720f9ece388a2534721c2b685193d9", null ],
-    [ "operator=", "classIoss_1_1Property.html#a31a7f2794bd363e264ee43c6c36a3ce4", null ],
+    [ "operator=", "classIoss_1_1Property.html#aad63e85c3471b6288083e3673eae63cc", null ],
     [ "operator==", "classIoss_1_1Property.html#ae12b01ec2d1d1278ae73a392ff6bbfad", null ],
     [ "set_origin", "classIoss_1_1Property.html#a3c513fe238508b847c0296edeed65850", null ],
-    [ "data_", "classIoss_1_1Property.html#a2c6aeea25b7afb44a6b8624f9529256d", null ],
+    [ "swap", "classIoss_1_1Property.html#aff46dbb8609b7fc04164441e823034a3", null ],
+    [ "data_", "classIoss_1_1Property.html#a1a10eb0d2e140c303dc1cc1ed9005c52", null ],
     [ "name_", "classIoss_1_1Property.html#a156bcdae811a0ff32bfb6a44bc155213", null ],
     [ "origin_", "classIoss_1_1Property.html#a014a03fab7d4bdf556374c7a22c00a83", null ],
     [ "type_", "classIoss_1_1Property.html#aae87106143ff7aafb1e15a98160ed937", null ]

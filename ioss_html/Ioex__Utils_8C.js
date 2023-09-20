@@ -17,7 +17,7 @@ var Ioex__Utils_8C =
     [ "internal_write_coordinate_frames", "Ioex__Utils_8C.html#a049ac2b988d5b1e4e15374e6424d5db3", null ],
     [ "map_exodus_type", "Ioex__Utils_8C.html#ab8f91d1c08f4420e474293aea831cfa7", null ],
     [ "map_exodus_type", "Ioex__Utils_8C.html#aa2852be75141dd7386a26fef277918bd", null ],
-    [ "match", "Ioex__Utils_8C.html#aab52be7a389c9d765d77412e1e056c62", null ],
+    [ "match", "Ioex__Utils_8C.html#a90b095177c77b0f6d3d477a1f40959a7", null ],
     [ "read_last_time_attribute", "Ioex__Utils_8C.html#ac148bf788240c5bdea725b08b8c49c22", null ],
     [ "separate_surface_element_sides", "Ioex__Utils_8C.html#a3e719be2b74c499e7b41ce499c5fe10f", null ],
     [ "set_id", "Ioex__Utils_8C.html#a02fd604bdbaa65f65b8122af90ea2e1e", null ],

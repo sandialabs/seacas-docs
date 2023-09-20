@@ -31,7 +31,7 @@ var Ioss__Compare_8C =
     [ "compare_nodesets", "Ioss__Compare_8C.html#a0e304da705fc5f622e1aa0ba024be8cc", null ],
     [ "compare_properties", "Ioss__Compare_8C.html#a38cc34a9cae9285c32fe021ce06a9342", null ],
     [ "compare_qa_info", "Ioss__Compare_8C.html#aaa8bd9d3339ff5cd05bce8997470a2d9", null ],
-    [ "compare_sets", "Ioss__Compare_8C.html#a25e1cc30e0377fcf00b65548d6cc6f2b", null ],
+    [ "compare_sets", "Ioss__Compare_8C.html#a17b11f79949687bea06c1eae701e5d3d", null ],
     [ "compare_sidesets", "Ioss__Compare_8C.html#a83236593ca23f20fc36ed68c378d7a93", null ],
     [ "compare_structuredblocks", "Ioss__Compare_8C.html#a6b13664b634bb9cb1ace55b3d4232708", null ],
     [ "abs_tolerance", "Ioss__Compare_8C.html#a2278749d5403e79a9cb5279391264bf3", null ],

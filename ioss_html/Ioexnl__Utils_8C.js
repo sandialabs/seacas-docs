@@ -13,7 +13,7 @@ var Ioexnl__Utils_8C =
     [ "internal_write_coordinate_frames", "Ioexnl__Utils_8C.html#a60245cf58a868fb75717e553cf3f5bf5", null ],
     [ "map_exodus_type", "Ioexnl__Utils_8C.html#a6e9c72f3abf5c691ff8e815bb22a00a5", null ],
     [ "map_exodus_type", "Ioexnl__Utils_8C.html#a45a76bea14ad3fe9fd625a8b80368171", null ],
-    [ "match", "Ioexnl__Utils_8C.html#ad16dc36838ff8f4f3e951993d56d9b68", null ],
+    [ "match", "Ioexnl__Utils_8C.html#a47a422733f4f38a6e2bb41878d2280fb", null ],
     [ "read_last_time_attribute", "Ioexnl__Utils_8C.html#af1e3199a2155fb7e44358417fec06ff9", null ],
     [ "separate_surface_element_sides", "Ioexnl__Utils_8C.html#abd045c0cb2b0d9db12daa9f9fe1a742b", null ],
     [ "set_id", "Ioexnl__Utils_8C.html#a1a1f2677c101fad0d2bed2372a84e201", null ],

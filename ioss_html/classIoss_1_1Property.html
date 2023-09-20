@@ -91,11 +91,11 @@ $(document).ready(function(){initNavTree('classIoss_1_1Property.html',''); initR
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classIoss_1_1Property-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Ioss::Property Class Reference</div></div>
 </div><!--header-->
@@ -105,17 +105,7 @@ $(document).ready(function(){initNavTree('classIoss_1_1Property.html',''); initR
  <a href="classIoss_1_1Property.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Ioss__Property_8h_source.html">Ioss_Property.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for Ioss::Property:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classIoss_1_1Property__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionIoss_1_1Property_1_1Data.html">Data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a7d449056671a2fa99f35d68c49be6614" id="r_a7d449056671a2fa99f35d68c49be6614"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#a7d449056671a2fa99f35d68c49be6614">BasicType</a> { <br />
@@ -168,13 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aede2b6e67e3d16e4ad8238a236a949e6" id="r_aede2b6e67e3d16e4ad8238a236a949e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#aede2b6e67e3d16e4ad8238a236a949e6">Property</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a> *ge, <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> name, <a class="el" href="classIoss_1_1Property.html#a7d449056671a2fa99f35d68c49be6614">BasicType</a> type)</td></tr>
 <tr class="memdesc:aede2b6e67e3d16e4ad8238a236a949e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set implicit property with a specified type.  <br /></td></tr>
 <tr class="separator:aede2b6e67e3d16e4ad8238a236a949e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af028c8fad820f298b8ffb37615cf1cd1" id="r_af028c8fad820f298b8ffb37615cf1cd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#af028c8fad820f298b8ffb37615cf1cd1">Property</a> (const <a class="el" href="classIoss_1_1Property.html">Property</a> &amp;from)</td></tr>
-<tr class="memdesc:af028c8fad820f298b8ffb37615cf1cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <br /></td></tr>
-<tr class="separator:af028c8fad820f298b8ffb37615cf1cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31a7f2794bd363e264ee43c6c36a3ce4" id="r_a31a7f2794bd363e264ee43c6c36a3ce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1Property.html">Property</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#a31a7f2794bd363e264ee43c6c36a3ce4">operator=</a> (<a class="el" href="classIoss_1_1Property.html">Property</a> rhs)</td></tr>
-<tr class="separator:a31a7f2794bd363e264ee43c6c36a3ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95dcf7990bef49c2e49f082aed30a57a" id="r_a95dcf7990bef49c2e49f082aed30a57a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#a95dcf7990bef49c2e49f082aed30a57a">~Property</a> ()</td></tr>
-<tr class="separator:a95dcf7990bef49c2e49f082aed30a57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b972fa8e1b78df116b419b741db4a2" id="r_a32b972fa8e1b78df116b419b741db4a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#a32b972fa8e1b78df116b419b741db4a2">Property</a> (const <a class="el" href="classIoss_1_1Property.html">Property</a> &amp;from)=default</td></tr>
+<tr class="separator:a32b972fa8e1b78df116b419b741db4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad63e85c3471b6288083e3673eae63cc" id="r_aad63e85c3471b6288083e3673eae63cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1Property.html">Property</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#aad63e85c3471b6288083e3673eae63cc">operator=</a> (<a class="el" href="classIoss_1_1Property.html">Property</a> &amp;rhs)</td></tr>
+<tr class="separator:aad63e85c3471b6288083e3673eae63cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae7dd216490b1c68228931d59f2c438" id="r_a4ae7dd216490b1c68228931d59f2c438"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#a4ae7dd216490b1c68228931d59f2c438">~Property</a> ()=default</td></tr>
+<tr class="separator:a4ae7dd216490b1c68228931d59f2c438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c4f1409008f9dcdd35170b702cd29e3" id="r_a3c4f1409008f9dcdd35170b702cd29e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#a3c4f1409008f9dcdd35170b702cd29e3">get_string</a> () const</td></tr>
 <tr class="memdesc:a3c4f1409008f9dcdd35170b702cd29e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the property value if it is of type STRING.  <br /></td></tr>
 <tr class="separator:a3c4f1409008f9dcdd35170b702cd29e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,8 +230,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aae87106143ff7aafb1e15a98160ed937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a014a03fab7d4bdf556374c7a22c00a83" id="r_a014a03fab7d4bdf556374c7a22c00a83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1Property.html#a16338f2d9b5be973401bd8183c8fa0d3">Origin</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#a014a03fab7d4bdf556374c7a22c00a83">origin_</a> {<a class="el" href="classIoss_1_1Property.html#a16338f2d9b5be973401bd8183c8fa0d3ae63f32749939c41a3244a7236aff32fc">INTERNAL</a>}</td></tr>
 <tr class="separator:a014a03fab7d4bdf556374c7a22c00a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c6aeea25b7afb44a6b8624f9529256d" id="r_a2c6aeea25b7afb44a6b8624f9529256d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionIoss_1_1Property_1_1Data.html">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#a2c6aeea25b7afb44a6b8624f9529256d">data_</a> {}</td></tr>
-<tr class="separator:a2c6aeea25b7afb44a6b8624f9529256d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a10eb0d2e140c303dc1cc1ed9005c52" id="r_a1a10eb0d2e140c303dc1cc1ed9005c52"><td class="memItemLeft" align="right" valign="top">std::variant&lt; <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a>, const <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *, double, int64_t, std::vector&lt; double &gt;, std::vector&lt; int &gt;, void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#a1a10eb0d2e140c303dc1cc1ed9005c52">data_</a></td></tr>
+<tr class="separator:a1a10eb0d2e140c303dc1cc1ed9005c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aff46dbb8609b7fc04164441e823034a3" id="r_aff46dbb8609b7fc04164441e823034a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Property.html#aff46dbb8609b7fc04164441e823034a3">swap</a> (<a class="el" href="classIoss_1_1Property.html">Ioss::Property</a> &amp;first, <a class="el" href="classIoss_1_1Property.html">Ioss::Property</a> &amp;second)</td></tr>
+<tr class="separator:aff46dbb8609b7fc04164441e823034a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A named value that has a known type. </p>
@@ -712,11 +706,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af028c8fad820f298b8ffb37615cf1cd1" name="af028c8fad820f298b8ffb37615cf1cd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af028c8fad820f298b8ffb37615cf1cd1">&#9670;&#160;</a></span>Property() <span class="overload">[11/11]</span></h2>
+<a id="a32b972fa8e1b78df116b419b741db4a2" name="a32b972fa8e1b78df116b419b741db4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b972fa8e1b78df116b419b741db4a2">&#9670;&#160;</a></span>Property() <span class="overload">[11/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Ioss::Property::Property </td>
@@ -726,23 +723,23 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Copy constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>The <a class="el" href="classIoss_1_1Property.html" title="A named value that has a known type.">Ioss::Property</a> to copy </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a id="a95dcf7990bef49c2e49f082aed30a57a" name="a95dcf7990bef49c2e49f082aed30a57a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95dcf7990bef49c2e49f082aed30a57a">&#9670;&#160;</a></span>~Property()</h2>
+<a id="a4ae7dd216490b1c68228931d59f2c438" name="a4ae7dd216490b1c68228931d59f2c438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae7dd216490b1c68228931d59f2c438">&#9670;&#160;</a></span>~Property()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Ioss::Property::~Property </td>
@@ -751,6 +748,11 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1241,16 +1243,16 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a31a7f2794bd363e264ee43c6c36a3ce4" name="a31a7f2794bd363e264ee43c6c36a3ce4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31a7f2794bd363e264ee43c6c36a3ce4">&#9670;&#160;</a></span>operator=()</h2>
+<a id="aad63e85c3471b6288083e3673eae63cc" name="aad63e85c3471b6288083e3673eae63cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad63e85c3471b6288083e3673eae63cc">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIoss_1_1Property.html">Ioss::Property</a> &amp; Ioss::Property::operator= </td>
+          <td class="memname"><a class="el" href="classIoss_1_1Property.html">Property</a> &amp; Ioss::Property::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1Property.html">Ioss::Property</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Property.html">Property</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1303,9 +1305,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2c6aeea25b7afb44a6b8624f9529256d" name="a2c6aeea25b7afb44a6b8624f9529256d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c6aeea25b7afb44a6b8624f9529256d">&#9670;&#160;</a></span>data_</h2>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="aff46dbb8609b7fc04164441e823034a3" name="aff46dbb8609b7fc04164441e823034a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff46dbb8609b7fc04164441e823034a3">&#9670;&#160;</a></span>swap</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1314,7 +1316,44 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="unionIoss_1_1Property_1_1Data.html">Data</a> Ioss::Property::data_ {}</td>
+          <td class="memname">void swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Property.html">Ioss::Property</a> &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Property.html">Ioss::Property</a> &amp;&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1a10eb0d2e140c303dc1cc1ed9005c52" name="a1a10eb0d2e140c303dc1cc1ed9005c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a10eb0d2e140c303dc1cc1ed9005c52">&#9670;&#160;</a></span>data_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::variant&lt;<a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a>, const <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *, double, int64_t, std::vector&lt;double&gt;, std::vector&lt;int&gt;, void *&gt; Ioss::Property::data_</td>
         </tr>
       </table>
   </td>
@@ -1323,6 +1362,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The actual value of the property. Use 'type_' to discriminate the actual type of the property. </p>
 
 </div>
 </div>

@@ -151,7 +151,6 @@ var hierarchy =
     [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Topology >::CurrentAdjacency", "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1CurrentAdjacency.html", null ],
     [ "doctest::CurrentTestCaseStats", "structdoctest_1_1CurrentTestCaseStats.html", null ],
     [ "Iogn::DashSurfaceData", "structIogn_1_1DashSurfaceData.html", null ],
-    [ "Ioss::Property::Data", "unionIoss_1_1Property_1_1Data.html", null ],
     [ "Iovs::Utils::DatabaseInfo", "structIovs_1_1Utils_1_1DatabaseInfo.html", null ],
     [ "Ioss::DatabaseIO", "classIoss_1_1DatabaseIO.html", [
       [ "Ioad::DatabaseIO", "classIoad_1_1DatabaseIO.html", null ],
