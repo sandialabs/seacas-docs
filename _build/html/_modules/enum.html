@@ -83,6 +83,7 @@
         <span class="s1">&#39;FlagBoundary&#39;</span><span class="p">,</span> <span class="s1">&#39;STRICT&#39;</span><span class="p">,</span> <span class="s1">&#39;CONFORM&#39;</span><span class="p">,</span> <span class="s1">&#39;EJECT&#39;</span><span class="p">,</span> <span class="s1">&#39;KEEP&#39;</span><span class="p">,</span>
         <span class="s1">&#39;global_flag_repr&#39;</span><span class="p">,</span> <span class="s1">&#39;global_enum_repr&#39;</span><span class="p">,</span> <span class="s1">&#39;global_str&#39;</span><span class="p">,</span> <span class="s1">&#39;global_enum&#39;</span><span class="p">,</span>
         <span class="s1">&#39;EnumCheck&#39;</span><span class="p">,</span> <span class="s1">&#39;CONTINUOUS&#39;</span><span class="p">,</span> <span class="s1">&#39;NAMED_FLAGS&#39;</span><span class="p">,</span> <span class="s1">&#39;UNIQUE&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;pickle_by_global_name&#39;</span><span class="p">,</span> <span class="s1">&#39;pickle_by_enum_name&#39;</span><span class="p">,</span>
         <span class="p">]</span>
 
 
@@ -933,6 +934,8 @@
                 <span class="n">value</span> <span class="o">=</span> <span class="n">first_enum</span><span class="o">.</span><span class="n">_generate_next_value_</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="n">last_values</span><span class="p">[:])</span>
                 <span class="n">last_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
                 <span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">names</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">names</span> <span class="o">=</span> <span class="p">()</span>
 
         <span class="c1"># Here, names is either an iterable of (name, value) or a mapping.</span>
         <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
@@ -989,7 +992,6 @@
         <span class="n">body</span><span class="p">[</span><span class="s1">&#39;__module__&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">module</span>
         <span class="n">tmp_cls</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="p">),</span> <span class="n">body</span><span class="p">)</span>
         <span class="bp">cls</span> <span class="o">=</span> <span class="n">_simple_enum</span><span class="p">(</span><span class="n">etype</span><span class="o">=</span><span class="bp">cls</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="n">boundary</span> <span class="ow">or</span> <span class="n">KEEP</span><span class="p">)(</span><span class="n">tmp_cls</span><span class="p">)</span>
-        <span class="bp">cls</span><span class="o">.</span><span class="n">__reduce_ex__</span> <span class="o">=</span> <span class="n">_reduce_ex_by_global_name</span>
         <span class="k">if</span> <span class="n">as_global</span><span class="p">:</span>
             <span class="n">global_enum</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
@@ -1178,6 +1180,11 @@
             <span class="k">for</span> <span class="n">member</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_member_map_</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
                 <span class="k">if</span> <span class="n">member</span><span class="o">.</span><span class="n">_value_</span> <span class="o">==</span> <span class="n">value</span><span class="p">:</span>
                     <span class="k">return</span> <span class="n">member</span>
+        <span class="c1"># still not found -- verify that members exist, in-case somebody got here mistakenly</span>
+        <span class="c1"># (such as via super when trying to override __new__)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_member_map_</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%r</span><span class="s2"> has no members defined&quot;</span> <span class="o">%</span> <span class="bp">cls</span><span class="p">)</span>
+        <span class="c1">#</span>
         <span class="c1"># still not found -- try _missing_ hook</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">exc</span> <span class="o">=</span> <span class="kc">None</span>
@@ -1296,7 +1303,13 @@
         <span class="k">return</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name_</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">__reduce_ex__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proto</span><span class="p">):</span>
-        <span class="k">return</span> <span class="nb">getattr</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name_</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_value_</span><span class="p">,</span> <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__deepcopy__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">memo</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__copy__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
 
     <span class="c1"># enum.property is used to provide access to the `name` and</span>
     <span class="c1"># `value` attributes of enum members while keeping some measure of</span>
@@ -1362,8 +1375,14 @@
         <span class="k">return</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 
 
-<span class="k">def</span> <span class="nf">_reduce_ex_by_global_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proto</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">pickle_by_global_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proto</span><span class="p">):</span>
+    <span class="c1"># should not be used with Flag-type enums</span>
     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+<span class="n">_reduce_ex_by_global_name</span> <span class="o">=</span> <span class="n">pickle_by_global_name</span>
+
+<span class="k">def</span> <span class="nf">pickle_by_enum_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proto</span><span class="p">):</span>
+    <span class="c1"># should not be used with Flag-type enums</span>
+    <span class="k">return</span> <span class="nb">getattr</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name_</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">FlagBoundary</span><span class="p">(</span><span class="n">StrEnum</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -1384,23 +1403,6 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Support for flags</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="k">def</span> <span class="nf">__reduce_ex__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proto</span><span class="p">):</span>
-        <span class="bp">cls</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span>
-        <span class="n">unknown</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value_</span> <span class="o">&amp;</span> <span class="o">~</span><span class="bp">cls</span><span class="o">.</span><span class="n">_flag_mask_</span>
-        <span class="n">member_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value_</span> <span class="o">&amp;</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_flag_mask_</span>
-        <span class="k">if</span> <span class="n">unknown</span> <span class="ow">and</span> <span class="n">member_value</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">_or_</span><span class="p">,</span> <span class="p">(</span><span class="bp">cls</span><span class="p">(</span><span class="n">member_value</span><span class="p">),</span> <span class="n">unknown</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">_iter_bits_lsb</span><span class="p">(</span><span class="n">member_value</span><span class="p">):</span>
-            <span class="n">rest</span> <span class="o">=</span> <span class="n">member_value</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">val</span>
-            <span class="k">if</span> <span class="n">rest</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">_or_</span><span class="p">,</span> <span class="p">(</span><span class="bp">cls</span><span class="p">(</span><span class="n">rest</span><span class="p">),</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_value2member_map_</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">val</span><span class="p">))</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">break</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">cls</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_value_</span><span class="p">,)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="nb">getattr</span><span class="p">,</span> <span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name_</span><span class="p">)</span>
 
     <span class="n">_numeric_repr_</span> <span class="o">=</span> <span class="nb">repr</span>
 
@@ -1528,12 +1530,11 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="n">pseudo_member</span><span class="o">.</span><span class="n">_name_</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="c1"># use setdefault in case another thread already created a composite</span>
-        <span class="c1"># with this value, but only if all members are known</span>
-        <span class="c1"># note: zero is a special case -- add it</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">unknown</span><span class="p">:</span>
-            <span class="n">pseudo_member</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_value2member_map_</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">pseudo_member</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">neg_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="bp">cls</span><span class="o">.</span><span class="n">_value2member_map_</span><span class="p">[</span><span class="n">neg_value</span><span class="p">]</span> <span class="o">=</span> <span class="n">pseudo_member</span>
+        <span class="c1"># with this value</span>
+        <span class="c1"># note: zero is a special case -- always add it</span>
+        <span class="n">pseudo_member</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_value2member_map_</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">pseudo_member</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">neg_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">cls</span><span class="o">.</span><span class="n">_value2member_map_</span><span class="p">[</span><span class="n">neg_value</span><span class="p">]</span> <span class="o">=</span> <span class="n">pseudo_member</span>
         <span class="k">return</span> <span class="n">pseudo_member</span>
 
     <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
@@ -1605,14 +1606,10 @@
 
     <span class="k">def</span> <span class="fm">__invert__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_inverted_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_boundary_</span> <span class="ow">is</span> <span class="n">KEEP</span><span class="p">:</span>
-                <span class="c1"># use all bits</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_boundary_</span> <span class="ow">in</span> <span class="p">(</span><span class="n">EJECT</span><span class="p">,</span> <span class="n">KEEP</span><span class="p">):</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_inverted_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="o">~</span><span class="bp">self</span><span class="o">.</span><span class="n">_value_</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
-                <span class="c1"># calculate flags not in this member</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">_inverted_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_flag_mask_</span> <span class="o">^</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value_</span><span class="p">)</span>
-            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_inverted_</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">):</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">_inverted_</span><span class="o">.</span><span class="n">_inverted_</span> <span class="o">=</span> <span class="bp">self</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_inverted_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_singles_mask_</span> <span class="o">&amp;</span> <span class="o">~</span><span class="bp">self</span><span class="o">.</span><span class="n">_value_</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_inverted_</span>
 
     <span class="fm">__rand__</span> <span class="o">=</span> <span class="fm">__and__</span>
@@ -2118,7 +2115,6 @@
         <span class="c1"># unless some values aren&#39;t comparable, in which case sort by name</span>
         <span class="n">members</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
     <span class="bp">cls</span> <span class="o">=</span> <span class="n">etype</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">members</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="n">module</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="n">boundary</span> <span class="ow">or</span> <span class="n">KEEP</span><span class="p">)</span>
-    <span class="bp">cls</span><span class="o">.</span><span class="n">__reduce_ex__</span> <span class="o">=</span> <span class="n">_reduce_ex_by_global_name</span>
     <span class="k">return</span> <span class="bp">cls</span>
 
 <span class="n">_stdlib_enums</span> <span class="o">=</span> <span class="n">IntEnum</span><span class="p">,</span> <span class="n">StrEnum</span><span class="p">,</span> <span class="n">IntFlag</span>
