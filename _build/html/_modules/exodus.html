@@ -196,7 +196,7 @@
 
 <span class="k">def</span> <span class="nf">_parse_exodus_version</span><span class="p">(</span><span class="n">version_string</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">version_string</span><span class="p">:</span>
-        <span class="k">assert</span> <span class="n">version_string</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;#define EXODUS_VERSION &quot;</span><span class="p">),</span> <span class="s2">&quot;Received a incorrectly formated verstion string. Please check the CMakeLists.txt&quot;</span>
+        <span class="k">assert</span> <span class="n">version_string</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;#define EXODUS_VERSION &quot;</span><span class="p">),</span> <span class="s2">&quot;Received a incorrectly formatted verstion string. Please check the CMakeLists.txt&quot;</span>
         <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">version_string</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">0</span>
@@ -1663,7 +1663,7 @@
 <div class="viewcode-block" id="exodus.get_num_map"><a class="viewcode-back" href="../exodus.html#exodus.exodus.get_num_map">[docs]</a>    <span class="k">def</span> <span class="nf">get_num_map</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapType</span><span class="p">,</span> <span class="n">idx</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        get user-defined map of exodus element/node/edge/face index to user- or</span>
-<span class="sd">        application- defined element/node/edge/face values. Map values are arbitary integers</span>
+<span class="sd">        application- defined element/node/edge/face values. Map values are arbitrary integers</span>
 
 <span class="sd">        &gt;&gt;&gt; elem_num_map = exo.get_num_map(&#39;EX_ELEM_MAP&#39;, 1)</span>
 
@@ -1695,7 +1695,7 @@
 <div class="viewcode-block" id="exodus.put_num_map"><a class="viewcode-back" href="../exodus.html#exodus.exodus.put_num_map">[docs]</a>    <span class="k">def</span> <span class="nf">put_num_map</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapType</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">num_map</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        put user-defined map of exodus element/node/edge/face index to user- or</span>
-<span class="sd">        application- defined element/node/edge/face values. Map values are arbitary integers</span>
+<span class="sd">        application- defined element/node/edge/face values. Map values are arbitrary integers</span>
 
 
 <span class="sd">        Parameters</span>
