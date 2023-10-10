@@ -233,8 +233,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a71029178b259a3835dbf0b3c5a9219f1" id="r_a71029178b259a3835dbf0b3c5a9219f1"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a71029178b259a3835dbf0b3c5a9219f1">version</a> ()</td></tr>
-<tr class="separator:a71029178b259a3835dbf0b3c5a9219f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d53d5790155fe7c4014a32ce04340ac" id="r_a7d53d5790155fe7c4014a32ce04340ac"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a7d53d5790155fe7c4014a32ce04340ac">version</a> ()</td></tr>
+<tr class="separator:a7d53d5790155fe7c4014a32ce04340ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc287b50f4820cb311a0862635495726" id="r_adc287b50f4820cb311a0862635495726"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#adc287b50f4820cb311a0862635495726">short_version</a> ()</td></tr>
+<tr class="separator:adc287b50f4820cb311a0862635495726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -959,7 +961,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return long version: <code># Algebraic Preprocessor (<a class="el" href="classSEAMS_1_1Aprepro.html">Aprepro</a>) version X.X.X</code> </p>
+<p>Return long version: <code># Algebraic Preprocessor (<a class="el" href="classSEAMS_1_1Aprepro.html">Aprepro</a>) version X.X (date)</code> </p>
 
 </div>
 </div>
@@ -1431,6 +1433,33 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="adc287b50f4820cb311a0862635495726" name="adc287b50f4820cb311a0862635495726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc287b50f4820cb311a0862635495726">&#9670;&#160;</a></span>short_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; SEAMS::Aprepro::short_version </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return string representation of current version of aprepro. <br  />
+ </p>
+
+</div>
+</div>
 <a id="a5d028beb608570c87d41c1bcb42f58f4" name="a5d028beb608570c87d41c1bcb42f58f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d028beb608570c87d41c1bcb42f58f4">&#9670;&#160;</a></span>state_is_immutable()</h2>
 
@@ -1500,8 +1529,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a71029178b259a3835dbf0b3c5a9219f1" name="a71029178b259a3835dbf0b3c5a9219f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71029178b259a3835dbf0b3c5a9219f1">&#9670;&#160;</a></span>version()</h2>
+<a id="a7d53d5790155fe7c4014a32ce04340ac" name="a7d53d5790155fe7c4014a32ce04340ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d53d5790155fe7c4014a32ce04340ac">&#9670;&#160;</a></span>version()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1510,7 +1539,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string SEAMS::Aprepro::version </td>
+          <td class="memname">const std::string &amp; SEAMS::Aprepro::version </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1522,7 +1551,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return string representation of current version of aprepro. <br  />
+<p>Return string representation of current version of aprepro + commit date. <br  />
  </p>
 
 </div>

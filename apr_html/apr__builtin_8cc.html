@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('apr__builtin_8cc.html',''); initResiza
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="apr__builtin_8h_source.html">apr_builtin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="apr__symrec_8h_source.html">apr_symrec.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enumerate_8h_source.html">enumerate.h</a>&quot;</code><br />
 <code>#include &lt;cctype&gt;</code><br />
 <code>#include &lt;cerrno&gt;</code><br />
 <code>#include &lt;cfenv&gt;</code><br />
@@ -136,9 +137,9 @@ Macros</h2></td></tr>
 <tr class="separator:a598a3330b3c21701223ee0ca14316eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8618aec27dedcd32f494ccf22f3ed42" id="r_aa8618aec27dedcd32f494ccf22f3ed42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__builtin_8cc.html#aa8618aec27dedcd32f494ccf22f3ed42">math_errhandling</a>&#160;&#160;&#160;MATH_ERRNO</td></tr>
 <tr class="separator:aa8618aec27dedcd32f494ccf22f3ed42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeeb6e3399ffad67be7d1a4263077ace" id="r_aaeeb6e3399ffad67be7d1a4263077ace"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__builtin_8cc.html#aaeeb6e3399ffad67be7d1a4263077ace">d2r</a>(x)&#160;&#160;&#160;((x)*<a class="el" href="apr__builtin_8cc.html#a598a3330b3c21701223ee0ca14316eca">PI</a> / 180.)</td></tr>
+<tr class="memitem:aaeeb6e3399ffad67be7d1a4263077ace" id="r_aaeeb6e3399ffad67be7d1a4263077ace"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__builtin_8cc.html#aaeeb6e3399ffad67be7d1a4263077ace">d2r</a>(x)&#160;&#160;&#160;((x) * <a class="el" href="apr__builtin_8cc.html#a598a3330b3c21701223ee0ca14316eca">PI</a> / 180.)</td></tr>
 <tr class="separator:aaeeb6e3399ffad67be7d1a4263077ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11cb28cf4bfecf5bfbd98ab9e4f2123b" id="r_a11cb28cf4bfecf5bfbd98ab9e4f2123b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__builtin_8cc.html#a11cb28cf4bfecf5bfbd98ab9e4f2123b">r2d</a>(x)&#160;&#160;&#160;((x)*180. / <a class="el" href="apr__builtin_8cc.html#a598a3330b3c21701223ee0ca14316eca">PI</a>)</td></tr>
+<tr class="memitem:a11cb28cf4bfecf5bfbd98ab9e4f2123b" id="r_a11cb28cf4bfecf5bfbd98ab9e4f2123b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__builtin_8cc.html#a11cb28cf4bfecf5bfbd98ab9e4f2123b">r2d</a>(x)&#160;&#160;&#160;((x) * 180. / <a class="el" href="apr__builtin_8cc.html#a598a3330b3c21701223ee0ca14316eca">PI</a>)</td></tr>
 <tr class="separator:a11cb28cf4bfecf5bfbd98ab9e4f2123b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac39d9cef6a5e030ba8d9e11121054268" id="r_ac39d9cef6a5e030ba8d9e11121054268"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apr__builtin_8cc.html#ac39d9cef6a5e030ba8d9e11121054268">max</a>(x,  y)&#160;&#160;&#160;(x) &gt; (y) ? (x) : (y)</td></tr>
 <tr class="separator:ac39d9cef6a5e030ba8d9e11121054268"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,7 +402,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((x)*<a class="el" href="apr__builtin_8cc.html#a598a3330b3c21701223ee0ca14316eca">PI</a> / 180.)</td>
+          <td>&#160;&#160;&#160;((x) * <a class="el" href="apr__builtin_8cc.html#a598a3330b3c21701223ee0ca14316eca">PI</a> / 180.)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -503,7 +504,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((x)*180. / <a class="el" href="apr__builtin_8cc.html#a598a3330b3c21701223ee0ca14316eca">PI</a>)</td>
+          <td>&#160;&#160;&#160;((x) * 180. / <a class="el" href="apr__builtin_8cc.html#a598a3330b3c21701223ee0ca14316eca">PI</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -390,6 +390,7 @@ var namespaceIoss =
     [ "ByRef", "namespaceIoss.html#a8ddf7014f08b92cb05554092ef597920", null ],
     [ "copy_database", "namespaceIoss.html#acf60c6566ef8bd6e92e360a0c27daf9d", null ],
     [ "DebugOut", "namespaceIoss.html#a9804f5a9612ff0a28eac05acb897d120", null ],
+    [ "enumerate", "namespaceIoss.html#ace14d07c4fcfa3609eedec64779035f9", null ],
     [ "generate_element_chains", "namespaceIoss.html#a6d5446515790d5da4b5d2af4883d789b", null ],
     [ "generate_element_chains", "namespaceIoss.html#aca0909ca3a73cb81245d2c731eef2a74", null ],
     [ "generate_element_chains", "namespaceIoss.html#a1a6a82767d634f225c45f64df635d8cc", null ],

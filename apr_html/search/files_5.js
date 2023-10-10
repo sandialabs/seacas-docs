@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['terminal_5fcolor_2eh_0',['terminal_color.h',['../terminal__color_8h.html',1,'']]]
+  ['strings_2ecc_0',['strings.cc',['../strings_8cc.html',1,'']]]
 ];

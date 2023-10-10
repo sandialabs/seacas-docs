@@ -10,5 +10,7 @@ var apr__aprepro_8cc =
     [ "output_copyright", "apr__aprepro_8cc.html#ad9ce072d71e737f995472c04521ef52c", null ],
     [ "aprepro", "apr__aprepro_8cc.html#a832dd1dbbc0adeb2151b2213e7d89a03", null ],
     [ "echo", "apr__aprepro_8cc.html#a9e89e5ccba182fda8796e9988d051098", null ],
+    [ "version_date", "apr__aprepro_8cc.html#a82f92daca6002e42b9d42a047af790f5", null ],
+    [ "version_short", "apr__aprepro_8cc.html#abd698e895dc78dbe29bf962b6463246e", null ],
     [ "version_string", "apr__aprepro_8cc.html#a3f238c29108c4e19f0a26d3fc103b480", null ]
 ];

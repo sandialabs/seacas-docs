@@ -21,6 +21,7 @@ var files_dup =
     [ "apr_util.h", "apr__util_8h.html", "apr__util_8h" ],
     [ "aprepro.h", "aprepro_8h.html", "aprepro_8h" ],
     [ "aprepro_parser.h", "aprepro__parser_8h.html", "aprepro__parser_8h" ],
+    [ "enumerate.h", "enumerate_8h.html", "enumerate_8h" ],
     [ "FlexLexer.h", "FlexLexer_8h.html", "FlexLexer_8h" ],
     [ "init_structs.h", "init__structs_8h.html", "init__structs_8h" ],
     [ "robin_growth_policy.h", "robin__growth__policy_8h.html", "robin__growth__policy_8h" ],

@@ -388,7 +388,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The following 'indexed qsort' routine is modified from Sedgewicks algorithm It selects the pivot based on the median of the left, right, and center values to try to avoid degenerate cases ocurring when a single value is chosen. It performs a quicksort on intervals down to the <a class="el" href="ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468">EX_QSORT_CUTOFF</a> size and then performs a final insertion sort on the almost sorted final array. Based on data in Sedgewick, the <a class="el" href="ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468">EX_QSORT_CUTOFF</a> value should be between 5 and 20.</p>
+<p>The following 'indexed qsort' routine is modified from Sedgewicks algorithm It selects the pivot based on the median of the left, right, and center values to try to avoid degenerate cases occurring when a single value is chosen. It performs a quicksort on intervals down to the <a class="el" href="ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468">EX_QSORT_CUTOFF</a> size and then performs a final insertion sort on the almost sorted final array. Based on data in Sedgewick, the <a class="el" href="ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468">EX_QSORT_CUTOFF</a> value should be between 5 and 20.</p>
 <p>See Sedgewick for further details Define <code>DEBUG_QSORT</code> at the top of this file and recompile to compile in code that verifies that the array is sorted.</p>
 <p>NOTE: The 'int' implementation below assumes that <em>both</em> the items being sorted and the <em>number</em> of items being sorted are both representable as 'int'. </p>
 
@@ -1022,7 +1022,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The function <a class="el" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn()</a> logs an error to stderr. It is intended to provide explanatory messages for error codes returned from other exodus routines. The main difference between <a class="el" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn()</a> and <a class="el" href="group__Utilities.html#ga73924582d1725b8f8672ce292dde53e5">ex_err()</a> is that <a class="el" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn()</a> will print the name of the exodus file that the error occured on.</p>
+<p>The function <a class="el" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn()</a> logs an error to stderr. It is intended to provide explanatory messages for error codes returned from other exodus routines. The main difference between <a class="el" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn()</a> and <a class="el" href="group__Utilities.html#ga73924582d1725b8f8672ce292dde53e5">ex_err()</a> is that <a class="el" href="group__Utilities.html#gad80ad976010b0653dd981c3c7867475f">ex_err_fn()</a> will print the name of the exodus file that the error occurred on.</p>
 <p>The passed in error codes and corresponding messages are listed in <code><a class="el" href="exodusII_8h.html">exodusII.h</a></code>. The programmer may supplement the error message printed for standard errors by providing an error message. If the error code is provided with no error message, the predefined message will be used. The error code <code>EX_MSG</code> is available to log application specific messages.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

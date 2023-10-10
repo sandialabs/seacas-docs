@@ -7492,7 +7492,7 @@ ptr --------—&gt; list item structure</h2>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The following 'indexed qsort' routine is modified from Sedgewicks algorithm It selects the pivot based on the median of the left, right, and center values to try to avoid degenerate cases ocurring when a single value is chosen. It performs a quicksort on intervals down to the <a class="el" href="ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468">EX_QSORT_CUTOFF</a> size and then performs a final insertion sort on the almost sorted final array. Based on data in Sedgewick, the <a class="el" href="ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468">EX_QSORT_CUTOFF</a> value should be between 5 and 20.</p>
+<p>The following 'indexed qsort' routine is modified from Sedgewicks algorithm It selects the pivot based on the median of the left, right, and center values to try to avoid degenerate cases occurring when a single value is chosen. It performs a quicksort on intervals down to the <a class="el" href="ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468">EX_QSORT_CUTOFF</a> size and then performs a final insertion sort on the almost sorted final array. Based on data in Sedgewick, the <a class="el" href="ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468">EX_QSORT_CUTOFF</a> value should be between 5 and 20.</p>
 <p>See Sedgewick for further details Define <code>DEBUG_QSORT</code> at the top of this file and recompile to compile in code that verifies that the array is sorted.</p>
 <p>NOTE: The 'int' implementation below assumes that <em>both</em> the items being sorted and the <em>number</em> of items being sorted are both representable as 'int'. </p>
 

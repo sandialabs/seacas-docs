@@ -824,7 +824,7 @@ template&lt;class ValueType , class KeySelect , class ValueSelect , class Hash ,
   </tr>
 </table>
 </div><div class="memdoc">
-<p>C++11 doesn't support the creation of a std::vector with a custom allocator and 'count' default-inserted elements. The needed contructor <code>explicit vector(size_type count, const Allocator&amp; alloc = Allocator());</code> is only available in C++14 and later. We thus must resize after using the <code>vector(const Allocator&amp; alloc)</code> constructor.</p>
+<p>C++11 doesn't support the creation of a std::vector with a custom allocator and 'count' default-inserted elements. The needed constructor <code>explicit vector(size_type count, const Allocator&amp; alloc = Allocator());</code> is only available in C++14 and later. We thus must resize after using the <code>vector(const Allocator&amp; alloc)</code> constructor.</p>
 <p>We can't use <code>vector(size_type count, const T&amp; value, const Allocator&amp; alloc)</code> as it requires the value T to be copyable. </p>
 
 </div>
@@ -3907,7 +3907,7 @@ template&lt;class ValueType , class KeySelect , class ValueSelect , class Hash ,
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Protocol version currenlty used for serialization. </p>
+<p>Protocol version currently used for serialization. </p>
 
 </div>
 </div>
