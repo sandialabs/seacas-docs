@@ -126,17 +126,18 @@ Collaboration diagram for SEAMS::Aprepro:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a91d58145137592e549991a00b8e9448d" id="r_a91d58145137592e549991a00b8e9448d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448d">SYMBOL_TYPE</a> { <br />
-&#160;&#160;<a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448dae61ad9b2553a293b4a3f4d3b4fa5ab31">VARIABLE</a> = 1
+&#160;&#160;<a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da182fa1c42a2468f8488e6dcf75a81b81">INTERNAL</a> = 0
+, <a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448dae61ad9b2553a293b4a3f4d3b4fa5ab31">VARIABLE</a> = 1
 , <a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da6e3a3b8ce9fef09a353f9919035071fb">STRING_VARIABLE</a> = 2
 , <a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448daa980931669237dd33832edd5768a2e88">UNDEFINED_VARIABLE</a> = 5
-, <a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da6a72a6a776662a244f82d31e9274a07b">FUNCTION</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da0a9261bcdaaf49210674d6639769357b">STRING_FUNCTION</a> = 4
+&#160;&#160;<a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da6a72a6a776662a244f82d31e9274a07b">FUNCTION</a> = 3
+, <a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da0a9261bcdaaf49210674d6639769357b">STRING_FUNCTION</a> = 4
 , <a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da755d477a0d17484fffa3a269bd723881">ARRAY_FUNCTION</a> = 6
 , <a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da90727811763c5c2cb8619358b9db3633">ARRAY_VARIABLE</a> = 7
-, <a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da3abb1a6d975f231d388de08b75b03210">IMMUTABLE_VARIABLE</a> = 11
 , <br />
-&#160;&#160;<a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448dac5db0d31da162aeeaa58cd962666e138">IMMUTABLE_STRING_VARIABLE</a> = 12
+&#160;&#160;<a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448da3abb1a6d975f231d388de08b75b03210">IMMUTABLE_VARIABLE</a> = 11
+, <a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448dac5db0d31da162aeeaa58cd962666e138">IMMUTABLE_STRING_VARIABLE</a> = 12
 <br />
  }</td></tr>
 <tr class="separator:a91d58145137592e549991a00b8e9448d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +175,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac3bad8c2e5b5530165a88ff383aa1a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c271fa53d065ce13d607af77e971503" id="r_a6c271fa53d065ce13d607af77e971503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a6c271fa53d065ce13d607af77e971503">statistics</a> (std::ostream *out=nullptr) const</td></tr>
 <tr class="separator:a6c271fa53d065ce13d607af77e971503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275a987da6ad025b06b51e779b0f6c46" id="r_a275a987da6ad025b06b51e779b0f6c46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448d">SYMBOL_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a275a987da6ad025b06b51e779b0f6c46">get_symbol_type</a> (const <a class="el" href="structSEAMS_1_1symrec.html">SEAMS::symrec</a> *symbol) const</td></tr>
+<tr class="separator:a275a987da6ad025b06b51e779b0f6c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa74eeb06ef5812d0dbb6418e38667e" id="r_a7aa74eeb06ef5812d0dbb6418e38667e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1symrec.html">SEAMS::symrec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a7aa74eeb06ef5812d0dbb6418e38667e">getsym</a> (const char *sym_name) const</td></tr>
 <tr class="separator:a7aa74eeb06ef5812d0dbb6418e38667e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bcef598f70b0f55d79bf0a3d425ad80" id="r_a7bcef598f70b0f55d79bf0a3d425ad80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1symrec.html">SEAMS::symrec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSEAMS_1_1Aprepro.html#a7bcef598f70b0f55d79bf0a3d425ad80">getsym</a> (const std::string &amp;sym_name) const</td></tr>
@@ -322,7 +325,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a91d58145137592e549991a00b8e9448dae61ad9b2553a293b4a3f4d3b4fa5ab31" name="a91d58145137592e549991a00b8e9448dae61ad9b2553a293b4a3f4d3b4fa5ab31"></a>VARIABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a91d58145137592e549991a00b8e9448da182fa1c42a2468f8488e6dcf75a81b81" name="a91d58145137592e549991a00b8e9448da182fa1c42a2468f8488e6dcf75a81b81"></a>INTERNAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a91d58145137592e549991a00b8e9448dae61ad9b2553a293b4a3f4d3b4fa5ab31" name="a91d58145137592e549991a00b8e9448dae61ad9b2553a293b4a3f4d3b4fa5ab31"></a>VARIABLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a91d58145137592e549991a00b8e9448da6e3a3b8ce9fef09a353f9919035071fb" name="a91d58145137592e549991a00b8e9448da6e3a3b8ce9fef09a353f9919035071fb"></a>STRING_VARIABLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a91d58145137592e549991a00b8e9448daa980931669237dd33832edd5768a2e88" name="a91d58145137592e549991a00b8e9448daa980931669237dd33832edd5768a2e88"></a>UNDEFINED_VARIABLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a91d58145137592e549991a00b8e9448da6a72a6a776662a244f82d31e9274a07b" name="a91d58145137592e549991a00b8e9448da6a72a6a776662a244f82d31e9274a07b"></a>FUNCTION&#160;</td><td class="fielddoc"></td></tr>
@@ -803,6 +807,24 @@ Private Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a275a987da6ad025b06b51e779b0f6c46" name="a275a987da6ad025b06b51e779b0f6c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a275a987da6ad025b06b51e779b0f6c46">&#9670;&#160;</a></span>get_symbol_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSEAMS_1_1Aprepro.html#a91d58145137592e549991a00b8e9448d">Aprepro::SYMBOL_TYPE</a> SEAMS::Aprepro::get_symbol_type </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structSEAMS_1_1symrec.html">SEAMS::symrec</a> *&#160;</td>
+          <td class="paramname"><em>symbol</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
