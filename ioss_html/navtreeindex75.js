@@ -1,6 +1,5 @@
 var NAVTREEINDEX75 =
 {
-"doctest_8h.html#ac9d9fae4ba51e82962cc86c530c5c785":[5,0,0,21,342],
 "doctest_8h.html#acab009b596160e614aec1ace5aa8560b":[5,0,0,21,68],
 "doctest_8h.html#acc08da2add47137024ca50062129be4b":[5,0,0,21,151],
 "doctest_8h.html#acc9e700fe563dbe4d9406dd36dbf1fc1":[5,0,0,21,370],
@@ -228,8 +227,8 @@ var NAVTREEINDEX75 =
 "functions_type_v.html":[4,3,3,18],
 "functions_u.html":[4,3,0,20],
 "functions_v.html":[4,3,0,21],
-"functions_vars.html":[4,3,2,0],
 "functions_vars.html":[4,3,2],
+"functions_vars.html":[4,3,2,0],
 "functions_vars_b.html":[4,3,2,1],
 "functions_vars_c.html":[4,3,2,2],
 "functions_vars_d.html":[4,3,2,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX75 =
 "functions_vars_r.html":[4,3,2,17],
 "functions_vars_s.html":[4,3,2,18],
 "functions_vars_t.html":[4,3,2,19],
-"functions_vars_u.html":[4,3,2,20]
+"functions_vars_u.html":[4,3,2,20],
+"functions_vars_v.html":[4,3,2,21]
 };

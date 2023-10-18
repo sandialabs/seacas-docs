@@ -1,6 +1,5 @@
 var NAVTREEINDEX82 =
 {
-"namespaceanonymous__namespace_02io__shell__ts_8C_03.html#a9121f4bc562f5f656e8dc54eaa44b850":[3,0,7,28],
 "namespaceanonymous__namespace_02io__shell__ts_8C_03.html#a92a7df022f66a13beab69f49f666e92e":[3,0,7,30],
 "namespaceanonymous__namespace_02io__shell__ts_8C_03.html#a977b266bd8e28eaf41dd56e86eb59966":[3,0,7,13],
 "namespaceanonymous__namespace_02io__shell__ts_8C_03.html#a98728335510725c3e87e751bef3c54da":[3,0,7,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX82 =
 "namespacedoctest_1_1detail_1_1assertAction.html#a38ba820518d42da988fab24b2f3d0548aad8b44f340e17ab74bf8386e63b25191":[3,0,130,2,0,0,0],
 "namespacedoctest_1_1detail_1_1binaryAssertComparison.html":[3,0,130,2,1],
 "namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569":[3,0,130,2,1,0],
-"namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a1de9460fcfb6a1681f13d54083f88313":[3,0,130,2,1,0,4]
+"namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a1de9460fcfb6a1681f13d54083f88313":[3,0,130,2,1,0,4],
+"namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a3efb665f41cd9490d9739e1ad228918e":[3,0,130,2,1,0,2]
 };

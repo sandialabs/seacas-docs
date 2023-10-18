@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('Ioss__FileInfo_8C.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Ioss_FileInfo.C File Reference</div></div>
 </div><!--header-->
@@ -106,6 +105,7 @@ $(document).ready(function(){initNavTree('Ioss__FileInfo_8C.html',''); initResiz
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;<a class="el" href="tokenize_8h_source.html">tokenize.h</a>&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/statfs.h&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;sys/stat.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -122,11 +122,6 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespaceIoss"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the <a class="el" href="namespaceIoss.html" title="The main namespace for the Ioss library.">Ioss</a> library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:aaab37be6bbe2fd1ed7c9000a5113ece9" id="r_aaab37be6bbe2fd1ed7c9000a5113ece9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ioss__FileInfo_8C.html#aaab37be6bbe2fd1ed7c9000a5113ece9">NFS_FS</a>&#160;&#160;&#160;0x6969 /* statfs defines that 0x6969 is NFS filesystem */</td></tr>
-<tr class="separator:aaab37be6bbe2fd1ed7c9000a5113ece9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a426debc1dbfaddb25aa6eeab5d5c9c75" id="r_a426debc1dbfaddb25aa6eeab5d5c9c75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__FileInfo_8C_03.html#a426debc1dbfaddb25aa6eeab5d5c9c75">anonymous_namespace{Ioss_FileInfo.C}::internal_access</a> (const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;name, int mode)</td></tr>
@@ -134,21 +129,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aef181f38bf657e6f71b1841efeaf7611" id="r_aef181f38bf657e6f71b1841efeaf7611"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioss__FileInfo_8C_03.html#aef181f38bf657e6f71b1841efeaf7611">anonymous_namespace{Ioss_FileInfo.C}::do_stat</a> (const <a class="el" href="namespacestd.html#a2fe1929f6e941af8f5935b8e1ebc2952">std::string</a> &amp;filename, struct stat *s)</td></tr>
 <tr class="separator:aef181f38bf657e6f71b1841efeaf7611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aaab37be6bbe2fd1ed7c9000a5113ece9" name="aaab37be6bbe2fd1ed7c9000a5113ece9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaab37be6bbe2fd1ed7c9000a5113ece9">&#9670;&#160;</a></span>NFS_FS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NFS_FS&#160;&#160;&#160;0x6969 /* statfs defines that 0x6969 is NFS filesystem */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
