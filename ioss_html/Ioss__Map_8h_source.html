@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('Ioss__Map_8h_source.html',''); initRes
   <div class="headertitle"><div class="title">Ioss_Map.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Ioss__Map_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022 National Technology &amp; Engineering Solutions</span></div>
+<a href="Ioss__Map_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022, 2023 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -106,14 +106,14 @@ $(document).ready(function(){initNavTree('Ioss__Map_8h_source.html',''); initRes
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;ioss_export.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="Ioss__CodeTypes_8h.html">Ioss_CodeTypes.h</a>&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="Ioss__Field_8h.html">Ioss_Field.h</a>&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;cstddef&gt;</span> <span class="comment">// for size_t</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;cstdint&gt;</span> <span class="comment">// for int64_t</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;string&gt;</span>  <span class="comment">// for string</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;vector&gt;</span>  <span class="comment">// for vector</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="Ioss__CodeTypes_8h.html">Ioss_CodeTypes.h</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="Ioss__Field_8h.html">Ioss_Field.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;cstddef&gt;</span> <span class="comment">// for size_t</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;cstdint&gt;</span> <span class="comment">// for int64_t</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;string&gt;</span>  <span class="comment">// for string</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;vector&gt;</span>  <span class="comment">// for vector</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;ioss_export.h&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="Ioss__Map_8h.html#ae151d1549bf1f41fcfc2f1a53ce97563">   18</a></span><span class="preprocessor">#define MAP_USE_STD</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#if defined MAP_USE_STD</span></div>
@@ -204,9 +204,9 @@ $(document).ready(function(){initNavTree('Ioss__Map_8h_source.html',''); initRes
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> INT&gt; <span class="keywordtype">void</span> map_data(INT *data, <span class="keywordtype">size_t</span> count) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> INT&gt; <span class="keywordtype">void</span> map_implicit_data(INT *data, <span class="keywordtype">size_t</span> count, <span class="keywordtype">size_t</span> offset) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    int64_t global_to_local__(int64_t global, <span class="keywordtype">bool</span> must_exist = <span class="keyword">true</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">void</span>    build_reorder_map__(int64_t start, int64_t count);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">void</span>    build_reverse_map__(int64_t num_to_get, int64_t offset);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    int64_t global_to_local_nl(int64_t global, <span class="keywordtype">bool</span> must_exist = <span class="keyword">true</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">void</span>    build_reorder_map_nl(int64_t start, int64_t count);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">void</span>    build_reverse_map_nl(int64_t num_to_get, int64_t offset);</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#if defined MAP_USE_SORTED_VECTOR</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">void</span> verify_no_duplicate_ids(std::vector&lt;Ioss::IdPair&gt; &amp;reverse_map);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#endif</span></div>
@@ -227,8 +227,8 @@ $(document).ready(function(){initNavTree('Ioss__Map_8h_source.html',''); initRes
 <div class="ttc" id="aIoss__CodeTypes_8h_html"><div class="ttname"><a href="Ioss__CodeTypes_8h.html">Ioss_CodeTypes.h</a></div></div>
 <div class="ttc" id="aIoss__Field_8h_html"><div class="ttname"><a href="Ioss__Field_8h.html">Ioss_Field.h</a></div></div>
 <div class="ttc" id="abhopscotch__map_8h_html"><div class="ttname"><a href="bhopscotch__map_8h.html">bhopscotch_map.h</a></div></div>
-<div class="ttc" id="aclassIoss_1_1Field_html"><div class="ttname"><a href="classIoss_1_1Field.html">Ioss::Field</a></div><div class="ttdoc">Holds metadata for bulk data associated with a GroupingEntity.</div><div class="ttdef"><b>Definition</b> Ioss_Field.h:23</div></div>
-<div class="ttc" id="aclassIoss_1_1Field_html_a43f29f9ba05cb45ed893455c76526c3e"><div class="ttname"><a href="classIoss_1_1Field.html#a43f29f9ba05cb45ed893455c76526c3e">Ioss::Field::BasicType</a></div><div class="ttdeci">BasicType</div><div class="ttdoc">The basic data type held in the field.</div><div class="ttdef"><b>Definition</b> Ioss_Field.h:27</div></div>
+<div class="ttc" id="aclassIoss_1_1Field_html"><div class="ttname"><a href="classIoss_1_1Field.html">Ioss::Field</a></div><div class="ttdoc">Holds metadata for bulk data associated with a GroupingEntity.</div><div class="ttdef"><b>Definition</b> Ioss_Field.h:25</div></div>
+<div class="ttc" id="aclassIoss_1_1Field_html_a43f29f9ba05cb45ed893455c76526c3e"><div class="ttname"><a href="classIoss_1_1Field.html#a43f29f9ba05cb45ed893455c76526c3e">Ioss::Field::BasicType</a></div><div class="ttdeci">BasicType</div><div class="ttdoc">The basic data type held in the field.</div><div class="ttdef"><b>Definition</b> Ioss_Field.h:29</div></div>
 <div class="ttc" id="aclassIoss_1_1Map_html"><div class="ttname"><a href="classIoss_1_1Map.html">Ioss::Map</a></div><div class="ttdef"><b>Definition</b> Ioss_Map.h:46</div></div>
 <div class="ttc" id="aclassIoss_1_1Map_html_a1f454b21053cbe3708f224fd707b0d29"><div class="ttname"><a href="classIoss_1_1Map.html#a1f454b21053cbe3708f224fd707b0d29">Ioss::Map::set_defined</a></div><div class="ttdeci">void set_defined(bool yes_no)</div><div class="ttdef"><b>Definition</b> Ioss_Map.h:95</div></div>
 <div class="ttc" id="aclassIoss_1_1Map_html_a27a8baac2814c46e8251b759cea058f5"><div class="ttname"><a href="classIoss_1_1Map.html#a27a8baac2814c46e8251b759cea058f5">Ioss::Map::Map</a></div><div class="ttdeci">Map(std::string entity_type, std::string file_name, int processor)</div><div class="ttdef"><b>Definition</b> Ioss_Map.h:49</div></div>

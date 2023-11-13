@@ -10,7 +10,7 @@ var searchData=
   ['max_5fstr_5flength_7',['MAX_STR_LENGTH',['../group__StringLengths.html#gaaa695591372841e2c5580e4ed0f3620f',1,'exodusII.h']]],
   ['max_5fvar_5fname_5flength_8',['MAX_VAR_NAME_LENGTH',['../group__Internal.html#ga50bd85ce2ed14f876d5f8faac0adba86',1,'exodusII_int.h']]],
   ['maximum_20string_20lengths_9',['maximum string lengths;',['../group__StringLengths.html',1,'']]],
-  ['maximum_5fname_5flength_10',['maximum_name_length',['../structex____file__item.html#a160ba86045058bcb562f51da035a2b8b',1,'ex__file_item']]],
+  ['maximum_5fname_5flength_10',['maximum_name_length',['../structexi__file__item.html#aac29bd2da12cab67363270d6c4dd9076',1,'exi_file_item']]],
   ['mdash_20list_20item_20structure_11',['mdash list item structure',['../group__Internal.html#autotoc_md11',1,'ptr --------&amp;mdash;&gt; list item structure'],['../group__Internal.html#autotoc_md10',1,'ptr --------&amp;mdash;&gt; list item structure'],['../group__Internal.html#autotoc_md9',1,'ptr --------&amp;mdash;&gt; list item structure']]],
   ['mode_12',['Variables controlling the file creation mode.',['../group__FileVars.html',1,'']]],
   ['model_2064_20bit_20offset_13',['Large Model (64-bit offset)',['../exodus_formats.html#large',1,'']]],

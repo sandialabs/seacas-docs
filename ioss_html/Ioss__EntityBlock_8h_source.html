@@ -106,121 +106,122 @@ $(document).ready(function(){initNavTree('Ioss__EntityBlock_8h_source.html','');
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;ioss_export.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="Ioss__GroupingEntity_8h.html">Ioss_GroupingEntity.h</a>&gt;</span> <span class="comment">// for GroupingEntity</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="Ioss__Property_8h.html">Ioss_Property.h</a>&gt;</span>       <span class="comment">// for Property</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;cstddef&gt;</span>               <span class="comment">// for size_t</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;string&gt;</span>                <span class="comment">// for string</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">class </span>DatabaseIO;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>} <span class="comment">// namespace Ioss</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">class </span>ElementTopology;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace Ioss</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">class </span>ElementBlock;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"></span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">  /** \brief Base class for all &#39;block&#39;-type grouping entities, which means all</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   *         members of the block are similar or have the same topology.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   *   The following derived classes are typical:</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   *   -- NodeBlock -- grouping of &#39;similar&#39; nodes (same degree of freedom, ...)</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   *   -- ElementBlock -- grouping of &#39;similar&#39; elements (same element topology,</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   *                      attributes, ...)</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   *      0d, 1d, 2d, 3d topology possible -- e.g., sphere, bar, quad, hex</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   */</span></div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html">   36</a></span>  <span class="keyword">class </span>IOSS_EXPORT <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a> : <span class="keyword">public</span> <a class="code hl_class" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a620ed92b286fb1df157682cbbf97660c">   39</a></span>    <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a> &amp;<a class="code hl_function" href="classIoss_1_1EntityBlock.html#a620ed92b286fb1df157682cbbf97660c">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="classIoss_1_1Property.html">Property</a> get_implicit_property(<span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> &amp;my_name) <span class="keyword">const override</span> = 0;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    /** \brief Get the topology of the entities in the block.</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     *  \returns The topology.</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a4a65d0e30caebe6d6f3307cfcd0828b1">   47</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1ElementTopology.html">ElementTopology</a> *<a class="code hl_function" href="classIoss_1_1EntityBlock.html#a4a65d0e30caebe6d6f3307cfcd0828b1">topology</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> topology_; }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    /** \brief Determine whether the block contains the entity with a given id.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">     *  \param[in] local_id The id to check.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">     *  \returns True if the block contains the entity.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">     */</span></div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#ade2a59d921b0eb0aa5e361b665f97d77">   54</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classIoss_1_1EntityBlock.html#ade2a59d921b0eb0aa5e361b665f97d77">contains</a>(<span class="keywordtype">size_t</span> local_id)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="keywordflow">return</span> idOffset &lt; local_id &amp;&amp; local_id &lt;= idOffset + entityCount;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }<span class="comment"></span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="Ioss__GroupingEntity_8h.html">Ioss_GroupingEntity.h</a>&gt;</span> <span class="comment">// for GroupingEntity</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="Ioss__Property_8h.html">Ioss_Property.h</a>&gt;</span>       <span class="comment">// for Property</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;cstddef&gt;</span>               <span class="comment">// for size_t</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;string&gt;</span>                <span class="comment">// for string</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;ioss_export.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keyword">class </span>DatabaseIO;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>} <span class="comment">// namespace Ioss</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">class </span>ElementTopology;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <span class="comment">// namespace Ioss</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceIoss.html">Ioss</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">class </span>ElementBlock;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"></span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">  /** \brief Base class for all &#39;block&#39;-type grouping entities, which means all</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   *         members of the block are similar or have the same topology.</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   *   The following derived classes are typical:</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   *   -- NodeBlock -- grouping of &#39;similar&#39; nodes (same degree of freedom, ...)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   *   -- ElementBlock -- grouping of &#39;similar&#39; elements (same element topology,</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   *                      attributes, ...)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   *      0d, 1d, 2d, 3d topology possible -- e.g., sphere, bar, quad, hex</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   */</span></div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html">   37</a></span>  <span class="keyword">class </span>IOSS_EXPORT <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a> : <span class="keyword">public</span> <a class="code hl_class" href="classIoss_1_1GroupingEntity.html">GroupingEntity</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a620ed92b286fb1df157682cbbf97660c">   40</a></span>    <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a> &amp;<a class="code hl_function" href="classIoss_1_1EntityBlock.html#a620ed92b286fb1df157682cbbf97660c">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="classIoss_1_1Property.html">Property</a> get_implicit_property(<span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> &amp;my_name) <span class="keyword">const override</span> = 0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">    /** \brief Get the topology of the entities in the block.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     *  \returns The topology.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a4a65d0e30caebe6d6f3307cfcd0828b1">   48</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1ElementTopology.html">ElementTopology</a> *<a class="code hl_function" href="classIoss_1_1EntityBlock.html#a4a65d0e30caebe6d6f3307cfcd0828b1">topology</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> topology_; }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">    /** \brief Determine whether the block contains the entity with a given id.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">     *  \param[in] local_id The id to check.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">     *  \returns True if the block contains the entity.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">     */</span></div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#ade2a59d921b0eb0aa5e361b665f97d77">   55</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classIoss_1_1EntityBlock.html#ade2a59d921b0eb0aa5e361b665f97d77">contains</a>(<span class="keywordtype">size_t</span> local_id)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keywordflow">return</span> idOffset &lt; local_id &amp;&amp; local_id &lt;= idOffset + entityCount;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }<span class="comment"></span></div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">    /** \brief Set the &#39;offset&#39; for the block.</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     *  The &#39;offset&#39; is used to map an element location within an</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     *  element block to the element &#39;file descriptor&#39;.</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     *  For example, the file descriptor of the 37th element in the 4th</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     *  block is calculated by:</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">     *  file_descriptor = offset of block 4 + 37</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">     *  This can also be used to determine which element block</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">     *  an element with a file_descriptor maps into. An particular</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">     *  element block contains all elements in the range:</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">     *  offset &lt; file_descriptor &lt;= offset+number_elements_per_block</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a384f369bdfbd2710a7437b81d08622dc">   73</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classIoss_1_1EntityBlock.html#a384f369bdfbd2710a7437b81d08622dc">set_offset</a>(<span class="keywordtype">size_t</span> offset) { idOffset = offset; }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"></span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">    /** \brief Get the &#39;offset&#39; for the block.</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">     *  The &#39;offset&#39; is used to map an element location within an</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">     *  element block to the element &#39;file descriptor&#39;.</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">     *  For example, the file descriptor of the 37th element in the 4th</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">     *  block is calculated by:</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">     *  file_descriptor = offset of block 4 + 37</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">     *  This can also be used to determine which element block</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">     *  an element with a file_descriptor maps into. An particular</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">     *  element block contains all elements in the range:</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">     *</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">     *  offset &lt; file_descriptor &lt;= offset+number_elements_per_block</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a74b0e9e33b69bc3384798f342b68228b">   90</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classIoss_1_1EntityBlock.html#a74b0e9e33b69bc3384798f342b68228b">get_offset</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idOffset; }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a> &amp;rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a> &amp;rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">bool</span> equal(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a> &amp;rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a>(<a class="code hl_class" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> *io_database, <span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> &amp;my_name, <span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> &amp;entity_type,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <span class="keywordtype">size_t</span> entity_cnt);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a415446892af49f513bf721ef92ea0238">  100</a></span>    <a class="code hl_function" href="classIoss_1_1EntityBlock.html#a415446892af49f513bf721ef92ea0238">EntityBlock</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a> &amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#af8e242e93a449e075c14468b7c901576">  102</a></span>    <a class="code hl_class" href="classIoss_1_1ElementTopology.html">ElementTopology</a> *topology_{<span class="keyword">nullptr</span>};</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#ac32e46d3143290ca487fca278a50ee05">  104</a></span>    <span class="keywordtype">size_t</span> idOffset{0};</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">bool</span> equal_(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a> &amp;rhs, <span class="keywordtype">bool</span> quiet) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  };</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">    /** \brief Set the &#39;offset&#39; for the block.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     *  The &#39;offset&#39; is used to map an element location within an</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     *  element block to the element &#39;file descriptor&#39;.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     *  For example, the file descriptor of the 37th element in the 4th</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">     *  block is calculated by:</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">     *  file_descriptor = offset of block 4 + 37</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">     *  This can also be used to determine which element block</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">     *  an element with a file_descriptor maps into. An particular</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">     *  element block contains all elements in the range:</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">     *  offset &lt; file_descriptor &lt;= offset+number_elements_per_block</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a384f369bdfbd2710a7437b81d08622dc">   74</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classIoss_1_1EntityBlock.html#a384f369bdfbd2710a7437b81d08622dc">set_offset</a>(<span class="keywordtype">size_t</span> offset) { idOffset = offset; }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">    /** \brief Get the &#39;offset&#39; for the block.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">     *  The &#39;offset&#39; is used to map an element location within an</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">     *  element block to the element &#39;file descriptor&#39;.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">     *  For example, the file descriptor of the 37th element in the 4th</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">     *  block is calculated by:</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">     *  file_descriptor = offset of block 4 + 37</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">     *  This can also be used to determine which element block</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">     *  an element with a file_descriptor maps into. An particular</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">     *  element block contains all elements in the range:</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">     *  offset &lt; file_descriptor &lt;= offset+number_elements_per_block</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a74b0e9e33b69bc3384798f342b68228b">   91</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classIoss_1_1EntityBlock.html#a74b0e9e33b69bc3384798f342b68228b">get_offset</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> idOffset; }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a> &amp;rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a> &amp;rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">bool</span> equal(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a> &amp;rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a>(<a class="code hl_class" href="classIoss_1_1DatabaseIO.html">DatabaseIO</a> *io_database, <span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> &amp;my_name, <span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> &amp;entity_type,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keywordtype">size_t</span> entity_cnt);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#a415446892af49f513bf721ef92ea0238">  101</a></span>    <a class="code hl_function" href="classIoss_1_1EntityBlock.html#a415446892af49f513bf721ef92ea0238">EntityBlock</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">EntityBlock</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#af8e242e93a449e075c14468b7c901576">  103</a></span>    <a class="code hl_class" href="classIoss_1_1ElementTopology.html">ElementTopology</a> *topology_{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classIoss_1_1EntityBlock.html#ac32e46d3143290ca487fca278a50ee05">  105</a></span>    <span class="keywordtype">size_t</span> idOffset{0};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">bool</span> equal_(<span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a> &amp;rhs, <span class="keywordtype">bool</span> quiet) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  };</div>
 </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>} <span class="comment">// namespace Ioss</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>} <span class="comment">// namespace Ioss</span></div>
 <div class="ttc" id="aIoss__GroupingEntity_8h_html"><div class="ttname"><a href="Ioss__GroupingEntity_8h.html">Ioss_GroupingEntity.h</a></div></div>
 <div class="ttc" id="aIoss__Property_8h_html"><div class="ttname"><a href="Ioss__Property_8h.html">Ioss_Property.h</a></div></div>
-<div class="ttc" id="aclassIoss_1_1DatabaseIO_html"><div class="ttname"><a href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a></div><div class="ttdoc">An input or output Database.</div><div class="ttdef"><b>Definition</b> Ioss_DatabaseIO.h:62</div></div>
+<div class="ttc" id="aclassIoss_1_1DatabaseIO_html"><div class="ttname"><a href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a></div><div class="ttdoc">An input or output Database.</div><div class="ttdef"><b>Definition</b> Ioss_DatabaseIO.h:63</div></div>
 <div class="ttc" id="aclassIoss_1_1ElementTopology_html"><div class="ttname"><a href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a></div><div class="ttdoc">Represents an element topology.</div><div class="ttdef"><b>Definition</b> Ioss_ElementTopology.h:66</div></div>
-<div class="ttc" id="aclassIoss_1_1EntityBlock_html"><div class="ttname"><a href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a></div><div class="ttdoc">Base class for all 'block'-type grouping entities, which means all members of the block are similar o...</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:37</div></div>
-<div class="ttc" id="aclassIoss_1_1EntityBlock_html_a384f369bdfbd2710a7437b81d08622dc"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#a384f369bdfbd2710a7437b81d08622dc">Ioss::EntityBlock::set_offset</a></div><div class="ttdeci">void set_offset(size_t offset)</div><div class="ttdoc">Set the 'offset' for the block.</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:73</div></div>
+<div class="ttc" id="aclassIoss_1_1EntityBlock_html"><div class="ttname"><a href="classIoss_1_1EntityBlock.html">Ioss::EntityBlock</a></div><div class="ttdoc">Base class for all 'block'-type grouping entities, which means all members of the block are similar o...</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:38</div></div>
+<div class="ttc" id="aclassIoss_1_1EntityBlock_html_a384f369bdfbd2710a7437b81d08622dc"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#a384f369bdfbd2710a7437b81d08622dc">Ioss::EntityBlock::set_offset</a></div><div class="ttdeci">void set_offset(size_t offset)</div><div class="ttdoc">Set the 'offset' for the block.</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:74</div></div>
 <div class="ttc" id="aclassIoss_1_1EntityBlock_html_a415446892af49f513bf721ef92ea0238"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#a415446892af49f513bf721ef92ea0238">Ioss::EntityBlock::EntityBlock</a></div><div class="ttdeci">EntityBlock(const EntityBlock &amp;)=default</div></div>
-<div class="ttc" id="aclassIoss_1_1EntityBlock_html_a4a65d0e30caebe6d6f3307cfcd0828b1"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#a4a65d0e30caebe6d6f3307cfcd0828b1">Ioss::EntityBlock::topology</a></div><div class="ttdeci">const ElementTopology * topology() const</div><div class="ttdoc">Get the topology of the entities in the block.</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:47</div></div>
+<div class="ttc" id="aclassIoss_1_1EntityBlock_html_a4a65d0e30caebe6d6f3307cfcd0828b1"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#a4a65d0e30caebe6d6f3307cfcd0828b1">Ioss::EntityBlock::topology</a></div><div class="ttdeci">const ElementTopology * topology() const</div><div class="ttdoc">Get the topology of the entities in the block.</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:48</div></div>
 <div class="ttc" id="aclassIoss_1_1EntityBlock_html_a620ed92b286fb1df157682cbbf97660c"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#a620ed92b286fb1df157682cbbf97660c">Ioss::EntityBlock::operator=</a></div><div class="ttdeci">EntityBlock &amp; operator=(const EntityBlock &amp;)=delete</div></div>
-<div class="ttc" id="aclassIoss_1_1EntityBlock_html_a74b0e9e33b69bc3384798f342b68228b"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#a74b0e9e33b69bc3384798f342b68228b">Ioss::EntityBlock::get_offset</a></div><div class="ttdeci">size_t get_offset() const</div><div class="ttdoc">Get the 'offset' for the block.</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:90</div></div>
-<div class="ttc" id="aclassIoss_1_1EntityBlock_html_ade2a59d921b0eb0aa5e361b665f97d77"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#ade2a59d921b0eb0aa5e361b665f97d77">Ioss::EntityBlock::contains</a></div><div class="ttdeci">bool contains(size_t local_id) const</div><div class="ttdoc">Determine whether the block contains the entity with a given id.</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:54</div></div>
+<div class="ttc" id="aclassIoss_1_1EntityBlock_html_a74b0e9e33b69bc3384798f342b68228b"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#a74b0e9e33b69bc3384798f342b68228b">Ioss::EntityBlock::get_offset</a></div><div class="ttdeci">size_t get_offset() const</div><div class="ttdoc">Get the 'offset' for the block.</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:91</div></div>
+<div class="ttc" id="aclassIoss_1_1EntityBlock_html_ade2a59d921b0eb0aa5e361b665f97d77"><div class="ttname"><a href="classIoss_1_1EntityBlock.html#ade2a59d921b0eb0aa5e361b665f97d77">Ioss::EntityBlock::contains</a></div><div class="ttdeci">bool contains(size_t local_id) const</div><div class="ttdoc">Determine whether the block contains the entity with a given id.</div><div class="ttdef"><b>Definition</b> Ioss_EntityBlock.h:55</div></div>
 <div class="ttc" id="aclassIoss_1_1GroupingEntity_html"><div class="ttname"><a href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a></div><div class="ttdoc">Base class for all 'grouping' entities. The following derived classes are typical:</div><div class="ttdef"><b>Definition</b> Ioss_GroupingEntity.h:67</div></div>
 <div class="ttc" id="aclassIoss_1_1Property_html"><div class="ttname"><a href="classIoss_1_1Property.html">Ioss::Property</a></div><div class="ttdoc">A named value that has a known type.</div><div class="ttdef"><b>Definition</b> Ioss_Property.h:26</div></div>
 <div class="ttc" id="aclassstd_1_1basic__string_html"><div class="ttname"><a href="classstd_1_1basic__string.html">std::basic_string</a></div><div class="ttdef"><b>Definition</b> doctest.h:544</div></div>

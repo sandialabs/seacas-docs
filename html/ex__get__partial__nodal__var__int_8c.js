@@ -1,4 +1,4 @@
 var ex__get__partial__nodal__var__int_8c =
 [
-    [ "ex__get_partial_nodal_var", "group__ResultsData.html#ga70d0037bf3c12d4ba5ab09eb956e19e9", null ]
+    [ "exi_get_partial_nodal_var", "group__ResultsData.html#ga53cc30ef3bfb5af6dacc3cef4009caec", null ]
 ];

@@ -2,13 +2,6 @@ var group__Utilities =
 [
     [ "ex_create", "group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87", null ],
     [ "ex_open", "group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c", null ],
-    [ "ex__check_file_type", "group__Utilities.html#ga59bdd5d8964c479f6029c276d6a6d097", null ],
-    [ "ex__comp_ws", "group__Utilities.html#ga092f2df32cf25d0010e953a9b64bdc96", null ],
-    [ "ex__get_cpu_ws", "group__Utilities.html#ga21e797d65f94a7d9f247a7297e2b3de0", null ],
-    [ "ex__iqsort", "group__Utilities.html#ga940138cdefb253a4aa96c92d92477490", null ],
-    [ "ex__is_parallel", "group__Utilities.html#ga06b40abd0ddd2274a9a420417d806ea3", null ],
-    [ "ex__reset_error_status", "group__Utilities.html#ga74d83c1a81c4c0d3200b31accfcaec04", null ],
-    [ "ex__update_max_name_length", "group__Utilities.html#gaf94a8a293630c4c13ff878e5f6ebde1f", null ],
     [ "ex_close", "group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff", null ],
     [ "ex_config", "group__Utilities.html#gaf3ed2756fa964a65d584ab71f9c136aa", null ],
     [ "ex_copy", "group__Utilities.html#gae4f66d79971313449a2522ab6df73acc", null ],
@@ -40,6 +33,13 @@ var group__Utilities =
     [ "ex_set_parallel", "group__Utilities.html#gab9a0caef233c3321be24ecd4c9d51578", null ],
     [ "ex_strerror", "group__Utilities.html#gad8366f1fe4b33f38de0776451c53a166", null ],
     [ "ex_update", "group__Utilities.html#gafffa0ac5ec86658fb22ed6af7f5530cc", null ],
+    [ "exi_check_file_type", "group__Utilities.html#ga3473e620336ac4088b12048de8b95c89", null ],
+    [ "exi_comp_ws", "group__Utilities.html#gaf6485373396308aac09b10cbc6effbf7", null ],
+    [ "exi_get_cpu_ws", "group__Utilities.html#ga6607482cae6c9c710b0d36d5517ec4f8", null ],
+    [ "exi_iqsort", "group__Utilities.html#ga7998fd18cce110e33c30bdf3e0d98e25", null ],
+    [ "exi_is_parallel", "group__Utilities.html#ga421e26f1204d155b9096b2ff5ce929bf", null ],
+    [ "exi_reset_error_status", "group__Utilities.html#gab5a71861c3522581d7bb216a9257380b", null ],
+    [ "exi_update_max_name_length", "group__Utilities.html#ga4abd1cad91feabd83089e3188b2ee1c0", null ],
     [ "nc_flt_code", "group__Utilities.html#ga0bcb99c4a23dde165c0a75e9acfb3d55", null ],
     [ "exodus_unused_symbol_dummy_ex_create_par", "group__Utilities.html#ga8e5ee50efe4c9740f9306ef0c2922c99", null ]
 ];

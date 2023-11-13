@@ -2,7 +2,6 @@ var namespaces_dup =
 [
     [ "anonymous_namespace{cgns_decomp.C}", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html", "namespaceanonymous__namespace_02cgns__decomp_8C_03" ],
     [ "anonymous_namespace{cth_pressure_map.C}", "namespaceanonymous__namespace_02cth__pressure__map_8C_03.html", "namespaceanonymous__namespace_02cth__pressure__map_8C_03" ],
-    [ "anonymous_namespace{info_interface.C}", "namespaceanonymous__namespace_02info__interface_8C_03.html", null ],
     [ "anonymous_namespace{io_info.C}", "namespaceanonymous__namespace_02io__info_8C_03.html", [
       [ "element_volume", "namespaceanonymous__namespace_02io__info_8C_03.html#a03ddc25a97c9a6c9647a9c15c5a6d5d9", null ],
       [ "file_info", "namespaceanonymous__namespace_02io__info_8C_03.html#aa1c8abea5efac9a37a1a550b6d61063e", null ],
@@ -150,15 +149,16 @@ var namespaces_dup =
       [ "debug", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a0d6b19d7093dd27befc294f6d075e3f9", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Compare.C}", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html", [
-      [ "compare_blocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a6a20cc01572fb7e286ec345eb55bd07b", null ],
-      [ "compare_commsets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a70ccde15f2e1d055540a5c549636f094", null ],
-      [ "compare_coordinate_frames", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#ad007e32f9edbf8c92a3630082665ae0b", null ],
-      [ "compare_edgeblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a76761c07ed41cd81c0cf2b986416c2bf", null ],
-      [ "compare_edgesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a59f791335bdeeefdb0ce6ea21d1da96b", null ],
-      [ "compare_elementblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a32f34cf77105d070de6f24621d3aab1e", null ],
-      [ "compare_elemsets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#ae93c9bb2d37e7cdd8da2f3a09414d5f8", null ],
-      [ "compare_faceblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a445c03153772d8a3031387415e2d0f10", null ],
-      [ "compare_facesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#af47690297a791f869ad0b6ddda14a1e0", null ],
+      [ "compare_assemblies", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a817e24366a8f4927fbdf57472cd4f285", null ],
+      [ "compare_commsets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#afb0d16bc6b287902410398c543abdcc5", null ],
+      [ "compare_coordinate_frames", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a9e9ca57e346f96a60ad7f7fded915b57", null ],
+      [ "compare_edgeblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a1def2c6230f37bf60f4727b5a80d125d", null ],
+      [ "compare_edgesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a394b8f5095a7dc5a222c64129db94d81", null ],
+      [ "compare_elementblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a923e03009c1bdeb5f67bded8a8f333ab", null ],
+      [ "compare_elemsets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a7544f0b15977c0da48bb0c9429da4649", null ],
+      [ "compare_entities", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#af24f901c76d067b9be54dec0c86f6ec1", null ],
+      [ "compare_faceblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#ae71d0b804a11098f538bd86729a1b1cd", null ],
+      [ "compare_facesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a5a957d2a9f7d58c79a5230e9ce17f6fd", null ],
       [ "compare_field_data", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#ad8f2b6fc819f92fdaa84154686a82960", null ],
       [ "compare_field_data", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#aa9d5273ed0bb66f247a89afb8f6d7b6a", null ],
       [ "compare_field_data", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a5a717b52c7b31cb72804f74e07d6f524", null ],
@@ -168,13 +168,12 @@ var namespaces_dup =
       [ "compare_fields", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a76d02c807cae5e5fba1e2e8ec101c295", null ],
       [ "compare_fields", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#abba21ef0a23cb00fdd9cb71c5ef62ca6", null ],
       [ "compare_fields", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#ac3be20f1353333034f9d14ecc9bda0ea", null ],
-      [ "compare_nodeblock", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a1ac312f9ec2e860fe0d0ab05889e5487", null ],
-      [ "compare_nodesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a0e304da705fc5f622e1aa0ba024be8cc", null ],
+      [ "compare_nodeblock", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a137bce14b7209fd75a2b9609e233cd44", null ],
+      [ "compare_nodesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#aa2af091f855e2f1820ac2d9cf933bb50", null ],
       [ "compare_properties", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a38cc34a9cae9285c32fe021ce06a9342", null ],
       [ "compare_qa_info", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#aaa8bd9d3339ff5cd05bce8997470a2d9", null ],
-      [ "compare_sets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a17b11f79949687bea06c1eae701e5d3d", null ],
-      [ "compare_sidesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a83236593ca23f20fc36ed68c378d7a93", null ],
-      [ "compare_structuredblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a6b13664b634bb9cb1ace55b3d4232708", null ],
+      [ "compare_sidesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#af528e3c7511c9b8d0aade7ca7e7667fe", null ],
+      [ "compare_structuredblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a6d20726ba94b1edb4042a442c76b0962", null ],
       [ "abs_tolerance", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a2278749d5403e79a9cb5279391264bf3", null ],
       [ "rel_tolerance", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#afe29abd0985d30b1d10a2f475db5f5ff", null ],
       [ "tol_floor", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a7ba4f0d14bf6cb1e964f554f6efc6a6e", null ]
@@ -351,7 +350,7 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_Hex8.C}", "namespaceanonymous__namespace_02Ioss__Hex8_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex8_8C_03" ],
     [ "anonymous_namespace{Ioss_Hex9.C}", "namespaceanonymous__namespace_02Ioss__Hex9_8C_03.html", "namespaceanonymous__namespace_02Ioss__Hex9_8C_03" ],
     [ "anonymous_namespace{Ioss_IOFactory.C}", "namespaceanonymous__namespace_02Ioss__IOFactory_8C_03.html", [
-      [ "describe__", "namespaceanonymous__namespace_02Ioss__IOFactory_8C_03.html#ace46c9b2c4f92d9d3c52b4c7d37ea840", null ]
+      [ "describe_nl", "namespaceanonymous__namespace_02Ioss__IOFactory_8C_03.html#a7d99e8293626502c51cd1f662a558272", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Map.C}", "namespaceanonymous__namespace_02Ioss__Map_8C_03.html", [
       [ "is_one2one", "namespaceanonymous__namespace_02Ioss__Map_8C_03.html#aa1a8680ec9949ce1b6ad349b6f0e48ea", null ]

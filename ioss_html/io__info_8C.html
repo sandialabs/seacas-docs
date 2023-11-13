@@ -102,9 +102,45 @@ $(document).ready(function(){initNavTree('io__info_8C.html',''); initResizable()
 <code>#include &lt;<a class="el" href="Ioss__Sort_8h_source.html">Ioss_Sort.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Ioss__StructuredBlock_8h_source.html">Ioss_StructuredBlock.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Ioss__ZoneConnectivity_8h_source.html">Ioss_ZoneConnectivity.h</a>&gt;</code><br />
+<code>#include &lt;fmt/core.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="tokenize_8h_source.html">tokenize.h</a>&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;fmt/format.h&gt;</code><br />
-<code>#include &lt;fmt/ostream.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__Assembly_8h_source.html">Ioss_Assembly.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__Blob_8h_source.html">Ioss_Blob.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__BoundingBox_8h_source.html">Ioss_BoundingBox.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__CoordinateFrame_8h_source.html">Ioss_CoordinateFrame.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__DBUsage_8h_source.html">Ioss_DBUsage.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__DataSize_8h_source.html">Ioss_DataSize.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__DatabaseIO_8h_source.html">Ioss_DatabaseIO.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__EdgeBlock_8h_source.html">Ioss_EdgeBlock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__EdgeSet_8h_source.html">Ioss_EdgeSet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__ElementBlock_8h_source.html">Ioss_ElementBlock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__ElementSet_8h_source.html">Ioss_ElementSet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__ElementTopology_8h_source.html">Ioss_ElementTopology.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__FaceBlock_8h_source.html">Ioss_FaceBlock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__FaceSet_8h_source.html">Ioss_FaceSet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__Field_8h_source.html">Ioss_Field.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__GroupingEntity_8h_source.html">Ioss_GroupingEntity.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__IOFactory_8h_source.html">Ioss_IOFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__NodeBlock_8h_source.html">Ioss_NodeBlock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__NodeSet_8h_source.html">Ioss_NodeSet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__ParallelUtils_8h_source.html">Ioss_ParallelUtils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__Property_8h_source.html">Ioss_Property.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__PropertyManager_8h_source.html">Ioss_PropertyManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__Region_8h_source.html">Ioss_Region.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__SideBlock_8h_source.html">Ioss_SideBlock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__SideSet_8h_source.html">Ioss_SideSet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__SurfaceSplit_8h_source.html">Ioss_SurfaceSplit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__Utils_8h_source.html">Ioss_Utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ioss__VariableType_8h_source.html">Ioss_VariableType.h</a>&quot;</code><br />
+<code>#include &quot;exodusII.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="info__interface_8h_source.html">info_interface.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for io_info.C:</div>
 <div class="dyncontent">

@@ -1,9 +1,5 @@
 var group__ResultsData =
 [
-    [ "ex__get_nodal_var_multi_time", "group__ResultsData.html#gaae3cb27aafc1015c3c74688dd6524209", null ],
-    [ "ex__get_partial_nodal_var", "group__ResultsData.html#ga70d0037bf3c12d4ba5ab09eb956e19e9", null ],
-    [ "ex__put_nodal_var_time", "group__ResultsData.html#ga2758464fd8a0f2c4fabfdd931247185f", null ],
-    [ "ex__put_partial_nodal_var", "group__ResultsData.html#gaafda0a407402616fde3c5e653a2a79c1", null ],
     [ "ex_get_all_times", "group__ResultsData.html#ga25705723a510ee4c6b23959925eca4ec", null ],
     [ "ex_get_glob_vars", "group__ResultsData.html#gaab1f1155881d0b4d3ac442472297daab", null ],
     [ "ex_get_n_elem_var", "group__ResultsData.html#ga97dffa4a9104d4c4d5a6738ae20c171b", null ],
@@ -26,7 +22,7 @@ var group__ResultsData =
     [ "ex_get_var_names", "group__ResultsData.html#gac69d69f51ed0ff5fca3956b926b1c880", null ],
     [ "ex_get_var_param", "group__ResultsData.html#ga67d65beae3a94e472a7c6b1982644bd4", null ],
     [ "ex_get_var_tab", "group__ResultsData.html#ga49a986d22202a725bf914babcc900693", null ],
-    [ "ex_get_var_time", "group__ResultsData.html#ga65af6a2020057488a89b28238993562b", null ],
+    [ "ex_get_var_time", "group__ResultsData.html#ga1344e880cc9fcf3fc46615c2ed4f857f", null ],
     [ "ex_get_variable_name", "group__ResultsData.html#gabd0cc67d7e853e95c257878adbfff961", null ],
     [ "ex_get_variable_names", "group__ResultsData.html#ga91a1893c2e7278baa3cf9d0c89875a0b", null ],
     [ "ex_get_variable_param", "group__ResultsData.html#gaf2a7063b5637ebee5cc50af7bed8de94", null ],
@@ -51,5 +47,9 @@ var group__ResultsData =
     [ "ex_put_var_tab", "group__ResultsData.html#ga4f86c43fd1fa75b2e994271851b59d7a", null ],
     [ "ex_put_variable_name", "group__ResultsData.html#ga223eafff4a08dd9b2264a82df11050b3", null ],
     [ "ex_put_variable_names", "group__ResultsData.html#ga2328bf98ac13a64d14c722dd7d12a695", null ],
-    [ "ex_put_variable_param", "group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91", null ]
+    [ "ex_put_variable_param", "group__ResultsData.html#gac8b76bb57f2ab1e4cbca7aef29b6ae91", null ],
+    [ "exi_get_nodal_var_multi_time", "group__ResultsData.html#gacaefbb5140e8fb38bb3f075a140ae5fc", null ],
+    [ "exi_get_partial_nodal_var", "group__ResultsData.html#ga53cc30ef3bfb5af6dacc3cef4009caec", null ],
+    [ "exi_put_nodal_var_time", "group__ResultsData.html#gaf376c2ee916bc1b9bc22a68283440ee6", null ],
+    [ "exi_put_partial_nodal_var", "group__ResultsData.html#ga2ef54d556bdd99996a99d2ab84383e0f", null ]
 ];

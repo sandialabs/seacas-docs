@@ -4,7 +4,7 @@ var searchData=
   ['the_20compression_20name_20size_20and_20integer_20size_1',['Variables controlling the compression, name size, and integer size.',['../group__FileOptions.html',1,'']]],
   ['the_20exodus_20library_2',['the exodus library',['../large_model.html#large_model_',1,'Large model modifications to the Exodus library'],['../large_model.html',1,'Large model modifications to the Exodus library']]],
   ['the_20file_20creation_20mode_3',['Variables controlling the file creation mode.',['../group__FileVars.html',1,'']]],
-  ['time_5fvarid_4',['time_varid',['../structex____file__item.html#a02f7a605d9ea52f2d1c59cffc72c1cf4',1,'ex__file_item']]],
+  ['time_5fvarid_4',['time_varid',['../structexi__file__item.html#a1818be6af1536bae7a93daf861b151b8',1,'exi_file_item']]],
   ['title_5',['title',['../structex__init__params.html#af78401fc73d373f707c6845cf4b7b451',1,'ex_init_params']]],
   ['to_20exodus_20api_20functions_6',['Mapping of nemesis API functions to Exodus API functions',['../nemesis-mapping.html',1,'']]],
   ['to_20the_20exodus_20library_7',['to the exodus library',['../large_model.html#large_model_',1,'Large model modifications to the Exodus library'],['../large_model.html',1,'Large model modifications to the Exodus library']]],

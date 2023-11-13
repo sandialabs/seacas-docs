@@ -358,7 +358,7 @@ var exodusII_8h =
     [ "ex_get_var_names", "group__ResultsData.html#gac69d69f51ed0ff5fca3956b926b1c880", null ],
     [ "ex_get_var_param", "group__ResultsData.html#ga67d65beae3a94e472a7c6b1982644bd4", null ],
     [ "ex_get_var_tab", "group__ResultsData.html#ga49a986d22202a725bf914babcc900693", null ],
-    [ "ex_get_var_time", "group__ResultsData.html#ga65af6a2020057488a89b28238993562b", null ],
+    [ "ex_get_var_time", "group__ResultsData.html#ga1344e880cc9fcf3fc46615c2ed4f857f", null ],
     [ "ex_get_variable_name", "group__ResultsData.html#gabd0cc67d7e853e95c257878adbfff961", null ],
     [ "ex_get_variable_names", "group__ResultsData.html#ga91a1893c2e7278baa3cf9d0c89875a0b", null ],
     [ "ex_get_variable_param", "group__ResultsData.html#gaf2a7063b5637ebee5cc50af7bed8de94", null ],

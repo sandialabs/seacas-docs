@@ -1,4 +1,4 @@
 var ex__get__glob__var__time__int_8c =
 [
-    [ "ex__get_glob_var_time", "group__Internal.html#ga3cf4f50569bb1666cd2d77b5f6409713", null ]
+    [ "exi_get_glob_var_time", "group__Internal.html#gaa70d977e0f1cd3b13ac6a64fb1f3a7f7", null ]
 ];

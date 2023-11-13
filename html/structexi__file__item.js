@@ -1,0 +1,24 @@
+var structexi__file__item =
+[
+    [ "assembly_count", "structexi__file__item.html#a984deed15461b0529554c566e6c2fe04", null ],
+    [ "blob_count", "structexi__file__item.html#a8e3c1576073b01291694581a0aef5eaa", null ],
+    [ "compression_algorithm", "structexi__file__item.html#ab8f47b61c4ac1b324cece3deed3b749f", null ],
+    [ "compression_level", "structexi__file__item.html#aa4d66e31d6c7e47da9df3ad4b620d4f5", null ],
+    [ "file_id", "structexi__file__item.html#a0a4d4b47f4d15014dafc6bb848ee7785", null ],
+    [ "file_type", "structexi__file__item.html#ac74cd5a63043238a35bac9263304323e", null ],
+    [ "has_edges", "structexi__file__item.html#a7e58f8386e2ed1e34a93f920674241d3", null ],
+    [ "has_elems", "structexi__file__item.html#a1514c2f7cb9b8333844c9a42eb863fa4", null ],
+    [ "has_faces", "structexi__file__item.html#afbd12e18d0f30d49ea31dde106d5b07e", null ],
+    [ "has_nodes", "structexi__file__item.html#a424b4c9830724f4da3edc5179832a83d", null ],
+    [ "int64_status", "structexi__file__item.html#ac824d9ad8f45ae3bf8b305692120578f", null ],
+    [ "is_hdf5", "structexi__file__item.html#a6c83d780390bfb1a029a23eccab07ac3", null ],
+    [ "is_parallel", "structexi__file__item.html#a5845bacba50a93511f29b5b7c2472d1a", null ],
+    [ "is_pnetcdf", "structexi__file__item.html#ab7843d8f47b008ef892a0b26e081f7a8", null ],
+    [ "is_write", "structexi__file__item.html#a062c11af9b9e065d684bba6ac521819c", null ],
+    [ "maximum_name_length", "structexi__file__item.html#aac29bd2da12cab67363270d6c4dd9076", null ],
+    [ "netcdf_type_code", "structexi__file__item.html#a330e00d33396137c256819aad93b817f", null ],
+    [ "next", "structexi__file__item.html#a152f5bc5e143a7ba41bbd07f6960f28a", null ],
+    [ "shuffle", "structexi__file__item.html#ac8758aabdb253bd72a1f769232c8bdaa", null ],
+    [ "time_varid", "structexi__file__item.html#a1818be6af1536bae7a93daf861b151b8", null ],
+    [ "user_compute_wordsize", "structexi__file__item.html#a06bf181f9551699ae3252fddee2b4d4e", null ]
+];
