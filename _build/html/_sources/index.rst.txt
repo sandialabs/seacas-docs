@@ -111,12 +111,18 @@ Two python modules are available for accessing exodus databases:
 IOSS Library
 ------------
 
-The `IO Subsystem <../../ioss_html/index.html>`_ (IOSS) is a high-level database 
-access API that has been designed to give a format-agnostic interface
-to I/O capabilities with multiple format-specic backends to output the
-data to a particular format. Currently supported input and output
-formats are Exodus, CGNS, HeartBeat, History, Generated, ADIOS2,
-FAODEL. 
+The `IO Subsystem <../../ioss_html/index.html>`_ (IOSS) is a
+high-level database access API that has been designed to give a
+format-agnostic interface to I/O capabilities with multiple
+format-specic backends to output the data to a particular
+format. Currently supported input and output formats are Exodus, CGNS,
+HeartBeat, History, `Generated
+<../../ioss_html/classIogn_1_1GeneratedMesh.html>`_, `Pamgen
+<../../pamgen.pdf>`_, TextMesh, `ADIOS2
+<https://adios2.readthedocs.io/en/v2.9.2/>`_, `FAODEL
+<https://github.com/sandialabs/faodel>`_, `Catalyst
+<https://catalyst-in-situ.readthedocs.io/en/latest/introduction.html>`_,
+Null.
 
 It has been designed to support multiple database formats
 simultaneously. It is possible to have the finite element model read
