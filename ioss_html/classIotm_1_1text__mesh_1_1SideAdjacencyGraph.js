@@ -34,7 +34,7 @@ var classIotm_1_1text__mesh_1_1SideAdjacencyGraph =
     [ "get_local_and_aura_elements", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html#a701e4f158e918319efea626409c50e16", null ],
     [ "get_num_elements", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html#a0c690e860bbf636439850b87be7177c4", null ],
     [ "get_permutation", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html#a8421817eb94aa334eadeec7ac705f021", null ],
-    [ "get_permutation", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html#a1bfa59b6087b60f8a10ba56c9d9bd7a7", null ],
+    [ "get_permutation", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html#a44b8b1ed22207d88b82447f796e5ddb1", null ],
     [ "get_positive_permutation", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html#ab3e588691b24de2a55c281be41fe10d7", null ],
     [ "get_reciprocity", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html#a3ea4c390c3d1039a49253b763f226421", null ],
     [ "get_side_nodes", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html#aa077683be2c1b75b1a7aec9269ea5149", null ],

@@ -1,7 +1,5 @@
 var NAVTREEINDEX88 =
 {
-"structIoss_1_1ZoneConnectivity.html":[4,0,91,242],
-"structIoss_1_1ZoneConnectivity.html#a0a9eff4efab2e43c4007170f0d9ee539":[4,0,91,242,23],
 "structIoss_1_1ZoneConnectivity.html#a0a9eff4efab2e43c4007170f0d9ee539":[3,0,144,244,23],
 "structIoss_1_1ZoneConnectivity.html#a166970ec2e9cf1200c5bdce3d751ff40":[4,0,91,242,24],
 "structIoss_1_1ZoneConnectivity.html#a166970ec2e9cf1200c5bdce3d751ff40":[3,0,144,244,24],
@@ -249,5 +247,7 @@ var NAVTREEINDEX88 =
 "structIotm_1_1text__mesh_1_1SidesetData.html#a6844eb0481b568eb8de40089639bebcd":[3,0,146,0,14,5],
 "structIotm_1_1text__mesh_1_1SidesetData.html#a9201cc5cb4a58a61084cce98809865ad":[4,0,93,0,14,7],
 "structIotm_1_1text__mesh_1_1SidesetData.html#a9201cc5cb4a58a61084cce98809865ad":[3,0,146,0,14,7],
-"structIotm_1_1text__mesh_1_1SidesetData.html#a9a72adbc0a745df0db584cfe1e32d7f4":[4,0,93,0,14,2]
+"structIotm_1_1text__mesh_1_1SidesetData.html#a9a72adbc0a745df0db584cfe1e32d7f4":[4,0,93,0,14,2],
+"structIotm_1_1text__mesh_1_1SidesetData.html#a9a72adbc0a745df0db584cfe1e32d7f4":[3,0,146,0,14,2],
+"structIotm_1_1text__mesh_1_1SidesetData.html#ac526b915003c73f3e49e37843d4ef9f4":[4,0,93,0,14,6]
 };
