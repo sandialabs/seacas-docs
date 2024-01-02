@@ -9,8 +9,8 @@ var namespacetsl_1_1detail__robin__hash =
     [ "is_power_of_two_policy< tsl::rh::power_of_two_growth_policy< GrowthFactor > >", "structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy_3_01tsl_1_1rh_1_1power__of__two__a1a28c2963ea7bfc09f131241d081ae6.html", null ],
     [ "make_void", "structtsl_1_1detail__robin__hash_1_1make__void.html", "structtsl_1_1detail__robin__hash_1_1make__void" ],
     [ "robin_hash", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", "classtsl_1_1detail__robin__hash_1_1robin__hash" ],
-    [ "slz_size_type", "namespacetsl_1_1detail__robin__hash.html#aa1ce0cd2d4fd92064f653a30575a0ca8", null ],
-    [ "truncated_hash_type", "namespacetsl_1_1detail__robin__hash.html#abdab59d9a567358f21b7a030ba4818b9", null ],
+    [ "slz_size_type", "namespacetsl_1_1detail__robin__hash.html#a6d00e79ed73534d1774295882a4775cb", null ],
+    [ "truncated_hash_type", "namespacetsl_1_1detail__robin__hash.html#aa1161224df4ba993bf2f2ca53991ce68", null ],
     [ "clamp", "namespacetsl_1_1detail__robin__hash.html#ac57ab5adf9b472522714229005f7d938", null ],
     [ "deserialize_value", "namespacetsl_1_1detail__robin__hash.html#a746d2a15982651aacf9fe6388d746fc8", null ],
     [ "numeric_cast", "namespacetsl_1_1detail__robin__hash.html#a31632fbf0dad3522b6bf7552061f9768", null ]

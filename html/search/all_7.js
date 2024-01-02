@@ -4,7 +4,7 @@ var searchData=
   ['cdf5_1',['CDF5',['../exodus_formats.html#cdf5',1,'']]],
   ['check_5fvalid_5fside_2',['check_valid_side',['../ex__get__side__set__node__list_8c.html#a610cf65d064f4c9b9b5ecf9940e6bfee',1,'ex_get_side_set_node_list.c']]],
   ['circle_20and_20sphere_3',['Circle and Sphere',['../element_types.html#circle',1,'']]],
-  ['classic_4',['classic',['../exodus_formats.html#nc4',1,'Netcdf-4 Classic'],['../exodus_formats.html#nc4nc',1,'Netcdf-4 Non-Classic'],['../exodus_formats.html#normal',1,'Normal, or Classic']]],
+  ['classic_4',['Classic',['../exodus_formats.html#nc4',1,'Netcdf-4 Classic'],['../exodus_formats.html#nc4nc',1,'Netcdf-4 Non-Classic'],['../exodus_formats.html#normal',1,'Normal, or Classic']]],
   ['codes_20exerrval_20return_20values_5',['Error return codes - #exerrval return values',['../group__ErrorReturnCodes.html',1,'']]],
   ['communications_20maps_20routines_6',['Communications Maps Routines',['../nemesis-mapping.html#comm',1,'']]],
   ['compression_20name_20length_20file_20type_7',['Database Options (Compression, Name Length, File Type)',['../index.html#db_options',1,'']]],

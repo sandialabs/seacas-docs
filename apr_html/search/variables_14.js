@@ -7,5 +7,5 @@ var searchData=
   ['version_5fdate_4',['version_date',['../namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a82f92daca6002e42b9d42a047af790f5',1,'anonymous_namespace{apr_aprepro.cc}']]],
   ['version_5fshort_5',['version_short',['../namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#abd698e895dc78dbe29bf962b6463246e',1,'anonymous_namespace{apr_aprepro.cc}']]],
   ['version_5fstring_6',['version_string',['../namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a3f238c29108c4e19f0a26d3fc103b480',1,'anonymous_namespace{apr_aprepro.cc}']]],
-  ['vname_7',['vname',['../structsvar__init.html#a6b615e3c0955f52765b834d464dd0ddd',1,'svar_init::vname'],['../structvar__init.html#aabf3adf028b111d7a09e588b445e2929',1,'var_init::vname']]]
+  ['vname_7',['vname',['../structvar__init.html#aabf3adf028b111d7a09e588b445e2929',1,'var_init::vname'],['../structsvar__init.html#a6b615e3c0955f52765b834d464dd0ddd',1,'svar_init::vname']]]
 ];

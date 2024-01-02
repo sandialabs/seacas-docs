@@ -16,7 +16,7 @@ var searchData=
   ['get_5fvariable_5fnames_13',['get_variable_names',['../classSEAMS_1_1Aprepro.html#a97fdcabbf11ebd8f4bdb51a996c39751',1,'SEAMS::Aprepro']]],
   ['get_5fwarning_5fcount_14',['get_warning_count',['../classSEAMS_1_1Aprepro.html#af9f57482e3e553824e3c7f07f37e1035',1,'SEAMS::Aprepro']]],
   ['getline_5fint_15',['getline_int',['../namespaceSEAMS.html#ad42e7e54b280e46bc33cff5f60df35bc',1,'SEAMS']]],
-  ['getsym_16',['getsym',['../classSEAMS_1_1Aprepro.html#a7bcef598f70b0f55d79bf0a3d425ad80',1,'SEAMS::Aprepro::getsym(const std::string &amp;sym_name) const'],['../classSEAMS_1_1Aprepro.html#a7aa74eeb06ef5812d0dbb6418e38667e',1,'SEAMS::Aprepro::getsym(const char *sym_name) const'],['../structSEAMS_1_1Symtable.html#abd6605ac5c9a49765d4a2cfa0f3f2575',1,'SEAMS::Symtable::getsym()']]],
+  ['getsym_16',['getsym',['../structSEAMS_1_1Symtable.html#abd6605ac5c9a49765d4a2cfa0f3f2575',1,'SEAMS::Symtable::getsym()'],['../classSEAMS_1_1Aprepro.html#a7aa74eeb06ef5812d0dbb6418e38667e',1,'SEAMS::Aprepro::getsym(const char *sym_name) const'],['../classSEAMS_1_1Aprepro.html#a7bcef598f70b0f55d79bf0a3d425ad80',1,'SEAMS::Aprepro::getsym(const std::string &amp;sym_name) const']]],
   ['gl_5faddchar_17',['gl_addchar',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#aa12d3ca3fe0de3b43edc9c2ecf07b1ca',1,'anonymous_namespace{apr_getline.cc}']]],
   ['gl_5fbeep_18',['gl_beep',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a215cfd3e249bba0cdbb12c480a886420',1,'anonymous_namespace{apr_getline.cc}']]],
   ['gl_5fbuf_19',['gl_buf',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a3aae9ceda1f9411107024e869df7ac99',1,'anonymous_namespace{apr_getline.cc}']]],
@@ -50,6 +50,7 @@ var searchData=
   ['gl_5ftranspose_47',['gl_transpose',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a1dae8c9a5feb76c7b4a8c9e0d68c3360',1,'anonymous_namespace{apr_getline.cc}']]],
   ['gl_5fwidth_48',['gl_width',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#ae14af29f591eea93c375ce6d22129817',1,'anonymous_namespace{apr_getline.cc}']]],
   ['gl_5fyank_49',['gl_yank',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#acd4a6f3cc092db2903c0c562f763b47e',1,'anonymous_namespace{apr_getline.cc}']]],
-  ['green_50',['green',['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6ea22dd2f094726e007b5eb334dd2dc4502',1,'trmclr::Background::GREEN'],['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9aba23eaacfa5f461971f5e0f361a4c32586',1,'trmclr::Foreground::GREEN'],['../namespacetrmclr.html#ab7246ef4a6d62c1069d7c70a2050cae0',1,'trmclr::green()']]],
-  ['gt_51',['GT',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfa1d29dc08d2f2e70aa1a3bd18e9284703',1,'SEAMS::Parser::token']]]
+  ['green_50',['GREEN',['../structtrmclr_1_1Foreground.html#a088ba7c7b6d11d9a80539f29c742a9aba23eaacfa5f461971f5e0f361a4c32586',1,'trmclr::Foreground::GREEN'],['../structtrmclr_1_1Background.html#aa3184fac24ba683ee9833b98f2b97a6ea22dd2f094726e007b5eb334dd2dc4502',1,'trmclr::Background::GREEN']]],
+  ['green_51',['green',['../namespacetrmclr.html#ab7246ef4a6d62c1069d7c70a2050cae0',1,'trmclr']]],
+  ['gt_52',['GT',['../structSEAMS_1_1Parser_1_1token.html#a39dc2815ceff2b7f2230af6b35b056bfa1d29dc08d2f2e70aa1a3bd18e9284703',1,'SEAMS::Parser::token']]]
 ];

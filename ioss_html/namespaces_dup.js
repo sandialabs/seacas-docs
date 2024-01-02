@@ -139,8 +139,8 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_Beam3.C}", "namespaceanonymous__namespace_02Ioss__Beam3_8C_03.html", "namespaceanonymous__namespace_02Ioss__Beam3_8C_03" ],
     [ "anonymous_namespace{Ioss_Beam4.C}", "namespaceanonymous__namespace_02Ioss__Beam4_8C_03.html", "namespaceanonymous__namespace_02Ioss__Beam4_8C_03" ],
     [ "anonymous_namespace{Ioss_ChainGenerator.C}", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html", [
-      [ "connectivity_t", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#aba4ec55ec15f9fd6513c61d788d9a993", null ],
-      [ "front_t", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a448d55d72d429603b43fc07a2ab75670", null ],
+      [ "connectivity_t", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#af1c81bab00e23baaaa15e149097b8f06", null ],
+      [ "front_t", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#aa402c10aa87669cacdec216ea1d8f7f5", null ],
       [ "generate_face_connectivity", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a7289f376a39ee35a3d5ebc42cb0fa888", null ],
       [ "get_adjacent_blocks", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a0161ca40a9e6ef0fe7b195946d31235d", null ],
       [ "get_line_front", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a7eef2539bdae9038c1f6938d499dee48", null ],
@@ -511,7 +511,7 @@ var namespaces_dup =
       [ "version", "namespaceanonymous__namespace_02struc__to__unstruc_8C_03.html#a42dded60d1ffdea09c9302a5a535d801", null ]
     ] ],
     [ "anonymous_namespace{UnitTestElementBlockBatchRead.C}", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html", [
-      [ "ElemBlockFunc", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#ac41085f860b8758a7705bc9cd5c39569", null ],
+      [ "ElemBlockFunc", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a5ad7719deed27b365c637bdbdbe3ccd7", null ],
       [ "define_model", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a41db306a259ca0a36718ca2fb8703464", null ],
       [ "define_transient", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#aab9412b8f1ee3d408d87053e4e68db90", null ],
       [ "do_connectivity_timing", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#aef869a2c44d3aa796a756520353d8315", null ],

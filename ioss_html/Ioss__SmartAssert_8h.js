@@ -11,7 +11,7 @@ var Ioss__SmartAssert_8h =
     [ "SMART_ASSERT_DEBUG", "Ioss__SmartAssert_8h.html#a5ea2c30dabb32420373ded0fe61ee1bd", null ],
     [ "SMART_ASSERT_OP", "Ioss__SmartAssert_8h.html#a6f86f2195154c96ad65a91030960bc9e", null ],
     [ "SMART_VERIFY", "Ioss__SmartAssert_8h.html#a87a5fdcb3b6e2bf10ea17499b5b19288", null ],
-    [ "assert_func", "Ioss__SmartAssert_8h.html#a2ec3f8ca44864e11483aa40310e6b10c", null ],
+    [ "assert_func", "Ioss__SmartAssert_8h.html#a6dd315258d7fecf2b1f40f182838f923", null ],
     [ "default_debug_handler", "Ioss__SmartAssert_8h.html#a4cbf56e7d071136b02c372b702b5bf35", null ],
     [ "default_error_handler", "Ioss__SmartAssert_8h.html#a83018783c725b144d2b61f091299ff0f", null ],
     [ "default_fatal_handler", "Ioss__SmartAssert_8h.html#a0a8de158958fa4f914dacdb3f61f1e42", null ],

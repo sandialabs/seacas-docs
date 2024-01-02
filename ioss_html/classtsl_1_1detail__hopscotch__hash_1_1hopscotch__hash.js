@@ -2,7 +2,7 @@ var classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash =
 [
     [ "hopscotch_iterator", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator.html", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator" ],
     [ "allocator_type", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a8af583783f638a3faac62c52b876aa67", null ],
-    [ "buckets_allocator", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#af8440c659f3c1c4e10e6533c76d28a4a", null ],
+    [ "buckets_allocator", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a1af5a23d0f23a62aa205dee1eb4fcaa6", null ],
     [ "buckets_container_type", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a1947dd27d13a4b89f1f190bfb725b6f2", null ],
     [ "const_iterator", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a2af6f88c2b254b2c9ff83c70eea7c952", null ],
     [ "const_iterator_buckets", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a5c664d68c2cceaedef604b815ab73cca", null ],
@@ -12,7 +12,7 @@ var classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash =
     [ "difference_type", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a3a8a8e910088e7bdbfe63be530d31956", null ],
     [ "has_mapped_type", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a7b74cda3deb9004cb0cf5acc60b0ef61", null ],
     [ "hasher", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a0ffe6a6aaa0794dcf4979fc23e583462", null ],
-    [ "hopscotch_bucket", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#ad14f1b1b93338f30c75c230d201f0e5d", null ],
+    [ "hopscotch_bucket", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#aa77bb7e707bc22b0df98d70837257677", null ],
     [ "iterator", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#ab697c644e6dec536d6ab028ba085b591", null ],
     [ "iterator_buckets", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a34bbda54c91fb609c1848a25763f17a5", null ],
     [ "iterator_overflow", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a7034a1dd75c5960b2dd0b7ddb04e4bf0", null ],

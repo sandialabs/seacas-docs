@@ -10,8 +10,8 @@ var robin__hash_8h =
     [ "tsl::detail_robin_hash::bucket_entry< ValueType, StoreHash >", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html", "classtsl_1_1detail__robin__hash_1_1bucket__entry" ],
     [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", "classtsl_1_1detail__robin__hash_1_1robin__hash" ],
     [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::robin_iterator< IsConst >", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator.html", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator" ],
-    [ "slz_size_type", "robin__hash_8h.html#aa1ce0cd2d4fd92064f653a30575a0ca8", null ],
-    [ "truncated_hash_type", "robin__hash_8h.html#abdab59d9a567358f21b7a030ba4818b9", null ],
+    [ "slz_size_type", "robin__hash_8h.html#a6d00e79ed73534d1774295882a4775cb", null ],
+    [ "truncated_hash_type", "robin__hash_8h.html#aa1161224df4ba993bf2f2ca53991ce68", null ],
     [ "clamp", "robin__hash_8h.html#ac57ab5adf9b472522714229005f7d938", null ],
     [ "deserialize_value", "robin__hash_8h.html#a746d2a15982651aacf9fe6388d746fc8", null ],
     [ "numeric_cast", "robin__hash_8h.html#a31632fbf0dad3522b6bf7552061f9768", null ]

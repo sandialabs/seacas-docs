@@ -204,8 +204,9 @@ var searchData=
   ['var_5fwhole_5ftime_201',['VAR_WHOLE_TIME',['../group__Internal.html#gab92ff0aa2b95b6885f375230c37bafb4',1,'exodusII_int.h']]],
   ['variable_20attribute_20and_20entity_20block_20set_20names_202',['Variable, Attribute, and Entity Block/Set Names',['../index.html#names',1,'']]],
   ['variable_20routines_203',['Variable Routines',['../nemesis-mapping.html#variable',1,'']]],
-  ['variables_20controlling_20storage_20of_20reduction_20variables_204',['Variables controlling storage of reduction variables',['../group__ReductionVariables.html',1,'']]],
-  ['variables_20controlling_20the_20compression_20name_20size_20and_20integer_20size_205',['Variables controlling the compression, name size, and integer size.',['../group__FileOptions.html',1,'']]],
-  ['variables_20controlling_20the_20file_20creation_20mode_206',['Variables controlling the file creation mode.',['../group__FileVars.html',1,'']]],
-  ['void_5fint_207',['void_int',['../exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797',1,'exodusII.h']]]
+  ['variables_204',['Variables controlling storage of reduction variables',['../group__ReductionVariables.html',1,'']]],
+  ['variables_20controlling_20storage_20of_20reduction_20variables_205',['Variables controlling storage of reduction variables',['../group__ReductionVariables.html',1,'']]],
+  ['variables_20controlling_20the_20compression_20name_20size_20and_20integer_20size_206',['Variables controlling the compression, name size, and integer size.',['../group__FileOptions.html',1,'']]],
+  ['variables_20controlling_20the_20file_20creation_20mode_207',['Variables controlling the file creation mode.',['../group__FileVars.html',1,'']]],
+  ['void_5fint_208',['void_int',['../exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797',1,'exodusII.h']]]
 ];

@@ -1,7 +1,7 @@
 var classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket =
 [
     [ "bucket_hash", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a2cd697475827d48aae1230897cefd8c5", null ],
-    [ "neighborhood_bitmap", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a600a2172582060b21f2f8ceabd18db83", null ],
+    [ "neighborhood_bitmap", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a88f133ed7930ae287142a82077757141", null ],
     [ "storage", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a79003bdaa8ee81bc1bb8b2cb44c6d930", null ],
     [ "value_type", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#a889aa1e71505d643c8452240b9c7a380", null ],
     [ "hopscotch_bucket", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html#abf75d64ec78f8b004caa807e2f2747e9", null ],

@@ -1,6 +1,6 @@
 var structAdjacency =
 [
-    [ "NeighborVector", "structAdjacency.html#aec5bee4de6589fe51976595dff701915", null ],
+    [ "NeighborVector", "structAdjacency.html#a25d2e8f3ed3890c161097e8b71b570db", null ],
     [ "SimpleNeighborVector", "structAdjacency.html#a3a803f0e524157c2a08878a6b69511e4", null ],
     [ "Adjacency", "structAdjacency.html#a9c80192c7e83f2be480803a92215b510", null ],
     [ "Adjacency", "structAdjacency.html#af59fb38a2850545b06dd2d469164c5bb", null ],

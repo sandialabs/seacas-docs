@@ -23,7 +23,7 @@ var searchData=
   ['storage_20of_20reduction_20variables_20',['Variables controlling storage of reduction variables',['../group__ReductionVariables.html',1,'']]],
   ['string_20lengths_21',['maximum string lengths;',['../group__StringLengths.html',1,'']]],
   ['stringify_22',['STRINGIFY',['../ex__copy_8c.html#a6df1d22fb5f09eccc23b9f399670cfd7',1,'ex_copy.c']]],
-  ['structure_23',['structure',['../group__Internal.html#autotoc_md9',1,'ptr --------&amp;mdash;&gt; list item structure'],['../group__Internal.html#autotoc_md10',1,'ptr --------&amp;mdash;&gt; list item structure'],['../group__Internal.html#autotoc_md11',1,'ptr --------&amp;mdash;&gt; list item structure']]],
+  ['structure_23',['Structure',['../group__Internal.html#autotoc_md9',1,'ptr -----------&gt; list item structure'],['../group__Internal.html#autotoc_md10',1,'ptr -----------&gt; list item structure'],['../group__Internal.html#autotoc_md11',1,'ptr -----------&gt; list item structure']]],
   ['structures_20used_20by_20external_20api_20functions_24',['Structures used by external API functions.',['../group__APIStructs.html',1,'']]],
   ['subset_20routines_25',['Nodeset, Sideset &amp; Element Block Subset Routines',['../nemesis-mapping.html#subset',1,'']]],
   ['support_26',['Polyhedral Element Support',['../polyhedra.html',1,'']]]

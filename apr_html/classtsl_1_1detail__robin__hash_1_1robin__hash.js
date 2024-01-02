@@ -3,7 +3,7 @@ var classtsl_1_1detail__robin__hash_1_1robin__hash =
     [ "robin_iterator", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator.html", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator" ],
     [ "allocator_type", "classtsl_1_1detail__robin__hash_1_1robin__hash.html#aeda2cef10fe15ff7953e6aa0433ada6a", null ],
     [ "bucket_entry", "classtsl_1_1detail__robin__hash_1_1robin__hash.html#a8ff6168096f15f7e65b4b4daae46193d", null ],
-    [ "buckets_allocator", "classtsl_1_1detail__robin__hash_1_1robin__hash.html#a94e3aff310a7ab3c49f438960177e535", null ],
+    [ "buckets_allocator", "classtsl_1_1detail__robin__hash_1_1robin__hash.html#ae146eb8695d1391fe1dd69e8ee0b1790", null ],
     [ "buckets_container_type", "classtsl_1_1detail__robin__hash_1_1robin__hash.html#a92947203a2e56f9d68196e2454d1ffe5", null ],
     [ "const_iterator", "classtsl_1_1detail__robin__hash_1_1robin__hash.html#ad8c3296c96efcd99a9a57b647e32f573", null ],
     [ "const_pointer", "classtsl_1_1detail__robin__hash_1_1robin__hash.html#a0d1686725ed315fe2b2d1bf687b2f1fe", null ],
