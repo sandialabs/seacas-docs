@@ -46,7 +46,6 @@ var classIoex_1_1BaseDatabaseIO =
     [ "get_format", "classIoex_1_1BaseDatabaseIO.html#aeace7a1f43103af6d961a3f012607ca2", null ],
     [ "get_nodeblocks", "classIoex_1_1BaseDatabaseIO.html#abfa2d712e1ac691291a28694f48bb268", null ],
     [ "get_reduction_field", "classIoex_1_1BaseDatabaseIO.html#a90ad16b47387f00eb4f0e1391ea93efd", null ],
-    [ "get_step_times_nl", "classIoex_1_1BaseDatabaseIO.html#aefb21e60461ab8d9f84bcd6738d45da8", null ],
     [ "handle_block_ids", "classIoex_1_1BaseDatabaseIO.html#a4da38f8804fe43eed717bec7634801ae", null ],
     [ "handle_output_file", "classIoex_1_1BaseDatabaseIO.html#a103b5ab2a336d33ae57d11efe0849b8f", null ],
     [ "int_byte_size_db", "classIoex_1_1BaseDatabaseIO.html#aa7e36436eb297101fa6e35354d036c06", null ],

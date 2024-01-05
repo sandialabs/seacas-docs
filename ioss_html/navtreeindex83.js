@@ -1,7 +1,5 @@
 var NAVTREEINDEX83 =
 {
-"namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569af644d2e3091c342ab78b12da1fcb06dc":[3,0,129,2,1,0,0],
-"namespacedoctest_1_1detail_1_1types.html":[3,0,129,2,2],
 "namespacedoctest__detail__test__suite__ns.html":[3,0,130],
 "namespacedoctest__detail__test__suite__ns.html#a63d04c2e0ba35dff1e33cf0a24ec66c8":[3,0,130,0],
 "namespaceioss__region__report.html":[3,0,145],
@@ -249,5 +247,7 @@ var NAVTREEINDEX83 =
 "structIoad_1_1DatabaseIO_1_1FieldInfoType.html#a6a1e230d1440d052f616a8c68655de0e":[3,0,132,1,1,3],
 "structIoad_1_1DatabaseIO_1_1FieldInfoType.html#a6bddca9ada52af94da64a870aa0f63b8":[4,0,79,1,1,1],
 "structIoad_1_1DatabaseIO_1_1FieldInfoType.html#a6bddca9ada52af94da64a870aa0f63b8":[3,0,132,1,1,1],
-"structIoad_1_1DatabaseIO_1_1FieldInfoType.html#a9bde4273c717b3d2d8fa06160f05a4dd":[3,0,132,1,1,0]
+"structIoad_1_1DatabaseIO_1_1FieldInfoType.html#a9bde4273c717b3d2d8fa06160f05a4dd":[3,0,132,1,1,0],
+"structIoad_1_1DatabaseIO_1_1FieldInfoType.html#a9bde4273c717b3d2d8fa06160f05a4dd":[4,0,79,1,1,0],
+"structIoad_1_1DatabaseIO_1_1FieldInfoType.html#aafb2deb8cb9bbbc8943fd75337297c19":[3,0,132,1,1,6]
 };

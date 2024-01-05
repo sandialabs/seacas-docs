@@ -1,7 +1,5 @@
 var NAVTREEINDEX96 =
 {
-"structdoctest_1_1CurrentTestCaseStats.html#a29b1963f1d624d9f939f404726298f48":[3,0,129,9,3],
-"structdoctest_1_1CurrentTestCaseStats.html#a2c77d43c1fbab06710da7b5bbba4f3ab":[3,0,129,9,4],
 "structdoctest_1_1CurrentTestCaseStats.html#a2c77d43c1fbab06710da7b5bbba4f3ab":[4,0,77,6,4],
 "structdoctest_1_1CurrentTestCaseStats.html#a2fb52eed7bcef7322a816f418f0fb942":[4,0,77,6,2],
 "structdoctest_1_1CurrentTestCaseStats.html#a2fb52eed7bcef7322a816f418f0fb942":[3,0,129,9,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX96 =
 "structdoctest_1_1detail_1_1ResultBuilder.html#aa920a0617a26939d7adcd1ba2dec0e85":[4,0,77,0,18,2],
 "structdoctest_1_1detail_1_1ResultBuilder.html#ab55660e3aaa5d8fccbe19360f65bb1f3":[3,0,129,2,20,1],
 "structdoctest_1_1detail_1_1ResultBuilder.html#ab55660e3aaa5d8fccbe19360f65bb1f3":[4,0,77,0,18,1],
-"structdoctest_1_1detail_1_1StringMakerBase.html":[4,0,77,0,20]
+"structdoctest_1_1detail_1_1StringMakerBase.html":[4,0,77,0,20],
+"structdoctest_1_1detail_1_1StringMakerBase.html":[3,0,129,2,22],
+"structdoctest_1_1detail_1_1StringMakerBase.html#a67d29f2a5de9a522d8e8607c1a39db9b":[3,0,129,2,22,0]
 };

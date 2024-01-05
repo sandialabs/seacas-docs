@@ -1,7 +1,5 @@
 var NAVTREEINDEX97 =
 {
-"structdoctest_1_1detail_1_1StringMakerBase.html":[3,0,129,2,22],
-"structdoctest_1_1detail_1_1StringMakerBase.html#a67d29f2a5de9a522d8e8607c1a39db9b":[3,0,129,2,22,0],
 "structdoctest_1_1detail_1_1StringMakerBase.html#a67d29f2a5de9a522d8e8607c1a39db9b":[4,0,77,0,20,0],
 "structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4.html":[3,0,129,2,23],
 "structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4.html":[4,0,77,0,21],

@@ -52,8 +52,8 @@ var namespaces_dup =
       [ "compute_internal_border_maps", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#aed219e91b6f906d7680ced105eec90b0", null ],
       [ "extract_data", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#afd5239e8d419dcf4231e6e9e9c9a6780", null ],
       [ "get_connectivity_data", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#ae2ab07b594de94db1dbbc2918122b573", null ],
-      [ "SEP", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#a6afc832f7345e424ac61527f7be691e1", null ],
-      [ "complex_suffix", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#adca31ef5ad2bba0ab57d54ffa6e58a34", null ],
+      [ "SEP", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#a7f93f418a449caef3ccd1eee796bdf92", null ],
+      [ "complex_suffix", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#ac27d7c3b3bdd9514adab897edbf84ece", null ],
       [ "max_line_length", "namespaceanonymous__namespace_02Ioex__DatabaseIO_8C_03.html#aa46c0ef881bbcda9aa7b23ad9441e812", null ]
     ] ],
     [ "anonymous_namespace{Ioex_Internals.C}", "namespaceanonymous__namespace_02Ioex__Internals_8C_03.html", [
