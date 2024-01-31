@@ -1,9 +1,6 @@
 var structIoex_1_1NodeBlock =
 [
-    [ "NodeBlock", "structIoex_1_1NodeBlock.html#a2b3aa9b88f5255dbfd5dad85f72e7aaa", null ],
-    [ "NodeBlock", "structIoex_1_1NodeBlock.html#a2b5e49108cfc6a683624b2dd279ec6d0", null ],
     [ "NodeBlock", "structIoex_1_1NodeBlock.html#a44c05e911c0c1011eb58702f6ca4e9eb", null ],
-    [ "~NodeBlock", "structIoex_1_1NodeBlock.html#a26d4236ed79b6ed07b0e5e7bc7c1402e", null ],
     [ "attributeCount", "structIoex_1_1NodeBlock.html#ae3af61a06d133623dbe77af579b17a34", null ],
     [ "entityCount", "structIoex_1_1NodeBlock.html#a5a3ff9c6d96c43ac9a4c5ae7ac35ee2d", null ],
     [ "id", "structIoex_1_1NodeBlock.html#aa1ef5a51005fad7be1deeb5ad3b68777", null ],

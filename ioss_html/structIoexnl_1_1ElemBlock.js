@@ -3,7 +3,6 @@ var structIoexnl_1_1ElemBlock =
     [ "ElemBlock", "structIoexnl_1_1ElemBlock.html#a269318afd2436e48fddbbe3dccc15d41", null ],
     [ "ElemBlock", "structIoexnl_1_1ElemBlock.html#abd16d62230bd919188d948cdd1ecd2ca", null ],
     [ "ElemBlock", "structIoexnl_1_1ElemBlock.html#a7bff5294771edd729451b4e8fa329d84", null ],
-    [ "~ElemBlock", "structIoexnl_1_1ElemBlock.html#aa0501ac53f493ae977c9c5dbfa8069b5", null ],
     [ "attributeCount", "structIoexnl_1_1ElemBlock.html#aed7c4e651a8c0a425e3541e88f660a09", null ],
     [ "edgesPerEntity", "structIoexnl_1_1ElemBlock.html#a17d7670c29daec2785ff1933af71c871", null ],
     [ "elType", "structIoexnl_1_1ElemBlock.html#a4764e61f7ce2de7ee531838af0549b65", null ],

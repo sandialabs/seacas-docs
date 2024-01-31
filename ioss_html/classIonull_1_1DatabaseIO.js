@@ -1,8 +1,6 @@
 var classIonull_1_1DatabaseIO =
 [
     [ "DatabaseIO", "classIonull_1_1DatabaseIO.html#a6a77b768d21e219af535c86b62f26cc0", null ],
-    [ "DatabaseIO", "classIonull_1_1DatabaseIO.html#aa98b7c4eae846496193d639fcecb9a6e", null ],
-    [ "~DatabaseIO", "classIonull_1_1DatabaseIO.html#a66dc5bd81301a4da0bcd6a9716346df0", null ],
     [ "begin_nl", "classIonull_1_1DatabaseIO.html#af671712294d99a1dde424e15ef07adc5", null ],
     [ "begin_state_nl", "classIonull_1_1DatabaseIO.html#acdaeeba75c410a39576f32dd29186a00", null ],
     [ "end_nl", "classIonull_1_1DatabaseIO.html#a829981f40173e57b5ad11827e9ee18cf", null ],
@@ -12,7 +10,6 @@ var classIonull_1_1DatabaseIO =
     [ "get_step_times_nl", "classIonull_1_1DatabaseIO.html#a075506145e688a380eb23c32bec1ddd7", null ],
     [ "int_byte_size_db", "classIonull_1_1DatabaseIO.html#a97c2ee34f23f64992cd143ae9f037df6", null ],
     [ "ok_nl", "classIonull_1_1DatabaseIO.html#ae13ad4ade4ba61b382efa202396afc9f", null ],
-    [ "operator=", "classIonull_1_1DatabaseIO.html#a44f1293d1269455d8983d322d75d4475", null ],
     [ "put_field_internal", "classIonull_1_1DatabaseIO.html#a41dd2667bb011a5eae956c70f63e5125", null ],
     [ "put_field_internal", "classIonull_1_1DatabaseIO.html#ac0a630cbe7b25d6039ba0ef7d38de230", null ],
     [ "put_field_internal", "classIonull_1_1DatabaseIO.html#af752520f47638b56f0424f84ab3b6a35", null ],

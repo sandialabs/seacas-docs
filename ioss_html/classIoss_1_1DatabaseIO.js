@@ -2,6 +2,7 @@ var classIoss_1_1DatabaseIO =
 [
     [ "DatabaseIO", "classIoss_1_1DatabaseIO.html#ae2eee344fe7c543bf672d031678516cb", null ],
     [ "DatabaseIO", "classIoss_1_1DatabaseIO.html#abe494ca19a4fc355c78b4515b4e24cb0", null ],
+    [ "DatabaseIO", "classIoss_1_1DatabaseIO.html#a1169fb50916f13f1fb8ad3b4cd9f8c65", null ],
     [ "~DatabaseIO", "classIoss_1_1DatabaseIO.html#ad793e5af671878c2715ed51f1ea3754a", null ],
     [ "DatabaseIO", "classIoss_1_1DatabaseIO.html#a429f96c6eef52d789b4632dd04861222", null ],
     [ "add_information_record", "classIoss_1_1DatabaseIO.html#a0da3fcf5cb34a32e2c6375ab251b4349", null ],
@@ -123,6 +124,7 @@ var classIoss_1_1DatabaseIO =
     [ "openDatabase", "classIoss_1_1DatabaseIO.html#a08202be4190cabd1992a3622a9a399ec", null ],
     [ "openDatabase_nl", "classIoss_1_1DatabaseIO.html#aa24e8acd48c5754edb70e64c3394ab47", null ],
     [ "operator=", "classIoss_1_1DatabaseIO.html#a8d8db408c120cc7fc9fbb3df800ff154", null ],
+    [ "operator=", "classIoss_1_1DatabaseIO.html#a810650e4337b8e0b1e9e6e6250eb5879", null ],
     [ "parallel_rank", "classIoss_1_1DatabaseIO.html#a5f9d85da0afe95a1291480aeb79571fd", null ],
     [ "parallel_size", "classIoss_1_1DatabaseIO.html#aceccfba755333cf8af271ba5dcc659c4", null ],
     [ "progress", "classIoss_1_1DatabaseIO.html#aeb625fa3f912ec5708ac0ef89e29b057", null ],

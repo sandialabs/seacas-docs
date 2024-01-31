@@ -94,6 +94,7 @@ $(function(){initNavTree('classIotm_1_1TextMesh.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classIotm_1_1TextMesh-members.html">List of all members</a>  </div>
@@ -230,8 +231,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5f21b1b01f4e7edff01735f95a169ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d5ba8ad9de7baac90be363c2c1ff3c" id="r_a60d5ba8ad9de7baac90be363c2c1ff3c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60d5ba8ad9de7baac90be363c2c1ff3c">get_assembly_members</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;name) const</td></tr>
 <tr class="separator:a60d5ba8ad9de7baac90be363c2c1ff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a040e18315e1d478b7f13e5a2c24cf0e6" id="r_a040e18315e1d478b7f13e5a2c24cf0e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a040e18315e1d478b7f13e5a2c24cf0e6">assembly_type_to_entity_type</a> (const <a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">AssemblyType</a> type) const</td></tr>
-<tr class="separator:a040e18315e1d478b7f13e5a2c24cf0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fb32afc5d3dd28ee464eb834b78625" id="r_a77fb32afc5d3dd28ee464eb834b78625"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77fb32afc5d3dd28ee464eb834b78625">update_block_omissions_from_assemblies</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;assemblyOmissions, std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;assemblyInclusions, std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;blockOmissions, std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;blockInclusions) const</td></tr>
+<tr class="separator:a77fb32afc5d3dd28ee464eb834b78625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff35cd45086a83ba0fed4d1469c99f4e" id="r_aff35cd45086a83ba0fed4d1469c99f4e"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff35cd45086a83ba0fed4d1469c99f4e">spatial_dimension</a> () const</td></tr>
 <tr class="separator:aff35cd45086a83ba0fed4d1469c99f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4989041a9d41fa68a9e3e3063c1ce48c" id="r_a4989041a9d41fa68a9e3e3063c1ce48c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceIotm.html#ad120e61ae2bab7f473103e7898a1c5fb">SideBlockInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4989041a9d41fa68a9e3e3063c1ce48c">get_side_block_info_for_sideset</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;name) const</td></tr>
@@ -240,6 +241,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab6aba3b87e5e86bc77bb9bc95e21ee1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a503b508db0e923aef2a28ecfd99b3235" id="r_a503b508db0e923aef2a28ecfd99b3235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIotm_1_1text__mesh.html#afd8824c624065866ef81070138d7e817">SplitType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a503b508db0e923aef2a28ecfd99b3235">get_sideset_split_type</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;name) const</td></tr>
 <tr class="separator:a503b508db0e923aef2a28ecfd99b3235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab9571a583d1a2b2e1e69bd2631340fa8" id="r_ab9571a583d1a2b2e1e69bd2631340fa8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9571a583d1a2b2e1e69bd2631340fa8">assembly_type_to_entity_type</a> (const <a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">AssemblyType</a> type)</td></tr>
+<tr class="separator:ab9571a583d1a2b2e1e69bd2631340fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -445,19 +451,27 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a040e18315e1d478b7f13e5a2c24cf0e6" name="a040e18315e1d478b7f13e5a2c24cf0e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a040e18315e1d478b7f13e5a2c24cf0e6">&#9670;&#160;</a></span>assembly_type_to_entity_type()</h2>
+<a id="ab9571a583d1a2b2e1e69bd2631340fa8" name="ab9571a583d1a2b2e1e69bd2631340fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9571a583d1a2b2e1e69bd2631340fa8">&#9670;&#160;</a></span>assembly_type_to_entity_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a> Iotm::TextMesh::assembly_type_to_entity_type </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceIotm_1_1text__mesh.html#a7126c023a00abb35e671f794a5df2a11">AssemblyType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -2183,6 +2197,42 @@ template&lt;typename INT &gt; </div>
 </div><div class="memdoc">
 <p>Returns pair containing "topology type string" and "number of
 nodes / element". The topology type string will be "hex8" for the hex element block and "shell4" for the shell element blocks. </p>
+
+</div>
+</div>
+<a id="a77fb32afc5d3dd28ee464eb834b78625" name="a77fb32afc5d3dd28ee464eb834b78625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77fb32afc5d3dd28ee464eb834b78625">&#9670;&#160;</a></span>update_block_omissions_from_assemblies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Iotm::TextMesh::update_block_omissions_from_assemblies </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *</td>          <td class="paramname"><span class="paramname"><em>region</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>assemblyOmissions</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>assemblyInclusions</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>blockOmissions</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>blockInclusions</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

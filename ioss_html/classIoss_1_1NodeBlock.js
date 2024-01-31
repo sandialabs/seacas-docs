@@ -2,7 +2,6 @@ var classIoss_1_1NodeBlock =
 [
     [ "NodeBlock", "classIoss_1_1NodeBlock.html#a017561f0f183321fd9fd592dd4ad63bb", null ],
     [ "NodeBlock", "classIoss_1_1NodeBlock.html#abb3a05246ee73e3ab37db8bf9a4eb462", null ],
-    [ "~NodeBlock", "classIoss_1_1NodeBlock.html#aa5d9308cb039d57ea7b76801b241deed", null ],
     [ "contained_in", "classIoss_1_1NodeBlock.html#ab69904254a404a0506f63bb5207d7972", null ],
     [ "contains_string", "classIoss_1_1NodeBlock.html#a69334f8aa6d488d751cc8cde4631816e", null ],
     [ "equal", "classIoss_1_1NodeBlock.html#a36d82c8b26ed06edb9e809c650669e91", null ],

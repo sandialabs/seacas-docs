@@ -1,7 +1,5 @@
 var classanonymous__namespace_02io__modify_8C_03_1_1Graph =
 [
-    [ "Graph", "classanonymous__namespace_02io__modify_8C_03_1_1Graph.html#a74baa1c4a183ae3fe3b4b06f3c1d6b8b", null ],
-    [ "~Graph", "classanonymous__namespace_02io__modify_8C_03_1_1Graph.html#a04d689ff16b7eac088fa05f8fe8c0075", null ],
     [ "add_edge", "classanonymous__namespace_02io__modify_8C_03_1_1Graph.html#ac5c6a1b581421e1f549159df37c0153c", null ],
     [ "is_cyclic", "classanonymous__namespace_02io__modify_8C_03_1_1Graph.html#acc969f4b879571506af0f4c3490670d4", null ],
     [ "is_cyclic_internal", "classanonymous__namespace_02io__modify_8C_03_1_1Graph.html#aef44bfac1c3c50b112ee5b066c53ced9", null ],

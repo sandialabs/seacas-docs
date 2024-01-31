@@ -1,6 +1,5 @@
 var classIoss_1_1Pyramid14 =
 [
-    [ "~Pyramid14", "classIoss_1_1Pyramid14.html#aec631791ba9b61c87727b5e3a0ac9bde", null ],
     [ "Pyramid14", "classIoss_1_1Pyramid14.html#a9022648c4afb055431dd8d09f2ed5721", null ],
     [ "Pyramid14", "classIoss_1_1Pyramid14.html#a02f8108d2c237526a03c82e6e0036a2b", null ],
     [ "edge_connectivity", "classIoss_1_1Pyramid14.html#abc57cecb1b02a0903448742aeed4b893", null ],

@@ -1,8 +1,6 @@
 var classIoexnl_1_1BaseDatabaseIO =
 [
     [ "BaseDatabaseIO", "classIoexnl_1_1BaseDatabaseIO.html#a62a52451ccb0bb19b1fed8aab80e0aa6", null ],
-    [ "BaseDatabaseIO", "classIoexnl_1_1BaseDatabaseIO.html#adb36e0b63609bbda7bfaec499bc1a4aa", null ],
-    [ "~BaseDatabaseIO", "classIoexnl_1_1BaseDatabaseIO.html#a7099320de9cb40f197006cb82b195bd3", null ],
     [ "add_attribute_fields", "classIoexnl_1_1BaseDatabaseIO.html#a0c0fda31f670018731d0bf8057164fd4", null ],
     [ "add_mesh_reduction_fields", "classIoexnl_1_1BaseDatabaseIO.html#ad7f3e8f3dad7477d610aab9cdc790d27", null ],
     [ "add_reduction_results_fields", "classIoexnl_1_1BaseDatabaseIO.html#aafd9a99f9a7c50599c8d78a6ed426426", null ],
@@ -39,7 +37,6 @@ var classIoexnl_1_1BaseDatabaseIO =
     [ "ok_nl", "classIoexnl_1_1BaseDatabaseIO.html#a6d8b7d8e8c382b40e54823ed90c6eafb", null ],
     [ "open_state_file", "classIoexnl_1_1BaseDatabaseIO.html#a4053b5ffd686e96d95eaa76d5937045e", null ],
     [ "openDatabase_nl", "classIoexnl_1_1BaseDatabaseIO.html#adc5cb62214d78561479cb2c7173ee8b2", null ],
-    [ "operator=", "classIoexnl_1_1BaseDatabaseIO.html#acb73caed61c2f2beb290e468f73375ee", null ],
     [ "output_other_meta_data", "classIoexnl_1_1BaseDatabaseIO.html#a04ec271d3d70f257fbb928f321161afe", null ],
     [ "output_results_names", "classIoexnl_1_1BaseDatabaseIO.html#a1573290234429ba3eda9cb14c14d5a9f", null ],
     [ "put_field_internal", "classIoexnl_1_1BaseDatabaseIO.html#aa5d353c45b2e8cb9ad9b0d8eb871eb46", null ],

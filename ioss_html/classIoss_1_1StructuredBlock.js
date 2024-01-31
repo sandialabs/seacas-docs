@@ -4,7 +4,6 @@ var classIoss_1_1StructuredBlock =
     [ "StructuredBlock", "classIoss_1_1StructuredBlock.html#a22354c0c9317b3d0edf61d0bd0298973", null ],
     [ "StructuredBlock", "classIoss_1_1StructuredBlock.html#a59f866a2c6fbecce732b9bdb7d718c3b", null ],
     [ "StructuredBlock", "classIoss_1_1StructuredBlock.html#ab3b9ce96c3ed4c6cbb963bfb375de886", null ],
-    [ "~StructuredBlock", "classIoss_1_1StructuredBlock.html#a0371175e0164118aa0bde47426ac72af", null ],
     [ "clone", "classIoss_1_1StructuredBlock.html#a1d080d0d7963b4b4ce84ff5f5092af1d", null ],
     [ "contains", "classIoss_1_1StructuredBlock.html#acbac29a9ca4d2d4052e66a0264f34117", null ],
     [ "contains_string", "classIoss_1_1StructuredBlock.html#af51b7e053ebbb6881994d186185cab22", null ],

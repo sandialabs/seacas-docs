@@ -7,7 +7,6 @@ var classIoss_1_1ParallelUtils =
     ] ],
     [ "ParallelUtils", "classIoss_1_1ParallelUtils.html#a15e06e988a72d8b522f447783b9d16bb", null ],
     [ "ParallelUtils", "classIoss_1_1ParallelUtils.html#ab13159022426b8c9cfa61b5e860d2d27", null ],
-    [ "~ParallelUtils", "classIoss_1_1ParallelUtils.html#a50e51cbf4c649f4105f3769ad53080bc", null ],
     [ "add_environment_properties", "classIoss_1_1ParallelUtils.html#a66ac8857acdf08f232dee3b9442b7b21", null ],
     [ "all_gather", "classIoss_1_1ParallelUtils.html#ac101196db911c4d8f99f829fbbbd85f7", null ],
     [ "all_gather", "classIoss_1_1ParallelUtils.html#a6dc17211b6215cdf25671205024b3f08", null ],

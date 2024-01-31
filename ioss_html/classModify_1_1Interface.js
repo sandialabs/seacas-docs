@@ -1,7 +1,6 @@
 var classModify_1_1Interface =
 [
     [ "Interface", "classModify_1_1Interface.html#ab55cedeabfc351339fd9a96dd0d3b98a", null ],
-    [ "~Interface", "classModify_1_1Interface.html#a760da8c64477604706230063edda8a09", null ],
     [ "enroll_options", "classModify_1_1Interface.html#a684c85543c03c45b1bb8f227e492d283", null ],
     [ "filename", "classModify_1_1Interface.html#a0e903bbe8442228b2df638d09dfc5906", null ],
     [ "modify_existing_assembly", "classModify_1_1Interface.html#a99c57ac8a19f9a679b92d76ab7339710", null ],

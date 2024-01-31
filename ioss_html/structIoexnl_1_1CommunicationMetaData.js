@@ -1,7 +1,5 @@
 var structIoexnl_1_1CommunicationMetaData =
 [
-    [ "CommunicationMetaData", "structIoexnl_1_1CommunicationMetaData.html#a9e60bca7224189936a62c82926e4b781", null ],
-    [ "CommunicationMetaData", "structIoexnl_1_1CommunicationMetaData.html#a208cf4f72163741938424a8d074892cb", null ],
     [ "elementMap", "structIoexnl_1_1CommunicationMetaData.html#a1071338ff512ffc988109340812d5ba9", null ],
     [ "elementsBorder", "structIoexnl_1_1CommunicationMetaData.html#ad5871e32221151a111a8f4bdfc9d08b4", null ],
     [ "elementsInternal", "structIoexnl_1_1CommunicationMetaData.html#a322f9e2432323b584473d93baa7aed0d", null ],

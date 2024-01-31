@@ -1,7 +1,6 @@
 var classIohb_1_1DatabaseIO =
 [
     [ "DatabaseIO", "classIohb_1_1DatabaseIO.html#a36fe820a44894eda3d6adead2fe1ddb5", null ],
-    [ "DatabaseIO", "classIohb_1_1DatabaseIO.html#a409f72d2949f834ff1ee9a3544c019bc", null ],
     [ "~DatabaseIO", "classIohb_1_1DatabaseIO.html#adf759eddbe96e0b09e6807ea2680a2f2", null ],
     [ "begin_nl", "classIohb_1_1DatabaseIO.html#a653f2f2fe78243f49ee730bfb98d4817", null ],
     [ "begin_state_nl", "classIohb_1_1DatabaseIO.html#a08e23872e05bfc3a963acbd7fb274b42", null ],
@@ -14,7 +13,6 @@ var classIohb_1_1DatabaseIO =
     [ "initialize", "classIohb_1_1DatabaseIO.html#a397a6192b3f37e4ea31a976d5d21ae3a", null ],
     [ "int_byte_size_db", "classIohb_1_1DatabaseIO.html#ae9a0e90a733b8b1e75810f5c63e39edd", null ],
     [ "node_global_to_local_nl", "classIohb_1_1DatabaseIO.html#a0e73a73dcd011f65b0aa551903e84109", null ],
-    [ "operator=", "classIohb_1_1DatabaseIO.html#aa7e66b2888b557307fdfdec9f013c175", null ],
     [ "put_field_internal", "classIohb_1_1DatabaseIO.html#aec1bc1b47445d567a2ec33881a493984", null ],
     [ "read_meta_data_nl", "classIohb_1_1DatabaseIO.html#af5d2954d7386eba2ac24ae3aded01685", null ],
     [ "addTimeField", "classIohb_1_1DatabaseIO.html#a60b6274217cb4675a11fad99797efec5", null ],

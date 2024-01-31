@@ -150,6 +150,12 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a33419dbc744ae151ba493fdf18c9caa1" id="r_a33419dbc744ae151ba493fdf18c9caa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33419dbc744ae151ba493fdf18c9caa1">IOSS_ERROR</a> (const std::ostringstream &amp;errmsg)</td></tr>
 <tr class="separator:a33419dbc744ae151ba493fdf18c9caa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a17ad788a246476ea700b03bfcc6fb" id="r_af1a17ad788a246476ea700b03bfcc6fb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af1a17ad788a246476ea700b03bfcc6fb"><td class="memTemplItemLeft" align="right" valign="top">constexpr T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af1a17ad788a246476ea700b03bfcc6fb">Data</a> (std::vector&lt; T &gt; &amp;vec)</td></tr>
+<tr class="separator:af1a17ad788a246476ea700b03bfcc6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b90e0e9a26ec6d5f68e9cda40b98d6" id="r_a00b90e0e9a26ec6d5f68e9cda40b98d6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a00b90e0e9a26ec6d5f68e9cda40b98d6"><td class="memTemplItemLeft" align="right" valign="top">constexpr const T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a00b90e0e9a26ec6d5f68e9cda40b98d6">Data</a> (const std::vector&lt; T &gt; &amp;vec)</td></tr>
+<tr class="separator:a00b90e0e9a26ec6d5f68e9cda40b98d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d80ff5b361afe5a51bcfb838db5c5f9" id="r_a0d80ff5b361afe5a51bcfb838db5c5f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#a6d1736434ff6d516a3df38cbb7487ea5">std::ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a0d80ff5b361afe5a51bcfb838db5c5f9">Ioss::OUTPUT</a> ()</td></tr>
 <tr class="separator:a0d80ff5b361afe5a51bcfb838db5c5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9804f5a9612ff0a28eac05acb897d120" id="r_a9804f5a9612ff0a28eac05acb897d120"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#a6d1736434ff6d516a3df38cbb7487ea5">std::ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a9804f5a9612ff0a28eac05acb897d120">Ioss::DebugOut</a> ()</td></tr>
@@ -176,6 +182,60 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a00b90e0e9a26ec6d5f68e9cda40b98d6" name="a00b90e0e9a26ec6d5f68e9cda40b98d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b90e0e9a26ec6d5f68e9cda40b98d6">&#9670;&#160;</a></span>Data() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const T * Data </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1a17ad788a246476ea700b03bfcc6fb" name="af1a17ad788a246476ea700b03bfcc6fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a17ad788a246476ea700b03bfcc6fb">&#9670;&#160;</a></span>Data() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T * Data </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a33419dbc744ae151ba493fdf18c9caa1" name="a33419dbc744ae151ba493fdf18c9caa1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33419dbc744ae151ba493fdf18c9caa1">&#9670;&#160;</a></span>IOSS_ERROR()</h2>
 

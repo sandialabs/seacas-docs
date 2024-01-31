@@ -3,7 +3,6 @@ var structIoex_1_1FaceBlock =
     [ "FaceBlock", "structIoex_1_1FaceBlock.html#a110ca2f3c5612280c8d8fd4f202ded0a", null ],
     [ "FaceBlock", "structIoex_1_1FaceBlock.html#a813bf88a43cee7a2d4a99bb1b83842e1", null ],
     [ "FaceBlock", "structIoex_1_1FaceBlock.html#ae1599b4688274c6d06a8c8ebc06e1128", null ],
-    [ "~FaceBlock", "structIoex_1_1FaceBlock.html#a8ad444c58414781eb54d65ff0583d873", null ],
     [ "attributeCount", "structIoex_1_1FaceBlock.html#aa46bd4e1fd5a693441bc0d5771d19972", null ],
     [ "edgesPerEntity", "structIoex_1_1FaceBlock.html#a42c851eaf696f819be63d0af725157e3", null ],
     [ "elType", "structIoex_1_1FaceBlock.html#aaa52ebb4c0894d0590ef9fece6dc214f", null ],

@@ -2,7 +2,6 @@ var classIohb_1_1Layout =
 [
     [ "Layout", "classIohb_1_1Layout.html#a239fc494da656cd053af23b3d783db75", null ],
     [ "Layout", "classIohb_1_1Layout.html#a811a374fc418a47fd95dd87fd1da43d1", null ],
-    [ "~Layout", "classIohb_1_1Layout.html#a735fee98692c08c54500e414a0f411e3", null ],
     [ "add", "classIohb_1_1Layout.html#a0fa6d66a381b0832fde549d34e260290", null ],
     [ "add", "classIohb_1_1Layout.html#a305040e91bfc67ea7c1cd4de4e846624", null ],
     [ "add", "classIohb_1_1Layout.html#a242a031d570df961971588d4cdf910e9", null ],

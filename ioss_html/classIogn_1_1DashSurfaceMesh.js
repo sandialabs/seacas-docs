@@ -1,7 +1,6 @@
 var classIogn_1_1DashSurfaceMesh =
 [
     [ "DashSurfaceMesh", "classIogn_1_1DashSurfaceMesh.html#a3b8ac24be477d291063fae3a22a17607", null ],
-    [ "~DashSurfaceMesh", "classIogn_1_1DashSurfaceMesh.html#ae13403e806b2c3f1989337111e7e5d02", null ],
     [ "block_count", "classIogn_1_1DashSurfaceMesh.html#aa850a77fbfbbe46e5fe51d5720ef44e3", null ],
     [ "communication_node_count_proc", "classIogn_1_1DashSurfaceMesh.html#a7e66e1bfbdf2c1bae12ac0901e131688", null ],
     [ "connectivity", "classIogn_1_1DashSurfaceMesh.html#a86e334dcf7d17a81a66b9877f252feb7", null ],

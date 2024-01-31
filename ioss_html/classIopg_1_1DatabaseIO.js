@@ -1,7 +1,6 @@
 var classIopg_1_1DatabaseIO =
 [
     [ "DatabaseIO", "classIopg_1_1DatabaseIO.html#a4fc64ea5ae7a9ff776c9f2b31e2306be", null ],
-    [ "DatabaseIO", "classIopg_1_1DatabaseIO.html#ae622f5eeeb571fe00d64edff4bffc963", null ],
     [ "~DatabaseIO", "classIopg_1_1DatabaseIO.html#a8eb6bacd3bf246930f0675c07915019f", null ],
     [ "begin_nl", "classIopg_1_1DatabaseIO.html#a3cdc839a51d1176f53b470fa30e7f143", null ],
     [ "compute_block_membership_nl", "classIopg_1_1DatabaseIO.html#a41585f795183268b525b03735564e373", null ],
@@ -24,7 +23,6 @@ var classIopg_1_1DatabaseIO =
     [ "get_sidesets", "classIopg_1_1DatabaseIO.html#a3e5db0b0f27c271faa50c1f3250dc30c", null ],
     [ "int_byte_size_db", "classIopg_1_1DatabaseIO.html#a14cd714e375b4b0e8d2f6831b1fc1de3", null ],
     [ "maximum_symbol_length", "classIopg_1_1DatabaseIO.html#ae959d972861738d51a8f1d0995bec414", null ],
-    [ "operator=", "classIopg_1_1DatabaseIO.html#a72f2fa1cd2c694a002d2ccca8bab122f", null ],
     [ "read_communication_metadata", "classIopg_1_1DatabaseIO.html#a02aec9baa888a253fa6e35ce7f7b3e7a", null ],
     [ "read_meta_data_nl", "classIopg_1_1DatabaseIO.html#a4e62b9f47849aa4abdbed5cf046cbff9", null ],
     [ "read_region", "classIopg_1_1DatabaseIO.html#ac6b7f26f68f746292c1fd44f2b065f66", null ],

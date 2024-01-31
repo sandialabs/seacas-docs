@@ -1,6 +1,5 @@
 var classIoss_1_1SuperPermutation =
 [
-    [ "~SuperPermutation", "classIoss_1_1SuperPermutation.html#a73bd531c1b8fd5c04800c5e35a28be67", null ],
     [ "SuperPermutation", "classIoss_1_1SuperPermutation.html#a4908bda165558ca19ae88d59e1f76e6a", null ],
     [ "SuperPermutation", "classIoss_1_1SuperPermutation.html#ab8c80d8b4cb76114df4cc952886643f2", null ],
     [ "SuperPermutation", "classIoss_1_1SuperPermutation.html#a01cbb7897f262facc03a6c262308d90c", null ],

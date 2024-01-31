@@ -1,7 +1,5 @@
 var structIoex_1_1FaceSet =
 [
-    [ "FaceSet", "structIoex_1_1FaceSet.html#a5dddcd5b07b671122663ce0c82bcfccf", null ],
-    [ "FaceSet", "structIoex_1_1FaceSet.html#aff6e4e490273c1ae8ee3f8f9038ff7d8", null ],
     [ "FaceSet", "structIoex_1_1FaceSet.html#a1f35a43021fc418c735a8e7d086ed126", null ],
     [ "attributeCount", "structIoex_1_1FaceSet.html#a78337de37f499381204600cdd487e435", null ],
     [ "dfCount", "structIoex_1_1FaceSet.html#a189199964377263af021883c5c04d988", null ],

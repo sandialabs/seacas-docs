@@ -1,7 +1,5 @@
 var structIoexnl_1_1NodeSet =
 [
-    [ "NodeSet", "structIoexnl_1_1NodeSet.html#a3238f579ad8e2ca417eab16fba9fd1d7", null ],
-    [ "NodeSet", "structIoexnl_1_1NodeSet.html#a095616ab9581a9aa3fc9509a151ca892", null ],
     [ "NodeSet", "structIoexnl_1_1NodeSet.html#a6de1fedbd97ecc9656949b549ab07a40", null ],
     [ "attributeCount", "structIoexnl_1_1NodeSet.html#afe6c33dbc69ac80535a43446de676051", null ],
     [ "dfCount", "structIoexnl_1_1NodeSet.html#af4a8f2ea0a63597c547b4332e102139e", null ],

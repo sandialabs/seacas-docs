@@ -1,6 +1,5 @@
 var classIoss_1_1Shell4 =
 [
-    [ "~Shell4", "classIoss_1_1Shell4.html#a4a8cf7d90b1c52e1819aa8318c35b302", null ],
     [ "Shell4", "classIoss_1_1Shell4.html#a4cdc57839c4b026133f89260c99657e6", null ],
     [ "Shell4", "classIoss_1_1Shell4.html#a03fa814382bf968301832b4e1e2187b5", null ],
     [ "edge_connectivity", "classIoss_1_1Shell4.html#acf736b19dbe10da7569baf7af10ab19a", null ],

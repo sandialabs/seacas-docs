@@ -1,6 +1,5 @@
 var classIoss_1_1Sphere =
 [
-    [ "~Sphere", "classIoss_1_1Sphere.html#a77ac901b2cb85e8e11489226a6cb9bc6", null ],
     [ "Sphere", "classIoss_1_1Sphere.html#a5f96c6d69bda30de233e7dee7e9fef78", null ],
     [ "Sphere", "classIoss_1_1Sphere.html#a20e7bcd9f1d9903aa755e34204a6891e", null ],
     [ "base_topology_permutation_name", "classIoss_1_1Sphere.html#acb015302076711c791c2bb0211d30234", null ],

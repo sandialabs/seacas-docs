@@ -1,7 +1,6 @@
 var classSkinner_1_1Interface =
 [
     [ "Interface", "classSkinner_1_1Interface.html#a535de4eb85656bc131453ca90a78a77b", null ],
-    [ "~Interface", "classSkinner_1_1Interface.html#a8019043a514ff70c9a8930784555e9a1", null ],
     [ "enroll_options", "classSkinner_1_1Interface.html#a0c7e3dcf55585a1c9c3b1ecbdac72409", null ],
     [ "input_filename", "classSkinner_1_1Interface.html#adc3b2d3c8b93ec3b2f9dd535f0f0deb7", null ],
     [ "input_type", "classSkinner_1_1Interface.html#af96bfb977b6dd04c78af95f4db4bdcf5", null ],

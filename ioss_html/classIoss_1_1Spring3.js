@@ -1,6 +1,5 @@
 var classIoss_1_1Spring3 =
 [
-    [ "~Spring3", "classIoss_1_1Spring3.html#a6bf6dc085ca7df61bf9950b46b1adc14", null ],
     [ "Spring3", "classIoss_1_1Spring3.html#a882e54609dd78f6e5489b102f4ff83ca", null ],
     [ "Spring3", "classIoss_1_1Spring3.html#a11b5faa0dd17eac01c31b3b5bdf7da4a", null ],
     [ "edge_connectivity", "classIoss_1_1Spring3.html#a9c0519bd03789cf1a5a499d570a79a40", null ],

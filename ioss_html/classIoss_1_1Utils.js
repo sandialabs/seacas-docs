@@ -1,7 +1,5 @@
 var classIoss_1_1Utils =
 [
-    [ "Utils", "classIoss_1_1Utils.html#a7b26e085790c47979ee6fa2b463812c3", null ],
-    [ "~Utils", "classIoss_1_1Utils.html#a1fbe21d5a134b19e4c1b30089aab7000", null ],
     [ "block_is_omitted", "classIoss_1_1Utils.html#a933214d50c601b1e2f089f9c981f59da", null ],
     [ "calculate_sideblock_membership", "classIoss_1_1Utils.html#a8865309b113cbf641cae049c0c9f67a0", null ],
     [ "capitalize", "classIoss_1_1Utils.html#a046c5951320162d9e87203c2606209fb", null ],
@@ -42,6 +40,7 @@ var classIoss_1_1Utils =
     [ "info_fields", "classIoss_1_1Utils.html#a8cb0fbd62757711f7f5f7cd50487d975", null ],
     [ "info_property", "classIoss_1_1Utils.html#a35358878414193645009828df8f186f9", null ],
     [ "input_file", "classIoss_1_1Utils.html#ad7ddb962200b3859fde2ec4e394b3b4f", null ],
+    [ "insert_sort_and_unique", "classIoss_1_1Utils.html#a62f546b7714d82b54b993b6d4f97e6e3", null ],
     [ "is_path_absolute", "classIoss_1_1Utils.html#a9666fe7455d354c773df1b784bfc1fcd", null ],
     [ "local_filename", "classIoss_1_1Utils.html#a60e19e9db88e2f6dcbfa87c42e5f3e04", null ],
     [ "log_power_2", "classIoss_1_1Utils.html#a78ab83fa66bd69d336118e0e72a84241", null ],

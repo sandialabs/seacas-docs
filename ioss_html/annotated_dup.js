@@ -736,6 +736,7 @@ var annotated_dup =
         [ "AssemblyTreeGraph", "classIotm_1_1unit__test_1_1AssemblyTreeGraph.html", "classIotm_1_1unit__test_1_1AssemblyTreeGraph" ],
         [ "TextMeshFixture", "classIotm_1_1unit__test_1_1TextMeshFixture.html", "classIotm_1_1unit__test_1_1TextMeshFixture" ]
       ] ],
+      [ "AssemblyTreeFilter", "classIotm_1_1AssemblyTreeFilter.html", "classIotm_1_1AssemblyTreeFilter" ],
       [ "BlockPartition", "structIotm_1_1BlockPartition.html", "structIotm_1_1BlockPartition" ],
       [ "DatabaseIO", "classIotm_1_1DatabaseIO.html", "classIotm_1_1DatabaseIO" ],
       [ "IOFactory", "classIotm_1_1IOFactory.html", "classIotm_1_1IOFactory" ],

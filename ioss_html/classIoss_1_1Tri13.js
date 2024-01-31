@@ -1,6 +1,5 @@
 var classIoss_1_1Tri13 =
 [
-    [ "~Tri13", "classIoss_1_1Tri13.html#ae957e91de9e011918745c2f1811ce0f8", null ],
     [ "Tri13", "classIoss_1_1Tri13.html#aa3e89d73868bf3c68e9cd3435f3133a8", null ],
     [ "Tri13", "classIoss_1_1Tri13.html#a9e26975a8c0f058de05440b56ada2442", null ],
     [ "edge_connectivity", "classIoss_1_1Tri13.html#a2b01c6b2622b8dbd1a2c699cf28430d0", null ],

@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 841;
+var viewWidth = 818;
 var viewHeight = 210;
 var sectionId = 'dynsection-0';
 </script>
@@ -58,10 +58,10 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="833,-133.5 694,-133.5 694,-91.75 833,-91.75 833,-133.5"/>
-<text text-anchor="start" x="702" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::robin_set&lt; Key,</text>
-<text text-anchor="start" x="702" y="-108.75" font-family="Helvetica,sans-Serif" font-size="10.00"> Hash, KeyEqual, Allocator,</text>
-<text text-anchor="middle" x="763.5" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00"> StoreHash, GrowthPolicy &gt;</text>
+<polygon fill="#999999" stroke="#666666" points="809.75,-133.5 670.75,-133.5 670.75,-91.75 809.75,-91.75 809.75,-133.5"/>
+<text text-anchor="start" x="678.75" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::robin_set&lt; Key,</text>
+<text text-anchor="start" x="678.75" y="-108.75" font-family="Helvetica,sans-Serif" font-size="10.00"> Hash, KeyEqual, Allocator,</text>
+<text text-anchor="middle" x="740.25" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00"> StoreHash, GrowthPolicy &gt;</text>
 </a>
 </g>
 </g>
@@ -69,13 +69,13 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classtsl_1_1detail__robin__hash_1_1robin__hash.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="633.25,-150.38 477,-150.38 477,-74.88 633.25,-74.88 633.25,-150.38"/>
-<text text-anchor="start" x="485" y="-136.88" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::detail_robin_hash</text>
-<text text-anchor="start" x="485" y="-125.62" font-family="Helvetica,sans-Serif" font-size="10.00">::robin_hash&lt; Key, KeySelect,</text>
-<text text-anchor="start" x="485" y="-114.38" font-family="Helvetica,sans-Serif" font-size="10.00"> void, std::hash&lt; Key &gt;, std</text>
-<text text-anchor="start" x="485" y="-103.12" font-family="Helvetica,sans-Serif" font-size="10.00">::equal_to&lt; Key &gt;, std::allocator</text>
-<text text-anchor="start" x="485" y="-91.88" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Key &gt;, false, tsl::rh::power_of</text>
-<text text-anchor="middle" x="555.12" y="-80.62" font-family="Helvetica,sans-Serif" font-size="10.00">_two_growth_policy&lt; 2 &gt; &gt;</text>
+<polygon fill="white" stroke="#666666" points="610,-150.38 453.75,-150.38 453.75,-74.88 610,-74.88 610,-150.38"/>
+<text text-anchor="start" x="461.75" y="-136.88" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::detail_robin_hash</text>
+<text text-anchor="start" x="461.75" y="-125.62" font-family="Helvetica,sans-Serif" font-size="10.00">::robin_hash&lt; Key, KeySelect,</text>
+<text text-anchor="start" x="461.75" y="-114.38" font-family="Helvetica,sans-Serif" font-size="10.00"> void, std::hash&lt; Key &gt;, std</text>
+<text text-anchor="start" x="461.75" y="-103.12" font-family="Helvetica,sans-Serif" font-size="10.00">::equal_to&lt; Key &gt;, std::allocator</text>
+<text text-anchor="start" x="461.75" y="-91.88" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Key &gt;, false, tsl::rh::power_of</text>
+<text text-anchor="middle" x="531.88" y="-80.62" font-family="Helvetica,sans-Serif" font-size="10.00">_two_growth_policy&lt; 2 &gt; &gt;</text>
 </a>
 </g>
 </g>
@@ -83,18 +83,18 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M644.81,-112.62C661.21,-112.62 678.1,-112.62 693.8,-112.62"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="645.07,-109.13 635.07,-112.63 645.07,-116.13 645.07,-109.13"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M621.56,-112.62C637.96,-112.62 654.85,-112.62 670.55,-112.62"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="621.82,-109.13 611.82,-112.63 621.82,-116.13 621.82,-109.13"/>
 </a>
 </g>
-<text text-anchor="middle" x="663.62" y="-114.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> m_ht</text>
+<text text-anchor="middle" x="640.38" y="-114.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> m_ht</text>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="331.12,-202.25 239.38,-202.25 239.38,-183 331.12,-183 331.12,-202.25"/>
-<text text-anchor="middle" x="285.25" y="-188.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::hash&lt; Key &gt;</text>
+<polygon fill="white" stroke="#666666" points="319.5,-202.25 227.75,-202.25 227.75,-183 319.5,-183 319.5,-202.25"/>
+<text text-anchor="middle" x="273.62" y="-188.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::hash&lt; Key &gt;</text>
 </a>
 </g>
 </g>
@@ -102,8 +102,8 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#8b1a1a" d="M342.56,-180.04C349.95,-178.28 357.42,-176.45 364.5,-174.62 406.8,-163.73 417.47,-161.18 459,-147.62 464.77,-145.74 470.72,-143.73 476.68,-141.66"/>
-<polygon fill="#8b1a1a" stroke="#8b1a1a" points="341.86,-176.61 332.92,-182.3 343.46,-183.43 341.86,-176.61"/>
+<path fill="none" stroke="#8b1a1a" d="M322.94,-179.6C329.1,-177.93 335.33,-176.24 341.25,-174.62 383.28,-163.17 394.33,-162.13 435.75,-148.62 441.54,-146.74 447.5,-144.7 453.48,-142.6"/>
+<polygon fill="#8b1a1a" stroke="#8b1a1a" points="322.18,-176.18 313.45,-182.17 324.01,-182.94 322.18,-176.18"/>
 </a>
 </g>
 </g>
@@ -111,8 +111,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="339,-165.25 231.5,-165.25 231.5,-146 339,-146 339,-165.25"/>
-<text text-anchor="middle" x="285.25" y="-151.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::equal_to&lt; Key &gt;</text>
+<polygon fill="white" stroke="#666666" points="327.38,-165.25 219.88,-165.25 219.88,-146 327.38,-146 327.38,-165.25"/>
+<text text-anchor="middle" x="273.62" y="-151.75" font-family="Helvetica,sans-Serif" font-size="10.00">std::equal_to&lt; Key &gt;</text>
 </a>
 </g>
 </g>
@@ -120,8 +120,8 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000002_Node000004" class="edge">
 <title>Node4&#45;&gt;Node2</title>
 <g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#8b1a1a" d="M350.4,-145.33C388.32,-139.24 436.58,-131.49 476.62,-125.07"/>
-<polygon fill="#8b1a1a" stroke="#8b1a1a" points="350.31,-141.8 340.99,-146.84 351.42,-148.71 350.31,-141.8"/>
+<path fill="none" stroke="#8b1a1a" d="M338.71,-144.87C373.53,-139.03 416.85,-131.76 453.54,-125.6"/>
+<polygon fill="#8b1a1a" stroke="#8b1a1a" points="338.5,-141.36 329.21,-146.46 339.65,-148.26 338.5,-141.36"/>
 </a>
 </g>
 </g>
@@ -129,9 +129,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classtsl_1_1rh_1_1power__of__two__growth__policy.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="364.5,-127.88 206,-127.88 206,-97.38 364.5,-97.38 364.5,-127.88"/>
-<text text-anchor="start" x="214" y="-114.38" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::rh::power_of_two</text>
-<text text-anchor="middle" x="285.25" y="-103.12" font-family="Helvetica,sans-Serif" font-size="10.00">_growth_policy&lt; GrowthFactor &gt;</text>
+<polygon fill="white" stroke="#666666" points="327.38,-127.88 219.88,-127.88 219.88,-97.38 327.38,-97.38 327.38,-127.88"/>
+<text text-anchor="start" x="227.88" y="-114.38" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::rh::power_of_two</text>
+<text text-anchor="middle" x="273.62" y="-103.12" font-family="Helvetica,sans-Serif" font-size="10.00">_growth_policy&lt; 2 &gt;</text>
 </a>
 </g>
 </g>
@@ -139,8 +139,8 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000002_Node000005" class="edge">
 <title>Node5&#45;&gt;Node2</title>
 <g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#8b1a1a" d="M376.19,-112.62C408.87,-112.62 445.48,-112.62 476.95,-112.62"/>
-<polygon fill="#8b1a1a" stroke="#8b1a1a" points="376.32,-109.13 366.32,-112.63 376.32,-116.13 376.32,-109.13"/>
+<path fill="none" stroke="#8b1a1a" d="M339.16,-112.62C373.9,-112.62 417.01,-112.62 453.54,-112.62"/>
+<polygon fill="#8b1a1a" stroke="#8b1a1a" points="339.23,-109.13 329.23,-112.63 339.23,-116.13 339.23,-109.13"/>
 </a>
 </g>
 </g>
@@ -148,10 +148,10 @@ var sectionId = 'dynsection-0';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="classtsl_1_1detail__robin__hash_1_1bucket__entry.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="352.88,-79.5 217.62,-79.5 217.62,-37.75 352.88,-37.75 352.88,-79.5"/>
-<text text-anchor="start" x="225.62" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::detail_robin_hash</text>
-<text text-anchor="start" x="225.62" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">::bucket_entry&lt; ValueType,</text>
-<text text-anchor="middle" x="285.25" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00"> StoreHash &gt;</text>
+<polygon fill="white" stroke="#666666" points="341.25,-79.5 206,-79.5 206,-37.75 341.25,-37.75 341.25,-79.5"/>
+<text text-anchor="start" x="214" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::detail_robin_hash</text>
+<text text-anchor="start" x="214" y="-54.75" font-family="Helvetica,sans-Serif" font-size="10.00">::bucket_entry&lt; ValueType,</text>
+<text text-anchor="middle" x="273.62" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00"> StoreHash &gt;</text>
 </a>
 </g>
 </g>
@@ -159,11 +159,11 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000002_Node000006" class="edge">
 <title>Node6&#45;&gt;Node2</title>
 <g id="a_edge5_Node000002_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M364.4,-74.38C399.75,-81.51 441.42,-89.91 476.69,-97.02"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="365.13,-70.96 354.64,-72.41 363.75,-77.82 365.13,-70.96"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M352.69,-75.08C384.63,-81.81 421.5,-89.58 453.38,-96.29"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="353.6,-71.69 343.1,-73.05 352.16,-78.54 353.6,-71.69"/>
 </a>
 </g>
-<text text-anchor="middle" x="420.75" y="-93.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> m_buckets</text>
+<text text-anchor="middle" x="397.5" y="-93.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> m_buckets</text>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
@@ -179,8 +179,8 @@ var sectionId = 'dynsection-0';
 <g id="edge6_Node000006_Node000007" class="edge">
 <title>Node7&#45;&gt;Node6</title>
 <g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M180.82,-58.62C193.19,-58.62 205.64,-58.62 217.41,-58.62"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="181.01,-55.13 171.01,-58.63 181.01,-62.13 181.01,-55.13"/>
+<path fill="none" stroke="#63b8ff" d="M180.91,-58.62C189.3,-58.62 197.66,-58.62 205.74,-58.62"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="181,-55.13 171,-58.63 181,-62.13 181,-55.13"/>
 </a>
 </g>
 </g>
@@ -188,8 +188,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="306.38,-19.25 264.12,-19.25 264.12,0 306.38,0 306.38,-19.25"/>
-<text text-anchor="middle" x="285.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">size_t</text>
+<polygon fill="white" stroke="#666666" points="294.75,-19.25 252.5,-19.25 252.5,0 294.75,0 294.75,-19.25"/>
+<text text-anchor="middle" x="273.62" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">size_t</text>
 </a>
 </g>
 </g>
@@ -197,13 +197,13 @@ var sectionId = 'dynsection-0';
 <g id="edge7_Node000002_Node000008" class="edge">
 <title>Node8&#45;&gt;Node2</title>
 <g id="a_edge7_Node000002_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M317.97,-10.96C353.63,-13.45 412.59,-20.56 459,-40.88 477.95,-49.17 496.61,-61.93 512.32,-74.41"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="318.53,-7.49 308.33,-10.38 318.1,-14.48 318.53,-7.49"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M306.47,-11.25C339.94,-13.93 393.49,-21.04 435.75,-39.88 455.12,-48.51 474.16,-61.81 490.05,-74.69"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="306.84,-7.76 296.62,-10.55 306.35,-14.75 306.84,-7.76"/>
 </a>
 </g>
-<text text-anchor="middle" x="420.75" y="-65.88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> m_bucket_count</text>
-<text text-anchor="middle" x="420.75" y="-54.62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">m_load_threshold</text>
-<text text-anchor="middle" x="420.75" y="-43.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">m_nb_elements</text>
+<text text-anchor="middle" x="397.5" y="-64.88" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> m_bucket_count</text>
+<text text-anchor="middle" x="397.5" y="-53.62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">m_load_threshold</text>
+<text text-anchor="middle" x="397.5" y="-42.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">m_nb_elements</text>
 </g>
 </g>
 </svg>

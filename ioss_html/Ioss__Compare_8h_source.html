@@ -100,7 +100,7 @@ $(function(){initNavTree('Ioss__Compare_8h_source.html',''); initResizable(); })
   <div class="headertitle"><div class="title">Ioss_Compare.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Ioss__Compare_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022 National Technology &amp; Engineering Solutions</span></div>
+<a href="Ioss__Compare_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022, 2024 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -122,19 +122,14 @@ $(function(){initNavTree('Ioss__Compare_8h_source.html',''); initResizable(); })
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classIoss_1_1Compare.html">   19</a></span>  <span class="keyword">class </span>IOSS_EXPORT <a class="code hl_class" href="classIoss_1_1Compare.html">Compare</a></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classIoss_1_1Compare.html#acc31c52bec97482733928c9986b4320b">   22</a></span>    <a class="code hl_function" href="classIoss_1_1Compare.html#acc31c52bec97482733928c9986b4320b">Compare</a>()  = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classIoss_1_1Compare.html#a5b02a9b649809bda449647223d754250">   23</a></span>    <a class="code hl_function" href="classIoss_1_1Compare.html#a5b02a9b649809bda449647223d754250">~Compare</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// Compare the mesh in &#39;input_region_1&#39; to &#39;input_region_2&#39;.  Behavior can be controlled</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// via options in &#39;options&#39;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> compare_database(<a class="code hl_class" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;input_region_1, <a class="code hl_class" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;input_region_2,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                 <span class="keyword">const</span> <a class="code hl_struct" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  };</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// Compare the mesh in &#39;input_region_1&#39; to &#39;input_region_2&#39;.  Behavior can be controlled</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// via options in &#39;options&#39;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> compare_database(<a class="code hl_class" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;input_region_1, <a class="code hl_class" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;input_region_2,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                 <span class="keyword">const</span> <a class="code hl_struct" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  };</div>
 </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>} <span class="comment">// namespace Ioss</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} <span class="comment">// namespace Ioss</span></div>
 <div class="ttc" id="aclassIoss_1_1Compare_html"><div class="ttname"><a href="classIoss_1_1Compare.html">Ioss::Compare</a></div><div class="ttdef"><b>Definition</b> Ioss_Compare.h:20</div></div>
-<div class="ttc" id="aclassIoss_1_1Compare_html_a5b02a9b649809bda449647223d754250"><div class="ttname"><a href="classIoss_1_1Compare.html#a5b02a9b649809bda449647223d754250">Ioss::Compare::~Compare</a></div><div class="ttdeci">~Compare()=default</div></div>
-<div class="ttc" id="aclassIoss_1_1Compare_html_acc31c52bec97482733928c9986b4320b"><div class="ttname"><a href="classIoss_1_1Compare.html#acc31c52bec97482733928c9986b4320b">Ioss::Compare::Compare</a></div><div class="ttdeci">Compare()=default</div></div>
 <div class="ttc" id="aclassIoss_1_1Region_html"><div class="ttname"><a href="classIoss_1_1Region.html">Ioss::Region</a></div><div class="ttdoc">A grouping entity that contains other grouping entities.</div><div class="ttdef"><b>Definition</b> Ioss_Region.h:90</div></div>
 <div class="ttc" id="anamespaceIoss_html"><div class="ttname"><a href="namespaceIoss.html">Ioss</a></div><div class="ttdoc">The main namespace for the Ioss library.</div><div class="ttdef"><b>Definition</b> Ioad_DatabaseIO.C:40</div></div>
 <div class="ttc" id="astructIoss_1_1MeshCopyOptions_html"><div class="ttname"><a href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a></div><div class="ttdef"><b>Definition</b> Ioss_MeshCopyOptions.h:15</div></div>

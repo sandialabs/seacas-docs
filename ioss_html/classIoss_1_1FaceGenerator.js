@@ -1,7 +1,6 @@
 var classIoss_1_1FaceGenerator =
 [
     [ "FaceGenerator", "classIoss_1_1FaceGenerator.html#a4fdd55ff4808742a55303a1d399441a6", null ],
-    [ "~FaceGenerator", "classIoss_1_1FaceGenerator.html#a11566ac1f7628eff5482ed314901dd01", null ],
     [ "faces", "classIoss_1_1FaceGenerator.html#a2032427a1c92d87757d41387ce070bef", null ],
     [ "generate_block_faces", "classIoss_1_1FaceGenerator.html#ac2e3a2e5cec4a76547f327c0daa553a8", null ],
     [ "generate_faces", "classIoss_1_1FaceGenerator.html#a405289a0d5040a80697b0a0fcd588177", null ],

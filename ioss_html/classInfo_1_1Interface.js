@@ -1,7 +1,6 @@
 var classInfo_1_1Interface =
 [
     [ "Interface", "classInfo_1_1Interface.html#a4f9c4b8d9b404bc1279a852e60db26cc", null ],
-    [ "~Interface", "classInfo_1_1Interface.html#a7ef4f553629da216f3d7a07fca17f8f3", null ],
     [ "adjacencies", "classInfo_1_1Interface.html#aab9d81c8bd0df00f2b83cb1f31010b7d", null ],
     [ "check_node_status", "classInfo_1_1Interface.html#aa9b75ad671b421e9ccd0bafdc4e25a70", null ],
     [ "compute_bbox", "classInfo_1_1Interface.html#ae26835e74aaeb7248f5f7b3611ffa310", null ],

@@ -1,8 +1,6 @@
 var classIoexnl_1_1DatabaseIO =
 [
     [ "DatabaseIO", "classIoexnl_1_1DatabaseIO.html#ab5e8b7ee14909fa2f6564bb1f2bfded6", null ],
-    [ "DatabaseIO", "classIoexnl_1_1DatabaseIO.html#aee2952ec30226d503df3b5de9f9a5413", null ],
-    [ "~DatabaseIO", "classIoexnl_1_1DatabaseIO.html#a5024e3aacf5cdd438eb3e1cf8ad4625f", null ],
     [ "check_valid_file_ptr", "classIoexnl_1_1DatabaseIO.html#a646ca2738472f4d2db9e8b61c2ccf2c0", null ],
     [ "compute_node_status", "classIoexnl_1_1DatabaseIO.html#ad0d29f1b10d2f387f9d09f12edf7c1fa", null ],
     [ "gather_communication_metadata", "classIoexnl_1_1DatabaseIO.html#a767012d64f693541b4133a834c3be6ad", null ],
@@ -31,7 +29,6 @@ var classIoexnl_1_1DatabaseIO =
     [ "handle_face_ids", "classIoexnl_1_1DatabaseIO.html#a3f526ebbe536e8539ab2def1ff6d04ea", null ],
     [ "handle_node_ids", "classIoexnl_1_1DatabaseIO.html#a7f7d5588c9b32c0f6e2b598e897bc60d", null ],
     [ "handle_output_file", "classIoexnl_1_1DatabaseIO.html#af57c12c9300468216ae7a0c8cd662286", null ],
-    [ "operator=", "classIoexnl_1_1DatabaseIO.html#aa8ce64af8a80bb7f18d341f38ee46d4f", null ],
     [ "put_field_internal", "classIoexnl_1_1DatabaseIO.html#ad682c6e160feffb49bbbc65bd48b8c2c", null ],
     [ "put_field_internal", "classIoexnl_1_1DatabaseIO.html#ab7b34413ac6ad238d7883b782cd42fe9", null ],
     [ "put_field_internal", "classIoexnl_1_1DatabaseIO.html#a07fadf38bf0ae0716930881e541f6e59", null ],

@@ -1,6 +1,5 @@
 var classIoss_1_1Quad12 =
 [
-    [ "~Quad12", "classIoss_1_1Quad12.html#acd1b7142283cdd8e204521cc420ae023", null ],
     [ "Quad12", "classIoss_1_1Quad12.html#a1bf78f2edfc28a8d7720fa03e8cf49cf", null ],
     [ "Quad12", "classIoss_1_1Quad12.html#a827331337a7647dc18b89c3950b5ac37", null ],
     [ "edge_connectivity", "classIoss_1_1Quad12.html#a9dff3c1e0f926e769ac27e2ca385c4c3", null ],

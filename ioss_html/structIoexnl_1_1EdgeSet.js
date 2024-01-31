@@ -1,7 +1,5 @@
 var structIoexnl_1_1EdgeSet =
 [
-    [ "EdgeSet", "structIoexnl_1_1EdgeSet.html#a75cf452ef69e044e99c70438dded4936", null ],
-    [ "EdgeSet", "structIoexnl_1_1EdgeSet.html#a1335e6b7e533ac45799b7da3e7e4137f", null ],
     [ "EdgeSet", "structIoexnl_1_1EdgeSet.html#a78f22840a931f83de1a5ccbd160dbc7f", null ],
     [ "attributeCount", "structIoexnl_1_1EdgeSet.html#af5e9244f020388130b3934f81a4e331b", null ],
     [ "dfCount", "structIoexnl_1_1EdgeSet.html#a27e1310e6094054cb957c22f1ff67282", null ],

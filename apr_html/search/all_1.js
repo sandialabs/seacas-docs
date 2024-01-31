@@ -51,7 +51,7 @@ var searchData=
   ['arith_5fdddd_5ffncts_48',['arith_dddd_fncts',['../namespaceSEAMS.html#a6e2a6dcac11fdee3148bdc1e03089784',1,'SEAMS']]],
   ['arith_5fdddddd_5ffncts_49',['arith_dddddd_fncts',['../namespaceSEAMS.html#ad252bd9be31bbe5874c964e8e7886372',1,'SEAMS']]],
   ['arith_5ffncts_50',['arith_fncts',['../namespaceSEAMS.html#ad4d08637bef76a88d6c771908b15c17b',1,'SEAMS']]],
-  ['array_51',['array',['../structSEAMS_1_1array.html',1,'SEAMS::array'],['../structSEAMS_1_1array.html#a417139d383fcba5844ff3ce7e1a76a64',1,'SEAMS::array::array(int r, int c)'],['../structSEAMS_1_1array.html#aa479de061ed2727046e070f7f0429823',1,'SEAMS::array::array(const array &amp;)=default'],['../structSEAMS_1_1array.html#a7c43d352e0a475ba39f7f1c6c0c3c03b',1,'SEAMS::array::array()=default']]],
+  ['array_51',['array',['../structSEAMS_1_1array.html',1,'SEAMS::array'],['../structSEAMS_1_1array.html#a417139d383fcba5844ff3ce7e1a76a64',1,'SEAMS::array::array()']]],
   ['array_5fa_5ffncts_52',['array_a_fncts',['../namespaceSEAMS.html#a849915f01f5d710c2a026711d6c23ccf',1,'SEAMS']]],
   ['array_5fa_5finit_53',['array_a_init',['../structarray__a__init.html',1,'']]],
   ['array_5fadd_54',['array_add',['../namespaceSEAMS.html#af1123a2aee160e3e0732dc1bda35c0b9',1,'SEAMS']]],

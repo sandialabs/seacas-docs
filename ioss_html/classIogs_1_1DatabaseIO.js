@@ -1,7 +1,6 @@
 var classIogs_1_1DatabaseIO =
 [
     [ "DatabaseIO", "classIogs_1_1DatabaseIO.html#a7abf19c2a05d55f306759bf12b6cf6d3", null ],
-    [ "DatabaseIO", "classIogs_1_1DatabaseIO.html#a2eae28f81af1f053a51361fd33c870dd", null ],
     [ "~DatabaseIO", "classIogs_1_1DatabaseIO.html#afe45ba4255f478e0bed5f6b05e1c8009", null ],
     [ "add_transient_fields", "classIogs_1_1DatabaseIO.html#a26d61d75630e203eea9e19ecacbc52db", null ],
     [ "begin_nl", "classIogs_1_1DatabaseIO.html#a1a9b4f261c9b2374fbb3bd7a40800d6e", null ],
@@ -25,7 +24,6 @@ var classIogs_1_1DatabaseIO =
     [ "get_step_times_nl", "classIogs_1_1DatabaseIO.html#a45d9dbb4d3776c769be8844e9783ad9d", null ],
     [ "get_structured_blocks", "classIogs_1_1DatabaseIO.html#a803a900c3c11114a952ae457c2adcdec", null ],
     [ "int_byte_size_db", "classIogs_1_1DatabaseIO.html#a4ff41082680118a784b3fb47aabc2658", null ],
-    [ "operator=", "classIogs_1_1DatabaseIO.html#a14e245166e91304dfd3501d381ffa018", null ],
     [ "read_meta_data_nl", "classIogs_1_1DatabaseIO.html#a2dbaf20883c77b3280a8aac3e6719d92", null ],
     [ "setGeneratedMesh", "classIogs_1_1DatabaseIO.html#a0834352f7998f580c597986f2aef3e84", null ],
     [ "currentTime", "classIogs_1_1DatabaseIO.html#a1025d9cc2dab7bda3aba69ed4a435667", null ],

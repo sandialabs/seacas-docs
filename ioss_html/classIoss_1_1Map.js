@@ -3,7 +3,6 @@ var classIoss_1_1Map =
     [ "Map", "classIoss_1_1Map.html#a5ac44643525eb91ba4d3a03c5d990169", null ],
     [ "Map", "classIoss_1_1Map.html#a27a8baac2814c46e8251b759cea058f5", null ],
     [ "Map", "classIoss_1_1Map.html#ab9de22cb7b63981543690959f2cce802", null ],
-    [ "~Map", "classIoss_1_1Map.html#aebc0031c61351949dce12318225fecc8", null ],
     [ "build_reorder_map_nl", "classIoss_1_1Map.html#ac8f10357483c13a871c2dc9a53f80329", null ],
     [ "build_reverse_map", "classIoss_1_1Map.html#a5b69ebb0e2961bc505b871da01af8971", null ],
     [ "build_reverse_map", "classIoss_1_1Map.html#a6d87aa40f3e8701e9976a07e2785d9bb", null ],

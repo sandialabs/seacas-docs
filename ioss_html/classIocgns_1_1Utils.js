@@ -1,7 +1,5 @@
 var classIocgns_1_1Utils =
 [
-    [ "Utils", "classIocgns_1_1Utils.html#aaa6e690faa9240432cdea7d8df511b14", null ],
-    [ "~Utils", "classIocgns_1_1Utils.html#ab6fa6122f34e7057265f68d21c1b4a21", null ],
     [ "add_assemblies", "classIocgns_1_1Utils.html#a7f9a576f7722ff0c8475fdc8871a37d0", null ],
     [ "add_sidesets", "classIocgns_1_1Utils.html#ab140e29cf0cbe506a4d67cc4d62671d1", null ],
     [ "add_structured_boundary_conditions", "classIocgns_1_1Utils.html#a7cdf08e72ca0dfe7caf224ebb4de0aab", null ],

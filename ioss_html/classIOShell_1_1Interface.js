@@ -1,7 +1,6 @@
 var classIOShell_1_1Interface =
 [
     [ "Interface", "classIOShell_1_1Interface.html#aa5a7f38e0b2ce3be3a57336497fa0c76", null ],
-    [ "~Interface", "classIOShell_1_1Interface.html#a66372521baf528164f25d4883a642b34", null ],
     [ "enroll_options", "classIOShell_1_1Interface.html#ac4b56e9c0f6369bc5de6af80575aae95", null ],
     [ "parse_options", "classIOShell_1_1Interface.html#a97b3e9e9e67715490ba57d003b88df76", null ],
     [ "abs_tolerance", "classIOShell_1_1Interface.html#a9eefb2ed30b07125a19ce0237bffd06e", null ],

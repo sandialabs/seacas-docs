@@ -2,7 +2,6 @@ var classIoss_1_1PropertyManager =
 [
     [ "PropertyManager", "classIoss_1_1PropertyManager.html#a2c4efc2aaf51821af3916a89762e0714", null ],
     [ "PropertyManager", "classIoss_1_1PropertyManager.html#a7b08c5bcf490e5fa132912c1dc6121b8", null ],
-    [ "~PropertyManager", "classIoss_1_1PropertyManager.html#a04ff139cbdc5256a07ea4a7aca4d7ef5", null ],
     [ "add", "classIoss_1_1PropertyManager.html#a8d6d5a27856b4618b56d542208ad86e2", null ],
     [ "count", "classIoss_1_1PropertyManager.html#ade6a2eef7b28669c166e768c2dfdca0a", null ],
     [ "describe", "classIoss_1_1PropertyManager.html#a3caa16546c0a2eed318eefa74e1be6ce", null ],

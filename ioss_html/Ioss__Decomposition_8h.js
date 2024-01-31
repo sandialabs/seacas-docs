@@ -4,6 +4,6 @@ var Ioss__Decomposition_8h =
     [ "Ioss::SetDecompositionData", "classIoss_1_1SetDecompositionData.html", "classIoss_1_1SetDecompositionData" ],
     [ "Ioss::ElementBlockBatchOffset", "classIoss_1_1ElementBlockBatchOffset.html", "classIoss_1_1ElementBlockBatchOffset" ],
     [ "Ioss::Decomposition< INT >", "classIoss_1_1Decomposition.html", "classIoss_1_1Decomposition" ],
-    [ "DC_USE_HOPSCOTCH", "Ioss__Decomposition_8h.html#a63eae7a57499ff8194421b977d70e77d", null ],
+    [ "DC_USE_VECTOR", "Ioss__Decomposition_8h.html#a522796791bc3fd6f6267b33b1bb53b4a", null ],
     [ "valid_decomp_methods", "Ioss__Decomposition_8h.html#afc8a55ef023ee9aa5702d62e1b3a7917", null ]
 ];

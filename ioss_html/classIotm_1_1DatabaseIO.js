@@ -1,7 +1,6 @@
 var classIotm_1_1DatabaseIO =
 [
     [ "DatabaseIO", "classIotm_1_1DatabaseIO.html#aeecd7da9cb70d575952f00fdfed46462", null ],
-    [ "DatabaseIO", "classIotm_1_1DatabaseIO.html#a4ca77840ba3e57355b54ae6011948781", null ],
     [ "~DatabaseIO", "classIotm_1_1DatabaseIO.html#a34bedcf3800ed6130222f56778e70238", null ],
     [ "add_transient_fields", "classIotm_1_1DatabaseIO.html#a9a94176307058f311914522a7c8691df", null ],
     [ "begin_nl", "classIotm_1_1DatabaseIO.html#ae85842b38b82d5a7be9b3841db892d8b", null ],
@@ -27,9 +26,9 @@ var classIotm_1_1DatabaseIO =
     [ "get_step_times_nl", "classIotm_1_1DatabaseIO.html#ae56d6d28e20f93a85ef1680a54b1e611", null ],
     [ "get_text_mesh", "classIotm_1_1DatabaseIO.html#a3635bcdbe02d245fa5c27d8dae737670", null ],
     [ "int_byte_size_db", "classIotm_1_1DatabaseIO.html#a282d162e8e2833d00978dfe9611bdd8b", null ],
-    [ "operator=", "classIotm_1_1DatabaseIO.html#a122d1521cf445e6d68b7ede986e11602", null ],
     [ "read_meta_data_nl", "classIotm_1_1DatabaseIO.html#ac2a22c7438e2602f0a3b2e872484cfb7", null ],
     [ "set_text_mesh", "classIotm_1_1DatabaseIO.html#a8769aadfae82229400720109f12f06bb", null ],
+    [ "update_block_omissions_from_assemblies", "classIotm_1_1DatabaseIO.html#a06afc82f92082cdd26e22d98b455b340", null ],
     [ "assemblyCount", "classIotm_1_1DatabaseIO.html#a547382303d73ff9c3d6950bcd6db7265", null ],
     [ "currentTime", "classIotm_1_1DatabaseIO.html#aad316641cb4be998093cdb449a489dde", null ],
     [ "elementBlockCount", "classIotm_1_1DatabaseIO.html#aef99a23eb94b08ea1021d8911822bc33", null ],

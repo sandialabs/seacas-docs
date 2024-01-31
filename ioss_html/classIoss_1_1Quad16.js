@@ -1,6 +1,5 @@
 var classIoss_1_1Quad16 =
 [
-    [ "~Quad16", "classIoss_1_1Quad16.html#ab1c4c489ec491906a2b27c2b30da53e0", null ],
     [ "Quad16", "classIoss_1_1Quad16.html#a3447da66ca6ca59fb0184867d8d820ae", null ],
     [ "Quad16", "classIoss_1_1Quad16.html#a735df9292200a244f9e54349713eb30f", null ],
     [ "edge_connectivity", "classIoss_1_1Quad16.html#a76e806e8fcb35529e4eecdce650d59f3", null ],

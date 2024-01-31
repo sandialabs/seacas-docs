@@ -2,7 +2,6 @@ var classIoss_1_1ElementBlock =
 [
     [ "ElementBlock", "classIoss_1_1ElementBlock.html#a5cabc51e9cc2f4aa35f238a19e90e1be", null ],
     [ "ElementBlock", "classIoss_1_1ElementBlock.html#a1513c7c636b785808e249373679ee328", null ],
-    [ "~ElementBlock", "classIoss_1_1ElementBlock.html#a5bc0d7344cd7aa71141cab63aa5df94f", null ],
     [ "contains_string", "classIoss_1_1ElementBlock.html#a86f7ad5810ed443e0a883fab89bf2b29", null ],
     [ "equal", "classIoss_1_1ElementBlock.html#a583b1e2a1979324ca41f221f0ee6030c", null ],
     [ "get_block_adjacencies", "classIoss_1_1ElementBlock.html#a1465fe86d89e9f55aee34cd5563b5888", null ],

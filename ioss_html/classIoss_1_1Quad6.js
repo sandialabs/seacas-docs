@@ -1,7 +1,6 @@
 var classIoss_1_1Quad6 =
 [
     [ "Quad6", "classIoss_1_1Quad6.html#a4a975ea72f60cc6465768f293fce154d", null ],
-    [ "~Quad6", "classIoss_1_1Quad6.html#adffb61781411123cc31fe618f4c1d356", null ],
     [ "Quad6", "classIoss_1_1Quad6.html#acfb302898d1b60dfdf63a4d432c8d90b", null ],
     [ "edge_connectivity", "classIoss_1_1Quad6.html#aa575b0265157bb1b792ec6ecb71aa80e", null ],
     [ "edge_type", "classIoss_1_1Quad6.html#a2aceef93a187433c4a05bfb11b68c42d", null ],

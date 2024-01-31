@@ -1,6 +1,5 @@
 var classIoss_1_1Wedge15 =
 [
-    [ "~Wedge15", "classIoss_1_1Wedge15.html#ac9fcb31f7e9f969b5bfba1556bd7d996", null ],
     [ "Wedge15", "classIoss_1_1Wedge15.html#a3563b4511fd6871c97c0860331ce3ac4", null ],
     [ "Wedge15", "classIoss_1_1Wedge15.html#a715129e7ff0b26a157407a828b91c67c", null ],
     [ "edge_connectivity", "classIoss_1_1Wedge15.html#a9aec74c70d1ec3d6f74af714b661b88d", null ],

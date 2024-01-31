@@ -1,6 +1,5 @@
 var classIoss_1_1Hex16 =
 [
-    [ "~Hex16", "classIoss_1_1Hex16.html#ac923d4d323bcd4ad68710a058fd72aaf", null ],
     [ "Hex16", "classIoss_1_1Hex16.html#aa71d537e62b2d10795048122985e6a68", null ],
     [ "Hex16", "classIoss_1_1Hex16.html#a4beae35a81199bc455c8fcab8e588a08", null ],
     [ "edge_connectivity", "classIoss_1_1Hex16.html#a5258516ad14eabb17a5a8c86498d11bc", null ],

@@ -2,7 +2,6 @@ var classIofaodel_1_1DatabaseIO =
 [
     [ "PropertyPair", "classIofaodel_1_1DatabaseIO.html#ad0ce9bfc92c4a415cc30a6ecf125c430", null ],
     [ "DatabaseIO", "classIofaodel_1_1DatabaseIO.html#a71c836c48a3fe8c9eb0e8b6d230cac4c", null ],
-    [ "DatabaseIO", "classIofaodel_1_1DatabaseIO.html#a037f29cef7fb153a8cbc80faf5effdfa", null ],
     [ "~DatabaseIO", "classIofaodel_1_1DatabaseIO.html#a578f393b2d172871ecec847d5b9b0e01", null ],
     [ "begin_nl", "classIofaodel_1_1DatabaseIO.html#a5c42acfd6dffb662c02332fa5e3cc568", null ],
     [ "begin_state_nl", "classIofaodel_1_1DatabaseIO.html#a2544934baf75f1b2c85d9fd3d59ea417", null ],
@@ -51,7 +50,6 @@ var classIofaodel_1_1DatabaseIO =
     [ "node_block_count", "classIofaodel_1_1DatabaseIO.html#aa341f5eb71258aa966a7aa676d7ec13d", null ],
     [ "node_count", "classIofaodel_1_1DatabaseIO.html#aa97c1e948af9484edb1bd94c69d7f59c", null ],
     [ "nodeset_count", "classIofaodel_1_1DatabaseIO.html#a717908e368fda35866b948cc13556241", null ],
-    [ "operator=", "classIofaodel_1_1DatabaseIO.html#a4997a56d41a0023186833c2f34d547a8", null ],
     [ "put_field_internal", "classIofaodel_1_1DatabaseIO.html#aca3fd11288750322d92dfdb9ee36ae36", null ],
     [ "put_field_internal", "classIofaodel_1_1DatabaseIO.html#af492ef976742524f8f58037b19c689ed", null ],
     [ "put_field_internal", "classIofaodel_1_1DatabaseIO.html#a477004553f11addf38dd036e95d0c059", null ],

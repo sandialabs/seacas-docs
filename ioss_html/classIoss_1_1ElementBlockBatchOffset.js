@@ -4,7 +4,6 @@ var classIoss_1_1ElementBlockBatchOffset =
     [ "ElementBlockBatchOffset", "classIoss_1_1ElementBlockBatchOffset.html#abd222a317823338c0350d4f82006705e", null ],
     [ "ElementBlockBatchOffset", "classIoss_1_1ElementBlockBatchOffset.html#acdeb7143205716a41020193ac313fece", null ],
     [ "ElementBlockBatchOffset", "classIoss_1_1ElementBlockBatchOffset.html#af0dc371967a85a278a93ee8a1f0d4ad3", null ],
-    [ "~ElementBlockBatchOffset", "classIoss_1_1ElementBlockBatchOffset.html#a98a0ebe4e6199917646ff189cbd8fa32", null ],
     [ "get_connectivity_import_offset", "classIoss_1_1ElementBlockBatchOffset.html#a8c7b1e66b3e0e23c110ad88a179f27f8", null ],
     [ "get_connectivity_ioss_component_count", "classIoss_1_1ElementBlockBatchOffset.html#a78dd63a49d3a6103898d5d9314571bf0", null ],
     [ "get_connectivity_ioss_offset", "classIoss_1_1ElementBlockBatchOffset.html#abd0df05a7273665dbce7c9722ebfc547", null ],
