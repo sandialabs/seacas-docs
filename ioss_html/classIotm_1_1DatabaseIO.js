@@ -5,6 +5,7 @@ var classIotm_1_1DatabaseIO =
     [ "add_transient_fields", "classIotm_1_1DatabaseIO.html#a9a94176307058f311914522a7c8691df", null ],
     [ "begin_nl", "classIotm_1_1DatabaseIO.html#ae85842b38b82d5a7be9b3841db892d8b", null ],
     [ "begin_state_nl", "classIotm_1_1DatabaseIO.html#abd1ee48806336e0f1fc47387c856a4b2", null ],
+    [ "compute_block_membership_nl", "classIotm_1_1DatabaseIO.html#a19c0bcdd7515288fb40dadd94fca4592", null ],
     [ "end_nl", "classIotm_1_1DatabaseIO.html#a21cf7d9be4ca0ff97a77860ed3200b44", null ],
     [ "entity_field_support", "classIotm_1_1DatabaseIO.html#a99fbb58c6aa48c84e067b757686da188", null ],
     [ "get_assemblies", "classIotm_1_1DatabaseIO.html#aea6649d1598c407a6d3cba4c5cb304ed", null ],

@@ -309,9 +309,10 @@ var annotated_dup =
       [ "IOFactory", "classIoad_1_1IOFactory.html", "classIoad_1_1IOFactory" ]
     ] ],
     [ "Iocatalyst", "namespaceIocatalyst.html", [
-      [ "detail", "namespaceIocatalyst_1_1detail.html", [
-        [ "FieldNonExistent", "classIocatalyst_1_1detail_1_1FieldNonExistent.html", null ]
-      ] ],
+      [ "BlockMesh", "classIocatalyst_1_1BlockMesh.html", "classIocatalyst_1_1BlockMesh" ],
+      [ "BlockMeshSet", "classIocatalyst_1_1BlockMeshSet.html", "classIocatalyst_1_1BlockMeshSet" ],
+      [ "CatalystLogging", "classIocatalyst_1_1CatalystLogging.html", "classIocatalyst_1_1CatalystLogging" ],
+      [ "CatalystManager", "classIocatalyst_1_1CatalystManager.html", "classIocatalyst_1_1CatalystManager" ],
       [ "DatabaseIO", "classIocatalyst_1_1DatabaseIO.html", "classIocatalyst_1_1DatabaseIO" ],
       [ "Initializer", "classIocatalyst_1_1Initializer.html", "classIocatalyst_1_1Initializer" ],
       [ "IOFactory", "classIocatalyst_1_1IOFactory.html", "classIocatalyst_1_1IOFactory" ]
@@ -846,8 +847,12 @@ var annotated_dup =
       [ "robin_set", "classtsl_1_1robin__set.html", "classtsl_1_1robin__set" ]
     ] ],
     [ "Adjacency", "structAdjacency.html", "structAdjacency" ],
+    [ "BlockMeshTest", "classBlockMeshTest.html", "classBlockMeshTest" ],
     [ "CatalystTestFixture", "classCatalystTestFixture.html", "classCatalystTestFixture" ],
+    [ "Iocatalyst_DatabaseIOTest", "classIocatalyst__DatabaseIOTest.html", "classIocatalyst__DatabaseIOTest" ],
     [ "IossApplication", "classIossApplication.html", "classIossApplication" ],
+    [ "LoggingTest", "classLoggingTest.html", "classLoggingTest" ],
+    [ "ManagerTest", "classManagerTest.html", "classManagerTest" ],
     [ "SideEntryLess", "structSideEntryLess.html", "structSideEntryLess" ],
     [ "vector3d", "classvector3d.html", "classvector3d" ]
 ];
