@@ -674,6 +674,7 @@ var annotated_dup =
       [ "TetPermutation", "classIoss_1_1TetPermutation.html", "classIoss_1_1TetPermutation" ],
       [ "Tracer", "classIoss_1_1Tracer.html", "classIoss_1_1Tracer" ],
       [ "Transform", "classIoss_1_1Transform.html", "classIoss_1_1Transform" ],
+      [ "TransformFactory", "classIoss_1_1TransformFactory.html", "classIoss_1_1TransformFactory" ],
       [ "Tri13", "classIoss_1_1Tri13.html", "classIoss_1_1Tri13" ],
       [ "Tri3", "classIoss_1_1Tri3.html", "classIoss_1_1Tri3" ],
       [ "Tri4", "classIoss_1_1Tri4.html", "classIoss_1_1Tri4" ],
@@ -747,7 +748,6 @@ var annotated_dup =
       [ "TopologyMapEntry", "classIotm_1_1TopologyMapEntry.html", "classIotm_1_1TopologyMapEntry" ]
     ] ],
     [ "Iotr", "namespaceIotr.html", [
-      [ "Factory", "classIotr_1_1Factory.html", "classIotr_1_1Factory" ],
       [ "Initializer", "classIotr_1_1Initializer.html", "classIotr_1_1Initializer" ],
       [ "MinMax", "classIotr_1_1MinMax.html", "classIotr_1_1MinMax" ],
       [ "MinMax_Factory", "classIotr_1_1MinMax__Factory.html", "classIotr_1_1MinMax__Factory" ],

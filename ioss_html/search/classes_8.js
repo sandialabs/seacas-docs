@@ -26,5 +26,6 @@ var searchData=
   ['is_5fpower_5fof_5ftwo_5fpolicy_3c_20tsl_3a_3arh_3a_3apower_5fof_5ftwo_5fgrowth_5fpolicy_3c_20growthfactor_20_3e_20_3e_23',['is_power_of_two_policy&lt; tsl::rh::power_of_two_growth_policy&lt; GrowthFactor &gt; &gt;',['../structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy_3_01tsl_1_1rh_1_1power__of__two__a1a28c2963ea7bfc09f131241d081ae6.html',1,'tsl::detail_robin_hash']]],
   ['is_5frvalue_5freference_24',['is_rvalue_reference',['../structdoctest_1_1detail_1_1types_1_1is__rvalue__reference.html',1,'doctest::detail::types']]],
   ['is_5frvalue_5freference_3c_20t_20_26_26_20_3e_25',['is_rvalue_reference&lt; T &amp;&amp; &gt;',['../structdoctest_1_1detail_1_1types_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html',1,'doctest::detail::types']]],
-  ['isnan_26',['IsNaN',['../structdoctest_1_1IsNaN.html',1,'doctest']]]
+  ['is_5ftype_5fsame_26',['is_type_same',['../structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same.html',1,'tsl::detail_hopscotch_hash::hopscotch_hash']]],
+  ['isnan_27',['IsNaN',['../structdoctest_1_1IsNaN.html',1,'doctest']]]
 ];

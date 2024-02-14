@@ -20,7 +20,6 @@ var structIoss_1_1ZoneConnectivity =
     [ "serialize", "structIoss_1_1ZoneConnectivity.html#aa1b097c330901ad368da9286a8be0cca", null ],
     [ "transform", "structIoss_1_1ZoneConnectivity.html#a9df1e293d1477cffb01844dfe59d0565", null ],
     [ "transform_matrix", "structIoss_1_1ZoneConnectivity.html#a363efaba2c770565935f4f7ffed1ec2f", null ],
-    [ "operator<<", "structIoss_1_1ZoneConnectivity.html#aeceeacf9d241e910cca9e888b4f1ae31", null ],
     [ "m_connectionName", "structIoss_1_1ZoneConnectivity.html#aaefd7e42a0cdd81a6db0fce98f75ee86", null ],
     [ "m_donorGUID", "structIoss_1_1ZoneConnectivity.html#ac8294b8bbd267ca2811b5d24fdbc5c7b", null ],
     [ "m_donorName", "structIoss_1_1ZoneConnectivity.html#a0a9eff4efab2e43c4007170f0d9ee539", null ],

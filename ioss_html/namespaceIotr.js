@@ -1,6 +1,5 @@
 var namespaceIotr =
 [
-    [ "Factory", "classIotr_1_1Factory.html", "classIotr_1_1Factory" ],
     [ "Initializer", "classIotr_1_1Initializer.html", "classIotr_1_1Initializer" ],
     [ "MinMax", "classIotr_1_1MinMax.html", "classIotr_1_1MinMax" ],
     [ "MinMax_Factory", "classIotr_1_1MinMax__Factory.html", "classIotr_1_1MinMax__Factory" ],
@@ -15,6 +14,5 @@ var namespaceIotr =
     [ "Tensor", "classIotr_1_1Tensor.html", "classIotr_1_1Tensor" ],
     [ "Tensor_Factory", "classIotr_1_1Tensor__Factory.html", "classIotr_1_1Tensor__Factory" ],
     [ "VectorMagnitude", "classIotr_1_1VectorMagnitude.html", "classIotr_1_1VectorMagnitude" ],
-    [ "VM_Factory", "classIotr_1_1VM__Factory.html", "classIotr_1_1VM__Factory" ],
-    [ "FactoryMap", "namespaceIotr.html#ab50a06009fe35d11215a72b3447225fe", null ]
+    [ "VM_Factory", "classIotr_1_1VM__Factory.html", "classIotr_1_1VM__Factory" ]
 ];

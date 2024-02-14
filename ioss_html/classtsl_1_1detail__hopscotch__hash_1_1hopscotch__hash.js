@@ -1,6 +1,7 @@
 var classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash =
 [
     [ "hopscotch_iterator", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator.html", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator" ],
+    [ "is_type_same", "structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same.html", "structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same" ],
     [ "allocator_type", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a8af583783f638a3faac62c52b876aa67", null ],
     [ "buckets_allocator", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a1af5a23d0f23a62aa205dee1eb4fcaa6", null ],
     [ "buckets_container_type", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html#a1947dd27d13a4b89f1f190bfb725b6f2", null ],

@@ -332,15 +332,6 @@ var hierarchy =
     [ "Ioss::FaceHash", "structIoss_1_1FaceHash.html", null ],
     [ "Ioex::FaceSet", "structIoex_1_1FaceSet.html", null ],
     [ "Ioexnl::FaceSet", "structIoexnl_1_1FaceSet.html", null ],
-    [ "Iotr::Factory", "classIotr_1_1Factory.html", [
-      [ "Iotr::MinMax_Factory", "classIotr_1_1MinMax__Factory.html", null ],
-      [ "Iotr::Offset3D_Factory", "classIotr_1_1Offset3D__Factory.html", null ],
-      [ "Iotr::Offset_Factory", "classIotr_1_1Offset__Factory.html", null ],
-      [ "Iotr::Scale3D_Factory", "classIotr_1_1Scale3D__Factory.html", null ],
-      [ "Iotr::Scale_Factory", "classIotr_1_1Scale__Factory.html", null ],
-      [ "Iotr::Tensor_Factory", "classIotr_1_1Tensor__Factory.html", null ],
-      [ "Iotr::VM_Factory", "classIotr_1_1VM__Factory.html", null ]
-    ] ],
     [ "doctest::detail::types::false_type", "structdoctest_1_1detail_1_1types_1_1false__type.html", [
       [ "doctest::detail::deferred_false< T >", "structdoctest_1_1detail_1_1deferred__false.html", null ],
       [ "doctest::detail::has_insertion_operator< T, typename >", "structdoctest_1_1detail_1_1has__insertion__operator.html", null ],
@@ -470,6 +461,7 @@ var hierarchy =
     [ "Ioss::Private::is_null_finder< T >", "structIoss_1_1Private_1_1is__null__finder.html", null ],
     [ "Ioss::Private::is_null_finder< char * >", "structIoss_1_1Private_1_1is__null__finder_3_01char_01_5_01_4.html", null ],
     [ "Ioss::Private::is_null_finder< const char * >", "structIoss_1_1Private_1_1is__null__finder_3_01const_01char_01_5_01_4.html", null ],
+    [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >::is_type_same< T, U >", "structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same.html", null ],
     [ "doctest::IsNaN< F >", "structdoctest_1_1IsNaN.html", null ],
     [ "KeyEqual", null, [
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
@@ -659,6 +651,15 @@ var hierarchy =
       [ "Iotr::Scale3D", "classIotr_1_1Scale3D.html", null ],
       [ "Iotr::Tensor", "classIotr_1_1Tensor.html", null ],
       [ "Iotr::VectorMagnitude", "classIotr_1_1VectorMagnitude.html", null ]
+    ] ],
+    [ "Ioss::TransformFactory", "classIoss_1_1TransformFactory.html", [
+      [ "Iotr::MinMax_Factory", "classIotr_1_1MinMax__Factory.html", null ],
+      [ "Iotr::Offset3D_Factory", "classIotr_1_1Offset3D__Factory.html", null ],
+      [ "Iotr::Offset_Factory", "classIotr_1_1Offset__Factory.html", null ],
+      [ "Iotr::Scale3D_Factory", "classIotr_1_1Scale3D__Factory.html", null ],
+      [ "Iotr::Scale_Factory", "classIotr_1_1Scale__Factory.html", null ],
+      [ "Iotr::Tensor_Factory", "classIotr_1_1Tensor__Factory.html", null ],
+      [ "Iotr::VM_Factory", "classIotr_1_1VM__Factory.html", null ]
     ] ],
     [ "doctest::detail::types::true_type", "structdoctest_1_1detail_1_1types_1_1true__type.html", [
       [ "doctest::detail::has_insertion_operator< T, decltype(operator<<(declval< std::ostream & >(), declval< const T & >()), void())>", "structdoctest_1_1detail_1_1has__insertion__operator_3_01T_00_01decltype_07operator_3_3_07declvald5a5a279653bbfeef238ad5c984744e2.html", null ],

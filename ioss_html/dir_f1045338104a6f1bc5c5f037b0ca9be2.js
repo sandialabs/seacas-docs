@@ -1,7 +1,5 @@
 var dir_f1045338104a6f1bc5c5f037b0ca9be2 =
 [
-    [ "Iotr_Factory.C", "Iotr__Factory_8C.html", null ],
-    [ "Iotr_Factory.h", "Iotr__Factory_8h.html", "Iotr__Factory_8h" ],
     [ "Iotr_Initializer.C", "Iotr__Initializer_8C.html", null ],
     [ "Iotr_Initializer.h", "Iotr__Initializer_8h.html", "Iotr__Initializer_8h" ],
     [ "Iotr_MinMax.C", "Iotr__MinMax_8C.html", null ],
