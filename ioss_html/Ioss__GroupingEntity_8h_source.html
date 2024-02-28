@@ -669,11 +669,11 @@ $(function(){initNavTree('Ioss__GroupingEntity_8h_source.html',''); initResizabl
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>  data.resize(field.<a class="code hl_function" href="classIoss_1_1Field.html#ac24230b1f5a5bda5d68b842c20efa9bb">raw_count</a>() * field.<a class="code hl_function" href="classIoss_1_1Field.html#a3f11ff0a5c57d3c98fcd140e3fa2e635">raw_storage</a>()-&gt;<a class="code hl_function" href="classIoss_1_1VariableType.html#ad1e37f24dd5bbe9ed6bee80a93665d6c">component_count</a>());</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>  <span class="keywordtype">size_t</span> data_size = data.size() * <span class="keyword">sizeof</span>(T);</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>  <span class="keyword">auto</span>   retval    = internal_get_field_data(field, data.data(), data_size);</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>  <span class="keyword">auto</span>   retval    = internal_get_field_data(field, <a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(data), data_size);</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span> </div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>  <span class="comment">// At this point, transform the field if specified...</span></div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>  <span class="keywordflow">if</span> (retval &gt;= 0) {</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    field.<a class="code hl_function" href="classIoss_1_1Field.html#acd40e32af496e75b0c416737ed0a97ec">transform</a>(data.data());</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    field.<a class="code hl_function" href="classIoss_1_1Field.html#acd40e32af496e75b0c416737ed0a97ec">transform</a>(<a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(data));</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>  }</div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span> </div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>  <span class="keywordflow">return</span> retval;</div>
@@ -700,11 +700,11 @@ $(function(){initNavTree('Ioss__GroupingEntity_8h_source.html',''); initResizabl
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>  <span class="keywordflow">if</span> (field.<a class="code hl_function" href="classIoss_1_1Field.html#a7a2d32fa8abd51081e5e4099ae408ee0">has_transform</a>()) {</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    <span class="comment">// Need non-const data since the transform will change the users data.</span></div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    std::vector&lt;T&gt; nc_data(data);</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    field.<a class="code hl_function" href="classIoss_1_1Field.html#acd40e32af496e75b0c416737ed0a97ec">transform</a>(nc_data.data());</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    <span class="keywordflow">return</span> internal_put_field_data(field, nc_data.data(), data_size);</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    field.<a class="code hl_function" href="classIoss_1_1Field.html#acd40e32af496e75b0c416737ed0a97ec">transform</a>(<a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(nc_data));</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    <span class="keywordflow">return</span> internal_put_field_data(field, <a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(nc_data), data_size);</div>
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>  }</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span> </div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>  T *my_data = <span class="keyword">const_cast&lt;</span>T *<span class="keyword">&gt;</span>(data.data());</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>  T *my_data = <span class="keyword">const_cast&lt;</span>T *<span class="keyword">&gt;</span>(<a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(data));</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>  <span class="keywordflow">return</span> internal_put_field_data(field, my_data, data_size);</div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>}</div>
 </div>
@@ -719,7 +719,7 @@ $(function(){initNavTree('Ioss__GroupingEntity_8h_source.html',''); initResizabl
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>  <a class="code hl_class" href="classIoss_1_1Field.html">Ioss::Field</a> field = get_field(field_name);</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>  field.<a class="code hl_function" href="classIoss_1_1Field.html#ad4f3aa9b1f18f9f3eb29e1db399d01f4">check_type</a>(<a class="code hl_function" href="classIoss_1_1Field.html#ae837f52a8c5b1cf6ce76113f4dd793d9">Ioss::Field::get_field_type</a>(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0)));</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  <span class="keywordtype">size_t</span> data_size = data.size() * <span class="keyword">sizeof</span>(T);</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>  T     *my_data   = <span class="keyword">const_cast&lt;</span>T *<span class="keyword">&gt;</span>(data.data());</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>  T     *my_data   = <span class="keyword">const_cast&lt;</span>T *<span class="keyword">&gt;</span>(<a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(data));</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>  field.<a class="code hl_function" href="classIoss_1_1Field.html#acd40e32af496e75b0c416737ed0a97ec">transform</a>(my_data);</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>  <span class="keywordflow">return</span> internal_put_field_data(field, my_data, data_size);</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>}</div>
@@ -755,7 +755,7 @@ $(function(){initNavTree('Ioss__GroupingEntity_8h_source.html',''); initResizabl
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>  <span class="keyword">typename</span> ViewType::HostMirror host_data = Kokkos::create_mirror_view(data);</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  <span class="comment">// Extract a pointer to the underlying allocated memory of the host view.</span></div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  T *host_data_ptr = host_data.data();</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  T *host_data_ptr = <a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(host_data);</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  <span class="comment">// Extract the data from disk to the underlying memory pointed to by host_data_ptr.</span></div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  <span class="keyword">auto</span> retval = internal_get_field_data(field, host_data_ptr, data_size);</div>
@@ -859,7 +859,7 @@ $(function(){initNavTree('Ioss__GroupingEntity_8h_source.html',''); initResizabl
 <div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>  Kokkos::deep_copy(host_data, data);</div>
 <div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
 <div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>  <span class="comment">// Extract a pointer to the underlying allocated memory of the host view.</span></div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>  T *host_data_ptr = host_data.data();</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>  T *host_data_ptr = <a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(host_data);</div>
 <div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span> </div>
 <div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>  <span class="comment">// Transform the field</span></div>
 <div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>  field.<a class="code hl_function" href="classIoss_1_1Field.html#acd40e32af496e75b0c416737ed0a97ec">transform</a>(host_data_ptr);</div>
@@ -944,6 +944,7 @@ $(function(){initNavTree('Ioss__GroupingEntity_8h_source.html',''); initResizabl
 <div class="ttc" id="aIoss__Property_8h_html"><div class="ttname"><a href="Ioss__Property_8h.html">Ioss_Property.h</a></div></div>
 <div class="ttc" id="aIoss__State_8h_html"><div class="ttname"><a href="Ioss__State_8h.html">Ioss_State.h</a></div></div>
 <div class="ttc" id="aIoss__Utils_8h_html_a33419dbc744ae151ba493fdf18c9caa1"><div class="ttname"><a href="Ioss__Utils_8h.html#a33419dbc744ae151ba493fdf18c9caa1">IOSS_ERROR</a></div><div class="ttdeci">void IOSS_ERROR(const std::ostringstream &amp;errmsg)</div><div class="ttdef"><b>Definition</b> Ioss_Utils.h:38</div></div>
+<div class="ttc" id="aIoss__Utils_8h_html_af1a17ad788a246476ea700b03bfcc6fb"><div class="ttname"><a href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a></div><div class="ttdeci">constexpr T * Data(std::vector&lt; T &gt; &amp;vec)</div><div class="ttdef"><b>Definition</b> Ioss_Utils.h:56</div></div>
 <div class="ttc" id="aIoss__VariableType_8h_html"><div class="ttname"><a href="Ioss__VariableType_8h.html">Ioss_VariableType.h</a></div></div>
 <div class="ttc" id="aUt__ioad_8C_html_ae208a4c4631e60ee27424c6c496355e6"><div class="ttname"><a href="Ut__ioad_8C.html#ae208a4c4631e60ee27424c6c496355e6">put_field_data</a></div><div class="ttdeci">void put_field_data(std::string field_name, int local_size, size_t component_count, Entity *e)</div><div class="ttdef"><b>Definition</b> Ut_ioad.C:295</div></div>
 <div class="ttc" id="aclassIoss_1_1DatabaseIO_html"><div class="ttname"><a href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a></div><div class="ttdoc">An input or output Database.</div><div class="ttdef"><b>Definition</b> Ioss_DatabaseIO.h:63</div></div>

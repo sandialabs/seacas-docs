@@ -102,7 +102,7 @@ $(function(){initNavTree('Ioss__MeshCopyOptions_8h_source.html',''); initResizab
 <div class="contents">
 <a href="Ioss__MeshCopyOptions_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * Copyright(C) 1999-2023 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * Copyright(C) 1999-2024 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
@@ -137,18 +137,19 @@ $(function(){initNavTree('Ioss__MeshCopyOptions_8h_source.html',''); initResizab
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structIoss_1_1MeshCopyOptions.html#a5cd2a4b3cce1d898aaa16ebefbf363b1">   34</a></span>    <span class="keywordtype">bool</span> reverse{<span class="keyword">false</span>};          <span class="comment">// Used for testing CGNS</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structIoss_1_1MeshCopyOptions.html#aaffb05734d481e9d95a04a71fd5bdeb7">   35</a></span>    <span class="keywordtype">bool</span> add_proc_id{<span class="keyword">false</span>};      <span class="comment">// CGNS: Add proc_id field.</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structIoss_1_1MeshCopyOptions.html#a5613f3c4b0754ce9ac6a8efb21ca98a5">   36</a></span>    <span class="keywordtype">bool</span> boundary_sideset{<span class="keyword">false</span>}; <span class="comment">// Output a sideset of the boundary faces of the model</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// only used by Catalyst calls to `copy_database`; if false the</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// copy process skips the defining of the mesh geometry and the</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// defining of the field data, thus assuming it has already been</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// done. Used for calling `copy_database` multiple times with</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// different timestep ranges.</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structIoss_1_1MeshCopyOptions.html#a8a58a3b0d7f3c606e05ad16196c72dce">   43</a></span>    <span class="keywordtype">bool</span> define_geometry{<span class="keyword">true</span>};</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structIoss_1_1MeshCopyOptions.html#a0eedd030321031b92c2a83fcd4e0fbed">   45</a></span>    <span class="keywordtype">bool</span> ignore_qa_info{<span class="keyword">false</span>}; <span class="comment">// In compare mode, ignore qa and info records.</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structIoss_1_1MeshCopyOptions.html#a0767cee2913176f3651a416a74bae387">   37</a></span>    <span class="keywordtype">bool</span> omitted_blocks{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// only used by Catalyst calls to `copy_database`; if false the</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// copy process skips the defining of the mesh geometry and the</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// defining of the field data, thus assuming it has already been</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// done. Used for calling `copy_database` multiple times with</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// different timestep ranges.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structIoss_1_1MeshCopyOptions.html#a8a58a3b0d7f3c606e05ad16196c72dce">   44</a></span>    <span class="keywordtype">bool</span> define_geometry{<span class="keyword">true</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structIoss_1_1MeshCopyOptions.html#a0eedd030321031b92c2a83fcd4e0fbed">   46</a></span>    <span class="keywordtype">bool</span> ignore_qa_info{<span class="keyword">false</span>}; <span class="comment">// In compare mode, ignore qa and info records.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  };</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <span class="comment">// namespace Ioss</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} <span class="comment">// namespace Ioss</span></div>
 <div class="ttc" id="anamespaceIoss_html"><div class="ttname"><a href="namespaceIoss.html">Ioss</a></div><div class="ttdoc">The main namespace for the Ioss library.</div><div class="ttdef"><b>Definition</b> Ioad_DatabaseIO.C:40</div></div>
 <div class="ttc" id="astructIoss_1_1MeshCopyOptions_html"><div class="ttname"><a href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a></div><div class="ttdef"><b>Definition</b> Ioss_MeshCopyOptions.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->

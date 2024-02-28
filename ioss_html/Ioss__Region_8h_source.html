@@ -621,7 +621,7 @@ $(function(){initNavTree('Ioss__Region_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>  <span class="keywordtype">size_t</span> data_size = field_count * <span class="keyword">sizeof</span>(U);</div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>  std::vector&lt;size_t&gt; offsets =</div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>      internal_get_entity_field_data(field_name, entity_container, field_data.data(), data_size);</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>      internal_get_entity_field_data(field_name, entity_container, <a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(field_data), data_size);</div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span> </div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>  assert(offsets.size() == (entity_container.size() + 1));</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>  assert(offsets[entity_container.size()] == field_count);</div>
@@ -652,6 +652,7 @@ $(function(){initNavTree('Ioss__Region_8h_source.html',''); initResizable(); });
 <div class="ttc" id="aIoss__State_8h_html"><div class="ttname"><a href="Ioss__State_8h.html">Ioss_State.h</a></div></div>
 <div class="ttc" id="aIoss__Utils_8h_html"><div class="ttname"><a href="Ioss__Utils_8h.html">Ioss_Utils.h</a></div></div>
 <div class="ttc" id="aIoss__Utils_8h_html_a33419dbc744ae151ba493fdf18c9caa1"><div class="ttname"><a href="Ioss__Utils_8h.html#a33419dbc744ae151ba493fdf18c9caa1">IOSS_ERROR</a></div><div class="ttdeci">void IOSS_ERROR(const std::ostringstream &amp;errmsg)</div><div class="ttdef"><b>Definition</b> Ioss_Utils.h:38</div></div>
+<div class="ttc" id="aIoss__Utils_8h_html_af1a17ad788a246476ea700b03bfcc6fb"><div class="ttname"><a href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a></div><div class="ttdeci">constexpr T * Data(std::vector&lt; T &gt; &amp;vec)</div><div class="ttdef"><b>Definition</b> Ioss_Utils.h:56</div></div>
 <div class="ttc" id="aIoss__VariableType_8h_html"><div class="ttname"><a href="Ioss__VariableType_8h.html">Ioss_VariableType.h</a></div></div>
 <div class="ttc" id="aclassIoss_1_1Assembly_html"><div class="ttname"><a href="classIoss_1_1Assembly.html">Ioss::Assembly</a></div><div class="ttdoc">A homogeneous collection of other GroupingEntities.</div><div class="ttdef"><b>Definition</b> Ioss_Assembly.h:31</div></div>
 <div class="ttc" id="aclassIoss_1_1Blob_html"><div class="ttname"><a href="classIoss_1_1Blob.html">Ioss::Blob</a></div><div class="ttdoc">A homogeneous collection of other GroupingEntities.</div><div class="ttdef"><b>Definition</b> Ioss_Blob.h:31</div></div>
