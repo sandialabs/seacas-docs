@@ -1604,7 +1604,7 @@ template&lt;typename INT &gt; </div>
 <p>So, there will be two maps the 'nodeMap.map' map is a 'direct lookup' map which maps current local position to global id and the 'nodeMap.reverse' is an associative lookup which maps the global id to 'original local'. There is also a 'nodeMap.reorder' which is direct lookup and maps current local position to original local.</p>
 <p>The ids coming in are the global ids; their position is the "local id-1" (That is, data[0] contains the global id of local node 1 in this node block).</p>
 <p>int local_position = nodeMap.reverse[NodeMap[i+1]] (the nodeMap.map and nodeMap.reverse are 1-based)</p>
-<p>To determine which map to update on a call to this function, we use the following hueristics: &ndash; If the database state is 'STATE_MODEL:', then update the 'nodeMap.reverse' and 'nodeMap.map'</p>
+<p>To determine which map to update on a call to this function, we use the following heuristics: &ndash; If the database state is 'STATE_MODEL:', then update the 'nodeMap.reverse' and 'nodeMap.map'</p>
 <p>&ndash; If the database state is not STATE_MODEL, then leave the 'nodeMap.reverse' and 'nodeMap.map' alone since they correspond to the information already written to the database. [May want to add a STATE_REDEFINE_MODEL]</p>
 <p>&ndash; In both cases, update the nodeMap.reorder</p>
 <p>NOTE: The mapping is done on TRANSIENT fields only; MODEL fields should be in the original order...</p>
