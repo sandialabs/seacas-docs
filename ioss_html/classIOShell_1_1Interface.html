@@ -170,8 +170,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:acf9c2531165559c5139d89879f1072fd" id="r_acf9c2531165559c5139d89879f1072fd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf9c2531165559c5139d89879f1072fd">selected_times</a> {}</td></tr>
 <tr class="memdesc:acf9c2531165559c5139d89879f1072fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If non-empty, then it is a list of times that should be transferred to the output file.  <br /></td></tr>
 <tr class="separator:acf9c2531165559c5139d89879f1072fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7da8b38c47b8f1a0cfb6e6c514dea548" id="r_a7da8b38c47b8f1a0cfb6e6c514dea548"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7da8b38c47b8f1a0cfb6e6c514dea548">omitted_blocks</a> {}</td></tr>
-<tr class="separator:a7da8b38c47b8f1a0cfb6e6c514dea548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d33285a42685b05117805847929080" id="r_a07d33285a42685b05117805847929080"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07d33285a42685b05117805847929080">split_times</a> {0}</td></tr>
 <tr class="separator:a07d33285a42685b05117805847929080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fb4ae578b6249727d1e3c787475dd45" id="r_a6fb4ae578b6249727d1e3c787475dd45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fb4ae578b6249727d1e3c787475dd45">split_cyclic</a> {0}</td></tr>
@@ -239,6 +237,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a141ed3f323d65c4ec2bde9f836843314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ea45221d93ce5579b5307ea33e2014" id="r_aa0ea45221d93ce5579b5307ea33e2014"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0ea45221d93ce5579b5307ea33e2014">ignore_face_map</a> {false}</td></tr>
 <tr class="separator:aa0ea45221d93ce5579b5307ea33e2014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d14a38fee6ceef47fb88c9995971725" id="r_a9d14a38fee6ceef47fb88c9995971725"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d14a38fee6ceef47fb88c9995971725">delete_qa</a> {false}</td></tr>
+<tr class="separator:a9d14a38fee6ceef47fb88c9995971725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4271e333a90b0e14aef300ce0a4818" id="r_a7b4271e333a90b0e14aef300ce0a4818"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b4271e333a90b0e14aef300ce0a4818">delete_info</a> {false}</td></tr>
+<tr class="separator:a7b4271e333a90b0e14aef300ce0a4818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dd20bf7388c5c19368fafd741d10f86" id="r_a0dd20bf7388c5c19368fafd741d10f86"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dd20bf7388c5c19368fafd741d10f86">fieldSuffixSeparator</a> {'_'}</td></tr>
 <tr class="separator:a0dd20bf7388c5c19368fafd741d10f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -491,6 +493,34 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> IOShell::Interface::decomp_method</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b4271e333a90b0e14aef300ce0a4818" name="a7b4271e333a90b0e14aef300ce0a4818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4271e333a90b0e14aef300ce0a4818">&#9670;&#160;</a></span>delete_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IOShell::Interface::delete_info {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d14a38fee6ceef47fb88c9995971725" name="a9d14a38fee6ceef47fb88c9995971725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d14a38fee6ceef47fb88c9995971725">&#9670;&#160;</a></span>delete_qa</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IOShell::Interface::delete_qa {false}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -858,21 +888,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7da8b38c47b8f1a0cfb6e6c514dea548" name="a7da8b38c47b8f1a0cfb6e6c514dea548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7da8b38c47b8f1a0cfb6e6c514dea548">&#9670;&#160;</a></span>omitted_blocks</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>&gt; IOShell::Interface::omitted_blocks {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If non-empty, then it is a list of element blocks that should be omitted from the output file </p>
 
 </div>
 </div>

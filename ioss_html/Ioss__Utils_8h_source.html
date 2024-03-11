@@ -153,7 +153,7 @@ $(function(){initNavTree('Ioss__Utils_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// We have been relying on the assumption that calling `.data()` on an empty vector</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// will return `nullptr`.  However, according to cppreference (based on the standard):</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">//</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// `If size() is ​0​, data() may or may not return a null pointer.`</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// `If size() is 0, data() may or may not return a null pointer.`</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// We don&#39;t have any systems on which we have found that (yet?), but this is proactive</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// in removing our use of `.data()` on potentially empty vectors...</span></div>
