@@ -232,16 +232,23 @@
     <span class="n">EX_NULLVERBOSE</span> <span class="o">=</span> <span class="mi">8</span></div>
 
 
-<span class="n">ACCESS</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;ACCESS&#39;</span><span class="p">,</span> <span class="s1">&#39;/Users/gdsjaar/src/seacas&#39;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">uname</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Darwin&#39;</span><span class="p">:</span>
-    <span class="n">EXODUS_SO</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ACCESS</span><span class="si">}</span><span class="s2">/lib/libexodus.dylib&quot;</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;nt&#39;</span><span class="p">:</span>
+    <span class="n">so_prefix</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">so_suffix</span> <span class="o">=</span> <span class="s1">&#39;dll&#39;</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">EXODUS_SO</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ACCESS</span><span class="si">}</span><span class="s2">/lib/libexodus.so&quot;</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">uname</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Darwin&#39;</span><span class="p">:</span>
+        <span class="n">so_prefix</span> <span class="o">=</span> <span class="s1">&#39;lib&#39;</span>
+        <span class="n">so_suffix</span> <span class="o">=</span> <span class="s1">&#39;dylib&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">so_prefix</span> <span class="o">=</span> <span class="s1">&#39;lib&#39;</span>
+        <span class="n">so_suffix</span> <span class="o">=</span> <span class="s1">&#39;so&#39;</span>
 <span class="n">pip_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>
-<span class="n">pip_so_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pip_path</span><span class="p">,</span> <span class="s2">&quot;libexodus.so&quot;</span><span class="p">)</span>
+<span class="n">pip_so_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pip_path</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">so_prefix</span><span class="si">}</span><span class="s2">exodus.</span><span class="si">{</span><span class="n">so_suffix</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="k">try</span><span class="p">:</span>
     <span class="n">EXODUS_LIB</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="n">pip_so_path</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+    <span class="n">ACCESS</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;ACCESS&#39;</span><span class="p">,</span> <span class="s1">&#39;/Users/gdsjaar/src/seacas&#39;</span><span class="p">)</span>
+    <span class="n">EXODUS_SO</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ACCESS</span><span class="si">}</span><span class="s2">/lib/</span><span class="si">{</span><span class="n">so_prefix</span><span class="si">}</span><span class="s2">exodus.</span><span class="si">{</span><span class="n">so_suffix</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="n">EXODUS_LIB</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="n">EXODUS_SO</span><span class="p">)</span>
 
 <span class="n">MAX_STR_LENGTH</span> <span class="o">=</span> <span class="mi">32</span>      <span class="c1"># match exodus default</span>
