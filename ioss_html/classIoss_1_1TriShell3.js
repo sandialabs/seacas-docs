@@ -9,8 +9,8 @@ var classIoss_1_1TriShell3 =
     [ "face_edge_connectivity", "classIoss_1_1TriShell3.html#a036e26dedc61661127a9b1895218d946", null ],
     [ "face_type", "classIoss_1_1TriShell3.html#a6e9c7dd07e5e92a148701b33061d1dd4", null ],
     [ "factory", "classIoss_1_1TriShell3.html#a982f9f10c322d7eed5f2f16e6f7a914e", null ],
-    [ "is_element", "classIoss_1_1TriShell3.html#ac85c51dd7e794a921c51cb7da9966fc9", null ],
-    [ "is_shell", "classIoss_1_1TriShell3.html#aec9b3e2adfdd06a30e3b7c2d8ea99207", null ],
+    [ "is_element", "classIoss_1_1TriShell3.html#a8737dd2f9dd57222dfd0518874165d59", null ],
+    [ "is_shell", "classIoss_1_1TriShell3.html#a50135cfa1bae4216de2544f2d3a47526", null ],
     [ "number_corner_nodes", "classIoss_1_1TriShell3.html#a830f20e54dba1b40d77ad72bee5e5836", null ],
     [ "number_edges", "classIoss_1_1TriShell3.html#abc756a25684952aa129837486d155744", null ],
     [ "number_edges_face", "classIoss_1_1TriShell3.html#a2c179e48f700166e5470c36a4d7b1c55", null ],
@@ -20,7 +20,7 @@ var classIoss_1_1TriShell3 =
     [ "number_nodes_face", "classIoss_1_1TriShell3.html#a5bf8fbe762cbb91d057a644aecacea34", null ],
     [ "order", "classIoss_1_1TriShell3.html#afa185d68a0c59bd01751a48b97fcfd98", null ],
     [ "parametric_dimension", "classIoss_1_1TriShell3.html#a190b3a5b0e4d4f626ad19c35b7fe4d01", null ],
-    [ "shape", "classIoss_1_1TriShell3.html#aed8950ad60c701b815b8496a0c50e690", null ],
+    [ "shape", "classIoss_1_1TriShell3.html#ab75ca47f32fc53570053651896a0512f", null ],
     [ "spatial_dimension", "classIoss_1_1TriShell3.html#a3a2e43db0446b70dae125cea9103e250", null ],
     [ "name", "classIoss_1_1TriShell3.html#a01ebc03120a1e66eaac42977161b0cd0", null ]
 ];

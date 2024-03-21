@@ -9,8 +9,8 @@ var classIoss_1_1Shell9 =
     [ "face_edge_connectivity", "classIoss_1_1Shell9.html#a6fe447ae769cb5a01ecf3b108ecbd427", null ],
     [ "face_type", "classIoss_1_1Shell9.html#af9489274198e41b31d0631837c97b426", null ],
     [ "factory", "classIoss_1_1Shell9.html#a01d290cfb59a9d3d0715a6c22b2bccb8", null ],
-    [ "is_element", "classIoss_1_1Shell9.html#a713433cc20bc7690d8a50bb524bae2dd", null ],
-    [ "is_shell", "classIoss_1_1Shell9.html#ab7cd0a7ca6d04b80c03ec7cf61997fbb", null ],
+    [ "is_element", "classIoss_1_1Shell9.html#a9f598152b1474ac77c55a8b6618ddc14", null ],
+    [ "is_shell", "classIoss_1_1Shell9.html#a62c6acd36c7cac74269a75533ee5b359", null ],
     [ "number_corner_nodes", "classIoss_1_1Shell9.html#ac9c3244b14cde9aa30bc2eb35fa81a63", null ],
     [ "number_edges", "classIoss_1_1Shell9.html#a61ca7ad0e5488d04760bfe2cc7d32bbf", null ],
     [ "number_edges_face", "classIoss_1_1Shell9.html#ae0827885b08b1168ea5e2b2d1e6704ac", null ],
@@ -20,7 +20,7 @@ var classIoss_1_1Shell9 =
     [ "number_nodes_face", "classIoss_1_1Shell9.html#a9cb7c32e9caf94dab129cd10a532668f", null ],
     [ "order", "classIoss_1_1Shell9.html#a728e918036205cb01665df68cfe2394d", null ],
     [ "parametric_dimension", "classIoss_1_1Shell9.html#aee941a06a5d91e342b535d3903fa45c4", null ],
-    [ "shape", "classIoss_1_1Shell9.html#a9e57a28e06fc0f0a9739ba735d2c216c", null ],
+    [ "shape", "classIoss_1_1Shell9.html#a32eb405e980173a4ebecb81667281b3f", null ],
     [ "spatial_dimension", "classIoss_1_1Shell9.html#ab8aa8460b5eeb397dbd9b932ddfc1d29", null ],
     [ "name", "classIoss_1_1Shell9.html#a2d1a6f9232248d72c739a8feca5ec8f0", null ]
 ];

@@ -10,8 +10,8 @@ var classIoss_1_1Wedge18 =
     [ "face_type", "classIoss_1_1Wedge18.html#aa92069cdfbbdd9b3e03274c11e9b9929", null ],
     [ "faces_similar", "classIoss_1_1Wedge18.html#abe467a402fc556d4885d46a1ce5cfbeb", null ],
     [ "factory", "classIoss_1_1Wedge18.html#ad854c6ed2d23da870d7bc2b10d408cee", null ],
-    [ "is_element", "classIoss_1_1Wedge18.html#a9710a3b60d6d55e7ba0933282635ca5f", null ],
-    [ "is_shell", "classIoss_1_1Wedge18.html#a1c5d8ac649097155bb023049045e8c1d", null ],
+    [ "is_element", "classIoss_1_1Wedge18.html#a85879f3543ebe997238f943b85a09a37", null ],
+    [ "is_shell", "classIoss_1_1Wedge18.html#ae773b9740cfbc0fcc6b975535bd36578", null ],
     [ "number_corner_nodes", "classIoss_1_1Wedge18.html#a4901f65734235eb4e2297df86fb76414", null ],
     [ "number_edges", "classIoss_1_1Wedge18.html#af2909c8ffc5e604d216f891b45d28292", null ],
     [ "number_edges_face", "classIoss_1_1Wedge18.html#ac7f151e78567eefe4255f2bdfa5b99d3", null ],
@@ -21,7 +21,7 @@ var classIoss_1_1Wedge18 =
     [ "number_nodes_face", "classIoss_1_1Wedge18.html#af0cdabed8e16d85b7ab87f14157379bf", null ],
     [ "order", "classIoss_1_1Wedge18.html#ab8ba67fefeda393f121e47c27e1772bb", null ],
     [ "parametric_dimension", "classIoss_1_1Wedge18.html#a22fb67500486603b37c290daebdfc116", null ],
-    [ "shape", "classIoss_1_1Wedge18.html#aa0f6708757e170ada10039a7f06f04cb", null ],
+    [ "shape", "classIoss_1_1Wedge18.html#a6d62269a10f8481a8b8812a225943e3c", null ],
     [ "spatial_dimension", "classIoss_1_1Wedge18.html#a93c49ac093ce4aeae16b593cc986f3c4", null ],
     [ "name", "classIoss_1_1Wedge18.html#a4489ac0abafa72f32a1c77f8bcc44b3a", null ]
 ];

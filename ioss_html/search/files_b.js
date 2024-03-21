@@ -17,6 +17,5 @@ var searchData=
   ['utst_5fstructured_5fdecomp_5fherron_2ec_14',['Utst_structured_decomp_herron.C',['../Utst__structured__decomp__herron_8C.html',1,'']]],
   ['utst_5fstructured_5fdecomp_5frocket_2ec_15',['Utst_structured_decomp_rocket.C',['../Utst__structured__decomp__rocket_8C.html',1,'']]],
   ['utst_5fsuperelement_2ec_16',['Utst_superelement.C',['../Utst__superelement_8C.html',1,'']]],
-  ['utst_5ftest_2ec_17',['Utst_test.C',['../Utst__test_8C.html',1,'']]],
-  ['utst_5futils_2ec_18',['Utst_utils.C',['../Utst__utils_8C.html',1,'']]]
+  ['utst_5futils_2ec_17',['Utst_utils.C',['../Utst__utils_8C.html',1,'']]]
 ];

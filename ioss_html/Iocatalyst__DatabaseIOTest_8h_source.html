@@ -145,7 +145,7 @@ $(function(){initNavTree('Iocatalyst__DatabaseIOTest_8h_source.html',''); initRe
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">auto</span> field = g-&gt;get_fieldref(name);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">if</span> (field.zero_copy_enabled()) {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>          std::vector&lt;std::byte&gt; dcBuffer(field.get_size());</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>          g-&gt;get_field_data(name, <a class="code hl_function" href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a>(dcBuffer), dcBuffer.size());</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>          g-&gt;get_field_data(name, <a class="code hl_function" href="Ioss__Utils_8h.html#a266bc6da5d08838f9120a878a6d33aff">Data</a>(dcBuffer), dcBuffer.size());</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>          <span class="keywordtype">void</span>  *data;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>          <span class="keywordtype">size_t</span> dataSize;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>          g-&gt;get_field_data(name, &amp;data, &amp;dataSize);</div>
@@ -171,7 +171,7 @@ $(function(){initNavTree('Iocatalyst__DatabaseIOTest_8h_source.html',''); initRe
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
 </div>
 <div class="ttc" id="aIocatalyst__BlockMeshSet_8h_html"><div class="ttname"><a href="Iocatalyst__BlockMeshSet_8h.html">Iocatalyst_BlockMeshSet.h</a></div></div>
-<div class="ttc" id="aIoss__Utils_8h_html_af1a17ad788a246476ea700b03bfcc6fb"><div class="ttname"><a href="Ioss__Utils_8h.html#af1a17ad788a246476ea700b03bfcc6fb">Data</a></div><div class="ttdeci">constexpr T * Data(std::vector&lt; T &gt; &amp;vec)</div><div class="ttdef"><b>Definition</b> Ioss_Utils.h:56</div></div>
+<div class="ttc" id="aIoss__Utils_8h_html_a266bc6da5d08838f9120a878a6d33aff"><div class="ttname"><a href="Ioss__Utils_8h.html#a266bc6da5d08838f9120a878a6d33aff">Data</a></div><div class="ttdeci">IOSS_NODISCARD constexpr T * Data(std::vector&lt; T &gt; &amp;vec)</div><div class="ttdef"><b>Definition</b> Ioss_Utils.h:56</div></div>
 <div class="ttc" id="aclassIocatalyst_1_1BlockMeshSet_1_1IOSSparams_html"><div class="ttname"><a href="classIocatalyst_1_1BlockMeshSet_1_1IOSSparams.html">Iocatalyst::BlockMeshSet::IOSSparams</a></div><div class="ttdef"><b>Definition</b> Iocatalyst_BlockMeshSet.h:27</div></div>
 <div class="ttc" id="aclassIocatalyst_1_1BlockMeshSet_html"><div class="ttname"><a href="classIocatalyst_1_1BlockMeshSet.html">Iocatalyst::BlockMeshSet</a></div><div class="ttdef"><b>Definition</b> Iocatalyst_BlockMeshSet.h:20</div></div>
 <div class="ttc" id="aclassIocatalyst_1_1BlockMesh_html"><div class="ttname"><a href="classIocatalyst_1_1BlockMesh.html">Iocatalyst::BlockMesh</a></div><div class="ttdef"><b>Definition</b> Iocatalyst_BlockMesh.h:16</div></div>

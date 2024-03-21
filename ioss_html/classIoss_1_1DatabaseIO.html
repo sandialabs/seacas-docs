@@ -133,60 +133,60 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a810650e4337b8e0b1e9e6e6250eb5879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad793e5af671878c2715ed51f1ea3754a" id="r_ad793e5af671878c2715ed51f1ea3754a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad793e5af671878c2715ed51f1ea3754a">~DatabaseIO</a> ()</td></tr>
 <tr class="separator:ad793e5af671878c2715ed51f1ea3754a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87736d6eb5a3b7dfa3144743067d282e" id="r_a87736d6eb5a3b7dfa3144743067d282e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87736d6eb5a3b7dfa3144743067d282e">ok</a> (bool write_message=false, std::string *error_message=nullptr, int *bad_count=nullptr) const</td></tr>
-<tr class="memdesc:a87736d6eb5a3b7dfa3144743067d282e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to see if database state is OK.  <br /></td></tr>
-<tr class="separator:a87736d6eb5a3b7dfa3144743067d282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0fe729073a510495e3bdfc56c548329" id="r_af0fe729073a510495e3bdfc56c548329"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0fe729073a510495e3bdfc56c548329">entity_field_support</a> () const =0</td></tr>
-<tr class="separator:af0fe729073a510495e3bdfc56c548329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e5c575a44253f465dd993bb49a16d2d" id="r_a6e5c575a44253f465dd993bb49a16d2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e5c575a44253f465dd993bb49a16d2d">using_parallel_io</a> () const</td></tr>
-<tr class="separator:a6e5c575a44253f465dd993bb49a16d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a508cb4e8ba172b238fd6af316538f89d" id="r_a508cb4e8ba172b238fd6af316538f89d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a508cb4e8ba172b238fd6af316538f89d">node_global_to_local</a> (int64_t global, bool must_exist) const</td></tr>
-<tr class="memdesc:a508cb4e8ba172b238fd6af316538f89d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local (process-specific) node number corresponding to a global node number.  <br /></td></tr>
-<tr class="separator:a508cb4e8ba172b238fd6af316538f89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6d658c9fddf9ccf74b00fd106ae7e2a" id="r_aa6d658c9fddf9ccf74b00fd106ae7e2a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6d658c9fddf9ccf74b00fd106ae7e2a">element_global_to_local</a> (int64_t global) const</td></tr>
-<tr class="separator:aa6d658c9fddf9ccf74b00fd106ae7e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46ee337e677c8c09ad9ea2b0e20fd5c6" id="r_a46ee337e677c8c09ad9ea2b0e20fd5c6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ee337e677c8c09ad9ea2b0e20fd5c6">node_major</a> () const</td></tr>
-<tr class="separator:a46ee337e677c8c09ad9ea2b0e20fd5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa059cee234638d9b774d6d12ad6265d1" id="r_aa059cee234638d9b774d6d12ad6265d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa059cee234638d9b774d6d12ad6265d1">ok</a> (bool write_message=false, std::string *error_message=nullptr, int *bad_count=nullptr) const</td></tr>
+<tr class="memdesc:aa059cee234638d9b774d6d12ad6265d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to see if database state is OK.  <br /></td></tr>
+<tr class="separator:aa059cee234638d9b774d6d12ad6265d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117ddaa372b624484594404033f680de" id="r_a117ddaa372b624484594404033f680de"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a117ddaa372b624484594404033f680de">entity_field_support</a> () const =0</td></tr>
+<tr class="separator:a117ddaa372b624484594404033f680de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2019cd13583ac4c86d865e3441f7ad4d" id="r_a2019cd13583ac4c86d865e3441f7ad4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2019cd13583ac4c86d865e3441f7ad4d">using_parallel_io</a> () const</td></tr>
+<tr class="separator:a2019cd13583ac4c86d865e3441f7ad4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c11e2f2892ba8047a2e4681b26b149" id="r_a00c11e2f2892ba8047a2e4681b26b149"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00c11e2f2892ba8047a2e4681b26b149">node_global_to_local</a> (int64_t global, bool must_exist) const</td></tr>
+<tr class="memdesc:a00c11e2f2892ba8047a2e4681b26b149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local (process-specific) node number corresponding to a global node number.  <br /></td></tr>
+<tr class="separator:a00c11e2f2892ba8047a2e4681b26b149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94fcad38477cc4cf46333ea390a599f" id="r_ac94fcad38477cc4cf46333ea390a599f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac94fcad38477cc4cf46333ea390a599f">element_global_to_local</a> (int64_t global) const</td></tr>
+<tr class="separator:ac94fcad38477cc4cf46333ea390a599f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad596a05ee31a90415c24ece793226f4e" id="r_ad596a05ee31a90415c24ece793226f4e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad596a05ee31a90415c24ece793226f4e">node_major</a> () const</td></tr>
+<tr class="separator:ad596a05ee31a90415c24ece793226f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ee122665a52a2cd6f7de816738fed08" id="r_a2ee122665a52a2cd6f7de816738fed08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ee122665a52a2cd6f7de816738fed08">release_memory</a> ()</td></tr>
 <tr class="separator:a2ee122665a52a2cd6f7de816738fed08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4bde3c206c2b37faa200522997aa98c" id="r_ae4bde3c206c2b37faa200522997aa98c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4bde3c206c2b37faa200522997aa98c">finalize_database</a> () const</td></tr>
 <tr class="separator:ae4bde3c206c2b37faa200522997aa98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa71c04988b134f5e0f724032d4b9de0e" id="r_aa71c04988b134f5e0f724032d4b9de0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa71c04988b134f5e0f724032d4b9de0e">set_pfs_name</a> (const std::string &amp;name) const</td></tr>
 <tr class="separator:aa71c04988b134f5e0f724032d4b9de0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c12203a4ba704330522e57c3260e84" id="r_ac3c12203a4ba704330522e57c3260e84"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3c12203a4ba704330522e57c3260e84">get_pfs_name</a> () const</td></tr>
-<tr class="separator:ac3c12203a4ba704330522e57c3260e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab931ad84e620165697cdac56d7f2aea0" id="r_ab931ad84e620165697cdac56d7f2aea0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab931ad84e620165697cdac56d7f2aea0">get_pfs_name</a> () const</td></tr>
+<tr class="separator:ab931ad84e620165697cdac56d7f2aea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b4fb16f67b9a0bc1c969005b67ec35c" id="r_a6b4fb16f67b9a0bc1c969005b67ec35c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b4fb16f67b9a0bc1c969005b67ec35c">set_dw_name</a> (const std::string &amp;name) const</td></tr>
 <tr class="memdesc:a6b4fb16f67b9a0bc1c969005b67ec35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">this will be the name in BB namespace  <br /></td></tr>
 <tr class="separator:a6b4fb16f67b9a0bc1c969005b67ec35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7702f945303eb1d300c2503c2908aba1" id="r_a7702f945303eb1d300c2503c2908aba1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7702f945303eb1d300c2503c2908aba1">get_dw_name</a> () const</td></tr>
-<tr class="separator:a7702f945303eb1d300c2503c2908aba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a882fafd95486bffd9a9ddc8cd9bf6771" id="r_a882fafd95486bffd9a9ddc8cd9bf6771"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a882fafd95486bffd9a9ddc8cd9bf6771">get_dw_path</a> () const</td></tr>
-<tr class="memdesc:a882fafd95486bffd9a9ddc8cd9bf6771"><td class="mdescLeft">&#160;</td><td class="mdescRight">We call this ONLY after we assure that <a class="el" href="#a7ebbdc09be146cd42dc26b135e494a95">using_dw()</a> is TRUE.  <br /></td></tr>
-<tr class="separator:a882fafd95486bffd9a9ddc8cd9bf6771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62cb78c328ff2b61e30697bd0bddf78f" id="r_a62cb78c328ff2b61e30697bd0bddf78f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62cb78c328ff2b61e30697bd0bddf78f">get_dw_name</a> () const</td></tr>
+<tr class="separator:a62cb78c328ff2b61e30697bd0bddf78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa466ebbb885bf52bf16879448e4527b6" id="r_aa466ebbb885bf52bf16879448e4527b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa466ebbb885bf52bf16879448e4527b6">get_dw_path</a> () const</td></tr>
+<tr class="memdesc:aa466ebbb885bf52bf16879448e4527b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">We call this ONLY after we assure that <a class="el" href="#ab9c4593c3990e6b1764ec9a5dbd61a00">using_dw()</a> is TRUE.  <br /></td></tr>
+<tr class="separator:aa466ebbb885bf52bf16879448e4527b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8613a173b573a4501e6c665f0ae26b" id="r_a6e8613a173b573a4501e6c665f0ae26b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e8613a173b573a4501e6c665f0ae26b">check_set_dw</a> () const</td></tr>
 <tr class="separator:a6e8613a173b573a4501e6c665f0ae26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ebbdc09be146cd42dc26b135e494a95" id="r_a7ebbdc09be146cd42dc26b135e494a95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ebbdc09be146cd42dc26b135e494a95">using_dw</a> () const</td></tr>
-<tr class="separator:a7ebbdc09be146cd42dc26b135e494a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c9ad01905e9773cd69b452a8551cbba" id="r_a1c9ad01905e9773cd69b452a8551cbba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c9ad01905e9773cd69b452a8551cbba">get_filename</a> () const</td></tr>
-<tr class="memdesc:a1c9ad01905e9773cd69b452a8551cbba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file name associated with the database.  <br /></td></tr>
-<tr class="separator:a1c9ad01905e9773cd69b452a8551cbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a009607cca86df2f61da6aea3ef27abfa" id="r_a009607cca86df2f61da6aea3ef27abfa"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a009607cca86df2f61da6aea3ef27abfa">get_file_pointer</a> () const</td></tr>
-<tr class="separator:a009607cca86df2f61da6aea3ef27abfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2086f8e605c31f9eb2af5fac410a46b2" id="r_a2086f8e605c31f9eb2af5fac410a46b2"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2086f8e605c31f9eb2af5fac410a46b2">decoded_filename</a> () const</td></tr>
+<tr class="memitem:ab9c4593c3990e6b1764ec9a5dbd61a00" id="r_ab9c4593c3990e6b1764ec9a5dbd61a00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9c4593c3990e6b1764ec9a5dbd61a00">using_dw</a> () const</td></tr>
+<tr class="separator:ab9c4593c3990e6b1764ec9a5dbd61a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a8cfc40675b2817ed5a0c333aae73f" id="r_a00a8cfc40675b2817ed5a0c333aae73f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00a8cfc40675b2817ed5a0c333aae73f">get_filename</a> () const</td></tr>
+<tr class="memdesc:a00a8cfc40675b2817ed5a0c333aae73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file name associated with the database.  <br /></td></tr>
+<tr class="separator:a00a8cfc40675b2817ed5a0c333aae73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae147a9228e74750b8d609a4d1441fac" id="r_aae147a9228e74750b8d609a4d1441fac"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae147a9228e74750b8d609a4d1441fac">get_file_pointer</a> () const</td></tr>
+<tr class="separator:aae147a9228e74750b8d609a4d1441fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2086f8e605c31f9eb2af5fac410a46b2" id="r_a2086f8e605c31f9eb2af5fac410a46b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2086f8e605c31f9eb2af5fac410a46b2">decoded_filename</a> () const</td></tr>
 <tr class="memdesc:a2086f8e605c31f9eb2af5fac410a46b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a file-per-processor filename associated with the database.  <br /></td></tr>
 <tr class="separator:a2086f8e605c31f9eb2af5fac410a46b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eec84586f2d1884afd06c0dbcf56100" id="r_a0eec84586f2d1884afd06c0dbcf56100"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eec84586f2d1884afd06c0dbcf56100">get_format</a> () const =0</td></tr>
-<tr class="separator:a0eec84586f2d1884afd06c0dbcf56100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaf8598b13b44b8f262b3eec8398cb06" id="r_afaf8598b13b44b8f262b3eec8398cb06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaf8598b13b44b8f262b3eec8398cb06">is_input</a> () const</td></tr>
-<tr class="memdesc:afaf8598b13b44b8f262b3eec8398cb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the database is an input database.  <br /></td></tr>
-<tr class="separator:afaf8598b13b44b8f262b3eec8398cb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057729fb7cf18d9dd49042e1166976bc" id="r_a057729fb7cf18d9dd49042e1166976bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a057729fb7cf18d9dd49042e1166976bc">usage</a> () const</td></tr>
-<tr class="memdesc:a057729fb7cf18d9dd49042e1166976bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f" title="Specifies how an Ioss::DatabaseIO object will be used.">Ioss::DatabaseUsage</a> type of the database.  <br /></td></tr>
-<tr class="separator:a057729fb7cf18d9dd49042e1166976bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31dbf4c27fae8fd9160e99a2c318f4a9" id="r_a31dbf4c27fae8fd9160e99a2c318f4a9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31dbf4c27fae8fd9160e99a2c318f4a9">needs_shared_node_information</a> () const</td></tr>
-<tr class="memdesc:a31dbf4c27fae8fd9160e99a2c318f4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the database needs information about process ownership of nodes.  <br /></td></tr>
-<tr class="separator:a31dbf4c27fae8fd9160e99a2c318f4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110ec1217f40eade5bf71e0e490a602b" id="r_a110ec1217f40eade5bf71e0e490a602b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#ae1de565aa8b642bb5a50be439906c74d">Ioss::IfDatabaseExistsBehavior</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a110ec1217f40eade5bf71e0e490a602b">open_create_behavior</a> () const</td></tr>
+<tr class="memitem:a737ed0679f21976ce3719a5e291f9f87" id="r_a737ed0679f21976ce3719a5e291f9f87"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a737ed0679f21976ce3719a5e291f9f87">get_format</a> () const =0</td></tr>
+<tr class="separator:a737ed0679f21976ce3719a5e291f9f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7cd691d5190433dc90e403719380e73" id="r_ad7cd691d5190433dc90e403719380e73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7cd691d5190433dc90e403719380e73">is_input</a> () const</td></tr>
+<tr class="memdesc:ad7cd691d5190433dc90e403719380e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the database is an input database.  <br /></td></tr>
+<tr class="separator:ad7cd691d5190433dc90e403719380e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa86b791022e9a0ad9e752b5671f373" id="r_a1fa86b791022e9a0ad9e752b5671f373"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fa86b791022e9a0ad9e752b5671f373">usage</a> () const</td></tr>
+<tr class="memdesc:a1fa86b791022e9a0ad9e752b5671f373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f" title="Specifies how an Ioss::DatabaseIO object will be used.">Ioss::DatabaseUsage</a> type of the database.  <br /></td></tr>
+<tr class="separator:a1fa86b791022e9a0ad9e752b5671f373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eac605f3a5bca1f91a980e8024e2fb8" id="r_a6eac605f3a5bca1f91a980e8024e2fb8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eac605f3a5bca1f91a980e8024e2fb8">needs_shared_node_information</a> () const</td></tr>
+<tr class="memdesc:a6eac605f3a5bca1f91a980e8024e2fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the database needs information about process ownership of nodes.  <br /></td></tr>
+<tr class="separator:a6eac605f3a5bca1f91a980e8024e2fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110ec1217f40eade5bf71e0e490a602b" id="r_a110ec1217f40eade5bf71e0e490a602b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#ae1de565aa8b642bb5a50be439906c74d">Ioss::IfDatabaseExistsBehavior</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a110ec1217f40eade5bf71e0e490a602b">open_create_behavior</a> () const</td></tr>
 <tr class="separator:a110ec1217f40eade5bf71e0e490a602b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ba2e389f4a98c646f8a8dcaffa6660c" id="r_a2ba2e389f4a98c646f8a8dcaffa6660c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ba2e389f4a98c646f8a8dcaffa6660c">set_region</a> (<a class="el" href="classIoss_1_1Region.html">Region</a> *region)</td></tr>
 <tr class="separator:a2ba2e389f4a98c646f8a8dcaffa6660c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,31 +222,31 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c5f6c3109f120af25bdca0fbb25112c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab33d09315ea221f35a8a74ce82851028" id="r_ab33d09315ea221f35a8a74ce82851028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab33d09315ea221f35a8a74ce82851028">get_step_times</a> ()</td></tr>
 <tr class="separator:ab33d09315ea221f35a8a74ce82851028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6320784abc2a824d8040e6323fbea957" id="r_a6320784abc2a824d8040e6323fbea957"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6320784abc2a824d8040e6323fbea957">internal_edges_available</a> () const</td></tr>
-<tr class="separator:a6320784abc2a824d8040e6323fbea957"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78b671067cd9d6da9621a17e273b22c6" id="r_a78b671067cd9d6da9621a17e273b22c6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78b671067cd9d6da9621a17e273b22c6">internal_faces_available</a> () const</td></tr>
-<tr class="separator:a78b671067cd9d6da9621a17e273b22c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3820d5d5eec57f1cd0cd642768d58e77" id="r_a3820d5d5eec57f1cd0cd642768d58e77"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3820d5d5eec57f1cd0cd642768d58e77">get_information_records</a> () const</td></tr>
-<tr class="memdesc:a3820d5d5eec57f1cd0cd642768d58e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all information records (informative strings) for the database.  <br /></td></tr>
-<tr class="separator:a3820d5d5eec57f1cd0cd642768d58e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5c4d0df71a956c2c79a720acf0788b" id="r_a3b5c4d0df71a956c2c79a720acf0788b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b5c4d0df71a956c2c79a720acf0788b">internal_edges_available</a> () const</td></tr>
+<tr class="separator:a3b5c4d0df71a956c2c79a720acf0788b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcccd97a26700f1929533d67b2682d2b" id="r_abcccd97a26700f1929533d67b2682d2b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcccd97a26700f1929533d67b2682d2b">internal_faces_available</a> () const</td></tr>
+<tr class="separator:abcccd97a26700f1929533d67b2682d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980c664afce64b5e1cd732644beae147" id="r_a980c664afce64b5e1cd732644beae147"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a980c664afce64b5e1cd732644beae147">get_information_records</a> () const</td></tr>
+<tr class="memdesc:a980c664afce64b5e1cd732644beae147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all information records (informative strings) for the database.  <br /></td></tr>
+<tr class="separator:a980c664afce64b5e1cd732644beae147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4035eec6f9723001bd5d0d1473373a9d" id="r_a4035eec6f9723001bd5d0d1473373a9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4035eec6f9723001bd5d0d1473373a9d">add_information_records</a> (const std::vector&lt; std::string &gt; &amp;info)</td></tr>
 <tr class="memdesc:a4035eec6f9723001bd5d0d1473373a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add multiple information records (informative strings) to the database.  <br /></td></tr>
 <tr class="separator:a4035eec6f9723001bd5d0d1473373a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0da3fcf5cb34a32e2c6375ab251b4349" id="r_a0da3fcf5cb34a32e2c6375ab251b4349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0da3fcf5cb34a32e2c6375ab251b4349">add_information_record</a> (const std::string &amp;info)</td></tr>
 <tr class="memdesc:a0da3fcf5cb34a32e2c6375ab251b4349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an information record (an informative string) to the database.  <br /></td></tr>
 <tr class="separator:a0da3fcf5cb34a32e2c6375ab251b4349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab239f9b691a9abcb72fbb593d23b3eaf" id="r_ab239f9b691a9abcb72fbb593d23b3eaf"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab239f9b691a9abcb72fbb593d23b3eaf">get_qa_records</a> () const</td></tr>
-<tr class="memdesc:ab239f9b691a9abcb72fbb593d23b3eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all QA records, each of which consists of 4 strings, from the database.  <br /></td></tr>
-<tr class="separator:ab239f9b691a9abcb72fbb593d23b3eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102a81568ead2a13ec9b2ce16bcced8b" id="r_a102a81568ead2a13ec9b2ce16bcced8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a102a81568ead2a13ec9b2ce16bcced8b">get_qa_records</a> () const</td></tr>
+<tr class="memdesc:a102a81568ead2a13ec9b2ce16bcced8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all QA records, each of which consists of 4 strings, from the database.  <br /></td></tr>
+<tr class="separator:a102a81568ead2a13ec9b2ce16bcced8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae08238723053bb3a3413cdbae40abe70" id="r_ae08238723053bb3a3413cdbae40abe70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08238723053bb3a3413cdbae40abe70">add_qa_record</a> (const std::string &amp;code, const std::string &amp;code_qa, const std::string &amp;date, const std::string &amp;time)</td></tr>
 <tr class="memdesc:ae08238723053bb3a3413cdbae40abe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a QA record, which consists of 4 strings, to the database.  <br /></td></tr>
 <tr class="separator:ae08238723053bb3a3413cdbae40abe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48942e443c4c83a30c30167d444bd034" id="r_a48942e443c4c83a30c30167d444bd034"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48942e443c4c83a30c30167d444bd034">get_logging</a> () const</td></tr>
-<tr class="separator:a48942e443c4c83a30c30167d444bd034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c51d626ee9c3a8ccaecff7eb878202" id="r_a75c51d626ee9c3a8ccaecff7eb878202"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75c51d626ee9c3a8ccaecff7eb878202">get_logging</a> () const</td></tr>
+<tr class="separator:a75c51d626ee9c3a8ccaecff7eb878202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed550ada84092956918c1011949239e8" id="r_aed550ada84092956918c1011949239e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed550ada84092956918c1011949239e8">set_logging</a> (bool on_off)</td></tr>
 <tr class="separator:aed550ada84092956918c1011949239e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa21660182da8c8a5e1504eeb0fa94cb7" id="r_aa21660182da8c8a5e1504eeb0fa94cb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa21660182da8c8a5e1504eeb0fa94cb7">get_nan_detection</a> () const</td></tr>
-<tr class="separator:aa21660182da8c8a5e1504eeb0fa94cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756bc4238e265d2690e66d4eefc43e21" id="r_a756bc4238e265d2690e66d4eefc43e21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a756bc4238e265d2690e66d4eefc43e21">get_nan_detection</a> () const</td></tr>
+<tr class="separator:a756bc4238e265d2690e66d4eefc43e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a531fc8cace7d926381ca126ec76e0534" id="r_a531fc8cace7d926381ca126ec76e0534"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a531fc8cace7d926381ca126ec76e0534">set_nan_detection</a> (bool on_off)</td></tr>
 <tr class="separator:a531fc8cace7d926381ca126ec76e0534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedf2b3f4a5e779049c507620bd934445" id="r_aedf2b3f4a5e779049c507620bd934445"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -258,35 +258,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7fe3b7c18b71095a001bdb3f437f02ef" id="r_a7fe3b7c18b71095a001bdb3f437f02ef"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a7fe3b7c18b71095a001bdb3f437f02ef"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7fe3b7c18b71095a001bdb3f437f02ef">get_zc_field</a> (const T *reg, const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;field, void **data, size_t *data_size) const</td></tr>
 <tr class="separator:a7fe3b7c18b71095a001bdb3f437f02ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09b5eac4575eb2e8585dc09df3c09833" id="r_a09b5eac4575eb2e8585dc09df3c09833"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09b5eac4575eb2e8585dc09df3c09833">is_parallel_consistent</a> () const</td></tr>
-<tr class="separator:a09b5eac4575eb2e8585dc09df3c09833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8310d007b2801e27ea2c21ce4d347536" id="r_a8310d007b2801e27ea2c21ce4d347536"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8310d007b2801e27ea2c21ce4d347536">is_parallel_consistent</a> () const</td></tr>
+<tr class="separator:a8310d007b2801e27ea2c21ce4d347536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a1d498ef146eb2997c63a3475f08ef" id="r_a55a1d498ef146eb2997c63a3475f08ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55a1d498ef146eb2997c63a3475f08ef">set_parallel_consistency</a> (bool on_off)</td></tr>
 <tr class="separator:a55a1d498ef146eb2997c63a3475f08ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b4e39c00fbfa842be7a0e6521774d6" id="r_a10b4e39c00fbfa842be7a0e6521774d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10b4e39c00fbfa842be7a0e6521774d6">get_use_generic_canonical_name</a> () const</td></tr>
-<tr class="separator:a10b4e39c00fbfa842be7a0e6521774d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4818b3190879a0995ede934ebcce153" id="r_ae4818b3190879a0995ede934ebcce153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4818b3190879a0995ede934ebcce153">get_use_generic_canonical_name</a> () const</td></tr>
+<tr class="separator:ae4818b3190879a0995ede934ebcce153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b7bc827d6bd3023a26e770009bf8618" id="r_a7b7bc827d6bd3023a26e770009bf8618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b7bc827d6bd3023a26e770009bf8618">set_use_generic_canonical_name</a> (bool yes_no)</td></tr>
 <tr class="separator:a7b7bc827d6bd3023a26e770009bf8618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfbafe8d52fd9ae79cdfe216360482eb" id="r_adfbafe8d52fd9ae79cdfe216360482eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfbafe8d52fd9ae79cdfe216360482eb">ignore_database_names</a> () const</td></tr>
-<tr class="separator:adfbafe8d52fd9ae79cdfe216360482eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89ddbf5cda504e2c63d5d8fc700fa72" id="r_af89ddbf5cda504e2c63d5d8fc700fa72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af89ddbf5cda504e2c63d5d8fc700fa72">ignore_database_names</a> () const</td></tr>
+<tr class="separator:af89ddbf5cda504e2c63d5d8fc700fa72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac06e22b0f8079de1a7f73a46aa25cb49" id="r_ac06e22b0f8079de1a7f73a46aa25cb49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac06e22b0f8079de1a7f73a46aa25cb49">ignore_database_names</a> (bool yes_no)</td></tr>
 <tr class="separator:ac06e22b0f8079de1a7f73a46aa25cb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac69583440607a9c083440d8dd63cce" id="r_aaac69583440607a9c083440d8dd63cce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaac69583440607a9c083440d8dd63cce">get_ignore_realn_fields</a> () const</td></tr>
-<tr class="separator:aaac69583440607a9c083440d8dd63cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1095b9eb0c3c443877ff2357a5ca707b" id="r_a1095b9eb0c3c443877ff2357a5ca707b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1095b9eb0c3c443877ff2357a5ca707b">get_ignore_realn_fields</a> () const</td></tr>
+<tr class="separator:a1095b9eb0c3c443877ff2357a5ca707b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f780b889bac027e16c0300564773ad9" id="r_a2f780b889bac027e16c0300564773ad9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f780b889bac027e16c0300564773ad9">set_ignore_realn_fields</a> (bool yes_no)</td></tr>
 <tr class="separator:a2f780b889bac027e16c0300564773ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80b3ae0ed4a72514221ff553023e6e2e" id="r_a80b3ae0ed4a72514221ff553023e6e2e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b3ae0ed4a72514221ff553023e6e2e">maximum_symbol_length</a> () const</td></tr>
-<tr class="memdesc:a80b3ae0ed4a72514221ff553023e6e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the longest name in the database file.  <br /></td></tr>
-<tr class="separator:a80b3ae0ed4a72514221ff553023e6e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68939c4c34f1424bba630aef5aaf3f4b" id="r_a68939c4c34f1424bba630aef5aaf3f4b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68939c4c34f1424bba630aef5aaf3f4b">maximum_symbol_length</a> () const</td></tr>
+<tr class="memdesc:a68939c4c34f1424bba630aef5aaf3f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the longest name in the database file.  <br /></td></tr>
+<tr class="separator:a68939c4c34f1424bba630aef5aaf3f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e90aa4a206695f60cc2d55f785e8c43" id="r_a8e90aa4a206695f60cc2d55f785e8c43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e90aa4a206695f60cc2d55f785e8c43">set_maximum_symbol_length</a> (int)</td></tr>
 <tr class="separator:a8e90aa4a206695f60cc2d55f785e8c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce07132fa2bdaa6853b8e8c418a35e1" id="r_a1ce07132fa2bdaa6853b8e8c418a35e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ce07132fa2bdaa6853b8e8c418a35e1">get_component_name</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, <a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">Ioss::Field::InOut</a> in_out, int component) const</td></tr>
+<tr class="memitem:a1ce07132fa2bdaa6853b8e8c418a35e1" id="r_a1ce07132fa2bdaa6853b8e8c418a35e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ce07132fa2bdaa6853b8e8c418a35e1">get_component_name</a> (const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, <a class="el" href="classIoss_1_1Field.html#af2451ef5cd363c3bbcd08fcec559b225">Ioss::Field::InOut</a> in_out, int component) const</td></tr>
 <tr class="separator:a1ce07132fa2bdaa6853b8e8c418a35e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac344d090f98ae0082547ea7d8e0db7e" id="r_aac344d090f98ae0082547ea7d8e0db7e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac344d090f98ae0082547ea7d8e0db7e">get_field_separator</a> () const</td></tr>
-<tr class="separator:aac344d090f98ae0082547ea7d8e0db7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af616ab4ee470f8a994d2ef35eb1fa100" id="r_af616ab4ee470f8a994d2ef35eb1fa100"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af616ab4ee470f8a994d2ef35eb1fa100">get_field_recognition</a> () const</td></tr>
-<tr class="separator:af616ab4ee470f8a994d2ef35eb1fa100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab02ad4c1811472b559a93bcb5fcf2850" id="r_ab02ad4c1811472b559a93bcb5fcf2850"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab02ad4c1811472b559a93bcb5fcf2850">get_field_strip_trailing_</a> () const</td></tr>
-<tr class="separator:ab02ad4c1811472b559a93bcb5fcf2850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a232131401770ad75863bdbfa009fe0" id="r_a4a232131401770ad75863bdbfa009fe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a232131401770ad75863bdbfa009fe0">get_field_separator</a> () const</td></tr>
+<tr class="separator:a4a232131401770ad75863bdbfa009fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d76e22defd52426e089a12811f0d7a" id="r_a91d76e22defd52426e089a12811f0d7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91d76e22defd52426e089a12811f0d7a">get_field_recognition</a> () const</td></tr>
+<tr class="separator:a91d76e22defd52426e089a12811f0d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde665abe65a0a5423e36585acd253cb" id="r_acde665abe65a0a5423e36585acd253cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acde665abe65a0a5423e36585acd253cb">get_field_strip_trailing_</a> () const</td></tr>
+<tr class="separator:acde665abe65a0a5423e36585acd253cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe3242a9864a794a758870288a499af" id="r_abfe3242a9864a794a758870288a499af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfe3242a9864a794a758870288a499af">set_field_separator</a> (char separator)</td></tr>
 <tr class="memdesc:abfe3242a9864a794a758870288a499af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the character used to separate a field suffix from the field basename when recognizing vector, tensor fields.  <br /></td></tr>
 <tr class="separator:abfe3242a9864a794a758870288a499af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,14 +294,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac078e6793326cd029bc0412d342fb626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2235b32ed5a23fc82c670856840a767" id="r_ad2235b32ed5a23fc82c670856840a767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2235b32ed5a23fc82c670856840a767">set_field_strip_trailing_</a> (bool yes_no)</td></tr>
 <tr class="separator:ad2235b32ed5a23fc82c670856840a767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0cba59509625954d97fdd1dec3ad834" id="r_ae0cba59509625954d97fdd1dec3ad834"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8f">DuplicateFieldBehavior</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0cba59509625954d97fdd1dec3ad834">get_duplicate_field_behavior</a> () const</td></tr>
-<tr class="separator:ae0cba59509625954d97fdd1dec3ad834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff804c881ea01481ddca5175839b47a" id="r_aeff804c881ea01481ddca5175839b47a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8f">DuplicateFieldBehavior</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeff804c881ea01481ddca5175839b47a">get_duplicate_field_behavior</a> () const</td></tr>
+<tr class="separator:aeff804c881ea01481ddca5175839b47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6ffe8a955335ceb105c2d0a1fee0c0" id="r_a4d6ffe8a955335ceb105c2d0a1fee0c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d6ffe8a955335ceb105c2d0a1fee0c0">set_lower_case_variable_names</a> (bool true_false) const</td></tr>
 <tr class="separator:a4d6ffe8a955335ceb105c2d0a1fee0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab90f66226b7460db282b835ca60e8a61" id="r_ab90f66226b7460db282b835ca60e8a61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab90f66226b7460db282b835ca60e8a61">set_surface_split_type</a> (<a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a> split_type)</td></tr>
 <tr class="separator:ab90f66226b7460db282b835ca60e8a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c4059853eb44042d91f894d08850cb" id="r_a52c4059853eb44042d91f894d08850cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52c4059853eb44042d91f894d08850cb">get_surface_split_type</a> () const</td></tr>
-<tr class="separator:a52c4059853eb44042d91f894d08850cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8253e755652ad7f04f6d18391b24248" id="r_aa8253e755652ad7f04f6d18391b24248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8253e755652ad7f04f6d18391b24248">get_surface_split_type</a> () const</td></tr>
+<tr class="separator:aa8253e755652ad7f04f6d18391b24248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360f770cd53aaffb9e6de122cf8879e0" id="r_a360f770cd53aaffb9e6de122cf8879e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a360f770cd53aaffb9e6de122cf8879e0">set_block_omissions</a> (const std::vector&lt; std::string &gt; &amp;omissions, const std::vector&lt; std::string &gt; &amp;inclusions={})</td></tr>
 <tr class="separator:a360f770cd53aaffb9e6de122cf8879e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79cc95dd2187603f34d6432dac62e508" id="r_a79cc95dd2187603f34d6432dac62e508"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79cc95dd2187603f34d6432dac62e508">set_assembly_omissions</a> (const std::vector&lt; std::string &gt; &amp;omissions, const std::vector&lt; std::string &gt; &amp;inclusions={})</td></tr>
@@ -310,47 +310,47 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aced27ca42bbc7db5e4d8b059b00fd8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d50707a93638511b7c223ecccb119b2" id="r_a2d50707a93638511b7c223ecccb119b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d50707a93638511b7c223ecccb119b2">compute_block_membership</a> (<a class="el" href="classIoss_1_1SideBlock.html">Ioss::SideBlock</a> *efblock, std::vector&lt; std::string &gt; &amp;block_membership) const</td></tr>
 <tr class="separator:a2d50707a93638511b7c223ecccb119b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca0bee5b896af7dba3b412cb77bb3c13" id="r_aca0bee5b896af7dba3b412cb77bb3c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIoss_1_1AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca0bee5b896af7dba3b412cb77bb3c13">get_bounding_box</a> (const <a class="el" href="classIoss_1_1NodeBlock.html">Ioss::NodeBlock</a> *nb) const</td></tr>
+<tr class="memitem:aca0bee5b896af7dba3b412cb77bb3c13" id="r_aca0bee5b896af7dba3b412cb77bb3c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="structIoss_1_1AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca0bee5b896af7dba3b412cb77bb3c13">get_bounding_box</a> (const <a class="el" href="classIoss_1_1NodeBlock.html">Ioss::NodeBlock</a> *nb) const</td></tr>
 <tr class="separator:aca0bee5b896af7dba3b412cb77bb3c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a205567b7e63d4568282ded81c2a41899" id="r_a205567b7e63d4568282ded81c2a41899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIoss_1_1AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a205567b7e63d4568282ded81c2a41899">get_bounding_box</a> (const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *eb) const</td></tr>
+<tr class="memitem:a205567b7e63d4568282ded81c2a41899" id="r_a205567b7e63d4568282ded81c2a41899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="structIoss_1_1AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a205567b7e63d4568282ded81c2a41899">get_bounding_box</a> (const <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> *eb) const</td></tr>
 <tr class="separator:a205567b7e63d4568282ded81c2a41899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0dcbe306c5ba8201795dcb5a7611d2b" id="r_ab0dcbe306c5ba8201795dcb5a7611d2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIoss_1_1AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0dcbe306c5ba8201795dcb5a7611d2b">get_bounding_box</a> (const <a class="el" href="classIoss_1_1StructuredBlock.html">Ioss::StructuredBlock</a> *sb) const</td></tr>
+<tr class="memitem:ab0dcbe306c5ba8201795dcb5a7611d2b" id="r_ab0dcbe306c5ba8201795dcb5a7611d2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="structIoss_1_1AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0dcbe306c5ba8201795dcb5a7611d2b">get_bounding_box</a> (const <a class="el" href="classIoss_1_1StructuredBlock.html">Ioss::StructuredBlock</a> *sb) const</td></tr>
 <tr class="separator:ab0dcbe306c5ba8201795dcb5a7611d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad129f36237691cb1836086f84cc842af" id="r_ad129f36237691cb1836086f84cc842af"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad129f36237691cb1836086f84cc842af">int_byte_size_db</a> () const =0</td></tr>
-<tr class="separator:ad129f36237691cb1836086f84cc842af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae00a220b8c3cbd720bcda80803513a1" id="r_aae00a220b8c3cbd720bcda80803513a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae00a220b8c3cbd720bcda80803513a1">int_byte_size_api</a> () const</td></tr>
+<tr class="memitem:a13ec225615eefb9cf70cea4e91443a3b" id="r_a13ec225615eefb9cf70cea4e91443a3b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13ec225615eefb9cf70cea4e91443a3b">int_byte_size_db</a> () const =0</td></tr>
+<tr class="separator:a13ec225615eefb9cf70cea4e91443a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae00a220b8c3cbd720bcda80803513a1" id="r_aae00a220b8c3cbd720bcda80803513a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae00a220b8c3cbd720bcda80803513a1">int_byte_size_api</a> () const</td></tr>
 <tr class="memdesc:aae00a220b8c3cbd720bcda80803513a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 4 or 8.  <br /></td></tr>
 <tr class="separator:aae00a220b8c3cbd720bcda80803513a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add13a49b34f8c4bb7b85bb7ad91c01c3" id="r_add13a49b34f8c4bb7b85bb7ad91c01c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add13a49b34f8c4bb7b85bb7ad91c01c3">set_int_byte_size_api</a> (<a class="el" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">Ioss::DataSize</a> size) const</td></tr>
 <tr class="memdesc:add13a49b34f8c4bb7b85bb7ad91c01c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 4 or 8.  <br /></td></tr>
 <tr class="separator:add13a49b34f8c4bb7b85bb7ad91c01c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab901db7f7623bfc65093f086121d040e" id="r_ab901db7f7623bfc65093f086121d040e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1Region.html">Region</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab901db7f7623bfc65093f086121d040e">get_region</a> () const</td></tr>
-<tr class="separator:ab901db7f7623bfc65093f086121d040e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad013b48df6d593deb7ffc98ab5de7777" id="r_ad013b48df6d593deb7ffc98ab5de7777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="classIoss_1_1Region.html">Region</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad013b48df6d593deb7ffc98ab5de7777">get_region</a> () const</td></tr>
+<tr class="separator:ad013b48df6d593deb7ffc98ab5de7777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a135bac653f6408c2105c5dc2db0b65" id="r_a4a135bac653f6408c2105c5dc2db0b65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a135bac653f6408c2105c5dc2db0b65">set_cycle_count</a> (int count) const</td></tr>
 <tr class="separator:a4a135bac653f6408c2105c5dc2db0b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a00fab4e24f2e02108214012c0df05" id="r_a89a00fab4e24f2e02108214012c0df05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89a00fab4e24f2e02108214012c0df05">get_cycle_count</a> () const</td></tr>
-<tr class="separator:a89a00fab4e24f2e02108214012c0df05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0a393762229ef75db996512a1c2589" id="r_abb0a393762229ef75db996512a1c2589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb0a393762229ef75db996512a1c2589">get_cycle_count</a> () const</td></tr>
+<tr class="separator:abb0a393762229ef75db996512a1c2589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a080866da3d76c319db24c1351062f6be" id="r_a080866da3d76c319db24c1351062f6be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a080866da3d76c319db24c1351062f6be">set_overlay_count</a> (int count) const</td></tr>
 <tr class="separator:a080866da3d76c319db24c1351062f6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a19a9995d541f47f116b83bacecb76" id="r_ad8a19a9995d541f47f116b83bacecb76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8a19a9995d541f47f116b83bacecb76">get_overlay_count</a> () const</td></tr>
-<tr class="separator:ad8a19a9995d541f47f116b83bacecb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43f609f4c1d21d6052b73340c3433bd" id="r_ad43f609f4c1d21d6052b73340c3433bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad43f609f4c1d21d6052b73340c3433bd">get_overlay_count</a> () const</td></tr>
+<tr class="separator:ad43f609f4c1d21d6052b73340c3433bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a894af7b5cc9d09b8a880c7a97acdf6b8" id="r_a894af7b5cc9d09b8a880c7a97acdf6b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a894af7b5cc9d09b8a880c7a97acdf6b8">set_file_per_state</a> (bool yes_no) const</td></tr>
 <tr class="separator:a894af7b5cc9d09b8a880c7a97acdf6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a876aac01eb56f11f6c006651a43de3d5" id="r_a876aac01eb56f11f6c006651a43de3d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a876aac01eb56f11f6c006651a43de3d5">get_file_per_state</a> () const</td></tr>
-<tr class="separator:a876aac01eb56f11f6c006651a43de3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8df23f5b567c2073839270bb1cd14ec" id="r_ae8df23f5b567c2073839270bb1cd14ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8df23f5b567c2073839270bb1cd14ec">get_file_per_state</a> () const</td></tr>
+<tr class="separator:ae8df23f5b567c2073839270bb1cd14ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec93a9a1076ca2983c728a7f89028c9" id="r_a1ec93a9a1076ca2983c728a7f89028c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ec93a9a1076ca2983c728a7f89028c9">set_time_scale_factor</a> (double factor)</td></tr>
 <tr class="separator:a1ec93a9a1076ca2983c728a7f89028c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10317f91191bc895dadfeaa5f1fe0cec" id="r_a10317f91191bc895dadfeaa5f1fe0cec"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10317f91191bc895dadfeaa5f1fe0cec">util</a> () const</td></tr>
-<tr class="separator:a10317f91191bc895dadfeaa5f1fe0cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c2d8e45d3847d1282db6798e953aa7" id="r_aa6c2d8e45d3847d1282db6798e953aa7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6c2d8e45d3847d1282db6798e953aa7">get_property_manager</a> () const</td></tr>
-<tr class="separator:aa6c2d8e45d3847d1282db6798e953aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f9d85da0afe95a1291480aeb79571fd" id="r_a5f9d85da0afe95a1291480aeb79571fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f9d85da0afe95a1291480aeb79571fd">parallel_rank</a> () const</td></tr>
-<tr class="memdesc:a5f9d85da0afe95a1291480aeb79571fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the processor that this mesh database is on.  <br /></td></tr>
-<tr class="separator:a5f9d85da0afe95a1291480aeb79571fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceccfba755333cf8af271ba5dcc659c4" id="r_aceccfba755333cf8af271ba5dcc659c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceccfba755333cf8af271ba5dcc659c4">parallel_size</a> () const</td></tr>
-<tr class="separator:aceccfba755333cf8af271ba5dcc659c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec5c215a32e9c46727ca2e7666e909c9" id="r_aec5c215a32e9c46727ca2e7666e909c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec5c215a32e9c46727ca2e7666e909c9">is_parallel</a> () const</td></tr>
-<tr class="separator:aec5c215a32e9c46727ca2e7666e909c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace023721d19bcd116ac0433488220269" id="r_ace023721d19bcd116ac0433488220269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace023721d19bcd116ac0433488220269">util</a> () const</td></tr>
+<tr class="separator:ace023721d19bcd116ac0433488220269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e78b78814bc7bd47c8654a8f95c8a8" id="r_a96e78b78814bc7bd47c8654a8f95c8a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const <a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96e78b78814bc7bd47c8654a8f95c8a8">get_property_manager</a> () const</td></tr>
+<tr class="separator:a96e78b78814bc7bd47c8654a8f95c8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e6b99f81ef6af8ed5c6c2ed15d5639" id="r_a66e6b99f81ef6af8ed5c6c2ed15d5639"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66e6b99f81ef6af8ed5c6c2ed15d5639">parallel_rank</a> () const</td></tr>
+<tr class="memdesc:a66e6b99f81ef6af8ed5c6c2ed15d5639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the processor that this mesh database is on.  <br /></td></tr>
+<tr class="separator:a66e6b99f81ef6af8ed5c6c2ed15d5639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc3791af3804478a0f11fc95b07019c" id="r_a9fc3791af3804478a0f11fc95b07019c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fc3791af3804478a0f11fc95b07019c">parallel_size</a> () const</td></tr>
+<tr class="separator:a9fc3791af3804478a0f11fc95b07019c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0d3cb2c4fa3e9b896ee731ca7ec620" id="r_acd0d3cb2c4fa3e9b896ee731ca7ec620"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd0d3cb2c4fa3e9b896ee731ca7ec620">is_parallel</a> () const</td></tr>
+<tr class="separator:acd0d3cb2c4fa3e9b896ee731ca7ec620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb625fa3f912ec5708ac0ef89e29b057" id="r_aeb625fa3f912ec5708ac0ef89e29b057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb625fa3f912ec5708ac0ef89e29b057">progress</a> (const std::string &amp;output) const</td></tr>
 <tr class="separator:aeb625fa3f912ec5708ac0ef89e29b057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01349f390274354271663155aef453d5" id="r_a01349f390274354271663155aef453d5"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01349f390274354271663155aef453d5">get_entity_field_data</a> (const std::string &amp;field_name, const std::vector&lt; <a class="el" href="classIoss_1_1ElementBlock.html">Ioss::ElementBlock</a> * &gt; &amp;elem_blocks, void *data, size_t data_size) const</td></tr>
@@ -1394,8 +1394,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aa6d658c9fddf9ccf74b00fd106ae7e2a" name="aa6d658c9fddf9ccf74b00fd106ae7e2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6d658c9fddf9ccf74b00fd106ae7e2a">&#9670;&#160;</a></span>element_global_to_local()</h2>
+<a id="ac94fcad38477cc4cf46333ea390a599f" name="ac94fcad38477cc4cf46333ea390a599f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94fcad38477cc4cf46333ea390a599f">&#9670;&#160;</a></span>element_global_to_local()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1404,7 +1404,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t Ioss::DatabaseIO::element_global_to_local </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int64_t Ioss::DatabaseIO::element_global_to_local </td>
           <td>(</td>
           <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>global</em></span></td><td>)</td>
           <td> const</td>
@@ -1442,7 +1442,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classIocgns_1_1DatabaseIO.html#a07465e6a22a61482c7e5518313b9803a">Iocgns::DatabaseIO</a>, and <a class="el" href="classIohb_1_1DatabaseIO.html#a9e9ba30327d1a2adcce781a8e0ec404f">Iohb::DatabaseIO</a>.</p>
+<p>Reimplemented in <a class="el" href="classIocgns_1_1DatabaseIO.html#a07465e6a22a61482c7e5518313b9803a">Iocgns::DatabaseIO</a>, and <a class="el" href="classIohb_1_1DatabaseIO.html#a4e055b4a230e017e98287db90270915a">Iohb::DatabaseIO</a>.</p>
 
 </div>
 </div>
@@ -1560,8 +1560,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af0fe729073a510495e3bdfc56c548329" name="af0fe729073a510495e3bdfc56c548329"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0fe729073a510495e3bdfc56c548329">&#9670;&#160;</a></span>entity_field_support()</h2>
+<a id="a117ddaa372b624484594404033f680de" name="a117ddaa372b624484594404033f680de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117ddaa372b624484594404033f680de">&#9670;&#160;</a></span>entity_field_support()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1570,7 +1570,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual unsigned Ioss::DatabaseIO::entity_field_support </td>
+          <td class="memname">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> unsigned Ioss::DatabaseIO::entity_field_support </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -1583,7 +1583,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classIoad_1_1DatabaseIO.html#ab871933100f81db9304d196eb4f44c41">Ioad::DatabaseIO</a>, <a class="el" href="classIocatalyst_1_1DatabaseIO.html#ab6a4d6dd39885eef8345c3b9b2ca2b72">Iocatalyst::DatabaseIO</a>, <a class="el" href="classIocgns_1_1DatabaseIO.html#a2c5342283817964a057d575fe8bece65">Iocgns::DatabaseIO</a>, <a class="el" href="classIoex_1_1BaseDatabaseIO.html#ada888b57ae95ee0b706ed61991c98e0a">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a3050f0df50d890f3e0b1ad144f35c244">Ioexnl::BaseDatabaseIO</a>, <a class="el" href="classIofaodel_1_1DatabaseIO.html#a30c91fd65e027e2d4553cf74632b6631">Iofaodel::DatabaseIO</a>, <a class="el" href="classIogs_1_1DatabaseIO.html#a55c5aa85346823967183d8b670061553">Iogs::DatabaseIO</a>, <a class="el" href="classIogn_1_1DatabaseIO.html#a4d31b02871089cc417ea990591acb9e7">Iogn::DatabaseIO</a>, <a class="el" href="classIohb_1_1DatabaseIO.html#a4555c992e67be7ab9bc2e3435c4872c0">Iohb::DatabaseIO</a>, <a class="el" href="classIonull_1_1DatabaseIO.html#a762d9bdb1360178ea643768f708f9a34">Ionull::DatabaseIO</a>, <a class="el" href="classIopg_1_1DatabaseIO.html#a60823e7d5c064b58a49326959f715f5e">Iopg::DatabaseIO</a>, <a class="el" href="classIotm_1_1DatabaseIO.html#a99fbb58c6aa48c84e067b757686da188">Iotm::DatabaseIO</a>, <a class="el" href="classIovs__cgns_1_1DatabaseIO.html#a637af854509168ed3ef3c085e9b935a1">Iovs_cgns::DatabaseIO</a>, and <a class="el" href="classIovs__exodus_1_1DatabaseIO.html#a0e373b8c5b70d1bd6d9058cae0634b6c">Iovs_exodus::DatabaseIO</a>.</p>
+<p>Implemented in <a class="el" href="classIoad_1_1DatabaseIO.html#ab871933100f81db9304d196eb4f44c41">Ioad::DatabaseIO</a>, <a class="el" href="classIocatalyst_1_1DatabaseIO.html#ab6a4d6dd39885eef8345c3b9b2ca2b72">Iocatalyst::DatabaseIO</a>, <a class="el" href="classIocgns_1_1DatabaseIO.html#a2c5342283817964a057d575fe8bece65">Iocgns::DatabaseIO</a>, <a class="el" href="classIoex_1_1BaseDatabaseIO.html#ada888b57ae95ee0b706ed61991c98e0a">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a3050f0df50d890f3e0b1ad144f35c244">Ioexnl::BaseDatabaseIO</a>, <a class="el" href="classIofaodel_1_1DatabaseIO.html#a30c91fd65e027e2d4553cf74632b6631">Iofaodel::DatabaseIO</a>, <a class="el" href="classIogs_1_1DatabaseIO.html#a55c5aa85346823967183d8b670061553">Iogs::DatabaseIO</a>, <a class="el" href="classIogn_1_1DatabaseIO.html#a4d31b02871089cc417ea990591acb9e7">Iogn::DatabaseIO</a>, <a class="el" href="classIohb_1_1DatabaseIO.html#a4555c992e67be7ab9bc2e3435c4872c0">Iohb::DatabaseIO</a>, <a class="el" href="classIonull_1_1DatabaseIO.html#a762d9bdb1360178ea643768f708f9a34">Ionull::DatabaseIO</a>, <a class="el" href="classIopg_1_1DatabaseIO.html#a711594533af88f9486e41f4b62da10e0">Iopg::DatabaseIO</a>, <a class="el" href="classIotm_1_1DatabaseIO.html#a99fbb58c6aa48c84e067b757686da188">Iotm::DatabaseIO</a>, <a class="el" href="classIovs__cgns_1_1DatabaseIO.html#a637af854509168ed3ef3c085e9b935a1">Iovs_cgns::DatabaseIO</a>, and <a class="el" href="classIovs__exodus_1_1DatabaseIO.html#a0e373b8c5b70d1bd6d9058cae0634b6c">Iovs_exodus::DatabaseIO</a>.</p>
 
 </div>
 </div>
@@ -1801,8 +1801,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a89a00fab4e24f2e02108214012c0df05" name="a89a00fab4e24f2e02108214012c0df05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89a00fab4e24f2e02108214012c0df05">&#9670;&#160;</a></span>get_cycle_count()</h2>
+<a id="abb0a393762229ef75db996512a1c2589" name="abb0a393762229ef75db996512a1c2589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb0a393762229ef75db996512a1c2589">&#9670;&#160;</a></span>get_cycle_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1811,7 +1811,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Ioss::DatabaseIO::get_cycle_count </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int Ioss::DatabaseIO::get_cycle_count </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -1826,8 +1826,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ae0cba59509625954d97fdd1dec3ad834" name="ae0cba59509625954d97fdd1dec3ad834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0cba59509625954d97fdd1dec3ad834">&#9670;&#160;</a></span>get_duplicate_field_behavior()</h2>
+<a id="aeff804c881ea01481ddca5175839b47a" name="aeff804c881ea01481ddca5175839b47a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff804c881ea01481ddca5175839b47a">&#9670;&#160;</a></span>get_duplicate_field_behavior()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1836,7 +1836,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8f">DuplicateFieldBehavior</a> Ioss::DatabaseIO::get_duplicate_field_behavior </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8f">DuplicateFieldBehavior</a> Ioss::DatabaseIO::get_duplicate_field_behavior </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -1851,8 +1851,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a7702f945303eb1d300c2503c2908aba1" name="a7702f945303eb1d300c2503c2908aba1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7702f945303eb1d300c2503c2908aba1">&#9670;&#160;</a></span>get_dw_name()</h2>
+<a id="a62cb78c328ff2b61e30697bd0bddf78f" name="a62cb78c328ff2b61e30697bd0bddf78f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62cb78c328ff2b61e30697bd0bddf78f">&#9670;&#160;</a></span>get_dw_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1861,7 +1861,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Ioss::DatabaseIO::get_dw_name </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string Ioss::DatabaseIO::get_dw_name </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -1876,8 +1876,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a882fafd95486bffd9a9ddc8cd9bf6771" name="a882fafd95486bffd9a9ddc8cd9bf6771"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a882fafd95486bffd9a9ddc8cd9bf6771">&#9670;&#160;</a></span>get_dw_path()</h2>
+<a id="aa466ebbb885bf52bf16879448e4527b6" name="aa466ebbb885bf52bf16879448e4527b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa466ebbb885bf52bf16879448e4527b6">&#9670;&#160;</a></span>get_dw_path()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1886,7 +1886,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Ioss::DatabaseIO::get_dw_path </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string Ioss::DatabaseIO::get_dw_path </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -1899,7 +1899,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>We call this ONLY after we assure that <a class="el" href="#a7ebbdc09be146cd42dc26b135e494a95">using_dw()</a> is TRUE. </p>
+<p>We call this ONLY after we assure that <a class="el" href="#ab9c4593c3990e6b1764ec9a5dbd61a00">using_dw()</a> is TRUE. </p>
 <dl class="section return"><dt>Returns</dt><dd>mount point of Datawarp namespace, e.g: <code>/opt/cray/....&lt;jobid&gt;</code> </dd></dl>
 
 </div>
@@ -2640,8 +2640,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af616ab4ee470f8a994d2ef35eb1fa100" name="af616ab4ee470f8a994d2ef35eb1fa100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af616ab4ee470f8a994d2ef35eb1fa100">&#9670;&#160;</a></span>get_field_recognition()</h2>
+<a id="a91d76e22defd52426e089a12811f0d7a" name="a91d76e22defd52426e089a12811f0d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d76e22defd52426e089a12811f0d7a">&#9670;&#160;</a></span>get_field_recognition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2650,7 +2650,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::get_field_recognition </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::get_field_recognition </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2665,8 +2665,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aac344d090f98ae0082547ea7d8e0db7e" name="aac344d090f98ae0082547ea7d8e0db7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac344d090f98ae0082547ea7d8e0db7e">&#9670;&#160;</a></span>get_field_separator()</h2>
+<a id="a4a232131401770ad75863bdbfa009fe0" name="a4a232131401770ad75863bdbfa009fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a232131401770ad75863bdbfa009fe0">&#9670;&#160;</a></span>get_field_separator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2675,7 +2675,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char Ioss::DatabaseIO::get_field_separator </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> char Ioss::DatabaseIO::get_field_separator </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2690,8 +2690,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab02ad4c1811472b559a93bcb5fcf2850" name="ab02ad4c1811472b559a93bcb5fcf2850"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab02ad4c1811472b559a93bcb5fcf2850">&#9670;&#160;</a></span>get_field_strip_trailing_()</h2>
+<a id="acde665abe65a0a5423e36585acd253cb" name="acde665abe65a0a5423e36585acd253cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde665abe65a0a5423e36585acd253cb">&#9670;&#160;</a></span>get_field_strip_trailing_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2700,7 +2700,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::get_field_strip_trailing_ </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::get_field_strip_trailing_ </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2715,8 +2715,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a876aac01eb56f11f6c006651a43de3d5" name="a876aac01eb56f11f6c006651a43de3d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a876aac01eb56f11f6c006651a43de3d5">&#9670;&#160;</a></span>get_file_per_state()</h2>
+<a id="ae8df23f5b567c2073839270bb1cd14ec" name="ae8df23f5b567c2073839270bb1cd14ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8df23f5b567c2073839270bb1cd14ec">&#9670;&#160;</a></span>get_file_per_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2725,7 +2725,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::get_file_per_state </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::get_file_per_state </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2740,8 +2740,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a009607cca86df2f61da6aea3ef27abfa" name="a009607cca86df2f61da6aea3ef27abfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a009607cca86df2f61da6aea3ef27abfa">&#9670;&#160;</a></span>get_file_pointer()</h2>
+<a id="aae147a9228e74750b8d609a4d1441fac" name="aae147a9228e74750b8d609a4d1441fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae147a9228e74750b8d609a4d1441fac">&#9670;&#160;</a></span>get_file_pointer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2750,7 +2750,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int Ioss::DatabaseIO::get_file_pointer </td>
+          <td class="memname">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int Ioss::DatabaseIO::get_file_pointer </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2768,8 +2768,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a1c9ad01905e9773cd69b452a8551cbba" name="a1c9ad01905e9773cd69b452a8551cbba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c9ad01905e9773cd69b452a8551cbba">&#9670;&#160;</a></span>get_filename()</h2>
+<a id="a00a8cfc40675b2817ed5a0c333aae73f" name="a00a8cfc40675b2817ed5a0c333aae73f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a8cfc40675b2817ed5a0c333aae73f">&#9670;&#160;</a></span>get_filename()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2778,7 +2778,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Ioss::DatabaseIO::get_filename </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string Ioss::DatabaseIO::get_filename </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2796,8 +2796,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0eec84586f2d1884afd06c0dbcf56100" name="a0eec84586f2d1884afd06c0dbcf56100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0eec84586f2d1884afd06c0dbcf56100">&#9670;&#160;</a></span>get_format()</h2>
+<a id="a737ed0679f21976ce3719a5e291f9f87" name="a737ed0679f21976ce3719a5e291f9f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737ed0679f21976ce3719a5e291f9f87">&#9670;&#160;</a></span>get_format()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2806,7 +2806,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string Ioss::DatabaseIO::get_format </td>
+          <td class="memname">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string Ioss::DatabaseIO::get_format </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2820,12 +2820,12 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Return a string specifying underlying format of database (exodus, cgns, ...) </p>
 
-<p>Implemented in <a class="el" href="classIoad_1_1DatabaseIO.html#a0fafbe7e338de69de3a65faf95a24cc3">Ioad::DatabaseIO</a>, <a class="el" href="classIocatalyst_1_1DatabaseIO.html#af78a9caba2b5086f239ac89e209c95f1">Iocatalyst::DatabaseIO</a>, <a class="el" href="classIocgns_1_1DatabaseIO.html#aee2605130fb599f377992c76a152dd29">Iocgns::DatabaseIO</a>, <a class="el" href="classIoex_1_1BaseDatabaseIO.html#aeace7a1f43103af6d961a3f012607ca2">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a105062b207561b4c78744111535159c5">Ioexnl::BaseDatabaseIO</a>, <a class="el" href="classIofaodel_1_1DatabaseIO.html#a3bc23778d1210a0c4da11205fd91a205">Iofaodel::DatabaseIO</a>, <a class="el" href="classIogs_1_1DatabaseIO.html#a8be2a62c35e1d0f52ad8064f7403691f">Iogs::DatabaseIO</a>, <a class="el" href="classIogn_1_1DatabaseIO.html#a1b31bddd4caf4b6c5ba9e4616e48a174">Iogn::DatabaseIO</a>, <a class="el" href="classIohb_1_1DatabaseIO.html#a5d5076aeded17ee7025023721b880655">Iohb::DatabaseIO</a>, <a class="el" href="classIonull_1_1DatabaseIO.html#a56d67ee218d3f3be2667c864636288d6">Ionull::DatabaseIO</a>, <a class="el" href="classIopg_1_1DatabaseIO.html#ae0e800ec2f699c974fa6e4c44961ddf1">Iopg::DatabaseIO</a>, <a class="el" href="classIotm_1_1DatabaseIO.html#aaa848c122169e98f1f427bf526fedbb7">Iotm::DatabaseIO</a>, <a class="el" href="classIovs__cgns_1_1DatabaseIO.html#a6624ff84efa0c5b7bbd2d5f3647e0a98">Iovs_cgns::DatabaseIO</a>, and <a class="el" href="classIovs__exodus_1_1DatabaseIO.html#af63caf4b8feb897d9d7eb55f71a9d404">Iovs_exodus::DatabaseIO</a>.</p>
+<p>Implemented in <a class="el" href="classIoad_1_1DatabaseIO.html#a0fafbe7e338de69de3a65faf95a24cc3">Ioad::DatabaseIO</a>, <a class="el" href="classIocatalyst_1_1DatabaseIO.html#af78a9caba2b5086f239ac89e209c95f1">Iocatalyst::DatabaseIO</a>, <a class="el" href="classIocgns_1_1DatabaseIO.html#ac255b4e6bf44033723f10e2550ecd23f">Iocgns::DatabaseIO</a>, <a class="el" href="classIoex_1_1BaseDatabaseIO.html#ab1ac5477c2ca3f8d3c336098c9a1201f">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#ab5004ff75a7dda9aa1001d6818bd0b4c">Ioexnl::BaseDatabaseIO</a>, <a class="el" href="classIofaodel_1_1DatabaseIO.html#a3bc23778d1210a0c4da11205fd91a205">Iofaodel::DatabaseIO</a>, <a class="el" href="classIogs_1_1DatabaseIO.html#a933b6c2dcab3bb4229ab6908dbc14b34">Iogs::DatabaseIO</a>, <a class="el" href="classIogn_1_1DatabaseIO.html#a1b31bddd4caf4b6c5ba9e4616e48a174">Iogn::DatabaseIO</a>, <a class="el" href="classIohb_1_1DatabaseIO.html#aed31908de9544c5e04faf4f088e062c5">Iohb::DatabaseIO</a>, <a class="el" href="classIonull_1_1DatabaseIO.html#a7094c1c2b6df6006692066ff83073f02">Ionull::DatabaseIO</a>, <a class="el" href="classIopg_1_1DatabaseIO.html#a905dc12a8ac1be0c5fbdd6b60128d419">Iopg::DatabaseIO</a>, <a class="el" href="classIotm_1_1DatabaseIO.html#aaa848c122169e98f1f427bf526fedbb7">Iotm::DatabaseIO</a>, <a class="el" href="classIovs__cgns_1_1DatabaseIO.html#a6624ff84efa0c5b7bbd2d5f3647e0a98">Iovs_cgns::DatabaseIO</a>, and <a class="el" href="classIovs__exodus_1_1DatabaseIO.html#af63caf4b8feb897d9d7eb55f71a9d404">Iovs_exodus::DatabaseIO</a>.</p>
 
 </div>
 </div>
-<a id="aaac69583440607a9c083440d8dd63cce" name="aaac69583440607a9c083440d8dd63cce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaac69583440607a9c083440d8dd63cce">&#9670;&#160;</a></span>get_ignore_realn_fields()</h2>
+<a id="a1095b9eb0c3c443877ff2357a5ca707b" name="a1095b9eb0c3c443877ff2357a5ca707b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1095b9eb0c3c443877ff2357a5ca707b">&#9670;&#160;</a></span>get_ignore_realn_fields()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2834,7 +2834,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::get_ignore_realn_fields </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::get_ignore_realn_fields </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2849,8 +2849,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a3820d5d5eec57f1cd0cd642768d58e77" name="a3820d5d5eec57f1cd0cd642768d58e77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3820d5d5eec57f1cd0cd642768d58e77">&#9670;&#160;</a></span>get_information_records()</h2>
+<a id="a980c664afce64b5e1cd732644beae147" name="a980c664afce64b5e1cd732644beae147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980c664afce64b5e1cd732644beae147">&#9670;&#160;</a></span>get_information_records()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2859,7 +2859,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; std::string &gt; &amp; Ioss::DatabaseIO::get_information_records </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const std::vector&lt; std::string &gt; &amp; Ioss::DatabaseIO::get_information_records </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2877,8 +2877,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a48942e443c4c83a30c30167d444bd034" name="a48942e443c4c83a30c30167d444bd034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48942e443c4c83a30c30167d444bd034">&#9670;&#160;</a></span>get_logging()</h2>
+<a id="a75c51d626ee9c3a8ccaecff7eb878202" name="a75c51d626ee9c3a8ccaecff7eb878202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c51d626ee9c3a8ccaecff7eb878202">&#9670;&#160;</a></span>get_logging()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2887,7 +2887,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::get_logging </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::get_logging </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2902,8 +2902,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aa21660182da8c8a5e1504eeb0fa94cb7" name="aa21660182da8c8a5e1504eeb0fa94cb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa21660182da8c8a5e1504eeb0fa94cb7">&#9670;&#160;</a></span>get_nan_detection()</h2>
+<a id="a756bc4238e265d2690e66d4eefc43e21" name="a756bc4238e265d2690e66d4eefc43e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756bc4238e265d2690e66d4eefc43e21">&#9670;&#160;</a></span>get_nan_detection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2912,7 +2912,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::get_nan_detection </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::get_nan_detection </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2927,8 +2927,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad8a19a9995d541f47f116b83bacecb76" name="ad8a19a9995d541f47f116b83bacecb76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a19a9995d541f47f116b83bacecb76">&#9670;&#160;</a></span>get_overlay_count()</h2>
+<a id="ad43f609f4c1d21d6052b73340c3433bd" name="ad43f609f4c1d21d6052b73340c3433bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43f609f4c1d21d6052b73340c3433bd">&#9670;&#160;</a></span>get_overlay_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2937,7 +2937,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Ioss::DatabaseIO::get_overlay_count </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int Ioss::DatabaseIO::get_overlay_count </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2952,8 +2952,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac3c12203a4ba704330522e57c3260e84" name="ac3c12203a4ba704330522e57c3260e84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3c12203a4ba704330522e57c3260e84">&#9670;&#160;</a></span>get_pfs_name()</h2>
+<a id="ab931ad84e620165697cdac56d7f2aea0" name="ab931ad84e620165697cdac56d7f2aea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab931ad84e620165697cdac56d7f2aea0">&#9670;&#160;</a></span>get_pfs_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2962,7 +2962,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Ioss::DatabaseIO::get_pfs_name </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string Ioss::DatabaseIO::get_pfs_name </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -2977,8 +2977,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aa6c2d8e45d3847d1282db6798e953aa7" name="aa6c2d8e45d3847d1282db6798e953aa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6c2d8e45d3847d1282db6798e953aa7">&#9670;&#160;</a></span>get_property_manager()</h2>
+<a id="a96e78b78814bc7bd47c8654a8f95c8a8" name="a96e78b78814bc7bd47c8654a8f95c8a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e78b78814bc7bd47c8654a8f95c8a8">&#9670;&#160;</a></span>get_property_manager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2987,7 +2987,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp; Ioss::DatabaseIO::get_property_manager </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const <a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp; Ioss::DatabaseIO::get_property_manager </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -3002,8 +3002,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab239f9b691a9abcb72fbb593d23b3eaf" name="ab239f9b691a9abcb72fbb593d23b3eaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab239f9b691a9abcb72fbb593d23b3eaf">&#9670;&#160;</a></span>get_qa_records()</h2>
+<a id="a102a81568ead2a13ec9b2ce16bcced8b" name="a102a81568ead2a13ec9b2ce16bcced8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102a81568ead2a13ec9b2ce16bcced8b">&#9670;&#160;</a></span>get_qa_records()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3012,7 +3012,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; std::string &gt; &amp; Ioss::DatabaseIO::get_qa_records </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const std::vector&lt; std::string &gt; &amp; Ioss::DatabaseIO::get_qa_records </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -3037,8 +3037,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab901db7f7623bfc65093f086121d040e" name="ab901db7f7623bfc65093f086121d040e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab901db7f7623bfc65093f086121d040e">&#9670;&#160;</a></span>get_region()</h2>
+<a id="ad013b48df6d593deb7ffc98ab5de7777" name="ad013b48df6d593deb7ffc98ab5de7777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad013b48df6d593deb7ffc98ab5de7777">&#9670;&#160;</a></span>get_region()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3047,7 +3047,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIoss_1_1Region.html">Region</a> * Ioss::DatabaseIO::get_region </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="classIoss_1_1Region.html">Region</a> * Ioss::DatabaseIO::get_region </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -3115,8 +3115,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a52c4059853eb44042d91f894d08850cb" name="a52c4059853eb44042d91f894d08850cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52c4059853eb44042d91f894d08850cb">&#9670;&#160;</a></span>get_surface_split_type()</h2>
+<a id="aa8253e755652ad7f04f6d18391b24248" name="aa8253e755652ad7f04f6d18391b24248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8253e755652ad7f04f6d18391b24248">&#9670;&#160;</a></span>get_surface_split_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3125,7 +3125,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a> Ioss::DatabaseIO::get_surface_split_type </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#aac97d071c77181adce98f1569c36d222">Ioss::SurfaceSplitType</a> Ioss::DatabaseIO::get_surface_split_type </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -3140,8 +3140,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a10b4e39c00fbfa842be7a0e6521774d6" name="a10b4e39c00fbfa842be7a0e6521774d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10b4e39c00fbfa842be7a0e6521774d6">&#9670;&#160;</a></span>get_use_generic_canonical_name()</h2>
+<a id="ae4818b3190879a0995ede934ebcce153" name="ae4818b3190879a0995ede934ebcce153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4818b3190879a0995ede934ebcce153">&#9670;&#160;</a></span>get_use_generic_canonical_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3150,7 +3150,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::get_use_generic_canonical_name </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::get_use_generic_canonical_name </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -3846,8 +3846,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="adfbafe8d52fd9ae79cdfe216360482eb" name="adfbafe8d52fd9ae79cdfe216360482eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfbafe8d52fd9ae79cdfe216360482eb">&#9670;&#160;</a></span>ignore_database_names() <span class="overload">[1/2]</span></h2>
+<a id="af89ddbf5cda504e2c63d5d8fc700fa72" name="af89ddbf5cda504e2c63d5d8fc700fa72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af89ddbf5cda504e2c63d5d8fc700fa72">&#9670;&#160;</a></span>ignore_database_names() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3856,7 +3856,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::ignore_database_names </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::ignore_database_names </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -3915,8 +3915,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad129f36237691cb1836086f84cc842af" name="ad129f36237691cb1836086f84cc842af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad129f36237691cb1836086f84cc842af">&#9670;&#160;</a></span>int_byte_size_db()</h2>
+<a id="a13ec225615eefb9cf70cea4e91443a3b" name="a13ec225615eefb9cf70cea4e91443a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ec225615eefb9cf70cea4e91443a3b">&#9670;&#160;</a></span>int_byte_size_db()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3925,7 +3925,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int Ioss::DatabaseIO::int_byte_size_db </td>
+          <td class="memname">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int Ioss::DatabaseIO::int_byte_size_db </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -3938,12 +3938,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classIoad_1_1DatabaseIO.html#a5f9ad0b256cab8c1e049bb463c31b275">Ioad::DatabaseIO</a>, <a class="el" href="classIocatalyst_1_1DatabaseIO.html#ac56b2bfc6e9c6fe2f0de7bab88f70737">Iocatalyst::DatabaseIO</a>, <a class="el" href="classIocgns_1_1DatabaseIO.html#a69478c495381260743faed301bbe4d84">Iocgns::DatabaseIO</a>, <a class="el" href="classIoex_1_1BaseDatabaseIO.html#aa7e36436eb297101fa6e35354d036c06">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a7ee19eb4d74a4595d5863170ca6ae4a1">Ioexnl::BaseDatabaseIO</a>, <a class="el" href="classIofaodel_1_1DatabaseIO.html#a463740ae30d6df8312f7167e36d8fa0e">Iofaodel::DatabaseIO</a>, <a class="el" href="classIogs_1_1DatabaseIO.html#a4ff41082680118a784b3fb47aabc2658">Iogs::DatabaseIO</a>, <a class="el" href="classIogn_1_1DatabaseIO.html#a00277dfe0d6e95d506b3ae0d95ecbfd3">Iogn::DatabaseIO</a>, <a class="el" href="classIohb_1_1DatabaseIO.html#ae9a0e90a733b8b1e75810f5c63e39edd">Iohb::DatabaseIO</a>, <a class="el" href="classIonull_1_1DatabaseIO.html#a97c2ee34f23f64992cd143ae9f037df6">Ionull::DatabaseIO</a>, <a class="el" href="classIopg_1_1DatabaseIO.html#a14cd714e375b4b0e8d2f6831b1fc1de3">Iopg::DatabaseIO</a>, <a class="el" href="classIotm_1_1DatabaseIO.html#a282d162e8e2833d00978dfe9611bdd8b">Iotm::DatabaseIO</a>, <a class="el" href="classIovs__cgns_1_1DatabaseIO.html#ac1ae26b7c82922afb46bc9a426eb5520">Iovs_cgns::DatabaseIO</a>, and <a class="el" href="classIovs__exodus_1_1DatabaseIO.html#a8beb81f6025324ec40654bdcaae502bb">Iovs_exodus::DatabaseIO</a>.</p>
+<p>Implemented in <a class="el" href="classIoad_1_1DatabaseIO.html#a5f9ad0b256cab8c1e049bb463c31b275">Ioad::DatabaseIO</a>, <a class="el" href="classIocatalyst_1_1DatabaseIO.html#ac56b2bfc6e9c6fe2f0de7bab88f70737">Iocatalyst::DatabaseIO</a>, <a class="el" href="classIocgns_1_1DatabaseIO.html#a2d95549269cc2d70229344b1d1f85b36">Iocgns::DatabaseIO</a>, <a class="el" href="classIoex_1_1BaseDatabaseIO.html#aa7e36436eb297101fa6e35354d036c06">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a7ee19eb4d74a4595d5863170ca6ae4a1">Ioexnl::BaseDatabaseIO</a>, <a class="el" href="classIofaodel_1_1DatabaseIO.html#a463740ae30d6df8312f7167e36d8fa0e">Iofaodel::DatabaseIO</a>, <a class="el" href="classIogs_1_1DatabaseIO.html#a1d8b5e56884b2850b4f6a65e9c86338a">Iogs::DatabaseIO</a>, <a class="el" href="classIogn_1_1DatabaseIO.html#a00277dfe0d6e95d506b3ae0d95ecbfd3">Iogn::DatabaseIO</a>, <a class="el" href="classIohb_1_1DatabaseIO.html#a21b1c0988636139912e2f8106f2c8d7a">Iohb::DatabaseIO</a>, <a class="el" href="classIonull_1_1DatabaseIO.html#a6a3777c83fc47730873fe8a043d0f26d">Ionull::DatabaseIO</a>, <a class="el" href="classIopg_1_1DatabaseIO.html#a3532364ea11aa684f1b25e18c143571b">Iopg::DatabaseIO</a>, <a class="el" href="classIotm_1_1DatabaseIO.html#a282d162e8e2833d00978dfe9611bdd8b">Iotm::DatabaseIO</a>, <a class="el" href="classIovs__cgns_1_1DatabaseIO.html#ac1ae26b7c82922afb46bc9a426eb5520">Iovs_cgns::DatabaseIO</a>, and <a class="el" href="classIovs__exodus_1_1DatabaseIO.html#a8beb81f6025324ec40654bdcaae502bb">Iovs_exodus::DatabaseIO</a>.</p>
 
 </div>
 </div>
-<a id="a6320784abc2a824d8040e6323fbea957" name="a6320784abc2a824d8040e6323fbea957"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6320784abc2a824d8040e6323fbea957">&#9670;&#160;</a></span>internal_edges_available()</h2>
+<a id="a3b5c4d0df71a956c2c79a720acf0788b" name="a3b5c4d0df71a956c2c79a720acf0788b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b5c4d0df71a956c2c79a720acf0788b">&#9670;&#160;</a></span>internal_edges_available()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3952,7 +3952,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Ioss::DatabaseIO::internal_edges_available </td>
+          <td class="memname">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::internal_edges_available </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -3969,8 +3969,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a78b671067cd9d6da9621a17e273b22c6" name="a78b671067cd9d6da9621a17e273b22c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78b671067cd9d6da9621a17e273b22c6">&#9670;&#160;</a></span>internal_faces_available()</h2>
+<a id="abcccd97a26700f1929533d67b2682d2b" name="abcccd97a26700f1929533d67b2682d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcccd97a26700f1929533d67b2682d2b">&#9670;&#160;</a></span>internal_faces_available()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3979,7 +3979,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Ioss::DatabaseIO::internal_faces_available </td>
+          <td class="memname">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::internal_faces_available </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -3996,8 +3996,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="afaf8598b13b44b8f262b3eec8398cb06" name="afaf8598b13b44b8f262b3eec8398cb06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaf8598b13b44b8f262b3eec8398cb06">&#9670;&#160;</a></span>is_input()</h2>
+<a id="ad7cd691d5190433dc90e403719380e73" name="ad7cd691d5190433dc90e403719380e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7cd691d5190433dc90e403719380e73">&#9670;&#160;</a></span>is_input()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4006,7 +4006,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::is_input </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::is_input </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -4024,8 +4024,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aec5c215a32e9c46727ca2e7666e909c9" name="aec5c215a32e9c46727ca2e7666e909c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec5c215a32e9c46727ca2e7666e909c9">&#9670;&#160;</a></span>is_parallel()</h2>
+<a id="acd0d3cb2c4fa3e9b896ee731ca7ec620" name="acd0d3cb2c4fa3e9b896ee731ca7ec620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0d3cb2c4fa3e9b896ee731ca7ec620">&#9670;&#160;</a></span>is_parallel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4034,7 +4034,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::is_parallel </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::is_parallel </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -4049,8 +4049,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a09b5eac4575eb2e8585dc09df3c09833" name="a09b5eac4575eb2e8585dc09df3c09833"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09b5eac4575eb2e8585dc09df3c09833">&#9670;&#160;</a></span>is_parallel_consistent()</h2>
+<a id="a8310d007b2801e27ea2c21ce4d347536" name="a8310d007b2801e27ea2c21ce4d347536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8310d007b2801e27ea2c21ce4d347536">&#9670;&#160;</a></span>is_parallel_consistent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4059,7 +4059,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::is_parallel_consistent </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::is_parallel_consistent </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -4077,8 +4077,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a80b3ae0ed4a72514221ff553023e6e2e" name="a80b3ae0ed4a72514221ff553023e6e2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80b3ae0ed4a72514221ff553023e6e2e">&#9670;&#160;</a></span>maximum_symbol_length()</h2>
+<a id="a68939c4c34f1424bba630aef5aaf3f4b" name="a68939c4c34f1424bba630aef5aaf3f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68939c4c34f1424bba630aef5aaf3f4b">&#9670;&#160;</a></span>maximum_symbol_length()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4087,7 +4087,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int Ioss::DatabaseIO::maximum_symbol_length </td>
+          <td class="memname">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int Ioss::DatabaseIO::maximum_symbol_length </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -4103,12 +4103,12 @@ template&lt;typename T &gt; </div>
 <p>Get the length of the longest name in the database file. </p>
 <dl class="section return"><dt>Returns</dt><dd>The length, or 0 for unlimited. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classIocatalyst_1_1DatabaseIO.html#a0abcc294e86e591c597fbffe69dc82ce">Iocatalyst::DatabaseIO</a>, <a class="el" href="classIoex_1_1BaseDatabaseIO.html#a587d6a88ba826fda010fcf37f6e0d219">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a766b438eb979efc7fda3845084ec3d75">Ioexnl::BaseDatabaseIO</a>, <a class="el" href="classIofaodel_1_1DatabaseIO.html#a2bd1ac60124d1144ff69c5b36486762b">Iofaodel::DatabaseIO</a>, and <a class="el" href="classIopg_1_1DatabaseIO.html#ae959d972861738d51a8f1d0995bec414">Iopg::DatabaseIO</a>.</p>
+<p>Reimplemented in <a class="el" href="classIocatalyst_1_1DatabaseIO.html#a0abcc294e86e591c597fbffe69dc82ce">Iocatalyst::DatabaseIO</a>, <a class="el" href="classIoex_1_1BaseDatabaseIO.html#a9ffa6690d1a21e65fc34994856060d10">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a28bf814ad00d723f14ba6081856516aa">Ioexnl::BaseDatabaseIO</a>, <a class="el" href="classIofaodel_1_1DatabaseIO.html#a2bd1ac60124d1144ff69c5b36486762b">Iofaodel::DatabaseIO</a>, and <a class="el" href="classIopg_1_1DatabaseIO.html#acbe94fbb3200b0142c00be8d9729cbf6">Iopg::DatabaseIO</a>.</p>
 
 </div>
 </div>
-<a id="a31dbf4c27fae8fd9160e99a2c318f4a9" name="a31dbf4c27fae8fd9160e99a2c318f4a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31dbf4c27fae8fd9160e99a2c318f4a9">&#9670;&#160;</a></span>needs_shared_node_information()</h2>
+<a id="a6eac605f3a5bca1f91a980e8024e2fb8" name="a6eac605f3a5bca1f91a980e8024e2fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eac605f3a5bca1f91a980e8024e2fb8">&#9670;&#160;</a></span>needs_shared_node_information()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4117,7 +4117,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Ioss::DatabaseIO::needs_shared_node_information </td>
+          <td class="memname">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::needs_shared_node_information </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -4137,8 +4137,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a508cb4e8ba172b238fd6af316538f89d" name="a508cb4e8ba172b238fd6af316538f89d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a508cb4e8ba172b238fd6af316538f89d">&#9670;&#160;</a></span>node_global_to_local()</h2>
+<a id="a00c11e2f2892ba8047a2e4681b26b149" name="a00c11e2f2892ba8047a2e4681b26b149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c11e2f2892ba8047a2e4681b26b149">&#9670;&#160;</a></span>node_global_to_local()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4147,7 +4147,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t Ioss::DatabaseIO::node_global_to_local </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int64_t Ioss::DatabaseIO::node_global_to_local </td>
           <td>(</td>
           <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>global</em>, </span></td>
         </tr>
@@ -4203,12 +4203,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classIocgns_1_1DatabaseIO.html#aa359e1f727af3c1efeb835d74f2f7c3b">Iocgns::DatabaseIO</a>, and <a class="el" href="classIohb_1_1DatabaseIO.html#a0e73a73dcd011f65b0aa551903e84109">Iohb::DatabaseIO</a>.</p>
+<p>Reimplemented in <a class="el" href="classIocgns_1_1DatabaseIO.html#aa359e1f727af3c1efeb835d74f2f7c3b">Iocgns::DatabaseIO</a>, and <a class="el" href="classIohb_1_1DatabaseIO.html#a0e1ad90c0722b85a650673a07e23dc6b">Iohb::DatabaseIO</a>.</p>
 
 </div>
 </div>
-<a id="a46ee337e677c8c09ad9ea2b0e20fd5c6" name="a46ee337e677c8c09ad9ea2b0e20fd5c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46ee337e677c8c09ad9ea2b0e20fd5c6">&#9670;&#160;</a></span>node_major()</h2>
+<a id="ad596a05ee31a90415c24ece793226f4e" name="ad596a05ee31a90415c24ece793226f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad596a05ee31a90415c24ece793226f4e">&#9670;&#160;</a></span>node_major()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4217,7 +4217,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Ioss::DatabaseIO::node_major </td>
+          <td class="memname">virtual <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::node_major </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -4229,14 +4229,14 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>If there is a single block of nodes in the model, then it is considered a <a class="el" href="#a46ee337e677c8c09ad9ea2b0e20fd5c6">node_major()</a> database. If instead the nodes are local to each element block or structured block, then it is not a node_major database. Exodus is node major, CGNS is not. </p>
+<p>If there is a single block of nodes in the model, then it is considered a <a class="el" href="#ad596a05ee31a90415c24ece793226f4e">node_major()</a> database. If instead the nodes are local to each element block or structured block, then it is not a node_major database. Exodus is node major, CGNS is not. </p>
 
-<p>Reimplemented in <a class="el" href="classIocatalyst_1_1DatabaseIO.html#a2763247cefb3eb43ed52a33d04e0a8e6">Iocatalyst::DatabaseIO</a>, and <a class="el" href="classIocgns_1_1DatabaseIO.html#a6318fa95ad63717e3d1a71dca7d08608">Iocgns::DatabaseIO</a>.</p>
+<p>Reimplemented in <a class="el" href="classIocatalyst_1_1DatabaseIO.html#a2763247cefb3eb43ed52a33d04e0a8e6">Iocatalyst::DatabaseIO</a>, and <a class="el" href="classIocgns_1_1DatabaseIO.html#a5618e97042230d2b2a4998db5b019979">Iocgns::DatabaseIO</a>.</p>
 
 </div>
 </div>
-<a id="a87736d6eb5a3b7dfa3144743067d282e" name="a87736d6eb5a3b7dfa3144743067d282e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87736d6eb5a3b7dfa3144743067d282e">&#9670;&#160;</a></span>ok()</h2>
+<a id="aa059cee234638d9b774d6d12ad6265d1" name="aa059cee234638d9b774d6d12ad6265d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa059cee234638d9b774d6d12ad6265d1">&#9670;&#160;</a></span>ok()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4245,7 +4245,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::ok </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::ok </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>write_message</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
         </tr>
@@ -4312,7 +4312,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classIoex_1_1BaseDatabaseIO.html#a3d74fefc2feffc218c2b3c47b71ac4e9">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a6d8b7d8e8c382b40e54823ed90c6eafb">Ioexnl::BaseDatabaseIO</a>, and <a class="el" href="classIonull_1_1DatabaseIO.html#ae13ad4ade4ba61b382efa202396afc9f">Ionull::DatabaseIO</a>.</p>
+<p>Reimplemented in <a class="el" href="classIoex_1_1BaseDatabaseIO.html#a3d74fefc2feffc218c2b3c47b71ac4e9">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a6d8b7d8e8c382b40e54823ed90c6eafb">Ioexnl::BaseDatabaseIO</a>, and <a class="el" href="classIonull_1_1DatabaseIO.html#a10563de943095a3fada7847bdea0b924">Ionull::DatabaseIO</a>.</p>
 
 </div>
 </div>
@@ -4349,7 +4349,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>If we are planning to use BB(aka Burst Buffer) service, we will call simple C API provided by Cray DataWarp module. </p>
-<p>Note: We would only like to use BB during write to avoid cache coherency issues during read. <code>dwPath</code> is the DW namespace which gets set during runtime from environment variable DW_JOB_STRIPED. Afterword, <code><a class="el" href="#a7ebbdc09be146cd42dc26b135e494a95">using_dw()</a></code> function is used extensively for filename redirection for all related subsequent functions(e.g: get_filename, get_file_ptr etc) once burst buffer is found and set to be used.</p>
+<p>Note: We would only like to use BB during write to avoid cache coherency issues during read. <code>dwPath</code> is the DW namespace which gets set during runtime from environment variable DW_JOB_STRIPED. Afterword, <code><a class="el" href="#ab9c4593c3990e6b1764ec9a5dbd61a00">using_dw()</a></code> function is used extensively for filename redirection for all related subsequent functions(e.g: get_filename, get_file_ptr etc) once burst buffer is found and set to be used.</p>
 <p>In this wrapper function we check if user intends to use Cray DataWarp(aka DW), which provides ability to use NVMe based flash storage available across all compute nodes accessible via high speed NIC. </p>
 
 </div>
@@ -4518,8 +4518,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a5f9d85da0afe95a1291480aeb79571fd" name="a5f9d85da0afe95a1291480aeb79571fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f9d85da0afe95a1291480aeb79571fd">&#9670;&#160;</a></span>parallel_rank()</h2>
+<a id="a66e6b99f81ef6af8ed5c6c2ed15d5639" name="a66e6b99f81ef6af8ed5c6c2ed15d5639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e6b99f81ef6af8ed5c6c2ed15d5639">&#9670;&#160;</a></span>parallel_rank()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4528,7 +4528,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Ioss::DatabaseIO::parallel_rank </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int Ioss::DatabaseIO::parallel_rank </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -4546,8 +4546,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aceccfba755333cf8af271ba5dcc659c4" name="aceccfba755333cf8af271ba5dcc659c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aceccfba755333cf8af271ba5dcc659c4">&#9670;&#160;</a></span>parallel_size()</h2>
+<a id="a9fc3791af3804478a0f11fc95b07019c" name="a9fc3791af3804478a0f11fc95b07019c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc3791af3804478a0f11fc95b07019c">&#9670;&#160;</a></span>parallel_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4556,7 +4556,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Ioss::DatabaseIO::parallel_size </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int Ioss::DatabaseIO::parallel_size </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -5920,8 +5920,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a057729fb7cf18d9dd49042e1166976bc" name="a057729fb7cf18d9dd49042e1166976bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a057729fb7cf18d9dd49042e1166976bc">&#9670;&#160;</a></span>usage()</h2>
+<a id="a1fa86b791022e9a0ad9e752b5671f373" name="a1fa86b791022e9a0ad9e752b5671f373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa86b791022e9a0ad9e752b5671f373">&#9670;&#160;</a></span>usage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5930,7 +5930,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a> Ioss::DatabaseIO::usage </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a> Ioss::DatabaseIO::usage </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -5948,8 +5948,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a7ebbdc09be146cd42dc26b135e494a95" name="a7ebbdc09be146cd42dc26b135e494a95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ebbdc09be146cd42dc26b135e494a95">&#9670;&#160;</a></span>using_dw()</h2>
+<a id="ab9c4593c3990e6b1764ec9a5dbd61a00" name="ab9c4593c3990e6b1764ec9a5dbd61a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c4593c3990e6b1764ec9a5dbd61a00">&#9670;&#160;</a></span>using_dw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5958,7 +5958,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::using_dw </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::using_dw </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -5974,8 +5974,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6e5c575a44253f465dd993bb49a16d2d" name="a6e5c575a44253f465dd993bb49a16d2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e5c575a44253f465dd993bb49a16d2d">&#9670;&#160;</a></span>using_parallel_io()</h2>
+<a id="a2019cd13583ac4c86d865e3441f7ad4d" name="a2019cd13583ac4c86d865e3441f7ad4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2019cd13583ac4c86d865e3441f7ad4d">&#9670;&#160;</a></span>using_parallel_io()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5984,7 +5984,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::using_parallel_io </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool Ioss::DatabaseIO::using_parallel_io </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -5999,8 +5999,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a10317f91191bc895dadfeaa5f1fe0cec" name="a10317f91191bc895dadfeaa5f1fe0cec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10317f91191bc895dadfeaa5f1fe0cec">&#9670;&#160;</a></span>util()</h2>
+<a id="ace023721d19bcd116ac0433488220269" name="ace023721d19bcd116ac0433488220269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace023721d19bcd116ac0433488220269">&#9670;&#160;</a></span>util()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6009,7 +6009,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp; Ioss::DatabaseIO::util </td>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp; Ioss::DatabaseIO::util </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>

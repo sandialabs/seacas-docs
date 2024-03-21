@@ -100,7 +100,7 @@ $(function(){initNavTree('Ioexnl__IOFactory_8h_source.html',''); initResizable()
   <div class="headertitle"><div class="title">Ioexnl_IOFactory.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Ioexnl__IOFactory_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022, 2023 National Technology &amp; Engineering Solutions</span></div>
+<a href="Ioexnl__IOFactory_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022, 2023, 2024 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -130,15 +130,16 @@ $(function(){initNavTree('Ioexnl__IOFactory_8h_source.html',''); initResizable()
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="classIoexnl_1_1IOFactory.html">IOFactory</a>();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *make_IO(<span class="keyword">const</span> std::string &amp;filename, <a class="code hl_enumeration" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a> db_usage,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                              <a class="code hl_typedef" href="Ioss__CodeTypes_8h.html#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a>                communicator,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                              <span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp;properties) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    std::string       show_config() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_define" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="code hl_class" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    make_IO(<span class="keyword">const</span> std::string &amp;filename, <a class="code hl_enumeration" href="namespaceIoss.html#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a> db_usage, <a class="code hl_typedef" href="Ioss__CodeTypes_8h.html#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a> communicator,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">const</span> <a class="code hl_class" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp;properties) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_define" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> std::string show_config() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  };</div>
 </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>} <span class="comment">// namespace Ioexnl</span></div>
 <div class="ttc" id="aIoss__CodeTypes_8h_html"><div class="ttname"><a href="Ioss__CodeTypes_8h.html">Ioss_CodeTypes.h</a></div></div>
-<div class="ttc" id="aIoss__CodeTypes_8h_html_a9d9e2562c5f7386cb89cf8f79a6fc95a"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a></div><div class="ttdeci">int Ioss_MPI_Comm</div><div class="ttdef"><b>Definition</b> Ioss_CodeTypes.h:61</div></div>
+<div class="ttc" id="aIoss__CodeTypes_8h_html_a851f3882d4fed18877fff42a13d1cdd9"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a></div><div class="ttdeci">#define IOSS_NODISCARD</div><div class="ttdef"><b>Definition</b> Ioss_CodeTypes.h:54</div></div>
+<div class="ttc" id="aIoss__CodeTypes_8h_html_a9d9e2562c5f7386cb89cf8f79a6fc95a"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a></div><div class="ttdeci">int Ioss_MPI_Comm</div><div class="ttdef"><b>Definition</b> Ioss_CodeTypes.h:63</div></div>
 <div class="ttc" id="aIoss__DBUsage_8h_html"><div class="ttname"><a href="Ioss__DBUsage_8h.html">Ioss_DBUsage.h</a></div></div>
 <div class="ttc" id="aIoss__DatabaseIO_8h_html"><div class="ttname"><a href="Ioss__DatabaseIO_8h.html">Ioss_DatabaseIO.h</a></div></div>
 <div class="ttc" id="aIoss__IOFactory_8h_html"><div class="ttname"><a href="Ioss__IOFactory_8h.html">Ioss_IOFactory.h</a></div></div>

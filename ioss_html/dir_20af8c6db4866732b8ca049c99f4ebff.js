@@ -12,6 +12,5 @@ var dir_20af8c6db4866732b8ca049c99f4ebff =
     [ "Utst_structured_decomp_herron.C", "Utst__structured__decomp__herron_8C.html", "Utst__structured__decomp__herron_8C" ],
     [ "Utst_structured_decomp_rocket.C", "Utst__structured__decomp__rocket_8C.html", "Utst__structured__decomp__rocket_8C" ],
     [ "Utst_superelement.C", "Utst__superelement_8C.html", "Utst__superelement_8C" ],
-    [ "Utst_test.C", "Utst__test_8C.html", "Utst__test_8C" ],
     [ "Utst_utils.C", "Utst__utils_8C.html", "Utst__utils_8C" ]
 ];

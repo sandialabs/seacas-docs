@@ -10,8 +10,8 @@ var classIoss_1_1Pyramid14 =
     [ "face_type", "classIoss_1_1Pyramid14.html#a70eaf091671a195e4a2dd73ca41dd481", null ],
     [ "faces_similar", "classIoss_1_1Pyramid14.html#a6115246b36674779e622e9ea8bcb5dad", null ],
     [ "factory", "classIoss_1_1Pyramid14.html#ae7381f6ea0b1f7e7a35cd07cc854b191", null ],
-    [ "is_element", "classIoss_1_1Pyramid14.html#a53e8cf3b0dd053067abb886fb8563253", null ],
-    [ "is_shell", "classIoss_1_1Pyramid14.html#ac9ba39e0904f12680d41500f13b39d69", null ],
+    [ "is_element", "classIoss_1_1Pyramid14.html#a80e4ccc707363854dc3e1964a06dd4eb", null ],
+    [ "is_shell", "classIoss_1_1Pyramid14.html#a071b0b15d00685786f4de1018a153fb7", null ],
     [ "number_corner_nodes", "classIoss_1_1Pyramid14.html#a46ab928075554b2abf1a46c2a131d19a", null ],
     [ "number_edges", "classIoss_1_1Pyramid14.html#aff9df6a10d6a1f4988394d8fd1c55147", null ],
     [ "number_edges_face", "classIoss_1_1Pyramid14.html#a4515b90dd9e17e7089e313323fb073aa", null ],
@@ -21,7 +21,7 @@ var classIoss_1_1Pyramid14 =
     [ "number_nodes_face", "classIoss_1_1Pyramid14.html#aa98b59cea0d9b97fc5274285c359f917", null ],
     [ "order", "classIoss_1_1Pyramid14.html#aa83ce9df1fb0f1107e4167def66ea018", null ],
     [ "parametric_dimension", "classIoss_1_1Pyramid14.html#aafb7739529d2d380e905a68d59fdffd5", null ],
-    [ "shape", "classIoss_1_1Pyramid14.html#a17331bc6eb45d8c75500b23b5160cf9a", null ],
+    [ "shape", "classIoss_1_1Pyramid14.html#a5ffc4d51bda45080a3d395fa547e2316", null ],
     [ "spatial_dimension", "classIoss_1_1Pyramid14.html#a2430863c8e41a64f4d9c884deb880253", null ],
     [ "name", "classIoss_1_1Pyramid14.html#a7b290dd2bee76e9d14b6ca1e0c3ae129", null ]
 ];

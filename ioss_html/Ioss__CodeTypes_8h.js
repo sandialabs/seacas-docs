@@ -3,6 +3,7 @@ var Ioss__CodeTypes_8h =
     [ "IOSS_DEBUG_OUTPUT", "Ioss__CodeTypes_8h.html#a8ff3a52b4dc0d793a406b707ce67f5c1", null ],
     [ "IOSS_FUNC_ENTER", "Ioss__CodeTypes_8h.html#a5ba470fc516a5c4d3e2c1cf1572491b4", null ],
     [ "IOSS_MAYBE_UNUSED", "Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11", null ],
+    [ "IOSS_NODISCARD", "Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9", null ],
     [ "IOSS_NOOP_GFI", "Ioss__CodeTypes_8h.html#ab4fc25120249ef3e451a6543f1351144", null ],
     [ "IOSS_NOOP_PFI", "Ioss__CodeTypes_8h.html#a8b087b20a3bac9207f6f19a8545e7d64", null ],
     [ "IOSS_PAR_UNUSED", "Ioss__CodeTypes_8h.html#ade618da39381934d0f1a32f3206d8369", null ],
