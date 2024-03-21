@@ -156,7 +156,7 @@ $(function(){initNavTree('_2test_2testrd-nfaced_8c-example.html',''); initResiza
 <div class="line">  printf(<span class="stringliteral">&quot;test.exo is an EXODUSII file; version %4.2f\n&quot;</span>, version);</div>
 <div class="line">  printf(<span class="stringliteral">&quot;         I/O word size %1d\n&quot;</span>, IO_word_size);</div>
 <div class="line"> </div>
-<div class="line">  <a id="a5" name="a5"></a><a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a6" name="a6"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca5a6f2dc673e5261066eb51f7561fada0">EX_INQ_LIB_VERS</a>, &amp;idum, &amp;version, cdum);</div>
+<div class="line">  <a id="a5" name="a5"></a><a class="code hl_function" href="group__Utilities.html#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire</a>(exoid, <a id="a6" name="a6"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca5a6f2dc673e5261066eb51f7561fada0">EX_INQ_LIB_VERS</a>, &amp;idum, &amp;version, cdum);</div>
 <div class="line">  printf(<span class="stringliteral">&quot;EXODUSII Library API; version %4.2f (%d)\n&quot;</span>, version, idum);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* read database parameters */</span></div>
@@ -372,7 +372,7 @@ $(function(){initNavTree('_2test_2testrd-nfaced_8c-example.html',''); initResiza
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* read QA records */</span></div>
-<div class="line">  <a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a29" name="a29"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca866d6d42ea0e03c30a062b07f0105874">EX_INQ_QA</a>, &amp;num_qa_rec, &amp;fdum, cdum);</div>
+<div class="line">  <a class="code hl_function" href="group__Utilities.html#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire</a>(exoid, <a id="a29" name="a29"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca866d6d42ea0e03c30a062b07f0105874">EX_INQ_QA</a>, &amp;num_qa_rec, &amp;fdum, cdum);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span> (i = 0; i &lt; num_qa_rec; i++) {</div>
 <div class="line">    <span class="keywordflow">for</span> (j = 0; j &lt; 4; j++) {</div>
@@ -393,7 +393,7 @@ $(function(){initNavTree('_2test_2testrd-nfaced_8c-example.html',''); initResiza
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* read information records */</span></div>
 <div class="line"> </div>
-<div class="line">  error = <a class="code hl_function" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a>(exoid, <a id="a31" name="a31"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca4fd836d4c6b12c55b50dd5b545091dc7">EX_INQ_INFO</a>, &amp;num_info, &amp;fdum, cdum);</div>
+<div class="line">  error = <a class="code hl_function" href="group__Utilities.html#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire</a>(exoid, <a id="a31" name="a31"></a><a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca4fd836d4c6b12c55b50dd5b545091dc7">EX_INQ_INFO</a>, &amp;num_info, &amp;fdum, cdum);</div>
 <div class="line">  printf(<span class="stringliteral">&quot;\nafter ex_inquire, error = %3d\n&quot;</span>, error);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span> (i = 0; i &lt; num_info; i++) {</div>
@@ -435,8 +435,8 @@ $(function(){initNavTree('_2test_2testrd-nfaced_8c-example.html',''); initResiza
 <div class="ttc" id="agroup__StringLengths_html_gaf0f2173e3b202ddf5756531b4471dcb2"><div class="ttname"><a href="group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2">MAX_LINE_LENGTH</a></div><div class="ttdeci">#define MAX_LINE_LENGTH</div><div class="ttdef"><b>Definition</b> exodusII.h:318</div></div>
 <div class="ttc" id="agroup__Utilities_html_ga758afb447e34a35fc1305509ebca70d3"><div class="ttname"><a href="group__Utilities.html#ga758afb447e34a35fc1305509ebca70d3">ex_get_info</a></div><div class="ttdeci">int ex_get_info(int exoid, char **info)</div><div class="ttdef"><b>Definition</b> ex_get_info.c:48</div></div>
 <div class="ttc" id="agroup__Utilities_html_ga8f47bbb035d32bbafc594c5ed3c00403"><div class="ttname"><a href="group__Utilities.html#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts</a></div><div class="ttdeci">int ex_opts(int options)</div><div class="ttdef"><b>Definition</b> ex_opts.c:56</div></div>
-<div class="ttc" id="agroup__Utilities_html_ga97c9b3dd2005e08f6e1d98470947fc6a"><div class="ttname"><a href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a></div><div class="ttdeci">int ex_inquire(int exoid, ex_inquiry req_info, void_int *, float *, char *)</div><div class="ttdef"><b>Definition</b> ex_inquire.c:1087</div></div>
-<div class="ttc" id="agroup__Utilities_html_ga9a940cd55241b5c5e7960a123d79c94c"><div class="ttname"><a href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a></div><div class="ttdeci">#define ex_open(path, mode, comp_ws, io_ws, version)</div><div class="ttdef"><b>Definition</b> exodusII.h:501</div></div>
+<div class="ttc" id="agroup__Utilities_html_ga951c4f83d27f690a19dc5f8e2c7a9209"><div class="ttname"><a href="group__Utilities.html#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire</a></div><div class="ttdeci">int ex_inquire(int exoid, ex_inquiry req_info, void_int *ret_int, float *ret_float, char *ret_char)</div><div class="ttdef"><b>Definition</b> ex_inquire.c:1087</div></div>
+<div class="ttc" id="agroup__Utilities_html_ga9a940cd55241b5c5e7960a123d79c94c"><div class="ttname"><a href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a></div><div class="ttdeci">#define ex_open(path, mode, comp_ws, io_ws, version)</div><div class="ttdef"><b>Definition</b> exodusII.h:500</div></div>
 <div class="ttc" id="agroup__Utilities_html_gabccf733ba6ef7e8a51595eb34c4f94ff"><div class="ttname"><a href="group__Utilities.html#gabccf733ba6ef7e8a51595eb34c4f94ff">ex_close</a></div><div class="ttdeci">int ex_close(int exoid)</div><div class="ttdef"><b>Definition</b> ex_close.c:47</div></div>
 <div class="ttc" id="agroup__Utilities_html_gaed5098654802b50ae832bc661f485f52"><div class="ttname"><a href="group__Utilities.html#gaed5098654802b50ae832bc661f485f52">ex_get_qa</a></div><div class="ttdeci">int ex_get_qa(int exoid, char *qa_record[][4])</div><div class="ttdef"><b>Definition</b> ex_get_qa.c:56</div></div>
 <div class="ttc" id="astructex__init__params_html"><div class="ttname"><a href="structex__init__params.html">ex_init_params</a></div><div class="ttdef"><b>Definition</b> exodusII.h:341</div></div>

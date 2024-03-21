@@ -17,7 +17,7 @@ var group__Utilities =
     [ "ex_get_num_props", "group__Utilities.html#gaf5d7d2d496640993b1c6fe395532e1bc", null ],
     [ "ex_get_qa", "group__Utilities.html#gaed5098654802b50ae832bc661f485f52", null ],
     [ "ex_header_size", "group__Utilities.html#ga5cf345127f80e3bcf813194c15d97030", null ],
-    [ "ex_inquire", "group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a", null ],
+    [ "ex_inquire", "group__Utilities.html#ga951c4f83d27f690a19dc5f8e2c7a9209", null ],
     [ "ex_inquire_int", "group__Utilities.html#ga1b8122836266615fd2795736dc21e2ae", null ],
     [ "ex_int64_status", "group__Utilities.html#ga591d434142fe8ddb34e56281d970b419", null ],
     [ "ex_large_model", "group__Utilities.html#gaa8231cf6c15bb76730fd5903a3ad5777", null ],

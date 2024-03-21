@@ -42,6 +42,7 @@ var classIOShell_1_1Interface =
     [ "memory_statistics", "classIOShell_1_1Interface.html#a34be8a8e966374bb6c32b0f640f4fceb", null ],
     [ "minimize_open_files", "classIOShell_1_1Interface.html#a41b743a44174e47e46baa9d5e1b46f8d", null ],
     [ "minimum_time", "classIOShell_1_1Interface.html#a6a10ad18ee801b25d10f49fa136e8c32", null ],
+    [ "netcdf3", "classIOShell_1_1Interface.html#ae9e8087ace2f27193a7f9773455c5b0e", null ],
     [ "netcdf4", "classIOShell_1_1Interface.html#a4a34a8493c19286b91e772b9eb250929", null ],
     [ "netcdf5", "classIOShell_1_1Interface.html#aacbb19a0041034880a62897a34cfc2d6", null ],
     [ "options_", "classIOShell_1_1Interface.html#a95d77f1c1056a655e95572d8127c01a8", null ],

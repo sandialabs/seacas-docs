@@ -123,8 +123,8 @@ $(function(){initNavTree('Iovs__CatalystVersion_8h_source.html',''); initResizab
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classIovs_1_1CatalystVersion.html">   20</a></span>  <span class="keyword">class </span>IOVS_EXPORT <a class="code hl_class" href="classIovs_1_1CatalystVersion.html">CatalystVersion</a></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classIovs_1_1CatalystVersion.html#a8de0004e8e07e2f9c7f440fb46464195">   23</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> iossCatalystInterfaceVersion = <span class="stringliteral">&quot;2.0.0&quot;</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a>       getIOSSCatalystInterfaceVersion();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classIovs_1_1CatalystVersion.html#a8de0004e8e07e2f9c7f440fb46464195">   23</a></span>    <span class="keyword">const</span> std::string iossCatalystInterfaceVersion = <span class="stringliteral">&quot;2.0.0&quot;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    std::string       getIOSSCatalystInterfaceVersion();</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// The IOSS interface and IOSS Catalyst plugin are versioned</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// using semantic versioning: MAJOR.MINOR.PATCH</span></div>
@@ -140,8 +140,8 @@ $(function(){initNavTree('Iovs__CatalystVersion_8h_source.html',''); initResizab
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//    and the interface PATCH version is greater than the plugin PATCH</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">//    version.</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">bool</span> isInterfaceCompatibleWithPlugin(<span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> &amp;interface_version,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                         <span class="keyword">const</span> <a class="code hl_class" href="classstd_1_1basic__string.html">std::string</a> &amp;plugin_version);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">bool</span> isInterfaceCompatibleWithPlugin(<span class="keyword">const</span> std::string &amp;interface_version,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                         <span class="keyword">const</span> std::string &amp;plugin_version);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classIovs_1_1CatalystVersion.html#a0129ad58906ced6b0e2033e515711f9a">   44</a></span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> SEMANTIC_VERSION_LENGTH = 3;</div>
@@ -155,7 +155,6 @@ $(function(){initNavTree('Iovs__CatalystVersion_8h_source.html',''); initResizab
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassIovs_1_1CatalystVersion_html"><div class="ttname"><a href="classIovs_1_1CatalystVersion.html">Iovs::CatalystVersion</a></div><div class="ttdef"><b>Definition</b> Iovs_CatalystVersion.h:21</div></div>
-<div class="ttc" id="aclassstd_1_1basic__string_html"><div class="ttname"><a href="classstd_1_1basic__string.html">std::basic_string</a></div><div class="ttdef"><b>Definition</b> doctest.h:544</div></div>
 <div class="ttc" id="anamespaceIovs_html"><div class="ttname"><a href="namespaceIovs.html">Iovs</a></div><div class="ttdef"><b>Definition</b> CatalystManager.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -151,8 +151,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga30160a81eb1aff6befe3890bea4f3bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8f47bbb035d32bbafc594c5ed3c00403" id="r_ga8f47bbb035d32bbafc594c5ed3c00403"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8f47bbb035d32bbafc594c5ed3c00403">ex_opts</a> (int options)</td></tr>
 <tr class="separator:ga8f47bbb035d32bbafc594c5ed3c00403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97c9b3dd2005e08f6e1d98470947fc6a" id="r_ga97c9b3dd2005e08f6e1d98470947fc6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a> (int exoid, <a class="el" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dc">ex_inquiry</a> req_info, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *, float *, char *)</td></tr>
-<tr class="separator:ga97c9b3dd2005e08f6e1d98470947fc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga951c4f83d27f690a19dc5f8e2c7a9209" id="r_ga951c4f83d27f690a19dc5f8e2c7a9209"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire</a> (int exoid, <a class="el" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dc">ex_inquiry</a> req_info, <a class="el" href="exodusII_8h.html#a393bfb7fb8f56a222e639df9736bb797">void_int</a> *ret_int, float *ret_float, char *ret_char)</td></tr>
+<tr class="separator:ga951c4f83d27f690a19dc5f8e2c7a9209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b8122836266615fd2795736dc21e2ae" id="r_ga1b8122836266615fd2795736dc21e2ae"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int</a> (int exoid, <a class="el" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dc">ex_inquiry</a> req_info)</td></tr>
 <tr class="separator:ga1b8122836266615fd2795736dc21e2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga591d434142fe8ddb34e56281d970b419" id="r_ga591d434142fe8ddb34e56281d970b419"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga591d434142fe8ddb34e56281d970b419">ex_int64_status</a> (int exoid)</td></tr>
@@ -512,7 +512,7 @@ Variables</h2></td></tr>
 <div class="line">                    &amp;IO_word_size); \comment{I/O <span class="keywordtype">float</span> word size in bytes}</div>
 <div class="ttc" id="aexodusII_8h_html"><div class="ttname"><a href="exodusII_8h.html">exodusII.h</a></div></div>
 <div class="ttc" id="agroup__FileVars_html_gadeed66ded179e51a8858254052a76ba4"><div class="ttname"><a href="group__FileVars.html#gadeed66ded179e51a8858254052a76ba4">EX_CLOBBER</a></div><div class="ttdeci">#define EX_CLOBBER</div><div class="ttdef"><b>Definition</b> exodusII.h:98</div></div>
-<div class="ttc" id="agroup__Utilities_html_ga37c928f7e30c333ee7c704d04f7e3a87"><div class="ttname"><a href="#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a></div><div class="ttdeci">#define ex_create(path, mode, comp_ws, io_ws)</div><div class="ttdef"><b>Definition</b> exodusII.h:495</div></div>
+<div class="ttc" id="agroup__Utilities_html_ga37c928f7e30c333ee7c704d04f7e3a87"><div class="ttname"><a href="#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create</a></div><div class="ttdeci">#define ex_create(path, mode, comp_ws, io_ws)</div><div class="ttdef"><b>Definition</b> exodusII.h:494</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -572,7 +572,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The function <a class="el" href="#ga27866a3e7d0d04c5849cd34ccd13b579">ex_cvt_nodes_to_sides()</a> is used to convert a side set node list to a side set side list. This routine is provided for application programs that utilize side sets defined by nodes (as was done previous to release 2.0) rather than local faces or edges. The application program must allocate memory for the returned array of sides. The length of this array is the same as the length of the concatenated side sets element list, which can be determined with a call to <a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> or <a class="el" href="#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int()</a>.</p>
+<p>The function <a class="el" href="#ga27866a3e7d0d04c5849cd34ccd13b579">ex_cvt_nodes_to_sides()</a> is used to convert a side set node list to a side set side list. This routine is provided for application programs that utilize side sets defined by nodes (as was done previous to release 2.0) rather than local faces or edges. The application program must allocate memory for the returned array of sides. The length of this array is the same as the length of the concatenated side sets element list, which can be determined with a call to <a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> or <a class="el" href="#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>In case of an error, <a class="el" href="#ga27866a3e7d0d04c5849cd34ccd13b579">ex_cvt_nodes_to_sides()</a> returns a negative number; a warning will return a positive number. Possible causes of errors include:<ul>
 <li>a warning value is returned if no side sets are stored in the file.</li>
 <li>because the faces of a wedge require a different number of nodes to describe them (quadrilateral vs. triangular faces), the function will abort with a fatal return code if a wedge is encountered in the side set element list.</li>
@@ -726,7 +726,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="agroup__FileVars_html_ga49938d96ef78ea1726e9970383bf61b1"><div class="ttname"><a href="group__FileVars.html#ga49938d96ef78ea1726e9970383bf61b1">EX_READ</a></div><div class="ttdeci">#define EX_READ</div><div class="ttdef"><b>Definition</b> exodusII.h:95</div></div>
 <div class="ttc" id="agroup__StringLengths_html_ga3e81d99126d7d910227927550fc32288"><div class="ttname"><a href="group__StringLengths.html#ga3e81d99126d7d910227927550fc32288">MAX_ERR_LENGTH</a></div><div class="ttdeci">#define MAX_ERR_LENGTH</div><div class="ttdef"><b>Definition</b> exodusII.h:320</div></div>
 <div class="ttc" id="agroup__Utilities_html_ga73924582d1725b8f8672ce292dde53e5"><div class="ttname"><a href="#ga73924582d1725b8f8672ce292dde53e5">ex_err</a></div><div class="ttdeci">void ex_err(const char *module_name, const char *message, int err_num)</div><div class="ttdef"><b>Definition</b> ex_err.c:90</div></div>
-<div class="ttc" id="agroup__Utilities_html_ga9a940cd55241b5c5e7960a123d79c94c"><div class="ttname"><a href="#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a></div><div class="ttdeci">#define ex_open(path, mode, comp_ws, io_ws, version)</div><div class="ttdef"><b>Definition</b> exodusII.h:501</div></div>
+<div class="ttc" id="agroup__Utilities_html_ga9a940cd55241b5c5e7960a123d79c94c"><div class="ttname"><a href="#ga9a940cd55241b5c5e7960a123d79c94c">ex_open</a></div><div class="ttdeci">#define ex_open(path, mode, comp_ws, io_ws, version)</div><div class="ttdef"><b>Definition</b> exodusII.h:500</div></div>
 </div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2test_2test_ts_errval_8c-example.html#a2">/test/test_ts_errval.c</a>.</dd>
 </dl>
 
@@ -931,7 +931,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The function <a class="el" href="#ga758afb447e34a35fc1305509ebca70d3">ex_get_info()</a> reads information records from the database. The records are <a class="el" href="group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2">MAX_LINE_LENGTH</a> character strings. Memory must be allocated for the information records before this call is made. The number of records can be determined by invoking <a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> or <a class="el" href="#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int()</a>.</p>
+<p>The function <a class="el" href="#ga758afb447e34a35fc1305509ebca70d3">ex_get_info()</a> reads information records from the database. The records are <a class="el" href="group__StringLengths.html#gaf0f2173e3b202ddf5756531b4471dcb2">MAX_LINE_LENGTH</a> character strings. Memory must be allocated for the information records before this call is made. The number of records can be determined by invoking <a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> or <a class="el" href="#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>In case of an error, <a class="el" href="#ga758afb447e34a35fc1305509ebca70d3">ex_get_info()</a> returns a negative number; a warning will return a positive number. Possible causes of errors include:<ul>
 <li>data file not properly opened with call to <a class="el" href="#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create()</a> or <a class="el" href="#ga9a940cd55241b5c5e7960a123d79c94c">ex_open()</a></li>
 <li>a warning value is returned if no information records were stored.</li>
@@ -1023,7 +1023,7 @@ Variables</h2></td></tr>
 <li>the analysis date</li>
 <li>the analysis time</li>
 </ul>
-<p>Memory must be allocated for the QA records before this call is made. The number of QA records can be determined by invoking <a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a>.</p>
+<p>Memory must be allocated for the QA records before this call is made. The number of QA records can be determined by invoking <a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>In case of an error, <a class="el" href="#gaed5098654802b50ae832bc661f485f52">ex_get_qa()</a> returns a negative number; a warning will return a positive number. Possible causes of errors include:<ul>
 <li>data file not properly opened with call to <a class="el" href="#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create()</a> or <a class="el" href="#ga9a940cd55241b5c5e7960a123d79c94c">ex_open()</a></li>
 <li>a warning value is returned if no QA records were stored.</li>
@@ -1082,8 +1082,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ga97c9b3dd2005e08f6e1d98470947fc6a" name="ga97c9b3dd2005e08f6e1d98470947fc6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga97c9b3dd2005e08f6e1d98470947fc6a">&#9670;&#160;</a></span>ex_inquire()</h2>
+<a id="ga951c4f83d27f690a19dc5f8e2c7a9209" name="ga951c4f83d27f690a19dc5f8e2c7a9209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga951c4f83d27f690a19dc5f8e2c7a9209">&#9670;&#160;</a></span>ex_inquire()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1123,9 +1123,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The function <a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> is used to inquire values of certain data entities in an exodus file. Memory must be allocated for the returned values before this function is invoked.query database.</p>
+<p>The function <a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> is used to inquire values of certain data entities in an exodus file. Memory must be allocated for the returned values before this function is invoked.query database.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int()</a>, <a class="el" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dc">ex_inquiry</a>.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>In case of an error, <a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> returns a negative number; a warning will return a positive number. Possible causes of errors include:<ul>
+<dl class="section return"><dt>Returns</dt><dd>In case of an error, <a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> returns a negative number; a warning will return a positive number. Possible causes of errors include:<ul>
 <li>data file not properly opened with call to <a class="el" href="#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create()</a> or <a class="el" href="#ga9a940cd55241b5c5e7960a123d79c94c">ex_open()</a>.</li>
 <li>requested information not stored in the file.</li>
 <li>invalid request flag.</li>
@@ -1148,13 +1148,13 @@ Variables</h2></td></tr>
 <div class="line"><span class="keywordtype">char</span> *cdum;</div>
 <div class="line"> </div>
 <div class="line">\comment{determine the number of element block properties}</div>
-<div class="line">error = <a class="code hl_function" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a> (exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaf6b20402a8dc9c9d4257c3ccf38b9cc5">EX_INQ_EB_PROP</a>, &amp;num_props,</div>
+<div class="line">error = <a class="code hl_function" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire</a> (exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaf6b20402a8dc9c9d4257c3ccf38b9cc5">EX_INQ_EB_PROP</a>, &amp;num_props,</div>
 <div class="line">                    &amp;fdum, cdum);</div>
 <div class="line"> </div>
 <div class="line">\comment{...Another way to get the same information}</div>
 <div class="line">num_props = <a class="code hl_function" href="#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int</a>(exoid, <a class="code hl_enumvalue" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaf6b20402a8dc9c9d4257c3ccf38b9cc5">EX_INQ_EB_PROP</a>);</div>
 <div class="ttc" id="aexodusII_8h_html_adc9d1455c2876b67d008e02c1e9df8dcaf6b20402a8dc9c9d4257c3ccf38b9cc5"><div class="ttname"><a href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaf6b20402a8dc9c9d4257c3ccf38b9cc5">EX_INQ_EB_PROP</a></div><div class="ttdeci">@ EX_INQ_EB_PROP</div><div class="ttdef"><b>Definition</b> exodusII.h:157</div></div>
-<div class="ttc" id="agroup__Utilities_html_ga97c9b3dd2005e08f6e1d98470947fc6a"><div class="ttname"><a href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire</a></div><div class="ttdeci">int ex_inquire(int exoid, ex_inquiry req_info, void_int *, float *, char *)</div><div class="ttdef"><b>Definition</b> ex_inquire.c:1087</div></div>
+<div class="ttc" id="agroup__Utilities_html_ga951c4f83d27f690a19dc5f8e2c7a9209"><div class="ttname"><a href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire</a></div><div class="ttdeci">int ex_inquire(int exoid, ex_inquiry req_info, void_int *ret_int, float *ret_float, char *ret_char)</div><div class="ttdef"><b>Definition</b> ex_inquire.c:1087</div></div>
 </div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2test_2ReadEdgeFace_8c-example.html#a58">/test/ReadEdgeFace.c</a>, <a class="el" href="_2test_2testcp_8c-example.html#a5">/test/testcp.c</a>, <a class="el" href="_2test_2testcp_nl_8c-example.html#a5">/test/testcp_nl.c</a>, <a class="el" href="_2test_2testcp_tran_8c-example.html#a5">/test/testcp_tran.c</a>, <a class="el" href="_2test_2testcpd_8c-example.html#a5">/test/testcpd.c</a>, <a class="el" href="_2test_2testrd-long-name_8c-example.html#a5">/test/testrd-long-name.c</a>, <a class="el" href="_2test_2testrd-nfaced_8c-example.html#a5">/test/testrd-nfaced.c</a>, <a class="el" href="_2test_2testrd-nsided_8c-example.html#a7">/test/testrd-nsided.c</a>, <a class="el" href="_2test_2testrd_8c-example.html#a5">/test/testrd.c</a>, <a class="el" href="_2test_2testrd1_8c-example.html#a9">/test/testrd1.c</a>, <a class="el" href="_2test_2testrd_nc_8c-example.html#a7">/test/testrd_nc.c</a>, <a class="el" href="_2test_2testrd_par_8c-example.html#a6">/test/testrd_par.c</a>, <a class="el" href="_2test_2testrd_ss_8c-example.html#a5">/test/testrd_ss.c</a>, and <a class="el" href="_2test_2testrdd_8c-example.html#a15">/test/testrdd.c</a>.</dd>
 </dl>
 
@@ -1186,11 +1186,11 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A variant of <a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> which queries integer-valued information only. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a>. </dd></dl>
+<p>A variant of <a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> which queries integer-valued information only. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">exoid</td><td>exodus file ID returned from a previous call to <a class="el" href="#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create()</a> or <a class="el" href="#ga9a940cd55241b5c5e7960a123d79c94c">ex_open()</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">req_info</td><td>A flag of type <a class="el" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dc">ex_inquiry</a> which designates what information is requested. (See <a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> documentation) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">req_info</td><td>A flag of type <a class="el" href="exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dc">ex_inquiry</a> which designates what information is requested. (See <a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> documentation) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1250,7 +1250,7 @@ Variables</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a class="el" href="group__FileVars.html#ga0f0209ea697749096d1067c65ad57087">EX_BULK_INT64_API</a>   </td><td class="markdownTableBodyNone">All integer bulk data (local indices, counts, maps); not ids    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="group__FileVars.html#ga98c2f53e6c9e2bbbfa3b752b3d8822a0">EX_INQ_INT64_API</a>   </td><td class="markdownTableBodyNone">Integers passed to/from <a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> are int64_t    </td></tr>
+<td class="markdownTableBodyNone"><a class="el" href="group__FileVars.html#ga98c2f53e6c9e2bbbfa3b752b3d8822a0">EX_INQ_INT64_API</a>   </td><td class="markdownTableBodyNone">Integers passed to/from <a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> are int64_t    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a class="el" href="group__FileVars.html#ga2540def4fa42a09aecab9ef5f0e851d5">EX_ALL_INT64_API</a>   </td><td class="markdownTableBodyNone">(<a class="el" href="group__FileVars.html#ga6eb827ba708bd54aa72a5ac8468d4093">EX_MAPS_INT64_API</a> | <a class="el" href="group__FileVars.html#ga8163fd2a9d4320d3a452bbd54ee6a512">EX_IDS_INT64_API</a> | <a class="el" href="group__FileVars.html#ga0f0209ea697749096d1067c65ad57087">EX_BULK_INT64_API</a> |   </td></tr>
 </table>
@@ -1671,7 +1671,7 @@ Variables</h2></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a class="el" href="group__FileVars.html#ga0f0209ea697749096d1067c65ad57087">EX_BULK_INT64_API</a>   </td><td class="markdownTableBodyNone">All integer bulk data (local indices, counts, maps); not ids    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="group__FileVars.html#ga98c2f53e6c9e2bbbfa3b752b3d8822a0">EX_INQ_INT64_API</a>   </td><td class="markdownTableBodyNone">Integers passed to/from <a class="el" href="#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> are int64_t    </td></tr>
+<td class="markdownTableBodyNone"><a class="el" href="group__FileVars.html#ga98c2f53e6c9e2bbbfa3b752b3d8822a0">EX_INQ_INT64_API</a>   </td><td class="markdownTableBodyNone">Integers passed to/from <a class="el" href="#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> are int64_t    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a class="el" href="group__FileVars.html#ga2540def4fa42a09aecab9ef5f0e851d5">EX_ALL_INT64_API</a>   </td><td class="markdownTableBodyNone">(<a class="el" href="group__FileVars.html#ga6eb827ba708bd54aa72a5ac8468d4093">EX_MAPS_INT64_API</a> | <a class="el" href="group__FileVars.html#ga8163fd2a9d4320d3a452bbd54ee6a512">EX_IDS_INT64_API</a> | <a class="el" href="group__FileVars.html#ga0f0209ea697749096d1067c65ad57087">EX_BULK_INT64_API</a> |   </td></tr>
 </table>

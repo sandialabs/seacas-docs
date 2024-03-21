@@ -93,7 +93,6 @@ $(function(){initNavTree('Utst__map_8C.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Utst_map.C File Reference</div></div>
 </div><!--header-->
@@ -101,8 +100,8 @@ $(function(){initNavTree('Utst__map_8C.html',''); initResizable(); });
 <div class="textblock"><code>#include &quot;<a class="el" href="Ioss__ConcreteVariableType_8h_source.html">Ioss_ConcreteVariableType.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Field_8h_source.html">Ioss_Field.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Map_8h_source.html">Ioss_Map.h</a>&quot;</code><br />
+<code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
-<code>#include &lt;<a class="el" href="doctest_8h_source.html">doctest.h</a>&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
@@ -114,17 +113,6 @@ Include dependency graph for Utst_map.C:</div>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Utst__map_8C__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a623b8690a262536536a43eab2d7df03d" id="r_a623b8690a262536536a43eab2d7df03d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a623b8690a262536536a43eab2d7df03d">DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</a></td></tr>
-<tr class="separator:a623b8690a262536536a43eab2d7df03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a4ce466a0a9609a65b05993990a1c1" id="r_a09a4ce466a0a9609a65b05993990a1c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09a4ce466a0a9609a65b05993990a1c1">DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES</a></td></tr>
-<tr class="separator:a09a4ce466a0a9609a65b05993990a1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a052f7233cb544c5c0f1c235992fa66cf" id="r_a052f7233cb544c5c0f1c235992fa66cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a052f7233cb544c5c0f1c235992fa66cf">DOCTEST_CONFIG_SUPER_FAST_ASSERTS</a></td></tr>
-<tr class="separator:a052f7233cb544c5c0f1c235992fa66cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f7a83e85258668a9d3a9e3ede920de" id="r_a03f7a83e85258668a9d3a9e3ede920de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03f7a83e85258668a9d3a9e3ede920de">DOCTEST_CONFIG_NO_MULTITHREADING</a></td></tr>
-<tr class="separator:a03f7a83e85258668a9d3a9e3ede920de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a05e3ddf235072c08f239d6373330a2e2" id="r_a05e3ddf235072c08f239d6373330a2e2"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
@@ -136,236 +124,26 @@ Functions</h2></td></tr>
 <tr class="memitem:aa277ae2dd71be49a1bb4338e03858616" id="r_aa277ae2dd71be49a1bb4338e03858616"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:aa277ae2dd71be49a1bb4338e03858616"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa277ae2dd71be49a1bb4338e03858616">test_reorder</a> (<a class="el" href="classIoss_1_1Map.html">Ioss::Map</a> &amp;my_map, std::vector&lt; INT &gt; &amp;init, size_t offset)</td></tr>
 <tr class="separator:aa277ae2dd71be49a1bb4338e03858616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07db70fc9d9e0c684a90e840cfa55f60" id="r_a07db70fc9d9e0c684a90e840cfa55f60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07db70fc9d9e0c684a90e840cfa55f60">DOCTEST_TEST_CASE</a> (&quot;test random ids&quot;)</td></tr>
-<tr class="separator:a07db70fc9d9e0c684a90e840cfa55f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a5f08a347ad455130d4b70beda8d62d" id="r_a4a5f08a347ad455130d4b70beda8d62d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a5f08a347ad455130d4b70beda8d62d">DOCTEST_TEST_CASE</a> (&quot;test sequential map with offset&quot;)</td></tr>
-<tr class="separator:a4a5f08a347ad455130d4b70beda8d62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be79e9e8955c88a9862145783a11226" id="r_a3be79e9e8955c88a9862145783a11226"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3be79e9e8955c88a9862145783a11226">DOCTEST_TEST_CASE</a> (&quot;test segmented map creation&quot;)</td></tr>
-<tr class="separator:a3be79e9e8955c88a9862145783a11226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a6e58b85341f5d22493b7e755a7297d" id="r_a6a6e58b85341f5d22493b7e755a7297d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a6e58b85341f5d22493b7e755a7297d">DOCTEST_TEST_CASE</a> (&quot;test reverse segmented map creation&quot;)</td></tr>
-<tr class="separator:a6a6e58b85341f5d22493b7e755a7297d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f733328c2977cc388add2eb4bfee15" id="r_a98f733328c2977cc388add2eb4bfee15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98f733328c2977cc388add2eb4bfee15">DOCTEST_TEST_CASE</a> (&quot;test segment gap&quot;)</td></tr>
-<tr class="separator:a98f733328c2977cc388add2eb4bfee15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad7321564f6d4a1b34a12ce994017064" id="r_aad7321564f6d4a1b34a12ce994017064"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad7321564f6d4a1b34a12ce994017064">DOCTEST_TEST_CASE</a> (&quot;test small reverse&quot;)</td></tr>
-<tr class="separator:aad7321564f6d4a1b34a12ce994017064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1a5b97a12473a08704faaf6d7716e34" id="r_ac1a5b97a12473a08704faaf6d7716e34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1a5b97a12473a08704faaf6d7716e34">DOCTEST_TEST_CASE</a> (&quot;test small swap front back&quot;)</td></tr>
-<tr class="separator:ac1a5b97a12473a08704faaf6d7716e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb378a568351068e8a6b81bc672bbfb" id="r_a6cb378a568351068e8a6b81bc672bbfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cb378a568351068e8a6b81bc672bbfb">DOCTEST_TEST_CASE</a> (&quot;test map_data sequential&quot;)</td></tr>
-<tr class="separator:a6cb378a568351068e8a6b81bc672bbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab272a9bd1f78382971d865325666be59" id="r_ab272a9bd1f78382971d865325666be59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab272a9bd1f78382971d865325666be59">DOCTEST_TEST_CASE</a> (&quot;test map_data random&quot;)</td></tr>
-<tr class="separator:ab272a9bd1f78382971d865325666be59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59bab8bf5b7204c2e3bd841ded7159f6" id="r_a59bab8bf5b7204c2e3bd841ded7159f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59bab8bf5b7204c2e3bd841ded7159f6">TEST_CASE</a> (&quot;test random ids&quot;)</td></tr>
+<tr class="separator:a59bab8bf5b7204c2e3bd841ded7159f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0cc174cbbc64f00bc3729234551645" id="r_a8b0cc174cbbc64f00bc3729234551645"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b0cc174cbbc64f00bc3729234551645">TEST_CASE</a> (&quot;test sequential map with offset&quot;)</td></tr>
+<tr class="separator:a8b0cc174cbbc64f00bc3729234551645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd68d464235451b6a6e80d022b1d9e5" id="r_addd68d464235451b6a6e80d022b1d9e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addd68d464235451b6a6e80d022b1d9e5">TEST_CASE</a> (&quot;test segmented map creation&quot;)</td></tr>
+<tr class="separator:addd68d464235451b6a6e80d022b1d9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1243fdaca7c87ebc2099cf334641f7af" id="r_a1243fdaca7c87ebc2099cf334641f7af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1243fdaca7c87ebc2099cf334641f7af">TEST_CASE</a> (&quot;test reverse segmented map creation&quot;)</td></tr>
+<tr class="separator:a1243fdaca7c87ebc2099cf334641f7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae518ee3ca29afa229c1bbd87e8d8bad5" id="r_ae518ee3ca29afa229c1bbd87e8d8bad5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae518ee3ca29afa229c1bbd87e8d8bad5">TEST_CASE</a> (&quot;test segment gap&quot;)</td></tr>
+<tr class="separator:ae518ee3ca29afa229c1bbd87e8d8bad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88bed7a3cb7791acd18bf7b729457502" id="r_a88bed7a3cb7791acd18bf7b729457502"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88bed7a3cb7791acd18bf7b729457502">TEST_CASE</a> (&quot;test small reverse&quot;)</td></tr>
+<tr class="separator:a88bed7a3cb7791acd18bf7b729457502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480647ac4433590f512d429c8f839da3" id="r_a480647ac4433590f512d429c8f839da3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a480647ac4433590f512d429c8f839da3">TEST_CASE</a> (&quot;test small swap front back&quot;)</td></tr>
+<tr class="separator:a480647ac4433590f512d429c8f839da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa51351af7412f755157908f00cb6816" id="r_afa51351af7412f755157908f00cb6816"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa51351af7412f755157908f00cb6816">TEST_CASE</a> (&quot;test map_data sequential&quot;)</td></tr>
+<tr class="separator:afa51351af7412f755157908f00cb6816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97830d1cfb9dda50c09cfe61382cec4c" id="r_a97830d1cfb9dda50c09cfe61382cec4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97830d1cfb9dda50c09cfe61382cec4c">TEST_CASE</a> (&quot;test map_data random&quot;)</td></tr>
+<tr class="separator:a97830d1cfb9dda50c09cfe61382cec4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a623b8690a262536536a43eab2d7df03d" name="a623b8690a262536536a43eab2d7df03d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a623b8690a262536536a43eab2d7df03d">&#9670;&#160;</a></span>DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a03f7a83e85258668a9d3a9e3ede920de" name="a03f7a83e85258668a9d3a9e3ede920de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03f7a83e85258668a9d3a9e3ede920de">&#9670;&#160;</a></span>DOCTEST_CONFIG_NO_MULTITHREADING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_NO_MULTITHREADING</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a09a4ce466a0a9609a65b05993990a1c1" name="a09a4ce466a0a9609a65b05993990a1c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09a4ce466a0a9609a65b05993990a1c1">&#9670;&#160;</a></span>DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a052f7233cb544c5c0f1c235992fa66cf" name="a052f7233cb544c5c0f1c235992fa66cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a052f7233cb544c5c0f1c235992fa66cf">&#9670;&#160;</a></span>DOCTEST_CONFIG_SUPER_FAST_ASSERTS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_SUPER_FAST_ASSERTS</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab272a9bd1f78382971d865325666be59" name="ab272a9bd1f78382971d865325666be59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab272a9bd1f78382971d865325666be59">&#9670;&#160;</a></span>DOCTEST_TEST_CASE() <span class="overload">[1/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOCTEST_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;test map_data random&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6cb378a568351068e8a6b81bc672bbfb" name="a6cb378a568351068e8a6b81bc672bbfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cb378a568351068e8a6b81bc672bbfb">&#9670;&#160;</a></span>DOCTEST_TEST_CASE() <span class="overload">[2/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOCTEST_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;test map_data sequential&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a07db70fc9d9e0c684a90e840cfa55f60" name="a07db70fc9d9e0c684a90e840cfa55f60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07db70fc9d9e0c684a90e840cfa55f60">&#9670;&#160;</a></span>DOCTEST_TEST_CASE() <span class="overload">[3/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOCTEST_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;test random ids&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6a6e58b85341f5d22493b7e755a7297d" name="a6a6e58b85341f5d22493b7e755a7297d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a6e58b85341f5d22493b7e755a7297d">&#9670;&#160;</a></span>DOCTEST_TEST_CASE() <span class="overload">[4/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOCTEST_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;test reverse segmented map creation&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98f733328c2977cc388add2eb4bfee15" name="a98f733328c2977cc388add2eb4bfee15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98f733328c2977cc388add2eb4bfee15">&#9670;&#160;</a></span>DOCTEST_TEST_CASE() <span class="overload">[5/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOCTEST_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;test segment gap&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3be79e9e8955c88a9862145783a11226" name="a3be79e9e8955c88a9862145783a11226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3be79e9e8955c88a9862145783a11226">&#9670;&#160;</a></span>DOCTEST_TEST_CASE() <span class="overload">[6/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOCTEST_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;test segmented map creation&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a5f08a347ad455130d4b70beda8d62d" name="a4a5f08a347ad455130d4b70beda8d62d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a5f08a347ad455130d4b70beda8d62d">&#9670;&#160;</a></span>DOCTEST_TEST_CASE() <span class="overload">[7/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOCTEST_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;test sequential map with offset&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aad7321564f6d4a1b34a12ce994017064" name="aad7321564f6d4a1b34a12ce994017064"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad7321564f6d4a1b34a12ce994017064">&#9670;&#160;</a></span>DOCTEST_TEST_CASE() <span class="overload">[8/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOCTEST_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;test small reverse&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac1a5b97a12473a08704faaf6d7716e34" name="ac1a5b97a12473a08704faaf6d7716e34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1a5b97a12473a08704faaf6d7716e34">&#9670;&#160;</a></span>DOCTEST_TEST_CASE() <span class="overload">[9/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOCTEST_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;test small swap front back&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a05e3ddf235072c08f239d6373330a2e2" name="a05e3ddf235072c08f239d6373330a2e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a05e3ddf235072c08f239d6373330a2e2">&#9670;&#160;</a></span>initialize_data()</h2>
 
@@ -378,6 +156,159 @@ template&lt;typename INT &gt; </div>
           <td class="memname">void initialize_data </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; INT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>init</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97830d1cfb9dda50c09cfe61382cec4c" name="a97830d1cfb9dda50c09cfe61382cec4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97830d1cfb9dda50c09cfe61382cec4c">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;test map_data random&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa51351af7412f755157908f00cb6816" name="afa51351af7412f755157908f00cb6816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa51351af7412f755157908f00cb6816">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;test map_data sequential&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59bab8bf5b7204c2e3bd841ded7159f6" name="a59bab8bf5b7204c2e3bd841ded7159f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59bab8bf5b7204c2e3bd841ded7159f6">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;test random ids&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1243fdaca7c87ebc2099cf334641f7af" name="a1243fdaca7c87ebc2099cf334641f7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1243fdaca7c87ebc2099cf334641f7af">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;test reverse segmented map creation&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae518ee3ca29afa229c1bbd87e8d8bad5" name="ae518ee3ca29afa229c1bbd87e8d8bad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae518ee3ca29afa229c1bbd87e8d8bad5">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;test segment gap&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addd68d464235451b6a6e80d022b1d9e5" name="addd68d464235451b6a6e80d022b1d9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd68d464235451b6a6e80d022b1d9e5">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;test segmented map creation&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b0cc174cbbc64f00bc3729234551645" name="a8b0cc174cbbc64f00bc3729234551645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0cc174cbbc64f00bc3729234551645">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;test sequential map with offset&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88bed7a3cb7791acd18bf7b729457502" name="a88bed7a3cb7791acd18bf7b729457502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88bed7a3cb7791acd18bf7b729457502">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;test small reverse&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a480647ac4433590f512d429c8f839da3" name="a480647ac4433590f512d429c8f839da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480647ac4433590f512d429c8f839da3">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;test small swap front back&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

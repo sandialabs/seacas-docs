@@ -109,7 +109,7 @@ Inheritance diagram for Iovs_exodus::CatalystExodusMeshBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a413393d7a255626ff6aa642b051380af" id="r_a413393d7a255626ff6aa642b051380af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a413393d7a255626ff6aa642b051380af">ElementBlockIdNameList</a> = std::vector&lt;std::pair&lt;int, <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>&gt;&gt;</td></tr>
+<tr class="memitem:a413393d7a255626ff6aa642b051380af" id="r_a413393d7a255626ff6aa642b051380af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a413393d7a255626ff6aa642b051380af">ElementBlockIdNameList</a> = std::vector&lt;std::pair&lt;int, std::string&gt;&gt;</td></tr>
 <tr class="separator:a413393d7a255626ff6aa642b051380af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -118,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad21b5448995acf853e634766dc949999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c7680529ab0f99c4d60c0a403588c9" id="r_a62c7680529ab0f99c4d60c0a403588c9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62c7680529ab0f99c4d60c0a403588c9">~CatalystExodusMeshBase</a> ()</td></tr>
 <tr class="separator:a62c7680529ab0f99c4d60c0a403588c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa01bd2b1b178a406e87abee2b0bdeda3" id="r_aa01bd2b1b178a406e87abee2b0bdeda3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa01bd2b1b178a406e87abee2b0bdeda3">PerformCoProcessing</a> (std::vector&lt; int &gt; &amp;error_and_warning_codes, std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;error_and_warning_messages)=0</td></tr>
+<tr class="memitem:aa01bd2b1b178a406e87abee2b0bdeda3" id="r_aa01bd2b1b178a406e87abee2b0bdeda3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa01bd2b1b178a406e87abee2b0bdeda3">PerformCoProcessing</a> (std::vector&lt; int &gt; &amp;error_and_warning_codes, std::vector&lt; std::string &gt; &amp;error_and_warning_messages)=0</td></tr>
 <tr class="separator:aa01bd2b1b178a406e87abee2b0bdeda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc10632f0a2991b0849bb1a98c2be1ef" id="r_adc10632f0a2991b0849bb1a98c2be1ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc10632f0a2991b0849bb1a98c2be1ef">SetTimeData</a> (double currentTime, int timeStep)=0</td></tr>
 <tr class="separator:adc10632f0a2991b0849bb1a98c2be1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,31 +128,31 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c908b378e1cb53749e112dba0095647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a653f8c284d8990478a8e255982846da1" id="r_a653f8c284d8990478a8e255982846da1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a653f8c284d8990478a8e255982846da1">Delete</a> ()=0</td></tr>
 <tr class="separator:a653f8c284d8990478a8e255982846da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92ed058dd935481b15106322ffaa6912" id="r_a92ed058dd935481b15106322ffaa6912"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ed058dd935481b15106322ffaa6912">CreateGlobalVariable</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;variable_name, int num_comps, const double *data)=0</td></tr>
+<tr class="memitem:a92ed058dd935481b15106322ffaa6912" id="r_a92ed058dd935481b15106322ffaa6912"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ed058dd935481b15106322ffaa6912">CreateGlobalVariable</a> (const std::string &amp;variable_name, int num_comps, const double *data)=0</td></tr>
 <tr class="separator:a92ed058dd935481b15106322ffaa6912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2b0f3f6757ccba3943f9fa968f4b7c" id="r_a7b2b0f3f6757ccba3943f9fa968f4b7c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b2b0f3f6757ccba3943f9fa968f4b7c">CreateGlobalVariable</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;variable_name, int num_comps, const int *data)=0</td></tr>
+<tr class="memitem:a7b2b0f3f6757ccba3943f9fa968f4b7c" id="r_a7b2b0f3f6757ccba3943f9fa968f4b7c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b2b0f3f6757ccba3943f9fa968f4b7c">CreateGlobalVariable</a> (const std::string &amp;variable_name, int num_comps, const int *data)=0</td></tr>
 <tr class="separator:a7b2b0f3f6757ccba3943f9fa968f4b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c5c3836d5089537c7a7ca055b9030e8" id="r_a5c5c3836d5089537c7a7ca055b9030e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c5c3836d5089537c7a7ca055b9030e8">CreateGlobalVariable</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;variable_name, int num_comps, const int64_t *data)=0</td></tr>
+<tr class="memitem:a5c5c3836d5089537c7a7ca055b9030e8" id="r_a5c5c3836d5089537c7a7ca055b9030e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c5c3836d5089537c7a7ca055b9030e8">CreateGlobalVariable</a> (const std::string &amp;variable_name, int num_comps, const int64_t *data)=0</td></tr>
 <tr class="separator:a5c5c3836d5089537c7a7ca055b9030e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcca4de899cf1e04f86708042b9efe34" id="r_adcca4de899cf1e04f86708042b9efe34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcca4de899cf1e04f86708042b9efe34">InitializeGlobalPoints</a> (int num_points, int dimension, const double *data)=0</td></tr>
 <tr class="separator:adcca4de899cf1e04f86708042b9efe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2865c6b358d38f5b094cdc36cf9e6acb" id="r_a2865c6b358d38f5b094cdc36cf9e6acb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2865c6b358d38f5b094cdc36cf9e6acb">InitializeElementBlocks</a> (const <a class="el" href="#a413393d7a255626ff6aa642b051380af">ElementBlockIdNameList</a> &amp;elemBlkIdNameList)=0</td></tr>
 <tr class="separator:a2865c6b358d38f5b094cdc36cf9e6acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efbd930115172302a1a0f2cbe9726ac" id="r_a8efbd930115172302a1a0f2cbe9726ac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8efbd930115172302a1a0f2cbe9726ac">CreateElementBlock</a> (const char *elem_block_name, int elem_block_id, const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;elem_type, int nodes_per_elem, int num_elem, const int64_t *global_elem_ids, int *connectivity)=0</td></tr>
+<tr class="memitem:a8efbd930115172302a1a0f2cbe9726ac" id="r_a8efbd930115172302a1a0f2cbe9726ac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8efbd930115172302a1a0f2cbe9726ac">CreateElementBlock</a> (const char *elem_block_name, int elem_block_id, const std::string &amp;elem_type, int nodes_per_elem, int num_elem, const int64_t *global_elem_ids, int *connectivity)=0</td></tr>
 <tr class="separator:a8efbd930115172302a1a0f2cbe9726ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a614acf3f1b0f27434687ebfc49a3ff02" id="r_a614acf3f1b0f27434687ebfc49a3ff02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a614acf3f1b0f27434687ebfc49a3ff02">CreateElementBlock</a> (const char *elem_block_name, int elem_block_id, const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;elem_type, int nodes_per_elem, int num_elem, const int64_t *global_elem_ids, int64_t *connectivity)=0</td></tr>
+<tr class="memitem:a614acf3f1b0f27434687ebfc49a3ff02" id="r_a614acf3f1b0f27434687ebfc49a3ff02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a614acf3f1b0f27434687ebfc49a3ff02">CreateElementBlock</a> (const char *elem_block_name, int elem_block_id, const std::string &amp;elem_type, int nodes_per_elem, int num_elem, const int64_t *global_elem_ids, int64_t *connectivity)=0</td></tr>
 <tr class="separator:a614acf3f1b0f27434687ebfc49a3ff02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b1d89018a850cca5464054f8be2341" id="r_a65b1d89018a850cca5464054f8be2341"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65b1d89018a850cca5464054f8be2341">CreateElementVariable</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;variable_name, int num_comps, int elem_block_id, const double *data)=0</td></tr>
+<tr class="memitem:a65b1d89018a850cca5464054f8be2341" id="r_a65b1d89018a850cca5464054f8be2341"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65b1d89018a850cca5464054f8be2341">CreateElementVariable</a> (const std::string &amp;variable_name, int num_comps, int elem_block_id, const double *data)=0</td></tr>
 <tr class="separator:a65b1d89018a850cca5464054f8be2341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c5465da2a63d29c1e36fa01b38f887e" id="r_a8c5465da2a63d29c1e36fa01b38f887e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c5465da2a63d29c1e36fa01b38f887e">CreateElementVariable</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;variable_name, int num_comps, int elem_block_id, const int *data)=0</td></tr>
+<tr class="memitem:a8c5465da2a63d29c1e36fa01b38f887e" id="r_a8c5465da2a63d29c1e36fa01b38f887e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c5465da2a63d29c1e36fa01b38f887e">CreateElementVariable</a> (const std::string &amp;variable_name, int num_comps, int elem_block_id, const int *data)=0</td></tr>
 <tr class="separator:a8c5465da2a63d29c1e36fa01b38f887e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a907d80f165bf40eec74f72c87abff78b" id="r_a907d80f165bf40eec74f72c87abff78b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a907d80f165bf40eec74f72c87abff78b">CreateElementVariable</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;variable_name, int num_comps, int elem_block_id, const int64_t *data)=0</td></tr>
+<tr class="memitem:a907d80f165bf40eec74f72c87abff78b" id="r_a907d80f165bf40eec74f72c87abff78b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a907d80f165bf40eec74f72c87abff78b">CreateElementVariable</a> (const std::string &amp;variable_name, int num_comps, int elem_block_id, const int64_t *data)=0</td></tr>
 <tr class="separator:a907d80f165bf40eec74f72c87abff78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a629e5066f3e05676eba7211cfe3fa599" id="r_a629e5066f3e05676eba7211cfe3fa599"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a629e5066f3e05676eba7211cfe3fa599">CreateNodalVariable</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;variable_name, int num_comps, const double *data)=0</td></tr>
+<tr class="memitem:a629e5066f3e05676eba7211cfe3fa599" id="r_a629e5066f3e05676eba7211cfe3fa599"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a629e5066f3e05676eba7211cfe3fa599">CreateNodalVariable</a> (const std::string &amp;variable_name, int num_comps, const double *data)=0</td></tr>
 <tr class="separator:a629e5066f3e05676eba7211cfe3fa599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3c6ff2df4fca4f3a339fe1fe168cadd" id="r_ab3c6ff2df4fca4f3a339fe1fe168cadd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3c6ff2df4fca4f3a339fe1fe168cadd">CreateNodalVariable</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;variable_name, int num_comps, const int *data)=0</td></tr>
+<tr class="memitem:ab3c6ff2df4fca4f3a339fe1fe168cadd" id="r_ab3c6ff2df4fca4f3a339fe1fe168cadd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3c6ff2df4fca4f3a339fe1fe168cadd">CreateNodalVariable</a> (const std::string &amp;variable_name, int num_comps, const int *data)=0</td></tr>
 <tr class="separator:ab3c6ff2df4fca4f3a339fe1fe168cadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f53bbab9171185d3c6b78da95915897" id="r_a9f53bbab9171185d3c6b78da95915897"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f53bbab9171185d3c6b78da95915897">CreateNodalVariable</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;variable_name, int num_comps, const int64_t *data)=0</td></tr>
+<tr class="memitem:a9f53bbab9171185d3c6b78da95915897" id="r_a9f53bbab9171185d3c6b78da95915897"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f53bbab9171185d3c6b78da95915897">CreateNodalVariable</a> (const std::string &amp;variable_name, int num_comps, const int64_t *data)=0</td></tr>
 <tr class="separator:a9f53bbab9171185d3c6b78da95915897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -163,7 +163,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a413393d7a255626ff6aa642b051380af">Iovs_exodus::CatalystExodusMeshBase::ElementBlockIdNameList</a> = std::vector&lt;std::pair&lt;int, <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>&gt;&gt;</td>
+          <td class="memname">using <a class="el" href="#a413393d7a255626ff6aa642b051380af">Iovs_exodus::CatalystExodusMeshBase::ElementBlockIdNameList</a> = std::vector&lt;std::pair&lt;int, std::string&gt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -244,7 +244,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>elem_type</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>elem_type</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -300,7 +300,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>elem_type</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>elem_type</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -346,7 +346,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Iovs_exodus::CatalystExodusMeshBase::CreateElementVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -387,7 +387,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Iovs_exodus::CatalystExodusMeshBase::CreateElementVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -428,7 +428,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Iovs_exodus::CatalystExodusMeshBase::CreateElementVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -469,7 +469,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Iovs_exodus::CatalystExodusMeshBase::CreateGlobalVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -505,7 +505,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Iovs_exodus::CatalystExodusMeshBase::CreateGlobalVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -541,7 +541,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Iovs_exodus::CatalystExodusMeshBase::CreateGlobalVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -577,7 +577,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Iovs_exodus::CatalystExodusMeshBase::CreateNodalVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -613,7 +613,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Iovs_exodus::CatalystExodusMeshBase::CreateNodalVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -649,7 +649,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void Iovs_exodus::CatalystExodusMeshBase::CreateNodalVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -807,7 +807,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>error_and_warning_messages</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>error_and_warning_messages</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

@@ -3140,7 +3140,7 @@ appropriate type "float" or "double" to match the compute word size passed in <a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The function <a class="el" href="#gaf5efefd0c9a16732d628ad438db897fa">ex_get_prop_names()</a> returns names of integer properties stored for an element block, node set, or side set. The number of properties (needed to allocate space for the property names) can be obtained via a call to <a class="el" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> or <a class="el" href="group__Utilities.html#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int()</a>.</p>
+<p>The function <a class="el" href="#gaf5efefd0c9a16732d628ad438db897fa">ex_get_prop_names()</a> returns names of integer properties stored for an element block, node set, or side set. The number of properties (needed to allocate space for the property names) can be obtained via a call to <a class="el" href="group__Utilities.html#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> or <a class="el" href="group__Utilities.html#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>In case of an error, <a class="el" href="#gaf5efefd0c9a16732d628ad438db897fa">ex_get_prop_names()</a> returns a negative number; a warning will return a positive number. Possible causes of errors include:<ul>
 <li>data file not properly opened with call to <a class="el" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create()</a> or <a class="el" href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open()</a></li>
 <li>invalid object type specified.</li>
@@ -3150,7 +3150,7 @@ appropriate type "float" or "double" to match the compute word size passed in <a
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">exoid</td><td>exodus file ID returned from a previous call to <a class="el" href="group__Utilities.html#ga37c928f7e30c333ee7c704d04f7e3a87">ex_create()</a> or <a class="el" href="group__Utilities.html#ga9a940cd55241b5c5e7960a123d79c94c">ex_open()</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">obj_type</td><td>Type of object; use one of the options in the table below. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">prop_names</td><td>Returned array containing num_props (obtained from call to <a class="el" href="group__Utilities.html#ga97c9b3dd2005e08f6e1d98470947fc6a">ex_inquire()</a> or <a class="el" href="group__Utilities.html#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int()</a>) names (of maximum length <code>MAX_STR_LENGTH</code> ) of properties to be stored. <b>ID</b>, a reserved property name, will be the first name in the array.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prop_names</td><td>Returned array containing num_props (obtained from call to <a class="el" href="group__Utilities.html#ga951c4f83d27f690a19dc5f8e2c7a9209">ex_inquire()</a> or <a class="el" href="group__Utilities.html#ga1b8122836266615fd2795736dc21e2ae">ex_inquire_int()</a>) names (of maximum length <code>MAX_STR_LENGTH</code> ) of properties to be stored. <b>ID</b>, a reserved property name, will be the first name in the array.</td></tr>
   </table>
   </dd>
 </dl>

@@ -94,7 +94,6 @@ $(function(){initNavTree('Utst__IofxDatabaseIO_8C.html',''); initResizable(); })
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Utst_IofxDatabaseIO.C File Reference</div></div>
@@ -113,7 +112,8 @@ $(function(){initNavTree('Utst__IofxDatabaseIO_8C.html',''); initResizable(); })
 <code>#include &quot;<a class="el" href="Ioss__SideBlock_8h_source.html">Ioss_SideBlock.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__SideSet_8h_source.html">Ioss_SideSet.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioex__DatabaseIO_8h_source.html">exodus/Ioex_DatabaseIO.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="doctest_8h_source.html">doctest.h</a>&gt;</code><br />
+<code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
+<code>#include &lt;catch2/catch_session.hpp&gt;</code><br />
 <code>#include &lt;fmt/core.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -137,78 +137,26 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03" id="r_namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html">anonymous_namespace{Utst_IofxDatabaseIO.C}</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:adf980eb1ed0df2191c56fd3d218c2819" id="r_adf980eb1ed0df2191c56fd3d218c2819"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf980eb1ed0df2191c56fd3d218c2819">DOCTEST_CONFIG_IMPLEMENT</a></td></tr>
-<tr class="separator:adf980eb1ed0df2191c56fd3d218c2819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a4ce466a0a9609a65b05993990a1c1" id="r_a09a4ce466a0a9609a65b05993990a1c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09a4ce466a0a9609a65b05993990a1c1">DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES</a></td></tr>
-<tr class="separator:a09a4ce466a0a9609a65b05993990a1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a052f7233cb544c5c0f1c235992fa66cf" id="r_a052f7233cb544c5c0f1c235992fa66cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a052f7233cb544c5c0f1c235992fa66cf">DOCTEST_CONFIG_SUPER_FAST_ASSERTS</a></td></tr>
-<tr class="separator:a052f7233cb544c5c0f1c235992fa66cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad31faef7baafdc5624822638a44c9e4a" id="r_ad31faef7baafdc5624822638a44c9e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#ad31faef7baafdc5624822638a44c9e4a">anonymous_namespace{Utst_IofxDatabaseIO.C}::test_topology</a> (const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> *topology, const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;gold_top, const int parameteric_dim, const int num_vertices, const int num_nodes, const int num_edges, const int num_faces, const int num_boundaries)</td></tr>
+<tr class="memitem:ad31faef7baafdc5624822638a44c9e4a" id="r_ad31faef7baafdc5624822638a44c9e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#ad31faef7baafdc5624822638a44c9e4a">anonymous_namespace{Utst_IofxDatabaseIO.C}::test_topology</a> (const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> *topology, const std::string &amp;gold_top, const int parameteric_dim, const int num_vertices, const int num_nodes, const int num_edges, const int num_faces, const int num_boundaries)</td></tr>
 <tr class="separator:ad31faef7baafdc5624822638a44c9e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbf85d61aca1952d420334e50291ea6d" id="r_afbf85d61aca1952d420334e50291ea6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoex_1_1DatabaseIO.html">Ioex::DatabaseIO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#afbf85d61aca1952d420334e50291ea6d">anonymous_namespace{Utst_IofxDatabaseIO.C}::create_input_db_io</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;filename)</td></tr>
+<tr class="memitem:afbf85d61aca1952d420334e50291ea6d" id="r_afbf85d61aca1952d420334e50291ea6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoex_1_1DatabaseIO.html">Ioex::DatabaseIO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#afbf85d61aca1952d420334e50291ea6d">anonymous_namespace{Utst_IofxDatabaseIO.C}::create_input_db_io</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:afbf85d61aca1952d420334e50291ea6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0225d534a61052e1270a12903fe108" id="r_a4d0225d534a61052e1270a12903fe108"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoex_1_1DatabaseIO.html">Ioex::DatabaseIO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a4d0225d534a61052e1270a12903fe108">anonymous_namespace{Utst_IofxDatabaseIO.C}::create_output_db_io</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;filename)</td></tr>
+<tr class="memitem:a4d0225d534a61052e1270a12903fe108" id="r_a4d0225d534a61052e1270a12903fe108"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoex_1_1DatabaseIO.html">Ioex::DatabaseIO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a4d0225d534a61052e1270a12903fe108">anonymous_namespace{Utst_IofxDatabaseIO.C}::create_output_db_io</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a4d0225d534a61052e1270a12903fe108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a054cb824a5433ba319acdae6323aba84" id="r_a054cb824a5433ba319acdae6323aba84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a054cb824a5433ba319acdae6323aba84">anonymous_namespace{Utst_IofxDatabaseIO.C}::DOCTEST_TEST_CASE</a> (&quot;Ioex::constructor&quot;)</td></tr>
-<tr class="separator:a054cb824a5433ba319acdae6323aba84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90f3c945e87312129541ee101230f3dd" id="r_a90f3c945e87312129541ee101230f3dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a90f3c945e87312129541ee101230f3dd">anonymous_namespace{Utst_IofxDatabaseIO.C}::DOCTEST_TEST_CASE</a> (&quot;Ioex::write_file&quot;)</td></tr>
-<tr class="separator:a90f3c945e87312129541ee101230f3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b44af8ba33cd6acdf693e0d98b3e210" id="r_a7b44af8ba33cd6acdf693e0d98b3e210"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a7b44af8ba33cd6acdf693e0d98b3e210">anonymous_namespace{Utst_IofxDatabaseIO.C}::TEST_CASE</a> (&quot;Ioex::constructor&quot;)</td></tr>
+<tr class="separator:a7b44af8ba33cd6acdf693e0d98b3e210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4c7ff8377043d1ef763ddfcbd9e530" id="r_a2d4c7ff8377043d1ef763ddfcbd9e530"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a2d4c7ff8377043d1ef763ddfcbd9e530">anonymous_namespace{Utst_IofxDatabaseIO.C}::TEST_CASE</a> (&quot;Ioex::write_file&quot;)</td></tr>
+<tr class="separator:a2d4c7ff8377043d1ef763ddfcbd9e530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d2b137580726f888965b2c15e073c8e" id="r_a4d2b137580726f888965b2c15e073c8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d2b137580726f888965b2c15e073c8e">main</a> (<a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> int argc, char **argv)</td></tr>
 <tr class="separator:a4d2b137580726f888965b2c15e073c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a4ce6845112cf47b2b4f414ffe3145710" id="r_a4ce6845112cf47b2b4f414ffe3145710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a4ce6845112cf47b2b4f414ffe3145710">anonymous_namespace{Utst_IofxDatabaseIO.C}::input_filename</a> = &quot;ADeDA.e&quot;</td></tr>
+<tr class="memitem:a4ce6845112cf47b2b4f414ffe3145710" id="r_a4ce6845112cf47b2b4f414ffe3145710"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a4ce6845112cf47b2b4f414ffe3145710">anonymous_namespace{Utst_IofxDatabaseIO.C}::input_filename</a> = &quot;ADeDA.e&quot;</td></tr>
 <tr class="separator:a4ce6845112cf47b2b4f414ffe3145710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="adf980eb1ed0df2191c56fd3d218c2819" name="adf980eb1ed0df2191c56fd3d218c2819"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf980eb1ed0df2191c56fd3d218c2819">&#9670;&#160;</a></span>DOCTEST_CONFIG_IMPLEMENT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a09a4ce466a0a9609a65b05993990a1c1" name="a09a4ce466a0a9609a65b05993990a1c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09a4ce466a0a9609a65b05993990a1c1">&#9670;&#160;</a></span>DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a052f7233cb544c5c0f1c235992fa66cf" name="a052f7233cb544c5c0f1c235992fa66cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a052f7233cb544c5c0f1c235992fa66cf">&#9670;&#160;</a></span>DOCTEST_CONFIG_SUPER_FAST_ASSERTS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_SUPER_FAST_ASSERTS</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a4d2b137580726f888965b2c15e073c8e" name="a4d2b137580726f888965b2c15e073c8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d2b137580726f888965b2c15e073c8e">&#9670;&#160;</a></span>main()</h2>

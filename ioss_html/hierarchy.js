@@ -4,8 +4,6 @@ var hierarchy =
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
     [ "Adjacency", "structAdjacency.html", null ],
-    [ "std::allocator< Ty >", "classstd_1_1allocator.html", null ],
-    [ "doctest::Approx", "structdoctest_1_1Approx.html", null ],
     [ "Ioex::Assembly", "structIoex_1_1Assembly.html", null ],
     [ "Ioexnl::Assembly", "structIoexnl_1_1Assembly.html", null ],
     [ "Iotm::text_mesh::AssemblyParser", "classIotm_1_1text__mesh_1_1AssemblyParser.html", null ],
@@ -14,9 +12,6 @@ var hierarchy =
     [ "Iotm::unit_test::AssemblyTreeGraph", "classIotm_1_1unit__test_1_1AssemblyTreeGraph.html", null ],
     [ "Ioss::Assert", "structIoss_1_1Assert.html", null ],
     [ "Ioss::assert_context", "classIoss_1_1assert__context.html", null ],
-    [ "doctest::AssertData", "structdoctest_1_1AssertData.html", [
-      [ "doctest::detail::ResultBuilder", "structdoctest_1_1detail_1_1ResultBuilder.html", null ]
-    ] ],
     [ "Ioss::glob::AstConsumer< charT >", "classIoss_1_1glob_1_1AstConsumer.html", null ],
     [ "Ioss::glob::AstNode< charT >", "classIoss_1_1glob_1_1AstNode.html", [
       [ "Ioss::glob::AnyNode< charT >", "classIoss_1_1glob_1_1AnyNode.html", null ],
@@ -34,10 +29,6 @@ var hierarchy =
     [ "Ioss::glob::AstVisitor< charT >", "classIoss_1_1glob_1_1AstVisitor.html", null ],
     [ "Ioss::glob::Automata< charT >", "classIoss_1_1glob_1_1Automata.html", null ],
     [ "Ioss::AxisAlignedBoundingBox", "structIoss_1_1AxisAlignedBoundingBox.html", null ],
-    [ "std::basic_istream< charT, traits >", "classstd_1_1basic__istream.html", null ],
-    [ "std::basic_ostream< charT, traits >", "classstd_1_1basic__ostream.html", null ],
-    [ "std::basic_string< Elem, Traits, Alloc >", "classstd_1_1basic__string.html", null ],
-    [ "std::basic_string< charT >", "classstd_1_1basic__string.html", null ],
     [ "Ioss::glob::BasicGlob< charT, globT >", "classIoss_1_1glob_1_1BasicGlob.html", null ],
     [ "tsl::bhopscotch_map< Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1bhopscotch__map.html", null ],
     [ "tsl::bhopscotch_set< Key, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1bhopscotch__set.html", null ],
@@ -76,7 +67,6 @@ var hierarchy =
     [ "Iovs::CatalystVersion", "classIovs_1_1CatalystVersion.html", null ],
     [ "Ioss::GetLongOption::Cell", "structIoss_1_1GetLongOption_1_1Cell.html", null ],
     [ "Ioss::chain_entry_t< INT >", "structIoss_1_1chain__entry__t.html", null ],
-    [ "std::char_traits< charT >", "structstd_1_1char__traits.html", null ],
     [ "Ioex::CommunicationMap", "structIoex_1_1CommunicationMap.html", null ],
     [ "Ioexnl::CommunicationMap", "structIoexnl_1_1CommunicationMap.html", null ],
     [ "Ioex::CommunicationMetaData", "structIoex_1_1CommunicationMetaData.html", null ],
@@ -147,14 +137,10 @@ var hierarchy =
     [ "anonymous_namespace{Ioss_Wedge24.C}::Constants", "structanonymous__namespace_02Ioss__Wedge24_8C_03_1_1Constants.html", null ],
     [ "anonymous_namespace{Ioss_Wedge52.C}::Constants", "structanonymous__namespace_02Ioss__Wedge52_8C_03_1_1Constants.html", null ],
     [ "anonymous_namespace{Ioss_Wedge6.C}::Constants", "structanonymous__namespace_02Ioss__Wedge6_8C_03_1_1Constants.html", null ],
-    [ "doctest::Contains", "classdoctest_1_1Contains.html", null ],
-    [ "doctest::Context", "classdoctest_1_1Context.html", null ],
-    [ "doctest::ContextOptions", "structdoctest_1_1ContextOptions.html", null ],
     [ "Ioss::CoordinateFrame", "classIoss_1_1CoordinateFrame.html", null ],
     [ "Iotm::text_mesh::Coordinates< EntityId >", "classIotm_1_1text__mesh_1_1Coordinates.html", null ],
     [ "Iotm::unit_test::TextMeshFixture::CoordinateVerifier", "classIotm_1_1unit__test_1_1TextMeshFixture_1_1CoordinateVerifier.html", null ],
     [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Topology >::CurrentAdjacency", "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1CurrentAdjacency.html", null ],
-    [ "doctest::CurrentTestCaseStats", "structdoctest_1_1CurrentTestCaseStats.html", null ],
     [ "Iogn::DashSurfaceData", "structIogn_1_1DashSurfaceData.html", null ],
     [ "Iovs::Utils::DatabaseInfo", "structIovs_1_1Utils_1_1DatabaseInfo.html", null ],
     [ "Ioss::DatabaseIO", "classIoss_1_1DatabaseIO.html", [
@@ -272,8 +258,6 @@ var hierarchy =
     ] ],
     [ "Ioex::ElemSet", "structIoex_1_1ElemSet.html", null ],
     [ "Ioexnl::ElemSet", "structIoexnl_1_1ElemSet.html", null ],
-    [ "doctest::detail::types::enable_if< COND, T >", "structdoctest_1_1detail_1_1types_1_1enable__if.html", null ],
-    [ "doctest::detail::types::enable_if< true, T >", "structdoctest_1_1detail_1_1types_1_1enable__if_3_01true_00_01T_01_4.html", null ],
     [ "adios2::Engine", null, [
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
@@ -318,8 +302,6 @@ var hierarchy =
       [ "Ioss::glob::Error", "classIoss_1_1glob_1_1Error.html", null ]
     ] ],
     [ "Iogn::ExodusData", "structIogn_1_1ExodusData.html", null ],
-    [ "doctest::detail::Expression_lhs< L >", "structdoctest_1_1detail_1_1Expression__lhs.html", null ],
-    [ "doctest::detail::ExpressionDecomposer", "structdoctest_1_1detail_1_1ExpressionDecomposer.html", null ],
     [ "Ioss::glob::ExtendedGlob< charT >", "classIoss_1_1glob_1_1ExtendedGlob.html", null ],
     [ "Iocatalyst::BlockMesh::Extent", "structIocatalyst_1_1BlockMesh_1_1Extent.html", null ],
     [ "Ioss::Face", "classIoss_1_1Face.html", null ],
@@ -332,13 +314,6 @@ var hierarchy =
     [ "Ioss::FaceHash", "structIoss_1_1FaceHash.html", null ],
     [ "Ioex::FaceSet", "structIoex_1_1FaceSet.html", null ],
     [ "Ioexnl::FaceSet", "structIoexnl_1_1FaceSet.html", null ],
-    [ "doctest::detail::types::false_type", "structdoctest_1_1detail_1_1types_1_1false__type.html", [
-      [ "doctest::detail::deferred_false< T >", "structdoctest_1_1detail_1_1deferred__false.html", null ],
-      [ "doctest::detail::has_insertion_operator< T, typename >", "structdoctest_1_1detail_1_1has__insertion__operator.html", null ],
-      [ "doctest::detail::types::is_array< T >", "structdoctest_1_1detail_1_1types_1_1is__array.html", null ],
-      [ "doctest::detail::types::is_pointer< T >", "structdoctest_1_1detail_1_1types_1_1is__pointer.html", null ],
-      [ "doctest::detail::types::is_rvalue_reference< T >", "structdoctest_1_1detail_1_1types_1_1is__rvalue__reference.html", null ]
-    ] ],
     [ "std::false_type", null, [
       [ "tsl::detail_hopscotch_hash::has_is_transparent< T, typename >", "structtsl_1_1detail__hopscotch__hash_1_1has__is__transparent.html", null ],
       [ "tsl::detail_hopscotch_hash::has_key_compare< T, typename >", "structtsl_1_1detail__hopscotch__hash_1_1has__key__compare.html", null ],
@@ -351,11 +326,6 @@ var hierarchy =
     [ "Ioad::DatabaseIO::FieldInfoType", "structIoad_1_1DatabaseIO_1_1FieldInfoType.html", null ],
     [ "Ioss::FieldManager", "classIoss_1_1FieldManager.html", null ],
     [ "Ioss::FileInfo", "classIoss_1_1FileInfo.html", null ],
-    [ "doctest::detail::filldata< T >", "structdoctest_1_1detail_1_1filldata.html", null ],
-    [ "doctest::detail::filldata< const char[N]>", "structdoctest_1_1detail_1_1filldata_3_01const_01char_0fN_0e_4.html", null ],
-    [ "doctest::detail::filldata< const void * >", "structdoctest_1_1detail_1_1filldata_3_01const_01void_01_5_01_4.html", null ],
-    [ "doctest::detail::filldata< T * >", "structdoctest_1_1detail_1_1filldata_3_01T_01_5_01_4.html", null ],
-    [ "doctest::detail::filldata< T[N]>", "structdoctest_1_1detail_1_1filldata_3_01T_0fN_0e_4.html", null ],
     [ "Iogn::GeneratedMesh", "classIogn_1_1GeneratedMesh.html", [
       [ "Iogn::DashSurfaceMesh", "classIogn_1_1DashSurfaceMesh.html", null ],
       [ "Iogn::ExodusMesh", "classIogn_1_1ExodusMesh.html", null ]
@@ -414,14 +384,6 @@ var hierarchy =
     [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >::hopscotch_iterator< IsConst >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator.html", null ],
     [ "tsl::hopscotch_map< Key, T, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1hopscotch__map.html", null ],
     [ "tsl::hopscotch_set< Key, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1hopscotch__set.html", null ],
-    [ "doctest::IContextScope", "structdoctest_1_1IContextScope.html", [
-      [ "doctest::detail::ContextScopeBase", "structdoctest_1_1detail_1_1ContextScopeBase.html", [
-        [ "doctest::detail::ContextScope< L >", "classdoctest_1_1detail_1_1ContextScope.html", null ]
-      ] ]
-    ] ],
-    [ "doctest::detail::IExceptionTranslator", "structdoctest_1_1detail_1_1IExceptionTranslator.html", [
-      [ "doctest::detail::ExceptionTranslator< T >", "classdoctest_1_1detail_1_1ExceptionTranslator.html", null ]
-    ] ],
     [ "Iocatalyst::DatabaseIO::ImplementationT", "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html", null ],
     [ "Ioad::Initializer", "classIoad_1_1Initializer.html", null ],
     [ "Iocatalyst::Initializer", "classIocatalyst_1_1Initializer.html", null ],
@@ -456,13 +418,10 @@ var hierarchy =
     ] ],
     [ "IossApplication", "classIossApplication.html", null ],
     [ "Iocatalyst::BlockMeshSet::IOSSparams", "classIocatalyst_1_1BlockMeshSet_1_1IOSSparams.html", null ],
-    [ "doctest::IReporter", "structdoctest_1_1IReporter.html", null ],
-    [ "doctest::detail::types::is_enum< T >", "structdoctest_1_1detail_1_1types_1_1is__enum.html", null ],
     [ "Ioss::Private::is_null_finder< T >", "structIoss_1_1Private_1_1is__null__finder.html", null ],
     [ "Ioss::Private::is_null_finder< char * >", "structIoss_1_1Private_1_1is__null__finder_3_01char_01_5_01_4.html", null ],
     [ "Ioss::Private::is_null_finder< const char * >", "structIoss_1_1Private_1_1is__null__finder_3_01const_01char_01_5_01_4.html", null ],
     [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >::is_type_same< T, U >", "structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same.html", null ],
-    [ "doctest::IsNaN< F >", "structdoctest_1_1IsNaN.html", null ],
     [ "KeyEqual", null, [
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy, OverflowContainer >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
@@ -483,9 +442,6 @@ var hierarchy =
     [ "Ioex::Mesh", "classIoex_1_1Mesh.html", null ],
     [ "Ioexnl::Mesh", "classIoexnl_1_1Mesh.html", null ],
     [ "Ioss::MeshCopyOptions", "structIoss_1_1MeshCopyOptions.html", null ],
-    [ "doctest::MessageData", "structdoctest_1_1MessageData.html", [
-      [ "doctest::detail::MessageBuilder", "structdoctest_1_1detail_1_1MessageBuilder.html", null ]
-    ] ],
     [ "ioss_region_report::Messages", "structioss__region__report_1_1Messages.html", null ],
     [ "Iofaodel::meta_entry_t", "structIofaodel_1_1meta__entry__t.html", null ],
     [ "tsl::hh::mod_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1mod__growth__policy.html", null ],
@@ -527,20 +483,12 @@ var hierarchy =
     [ "Ioss::Property", "classIoss_1_1Property.html", null ],
     [ "Iofaodel::property_entry_t", "structIofaodel_1_1property__entry__t.html", null ],
     [ "Ioss::PropertyManager", "classIoss_1_1PropertyManager.html", null ],
-    [ "doctest::QueryData", "structdoctest_1_1QueryData.html", null ],
     [ "anonymous_namespace{Iocgns_StructuredZoneData.C}::Range", "structanonymous__namespace_02Iocgns__StructuredZoneData_8C_03_1_1Range.html", null ],
     [ "anonymous_namespace{Iocgns_Utils.C}::Range", "structanonymous__namespace_02Iocgns__Utils_8C_03_1_1Range.html", null ],
     [ "Ioex::Redefine", "classIoex_1_1Redefine.html", null ],
     [ "Ioexnl::Redefine", "classIoexnl_1_1Redefine.html", null ],
     [ "Ioss::RefHolder< T >", "classIoss_1_1RefHolder.html", null ],
     [ "Ioss::Registry", "classIoss_1_1Registry.html", null ],
-    [ "doctest::detail::RelationalComparator< int, L, R >", "structdoctest_1_1detail_1_1RelationalComparator.html", null ],
-    [ "doctest::detail::types::remove_const< T >", "structdoctest_1_1detail_1_1types_1_1remove__const.html", null ],
-    [ "doctest::detail::types::remove_const< const T >", "structdoctest_1_1detail_1_1types_1_1remove__const_3_01const_01T_01_4.html", null ],
-    [ "doctest::detail::types::remove_reference< T >", "structdoctest_1_1detail_1_1types_1_1remove__reference.html", null ],
-    [ "doctest::detail::types::remove_reference< T & >", "structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_01_4.html", null ],
-    [ "doctest::detail::types::remove_reference< T && >", "structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_6_01_4.html", null ],
-    [ "doctest::detail::Result", "structdoctest_1_1detail_1_1Result.html", null ],
     [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::robin_iterator< IsConst >", "classtsl_1_1detail__robin__hash_1_1robin__hash_1_1robin__iterator.html", null ],
     [ "tsl::robin_map< Key, T, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1robin__map.html", null ],
     [ "tsl::robin_map< std::string, Field >", "classtsl_1_1robin__map.html", null ],
@@ -563,7 +511,6 @@ var hierarchy =
       [ "Ioss::glob::SetItemRange< charT >", "classIoss_1_1glob_1_1SetItemRange.html", null ]
     ] ],
     [ "Iogn::SharedNode", "structIogn_1_1SharedNode.html", null ],
-    [ "doctest::detail::should_stringify_as_underlying_type< T >", "structdoctest_1_1detail_1_1should__stringify__as__underlying__type.html", null ],
     [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Topology >", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html", [
       [ "Iotm::text_mesh::SidesetSkinner< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", null ],
       [ "Iotm::text_mesh::SidesetSkinner< EntityId, Topology >", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", null ],
@@ -598,17 +545,8 @@ var hierarchy =
     [ "Iofaodel::state_entry_t", "structIofaodel_1_1state__entry__t.html", null ],
     [ "Ioss::StorageInitializer", "classIoss_1_1StorageInitializer.html", null ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}::stream_holder", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder.html", null ],
-    [ "doctest::String", "classdoctest_1_1String.html", null ],
     [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Topology >::StringCaseCompLess", "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html", null ],
-    [ "doctest::AssertData::StringContains", "classdoctest_1_1AssertData_1_1StringContains.html", null ],
-    [ "doctest::detail::StringMakerBase< C >", "structdoctest_1_1detail_1_1StringMakerBase.html", null ],
-    [ "doctest::detail::StringMakerBase< detail::has_insertion_operator< T >::value||detail::types::is_pointer< T >::value||detail::types::is_array< T >::value >", "structdoctest_1_1detail_1_1StringMakerBase.html", [
-      [ "doctest::StringMaker< T >", "structdoctest_1_1StringMaker.html", null ]
-    ] ],
-    [ "doctest::detail::StringMakerBase< true >", "structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4.html", null ],
     [ "Iocgns::StructuredZoneData", "classIocgns_1_1StructuredZoneData.html", null ],
-    [ "doctest::detail::Subcase", "structdoctest_1_1detail_1_1Subcase.html", null ],
-    [ "doctest::SubcaseSignature", "structdoctest_1_1SubcaseSignature.html", null ],
     [ "Ioss::Suffix", "structIoss_1_1Suffix.html", null ],
     [ "testing::Test", null, [
       [ "BlockMeshTest", "classBlockMeshTest.html", null ],
@@ -622,13 +560,6 @@ var hierarchy =
       [ "LoggingTest", "classLoggingTest.html", null ],
       [ "ManagerTest", "classManagerTest.html", null ]
     ] ],
-    [ "doctest::TestCaseData", "structdoctest_1_1TestCaseData.html", [
-      [ "doctest::detail::TestCase", "structdoctest_1_1detail_1_1TestCase.html", null ]
-    ] ],
-    [ "doctest::TestCaseException", "structdoctest_1_1TestCaseException.html", null ],
-    [ "doctest::detail::TestFailureException", "structdoctest_1_1detail_1_1TestFailureException.html", null ],
-    [ "doctest::TestRunStats", "structdoctest_1_1TestRunStats.html", null ],
-    [ "doctest::detail::TestSuite", "structdoctest_1_1detail_1_1TestSuite.html", null ],
     [ "Iotm::TextMesh", "classIotm_1_1TextMesh.html", null ],
     [ "Iotm::text_mesh::TextMeshData< EntityId, Topology >", "structIotm_1_1text__mesh_1_1TextMeshData.html", null ],
     [ "Iotm::text_mesh::TextMeshData< EntityId, Iotm::TopologyMapEntry >", "structIotm_1_1text__mesh_1_1TextMeshData.html", null ],
@@ -661,12 +592,6 @@ var hierarchy =
       [ "Iotr::Tensor_Factory", "classIotr_1_1Tensor__Factory.html", null ],
       [ "Iotr::VM_Factory", "classIotr_1_1VM__Factory.html", null ]
     ] ],
-    [ "doctest::detail::types::true_type", "structdoctest_1_1detail_1_1types_1_1true__type.html", [
-      [ "doctest::detail::has_insertion_operator< T, decltype(operator<<(declval< std::ostream & >(), declval< const T & >()), void())>", "structdoctest_1_1detail_1_1has__insertion__operator_3_01T_00_01decltype_07operator_3_3_07declvald5a5a279653bbfeef238ad5c984744e2.html", null ],
-      [ "doctest::detail::types::is_array< T[SIZE]>", "structdoctest_1_1detail_1_1types_1_1is__array_3_01T_0fSIZE_0e_4.html", null ],
-      [ "doctest::detail::types::is_pointer< T * >", "structdoctest_1_1detail_1_1types_1_1is__pointer_3_01T_01_5_01_4.html", null ],
-      [ "doctest::detail::types::is_rvalue_reference< T && >", "structdoctest_1_1detail_1_1types_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html", null ]
-    ] ],
     [ "std::true_type", null, [
       [ "tsl::detail_hopscotch_hash::has_is_transparent< T, typename make_void< typename T::is_transparent >::type >", "structtsl_1_1detail__hopscotch__hash_1_1has__is__transparent_3_01T_00_01typename_01make__void_3_4161f4fa4fd3878927de0d276981ca6f.html", null ],
       [ "tsl::detail_hopscotch_hash::has_key_compare< T, typename make_void< typename T::key_compare >::type >", "structtsl_1_1detail__hopscotch__hash_1_1has__key__compare_3_01T_00_01typename_01make__void_3_01t11ab6b781ff7a6e1b9bc460857c74cb1.html", null ],
@@ -674,8 +599,6 @@ var hierarchy =
       [ "tsl::detail_robin_hash::has_is_transparent< T, typename make_void< typename T::is_transparent >::type >", "structtsl_1_1detail__robin__hash_1_1has__is__transparent_3_01T_00_01typename_01make__void_3_01ty718636ff8fc74d73885502911b06edfb.html", null ],
       [ "tsl::detail_robin_hash::is_power_of_two_policy< tsl::rh::power_of_two_growth_policy< GrowthFactor > >", "structtsl_1_1detail__robin__hash_1_1is__power__of__two__policy_3_01tsl_1_1rh_1_1power__of__two__a1a28c2963ea7bfc09f131241d081ae6.html", null ]
     ] ],
-    [ "std::tuple< Types >", "classstd_1_1tuple.html", null ],
-    [ "doctest::detail::types::underlying_type< T >", "structdoctest_1_1detail_1_1types_1_1underlying__type.html", null ],
     [ "Iocgns::Utils", "classIocgns_1_1Utils.html", null ],
     [ "Ioss::Utils", "classIoss_1_1Utils.html", null ],
     [ "Iovs::Utils", "classIovs_1_1Utils.html", null ],
@@ -780,7 +703,6 @@ var hierarchy =
       [ "Ioss::Vector_3D", "classIoss_1_1Vector__3D.html", null ]
     ] ],
     [ "vector3d", "classvector3d.html", null ],
-    [ "doctest::String::view", "structdoctest_1_1String_1_1view.html", null ],
     [ "Iocgns::ZoneBC", "structIocgns_1_1ZoneBC.html", null ],
     [ "Ioss::ZoneConnectivity", "structIoss_1_1ZoneConnectivity.html", null ],
     [ "Iovs_cgns::CatalystCGNSMeshBase::ZoneData", "structIovs__cgns_1_1CatalystCGNSMeshBase_1_1ZoneData.html", null ]

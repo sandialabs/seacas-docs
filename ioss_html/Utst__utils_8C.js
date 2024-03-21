@@ -1,12 +1,8 @@
 var Utst__utils_8C =
 [
-    [ "DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN", "Utst__utils_8C.html#a623b8690a262536536a43eab2d7df03d", null ],
-    [ "DOCTEST_CONFIG_NO_MULTITHREADING", "Utst__utils_8C.html#a03f7a83e85258668a9d3a9e3ede920de", null ],
-    [ "DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES", "Utst__utils_8C.html#a09a4ce466a0a9609a65b05993990a1c1", null ],
-    [ "DOCTEST_CONFIG_SUPER_FAST_ASSERTS", "Utst__utils_8C.html#a052f7233cb544c5c0f1c235992fa66cf", null ],
-    [ "DOCTEST_TEST_CASE", "Utst__utils_8C.html#ae9c11426a7fba4c2c38e8b8ff1e531d5", null ],
-    [ "DOCTEST_TEST_CASE", "Utst__utils_8C.html#a3ad39f9cec9774028f5b9537f0c151ba", null ],
-    [ "DOCTEST_TEST_CASE", "Utst__utils_8C.html#aaf63242cf342c07d4efab2b7d63ac472", null ],
-    [ "DOCTEST_TEST_CASE", "Utst__utils_8C.html#aca16a06ce696686e181cf3885be7e49e", null ],
-    [ "DOCTEST_TEST_CASE", "Utst__utils_8C.html#a9ef00cb98bee612e4ecb952d176ce507", null ]
+    [ "TEST_CASE", "Utst__utils_8C.html#a9a5957c5c1a4a0d0ddcb19efb728eb33", null ],
+    [ "TEST_CASE", "Utst__utils_8C.html#a9831822c62389b03333069ec77088990", null ],
+    [ "TEST_CASE", "Utst__utils_8C.html#a798de4ab12a9eb2e229e0ed0e0b3f8e7", null ],
+    [ "TEST_CASE", "Utst__utils_8C.html#a7e376af31d7eccd42911d5a4cc571a04", null ],
+    [ "TEST_CASE", "Utst__utils_8C.html#a9af8c16adbbc3abe98fb9595d95e0893", null ]
 ];

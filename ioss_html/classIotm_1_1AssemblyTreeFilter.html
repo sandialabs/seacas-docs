@@ -113,9 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a386f77040b7d7884b21a42aaab6a87d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de85b4b3898372a04df90301b37e225" id="r_a1de85b4b3898372a04df90301b37e225"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1de85b4b3898372a04df90301b37e225">AssemblyTreeFilter</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, const <a class="el" href="namespaceIoss.html#afc1c64ae70b8e805a24de65bafc9c89f">Ioss::EntityType</a> filterType, const <a class="el" href="namespaceIotm.html#a27ff30a9b64b19c40f67f76d230e9c12">Assemblies</a> &amp;assemblies)</td></tr>
 <tr class="separator:a1de85b4b3898372a04df90301b37e225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a283102d2bf6bb1d950afaa36e92d18c6" id="r_a283102d2bf6bb1d950afaa36e92d18c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a283102d2bf6bb1d950afaa36e92d18c6">update_list_from_assembly_tree</a> (const <a class="el" href="namespaceIotm.html#ab0c14baf81edf5800b0865c9b0fce01f">AssemblyData</a> *assembly, std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;list)</td></tr>
+<tr class="memitem:a283102d2bf6bb1d950afaa36e92d18c6" id="r_a283102d2bf6bb1d950afaa36e92d18c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a283102d2bf6bb1d950afaa36e92d18c6">update_list_from_assembly_tree</a> (const <a class="el" href="namespaceIotm.html#ab0c14baf81edf5800b0865c9b0fce01f">AssemblyData</a> *assembly, std::vector&lt; std::string &gt; &amp;list)</td></tr>
 <tr class="separator:a283102d2bf6bb1d950afaa36e92d18c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98517808477dcbb0a74f90fb9e7bddb6" id="r_a98517808477dcbb0a74f90fb9e7bddb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98517808477dcbb0a74f90fb9e7bddb6">update_assembly_filter_list</a> (std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;assemblyFilterList)</td></tr>
+<tr class="memitem:a98517808477dcbb0a74f90fb9e7bddb6" id="r_a98517808477dcbb0a74f90fb9e7bddb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98517808477dcbb0a74f90fb9e7bddb6">update_assembly_filter_list</a> (std::vector&lt; std::string &gt; &amp;assemblyFilterList)</td></tr>
 <tr class="separator:a98517808477dcbb0a74f90fb9e7bddb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -126,7 +126,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7d82cb59f93e48f5b1345d189f2c4b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ac38564fade87614cedbe9342e6b057" id="r_a2ac38564fade87614cedbe9342e6b057"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceIotm.html#a27ff30a9b64b19c40f67f76d230e9c12">Assemblies</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ac38564fade87614cedbe9342e6b057">m_assemblies</a></td></tr>
 <tr class="separator:a2ac38564fade87614cedbe9342e6b057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6249754b6f61296840a5035454178c0b" id="r_a6249754b6f61296840a5035454178c0b"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6249754b6f61296840a5035454178c0b">m_visitedAssemblies</a></td></tr>
+<tr class="memitem:a6249754b6f61296840a5035454178c0b" id="r_a6249754b6f61296840a5035454178c0b"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6249754b6f61296840a5035454178c0b">m_visitedAssemblies</a></td></tr>
 <tr class="separator:a6249754b6f61296840a5035454178c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -227,7 +227,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Iotm::AssemblyTreeFilter::update_assembly_filter_list </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>assemblyFilterList</em></span></td><td>)</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>assemblyFilterList</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -257,7 +257,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>list</em></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>list</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -346,7 +346,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>, bool&gt; Iotm::AssemblyTreeFilter::m_visitedAssemblies</td>
+          <td class="memname">std::map&lt;std::string, bool&gt; Iotm::AssemblyTreeFilter::m_visitedAssemblies</td>
         </tr>
       </table>
   </td>

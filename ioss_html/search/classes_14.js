@@ -7,6 +7,5 @@ var searchData=
   ['vector_5f2d_4',['Vector_2D',['../classIoss_1_1Vector__2D.html',1,'Ioss']]],
   ['vector_5f3d_5',['Vector_3D',['../classIoss_1_1Vector__3D.html',1,'Ioss']]],
   ['vectormagnitude_6',['VectorMagnitude',['../classIotr_1_1VectorMagnitude.html',1,'Iotr']]],
-  ['view_7',['view',['../structdoctest_1_1String_1_1view.html',1,'doctest::String']]],
-  ['vm_5ffactory_8',['VM_Factory',['../classIotr_1_1VM__Factory.html',1,'Iotr']]]
+  ['vm_5ffactory_7',['VM_Factory',['../classIotr_1_1VM__Factory.html',1,'Iotr']]]
 ];

@@ -106,7 +106,7 @@ $(function(){initNavTree('structIogn_1_1ExodusData.html',''); initResizable(); }
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a32f06c8adbde1b94a90d23f01fbebc93" id="r_a32f06c8adbde1b94a90d23f01fbebc93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f06c8adbde1b94a90d23f01fbebc93">ExodusData</a> ()=delete</td></tr>
 <tr class="separator:a32f06c8adbde1b94a90d23f01fbebc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eb135cd393bdb07c0180bab5b8b3b6b" id="r_a9eb135cd393bdb07c0180bab5b8b3b6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eb135cd393bdb07c0180bab5b8b3b6b">ExodusData</a> (std::vector&lt; double &gt; coords, std::vector&lt; std::vector&lt; int &gt; &gt; elemBlockConnectivity, std::vector&lt; int &gt; globalNumOfElemsInBlock, std::vector&lt; int &gt; localNumOfElemsInBlock, std::vector&lt; <a class="el" href="namespaceIogn.html#a05c78571e9bf222ffa337fa31ed95006">Topology</a> &gt; blockTopoData, int globalNumNodes, std::vector&lt; int &gt; globalIdsOfLocalElems, std::vector&lt; int &gt; globalIdsLocalNodes, std::vector&lt; std::vector&lt; int &gt; &gt; sidesetConn=std::vector&lt; std::vector&lt; int &gt; &gt;(), std::vector&lt; std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &gt; sidesetBlocks=std::vector&lt; std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &gt;())</td></tr>
+<tr class="memitem:a9eb135cd393bdb07c0180bab5b8b3b6b" id="r_a9eb135cd393bdb07c0180bab5b8b3b6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eb135cd393bdb07c0180bab5b8b3b6b">ExodusData</a> (std::vector&lt; double &gt; coords, std::vector&lt; std::vector&lt; int &gt; &gt; elemBlockConnectivity, std::vector&lt; int &gt; globalNumOfElemsInBlock, std::vector&lt; int &gt; localNumOfElemsInBlock, std::vector&lt; <a class="el" href="namespaceIogn.html#a05c78571e9bf222ffa337fa31ed95006">Topology</a> &gt; blockTopoData, int globalNumNodes, std::vector&lt; int &gt; globalIdsOfLocalElems, std::vector&lt; int &gt; globalIdsLocalNodes, std::vector&lt; std::vector&lt; int &gt; &gt; sidesetConn=std::vector&lt; std::vector&lt; int &gt; &gt;(), std::vector&lt; std::vector&lt; std::string &gt; &gt; sidesetBlocks=std::vector&lt; std::vector&lt; std::string &gt; &gt;())</td></tr>
 <tr class="separator:a9eb135cd393bdb07c0180bab5b8b3b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -131,7 +131,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1e00c93b859a22e52f51b50e586bcdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d3302a917d5acf85777004d12189ff2" id="r_a3d3302a917d5acf85777004d12189ff2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d3302a917d5acf85777004d12189ff2">sidesetConnectivity</a></td></tr>
 <tr class="separator:a3d3302a917d5acf85777004d12189ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9250d64d6f7a36ba00e39374ea33c5b" id="r_ac9250d64d6f7a36ba00e39374ea33c5b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9250d64d6f7a36ba00e39374ea33c5b">sidesetTouchingBlocks</a></td></tr>
+<tr class="memitem:ac9250d64d6f7a36ba00e39374ea33c5b" id="r_ac9250d64d6f7a36ba00e39374ea33c5b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9250d64d6f7a36ba00e39374ea33c5b">sidesetTouchingBlocks</a></td></tr>
 <tr class="separator:ac9250d64d6f7a36ba00e39374ea33c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -217,7 +217,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::vector&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>sidesetBlocks</em><span class="paramdefsep"> = </span><span class="paramdefval">std::vector&lt;std::vector&lt;<a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>&gt;&gt;()</span></span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; std::string &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>sidesetBlocks</em><span class="paramdefsep"> = </span><span class="paramdefval">std::vector&lt;std::vector&lt;std::string&gt;&gt;()</span></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -377,7 +377,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>&gt; &gt; Iogn::ExodusData::sidesetTouchingBlocks</td>
+          <td class="memname">std::vector&lt;std::vector&lt;std::string&gt; &gt; Iogn::ExodusData::sidesetTouchingBlocks</td>
         </tr>
       </table>
 </div><div class="memdoc">

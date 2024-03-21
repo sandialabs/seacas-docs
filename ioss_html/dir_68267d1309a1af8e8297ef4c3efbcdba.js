@@ -22,7 +22,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "visualization", "dir_b00de47ad7e2e13a637d9aa605dec95e.html", "dir_b00de47ad7e2e13a637d9aa605dec95e" ],
     [ "bhopscotch_map.h", "bhopscotch__map_8h.html", "bhopscotch__map_8h" ],
     [ "bhopscotch_set.h", "bhopscotch__set_8h.html", "bhopscotch__set_8h" ],
-    [ "doctest.h", "doctest_8h.html", "doctest_8h" ],
     [ "hopscotch_growth_policy.h", "hopscotch__growth__policy_8h.html", "hopscotch__growth__policy_8h" ],
     [ "hopscotch_hash.h", "hopscotch__hash_8h.html", "hopscotch__hash_8h" ],
     [ "hopscotch_map.h", "hopscotch__map_8h.html", "hopscotch__map_8h" ],

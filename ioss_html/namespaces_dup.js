@@ -731,36 +731,50 @@ var namespaces_dup =
     ] ],
     [ "anonymous_namespace{Utst_heartbeat.C}", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html", [
       [ "create_heartbeat", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#a4d28be65239097c327c4ce1fb32e2374", null ],
-      [ "DOCTEST_TEST_CASE", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#a7c57a7dcd9a84041678739dcad24cd37", null ],
+      [ "TEST_CASE", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#a875133a597111cd996eb58692bc91fa1", null ],
       [ "tst_filename", "namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#aec3f711041b1f9a992d0ee253d640afc", null ]
     ] ],
     [ "anonymous_namespace{Utst_ioel.C}", "namespaceanonymous__namespace_02Utst__ioel_8C_03.html", [
       [ "test_aliases", "namespaceanonymous__namespace_02Utst__ioel_8C_03.html#a750444bf4476499aa0de66d8574df2ac", null ],
-      [ "test_all_elements", "namespaceanonymous__namespace_02Utst__ioel_8C_03.html#aff1c90826259ef1f05715d0d218415b8", null ],
-      [ "test_element", "namespaceanonymous__namespace_02Utst__ioel_8C_03.html#abbec3d5628320413af8d891bf4bfe616", null ]
+      [ "test_element", "namespaceanonymous__namespace_02Utst__ioel_8C_03.html#aeab2d1ef83f8b8d6c61ab00bc0dbc73d", null ]
     ] ],
     [ "anonymous_namespace{Utst_IofxDatabaseIO.C}", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html", [
       [ "create_input_db_io", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#afbf85d61aca1952d420334e50291ea6d", null ],
       [ "create_output_db_io", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a4d0225d534a61052e1270a12903fe108", null ],
-      [ "DOCTEST_TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a054cb824a5433ba319acdae6323aba84", null ],
-      [ "DOCTEST_TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a90f3c945e87312129541ee101230f3dd", null ],
+      [ "TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a7b44af8ba33cd6acdf693e0d98b3e210", null ],
+      [ "TEST_CASE", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a2d4c7ff8377043d1ef763ddfcbd9e530", null ],
       [ "test_topology", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#ad31faef7baafdc5624822638a44c9e4a", null ],
       [ "input_filename", "namespaceanonymous__namespace_02Utst__IofxDatabaseIO_8C_03.html#a4ce6845112cf47b2b4f414ffe3145710", null ]
     ] ],
     [ "anonymous_namespace{Utst_sort.C}", "namespaceanonymous__namespace_02Utst__sort_8C_03.html", [
-      [ "verify_sorted", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#a9bd4ab9e89c61e907870aebca7463075", null ]
+      [ "generate_vector", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#a987d65e7c155c7a2d8a626bf0006280b", null ],
+      [ "rng", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#a1ba91567127cba25a55c1ebd916e1625", null ],
+      [ "verify_sorted", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#a9bd4ab9e89c61e907870aebca7463075", null ],
+      [ "do_rand", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#ae5e2c1918fbc7d112769af794ed5e2fd", null ],
+      [ "plateau", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#aa7865edccceed762ebee68d506d831f3", null ],
+      [ "rd", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#aa2e4b75e4facf166bde3406ccc721b37", null ],
+      [ "sawtooth", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#a88afb1d526fe80173de59c779fbb1a34", null ],
+      [ "shuffle", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#a9859e71bab91d79d6f5aab22bd77f1dd", null ],
+      [ "stagger", "namespaceanonymous__namespace_02Utst__sort_8C_03.html#a149c1c1a0b23594e83cc7c1874ead35d", null ]
     ] ],
     [ "anonymous_namespace{Utst_structured_decomp.C}", "namespaceanonymous__namespace_02Utst__structured__decomp_8C_03.html", [
       [ "generate_guid", "namespaceanonymous__namespace_02Utst__structured__decomp_8C_03.html#a3b567f5a3bae047251df70710f33084f", null ],
       [ "update_zgc_data", "namespaceanonymous__namespace_02Utst__structured__decomp_8C_03.html#a76f1a825bd4a9bdf4a6d2dae0cd8ee11", null ]
     ] ],
+    [ "anonymous_namespace{Utst_test.C}", "namespaceanonymous__namespace_02Utst__test_8C_03.html", [
+      [ "generate_vector", "namespaceanonymous__namespace_02Utst__test_8C_03.html#aa2d25dd9d734a30905275f4ebf4f8e00", null ],
+      [ "rng", "namespaceanonymous__namespace_02Utst__test_8C_03.html#aa320dfdb94986deff2b7829ac655d40b", null ],
+      [ "verify_sorted", "namespaceanonymous__namespace_02Utst__test_8C_03.html#ac529c7e8d3b4594b76f2df2e1dab609a", null ],
+      [ "do_rand", "namespaceanonymous__namespace_02Utst__test_8C_03.html#a9005def9b26003ab0bde9214423d14e4", null ],
+      [ "plateau", "namespaceanonymous__namespace_02Utst__test_8C_03.html#a8021842bb95800a84f368f8766338061", null ],
+      [ "rd", "namespaceanonymous__namespace_02Utst__test_8C_03.html#a256f04a34f48fd379f665e6368c7b835", null ],
+      [ "sawtooth", "namespaceanonymous__namespace_02Utst__test_8C_03.html#a958c80cb52368f8b0e655ca9bee0c867", null ],
+      [ "shuffle", "namespaceanonymous__namespace_02Utst__test_8C_03.html#a6bf887d3a05aaf6f1f5d4adcf2bf5590", null ],
+      [ "stagger", "namespaceanonymous__namespace_02Utst__test_8C_03.html#acf468cd396a1fcd727c8a3ad1aeeb377", null ]
+    ] ],
     [ "anonymous_namespace{volume.C}", "namespaceanonymous__namespace_02volume_8C_03.html", [
       [ "comp_grad12x", "namespaceanonymous__namespace_02volume_8C_03.html#aa2b0c68eb6b5594cb01e2e73bf8d39d8", null ],
       [ "dot8", "namespaceanonymous__namespace_02volume_8C_03.html#af719cf311d0d67e67fdf3884b50d0795", null ]
-    ] ],
-    [ "doctest", "namespacedoctest.html", "namespacedoctest" ],
-    [ "doctest_detail_test_suite_ns", "namespacedoctest__detail__test__suite__ns.html", [
-      [ "getCurrentTestSuite", "namespacedoctest__detail__test__suite__ns.html#a63d04c2e0ba35dff1e33cf0a24ec66c8", null ]
     ] ],
     [ "Info", "namespaceInfo.html", "namespaceInfo" ],
     [ "Ioad", "namespaceIoad.html", "namespaceIoad" ],
@@ -798,6 +812,5 @@ var namespaces_dup =
       [ "unguarded_insertion_sort", "namespacepdqsort__detail.html#a3f1c34cdc137010052833aa50f03950d", null ]
     ] ],
     [ "Skinner", "namespaceSkinner.html", "namespaceSkinner" ],
-    [ "std", "namespacestd.html", "namespacestd" ],
     [ "tsl", "namespacetsl.html", "namespacetsl" ]
 ];

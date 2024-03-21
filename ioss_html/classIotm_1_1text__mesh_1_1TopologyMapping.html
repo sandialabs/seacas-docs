@@ -112,7 +112,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a34e8a71d04b57e14dcff8f5c873d25d8" id="r_a34e8a71d04b57e14dcff8f5c873d25d8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34e8a71d04b57e14dcff8f5c873d25d8">~TopologyMapping</a> ()</td></tr>
 <tr class="separator:a34e8a71d04b57e14dcff8f5c873d25d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef7bee497226bff8759d69f1ae012775" id="r_aef7bee497226bff8759d69f1ae012775"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a021fe41daf9b59d070ba5a916b1164c1">Topology</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef7bee497226bff8759d69f1ae012775">topology</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;textMeshName) const</td></tr>
+<tr class="memitem:aef7bee497226bff8759d69f1ae012775" id="r_aef7bee497226bff8759d69f1ae012775"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a021fe41daf9b59d070ba5a916b1164c1">Topology</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef7bee497226bff8759d69f1ae012775">topology</a> (const std::string &amp;textMeshName) const</td></tr>
 <tr class="separator:aef7bee497226bff8759d69f1ae012775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada95ac2b7c208f6c6193eef74cb2de7d" id="r_ada95ac2b7c208f6c6193eef74cb2de7d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#a021fe41daf9b59d070ba5a916b1164c1">Topology</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada95ac2b7c208f6c6193eef74cb2de7d">invalid_topology</a> () const =0</td></tr>
 <tr class="separator:ada95ac2b7c208f6c6193eef74cb2de7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a0bf57522345c6a128dcd06a1f2915dfa" id="r_a0bf57522345c6a128dcd06a1f2915dfa"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>, <a class="el" href="#a021fe41daf9b59d070ba5a916b1164c1">Topology</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bf57522345c6a128dcd06a1f2915dfa">m_nameToTopology</a></td></tr>
+<tr class="memitem:a0bf57522345c6a128dcd06a1f2915dfa" id="r_a0bf57522345c6a128dcd06a1f2915dfa"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="#a021fe41daf9b59d070ba5a916b1164c1">Topology</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bf57522345c6a128dcd06a1f2915dfa">m_nameToTopology</a></td></tr>
 <tr class="separator:a0bf57522345c6a128dcd06a1f2915dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -242,7 +242,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="#a021fe41daf9b59d070ba5a916b1164c1">Topology</a> <a class="el" href="classIotm_1_1text__mesh_1_1TopologyMapping.html">Iotm::text_mesh::TopologyMapping</a>&lt; T &gt;::topology </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>textMeshName</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>textMeshName</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -268,7 +268,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>, <a class="el" href="#a021fe41daf9b59d070ba5a916b1164c1">Topology</a>&gt; <a class="el" href="classIotm_1_1text__mesh_1_1TopologyMapping.html">Iotm::text_mesh::TopologyMapping</a>&lt; T &gt;::m_nameToTopology</td>
+          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="#a021fe41daf9b59d070ba5a916b1164c1">Topology</a>&gt; <a class="el" href="classIotm_1_1text__mesh_1_1TopologyMapping.html">Iotm::text_mesh::TopologyMapping</a>&lt; T &gt;::m_nameToTopology</td>
         </tr>
       </table>
   </td>

@@ -94,15 +94,15 @@ $(function(){initNavTree('Utst__heartbeat_8C.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Utst_heartbeat.C File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Ionit__Initializer_8h_source.html">Ionit_Initializer.h</a>&quot;</code><br />
+<code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
+<code>#include &lt;catch2/catch_session.hpp&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;<a class="el" href="doctest_8h_source.html">doctest.h</a>&gt;</code><br />
 <code>#include &lt;fmt/core.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -129,72 +129,20 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceanonymous__namespace_02Utst__heartbeat_8C_03" id="r_namespaceanonymous__namespace_02Utst__heartbeat_8C_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html">anonymous_namespace{Utst_heartbeat.C}</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:adf980eb1ed0df2191c56fd3d218c2819" id="r_adf980eb1ed0df2191c56fd3d218c2819"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf980eb1ed0df2191c56fd3d218c2819">DOCTEST_CONFIG_IMPLEMENT</a></td></tr>
-<tr class="separator:adf980eb1ed0df2191c56fd3d218c2819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a4ce466a0a9609a65b05993990a1c1" id="r_a09a4ce466a0a9609a65b05993990a1c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09a4ce466a0a9609a65b05993990a1c1">DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES</a></td></tr>
-<tr class="separator:a09a4ce466a0a9609a65b05993990a1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a052f7233cb544c5c0f1c235992fa66cf" id="r_a052f7233cb544c5c0f1c235992fa66cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a052f7233cb544c5c0f1c235992fa66cf">DOCTEST_CONFIG_SUPER_FAST_ASSERTS</a></td></tr>
-<tr class="separator:a052f7233cb544c5c0f1c235992fa66cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4d28be65239097c327c4ce1fb32e2374" id="r_a4d28be65239097c327c4ce1fb32e2374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#a4d28be65239097c327c4ce1fb32e2374">anonymous_namespace{Utst_heartbeat.C}::create_heartbeat</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;filename)</td></tr>
+<tr class="memitem:a4d28be65239097c327c4ce1fb32e2374" id="r_a4d28be65239097c327c4ce1fb32e2374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#a4d28be65239097c327c4ce1fb32e2374">anonymous_namespace{Utst_heartbeat.C}::create_heartbeat</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a4d28be65239097c327c4ce1fb32e2374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c57a7dcd9a84041678739dcad24cd37" id="r_a7c57a7dcd9a84041678739dcad24cd37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#a7c57a7dcd9a84041678739dcad24cd37">anonymous_namespace{Utst_heartbeat.C}::DOCTEST_TEST_CASE</a> (&quot;Ioss::write_file&quot;)</td></tr>
-<tr class="separator:a7c57a7dcd9a84041678739dcad24cd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875133a597111cd996eb58692bc91fa1" id="r_a875133a597111cd996eb58692bc91fa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#a875133a597111cd996eb58692bc91fa1">anonymous_namespace{Utst_heartbeat.C}::TEST_CASE</a> (&quot;Ioss::write_file&quot;)</td></tr>
+<tr class="separator:a875133a597111cd996eb58692bc91fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d2b137580726f888965b2c15e073c8e" id="r_a4d2b137580726f888965b2c15e073c8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d2b137580726f888965b2c15e073c8e">main</a> (<a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> int argc, char **argv)</td></tr>
 <tr class="separator:a4d2b137580726f888965b2c15e073c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aec3f711041b1f9a992d0ee253d640afc" id="r_aec3f711041b1f9a992d0ee253d640afc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#aec3f711041b1f9a992d0ee253d640afc">anonymous_namespace{Utst_heartbeat.C}::tst_filename</a> = &quot;test.hb&quot;</td></tr>
+<tr class="memitem:aec3f711041b1f9a992d0ee253d640afc" id="r_aec3f711041b1f9a992d0ee253d640afc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Utst__heartbeat_8C_03.html#aec3f711041b1f9a992d0ee253d640afc">anonymous_namespace{Utst_heartbeat.C}::tst_filename</a> = &quot;test.hb&quot;</td></tr>
 <tr class="separator:aec3f711041b1f9a992d0ee253d640afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="adf980eb1ed0df2191c56fd3d218c2819" name="adf980eb1ed0df2191c56fd3d218c2819"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf980eb1ed0df2191c56fd3d218c2819">&#9670;&#160;</a></span>DOCTEST_CONFIG_IMPLEMENT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a09a4ce466a0a9609a65b05993990a1c1" name="a09a4ce466a0a9609a65b05993990a1c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09a4ce466a0a9609a65b05993990a1c1">&#9670;&#160;</a></span>DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_NO_SHORT_MACRO_NAMES</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a052f7233cb544c5c0f1c235992fa66cf" name="a052f7233cb544c5c0f1c235992fa66cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a052f7233cb544c5c0f1c235992fa66cf">&#9670;&#160;</a></span>DOCTEST_CONFIG_SUPER_FAST_ASSERTS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_SUPER_FAST_ASSERTS</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a4d2b137580726f888965b2c15e073c8e" name="a4d2b137580726f888965b2c15e073c8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d2b137580726f888965b2c15e073c8e">&#9670;&#160;</a></span>main()</h2>

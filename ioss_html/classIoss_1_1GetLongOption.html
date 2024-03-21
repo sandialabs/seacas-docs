@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae63bc8e3bcc4cb7425d3a0c577265fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ee0ae07f3e75f510f3d4c2dee75591" id="r_a73ee0ae07f3e75f510f3d4c2dee75591"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73ee0ae07f3e75f510f3d4c2dee75591">program_name</a> () const</td></tr>
 <tr class="separator:a73ee0ae07f3e75f510f3d4c2dee75591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f523c96fb3fd8bf6dc10dfc57cd775e" id="r_a7f523c96fb3fd8bf6dc10dfc57cd775e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f523c96fb3fd8bf6dc10dfc57cd775e">usage</a> (<a class="el" href="namespacestd.html#a6d1736434ff6d516a3df38cbb7487ea5">std::ostream</a> &amp;outfile=std::cout) const</td></tr>
+<tr class="memitem:a7f523c96fb3fd8bf6dc10dfc57cd775e" id="r_a7f523c96fb3fd8bf6dc10dfc57cd775e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f523c96fb3fd8bf6dc10dfc57cd775e">usage</a> (std::ostream &amp;outfile=std::cout) const</td></tr>
 <tr class="memdesc:a7f523c96fb3fd8bf6dc10dfc57cd775e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the program usage string.  <br /></td></tr>
 <tr class="separator:a7f523c96fb3fd8bf6dc10dfc57cd775e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665bc42f59768e7c3bb093a36671006a" id="r_a665bc42f59768e7c3bb093a36671006a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a665bc42f59768e7c3bb093a36671006a">usage</a> (const char *str)</td></tr>
@@ -161,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f736fe56c6d3f7ed90e104e111a8c79" id="r_a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memTemplParams" colspan="2">template&lt;class DBL , typename std::enable_if&lt; std::is_floating_point&lt; DBL &gt;::value, DBL &gt;::type *  = nullptr&gt; </td></tr>
 <tr class="memitem:a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memTemplItemLeft" align="right" valign="top">DBL&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1f736fe56c6d3f7ed90e104e111a8c79">get_option_value</a> (const char *option_txt, DBL default_value)</td></tr>
 <tr class="separator:a1f736fe56c6d3f7ed90e104e111a8c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc2f043f62d0fc7d3b602d0cb0d4d977" id="r_adc2f043f62d0fc7d3b602d0cb0d4d977"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc2f043f62d0fc7d3b602d0cb0d4d977">get_option_value</a> (const char *option_txt, const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;default_value) const</td></tr>
+<tr class="memitem:adc2f043f62d0fc7d3b602d0cb0d4d977" id="r_adc2f043f62d0fc7d3b602d0cb0d4d977"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc2f043f62d0fc7d3b602d0cb0d4d977">get_option_value</a> (const char *option_txt, const std::string &amp;default_value) const</td></tr>
 <tr class="separator:adc2f043f62d0fc7d3b602d0cb0d4d977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -369,14 +369,14 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> Ioss::GetLongOption::get_option_value </td>
+          <td class="memname">std::string Ioss::GetLongOption::get_option_value </td>
           <td>(</td>
           <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>option_txt</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>default_value</em></span>&#160;) const</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>default_value</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -638,7 +638,7 @@ template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt
         <tr>
           <td class="memname">void Ioss::GetLongOption::usage </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacestd.html#a6d1736434ff6d516a3df38cbb7487ea5">std::ostream</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>outfile</em><span class="paramdefsep"> = </span><span class="paramdefval">std::cout</span></span></td><td>)</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>outfile</em><span class="paramdefsep"> = </span><span class="paramdefval">std::cout</span></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>

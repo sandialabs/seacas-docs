@@ -116,7 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a405289a0d5040a80697b0a0fcd588177" id="r_a405289a0d5040a80697b0a0fcd588177"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:a405289a0d5040a80697b0a0fcd588177"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a405289a0d5040a80697b0a0fcd588177">generate_faces</a> (INT, bool block_by_block=false, bool local_ids=false)</td></tr>
 <tr class="separator:a405289a0d5040a80697b0a0fcd588177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2032427a1c92d87757d41387ce070bef" id="r_a2032427a1c92d87757d41387ce070bef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a330efb5e0c1bbba64ae9609f8df48fa3">FaceUnorderedSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2032427a1c92d87757d41387ce070bef">faces</a> (const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;name=&quot;ALL&quot;)</td></tr>
+<tr class="memitem:a2032427a1c92d87757d41387ce070bef" id="r_a2032427a1c92d87757d41387ce070bef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#a330efb5e0c1bbba64ae9609f8df48fa3">FaceUnorderedSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2032427a1c92d87757d41387ce070bef">faces</a> (const std::string &amp;name=&quot;ALL&quot;)</td></tr>
 <tr class="separator:a2032427a1c92d87757d41387ce070bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f26fe83f872b07c689f1e3e97badbbd" id="r_a5f26fe83f872b07c689f1e3e97badbbd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f26fe83f872b07c689f1e3e97badbbd">node_id_hash</a> (size_t local_node_id) const</td></tr>
 <tr class="memdesc:a5f26fe83f872b07c689f1e3e97badbbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a local node id (0-based), return the hashed value.  <br /></td></tr>
@@ -143,7 +143,7 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a14c13527f1a61e7dfd8618f59b3b27fd" id="r_a14c13527f1a61e7dfd8618f59b3b27fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14c13527f1a61e7dfd8618f59b3b27fd">region_</a></td></tr>
 <tr class="separator:a14c13527f1a61e7dfd8618f59b3b27fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a235c66b13fbf2a2fd48a7a3bbf115a94" id="r_a235c66b13fbf2a2fd48a7a3bbf115a94"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>, <a class="el" href="namespaceIoss.html#a330efb5e0c1bbba64ae9609f8df48fa3">FaceUnorderedSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235c66b13fbf2a2fd48a7a3bbf115a94">faces_</a></td></tr>
+<tr class="memitem:a235c66b13fbf2a2fd48a7a3bbf115a94" id="r_a235c66b13fbf2a2fd48a7a3bbf115a94"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="namespaceIoss.html#a330efb5e0c1bbba64ae9609f8df48fa3">FaceUnorderedSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235c66b13fbf2a2fd48a7a3bbf115a94">faces_</a></td></tr>
 <tr class="separator:a235c66b13fbf2a2fd48a7a3bbf115a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67da94ea24f73534223dbaf78a5996da" id="r_a67da94ea24f73534223dbaf78a5996da"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67da94ea24f73534223dbaf78a5996da">hashIds_</a></td></tr>
 <tr class="separator:a67da94ea24f73534223dbaf78a5996da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +187,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespaceIoss.html#a330efb5e0c1bbba64ae9609f8df48fa3">FaceUnorderedSet</a> &amp; Ioss::FaceGenerator::faces </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;ALL&quot;</span></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;ALL&quot;</span></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -380,7 +380,7 @@ template&lt;typename INT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="namespacestd.html#af182ebdbfb7c2efe51f4ef6cf59862b5">std::string</a>, <a class="el" href="namespaceIoss.html#a330efb5e0c1bbba64ae9609f8df48fa3">FaceUnorderedSet</a>&gt; Ioss::FaceGenerator::faces_</td>
+          <td class="memname">std::map&lt;std::string, <a class="el" href="namespaceIoss.html#a330efb5e0c1bbba64ae9609f8df48fa3">FaceUnorderedSet</a>&gt; Ioss::FaceGenerator::faces_</td>
         </tr>
       </table>
   </td>
