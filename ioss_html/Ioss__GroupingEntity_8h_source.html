@@ -755,7 +755,7 @@ $(function(){initNavTree('Ioss__GroupingEntity_8h_source.html',''); initResizabl
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>  <span class="keyword">typename</span> ViewType::HostMirror host_data = Kokkos::create_mirror_view(data);</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  <span class="comment">// Extract a pointer to the underlying allocated memory of the host view.</span></div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  T *host_data_ptr = <a class="code hl_function" href="Ioss__Utils_8h.html#a266bc6da5d08838f9120a878a6d33aff">Data</a>(host_data);</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  T *host_data_ptr = host_data.data();</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  <span class="comment">// Extract the data from disk to the underlying memory pointed to by host_data_ptr.</span></div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  <span class="keyword">auto</span> retval = internal_get_field_data(field, host_data_ptr, data_size);</div>
@@ -859,7 +859,7 @@ $(function(){initNavTree('Ioss__GroupingEntity_8h_source.html',''); initResizabl
 <div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>  Kokkos::deep_copy(host_data, data);</div>
 <div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
 <div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>  <span class="comment">// Extract a pointer to the underlying allocated memory of the host view.</span></div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>  T *host_data_ptr = <a class="code hl_function" href="Ioss__Utils_8h.html#a266bc6da5d08838f9120a878a6d33aff">Data</a>(host_data);</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>  T *host_data_ptr = host_data.data();</div>
 <div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span> </div>
 <div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>  <span class="comment">// Transform the field</span></div>
 <div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>  field.<a class="code hl_function" href="classIoss_1_1Field.html#acd40e32af496e75b0c416737ed0a97ec">transform</a>(host_data_ptr);</div>

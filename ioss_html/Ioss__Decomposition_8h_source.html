@@ -377,12 +377,12 @@ $(function(){initNavTree('Ioss__Decomposition_8h_source.html',''); initResizable
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      <span class="keyword">auto</span> I = lower_bound(</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>          <a class="code hl_variable" href="classIoss_1_1Decomposition.html#acca779c00d007616568a55ae26456898">elemGTL</a>.begin(), <a class="code hl_variable" href="classIoss_1_1Decomposition.html#acca779c00d007616568a55ae26456898">elemGTL</a>.end(), global_index,</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>          [](<span class="keyword">const</span> std::pair&lt;INT, INT&gt; &amp;lhs, INT val) -&gt; <span class="keywordtype">bool</span> { return lhs.first &lt; val; });</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>      assert(I != <a class="code hl_variable" href="classIoss_1_1Decomposition.html#acca779c00d007616568a55ae26456898">elemGTL</a>.end() &amp;&amp; I-&gt;first == global_index);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>      assert(I != <a class="code hl_variable" href="classIoss_1_1Decomposition.html#acca779c00d007616568a55ae26456898">elemGTL</a>.end() &amp;&amp; I-&gt;first == (INT)global_index);</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>      <span class="keyword">auto</span> I = <a class="code hl_variable" href="classIoss_1_1Decomposition.html#acca779c00d007616568a55ae26456898">elemGTL</a>.find(global_index);</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>      assert(I != <a class="code hl_variable" href="classIoss_1_1Decomposition.html#acca779c00d007616568a55ae26456898">elemGTL</a>.end());</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      assert(I-&gt;first == global_index);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      assert(I-&gt;first == (INT)global_index);</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>      <span class="keywordflow">return</span> I-&gt;second;</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    }</div>
 </div>

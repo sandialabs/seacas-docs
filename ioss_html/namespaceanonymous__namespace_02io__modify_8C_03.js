@@ -35,6 +35,7 @@ var namespaceanonymous__namespace_02io__modify_8C_03 =
     [ "set_db_properties", "namespaceanonymous__namespace_02io__modify_8C_03.html#abbaa7f57eb4b40d886862690a9c758d8", null ],
     [ "set_properties", "namespaceanonymous__namespace_02io__modify_8C_03.html#a48d15a6ab60b45ef27e99bc36fc78900", null ],
     [ "update_assembly_info", "namespaceanonymous__namespace_02io__modify_8C_03.html#a5f27efffeffe710f293ad2a61f71449f", null ],
+    [ "update_exodus_assembly_info", "namespaceanonymous__namespace_02io__modify_8C_03.html#a4866e5eb91b5040adbef724217be141c", null ],
     [ "update_rotation_matrix", "namespaceanonymous__namespace_02io__modify_8C_03.html#ab1862d98ba5053a4243e0d0eca19f53c", null ],
     [ "attributes_modified", "namespaceanonymous__namespace_02io__modify_8C_03.html#aa1d463b5adbd98fd632061ae9435fc8a", null ],
     [ "codename", "namespaceanonymous__namespace_02io__modify_8C_03.html#a097b51a278793fa66f99a6a4420ac9b7", null ],

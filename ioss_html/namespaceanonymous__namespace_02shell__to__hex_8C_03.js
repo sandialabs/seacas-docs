@@ -9,6 +9,5 @@ var namespaceanonymous__namespace_02shell__to__hex_8C_03 =
     [ "transfer_nodeblock", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html#aade537da363ad76db86bef4668aeaae8", null ],
     [ "transfer_properties", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html#a5ef45bed7caef40378590a91e0624a0c", null ],
     [ "codename", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html#a3fa4a7ba2849d1918cf42765490f3dfa", null ],
-    [ "data", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html#a31be9a20abdb6fc88ad69aa66a19f9bf", null ],
     [ "version", "namespaceanonymous__namespace_02shell__to__hex_8C_03.html#a339e5fc0b8580e3d2722bb4f9a8c7079", null ]
 ];

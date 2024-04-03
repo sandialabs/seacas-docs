@@ -10,6 +10,5 @@ var shell__to__hex_8C =
     [ "transfer_nodeblock", "shell__to__hex_8C.html#aade537da363ad76db86bef4668aeaae8", null ],
     [ "transfer_properties", "shell__to__hex_8C.html#a5ef45bed7caef40378590a91e0624a0c", null ],
     [ "codename", "shell__to__hex_8C.html#a3fa4a7ba2849d1918cf42765490f3dfa", null ],
-    [ "data", "shell__to__hex_8C.html#a31be9a20abdb6fc88ad69aa66a19f9bf", null ],
     [ "version", "shell__to__hex_8C.html#a339e5fc0b8580e3d2722bb4f9a8c7079", null ]
 ];

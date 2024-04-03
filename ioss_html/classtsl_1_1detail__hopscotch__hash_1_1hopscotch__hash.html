@@ -123,8 +123,6 @@ Collaboration diagram for tsl::detail_hopscotch_hash::hopscotch_hash&lt; ValueTy
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1hopscotch__iterator.html">hopscotch_iterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same.html">is_type_same</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -455,10 +453,10 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:adc123e1b19ce3aee8040f49a57c241bd" id="r_adc123e1b19ce3aee8040f49a57c241bd"><td class="memTemplParams" colspan="2">template&lt;class T  = size_type, typename std::enable_if&lt; <a class="el" href="structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same.html">is_type_same</a>&lt; T, <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a238e78d9543005c933073bbd9ae28369">truncated_hash_type</a> &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
+<tr class="memitem:adc123e1b19ce3aee8040f49a57c241bd" id="r_adc123e1b19ce3aee8040f49a57c241bd"><td class="memTemplParams" colspan="2">template&lt;class T  = size_type, typename std::enable_if&lt; std::is_same&lt; T, <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a238e78d9543005c933073bbd9ae28369">truncated_hash_type</a> &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
 <tr class="memitem:adc123e1b19ce3aee8040f49a57c241bd"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adc123e1b19ce3aee8040f49a57c241bd">USE_STORED_HASH_ON_REHASH</a> (<a class="el" href="#a0f2a8dda76d11a1531be2c2e7fb82061">size_type</a>)</td></tr>
 <tr class="separator:adc123e1b19ce3aee8040f49a57c241bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f445dccf8094caa5055e171ebfafdca" id="r_a3f445dccf8094caa5055e171ebfafdca"><td class="memTemplParams" colspan="2">template&lt;class T  = size_type, typename std::enable_if&lt;!<a class="el" href="structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same.html">is_type_same</a>&lt; T, <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a238e78d9543005c933073bbd9ae28369">truncated_hash_type</a> &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
+<tr class="memitem:a3f445dccf8094caa5055e171ebfafdca" id="r_a3f445dccf8094caa5055e171ebfafdca"><td class="memTemplParams" colspan="2">template&lt;class T  = size_type, typename std::enable_if&lt;!std::is_same&lt; T, <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a238e78d9543005c933073bbd9ae28369">truncated_hash_type</a> &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
 <tr class="memitem:a3f445dccf8094caa5055e171ebfafdca"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3f445dccf8094caa5055e171ebfafdca">USE_STORED_HASH_ON_REHASH</a> (<a class="el" href="#a0f2a8dda76d11a1531be2c2e7fb82061">size_type</a> <a class="el" href="#a9172c1af3783cba3f5de2b8fc4013bef">bucket_count</a>)</td></tr>
 <tr class="separator:a3f445dccf8094caa5055e171ebfafdca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -4050,7 +4048,7 @@ template&lt;typename P , class... Args&gt; </div>
 <div class="memtemplate">
 template&lt;class ValueType , class KeySelect , class ValueSelect , class Hash , class KeyEqual , class Allocator , unsigned int NeighborhoodSize, bool StoreHash, class GrowthPolicy , class OverflowContainer &gt; </div>
 <div class="memtemplate">
-template&lt;class T  = size_type, typename std::enable_if&lt;!<a class="el" href="structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same.html">is_type_same</a>&lt; T, <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a238e78d9543005c933073bbd9ae28369">truncated_hash_type</a> &gt;::value &gt;::type *  = nullptr&gt; </div>
+template&lt;class T  = size_type, typename std::enable_if&lt;!std::is_same&lt; T, <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a238e78d9543005c933073bbd9ae28369">truncated_hash_type</a> &gt;::value &gt;::type *  = nullptr&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -4079,7 +4077,7 @@ template&lt;class T  = size_type, typename std::enable_if&lt;!<a class="el" href
 <div class="memtemplate">
 template&lt;class ValueType , class KeySelect , class ValueSelect , class Hash , class KeyEqual , class Allocator , unsigned int NeighborhoodSize, bool StoreHash, class GrowthPolicy , class OverflowContainer &gt; </div>
 <div class="memtemplate">
-template&lt;class T  = size_type, typename std::enable_if&lt; <a class="el" href="structtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash_1_1is__type__same.html">is_type_same</a>&lt; T, <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a238e78d9543005c933073bbd9ae28369">truncated_hash_type</a> &gt;::value &gt;::type *  = nullptr&gt; </div>
+template&lt;class T  = size_type, typename std::enable_if&lt; std::is_same&lt; T, <a class="el" href="namespacetsl_1_1detail__hopscotch__hash.html#a238e78d9543005c933073bbd9ae28369">truncated_hash_type</a> &gt;::value &gt;::type *  = nullptr&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
