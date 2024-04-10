@@ -27,6 +27,5 @@ var files_dup =
     [ "robin_growth_policy.h", "robin__growth__policy_8h.html", "robin__growth__policy_8h" ],
     [ "robin_hash.h", "robin__hash_8h.html", "robin__hash_8h" ],
     [ "robin_map.h", "robin__map_8h.html", "robin__map_8h" ],
-    [ "strings.cc", "strings_8cc.html", "strings_8cc" ],
-    [ "terminal_color.h", "terminal__color_8h.html", "terminal__color_8h" ]
+    [ "strings.cc", "strings_8cc.html", "strings_8cc" ]
 ];

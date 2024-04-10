@@ -31,6 +31,5 @@ var searchData=
   ['gl_5fredraw_28',['gl_redraw',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#ad5760374c90a6ed1fa4df354e333c3a9',1,'anonymous_namespace{apr_getline.cc}']]],
   ['gl_5fsetwidth_29',['gl_setwidth',['../namespaceSEAMS.html#ade27abc10cec6db0a28186e61350a161',1,'SEAMS']]],
   ['gl_5ftranspose_30',['gl_transpose',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a1dae8c9a5feb76c7b4a8c9e0d68c3360',1,'anonymous_namespace{apr_getline.cc}']]],
-  ['gl_5fyank_31',['gl_yank',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#acd4a6f3cc092db2903c0c562f763b47e',1,'anonymous_namespace{apr_getline.cc}']]],
-  ['green_32',['green',['../namespacetrmclr.html#ab7246ef4a6d62c1069d7c70a2050cae0',1,'trmclr']]]
+  ['gl_5fyank_31',['gl_yank',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#acd4a6f3cc092db2903c0c562f763b47e',1,'anonymous_namespace{apr_getline.cc}']]]
 ];

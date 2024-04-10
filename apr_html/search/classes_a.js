@@ -13,11 +13,10 @@ var searchData=
   ['str_5fd_5finit_10',['str_d_init',['../structstr__d__init.html',1,'']]],
   ['str_5fdcc_5finit_11',['str_dcc_init',['../structstr__dcc__init.html',1,'']]],
   ['str_5finit_12',['str_init',['../structstr__init.html',1,'']]],
-  ['style_13',['Style',['../structtrmclr_1_1Style.html',1,'trmclr']]],
-  ['svar_5finit_14',['svar_init',['../structsvar__init.html',1,'']]],
-  ['symbol_5fkind_15',['symbol_kind',['../structSEAMS_1_1Parser_1_1symbol__kind.html',1,'SEAMS::Parser']]],
-  ['symbol_5ftype_16',['symbol_type',['../structSEAMS_1_1Parser_1_1symbol__type.html',1,'SEAMS::Parser']]],
-  ['symrec_17',['symrec',['../structSEAMS_1_1symrec.html',1,'SEAMS']]],
-  ['symtable_18',['Symtable',['../structSEAMS_1_1Symtable.html',1,'SEAMS']]],
-  ['syntax_5ferror_19',['syntax_error',['../structSEAMS_1_1Parser_1_1syntax__error.html',1,'SEAMS::Parser']]]
+  ['svar_5finit_13',['svar_init',['../structsvar__init.html',1,'']]],
+  ['symbol_5fkind_14',['symbol_kind',['../structSEAMS_1_1Parser_1_1symbol__kind.html',1,'SEAMS::Parser']]],
+  ['symbol_5ftype_15',['symbol_type',['../structSEAMS_1_1Parser_1_1symbol__type.html',1,'SEAMS::Parser']]],
+  ['symrec_16',['symrec',['../structSEAMS_1_1symrec.html',1,'SEAMS']]],
+  ['symtable_17',['Symtable',['../structSEAMS_1_1Symtable.html',1,'SEAMS']]],
+  ['syntax_5ferror_18',['syntax_error',['../structSEAMS_1_1Parser_1_1syntax__error.html',1,'SEAMS::Parser']]]
 ];

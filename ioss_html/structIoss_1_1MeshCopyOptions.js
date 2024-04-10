@@ -17,6 +17,8 @@ var structIoss_1_1MeshCopyOptions =
     [ "rel_tolerance", "structIoss_1_1MeshCopyOptions.html#ab01c2f567590661271f500d2903023df", null ],
     [ "reverse", "structIoss_1_1MeshCopyOptions.html#a5cd2a4b3cce1d898aaa16ebefbf363b1", null ],
     [ "selected_times", "structIoss_1_1MeshCopyOptions.html#a520f814ef5b792a1d4dc2e93882ea82b", null ],
+    [ "time_offset", "structIoss_1_1MeshCopyOptions.html#a834eb085c1b03f59dd5704f4efaf0244", null ],
+    [ "time_scale", "structIoss_1_1MeshCopyOptions.html#adac444faddc9f41a0f0c8c01aded4582", null ],
     [ "tol_floor", "structIoss_1_1MeshCopyOptions.html#a61adfc71a8b58855e8f63bf1ba85196a", null ],
     [ "verbose", "structIoss_1_1MeshCopyOptions.html#aaf51f54f274e24589adecac085e30d4e", null ]
 ];

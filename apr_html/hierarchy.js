@@ -10,8 +10,6 @@ var hierarchy =
     [ "array_d_init", "structarray__d__init.html", null ],
     [ "array_dd_init", "structarray__dd__init.html", null ],
     [ "array_ddd_init", "structarray__ddd__init.html", null ],
-    [ "trmclr::Attribute", "structtrmclr_1_1Attribute.html", null ],
-    [ "trmclr::Background", "structtrmclr_1_1Background.html", null ],
     [ "Base", null, [
       [ "SEAMS::Parser::basic_symbol< Base >", "structSEAMS_1_1Parser_1_1basic__symbol.html", null ]
     ] ],
@@ -44,7 +42,6 @@ var hierarchy =
         [ "SEAMS::Scanner", "classSEAMS_1_1Scanner.html", null ]
       ] ]
     ] ],
-    [ "trmclr::Foreground", "structtrmclr_1_1Foreground.html", null ],
     [ "GrowthPolicy", null, [
       [ "tsl::detail_robin_hash::robin_hash< ValueType, KeySelect, ValueSelect, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
     ] ],
@@ -96,7 +93,6 @@ var hierarchy =
     [ "str_d_init", "structstr__d__init.html", null ],
     [ "str_dcc_init", "structstr__dcc__init.html", null ],
     [ "str_init", "structstr__init.html", null ],
-    [ "trmclr::Style", "structtrmclr_1_1Style.html", null ],
     [ "svar_init", "structsvar__init.html", null ],
     [ "SEAMS::Parser::symbol_kind", "structSEAMS_1_1Parser_1_1symbol__kind.html", null ],
     [ "SEAMS::symrec", "structSEAMS_1_1symrec.html", null ],

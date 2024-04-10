@@ -31,9 +31,7 @@ var NAVTREE =
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
+        [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -72,11 +70,11 @@ var NAVTREEINDEX =
 "classSEAMS_1_1Parser_1_1stack_1_1slice.html",
 "classtsl_1_1detail__robin__hash_1_1robin__hash.html#a72c542e1ad48127eb9d7bf2cd52471e2",
 "classtsl_1_1robin__map.html#a26bcd048ce6a0217daca1293588dc3d1",
-"functions_func_v.html",
-"namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#ab5b7860231f3d5feebe9fae95f120a72",
-"structSEAMS_1_1Parser_1_1symbol__kind.html#ac56f226c39755733fe503407ab7203f9a0a758be9d4a019dd6021b92c02eee6dd",
-"structSEAMS_1_1anonymous__namespace_02apr__units_8cc_03_1_1unit__systems.html#a4478bd85ca4b33b1952c34af6f1b720e",
-"structinit__dddd.html#a8a4559879c498e9646f7d0510ea03880"
+"functions_func_w.html",
+"namespaceSEAMS_1_1anonymous__namespace_02apr__units_8cc_03.html#ad2886e138d69df2b71d658e0ed9c4722",
+"structSEAMS_1_1Parser_1_1symbol__kind.html#ac56f226c39755733fe503407ab7203f9a3c89ece02359d081caf95e96547cb471",
+"structSEAMS_1_1aprepro__options.html#a64c6256b51e5b428652e1d0ecd52a0cf",
+"structstr__cc__init.html#a6440f3cdce8ed23caaceb5ab48c930d5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

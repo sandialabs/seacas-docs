@@ -30,14 +30,13 @@ var searchData=
   ['statistics_27',['statistics',['../classSEAMS_1_1Aprepro.html#a6c271fa53d065ce13d607af77e971503',1,'SEAMS::Aprepro']]],
   ['string_5finteractive_28',['string_interactive',['../classSEAMS_1_1Aprepro.html#a793adde8e829938699c9a403ace87a90',1,'SEAMS::Aprepro']]],
   ['string_5fis_5fascii_29',['string_is_ascii',['../namespaceanonymous__namespace_02apr__scanner_8cc_03.html#a84fb4ae62bc8ecf4f7caba62556dcc34',1,'anonymous_namespace{apr_scanner.cc}']]],
-  ['style_30',['Style',['../structtrmclr_1_1Style.html#ac20eb00e5a27bfd94cf125e94608f3e7',1,'trmclr::Style']]],
-  ['succ_31',['succ',['../apr__test_8cc.html#ad15723334fab77cc43861210acda2d36',1,'apr_test.cc']]],
-  ['swap_32',['swap',['../classtsl_1_1detail__robin__hash_1_1robin__hash.html#a8fc4c65d400177124ac70f5a54a536f9',1,'tsl::detail_robin_hash::robin_hash::swap()'],['../classtsl_1_1robin__map.html#ab5459876ab168b748e224224acae053e',1,'tsl::robin_map::swap()']]],
-  ['swap_5fwith_5fvalue_5fin_5fbucket_33',['swap_with_value_in_bucket',['../classtsl_1_1detail__robin__hash_1_1bucket__entry.html#ae14dfd7138e190684d0e0d17cec3582d',1,'tsl::detail_robin_hash::bucket_entry']]],
-  ['switch_5fhandler_34',['switch_handler',['../classSEAMS_1_1Scanner.html#ab5f6e36a6047342f7a1a98bae4d8a69e',1,'SEAMS::Scanner']]],
-  ['switch_5fstreams_35',['switch_streams',['../classFlexLexer.html#a926d7e3ea6ba9136de57939a42b3f630',1,'FlexLexer::switch_streams()'],['../classSEAMSFlexLexer.html#a6310f4df9e67fcbbb6b2f3753681861c',1,'SEAMSFlexLexer::switch_streams()']]],
-  ['symbol_5fname_36',['symbol_name',['../classSEAMS_1_1Parser.html#ae409c92eee3be7966f1084f7d5f8ddf7',1,'SEAMS::Parser']]],
-  ['symrec_37',['symrec',['../structSEAMS_1_1symrec.html#a80e2e9959da0126e73e65eb7b60e08c0',1,'SEAMS::symrec::symrec(const char *my_name, int my_type, bool is_internal=false)'],['../structSEAMS_1_1symrec.html#af938c33794233ad04280eea974ddf4f1',1,'SEAMS::symrec::symrec(const std::string &amp;my_name, int my_type, bool is_internal=false)']]],
-  ['symtable_38',['Symtable',['../structSEAMS_1_1Symtable.html#a703da0fb1f56b1cdddb440a9b08fd02e',1,'SEAMS::Symtable']]],
-  ['syntax_5ferror_39',['syntax_error',['../structSEAMS_1_1Parser_1_1syntax__error.html#a90e21cb773633f2b5e85254db9bc98c6',1,'SEAMS::Parser::syntax_error::syntax_error(const std::string &amp;m)'],['../structSEAMS_1_1Parser_1_1syntax__error.html#a40855cb7a42717c63c8552d598ec36d9',1,'SEAMS::Parser::syntax_error::syntax_error(const syntax_error &amp;s)']]]
+  ['succ_30',['succ',['../apr__test_8cc.html#ad15723334fab77cc43861210acda2d36',1,'apr_test.cc']]],
+  ['swap_31',['swap',['../classtsl_1_1detail__robin__hash_1_1robin__hash.html#a8fc4c65d400177124ac70f5a54a536f9',1,'tsl::detail_robin_hash::robin_hash::swap()'],['../classtsl_1_1robin__map.html#ab5459876ab168b748e224224acae053e',1,'tsl::robin_map::swap()']]],
+  ['swap_5fwith_5fvalue_5fin_5fbucket_32',['swap_with_value_in_bucket',['../classtsl_1_1detail__robin__hash_1_1bucket__entry.html#ae14dfd7138e190684d0e0d17cec3582d',1,'tsl::detail_robin_hash::bucket_entry']]],
+  ['switch_5fhandler_33',['switch_handler',['../classSEAMS_1_1Scanner.html#ab5f6e36a6047342f7a1a98bae4d8a69e',1,'SEAMS::Scanner']]],
+  ['switch_5fstreams_34',['switch_streams',['../classFlexLexer.html#a926d7e3ea6ba9136de57939a42b3f630',1,'FlexLexer::switch_streams()'],['../classSEAMSFlexLexer.html#a6310f4df9e67fcbbb6b2f3753681861c',1,'SEAMSFlexLexer::switch_streams()']]],
+  ['symbol_5fname_35',['symbol_name',['../classSEAMS_1_1Parser.html#ae409c92eee3be7966f1084f7d5f8ddf7',1,'SEAMS::Parser']]],
+  ['symrec_36',['symrec',['../structSEAMS_1_1symrec.html#a80e2e9959da0126e73e65eb7b60e08c0',1,'SEAMS::symrec::symrec(const char *my_name, int my_type, bool is_internal=false)'],['../structSEAMS_1_1symrec.html#af938c33794233ad04280eea974ddf4f1',1,'SEAMS::symrec::symrec(const std::string &amp;my_name, int my_type, bool is_internal=false)']]],
+  ['symtable_37',['Symtable',['../structSEAMS_1_1Symtable.html#a703da0fb1f56b1cdddb440a9b08fd02e',1,'SEAMS::Symtable']]],
+  ['syntax_5ferror_38',['syntax_error',['../structSEAMS_1_1Parser_1_1syntax__error.html#a90e21cb773633f2b5e85254db9bc98c6',1,'SEAMS::Parser::syntax_error::syntax_error(const std::string &amp;m)'],['../structSEAMS_1_1Parser_1_1syntax__error.html#a40855cb7a42717c63c8552d598ec36d9',1,'SEAMS::Parser::syntax_error::syntax_error(const syntax_error &amp;s)']]]
 ];

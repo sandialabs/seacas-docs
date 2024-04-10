@@ -14,12 +14,6 @@ var annotated_dup =
       [ "symrec", "structSEAMS_1_1symrec.html", "structSEAMS_1_1symrec" ],
       [ "Symtable", "structSEAMS_1_1Symtable.html", "structSEAMS_1_1Symtable" ]
     ] ],
-    [ "trmclr", "namespacetrmclr.html", [
-      [ "Attribute", "structtrmclr_1_1Attribute.html", "structtrmclr_1_1Attribute" ],
-      [ "Background", "structtrmclr_1_1Background.html", "structtrmclr_1_1Background" ],
-      [ "Foreground", "structtrmclr_1_1Foreground.html", "structtrmclr_1_1Foreground" ],
-      [ "Style", "structtrmclr_1_1Style.html", "structtrmclr_1_1Style" ]
-    ] ],
     [ "tsl", "namespacetsl.html", [
       [ "detail_robin_hash", "namespacetsl_1_1detail__robin__hash.html", [
         [ "bucket_entry", "classtsl_1_1detail__robin__hash_1_1bucket__entry.html", "classtsl_1_1detail__robin__hash_1_1bucket__entry" ],

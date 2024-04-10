@@ -82,6 +82,5 @@ var namespaces_dup =
       [ "allocations", "namespaceanonymous__namespace_02apr__util_8cc_03.html#aded77357317bc83d7cf095bad8674dd7", null ]
     ] ],
     [ "SEAMS", "namespaceSEAMS.html", "namespaceSEAMS" ],
-    [ "trmclr", "namespacetrmclr.html", "namespacetrmclr" ],
     [ "tsl", "namespacetsl.html", "namespacetsl" ]
 ];
