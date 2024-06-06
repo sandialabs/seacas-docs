@@ -519,7 +519,8 @@ modification, and then writes that database.  See ``io_shell --help``
 for a list of the capabilities of io_shell.  It can read and write
 datbases in the Exodus and CGNS format.  There is also a generated
 mesh option.  To see the generated mesh options, try: ``io_shell
---in_type generated 1x1x1+help output.g``
+--in_type generated 1x1x1+help output.g``  There is also a database
+comparision capability specified with the ``--compare`` option.
 
 
 Mapvar
