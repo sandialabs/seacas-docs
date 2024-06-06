@@ -46,7 +46,6 @@ var classIoss_1_1Property =
     [ "operator!=", "classIoss_1_1Property.html#a0e720f9ece388a2534721c2b685193d9", null ],
     [ "operator==", "classIoss_1_1Property.html#ae12b01ec2d1d1278ae73a392ff6bbfad", null ],
     [ "set_origin", "classIoss_1_1Property.html#a3c513fe238508b847c0296edeed65850", null ],
-    [ "swap", "classIoss_1_1Property.html#aff46dbb8609b7fc04164441e823034a3", null ],
     [ "data_", "classIoss_1_1Property.html#a1a10eb0d2e140c303dc1cc1ed9005c52", null ],
     [ "name_", "classIoss_1_1Property.html#a156bcdae811a0ff32bfb6a44bc155213", null ],
     [ "origin_", "classIoss_1_1Property.html#a014a03fab7d4bdf556374c7a22c00a83", null ],

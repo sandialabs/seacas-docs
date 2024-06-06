@@ -10,7 +10,7 @@ var classIocgns_1_1Utils =
     [ "assign_zones_to_procs", "classIocgns_1_1Utils.html#a171e83bdb57a7f8efc36b8660ab54e16", null ],
     [ "cgns_error", "classIocgns_1_1Utils.html#a34010e9b0618c248e1df20ff38800bda", null ],
     [ "check_mesh_type", "classIocgns_1_1Utils.html#a303eced538cfd6bc29e7195e492b74c2", null ],
-    [ "common_write_meta_data", "classIocgns_1_1Utils.html#a4436c119a691be04b8407f0f69185161", null ],
+    [ "common_write_metadata", "classIocgns_1_1Utils.html#a6045e3b6e873c2d94082958ce953347a", null ],
     [ "decompose_model", "classIocgns_1_1Utils.html#a00710fb5205a3489fc07482a546bc807", null ],
     [ "decompose_name", "classIocgns_1_1Utils.html#aedefa8e6c4e5bbc9b8f2fca0bffb0874", null ],
     [ "decompose_sb_name", "classIocgns_1_1Utils.html#abdd0546fa90c34a1ec51a51572aa299d", null ],

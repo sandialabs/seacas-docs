@@ -1,7 +1,7 @@
 var structIogn_1_1ExodusData =
 [
     [ "ExodusData", "structIogn_1_1ExodusData.html#a32f06c8adbde1b94a90d23f01fbebc93", null ],
-    [ "ExodusData", "structIogn_1_1ExodusData.html#a9eb135cd393bdb07c0180bab5b8b3b6b", null ],
+    [ "ExodusData", "structIogn_1_1ExodusData.html#a4567a5baa60415d54206a17c153cabca", null ],
     [ "blockTopologicalData", "structIogn_1_1ExodusData.html#aaf968ac6e36fdc550236c07d6954568d", null ],
     [ "coordinates", "structIogn_1_1ExodusData.html#a59727f4c77c5359b3a0a302fd73079a8", null ],
     [ "elementBlockConnectivity", "structIogn_1_1ExodusData.html#aff6f330a40242d78ddf3d27a2a219a41", null ],
@@ -12,5 +12,5 @@ var structIogn_1_1ExodusData =
     [ "localNumberOfElementsInBlock", "structIogn_1_1ExodusData.html#acc2dc76db9789a95095faf7d0d66fb7b", null ],
     [ "sharedNodes", "structIogn_1_1ExodusData.html#a1e00c93b859a22e52f51b50e586bcdff", null ],
     [ "sidesetConnectivity", "structIogn_1_1ExodusData.html#a3d3302a917d5acf85777004d12189ff2", null ],
-    [ "sidesetTouchingBlocks", "structIogn_1_1ExodusData.html#ac9250d64d6f7a36ba00e39374ea33c5b", null ]
+    [ "sidesetTouchingBlocks", "structIogn_1_1ExodusData.html#a07e21eb63a5dc309ddfdb84c64302b57", null ]
 ];

@@ -1,5 +1,6 @@
 var ex__utils_8c =
 [
+    [ "_GNU_SOURCE", "ex__utils_8c.html#a369266c24eacffb87046522897a570d5", null ],
     [ "EX_QSORT_CUTOFF", "ex__utils_8c.html#ad80acff89f02005080373bf6cf4ff468", null ],
     [ "MAGIC_NUMBER_LEN", "ex__utils_8c.html#ac9417fa0bdbbdb8ed8ab47ef644a4097", null ],
     [ "ex_config", "group__Utilities.html#gaf3ed2756fa964a65d584ab71f9c136aa", null ],
@@ -34,6 +35,7 @@ var ex__utils_8c =
     [ "exi_get_name", "group__Internal.html#ga829c271b1f608789a12c329bc91e9c99", null ],
     [ "exi_get_names", "group__Internal.html#gaa1930117c78e34ffdfa647a78f4f92dc", null ],
     [ "exi_get_stat_ptr", "group__Internal.html#gaf5db62b0eadf5c3ca8f8bb9bd6b68e67", null ],
+    [ "exi_get_varid", "group__Internal.html#ga2b663af87272b92746997d3af54e3f64", null ],
     [ "exi_handle_mode", "group__Internal.html#gacfe28f846640d5c156eba5fb96fff3b0", null ],
     [ "exi_id_lkup", "group__Internal.html#gae7c7014855c1a0526e3225d6dd1b3c59", null ],
     [ "exi_inc_file_item", "group__Internal.html#gaf04fab16a5ed853f2a65a32b5a72a593", null ],

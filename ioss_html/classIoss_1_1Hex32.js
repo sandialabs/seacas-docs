@@ -1,6 +1,5 @@
 var classIoss_1_1Hex32 =
 [
-    [ "Hex32", "classIoss_1_1Hex32.html#ad0834e8824a733e63b83e0cf775f346a", null ],
     [ "Hex32", "classIoss_1_1Hex32.html#a5bb1ff50ef9efe63b30bb06b2c0d8d41", null ],
     [ "edge_connectivity", "classIoss_1_1Hex32.html#a8dca9b4e75089809b8e1fd69345c5b7e", null ],
     [ "edge_type", "classIoss_1_1Hex32.html#a0ac4f13ce6fb87c273572125541021e4", null ],

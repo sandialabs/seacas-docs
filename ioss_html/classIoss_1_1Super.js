@@ -1,7 +1,6 @@
 var classIoss_1_1Super =
 [
     [ "Super", "classIoss_1_1Super.html#a6d1150abed71c20f2d7cc03b663b0da1", null ],
-    [ "Super", "classIoss_1_1Super.html#a34f60045bf4160ec7fb3b21215da0f8a", null ],
     [ "~Super", "classIoss_1_1Super.html#a902405be401efebb5a7f73de3e764da0", null ],
     [ "base_topology_permutation_name", "classIoss_1_1Super.html#a76f84c1da4ff97882beef62e2facacec", null ],
     [ "edge_connectivity", "classIoss_1_1Super.html#adf1a2981303c82d94a492468047238ca", null ],

@@ -5,7 +5,7 @@ var classIoss_1_1SideSet =
     [ "~SideSet", "classIoss_1_1SideSet.html#aa2c407be09b017577f6a5c4821227012", null ],
     [ "add", "classIoss_1_1SideSet.html#abeaee6e47909229b7ee51f5567255ed8", null ],
     [ "block_count", "classIoss_1_1SideSet.html#af05b1283360f76d4ab8d537ee9684d00", null ],
-    [ "block_membership", "classIoss_1_1SideSet.html#a96b977141d6eba017e57c18cc5674cdc", null ],
+    [ "block_membership", "classIoss_1_1SideSet.html#acf3a88f6ba79ca9770e6800ad105865c", null ],
     [ "contains_string", "classIoss_1_1SideSet.html#aa494f997510152e5370f5120c7bbfc72", null ],
     [ "equal", "classIoss_1_1SideSet.html#a3445ac305210e161cfc58bb68d6abd45", null ],
     [ "equal_", "classIoss_1_1SideSet.html#a2f746982a5eae6ffcd1c9157f3524466", null ],
@@ -23,6 +23,6 @@ var classIoss_1_1SideSet =
     [ "side_block_count", "classIoss_1_1SideSet.html#a0d2e4054da971ac967923d50d47c9504", null ],
     [ "type", "classIoss_1_1SideSet.html#a8a3979b55ffd5110565fda7c599da096", null ],
     [ "type_string", "classIoss_1_1SideSet.html#a4bab410b925c8e2cae937392df092232", null ],
-    [ "blockMembership", "classIoss_1_1SideSet.html#a343b74a4420c315316edd45cbc49b746", null ],
+    [ "blockMembership", "classIoss_1_1SideSet.html#add7ffc25b4726029e260167ef7ce8272", null ],
     [ "sideBlocks", "classIoss_1_1SideSet.html#a158c8043b5599eb3205e258870ae7f02", null ]
 ];

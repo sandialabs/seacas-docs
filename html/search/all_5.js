@@ -9,7 +9,7 @@ var searchData=
   ['and_20sphere_6',['Circle and Sphere',['../element_types.html#circle',1,'']]],
   ['api_7',['Fortran API',['../index.html#int64_fortran_api',1,'']]],
   ['api_20documentation_8',['Exodus API Documentation',['../index.html',1,'']]],
-  ['api_20functions_9',['Structures used by external API functions.',['../group__APIStructs.html',1,'']]],
+  ['api_20functions_9',['API functions',['../nemesis-mapping.html',1,'Mapping of nemesis API functions to Exodus API functions'],['../group__APIStructs.html',1,'Structures used by external API functions.']]],
   ['api_20functions_20to_20exodus_20api_20functions_10',['Mapping of nemesis API functions to Exodus API functions',['../nemesis-mapping.html',1,'']]],
   ['arbitrary_20polyhedra_20elements_20in_20exodus_11',['Storage of 3D arbitrary polyhedra elements in Exodus.',['../polyhedra.html#poly',1,'']]],
   ['assembly_5fcount_12',['assembly_count',['../structexi__file__item.html#a984deed15461b0529554c566e6c2fe04',1,'exi_file_item']]],

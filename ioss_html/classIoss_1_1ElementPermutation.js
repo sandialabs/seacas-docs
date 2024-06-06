@@ -1,7 +1,5 @@
 var classIoss_1_1ElementPermutation =
 [
-    [ "ElementPermutation", "classIoss_1_1ElementPermutation.html#a6d316b8ed9b0e330bf83fbc8d5f12ca9", null ],
-    [ "~ElementPermutation", "classIoss_1_1ElementPermutation.html#ad4a706a0457c3d9aa1a0fc2efa089e4f", null ],
     [ "ElementPermutation", "classIoss_1_1ElementPermutation.html#a86833525d5b329c111841bb9fbb6324e", null ],
     [ "describe", "classIoss_1_1ElementPermutation.html#aa97739fcba4b0c34d8357f93c9607c26", null ],
     [ "describe", "classIoss_1_1ElementPermutation.html#af29818d0ffb00dedcb7fd77216fe0ec8", null ],
@@ -14,7 +12,6 @@ var classIoss_1_1ElementPermutation =
     [ "num_permutations", "classIoss_1_1ElementPermutation.html#a3dc4f3489704ec1470768a82b9497d6c", null ],
     [ "num_positive_permutations", "classIoss_1_1ElementPermutation.html#a6e32678bb4b9f7b492e0e21365bd16c0", null ],
     [ "operator!=", "classIoss_1_1ElementPermutation.html#a0e03def93269edc7f35cfb50466f6675", null ],
-    [ "operator=", "classIoss_1_1ElementPermutation.html#a5272e95375149c75580c35e5ac7a5725", null ],
     [ "operator==", "classIoss_1_1ElementPermutation.html#a9383c95ed85b6be629f714e75dcc5ce2", null ],
     [ "permutation_indices", "classIoss_1_1ElementPermutation.html#a8b01eb882091520aa7ca11f54be8121e", null ],
     [ "registry", "classIoss_1_1ElementPermutation.html#aaf7796a85ccda86eaab0237119398805", null ],

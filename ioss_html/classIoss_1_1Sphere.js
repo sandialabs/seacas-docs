@@ -1,8 +1,6 @@
 var classIoss_1_1Sphere =
 [
-    [ "Sphere", "classIoss_1_1Sphere.html#a5f96c6d69bda30de233e7dee7e9fef78", null ],
     [ "Sphere", "classIoss_1_1Sphere.html#a20e7bcd9f1d9903aa755e34204a6891e", null ],
-    [ "base_topology_permutation_name", "classIoss_1_1Sphere.html#acb015302076711c791c2bb0211d30234", null ],
     [ "edge_connectivity", "classIoss_1_1Sphere.html#afc7507301545a3bb973db0d74eb15e87", null ],
     [ "edge_type", "classIoss_1_1Sphere.html#a36379493784eb71d9287a18ba6ad4ada", null ],
     [ "element_connectivity", "classIoss_1_1Sphere.html#aebc65aad81db9fcafd5ff1a181935333", null ],

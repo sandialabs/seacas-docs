@@ -8,6 +8,8 @@ var classIocatalyst_1_1BlockMesh =
     [ "IDList", "classIocatalyst_1_1BlockMesh.html#a85ca78516e6e96544a95cba8fef8f152", null ],
     [ "BlockMesh", "classIocatalyst_1_1BlockMesh.html#ab5f8be1de1c51c81042269ae5a416ecc", null ],
     [ "~BlockMesh", "classIocatalyst_1_1BlockMesh.html#abcc12678ff957e22385ba2cd65e05c59", null ],
+    [ "addTransientCellField", "classIocatalyst_1_1BlockMesh.html#ad772f59ecae67d36224590bab41836f5", null ],
+    [ "addTransientPointField", "classIocatalyst_1_1BlockMesh.html#ac131dd5c0072cf1477f8b84ce2c3872e", null ],
     [ "fillExtents", "classIocatalyst_1_1BlockMesh.html#adc5dfcac236cc2bd48c951bfa7abaee6", null ],
     [ "getBlockConnectivityPointIDs", "classIocatalyst_1_1BlockMesh.html#a877055082faa947f88f3a7a9a8d4d3b2", null ],
     [ "getCoordsForID", "classIocatalyst_1_1BlockMesh.html#a7093d283eba25a4cc0797af16ee76b1c", null ],
@@ -33,6 +35,8 @@ var classIocatalyst_1_1BlockMesh =
     [ "getPartitionStart", "classIocatalyst_1_1BlockMesh.html#a1959675c7d382c9bedf13d5c0291b605", null ],
     [ "getPointCoordsForPointID", "classIocatalyst_1_1BlockMesh.html#af15a561beb55ab43356eeb8d415d0ec3", null ],
     [ "getPointIDfromCoords", "classIocatalyst_1_1BlockMesh.html#a5e40f47abd8a0d5e6f5fa078c295269f", null ],
+    [ "getTransientCellFieldMap", "classIocatalyst_1_1BlockMesh.html#a86b750a6326f574c6b3b05e689d672dd", null ],
+    [ "getTransientPointFieldMap", "classIocatalyst_1_1BlockMesh.html#a900889ffda47024a6c2cead37a5bb6b6", null ],
     [ "init", "classIocatalyst_1_1BlockMesh.html#a437ee023735995f808b44cc077ca7651", null ],
     [ "isPartitionEmpty", "classIocatalyst_1_1BlockMesh.html#a43541c222052c8e7484144d1e9194baa", null ],
     [ "setPartitionEmpty", "classIocatalyst_1_1BlockMesh.html#aade03437c9546d805fe8ce1292b117d8", null ],
@@ -51,5 +55,7 @@ var classIocatalyst_1_1BlockMesh =
     [ "partition", "classIocatalyst_1_1BlockMesh.html#a1cbda785113c6115eb92686dd42bb35e", null ],
     [ "partitionExtents", "classIocatalyst_1_1BlockMesh.html#a744e8ef9ce055a0e39ca280953247393", null ],
     [ "partitionStart", "classIocatalyst_1_1BlockMesh.html#a28b75e8009b22fcb5584947f2fd2aa77", null ],
-    [ "POINT_OFFSET", "classIocatalyst_1_1BlockMesh.html#ab4366924e330f2d84a3b4b2836354f8a", null ]
+    [ "POINT_OFFSET", "classIocatalyst_1_1BlockMesh.html#ab4366924e330f2d84a3b4b2836354f8a", null ],
+    [ "transientCellFields", "classIocatalyst_1_1BlockMesh.html#a121b5e1c4fe1ddabb823d29e4a1d91f5", null ],
+    [ "transientPointFields", "classIocatalyst_1_1BlockMesh.html#a5b8134799a8093579a1ad5d8ea60c85d", null ]
 ];

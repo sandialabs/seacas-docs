@@ -1,6 +1,5 @@
 var classIoss_1_1Wedge52 =
 [
-    [ "Wedge52", "classIoss_1_1Wedge52.html#a24c5625347c538fe9175633496dfebba", null ],
     [ "Wedge52", "classIoss_1_1Wedge52.html#a7ee5d9cbecff2854b41e8a6206f82730", null ],
     [ "edge_connectivity", "classIoss_1_1Wedge52.html#a597ef7586e8d5e2e6e777af57cb7e7cc", null ],
     [ "edge_type", "classIoss_1_1Wedge52.html#aaf98a8e1d739985d98e030c4f28bd65f", null ],

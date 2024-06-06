@@ -1,6 +1,5 @@
 var classIoss_1_1Hex27 =
 [
-    [ "Hex27", "classIoss_1_1Hex27.html#adc6be219a3c585e0822bc7cb1c7ca640", null ],
     [ "Hex27", "classIoss_1_1Hex27.html#a8177bf3147c0315781588842c4528632", null ],
     [ "edge_connectivity", "classIoss_1_1Hex27.html#a63f35e27689db7bedee730684123e143", null ],
     [ "edge_type", "classIoss_1_1Hex27.html#a886168ec49d32ccc84fb1ed60e7a2d24", null ],

@@ -30,6 +30,8 @@ var hierarchy =
     [ "Ioss::glob::Automata< charT >", "classIoss_1_1glob_1_1Automata.html", null ],
     [ "Ioss::AxisAlignedBoundingBox", "structIoss_1_1AxisAlignedBoundingBox.html", null ],
     [ "Ioss::glob::BasicGlob< charT, globT >", "classIoss_1_1glob_1_1BasicGlob.html", null ],
+    [ "Ioss::Basis", "structIoss_1_1Basis.html", null ],
+    [ "Ioss::BasisComponent", "structIoss_1_1BasisComponent.html", null ],
     [ "tsl::bhopscotch_map< Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1bhopscotch__map.html", null ],
     [ "tsl::bhopscotch_set< Key, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >", "classtsl_1_1bhopscotch__set.html", null ],
     [ "Ioex::Blob", "structIoex_1_1Blob.html", null ],
@@ -261,16 +263,16 @@ var hierarchy =
     [ "adios2::Engine", null, [
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
-    [ "Iotm::text_mesh::EntityGroup< GroupData >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
-      [ "Iotm::text_mesh::Sidesets< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ]
-    ] ],
+    [ "Iotm::text_mesh::EntityGroup< GroupData >", "classIotm_1_1text__mesh_1_1EntityGroup.html", null ],
     [ "Iotm::text_mesh::EntityGroup< AssemblyData >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
       [ "Iotm::text_mesh::Assemblies< EntityId >", "classIotm_1_1text__mesh_1_1Assemblies.html", null ]
     ] ],
     [ "Iotm::text_mesh::EntityGroup< NodesetData< EntityId > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
       [ "Iotm::text_mesh::Nodesets< EntityId >", "classIotm_1_1text__mesh_1_1Nodesets.html", null ]
     ] ],
-    [ "Iotm::text_mesh::EntityGroup< SidesetData< EntityId, Iotm::TopologyMapEntry > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", null ],
+    [ "Iotm::text_mesh::EntityGroup< SidesetData< EntityId, Iotm::TopologyMapEntry > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
+      [ "Iotm::text_mesh::Sidesets< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ]
+    ] ],
     [ "Iotm::text_mesh::EntityGroup< SidesetData< EntityId, Topology > >", "classIotm_1_1text__mesh_1_1EntityGroup.html", [
       [ "Iotm::text_mesh::Sidesets< EntityId, Topology >", "classIotm_1_1text__mesh_1_1Sidesets.html", null ]
     ] ],
@@ -465,12 +467,13 @@ var hierarchy =
     [ "Iocatalyst::BlockMesh::Partition", "structIocatalyst_1_1BlockMesh_1_1Partition.html", null ],
     [ "Iovs::PhactoriParserInterface", "classIovs_1_1PhactoriParserInterface.html", null ],
     [ "Iocatalyst::BlockMesh::Point", "structIocatalyst_1_1BlockMesh_1_1Point.html", null ],
-    [ "tsl::hh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", [
+    [ "tsl::hh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", null ],
+    [ "tsl::rh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", null ],
+    [ "tsl::hh::power_of_two_growth_policy< 2 >", "classtsl_1_1hh_1_1power__of__two__growth__policy.html", [
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< const Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< const Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ],
       [ "tsl::detail_hopscotch_hash::hopscotch_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, 62, false, tsl::hh::power_of_two_growth_policy< 2 >, overflow_container_type >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__hash.html", null ]
     ] ],
-    [ "tsl::rh::power_of_two_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", null ],
     [ "tsl::rh::power_of_two_growth_policy< 2 >", "classtsl_1_1rh_1_1power__of__two__growth__policy.html", [
       [ "tsl::detail_robin_hash::robin_hash< std::pair< std::string, Field >, KeySelect, ValueSelect, std::hash< std::string >, std::equal_to< std::string >, std::allocator< std::pair< std::string, Field > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< std::pair< std::string, Property >, KeySelect, ValueSelect, std::hash< std::string >, std::equal_to< std::string >, std::allocator< std::pair< std::string, Property > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
@@ -482,6 +485,7 @@ var hierarchy =
     [ "Ioss::Property", "classIoss_1_1Property.html", null ],
     [ "Iofaodel::property_entry_t", "structIofaodel_1_1property__entry__t.html", null ],
     [ "Ioss::PropertyManager", "classIoss_1_1PropertyManager.html", null ],
+    [ "Ioss::QuadraturePoint", "structIoss_1_1QuadraturePoint.html", null ],
     [ "anonymous_namespace{Iocgns_StructuredZoneData.C}::Range", "structanonymous__namespace_02Iocgns__StructuredZoneData_8C_03_1_1Range.html", null ],
     [ "anonymous_namespace{Iocgns_Utils.C}::Range", "structanonymous__namespace_02Iocgns__Utils_8C_03_1_1Range.html", null ],
     [ "Ioex::Redefine", "classIoex_1_1Redefine.html", null ],
@@ -511,11 +515,12 @@ var hierarchy =
     ] ],
     [ "Iogn::SharedNode", "structIogn_1_1SharedNode.html", null ],
     [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Topology >", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html", [
-      [ "Iotm::text_mesh::SidesetSkinner< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", null ],
       [ "Iotm::text_mesh::SidesetSkinner< EntityId, Topology >", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", null ],
       [ "anonymous_namespace{UnitTestIotmTextMeshFixture.h}::TestTextMeshGraph::TextMeshGraph", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMeshGraph_1_1TextMeshGraph.html", null ]
     ] ],
-    [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html", null ],
+    [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html", [
+      [ "Iotm::text_mesh::SidesetSkinner< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", null ]
+    ] ],
     [ "Iofaodel::sideblock_entry_t", "structIofaodel_1_1sideblock__entry__t.html", null ],
     [ "Iotm::text_mesh::SideBlockInfo", "structIotm_1_1text__mesh_1_1SideBlockInfo.html", null ],
     [ "SideEntryLess", "structSideEntryLess.html", null ],
@@ -609,6 +614,8 @@ var hierarchy =
       [ "Ioss::Asym_Tensor_01", "classIoss_1_1Asym__Tensor__01.html", null ],
       [ "Ioss::Asym_Tensor_02", "classIoss_1_1Asym__Tensor__02.html", null ],
       [ "Ioss::Asym_Tensor_03", "classIoss_1_1Asym__Tensor__03.html", null ],
+      [ "Ioss::BasisVariableType", "classIoss_1_1BasisVariableType.html", null ],
+      [ "Ioss::ComposedVariableType", "classIoss_1_1ComposedVariableType.html", null ],
       [ "Ioss::CompositeVariableType", "classIoss_1_1CompositeVariableType.html", null ],
       [ "Ioss::ConstructedVariableType", "classIoss_1_1ConstructedVariableType.html", null ],
       [ "Ioss::ElementVariableType", "classIoss_1_1ElementVariableType.html", [
@@ -688,6 +695,7 @@ var hierarchy =
       [ "Ioss::Matrix_22", "classIoss_1_1Matrix__22.html", null ],
       [ "Ioss::Matrix_33", "classIoss_1_1Matrix__33.html", null ],
       [ "Ioss::NamedSuffixVariableType", "classIoss_1_1NamedSuffixVariableType.html", null ],
+      [ "Ioss::QuadratureVariableType", "classIoss_1_1QuadratureVariableType.html", null ],
       [ "Ioss::Quaternion_2D", "classIoss_1_1Quaternion__2D.html", null ],
       [ "Ioss::Quaternion_3D", "classIoss_1_1Quaternion__3D.html", null ],
       [ "Ioss::Scalar", "classIoss_1_1Scalar.html", null ],

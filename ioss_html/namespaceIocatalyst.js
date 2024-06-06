@@ -99,6 +99,7 @@ var namespaceIocatalyst =
       [ "STATETIME", "namespaceIocatalyst_1_1detail.html#ab48bddcb91aef867c8a9753c69e5aeb7", null ],
       [ "STORAGE", "namespaceIocatalyst_1_1detail.html#aee3559b233eaad916f85c691caed48c1", null ],
       [ "STRUCTUREDBLOCKS", "namespaceIocatalyst_1_1detail.html#a4c2fc7912bffb8b82642aa130afcc80c", null ],
+      [ "SURFACESPLITTYPE", "namespaceIocatalyst_1_1detail.html#aa988b2d39b770570e03df1bed8ab49a8", null ],
       [ "TIME", "namespaceIocatalyst_1_1detail.html#a205c09964cfb8b8202425f58022e4fae", null ],
       [ "TOPOLOGYTYPE", "namespaceIocatalyst_1_1detail.html#aa485e675c886fa4845aa86747ccea287", null ],
       [ "TRANSFORM", "namespaceIocatalyst_1_1detail.html#a941680aac3ba3aa1c1f152cdd5121627", null ],

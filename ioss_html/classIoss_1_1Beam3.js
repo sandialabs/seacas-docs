@@ -1,6 +1,5 @@
 var classIoss_1_1Beam3 =
 [
-    [ "Beam3", "classIoss_1_1Beam3.html#a541fef0944afb350b7f6ae01b7568104", null ],
     [ "Beam3", "classIoss_1_1Beam3.html#a2f4b9159a626d0ccd999062ec5e863c8", null ],
     [ "edge_connectivity", "classIoss_1_1Beam3.html#a71f7b42bc986184e221c35e92f6603d9", null ],
     [ "edge_type", "classIoss_1_1Beam3.html#ab8b2affd58c19f0a4c5a0a767d17ec87", null ],

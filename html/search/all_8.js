@@ -110,8 +110,9 @@ var searchData=
   ['dim_5fstr_107',['DIM_STR',['../group__Internal.html#gae826ec8d39ea9a6fb53c64e16bfd99ac',1,'exodusII_int.h']]],
   ['dim_5fstr_5fname_108',['DIM_STR_NAME',['../group__Internal.html#ga95d6193c4ed4ad962e5cf643e02a7d87',1,'exodusII_int.h']]],
   ['dim_5ftime_109',['DIM_TIME',['../group__Internal.html#ga2377424094138ff3b6336928de5ae54a',1,'exodusII_int.h']]],
-  ['dims_110',['dims',['../structncvar.html#ad53320e5adc773ef4f72f94b9dbfc5e8',1,'ncvar']]],
-  ['distribution_5ffactor_5flist_111',['distribution_factor_list',['../structex__set.html#a55b371867c6117ddf2938c498f5fda32',1,'ex_set']]],
-  ['documentation_112',['Exodus API Documentation',['../index.html',1,'']]],
-  ['doxygen_2eh_113',['doxygen.h',['../doxygen_8h.html',1,'']]]
+  ['dimension_110',['dimension',['../structex__quadrature.html#a13c025c2c26f8049e6211bd9d637f9d4',1,'ex_quadrature']]],
+  ['dims_111',['dims',['../structncvar.html#ad53320e5adc773ef4f72f94b9dbfc5e8',1,'ncvar']]],
+  ['distribution_5ffactor_5flist_112',['distribution_factor_list',['../structex__set.html#a55b371867c6117ddf2938c498f5fda32',1,'ex_set']]],
+  ['documentation_113',['Exodus API Documentation',['../index.html',1,'']]],
+  ['doxygen_2eh_114',['doxygen.h',['../doxygen_8h.html',1,'']]]
 ];

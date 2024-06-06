@@ -1,6 +1,5 @@
 var classIoss_1_1Tet40 =
 [
-    [ "Tet40", "classIoss_1_1Tet40.html#a2e6ec3abba50dd8b32dbc0e3d63a6ea3", null ],
     [ "Tet40", "classIoss_1_1Tet40.html#a95dda86f6a89ace7cbcefb037b22faa5", null ],
     [ "edge_connectivity", "classIoss_1_1Tet40.html#ad7276bb3c9b5fc9f2657c5ce4c83d784", null ],
     [ "edge_type", "classIoss_1_1Tet40.html#aeebf07d25c48e5268a55feda64071bef", null ],

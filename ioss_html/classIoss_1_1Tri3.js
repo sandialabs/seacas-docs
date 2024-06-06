@@ -1,6 +1,5 @@
 var classIoss_1_1Tri3 =
 [
-    [ "Tri3", "classIoss_1_1Tri3.html#a44fb0127fc9e6387d76a56fdbb6aea36", null ],
     [ "Tri3", "classIoss_1_1Tri3.html#a97ebfc797a34a6a75effb91965372580", null ],
     [ "edge_connectivity", "classIoss_1_1Tri3.html#a1dd94af979b99b166e4a97399d4aaa18", null ],
     [ "edge_type", "classIoss_1_1Tri3.html#afbfec6c87e7f29b04e226a6b921eb4b5", null ],

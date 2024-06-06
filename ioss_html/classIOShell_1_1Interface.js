@@ -45,6 +45,8 @@ var classIOShell_1_1Interface =
     [ "netcdf3", "classIOShell_1_1Interface.html#ae9e8087ace2f27193a7f9773455c5b0e", null ],
     [ "netcdf4", "classIOShell_1_1Interface.html#a4a34a8493c19286b91e772b9eb250929", null ],
     [ "netcdf5", "classIOShell_1_1Interface.html#aacbb19a0041034880a62897a34cfc2d6", null ],
+    [ "omitted_blocks", "classIOShell_1_1Interface.html#a7da8b38c47b8f1a0cfb6e6c514dea548", null ],
+    [ "omitted_sets", "classIOShell_1_1Interface.html#ac78d2244ca39f70b2a93ce3a11d3f831", null ],
     [ "options_", "classIOShell_1_1Interface.html#a95d77f1c1056a655e95572d8127c01a8", null ],
     [ "outFiletype", "classIOShell_1_1Interface.html#a255190d4b53ca8e5ed9c2de36c6db99e", null ],
     [ "outputFile", "classIOShell_1_1Interface.html#af3dac76466afe55418148ba97dced33b", null ],

@@ -377,6 +377,7 @@ var exodusII__int_8h =
     [ "exi_get_nodal_var_time", "group__Internal.html#ga9947ffa3d0a43577e176e9be15578f0a", null ],
     [ "exi_get_partial_nodal_var", "group__Internal.html#ga53cc30ef3bfb5af6dacc3cef4009caec", null ],
     [ "exi_get_stat_ptr", "group__Internal.html#gaf5db62b0eadf5c3ca8f8bb9bd6b68e67", null ],
+    [ "exi_get_varid", "group__Internal.html#ga2b663af87272b92746997d3af54e3f64", null ],
     [ "exi_handle_mode", "group__Internal.html#gacfe28f846640d5c156eba5fb96fff3b0", null ],
     [ "exi_id_lkup", "group__Internal.html#gae7c7014855c1a0526e3225d6dd1b3c59", null ],
     [ "exi_inc_file_item", "group__Internal.html#gaf04fab16a5ed853f2a65a32b5a72a593", null ],

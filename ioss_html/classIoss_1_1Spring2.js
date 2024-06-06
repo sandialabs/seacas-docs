@@ -1,6 +1,5 @@
 var classIoss_1_1Spring2 =
 [
-    [ "Spring2", "classIoss_1_1Spring2.html#a8f33f99af86684c99b711e47f1c42266", null ],
     [ "Spring2", "classIoss_1_1Spring2.html#a711b0d0544ebd7756e1b7b445d878567", null ],
     [ "edge_connectivity", "classIoss_1_1Spring2.html#a05e370cfc76396badefcf5d696ce83ca", null ],
     [ "edge_type", "classIoss_1_1Spring2.html#abef4030bc3a67b534d0d00520826ad51", null ],

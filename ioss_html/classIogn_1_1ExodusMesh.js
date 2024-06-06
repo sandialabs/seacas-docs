@@ -29,7 +29,7 @@ var classIogn_1_1ExodusMesh =
     [ "sideset_count", "classIogn_1_1ExodusMesh.html#aed8f7ea74432cdb996230d60a6043850", null ],
     [ "sideset_elem_sides", "classIogn_1_1ExodusMesh.html#afe3bb8943aeea6598b1c2f7e54f2c532", null ],
     [ "sideset_side_count_proc", "classIogn_1_1ExodusMesh.html#aa1abff5fd86c3b561bb95cb245202227", null ],
-    [ "sideset_touching_blocks", "classIogn_1_1ExodusMesh.html#ad99efa8471084a0e2b8c168674f4e47d", null ],
+    [ "sideset_touching_blocks", "classIogn_1_1ExodusMesh.html#a4272eb7db881146ebd9d2cffb6cf23e9", null ],
     [ "topology_type", "classIogn_1_1ExodusMesh.html#aeba5d79ab480d02e077c3d5b114f5337", null ],
     [ "mElementOffsetForBlock", "classIogn_1_1ExodusMesh.html#acfb7baea4bf762edb1076a976a75b055", null ],
     [ "mExodusData", "classIogn_1_1ExodusMesh.html#ae75503dc4e3be1224fc57af8172a75f7", null ],

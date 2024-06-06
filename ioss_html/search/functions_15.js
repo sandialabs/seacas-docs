@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['valid_5fdecomp_5fmethods_0',['valid_decomp_methods',['../namespaceIoss.html#afc8a55ef023ee9aa5702d62e1b3a7917',1,'Ioss']]],
+  ['valid_5fdecomp_5fmethods_0',['valid_decomp_methods',['../namespaceIoss.html#ab71cc5f9234df8232ff4f720ab6dbfe7',1,'Ioss']]],
   ['valid_5fpermutation_1',['valid_permutation',['../classIoss_1_1ElementPermutation.html#a7274c22043539f6144ee9f102b2f42a6',1,'Ioss::ElementPermutation::valid_permutation()'],['../classIotm_1_1TopologyMapEntry.html#a398375a61f648adf4a2fbeda4dd088da',1,'Iotm::TopologyMapEntry::valid_permutation()']]],
   ['valid_5frange_2',['valid_range',['../namespaceanonymous__namespace_02Ioss__ZoneConnectivity_8C_03.html#a14cceeba0c349c1043fca16ef139525b',1,'anonymous_namespace{Ioss_ZoneConnectivity.C}']]],
   ['valid_5fside_3',['valid_side',['../classIotm_1_1TopologyMapEntry.html#a76925099b7045ffbaef6fec71a320c85',1,'Iotm::TopologyMapEntry']]],
@@ -13,7 +13,7 @@ var searchData=
   ['validate_5fnode_5fcount_10',['validate_node_count',['../classIotm_1_1text__mesh_1_1TextMeshParser.html#ab96a5958050f9948a598ab1dd690f193',1,'Iotm::text_mesh::TextMeshParser']]],
   ['validate_5fnodesets_11',['validate_nodesets',['../classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a9767ea1e2de79cce81b77576d8fb1a55',1,'Iotm::text_mesh::TextMeshOptionParser']]],
   ['validate_5fnum_5fcoordinates_12',['validate_num_coordinates',['../classIotm_1_1text__mesh_1_1Coordinates.html#a12cadb8f4cdb2d424c8e5e31e95b568e',1,'Iotm::text_mesh::Coordinates']]],
-  ['validate_5fpermutation_5fnodes_13',['validate_permutation_nodes',['../classIoss_1_1Node.html#a4d45ab9f7fdc45be33971c86de5d2fe4',1,'Ioss::Node::validate_permutation_nodes()'],['../classIoss_1_1ElementTopology.html#abfa975910d6a14c27ac9c1d54afad568',1,'Ioss::ElementTopology::validate_permutation_nodes()']]],
+  ['validate_5fpermutation_5fnodes_13',['validate_permutation_nodes',['../classIoss_1_1Node.html#a4d45ab9f7fdc45be33971c86de5d2fe4',1,'Ioss::Node::validate_permutation_nodes()'],['../classIoss_1_1ElementTopology.html#a339d6689a5cba65fe885064a62f2503b',1,'Ioss::ElementTopology::validate_permutation_nodes()']]],
   ['validate_5frequired_5ffield_14',['validate_required_field',['../classIotm_1_1text__mesh_1_1TextMeshParser.html#a90537791896873fbeba1287e934906c3',1,'Iotm::text_mesh::TextMeshParser']]],
   ['validate_5fsidesets_15',['validate_sidesets',['../classIotm_1_1text__mesh_1_1TextMeshOptionParser.html#a669e764b339832f9b9944e12414e1408',1,'Iotm::text_mesh::TextMeshOptionParser']]],
   ['validate_5fsymmetric_5fcommunications_16',['validate_symmetric_communications',['../namespaceanonymous__namespace_02cgns__decomp_8C_03.html#a501f1819ac2d0c49f06006ed6b35a829',1,'anonymous_namespace{cgns_decomp.C}']]],
@@ -23,7 +23,7 @@ var searchData=
   ['variable_5fname_5fkluge_20',['variable_name_kluge',['../classIoss_1_1Utils.html#acf20ca98385d9714d71360ea6caaba2b',1,'Ioss::Utils']]],
   ['variabletype_21',['VariableType',['../classIoss_1_1VariableType.html#a62d077f86edeb22c10b84ce64d3cc5a4',1,'Ioss::VariableType::VariableType(const VariableType &amp;)=delete'],['../classIoss_1_1VariableType.html#a3a5ab22d5e75cb6aaa3031bf51ee9c83',1,'Ioss::VariableType::VariableType(const std::string &amp;type, int comp_count, bool delete_me=false)']]],
   ['vec_5fequal_22',['vec_equal',['../namespaceanonymous__namespace_02Ioss__StructuredBlock_8C_03.html#a6c42ec561854c4bcb971ec5773b2413f',1,'anonymous_namespace{Ioss_StructuredBlock.C}']]],
-  ['vector3d_23',['vector3d',['../classvector3d.html#aba3ee0309d1ed59d1e08425bba9422c5',1,'vector3d::vector3d()'],['../classvector3d.html#af7e00d71e8476fa945aa8a5ff45d4b00',1,'vector3d::vector3d(double X, double Y, double Z)'],['../classvector3d.html#ac0ab35b1172968f500be248738376d6d',1,'vector3d::vector3d(double location[3])'],['../classvector3d.html#a5e554e4055c3a4be09c5f4b8aa26d0f6',1,'vector3d::vector3d(const vector3d &amp;from)']]],
+  ['vector3d_23',['vector3d',['../classvector3d.html#abe32309d8da5685cc5262d403f4756e4',1,'vector3d::vector3d()=default'],['../classvector3d.html#af7e00d71e8476fa945aa8a5ff45d4b00',1,'vector3d::vector3d(double X, double Y, double Z)']]],
   ['vector_5f2d_24',['Vector_2D',['../classIoss_1_1Vector__2D.html#ad74685262abcaf7945fda2c074851d9b',1,'Ioss::Vector_2D::Vector_2D(const Vector_2D &amp;)=delete'],['../classIoss_1_1Vector__2D.html#ab256ecffcacb8843b5989cd305e21940',1,'Ioss::Vector_2D::Vector_2D()']]],
   ['vector_5f2d_25',['vector_2d',['../namespaceanonymous__namespace_02Ioss__ConcreteVariableType_8C_03.html#a5f61452e6fbcb33f5891c664966afbe1',1,'anonymous_namespace{Ioss_ConcreteVariableType.C}']]],
   ['vector_5f3d_26',['Vector_3D',['../classIoss_1_1Vector__3D.html#a863fb02d1e8872cc62ffab52d0d425e6',1,'Ioss::Vector_3D::Vector_3D(const Vector_3D &amp;)=delete'],['../classIoss_1_1Vector__3D.html#a77ee326b4ccd30fa714aba574842b14d',1,'Ioss::Vector_3D::Vector_3D()']]],

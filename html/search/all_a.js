@@ -17,7 +17,7 @@ var searchData=
   ['fortran_20implementation_14',['Fortran Implementation',['../index.html#int64_fortran_imp',1,'']]],
   ['fs_5fctr_5flist_15',['fs_ctr_list',['../ex__utils_8c.html#ae9030753a5a1f00ea947c8aa0d915272',1,'ex_utils.c']]],
   ['fset_5fvar_5ftab_16',['fset_var_tab',['../structex__var__params.html#aa27fc4c7d6b377bcab20b68279143f70',1,'ex_var_params']]],
-  ['functions_17',['Structures used by external API functions.',['../group__APIStructs.html',1,'']]],
+  ['functions_17',['functions',['../nemesis-mapping.html',1,'Mapping of nemesis API functions to Exodus API functions'],['../group__APIStructs.html',1,'Structures used by external API functions.']]],
   ['functions_20and_20defines_18',['Internal Functions and Defines',['../group__Internal.html',1,'']]],
   ['functions_20to_20exodus_20api_20functions_19',['Mapping of nemesis API functions to Exodus API functions',['../nemesis-mapping.html',1,'']]]
 ];

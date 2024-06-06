@@ -73,7 +73,10 @@ var classIocatalyst_1_1DatabaseIO =
     [ "put_field_internal", "classIocatalyst_1_1DatabaseIO.html#af7b4321c62448be1b72c9190d59dfcc2", null ],
     [ "read_meta_data_nl", "classIocatalyst_1_1DatabaseIO.html#a04a7c6f801d6d5022780299185e8c062", null ],
     [ "set_maximum_symbol_length", "classIocatalyst_1_1DatabaseIO.html#adb47e84a3dfb61bf1d46be5b6e3b5b78", null ],
+    [ "set_split_type_changed", "classIocatalyst_1_1DatabaseIO.html#a9ae96746fdc039726f6092ab27cbb868", null ],
+    [ "split_type_changed", "classIocatalyst_1_1DatabaseIO.html#a0691056df4aea2a6c20ac319241432f3", null ],
     [ "catPipeID", "classIocatalyst_1_1DatabaseIO.html#a2cd5e6b304ba1346c698e8f57395aa66", null ],
     [ "Impl", "classIocatalyst_1_1DatabaseIO.html#a4d0a5b9b49128cccc7af883f573887e9", null ],
+    [ "split_type_c", "classIocatalyst_1_1DatabaseIO.html#a4e4f248aaceeed27cbbc63333d921f86", null ],
     [ "useDeepCopy", "classIocatalyst_1_1DatabaseIO.html#a7ee1b430f928f71681e594bcc048b012", null ]
 ];
