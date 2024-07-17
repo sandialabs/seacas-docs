@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>exodus module &mdash; SEACAS 2023/07/12 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="_static/jquery.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
-        <script src="_static/clipboard.min.js"></script>
-        <script src="_static/copybutton.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=0d53da89"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -133,10 +135,6 @@
 <li><a class="reference internal" href="#id30"><code class="docutils literal notranslate"><span class="pre">ex_entity_type.EX_NODE_MAP</span></code></a></li>
 <li><a class="reference internal" href="#id31"><code class="docutils literal notranslate"><span class="pre">ex_entity_type.EX_NODE_SET</span></code></a></li>
 <li><a class="reference internal" href="#id32"><code class="docutils literal notranslate"><span class="pre">ex_entity_type.EX_SIDE_SET</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_entity_type.__contains__"><code class="docutils literal notranslate"><span class="pre">ex_entity_type.__contains__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_entity_type.__getitem__"><code class="docutils literal notranslate"><span class="pre">ex_entity_type.__getitem__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_entity_type.__iter__"><code class="docutils literal notranslate"><span class="pre">ex_entity_type.__iter__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_entity_type.__len__"><code class="docutils literal notranslate"><span class="pre">ex_entity_type.__len__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#exodus.ex_entity_type_to_objType"><code class="docutils literal notranslate"><span class="pre">ex_entity_type_to_objType()</span></code></a></li>
@@ -237,10 +235,6 @@
 <li><a class="reference internal" href="#exodus.ex_inquiry.EX_INQ_SS_PROP"><code class="docutils literal notranslate"><span class="pre">ex_inquiry.EX_INQ_SS_PROP</span></code></a></li>
 <li><a class="reference internal" href="#exodus.ex_inquiry.EX_INQ_TIME"><code class="docutils literal notranslate"><span class="pre">ex_inquiry.EX_INQ_TIME</span></code></a></li>
 <li><a class="reference internal" href="#exodus.ex_inquiry.EX_INQ_TITLE"><code class="docutils literal notranslate"><span class="pre">ex_inquiry.EX_INQ_TITLE</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_inquiry.__contains__"><code class="docutils literal notranslate"><span class="pre">ex_inquiry.__contains__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_inquiry.__getitem__"><code class="docutils literal notranslate"><span class="pre">ex_inquiry.__getitem__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_inquiry.__iter__"><code class="docutils literal notranslate"><span class="pre">ex_inquiry.__iter__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_inquiry.__len__"><code class="docutils literal notranslate"><span class="pre">ex_inquiry.__len__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#exodus.ex_inquiry_map"><code class="docutils literal notranslate"><span class="pre">ex_inquiry_map()</span></code></a></li>
@@ -256,10 +250,6 @@
 <li><a class="reference internal" href="#id54"><code class="docutils literal notranslate"><span class="pre">ex_options.EX_DEFAULT</span></code></a></li>
 <li><a class="reference internal" href="#id55"><code class="docutils literal notranslate"><span class="pre">ex_options.EX_NULLVERBOSE</span></code></a></li>
 <li><a class="reference internal" href="#id56"><code class="docutils literal notranslate"><span class="pre">ex_options.EX_VERBOSE</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_options.__contains__"><code class="docutils literal notranslate"><span class="pre">ex_options.__contains__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_options.__getitem__"><code class="docutils literal notranslate"><span class="pre">ex_options.__getitem__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_options.__iter__"><code class="docutils literal notranslate"><span class="pre">ex_options.__iter__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_options.__len__"><code class="docutils literal notranslate"><span class="pre">ex_options.__len__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#exodus.ex_type"><code class="docutils literal notranslate"><span class="pre">ex_type</span></code></a><ul>
@@ -267,10 +257,6 @@
 <li><a class="reference internal" href="#exodus.ex_type.EX_DOUBLE"><code class="docutils literal notranslate"><span class="pre">ex_type.EX_DOUBLE</span></code></a></li>
 <li><a class="reference internal" href="#exodus.ex_type.EX_INTEGER"><code class="docutils literal notranslate"><span class="pre">ex_type.EX_INTEGER</span></code></a></li>
 <li><a class="reference internal" href="#exodus.ex_type.EX_INVALID"><code class="docutils literal notranslate"><span class="pre">ex_type.EX_INVALID</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_type.__contains__"><code class="docutils literal notranslate"><span class="pre">ex_type.__contains__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_type.__getitem__"><code class="docutils literal notranslate"><span class="pre">ex_type.__getitem__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_type.__iter__"><code class="docutils literal notranslate"><span class="pre">ex_type.__iter__()</span></code></a></li>
-<li><a class="reference internal" href="#exodus.ex_type.__len__"><code class="docutils literal notranslate"><span class="pre">ex_type.__len__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#exodus.ex_type_map"><code class="docutils literal notranslate"><span class="pre">ex_type_map()</span></code></a></li>
@@ -498,7 +484,7 @@
              
   <section id="module-exodus">
 <span id="exodus-module"></span><h1>exodus module<a class="headerlink" href="#module-exodus" title="Permalink to this heading"></a></h1>
-<p>exodus.py v 1.21.2 (seacas-py3) is a python wrapper of some of the exodus library
+<p>exodus.py v 1.21.3 (seacas-py3) is a python wrapper of some of the exodus library
 (Python 3 Version)</p>
 <p>Exodus is a common database for multiple application codes (mesh
 generators, analysis codes, visualization software, etc.) affording
@@ -1022,7 +1008,7 @@ later.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="exodus.ex_entity_type">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exodus.</span></span><span class="sig-name descname"><span class="pre">ex_entity_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#ex_entity_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.ex_entity_type" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exodus.</span></span><span class="sig-name descname"><span class="pre">ex_entity_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#ex_entity_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.ex_entity_type" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>The ex_entity_type enum from the exodusII.h include file</p>
 <dl class="py attribute">
@@ -1233,33 +1219,6 @@ later.</p>
 <dt class="sig sig-object py" id="id32">
 <span class="sig-name descname"><span class="pre">EX_SIDE_SET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#id32" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_entity_type.__contains__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__contains__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">member</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_entity_type.__contains__" title="Permalink to this definition"></a></dt>
-<dd><p>Return True if member is a member of this enum
-raises TypeError if member is not an enum member</p>
-<p>note: in 3.12 TypeError will no longer be raised, and True will also be
-returned if member is the value of a member in this enum</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_entity_type.__getitem__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_entity_type.__getitem__" title="Permalink to this definition"></a></dt>
-<dd><p>Return the member matching <cite>name</cite>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_entity_type.__iter__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__iter__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_entity_type.__iter__" title="Permalink to this definition"></a></dt>
-<dd><p>Return members in definition order.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_entity_type.__len__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__len__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_entity_type.__len__" title="Permalink to this definition"></a></dt>
-<dd><p>Return the number of members (no aliases)</p>
-</dd></dl>
 
 </dd></dl>
 
@@ -1606,8 +1565,9 @@ returned if member is the value of a member in this enum</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="exodus.ex_inquiry">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exodus.</span></span><span class="sig-name descname"><span class="pre">ex_inquiry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#ex_inquiry"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.ex_inquiry" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exodus.</span></span><span class="sig-name descname"><span class="pre">ex_inquiry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#ex_inquiry"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.ex_inquiry" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="exodus.ex_inquiry.EX_INQ_API_VERS">
 <span class="sig-name descname"><span class="pre">EX_INQ_API_VERS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#exodus.ex_inquiry.EX_INQ_API_VERS" title="Permalink to this definition"></a></dt>
@@ -1878,33 +1838,6 @@ returned if member is the value of a member in this enum</p>
 <span class="sig-name descname"><span class="pre">EX_INQ_TITLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#exodus.ex_inquiry.EX_INQ_TITLE" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_inquiry.__contains__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__contains__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">member</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_inquiry.__contains__" title="Permalink to this definition"></a></dt>
-<dd><p>Return True if member is a member of this enum
-raises TypeError if member is not an enum member</p>
-<p>note: in 3.12 TypeError will no longer be raised, and True will also be
-returned if member is the value of a member in this enum</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_inquiry.__getitem__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_inquiry.__getitem__" title="Permalink to this definition"></a></dt>
-<dd><p>Return the member matching <cite>name</cite>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_inquiry.__iter__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__iter__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_inquiry.__iter__" title="Permalink to this definition"></a></dt>
-<dd><p>Return members in definition order.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_inquiry.__len__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__len__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_inquiry.__len__" title="Permalink to this definition"></a></dt>
-<dd><p>Return the number of members (no aliases)</p>
-</dd></dl>
-
 </dd></dl>
 
 <dl class="py function">
@@ -1923,7 +1856,7 @@ objects of the specified objType</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="exodus.ex_options">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exodus.</span></span><span class="sig-name descname"><span class="pre">ex_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#ex_options"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.ex_options" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exodus.</span></span><span class="sig-name descname"><span class="pre">ex_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#ex_options"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.ex_options" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p><cite>ex_opts()</cite> function codes - codes are OR’ed into exopts</p>
 <dl class="py attribute">
@@ -1981,39 +1914,13 @@ objects of the specified objType</p>
 <span class="sig-name descname"><span class="pre">EX_VERBOSE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#id56" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_options.__contains__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__contains__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">member</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_options.__contains__" title="Permalink to this definition"></a></dt>
-<dd><p>Return True if member is a member of this enum
-raises TypeError if member is not an enum member</p>
-<p>note: in 3.12 TypeError will no longer be raised, and True will also be
-returned if member is the value of a member in this enum</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_options.__getitem__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_options.__getitem__" title="Permalink to this definition"></a></dt>
-<dd><p>Return the member matching <cite>name</cite>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_options.__iter__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__iter__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_options.__iter__" title="Permalink to this definition"></a></dt>
-<dd><p>Return members in definition order.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_options.__len__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__len__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_options.__len__" title="Permalink to this definition"></a></dt>
-<dd><p>Return the number of members (no aliases)</p>
-</dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="exodus.ex_type">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exodus.</span></span><span class="sig-name descname"><span class="pre">ex_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#ex_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.ex_type" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">exodus.</span></span><span class="sig-name descname"><span class="pre">ex_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#ex_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.ex_type" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="exodus.ex_type.EX_CHAR">
 <span class="sig-name descname"><span class="pre">EX_CHAR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#exodus.ex_type.EX_CHAR" title="Permalink to this definition"></a></dt>
@@ -2033,33 +1940,6 @@ returned if member is the value of a member in this enum</p>
 <dt class="sig sig-object py" id="exodus.ex_type.EX_INVALID">
 <span class="sig-name descname"><span class="pre">EX_INVALID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">-1</span></em><a class="headerlink" href="#exodus.ex_type.EX_INVALID" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_type.__contains__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__contains__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">member</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_type.__contains__" title="Permalink to this definition"></a></dt>
-<dd><p>Return True if member is a member of this enum
-raises TypeError if member is not an enum member</p>
-<p>note: in 3.12 TypeError will no longer be raised, and True will also be
-returned if member is the value of a member in this enum</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_type.__getitem__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_type.__getitem__" title="Permalink to this definition"></a></dt>
-<dd><p>Return the member matching <cite>name</cite>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_type.__iter__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__iter__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_type.__iter__" title="Permalink to this definition"></a></dt>
-<dd><p>Return members in definition order.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="exodus.ex_type.__len__">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__len__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exodus.ex_type.__len__" title="Permalink to this definition"></a></dt>
-<dd><p>Return the number of members (no aliases)</p>
-</dd></dl>
 
 </dd></dl>
 
