@@ -423,6 +423,7 @@ var annotated_dup =
       [ "DatabaseIO", "classIoss_1_1DatabaseIO.html", "classIoss_1_1DatabaseIO" ],
       [ "DataPool", "structIoss_1_1DataPool.html", "structIoss_1_1DataPool" ],
       [ "Decomposition", "classIoss_1_1Decomposition.html", "classIoss_1_1Decomposition" ],
+      [ "DecompUtils", "classIoss_1_1DecompUtils.html", "classIoss_1_1DecompUtils" ],
       [ "Edge2", "classIoss_1_1Edge2.html", "classIoss_1_1Edge2" ],
       [ "Edge2D2", "classIoss_1_1Edge2D2.html", "classIoss_1_1Edge2D2" ],
       [ "Edge2D3", "classIoss_1_1Edge2D3.html", "classIoss_1_1Edge2D3" ],

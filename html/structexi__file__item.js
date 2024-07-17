@@ -10,6 +10,7 @@ var structexi__file__item =
     [ "has_elems", "structexi__file__item.html#a1514c2f7cb9b8333844c9a42eb863fa4", null ],
     [ "has_faces", "structexi__file__item.html#afbd12e18d0f30d49ea31dde106d5b07e", null ],
     [ "has_nodes", "structexi__file__item.html#a424b4c9830724f4da3edc5179832a83d", null ],
+    [ "in_define_mode", "structexi__file__item.html#af8ab883dfda50ea1e7aada215cac6fd1", null ],
     [ "int64_status", "structexi__file__item.html#ac824d9ad8f45ae3bf8b305692120578f", null ],
     [ "is_hdf5", "structexi__file__item.html#a6c83d780390bfb1a029a23eccab07ac3", null ],
     [ "is_parallel", "structexi__file__item.html#a5845bacba50a93511f29b5b7c2472d1a", null ],
@@ -18,6 +19,7 @@ var structexi__file__item =
     [ "maximum_name_length", "structexi__file__item.html#aac29bd2da12cab67363270d6c4dd9076", null ],
     [ "netcdf_type_code", "structexi__file__item.html#a330e00d33396137c256819aad93b817f", null ],
     [ "next", "structexi__file__item.html#a152f5bc5e143a7ba41bbd07f6960f28a", null ],
+    [ "persist_define_mode", "structexi__file__item.html#a340d324f3e8c23ab6fa017bdb0a8628e", null ],
     [ "shuffle", "structexi__file__item.html#ac8758aabdb253bd72a1f769232c8bdaa", null ],
     [ "time_varid", "structexi__file__item.html#a1818be6af1536bae7a93daf861b151b8", null ],
     [ "user_compute_wordsize", "structexi__file__item.html#a06bf181f9551699ae3252fddee2b4d4e", null ]

@@ -117,6 +117,7 @@ var group__ModelDescription =
     [ "ex_put_loadbal_param_cc", "group__ModelDescription.html#ga14b7132549f4e720410ef4231c992771", null ],
     [ "ex_put_map", "group__ModelDescription.html#ga5ceec0317e895d0d2a435321a0188475", null ],
     [ "ex_put_map_param", "group__ModelDescription.html#ga5d1a64c0b1b5c990f5710b8a41e73acb", null ],
+    [ "ex_put_multi_field_metadata", "group__ModelDescription.html#gac7b4efeac4eedbaa89c262171a881fda", null ],
     [ "ex_put_name", "group__ModelDescription.html#ga9f3c7c8c26e49556f86534f4460e0cf0", null ],
     [ "ex_put_names", "group__ModelDescription.html#ga09fc0ab17277c81ee3b6c8e602cbb6c5", null ],
     [ "ex_put_node_cmap", "group__ModelDescription.html#ga024195ee1472fd6f11c3604b0d9098c7", null ],

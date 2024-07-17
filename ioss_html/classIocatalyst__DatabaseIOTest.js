@@ -5,6 +5,7 @@ var classIocatalyst__DatabaseIOTest =
     [ "checkEntityContainerZeroCopyFields", "classIocatalyst__DatabaseIOTest.html#af59b4874540e22a86f24f47ff31b3ff2", null ],
     [ "checkZeroCopyFields", "classIocatalyst__DatabaseIOTest.html#a0a5da352df5518c906c18a01aa319796", null ],
     [ "getCatalystDatabaseFromConduit", "classIocatalyst__DatabaseIOTest.html#a3046643c56dd9362786b508a56feab69", null ],
+    [ "getCatalystDatabaseFromConduitFiles", "classIocatalyst__DatabaseIOTest.html#a54b080b2a2e4712452245f831746a9f1", null ],
     [ "getConduitFromExodusFile", "classIocatalyst__DatabaseIOTest.html#a74d0c2902fe980db0d6cbdcce85ff105", null ],
     [ "getDatabaseOnReadFromFileName", "classIocatalyst__DatabaseIOTest.html#a57d4802eed007fd82a69dd2cb9f8f477", null ],
     [ "getExodusDatabaseFromFile", "classIocatalyst__DatabaseIOTest.html#a3222db57cc0b78c0fffb4ec74c8f80b4", null ],

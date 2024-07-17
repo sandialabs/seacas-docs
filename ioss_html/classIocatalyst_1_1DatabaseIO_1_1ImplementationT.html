@@ -153,6 +153,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a43aae43724ee6363b83709d890ed2bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5044f4b33a97a6f67a9f65addc603187" id="r_a5044f4b33a97a6f67a9f65addc603187"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5044f4b33a97a6f67a9f65addc603187">getName</a> (const <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *entityGroup)</td></tr>
 <tr class="separator:a5044f4b33a97a6f67a9f65addc603187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597eddcd1baed5eac074bc27ab8094e8" id="r_a597eddcd1baed5eac074bc27ab8094e8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a597eddcd1baed5eac074bc27ab8094e8">getTimePath</a> ()</td></tr>
+<tr class="separator:a597eddcd1baed5eac074bc27ab8094e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c42e613b63e138098ee11f01b98cb8" id="r_a24c42e613b63e138098ee11f01b98cb8"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24c42e613b63e138098ee11f01b98cb8">getStructuredBlockIDS</a> (const <a class="el" href="classIoss_1_1StructuredBlock.html">Ioss::StructuredBlock</a> *sb, const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, void *data, size_t data_size)</td></tr>
+<tr class="separator:a24c42e613b63e138098ee11f01b98cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406716b6fb8fb8103588c0e503489cc1" id="r_a406716b6fb8fb8103588c0e503489cc1"><td class="memTemplParams" colspan="2">template&lt;typename INT_t &gt; </td></tr>
+<tr class="memitem:a406716b6fb8fb8103588c0e503489cc1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a406716b6fb8fb8103588c0e503489cc1">copyIDS</a> (const <a class="el" href="classIoss_1_1StructuredBlock.html">Ioss::StructuredBlock</a> *sb, const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;field, INT_t *data)</td></tr>
+<tr class="separator:a406716b6fb8fb8103588c0e503489cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8943417579824a2f04e076eb2e118aa9" id="r_a8943417579824a2f04e076eb2e118aa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1Map.html">Ioss::Map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8943417579824a2f04e076eb2e118aa9">get_node_map</a> (const <a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *dbase) const</td></tr>
 <tr class="separator:a8943417579824a2f04e076eb2e118aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -206,6 +213,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a2c95f5e768ce769008f6e01a01eb020f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a272622534a7d4ca336d1993b36bbadae" id="r_a272622534a7d4ca336d1993b36bbadae"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classIoss_1_1SideBlock.html">Ioss::SideBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a272622534a7d4ca336d1993b36bbadae">sideBlocks</a></td></tr>
 <tr class="separator:a272622534a7d4ca336d1993b36bbadae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a777a04127d2b61e0684a52bd03cc5" id="r_ac5a777a04127d2b61e0684a52bd03cc5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5a777a04127d2b61e0684a52bd03cc5">read_db_field_separator</a></td></tr>
+<tr class="separator:ac5a777a04127d2b61e0684a52bd03cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="adf9c71be8cd2b177247f4c3f1cea7b11" name="adf9c71be8cd2b177247f4c3f1cea7b11"></a>
@@ -323,6 +332,42 @@ template&lt;typename GroupingEntityT &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a406716b6fb8fb8103588c0e503489cc1" name="a406716b6fb8fb8103588c0e503489cc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406716b6fb8fb8103588c0e503489cc1">&#9670;&#160;</a></span>copyIDS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT_t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Iocatalyst::DatabaseIO::ImplementationT::copyIDS </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1StructuredBlock.html">Ioss::StructuredBlock</a> *</td>          <td class="paramname"><span class="paramname"><em>sb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>field</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -886,6 +931,70 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a24c42e613b63e138098ee11f01b98cb8" name="a24c42e613b63e138098ee11f01b98cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c42e613b63e138098ee11f01b98cb8">&#9670;&#160;</a></span>getStructuredBlockIDS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Iocatalyst::DatabaseIO::ImplementationT::getStructuredBlockIDS </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1StructuredBlock.html">Ioss::StructuredBlock</a> *</td>          <td class="paramname"><span class="paramname"><em>sb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1Field.html">Ioss::Field</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>field</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>data_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a597eddcd1baed5eac074bc27ab8094e8" name="a597eddcd1baed5eac074bc27ab8094e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a597eddcd1baed5eac074bc27ab8094e8">&#9670;&#160;</a></span>getTimePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Iocatalyst::DatabaseIO::ImplementationT::getTimePath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a86596b7bfd34542b303df45df465a28f" name="a86596b7bfd34542b303df45df465a28f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86596b7bfd34542b303df45df465a28f">&#9670;&#160;</a></span>hasField()</h2>
 
@@ -1311,6 +1420,28 @@ template&lt;typename GroupingEntityT &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5a777a04127d2b61e0684a52bd03cc5" name="ac5a777a04127d2b61e0684a52bd03cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a777a04127d2b61e0684a52bd03cc5">&#9670;&#160;</a></span>read_db_field_separator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Iocatalyst::DatabaseIO::ImplementationT::read_db_field_separator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

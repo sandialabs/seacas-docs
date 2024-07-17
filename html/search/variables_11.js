@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['xi_0',['xi',['../structex__basis.html#a3c5bb6faa12ca5fdb95cccb37e65a11c',1,'ex_basis::xi'],['../structex__quadrature.html#a4b58986d66be2cea24de356685acfdbf',1,'ex_quadrature::xi']]]
+  ['warning_5foutput_0',['warning_output',['../ex__utils_8c.html#ab71aa5cfa846f02a7fb1924bcfeb77db',1,'ex_utils.c']]],
+  ['weight_1',['weight',['../structex__quadrature.html#ab3d25438a116e2e48a3475352f23265b',1,'ex_quadrature']]]
 ];

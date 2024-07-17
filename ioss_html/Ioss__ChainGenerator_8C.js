@@ -7,8 +7,8 @@ var Ioss__ChainGenerator_8C =
     [ "generate_element_chains", "Ioss__ChainGenerator_8C.html#a1a6a82767d634f225c45f64df635d8cc", null ],
     [ "generate_face_connectivity", "Ioss__ChainGenerator_8C.html#a7289f376a39ee35a3d5ebc42cb0fa888", null ],
     [ "get_adjacent_blocks", "Ioss__ChainGenerator_8C.html#ad9a8cdae41d911d0ce1488ebf433761b", null ],
-    [ "get_line_front", "Ioss__ChainGenerator_8C.html#a7eef2539bdae9038c1f6938d499dee48", null ],
-    [ "get_line_front", "Ioss__ChainGenerator_8C.html#a6e6e4c5473413db04617fecf264baaf6", null ],
+    [ "get_line_front", "Ioss__ChainGenerator_8C.html#ab80ac3fb37df3a33822ee100229f23d6", null ],
+    [ "get_line_front", "Ioss__ChainGenerator_8C.html#a366730dec698be0fe3c23c58d9388444", null ],
     [ "hex_opposite_side", "Ioss__ChainGenerator_8C.html#aae02ec800d49c6a48406518049ce984a", null ],
     [ "debug", "Ioss__ChainGenerator_8C.html#a0d6b19d7093dd27befc294f6d075e3f9", null ]
 ];

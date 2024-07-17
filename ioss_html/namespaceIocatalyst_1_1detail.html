@@ -194,6 +194,12 @@ Variables</h2></td></tr>
 <tr class="separator:a05d88fdc18cd1b782c62734957e53609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a784a90a478d8a86d8e14b10ac57436bd" id="r_a784a90a478d8a86d8e14b10ac57436bd"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a784a90a478d8a86d8e14b10ac57436bd">CATDUMPDIR</a> = &quot;CATALYST_DATA_DUMP_DIRECTORY&quot;</td></tr>
 <tr class="separator:a784a90a478d8a86d8e14b10ac57436bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adfedb589abe3764ff4a62c47668087" id="r_a0adfedb589abe3764ff4a62c47668087"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0adfedb589abe3764ff4a62c47668087">CATREADTIMESTEP</a> = &quot;CATALYST_READER_TIME_STEP&quot;</td></tr>
+<tr class="separator:a0adfedb589abe3764ff4a62c47668087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fe7326abe2324ee9263b8e7e2836b8" id="r_ae2fe7326abe2324ee9263b8e7e2836b8"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2fe7326abe2324ee9263b8e7e2836b8">CELLIDS</a> = &quot;cell_ids&quot;</td></tr>
+<tr class="separator:ae2fe7326abe2324ee9263b8e7e2836b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399c9e1919fe66cd94f93c8f77f08a7d" id="r_a399c9e1919fe66cd94f93c8f77f08a7d"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a399c9e1919fe66cd94f93c8f77f08a7d">CELLNODEIDS</a> = &quot;cell_node_ids&quot;</td></tr>
+<tr class="separator:a399c9e1919fe66cd94f93c8f77f08a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae463210bcf0ce2e8d2844a15661b48a9" id="r_ae463210bcf0ce2e8d2844a15661b48a9"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae463210bcf0ce2e8d2844a15661b48a9">COMPONENTCOUNT</a> = &quot;component_count&quot;</td></tr>
 <tr class="separator:ae463210bcf0ce2e8d2844a15661b48a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a219d4a2d7ef8e14e30a69853a0be10c9" id="r_a219d4a2d7ef8e14e30a69853a0be10c9"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a219d4a2d7ef8e14e30a69853a0be10c9">COMPONENTDEGREE</a> = &quot;component_degree&quot;</td></tr>
@@ -284,8 +290,6 @@ Variables</h2></td></tr>
 <tr class="separator:a1c521a4b525b9f60350e8a507ee49586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4108b8e9f2acc80110058e9d6e259d31" id="r_a4108b8e9f2acc80110058e9d6e259d31"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4108b8e9f2acc80110058e9d6e259d31">SIDEBLOCKS</a> = &quot;sideblocks&quot;</td></tr>
 <tr class="separator:a4108b8e9f2acc80110058e9d6e259d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab48bddcb91aef867c8a9753c69e5aeb7" id="r_ab48bddcb91aef867c8a9753c69e5aeb7"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab48bddcb91aef867c8a9753c69e5aeb7">STATETIME</a> = &quot;state_time&quot;</td></tr>
-<tr class="separator:ab48bddcb91aef867c8a9753c69e5aeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee3559b233eaad916f85c691caed48c1" id="r_aee3559b233eaad916f85c691caed48c1"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee3559b233eaad916f85c691caed48c1">STORAGE</a> = &quot;storage&quot;</td></tr>
 <tr class="separator:aee3559b233eaad916f85c691caed48c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205c09964cfb8b8202425f58022e4fae" id="r_a205c09964cfb8b8202425f58022e4fae"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a205c09964cfb8b8202425f58022e4fae">TIME</a> = &quot;time&quot;</td></tr>
@@ -859,6 +863,72 @@ template&lt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const std::string Iocatalyst::detail::CATDUMPDIR = &quot;CATALYST_DATA_DUMP_DIRECTORY&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0adfedb589abe3764ff4a62c47668087" name="a0adfedb589abe3764ff4a62c47668087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0adfedb589abe3764ff4a62c47668087">&#9670;&#160;</a></span>CATREADTIMESTEP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Iocatalyst::detail::CATREADTIMESTEP = &quot;CATALYST_READER_TIME_STEP&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2fe7326abe2324ee9263b8e7e2836b8" name="ae2fe7326abe2324ee9263b8e7e2836b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2fe7326abe2324ee9263b8e7e2836b8">&#9670;&#160;</a></span>CELLIDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Iocatalyst::detail::CELLIDS = &quot;cell_ids&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a399c9e1919fe66cd94f93c8f77f08a7d" name="a399c9e1919fe66cd94f93c8f77f08a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399c9e1919fe66cd94f93c8f77f08a7d">&#9670;&#160;</a></span>CELLNODEIDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Iocatalyst::detail::CELLNODEIDS = &quot;cell_node_ids&quot;</td>
         </tr>
       </table>
   </td>
@@ -2421,28 +2491,6 @@ template&lt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const std::string Iocatalyst::detail::SIDESETS = &quot;sidesets&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab48bddcb91aef867c8a9753c69e5aeb7" name="ab48bddcb91aef867c8a9753c69e5aeb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab48bddcb91aef867c8a9753c69e5aeb7">&#9670;&#160;</a></span>STATETIME</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string Iocatalyst::detail::STATETIME = &quot;state_time&quot;</td>
         </tr>
       </table>
   </td>

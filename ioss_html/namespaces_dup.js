@@ -144,8 +144,8 @@ var namespaces_dup =
       [ "front_t", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#aa402c10aa87669cacdec216ea1d8f7f5", null ],
       [ "generate_face_connectivity", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a7289f376a39ee35a3d5ebc42cb0fa888", null ],
       [ "get_adjacent_blocks", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#ad9a8cdae41d911d0ce1488ebf433761b", null ],
-      [ "get_line_front", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a7eef2539bdae9038c1f6938d499dee48", null ],
-      [ "get_line_front", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a6e6e4c5473413db04617fecf264baaf6", null ],
+      [ "get_line_front", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#ab80ac3fb37df3a33822ee100229f23d6", null ],
+      [ "get_line_front", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a366730dec698be0fe3c23c58d9388444", null ],
       [ "hex_opposite_side", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#aae02ec800d49c6a48406518049ce984a", null ],
       [ "debug", "namespaceanonymous__namespace_02Ioss__ChainGenerator_8C_03.html#a0d6b19d7093dd27befc294f6d075e3f9", null ]
     ] ],
@@ -268,6 +268,20 @@ var namespaces_dup =
       [ "get_common_node_count", "namespaceanonymous__namespace_02Ioss__Decomposition_8C_03.html#a670ba26c60d0623d97f5b3c28d529975", null ],
       [ "get_decomposition_method", "namespaceanonymous__namespace_02Ioss__Decomposition_8C_03.html#a9a3d680056c7340fa0ef85f1d86e08e0", null ],
       [ "get_entity_dist", "namespaceanonymous__namespace_02Ioss__Decomposition_8C_03.html#a85eb4033482b00df64d622c5ae892259", null ]
+    ] ],
+    [ "anonymous_namespace{Ioss_DecompositionUtils.C}", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html", [
+      [ "output_histogram", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#a5e25a14b7a20da286c990f17492e89ae", null ],
+      [ "string_chains", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#ab4835ad1d66de326d60343228366be37", null ],
+      [ "zoltan_geom", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#a11e353b771f9de0cdadd0e23600595fe", null ],
+      [ "zoltan_num_dim", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#a3d079efa18367384f5061283f54adae9", null ],
+      [ "zoltan_num_obj", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#a889ebdf3e756d12efd4e838b29442500", null ],
+      [ "zoltan_obj_list", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#afba901290f21996f2de3b52ce4f94150", null ],
+      [ "ndot", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#a9cc334d954b6465ea09189968fdf7958", null ],
+      [ "vwgt", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#a8c660308fd4557f30a8e4b1dd27d9f1c", null ],
+      [ "x", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#ab4931145062298a06c68ed78330e3076", null ],
+      [ "y", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#aefec7b0252cee6d9f15a74092578ac08", null ],
+      [ "z", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#aebaef71ad7a4690bfb30f8a36e18c3e4", null ],
+      [ "Zoltan_Data", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#aaf47ab17af633140cb5074aca0c5f7a2", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Edge2.C}", "namespaceanonymous__namespace_02Ioss__Edge2_8C_03.html", "namespaceanonymous__namespace_02Ioss__Edge2_8C_03" ],
     [ "anonymous_namespace{Ioss_Edge2D2.C}", "namespaceanonymous__namespace_02Ioss__Edge2D2_8C_03.html", "namespaceanonymous__namespace_02Ioss__Edge2D2_8C_03" ],

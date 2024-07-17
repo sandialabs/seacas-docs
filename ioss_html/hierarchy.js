@@ -167,6 +167,7 @@ var hierarchy =
     ] ],
     [ "Ioss::DataPool", "structIoss_1_1DataPool.html", null ],
     [ "Ioss::Decomposition< INT >", "classIoss_1_1Decomposition.html", null ],
+    [ "Ioss::DecompUtils", "classIoss_1_1DecompUtils.html", null ],
     [ "Ioex::EdgeBlock", "structIoex_1_1EdgeBlock.html", null ],
     [ "Ioexnl::EdgeBlock", "structIoexnl_1_1EdgeBlock.html", null ],
     [ "Ioex::EdgeSet", "structIoex_1_1EdgeSet.html", null ],

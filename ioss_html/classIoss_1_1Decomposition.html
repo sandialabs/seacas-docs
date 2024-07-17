@@ -165,6 +165,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a64dc2ff22327c3a80ed5918e626ba242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f96610d1160fd0a721a01f8e58aa21e" id="r_a2f96610d1160fd0a721a01f8e58aa21e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f96610d1160fd0a721a01f8e58aa21e">guided_decompose</a> ()</td></tr>
 <tr class="separator:a2f96610d1160fd0a721a01f8e58aa21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b42294cd18216420ae9795950482062" id="r_a3b42294cd18216420ae9795950482062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b42294cd18216420ae9795950482062">line_decompose</a> ()</td></tr>
+<tr class="separator:a3b42294cd18216420ae9795950482062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1167474f6a979a4edd144a2a62556cd" id="r_ae1167474f6a979a4edd144a2a62556cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1167474f6a979a4edd144a2a62556cd">calculate_element_centroids</a> (const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y, const std::vector&lt; double &gt; &amp;z)</td></tr>
 <tr class="separator:ae1167474f6a979a4edd144a2a62556cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc91e4a40501b40693f3f3494e53a79d" id="r_adc91e4a40501b40693f3f3494e53a79d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc91e4a40501b40693f3f3494e53a79d">zoltan_decompose</a> (Zoltan &amp;zz)</td></tr>
@@ -240,14 +242,18 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab1541d22c979248e660c2f0ba970ae58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28445152817731286bf58d7dbd33799e" id="r_a28445152817731286bf58d7dbd33799e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28445152817731286bf58d7dbd33799e">m_retainFreeNodes</a> {true}</td></tr>
 <tr class="separator:a28445152817731286bf58d7dbd33799e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52254cbf7d70624f24cca75746c9ec6" id="r_ad52254cbf7d70624f24cca75746c9ec6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad52254cbf7d70624f24cca75746c9ec6">m_lineDecomp</a> {false}</td></tr>
+<tr class="separator:ad52254cbf7d70624f24cca75746c9ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4823d99e51e572f0465951b7c7bb07c" id="r_aa4823d99e51e572f0465951b7c7bb07c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4823d99e51e572f0465951b7c7bb07c">m_showProgress</a> {false}</td></tr>
 <tr class="separator:aa4823d99e51e572f0465951b7c7bb07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a501229bf0e719f16bc9a57f1981569dc" id="r_a501229bf0e719f16bc9a57f1981569dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a501229bf0e719f16bc9a57f1981569dc">m_showHWM</a> {false}</td></tr>
 <tr class="separator:a501229bf0e719f16bc9a57f1981569dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7121920efe36d53adaa705341878b581" id="r_a7121920efe36d53adaa705341878b581"><td class="memItemLeft" align="right" valign="top">std::vector&lt; INT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7121920efe36d53adaa705341878b581">m_elementToProc</a></td></tr>
-<tr class="separator:a7121920efe36d53adaa705341878b581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4118a561b53b8d7b47ad15393326bd1f" id="r_a4118a561b53b8d7b47ad15393326bd1f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4118a561b53b8d7b47ad15393326bd1f">m_elementToProc</a></td></tr>
+<tr class="separator:a4118a561b53b8d7b47ad15393326bd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25f181b211f0f83b4c77c140b463b9d2" id="r_a25f181b211f0f83b4c77c140b463b9d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f181b211f0f83b4c77c140b463b9d2">m_centroids</a></td></tr>
 <tr class="separator:a25f181b211f0f83b4c77c140b463b9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af195f22a3e6c788e77ea48129299ced5" id="r_af195f22a3e6c788e77ea48129299ced5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af195f22a3e6c788e77ea48129299ced5">m_weights</a></td></tr>
+<tr class="separator:af195f22a3e6c788e77ea48129299ced5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac56e77b18a076a85def8ad3910c71353" id="r_ac56e77b18a076a85def8ad3910c71353"><td class="memItemLeft" align="right" valign="top">std::vector&lt; INT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac56e77b18a076a85def8ad3910c71353">m_pointer</a></td></tr>
 <tr class="separator:ac56e77b18a076a85def8ad3910c71353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa18488bbc07722457bb2823ca5944265" id="r_aa18488bbc07722457bb2823ca5944265"><td class="memItemLeft" align="right" valign="top">std::vector&lt; INT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa18488bbc07722457bb2823ca5944265">m_adjacency</a></td></tr>
@@ -1208,6 +1214,25 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
+<a id="a3b42294cd18216420ae9795950482062" name="a3b42294cd18216420ae9795950482062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b42294cd18216420ae9795950482062">&#9670;&#160;</a></span>line_decompose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::line_decompose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a07163869ec455fcb55d000c1a93ee20b" name="a07163869ec455fcb55d000c1a93ee20b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07163869ec455fcb55d000c1a93ee20b">&#9670;&#160;</a></span>metis_decompose()</h2>
 
@@ -1944,8 +1969,8 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="a7121920efe36d53adaa705341878b581" name="a7121920efe36d53adaa705341878b581"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7121920efe36d53adaa705341878b581">&#9670;&#160;</a></span>m_elementToProc</h2>
+<a id="a4118a561b53b8d7b47ad15393326bd1f" name="a4118a561b53b8d7b47ad15393326bd1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4118a561b53b8d7b47ad15393326bd1f">&#9670;&#160;</a></span>m_elementToProc</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1953,7 +1978,7 @@ template&lt;typename INT &gt; </div>
 template&lt;typename INT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;INT&gt; <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::m_elementToProc</td>
+          <td class="memname">std::vector&lt;int&gt; <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::m_elementToProc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2034,6 +2059,22 @@ template&lt;typename INT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">size_t <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::m_importPreLocalNodeIndex {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad52254cbf7d70624f24cca75746c9ec6" name="ad52254cbf7d70624f24cca75746c9ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad52254cbf7d70624f24cca75746c9ec6">&#9670;&#160;</a></span>m_lineDecomp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::m_lineDecomp {false}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2250,6 +2291,22 @@ template&lt;typename INT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::m_spatialDimension {3}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af195f22a3e6c788e77ea48129299ced5" name="af195f22a3e6c788e77ea48129299ced5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af195f22a3e6c788e77ea48129299ced5">&#9670;&#160;</a></span>m_weights</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; <a class="el" href="classIoss_1_1Decomposition.html">Ioss::Decomposition</a>&lt; INT &gt;::m_weights</td>
         </tr>
       </table>
 </div><div class="memdoc">

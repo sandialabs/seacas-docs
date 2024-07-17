@@ -479,6 +479,7 @@ var exodusII_8h =
     [ "ex_put_loadbal_param_cc", "group__ModelDescription.html#ga14b7132549f4e720410ef4231c992771", null ],
     [ "ex_put_map", "group__ModelDescription.html#ga5ceec0317e895d0d2a435321a0188475", null ],
     [ "ex_put_map_param", "group__ModelDescription.html#ga5d1a64c0b1b5c990f5710b8a41e73acb", null ],
+    [ "ex_put_multi_field_metadata", "group__ModelDescription.html#gac7b4efeac4eedbaa89c262171a881fda", null ],
     [ "ex_put_n_coord", "exodusII_8h.html#a136ff3a75a73727acfefb6b46608691c", null ],
     [ "ex_put_n_elem_attr", "exodusII_8h.html#ace637dd143d69cc9760fba8e6a88aa5a", null ],
     [ "ex_put_n_elem_conn", "exodusII_8h.html#a94611373978825578043217ff96af5ff", null ],

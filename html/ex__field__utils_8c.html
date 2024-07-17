@@ -146,10 +146,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a210995846b523d2a310a0f2449106e1e" id="r_a210995846b523d2a310a0f2449106e1e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a210995846b523d2a310a0f2449106e1e">my_strsep</a> (char **stringp, const char *delim)</td></tr>
-<tr class="separator:a210995846b523d2a310a0f2449106e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ce49f9e99a5b4c72767c05a1e50ef1" id="r_af2ce49f9e99a5b4c72767c05a1e50ef1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2ce49f9e99a5b4c72767c05a1e50ef1">my_strlcat</a> (char *restrict dst, const char *restrict src, size_t maxlen)</td></tr>
-<tr class="separator:af2ce49f9e99a5b4c72767c05a1e50ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68ea6e0710d7d10d717aac87ed6e840" id="r_aa68ea6e0710d7d10d717aac87ed6e840"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa68ea6e0710d7d10d717aac87ed6e840">my_strsep</a> (char **stringp, const char *delim)</td></tr>
+<tr class="separator:aa68ea6e0710d7d10d717aac87ed6e840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5c00ff745c853f99c0c3619c75ebbc" id="r_a2b5c00ff745c853f99c0c3619c75ebbc"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b5c00ff745c853f99c0c3619c75ebbc">my_strlcat</a> (char *restrict dst, const char *restrict src, size_t maxlen)</td></tr>
+<tr class="separator:a2b5c00ff745c853f99c0c3619c75ebbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a035e9ae40b2a18c90dff366d7c4699a7" id="r_a035e9ae40b2a18c90dff366d7c4699a7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a035e9ae40b2a18c90dff366d7c4699a7">number_width</a> (const size_t number)</td></tr>
 <tr class="separator:a035e9ae40b2a18c90dff366d7c4699a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d2ad3919a416df1738d8ccdd3521812" id="r_a6d2ad3919a416df1738d8ccdd3521812"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d2ad3919a416df1738d8ccdd3521812">verify_valid_component</a> (int component, size_t cardinality, size_t suffix_size)</td></tr>
@@ -400,14 +400,17 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af2ce49f9e99a5b4c72767c05a1e50ef1" name="af2ce49f9e99a5b4c72767c05a1e50ef1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2ce49f9e99a5b4c72767c05a1e50ef1">&#9670;&#160;</a></span>my_strlcat()</h2>
+<a id="a2b5c00ff745c853f99c0c3619c75ebbc" name="a2b5c00ff745c853f99c0c3619c75ebbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b5c00ff745c853f99c0c3619c75ebbc">&#9670;&#160;</a></span>my_strlcat()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t my_strlcat </td>
+          <td class="memname">static size_t my_strlcat </td>
           <td>(</td>
           <td class="paramtype">char *restrict</td>          <td class="paramname"><span class="paramname"><em>dst</em></span>, </td>
         </tr>
@@ -422,18 +425,26 @@ Functions</h2></td></tr>
           <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>maxlen</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a210995846b523d2a310a0f2449106e1e" name="a210995846b523d2a310a0f2449106e1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a210995846b523d2a310a0f2449106e1e">&#9670;&#160;</a></span>my_strsep()</h2>
+<a id="aa68ea6e0710d7d10d717aac87ed6e840" name="aa68ea6e0710d7d10d717aac87ed6e840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68ea6e0710d7d10d717aac87ed6e840">&#9670;&#160;</a></span>my_strsep()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char * my_strsep </td>
+          <td class="memname">static char * my_strsep </td>
           <td>(</td>
           <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>stringp</em></span>, </td>
         </tr>
@@ -443,6 +454,11 @@ Functions</h2></td></tr>
           <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>delim</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
