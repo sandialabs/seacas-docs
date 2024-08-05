@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath('./src'))
 # -- Project information -----------------------------------------------------
 
 project = 'SEACAS'
-copyright = '1999-2023 National Technology & Engineering Solutions'
+copyright = '1999-2024 National Technology & Engineering Solutions'
 author = 'Gregory Sjaardema'
 
 # The full version, including alpha/beta/rc tags
