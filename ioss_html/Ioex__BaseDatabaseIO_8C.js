@@ -15,6 +15,7 @@ var Ioex__BaseDatabaseIO_8C =
     [ "output_basis", "Ioex__BaseDatabaseIO_8C.html#a674b2c3fdb5b2fc4f08d09d4130ffcf6", null ],
     [ "output_quad", "Ioex__BaseDatabaseIO_8C.html#ad0042ba2dc7da0e3226b73fed3121897", null ],
     [ "output_type_metadata", "Ioex__BaseDatabaseIO_8C.html#a4f53b0677b2e9b993a619a7c5cbb0cbd", null ],
+    [ "query_groups", "Ioex__BaseDatabaseIO_8C.html#a0c9931ef2fdd5debb9d6f628436e5488", null ],
     [ "write_attribute_names", "Ioex__BaseDatabaseIO_8C.html#a755ce5b3fcffef4d0990200522091d95", null ],
     [ "max_line_length", "Ioex__BaseDatabaseIO_8C.html#af988ac51328995734fce46ba6e237f5a", null ],
     [ "sixty_four_bit_message_output", "Ioex__BaseDatabaseIO_8C.html#a86f69772c437bdb7850de56a06636dcc", null ]

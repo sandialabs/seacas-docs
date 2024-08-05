@@ -128,8 +128,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5ee57762c7c97cee640a574133de0ad2" id="r_a5ee57762c7c97cee640a574133de0ad2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5ee57762c7c97cee640a574133de0ad2"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5ee57762c7c97cee640a574133de0ad2">get_entity_count</a> (const std::vector&lt; T &gt; &amp;entities)</td></tr>
 <tr class="separator:a5ee57762c7c97cee640a574133de0ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c6d7bf96477386d9d0ad14ad2fd8fb" id="r_ad8c6d7bf96477386d9d0ad14ad2fd8fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8c6d7bf96477386d9d0ad14ad2fd8fb">update_database</a> (<a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *db, <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *entity)</td></tr>
+<tr class="separator:ad8c6d7bf96477386d9d0ad14ad2fd8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7869ea069d410d6981424b0e3078b7fa" id="r_a7869ea069d410d6981424b0e3078b7fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7869ea069d410d6981424b0e3078b7fa">update_database</a> (const <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, <a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *entity)</td></tr>
 <tr class="separator:a7869ea069d410d6981424b0e3078b7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69d9134a3ab20f1e3f92dcbd2d39cfd" id="r_ab69d9134a3ab20f1e3f92dcbd2d39cfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab69d9134a3ab20f1e3f92dcbd2d39cfd">update_database</a> (<a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *db, <a class="el" href="classIoss_1_1SideSet.html">Ioss::SideSet</a> *sset)</td></tr>
+<tr class="separator:ab69d9134a3ab20f1e3f92dcbd2d39cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfc3362c77d7c0156bae6bc47f462607" id="r_acfc3362c77d7c0156bae6bc47f462607"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfc3362c77d7c0156bae6bc47f462607">update_database</a> (const <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *region, <a class="el" href="classIoss_1_1SideSet.html">Ioss::SideSet</a> *sset)</td></tr>
 <tr class="separator:acfc3362c77d7c0156bae6bc47f462607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7df9904c197f8f00d2ff2658583d09" id="r_aaa7df9904c197f8f00d2ff2658583d09"><td class="memItemLeft" align="right" valign="top">constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa7df9904c197f8f00d2ff2658583d09">numberOfBits</a> (unsigned x)</td></tr>
@@ -505,7 +509,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a7869ea069d410d6981424b0e3078b7fa" name="a7869ea069d410d6981424b0e3078b7fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7869ea069d410d6981424b0e3078b7fa">&#9670;&#160;</a></span>update_database() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7869ea069d410d6981424b0e3078b7fa">&#9670;&#160;</a></span>update_database() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -526,7 +530,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="acfc3362c77d7c0156bae6bc47f462607" name="acfc3362c77d7c0156bae6bc47f462607"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfc3362c77d7c0156bae6bc47f462607">&#9670;&#160;</a></span>update_database() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc3362c77d7c0156bae6bc47f462607">&#9670;&#160;</a></span>update_database() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,6 +539,48 @@ template&lt;typename T &gt; </div>
           <td class="memname">void anonymous_namespace{Ioss_Region.C}::update_database </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> *</td>          <td class="paramname"><span class="paramname"><em>region</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1SideSet.html">Ioss::SideSet</a> *</td>          <td class="paramname"><span class="paramname"><em>sset</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8c6d7bf96477386d9d0ad14ad2fd8fb" name="ad8c6d7bf96477386d9d0ad14ad2fd8fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c6d7bf96477386d9d0ad14ad2fd8fb">&#9670;&#160;</a></span>update_database() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anonymous_namespace{Ioss_Region.C}::update_database </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *</td>          <td class="paramname"><span class="paramname"><em>db</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *</td>          <td class="paramname"><span class="paramname"><em>entity</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab69d9134a3ab20f1e3f92dcbd2d39cfd" name="ab69d9134a3ab20f1e3f92dcbd2d39cfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69d9134a3ab20f1e3f92dcbd2d39cfd">&#9670;&#160;</a></span>update_database() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anonymous_namespace{Ioss_Region.C}::update_database </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *</td>          <td class="paramname"><span class="paramname"><em>db</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

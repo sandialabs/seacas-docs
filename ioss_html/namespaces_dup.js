@@ -406,7 +406,9 @@ var namespaces_dup =
       [ "orig_topo_str", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a294e2a63b62275998c3021cf3ef3f0a8", null ],
       [ "report_inconsistency", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a2f8c4edf9fcba5a6ace342c7f9231727", null ],
       [ "update_database", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#a7869ea069d410d6981424b0e3078b7fa", null ],
-      [ "update_database", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#acfc3362c77d7c0156bae6bc47f462607", null ]
+      [ "update_database", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#acfc3362c77d7c0156bae6bc47f462607", null ],
+      [ "update_database", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#ad8c6d7bf96477386d9d0ad14ad2fd8fb", null ],
+      [ "update_database", "namespaceanonymous__namespace_02Ioss__Region_8C_03.html#ab69d9134a3ab20f1e3f92dcbd2d39cfd", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Shell4.C}", "namespaceanonymous__namespace_02Ioss__Shell4_8C_03.html", "namespaceanonymous__namespace_02Ioss__Shell4_8C_03" ],
     [ "anonymous_namespace{Ioss_Shell8.C}", "namespaceanonymous__namespace_02Ioss__Shell8_8C_03.html", "namespaceanonymous__namespace_02Ioss__Shell8_8C_03" ],
@@ -526,6 +528,7 @@ var namespaces_dup =
       [ "rank", "namespaceanonymous__namespace_02struc__to__unstruc_8C_03.html#a9268c646b97401720e90e8ff5a97c2d1", null ],
       [ "version", "namespaceanonymous__namespace_02struc__to__unstruc_8C_03.html#a42dded60d1ffdea09c9302a5a535d801", null ]
     ] ],
+    [ "anonymous_namespace{UnitTestDynamicTopology.C}", "namespaceanonymous__namespace_02UnitTestDynamicTopology_8C_03.html", "namespaceanonymous__namespace_02UnitTestDynamicTopology_8C_03" ],
     [ "anonymous_namespace{UnitTestElementBlockBatchRead.C}", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html", [
       [ "ElemBlockFunc", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a5ad7719deed27b365c637bdbdbe3ccd7", null ],
       [ "define_model", "namespaceanonymous__namespace_02UnitTestElementBlockBatchRead_8C_03.html#a41db306a259ca0a36718ca2fb8703464", null ],

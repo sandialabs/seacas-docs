@@ -18,5 +18,7 @@ var Ioss__Region_8C =
     [ "orig_topo_str", "Ioss__Region_8C.html#a294e2a63b62275998c3021cf3ef3f0a8", null ],
     [ "report_inconsistency", "Ioss__Region_8C.html#a2f8c4edf9fcba5a6ace342c7f9231727", null ],
     [ "update_database", "Ioss__Region_8C.html#a7869ea069d410d6981424b0e3078b7fa", null ],
-    [ "update_database", "Ioss__Region_8C.html#acfc3362c77d7c0156bae6bc47f462607", null ]
+    [ "update_database", "Ioss__Region_8C.html#acfc3362c77d7c0156bae6bc47f462607", null ],
+    [ "update_database", "Ioss__Region_8C.html#ad8c6d7bf96477386d9d0ad14ad2fd8fb", null ],
+    [ "update_database", "Ioss__Region_8C.html#ab69d9134a3ab20f1e3f92dcbd2d39cfd", null ]
 ];

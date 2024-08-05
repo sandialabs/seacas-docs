@@ -183,6 +183,16 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DecompUtils.html">DecompUtils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DynamicTopologyBroker.html">DynamicTopologyBroker</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DynamicTopologyFileControl.html">DynamicTopologyFileControl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DynamicTopologyNotifier.html">DynamicTopologyNotifier</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DynamicTopologyObserver.html">DynamicTopologyObserver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1DynamicTopologyObserverCompare.html">DynamicTopologyObserverCompare</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Edge2.html">Edge2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Edge2D2.html">Edge2D2</a></td></tr>
@@ -779,6 +789,27 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ae1de565aa8b642bb5a50be439906c74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a9921aa11ed096eeb73140b1cf9246" id="r_ad0a9921aa11ed096eeb73140b1cf9246"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246">TopologyModified</a> { <br />
+&#160;&#160;<a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a474697167906418e57550ceb37c9b64e">TOPOLOGY_SAME</a> = ( 0)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246aff05fb57e96e88d0601abf7e8e43dd23">TOPOLOGY_REORDER</a> = (1U &lt;&lt; 0)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a201a78a96147059106da520ec1675212">TOPOLOGY_SHUFFLE</a> = (1U &lt;&lt; 1)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a51333524f80042b061e64400f94efaca">TOPOLOGY_HADAPT</a> = (1U &lt;&lt; 2)
+, <br />
+&#160;&#160;<a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a13ec9f7cd1dd5998f269666db43ce3ff">TOPOLOGY_GEOMETRY</a> = (1U &lt;&lt; 3)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a53d50f44a7c2bb3865b8cd5fb4dfef67">TOPOLOGY_CREATEFACE</a> = (1U &lt;&lt; 4)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246af582c2e0691ee4a338e300f8d480a0ac">TOPOLOGY_CREATEELEM</a> = (1U &lt;&lt; 5)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a57c30faaa2241ddd9315ecc2d8073fa2">TOPOLOGY_CREATENODE</a> = (1U &lt;&lt; 6)
+, <br />
+&#160;&#160;<a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a3f4ab8ff16568b7fb391e32453c57f47">TOPOLOGY_CREATEASSEMBLY</a> = (1U &lt;&lt; 7)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246afd800699b6bde2b20e248950be1a9c92">TOPOLOGY_UNKNOWN</a> = (1U &lt;&lt; 8)
+<br />
+ }</td></tr>
+<tr class="separator:ad0a9921aa11ed096eeb73140b1cf9246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd2f3dc49ce1f15cdfd4625fe0a2ae9" id="r_a9cd2f3dc49ce1f15cdfd4625fe0a2ae9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9">FileControlOption</a> { <a class="el" href="#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9ad15a58bdb02b1f6ab1100b769650dc82">CONTROL_NONE</a>
+, <a class="el" href="#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9acaa55fd1bea80b5095e5050ac8b254cc">CONTROL_AUTO_MULTI_FILE</a>
+, <a class="el" href="#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9a4e1eff6c9195e69893ec791d0c0fad03">CONTROL_AUTO_SINGLE_FILE</a>
+ }</td></tr>
+<tr class="separator:a9cd2f3dc49ce1f15cdfd4625fe0a2ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a485ebe6da7fb755a092fa8876c35bd44" id="r_a485ebe6da7fb755a092fa8876c35bd44"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a485ebe6da7fb755a092fa8876c35bd44">ElementShape</a> : unsigned { <br />
 &#160;&#160;<a class="el" href="#a485ebe6da7fb755a092fa8876c35bd44a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a>
 , <a class="el" href="#a485ebe6da7fb755a092fa8876c35bd44aaebdbcb765394d25d6a604589a890f82">POINT</a>
@@ -889,6 +920,9 @@ Functions</h2></td></tr>
 <tr class="separator:a174e0b297eacb3ab13ae480ddb71303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab71cc5f9234df8232ff4f720ab6dbfe7" id="r_ab71cc5f9234df8232ff4f720ab6dbfe7"><td class="memItemLeft" align="right" valign="top">IOSS_EXPORT const <a class="el" href="#add96c5daa568651f64f972f35b41966b">Ioss::NameList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab71cc5f9234df8232ff4f720ab6dbfe7">valid_decomp_methods</a> ()</td></tr>
 <tr class="separator:ab71cc5f9234df8232ff4f720ab6dbfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fc848a2ef438e6d197fecbc109c38e" id="r_a04fc848a2ef438e6d197fecbc109c38e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a04fc848a2ef438e6d197fecbc109c38e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a04fc848a2ef438e6d197fecbc109c38e">update_database_for_grouping_entities</a> (const T &amp;container, <a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *db)</td></tr>
+<tr class="separator:a04fc848a2ef438e6d197fecbc109c38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace14d07c4fcfa3609eedec64779035f9" id="r_ace14d07c4fcfa3609eedec64779035f9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TIter  = decltype(std::begin(std::declval&lt;T&gt;())), typename  = decltype(std::end(std::declval&lt;T&gt;()))&gt; </td></tr>
 <tr class="memitem:ace14d07c4fcfa3609eedec64779035f9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ace14d07c4fcfa3609eedec64779035f9">enumerate</a> (T &amp;&amp;iterable)</td></tr>
 <tr class="separator:ace14d07c4fcfa3609eedec64779035f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1771,6 +1805,33 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
+<a id="a9cd2f3dc49ce1f15cdfd4625fe0a2ae9" name="a9cd2f3dc49ce1f15cdfd4625fe0a2ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9">&#9670;&#160;</a></span>FileControlOption</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9">Ioss::FileControlOption</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9cd2f3dc49ce1f15cdfd4625fe0a2ae9ad15a58bdb02b1f6ab1100b769650dc82" name="a9cd2f3dc49ce1f15cdfd4625fe0a2ae9ad15a58bdb02b1f6ab1100b769650dc82"></a>CONTROL_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9cd2f3dc49ce1f15cdfd4625fe0a2ae9acaa55fd1bea80b5095e5050ac8b254cc" name="a9cd2f3dc49ce1f15cdfd4625fe0a2ae9acaa55fd1bea80b5095e5050ac8b254cc"></a>CONTROL_AUTO_MULTI_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9cd2f3dc49ce1f15cdfd4625fe0a2ae9a4e1eff6c9195e69893ec791d0c0fad03" name="a9cd2f3dc49ce1f15cdfd4625fe0a2ae9a4e1eff6c9195e69893ec791d0c0fad03"></a>CONTROL_AUTO_SINGLE_FILE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ae1de565aa8b642bb5a50be439906c74d" name="ae1de565aa8b642bb5a50be439906c74d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1de565aa8b642bb5a50be439906c74d">&#9670;&#160;</a></span>IfDatabaseExistsBehavior</h2>
 
@@ -1879,6 +1940,52 @@ template&lt;typename INT &gt; </div>
 <tr><td class="fieldname"><a id="aac97d071c77181adce98f1569c36d222ad6f280248029a3f02714d38d68c8b97d" name="aac97d071c77181adce98f1569c36d222ad6f280248029a3f02714d38d68c8b97d"></a>SPLIT_BY_ELEMENT_BLOCK&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aac97d071c77181adce98f1569c36d222a5004c32a6d3b2ac8c5c23ad8ca595c73" name="aac97d071c77181adce98f1569c36d222a5004c32a6d3b2ac8c5c23ad8ca595c73"></a>SPLIT_BY_DONT_SPLIT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aac97d071c77181adce98f1569c36d222ac58d9f16883b0615c05af5e380adc68f" name="aac97d071c77181adce98f1569c36d222ac58d9f16883b0615c05af5e380adc68f"></a>SPLIT_LAST_ENTRY&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad0a9921aa11ed096eeb73140b1cf9246" name="ad0a9921aa11ed096eeb73140b1cf9246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a9921aa11ed096eeb73140b1cf9246">&#9670;&#160;</a></span>TopologyModified</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246">Ioss::TopologyModified</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The TopologyModified enumeration is used as an argument to the topology_modified() functions in io to specify the type of topology modification that has occurred. The calls to topology_modified() are cumulative between output steps, so a call with TOPOLOGY_REORDER followed by a call with TOPOLOGY_SHUFFLE will do the right thing. Typical examples of when these would be used are:</p><ul>
+<li>TOPOLOGY_SAME: No change, but easier to call function than not.</li>
+<li>TOPOLOGY_REORDER: Element Death which reorders the Registrars</li>
+<li>TOPOLOGY_SHUFFLE: Load Balancing</li>
+<li>TOPOLOGY_HADAPT: H-Adaptivity</li>
+<li>TOPOLOGY_GHOST: Ghost nodes/edges/faces/elements created/destroyed</li>
+<li>TOPOLOGY_GEOMETRY: Model data is modified, overlap removal.</li>
+<li>TOPOLOGY_CREATEDELETE: Surface erosion, particle creation</li>
+<li>TOPOLOGY_UNKNOWN: Something else, catchall option. </li>
+</ul>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a474697167906418e57550ceb37c9b64e" name="ad0a9921aa11ed096eeb73140b1cf9246a474697167906418e57550ceb37c9b64e"></a>TOPOLOGY_SAME&#160;</td><td class="fielddoc"><p>No change, also used for initialization. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246aff05fb57e96e88d0601abf7e8e43dd23" name="ad0a9921aa11ed096eeb73140b1cf9246aff05fb57e96e88d0601abf7e8e43dd23"></a>TOPOLOGY_REORDER&#160;</td><td class="fielddoc"><p>Data structures reordered on processor, no change between procs. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a201a78a96147059106da520ec1675212" name="ad0a9921aa11ed096eeb73140b1cf9246a201a78a96147059106da520ec1675212"></a>TOPOLOGY_SHUFFLE&#160;</td><td class="fielddoc"><p>Globally the same, data moved among processors. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a51333524f80042b061e64400f94efaca" name="ad0a9921aa11ed096eeb73140b1cf9246a51333524f80042b061e64400f94efaca"></a>TOPOLOGY_HADAPT&#160;</td><td class="fielddoc"><p>Elements split/combined; not moved cross-proc. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a13ec9f7cd1dd5998f269666db43ce3ff" name="ad0a9921aa11ed096eeb73140b1cf9246a13ec9f7cd1dd5998f269666db43ce3ff"></a>TOPOLOGY_GEOMETRY&#160;</td><td class="fielddoc"><p>Geometry (mesh coordinates) modified. Restart needs to know this. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a53d50f44a7c2bb3865b8cd5fb4dfef67" name="ad0a9921aa11ed096eeb73140b1cf9246a53d50f44a7c2bb3865b8cd5fb4dfef67"></a>TOPOLOGY_CREATEFACE&#160;</td><td class="fielddoc"><p>Face/Edge are created/deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246af582c2e0691ee4a338e300f8d480a0ac" name="ad0a9921aa11ed096eeb73140b1cf9246af582c2e0691ee4a338e300f8d480a0ac"></a>TOPOLOGY_CREATEELEM&#160;</td><td class="fielddoc"><p>Elements are created/deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a57c30faaa2241ddd9315ecc2d8073fa2" name="ad0a9921aa11ed096eeb73140b1cf9246a57c30faaa2241ddd9315ecc2d8073fa2"></a>TOPOLOGY_CREATENODE&#160;</td><td class="fielddoc"><p>Nodes are created/deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a3f4ab8ff16568b7fb391e32453c57f47" name="ad0a9921aa11ed096eeb73140b1cf9246a3f4ab8ff16568b7fb391e32453c57f47"></a>TOPOLOGY_CREATEASSEMBLY&#160;</td><td class="fielddoc"><p>Assemblies are created/deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246afd800699b6bde2b20e248950be1a9c92" name="ad0a9921aa11ed096eeb73140b1cf9246afd800699b6bde2b20e248950be1a9c92"></a>TOPOLOGY_UNKNOWN&#160;</td><td class="fielddoc"><p><a class="el" href="classIoss_1_1Unknown.html">Unknown</a> change, recreate from scratch. </p>
+</td></tr>
 </table>
 
 </div>
@@ -3058,6 +3165,29 @@ template&lt;typename INT &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>output_region</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04fc848a2ef438e6d197fecbc109c38e" name="a04fc848a2ef438e6d197fecbc109c38e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fc848a2ef438e6d197fecbc109c38e">&#9670;&#160;</a></span>update_database_for_grouping_entities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::update_database_for_grouping_entities </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;</td>          <td class="paramname"><span class="paramname"><em>container</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *</td>          <td class="paramname"><span class="paramname"><em>db</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

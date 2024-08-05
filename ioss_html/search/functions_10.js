@@ -20,5 +20,6 @@ var searchData=
   ['quaternion_5f2d_17',['quaternion_2d',['../namespaceanonymous__namespace_02Ioss__ConcreteVariableType_8C_03.html#a23976562884594c9609207c88fb2a428',1,'anonymous_namespace{Ioss_ConcreteVariableType.C}']]],
   ['quaternion_5f3d_18',['Quaternion_3D',['../classIoss_1_1Quaternion__3D.html#ad57d81adde48301a4dcc522229b6bc02',1,'Ioss::Quaternion_3D::Quaternion_3D(const Quaternion_3D &amp;)=delete'],['../classIoss_1_1Quaternion__3D.html#af9c79cb8e060657b6899d3aec854a187',1,'Ioss::Quaternion_3D::Quaternion_3D()']]],
   ['quaternion_5f3d_19',['quaternion_3d',['../namespaceanonymous__namespace_02Ioss__ConcreteVariableType_8C_03.html#ae26ba7028001bac6bd5959967e214482',1,'anonymous_namespace{Ioss_ConcreteVariableType.C}']]],
-  ['query_5ftimesteps_5fonly_20',['query_timesteps_only',['../classInfo_1_1Interface.html#acadbd90cb076218267c86752cd5a848c',1,'Info::Interface']]]
+  ['query_5fgroups_20',['query_groups',['../namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a0c9931ef2fdd5debb9d6f628436e5488',1,'anonymous_namespace{Ioex_BaseDatabaseIO.C}']]],
+  ['query_5ftimesteps_5fonly_21',['query_timesteps_only',['../classInfo_1_1Interface.html#acadbd90cb076218267c86752cd5a848c',1,'Info::Interface']]]
 ];

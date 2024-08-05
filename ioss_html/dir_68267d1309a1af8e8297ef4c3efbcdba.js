@@ -61,6 +61,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Ioss_DecompositionUtils.C", "Ioss__DecompositionUtils_8C.html", "Ioss__DecompositionUtils_8C" ],
     [ "Ioss_DecompositionUtils.h", "Ioss__DecompositionUtils_8h.html", "Ioss__DecompositionUtils_8h" ],
     [ "Ioss_Doxygen.h", "Ioss__Doxygen_8h.html", null ],
+    [ "Ioss_DynamicTopology.C", "Ioss__DynamicTopology_8C.html", "Ioss__DynamicTopology_8C" ],
+    [ "Ioss_DynamicTopology.h", "Ioss__DynamicTopology_8h.html", "Ioss__DynamicTopology_8h" ],
     [ "Ioss_EdgeBlock.C", "Ioss__EdgeBlock_8C.html", null ],
     [ "Ioss_EdgeBlock.h", "Ioss__EdgeBlock_8h.html", "Ioss__EdgeBlock_8h" ],
     [ "Ioss_EdgeSet.C", "Ioss__EdgeSet_8C.html", null ],

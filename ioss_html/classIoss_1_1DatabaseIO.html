@@ -213,6 +213,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad0fc842a496f5e8af148adccc21301c5" id="r_ad0fc842a496f5e8af148adccc21301c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0fc842a496f5e8af148adccc21301c5">create_subgroup</a> (const std::string &amp;group_name)</td></tr>
 <tr class="memdesc:ad0fc842a496f5e8af148adccc21301c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a database type supports groups, create the specified group as a child of the current group.  <br /></td></tr>
 <tr class="separator:ad0fc842a496f5e8af148adccc21301c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedfc9998b5673610298fdb0e13a1aa1a" id="r_aedfc9998b5673610298fdb0e13a1aa1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedfc9998b5673610298fdb0e13a1aa1a">open_root_group</a> ()</td></tr>
+<tr class="separator:aedfc9998b5673610298fdb0e13a1aa1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e4306344f4ca4488f55e1431108d3a" id="r_aa3e4306344f4ca4488f55e1431108d3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3e4306344f4ca4488f55e1431108d3a">num_child_group</a> ()</td></tr>
+<tr class="separator:aa3e4306344f4ca4488f55e1431108d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef30381100918d54f753cdf93ac08207" id="r_aef30381100918d54f753cdf93ac08207"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef30381100918d54f753cdf93ac08207">open_child_group</a> (int index)</td></tr>
+<tr class="separator:aef30381100918d54f753cdf93ac08207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01a235d336f1f910571daac5107832e" id="r_ae01a235d336f1f910571daac5107832e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceIoss.html#add96c5daa568651f64f972f35b41966b">Ioss::NameList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae01a235d336f1f910571daac5107832e">groups_describe</a> (bool return_full_names=false)</td></tr>
+<tr class="separator:ae01a235d336f1f910571daac5107832e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53913dd63638db01ec12c0d82dae06d1" id="r_a53913dd63638db01ec12c0d82dae06d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53913dd63638db01ec12c0d82dae06d1">begin</a> (<a class="el" href="namespaceIoss.html#a02dbd3bfbd7f633e636c8c0c385c4a34">Ioss::State</a> state)</td></tr>
 <tr class="memdesc:a53913dd63638db01ec12c0d82dae06d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the database to the given State.  <br /></td></tr>
 <tr class="separator:a53913dd63638db01ec12c0d82dae06d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,6 +337,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:add13a49b34f8c4bb7b85bb7ad91c01c3" id="r_add13a49b34f8c4bb7b85bb7ad91c01c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add13a49b34f8c4bb7b85bb7ad91c01c3">set_int_byte_size_api</a> (<a class="el" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">Ioss::DataSize</a> size) const</td></tr>
 <tr class="memdesc:add13a49b34f8c4bb7b85bb7ad91c01c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 4 or 8.  <br /></td></tr>
 <tr class="separator:add13a49b34f8c4bb7b85bb7ad91c01c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31809721489cb99030d463eee69a23ec" id="r_a31809721489cb99030d463eee69a23ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">Ioss::DataSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31809721489cb99030d463eee69a23ec">int_byte_size_data_size</a> () const</td></tr>
+<tr class="separator:a31809721489cb99030d463eee69a23ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad013b48df6d593deb7ffc98ab5de7777" id="r_ad013b48df6d593deb7ffc98ab5de7777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="classIoss_1_1Region.html">Region</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad013b48df6d593deb7ffc98ab5de7777">get_region</a> () const</td></tr>
 <tr class="separator:ad013b48df6d593deb7ffc98ab5de7777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a135bac653f6408c2105c5dc2db0b65" id="r_a4a135bac653f6408c2105c5dc2db0b65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a135bac653f6408c2105c5dc2db0b65">set_cycle_count</a> (int count) const</td></tr>
@@ -386,6 +396,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a3a17d85751f9da74b86568fe5e2cbe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86ec808aa12916370a6feaf279fa6f5c" id="r_a86ec808aa12916370a6feaf279fa6f5c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86ec808aa12916370a6feaf279fa6f5c">flush_database_nl</a> () const</td></tr>
 <tr class="separator:a86ec808aa12916370a6feaf279fa6f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d08a394a481602bb6d40c606769ff2" id="r_a90d08a394a481602bb6d40c606769ff2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90d08a394a481602bb6d40c606769ff2">release_memory_nl</a> ()</td></tr>
+<tr class="separator:a90d08a394a481602bb6d40c606769ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -471,12 +483,18 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a9ea5cb2d04a2b949adad7af972cfaf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9f63fcd4888d6a62b18eb200240798d" id="r_ae9f63fcd4888d6a62b18eb200240798d"><td class="memItemLeft" align="right" valign="top">virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9f63fcd4888d6a62b18eb200240798d">element_global_to_local_nl</a> (int64_t global) const</td></tr>
 <tr class="separator:ae9f63fcd4888d6a62b18eb200240798d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90d08a394a481602bb6d40c606769ff2" id="r_a90d08a394a481602bb6d40c606769ff2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90d08a394a481602bb6d40c606769ff2">release_memory_nl</a> ()</td></tr>
-<tr class="separator:a90d08a394a481602bb6d40c606769ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d40d6e965061b569e6c9a475023683b" id="r_a8d40d6e965061b569e6c9a475023683b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d40d6e965061b569e6c9a475023683b">num_child_group_nl</a> ()</td></tr>
+<tr class="separator:a8d40d6e965061b569e6c9a475023683b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee588c7c52a45debe70fa7d92919d01f" id="r_aee588c7c52a45debe70fa7d92919d01f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee588c7c52a45debe70fa7d92919d01f">open_child_group_nl</a> (int)</td></tr>
+<tr class="separator:aee588c7c52a45debe70fa7d92919d01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8fe624268041268bb2fd92d15545ac4" id="r_af8fe624268041268bb2fd92d15545ac4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8fe624268041268bb2fd92d15545ac4">open_root_group_nl</a> ()</td></tr>
+<tr class="separator:af8fe624268041268bb2fd92d15545ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc75e63ebf2da59cae4556385150ae52" id="r_adc75e63ebf2da59cae4556385150ae52"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc75e63ebf2da59cae4556385150ae52">open_group_nl</a> (const std::string &amp;)</td></tr>
 <tr class="separator:adc75e63ebf2da59cae4556385150ae52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18854e9e3d73fdbff7496530eca1c4b2" id="r_a18854e9e3d73fdbff7496530eca1c4b2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18854e9e3d73fdbff7496530eca1c4b2">create_subgroup_nl</a> (const std::string &amp;)</td></tr>
 <tr class="separator:a18854e9e3d73fdbff7496530eca1c4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0136c7853074513b173520a74facff73" id="r_a0136c7853074513b173520a74facff73"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceIoss.html#add96c5daa568651f64f972f35b41966b">Ioss::NameList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0136c7853074513b173520a74facff73">groups_describe_nl</a> (bool)</td></tr>
+<tr class="separator:a0136c7853074513b173520a74facff73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6622e67db7665eb5000c6c083efba159" id="r_a6622e67db7665eb5000c6c083efba159"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6622e67db7665eb5000c6c083efba159">begin_nl</a> (<a class="el" href="namespaceIoss.html#a02dbd3bfbd7f633e636c8c0c385c4a34">Ioss::State</a> state)=0</td></tr>
 <tr class="separator:a6622e67db7665eb5000c6c083efba159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f42906845016bd23f04316ab5da1e57" id="r_a5f42906845016bd23f04316ab5da1e57"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f42906845016bd23f04316ab5da1e57">end_nl</a> (<a class="el" href="namespaceIoss.html#a02dbd3bfbd7f633e636c8c0c385c4a34">Ioss::State</a> state)=0</td></tr>
@@ -3826,6 +3844,58 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ae01a235d336f1f910571daac5107832e" name="ae01a235d336f1f910571daac5107832e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01a235d336f1f910571daac5107832e">&#9670;&#160;</a></span>groups_describe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceIoss.html#add96c5daa568651f64f972f35b41966b">Ioss::NameList</a> Ioss::DatabaseIO::groups_describe </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>return_full_names</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0136c7853074513b173520a74facff73" name="a0136c7853074513b173520a74facff73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0136c7853074513b173520a74facff73">&#9670;&#160;</a></span>groups_describe_nl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceIoss.html#add96c5daa568651f64f972f35b41966b">Ioss::NameList</a> Ioss::DatabaseIO::groups_describe_nl </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classIoex_1_1BaseDatabaseIO.html#a423cc233fa5389cbf09239f04a7491a3">Ioex::BaseDatabaseIO</a>.</p>
+
+</div>
+</div>
 <a id="a4c87b440fd3d95dc9bebd52ada1e7608" name="a4c87b440fd3d95dc9bebd52ada1e7608"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c87b440fd3d95dc9bebd52ada1e7608">&#9670;&#160;</a></span>handle_groups()</h2>
 
@@ -3917,6 +3987,23 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns 4 or 8. </p>
+
+</div>
+</div>
+<a id="a31809721489cb99030d463eee69a23ec" name="a31809721489cb99030d463eee69a23ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31809721489cb99030d463eee69a23ec">&#9670;&#160;</a></span>int_byte_size_data_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceIoss.html#a471a5f1fc4d6837c650722e41edb2822">Ioss::DataSize</a> Ioss::DatabaseIO::int_byte_size_data_size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -4240,6 +4327,58 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="aa3e4306344f4ca4488f55e1431108d3a" name="aa3e4306344f4ca4488f55e1431108d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e4306344f4ca4488f55e1431108d3a">&#9670;&#160;</a></span>num_child_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ioss::DatabaseIO::num_child_group </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d40d6e965061b569e6c9a475023683b" name="a8d40d6e965061b569e6c9a475023683b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d40d6e965061b569e6c9a475023683b">&#9670;&#160;</a></span>num_child_group_nl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int Ioss::DatabaseIO::num_child_group_nl </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classIoex_1_1BaseDatabaseIO.html#a7ba300838db8bebba1a4758c479023b1">Ioex::BaseDatabaseIO</a>.</p>
+
+</div>
+</div>
 <a id="aa059cee234638d9b774d6d12ad6265d1" name="aa059cee234638d9b774d6d12ad6265d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa059cee234638d9b774d6d12ad6265d1">&#9670;&#160;</a></span>ok()</h2>
 
@@ -4318,6 +4457,58 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classIoex_1_1BaseDatabaseIO.html#a3d74fefc2feffc218c2b3c47b71ac4e9">Ioex::BaseDatabaseIO</a>, <a class="el" href="classIoexnl_1_1BaseDatabaseIO.html#a6d8b7d8e8c382b40e54823ed90c6eafb">Ioexnl::BaseDatabaseIO</a>, and <a class="el" href="classIonull_1_1DatabaseIO.html#a10563de943095a3fada7847bdea0b924">Ionull::DatabaseIO</a>.</p>
+
+</div>
+</div>
+<a id="aef30381100918d54f753cdf93ac08207" name="aef30381100918d54f753cdf93ac08207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef30381100918d54f753cdf93ac08207">&#9670;&#160;</a></span>open_child_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::DatabaseIO::open_child_group </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee588c7c52a45debe70fa7d92919d01f" name="aee588c7c52a45debe70fa7d92919d01f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee588c7c52a45debe70fa7d92919d01f">&#9670;&#160;</a></span>open_child_group_nl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Ioss::DatabaseIO::open_child_group_nl </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classIoex_1_1BaseDatabaseIO.html#a3652a7e982c2cdb80f012b8207b49359">Ioex::BaseDatabaseIO</a>.</p>
 
 </div>
 </div>
@@ -4418,6 +4609,58 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classIocatalyst_1_1DatabaseIO.html#a69cd2dc9a0e547b82f4672f800466bc3">Iocatalyst::DatabaseIO</a>, and <a class="el" href="classIoex_1_1BaseDatabaseIO.html#ad5204a744bce214e334a7ab0545aa11a">Ioex::BaseDatabaseIO</a>.</p>
+
+</div>
+</div>
+<a id="aedfc9998b5673610298fdb0e13a1aa1a" name="aedfc9998b5673610298fdb0e13a1aa1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedfc9998b5673610298fdb0e13a1aa1a">&#9670;&#160;</a></span>open_root_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ioss::DatabaseIO::open_root_group </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8fe624268041268bb2fd92d15545ac4" name="af8fe624268041268bb2fd92d15545ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8fe624268041268bb2fd92d15545ac4">&#9670;&#160;</a></span>open_root_group_nl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Ioss::DatabaseIO::open_root_group_nl </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classIoex_1_1BaseDatabaseIO.html#ae04ef8a700ee8f8e19138e89d931ca4e">Ioex::BaseDatabaseIO</a>.</p>
 
 </div>
 </div>
@@ -5352,10 +5595,12 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classIoex_1_1BaseDatabaseIO.html#a3620da5e4c06cb7f927dcb2220caa9f4">Ioex::BaseDatabaseIO</a>.</p>
 
 </div>
 </div>
