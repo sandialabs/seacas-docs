@@ -23,7 +23,7 @@ copyright = '1999-2024 National Technology & Engineering Solutions'
 author = 'Gregory Sjaardema'
 
 # The full version, including alpha/beta/rc tags
-release = '2023/07/12'
+release = '2024/08/17'
 
 
 # -- General configuration ---------------------------------------------------
@@ -65,13 +65,23 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
+
+html_sidebars = {
+   '**': ['localtoc.html', 'sourcelink.html', 'searchbox.html'],
+   'using/windows': ['windows-sidebar.html', 'searchbox.html'],
+}
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+#html_theme = 'sphinx_rtd_theme'
+html_theme = 'pydata_sphinx_theme'
 html_theme_path = ["_themes", ]
+
+html_theme_options = {
+  "show_nav_level": 0
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
