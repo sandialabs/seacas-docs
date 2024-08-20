@@ -83,5 +83,5 @@ var searchData=
   ['num_5fsides_80',['num_sides',['../structexi__elem__blk__parm.html#ad53e101c77bd534298aef3d45f985c28',1,'exi_elem_blk_parm']]],
   ['num_5fsset_81',['num_sset',['../structex__var__params.html#aefe319b017db1ae1a32f37b89edfd871',1,'ex_var_params']]],
   ['number_20map_20routines_82',['Number Map Routines',['../nemesis-mapping.html#map',1,'']]],
-  ['number_5fwidth_83',['number_width',['../ex__field__utils_8c.html#a035e9ae40b2a18c90dff366d7c4699a7',1,'ex_field_utils.c']]]
+  ['number_5fwidth_83',['number_width',['../ex__field__utils_8c.html#a474592577bb5fca323e63c644c04ec32',1,'ex_field_utils.c']]]
 ];

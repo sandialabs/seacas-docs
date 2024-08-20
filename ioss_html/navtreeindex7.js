@@ -1,7 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"Ioss__Tri4_8h_source.html":[5,0,0,4,95],
-"Ioss__Tri4a_8C.html":[5,0,0,4,96],
 "Ioss__Tri4a_8h.html":[5,0,0,4,97],
 "Ioss__Tri4a_8h_source.html":[5,0,0,4,97],
 "Ioss__Tri6_8C.html":[5,0,0,4,98],
@@ -249,5 +247,7 @@ var NAVTREEINDEX7 =
 "UnitTestDynamicTopology_8C.html#a2ce4e2812521450bb3ab3e5838a51d30":[5,0,0,17,1,28],
 "UnitTestDynamicTopology_8C.html#a3ce239314fece7edde0dffcff2878a9a":[5,0,0,17,1,3],
 "UnitTestDynamicTopology_8C.html#a412825ec2dfd713ed4576277428b6549":[5,0,0,17,1,9],
-"UnitTestDynamicTopology_8C.html#a4455253387fd92b80812011c6cb80324":[5,0,0,17,1,13]
+"UnitTestDynamicTopology_8C.html#a4455253387fd92b80812011c6cb80324":[5,0,0,17,1,13],
+"UnitTestDynamicTopology_8C.html#a4fd2479be0889c067cf58da51874417d":[5,0,0,17,1,17],
+"UnitTestDynamicTopology_8C.html#a54dce809956b62aa4e92b8f04c778ef2":[5,0,0,17,1,22]
 };

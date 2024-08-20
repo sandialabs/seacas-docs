@@ -7,7 +7,7 @@ var Ioss__DynamicTopology_8h =
     [ "FileControlOption", "Ioss__DynamicTopology_8h.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9", [
       [ "CONTROL_NONE", "Ioss__DynamicTopology_8h.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9ad15a58bdb02b1f6ab1100b769650dc82", null ],
       [ "CONTROL_AUTO_MULTI_FILE", "Ioss__DynamicTopology_8h.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9acaa55fd1bea80b5095e5050ac8b254cc", null ],
-      [ "CONTROL_AUTO_SINGLE_FILE", "Ioss__DynamicTopology_8h.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9a4e1eff6c9195e69893ec791d0c0fad03", null ]
+      [ "CONTROL_AUTO_GROUP_FILE", "Ioss__DynamicTopology_8h.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9a61ac6132bd6b5db2bcd942849fcfea36", null ]
     ] ],
     [ "TopologyModified", "Ioss__DynamicTopology_8h.html#ad0a9921aa11ed096eeb73140b1cf9246", [
       [ "TOPOLOGY_SAME", "Ioss__DynamicTopology_8h.html#ad0a9921aa11ed096eeb73140b1cf9246a474697167906418e57550ceb37c9b64e", null ],

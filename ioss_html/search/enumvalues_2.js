@@ -10,8 +10,8 @@ var searchData=
   ['composite_7',['COMPOSITE',['../classIoss_1_1VariableType.html#a4c36b31f4b1980f144278df43f62c48aa817e60c93ea667a3b1f99f516a56fa62',1,'Ioss::VariableType']]],
   ['concat_5fglob_8',['CONCAT_GLOB',['../classIoss_1_1glob_1_1AstNode.html#a111a111eb1b7b920c7ebe169eebdd562a2a537088e021d7de7ab0c79c77c2aebb',1,'Ioss::glob::AstNode']]],
   ['constructed_9',['CONSTRUCTED',['../classIoss_1_1VariableType.html#a4c36b31f4b1980f144278df43f62c48aaeeab341f3784b03438a985ed37b07461',1,'Ioss::VariableType']]],
-  ['control_5fauto_5fmulti_5ffile_10',['CONTROL_AUTO_MULTI_FILE',['../namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9acaa55fd1bea80b5095e5050ac8b254cc',1,'Ioss']]],
-  ['control_5fauto_5fsingle_5ffile_11',['CONTROL_AUTO_SINGLE_FILE',['../namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9a4e1eff6c9195e69893ec791d0c0fad03',1,'Ioss']]],
+  ['control_5fauto_5fgroup_5ffile_10',['CONTROL_AUTO_GROUP_FILE',['../namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9a61ac6132bd6b5db2bcd942849fcfea36',1,'Ioss']]],
+  ['control_5fauto_5fmulti_5ffile_11',['CONTROL_AUTO_MULTI_FILE',['../namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9acaa55fd1bea80b5095e5050ac8b254cc',1,'Ioss']]],
   ['control_5fnone_12',['CONTROL_NONE',['../namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9ad15a58bdb02b1f6ab1100b769650dc82',1,'Ioss']]],
   ['csv_13',['CSV',['../namespaceIohb.html#a5422f461a6993e2b25c0ece9fe17762bacc8d68c551c4a9a6d5313e07de4deafd',1,'Iohb']]]
 ];

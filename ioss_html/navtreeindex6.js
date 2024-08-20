@@ -1,7 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"Ioss__Pyramid18_8h_source.html":[5,0,0,4,37],
-"Ioss__Pyramid19_8C.html":[5,0,0,4,38],
 "Ioss__Pyramid19_8h.html":[5,0,0,4,39],
 "Ioss__Pyramid19_8h_source.html":[5,0,0,4,39],
 "Ioss__Pyramid5_8C.html":[5,0,0,4,40],
@@ -249,5 +247,7 @@ var NAVTREEINDEX6 =
 "Ioss__Tri3_8h.html":[5,0,0,4,93],
 "Ioss__Tri3_8h_source.html":[5,0,0,4,93],
 "Ioss__Tri4_8C.html":[5,0,0,4,94],
-"Ioss__Tri4_8h.html":[5,0,0,4,95]
+"Ioss__Tri4_8h.html":[5,0,0,4,95],
+"Ioss__Tri4_8h_source.html":[5,0,0,4,95],
+"Ioss__Tri4a_8C.html":[5,0,0,4,96]
 };

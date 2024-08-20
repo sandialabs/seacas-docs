@@ -370,7 +370,7 @@ var namespaceIoss =
     [ "FileControlOption", "namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9", [
       [ "CONTROL_NONE", "namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9ad15a58bdb02b1f6ab1100b769650dc82", null ],
       [ "CONTROL_AUTO_MULTI_FILE", "namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9acaa55fd1bea80b5095e5050ac8b254cc", null ],
-      [ "CONTROL_AUTO_SINGLE_FILE", "namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9a4e1eff6c9195e69893ec791d0c0fad03", null ]
+      [ "CONTROL_AUTO_GROUP_FILE", "namespaceIoss.html#a9cd2f3dc49ce1f15cdfd4625fe0a2ae9a61ac6132bd6b5db2bcd942849fcfea36", null ]
     ] ],
     [ "IfDatabaseExistsBehavior", "namespaceIoss.html#ae1de565aa8b642bb5a50be439906c74d", [
       [ "DB_OVERWRITE", "namespaceIoss.html#ae1de565aa8b642bb5a50be439906c74da6ce08f913735cf937818b26228e7f829", null ],
