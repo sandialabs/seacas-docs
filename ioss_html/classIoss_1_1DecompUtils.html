@@ -108,11 +108,15 @@ $(function(){initNavTree('classIoss_1_1DecompUtils.html',''); initResizable(true
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a944351b9027b3a485a189020ba93d4fb" id="r_a944351b9027b3a485a189020ba93d4fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a944351b9027b3a485a189020ba93d4fb">output_histogram</a> (const std::vector&lt; size_t &gt; &amp;proc_work, double avg_work, size_t median)</td></tr>
+<tr class="separator:a944351b9027b3a485a189020ba93d4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae45b8562e150bb1b75add62b39938a5d" id="r_ae45b8562e150bb1b75add62b39938a5d"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:ae45b8562e150bb1b75add62b39938a5d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae45b8562e150bb1b75add62b39938a5d">line_decomp_modify</a> (const <a class="el" href="namespaceIoss.html#ab8e52d9815556a59b610eb1f0c3045e2">Ioss::chain_t</a>&lt; INT &gt; &amp;element_chains, std::vector&lt; int &gt; &amp;element_to_proc, int proc_count)</td></tr>
 <tr class="separator:ae45b8562e150bb1b75add62b39938a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6147e28cdb9edcd1dd89d37de7435275" id="r_a6147e28cdb9edcd1dd89d37de7435275"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6147e28cdb9edcd1dd89d37de7435275">output_decomposition_statistics</a> (const std::vector&lt; int &gt; &amp;element_to_proc, int proc_count)</td></tr>
-<tr class="separator:a6147e28cdb9edcd1dd89d37de7435275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfdc6e8c624a2f743723a99ab1e76fc2" id="r_abfdc6e8c624a2f743723a99ab1e76fc2"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfdc6e8c624a2f743723a99ab1e76fc2">get_work_per_rank</a> (const std::vector&lt; int &gt; &amp;elem_to_proc, int proc_count)</td></tr>
+<tr class="separator:abfdc6e8c624a2f743723a99ab1e76fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9620d0b82537e629d8d81fa9383673b2" id="r_a9620d0b82537e629d8d81fa9383673b2"><td class="memItemLeft" align="right" valign="top">static std::pair&lt; double, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9620d0b82537e629d8d81fa9383673b2">output_decomposition_statistics</a> (const std::vector&lt; size_t &gt; work_per_rank)</td></tr>
+<tr class="separator:a9620d0b82537e629d8d81fa9383673b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaae457bc7e06b9bae6c4e81eefdc41eb" id="r_aaae457bc7e06b9bae6c4e81eefdc41eb"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:aaae457bc7e06b9bae6c4e81eefdc41eb"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; float &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aaae457bc7e06b9bae6c4e81eefdc41eb">line_decomp_weights</a> (const <a class="el" href="namespaceIoss.html#ab8e52d9815556a59b610eb1f0c3045e2">Ioss::chain_t</a>&lt; INT &gt; &amp;element_chains, size_t element_count)</td></tr>
 <tr class="separator:aaae457bc7e06b9bae6c4e81eefdc41eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +217,35 @@ template&lt;typename INT &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> INT</td>          <td class="paramname"><span class="paramname"><em>dummy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfdc6e8c624a2f743723a99ab1e76fc2" name="abfdc6e8c624a2f743723a99ab1e76fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfdc6e8c624a2f743723a99ab1e76fc2">&#9670;&#160;</a></span>get_work_per_rank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; size_t &gt; Ioss::DecompUtils::get_work_per_rank </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>elem_to_proc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>proc_count</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -342,8 +375,8 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="a6147e28cdb9edcd1dd89d37de7435275" name="a6147e28cdb9edcd1dd89d37de7435275"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6147e28cdb9edcd1dd89d37de7435275">&#9670;&#160;</a></span>output_decomposition_statistics()</h2>
+<a id="a9620d0b82537e629d8d81fa9383673b2" name="a9620d0b82537e629d8d81fa9383673b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9620d0b82537e629d8d81fa9383673b2">&#9670;&#160;</a></span>output_decomposition_statistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,14 +385,44 @@ template&lt;typename INT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ioss::DecompUtils::output_decomposition_statistics </td>
+          <td class="memname">std::pair&lt; double, size_t &gt; Ioss::DecompUtils::output_decomposition_statistics </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element_to_proc</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; size_t &gt;</td>          <td class="paramname"><span class="paramname"><em>work_per_rank</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a944351b9027b3a485a189020ba93d4fb" name="a944351b9027b3a485a189020ba93d4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944351b9027b3a485a189020ba93d4fb">&#9670;&#160;</a></span>output_histogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::DecompUtils::output_histogram </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>proc_work</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>proc_count</em></span>&#160;)</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>avg_work</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>median</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

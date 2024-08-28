@@ -1,6 +1,5 @@
 var Ioss__DecompositionUtils_8C =
 [
-    [ "output_histogram", "Ioss__DecompositionUtils_8C.html#a5e25a14b7a20da286c990f17492e89ae", null ],
     [ "string_chains", "Ioss__DecompositionUtils_8C.html#ab4835ad1d66de326d60343228366be37", null ],
     [ "zoltan_geom", "Ioss__DecompositionUtils_8C.html#a11e353b771f9de0cdadd0e23600595fe", null ],
     [ "zoltan_num_dim", "Ioss__DecompositionUtils_8C.html#a3d079efa18367384f5061283f54adae9", null ],

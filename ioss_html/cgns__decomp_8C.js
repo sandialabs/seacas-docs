@@ -6,7 +6,6 @@ var cgns__decomp_8C =
     [ "generate_guid", "cgns__decomp_8C.html#af10cc78395aef06a9c581ae4903497f1", null ],
     [ "main", "cgns__decomp_8C.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
     [ "output_communications", "cgns__decomp_8C.html#a0c5edd7b318137ecade4a15e0e893144", null ],
-    [ "output_histogram", "cgns__decomp_8C.html#a2365b58ffcf180fd6975124396894d28", null ],
     [ "surface_ratio", "cgns__decomp_8C.html#a34007321abe9063d5db1af1916ee9c65", null ],
     [ "update_zgc_data", "cgns__decomp_8C.html#abb9754f8277f717a428b5e2504a4a382", null ],
     [ "validate_decomposition", "cgns__decomp_8C.html#a2fb21f6339b4115fc72cfe57686d5d58", null ],

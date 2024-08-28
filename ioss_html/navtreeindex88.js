@@ -1,7 +1,5 @@
 var NAVTREEINDEX88 =
 {
-"structIogn_1_1DashSurfaceData.html#ac9285ccbb7ac6abc03d2fe1af1b72a3c":[3,0,139,0,6],
-"structIogn_1_1DashSurfaceData.html#ac9285ccbb7ac6abc03d2fe1af1b72a3c":[4,0,85,0,6],
 "structIogn_1_1ExodusData.html":[3,0,139,3],
 "structIogn_1_1ExodusData.html":[4,0,85,3],
 "structIogn_1_1ExodusData.html#a07e21eb63a5dc309ddfdb84c64302b57":[3,0,139,3,12],
@@ -249,5 +247,7 @@ var NAVTREEINDEX88 =
 "structIoss_1_1MeshCopyOptions.html#ab01c2f567590661271f500d2903023df":[3,0,145,86,16],
 "structIoss_1_1MeshCopyOptions.html#ab01c2f567590661271f500d2903023df":[4,0,91,84,16],
 "structIoss_1_1MeshCopyOptions.html#adac444faddc9f41a0f0c8c01aded4582":[3,0,145,86,20],
-"structIoss_1_1MeshCopyOptions.html#adac444faddc9f41a0f0c8c01aded4582":[4,0,91,84,20]
+"structIoss_1_1MeshCopyOptions.html#adac444faddc9f41a0f0c8c01aded4582":[4,0,91,84,20],
+"structIoss_1_1MeshCopyOptions.html#adbf836dfcb40005e91e022f3631d4cdd":[3,0,145,86,3],
+"structIoss_1_1MeshCopyOptions.html#adbf836dfcb40005e91e022f3631d4cdd":[4,0,91,84,3]
 };

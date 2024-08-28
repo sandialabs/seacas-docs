@@ -101,7 +101,7 @@ $(function(){initNavTree('_2test_2create_mesh_8c-example.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2023 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2024 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -436,9 +436,9 @@ $(function(){initNavTree('_2test_2create_mesh_8c-example.html',''); initResizabl
 <div class="line">{</div>
 <div class="line">  <span class="comment">/* create global coordinates */</span></div>
 <div class="line">  <span class="keywordtype">size_t</span> k = 0;</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> m = 0; m &lt; (num_elements_1d + 1); m++) {</div>
-<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; (num_elements_1d + 1); i++) {</div>
-<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; (num_elements_1d + 1); j++, k++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (INT m = 0; m &lt; (num_elements_1d + 1); m++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (INT i = 0; i &lt; (num_elements_1d + 1); i++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; (num_elements_1d + 1); j++, k++) {</div>
 <div class="line">        x[k] = (realtyp)j;</div>
 <div class="line">        y[k] = (realtyp)i;</div>
 <div class="line">        z[k] = (realtyp)m;</div>
@@ -449,10 +449,10 @@ $(function(){initNavTree('_2test_2create_mesh_8c-example.html',''); initResizabl
 <div class="line">  <span class="comment">/* build connectivity array (node list) for mesh */</span></div>
 <div class="line">  <span class="keywordtype">size_t</span> elp1sq = (num_elements_1d + 1) * (num_elements_1d + 1);</div>
 <div class="line">  <span class="keywordtype">size_t</span> cnt    = 0;</div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> m = 0; m &lt; num_elements_1d; m++) {</div>
+<div class="line">  <span class="keywordflow">for</span> (INT m = 0; m &lt; num_elements_1d; m++) {</div>
 <div class="line">    k = 0;</div>
-<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; num_elements_1d; i++) {</div>
-<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; num_elements_1d; j++, k++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (INT i = 0; i &lt; num_elements_1d; i++) {</div>
+<div class="line">      <span class="keywordflow">for</span> (INT j = 0; j &lt; num_elements_1d; j++, k++) {</div>
 <div class="line">        <span class="keywordtype">size_t</span> base    = (m * elp1sq) + k + i + map_origin;</div>
 <div class="line">        connect[cnt++] = base;</div>
 <div class="line">        connect[cnt++] = base + 1;</div>

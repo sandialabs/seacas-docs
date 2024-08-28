@@ -270,7 +270,6 @@ var namespaces_dup =
       [ "get_entity_dist", "namespaceanonymous__namespace_02Ioss__Decomposition_8C_03.html#a85eb4033482b00df64d622c5ae892259", null ]
     ] ],
     [ "anonymous_namespace{Ioss_DecompositionUtils.C}", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html", [
-      [ "output_histogram", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#a5e25a14b7a20da286c990f17492e89ae", null ],
       [ "string_chains", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#ab4835ad1d66de326d60343228366be37", null ],
       [ "zoltan_geom", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#a11e353b771f9de0cdadd0e23600595fe", null ],
       [ "zoltan_num_dim", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#a3d079efa18367384f5061283f54adae9", null ],

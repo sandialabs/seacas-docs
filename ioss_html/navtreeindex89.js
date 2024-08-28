@@ -1,7 +1,5 @@
 var NAVTREEINDEX89 =
 {
-"structIoss_1_1MeshCopyOptions.html#adbf836dfcb40005e91e022f3631d4cdd":[3,0,145,86,3],
-"structIoss_1_1MeshCopyOptions.html#adbf836dfcb40005e91e022f3631d4cdd":[4,0,91,84,3],
 "structIoss_1_1MeshCopyOptions.html#ae8bd783a4af12a573089f18eea607ffb":[3,0,145,86,7],
 "structIoss_1_1MeshCopyOptions.html#ae8bd783a4af12a573089f18eea607ffb":[4,0,91,84,7],
 "structIoss_1_1Private_1_1is__null__finder.html":[3,0,145,3,0],
@@ -46,8 +44,6 @@ var NAVTREEINDEX89 =
 "structIoss_1_1ZoneConnectivity.html#a0a9eff4efab2e43c4007170f0d9ee539":[4,0,91,255,22],
 "structIoss_1_1ZoneConnectivity.html#a166970ec2e9cf1200c5bdce3d751ff40":[3,0,145,257,23],
 "structIoss_1_1ZoneConnectivity.html#a166970ec2e9cf1200c5bdce3d751ff40":[4,0,91,255,23],
-"structIoss_1_1ZoneConnectivity.html#a363efaba2c770565935f4f7ffed1ec2f":[3,0,145,257,19],
-"structIoss_1_1ZoneConnectivity.html#a363efaba2c770565935f4f7ffed1ec2f":[4,0,91,255,19],
 "structIoss_1_1ZoneConnectivity.html#a374359cb8c91d73f57bcc2aa3970ee5d":[3,0,145,257,3],
 "structIoss_1_1ZoneConnectivity.html#a374359cb8c91d73f57bcc2aa3970ee5d":[4,0,91,255,3],
 "structIoss_1_1ZoneConnectivity.html#a40c5f8aa682e677f9f735978cfafb965":[3,0,145,257,8],
@@ -106,6 +102,8 @@ var NAVTREEINDEX89 =
 "structIoss_1_1ZoneConnectivity.html#ac7d1dd3292e597d75c75c7d5b0c4f8a3":[4,0,91,255,10],
 "structIoss_1_1ZoneConnectivity.html#ac8294b8bbd267ca2811b5d24fdbc5c7b":[3,0,145,257,21],
 "structIoss_1_1ZoneConnectivity.html#ac8294b8bbd267ca2811b5d24fdbc5c7b":[4,0,91,255,21],
+"structIoss_1_1ZoneConnectivity.html#acd8c1f20427586c6b9beaf152d22de62":[3,0,145,257,19],
+"structIoss_1_1ZoneConnectivity.html#acd8c1f20427586c6b9beaf152d22de62":[4,0,91,255,19],
 "structIoss_1_1ZoneConnectivity.html#ad954e7da92f4a54de61a3e30d411b939":[3,0,145,257,33],
 "structIoss_1_1ZoneConnectivity.html#ad954e7da92f4a54de61a3e30d411b939":[4,0,91,255,33],
 "structIoss_1_1ZoneConnectivity.html#add4d3bbf265f6801644e9ee6a5fb2eb4":[3,0,145,257,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX89 =
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html":[3,0,147,0,12,3],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html":[4,0,93,0,12,3],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html#ab0b24489e24e2f5533949a4d0d8dcec0":[3,0,147,0,12,3,0],
-"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html#ab0b24489e24e2f5533949a4d0d8dcec0":[4,0,93,0,12,3,0]
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html#ab0b24489e24e2f5533949a4d0d8dcec0":[4,0,93,0,12,3,0],
+"structIotm_1_1text__mesh_1_1SideBlockInfo.html":[3,0,147,0,13],
+"structIotm_1_1text__mesh_1_1SideBlockInfo.html":[4,0,93,0,13]
 };
