@@ -117,8 +117,8 @@ var exodusII_8h =
       [ "EX_LASTERR", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3ab5666850729b8816fe2e8e477913e7a6", null ],
       [ "EX_NULLENTITY", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a1f0c400f756eae3ab544bb2fe02146bd", null ],
       [ "EX_NOENTITY", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a8c82b41910bfe282a5bc8c3e79fca2b3", null ],
-      [ "EX_INTSIZEMISMATCH", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3aefe69d587914f4a36de87f5ee3215605", null ],
       [ "EX_NOTFOUND", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a787044fad69dd9ac64ba860273eebfa9", null ],
+      [ "EX_INTSIZEMISMATCH", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3aefe69d587914f4a36de87f5ee3215605", null ],
       [ "EX_FATAL", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3abaecf7e01fff58d8ee405370ab2b728d", null ],
       [ "EX_NOERR", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3ac7e56074541f92d4627a79cdabf0ddc1", null ],
       [ "EX_WARN", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a5541126cd5ea93dff1653cc31e7e3fca", null ]
