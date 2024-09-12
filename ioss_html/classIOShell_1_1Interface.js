@@ -8,6 +8,7 @@ var classIOShell_1_1Interface =
     [ "append_step", "classIOShell_1_1Interface.html#affeb223fb335f2b1d8aa9560e7ede37a", null ],
     [ "append_time", "classIOShell_1_1Interface.html#ac2e198f4889ee580ae0515615c062e34", null ],
     [ "boundary_sideset", "classIOShell_1_1Interface.html#a5646395613fb437e1b698a423c81b4d2", null ],
+    [ "bz2", "classIOShell_1_1Interface.html#a3632110bd0ded7132567b6a6ef38fdc3", null ],
     [ "compare", "classIOShell_1_1Interface.html#aef109535be8aa0229e1d3114288803e7", null ],
     [ "compose_output", "classIOShell_1_1Interface.html#a0bebac52793526e98227e21ae44a0c14", null ],
     [ "compression_level", "classIOShell_1_1Interface.html#a9485b29e8885ea8d21fbec90569b0b5c", null ],
@@ -51,6 +52,8 @@ var classIOShell_1_1Interface =
     [ "options_", "classIOShell_1_1Interface.html#a95d77f1c1056a655e95572d8127c01a8", null ],
     [ "outFiletype", "classIOShell_1_1Interface.html#a255190d4b53ca8e5ed9c2de36c6db99e", null ],
     [ "outputFile", "classIOShell_1_1Interface.html#af3dac76466afe55418148ba97dced33b", null ],
+    [ "quant", "classIOShell_1_1Interface.html#addfc6f9880711036193c2ceb02a330d8", null ],
+    [ "quantize_nsd", "classIOShell_1_1Interface.html#ab041c215ddd0c63a568c969be6ff5835", null ],
     [ "quiet", "classIOShell_1_1Interface.html#a023c4c822e3a231cc204e9611f7da1fd", null ],
     [ "reals_32_bit", "classIOShell_1_1Interface.html#ad80846c7766d700187ed72bdbd3d3d0f", null ],
     [ "rel_tolerance", "classIOShell_1_1Interface.html#a34c8cdc4ee393685460b351bdfa79b48", null ],
@@ -69,5 +72,6 @@ var classIOShell_1_1Interface =
     [ "timestep_delay", "classIOShell_1_1Interface.html#aba99b9eafd33df10d19b68be0d8019f0", null ],
     [ "tol_floor", "classIOShell_1_1Interface.html#aa64da87da210e71d8ce5bd3a0041c12f", null ],
     [ "version", "classIOShell_1_1Interface.html#a7c790e91aacf1ffd928b8fccfb88c009", null ],
-    [ "zlib", "classIOShell_1_1Interface.html#a4c2b537e55d1d01f209ef24d0926a63f", null ]
+    [ "zlib", "classIOShell_1_1Interface.html#a4c2b537e55d1d01f209ef24d0926a63f", null ],
+    [ "zstd", "classIOShell_1_1Interface.html#aace3fc94d893b75eff6c0497b5baac49", null ]
 ];

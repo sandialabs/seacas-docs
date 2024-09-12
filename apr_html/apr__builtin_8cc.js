@@ -56,6 +56,7 @@ var apr__builtin_8cc =
     [ "do_find_word", "apr__builtin_8cc.html#a99b633016ae438918eb1be7229432fc9", null ],
     [ "do_floor", "apr__builtin_8cc.html#a885fd993251109f432d15806c15b669e", null ],
     [ "do_fmod", "apr__builtin_8cc.html#a9a8638311f650d15dd8f0d4d75dfafa3", null ],
+    [ "do_format", "apr__builtin_8cc.html#a0f63939d41fa467ddc67e1d26a9a197e", null ],
     [ "do_FtoC", "apr__builtin_8cc.html#af53c61bb46e49304d0e47a766406415d", null ],
     [ "do_get_date", "apr__builtin_8cc.html#a004535129dec760726b02b1364e3f2a7", null ],
     [ "do_get_iso_date", "apr__builtin_8cc.html#a25c318acf1d87e65f14ce4bb09685642", null ],

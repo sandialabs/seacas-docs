@@ -91,6 +91,7 @@ var hierarchy =
     [ "str_cc_init", "structstr__cc__init.html", null ],
     [ "str_ccc_init", "structstr__ccc__init.html", null ],
     [ "str_d_init", "structstr__d__init.html", null ],
+    [ "str_dc_init", "structstr__dc__init.html", null ],
     [ "str_dcc_init", "structstr__dcc__init.html", null ],
     [ "str_init", "structstr__init.html", null ],
     [ "svar_init", "structsvar__init.html", null ],

@@ -119,14 +119,20 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a56598a35ce7443245ddcd3370e7527b2">EX_OPT_COMPRESSION_LEVEL</a>
 , <a class="el" href="#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0ad067190db4fac3cbc8f5c4f99a1c322a">EX_OPT_COMPRESSION_SHUFFLE</a>
 , <br />
-&#160;&#160;<a class="el" href="#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a89db10986e9c961cbce66f092db54ef4">EX_OPT_INTEGER_SIZE_API</a>
+&#160;&#160;<a class="el" href="#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a1facac893df84b9e41f096938efceacd">EX_OPT_QUANTIZE_NSD</a>
+, <a class="el" href="#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a89db10986e9c961cbce66f092db54ef4">EX_OPT_INTEGER_SIZE_API</a>
 , <a class="el" href="#gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a8cb6e5bf63e20b2f73164ce59bf88699">EX_OPT_INTEGER_SIZE_DB</a>
 <br />
  }</td></tr>
 <tr class="separator:ga790e5d19a7cc9c2f8d4fd5a49a2c5dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga74ed4d0f70c2a2e257a7d57289d15668" id="r_ga74ed4d0f70c2a2e257a7d57289d15668"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga74ed4d0f70c2a2e257a7d57289d15668">ex_compression_type</a> { <a class="el" href="#gga74ed4d0f70c2a2e257a7d57289d15668a50070e49274822b7339b876cfdb6d28d">EX_COMPRESS_ZLIB</a> = 1
+<tr class="memitem:ga74ed4d0f70c2a2e257a7d57289d15668" id="r_ga74ed4d0f70c2a2e257a7d57289d15668"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga74ed4d0f70c2a2e257a7d57289d15668">ex_compression_type</a> { <br />
+&#160;&#160;<a class="el" href="#gga74ed4d0f70c2a2e257a7d57289d15668a50070e49274822b7339b876cfdb6d28d">EX_COMPRESS_ZLIB</a> = 1
 , <a class="el" href="#gga74ed4d0f70c2a2e257a7d57289d15668aab24c7e8887ba97fe7465a07f135f7ef">EX_COMPRESS_GZIP</a> = 1
 , <a class="el" href="#gga74ed4d0f70c2a2e257a7d57289d15668a99067303d35d76d779bb102f4c63bfec">EX_COMPRESS_SZIP</a>
+, <a class="el" href="#gga74ed4d0f70c2a2e257a7d57289d15668a973a39cacda9a93e43e5301ffdf0f8bb">EX_COMPRESS_ZSTD</a>
+, <br />
+&#160;&#160;<a class="el" href="#gga74ed4d0f70c2a2e257a7d57289d15668af93f7ee2b637e8e2077cd13e01a2d388">EX_COMPRESS_BZ2</a>
+<br />
  }</td></tr>
 <tr class="separator:ga74ed4d0f70c2a2e257a7d57289d15668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -179,6 +185,10 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga74ed4d0f70c2a2e257a7d57289d15668a99067303d35d76d779bb102f4c63bfec" name="gga74ed4d0f70c2a2e257a7d57289d15668a99067303d35d76d779bb102f4c63bfec"></a>EX_COMPRESS_SZIP&#160;</td><td class="fielddoc"><p>Use SZIP-based compression (if available) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga74ed4d0f70c2a2e257a7d57289d15668a973a39cacda9a93e43e5301ffdf0f8bb" name="gga74ed4d0f70c2a2e257a7d57289d15668a973a39cacda9a93e43e5301ffdf0f8bb"></a>EX_COMPRESS_ZSTD&#160;</td><td class="fielddoc"><p>Use ZStandard compression (if available) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga74ed4d0f70c2a2e257a7d57289d15668af93f7ee2b637e8e2077cd13e01a2d388" name="gga74ed4d0f70c2a2e257a7d57289d15668af93f7ee2b637e8e2077cd13e01a2d388"></a>EX_COMPRESS_BZ2&#160;</td><td class="fielddoc"><p>Use BZ2 / Bzip2 compression (if available) </p>
+</td></tr>
 </table>
 
 </div>
@@ -200,11 +210,13 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a690fd05bb9e592b5826a22e0271b55cc" name="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a690fd05bb9e592b5826a22e0271b55cc"></a>EX_OPT_MAX_NAME_LENGTH&#160;</td><td class="fielddoc"><p>Maximum length of names that will be returned/passed via api call. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0aedde3d779bfa7984bb2aa0864e595f67" name="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0aedde3d779bfa7984bb2aa0864e595f67"></a>EX_OPT_COMPRESSION_TYPE&#160;</td><td class="fielddoc"><p>Not currently used; default is gzip </p>
+<tr><td class="fieldname"><a id="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0aedde3d779bfa7984bb2aa0864e595f67" name="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0aedde3d779bfa7984bb2aa0864e595f67"></a>EX_OPT_COMPRESSION_TYPE&#160;</td><td class="fielddoc"><p>Default is gzip </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a56598a35ce7443245ddcd3370e7527b2" name="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a56598a35ce7443245ddcd3370e7527b2"></a>EX_OPT_COMPRESSION_LEVEL&#160;</td><td class="fielddoc"><p>In the range [0..9]. A value of 0 indicates no compression </p>
+<tr><td class="fieldname"><a id="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a56598a35ce7443245ddcd3370e7527b2" name="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a56598a35ce7443245ddcd3370e7527b2"></a>EX_OPT_COMPRESSION_LEVEL&#160;</td><td class="fielddoc"><p>Range depends on compression type. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0ad067190db4fac3cbc8f5c4f99a1c322a" name="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0ad067190db4fac3cbc8f5c4f99a1c322a"></a>EX_OPT_COMPRESSION_SHUFFLE&#160;</td><td class="fielddoc"><p>1 if enabled, 0 if disabled </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a1facac893df84b9e41f096938efceacd" name="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a1facac893df84b9e41f096938efceacd"></a>EX_OPT_QUANTIZE_NSD&#160;</td><td class="fielddoc"><p>if &gt; 0, Number of significant digits to retain in lossy quantize compression </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a89db10986e9c961cbce66f092db54ef4" name="gga790e5d19a7cc9c2f8d4fd5a49a2c5dd0a89db10986e9c961cbce66f092db54ef4"></a>EX_OPT_INTEGER_SIZE_API&#160;</td><td class="fielddoc"><p>4 or 8 indicating byte size of integers used in api functions. </p>
 </td></tr>

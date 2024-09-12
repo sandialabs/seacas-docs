@@ -24,6 +24,7 @@ var apr__init_8cc =
     [ "string_cc_fncts", "apr__init_8cc.html#a5c1e52d8f3a7a1ad93dcb12a2cb236c7", null ],
     [ "string_ccc_fncts", "apr__init_8cc.html#ac02d1efbafaa2fd47c0632b03e2acf26", null ],
     [ "string_d_fncts", "apr__init_8cc.html#aa9284030d08e8e03b6eddf4eb378d83c", null ],
+    [ "string_dc_fncts", "apr__init_8cc.html#a05aabca55ceca4e6adf1c4193052fe3b", null ],
     [ "string_dcc_fncts", "apr__init_8cc.html#a4a8abe7238a2bb088d7231e1b1092975", null ],
     [ "string_fncts", "apr__init_8cc.html#aa29db3dd54e80cda7af24bac77f20bc2", null ],
     [ "svariables", "apr__init_8cc.html#aa45b183297ae5fc015fc634d9beaf2d1", null ],

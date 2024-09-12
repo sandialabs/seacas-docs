@@ -1,5 +1,13 @@
 var NAVTREEINDEX90 =
 {
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#ae629d9606df54ec12d71dd6206564126":[3,0,147,0,12,2,2],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#ae629d9606df54ec12d71dd6206564126":[4,0,93,0,12,2,2],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html":[3,0,147,0,12,3],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html":[4,0,93,0,12,3],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html#ab0b24489e24e2f5533949a4d0d8dcec0":[3,0,147,0,12,3,0],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html#ab0b24489e24e2f5533949a4d0d8dcec0":[4,0,93,0,12,3,0],
+"structIotm_1_1text__mesh_1_1SideBlockInfo.html":[3,0,147,0,13],
+"structIotm_1_1text__mesh_1_1SideBlockInfo.html":[4,0,93,0,13],
 "structIotm_1_1text__mesh_1_1SideBlockInfo.html#a40653ef432fd13ab04ac399dd2d220b0":[3,0,147,0,13,2],
 "structIotm_1_1text__mesh_1_1SideBlockInfo.html#a40653ef432fd13ab04ac399dd2d220b0":[4,0,93,0,13,2],
 "structIotm_1_1text__mesh_1_1SideBlockInfo.html#a4e632534db316e2029e10ab5c0c9f581":[3,0,147,0,13,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX90 =
 "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a1705c1e20931cf44bcf8fa4403889f10":[3,0,7,0,6],
 "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a1705c1e20931cf44bcf8fa4403889f10":[4,0,4,0,6],
 "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a226ef69ad5172e78545f4aa85a29577e":[3,0,7,0,3],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a226ef69ad5172e78545f4aa85a29577e":[4,0,4,0,3],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a3991cabeee2bd2f6626ea5a66c6aae1e":[3,0,7,0,5],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a3991cabeee2bd2f6626ea5a66c6aae1e":[4,0,4,0,5],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a431126f846fd726af89244ea63230196":[3,0,7,0,1],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a431126f846fd726af89244ea63230196":[4,0,4,0,1],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a8fccd2084f9c863d7183fa2e35e471d2":[3,0,7,0,4],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a8fccd2084f9c863d7183fa2e35e471d2":[4,0,4,0,4],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a911fde6e977e889c0c9c3eafc9210d89":[3,0,7,0,8],
-"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a911fde6e977e889c0c9c3eafc9210d89":[4,0,4,0,8]
+"structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html#a226ef69ad5172e78545f4aa85a29577e":[4,0,4,0,3]
 };

@@ -12,7 +12,7 @@ var searchData=
   ['compression_20name_20length_20file_20type_9',['Database Options (Compression, Name Length, File Type)',['../index.html#db_options',1,'']]],
   ['compression_20name_20size_20and_20integer_20size_10',['Variables controlling the compression, name size, and integer size.',['../group__FileOptions.html',1,'']]],
   ['compression_5falgorithm_11',['compression_algorithm',['../structexi__file__item.html#ab8f47b61c4ac1b324cece3deed3b749f',1,'exi_file_item']]],
-  ['compression_5flevel_12',['compression_level',['../structexi__file__item.html#aa4d66e31d6c7e47da9df3ad4b620d4f5',1,'exi_file_item']]],
+  ['compression_5flevel_12',['compression_level',['../structexi__file__item.html#a1305e934614f2695720272e5060f978f',1,'exi_file_item']]],
   ['controlling_20storage_20of_20reduction_20variables_13',['Variables controlling storage of reduction variables',['../group__ReductionVariables.html',1,'']]],
   ['controlling_20the_20compression_20name_20size_20and_20integer_20size_14',['Variables controlling the compression, name size, and integer size.',['../group__FileOptions.html',1,'']]],
   ['controlling_20the_20file_20creation_20mode_15',['Variables controlling the file creation mode.',['../group__FileVars.html',1,'']]],

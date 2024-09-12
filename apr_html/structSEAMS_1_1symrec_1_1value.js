@@ -28,6 +28,7 @@ var structSEAMS_1_1symrec_1_1value =
     [ "strfnct_cc", "structSEAMS_1_1symrec_1_1value.html#a3a15ae6eaa14b6807424f9aeee68f851", null ],
     [ "strfnct_ccc", "structSEAMS_1_1symrec_1_1value.html#a29dac5b62b2494c2dd9c3ee4846950af", null ],
     [ "strfnct_d", "structSEAMS_1_1symrec_1_1value.html#aeaf8d5a1072d252ac4bfea90cb943100", null ],
+    [ "strfnct_dc", "structSEAMS_1_1symrec_1_1value.html#a4a3c465a6054e66483189f22feba4b7e", null ],
     [ "strfnct_dcc", "structSEAMS_1_1symrec_1_1value.html#a9a3bbbe2891d5d6744120a62b90f1446", null ],
     [ "strfnct_dcccc", "structSEAMS_1_1symrec_1_1value.html#a0a4dda1847644ddc71868ab6afc88ab9", null ],
     [ "strfnct_dd", "structSEAMS_1_1symrec_1_1value.html#a01a00c607768542b2e26902184e58d01", null ],

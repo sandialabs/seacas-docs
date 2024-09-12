@@ -3,7 +3,7 @@ var structexi__file__item =
     [ "assembly_count", "structexi__file__item.html#a984deed15461b0529554c566e6c2fe04", null ],
     [ "blob_count", "structexi__file__item.html#a8e3c1576073b01291694581a0aef5eaa", null ],
     [ "compression_algorithm", "structexi__file__item.html#ab8f47b61c4ac1b324cece3deed3b749f", null ],
-    [ "compression_level", "structexi__file__item.html#aa4d66e31d6c7e47da9df3ad4b620d4f5", null ],
+    [ "compression_level", "structexi__file__item.html#a1305e934614f2695720272e5060f978f", null ],
     [ "file_id", "structexi__file__item.html#a0a4d4b47f4d15014dafc6bb848ee7785", null ],
     [ "file_type", "structexi__file__item.html#ac74cd5a63043238a35bac9263304323e", null ],
     [ "has_edges", "structexi__file__item.html#a7e58f8386e2ed1e34a93f920674241d3", null ],
@@ -20,6 +20,7 @@ var structexi__file__item =
     [ "netcdf_type_code", "structexi__file__item.html#a330e00d33396137c256819aad93b817f", null ],
     [ "next", "structexi__file__item.html#a152f5bc5e143a7ba41bbd07f6960f28a", null ],
     [ "persist_define_mode", "structexi__file__item.html#a340d324f3e8c23ab6fa017bdb0a8628e", null ],
+    [ "quantize_nsd", "structexi__file__item.html#ae98b88574b41dd1fa4f99be29fe723e7", null ],
     [ "shuffle", "structexi__file__item.html#ac8758aabdb253bd72a1f769232c8bdaa", null ],
     [ "time_varid", "structexi__file__item.html#a1818be6af1536bae7a93daf861b151b8", null ],
     [ "user_compute_wordsize", "structexi__file__item.html#a06bf181f9551699ae3252fddee2b4d4e", null ]

@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"classtsl_1_1robin__map.html#a1d794edbc5168dca57ba353e0bee1784":[1,0,1,2,13],
+"classtsl_1_1robin__map.html#a1eae4ec00d7f3a56a16f4aaa17e07b80":[0,0,7,2,20],
+"classtsl_1_1robin__map.html#a1eae4ec00d7f3a56a16f4aaa17e07b80":[1,0,1,2,20],
 "classtsl_1_1robin__map.html#a26bcd048ce6a0217daca1293588dc3d1":[0,0,7,2,50],
 "classtsl_1_1robin__map.html#a26bcd048ce6a0217daca1293588dc3d1":[1,0,1,2,50],
 "classtsl_1_1robin__map.html#a27eb24e5f5c5343b7c83cb6dfd8b2d4a":[0,0,7,2,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "functions_func_o.html":[1,3,1,13],
 "functions_func_p.html":[1,3,1,14],
 "functions_func_r.html":[1,3,1,15],
-"functions_func_s.html":[1,3,1,16],
-"functions_func_t.html":[1,3,1,17],
-"functions_func_u.html":[1,3,1,18],
-"functions_func_v.html":[1,3,1,19]
+"functions_func_s.html":[1,3,1,16]
 };

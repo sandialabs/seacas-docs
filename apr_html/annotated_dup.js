@@ -58,6 +58,7 @@ var annotated_dup =
     [ "str_cc_init", "structstr__cc__init.html", "structstr__cc__init" ],
     [ "str_ccc_init", "structstr__ccc__init.html", "structstr__ccc__init" ],
     [ "str_d_init", "structstr__d__init.html", "structstr__d__init" ],
+    [ "str_dc_init", "structstr__dc__init.html", "structstr__dc__init" ],
     [ "str_dcc_init", "structstr__dcc__init.html", "structstr__dcc__init" ],
     [ "str_init", "structstr__init.html", "structstr__init" ],
     [ "svar_init", "structsvar__init.html", "structsvar__init" ],
