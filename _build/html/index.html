@@ -892,7 +892,8 @@ Exodus database.</p>
 <h1>Slice<a class="headerlink" href="#slice" title="Permalink to this heading">#</a></h1>
 <p><a class="reference external" href="../../Slice.md">Slice</a> decomposes an Exodus Database into
 multiple databases for use in a parallel application which uses a
-file-per-rank method for the input mesh database. Experimental.</p>
+file-per-rank method for the input mesh database. Slice does <em>not</em>
+handle the transient results data that might be on the mesh. Experimental.</p>
 </section>
 <section id="struc-to-unstruc">
 <h1>Struc_To_Unstruc<a class="headerlink" href="#struc-to-unstruc" title="Permalink to this heading">#</a></h1>
@@ -920,7 +921,7 @@ parallel application. Zellij is optimized for large files.</p>
 <section id="netcdf-library">
 <h1>NetCDF Library<a class="headerlink" href="#netcdf-library" title="Permalink to this heading">#</a></h1>
 <p>(External, not developed or maintained as part of SEACAS, but is used
-by Exodus, so include here).</p>
+by Exodus, so included here).</p>
 <p>The <a class="reference external" href="https://github.com/Unidata/netcdf-c">netCDF</a> I/O library stores
 and retrieves data in self-describing, machine-independent files. Each
 netCDF file can contain an unlimited number of multi-dimensional,

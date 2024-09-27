@@ -619,7 +619,8 @@ Slice
 
 `Slice <../../Slice.md>`_ decomposes an Exodus Database into
 multiple databases for use in a parallel application which uses a
-file-per-rank method for the input mesh database. Experimental.
+file-per-rank method for the input mesh database. Slice does *not* 
+handle the transient results data that might be on the mesh. Experimental.
 
 Struc_To_Unstruc
 ----------------
@@ -651,7 +652,7 @@ NetCDF Library
 --------------
 
 (External, not developed or maintained as part of SEACAS, but is used
-by Exodus, so include here). 
+by Exodus, so included here). 
 
 The `netCDF <https://github.com/Unidata/netcdf-c>`_ I/O library stores
 and retrieves data in self-describing, machine-independent files. Each
