@@ -39,7 +39,7 @@ var classSEAMS_1_1Aprepro =
     [ "init_table", "classSEAMS_1_1Aprepro.html#a9c4aa1802a4355d4e3ff8b4f017dd013", null ],
     [ "long_version", "classSEAMS_1_1Aprepro.html#a0d8cff84a00d8040f70230cf1ed85272", null ],
     [ "make_array", "classSEAMS_1_1Aprepro.html#a7d5d29ce007a2db86e58fc84d6105034", null ],
-    [ "make_array", "classSEAMS_1_1Aprepro.html#a46969190572695bccf65f3a5a0bc994d", null ],
+    [ "make_array", "classSEAMS_1_1Aprepro.html#a655e15a0c4e52a50b27c841bb6c050f2", null ],
     [ "open_file", "classSEAMS_1_1Aprepro.html#adf9f4ca4007141eba22adeb8adf37c6b", null ],
     [ "operator=", "classSEAMS_1_1Aprepro.html#aecfd59e318edbe40ded77c73c4d0fe13", null ],
     [ "parse_file", "classSEAMS_1_1Aprepro.html#ac3bad8c2e5b5530165a88ff383aa1a85", null ],

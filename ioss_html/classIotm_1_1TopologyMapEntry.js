@@ -23,6 +23,7 @@ var classIotm_1_1TopologyMapEntry =
     [ "line_3_factory", "classIotm_1_1TopologyMapEntry.html#a11df8398b28160b5b4ce497764e49bd6", null ],
     [ "name", "classIotm_1_1TopologyMapEntry.html#a8a310c417926bca7f2ac81c83d2dc9ce", null ],
     [ "node_factory", "classIotm_1_1TopologyMapEntry.html#aea76968e6289d87a18442c53e73a7c52", null ],
+    [ "num_face_sides", "classIotm_1_1TopologyMapEntry.html#a86a5d4c2415a17efebc99887d4fb685f", null ],
     [ "num_nodes", "classIotm_1_1TopologyMapEntry.html#aa27fa0662c75bbc16f315f1ac513aee1", null ],
     [ "num_permutation_nodes", "classIotm_1_1TopologyMapEntry.html#a53d4dffe4eafddf82ef88e1083a3d3bd", null ],
     [ "num_permutations", "classIotm_1_1TopologyMapEntry.html#ab7241207379168c0ccec9b35a934d072", null ],

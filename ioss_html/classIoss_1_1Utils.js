@@ -30,6 +30,7 @@ var classIoss_1_1Utils =
     [ "get_fields", "classIoss_1_1Utils.html#a21f4c50eb18d6874947acb93a041001a", null ],
     [ "get_number", "classIoss_1_1Utils.html#a346c26d1b8b5b2cde7bd2410e622abfa", null ],
     [ "get_output_stream", "group__IossStreams.html#gab93167333d785a25a6c38c9c5950aba2", null ],
+    [ "get_side_offset", "classIoss_1_1Utils.html#a600e8cc4b91793cbd897ba29f6696590", null ],
     [ "get_side_offset", "classIoss_1_1Utils.html#a87d560f7862b2add9fa486ae44f4ab92", null ],
     [ "get_trailing_digits", "classIoss_1_1Utils.html#a356e21a68917c7b46b9a522f8b3d6338", null ],
     [ "get_type_from_file", "classIoss_1_1Utils.html#a93756b9fb462f07e066342f32ed61d27", null ],

@@ -7,6 +7,6 @@ var searchData=
   ['closeerror_4',['closeError',['../classSEAMS_1_1Aprepro.html#a02b64fd65bd9b91ae9f7f48037331ed8',1,'SEAMS::Aprepro']]],
   ['closeinfo_5',['closeInfo',['../classSEAMS_1_1Aprepro.html#ab5bb1aed638a5138224d5faddf40bedf',1,'SEAMS::Aprepro']]],
   ['closewarning_6',['closeWarning',['../classSEAMS_1_1Aprepro.html#a06eb888f614c95c69753d27a7cb1a11c',1,'SEAMS::Aprepro']]],
-  ['cols_7',['cols',['../structSEAMS_1_1array.html#a524e8f6b0d4cbeea33417373c23aed26',1,'SEAMS::array']]],
+  ['cols_7',['cols',['../structSEAMS_1_1array.html#af6e4af8bbd85818a3caad6eb25df2cb6',1,'SEAMS::array']]],
   ['curr_5findex_8',['curr_index',['../apr__scanner_8cc.html#ace0df7eea62a5f329c33b6e7462211c4',1,'apr_scanner.cc']]]
 ];

@@ -144,7 +144,7 @@ var namespaceSEAMS =
     [ "get_temp_filename", "namespaceSEAMS.html#aae1acca50a830c13a83b9a6817f152b5", null ],
     [ "getline_int", "namespaceSEAMS.html#ad42e7e54b280e46bc33cff5f60df35bc", null ],
     [ "gl_histadd", "namespaceSEAMS.html#a6b6b5da7d7485e3fb60487b26e9399b5", null ],
-    [ "gl_setwidth", "namespaceSEAMS.html#ade27abc10cec6db0a28186e61350a161", null ],
+    [ "gl_setwidth", "namespaceSEAMS.html#aab2416721c5e944cc01ecf602de26eae", null ],
     [ "immutable_modify", "namespaceSEAMS.html#aee1c189c56f01ed591a1d7bc21bf380c", null ],
     [ "is_directory", "namespaceSEAMS.html#a4007090c9cdfec53d0191ee4d8432cb1", null ],
     [ "math_error", "namespaceSEAMS.html#a15b05eb7930a143bdb17dfeb860ec129", null ],

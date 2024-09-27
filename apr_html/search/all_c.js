@@ -19,7 +19,7 @@ var searchData=
   ['m_5ftry_5fshrink_5fon_5fnext_5finsert_16',['m_try_shrink_on_next_insert',['../classtsl_1_1detail__robin__hash_1_1robin__hash.html#a19a60e142520fb165fafea0334d38b1d',1,'tsl::detail_robin_hash::robin_hash']]],
   ['m_5fvalue_17',['m_value',['../classtsl_1_1detail__robin__hash_1_1bucket__entry.html#a5f7d11d8ad4b90215acc18d9c498d7f0',1,'tsl::detail_robin_hash::bucket_entry']]],
   ['main_18',['main',['../apr__test_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;apr_test.cc'],['../strings_8cc.html#a2c3f6775325c30275d11c6abee2db6a0',1,'main(int, char **):&#160;strings.cc']]],
-  ['make_5farray_19',['make_array',['../classSEAMS_1_1Aprepro.html#a46969190572695bccf65f3a5a0bc994d',1,'SEAMS::Aprepro::make_array(int r, int c)'],['../classSEAMS_1_1Aprepro.html#a7d5d29ce007a2db86e58fc84d6105034',1,'SEAMS::Aprepro::make_array(const array &amp;from)']]],
+  ['make_5farray_19',['make_array',['../classSEAMS_1_1Aprepro.html#a655e15a0c4e52a50b27c841bb6c050f2',1,'SEAMS::Aprepro::make_array(size_t r, size_t c)'],['../classSEAMS_1_1Aprepro.html#a7d5d29ce007a2db86e58fc84d6105034',1,'SEAMS::Aprepro::make_array(const array &amp;from)']]],
   ['make_5fvoid_20',['make_void',['../structtsl_1_1detail__robin__hash_1_1make__void.html',1,'tsl::detail_robin_hash']]],
   ['mapped_5ftype_21',['mapped_type',['../classtsl_1_1robin__map.html#a1d794edbc5168dca57ba353e0bee1784',1,'tsl::robin_map']]],
   ['match_5foption_22',['match_option',['../namespaceSEAMS_1_1anonymous__namespace_02apr__aprepro_8cc_03.html#a21444f3b8ddbf52917484be9a7f7f8cf',1,'SEAMS::anonymous_namespace{apr_aprepro.cc}']]],
