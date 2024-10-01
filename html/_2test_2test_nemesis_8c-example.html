@@ -101,7 +101,7 @@ $(function(){initNavTree('_2test_2test_nemesis_8c-example.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Copyright(C) 1999-2021 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><span class="comment"> * Copyright(C) 1999-2021, 2024 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><span class="comment"> * of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><span class="comment"> * NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><span class="comment"> *</span></div>
@@ -574,7 +574,7 @@ $(function(){initNavTree('_2test_2test_nemesis_8c-example.html',''); initResizab
 <div class="line"> </div>
 <div class="line">  <a id="a7" name="a7"></a><a class="code hl_function" href="exodusII_8h.html#af88999a1f2592617a56db303e090d2d7">ex_copy_string</a>(ftype, <span class="stringliteral">&quot;s&quot;</span>, 3);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> (<a id="a8" name="a8"></a><a class="code hl_function" href="group__ModelDescription.html#ga53b1d2adfd799d9d944831ca8c7adee9">ex_put_init_info</a>(fileid, NPROC, NPROCF, ftype));</div>
+<div class="line">  <span class="keywordflow">return</span> <a id="a8" name="a8"></a><a class="code hl_function" href="group__ModelDescription.html#ga53b1d2adfd799d9d944831ca8c7adee9">ex_put_init_info</a>(fileid, NPROC, NPROCF, ftype);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*****************************************************************************/</span></div>
@@ -582,7 +582,7 @@ $(function(){initNavTree('_2test_2test_nemesis_8c-example.html',''); initResizab
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">int</span> nng = NNG, neg = NEG, nebg = NEBG, nnsg = NNSG, nssg = NSSG;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> (<a id="a9" name="a9"></a><a class="code hl_function" href="group__ModelDescription.html#ga04480bc7f03d463ebd190a7086a5852d">ex_put_init_global</a>(fileid, nng, neg, nebg, nnsg, nssg));</div>
+<div class="line">  <span class="keywordflow">return</span> <a id="a9" name="a9"></a><a class="code hl_function" href="group__ModelDescription.html#ga04480bc7f03d463ebd190a7086a5852d">ex_put_init_global</a>(fileid, nng, neg, nebg, nnsg, nssg);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*****************************************************************************/</span></div>
@@ -595,7 +595,7 @@ $(function(){initNavTree('_2test_2test_nemesis_8c-example.html',''); initResizab
 <div class="line">    elblk_cnt[i] = NEBCG;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> (<a id="a10" name="a10"></a><a class="code hl_function" href="group__ModelDescription.html#gaa76764a3da71b976e797954e11fcd8aa">ex_put_eb_info_global</a>(fileid, elblk_ids, elblk_cnt));</div>
+<div class="line">  <span class="keywordflow">return</span> <a id="a10" name="a10"></a><a class="code hl_function" href="group__ModelDescription.html#gaa76764a3da71b976e797954e11fcd8aa">ex_put_eb_info_global</a>(fileid, elblk_ids, elblk_cnt);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*****************************************************************************/</span></div>
@@ -609,7 +609,7 @@ $(function(){initNavTree('_2test_2test_nemesis_8c-example.html',''); initResizab
 <div class="line">    global_df_cnts[i] = 1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> (<a id="a11" name="a11"></a><a class="code hl_function" href="group__ModelDescription.html#ga5204626fb73e8a2b4781e9d878e4a996">ex_put_ns_param_global</a>(fileid, global_ids, global_n_cnts, global_df_cnts));</div>
+<div class="line">  <span class="keywordflow">return</span> <a id="a11" name="a11"></a><a class="code hl_function" href="group__ModelDescription.html#ga5204626fb73e8a2b4781e9d878e4a996">ex_put_ns_param_global</a>(fileid, global_ids, global_n_cnts, global_df_cnts);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*****************************************************************************/</span></div>
@@ -623,7 +623,7 @@ $(function(){initNavTree('_2test_2test_nemesis_8c-example.html',''); initResizab
 <div class="line">    global_df_cnts[i] = 1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> (<a id="a12" name="a12"></a><a class="code hl_function" href="group__ModelDescription.html#ga0e4043678f07f4643a294b51ea805460">ex_put_ss_param_global</a>(fileid, global_ids, global_el_cnts, global_df_cnts));</div>
+<div class="line">  <span class="keywordflow">return</span> <a id="a12" name="a12"></a><a class="code hl_function" href="group__ModelDescription.html#ga0e4043678f07f4643a294b51ea805460">ex_put_ss_param_global</a>(fileid, global_ids, global_el_cnts, global_df_cnts);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*****************************************************************************/</span></div>
@@ -1081,8 +1081,8 @@ $(function(){initNavTree('_2test_2test_nemesis_8c-example.html',''); initResizab
 <div class="line">    num_elem_cmaps[iproc] = NECMAP;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> (<a id="a29" name="a29"></a><a class="code hl_function" href="group__ModelDescription.html#ga14b7132549f4e720410ef4231c992771">ex_put_loadbal_param_cc</a>(fileid, num_int_nodes, num_bor_nodes, num_ext_nodes,</div>
-<div class="line">                                  num_int_elems, num_bor_elems, num_node_cmaps, num_elem_cmaps));</div>
+<div class="line">  <span class="keywordflow">return</span> <a id="a29" name="a29"></a><a class="code hl_function" href="group__ModelDescription.html#ga14b7132549f4e720410ef4231c992771">ex_put_loadbal_param_cc</a>(fileid, num_int_nodes, num_bor_nodes, num_ext_nodes, num_int_elems,</div>
+<div class="line">                                 num_bor_elems, num_node_cmaps, num_elem_cmaps);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*****************************************************************************/</span></div>
@@ -1113,8 +1113,8 @@ $(function(){initNavTree('_2test_2test_nemesis_8c-example.html',''); initResizab
 <div class="line">    emap_proc_ptr[iproc + 1] = emap_proc_ptr[iproc] + NECMAP;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> (<a id="a30" name="a30"></a><a class="code hl_function" href="group__ModelDescription.html#gaca0bcdafa0d27ba2ba3319a87d74dd08">ex_put_cmap_params_cc</a>(fileid, nmap_ids, nmap_n_cnts, nmap_proc_ptr, emap_ids, emap_e_cnts,</div>
-<div class="line">                                emap_proc_ptr));</div>
+<div class="line">  <span class="keywordflow">return</span> <a id="a30" name="a30"></a><a class="code hl_function" href="group__ModelDescription.html#gaca0bcdafa0d27ba2ba3319a87d74dd08">ex_put_cmap_params_cc</a>(fileid, nmap_ids, nmap_n_cnts, nmap_proc_ptr, emap_ids, emap_e_cnts,</div>
+<div class="line">                               emap_proc_ptr);</div>
 <div class="line">}</div>
 <div class="ttc" id="aexodusII_8h_html"><div class="ttname"><a href="exodusII_8h.html">exodusII.h</a></div></div>
 <div class="ttc" id="aexodusII_8h_html_af88999a1f2592617a56db303e090d2d7"><div class="ttname"><a href="exodusII_8h.html#af88999a1f2592617a56db303e090d2d7">ex_copy_string</a></div><div class="ttdeci">char * ex_copy_string(char *dest, char const *source, size_t elements)</div><div class="ttdef"><b>Definition</b> ex_utils.c:2447</div></div>
