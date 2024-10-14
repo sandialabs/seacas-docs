@@ -7,7 +7,7 @@ var ex__get__field__metadata_8c =
     [ "ex_get_quadrature", "group__ModelDescription.html#gac2a14d01de469212e6d138fc0c908e50", null ],
     [ "ex_get_quadrature_count", "group__ModelDescription.html#ga98ec6f6a3978f00196a11fd9c805938c", null ],
     [ "exi_get_attribute_count", "ex__get__field__metadata_8c.html#a93f9ae8625df2099bbfafd3fe11d0a3d", null ],
-    [ "exi_get_attribute_metadata_name", "ex__get__field__metadata_8c.html#ae326d6df1e36fa6843487b5fad771cdd", null ],
-    [ "exi_get_metadata_attribute", "ex__get__field__metadata_8c.html#a2b5fc26ec5af3f805c4252c20ad058b9", null ],
+    [ "exi_get_attribute_metadata_name", "ex__get__field__metadata_8c.html#ad4f0babfb2e451f403704d120805ac98", null ],
+    [ "exi_get_metadata_attribute", "ex__get__field__metadata_8c.html#a50988b462eecf0ae0f8d7d0cc668eb9e", null ],
     [ "exi_get_metadata_count", "ex__get__field__metadata_8c.html#a4788ee9d877fcd384f34f1a45216e758", null ]
 ];

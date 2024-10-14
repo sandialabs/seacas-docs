@@ -16,6 +16,11 @@ var classvector3d =
     [ "reverse", "classvector3d.html#ab06beef76f82be26ef7bbb74aa4eb9bf", null ],
     [ "set", "classvector3d.html#a60ffd4a12c34004037bb90ca43907c33", null ],
     [ "set", "classvector3d.html#a0e54310bd3515c46231e13cc6c60575c", null ],
+    [ "operator*", "classvector3d.html#a89fa4bb60f994139b017fd4826ed68bf", null ],
+    [ "operator*", "classvector3d.html#a6aaf857a661b96e0f9bca9994cd42660", null ],
+    [ "operator+", "classvector3d.html#ac92648352a12a949d884ad363be16e2e", null ],
+    [ "operator-", "classvector3d.html#a93e21a45659e429bb02d865dd3ecbe96", null ],
+    [ "operator/", "classvector3d.html#a5fb1042eba13e9e0ad753f6de13b9b63", null ],
     [ "x", "classvector3d.html#af4cca8e451e9f8fa283be0d920bb7ed2", null ],
     [ "y", "classvector3d.html#a30cf53e8b0ca4463eb9eeece5630f195", null ],
     [ "z", "classvector3d.html#a991b36f4747b1e65b90de85ebf39a2f5", null ]

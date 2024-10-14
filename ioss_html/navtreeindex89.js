@@ -1,5 +1,10 @@
 var NAVTREEINDEX89 =
 {
+"structIoss_1_1MeshCopyOptions.html#a870f812528275cc21b54942d0d6c973e":[4,0,91,84,6],
+"structIoss_1_1MeshCopyOptions.html#a8a58a3b0d7f3c606e05ad16196c72dce":[3,0,145,86,5],
+"structIoss_1_1MeshCopyOptions.html#a8a58a3b0d7f3c606e05ad16196c72dce":[4,0,91,84,5],
+"structIoss_1_1MeshCopyOptions.html#aa0fe21d58fece15a33366f5b39414ff7":[3,0,145,86,11],
+"structIoss_1_1MeshCopyOptions.html#aa0fe21d58fece15a33366f5b39414ff7":[4,0,91,84,11],
 "structIoss_1_1MeshCopyOptions.html#aa12a83de10e5485f252d827040f74226":[3,0,145,86,15],
 "structIoss_1_1MeshCopyOptions.html#aa12a83de10e5485f252d827040f74226":[4,0,91,84,15],
 "structIoss_1_1MeshCopyOptions.html#aaf51f54f274e24589adecac085e30d4e":[3,0,145,86,22],
@@ -244,10 +249,5 @@ var NAVTREEINDEX89 =
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a230115a0cf3f95e2184a12b72b7a6739":[4,0,93,0,12,2,8],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a3da074752b81a2c52ab7cd601938328c":[3,0,147,0,12,2,4],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a3da074752b81a2c52ab7cd601938328c":[4,0,93,0,12,2,4],
-"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a5fbd73ea92edf81e87f29b761dd51400":[3,0,147,0,12,2,3],
-"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a5fbd73ea92edf81e87f29b761dd51400":[4,0,93,0,12,2,3],
-"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a7904e6fdd5d1c605f8f75cf672e3d677":[3,0,147,0,12,2,6],
-"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a7904e6fdd5d1c605f8f75cf672e3d677":[4,0,93,0,12,2,6],
-"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#ab0812b6149f83913405ee8ca3b34a3fb":[3,0,147,0,12,2,0],
-"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#ab0812b6149f83913405ee8ca3b34a3fb":[4,0,93,0,12,2,0]
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a5fbd73ea92edf81e87f29b761dd51400":[3,0,147,0,12,2,3]
 };

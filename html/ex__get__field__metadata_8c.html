@@ -109,10 +109,10 @@ $(function(){initNavTree('ex__get__field__metadata_8c.html',''); initResizable(t
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2b5fc26ec5af3f805c4252c20ad058b9" id="r_a2b5fc26ec5af3f805c4252c20ad058b9"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b5fc26ec5af3f805c4252c20ad058b9">exi_get_metadata_attribute</a> (char *name, const char *prefix, int pre_len)</td></tr>
-<tr class="separator:a2b5fc26ec5af3f805c4252c20ad058b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae326d6df1e36fa6843487b5fad771cdd" id="r_ae326d6df1e36fa6843487b5fad771cdd"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae326d6df1e36fa6843487b5fad771cdd">exi_get_attribute_metadata_name</a> (char *attrib, int offset)</td></tr>
-<tr class="separator:ae326d6df1e36fa6843487b5fad771cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50988b462eecf0ae0f8d7d0cc668eb9e" id="r_a50988b462eecf0ae0f8d7d0cc668eb9e"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50988b462eecf0ae0f8d7d0cc668eb9e">exi_get_metadata_attribute</a> (const char *name, const char *prefix, int pre_len)</td></tr>
+<tr class="separator:a50988b462eecf0ae0f8d7d0cc668eb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f0babfb2e451f403704d120805ac98" id="r_ad4f0babfb2e451f403704d120805ac98"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f0babfb2e451f403704d120805ac98">exi_get_attribute_metadata_name</a> (const char *attrib, int offset)</td></tr>
+<tr class="separator:ad4f0babfb2e451f403704d120805ac98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f9ae8625df2099bbfafd3fe11d0a3d" id="r_a93f9ae8625df2099bbfafd3fe11d0a3d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93f9ae8625df2099bbfafd3fe11d0a3d">exi_get_attribute_count</a> (int exoid, <a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a> obj_type, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> id, int *varid)</td></tr>
 <tr class="separator:a93f9ae8625df2099bbfafd3fe11d0a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab771781ce03880180f4cce41f803ad32" id="r_gab771781ce03880180f4cce41f803ad32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#gab771781ce03880180f4cce41f803ad32">ex_get_field_metadata_count</a> (int exoid, <a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a> obj_type, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> id)</td></tr>
@@ -170,8 +170,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae326d6df1e36fa6843487b5fad771cdd" name="ae326d6df1e36fa6843487b5fad771cdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae326d6df1e36fa6843487b5fad771cdd">&#9670;&#160;</a></span>exi_get_attribute_metadata_name()</h2>
+<a id="ad4f0babfb2e451f403704d120805ac98" name="ad4f0babfb2e451f403704d120805ac98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f0babfb2e451f403704d120805ac98">&#9670;&#160;</a></span>exi_get_attribute_metadata_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +182,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static const char * exi_get_attribute_metadata_name </td>
           <td>(</td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>attrib</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>attrib</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -199,8 +199,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b5fc26ec5af3f805c4252c20ad058b9" name="a2b5fc26ec5af3f805c4252c20ad058b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b5fc26ec5af3f805c4252c20ad058b9">&#9670;&#160;</a></span>exi_get_metadata_attribute()</h2>
+<a id="a50988b462eecf0ae0f8d7d0cc668eb9e" name="a50988b462eecf0ae0f8d7d0cc668eb9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50988b462eecf0ae0f8d7d0cc668eb9e">&#9670;&#160;</a></span>exi_get_metadata_attribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +211,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static const char * exi_get_metadata_attribute </td>
           <td>(</td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
