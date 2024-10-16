@@ -189,13 +189,13 @@ $(function(){initNavTree('Ioss__BasisVariableType_8h_source.html',''); initResiz
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">typedef</span> <span class="keyword">struct </span>ex_basis</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="comment">/*</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">   * subc_dim: dimension of the subcell associated with the specified DoF ordinal </span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">   * subc_dim: dimension of the subcell associated with the specified DoF ordinal</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   *      -- 0 node, 1 edge, 2 face, 3 volume [Range: 0..3]</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * subc_ordinal: ordinal of the subcell relative to its parent cell</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   *      -- 0..n for each ordinal with the same subc dim [Range: &lt;= DoF ordinal] </span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">   * subc_dof_ordinal: ordinal of the DoF relative to the subcell </span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">   * subc_num_dof: cardinality of the DoF set associated with this subcell. </span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">   * xi, eta, mu (ξ, η, ζ): Parametric coordinate location of the DoF </span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   *      -- 0..n for each ordinal with the same subc dim [Range: &lt;= DoF ordinal]</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">   * subc_dof_ordinal: ordinal of the DoF relative to the subcell</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">   * subc_num_dof: cardinality of the DoF set associated with this subcell.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">   * xi, eta, mu (ξ, η, ζ): Parametric coordinate location of the DoF</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   *      -- (Only first ndim values are valid)</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordtype">char</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02io__info_8C_03.html#af604a0af17d437ca8a8f1d1c77ee94c1">name</a>[EX_MAX_NAME + 1];</div>
