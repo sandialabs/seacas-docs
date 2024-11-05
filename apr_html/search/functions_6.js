@@ -24,7 +24,7 @@ var searchData=
   ['gl_5fgetc_21',['gl_getc',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a02c84de5bd0243598262504b500db1a1',1,'anonymous_namespace{apr_getline.cc}']]],
   ['gl_5fhistadd_22',['gl_histadd',['../namespaceSEAMS.html#a6b6b5da7d7485e3fb60487b26e9399b5',1,'SEAMS']]],
   ['gl_5finit_23',['gl_init',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#aa982e406de1bd1ce245a6d1ea2605a66',1,'anonymous_namespace{apr_getline.cc}']]],
-  ['gl_5fkill_24',['gl_kill',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a5165ba279eea022a6bfb7773e942699a',1,'anonymous_namespace{apr_getline.cc}']]],
+  ['gl_5fkill_24',['gl_kill',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#acc2775c489e59da8129ea2dcf9c648e0',1,'anonymous_namespace{apr_getline.cc}']]],
   ['gl_5fnewline_25',['gl_newline',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a2db325c26b65b24c6dec37e2b357d685',1,'anonymous_namespace{apr_getline.cc}']]],
   ['gl_5fputc_26',['gl_putc',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#adba1f07bff7450e878d186de7042f08e',1,'anonymous_namespace{apr_getline.cc}']]],
   ['gl_5fputs_27',['gl_puts',['../namespaceanonymous__namespace_02apr__getline_8cc_03.html#a0e29748e663558273c43b4c6a67557ed',1,'anonymous_namespace{apr_getline.cc}']]],

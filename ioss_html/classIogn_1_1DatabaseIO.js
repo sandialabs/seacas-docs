@@ -8,6 +8,7 @@ var classIogn_1_1DatabaseIO =
     [ "end_nl", "classIogn_1_1DatabaseIO.html#ad89cd64b986ed37ae8effba536108508", null ],
     [ "entity_field_support", "classIogn_1_1DatabaseIO.html#a4d31b02871089cc417ea990591acb9e7", null ],
     [ "get_commsets", "classIogn_1_1DatabaseIO.html#a567e232671c85ec139a7f32faf76c877", null ],
+    [ "get_db_step_times_nl", "classIogn_1_1DatabaseIO.html#afc8f4b53c5a626114c17a41ac5c590ab", null ],
     [ "get_elemblocks", "classIogn_1_1DatabaseIO.html#a7ddf05aad9f647150922a91999c08cd9", null ],
     [ "get_element_map", "classIogn_1_1DatabaseIO.html#a37a52691669407b1f20a2393e8d5f6ed", null ],
     [ "get_field_internal", "classIogn_1_1DatabaseIO.html#a4737c540a5ecb674c363b34c08f2e5c3", null ],

@@ -226,6 +226,7 @@ var exodusII_8h =
       [ "EX_INQ_NUM_ELEM_SET_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcaff793c00e5bcd1f174d96e0db981be4a", null ],
       [ "EX_INQ_NUM_SIDE_SET_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcabc1ba7d3b8406934d6ce4dac7c8f5020", null ],
       [ "EX_INQ_NUM_GLOBAL_VAR", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcae29fc8a206f81e0049b6e5d83d8dc5ec", null ],
+      [ "EX_INQ_FILE_FORMAT", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dca406b8e022585b10c351a6e5f4ecf5f10", null ],
       [ "EX_INQ_INVALID", "exodusII_8h.html#adc9d1455c2876b67d008e02c1e9df8dcac6272c03fa5b8f6b09bc130636eaf25d", null ]
     ] ],
     [ "ex_option_type", "group__FileOptions.html#ga790e5d19a7cc9c2f8d4fd5a49a2c5dd0", [

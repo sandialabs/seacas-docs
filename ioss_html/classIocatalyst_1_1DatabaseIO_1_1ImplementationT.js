@@ -24,6 +24,7 @@ var classIocatalyst_1_1DatabaseIO_1_1ImplementationT =
     [ "getPropertyPath", "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#a43aae43724ee6363b83709d890ed2bf8", null ],
     [ "getScalarNamesFromNonScalarField", "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#a6be5fff8b5239af35ba3d7fd4d0da6e4", null ],
     [ "getStructuredBlockIDS", "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#a24c42e613b63e138098ee11f01b98cb8", null ],
+    [ "getTime", "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#a7d34ff8a52db4d3a116e0b8e8f287f80", null ],
     [ "getTimePath", "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#a597eddcd1baed5eac074bc27ab8094e8", null ],
     [ "hasField", "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#a86596b7bfd34542b303df45df465a28f", null ],
     [ "hasProperty", "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#a1a4916091580aa4852529a760c6d3f4c", null ],

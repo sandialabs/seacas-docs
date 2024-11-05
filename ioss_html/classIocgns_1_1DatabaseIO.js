@@ -21,6 +21,7 @@ var classIocgns_1_1DatabaseIO =
     [ "finalize_structured_blocks", "classIocgns_1_1DatabaseIO.html#aecf73c449524f2d4cf738d82e802e858", null ],
     [ "flush_database_nl", "classIocgns_1_1DatabaseIO.html#a721523516712af628f5b9a05d9a7216e", null ],
     [ "free_state_pointer", "classIocgns_1_1DatabaseIO.html#acfcf776ba5c2abb6b0e03a1330bbef88", null ],
+    [ "get_db_step_times_nl", "classIocgns_1_1DatabaseIO.html#af216140fa73504718806e4b9588a87ab", null ],
     [ "get_field_internal", "classIocgns_1_1DatabaseIO.html#a4b98b0740288da16d781ba1337ed72c7", null ],
     [ "get_field_internal", "classIocgns_1_1DatabaseIO.html#ae2979750f7cc7e561f961d92952e579e", null ],
     [ "get_field_internal", "classIocgns_1_1DatabaseIO.html#afbebf0cfcbc204753de2016d39e048db", null ],

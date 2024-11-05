@@ -69,6 +69,12 @@ var hierarchy =
     [ "Iovs::CatalystVersion", "classIovs_1_1CatalystVersion.html", null ],
     [ "Ioss::GetLongOption::Cell", "structIoss_1_1GetLongOption_1_1Cell.html", null ],
     [ "Ioss::chain_entry_t< INT >", "structIoss_1_1chain__entry__t.html", null ],
+    [ "Ioss::ChangeSet", "classIoss_1_1ChangeSet.html", [
+      [ "Ioex::ChangeSet", "classIoex_1_1ChangeSet.html", null ]
+    ] ],
+    [ "Ioss::ChangeSetFactory", "classIoss_1_1ChangeSetFactory.html", [
+      [ "Ioex::ChangeSetFactory", "classIoex_1_1ChangeSetFactory.html", null ]
+    ] ],
     [ "Ioex::CommunicationMap", "structIoex_1_1CommunicationMap.html", null ],
     [ "Ioexnl::CommunicationMap", "structIoexnl_1_1CommunicationMap.html", null ],
     [ "Ioex::CommunicationMetaData", "structIoex_1_1CommunicationMetaData.html", null ],
@@ -165,6 +171,7 @@ var hierarchy =
       [ "Iovs_cgns::DatabaseIO", "classIovs__cgns_1_1DatabaseIO.html", null ],
       [ "Iovs_exodus::DatabaseIO", "classIovs__exodus_1_1DatabaseIO.html", null ]
     ] ],
+    [ "Ioss::DynamicTopologyStateLocator::DatabaseState", "structIoss_1_1DynamicTopologyStateLocator_1_1DatabaseState.html", null ],
     [ "Ioss::DataPool", "structIoss_1_1DataPool.html", null ],
     [ "Ioss::Decomposition< INT >", "classIoss_1_1Decomposition.html", null ],
     [ "Ioss::DecompUtils", "classIoss_1_1DecompUtils.html", null ],
@@ -175,6 +182,7 @@ var hierarchy =
       [ "anonymous_namespace{UnitTestDynamicTopology.C}::Observer", "classanonymous__namespace_02UnitTestDynamicTopology_8C_03_1_1Observer.html", null ]
     ] ],
     [ "Ioss::DynamicTopologyObserverCompare", "structIoss_1_1DynamicTopologyObserverCompare.html", null ],
+    [ "Ioss::DynamicTopologyStateLocator", "classIoss_1_1DynamicTopologyStateLocator.html", null ],
     [ "Ioex::EdgeBlock", "structIoex_1_1EdgeBlock.html", null ],
     [ "Ioexnl::EdgeBlock", "structIoexnl_1_1EdgeBlock.html", null ],
     [ "Ioex::EdgeSet", "structIoex_1_1EdgeSet.html", null ],

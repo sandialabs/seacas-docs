@@ -162,6 +162,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1chain__entry__t.html">chain_entry_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ChangeSet.html">ChangeSet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1ChangeSetFactory.html">ChangeSetFactory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main public user interface for creating <a class="el" href="classIoss_1_1ChangeSet.html">Ioss::ChangeSet</a> objects.  <a href="classIoss_1_1ChangeSetFactory.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1CommSet.html">CommSet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Compare.html">Compare</a></td></tr>
@@ -192,6 +197,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DynamicTopologyObserver.html">DynamicTopologyObserver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIoss_1_1DynamicTopologyObserverCompare.html">DynamicTopologyObserverCompare</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1DynamicTopologyStateLocator.html">DynamicTopologyStateLocator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIoss_1_1Edge2.html">Edge2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -670,12 +677,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ab8e52d9815556a59b610eb1f0c3045e2" id="r_ab8e52d9815556a59b610eb1f0c3045e2"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:ab8e52d9815556a59b610eb1f0c3045e2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab8e52d9815556a59b610eb1f0c3045e2">chain_t</a> = std::vector&lt;<a class="el" href="structIoss_1_1chain__entry__t.html">chain_entry_t</a>&lt;INT&gt;&gt;</td></tr>
 <tr class="separator:ab8e52d9815556a59b610eb1f0c3045e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1420df2dfd8828d487a06f7c454974ee" id="r_a1420df2dfd8828d487a06f7c454974ee"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">FileNameGenerator</a></td></tr>
+<tr class="separator:a1420df2dfd8828d487a06f7c454974ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e715b44ce0193dffb00d26106d6610" id="r_af9e715b44ce0193dffb00d26106d6610"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9e715b44ce0193dffb00d26106d6610">ChangeSetFactoryValuePair</a> = ChangeSetFactoryMap::value_type</td></tr>
+<tr class="separator:af9e715b44ce0193dffb00d26106d6610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3e40b5e8a69809b4532f29f6a22628" id="r_a2e3e40b5e8a69809b4532f29f6a22628"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e3e40b5e8a69809b4532f29f6a22628">NameList</a> = <a class="el" href="#a2e3e40b5e8a69809b4532f29f6a22628">Ioss::NameList</a></td></tr>
+<tr class="separator:a2e3e40b5e8a69809b4532f29f6a22628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af839ecb3852aecf3d45a9fb5d24900c4" id="r_af839ecb3852aecf3d45a9fb5d24900c4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af839ecb3852aecf3d45a9fb5d24900c4">ChangeSetFactoryMap</a> = std::map&lt;std::string, <a class="el" href="classIoss_1_1ChangeSetFactory.html">ChangeSetFactory</a> *, std::less&lt;&gt;&gt;</td></tr>
+<tr class="separator:af839ecb3852aecf3d45a9fb5d24900c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa639dfe4a3b61861236fcc418a2b0fef" id="r_aa639dfe4a3b61861236fcc418a2b0fef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa639dfe4a3b61861236fcc418a2b0fef">IntVector</a> = std::vector&lt;int&gt;</td></tr>
 <tr class="separator:aa639dfe4a3b61861236fcc418a2b0fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a036da9760bce336c6919efd6e62ac64c" id="r_a036da9760bce336c6919efd6e62ac64c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a036da9760bce336c6919efd6e62ac64c">Int64Vector</a> = std::vector&lt;int64_t&gt;</td></tr>
 <tr class="separator:a036da9760bce336c6919efd6e62ac64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add96c5daa568651f64f972f35b41966b" id="r_add96c5daa568651f64f972f35b41966b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add96c5daa568651f64f972f35b41966b">NameList</a> = std::vector&lt;std::string&gt;</td></tr>
-<tr class="separator:add96c5daa568651f64f972f35b41966b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8228ae25e9448cae504638c2b6be88a" id="r_ab8228ae25e9448cae504638c2b6be88a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8228ae25e9448cae504638c2b6be88a">IJK_t</a> = std::array&lt;int, 3&gt;</td></tr>
 <tr class="separator:ab8228ae25e9448cae504638c2b6be88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ebe9069b28684cb472a0273298005ae" id="r_a6ebe9069b28684cb472a0273298005ae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ebe9069b28684cb472a0273298005ae">TopoContainer</a> = std::vector&lt;std::pair&lt;const <a class="el" href="classIoss_1_1ElementTopology.html">ElementTopology</a> *, const <a class="el" href="classIoss_1_1ElementTopology.html">ElementTopology</a> *&gt;&gt;</td></tr>
@@ -753,6 +766,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a0aa4717ddce51742641bac706faf6118" id="r_a0aa4717ddce51742641bac706faf6118"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0aa4717ddce51742641bac706faf6118">ChangeSetFormat</a> { <a class="el" href="#a0aa4717ddce51742641bac706faf6118a3bc4f28133a21b1431d4f126c8bfe0f3">CHANGE_SET_NONE</a> = (0)
+, <a class="el" href="#a0aa4717ddce51742641bac706faf6118a836a3b431646c140117cb3aa51187162">CHANGE_SET_INTERNAL_FILES</a> = (1U &lt;&lt; 0)
+, <a class="el" href="#a0aa4717ddce51742641bac706faf6118af6f13b06eff8197c6efd4c0bdb5f2567">CHANGE_SET_LINEAR_MULTI_FILES</a> = (1U &lt;&lt; 1)
+, <a class="el" href="#a0aa4717ddce51742641bac706faf6118a293827765392168873d82b0488b0bf8b">CHANGE_SET_CYCLIC_MULTI_FILES</a> = (1U &lt;&lt; 2)
+ }</td></tr>
+<tr class="separator:a0aa4717ddce51742641bac706faf6118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8993c5d624635dd37c16fe10b1ee0c8f" id="r_a8993c5d624635dd37c16fe10b1ee0c8f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8993c5d624635dd37c16fe10b1ee0c8f">DuplicateFieldBehavior</a> { <a class="el" href="#a8993c5d624635dd37c16fe10b1ee0c8faa39409f16fd0d80463cdca4eac8d2035">UNSET_</a>
 , <a class="el" href="#a8993c5d624635dd37c16fe10b1ee0c8fa3a4cb4ea2966a8b8f0e21069a7c69b18">IGNORE_</a>
 , <a class="el" href="#a8993c5d624635dd37c16fe10b1ee0c8fab4bb47288b53e0e06cd04f0d5b684c17">WARNING_</a>
@@ -795,13 +814,17 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a201a78a96147059106da520ec1675212">TOPOLOGY_SHUFFLE</a> = (1U &lt;&lt; 1)
 , <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a51333524f80042b061e64400f94efaca">TOPOLOGY_HADAPT</a> = (1U &lt;&lt; 2)
 , <br />
-&#160;&#160;<a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a13ec9f7cd1dd5998f269666db43ce3ff">TOPOLOGY_GEOMETRY</a>
-, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a53d50f44a7c2bb3865b8cd5fb4dfef67">TOPOLOGY_CREATEFACE</a> = (1U &lt;&lt; 4)
-, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246af582c2e0691ee4a338e300f8d480a0ac">TOPOLOGY_CREATEELEM</a> = (1U &lt;&lt; 5)
-, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a57c30faaa2241ddd9315ecc2d8073fa2">TOPOLOGY_CREATENODE</a> = (1U &lt;&lt; 6)
+&#160;&#160;<a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246ae9f3dedf92506109d61febf0ab8a0d78">TOPOLOGY_GHOST</a> = (1U &lt;&lt; 3)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a13ec9f7cd1dd5998f269666db43ce3ff">TOPOLOGY_GEOMETRY</a>
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a53d50f44a7c2bb3865b8cd5fb4dfef67">TOPOLOGY_CREATEFACE</a> = (1U &lt;&lt; 5)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246af582c2e0691ee4a338e300f8d480a0ac">TOPOLOGY_CREATEELEM</a> = (1U &lt;&lt; 6)
 , <br />
-&#160;&#160;<a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a3f4ab8ff16568b7fb391e32453c57f47">TOPOLOGY_CREATEASSEMBLY</a> = (1U &lt;&lt; 7)
-, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246afd800699b6bde2b20e248950be1a9c92">TOPOLOGY_UNKNOWN</a> = (1U &lt;&lt; 8)
+&#160;&#160;<a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a57c30faaa2241ddd9315ecc2d8073fa2">TOPOLOGY_CREATENODE</a> = (1U &lt;&lt; 7)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a3f4ab8ff16568b7fb391e32453c57f47">TOPOLOGY_CREATEASSEMBLY</a> = (1U &lt;&lt; 8)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246afd800699b6bde2b20e248950be1a9c92">TOPOLOGY_UNKNOWN</a> = (1U &lt;&lt; 9)
+, <a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a85e42536bb7c5eab90bfaf7095503bc8">TOPOLOGY_AUXILIARY</a> = (1U &lt;&lt; 10)
+, <br />
+&#160;&#160;<a class="el" href="#ad0a9921aa11ed096eeb73140b1cf9246a7b543ab38f1338fa33aa603d355d5934">TOPOLOGY_CONSTRAINT</a> = (1U &lt;&lt; 11)
 <br />
  }</td></tr>
 <tr class="separator:ad0a9921aa11ed096eeb73140b1cf9246"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -908,6 +931,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ab9d406672054480ab0186f53e3890820" id="r_ab9d406672054480ab0186f53e3890820"><td class="memTemplParams" colspan="2">template&lt;typename INT &gt; </td></tr>
 <tr class="memitem:ab9d406672054480ab0186f53e3890820"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="#ab8e52d9815556a59b610eb1f0c3045e2">chain_t</a>&lt; INT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab9d406672054480ab0186f53e3890820">generate_element_chains</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, const std::string &amp;surface_list, int debug_level, INT)</td></tr>
 <tr class="separator:ab9d406672054480ab0186f53e3890820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572e9b278eaeb60a855adabaef6f929e" id="r_a572e9b278eaeb60a855adabaef6f929e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a572e9b278eaeb60a855adabaef6f929e">expand_topology_files</a> (<a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">FileNameGenerator</a> generator, const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp;util, const std::string &amp;basename, const <a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp;properties, <a class="el" href="#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a> usage, int step)</td></tr>
+<tr class="separator:a572e9b278eaeb60a855adabaef6f929e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c37a1b958468ec6760e894347ecb8e0" id="r_a6c37a1b958468ec6760e894347ecb8e0"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::string, <a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c37a1b958468ec6760e894347ecb8e0">expand_topology_files</a> (<a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">FileNameGenerator</a> generator, const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp;util, const std::string &amp;basename, const std::string &amp;db_type, const <a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp;properties, <a class="el" href="#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a> usage, int step)</td></tr>
+<tr class="separator:a6c37a1b958468ec6760e894347ecb8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e3dbf6e6c737a6a526413100dc8cb9" id="r_a42e3dbf6e6c737a6a526413100dc8cb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">Ioss::FileNameGenerator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42e3dbf6e6c737a6a526413100dc8cb9">construct_cyclic_filename_generator</a> (unsigned cyclicCount)</td></tr>
+<tr class="separator:a42e3dbf6e6c737a6a526413100dc8cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d826d952fa630a5965b5507f7ebf71a" id="r_a0d826d952fa630a5965b5507f7ebf71a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">Ioss::FileNameGenerator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d826d952fa630a5965b5507f7ebf71a">construct_linear_filename_generator</a> ()</td></tr>
+<tr class="separator:a0d826d952fa630a5965b5507f7ebf71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf60c6566ef8bd6e92e360a0c27daf9d" id="r_acf60c6566ef8bd6e92e360a0c27daf9d"><td class="memItemLeft" align="right" valign="top">IOSS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf60c6566ef8bd6e92e360a0c27daf9d">copy_database</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options)</td></tr>
 <tr class="separator:acf60c6566ef8bd6e92e360a0c27daf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a800bece8cd1505782c2180b175710b45" id="r_a800bece8cd1505782c2180b175710b45"><td class="memItemLeft" align="right" valign="top">IOSS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a800bece8cd1505782c2180b175710b45">transfer_assemblies</a> (<a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;region, <a class="el" href="classIoss_1_1Region.html">Ioss::Region</a> &amp;output_region, const <a class="el" href="structIoss_1_1MeshCopyOptions.html">Ioss::MeshCopyOptions</a> &amp;options, int rank)</td></tr>
@@ -918,11 +949,8 @@ Functions</h2></td></tr>
 <tr class="separator:a48498de7d44a659ee823b1432c992738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a174e0b297eacb3ab13ae480ddb71303c" id="r_a174e0b297eacb3ab13ae480ddb71303c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a174e0b297eacb3ab13ae480ddb71303c">is_input_event</a> (<a class="el" href="#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a> db_usage)</td></tr>
 <tr class="separator:a174e0b297eacb3ab13ae480ddb71303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab71cc5f9234df8232ff4f720ab6dbfe7" id="r_ab71cc5f9234df8232ff4f720ab6dbfe7"><td class="memItemLeft" align="right" valign="top">IOSS_EXPORT const <a class="el" href="#add96c5daa568651f64f972f35b41966b">Ioss::NameList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab71cc5f9234df8232ff4f720ab6dbfe7">valid_decomp_methods</a> ()</td></tr>
+<tr class="memitem:ab71cc5f9234df8232ff4f720ab6dbfe7" id="r_ab71cc5f9234df8232ff4f720ab6dbfe7"><td class="memItemLeft" align="right" valign="top">IOSS_EXPORT const <a class="el" href="#a2e3e40b5e8a69809b4532f29f6a22628">Ioss::NameList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab71cc5f9234df8232ff4f720ab6dbfe7">valid_decomp_methods</a> ()</td></tr>
 <tr class="separator:ab71cc5f9234df8232ff4f720ab6dbfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04fc848a2ef438e6d197fecbc109c38e" id="r_a04fc848a2ef438e6d197fecbc109c38e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a04fc848a2ef438e6d197fecbc109c38e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a04fc848a2ef438e6d197fecbc109c38e">update_database_for_grouping_entities</a> (const T &amp;container, <a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *db)</td></tr>
-<tr class="separator:a04fc848a2ef438e6d197fecbc109c38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace14d07c4fcfa3609eedec64779035f9" id="r_ace14d07c4fcfa3609eedec64779035f9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TIter  = decltype(std::begin(std::declval&lt;T&gt;())), typename  = decltype(std::end(std::declval&lt;T&gt;()))&gt; </td></tr>
 <tr class="memitem:ace14d07c4fcfa3609eedec64779035f9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ace14d07c4fcfa3609eedec64779035f9">enumerate</a> (T &amp;&amp;iterable)</td></tr>
 <tr class="separator:ace14d07c4fcfa3609eedec64779035f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1080,6 +1108,34 @@ template&lt;typename INT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="#ab8e52d9815556a59b610eb1f0c3045e2">Ioss::chain_t</a> = std::vector&lt;<a class="el" href="structIoss_1_1chain__entry__t.html">chain_entry_t</a>&lt;INT&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af839ecb3852aecf3d45a9fb5d24900c4" name="af839ecb3852aecf3d45a9fb5d24900c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af839ecb3852aecf3d45a9fb5d24900c4">&#9670;&#160;</a></span>ChangeSetFactoryMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#af839ecb3852aecf3d45a9fb5d24900c4">Ioss::ChangeSetFactoryMap</a> = std::map&lt;std::string, <a class="el" href="classIoss_1_1ChangeSetFactory.html">ChangeSetFactory</a> *, std::less&lt;&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9e715b44ce0193dffb00d26106d6610" name="af9e715b44ce0193dffb00d26106d6610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e715b44ce0193dffb00d26106d6610">&#9670;&#160;</a></span>ChangeSetFactoryValuePair</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#af9e715b44ce0193dffb00d26106d6610">Ioss::ChangeSetFactoryValuePair</a> = ChangeSetFactoryMap::value_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1324,6 +1380,22 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
+<a id="a1420df2dfd8828d487a06f7c454974ee" name="a1420df2dfd8828d487a06f7c454974ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1420df2dfd8828d487a06f7c454974ee">&#9670;&#160;</a></span>FileNameGenerator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">Ioss::FileNameGenerator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> </div>
+<div class="line">      std::function&lt;std::string(<span class="keyword">const</span> std::string &amp;baseFileName, <span class="keywordtype">unsigned</span> step)&gt;</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ab8228ae25e9448cae504638c2b6be88a" name="ab8228ae25e9448cae504638c2b6be88a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8228ae25e9448cae504638c2b6be88a">&#9670;&#160;</a></span>IJK_t</h2>
 
@@ -1408,14 +1480,14 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="add96c5daa568651f64f972f35b41966b" name="add96c5daa568651f64f972f35b41966b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add96c5daa568651f64f972f35b41966b">&#9670;&#160;</a></span>NameList</h2>
+<a id="a2e3e40b5e8a69809b4532f29f6a22628" name="a2e3e40b5e8a69809b4532f29f6a22628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3e40b5e8a69809b4532f29f6a22628">&#9670;&#160;</a></span>NameList</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="#add96c5daa568651f64f972f35b41966b">Ioss::NameList</a> <a class="el" href="#add96c5daa568651f64f972f35b41966b">Ioss::NameList</a> = std::vector&lt;std::string&gt;</td>
+          <td class="memname">typedef <a class="el" href="#a2e3e40b5e8a69809b4532f29f6a22628">Ioss::NameList</a> <a class="el" href="#a2e3e40b5e8a69809b4532f29f6a22628">Ioss::NameList</a> = <a class="el" href="#a2e3e40b5e8a69809b4532f29f6a22628">Ioss::NameList</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1649,6 +1721,26 @@ template&lt;typename INT &gt; </div>
 <tr><td class="fieldname"><a id="af6f6cf3f670aeffa52635cd6af07fcfda3be1baee4da4d107df554d7025676049" name="af6f6cf3f670aeffa52635cd6af07fcfda3be1baee4da4d107df554d7025676049"></a>lvl_debug&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af6f6cf3f670aeffa52635cd6af07fcfdacffdab82651edc5102e7ba781baf0ed8" name="af6f6cf3f670aeffa52635cd6af07fcfdacffdab82651edc5102e7ba781baf0ed8"></a>lvl_error&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af6f6cf3f670aeffa52635cd6af07fcfdae4b17159dad696a96e436e01553694e1" name="af6f6cf3f670aeffa52635cd6af07fcfdae4b17159dad696a96e436e01553694e1"></a>lvl_fatal&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0aa4717ddce51742641bac706faf6118" name="a0aa4717ddce51742641bac706faf6118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa4717ddce51742641bac706faf6118">&#9670;&#160;</a></span>ChangeSetFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a0aa4717ddce51742641bac706faf6118">Ioss::ChangeSetFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0aa4717ddce51742641bac706faf6118a3bc4f28133a21b1431d4f126c8bfe0f3" name="a0aa4717ddce51742641bac706faf6118a3bc4f28133a21b1431d4f126c8bfe0f3"></a>CHANGE_SET_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0aa4717ddce51742641bac706faf6118a836a3b431646c140117cb3aa51187162" name="a0aa4717ddce51742641bac706faf6118a836a3b431646c140117cb3aa51187162"></a>CHANGE_SET_INTERNAL_FILES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0aa4717ddce51742641bac706faf6118af6f13b06eff8197c6efd4c0bdb5f2567" name="a0aa4717ddce51742641bac706faf6118af6f13b06eff8197c6efd4c0bdb5f2567"></a>CHANGE_SET_LINEAR_MULTI_FILES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0aa4717ddce51742641bac706faf6118a293827765392168873d82b0488b0bf8b" name="a0aa4717ddce51742641bac706faf6118a293827765392168873d82b0488b0bf8b"></a>CHANGE_SET_CYCLIC_MULTI_FILES&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1974,6 +2066,8 @@ template&lt;typename INT &gt; </div>
 </td></tr>
 <tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a51333524f80042b061e64400f94efaca" name="ad0a9921aa11ed096eeb73140b1cf9246a51333524f80042b061e64400f94efaca"></a>TOPOLOGY_HADAPT&#160;</td><td class="fielddoc"><p>Elements split/combined; not moved cross-proc. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246ae9f3dedf92506109d61febf0ab8a0d78" name="ad0a9921aa11ed096eeb73140b1cf9246ae9f3dedf92506109d61febf0ab8a0d78"></a>TOPOLOGY_GHOST&#160;</td><td class="fielddoc"><p>Ghost entities created/destroyed. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a13ec9f7cd1dd5998f269666db43ce3ff" name="ad0a9921aa11ed096eeb73140b1cf9246a13ec9f7cd1dd5998f269666db43ce3ff"></a>TOPOLOGY_GEOMETRY&#160;</td><td class="fielddoc"><p>Geometry (mesh coordinates) modified. Restart needs to know this. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a53d50f44a7c2bb3865b8cd5fb4dfef67" name="ad0a9921aa11ed096eeb73140b1cf9246a53d50f44a7c2bb3865b8cd5fb4dfef67"></a>TOPOLOGY_CREATEFACE&#160;</td><td class="fielddoc"><p>Face/Edge are created/deleted. </p>
@@ -1985,6 +2079,10 @@ template&lt;typename INT &gt; </div>
 <tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a3f4ab8ff16568b7fb391e32453c57f47" name="ad0a9921aa11ed096eeb73140b1cf9246a3f4ab8ff16568b7fb391e32453c57f47"></a>TOPOLOGY_CREATEASSEMBLY&#160;</td><td class="fielddoc"><p>Assemblies are created/deleted. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246afd800699b6bde2b20e248950be1a9c92" name="ad0a9921aa11ed096eeb73140b1cf9246afd800699b6bde2b20e248950be1a9c92"></a>TOPOLOGY_UNKNOWN&#160;</td><td class="fielddoc"><p><a class="el" href="classIoss_1_1Unknown.html">Unknown</a> change, recreate from scratch. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a85e42536bb7c5eab90bfaf7095503bc8" name="ad0a9921aa11ed096eeb73140b1cf9246a85e42536bb7c5eab90bfaf7095503bc8"></a>TOPOLOGY_AUXILIARY&#160;</td><td class="fielddoc"><p>An AUXILIARY relation was created/modified. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0a9921aa11ed096eeb73140b1cf9246a7b543ab38f1338fa33aa603d355d5934" name="ad0a9921aa11ed096eeb73140b1cf9246a7b543ab38f1338fa33aa603d355d5934"></a>TOPOLOGY_CONSTRAINT&#160;</td><td class="fielddoc"><p>Contact constraints. </p>
 </td></tr>
 </table>
 
@@ -2031,6 +2129,40 @@ template&lt;class T &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42e3dbf6e6c737a6a526413100dc8cb9" name="a42e3dbf6e6c737a6a526413100dc8cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e3dbf6e6c737a6a526413100dc8cb9">&#9670;&#160;</a></span>construct_cyclic_filename_generator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">FileNameGenerator</a> Ioss::construct_cyclic_filename_generator </td>
+          <td>(</td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>cyclicCount</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d826d952fa630a5965b5507f7ebf71a" name="a0d826d952fa630a5965b5507f7ebf71a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d826d952fa630a5965b5507f7ebf71a">&#9670;&#160;</a></span>construct_linear_filename_generator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">FileNameGenerator</a> Ioss::construct_linear_filename_generator </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -2110,6 +2242,93 @@ template&lt;typename T , typename TIter  = decltype(std::begin(std::declval&lt;T
 <span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a572e9b278eaeb60a855adabaef6f929e" name="a572e9b278eaeb60a855adabaef6f929e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a572e9b278eaeb60a855adabaef6f929e">&#9670;&#160;</a></span>expand_topology_files() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ioss::expand_topology_files </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">FileNameGenerator</a></td>          <td class="paramname"><span class="paramname"><em>generator</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>util</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>basename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>properties</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a></td>          <td class="paramname"><span class="paramname"><em>usage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>step</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c37a1b958468ec6760e894347ecb8e0" name="a6c37a1b958468ec6760e894347ecb8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c37a1b958468ec6760e894347ecb8e0">&#9670;&#160;</a></span>expand_topology_files() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; std::string, <a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> * &gt; Ioss::expand_topology_files </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a1420df2dfd8828d487a06f7c454974ee">FileNameGenerator</a></td>          <td class="paramname"><span class="paramname"><em>generator</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>util</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>basename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>db_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1PropertyManager.html">Ioss::PropertyManager</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>properties</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4ec41517502e82a7291184cd7b68b34f">Ioss::DatabaseUsage</a></td>          <td class="paramname"><span class="paramname"><em>usage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>step</em></span>&#160;)</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -3171,29 +3390,6 @@ template&lt;typename INT &gt; </div>
 
 </div>
 </div>
-<a id="a04fc848a2ef438e6d197fecbc109c38e" name="a04fc848a2ef438e6d197fecbc109c38e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04fc848a2ef438e6d197fecbc109c38e">&#9670;&#160;</a></span>update_database_for_grouping_entities()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void Ioss::update_database_for_grouping_entities </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;</td>          <td class="paramname"><span class="paramname"><em>container</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classIoss_1_1DatabaseIO.html">Ioss::DatabaseIO</a> *</td>          <td class="paramname"><span class="paramname"><em>db</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab71cc5f9234df8232ff4f720ab6dbfe7" name="ab71cc5f9234df8232ff4f720ab6dbfe7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab71cc5f9234df8232ff4f720ab6dbfe7">&#9670;&#160;</a></span>valid_decomp_methods()</h2>
 
@@ -3201,7 +3397,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">IOSS_EXPORT const <a class="el" href="#add96c5daa568651f64f972f35b41966b">Ioss::NameList</a> &amp; Ioss::valid_decomp_methods </td>
+          <td class="memname">IOSS_EXPORT const <a class="el" href="#a2e3e40b5e8a69809b4532f29f6a22628">Ioss::NameList</a> &amp; Ioss::valid_decomp_methods </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>

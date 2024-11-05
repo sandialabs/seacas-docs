@@ -7,6 +7,8 @@ var namespaceIoex =
     [ "Assembly", "structIoex_1_1Assembly.html", "structIoex_1_1Assembly" ],
     [ "BaseDatabaseIO", "classIoex_1_1BaseDatabaseIO.html", "classIoex_1_1BaseDatabaseIO" ],
     [ "Blob", "structIoex_1_1Blob.html", "structIoex_1_1Blob" ],
+    [ "ChangeSet", "classIoex_1_1ChangeSet.html", "classIoex_1_1ChangeSet" ],
+    [ "ChangeSetFactory", "classIoex_1_1ChangeSetFactory.html", "classIoex_1_1ChangeSetFactory" ],
     [ "CommunicationMap", "structIoex_1_1CommunicationMap.html", "structIoex_1_1CommunicationMap" ],
     [ "CommunicationMetaData", "structIoex_1_1CommunicationMetaData.html", "structIoex_1_1CommunicationMetaData" ],
     [ "DatabaseIO", "classIoex_1_1DatabaseIO.html", "classIoex_1_1DatabaseIO" ],
