@@ -3,9 +3,9 @@ var namespaces_dup =
     [ "anonymous_namespace{cgns_decomp.C}", "namespaceanonymous__namespace_02cgns__decomp_8C_03.html", "namespaceanonymous__namespace_02cgns__decomp_8C_03" ],
     [ "anonymous_namespace{cth_pressure_map.C}", "namespaceanonymous__namespace_02cth__pressure__map_8C_03.html", "namespaceanonymous__namespace_02cth__pressure__map_8C_03" ],
     [ "anonymous_namespace{io_info.C}", "namespaceanonymous__namespace_02io__info_8C_03.html", [
+      [ "change_set_info", "namespaceanonymous__namespace_02io__info_8C_03.html#a7a88d22127b1b173541f650662f225f4", null ],
       [ "element_volume", "namespaceanonymous__namespace_02io__info_8C_03.html#a03ddc25a97c9a6c9647a9c15c5a6d5d9", null ],
       [ "file_info", "namespaceanonymous__namespace_02io__info_8C_03.html#aa1c8abea5efac9a37a1a550b6d61063e", null ],
-      [ "group_info", "namespaceanonymous__namespace_02io__info_8C_03.html#a39fee1c8c257be66cc07362fcaad0000", null ],
       [ "id", "namespaceanonymous__namespace_02io__info_8C_03.html#af2fab5f0f368666f9c7a83a18e745130", null ],
       [ "info_aliases", "namespaceanonymous__namespace_02io__info_8C_03.html#a8537de034cec0281bae3932568e6c594", null ],
       [ "info_assemblies", "namespaceanonymous__namespace_02io__info_8C_03.html#a7d2de5b110b6f4431d739fb7270ebced", null ],

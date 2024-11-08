@@ -43,6 +43,5 @@ var searchData=
   ['goldcoordinates_40',['goldCoordinates',['../classIotm_1_1unit__test_1_1TextMeshFixture_1_1CoordinateVerifier.html#a93f8f8ecbf89fed925a3e79015d80491',1,'Iotm::unit_test::TextMeshFixture::CoordinateVerifier']]],
   ['goldnodeids_41',['goldNodeIds',['../classIotm_1_1unit__test_1_1TextMeshFixture_1_1CoordinateVerifier.html#ad739b94abbbe50ad3af2306e55dbda77',1,'Iotm::unit_test::TextMeshFixture::CoordinateVerifier']]],
   ['group_5ftype_5f_42',['group_type_',['../classIoss_1_1glob_1_1GroupNode.html#a5d6ed2e7bf8cfdd08cc9e98c746c34ee',1,'Ioss::glob::GroupNode']]],
-  ['groupname_43',['groupName',['../classIOShell_1_1Interface.html#a46c43fa5a8c60d30bc46374b9c1f46ff',1,'IOShell::Interface']]],
-  ['groupname_5f_44',['groupname_',['../classInfo_1_1Interface.html#a742073e4982e0c59ef4cd7551b090e5a',1,'Info::Interface']]]
+  ['groupname_43',['groupName',['../classIOShell_1_1Interface.html#a46c43fa5a8c60d30bc46374b9c1f46ff',1,'IOShell::Interface']]]
 ];

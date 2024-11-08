@@ -562,10 +562,8 @@ var searchData=
   ['global_5fto_5flocal_5fnl_559',['global_to_local_nl',['../classIoss_1_1Map.html#aba4b4191dd39da5f8a68ba89d3f5b868',1,'Ioss::Map']]],
   ['global_5fto_5fzone_5flocal_5fidx_560',['global_to_zone_local_idx',['../namespaceanonymous__namespace_02Iocgns__DatabaseIO_8C_03.html#a70ffeedfb5f3d1ff4d68b46d4afc878d',1,'anonymous_namespace{Iocgns_DatabaseIO.C}']]],
   ['globnode_561',['GlobNode',['../classIoss_1_1glob_1_1GlobNode.html#a2186d20dac602bdfba8195004c32ebb1',1,'Ioss::glob::GlobNode']]],
-  ['group_5finfo_562',['group_info',['../namespaceanonymous__namespace_02io__info_8C_03.html#a39fee1c8c257be66cc07362fcaad0000',1,'anonymous_namespace{io_info.C}']]],
-  ['groupingentity_563',['GroupingEntity',['../classIoss_1_1GroupingEntity.html#a31bff1067f10fbec1dc386cd0a9d050b',1,'Ioss::GroupingEntity::GroupingEntity()=default'],['../classIoss_1_1GroupingEntity.html#acb7142728e96a35ac40d94a646ff5c96',1,'Ioss::GroupingEntity::GroupingEntity(DatabaseIO *io_database, const std::string &amp;my_name, int64_t entity_count)'],['../classIoss_1_1GroupingEntity.html#ab20f7698a53a375e8b6fed69816c8528',1,'Ioss::GroupingEntity::GroupingEntity(const GroupingEntity &amp;other)']]],
-  ['groupname_564',['groupname',['../classInfo_1_1Interface.html#a62d95325c23c24c85e9e53e5a1798c9e',1,'Info::Interface']]],
-  ['groupnode_565',['GroupNode',['../classIoss_1_1glob_1_1GroupNode.html#addbc505ee80ad4749b76c061696a1a3b',1,'Ioss::glob::GroupNode']]],
-  ['groups_5fdescribe_566',['groups_describe',['../classIoex_1_1BaseDatabaseIO.html#a80a91db1cf41c5e112cc0bb94d625ca1',1,'Ioex::BaseDatabaseIO']]],
-  ['guided_5fdecompose_567',['guided_decompose',['../classIoss_1_1Decomposition.html#a2f96610d1160fd0a721a01f8e58aa21e',1,'Ioss::Decomposition']]]
+  ['groupingentity_562',['GroupingEntity',['../classIoss_1_1GroupingEntity.html#a31bff1067f10fbec1dc386cd0a9d050b',1,'Ioss::GroupingEntity::GroupingEntity()=default'],['../classIoss_1_1GroupingEntity.html#acb7142728e96a35ac40d94a646ff5c96',1,'Ioss::GroupingEntity::GroupingEntity(DatabaseIO *io_database, const std::string &amp;my_name, int64_t entity_count)'],['../classIoss_1_1GroupingEntity.html#ab20f7698a53a375e8b6fed69816c8528',1,'Ioss::GroupingEntity::GroupingEntity(const GroupingEntity &amp;other)']]],
+  ['groupnode_563',['GroupNode',['../classIoss_1_1glob_1_1GroupNode.html#addbc505ee80ad4749b76c061696a1a3b',1,'Ioss::glob::GroupNode']]],
+  ['groups_5fdescribe_564',['groups_describe',['../classIoex_1_1BaseDatabaseIO.html#a80a91db1cf41c5e112cc0bb94d625ca1',1,'Ioex::BaseDatabaseIO']]],
+  ['guided_5fdecompose_565',['guided_decompose',['../classIoss_1_1Decomposition.html#a2f96610d1160fd0a721a01f8e58aa21e',1,'Ioss::Decomposition']]]
 ];
