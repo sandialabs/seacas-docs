@@ -38,6 +38,7 @@ var group__Utilities =
     [ "exi_get_cpu_ws", "group__Utilities.html#ga6607482cae6c9c710b0d36d5517ec4f8", null ],
     [ "exi_iqsort", "group__Utilities.html#ga7998fd18cce110e33c30bdf3e0d98e25", null ],
     [ "exi_is_parallel", "group__Utilities.html#ga421e26f1204d155b9096b2ff5ce929bf", null ],
+    [ "exi_parallel_rank", "group__Utilities.html#ga504591f02386148d759bdefe02a7df0d", null ],
     [ "exi_reset_error_status", "group__Utilities.html#gab5a71861c3522581d7bb216a9257380b", null ],
     [ "exi_update_max_name_length", "group__Utilities.html#ga4abd1cad91feabd83089e3188b2ee1c0", null ],
     [ "nc_flt_code", "group__Utilities.html#ga0bcb99c4a23dde165c0a75e9acfb3d55", null ],

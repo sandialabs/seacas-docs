@@ -37,7 +37,8 @@ var namespaces_dup =
     [ "anonymous_namespace{io_modify.C}", "namespaceanonymous__namespace_02io__modify_8C_03.html", "namespaceanonymous__namespace_02io__modify_8C_03" ],
     [ "anonymous_namespace{io_shell.C}", "namespaceanonymous__namespace_02io__shell_8C_03.html", [
       [ "file_compare", "namespaceanonymous__namespace_02io__shell_8C_03.html#a319b148aa7e923ef10dad027333471d2", null ],
-      [ "file_copy", "namespaceanonymous__namespace_02io__shell_8C_03.html#ae7d46abc4561db2788d8c7532b10779c", null ],
+      [ "file_copy", "namespaceanonymous__namespace_02io__shell_8C_03.html#a039c11c311213cfc340710e279dba5bd", null ],
+      [ "open_change_set", "namespaceanonymous__namespace_02io__shell_8C_03.html#a7fb09b52c2b8a804c16fc92cbf1888cf", null ],
       [ "set_mesh_copy_options", "namespaceanonymous__namespace_02io__shell_8C_03.html#a4675a36f978dccc408fdb061fc26499b", null ],
       [ "set_properties", "namespaceanonymous__namespace_02io__shell_8C_03.html#a9e692608303cd11f829b43813c4804a1", null ],
       [ "codename", "namespaceanonymous__namespace_02io__shell_8C_03.html#acaaa81b211a5e81b98c9070df111d08d", null ],
@@ -159,8 +160,11 @@ var namespaces_dup =
     ] ],
     [ "anonymous_namespace{Ioss_Compare.C}", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html", [
       [ "compare_assemblies", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a817e24366a8f4927fbdf57472cd4f285", null ],
+      [ "compare_change_sets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a9d792b03fe570fcb4d5ed8236a8fc1de", null ],
+      [ "compare_change_sets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a6b6dde4b81295a87c35861bfabdd859a", null ],
       [ "compare_commsets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#afb0d16bc6b287902410398c543abdcc5", null ],
       [ "compare_coordinate_frames", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a9e9ca57e346f96a60ad7f7fded915b57", null ],
+      [ "compare_database_internal", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a90beaa3f97ab38df0e740bfe280abac0", null ],
       [ "compare_edgeblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a1def2c6230f37bf60f4727b5a80d125d", null ],
       [ "compare_edgesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a394b8f5095a7dc5a222c64129db94d81", null ],
       [ "compare_elementblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a923e03009c1bdeb5f67bded8a8f333ab", null ],
@@ -183,6 +187,7 @@ var namespaces_dup =
       [ "compare_qa_info", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#aaa8bd9d3339ff5cd05bce8997470a2d9", null ],
       [ "compare_sidesets", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#af528e3c7511c9b8d0aade7ca7e7667fe", null ],
       [ "compare_structuredblocks", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a6d20726ba94b1edb4042a442c76b0962", null ],
+      [ "open_change_set", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#ac9c6a343955640f46a7aaa2ce5cf9d5b", null ],
       [ "abs_tolerance", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a2278749d5403e79a9cb5279391264bf3", null ],
       [ "rel_tolerance", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#afe29abd0985d30b1d10a2f475db5f5ff", null ],
       [ "tol_floor", "namespaceanonymous__namespace_02Ioss__Compare_8C_03.html#a7ba4f0d14bf6cb1e964f554f6efc6a6e", null ]
@@ -288,7 +293,7 @@ var namespaces_dup =
       [ "x", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#ab4931145062298a06c68ed78330e3076", null ],
       [ "y", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#aefec7b0252cee6d9f15a74092578ac08", null ],
       [ "z", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#aebaef71ad7a4690bfb30f8a36e18c3e4", null ],
-      [ "Zoltan_Data", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#aaf47ab17af633140cb5074aca0c5f7a2", null ]
+      [ "Zoltan_Data", "namespaceanonymous__namespace_02Ioss__DecompositionUtils_8C_03.html#ab936dad019f943f6a85e03c0944d4a97", null ]
     ] ],
     [ "anonymous_namespace{Ioss_DynamicTopologyFileControl.C}", "namespaceanonymous__namespace_02Ioss__DynamicTopologyFileControl_8C_03.html", [
       [ "file_exists", "namespaceanonymous__namespace_02Ioss__DynamicTopologyFileControl_8C_03.html#ab8a0917f5a9351eda28ab76974dc8090", null ],

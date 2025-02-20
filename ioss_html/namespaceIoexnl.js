@@ -31,6 +31,7 @@ var namespaceIoexnl =
     [ "TopologyMap", "namespaceIoexnl.html#a981de6bbc5162f0c97d79c7573370a24", null ],
     [ "ValueContainer", "namespaceIoexnl.html#ade7a536a169dc6478542dad741e4477e", null ],
     [ "VariableNameMap", "namespaceIoexnl.html#abf6e6b169855b7c765a5df718be1fb20", null ],
+    [ "VNMValuePair", "namespaceIoexnl.html#ac2358efa25042a07dbd7250b7d846187", null ],
     [ "add_coordinate_frames", "namespaceIoexnl.html#a0df26d03cd55702c3935d4f38f949029", null ],
     [ "add_map_fields", "namespaceIoexnl.html#aefcc994626f4c1dbf1708e6392c3f639", null ],
     [ "check_processor_info", "namespaceIoexnl.html#afc223b58e769cc91d57f958f3cc4966a", null ],

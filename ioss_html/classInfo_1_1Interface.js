@@ -1,6 +1,6 @@
 var classInfo_1_1Interface =
 [
-    [ "Interface", "classInfo_1_1Interface.html#a4f9c4b8d9b404bc1279a852e60db26cc", null ],
+    [ "Interface", "classInfo_1_1Interface.html#a012e6fdff7a30bd85b1204c86c7a1885", null ],
     [ "adjacencies", "classInfo_1_1Interface.html#aab9d81c8bd0df00f2b83cb1f31010b7d", null ],
     [ "change_set_name", "classInfo_1_1Interface.html#ad695ed3215a9b4191a905f6961e3dc2c", null ],
     [ "check_node_status", "classInfo_1_1Interface.html#aa9b75ad671b421e9ccd0bafdc4e25a70", null ],
@@ -41,5 +41,6 @@ var classInfo_1_1Interface =
     [ "showConfig_", "classInfo_1_1Interface.html#a3739bb0faa93e4b452d928440b582a8e", null ],
     [ "summary_", "classInfo_1_1Interface.html#a7a38ab519f00870700da056eb422c8a8", null ],
     [ "surfaceSplitScheme_", "classInfo_1_1Interface.html#a7b956ff3df5431577f3a77fd891293df", null ],
-    [ "useGenericNames_", "classInfo_1_1Interface.html#ab272d699c58a2668810663854bb0535f", null ]
+    [ "useGenericNames_", "classInfo_1_1Interface.html#ab272d699c58a2668810663854bb0535f", null ],
+    [ "version", "classInfo_1_1Interface.html#a0b576c0b32155f2f4c86b105b0cb9fe1", null ]
 ];

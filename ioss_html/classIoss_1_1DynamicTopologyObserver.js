@@ -11,6 +11,7 @@ var classIoss_1_1DynamicTopologyObserver =
     [ "get_notifier", "classIoss_1_1DynamicTopologyObserver.html#a07e81796f51028712069fabcd6945f69", null ],
     [ "get_region", "classIoss_1_1DynamicTopologyObserver.html#a014069eaf9997f56108e80c212bc5017", null ],
     [ "get_topology_modification", "classIoss_1_1DynamicTopologyObserver.html#a3bfd7f76d8e618e998f223eb513552a0", null ],
+    [ "initialize_region", "classIoss_1_1DynamicTopologyObserver.html#ab7d83bfd13f29945bd982e2060406c92", null ],
     [ "is_automatic_restart", "classIoss_1_1DynamicTopologyObserver.html#a642dbccf8a34370daedcb5ce7daa0bdf", null ],
     [ "is_restart_requested", "classIoss_1_1DynamicTopologyObserver.html#abf00e250ebf1345a6c4581e7af574ba8", null ],
     [ "is_topology_modified", "classIoss_1_1DynamicTopologyObserver.html#acfdac2ca092232d6e06a599c5e276734", null ],

@@ -16,5 +16,5 @@ var apr__parser_8cc =
     [ "yylex", "apr__parser_8cc.html#a5611300548b2030d86b6ab9168132b88", null ],
     [ "yylex", "apr__parser_8cc.html#a5611300548b2030d86b6ab9168132b88", null ],
     [ "YYRECOVERING", "apr__parser_8cc.html#ad860e18ca4b79fc589895b531bdb7948", null ],
-    [ "reset_error", "apr__parser_8cc.html#af0841fd60e700c2b6ba9c5700889d83b", null ]
+    [ "anonymous_namespace{apr_parser.cc}::reset_error", "namespaceanonymous__namespace_02apr__parser_8cc_03.html#af0841fd60e700c2b6ba9c5700889d83b", null ]
 ];

@@ -17,6 +17,7 @@ var structexi__file__item =
     [ "is_pnetcdf", "structexi__file__item.html#ab7843d8f47b008ef892a0b26e081f7a8", null ],
     [ "is_write", "structexi__file__item.html#a062c11af9b9e065d684bba6ac521819c", null ],
     [ "maximum_name_length", "structexi__file__item.html#aac29bd2da12cab67363270d6c4dd9076", null ],
+    [ "mpi_rank", "structexi__file__item.html#ab153ffeb721bd95b46856b518df30daf", null ],
     [ "netcdf_type_code", "structexi__file__item.html#a330e00d33396137c256819aad93b817f", null ],
     [ "next", "structexi__file__item.html#a152f5bc5e143a7ba41bbd07f6960f28a", null ],
     [ "persist_define_mode", "structexi__file__item.html#a340d324f3e8c23ab6fa017bdb0a8628e", null ],
