@@ -389,7 +389,6 @@ var exodusII__int_8h =
     [ "exi_name_of_map", "group__Internal.html#gac140dcab7127f4aa08f838704a11ccd8", null ],
     [ "exi_name_red_var_of_object", "group__Internal.html#gab4d4cdf75e289ce7871116f84cd5d440", null ],
     [ "exi_name_var_of_object", "group__Internal.html#ga4b49a415602fb5ffb27191d755c2cb3d", null ],
-    [ "exi_parallel_rank", "group__Internal.html#ga504591f02386148d759bdefe02a7df0d", null ],
     [ "exi_persist_leavedef", "group__Internal.html#gad2e52e8abd78c099253003ac34b42161", null ],
     [ "exi_persist_redef", "group__Internal.html#ga9bb0399b5f9835aa018e71901fb93db9", null ],
     [ "exi_populate_header", "group__Internal.html#ga418a5d06d685d6d8b1741fea5e171447", null ],

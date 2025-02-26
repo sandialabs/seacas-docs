@@ -74,6 +74,8 @@ var classIogn_1_1GeneratedMesh =
     [ "sideset_side_count_proc", "classIogn_1_1GeneratedMesh.html#a1af1eec83012f46c09bb83ac483fdee5", null ],
     [ "sideset_touching_blocks", "classIogn_1_1GeneratedMesh.html#a539948803ee6374cac8f072ec82d2252", null ],
     [ "timestep_count", "classIogn_1_1GeneratedMesh.html#ac27417e93f58e940a305b9886795845a", null ],
+    [ "timestep_initial", "classIogn_1_1GeneratedMesh.html#a5f37267d560fb26bd1a5b897ad778978", null ],
+    [ "timestep_interval", "classIogn_1_1GeneratedMesh.html#ae051a0e154eb1ac2a17d815a808260e8", null ],
     [ "topology_type", "classIogn_1_1GeneratedMesh.html#ae8c57a72f98f9a3c31f33a79836cdf51", null ],
     [ "createPyramids", "classIogn_1_1GeneratedMesh.html#a3f717bf34e28ab4e877f8b3d0822a205", null ],
     [ "createTets", "classIogn_1_1GeneratedMesh.html#a019976d10c69f756873e0a6fadf2e8cc", null ],
@@ -96,5 +98,7 @@ var classIogn_1_1GeneratedMesh =
     [ "shellBlocks", "classIogn_1_1GeneratedMesh.html#a4356d7dc3c22525095b7154db26af75d", null ],
     [ "sidesets", "classIogn_1_1GeneratedMesh.html#a9917d28a15baa87231b8cc22929601f3", null ],
     [ "timestepCount", "classIogn_1_1GeneratedMesh.html#a5caaa55bbaa8e660201d9976c37efe46", null ],
+    [ "timestepInitial", "classIogn_1_1GeneratedMesh.html#a11948452ea7de47277bfa61a826f6c73", null ],
+    [ "timestepInterval", "classIogn_1_1GeneratedMesh.html#a14ee676771eae4c9f02f4e98b7585180", null ],
     [ "variableCount", "classIogn_1_1GeneratedMesh.html#a2d860ec5ea8c4f52103e699f59bf3802", null ]
 ];

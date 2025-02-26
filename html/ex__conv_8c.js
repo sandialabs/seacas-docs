@@ -14,7 +14,6 @@ var ex__conv_8c =
     [ "exi_conv_init", "group__Internal.html#gaf22af54afb00a142663917a3fcb396ab", null ],
     [ "exi_find_file_item", "group__Internal.html#ga6ad28c1ca0190b6a7ffe996c37c57d4c", null ],
     [ "exi_is_parallel", "group__Utilities.html#ga421e26f1204d155b9096b2ff5ce929bf", null ],
-    [ "exi_parallel_rank", "group__Utilities.html#ga504591f02386148d759bdefe02a7df0d", null ],
     [ "nc_flt_code", "group__Utilities.html#ga0bcb99c4a23dde165c0a75e9acfb3d55", null ],
     [ "file_list", "ex__conv_8c.html#a4f838796bad179200c5e5f95dfb69265", null ]
 ];

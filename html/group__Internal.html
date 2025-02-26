@@ -795,8 +795,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga6607482cae6c9c710b0d36d5517ec4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga421e26f1204d155b9096b2ff5ce929bf" id="r_ga421e26f1204d155b9096b2ff5ce929bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga421e26f1204d155b9096b2ff5ce929bf">exi_is_parallel</a> (int exoid)</td></tr>
 <tr class="separator:ga421e26f1204d155b9096b2ff5ce929bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga504591f02386148d759bdefe02a7df0d" id="r_ga504591f02386148d759bdefe02a7df0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga504591f02386148d759bdefe02a7df0d">exi_parallel_rank</a> (int exoid)</td></tr>
-<tr class="separator:ga504591f02386148d759bdefe02a7df0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00dd35f21e95f36ff4f7a98e8e18ddb4" id="r_ga00dd35f21e95f36ff4f7a98e8e18ddb4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structexi__list__item.html">exi_list_item</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga00dd35f21e95f36ff4f7a98e8e18ddb4">exi_get_counter_list</a> (<a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a> obj_type)</td></tr>
 <tr class="separator:ga00dd35f21e95f36ff4f7a98e8e18ddb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf0a9b29c4fd88aa41e43fa63eb9ad4c5" id="r_gaf0a9b29c4fd88aa41e43fa63eb9ad4c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf0a9b29c4fd88aa41e43fa63eb9ad4c5">exi_get_file_item</a> (int, struct <a class="el" href="structexi__list__item.html">exi_list_item</a> **)</td></tr>
@@ -1253,7 +1251,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="#ga9dbd938de0fe1b1d920f3a3669eed185">exi_catstr</a>(<span class="stringliteral">&quot;num_att_in_blk&quot;</span>, num)</div>
-<div class="ttc" id="agroup__Internal_html_ga9dbd938de0fe1b1d920f3a3669eed185"><div class="ttname"><a href="#ga9dbd938de0fe1b1d920f3a3669eed185">exi_catstr</a></div><div class="ttdeci">char * exi_catstr(const char *, int)</div><div class="ttdef"><b>Definition</b> ex_utils.c:555</div></div>
+<div class="ttc" id="agroup__Internal_html_ga9dbd938de0fe1b1d920f3a3669eed185"><div class="ttname"><a href="#ga9dbd938de0fe1b1d920f3a3669eed185">exi_catstr</a></div><div class="ttdeci">char * exi_catstr(const char *, int)</div><div class="ttdef"><b>Definition</b> ex_utils.c:532</div></div>
 </div><!-- fragment --><p>number of attributes in element block num </p>
 
 </div>
@@ -2804,7 +2802,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="#ga9936a5932a2f23d3bb01d0be00720e3a">exi_catstr2</a>(<span class="stringliteral">&quot;vals_assembly_var&quot;</span>, num1, <span class="stringliteral">&quot;assembly&quot;</span>, num2)</div>
-<div class="ttc" id="agroup__Internal_html_ga9936a5932a2f23d3bb01d0be00720e3a"><div class="ttname"><a href="#ga9936a5932a2f23d3bb01d0be00720e3a">exi_catstr2</a></div><div class="ttdeci">char * exi_catstr2(const char *, int, const char *, int)</div><div class="ttdef"><b>Definition</b> ex_utils.c:571</div></div>
+<div class="ttc" id="agroup__Internal_html_ga9936a5932a2f23d3bb01d0be00720e3a"><div class="ttname"><a href="#ga9936a5932a2f23d3bb01d0be00720e3a">exi_catstr2</a></div><div class="ttdeci">char * exi_catstr2(const char *, int, const char *, int)</div><div class="ttdef"><b>Definition</b> ex_utils.c:548</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6948,7 +6946,8 @@ ptr -----------&gt; list item structure</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>this routine returns a pointer to a structure containing the ids of element blocks, node sets, or side sets according to exoid; if there is not a structure that matches the exoid, one is created </p>
+<p>this routine returns a pointer to a structure containing the ids of element blocks, node sets, or side sets according to exoid; if there is not a structure that matches the exoid, one is created.</p>
+<p>NOTE: If this file contains <code>groups</code> or <code>change sets</code>, then each group will have its own stat_ptr set of lists... </p>
 
 </div>
 </div>
@@ -7308,39 +7307,6 @@ ptr -----------&gt; list item structure</h2>
 </table>
 </div><div class="memdoc">
 <dl class="undoc"><dt><b><a class="el" href="undoc.html#_undoc000039">Undocumented</a></b></dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="ga504591f02386148d759bdefe02a7df0d" name="ga504591f02386148d759bdefe02a7df0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga504591f02386148d759bdefe02a7df0d">&#9670;&#160;</a></span>exi_parallel_rank()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int exi_parallel_rank </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>exoid</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>() current file <em>IF</em> the file was opened in parallel; otherwise (file-per-rank or serial), it will return 0. <br  />
-</p>
-<p>NOTE that in this case parallel assumes the output of a single file, not a parallel run using file-per-processor.</p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">exoid</td><td>integer which uniquely identifies the file of interest. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -7894,7 +7860,8 @@ ptr -----------&gt; list item structure</h2>
 <h2><a class="anchor" id="autotoc_md11"></a>
 ptr -----------&gt; list item structure</h2>
 <p>exodus file id item value (int) ptr to next (NULL if last)</p>
-<p>NOTE: since netCDF reuses its file ids, and a user may open and close any number of files in one application, items must be taken out of the linked lists in each of the above routines. these should be called after ncclose(). </p>
+<p>NOTE: since netCDF reuses its file ids, and a user may open and close any number of files in one application, items must be taken out of the linked lists in each of the above routines. these should be called after ncclose().</p>
+<p>NOTE: this is called from <code>ex_close</code> which only closes the root file and not each group or change set within that <code>root</code> file. If the file contains groups, then we need to check the entire list... </p>
 
 </div>
 </div>
@@ -7924,7 +7891,8 @@ ptr -----------&gt; list item structure</h2>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>this routine removes a pointer to a structure containing the ids of element blocks, node sets, or side sets according to exoid; this is necessary to clean up because netCDF reuses file ids; should be called from ex_close </p>
+<p>this routine removes a pointer to a structure containing the ids of element blocks, node sets, or side sets according to exoid; this is necessary to clean up because netCDF reuses file ids; should be called from ex_close</p>
+<p>NOTE: If this file contains <code>groups</code> or <code>change sets</code>, then each group will have its own stat_ptr set of lists. However, this routine is called from ex_close which only closes the root id, so we need to iterate the entire list to see if there are any subgroups of the root group. </p>
 
 </div>
 </div>

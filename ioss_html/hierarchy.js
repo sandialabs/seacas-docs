@@ -180,7 +180,8 @@ var hierarchy =
     [ "Ioss::DynamicTopologyFileControl", "classIoss_1_1DynamicTopologyFileControl.html", null ],
     [ "Ioss::DynamicTopologyNotifier", "classIoss_1_1DynamicTopologyNotifier.html", null ],
     [ "Ioss::DynamicTopologyObserver", "classIoss_1_1DynamicTopologyObserver.html", [
-      [ "anonymous_namespace{UnitTestDynamicTopology.C}::Observer", "classanonymous__namespace_02UnitTestDynamicTopology_8C_03_1_1Observer.html", null ]
+      [ "anonymous_namespace{UnitTestDynamicTopology.C}::Observer", "classanonymous__namespace_02UnitTestDynamicTopology_8C_03_1_1Observer.html", null ],
+      [ "anonymous_namespace{io_shell.C}::Observer", "classanonymous__namespace_02io__shell_8C_03_1_1Observer.html", null ]
     ] ],
     [ "Ioss::DynamicTopologyObserverCompare", "structIoss_1_1DynamicTopologyObserverCompare.html", null ],
     [ "Ioss::DynamicTopologyStateLocator", "classIoss_1_1DynamicTopologyStateLocator.html", null ],

@@ -9,6 +9,9 @@ var annotated_dup =
     [ "anonymous_namespace{io_modify.C}", "namespaceanonymous__namespace_02io__modify_8C_03.html", [
       [ "Graph", "classanonymous__namespace_02io__modify_8C_03_1_1Graph.html", "classanonymous__namespace_02io__modify_8C_03_1_1Graph" ]
     ] ],
+    [ "anonymous_namespace{io_shell.C}", "namespaceanonymous__namespace_02io__shell_8C_03.html", [
+      [ "Observer", "classanonymous__namespace_02io__shell_8C_03_1_1Observer.html", "classanonymous__namespace_02io__shell_8C_03_1_1Observer" ]
+    ] ],
     [ "anonymous_namespace{io_shell_ts.C}", "namespaceanonymous__namespace_02io__shell__ts_8C_03.html", [
       [ "param", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param.html", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param" ]
     ] ],

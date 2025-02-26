@@ -523,7 +523,7 @@ var searchData=
   ['ioss_5fentityset_2eh_520',['Ioss_EntitySet.h',['../Ioss__EntitySet_8h.html',1,'']]],
   ['ioss_5fentitytype_2eh_521',['Ioss_EntityType.h',['../Ioss__EntityType_8h.html',1,'']]],
   ['ioss_5fenumerate_2eh_522',['Ioss_Enumerate.h',['../Ioss__Enumerate_8h.html',1,'']]],
-  ['ioss_5ferror_523',['IOSS_ERROR',['../Ioss__Utils_8h.html#a33419dbc744ae151ba493fdf18c9caa1',1,'Ioss_Utils.h']]],
+  ['ioss_5ferror_523',['IOSS_ERROR',['../Ioss__Utils_8h.html#a33419dbc744ae151ba493fdf18c9caa1',1,'IOSS_ERROR(const std::ostringstream &amp;errmsg):&#160;Ioss_Utils.h'],['../Ioss__Utils_8h.html#a361c59cb16be72949f3f2b5f35f552c9',1,'IOSS_ERROR(const std::string &amp;errmsg):&#160;Ioss_Utils.h']]],
   ['ioss_5fexodus_5fdecomposition_5fdata_5funused_5fsymbol_5fdummy_524',['ioss_exodus_decomposition_data_unused_symbol_dummy',['../Ioex__DecompositionData_8C.html#adb4d9a30098cbfb1887087e5b9f749fb',1,'ioss_exodus_decomposition_data_unused_symbol_dummy:&#160;Ioex_DecompositionData.C'],['../Ioexnl__DecompositionData_8C.html#adb4d9a30098cbfb1887087e5b9f749fb',1,'ioss_exodus_decomposition_data_unused_symbol_dummy:&#160;Ioexnl_DecompositionData.C']]],
   ['ioss_5fexodus_5fparallel_5fdatabase_5funused_5fsymbol_5fdummy_525',['ioss_exodus_parallel_database_unused_symbol_dummy',['../Ioex__ParallelDatabaseIO_8C.html#a673d410f7abf929b2d4e9459890a421a',1,'ioss_exodus_parallel_database_unused_symbol_dummy:&#160;Ioex_ParallelDatabaseIO.C'],['../Ioexnl__ParallelDatabaseIO_8C.html#a673d410f7abf929b2d4e9459890a421a',1,'ioss_exodus_parallel_database_unused_symbol_dummy:&#160;Ioexnl_ParallelDatabaseIO.C']]],
   ['ioss_5ffaceblock_2ec_526',['Ioss_FaceBlock.C',['../Ioss__FaceBlock_8C.html',1,'']]],

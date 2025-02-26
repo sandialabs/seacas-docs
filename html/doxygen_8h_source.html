@@ -137,7 +137,7 @@ $(function(){initNavTree('doxygen_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">\section license License</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">The EXODUS library is licensed under the BSD open source license.</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">     Copyright(C) 1999-2022 National Technology &amp; Engineering Solutions</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">     Copyright(C) 1999-2022, 2025 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">     of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">     NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
@@ -325,15 +325,15 @@ $(function(){initNavTree('doxygen_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">either the storage type or function parameter type.</span></div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment"></span> </div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">For example, if</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">`(#EX_MAPS_INT64_DB &amp; ex_int64_status()(exoid))` is true, then map data is</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">`(EX_MAPS_INT64_DB &amp; ex_int64_status()(exoid))` is true, then map data is</span></div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">being stored as 64-bit integers for that database.</span></div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment"></span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">It is not possible to determine the integer data size on a database</span></div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">without opening the database via an ex_open() call. However, the</span></div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">integer size specification for API functions can be changed at any</span></div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">time via the ex_set_int64_status()(exoid, mode) function. The mode is</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">one or more of `#EX_MAPS_INT64_API`, `#EX_IDS_INT64_API`, or</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">`#EX_BULK_INT64_API`, or&#39;d together.  Any exodus function calls after</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">one or more of `EX_MAPS_INT64_API`, `EX_IDS_INT64_API`, or</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">`EX_BULK_INT64_API`, or&#39;d together.  Any exodus function calls after</span></div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">that point will use the specified integer size. Note that a call to</span></div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">ex_set_int64_status()(exoid, mode) overrides any previous setting for</span></div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">the integer sizes used in the API.  The ex_create() function is the</span></div>

@@ -180,8 +180,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaf6485373396308aac09b10cbc6effbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga421e26f1204d155b9096b2ff5ce929bf" id="r_ga421e26f1204d155b9096b2ff5ce929bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga421e26f1204d155b9096b2ff5ce929bf">exi_is_parallel</a> (int exoid)</td></tr>
 <tr class="separator:ga421e26f1204d155b9096b2ff5ce929bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga504591f02386148d759bdefe02a7df0d" id="r_ga504591f02386148d759bdefe02a7df0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga504591f02386148d759bdefe02a7df0d">exi_parallel_rank</a> (int exoid)</td></tr>
-<tr class="separator:ga504591f02386148d759bdefe02a7df0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab9a0caef233c3321be24ecd4c9d51578" id="r_gab9a0caef233c3321be24ecd4c9d51578"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab9a0caef233c3321be24ecd4c9d51578">ex_set_parallel</a> (int exoid, int is_parallel)</td></tr>
 <tr class="separator:gab9a0caef233c3321be24ecd4c9d51578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab5a71861c3522581d7bb216a9257380b" id="r_gab5a71861c3522581d7bb216a9257380b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab5a71861c3522581d7bb216a9257380b">exi_reset_error_status</a> (void)</td></tr>
@@ -1963,31 +1961,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="#ga421e26f1204d155b9096b2ff5ce929bf">exi_is_parallel()</a> returns 1 (true) or 0 (false) depending on whether the file was opened in parallel or serial/file-per-processor mode. Note that in this case parallel assumes the output of a single file, not a parallel run using file-per-processor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">exoid</td><td>integer which uniquely identifies the file of interest. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga504591f02386148d759bdefe02a7df0d" name="ga504591f02386148d759bdefe02a7df0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga504591f02386148d759bdefe02a7df0d">&#9670;&#160;</a></span>exi_parallel_rank()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int exi_parallel_rank </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>exoid</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>() current file <em>IF</em> the file was opened in parallel; otherwise (file-per-rank or serial), it will return 0. <br  />
-</p>
-<p>NOTE that in this case parallel assumes the output of a single file, not a parallel run using file-per-processor.</p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">exoid</td><td>integer which uniquely identifies the file of interest. </td></tr>
   </table>

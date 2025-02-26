@@ -182,6 +182,7 @@ var namespaceSEAMS =
     [ "string_c_fncts", "namespaceSEAMS.html#ad26288c0edffdc52c1973a499a7d0c3d", null ],
     [ "string_cc_fncts", "namespaceSEAMS.html#a796478b445ef7056a0bd314f0a757e2c", null ],
     [ "string_ccc_fncts", "namespaceSEAMS.html#a9d50baea22f7ad17de4703c9902092a7", null ],
+    [ "string_cd_fncts", "namespaceSEAMS.html#af45ada5c814a5b5c7733f48fd2b49ae8", null ],
     [ "string_d_fncts", "namespaceSEAMS.html#ae365d938db18285f78d52547affaaa30", null ],
     [ "string_dc_fncts", "namespaceSEAMS.html#a0f25840714fabc5898e081f41e61b186", null ],
     [ "string_dcc_fncts", "namespaceSEAMS.html#a82a36d0545e1415dc7b8cd8c092aeb75", null ],
