@@ -116,8 +116,8 @@ Collaboration diagram for Skinner::Interface:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a535de4eb85656bc131453ca90a78a77b" id="r_a535de4eb85656bc131453ca90a78a77b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a535de4eb85656bc131453ca90a78a77b">Interface</a> ()</td></tr>
-<tr class="separator:a535de4eb85656bc131453ca90a78a77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88633bef574ef2b7c6cf3fab39f4e27a" id="r_a88633bef574ef2b7c6cf3fab39f4e27a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88633bef574ef2b7c6cf3fab39f4e27a">Interface</a> (std::string app_version)</td></tr>
+<tr class="separator:a88633bef574ef2b7c6cf3fab39f4e27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9182a0e92127024e284b31262d734b4" id="r_ad9182a0e92127024e284b31262d734b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9182a0e92127024e284b31262d734b4">parse_options</a> (int argc, char **argv)</td></tr>
 <tr class="separator:ad9182a0e92127024e284b31262d734b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af525445f885a0e3cc29fcd030e8f7976" id="r_af525445f885a0e3cc29fcd030e8f7976"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af525445f885a0e3cc29fcd030e8f7976">ints_64_bit</a> () const</td></tr>
@@ -137,6 +137,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:aae51b1d9ba2fbf466f4d25be2110630c" id="r_aae51b1d9ba2fbf466f4d25be2110630c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae51b1d9ba2fbf466f4d25be2110630c">version</a> {}</td></tr>
+<tr class="separator:aae51b1d9ba2fbf466f4d25be2110630c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a4f6a152499a25e6e4337d22dbc82d" id="r_a73a4f6a152499a25e6e4337d22dbc82d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73a4f6a152499a25e6e4337d22dbc82d">decomp_method</a></td></tr>
 <tr class="separator:a73a4f6a152499a25e6e4337d22dbc82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c5d87cff80b6b9e337aad4e18fccf40" id="r_a7c5d87cff80b6b9e337aad4e18fccf40"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c5d87cff80b6b9e337aad4e18fccf40">compose_output</a> {&quot;default&quot;}</td></tr>
@@ -188,19 +190,27 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aed0de43fbbc9a03b1cd0db02054330ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a535de4eb85656bc131453ca90a78a77b" name="a535de4eb85656bc131453ca90a78a77b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a535de4eb85656bc131453ca90a78a77b">&#9670;&#160;</a></span>Interface()</h2>
+<a id="a88633bef574ef2b7c6cf3fab39f4e27a" name="a88633bef574ef2b7c6cf3fab39f4e27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88633bef574ef2b7c6cf3fab39f4e27a">&#9670;&#160;</a></span>Interface()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Skinner::Interface::Interface </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>app_version</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -744,6 +754,20 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool Skinner::Interface::useFaceHashIds_ {true}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae51b1d9ba2fbf466f4d25be2110630c" name="aae51b1d9ba2fbf466f4d25be2110630c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae51b1d9ba2fbf466f4d25be2110630c">&#9670;&#160;</a></span>version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Skinner::Interface::version {}</td>
         </tr>
       </table>
 </div><div class="memdoc">

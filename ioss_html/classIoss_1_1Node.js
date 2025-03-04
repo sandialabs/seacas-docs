@@ -19,6 +19,6 @@ var classIoss_1_1Node =
     [ "parametric_dimension", "classIoss_1_1Node.html#a8374de007fb90d624a471516edd1f985", null ],
     [ "shape", "classIoss_1_1Node.html#aeb592cfd1565b07a91ef2683df50ec61", null ],
     [ "spatial_dimension", "classIoss_1_1Node.html#a46067b84565ede9f77dc80377cef1975", null ],
-    [ "validate_permutation_nodes", "classIoss_1_1Node.html#a4d45ab9f7fdc45be33971c86de5d2fe4", null ],
+    [ "validate_permutation_nodes", "classIoss_1_1Node.html#a999ddf3eb3ec3a8a109c4c90bc575a1c", null ],
     [ "name", "classIoss_1_1Node.html#a42b009b7f9adfcd45010becafbb116ed", null ]
 ];

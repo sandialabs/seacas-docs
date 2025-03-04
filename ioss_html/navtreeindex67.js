@@ -1,5 +1,7 @@
 var NAVTREEINDEX67 =
 {
+"classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_487fdd62c2eb413518534861845581d5.html#a9a9849965eee1d6c97eaeb2e7a94575b":[3,0,158,0,13,0],
+"classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_487fdd62c2eb413518534861845581d5.html#a9a9849965eee1d6c97eaeb2e7a94575b":[4,0,101,0,13,0],
 "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_fe29c6c59c80ed5cd5c6be9f314a950d.html":[3,0,158,0,14],
 "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_fe29c6c59c80ed5cd5c6be9f314a950d.html":[4,0,101,0,14],
 "classtsl_1_1detail__hopscotch__hash_1_1smallest__type__for__min__bits_3_01MinBits_00_01typename_fe29c6c59c80ed5cd5c6be9f314a950d.html#a5e0cba3b829d07149bc2f1b2c0b694c6":[3,0,158,0,14,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX67 =
 "classtsl_1_1detail__robin__hash_1_1robin__hash.html#a967995c9781b76a6134733d104fd1893":[3,0,158,1,8,78],
 "classtsl_1_1detail__robin__hash_1_1robin__hash.html#a967995c9781b76a6134733d104fd1893":[4,0,101,1,8,78],
 "classtsl_1_1detail__robin__hash_1_1robin__hash.html#a9b0359da0bdc5033a40735fa0184b1fa":[3,0,158,1,8,105],
-"classtsl_1_1detail__robin__hash_1_1robin__hash.html#a9b0359da0bdc5033a40735fa0184b1fa":[4,0,101,1,8,105],
-"classtsl_1_1detail__robin__hash_1_1robin__hash.html#aa0a58533803582b1bfa3366482a1edec":[3,0,158,1,8,61],
-"classtsl_1_1detail__robin__hash_1_1robin__hash.html#aa0a58533803582b1bfa3366482a1edec":[4,0,101,1,8,61]
+"classtsl_1_1detail__robin__hash_1_1robin__hash.html#a9b0359da0bdc5033a40735fa0184b1fa":[4,0,101,1,8,105]
 };

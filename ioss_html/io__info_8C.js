@@ -31,5 +31,6 @@ var io__info_8C =
     [ "Ioss::io_info_set_db_properties", "namespaceIoss.html#aca3db6fea8929aeaef4d014c512d73fd", null ],
     [ "anonymous_namespace{io_info.C}::name", "namespaceanonymous__namespace_02io__info_8C_03.html#af604a0af17d437ca8a8f1d1c77ee94c1", null ],
     [ "anonymous_namespace{io_info.C}::print_bbox", "namespaceanonymous__namespace_02io__info_8C_03.html#af2cce9b20af5f1b4b8a9b0d496dcf7fb", null ],
-    [ "anonymous_namespace{io_info.C}::set_properties", "namespaceanonymous__namespace_02io__info_8C_03.html#aeafeb24f8ac0b3f2ac4ad6e3bc2f01d0", null ]
+    [ "anonymous_namespace{io_info.C}::set_properties", "namespaceanonymous__namespace_02io__info_8C_03.html#aeafeb24f8ac0b3f2ac4ad6e3bc2f01d0", null ],
+    [ "anonymous_namespace{io_info.C}::validate_elementblock", "namespaceanonymous__namespace_02io__info_8C_03.html#a1d7aa44e9aaa88f65d070ced776264af", null ]
 ];

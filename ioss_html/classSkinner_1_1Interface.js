@@ -1,6 +1,6 @@
 var classSkinner_1_1Interface =
 [
-    [ "Interface", "classSkinner_1_1Interface.html#a535de4eb85656bc131453ca90a78a77b", null ],
+    [ "Interface", "classSkinner_1_1Interface.html#a88633bef574ef2b7c6cf3fab39f4e27a", null ],
     [ "enroll_options", "classSkinner_1_1Interface.html#a0c7e3dcf55585a1c9c3b1ecbdac72409", null ],
     [ "input_filename", "classSkinner_1_1Interface.html#adc3b2d3c8b93ec3b2f9dd535f0f0deb7", null ],
     [ "input_type", "classSkinner_1_1Interface.html#af96bfb977b6dd04c78af95f4db4bdcf5", null ],
@@ -29,5 +29,6 @@ var classSkinner_1_1Interface =
     [ "selected_times", "classSkinner_1_1Interface.html#a599e0a514d0b5d757dc248a097068c89", null ],
     [ "shuffle", "classSkinner_1_1Interface.html#a4150a85afd8a53aadb7c754fe7d8cb9a", null ],
     [ "statistics", "classSkinner_1_1Interface.html#af68075ea2a6f52e647998adf382ea3d6", null ],
-    [ "useFaceHashIds_", "classSkinner_1_1Interface.html#a71bc55127c99356817da5a5a92a77304", null ]
+    [ "useFaceHashIds_", "classSkinner_1_1Interface.html#a71bc55127c99356817da5a5a92a77304", null ],
+    [ "version", "classSkinner_1_1Interface.html#aae51b1d9ba2fbf466f4d25be2110630c", null ]
 ];
