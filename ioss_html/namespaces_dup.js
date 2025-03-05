@@ -28,8 +28,7 @@ var namespaces_dup =
       [ "info_variable_types", "namespaceanonymous__namespace_02io__info_8C_03.html#a8a4f0d0d66419056f0c8283085010466", null ],
       [ "name", "namespaceanonymous__namespace_02io__info_8C_03.html#af604a0af17d437ca8a8f1d1c77ee94c1", null ],
       [ "print_bbox", "namespaceanonymous__namespace_02io__info_8C_03.html#af2cce9b20af5f1b4b8a9b0d496dcf7fb", null ],
-      [ "set_properties", "namespaceanonymous__namespace_02io__info_8C_03.html#aeafeb24f8ac0b3f2ac4ad6e3bc2f01d0", null ],
-      [ "validate_elementblock", "namespaceanonymous__namespace_02io__info_8C_03.html#a1d7aa44e9aaa88f65d070ced776264af", null ]
+      [ "set_properties", "namespaceanonymous__namespace_02io__info_8C_03.html#aeafeb24f8ac0b3f2ac4ad6e3bc2f01d0", null ]
     ] ],
     [ "anonymous_namespace{io_info_main.C}", "namespaceanonymous__namespace_02io__info__main_8C_03.html", [
       [ "codename", "namespaceanonymous__namespace_02io__info__main_8C_03.html#a1c6404ea212d8a64879059abce10ef07", null ],

@@ -16,7 +16,7 @@ var Ioss__Glob_8h =
     [ "Ioss::glob::Token< charT >", "classIoss_1_1glob_1_1Token.html", "classIoss_1_1glob_1_1Token" ],
     [ "Ioss::glob::Lexer< charT >", "classIoss_1_1glob_1_1Lexer.html", "classIoss_1_1glob_1_1Lexer" ],
     [ "Ioss::glob::AstNode< charT >", "classIoss_1_1glob_1_1AstNode.html", "classIoss_1_1glob_1_1AstNode" ],
-    [ "Ioss::glob::AstVisitor< charT >", "classIoss_1_1glob_1_1AstVisitor.html", null ],
+    [ "Ioss::glob::AstVisitor< charT >", "classIoss_1_1glob_1_1AstVisitor.html", "classIoss_1_1glob_1_1AstVisitor" ],
     [ "Ioss::glob::CharNode< charT >", "classIoss_1_1glob_1_1CharNode.html", "classIoss_1_1glob_1_1CharNode" ],
     [ "Ioss::glob::RangeNode< charT >", "classIoss_1_1glob_1_1RangeNode.html", "classIoss_1_1glob_1_1RangeNode" ],
     [ "Ioss::glob::SetItemsNode< charT >", "classIoss_1_1glob_1_1SetItemsNode.html", "classIoss_1_1glob_1_1SetItemsNode" ],

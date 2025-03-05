@@ -366,7 +366,7 @@ var annotated_dup =
         [ "AnyNode", "classIoss_1_1glob_1_1AnyNode.html", "classIoss_1_1glob_1_1AnyNode" ],
         [ "AstConsumer", "classIoss_1_1glob_1_1AstConsumer.html", "classIoss_1_1glob_1_1AstConsumer" ],
         [ "AstNode", "classIoss_1_1glob_1_1AstNode.html", "classIoss_1_1glob_1_1AstNode" ],
-        [ "AstVisitor", "classIoss_1_1glob_1_1AstVisitor.html", null ],
+        [ "AstVisitor", "classIoss_1_1glob_1_1AstVisitor.html", "classIoss_1_1glob_1_1AstVisitor" ],
         [ "Automata", "classIoss_1_1glob_1_1Automata.html", "classIoss_1_1glob_1_1Automata" ],
         [ "BasicGlob", "classIoss_1_1glob_1_1BasicGlob.html", "classIoss_1_1glob_1_1BasicGlob" ],
         [ "CharNode", "classIoss_1_1glob_1_1CharNode.html", "classIoss_1_1glob_1_1CharNode" ],
