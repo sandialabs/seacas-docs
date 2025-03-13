@@ -139,6 +139,7 @@ var namespaceSEAMS =
     [ "do_toupper", "namespaceSEAMS.html#a9f2740ff3e1e7c19ea51e6012e8286e9", null ],
     [ "do_transpose", "namespaceSEAMS.html#ae281320dbd0625fd80bcc66abed12356", null ],
     [ "do_Units", "namespaceSEAMS.html#a0006d397eeb4158d75c33aa2e40026bc", null ],
+    [ "do_use_legacy_output_format", "namespaceSEAMS.html#a069b85f1c50630ade1a8a5f82d155fb0", null ],
     [ "do_version", "namespaceSEAMS.html#aa43bd3bff724149ba623a1532fa2dcac", null ],
     [ "do_word_count", "namespaceSEAMS.html#a8c7c911b8d3dcf548afb75166de22de2", null ],
     [ "get_temp_filename", "namespaceSEAMS.html#aae1acca50a830c13a83b9a6817f152b5", null ],

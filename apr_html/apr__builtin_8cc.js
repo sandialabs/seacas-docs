@@ -119,6 +119,7 @@ var apr__builtin_8cc =
     [ "SEAMS::do_tostring", "namespaceSEAMS.html#ad85eb83a2e5f4b04c966058ae5c97802", null ],
     [ "SEAMS::do_toupper", "namespaceSEAMS.html#a9f2740ff3e1e7c19ea51e6012e8286e9", null ],
     [ "SEAMS::do_transpose", "namespaceSEAMS.html#ae281320dbd0625fd80bcc66abed12356", null ],
+    [ "SEAMS::do_use_legacy_output_format", "namespaceSEAMS.html#a069b85f1c50630ade1a8a5f82d155fb0", null ],
     [ "SEAMS::do_version", "namespaceSEAMS.html#aa43bd3bff724149ba623a1532fa2dcac", null ],
     [ "SEAMS::do_word_count", "namespaceSEAMS.html#a8c7c911b8d3dcf548afb75166de22de2", null ],
     [ "anonymous_namespace{apr_builtin.cc}::get_tokenized_strings", "namespaceanonymous__namespace_02apr__builtin_8cc_03.html#a3cd7401dde261c7667a5aa5e0bc38df7", null ],

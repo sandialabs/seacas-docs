@@ -1,6 +1,7 @@
 var namespaces_dup =
 [
     [ "anonymous_namespace{apr_aprepro.cc}", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html", [
+      [ "format_option", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#af21aa7250ff072644bdeeff3b574692a", null ],
       [ "get_value", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a469f5de915567495e6abb171f292b193", null ],
       [ "output_copyright", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ad9ce072d71e737f995472c04521ef52c", null ],
       [ "version_date", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a82f92daca6002e42b9d42a047af790f5", null ],

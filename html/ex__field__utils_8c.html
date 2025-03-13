@@ -147,8 +147,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aa68ea6e0710d7d10d717aac87ed6e840" id="r_aa68ea6e0710d7d10d717aac87ed6e840"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa68ea6e0710d7d10d717aac87ed6e840">my_strsep</a> (char **stringp, const char *delim)</td></tr>
 <tr class="separator:aa68ea6e0710d7d10d717aac87ed6e840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b5c00ff745c853f99c0c3619c75ebbc" id="r_a2b5c00ff745c853f99c0c3619c75ebbc"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b5c00ff745c853f99c0c3619c75ebbc">my_strlcat</a> (char *restrict dst, const char *restrict src, size_t maxlen)</td></tr>
-<tr class="separator:a2b5c00ff745c853f99c0c3619c75ebbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619bee6e7a04810211f6c46dfe5ae57c" id="r_a619bee6e7a04810211f6c46dfe5ae57c"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a619bee6e7a04810211f6c46dfe5ae57c">my_strlcat</a> (char *dst, const char *src, size_t maxlen)</td></tr>
+<tr class="separator:a619bee6e7a04810211f6c46dfe5ae57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474592577bb5fca323e63c644c04ec32" id="r_a474592577bb5fca323e63c644c04ec32"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474592577bb5fca323e63c644c04ec32">number_width</a> (size_t number)</td></tr>
 <tr class="separator:a474592577bb5fca323e63c644c04ec32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d2ad3919a416df1738d8ccdd3521812" id="r_a6d2ad3919a416df1738d8ccdd3521812"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d2ad3919a416df1738d8ccdd3521812">verify_valid_component</a> (int component, size_t cardinality, size_t suffix_size)</td></tr>
@@ -401,8 +401,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2b5c00ff745c853f99c0c3619c75ebbc" name="a2b5c00ff745c853f99c0c3619c75ebbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b5c00ff745c853f99c0c3619c75ebbc">&#9670;&#160;</a></span>my_strlcat()</h2>
+<a id="a619bee6e7a04810211f6c46dfe5ae57c" name="a619bee6e7a04810211f6c46dfe5ae57c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a619bee6e7a04810211f6c46dfe5ae57c">&#9670;&#160;</a></span>my_strlcat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,12 +413,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static size_t my_strlcat </td>
           <td>(</td>
-          <td class="paramtype">char *restrict</td>          <td class="paramname"><span class="paramname"><em>dst</em></span>, </td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>dst</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *restrict</td>          <td class="paramname"><span class="paramname"><em>src</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>src</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

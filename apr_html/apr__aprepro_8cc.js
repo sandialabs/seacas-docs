@@ -5,6 +5,7 @@ var apr__aprepro_8cc =
     [ "max", "apr__aprepro_8cc.html#ac39d9cef6a5e030ba8d9e11121054268", null ],
     [ "min", "apr__aprepro_8cc.html#abb702d8b501669a23aa0ab3b281b9384", null ],
     [ "USE_ROBIN_MAP", "apr__aprepro_8cc.html#a09c70b92a5bdc0d1a51cb9a3f699acd8", null ],
+    [ "anonymous_namespace{apr_aprepro.cc}::format_option", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#af21aa7250ff072644bdeeff3b574692a", null ],
     [ "anonymous_namespace{apr_aprepro.cc}::get_value", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#a469f5de915567495e6abb171f292b193", null ],
     [ "SEAMS::anonymous_namespace{apr_aprepro.cc}::match_option", "namespaceSEAMS_1_1anonymous__namespace_02apr__aprepro_8cc_03.html#a21444f3b8ddbf52917484be9a7f7f8cf", null ],
     [ "anonymous_namespace{apr_aprepro.cc}::output_copyright", "namespaceanonymous__namespace_02apr__aprepro_8cc_03.html#ad9ce072d71e737f995472c04521ef52c", null ],

@@ -110,17 +110,45 @@ Functions</h2></td></tr>
 <tr class="separator:ad9ce072d71e737f995472c04521ef52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a469f5de915567495e6abb171f292b193" id="r_a469f5de915567495e6abb171f292b193"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a469f5de915567495e6abb171f292b193">get_value</a> (const std::string &amp;option, const std::string &amp;optional_value)</td></tr>
 <tr class="separator:a469f5de915567495e6abb171f292b193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21aa7250ff072644bdeeff3b574692a" id="r_af21aa7250ff072644bdeeff3b574692a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af21aa7250ff072644bdeeff3b574692a">format_option</a> (std::string_view option, std::string_view short_opt, std::string_view description)</td></tr>
+<tr class="separator:af21aa7250ff072644bdeeff3b574692a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abd698e895dc78dbe29bf962b6463246e" id="r_abd698e895dc78dbe29bf962b6463246e"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd698e895dc78dbe29bf962b6463246e">version_short</a> {&quot;6.36&quot;}</td></tr>
+<tr class="memitem:abd698e895dc78dbe29bf962b6463246e" id="r_abd698e895dc78dbe29bf962b6463246e"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd698e895dc78dbe29bf962b6463246e">version_short</a> {&quot;6.37&quot;}</td></tr>
 <tr class="separator:abd698e895dc78dbe29bf962b6463246e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f92daca6002e42b9d42a047af790f5" id="r_a82f92daca6002e42b9d42a047af790f5"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82f92daca6002e42b9d42a047af790f5">version_date</a> {&quot;(2025/02/05)&quot;}</td></tr>
+<tr class="memitem:a82f92daca6002e42b9d42a047af790f5" id="r_a82f92daca6002e42b9d42a047af790f5"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82f92daca6002e42b9d42a047af790f5">version_date</a> {&quot;(2025/03/06)&quot;}</td></tr>
 <tr class="separator:a82f92daca6002e42b9d42a047af790f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f238c29108c4e19f0a26d3fc103b480" id="r_a3f238c29108c4e19f0a26d3fc103b480"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f238c29108c4e19f0a26d3fc103b480">version_string</a> = <a class="el" href="#abd698e895dc78dbe29bf962b6463246e">version_short</a> + &quot; &quot; + <a class="el" href="#a82f92daca6002e42b9d42a047af790f5">version_date</a></td></tr>
 <tr class="separator:a3f238c29108c4e19f0a26d3fc103b480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="af21aa7250ff072644bdeeff3b574692a" name="af21aa7250ff072644bdeeff3b574692a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21aa7250ff072644bdeeff3b574692a">&#9670;&#160;</a></span>format_option()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anonymous_namespace{apr_aprepro.cc}::format_option </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>option</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>short_opt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>description</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a469f5de915567495e6abb171f292b193" name="a469f5de915567495e6abb171f292b193"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a469f5de915567495e6abb171f292b193">&#9670;&#160;</a></span>get_value()</h2>
 
@@ -167,7 +195,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string anonymous_namespace{apr_aprepro.cc}::version_date {&quot;(2025/02/05)&quot;}</td>
+          <td class="memname">const std::string anonymous_namespace{apr_aprepro.cc}::version_date {&quot;(2025/03/06)&quot;}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -181,7 +209,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string anonymous_namespace{apr_aprepro.cc}::version_short {&quot;6.36&quot;}</td>
+          <td class="memname">const std::string anonymous_namespace{apr_aprepro.cc}::version_short {&quot;6.37&quot;}</td>
         </tr>
       </table>
 </div><div class="memdoc">

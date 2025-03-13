@@ -121,8 +121,9 @@ var searchData=
   ['do_5ftoupper_118',['do_toupper',['../namespaceSEAMS.html#a9f2740ff3e1e7c19ea51e6012e8286e9',1,'SEAMS']]],
   ['do_5ftranspose_119',['do_transpose',['../namespaceSEAMS.html#ae281320dbd0625fd80bcc66abed12356',1,'SEAMS']]],
   ['do_5funits_120',['do_Units',['../namespaceSEAMS.html#a0006d397eeb4158d75c33aa2e40026bc',1,'SEAMS']]],
-  ['do_5fversion_121',['do_version',['../namespaceSEAMS.html#aa43bd3bff724149ba623a1532fa2dcac',1,'SEAMS']]],
-  ['do_5fword_5fcount_122',['do_word_count',['../namespaceSEAMS.html#a8c7c911b8d3dcf548afb75166de22de2',1,'SEAMS']]],
-  ['dumpsym_123',['dumpsym',['../classSEAMS_1_1Aprepro.html#afdf0d99b2cc6ecf9d59c8ee7f8538bcd',1,'SEAMS::Aprepro::dumpsym(const char *type, bool doInternal) const'],['../classSEAMS_1_1Aprepro.html#a1ef7e22068dcfb877b55f1698490d9f7',1,'SEAMS::Aprepro::dumpsym(int type, bool doInternal) const'],['../classSEAMS_1_1Aprepro.html#a5df6bca4d3dfb01f268c7a315c65ab1e',1,'SEAMS::Aprepro::dumpsym(int type, const char *pre, bool doInternal) const']]],
-  ['dumpsym_5fjson_124',['dumpsym_json',['../classSEAMS_1_1Aprepro.html#a33728c81dee95d5115f2605f0f1a8b07',1,'SEAMS::Aprepro']]]
+  ['do_5fuse_5flegacy_5foutput_5fformat_121',['do_use_legacy_output_format',['../namespaceSEAMS.html#a069b85f1c50630ade1a8a5f82d155fb0',1,'SEAMS']]],
+  ['do_5fversion_122',['do_version',['../namespaceSEAMS.html#aa43bd3bff724149ba623a1532fa2dcac',1,'SEAMS']]],
+  ['do_5fword_5fcount_123',['do_word_count',['../namespaceSEAMS.html#a8c7c911b8d3dcf548afb75166de22de2',1,'SEAMS']]],
+  ['dumpsym_124',['dumpsym',['../classSEAMS_1_1Aprepro.html#afdf0d99b2cc6ecf9d59c8ee7f8538bcd',1,'SEAMS::Aprepro::dumpsym(const char *type, bool doInternal) const'],['../classSEAMS_1_1Aprepro.html#a1ef7e22068dcfb877b55f1698490d9f7',1,'SEAMS::Aprepro::dumpsym(int type, bool doInternal) const'],['../classSEAMS_1_1Aprepro.html#a5df6bca4d3dfb01f268c7a315c65ab1e',1,'SEAMS::Aprepro::dumpsym(int type, const char *pre, bool doInternal) const']]],
+  ['dumpsym_5fjson_125',['dumpsym_json',['../classSEAMS_1_1Aprepro.html#a33728c81dee95d5115f2605f0f1a8b07',1,'SEAMS::Aprepro']]]
 ];
