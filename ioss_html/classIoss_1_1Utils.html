@@ -242,11 +242,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a0e68d65a26861dd2c28debd1a488d5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8865309b113cbf641cae049c0c9f67a0" id="r_a8865309b113cbf641cae049c0c9f67a0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8865309b113cbf641cae049c0c9f67a0">calculate_sideblock_membership</a> (<a class="el" href="namespaceIoss.html#aa639dfe4a3b61861236fcc418a2b0fef">IntVector</a> &amp;face_is_member, const <a class="el" href="classIoss_1_1SideBlock.html">SideBlock</a> *sb, size_t int_byte_size, const void *element, const void *sides, int64_t number_sides, const <a class="el" href="classIoss_1_1Region.html">Region</a> *region)</td></tr>
 <tr class="separator:a8865309b113cbf641cae049c0c9f67a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a600e8cc4b91793cbd897ba29f6696590" id="r_a600e8cc4b91793cbd897ba29f6696590"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a600e8cc4b91793cbd897ba29f6696590">get_side_offset</a> (const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> *parent_topo, const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> *side_topo)</td></tr>
-<tr class="memdesc:a600e8cc4b91793cbd897ba29f6696590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the appropriate index offset for the sides of elements in a <a class="el" href="classIoss_1_1SideBlock.html" title="A collection of element sides having the same topology.">SideBlock</a>.  <br /></td></tr>
-<tr class="separator:a600e8cc4b91793cbd897ba29f6696590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d560f7862b2add9fa486ae44f4ab92" id="r_a87d560f7862b2add9fa486ae44f4ab92"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d560f7862b2add9fa486ae44f4ab92">get_side_offset</a> (const <a class="el" href="classIoss_1_1SideBlock.html">Ioss::SideBlock</a> *sb)</td></tr>
+<tr class="memdesc:a87d560f7862b2add9fa486ae44f4ab92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the appropriate index offset for the sides of elements in a <a class="el" href="classIoss_1_1SideBlock.html" title="A collection of element sides having the same topology.">SideBlock</a>.  <br /></td></tr>
 <tr class="separator:a87d560f7862b2add9fa486ae44f4ab92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600e8cc4b91793cbd897ba29f6696590" id="r_a600e8cc4b91793cbd897ba29f6696590"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a600e8cc4b91793cbd897ba29f6696590">get_side_offset</a> (const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> *parent_topo, const <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> *side_topo)</td></tr>
+<tr class="separator:a600e8cc4b91793cbd897ba29f6696590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec73edea0e845665ac385f605f4aa99" id="r_a1ec73edea0e845665ac385f605f4aa99"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ec73edea0e845665ac385f605f4aa99">hash</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a1ec73edea0e845665ac385f605f4aa99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244105b001ec84b21566cf42a170269d" id="r_a244105b001ec84b21566cf42a170269d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a244105b001ec84b21566cf42a170269d">timer</a> ()</td></tr>
@@ -1299,17 +1299,6 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the appropriate index offset for the sides of elements in a <a class="el" href="classIoss_1_1SideBlock.html" title="A collection of element sides having the same topology.">SideBlock</a>. </p>
-<p>And yet another idiosyncrasy of sidesets... The side of an element (especially shells) can be either a face or an edge in the same sideset. The ordinal of an edge is (local_edge_number+numfaces) on the database, but needs to be (local_edge_number) for Sierra...</p>
-<p>If the sideblock has a "parent_element_topology" and a "topology", then we can determine whether to offset the side ordinals...</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sb</td><td>Compute the offset for element sides in this <a class="el" href="classIoss_1_1SideBlock.html" title="A collection of element sides having the same topology.">SideBlock</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The offset. </dd></dl>
-
 </div>
 </div>
 <a id="a87d560f7862b2add9fa486ae44f4ab92" name="a87d560f7862b2add9fa486ae44f4ab92"></a>
@@ -1334,6 +1323,17 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the appropriate index offset for the sides of elements in a <a class="el" href="classIoss_1_1SideBlock.html" title="A collection of element sides having the same topology.">SideBlock</a>. </p>
+<p>And yet another idiosyncrasy of sidesets... The side of an element (especially shells) can be either a face or an edge in the same sideset. The ordinal of an edge is (local_edge_number+numfaces) on the database, but needs to be (local_edge_number) for Sierra...</p>
+<p>If the sideblock has a "parent_element_topology" and a "topology", then we can determine whether to offset the side ordinals...</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sb</td><td>Compute the offset for element sides in this <a class="el" href="classIoss_1_1SideBlock.html" title="A collection of element sides having the same topology.">SideBlock</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The offset. </dd></dl>
 
 </div>
 </div>
