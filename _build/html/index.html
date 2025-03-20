@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SEACAS &#8212; SEACAS 2024/08/17 documentation</title>
+    <title>SEACAS &#8212; SEACAS 2025/03/20 documentation</title>
   
   
   
@@ -16,36 +16,37 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=cee2bacb"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/documentation_options.js?v=8c6d9891"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -61,19 +62,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -81,7 +71,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search the docs ..."
          aria-label="Search the docs ..."
          autocomplete="off"
@@ -89,8 +78,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -119,7 +108,7 @@
   
   
   
-    <p class="title logo__title">SEACAS 2024/08/17 documentation</p>
+    <p class="title logo__title">SEACAS 2025/03/20 documentation</p>
   
 </a></div>
     
@@ -144,29 +133,21 @@
         <div class="navbar-item navbar-persistent--container">
           
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
         </div>
       
       
         <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
       
     </div>
     
@@ -175,15 +156,11 @@ document.write(`
   
     <div class="navbar-persistent--mobile">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
     </div>
   
 
@@ -204,7 +181,8 @@ document.write(`
       
         
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -231,15 +209,11 @@ document.write(`
         
           <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
         
       </div>
     
@@ -298,22 +272,27 @@ document.write(`
 
   </div></div>
         <div class="sidebar-primary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="_sources/index.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
         <div class="sidebar-primary-item">
 <div id="searchbox"></div></div>
     </div>
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -335,7 +314,7 @@ document.write(`
   <div class="toctree-wrapper compound">
 </div>
 <section id="seacas">
-<h1>SEACAS<a class="headerlink" href="#seacas" title="Permalink to this heading">#</a></h1>
+<h1>SEACAS<a class="headerlink" href="#seacas" title="Link to this heading">#</a></h1>
 <p>The Sandia National Laboratories (SNL) Engineering Analysis Code
 Access System (SEACAS) contains the Exodus and IOSS finite element
 input/output libraries and supporting meshing, preprocessing,
@@ -359,7 +338,7 @@ specific to Sandia National Laboratories systems.</p>
 </dl>
 </section>
 <section id="exodus-library">
-<h1>Exodus Library<a class="headerlink" href="#exodus-library" title="Permalink to this heading">#</a></h1>
+<h1>Exodus Library<a class="headerlink" href="#exodus-library" title="Link to this heading">#</a></h1>
 <p>Exodus is a model developed to store and retrieve data for finite
 element analyses. It is used for preprocessing (problem definition),
 postprocessing (results visualization), as well as code to code data
@@ -411,7 +390,7 @@ and their status.</p>
 </dl>
 </section>
 <section id="exodus-python-modules">
-<h1>Exodus Python Modules<a class="headerlink" href="#exodus-python-modules" title="Permalink to this heading">#</a></h1>
+<h1>Exodus Python Modules<a class="headerlink" href="#exodus-python-modules" title="Link to this heading">#</a></h1>
 <p>Two python modules are available for accessing exodus databases:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="exodus.html">Exodus.py (API)</a>: a lower-level python interface similar to the Exodus C API.</p></li>
@@ -421,7 +400,7 @@ and their status.</p>
 </ul>
 </section>
 <section id="ioss-library">
-<h1>IOSS Library<a class="headerlink" href="#ioss-library" title="Permalink to this heading">#</a></h1>
+<h1>IOSS Library<a class="headerlink" href="#ioss-library" title="Link to this heading">#</a></h1>
 <p>The <a class="reference external" href="../../ioss_html/index.html">IO Subsystem</a> (IOSS) is a
 high-level database access API that has been designed to give a
 format-agnostic interface to I/O capabilities with multiple
@@ -451,7 +430,7 @@ control the behavior of the IOSS library.</p></li>
 </ul>
 </section>
 <section id="supes-library">
-<h1>SUPES Library<a class="headerlink" href="#supes-library" title="Permalink to this heading">#</a></h1>
+<h1>SUPES Library<a class="headerlink" href="#supes-library" title="Link to this heading">#</a></h1>
 <p>The <a class="reference external" href="../../supes.pdf">SUPES</a> library is a collection of subprograms
 which perform frequently used non-numerical services for the
 engineering applications programmer using FORTRAN-77. The three
@@ -463,7 +442,7 @@ provide a standardized FORTRAN interface to several system dependent
 features.</p>
 </section>
 <section id="nemesis-library">
-<h1>Nemesis Library<a class="headerlink" href="#nemesis-library" title="Permalink to this heading">#</a></h1>
+<h1>Nemesis Library<a class="headerlink" href="#nemesis-library" title="Link to this heading">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>All of the functionality of the Nemesis library is available
@@ -493,7 +472,7 @@ functions.</p></li>
 </ul>
 </section>
 <section id="chaco-library">
-<h1>Chaco Library<a class="headerlink" href="#chaco-library" title="Permalink to this heading">#</a></h1>
+<h1>Chaco Library<a class="headerlink" href="#chaco-library" title="Link to this heading">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>CHACO is an older library which is not being enhanced.  If
@@ -529,7 +508,7 @@ and <code class="docutils literal notranslate"><span class="pre">CHACO_VERSION_P
 </ul>
 </section>
 <section id="algebra">
-<h1>Algebra<a class="headerlink" href="#algebra" title="Permalink to this heading">#</a></h1>
+<h1>Algebra<a class="headerlink" href="#algebra" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../algebra.pdf">Algebra</a> allows the user to manipulate data from
 a finite element analysis before it is plotted. The finite element
 output data is in the form of variable values (e.g., stress, strain,
@@ -538,7 +517,7 @@ evaluates user-supplied functions of the data and writes the results
 to an output Exodus database which can be read by plot programs.</p>
 </section>
 <section id="aprepro">
-<h1>Aprepro<a class="headerlink" href="#aprepro" title="Permalink to this heading">#</a></h1>
+<h1>Aprepro<a class="headerlink" href="#aprepro" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../aprepro.pdf">Aprepro</a> is an algebraic preprocessor that reads
 a file containing both general text and algebraic, string, or
 conditional expressions. It interprets the expressions and outputs
@@ -552,7 +531,7 @@ arrays.</p>
 </ul>
 </section>
 <section id="blot">
-<h1>Blot<a class="headerlink" href="#blot" title="Permalink to this heading">#</a></h1>
+<h1>Blot<a class="headerlink" href="#blot" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../blot.pdf">Blot</a> is a graphics program for post-processing of
 finite element analyses output in the Exodus database format. BLOT
 produces mesh plots with various representations of the analysis
@@ -571,7 +550,7 @@ distance is the accumulated distance between pairs of nodes or element
 centers.</p>
 </section>
 <section id="cgns-decomp">
-<h1>CGNS_Decomp<a class="headerlink" href="#cgns-decomp" title="Permalink to this heading">#</a></h1>
+<h1>CGNS_Decomp<a class="headerlink" href="#cgns-decomp" title="Link to this heading">#</a></h1>
 <p>An application which will give information on how the parallel CGNS
 structured mesh decomposition will perform.  This application runs in
 serial, but performs the same calculations as the parallel CGNS
@@ -581,7 +560,7 @@ and to judge the quality of the decomposition.  The input database
 must be a structured mesh in a CGNS format file.</p>
 </section>
 <section id="conjoin">
-<h1>Conjoin<a class="headerlink" href="#conjoin" title="Permalink to this heading">#</a></h1>
+<h1>Conjoin<a class="headerlink" href="#conjoin" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../exo_util.pdf#page=36">Conjoin</a> joins two or more Exodus databases
 into a single database. The input databases should represent the same
 model geometry with similar variables. The output database will
@@ -602,20 +581,20 @@ existence of an entity at a particular timestep is indicated via a
 status variable. Replaces conex</p>
 </section>
 <section id="cpup">
-<h1>CPUP<a class="headerlink" href="#cpup" title="Permalink to this heading">#</a></h1>
+<h1>CPUP<a class="headerlink" href="#cpup" title="Link to this heading">#</a></h1>
 <p>CPUP combines multiple CGNS structured mesh databases
 produced by a parallel application into a single CGNS
 database. Similar to <a class="reference external" href="../../exo_util.pdf#page=24">EPU</a>.</p>
 </section>
 <section id="decomp">
-<h1>Decomp<a class="headerlink" href="#decomp" title="Permalink to this heading">#</a></h1>
+<h1>Decomp<a class="headerlink" href="#decomp" title="Link to this heading">#</a></h1>
 <p>A script which calls <a class="reference external" href="../../nem_slice.pdf">nem_slice</a> and <a class="reference external" href="../../nem_spread.pdf">nem_spread</a> to decompose an Exodus
 database for use in a parallel application which uses a file-per-rank
 method for the input mesh database.  <a class="reference external" href="../../exo_util.pdf#page=24">EPU</a> can be used to recombine
 decomposed parallel files into a single database.</p>
 </section>
 <section id="ejoin">
-<h1>EJoin<a class="headerlink" href="#ejoin" title="Permalink to this heading">#</a></h1>
+<h1>EJoin<a class="headerlink" href="#ejoin" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../exo_util.pdf#page=32">EJoin</a> is used to join two or more Exodus
 databases into a single Exodus database. The input databases must have
 disjoint meta and bulk data. That is: element blocks are not combined
@@ -632,7 +611,7 @@ then the timestep values and counts must match on all databases with
 timesteps.</p>
 </section>
 <section id="epu">
-<h1>EPU<a class="headerlink" href="#epu" title="Permalink to this heading">#</a></h1>
+<h1>EPU<a class="headerlink" href="#epu" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../exo_util.pdf#page=24">EPU</a> combines multiple Exodus databases
 produced by a parallel application into a single Exodus
 database. Replaces nem_join.  One of the typical processes for
@@ -660,7 +639,7 @@ will read the data from each submesh and map it into the correct
 location in the “global” file; discarding duplicate data as required.</p>
 </section>
 <section id="exo-format">
-<h1>Exo_Format<a class="headerlink" href="#exo-format" title="Permalink to this heading">#</a></h1>
+<h1>Exo_Format<a class="headerlink" href="#exo-format" title="Link to this heading">#</a></h1>
 <p>Exo_format gives information on the internal information of an exodus
 file including the integer and floating point size, the name length,
 and the underlying variant of the netCDF file.</p>
@@ -668,11 +647,11 @@ and the underlying variant of the netCDF file.</p>
 library versions that the Exodus library was configured with.</p>
 </section>
 <section id="exo2mat">
-<h1>Exo2Mat<a class="headerlink" href="#exo2mat" title="Permalink to this heading">#</a></h1>
+<h1>Exo2Mat<a class="headerlink" href="#exo2mat" title="Link to this heading">#</a></h1>
 <p>Exo2Mat See <a class="reference external" href="../../mat2exo.pdf">Mat2Exo</a> documentation.</p>
 </section>
 <section id="exodiff">
-<h1>Exodiff<a class="headerlink" href="#exodiff" title="Permalink to this heading">#</a></h1>
+<h1>Exodiff<a class="headerlink" href="#exodiff" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../exo_util.pdf#page=11">Exodiff</a> compares the results data from two
 Exodus databases. The databases should represent the same model, that
 is, the Ex odus meta data should be identical as should be the Exodus
@@ -684,11 +663,11 @@ will also compare element attribute variables on each element block
 containing attributes.</p>
 </section>
 <section id="exomatlab">
-<h1>Exomatlab<a class="headerlink" href="#exomatlab" title="Permalink to this heading">#</a></h1>
+<h1>Exomatlab<a class="headerlink" href="#exomatlab" title="Link to this heading">#</a></h1>
 <p>ExoMatLab outputs selected global data to a text matlab file.</p>
 </section>
 <section id="exotxt">
-<h1>Exotxt<a class="headerlink" href="#exotxt" title="Permalink to this heading">#</a></h1>
+<h1>Exotxt<a class="headerlink" href="#exotxt" title="Link to this heading">#</a></h1>
 <p>Exotxt converts an exodus file into a text file which can be edited or
 used as input to other processing codes that need a text format. Can
 be converted back to exodus using <a class="reference internal" href="#txtexo">TxtExo</a>. (The netCDF utilities
@@ -696,7 +675,7 @@ ncdump/ncgen can also be used to convert an exodus files to/from
 text.)</p>
 </section>
 <section id="explore">
-<h1>Explore<a class="headerlink" href="#explore" title="Permalink to this heading">#</a></h1>
+<h1>Explore<a class="headerlink" href="#explore" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../explore.pdf">Explore</a> is a program that examines the input to
 a finite element analysis or the output from an analysis in the Exodus
 database format. EXPLORE allows the user to examine any value in the
@@ -704,7 +683,7 @@ database. The display can be directed to the user’s terminal or to a
 print file.</p>
 </section>
 <section id="fastq">
-<h1>Fastq<a class="headerlink" href="#fastq" title="Permalink to this heading">#</a></h1>
+<h1>Fastq<a class="headerlink" href="#fastq" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../FASTQ.pdf">FASTQ</a> is an interactive two-dimensional finite
 element mesh generation program, It is designed to provide a powerful
 and efficient tool to both reduce the time required of an analyst to
@@ -724,7 +703,7 @@ element types and output formats are supported.</p>
 report are available in <a class="reference external" href="../../FASTQ-memo.pdf">FASTQ-memo</a>.</p>
 </section>
 <section id="gen3d">
-<h1>Gen3D<a class="headerlink" href="#gen3d" title="Permalink to this heading">#</a></h1>
+<h1>Gen3D<a class="headerlink" href="#gen3d" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../Gen3d.pdf">Gen3D</a> is a three-dimensional mesh generation
 program. The three-dimensional mesh is generated by mapping a
 two-dimensional mesh into three-dimensions according to one of four
@@ -742,7 +721,7 @@ transformations of two-dimensional geometries.</p>
 in <a class="reference external" href="../../gen3d-updates.pdf">gen3d-updates</a>.</p>
 </section>
 <section id="genshell">
-<h1>GenShell<a class="headerlink" href="#genshell" title="Permalink to this heading">#</a></h1>
+<h1>GenShell<a class="headerlink" href="#genshell" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../GenShell.pdf">GenShell</a> is a three-dimensional shell mesh
 generation program. The three-dimensional shell mesh is generated by
 mapping a two-dimensional quadrilateral mesh into three dimensions
@@ -756,7 +735,7 @@ geometries composed of several sections when the sections can be
 defined in terms of transformations of two-dimensional geometries.</p>
 </section>
 <section id="gjoin">
-<h1>GJoin<a class="headerlink" href="#gjoin" title="Permalink to this heading">#</a></h1>
+<h1>GJoin<a class="headerlink" href="#gjoin" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../gjoin.pdf">GJoin</a> is a two- or three-dimensional mesh
 combination program. GJOIN combines two or more meshes written in the
 Exodus mesh database format into a single Exodus mesh. Selected nodes
@@ -768,7 +747,7 @@ blocks, sideset identifications, or nodeset identifications. <a class="reference
 is a newer application which has some of the capabilities of GJoin.</p>
 </section>
 <section id="grepos">
-<h1>Grepos<a class="headerlink" href="#grepos" title="Permalink to this heading">#</a></h1>
+<h1>Grepos<a class="headerlink" href="#grepos" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../grepos.pdf">Grepos</a> is a mesh utility program that
 repositions or modifies the configuration of a two-dimensional or
 three-dimensional mesh. GREPOS can be used to change the orientation
@@ -777,7 +756,7 @@ material block, nodeset, and sideset IDs; or “explode” the mesh to
 facilitate viewing of the various parts of the model.</p>
 </section>
 <section id="io-info">
-<h1>IO_Info<a class="headerlink" href="#io-info" title="Permalink to this heading">#</a></h1>
+<h1>IO_Info<a class="headerlink" href="#io-info" title="Link to this heading">#</a></h1>
 <p>Utility application which reads a database and provides a summary of
 the information in the database. See <code class="docutils literal notranslate"><span class="pre">io_info</span> <span class="pre">--help</span></code>
 for a list of the capabilities of io_modify.  If you enter <code class="docutils literal notranslate"><span class="pre">io_info</span>
@@ -785,7 +764,7 @@ for a list of the capabilities of io_modify.  If you enter <code class="docutils
 libraries that were used in the build of this installation of SEACAS.</p>
 </section>
 <section id="io-modify">
-<h1>IO_Modify<a class="headerlink" href="#io-modify" title="Permalink to this heading">#</a></h1>
+<h1>IO_Modify<a class="headerlink" href="#io-modify" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../IO_Modify.html">IO_Modify</a> is an application
 which can be used to query add assembly and entity attribute
 information to an existing Exodus database.  See <code class="docutils literal notranslate"><span class="pre">io_modify</span> <span class="pre">--help</span></code>
@@ -793,7 +772,7 @@ for more information.  There is an internal <code class="docutils literal notran
 will provide additional information on the capabilities.</p>
 </section>
 <section id="io-shell">
-<h1>IO_Shell<a class="headerlink" href="#io-shell" title="Permalink to this heading">#</a></h1>
+<h1>IO_Shell<a class="headerlink" href="#io-shell" title="Link to this heading">#</a></h1>
 <p>Utility application which reads a database, possibly applies a
 modification, and then writes that database.  See <code class="docutils literal notranslate"><span class="pre">io_shell</span> <span class="pre">--help</span></code>
 for a list of the capabilities of io_shell.  It can read and write
@@ -803,7 +782,7 @@ mesh option.  To see the generated mesh options, try: <code class="docutils lite
 comparision capability specified with the <code class="docutils literal notranslate"><span class="pre">--compare</span></code> option.</p>
 </section>
 <section id="mapvar">
-<h1>Mapvar<a class="headerlink" href="#mapvar" title="Permalink to this heading">#</a></h1>
+<h1>Mapvar<a class="headerlink" href="#mapvar" title="Link to this heading">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>MAPVAR is buggy and cannot correctly handle the mapping of
@@ -824,7 +803,7 @@ demonstrate the operation of the code and the effects of various input
 options.</p>
 </section>
 <section id="mapvar-kd">
-<h1>Mapvar-kd<a class="headerlink" href="#mapvar-kd" title="Permalink to this heading">#</a></h1>
+<h1>Mapvar-kd<a class="headerlink" href="#mapvar-kd" title="Link to this heading">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>MAPVAR is buggy and cannot correctly handle the mapping of
@@ -839,7 +818,7 @@ except that it uses a KD algorithm for the internal search. It is much
 faster than mapvar in certain situations, and should never be slower.</p>
 </section>
 <section id="mat2exo">
-<h1>Mat2Exo<a class="headerlink" href="#mat2exo" title="Permalink to this heading">#</a></h1>
+<h1>Mat2Exo<a class="headerlink" href="#mat2exo" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../mat2exo.pdf">Mat2Exo</a> is a program which translates mesh data
 from Matlab mat-file format to Exodus format. This tool is the inverse
 of the commonly used tool <a class="reference internal" href="#exo2mat">Exo2Mat</a> which translates Exodus data to
@@ -848,18 +827,18 @@ preprocessing an Exodus model file or post-processing an Exodus
 results file using Matlab.</p>
 </section>
 <section id="nas2exo">
-<h1>Nas2Exo<a class="headerlink" href="#nas2exo" title="Permalink to this heading">#</a></h1>
+<h1>Nas2Exo<a class="headerlink" href="#nas2exo" title="Link to this heading">#</a></h1>
 <p>Convert Nastran format to Exodus database.</p>
 </section>
 <section id="nem-join">
-<h1>nem_join<a class="headerlink" href="#nem-join" title="Permalink to this heading">#</a></h1>
+<h1>nem_join<a class="headerlink" href="#nem-join" title="Link to this heading">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>nem_join is no longer maintained. Use <a class="reference external" href="../../exo_util.pdf#page=24">EPU</a> instead.</p>
 </div>
 </section>
 <section id="nem-slice">
-<h1>nem_slice<a class="headerlink" href="#nem-slice" title="Permalink to this heading">#</a></h1>
+<h1>nem_slice<a class="headerlink" href="#nem-slice" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../nem_slice.pdf">nem_slice</a> reads in a FEM description of the
 geometry of a problem from an Exodus file and generates either a nodal
 or elemental graph of the problem, calls <a class="reference external" href="../../chaco.pdf">Chaco</a> to load balance the
@@ -867,7 +846,7 @@ graph, and outputs a <a class="reference internal" href="#nemesis-library">Nemes
 read by</p>
 </section>
 <section id="nem-spread">
-<h1>nem_spread<a class="headerlink" href="#nem-spread" title="Permalink to this heading">#</a></h1>
+<h1>nem_spread<a class="headerlink" href="#nem-spread" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../nem_spread.pdf">Nem_spread</a> reads it’s input command file
 (default name <code class="docutils literal notranslate"><span class="pre">nem_spread.inp</span></code>), takes the named Exodus and spreads
 out the geometry (and optionally results) contained in that file out
@@ -876,7 +855,7 @@ Nemesis load balance file generated by the companion utility
 <a class="reference external" href="../../nem_slice.pdf">nem_slice</a>. Here is an <a class="reference external" href="../../nem_spread.inp.pdf">example nem_spread input file</a>.</p>
 </section>
 <section id="numbers">
-<h1>Numbers<a class="headerlink" href="#numbers" title="Permalink to this heading">#</a></h1>
+<h1>Numbers<a class="headerlink" href="#numbers" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../numbers.pdf">Numbers</a> is a program which reads and stores
 data from a finite element model described in the Exodus database
 format. Within this program are several utility routines which
@@ -884,31 +863,31 @@ calculate information about the finite element model. It is limited to
 models with hexahedral elements only.</p>
 </section>
 <section id="skinner">
-<h1>Skinner<a class="headerlink" href="#skinner" title="Permalink to this heading">#</a></h1>
+<h1>Skinner<a class="headerlink" href="#skinner" title="Link to this heading">#</a></h1>
 <p>Create an Exodus mesh consisting of the <em>skin</em> or surface of the input
 Exodus database.</p>
 </section>
 <section id="slice">
-<h1>Slice<a class="headerlink" href="#slice" title="Permalink to this heading">#</a></h1>
+<h1>Slice<a class="headerlink" href="#slice" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../Slice.md">Slice</a> decomposes an Exodus Database into
 multiple databases for use in a parallel application which uses a
 file-per-rank method for the input mesh database. Slice does <em>not</em>
 handle the transient results data that might be on the mesh. Experimental.</p>
 </section>
 <section id="struc-to-unstruc">
-<h1>Struc_To_Unstruc<a class="headerlink" href="#struc-to-unstruc" title="Permalink to this heading">#</a></h1>
+<h1>Struc_To_Unstruc<a class="headerlink" href="#struc-to-unstruc" title="Link to this heading">#</a></h1>
 <p>An application which will read a structured mesh in CGNS format and
 convert it to an unstructured mesh which can be output in either CGNS
 or Exodus format.</p>
 </section>
 <section id="txtexo">
-<h1>TxtExo<a class="headerlink" href="#txtexo" title="Permalink to this heading">#</a></h1>
+<h1>TxtExo<a class="headerlink" href="#txtexo" title="Link to this heading">#</a></h1>
 <p>Txtexo converts a text file written by <a class="reference internal" href="#exotxt">ExoTxt</a> back to an exodus
 file. (The netCDF utilities ncdump/ncgen can also be used to convert
 an exodus files to/from text.)</p>
 </section>
 <section id="zellij">
-<h1>Zellij<a class="headerlink" href="#zellij" title="Permalink to this heading">#</a></h1>
+<h1>Zellij<a class="headerlink" href="#zellij" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="../../zellij/html/md__zellij.html">Zellij</a> takes 1 or more “unit
 cell” template databases and tiles them into a single output
 database. The unit cells must have a structured boundary on the I-J
@@ -919,7 +898,7 @@ written in a decomposed “file-per-rank” set of files for using with a
 parallel application. Zellij is optimized for large files.</p>
 </section>
 <section id="netcdf-library">
-<h1>NetCDF Library<a class="headerlink" href="#netcdf-library" title="Permalink to this heading">#</a></h1>
+<h1>NetCDF Library<a class="headerlink" href="#netcdf-library" title="Link to this heading">#</a></h1>
 <p>(External, not developed or maintained as part of SEACAS, but is used
 by Exodus, so included here).</p>
 <p>The <a class="reference external" href="https://github.com/Unidata/netcdf-c">netCDF</a> I/O library stores
@@ -955,7 +934,8 @@ from/to a text representation.</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -1015,13 +995,13 @@ from/to a text representation.</p>
   </nav></div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="_sources/index.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -1036,8 +1016,8 @@ from/to a text representation.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1048,7 +1028,7 @@ from/to a text representation.</p>
 
   <p class="copyright">
     
-      © Copyright 1999-2024 National Technology &amp; Engineering Solutions.
+      © Copyright 1999-2025 National Technology &amp; Engineering Solutions.
       <br/>
     
   </p>
@@ -1057,7 +1037,7 @@ from/to a text representation.</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
@@ -1070,7 +1050,8 @@ from/to a text representation.</p>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.4.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

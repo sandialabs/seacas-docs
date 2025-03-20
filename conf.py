@@ -19,11 +19,11 @@ sys.path.insert(0, os.path.abspath('./src'))
 # -- Project information -----------------------------------------------------
 
 project = 'SEACAS'
-copyright = '1999-2024 National Technology & Engineering Solutions'
+copyright = '1999-2025 National Technology & Engineering Solutions'
 author = 'Gregory Sjaardema'
 
 # The full version, including alpha/beta/rc tags
-release = '2024/08/17'
+release = '2025/03/20'
 
 
 # -- General configuration ---------------------------------------------------
@@ -33,9 +33,7 @@ release = '2024/08/17'
 # ones.
 #extensions = ['myst-parser']
 extensions = [
-    'recommonmark',
     'sphinx.ext.autodoc',
-    'sphinx_copybutton',
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon'
 ]

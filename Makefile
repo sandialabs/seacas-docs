@@ -1,6 +1,5 @@
 # Minimal makefile for Sphinx documentation
 #
-#export PATH=/usr/local/opt/sphinx-doc/bin:$PATH
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
