@@ -719,8 +719,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:ac00281ef07f06e95769ec04d24a914fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb28f5cf040b70229700d94068aa0668" id="r_aeb28f5cf040b70229700d94068aa0668"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb28f5cf040b70229700d94068aa0668">MapContainer</a> = std::vector&lt;int64_t&gt;</td></tr>
 <tr class="separator:aeb28f5cf040b70229700d94068aa0668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1f1d6d2ab900aa16910016666730deb" id="r_ad1f1d6d2ab900aa16910016666730deb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1f1d6d2ab900aa16910016666730deb">ReverseMapContainer</a> = std::unordered_map&lt;int64_t, int64_t&gt;</td></tr>
-<tr class="separator:ad1f1d6d2ab900aa16910016666730deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e13dda958648af3a02b265b1b7edd9" id="r_a82e13dda958648af3a02b265b1b7edd9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82e13dda958648af3a02b265b1b7edd9">IdPair</a> = std::pair&lt;int64_t, int64_t&gt;</td></tr>
+<tr class="separator:a82e13dda958648af3a02b265b1b7edd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b4d98527ebe2140ae3c1e2d242b934" id="r_ad2b4d98527ebe2140ae3c1e2d242b934"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2b4d98527ebe2140ae3c1e2d242b934">ReverseMapContainer</a> = std::vector&lt;<a class="el" href="#a82e13dda958648af3a02b265b1b7edd9">IdPair</a>&gt;</td></tr>
+<tr class="separator:ad2b4d98527ebe2140ae3c1e2d242b934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aaa03ee2d79c4753a3e0db6d02373cc" id="r_a7aaa03ee2d79c4753a3e0db6d02373cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7aaa03ee2d79c4753a3e0db6d02373cc">PropMapType</a> = <a class="el" href="namespacetsl.html#adee2fec3006c1e8668657a1268bda684">tsl::robin_pg_map</a>&lt;std::string, <a class="el" href="classIoss_1_1Property.html">Property</a>&gt;</td></tr>
 <tr class="separator:a7aaa03ee2d79c4753a3e0db6d02373cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c3294ddde35c54083459830dbfc19d" id="r_a10c3294ddde35c54083459830dbfc19d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10c3294ddde35c54083459830dbfc19d">ValuePair</a> = <a class="el" href="classtsl_1_1robin__map.html#a02fd8609545d611ba93a01aa8edb40d5">PropMapType::value_type</a></td></tr>
@@ -962,6 +964,33 @@ Functions</h2></td></tr>
 <tr class="separator:abc7a5b02b8740e6df478b2befab18ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd0defceab6d0d0989a291f6fa1db869" id="r_afd0defceab6d0d0989a291f6fa1db869"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd0defceab6d0d0989a291f6fa1db869">gl_histadd</a> (const char *buf)</td></tr>
 <tr class="separator:afd0defceab6d0d0989a291f6fa1db869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ac7434d508e307fd5f98ae10edc071" id="r_a20ac7434d508e307fd5f98ae10edc071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20ac7434d508e307fd5f98ae10edc071">mpi_type</a> (double)</td></tr>
+<tr class="separator:a20ac7434d508e307fd5f98ae10edc071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299e09eb11008f9bd432cfaa99f6aad2" id="r_a299e09eb11008f9bd432cfaa99f6aad2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a299e09eb11008f9bd432cfaa99f6aad2">mpi_type</a> (float)</td></tr>
+<tr class="separator:a299e09eb11008f9bd432cfaa99f6aad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5974c0bf68060779de2774c81b771e5f" id="r_a5974c0bf68060779de2774c81b771e5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5974c0bf68060779de2774c81b771e5f">mpi_type</a> (int)</td></tr>
+<tr class="separator:a5974c0bf68060779de2774c81b771e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e42d768eb63320db24cf14da49efa8" id="r_a84e42d768eb63320db24cf14da49efa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84e42d768eb63320db24cf14da49efa8">mpi_type</a> (long int)</td></tr>
+<tr class="separator:a84e42d768eb63320db24cf14da49efa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d9aa888e6e470c5f076ec2f1947074" id="r_ac0d9aa888e6e470c5f076ec2f1947074"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0d9aa888e6e470c5f076ec2f1947074">mpi_type</a> (long long int)</td></tr>
+<tr class="separator:ac0d9aa888e6e470c5f076ec2f1947074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00235281931f7cf9815889b32fa5af2b" id="r_a00235281931f7cf9815889b32fa5af2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00235281931f7cf9815889b32fa5af2b">mpi_type</a> (unsigned int)</td></tr>
+<tr class="separator:a00235281931f7cf9815889b32fa5af2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944c31d11a20af51da7002eb95f676e0" id="r_a944c31d11a20af51da7002eb95f676e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a944c31d11a20af51da7002eb95f676e0">mpi_type</a> (unsigned long int)</td></tr>
+<tr class="separator:a944c31d11a20af51da7002eb95f676e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1d1d33eb2f37038c8c30e00b1fddf3" id="r_a8b1d1d33eb2f37038c8c30e00b1fddf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b1d1d33eb2f37038c8c30e00b1fddf3">mpi_type</a> (unsigned long long int)</td></tr>
+<tr class="separator:a8b1d1d33eb2f37038c8c30e00b1fddf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2bf02b2b5c8c988b83efd4497f512c0" id="r_ac2bf02b2b5c8c988b83efd4497f512c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2bf02b2b5c8c988b83efd4497f512c0">mpi_type</a> (char)</td></tr>
+<tr class="separator:ac2bf02b2b5c8c988b83efd4497f512c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551919aa6769a6989c53769f173e9cd0" id="r_a551919aa6769a6989c53769f173e9cd0"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a551919aa6769a6989c53769f173e9cd0"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a551919aa6769a6989c53769f173e9cd0">MY_Alltoallv64</a> (const std::vector&lt; T &gt; &amp;sendbuf, const std::vector&lt; int64_t &gt; &amp;sendcounts, const std::vector&lt; int64_t &gt; &amp;senddisp, std::vector&lt; T &gt; &amp;recvbuf, const std::vector&lt; int64_t &gt; &amp;recvcounts, const std::vector&lt; int64_t &gt; &amp;recvdisp, <a class="el" href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a> comm)</td></tr>
+<tr class="separator:a551919aa6769a6989c53769f173e9cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f2f917e824730b9348ef5923c473d5" id="r_a37f2f917e824730b9348ef5923c473d5"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a37f2f917e824730b9348ef5923c473d5"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a37f2f917e824730b9348ef5923c473d5">MY_Alltoallv</a> (const std::vector&lt; T &gt; &amp;sendbuf, const std::vector&lt; int64_t &gt; &amp;sendcnts, const std::vector&lt; int64_t &gt; &amp;senddisp, std::vector&lt; T &gt; &amp;recvbuf, const std::vector&lt; int64_t &gt; &amp;recvcnts, const std::vector&lt; int64_t &gt; &amp;recvdisp, <a class="el" href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a> comm)</td></tr>
+<tr class="separator:a37f2f917e824730b9348ef5923c473d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5891f06bf15a0251d55ed033c57b8d0d" id="r_a5891f06bf15a0251d55ed033c57b8d0d"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a5891f06bf15a0251d55ed033c57b8d0d"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5891f06bf15a0251d55ed033c57b8d0d">MY_Alltoallv</a> (const std::vector&lt; T &gt; &amp;sendbuf, const std::vector&lt; int &gt; &amp;sendcnts, const std::vector&lt; int &gt; &amp;senddisp, std::vector&lt; T &gt; &amp;recvbuf, const std::vector&lt; int &gt; &amp;recvcnts, const std::vector&lt; int &gt; &amp;recvdisp, <a class="el" href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a> comm)</td></tr>
+<tr class="separator:a5891f06bf15a0251d55ed033c57b8d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53576bac923bfd5f882addee17be00f1" id="r_a53576bac923bfd5f882addee17be00f1"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a53576bac923bfd5f882addee17be00f1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a53576bac923bfd5f882addee17be00f1">verify_field_exists_in_entity_group</a> (const std::string &amp;field_name, const std::vector&lt; T * &gt; &amp;entity_container)</td></tr>
 <tr class="separator:a53576bac923bfd5f882addee17be00f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1396,6 +1425,20 @@ template&lt;typename INT&gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a82e13dda958648af3a02b265b1b7edd9" name="a82e13dda958648af3a02b265b1b7edd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e13dda958648af3a02b265b1b7edd9">&#9670;&#160;</a></span>IdPair</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a82e13dda958648af3a02b265b1b7edd9">Ioss::IdPair</a> = std::pair&lt;int64_t, int64_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab8228ae25e9448cae504638c2b6be88a" name="ab8228ae25e9448cae504638c2b6be88a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8228ae25e9448cae504638c2b6be88a">&#9670;&#160;</a></span>IJK_t</h2>
 
@@ -1564,14 +1607,14 @@ template&lt;typename INT&gt; </div>
 
 </div>
 </div>
-<a id="ad1f1d6d2ab900aa16910016666730deb" name="ad1f1d6d2ab900aa16910016666730deb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1f1d6d2ab900aa16910016666730deb">&#9670;&#160;</a></span>ReverseMapContainer</h2>
+<a id="ad2b4d98527ebe2140ae3c1e2d242b934" name="ad2b4d98527ebe2140ae3c1e2d242b934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b4d98527ebe2140ae3c1e2d242b934">&#9670;&#160;</a></span>ReverseMapContainer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ad1f1d6d2ab900aa16910016666730deb">Ioss::ReverseMapContainer</a> = std::unordered_map&lt;int64_t, int64_t&gt;</td>
+          <td class="memname">using <a class="el" href="#ad2b4d98527ebe2140ae3c1e2d242b934">Ioss::ReverseMapContainer</a> = std::vector&lt;<a class="el" href="#a82e13dda958648af3a02b265b1b7edd9">IdPair</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3102,6 +3145,375 @@ template&lt;class Obj, typename MemFun, typename P1, typename P2&gt; </div>
 <span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2bf02b2b5c8c988b83efd4497f512c0" name="ac2bf02b2b5c8c988b83efd4497f512c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2bf02b2b5c8c988b83efd4497f512c0">&#9670;&#160;</a></span>mpi_type() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype Ioss::mpi_type </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20ac7434d508e307fd5f98ae10edc071" name="a20ac7434d508e307fd5f98ae10edc071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ac7434d508e307fd5f98ae10edc071">&#9670;&#160;</a></span>mpi_type() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype Ioss::mpi_type </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a299e09eb11008f9bd432cfaa99f6aad2" name="a299e09eb11008f9bd432cfaa99f6aad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299e09eb11008f9bd432cfaa99f6aad2">&#9670;&#160;</a></span>mpi_type() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype Ioss::mpi_type </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5974c0bf68060779de2774c81b771e5f" name="a5974c0bf68060779de2774c81b771e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5974c0bf68060779de2774c81b771e5f">&#9670;&#160;</a></span>mpi_type() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype Ioss::mpi_type </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84e42d768eb63320db24cf14da49efa8" name="a84e42d768eb63320db24cf14da49efa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e42d768eb63320db24cf14da49efa8">&#9670;&#160;</a></span>mpi_type() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype Ioss::mpi_type </td>
+          <td>(</td>
+          <td class="paramtype">long int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0d9aa888e6e470c5f076ec2f1947074" name="ac0d9aa888e6e470c5f076ec2f1947074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d9aa888e6e470c5f076ec2f1947074">&#9670;&#160;</a></span>mpi_type() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype Ioss::mpi_type </td>
+          <td>(</td>
+          <td class="paramtype">long long int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00235281931f7cf9815889b32fa5af2b" name="a00235281931f7cf9815889b32fa5af2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00235281931f7cf9815889b32fa5af2b">&#9670;&#160;</a></span>mpi_type() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype Ioss::mpi_type </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a944c31d11a20af51da7002eb95f676e0" name="a944c31d11a20af51da7002eb95f676e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944c31d11a20af51da7002eb95f676e0">&#9670;&#160;</a></span>mpi_type() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype Ioss::mpi_type </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b1d1d33eb2f37038c8c30e00b1fddf3" name="a8b1d1d33eb2f37038c8c30e00b1fddf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1d1d33eb2f37038c8c30e00b1fddf3">&#9670;&#160;</a></span>mpi_type() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> MPI_Datatype Ioss::mpi_type </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long long int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5891f06bf15a0251d55ed033c57b8d0d" name="a5891f06bf15a0251d55ed033c57b8d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5891f06bf15a0251d55ed033c57b8d0d">&#9670;&#160;</a></span>MY_Alltoallv() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ioss::MY_Alltoallv </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sendbuf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sendcnts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>senddisp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recvbuf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recvcnts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recvdisp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a></td>          <td class="paramname"><span class="paramname"><em>comm</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37f2f917e824730b9348ef5923c473d5" name="a37f2f917e824730b9348ef5923c473d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f2f917e824730b9348ef5923c473d5">&#9670;&#160;</a></span>MY_Alltoallv() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ioss::MY_Alltoallv </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sendbuf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sendcnts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>senddisp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recvbuf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recvcnts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recvdisp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a></td>          <td class="paramname"><span class="paramname"><em>comm</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a551919aa6769a6989c53769f173e9cd0" name="a551919aa6769a6989c53769f173e9cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a551919aa6769a6989c53769f173e9cd0">&#9670;&#160;</a></span>MY_Alltoallv64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ioss::MY_Alltoallv64 </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sendbuf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sendcounts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>senddisp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recvbuf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recvcounts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recvdisp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a></td>          <td class="paramname"><span class="paramname"><em>comm</em></span>&#160;)</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

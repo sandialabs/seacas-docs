@@ -8,6 +8,7 @@ var Ioss__CopyDatabase_8C =
     [ "anonymous_namespace{Ioss_CopyDatabase.C}::generate_boundary_faces", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a6d1187e8db6d9b788637e5d4ce6500c5", null ],
     [ "anonymous_namespace{Ioss_CopyDatabase.C}::get_selected_steps", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a42002251da0b7c553a42b4749bad10dd", null ],
     [ "anonymous_namespace{Ioss_CopyDatabase.C}::output_boundary_sideset", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a653eaa7904b60f9a573ef980d38c9377", null ],
+    [ "anonymous_namespace{Ioss_CopyDatabase.C}::set_owned_node_count", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#abfb96c5a924b9bfbf483ba73cb649c62", null ],
     [ "anonymous_namespace{Ioss_CopyDatabase.C}::show_step", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#aeda0909d6fc276e66250913ddf021e76", null ],
     [ "anonymous_namespace{Ioss_CopyDatabase.C}::transfer_blocks", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#af4beeea8ace8ad2eb42fb8d243d00bea", null ],
     [ "anonymous_namespace{Ioss_CopyDatabase.C}::transfer_commsets", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ae7a0685f872d79ec248a775ee6648e0d", null ],

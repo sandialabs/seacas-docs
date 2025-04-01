@@ -320,11 +320,7 @@ var menudata={children:[
 {text:"v",url:"globals_func_v.html#index_v"},
 {text:"w",url:"globals_func_w.html#index_w"},
 {text:"z",url:"globals_func_z.html#index_z"}]},
-{text:"Variables",url:"globals_vars.html",children:[
-{text:"c",url:"globals_vars.html#index_c"},
-{text:"i",url:"globals_vars.html#index_i"},
-{text:"m",url:"globals_vars.html#index_m"},
-{text:"o",url:"globals_vars.html#index_o"}]},
+{text:"Variables",url:"globals_vars.html"},
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"_",url:"globals_defs.html#index__5F"},

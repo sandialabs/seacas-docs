@@ -231,6 +231,7 @@ var namespaces_dup =
       [ "generate_boundary_faces", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a6d1187e8db6d9b788637e5d4ce6500c5", null ],
       [ "get_selected_steps", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a42002251da0b7c553a42b4749bad10dd", null ],
       [ "output_boundary_sideset", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#a653eaa7904b60f9a573ef980d38c9377", null ],
+      [ "set_owned_node_count", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#abfb96c5a924b9bfbf483ba73cb649c62", null ],
       [ "show_step", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#aeda0909d6fc276e66250913ddf021e76", null ],
       [ "transfer_blocks", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#af4beeea8ace8ad2eb42fb8d243d00bea", null ],
       [ "transfer_commsets", "namespaceanonymous__namespace_02Ioss__CopyDatabase_8C_03.html#ae7a0685f872d79ec248a775ee6648e0d", null ],
@@ -297,6 +298,7 @@ var namespaces_dup =
     [ "anonymous_namespace{Ioss_Edge4.C}", "namespaceanonymous__namespace_02Ioss__Edge4_8C_03.html", "namespaceanonymous__namespace_02Ioss__Edge4_8C_03" ],
     [ "anonymous_namespace{Ioss_FaceGenerator.C}", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html", [
       [ "create_face", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a38afeb7ea9372ceddf5ed4f4c57e7746", null ],
+      [ "generate_index", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#acbb089bfbe0a592c696905037be60b1a", null ],
       [ "internal_generate_faces", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#a34b113fb33391cdd5bc3e47977aa57b3", null ],
       [ "MurmurHash64A", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#aa08e6b1a0e4f4d28ec6c888a0446ab25", null ],
       [ "resolve_parallel_faces", "namespaceanonymous__namespace_02Ioss__FaceGenerator_8C_03.html#af49dc419ca6b09a2490617d21c7a0188", null ]
@@ -378,7 +380,9 @@ var namespaces_dup =
       [ "is_one2one", "namespaceanonymous__namespace_02Ioss__Map_8C_03.html#aa1a8680ec9949ce1b6ad349b6f0e48ea", null ]
     ] ],
     [ "anonymous_namespace{Ioss_Node.C}", "namespaceanonymous__namespace_02Ioss__Node_8C_03.html", "namespaceanonymous__namespace_02Ioss__Node_8C_03" ],
-    [ "anonymous_namespace{Ioss_ParallelUtils.C}", "namespaceanonymous__namespace_02Ioss__ParallelUtils_8C_03.html", null ],
+    [ "anonymous_namespace{Ioss_ParallelUtils.C}", "namespaceanonymous__namespace_02Ioss__ParallelUtils_8C_03.html", [
+      [ "which_reduction", "namespaceanonymous__namespace_02Ioss__ParallelUtils_8C_03.html#ae9c13e1eb9c998df00bc2b9e022ea0ab", null ]
+    ] ],
     [ "anonymous_namespace{Ioss_Property.C}", "namespaceanonymous__namespace_02Ioss__Property_8C_03.html", [
       [ "error_message", "namespaceanonymous__namespace_02Ioss__Property_8C_03.html#a7e9f404cf974920b115b502313608c02", null ],
       [ "type_string", "namespaceanonymous__namespace_02Ioss__Property_8C_03.html#a33c896c06915d8a83ca1d8886b26d8ed", null ]

@@ -13,6 +13,7 @@ var classIoss_1_1FileInfo =
     [ "exists", "classIoss_1_1FileInfo.html#a7f7349cd0c418d9fdaa12a9088604193", null ],
     [ "extension", "classIoss_1_1FileInfo.html#ab6eb2e92866ec622dbee294d6488663f", null ],
     [ "filename", "classIoss_1_1FileInfo.html#a371d8b22cd2c097c9b1baee8761fc6c4", null ],
+    [ "filesystem_type", "classIoss_1_1FileInfo.html#a32b01b64232293dedbd9d780e40c0932", null ],
     [ "is_dir", "classIoss_1_1FileInfo.html#ace882ea79220ccecfee4fb501ce93602", null ],
     [ "is_executable", "classIoss_1_1FileInfo.html#a2b73d168bd6d053c084a7c4a031f5c29", null ],
     [ "is_file", "classIoss_1_1FileInfo.html#af9c72e5aa459cf0987a9b684590ee190", null ],

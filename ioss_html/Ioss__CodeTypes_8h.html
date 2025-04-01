@@ -110,12 +110,12 @@ $(function(){initNavTree('Ioss__CodeTypes_8h.html',''); initResizable(true); });
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;SEACASIoss_config.h&quot;</code><br />
+<code>#include &lt;mpi.h&gt;</code><br />
 <code>#include &lt;complex&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Ioss_CodeTypes.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Ioss__CodeTypes_8h__incl.svg" width="666" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Ioss__CodeTypes_8h__incl.svg" width="566" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -133,12 +133,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a2c691b1c7a5433023fa2018988014142" id="r_a2c691b1c7a5433023fa2018988014142"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c691b1c7a5433023fa2018988014142">SEACAS_HAVE_MPI</a></td></tr>
+<tr class="separator:a2c691b1c7a5433023fa2018988014142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d87d93b0f581266acdb536a69635d00" id="r_a9d87d93b0f581266acdb536a69635d00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d87d93b0f581266acdb536a69635d00">SEACAS_HAVE_EXODUS</a></td></tr>
+<tr class="separator:a9d87d93b0f581266acdb536a69635d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c171d41949ece3e071f13a94c601584" id="r_a1c171d41949ece3e071f13a94c601584"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c171d41949ece3e071f13a94c601584">SEACAS_HAVE_EXONULL</a></td></tr>
+<tr class="separator:a1c171d41949ece3e071f13a94c601584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c11b8eb30c70744f7e806e17f93065b" id="r_a9c11b8eb30c70744f7e806e17f93065b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c11b8eb30c70744f7e806e17f93065b">SEACAS_HAVE_CGNS</a></td></tr>
+<tr class="separator:a9c11b8eb30c70744f7e806e17f93065b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6886036e4d43a6fbcb65a8d75b8e3223" id="r_a6886036e4d43a6fbcb65a8d75b8e3223"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6886036e4d43a6fbcb65a8d75b8e3223">SEACAS_HAVE_PAMGEN</a></td></tr>
+<tr class="separator:a6886036e4d43a6fbcb65a8d75b8e3223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a604cb0fb3e022b9f1b0cca33fb792b11" id="r_a604cb0fb3e022b9f1b0cca33fb792b11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a></td></tr>
 <tr class="separator:a604cb0fb3e022b9f1b0cca33fb792b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a851f3882d4fed18877fff42a13d1cdd9" id="r_a851f3882d4fed18877fff42a13d1cdd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a></td></tr>
 <tr class="separator:a851f3882d4fed18877fff42a13d1cdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade618da39381934d0f1a32f3206d8369" id="r_ade618da39381934d0f1a32f3206d8369"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade618da39381934d0f1a32f3206d8369">IOSS_PAR_UNUSED</a>(x)</td></tr>
 <tr class="separator:ade618da39381934d0f1a32f3206d8369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c61cc8a530ed8832125f0ea28fa515" id="r_a03c61cc8a530ed8832125f0ea28fa515"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03c61cc8a530ed8832125f0ea28fa515">ADIOS2_USE_MPI</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a03c61cc8a530ed8832125f0ea28fa515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ba470fc516a5c4d3e2c1cf1572491b4" id="r_a5ba470fc516a5c4d3e2c1cf1572491b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ba470fc516a5c4d3e2c1cf1572491b4">IOSS_FUNC_ENTER</a>(m)</td></tr>
 <tr class="separator:a5ba470fc516a5c4d3e2c1cf1572491b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ff3a52b4dc0d793a406b707ce67f5c1" id="r_a8ff3a52b4dc0d793a406b707ce67f5c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ff3a52b4dc0d793a406b707ce67f5c1">IOSS_DEBUG_OUTPUT</a>&#160;&#160;&#160;0</td></tr>
@@ -156,8 +168,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a036da9760bce336c6919efd6e62ac64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8228ae25e9448cae504638c2b6be88a" id="r_ab8228ae25e9448cae504638c2b6be88a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ab8228ae25e9448cae504638c2b6be88a">Ioss::IJK_t</a> = std::array&lt;int, 3&gt;</td></tr>
 <tr class="separator:ab8228ae25e9448cae504638c2b6be88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d9e2562c5f7386cb89cf8f79a6fc95a" id="r_a9d9e2562c5f7386cb89cf8f79a6fc95a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a> = int</td></tr>
-<tr class="separator:a9d9e2562c5f7386cb89cf8f79a6fc95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9864a075a5f465e423ff18ec6aa46217" id="r_a9864a075a5f465e423ff18ec6aa46217"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a> = MPI_Comm</td></tr>
+<tr class="separator:a9864a075a5f465e423ff18ec6aa46217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9633ed5e22e786aa99c269f2fb0c005c" id="r_a9633ed5e22e786aa99c269f2fb0c005c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9633ed5e22e786aa99c269f2fb0c005c">Complex</a> = std::complex&lt;double&gt;</td></tr>
 <tr class="separator:a9633ed5e22e786aa99c269f2fb0c005c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -173,6 +185,20 @@ Functions</h2></td></tr>
 <tr class="separator:ae54aeb5b94d0f79d31fcb7d90550e350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a03c61cc8a530ed8832125f0ea28fa515" name="a03c61cc8a530ed8832125f0ea28fa515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c61cc8a530ed8832125f0ea28fa515">&#9670;&#160;</a></span>ADIOS2_USE_MPI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADIOS2_USE_MPI&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8ff3a52b4dc0d793a406b707ce67f5c1" name="a8ff3a52b4dc0d793a406b707ce67f5c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ff3a52b4dc0d793a406b707ce67f5c1">&#9670;&#160;</a></span>IOSS_DEBUG_OUTPUT</h2>
 
@@ -289,10 +315,77 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                                             \</div>
-<div class="line">    (void)(x);                                                                                     \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="a9c11b8eb30c70744f7e806e17f93065b" name="a9c11b8eb30c70744f7e806e17f93065b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c11b8eb30c70744f7e806e17f93065b">&#9670;&#160;</a></span>SEACAS_HAVE_CGNS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEACAS_HAVE_CGNS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d87d93b0f581266acdb536a69635d00" name="a9d87d93b0f581266acdb536a69635d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d87d93b0f581266acdb536a69635d00">&#9670;&#160;</a></span>SEACAS_HAVE_EXODUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEACAS_HAVE_EXODUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c171d41949ece3e071f13a94c601584" name="a1c171d41949ece3e071f13a94c601584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c171d41949ece3e071f13a94c601584">&#9670;&#160;</a></span>SEACAS_HAVE_EXONULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEACAS_HAVE_EXONULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c691b1c7a5433023fa2018988014142" name="a2c691b1c7a5433023fa2018988014142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c691b1c7a5433023fa2018988014142">&#9670;&#160;</a></span>SEACAS_HAVE_MPI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEACAS_HAVE_MPI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6886036e4d43a6fbcb65a8d75b8e3223" name="a6886036e4d43a6fbcb65a8d75b8e3223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6886036e4d43a6fbcb65a8d75b8e3223">&#9670;&#160;</a></span>SEACAS_HAVE_PAMGEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEACAS_HAVE_PAMGEN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -310,14 +403,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9d9e2562c5f7386cb89cf8f79a6fc95a" name="a9d9e2562c5f7386cb89cf8f79a6fc95a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d9e2562c5f7386cb89cf8f79a6fc95a">&#9670;&#160;</a></span>Ioss_MPI_Comm</h2>
+<a id="a9864a075a5f465e423ff18ec6aa46217" name="a9864a075a5f465e423ff18ec6aa46217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9864a075a5f465e423ff18ec6aa46217">&#9670;&#160;</a></span>Ioss_MPI_Comm</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a> = int</td>
+          <td class="memname">using <a class="el" href="#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a> = MPI_Comm</td>
         </tr>
       </table>
 </div><div class="memdoc">

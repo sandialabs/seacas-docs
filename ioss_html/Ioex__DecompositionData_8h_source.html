@@ -148,7 +148,7 @@ $(function(){initNavTree('Ioex__DecompositionData_8h_source.html',''); initResiz
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">class </span>IOEX_EXPORT DecompositionDataBase</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  {</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    DecompositionDataBase(<a class="code hl_typedef" href="Ioss__CodeTypes_8h.html#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a> comm) : comm_(comm) {}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    DecompositionDataBase(<a class="code hl_typedef" href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a> comm) : comm_(comm) {}</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    DecompositionDataBase(<span class="keyword">const</span> DecompositionDataBase &amp;)            = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    DecompositionDataBase &amp;operator=(<span class="keyword">const</span> DecompositionDataBase &amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
@@ -170,7 +170,7 @@ $(function(){initNavTree('Ioex__DecompositionData_8h_source.html',''); initResiz
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_define" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <span class="keyword">virtual</span> std::vector&lt;double&gt; &amp;centroids() = 0;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_define" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <span class="keyword">virtual</span> std::vector&lt;float&gt;  &amp;weights()   = 0;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_typedef" href="Ioss__CodeTypes_8h.html#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a> comm_;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_typedef" href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a> comm_;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">int</span> m_processor{0};</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">int</span> m_processorCount{0};</div>
@@ -219,7 +219,7 @@ $(function(){initNavTree('Ioex__DecompositionData_8h_source.html',''); initResiz
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> INT&gt; <span class="keyword">class </span>DecompositionData : <span class="keyword">public</span> DecompositionDataBase</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  {</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    DecompositionData(<span class="keyword">const</span> Ioss::PropertyManager &amp;props, <a class="code hl_typedef" href="Ioss__CodeTypes_8h.html#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a> communicator);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    DecompositionData(<span class="keyword">const</span> Ioss::PropertyManager &amp;props, <a class="code hl_typedef" href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a> communicator);</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_define" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <span class="keywordtype">int</span> int_size()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(INT); }</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
@@ -452,8 +452,8 @@ $(function(){initNavTree('Ioex__DecompositionData_8h_source.html',''); initResiz
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>} <span class="comment">// namespace Ioex</span></div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aIoss__CodeTypes_8h_html"><div class="ttname"><a href="Ioss__CodeTypes_8h.html">Ioss_CodeTypes.h</a></div></div>
-<div class="ttc" id="aIoss__CodeTypes_8h_html_a851f3882d4fed18877fff42a13d1cdd9"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a></div><div class="ttdeci">#define IOSS_NODISCARD</div><div class="ttdef"><b>Definition</b> Ioss_CodeTypes.h:55</div></div>
-<div class="ttc" id="aIoss__CodeTypes_8h_html_a9d9e2562c5f7386cb89cf8f79a6fc95a"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a9d9e2562c5f7386cb89cf8f79a6fc95a">Ioss_MPI_Comm</a></div><div class="ttdeci">int Ioss_MPI_Comm</div><div class="ttdef"><b>Definition</b> Ioss_CodeTypes.h:64</div></div>
+<div class="ttc" id="aIoss__CodeTypes_8h_html_a851f3882d4fed18877fff42a13d1cdd9"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a></div><div class="ttdeci">#define IOSS_NODISCARD</div><div class="ttdef"><b>Definition</b> Ioss_CodeTypes.h:56</div></div>
+<div class="ttc" id="aIoss__CodeTypes_8h_html_a9864a075a5f465e423ff18ec6aa46217"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a9864a075a5f465e423ff18ec6aa46217">Ioss_MPI_Comm</a></div><div class="ttdeci">MPI_Comm Ioss_MPI_Comm</div><div class="ttdef"><b>Definition</b> Ioss_CodeTypes.h:61</div></div>
 <div class="ttc" id="aIoss__Decomposition_8h_html"><div class="ttname"><a href="Ioss__Decomposition_8h.html">Ioss_Decomposition.h</a></div></div>
 <div class="ttc" id="aIoss__Map_8h_html"><div class="ttname"><a href="Ioss__Map_8h.html">Ioss_Map.h</a></div></div>
 <div class="ttc" id="aIoss__PropertyManager_8h_html"><div class="ttname"><a href="Ioss__PropertyManager_8h.html">Ioss_PropertyManager.h</a></div></div>

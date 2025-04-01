@@ -11,5 +11,7 @@ var classIocatalyst_1_1BlockMeshSet_1_1IOSSparams =
     [ "dbType", "classIocatalyst_1_1BlockMeshSet_1_1IOSSparams.html#a1366b753ce2288bf9ec18e00bfec0b63", null ],
     [ "fileName", "classIocatalyst_1_1BlockMeshSet_1_1IOSSparams.html#a45a77429acad69ff9ee9d80609fb228c", null ],
     [ "isCatalyst", "classIocatalyst_1_1BlockMeshSet_1_1IOSSparams.html#af49087c1acc6f79972aec4deb1a12d9b", null ],
-    [ "region", "classIocatalyst_1_1BlockMeshSet_1_1IOSSparams.html#aef3f8f1a223e96c8595f86061fd56860", null ]
+    [ "nodeBlockName", "classIocatalyst_1_1BlockMeshSet_1_1IOSSparams.html#a5624f9d0da914083cfbc5705435bd94a", null ],
+    [ "region", "classIocatalyst_1_1BlockMeshSet_1_1IOSSparams.html#aef3f8f1a223e96c8595f86061fd56860", null ],
+    [ "writeConnectivityRaw", "classIocatalyst_1_1BlockMeshSet_1_1IOSSparams.html#aad8dd036c248ab61c8677268af7e483e", null ]
 ];

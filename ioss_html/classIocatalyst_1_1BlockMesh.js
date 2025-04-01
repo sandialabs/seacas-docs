@@ -28,6 +28,7 @@ var classIocatalyst_1_1BlockMesh =
     [ "getNumPoints", "classIocatalyst_1_1BlockMesh.html#acfe73b4fe2bfe916ea29b9e24fb40723", null ],
     [ "getOrigin", "classIocatalyst_1_1BlockMesh.html#ae9e9dfa0b686b0a5dc3fd56a0a8512e3", null ],
     [ "getPartition", "classIocatalyst_1_1BlockMesh.html#ad82814890104b4fdd232941061f66a2f", null ],
+    [ "getPartitionBlockConnectivityPointIDs", "classIocatalyst_1_1BlockMesh.html#a5ed37ee164253ffe1712936bf46d3a13", null ],
     [ "getPartitionBlockIDs", "classIocatalyst_1_1BlockMesh.html#a1680c8b31b7ce956b9b715daf818c3a1", null ],
     [ "getPartitionExtents", "classIocatalyst_1_1BlockMesh.html#abefa3600c5a64cd23c915f08f335f342", null ],
     [ "getPartitionIDs", "classIocatalyst_1_1BlockMesh.html#a1b37f8993b98aedba95f9f26862814a7", null ],

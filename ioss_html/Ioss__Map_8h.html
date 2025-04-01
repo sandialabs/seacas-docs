@@ -112,7 +112,6 @@ $(function(){initNavTree('Ioss__Map_8h.html',''); initResizable(true); });
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;ioss_export.h&quot;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Ioss_Map.h:</div>
 <div class="dyncontent">
@@ -139,25 +138,27 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ae151d1549bf1f41fcfc2f1a53ce97563" id="r_ae151d1549bf1f41fcfc2f1a53ce97563"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae151d1549bf1f41fcfc2f1a53ce97563">MAP_USE_STD</a></td></tr>
-<tr class="separator:ae151d1549bf1f41fcfc2f1a53ce97563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0407a2ebd25e882ef7e4cb2964a0846c" id="r_a0407a2ebd25e882ef7e4cb2964a0846c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0407a2ebd25e882ef7e4cb2964a0846c">MAP_USE_SORTED_VECTOR</a></td></tr>
+<tr class="separator:a0407a2ebd25e882ef7e4cb2964a0846c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aeb28f5cf040b70229700d94068aa0668" id="r_aeb28f5cf040b70229700d94068aa0668"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#aeb28f5cf040b70229700d94068aa0668">Ioss::MapContainer</a> = std::vector&lt;int64_t&gt;</td></tr>
 <tr class="separator:aeb28f5cf040b70229700d94068aa0668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1f1d6d2ab900aa16910016666730deb" id="r_ad1f1d6d2ab900aa16910016666730deb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ad1f1d6d2ab900aa16910016666730deb">Ioss::ReverseMapContainer</a> = std::unordered_map&lt;int64_t, int64_t&gt;</td></tr>
-<tr class="separator:ad1f1d6d2ab900aa16910016666730deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e13dda958648af3a02b265b1b7edd9" id="r_a82e13dda958648af3a02b265b1b7edd9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#a82e13dda958648af3a02b265b1b7edd9">Ioss::IdPair</a> = std::pair&lt;int64_t, int64_t&gt;</td></tr>
+<tr class="separator:a82e13dda958648af3a02b265b1b7edd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b4d98527ebe2140ae3c1e2d242b934" id="r_ad2b4d98527ebe2140ae3c1e2d242b934"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoss.html#ad2b4d98527ebe2140ae3c1e2d242b934">Ioss::ReverseMapContainer</a> = std::vector&lt;<a class="el" href="namespaceIoss.html#a82e13dda958648af3a02b265b1b7edd9">IdPair</a>&gt;</td></tr>
+<tr class="separator:ad2b4d98527ebe2140ae3c1e2d242b934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ae151d1549bf1f41fcfc2f1a53ce97563" name="ae151d1549bf1f41fcfc2f1a53ce97563"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae151d1549bf1f41fcfc2f1a53ce97563">&#9670;&#160;</a></span>MAP_USE_STD</h2>
+<a id="a0407a2ebd25e882ef7e4cb2964a0846c" name="a0407a2ebd25e882ef7e4cb2964a0846c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0407a2ebd25e882ef7e4cb2964a0846c">&#9670;&#160;</a></span>MAP_USE_SORTED_VECTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAP_USE_STD</td>
+          <td class="memname">#define MAP_USE_SORTED_VECTOR</td>
         </tr>
       </table>
 </div><div class="memdoc">

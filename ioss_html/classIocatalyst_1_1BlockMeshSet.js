@@ -38,5 +38,6 @@ var classIocatalyst_1_1BlockMeshSet =
     [ "IOSS_CELL_FIELD", "classIocatalyst_1_1BlockMeshSet.html#a0868471e618d2bb9a7adcce2ccfa8c2b", null ],
     [ "IOSS_GLOBAL_FIELD", "classIocatalyst_1_1BlockMeshSet.html#a5a91525965068dfe318323ebf312b8a2", null ],
     [ "IOSS_POINT_FIELD", "classIocatalyst_1_1BlockMeshSet.html#ad7e6330bb0bd23696ab7f5c0a31bf9a5", null ],
-    [ "IOSS_SCALAR_STORAGE", "classIocatalyst_1_1BlockMeshSet.html#a91a8a6bb828d875d748cb8377cade911", null ]
+    [ "IOSS_SCALAR_STORAGE", "classIocatalyst_1_1BlockMeshSet.html#a91a8a6bb828d875d748cb8377cade911", null ],
+    [ "NODE_BLOCK_NAME", "classIocatalyst_1_1BlockMeshSet.html#abf95346026bc6e5230866dcba120021c", null ]
 ];

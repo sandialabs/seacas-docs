@@ -27,8 +27,6 @@ var classIovs_1_1CatalystManager =
     [ "initializeIfNeeded", "classIovs_1_1CatalystManager.html#ad9ea356305c18c65e6743247b81c4e65", null ],
     [ "logMemoryUsageAndTakeTimerReading", "classIovs_1_1CatalystManager.html#a42be2d2744ec907ca72769f2f2e1b20c", null ],
     [ "operator=", "classIovs_1_1CatalystManager.html#a65b5b74fdafb90fb76df584c6983428a", null ],
-    [ "parsePhactoriFile", "classIovs_1_1CatalystManager.html#a53ce734913d0d8d440edefb57bb53104", null ],
-    [ "parsePhactoriString", "classIovs_1_1CatalystManager.html#aa2d8ce5133e8379e1f7296364bac4838", null ],
     [ "PerformCoProcessing", "classIovs_1_1CatalystManager.html#a2a62c0e260292be0f75aaba593cfd44d", null ],
     [ "registerMeshInPipeline", "classIovs_1_1CatalystManager.html#ae29fa399b2d7d942bc708f6bbc44536b", null ],
     [ "SetTimeData", "classIovs_1_1CatalystManager.html#a871401adf4ac0bc130c412ba1074d07d", null ],
