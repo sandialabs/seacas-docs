@@ -1,13 +1,5 @@
 var NAVTREEINDEX84 =
 {
-"structIoss_1_1MeshCopyOptions.html#a6e75c7072b565575d5b2b2e174a08a16":[3,0,148,89,14],
-"structIoss_1_1MeshCopyOptions.html#a6e75c7072b565575d5b2b2e174a08a16":[4,0,92,87,14],
-"structIoss_1_1MeshCopyOptions.html#a834eb085c1b03f59dd5704f4efaf0244":[3,0,148,89,20],
-"structIoss_1_1MeshCopyOptions.html#a834eb085c1b03f59dd5704f4efaf0244":[4,0,92,87,20],
-"structIoss_1_1MeshCopyOptions.html#a870f812528275cc21b54942d0d6c973e":[3,0,148,89,6],
-"structIoss_1_1MeshCopyOptions.html#a870f812528275cc21b54942d0d6c973e":[4,0,92,87,6],
-"structIoss_1_1MeshCopyOptions.html#a874c10a7bb65b21146f2d2362fb77057":[3,0,148,89,18],
-"structIoss_1_1MeshCopyOptions.html#a874c10a7bb65b21146f2d2362fb77057":[4,0,92,87,18],
 "structIoss_1_1MeshCopyOptions.html#a8a58a3b0d7f3c606e05ad16196c72dce":[3,0,148,89,5],
 "structIoss_1_1MeshCopyOptions.html#a8a58a3b0d7f3c606e05ad16196c72dce":[4,0,92,87,5],
 "structIoss_1_1MeshCopyOptions.html#aa0fe21d58fece15a33366f5b39414ff7":[3,0,148,89,11],
@@ -249,5 +241,13 @@ var NAVTREEINDEX84 =
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#adb3cdeb0a501cdbcb2a990230430fd10":[3,0,150,0,12,1,6],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#adb3cdeb0a501cdbcb2a990230430fd10":[4,0,94,0,12,1,6],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#addf8200318a4f9767ef1d4c35083bd91":[3,0,150,0,12,1,0],
-"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#addf8200318a4f9767ef1d4c35083bd91":[4,0,94,0,12,1,0]
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#addf8200318a4f9767ef1d4c35083bd91":[4,0,94,0,12,1,0],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#ade13188cfd091e908b8fb1c82222b7b5":[3,0,150,0,12,1,1],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#ade13188cfd091e908b8fb1c82222b7b5":[4,0,94,0,12,1,1],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html":[3,0,150,0,12,2],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html":[4,0,94,0,12,2],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a14c9a86b31b7b9591bc792da9d9ddb96":[3,0,150,0,12,2,1],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a14c9a86b31b7b9591bc792da9d9ddb96":[4,0,94,0,12,2,1],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a230115a0cf3f95e2184a12b72b7a6739":[3,0,150,0,12,2,8],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnections.html#a230115a0cf3f95e2184a12b72b7a6739":[4,0,94,0,12,2,8]
 };

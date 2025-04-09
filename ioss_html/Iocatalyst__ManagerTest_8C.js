@@ -37,5 +37,6 @@ var Iocatalyst__ManagerTest_8C =
     [ "TEST_F", "Iocatalyst__ManagerTest_8C.html#ae2c4ddd92917d3b5eef1a9c2d312c13a", null ],
     [ "TEST_F", "Iocatalyst__ManagerTest_8C.html#a68417ffb7fba56ebbc9ecdd3e80a6b76", null ],
     [ "TEST_F", "Iocatalyst__ManagerTest_8C.html#a6c47ab571290536e860a142a8b659a7c", null ],
+    [ "TEST_F", "Iocatalyst__ManagerTest_8C.html#a989ff6452ff528458222a0841054a489", null ],
     [ "TEST_F", "Iocatalyst__ManagerTest_8C.html#ad9d1a308e2bc4b347ca247f97538f1a2", null ]
 ];

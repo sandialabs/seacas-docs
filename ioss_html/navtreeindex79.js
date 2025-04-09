@@ -1,13 +1,5 @@
 var NAVTREEINDEX79 =
 {
-"namespaceanonymous__namespace_02io__modify_8C_03.html#a619c1da44aab3ec3ddd13903817e55d0":[3,0,4,4],
-"namespaceanonymous__namespace_02io__modify_8C_03.html#a685777defa8ce875f63321e5b29a38c3":[3,0,4,23],
-"namespaceanonymous__namespace_02io__modify_8C_03.html#a6ee67aa272d617ef8430d4ff8417fcf4":[3,0,4,27],
-"namespaceanonymous__namespace_02io__modify_8C_03.html#a738dee61f337e828b94e5dbeb891ca33":[3,0,4,32],
-"namespaceanonymous__namespace_02io__modify_8C_03.html#a7ddb27dfc65e84a75c2bcfbaa3d9321d":[3,0,4,1],
-"namespaceanonymous__namespace_02io__modify_8C_03.html#a84495ea8b9d9fcab513ac245bcaeb845":[3,0,4,6],
-"namespaceanonymous__namespace_02io__modify_8C_03.html#aa1d463b5adbd98fd632061ae9435fc8a":[3,0,4,40],
-"namespaceanonymous__namespace_02io__modify_8C_03.html#aa7fe4d5a9f681bd1c7ee8c6ea24f9b0a":[3,0,4,24],
 "namespaceanonymous__namespace_02io__modify_8C_03.html#aa90e2495b59977a27222e688d606515a":[3,0,4,21],
 "namespaceanonymous__namespace_02io__modify_8C_03.html#aa959efc93b524e7ed0d30dd9127bddba":[3,0,4,29],
 "namespaceanonymous__namespace_02io__modify_8C_03.html#ab1862d98ba5053a4243e0d0eca19f53c":[3,0,4,39],
@@ -249,5 +241,13 @@ var NAVTREEINDEX79 =
 "pdqsort_8h.html#a3de8fb7a53a7399f2b28c51e73b80dd0":[5,0,0,171,0],
 "pdqsort_8h.html#a9a4675f3c4f61ef1aa7d808c984d5f35":[5,0,0,171,9],
 "pdqsort_8h.html#acc9c6dee9ea3572a997cbd085a0f3265":[5,0,0,171,8],
-"pdqsort_8h_source.html":[5,0,0,171]
+"pdqsort_8h_source.html":[5,0,0,171],
+"robin__growth__policy_8h.html":[5,0,0,172],
+"robin__growth__policy_8h.html#a08451e00a4de2f773fe0a762e39db53d":[5,0,0,172,5],
+"robin__growth__policy_8h.html#a15c2bc0fd0ed52be3b0bc91b814b69cb":[5,0,0,172,4],
+"robin__growth__policy_8h.html#a6763b674ae3f1893aa7524c5c8a8e9b2":[5,0,0,172,7],
+"robin__growth__policy_8h.html#aa352528d449223f8086405d2ce4e8f9b":[5,0,0,172,6],
+"robin__growth__policy_8h.html#abf43b6f27a3bf5120e9d61e5f5d0d0ee":[5,0,0,172,3],
+"robin__growth__policy_8h.html#ad38c75b536ea7e384aa09dc2ce8e34f8":[5,0,0,172,8],
+"robin__growth__policy_8h_source.html":[5,0,0,172]
 };

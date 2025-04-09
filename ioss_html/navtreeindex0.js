@@ -147,6 +147,7 @@ var NAVTREEINDEX0 =
 "Iocatalyst__ManagerTest_8C.html#a7817ebc8156d2a90fc2df8ffadf738c3":[5,0,0,2,12,5],
 "Iocatalyst__ManagerTest_8C.html#a797626a6fdc8434a15ec16ba849977e7":[5,0,0,2,12,10],
 "Iocatalyst__ManagerTest_8C.html#a881ea06875083545fae81eca9a138510":[5,0,0,2,12,32],
+"Iocatalyst__ManagerTest_8C.html#a989ff6452ff528458222a0841054a489":[5,0,0,2,12,37],
 "Iocatalyst__ManagerTest_8C.html#a9a9e7c8a846688be6af7c094efa1b130":[5,0,0,2,12,22],
 "Iocatalyst__ManagerTest_8C.html#aa66debf94d04489891c2ef4c9e12cd5a":[5,0,0,2,12,15],
 "Iocatalyst__ManagerTest_8C.html#aa939c22342c0c7134c2303a27ee8af6c":[5,0,0,2,12,11],
@@ -159,7 +160,7 @@ var NAVTREEINDEX0 =
 "Iocatalyst__ManagerTest_8C.html#ac4e5f27f3cadef38bfc133b4922df4d2":[5,0,0,2,12,2],
 "Iocatalyst__ManagerTest_8C.html#ad7e6f6b5b1ec95dbdc2450d816bda3e3":[5,0,0,2,12,17],
 "Iocatalyst__ManagerTest_8C.html#ad84a7dd661f4982676dfa9c196e09b03":[5,0,0,2,12,3],
-"Iocatalyst__ManagerTest_8C.html#ad9d1a308e2bc4b347ca247f97538f1a2":[5,0,0,2,12,37],
+"Iocatalyst__ManagerTest_8C.html#ad9d1a308e2bc4b347ca247f97538f1a2":[5,0,0,2,12,38],
 "Iocatalyst__ManagerTest_8C.html#ae2c4ddd92917d3b5eef1a9c2d312c13a":[5,0,0,2,12,34],
 "Iocatalyst__ManagerTest_8C.html#ae85756d5d4da7652ccd2bae67844bb0f":[5,0,0,2,12,14],
 "Iocatalyst__ManagerTest_8C.html#aef283722791081cd29ccff1dc1566a69":[5,0,0,2,12,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "Ioexnl__BaseDatabaseIO_8h.html":[5,0,0,6,1],
 "Ioexnl__BaseDatabaseIO_8h_source.html":[5,0,0,6,1],
 "Ioexnl__DatabaseIO_8C.html":[5,0,0,6,2],
-"Ioexnl__DatabaseIO_8h.html":[5,0,0,6,3],
-"Ioexnl__DatabaseIO_8h_source.html":[5,0,0,6,3]
+"Ioexnl__DatabaseIO_8h.html":[5,0,0,6,3]
 };

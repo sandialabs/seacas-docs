@@ -1,7 +1,6 @@
 var Ioexnl__Utils_8C =
 [
     [ "Ioexnl::check_processor_info", "namespaceIoexnl.html#afc223b58e769cc91d57f958f3cc4966a", null ],
-    [ "Ioexnl::decode_surface_name", "namespaceIoexnl.html#a2f3a71850425197c012d0a98cfd978d3", null ],
     [ "Ioexnl::exodus_error", "namespaceIoexnl.html#a0617a73a1ac9ddfe98805c22937cf142", null ],
     [ "Ioexnl::exodus_error", "namespaceIoexnl.html#abd0584b2b712dce6bb65d538a15a2f34", null ],
     [ "Ioexnl::extract_id", "namespaceIoexnl.html#a6b15f902a68f01948b8480354ec82547", null ],
