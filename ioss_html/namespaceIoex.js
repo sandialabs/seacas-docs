@@ -48,7 +48,7 @@ var namespaceIoex =
     [ "filter_node_list", "namespaceIoex.html#a976d472a06fe6dc9a4e8dceda7a4104d", null ],
     [ "find_displacement_field", "namespaceIoex.html#a1ed8364608c033537b686a8d2ab7302d", null ],
     [ "fix_bad_name", "namespaceIoex.html#aef2391ac4a8055299a15c4bf70a30080", null ],
-    [ "get_entity_name", "namespaceIoex.html#af58255d83f780bedbfc2dd5642483d3b", null ],
+    [ "get_entity_name", "namespaceIoex.html#a818ed9382261fea6ecac49ffbfe35f27", null ],
     [ "get_id", "namespaceIoex.html#acb1bbaeb86f594825bf8959a4d4912e3", null ],
     [ "get_name_array", "namespaceIoex.html#a43bc93c37b19aae33da773ec05798bc9", null ],
     [ "get_reduction_variable_names", "namespaceIoex.html#a71222371bc6937c77b5e3ecfac6acf8d", null ],

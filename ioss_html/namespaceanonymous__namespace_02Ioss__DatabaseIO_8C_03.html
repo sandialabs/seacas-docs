@@ -119,8 +119,8 @@ Functions</h2></td></tr>
 <tr class="memitem:acb8182b7e1a171e2d1a8402a7f282529" id="r_acb8182b7e1a171e2d1a8402a7f282529"><td class="memTemplParams" colspan="2">template&lt;typename INT&gt; </td></tr>
 <tr class="memitem:acb8182b7e1a171e2d1a8402a7f282529"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acb8182b7e1a171e2d1a8402a7f282529">calc_bounding_box</a> (size_t ndim, size_t node_count, std::vector&lt; double &gt; &amp;coordinates, std::vector&lt; INT &gt; &amp;connectivity, double &amp;xmin, double &amp;ymin, double &amp;zmin, double &amp;xmax, double &amp;ymax, double &amp;zmax)</td></tr>
 <tr class="separator:acb8182b7e1a171e2d1a8402a7f282529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0339a01eb797b5ee7289a393cb2814cc" id="r_a0339a01eb797b5ee7289a393cb2814cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0339a01eb797b5ee7289a393cb2814cc">calc_bounding_box</a> (size_t ndim, size_t node_count, std::vector&lt; double &gt; &amp;coordinates, double &amp;xmin, double &amp;ymin, double &amp;zmin, double &amp;xmax, double &amp;ymax, double &amp;zmax)</td></tr>
-<tr class="separator:a0339a01eb797b5ee7289a393cb2814cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36af68394cf710417a17e3a29d22c8ab" id="r_a36af68394cf710417a17e3a29d22c8ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36af68394cf710417a17e3a29d22c8ab">calc_bounding_box</a> (size_t ndim, std::vector&lt; double &gt; &amp;coordinates, double &amp;xmin, double &amp;ymin, double &amp;zmin, double &amp;xmax, double &amp;ymax, double &amp;zmax)</td></tr>
+<tr class="separator:a36af68394cf710417a17e3a29d22c8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a558f4371b20afaab9b39216097849d04" id="r_a558f4371b20afaab9b39216097849d04"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a558f4371b20afaab9b39216097849d04"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a558f4371b20afaab9b39216097849d04">get_entity_offsets</a> (const std::string &amp;field_name, const std::vector&lt; T * &gt; &amp;entity_container)</td></tr>
 <tr class="separator:a558f4371b20afaab9b39216097849d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,11 +134,13 @@ Variables</h2></td></tr>
 <tr class="separator:a8b5e1172efa0e2d5d497e0dea0a894c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0339a01eb797b5ee7289a393cb2814cc" name="a0339a01eb797b5ee7289a393cb2814cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0339a01eb797b5ee7289a393cb2814cc">&#9670;&#160;</a></span>calc_bounding_box() <span class="overload">[1/2]</span></h2>
+<a id="acb8182b7e1a171e2d1a8402a7f282529" name="acb8182b7e1a171e2d1a8402a7f282529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb8182b7e1a171e2d1a8402a7f282529">&#9670;&#160;</a></span>calc_bounding_box() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename INT&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void anonymous_namespace{Ioss_DatabaseIO.C}::calc_bounding_box </td>
@@ -154,6 +156,11 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>coordinates</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; INT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>connectivity</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -190,13 +197,11 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acb8182b7e1a171e2d1a8402a7f282529" name="acb8182b7e1a171e2d1a8402a7f282529"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb8182b7e1a171e2d1a8402a7f282529">&#9670;&#160;</a></span>calc_bounding_box() <span class="overload">[2/2]</span></h2>
+<a id="a36af68394cf710417a17e3a29d22c8ab" name="a36af68394cf710417a17e3a29d22c8ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36af68394cf710417a17e3a29d22c8ab">&#9670;&#160;</a></span>calc_bounding_box() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename INT&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void anonymous_namespace{Ioss_DatabaseIO.C}::calc_bounding_box </td>
@@ -206,17 +211,7 @@ template&lt;typename INT&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>node_count</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">std::vector&lt; double &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>coordinates</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; INT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>connectivity</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

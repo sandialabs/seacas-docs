@@ -16,6 +16,8 @@ var annotated_dup =
       [ "param", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param.html", "structanonymous__namespace_02io__shell__ts_8C_03_1_1param" ]
     ] ],
     [ "anonymous_namespace{Iocgns_DatabaseIO.C}", "namespaceanonymous__namespace_02Iocgns__DatabaseIO_8C_03.html", [
+      [ "_cgns_io_ctx_t", "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1__cgns__io__ctx__t.html", "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1__cgns__io__ctx__t" ],
+      [ "ParallelGuard", "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1ParallelGuard.html", "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1ParallelGuard" ],
       [ "SBlock", "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock.html", "structanonymous__namespace_02Iocgns__DatabaseIO_8C_03_1_1SBlock" ]
     ] ],
     [ "anonymous_namespace{Iocgns_StructuredZoneData.C}", "namespaceanonymous__namespace_02Iocgns__StructuredZoneData_8C_03.html", [

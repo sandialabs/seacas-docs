@@ -39,6 +39,7 @@ var classIOShell_1_1Interface =
     [ "ints_32_bit", "classIOShell_1_1Interface.html#a88f9177822d091677a0adb559a96eed6", null ],
     [ "ints_64_bit", "classIOShell_1_1Interface.html#a4993c36d18bebd51ed2f9a5f3d885611", null ],
     [ "line_decomp", "classIOShell_1_1Interface.html#aada08bc534fd10e9641aa4b0e96308c3", null ],
+    [ "lower_case_database_names", "classIOShell_1_1Interface.html#a94ba157438a8487b42c67461ccaa0f0f", null ],
     [ "lower_case_variable_names", "classIOShell_1_1Interface.html#ad8414e8c24596433dd4d729047b28a36", null ],
     [ "maximum_time", "classIOShell_1_1Interface.html#a86bb8fd7ae5f8fbbb620dd85828f62fc", null ],
     [ "memory_statistics", "classIOShell_1_1Interface.html#a34be8a8e966374bb6c32b0f640f4fceb", null ],

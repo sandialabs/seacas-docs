@@ -160,14 +160,16 @@ General Properties</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">LOWER_CASE_VARIABLE_NAMES   </td><td class="markdownTableBodyCenter">[on]/off   </td><td class="markdownTableBodyNone">Convert all variable names read from input database to lowercase; replace ' ' with '_'    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LOWER_CASE_DATABASE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Convert all block/set names read from input database to lowercase; replace ' ' with '_'    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">USE_GENERIC_CANONICAL_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">use <code>block_{id}</code> as canonical name of an element block instead of the name (if any) stored on the database. The database name will be an alias.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">IGNORE_DATABASE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Do not read any element block, nodeset, ... names if they exist on the database. Use only the canonical generated names (entitytype + _ + id)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">IGNORE_ATTRIBUTE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Do not read the attribute names that may exist on an input database. Instead for an element block with N attributes, the fields will be named <code>attribute_1</code> ... <code>attribute_N</code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">MINIMIZE_OPEN_FILES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">If on, then close file after each timestep and then reopen on next output    </td></tr>
+<td class="markdownTableBodyNone">IGNORE_ATTRIBUTE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Do not read the attribute names that may exist on an input database. Instead for an element block with N attributes, the fields will be named <code>attribute_1</code> ... <code>attribute_N</code>    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">MINIMIZE_OPEN_FILES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">If on, then close file after each timestep and then reopen on next output    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">SERIALIZE_IO   </td><td class="markdownTableBodyCenter">integer   </td><td class="markdownTableBodyNone">The number of files that will be read/written to simultaneously in a parallel file-per-rank run.   </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md1"></a>
