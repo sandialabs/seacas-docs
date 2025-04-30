@@ -1,5 +1,7 @@
 var NAVTREEINDEX62 =
 {
+"classLoggingTest.html#a5e5f97cb83420f2859a2fa6421ee353b":[4,0,107,2],
+"classLoggingTest.html#afe651cbbfeff82f68dc3299eddc57aa2":[4,0,107,3],
 "classManagerTest.html":[4,0,108],
 "classManagerTest.html#a0f9961680383bc97440375f28baeeab4":[4,0,108,7],
 "classManagerTest.html#a1a5d716c5e2bfdce4c601fafb391a65f":[4,0,108,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX62 =
 "classanonymous__namespace_02io__shell_8C_03_1_1Observer.html#af46f2215c10fae9697f645a698dd72c6":[3,0,5,0,0],
 "classanonymous__namespace_02io__shell_8C_03_1_1Observer.html#af46f2215c10fae9697f645a698dd72c6":[4,0,3,0,0],
 "classes.html":[4,1],
-"classtsl_1_1bhopscotch__map.html":[3,0,158,4],
-"classtsl_1_1bhopscotch__map.html":[4,0,101,4],
-"classtsl_1_1bhopscotch__map.html#a075de73ae307816baaf5267ba3b895e6":[3,0,158,4,117]
+"classtsl_1_1bhopscotch__map.html":[3,0,158,4]
 };

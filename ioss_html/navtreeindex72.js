@@ -1,5 +1,7 @@
 var NAVTREEINDEX72 =
 {
+"classtsl_1_1robin__set.html#aff0c7adeb3a9b6b0fd208dc434f8f7f3":[4,0,101,9,41],
+"classtsl_1_1robin__set_1_1KeySelect.html":[3,0,158,9,0],
 "classtsl_1_1robin__set_1_1KeySelect.html":[4,0,101,9,0],
 "classtsl_1_1robin__set_1_1KeySelect.html#a3ce213c4b8db9b42f6b521e0cfebd34c":[3,0,158,9,0,2],
 "classtsl_1_1robin__set_1_1KeySelect.html#a3ce213c4b8db9b42f6b521e0cfebd34c":[4,0,101,9,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX72 =
 "index.html#autotoc_md6":[0,2,5],
 "index.html#autotoc_md7":[0,2,5,0],
 "index.html#autotoc_md8":[0,2,6],
-"index.html#autotoc_md9":[0,2,7],
-"index.html#avail":[0,0],
-"index.html#db_types":[0,1]
+"index.html#autotoc_md9":[0,2,7]
 };

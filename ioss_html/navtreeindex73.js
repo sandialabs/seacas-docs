@@ -1,5 +1,7 @@
 var NAVTREEINDEX73 =
 {
+"index.html#avail":[0,0],
+"index.html#db_types":[0,1],
 "index.html#license":[0,3],
 "index.html#properties":[0,2],
 "info__interface_8C.html":[5,0,0,12,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX73 =
 "namespaceIoexnl.html#a1a1f2677c101fad0d2bed2372a84e201":[3,0,140,47],
 "namespaceIoexnl.html#a28089193d10dca657d6ce9877b00ad9f":[3,0,140,44],
 "namespaceIoexnl.html#a2e4c57b9dfa1281412544db66244ab71":[3,0,140,49],
-"namespaceIoexnl.html#a461f1eda4016393eb6faa3f1d8cd2acc":[3,0,140,39],
-"namespaceIoexnl.html#a4713635f272591cc9a87bcf2ccf928f0":[3,0,140,50],
-"namespaceIoexnl.html#a62caeef18d688487de65182b1dbd5237":[3,0,140,42]
+"namespaceIoexnl.html#a461f1eda4016393eb6faa3f1d8cd2acc":[3,0,140,39]
 };
