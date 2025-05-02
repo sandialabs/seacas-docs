@@ -243,6 +243,9 @@ var annotated_dup =
       [ "TestTextMesh2d", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh2d.html", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMesh2d" ],
       [ "TestTextMeshGraph", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMeshGraph.html", "classanonymous__namespace_02UnitTestIotmTextMeshFixture_8h_03_1_1TestTextMeshGraph" ]
     ] ],
+    [ "fmt", null, [
+      [ "formatter< std::vector< T > >", "structfmt_1_1formatter_3_01std_1_1vector_3_01T_01_4_01_4.html", "structfmt_1_1formatter_3_01std_1_1vector_3_01T_01_4_01_4" ]
+    ] ],
     [ "Info", "namespaceInfo.html", [
       [ "Interface", "classInfo_1_1Interface.html", "classInfo_1_1Interface" ]
     ] ],

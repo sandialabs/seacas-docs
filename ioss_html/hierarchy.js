@@ -352,6 +352,9 @@ var hierarchy =
     [ "Ioad::DatabaseIO::FieldInfoType", "structIoad_1_1DatabaseIO_1_1FieldInfoType.html", null ],
     [ "Ioss::FieldManager", "classIoss_1_1FieldManager.html", null ],
     [ "Ioss::FileInfo", "classIoss_1_1FileInfo.html", null ],
+    [ "fmt::formatter", null, [
+      [ "fmt::formatter< std::vector< T > >", "structfmt_1_1formatter_3_01std_1_1vector_3_01T_01_4_01_4.html", null ]
+    ] ],
     [ "Iogn::GeneratedMesh", "classIogn_1_1GeneratedMesh.html", [
       [ "Iogn::DashSurfaceMesh", "classIogn_1_1DashSurfaceMesh.html", null ],
       [ "Iogn::ExodusMesh", "classIogn_1_1ExodusMesh.html", null ]
