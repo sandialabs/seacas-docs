@@ -20,7 +20,7 @@ var Ioex__Utils_8h =
     [ "Ioex::filter_node_list", "namespaceIoex.html#a976d472a06fe6dc9a4e8dceda7a4104d", null ],
     [ "Ioex::find_displacement_field", "namespaceIoex.html#a1ed8364608c033537b686a8d2ab7302d", null ],
     [ "Ioex::fix_bad_name", "namespaceIoex.html#aef2391ac4a8055299a15c4bf70a30080", null ],
-    [ "Ioex::get_entity_name", "namespaceIoex.html#a818ed9382261fea6ecac49ffbfe35f27", null ],
+    [ "Ioex::get_entity_name", "namespaceIoex.html#ac8f3cdb694ea991f36b9a0fab806a080", null ],
     [ "Ioex::get_id", "namespaceIoex.html#acb1bbaeb86f594825bf8959a4d4912e3", null ],
     [ "Ioex::get_name_array", "namespaceIoex.html#a43bc93c37b19aae33da773ec05798bc9", null ],
     [ "Ioex::get_reduction_variable_names", "namespaceIoex.html#a71222371bc6937c77b5e3ecfac6acf8d", null ],

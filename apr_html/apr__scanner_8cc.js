@@ -112,6 +112,7 @@ var apr__scanner_8cc =
     [ "if_lvl", "apr__scanner_8cc.html#aac074a40c442373591bd7023cf4d8df0", null ],
     [ "if_skip_level", "apr__scanner_8cc.html#a4dd60cbcb1cf6777c99c590898a7ac53", null ],
     [ "if_state", "apr__scanner_8cc.html#a343f896e19aff0b084e69752ba9d4a71", null ],
+    [ "last_output_nl", "apr__scanner_8cc.html#a0ff5f2e5bd57cb77fd569ac7289197ba", null ],
     [ "loop_lvl", "apr__scanner_8cc.html#ae9aed7124776285d55163bad041db5ee", null ],
     [ "outer_file", "apr__scanner_8cc.html#a1cd6ffdf755386e1b1b5c2216228459d", null ],
     [ "suppress_nl", "apr__scanner_8cc.html#a5fbf3c0bd2abf6e8f56b5ed3582094ac", null ],

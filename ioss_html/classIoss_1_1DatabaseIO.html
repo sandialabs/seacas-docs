@@ -320,6 +320,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad2235b32ed5a23fc82c670856840a767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff804c881ea01481ddca5175839b47a" id="r_aeff804c881ea01481ddca5175839b47a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#a8993c5d624635dd37c16fe10b1ee0c8f">DuplicateFieldBehavior</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeff804c881ea01481ddca5175839b47a">get_duplicate_field_behavior</a> () const</td></tr>
 <tr class="separator:aeff804c881ea01481ddca5175839b47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4fbbc3fd65be23d7d905936e539c3c" id="r_a6a4fbbc3fd65be23d7d905936e539c3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a4fbbc3fd65be23d7d905936e539c3c">set_lowercase_variable_names</a> (bool true_false) const</td></tr>
+<tr class="separator:a6a4fbbc3fd65be23d7d905936e539c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481378f0cdc421efa83e34088f377968" id="r_a481378f0cdc421efa83e34088f377968"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a481378f0cdc421efa83e34088f377968">set_lowercase_database_names</a> (bool true_false) const</td></tr>
+<tr class="separator:a481378f0cdc421efa83e34088f377968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6ffe8a955335ceb105c2d0a1fee0c0" id="r_a4d6ffe8a955335ceb105c2d0a1fee0c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d6ffe8a955335ceb105c2d0a1fee0c0">set_lower_case_variable_names</a> (bool true_false) const</td></tr>
 <tr class="separator:a4d6ffe8a955335ceb105c2d0a1fee0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6264d78728a77e6ca9833825f8bf66" id="r_a4d6264d78728a77e6ca9833825f8bf66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d6264d78728a77e6ca9833825f8bf66">set_lower_case_database_names</a> (bool true_false) const</td></tr>
@@ -463,7 +467,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aea8f55d83b4ae9599f443ba49f0a219a" id="r_aea8f55d83b4ae9599f443ba49f0a219a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea8f55d83b4ae9599f443ba49f0a219a">isParallel</a> {false}</td></tr>
 <tr class="memdesc:aea8f55d83b4ae9599f443ba49f0a219a"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if running in parallel  <br /></td></tr>
 <tr class="separator:aea8f55d83b4ae9599f443ba49f0a219a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3a83f9f43da8caf28ec7cc4b55ef5bc" id="r_aa3a83f9f43da8caf28ec7cc4b55ef5bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3a83f9f43da8caf28ec7cc4b55ef5bc">lowerCaseVariableNames</a> {true}</td></tr>
+<tr class="memitem:aa3a83f9f43da8caf28ec7cc4b55ef5bc" id="r_aa3a83f9f43da8caf28ec7cc4b55ef5bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3a83f9f43da8caf28ec7cc4b55ef5bc">lowerCaseVariableNames</a> {false}</td></tr>
 <tr class="separator:aa3a83f9f43da8caf28ec7cc4b55ef5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9974b7d22365e1b3c82df03d25489b3" id="r_aa9974b7d22365e1b3c82df03d25489b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9974b7d22365e1b3c82df03d25489b3">lowerCaseDatabaseNames</a> {false}</td></tr>
 <tr class="separator:aa9974b7d22365e1b3c82df03d25489b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6086,6 +6090,56 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
+<a id="a481378f0cdc421efa83e34088f377968" name="a481378f0cdc421efa83e34088f377968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481378f0cdc421efa83e34088f377968">&#9670;&#160;</a></span>set_lowercase_database_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::DatabaseIO::set_lowercase_database_names </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>true_false</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a4fbbc3fd65be23d7d905936e539c3c" name="a6a4fbbc3fd65be23d7d905936e539c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4fbbc3fd65be23d7d905936e539c3c">&#9670;&#160;</a></span>set_lowercase_variable_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ioss::DatabaseIO::set_lowercase_variable_names </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>true_false</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8e90aa4a206695f60cc2d55f785e8c43" name="a8e90aa4a206695f60cc2d55f785e8c43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e90aa4a206695f60cc2d55f785e8c43">&#9670;&#160;</a></span>set_maximum_symbol_length()</h2>
 
@@ -7334,7 +7388,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ioss::DatabaseIO::lowerCaseVariableNames {true}</td>
+          <td class="memname">bool Ioss::DatabaseIO::lowerCaseVariableNames {false}</td>
         </tr>
       </table>
   </td>

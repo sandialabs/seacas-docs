@@ -100,7 +100,7 @@ $(function(){initNavTree('Ioss__ConcreteVariableType_8h_source.html',''); initRe
   <div class="headertitle"><div class="title">Ioss_ConcreteVariableType.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Ioss__ConcreteVariableType_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022, 2023, 2024 National Technology &amp; Engineering Solutions</span></div>
+<a href="Ioss__ConcreteVariableType_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright(C) 1999-2020, 2022, 2023, 2024, 2025 National Technology &amp; Engineering Solutions</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// of Sandia, LLC (NTESS).  Under the terms of Contract DE-NA0003525 with</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// NTESS, the U.S. Government retains certain rights in this software.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -126,7 +126,7 @@ $(function(){initNavTree('Ioss__ConcreteVariableType_8h_source.html',''); initRe
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="foldopen" id="foldopen00023" data-start="" data-end="">
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="Ioss__ConcreteVariableType_8h.html#ada66ac2720e00b91fd8f48327474c540">   23</a></span><span class="preprocessor">#define MAKE_CLASS(X)                                                                              \</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">  class IOSS_EXPORT X : public VariableType                                                        \</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">  class IOSS_EXPORT X final : public VariableType                                                  \</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">  {                                                                                                \</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">  public:                                                                                          \</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">    IOSS_NODISCARD std::string label(int which, const char suffix_sep = &#39;_&#39;) const override;       \</span></div>
@@ -144,7 +144,7 @@ $(function(){initNavTree('Ioss__ConcreteVariableType_8h_source.html',''); initRe
 </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classIoss_1_1Invalid__Storage.html">   40</a></span>  <span class="keyword">class </span>IOSS_EXPORT <a class="code hl_function" href="classIoss_1_1Invalid__Storage.html#a405e1bfa58a15ee416b23c3a9b9cfcd7">Invalid_Storage</a> : <span class="keyword">public</span> <a class="code hl_function" href="classIoss_1_1VariableType.html#a62d077f86edeb22c10b84ce64d3cc5a4">VariableType</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classIoss_1_1Invalid__Storage.html">   40</a></span>  <span class="keyword">class </span>IOSS_EXPORT <a class="code hl_function" href="classIoss_1_1Invalid__Storage.html#a405e1bfa58a15ee416b23c3a9b9cfcd7">Invalid_Storage</a> final : <span class="keyword">public</span> <a class="code hl_function" href="classIoss_1_1VariableType.html#a62d077f86edeb22c10b84ce64d3cc5a4">VariableType</a></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classIoss_1_1Invalid__Storage.html#a405e1bfa58a15ee416b23c3a9b9cfcd7">   43</a></span>    <a class="code hl_function" href="classIoss_1_1Invalid__Storage.html#a405e1bfa58a15ee416b23c3a9b9cfcd7">Invalid_Storage</a>(<span class="keyword">const</span> <a class="code hl_function" href="classIoss_1_1Invalid__Storage.html#a405e1bfa58a15ee416b23c3a9b9cfcd7">Invalid_Storage</a> &amp;) = <span class="keyword">delete</span>;</div>
@@ -163,7 +163,7 @@ $(function(){initNavTree('Ioss__ConcreteVariableType_8h_source.html',''); initRe
 </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classIoss_1_1Scalar.html">   57</a></span>  <span class="keyword">class </span>IOSS_EXPORT <a class="code hl_function" href="classIoss_1_1Scalar.html#a3b272f84307080c28743662d8d738068">Scalar</a> : <span class="keyword">public</span> <a class="code hl_function" href="classIoss_1_1VariableType.html#a62d077f86edeb22c10b84ce64d3cc5a4">VariableType</a></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classIoss_1_1Scalar.html">   57</a></span>  <span class="keyword">class </span>IOSS_EXPORT <a class="code hl_function" href="classIoss_1_1Scalar.html#a3b272f84307080c28743662d8d738068">Scalar</a> final : <span class="keyword">public</span> <a class="code hl_function" href="classIoss_1_1VariableType.html#a62d077f86edeb22c10b84ce64d3cc5a4">VariableType</a></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classIoss_1_1Scalar.html#a3b272f84307080c28743662d8d738068">   60</a></span>    <a class="code hl_function" href="classIoss_1_1Scalar.html#a3b272f84307080c28743662d8d738068">Scalar</a>(<span class="keyword">const</span> <a class="code hl_function" href="classIoss_1_1Scalar.html#a3b272f84307080c28743662d8d738068">Scalar</a> &amp;) = <span class="keyword">delete</span>;</div>

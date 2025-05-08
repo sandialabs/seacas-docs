@@ -15,7 +15,7 @@ var classIotm_1_1text__mesh_1_1TextMeshLexer =
     [ "has_number", "classIotm_1_1text__mesh_1_1TextMeshLexer.html#ae0fa76ec5dd56d496f5536b22421feea", null ],
     [ "has_string", "classIotm_1_1text__mesh_1_1TextMeshLexer.html#a1abb4a7078e74fa6367ab481a08ed348", null ],
     [ "has_token", "classIotm_1_1text__mesh_1_1TextMeshLexer.html#a3f711587d55bb03e10a7898a179ac6dc", null ],
-    [ "make_upper_case", "classIotm_1_1text__mesh_1_1TextMeshLexer.html#a7d932e3e732519e6a2b0470f90cde68f", null ],
+    [ "make_uppercase", "classIotm_1_1text__mesh_1_1TextMeshLexer.html#a0c560de39af918b690090c11d1fea3d5", null ],
     [ "read_next_token", "classIotm_1_1text__mesh_1_1TextMeshLexer.html#ab7a32527a9297187f59a5b1b37caf6f3", null ],
     [ "set_input_string", "classIotm_1_1text__mesh_1_1TextMeshLexer.html#a285c123a3735b2a3fdbdb89b34605e9c", null ],
     [ "m_currentIndex", "classIotm_1_1text__mesh_1_1TextMeshLexer.html#a2c0edf5c7c5881fef8c0e8e0327a1024", null ],

@@ -174,6 +174,8 @@ var classIoss_1_1DatabaseIO =
     [ "set_logging", "classIoss_1_1DatabaseIO.html#aed550ada84092956918c1011949239e8", null ],
     [ "set_lower_case_database_names", "classIoss_1_1DatabaseIO.html#a4d6264d78728a77e6ca9833825f8bf66", null ],
     [ "set_lower_case_variable_names", "classIoss_1_1DatabaseIO.html#a4d6ffe8a955335ceb105c2d0a1fee0c0", null ],
+    [ "set_lowercase_database_names", "classIoss_1_1DatabaseIO.html#a481378f0cdc421efa83e34088f377968", null ],
+    [ "set_lowercase_variable_names", "classIoss_1_1DatabaseIO.html#a6a4fbbc3fd65be23d7d905936e539c3c", null ],
     [ "set_maximum_symbol_length", "classIoss_1_1DatabaseIO.html#a8e90aa4a206695f60cc2d55f785e8c43", null ],
     [ "set_nan_detection", "classIoss_1_1DatabaseIO.html#a531fc8cace7d926381ca126ec76e0534", null ],
     [ "set_overlay_count", "classIoss_1_1DatabaseIO.html#a080866da3d76c319db24c1351062f6be", null ],

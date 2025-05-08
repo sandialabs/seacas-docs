@@ -158,9 +158,9 @@ General Properties</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">LOGGING   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">enable/disable logging of field input/output    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">LOWER_CASE_VARIABLE_NAMES   </td><td class="markdownTableBodyCenter">[on]/off   </td><td class="markdownTableBodyNone">Convert all variable names read from input database to lowercase; replace ' ' with '_'    </td></tr>
+<td class="markdownTableBodyNone">LOWERCASE_VARIABLE_NAMES   </td><td class="markdownTableBodyCenter">[on]/off   </td><td class="markdownTableBodyNone">Convert all variable names read from input database to lowercase; replace ' ' with '_'    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">LOWER_CASE_DATABASE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Convert all block/set names read from input database to lowercase; replace ' ' with '_'    </td></tr>
+<td class="markdownTableBodyNone">LOWERCASE_DATABASE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Convert all block/set names read from input database to lowercase; replace ' ' with '_'    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">USE_GENERIC_CANONICAL_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">use <code>block_{id}</code> as canonical name of an element block instead of the name (if any) stored on the database. The database name will be an alias.    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -308,7 +308,17 @@ Output Database-Related Properties</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ENABLE_DATAWARP   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">If the system supports Cray DataWarp (burst buffer), should it be used for buffering output files.   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Deprecated Database-Related Properties</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Property   </th><th class="markdownTableHeadCenter">Value   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LOWER_CASE_VARIABLE_NAMES   </td><td class="markdownTableBodyCenter">[on]/off   </td><td class="markdownTableBodyNone">Use LOWERCASE_VARIABLE_NAMES    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LOWER_CASE_DATABASE_NAMES   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Use LOWERCASE_DATABASE_NAMES   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md8"></a>
 Cycle and Overlay Behavior:</h3>
 <p>(Properties <code>CYCLE_COUNT</code>, <code>OVERLAY_COUNT</code>, and <code>FILE_PER_STATE</code>) The <code>overlay</code> specifies the number of output steps which will be overlaid on top of the currently written step before advancing to the next step on the database.</p>
 <p>For example, if output every 0.1 seconds and the overlay count is specified as 2, then IOSS will write time 0.1 to step 1 of the database. It will then write 0.2 and 0.3 also to step 1. It will then increment the database step and write 0.4 to step 2 and overlay 0.5 and 0.6 on step 2. At the end of the analysis, (assuming it runs to completion), the database would have times 0.3, 0.6, 0.9, ... However, if there were a problem during the analysis, the last step on the database would contain an intermediate step.</p>
@@ -317,7 +327,7 @@ Cycle and Overlay Behavior:</h3>
 </div><!-- fragment --><p> where <code>output_step</code> is the step that this would have been on the database in a normal write (1,2,3,....) and <code>db_step</code> is the step number that this will be written to.</p>
 <p>If you only want the last step available on the database, use <code>set_cycle_count(1)</code>.</p>
 <p>If <code>FILE_PER_STATE</code> is specified, then <code>cycle</code> specifies the number of separate files which will be created and <code>overlay</code> specifies how many timesteps will be written to each file. If we have <code>cycle=2</code> and <code>overlay=3</code> and the code is outputting every 0.1 seconds, we will get 0.1, 0.2, 0.3 in the first file; 0.4, 0.5, 0.6 in the second file. Then, the first file will be reopened and steps 0.7, 0.8, and 0.9 will be written to the first file.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Properties for the heartbeat output</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -347,7 +357,7 @@ Properties for the heartbeat output</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">SHOW_TIME_FIELD   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">Should the current analysis time be output as the first field.   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 Experimental / Special Purpose</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -366,7 +376,7 @@ Experimental / Special Purpose</h2>
 <td class="markdownTableBodyNone">EXODUS_CALL_GET_ALL_TIMES   </td><td class="markdownTableBodyCenter">[on] / off   </td><td class="markdownTableBodyNone">special case &ndash; should the <code>ex_get_all_times()</code> function be called. See below.   </td></tr>
 </table>
 <p><code>EXODUS_CALL_GET_ALL_TIMES</code>: Typically only used in <code>isSerialParallel</code> mode and the client is responsible for making sure that the step times are handled correctly. All databases will know about the number of timesteps, but if the <code>ex_get_all_times()</code> function call is skipped, then the times on that database will all be zero. The use case is that in <code>isSerialParallel</code>, each call to <code>ex_get_all_times()</code> for all files is performed sequentially, so if you have hundreds to thousands of files, the time for the call is additive and since timesteps are record variables in netCDF, accessing the data for all timesteps involves lseeks throughout the file.</p>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Debugging / Profiling</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -380,13 +390,13 @@ Debugging / Profiling</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">DECOMP_SHOW_HWM   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">show high-water memory during autodecomp    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">IOSS_TIME_FILE_OPEN_CLOSE   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">show elapsed time during parallel-io file open/close/create    </td></tr>
+<td class="markdownTableBodyNone">IOSS_TIME_FILE_OPEN_CLOSE   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">show elapsed time during parallel-io file open/close/create/flush    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">CHECK_PARALLEL_CONSISTENCY   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">check <a class="el" href="classIoss_1_1GroupingEntity.html" title="Base class for all &#39;grouping&#39; entities. The following derived classes are typical:">Ioss::GroupingEntity</a> parallel consistency    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">TIME_STATE_INPUT_OUTPUT   </td><td class="markdownTableBodyCenter">on/[off]   </td><td class="markdownTableBodyNone">show the elapsed time for reading/writing each timestep's data   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Setting properties via an environment variable</h2>
 <p>Although the properties are usually accessed internally in the application calling the IOSS library, it is possible to set the properties externally prior to running the application via the setting of the environment variable <code>IOSS_PROPERTIES</code>. The value of the variable is one or more colon-separated property/property-value pairs. For example, to set the <code>DECOMPOSITION_METHOD</code> and the <code>FILE_TYPE</code> externally, the following would be used: </p><div class="fragment"><div class="line"><span class="keyword">export</span> IOSS_PROPERTIES=<span class="stringliteral">&quot;DECOMPOSITION_METHOD=rib:FILE_TYPE=netcdf4&quot;</span></div>
 </div><!-- fragment --><p> If the environment variable is set correctly, there should be an informational message output during running of the application similar to: </p><div class="fragment"><div class="line">IOSS: Adding <span class="keyword">property</span> <span class="stringliteral">&#39;DECOMPOSITION_METHOD&#39;</span> with value <span class="stringliteral">&#39;rib&#39;</span></div>

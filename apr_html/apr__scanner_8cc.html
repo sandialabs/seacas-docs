@@ -397,6 +397,8 @@ Variables</h2></td></tr>
 <tr class="separator:a4dd60cbcb1cf6777c99c590898a7ac53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fbf3c0bd2abf6e8f56b5ed3582094ac" id="r_a5fbf3c0bd2abf6e8f56b5ed3582094ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fbf3c0bd2abf6e8f56b5ed3582094ac">suppress_nl</a> = false</td></tr>
 <tr class="separator:a5fbf3c0bd2abf6e8f56b5ed3582094ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff5f2e5bd57cb77fd569ac7289197ba" id="r_a0ff5f2e5bd57cb77fd569ac7289197ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ff5f2e5bd57cb77fd569ac7289197ba">last_output_nl</a> = false</td></tr>
+<tr class="separator:a0ff5f2e5bd57cb77fd569ac7289197ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a77137f3f80301c7d8ce444eb8fb90e" id="r_a2a77137f3f80301c7d8ce444eb8fb90e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a77137f3f80301c7d8ce444eb8fb90e">switch_active</a> = false</td></tr>
 <tr class="separator:a2a77137f3f80301c7d8ce444eb8fb90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6125b74bef8d1b3509e3ef80079eef3b" id="r_a6125b74bef8d1b3509e3ef80079eef3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6125b74bef8d1b3509e3ef80079eef3b">switch_case_run</a> = false</td></tr>
@@ -861,7 +863,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">yyunput(c, (<a class="code hl_define" href="#a790a191a93ef4d3b8c0bb43fd7480052">yytext_ptr</a>))</div>
-<div class="ttc" id="aapr__scanner_8cc_html_a790a191a93ef4d3b8c0bb43fd7480052"><div class="ttname"><a href="#a790a191a93ef4d3b8c0bb43fd7480052">yytext_ptr</a></div><div class="ttdeci">#define yytext_ptr</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:373</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_a790a191a93ef4d3b8c0bb43fd7480052"><div class="ttname"><a href="#a790a191a93ef4d3b8c0bb43fd7480052">yytext_ptr</a></div><div class="ttdeci">#define yytext_ptr</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:370</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -894,7 +896,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_define" href="#a817a6a24af62508b5a35f4bed5f56a2e">YY_CURRENT_BUFFER_LVALUE</a>-&gt;yy_at_bol)</div>
-<div class="ttc" id="aapr__scanner_8cc_html_a817a6a24af62508b5a35f4bed5f56a2e"><div class="ttname"><a href="#a817a6a24af62508b5a35f4bed5f56a2e">YY_CURRENT_BUFFER_LVALUE</a></div><div class="ttdeci">#define YY_CURRENT_BUFFER_LVALUE</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:329</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_a817a6a24af62508b5a35f4bed5f56a2e"><div class="ttname"><a href="#a817a6a24af62508b5a35f4bed5f56a2e">YY_CURRENT_BUFFER_LVALUE</a></div><div class="ttdeci">#define YY_CURRENT_BUFFER_LVALUE</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:326</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1015,8 +1017,8 @@ Variables</h2></td></tr>
 <div class="line">  <span class="comment">/* %% [3.0] code to copy yytext_ptr to yytext[] goes here, if %array \ */</span>                        \</div>
 <div class="line">  (yy_c_buf_p) = <a class="code hl_variable" href="#a61b01b6b236b05090b972f8fd95da539">yy_cp</a>;</div>
 <div class="ttc" id="aapr__scanner_8cc_html_a1b5865350b5ca5c1d69f429c2a652953"><div class="ttname"><a href="#a1b5865350b5ca5c1d69f429c2a652953">yyleng</a></div><div class="ttdeci">int yyleng</div></div>
-<div class="ttc" id="aapr__scanner_8cc_html_a61b01b6b236b05090b972f8fd95da539"><div class="ttname"><a href="#a61b01b6b236b05090b972f8fd95da539">yy_cp</a></div><div class="ttdeci">char * yy_cp</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:1213</div></div>
-<div class="ttc" id="aapr__scanner_8cc_html_aa749693ef7d0c10b137e887638fdc5b2"><div class="ttname"><a href="#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a></div><div class="ttdeci">char * yy_bp</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:1213</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_a61b01b6b236b05090b972f8fd95da539"><div class="ttname"><a href="#a61b01b6b236b05090b972f8fd95da539">yy_cp</a></div><div class="ttdeci">char * yy_cp</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:1211</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_aa749693ef7d0c10b137e887638fdc5b2"><div class="ttname"><a href="#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a></div><div class="ttdeci">char * yy_bp</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:1211</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1394,8 +1396,8 @@ Variables</h2></td></tr>
 <div class="line">    }                                                                                              \</div>
 <div class="line">    <a class="code hl_define" href="#a817a6a24af62508b5a35f4bed5f56a2e">YY_CURRENT_BUFFER_LVALUE</a>-&gt;yy_at_bol = at_bol;                                                  \</div>
 <div class="line">  }</div>
-<div class="ttc" id="aapr__scanner_8cc_html_aa093d500a6330d06d8e4760c494fac33"><div class="ttname"><a href="#aa093d500a6330d06d8e4760c494fac33">YY_CURRENT_BUFFER</a></div><div class="ttdeci">#define YY_CURRENT_BUFFER</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:324</div></div>
-<div class="ttc" id="aapr__scanner_8cc_html_ae7e51116e747d3390e7a6cfc6532834c"><div class="ttname"><a href="#ae7e51116e747d3390e7a6cfc6532834c">YY_BUF_SIZE</a></div><div class="ttdeci">#define YY_BUF_SIZE</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:194</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_aa093d500a6330d06d8e4760c494fac33"><div class="ttname"><a href="#aa093d500a6330d06d8e4760c494fac33">YY_CURRENT_BUFFER</a></div><div class="ttdeci">#define YY_CURRENT_BUFFER</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:321</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_ae7e51116e747d3390e7a6cfc6532834c"><div class="ttname"><a href="#ae7e51116e747d3390e7a6cfc6532834c">YY_BUF_SIZE</a></div><div class="ttdeci">#define YY_BUF_SIZE</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:191</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1480,7 +1482,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_define" href="#ab2708fd42cff29ce6a0a52b91bea40d1">YY_END_OF_BUFFER</a> + state + 1)</div>
-<div class="ttc" id="aapr__scanner_8cc_html_ab2708fd42cff29ce6a0a52b91bea40d1"><div class="ttname"><a href="#ab2708fd42cff29ce6a0a52b91bea40d1">YY_END_OF_BUFFER</a></div><div class="ttdeci">#define YY_END_OF_BUFFER</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:397</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_ab2708fd42cff29ce6a0a52b91bea40d1"><div class="ttname"><a href="#ab2708fd42cff29ce6a0a52b91bea40d1">YY_END_OF_BUFFER</a></div><div class="ttdeci">#define YY_END_OF_BUFFER</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:394</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1590,8 +1592,8 @@ Variables</h2></td></tr>
 <div class="line">    YY_RESTORE_YY_MORE_OFFSET(yy_c_buf_p) = <a class="code hl_variable" href="#a61b01b6b236b05090b972f8fd95da539">yy_cp</a> = <a class="code hl_variable" href="#aa749693ef7d0c10b137e887638fdc5b2">yy_bp</a> + yyless_macro_arg - <a class="code hl_define" href="#a68792d73820bc46a71d3d4e613f0b977">YY_MORE_ADJ</a>;        \</div>
 <div class="line">    <a class="code hl_define" href="#acc3486d769af4e4b2820346a0093cc79">YY_DO_BEFORE_ACTION</a>; <span class="comment">/* set up yytext again */</span>                                                 \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aapr__scanner_8cc_html_a68792d73820bc46a71d3d4e613f0b977"><div class="ttname"><a href="#a68792d73820bc46a71d3d4e613f0b977">YY_MORE_ADJ</a></div><div class="ttdeci">#define YY_MORE_ADJ</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:955</div></div>
-<div class="ttc" id="aapr__scanner_8cc_html_acc3486d769af4e4b2820346a0093cc79"><div class="ttname"><a href="#acc3486d769af4e4b2820346a0093cc79">YY_DO_BEFORE_ACTION</a></div><div class="ttdeci">#define YY_DO_BEFORE_ACTION</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:386</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_a68792d73820bc46a71d3d4e613f0b977"><div class="ttname"><a href="#a68792d73820bc46a71d3d4e613f0b977">YY_MORE_ADJ</a></div><div class="ttdeci">#define YY_MORE_ADJ</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:952</div></div>
+<div class="ttc" id="aapr__scanner_8cc_html_acc3486d769af4e4b2820346a0093cc79"><div class="ttname"><a href="#acc3486d769af4e4b2820346a0093cc79">YY_DO_BEFORE_ACTION</a></div><div class="ttdeci">#define YY_DO_BEFORE_ACTION</div><div class="ttdef"><b>Definition</b> apr_scanner.cc:383</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2036,6 +2038,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int if_state[<a class="el" href="#a041574860a5965bb34cfcaff92e076ae">MAX_IF_NESTING</a>] = {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ff5f2e5bd57cb77fd569ac7289197ba" name="a0ff5f2e5bd57cb77fd569ac7289197ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff5f2e5bd57cb77fd569ac7289197ba">&#9670;&#160;</a></span>last_output_nl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool last_output_nl = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
