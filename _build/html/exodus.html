@@ -546,6 +546,7 @@
 <li><a class="reference internal" href="#exodus.exodus.get_variable_number"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_number()</span></code></a></li>
 <li><a class="reference internal" href="#exodus.exodus.get_variable_truth_table"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_truth_table()</span></code></a></li>
 <li><a class="reference internal" href="#exodus.exodus.get_variable_values"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_values()</span></code></a></li>
+<li><a class="reference internal" href="#exodus.exodus.get_variable_values_multi_time"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_values_multi_time()</span></code></a></li>
 <li><a class="reference internal" href="#exodus.exodus.get_variable_values_time"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_values_time()</span></code></a></li>
 <li><a class="reference internal" href="#exodus.exodus.inquire"><code class="docutils literal notranslate"><span class="pre">exodus.inquire()</span></code></a></li>
 <li><a class="reference internal" href="#exodus.exodus.num_assembly"><code class="docutils literal notranslate"><span class="pre">exodus.num_assembly()</span></code></a></li>
@@ -718,7 +719,7 @@
                   
   <section id="module-exodus">
 <span id="exodus-module"></span><h1>exodus module<a class="headerlink" href="#module-exodus" title="Link to this heading">#</a></h1>
-<p>exodus.py v 1.21.3 (seacas-py3) is a python wrapper of some of the exodus library
+<p>exodus.py v 1.21.4 (seacas-py3) is a python wrapper of some of the exodus library
 (Python 3 Version)</p>
 <p>Exodus is a common database for multiple application codes (mesh
 generators, analysis codes, visualization software, etc.) affording
@@ -1460,7 +1461,8 @@ later.</p>
 <dd><p>Return True if <cite>value</cite> is in <cite>cls</cite>.</p>
 <p><cite>value</cite> is in <cite>cls</cite> if:
 1) <cite>value</cite> is a member of <cite>cls</cite>, or
-2) <cite>value</cite> is the value of one of the <cite>cls</cite>’s members.</p>
+2) <cite>value</cite> is the value of one of the <cite>cls</cite>’s members.
+3) <cite>value</cite> is a pseudo-member (flags)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2104,7 +2106,8 @@ later.</p>
 <dd><p>Return True if <cite>value</cite> is in <cite>cls</cite>.</p>
 <p><cite>value</cite> is in <cite>cls</cite> if:
 1) <cite>value</cite> is a member of <cite>cls</cite>, or
-2) <cite>value</cite> is the value of one of the <cite>cls</cite>’s members.</p>
+2) <cite>value</cite> is the value of one of the <cite>cls</cite>’s members.
+3) <cite>value</cite> is a pseudo-member (flags)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2207,7 +2210,8 @@ objects of the specified objType</p>
 <dd><p>Return True if <cite>value</cite> is in <cite>cls</cite>.</p>
 <p><cite>value</cite> is in <cite>cls</cite> if:
 1) <cite>value</cite> is a member of <cite>cls</cite>, or
-2) <cite>value</cite> is the value of one of the <cite>cls</cite>’s members.</p>
+2) <cite>value</cite> is the value of one of the <cite>cls</cite>’s members.
+3) <cite>value</cite> is a pseudo-member (flags)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2260,7 +2264,8 @@ objects of the specified objType</p>
 <dd><p>Return True if <cite>value</cite> is in <cite>cls</cite>.</p>
 <p><cite>value</cite> is in <cite>cls</cite> if:
 1) <cite>value</cite> is a member of <cite>cls</cite>, or
-2) <cite>value</cite> is the value of one of the <cite>cls</cite>’s members.</p>
+2) <cite>value</cite> is the value of one of the <cite>cls</cite>’s members.
+3) <cite>value</cite> is a pseudo-member (flags)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -4293,6 +4298,35 @@ block, variable name, and time step</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="exodus.exodus.get_variable_values_multi_time">
+<span class="sig-name descname"><span class="pre">get_variable_values_multi_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entityId</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">begin_step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_step</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#exodus.get_variable_values_multi_time"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.exodus.get_variable_values_multi_time" title="Link to this definition">#</a></dt>
+<dd><p>get list of <cite>objType</cite> variable values for a specified object id
+block, variable name, and 1-based range of time steps</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">evar_vals</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">get_variable_values_multi_time</span><span class="p">(</span><span class="s1">&#39;EX_ELEM_BLOCK&#39;</span><span class="p">,</span> <span class="n">elem_blk_id</span><span class="p">,</span>
+<span class="gp">... </span>                                           <span class="n">evar_name</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>objType</strong> (<a class="reference internal" href="#exodus.ex_entity_type" title="exodus.ex_entity_type"><em>ex_entity_type</em></a>) – type of object being queried</p></li>
+<li><p><strong>entityid</strong> (<em>ex_entity_id</em>) – id of the entity (block, set) <em>ID</em> (not <em>INDEX</em>)</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – name of variable</p></li>
+<li><p><strong>begin_step</strong> (<em>int</em>) – 1-based index of time step at beginning of range</p></li>
+<li><p><strong>end_step</strong> (<em>int</em>) – 1-based index of time step at end of range</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>if array_type == ‘ctype’</em> – &lt;list&lt;ctypes.c_double&gt;&gt;  evar_vals</p></li>
+<li><p><em>if array_type == ‘numpy’</em> – &lt;np_array&lt;double&gt;&gt;  evar_vals</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="exodus.exodus.get_variable_values_time">
 <span class="sig-name descname"><span class="pre">get_variable_values_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entityId</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_step</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exodus.html#exodus.get_variable_values_time"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#exodus.exodus.get_variable_values_time" title="Link to this definition">#</a></dt>
 <dd><p>get list of <cite>objType</cite> variable values for a specified object id
@@ -4305,7 +4339,7 @@ block, variable name, and range of time steps</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>objType</strong> (<a class="reference internal" href="#exodus.ex_entity_type" title="exodus.ex_entity_type"><em>ex_entity_type</em></a>) – type of object being queried</p></li>
-<li><p><strong>entityid</strong> (<em>ex_entity_id</em>) – id of the entity (block, set) <em>ID</em> (not <em>INDEX</em>)</p></li>
+<li><p><strong>entityid</strong> (<em>ex_entity_id</em>) – index/id of the entity (element, node)</p></li>
 <li><p><strong>var_name</strong> (<em>string</em>) – name of variable</p></li>
 <li><p><strong>start_step</strong> (<em>int</em>) – 1-based index of time step</p></li>
 <li><p><strong>end_step</strong> (<em>int</em>) – 1-based index of time step</p></li>
@@ -6684,6 +6718,7 @@ and <cite>blkIds</cite> is a list of block ids to add it to.</p></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus.exodus.get_variable_number"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_number()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus.exodus.get_variable_truth_table"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_truth_table()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus.exodus.get_variable_values"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_values()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus.exodus.get_variable_values_multi_time"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_values_multi_time()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus.exodus.get_variable_values_time"><code class="docutils literal notranslate"><span class="pre">exodus.get_variable_values_time()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus.exodus.inquire"><code class="docutils literal notranslate"><span class="pre">exodus.inquire()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus.exodus.num_assembly"><code class="docutils literal notranslate"><span class="pre">exodus.num_assembly()</span></code></a></li>
