@@ -75,7 +75,7 @@ var searchData=
   ['set_5fassembly_5ftype_72',['set_assembly_type',['../structIotm_1_1text__mesh_1_1AssemblyData.html#aecd24d0febd3bca83b3b64a22cca0759',1,'Iotm::text_mesh::AssemblyData']]],
   ['set_5fautomatic_5frestart_73',['set_automatic_restart',['../classIoss_1_1DynamicTopologyObserver.html#adfa3de162ea47ce7f9557243c9980a48',1,'Ioss::DynamicTopologyObserver']]],
   ['set_5fbbox_74',['set_bbox',['../classIogs_1_1GeneratedMesh.html#a2fabb3ca6c2480a309094c8cd99cc3bf',1,'Iogs::GeneratedMesh::set_bbox()'],['../classIogn_1_1GeneratedMesh.html#acd84560dcba7bffdbcdbe4c12318450f',1,'Iogn::GeneratedMesh::set_bbox()']]],
-  ['set_5fblock_5fomissions_75',['set_block_omissions',['../classIoss_1_1DatabaseIO.html#aee24957f624a9584cddd05c3148748e6',1,'Ioss::DatabaseIO']]],
+  ['set_5fblock_5fomissions_75',['set_block_omissions',['../classIoss_1_1DatabaseIO.html#aee24957f624a9584cddd05c3148748e6',1,'Ioss::DatabaseIO::set_block_omissions()'],['../classIoss_1_1Decomposition.html#a57ea02101f423f6f4391bc185b715ac5',1,'Ioss::Decomposition::set_block_omissions()']]],
   ['set_5fcell_5fglobal_5foffset_76',['set_cell_global_offset',['../classIoss_1_1StructuredBlock.html#aaace0ae89c136bda6ce43d7d3a5e3fc9',1,'Ioss::StructuredBlock']]],
   ['set_5fcell_5foffset_77',['set_cell_offset',['../classIoss_1_1StructuredBlock.html#a41a525d54dbf413575b1b586ab4a92d0',1,'Ioss::StructuredBlock']]],
   ['set_5fcommon_5fside_5ftopology_78',['set_common_side_topology',['../classIoss_1_1DatabaseIO.html#a8f7ffe6187feb373a5b37ea874228c6a',1,'Ioss::DatabaseIO']]],

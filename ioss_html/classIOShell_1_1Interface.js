@@ -18,6 +18,8 @@ var classIOShell_1_1Interface =
     [ "debug", "classIOShell_1_1Interface.html#aca48d73739f4fc9c6fc6524784e773d2", null ],
     [ "decomp_extra", "classIOShell_1_1Interface.html#ad45ca8d0172e791d2928bdf6ef64c228", null ],
     [ "decomp_method", "classIOShell_1_1Interface.html#a814d5360635bb26392a21c0a99a6c4df", null ],
+    [ "decomp_omitted_block_ids", "classIOShell_1_1Interface.html#a83e7355d524e45524e0c27676ab42c71", null ],
+    [ "decomp_omitted_block_names", "classIOShell_1_1Interface.html#ae23f262ed866b6852eb7e437a4f2ff4f", null ],
     [ "delete_info", "classIOShell_1_1Interface.html#a7b4271e333a90b0e14aef300ce0a4818", null ],
     [ "delete_qa", "classIOShell_1_1Interface.html#a9d14a38fee6ceef47fb88c9995971725", null ],
     [ "delete_timesteps", "classIOShell_1_1Interface.html#a14b0660c39361257f0c2c80d9fc07b71", null ],

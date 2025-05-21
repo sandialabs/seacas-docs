@@ -190,8 +190,11 @@ Auto-Decomposition-Related Properties</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">LOAD_BALANCE_THRESHOLD   </td><td class="markdownTableBodyCenter">{real} [1.4]   </td><td class="markdownTableBodyNone">CGNS-Structured only &ndash; Load imbalance permitted Load on Proc / Avg Load    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">DECOMPOSITION_EXTRA   </td><td class="markdownTableBodyCenter">{name},{multiplier}   </td><td class="markdownTableBodyNone">Specify the name of the element map or variable used if the decomposition method is <code>map</code> or <code>variable</code>. If it contains a comma, the value following the comma is used to scale (divide) the values in the map/variable. If it is 'auto', then all values will be scaled by <code>max_value/processorCount</code>   </td></tr>
+<td class="markdownTableBodyNone">DECOMPOSITION_EXTRA   </td><td class="markdownTableBodyCenter">{name},{multiplier}   </td><td class="markdownTableBodyNone">Specify the name of the element map or variable used if the decomposition method is <code>map</code> or <code>variable</code>. If it contains a comma, the value following the comma is used to scale (divide) the values in the map/variable. If it is 'auto', then all values will be scaled by <code>max_value/processorCount</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DECOMP_OMITTED_BLOCK_IDS   </td><td class="markdownTableBodyCenter">{id_list}   </td><td class="markdownTableBodyNone">A integer vector containing the   </td></tr>
 </table>
+<p>element block ids that should be ignored during the parallel decomposition. The blocks will still appear in the decomposition, but will not affect the load balance. If specified via <code>IOSS_PROPERTIES</code> can be a comma-separated string of ids. DECOMP_OMITTED_BLOCK_NAMES | {name_list} | A comma-separated list of block names that should be ignored during the parallel decomposition. The blocks will still appear in the decomposition, but will not affect the load balance.</p>
 <h3><a class="anchor" id="autotoc_md2"></a>
 Valid values for Decomposition Method</h3>
 <table class="markdownTable">
