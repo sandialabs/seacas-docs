@@ -1,7 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structarray__a__init.html#aa8d9869a0466246d4010e3f652a74968":[1,0,2,0],
-"structarray__a__init.html#ad1c10d6a4fc165bcaf1f7f4e26eb7e7b":[1,0,2,3],
 "structarray__a__init.html#ad25a162f126b0b7b58add24aad40e31c":[1,0,2,2],
 "structarray__c__init.html":[1,0,3],
 "structarray__c__init.html#a1bfe27b3ac7971676c3faf758399d662":[1,0,3,3],
