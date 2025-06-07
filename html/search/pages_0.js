@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['api_20documentation_0',['Exodus API Documentation',['../index.html',1,'']]],
-  ['api_20functions_1',['Mapping of nemesis API functions to Exodus API functions',['../nemesis-mapping.html',1,'']]],
-  ['api_20functions_20to_20exodus_20api_20functions_2',['Mapping of nemesis API functions to Exodus API functions',['../nemesis-mapping.html',1,'']]]
+  ['32_20bit_20and_2064_20bit_20integers_0',['Integer Bulkdata Storage Details (32-bit and 64-bit integers)',['../index.html#int64',1,'']]],
+  ['3d_20arbitrary_20polyhedra_20elements_20in_20exodus_1',['Storage of 3D arbitrary polyhedra elements in Exodus.',['../polyhedra.html#poly',1,'']]]
 ];

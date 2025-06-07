@@ -11,8 +11,8 @@ var searchData=
   ['sets_5fextra_5flist_8',['sets_extra_list',['../structex__set__specs.html#a8f153530e336bc5b8dea551062ad6512',1,'ex_set_specs']]],
   ['sets_5fids_9',['sets_ids',['../structex__set__specs.html#a06ecbec33a9895e028b54d80527eb3f9',1,'ex_set_specs']]],
   ['shuffle_10',['shuffle',['../structexi__file__item.html#ac8758aabdb253bd72a1f769232c8bdaa',1,'exi_file_item']]],
-  ['sideset_20element_20block_20global_20parameter_20routines_11',['Nodeset, Sideset &amp; Element Block Global Parameter Routines',['../nemesis-mapping.html#param',1,'']]],
-  ['sideset_20element_20block_20subset_20routines_12',['Nodeset, Sideset &amp; Element Block Subset Routines',['../nemesis-mapping.html#subset',1,'']]],
+  ['sideset_20element_20block_20global_20parameter_20routines_11',['Nodeset, Sideset &amp;amp; Element Block Global Parameter Routines',['../nemesis-mapping.html#param',1,'']]],
+  ['sideset_20element_20block_20subset_20routines_12',['Nodeset, Sideset &amp;amp; Element Block Subset Routines',['../nemesis-mapping.html#subset',1,'']]],
   ['size_13',['SIZE',['../ex__field__utils_8c.html#a0a66e439f8f40da64c5716ef51fca082',1,'ex_field_utils.c']]],
   ['size_14',['Variables controlling the compression, name size, and integer size.',['../group__FileOptions.html',1,'']]],
   ['size_20and_20integer_20size_15',['Variables controlling the compression, name size, and integer size.',['../group__FileOptions.html',1,'']]],
@@ -32,7 +32,7 @@ var searchData=
   ['subc_5fdof_5fordinal_29',['subc_dof_ordinal',['../structex__basis.html#a5b54991516b116c98321ba402d146bc5',1,'ex_basis']]],
   ['subc_5fnum_5fdof_30',['subc_num_dof',['../structex__basis.html#a5d7f2d4a8fe922a1bef6b3e6c9ff40db',1,'ex_basis']]],
   ['subc_5fordinal_31',['subc_ordinal',['../structex__basis.html#a073f65170c34de6dd4aceeafe1b06c38',1,'ex_basis']]],
-  ['subset_20routines_32',['Nodeset, Sideset &amp; Element Block Subset Routines',['../nemesis-mapping.html#subset',1,'']]],
+  ['subset_20routines_32',['Nodeset, Sideset &amp;amp; Element Block Subset Routines',['../nemesis-mapping.html#subset',1,'']]],
   ['suffices_33',['suffices',['../structex__field.html#af29c0b11fae1bd8d03287fedcca8ba95',1,'ex_field']]],
   ['support_34',['Polyhedral Element Support',['../polyhedra.html',1,'']]]
 ];

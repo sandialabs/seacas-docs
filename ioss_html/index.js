@@ -7,7 +7,7 @@ var index =
       [ "Auto-Decomposition-Related Properties", "index.html#autotoc_md1", [
         [ "Valid values for Decomposition Method", "index.html#autotoc_md2", null ]
       ] ],
-      [ "Output File Composition – Single File output from parallel run instead of file-per-processor", "index.html#autotoc_md3", null ],
+      [ "Output File Composition &ndash; Single File output from parallel run instead of file-per-processor", "index.html#autotoc_md3", null ],
       [ "Properties Related to byte size of reals and integers", "index.html#autotoc_md4", null ],
       [ "Properties related to field and sideset/surface interpretation", "index.html#autotoc_md5", null ],
       [ "Output Database-Related Properties", "index.html#autotoc_md6", null ],

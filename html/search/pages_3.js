@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['formats_0',['Exodus Formats',['../exodus_formats.html',1,'']]],
-  ['functions_1',['Mapping of nemesis API functions to Exodus API functions',['../nemesis-mapping.html',1,'']]],
-  ['functions_20to_20exodus_20api_20functions_2',['Mapping of nemesis API functions to Exodus API functions',['../nemesis-mapping.html',1,'']]]
+  ['_3a_0',[':',['../large_model.html#ex_create',1,'ex_create():'],['../large_model.html#ex_put_coord',1,'ex_put_coord():'],['../large_model.html#ex_put_init',1,'ex_put_init():'],['../large_model.html#ex_put_nodal_var',1,'ex_put_nodal_var():']]]
 ];

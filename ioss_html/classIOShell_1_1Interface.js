@@ -67,6 +67,8 @@ var classIOShell_1_1Interface =
     [ "selectedChangeSets", "classIOShell_1_1Interface.html#ab0b78e99e3089bbf723ff5292f1a8695", null ],
     [ "serialize_io_size", "classIOShell_1_1Interface.html#af0560116a65c386339b750984552dde3", null ],
     [ "shuffle", "classIOShell_1_1Interface.html#ae4c5a5a945d9c380bb65d94bb133e10b", null ],
+    [ "shuffle_times", "classIOShell_1_1Interface.html#a4f91a7b0f6bb3f9ded71efc511ace0db", null ],
+    [ "sort_times", "classIOShell_1_1Interface.html#a943694032d2793bdc1d6d01d1b12b6e4", null ],
     [ "split_cyclic", "classIOShell_1_1Interface.html#a6fb4ae578b6249727d1e3c787475dd45", null ],
     [ "split_times", "classIOShell_1_1Interface.html#a07d33285a42685b05117805847929080", null ],
     [ "statistics", "classIOShell_1_1Interface.html#a5f03a823093a125f42ca376005039ea7", null ],

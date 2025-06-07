@@ -55,8 +55,8 @@ var NAVTREE =
     [ "Mapping of nemesis API functions to Exodus API functions", "nemesis-mapping.html", [
       [ "Initial Information Routines", "nemesis-mapping.html#initial", null ],
       [ "Loadbalance Parameter Routines", "nemesis-mapping.html#lb", null ],
-      [ "Nodeset, Sideset & Element Block Global Parameter Routines", "nemesis-mapping.html#param", null ],
-      [ "Nodeset, Sideset & Element Block Subset Routines", "nemesis-mapping.html#subset", null ],
+      [ "Nodeset, Sideset &amp; Element Block Global Parameter Routines", "nemesis-mapping.html#param", null ],
+      [ "Nodeset, Sideset &amp; Element Block Subset Routines", "nemesis-mapping.html#subset", null ],
       [ "Variable Routines", "nemesis-mapping.html#variable", null ],
       [ "Number Map Routines", "nemesis-mapping.html#map", null ],
       [ "Communications Maps Routines", "nemesis-mapping.html#comm", null ]
@@ -107,3 +107,4 @@ var NAVTREEINDEX =
 
 var SYNCONMSG = 'click to disable panel synchronization';
 var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

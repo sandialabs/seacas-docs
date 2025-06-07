@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 854;
+var viewWidth = 860;
 var viewHeight = 204;
 var sectionId = 'dynsection-1';
 </script>
@@ -59,13 +59,13 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="846,-168.25 621.5,-168.25 621.5,-92.75 846,-92.75 846,-168.25"/>
-<text text-anchor="start" x="629.5" y="-154.75" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::detail_hopscotch</text>
-<text text-anchor="start" x="629.5" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">_hash::hopscotch_hash</text>
-<text text-anchor="start" x="629.5" y="-132.25" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ValueType, KeySelect,</text>
-<text text-anchor="start" x="629.5" y="-121" font-family="Helvetica,sans-Serif" font-size="10.00"> ValueSelect, Hash, KeyEqual,</text>
-<text text-anchor="start" x="629.5" y="-109.75" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator, NeighborhoodSize,</text>
-<text text-anchor="middle" x="733.75" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00"> StoreHash, GrowthPolicy, OverflowContainer &gt;</text>
+<polygon fill="#999999" stroke="#666666" points="852,-168.25 627.5,-168.25 627.5,-92.75 852,-92.75 852,-168.25"/>
+<text text-anchor="start" x="635.5" y="-154.75" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::detail_hopscotch</text>
+<text text-anchor="start" x="635.5" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">_hash::hopscotch_hash</text>
+<text text-anchor="start" x="635.5" y="-132.25" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ValueType, KeySelect,</text>
+<text text-anchor="start" x="635.5" y="-121" font-family="Helvetica,sans-Serif" font-size="10.00"> ValueSelect, Hash, KeyEqual,</text>
+<text text-anchor="start" x="635.5" y="-109.75" font-family="Helvetica,sans-Serif" font-size="10.00"> Allocator, NeighborhoodSize,</text>
+<text text-anchor="middle" x="739.75" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00"> StoreHash, GrowthPolicy, OverflowContainer &gt;</text>
 </a>
 </g>
 </g>
@@ -73,8 +73,8 @@ var sectionId = 'dynsection-1';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="474.88,-196.12 435.62,-196.12 435.62,-176.88 474.88,-176.88 474.88,-196.12"/>
-<text text-anchor="middle" x="455.25" y="-182.62" font-family="Helvetica,sans-Serif" font-size="10.00">Hash</text>
+<polygon fill="white" stroke="#666666" points="477.88,-196.12 438.62,-196.12 438.62,-176.88 477.88,-176.88 477.88,-196.12"/>
+<text text-anchor="middle" x="458.25" y="-182.62" font-family="Helvetica,sans-Serif" font-size="10.00">Hash</text>
 </a>
 </g>
 </g>
@@ -82,8 +82,8 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#8b1a1a" d="M486.18,-180.44C518.56,-173.88 572.14,-163.03 621.1,-153.11"/>
-<polygon fill="#8b1a1a" stroke="#8b1a1a" points="485.84,-176.94 476.74,-182.35 487.23,-183.8 485.84,-176.94"/>
+<path fill="none" stroke="#8b1a1a" d="M489.12,-180.51C522.1,-173.91 577.14,-162.88 627.17,-152.86"/>
+<polygon fill="#8b1a1a" stroke="#8b1a1a" points="488.62,-177.04 479.51,-182.44 490,-183.91 488.62,-177.04"/>
 </a>
 </g>
 </g>
@@ -91,8 +91,8 @@ var sectionId = 'dynsection-1';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="484.25,-159.12 426.25,-159.12 426.25,-139.88 484.25,-139.88 484.25,-159.12"/>
-<text text-anchor="middle" x="455.25" y="-145.62" font-family="Helvetica,sans-Serif" font-size="10.00">KeyEqual</text>
+<polygon fill="white" stroke="#666666" points="487.25,-159.12 429.25,-159.12 429.25,-139.88 487.25,-139.88 487.25,-159.12"/>
+<text text-anchor="middle" x="458.25" y="-145.62" font-family="Helvetica,sans-Serif" font-size="10.00">KeyEqual</text>
 </a>
 </g>
 </g>
@@ -100,8 +100,8 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#8b1a1a" d="M495.88,-146.78C528.64,-144.53 576.81,-141.22 621.17,-138.17"/>
-<polygon fill="#8b1a1a" stroke="#8b1a1a" points="495.79,-143.27 486.05,-147.45 496.27,-150.26 495.79,-143.27"/>
+<path fill="none" stroke="#8b1a1a" d="M498.69,-146.82C532.08,-144.55 581.62,-141.18 627.04,-138.09"/>
+<polygon fill="#8b1a1a" stroke="#8b1a1a" points="498.84,-143.3 489.1,-147.47 499.31,-150.28 498.84,-143.3"/>
 </a>
 </g>
 </g>
@@ -109,8 +109,8 @@ var sectionId = 'dynsection-1';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="492.5,-122.12 418,-122.12 418,-102.88 492.5,-102.88 492.5,-122.12"/>
-<text text-anchor="middle" x="455.25" y="-108.62" font-family="Helvetica,sans-Serif" font-size="10.00">GrowthPolicy</text>
+<polygon fill="white" stroke="#666666" points="495.5,-122.12 421,-122.12 421,-102.88 495.5,-102.88 495.5,-122.12"/>
+<text text-anchor="middle" x="458.25" y="-108.62" font-family="Helvetica,sans-Serif" font-size="10.00">GrowthPolicy</text>
 </a>
 </g>
 </g>
@@ -118,8 +118,8 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#8b1a1a" d="M504.3,-115.63C536.55,-117.73 580.43,-120.58 621.12,-123.23"/>
-<polygon fill="#8b1a1a" stroke="#8b1a1a" points="504.68,-112.15 494.48,-114.99 504.23,-119.13 504.68,-112.15"/>
+<path fill="none" stroke="#8b1a1a" d="M506.91,-115.57C539.89,-117.69 585.19,-120.61 627.01,-123.3"/>
+<polygon fill="#8b1a1a" stroke="#8b1a1a" points="507.5,-112.1 497.3,-114.95 507.05,-119.09 507.5,-112.1"/>
 </a>
 </g>
 </g>
@@ -127,11 +127,11 @@ var sectionId = 'dynsection-1';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="534.5,-85 376,-85 376,-32 534.5,-32 534.5,-85"/>
-<text text-anchor="start" x="384" y="-71.5" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::detail_hopscotch</text>
-<text text-anchor="start" x="384" y="-60.25" font-family="Helvetica,sans-Serif" font-size="10.00">_hash::hopscotch_bucket</text>
-<text text-anchor="start" x="384" y="-49" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ValueType, NeighborhoodSize,</text>
-<text text-anchor="middle" x="455.25" y="-37.75" font-family="Helvetica,sans-Serif" font-size="10.00"> StoreHash &gt;</text>
+<polygon fill="white" stroke="#666666" points="537.5,-85 379,-85 379,-32 537.5,-32 537.5,-85"/>
+<text text-anchor="start" x="387" y="-71.5" font-family="Helvetica,sans-Serif" font-size="10.00">tsl::detail_hopscotch</text>
+<text text-anchor="start" x="387" y="-60.25" font-family="Helvetica,sans-Serif" font-size="10.00">_hash::hopscotch_bucket</text>
+<text text-anchor="start" x="387" y="-49" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ValueType, NeighborhoodSize,</text>
+<text text-anchor="middle" x="458.25" y="-37.75" font-family="Helvetica,sans-Serif" font-size="10.00"> StoreHash &gt;</text>
 </a>
 </g>
 </g>
@@ -139,11 +139,11 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node5&#45;&gt;Node1</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M545.62,-81.77C569.65,-88.03 595.95,-94.88 621.03,-101.41"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="546.77,-78.45 536.21,-79.32 545,-85.23 546.77,-78.45"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M548.75,-81.55C573.68,-87.98 601.08,-95.03 627.11,-101.74"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="549.87,-78.23 539.32,-79.13 548.13,-85.01 549.87,-78.23"/>
 </a>
 </g>
-<text text-anchor="middle" x="578" y="-98.41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> m_buckets</text>
+<text text-anchor="start" x="558.5" y="-101.41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">m_buckets</text>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
@@ -160,8 +160,8 @@ var sectionId = 'dynsection-1';
 <g id="edge5_Node000005_Node000006" class="edge">
 <title>Node6&#45;&gt;Node5</title>
 <g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M195.01,-84.15C248.63,-78.85 320.89,-71.7 375.51,-66.29"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="194.98,-80.64 185.38,-85.11 195.67,-87.6 194.98,-80.64"/>
+<path fill="none" stroke="#63b8ff" d="M195.46,-85.68C242.91,-81.81 305.61,-76.37 361,-70.5 366.78,-69.89 372.75,-69.22 378.75,-68.53"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="195.23,-82.19 185.55,-86.49 195.8,-89.17 195.23,-82.19"/>
 </a>
 </g>
 </g>
@@ -181,11 +181,11 @@ var sectionId = 'dynsection-1';
 <g id="edge6_Node000005_Node000007" class="edge">
 <title>Node7&#45;&gt;Node5</title>
 <g id="a_edge6_Node000005_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M250.95,-38.99C293.1,-43.04 338.52,-47.4 375.72,-50.96"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="251.53,-35.53 241.25,-38.06 250.87,-42.5 251.53,-35.53"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M251.29,-38.91C294.27,-43 340.7,-47.42 378.58,-51.02"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="251.65,-35.43 241.37,-37.97 250.99,-42.4 251.65,-35.43"/>
 </a>
 </g>
-<text text-anchor="middle" x="307.75" y="-50.79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> m_neighborhood_infos</text>
+<text text-anchor="start" x="260.5" y="-53.79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">m_neighborhood_infos</text>
 </g>
 </g>
 </svg>

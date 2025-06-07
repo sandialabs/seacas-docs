@@ -6,7 +6,7 @@ var searchData=
   ['check_5fvalid_5fside_3',['check_valid_side',['../ex__get__side__set__node__list_8c.html#a610cf65d064f4c9b9b5ecf9940e6bfee',1,'ex_get_side_set_node_list.c']]],
   ['circle_20and_20sphere_4',['Circle and Sphere',['../element_types.html#circle',1,'']]],
   ['classic_5',['Classic',['../exodus_formats.html#nc4',1,'Netcdf-4 Classic'],['../exodus_formats.html#nc4nc',1,'Netcdf-4 Non-Classic'],['../exodus_formats.html#normal',1,'Normal, or Classic']]],
-  ['codes_20exerrval_20return_20values_6',['Error return codes - #exerrval return values',['../group__ErrorReturnCodes.html',1,'']]],
+  ['codes_20exerrval_20return_20values_6',['Error return codes - exerrval return values',['../group__ErrorReturnCodes.html',1,'']]],
   ['communications_20maps_20routines_7',['Communications Maps Routines',['../nemesis-mapping.html#comm',1,'']]],
   ['component_5fseparator_8',['component_separator',['../structex__field.html#aec04a40bba83f7adbad6716d6e5bb1b1',1,'ex_field']]],
   ['compression_20name_20length_20file_20type_9',['Database Options (Compression, Name Length, File Type)',['../index.html#db_options',1,'']]],

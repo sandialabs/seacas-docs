@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 864;
+var viewWidth = 870;
 var viewHeight = 120;
 var sectionId = 'dynsection-1';
 </script>
@@ -59,9 +59,9 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="856.25,-85.12 710.5,-85.12 710.5,-54.62 856.25,-54.62 856.25,-85.12"/>
-<text text-anchor="start" x="718.5" y="-71.62" font-family="Helvetica,sans-Serif" font-size="10.00">Iotm::text_mesh::Sideset</text>
-<text text-anchor="middle" x="783.38" y="-60.38" font-family="Helvetica,sans-Serif" font-size="10.00">Skinner&lt; EntityId, Topology &gt;</text>
+<polygon fill="#999999" stroke="#666666" points="862.25,-85.12 716.5,-85.12 716.5,-54.62 862.25,-54.62 862.25,-85.12"/>
+<text text-anchor="start" x="724.5" y="-71.62" font-family="Helvetica,sans-Serif" font-size="10.00">Iotm::text_mesh::Sideset</text>
+<text text-anchor="middle" x="789.38" y="-60.38" font-family="Helvetica,sans-Serif" font-size="10.00">Skinner&lt; EntityId, Topology &gt;</text>
 </a>
 </g>
 </g>
@@ -69,9 +69,9 @@ var sectionId = 'dynsection-1';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classIotm_1_1text__mesh_1_1SideAdjacencyGraph.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="596.5,-112.12 438,-112.12 438,-81.62 596.5,-81.62 596.5,-112.12"/>
-<text text-anchor="start" x="446" y="-98.62" font-family="Helvetica,sans-Serif" font-size="10.00">Iotm::text_mesh::SideAdjacency</text>
-<text text-anchor="middle" x="517.25" y="-87.38" font-family="Helvetica,sans-Serif" font-size="10.00">Graph&lt; EntityId, Topology &gt;</text>
+<polygon fill="white" stroke="#666666" points="599.5,-112.12 441,-112.12 441,-81.62 599.5,-81.62 599.5,-112.12"/>
+<text text-anchor="start" x="449" y="-98.62" font-family="Helvetica,sans-Serif" font-size="10.00">Iotm::text_mesh::SideAdjacency</text>
+<text text-anchor="middle" x="520.25" y="-87.38" font-family="Helvetica,sans-Serif" font-size="10.00">Graph&lt; EntityId, Topology &gt;</text>
 </a>
 </g>
 </g>
@@ -79,8 +79,8 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M607.9,-87.71C641.17,-84.31 678.47,-80.5 710.01,-77.27"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="607.88,-84.19 598.29,-88.69 608.59,-91.16 607.88,-84.19"/>
+<path fill="none" stroke="#63b8ff" d="M611.35,-87.77C645.49,-84.32 683.88,-80.44 716.16,-77.17"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="611.05,-84.28 601.46,-88.77 611.76,-91.24 611.05,-84.28"/>
 </a>
 </g>
 </g>
@@ -88,10 +88,10 @@ var sectionId = 'dynsection-1';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="structIotm_1_1text__mesh_1_1TextMeshData.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="592.38,-63.75 442.12,-63.75 442.12,-22 592.38,-22 592.38,-63.75"/>
-<text text-anchor="start" x="450.12" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00">Iotm::text_mesh::TextMesh</text>
-<text text-anchor="start" x="450.12" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00">Data&lt; EntityId, Iotm::Topology</text>
-<text text-anchor="middle" x="517.25" y="-27.75" font-family="Helvetica,sans-Serif" font-size="10.00">MapEntry &gt;</text>
+<polygon fill="white" stroke="#666666" points="595.38,-63.75 445.12,-63.75 445.12,-22 595.38,-22 595.38,-63.75"/>
+<text text-anchor="start" x="453.12" y="-50.25" font-family="Helvetica,sans-Serif" font-size="10.00">Iotm::text_mesh::TextMesh</text>
+<text text-anchor="start" x="453.12" y="-39" font-family="Helvetica,sans-Serif" font-size="10.00">Data&lt; EntityId, Iotm::Topology</text>
+<text text-anchor="middle" x="520.25" y="-27.75" font-family="Helvetica,sans-Serif" font-size="10.00">MapEntry &gt;</text>
 </a>
 </g>
 </g>
@@ -99,11 +99,11 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M603.94,-51.64C638.2,-55.14 677.22,-59.13 710.02,-62.48"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="604.34,-48.16 594.03,-50.62 603.62,-55.12 604.34,-48.16"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M606.86,-49.86C635.97,-52.4 668.67,-55.43 698.5,-58.62 704.29,-59.24 710.28,-59.92 716.29,-60.62"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="607.25,-46.38 596.98,-49 606.64,-53.35 607.25,-46.38"/>
 </a>
 </g>
-<text text-anchor="middle" x="653.5" y="-62.12" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> m_textMeshData</text>
+<text text-anchor="start" x="620.5" y="-63.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">m_textMeshData</text>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
@@ -118,11 +118,11 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node4&#45;&gt;Node3</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M362.18,-56.18C388.36,-53.92 416.72,-51.47 441.88,-49.3"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="361.89,-52.69 352.23,-57.04 362.49,-59.67 361.89,-52.69"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M361.79,-56.31C389.08,-53.98 418.83,-51.44 445.04,-49.21"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="361.84,-52.79 352.17,-57.13 362.43,-59.77 361.84,-52.79"/>
 </a>
 </g>
-<text text-anchor="middle" x="400.12" y="-55.75" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> partIds</text>
+<text text-anchor="start" x="386.62" y="-59.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">partIds</text>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
@@ -138,11 +138,11 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000003_Node000005" class="edge">
 <title>Node5&#45;&gt;Node3</title>
 <g id="a_edge4_Node000003_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M374.01,-30C396.67,-32.05 420.33,-34.2 441.69,-36.13"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="374.4,-26.53 364.13,-29.11 373.77,-33.5 374.4,-26.53"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M373.69,-26.56C390.18,-27.74 407.08,-29.1 423,-30.62 430.04,-31.3 437.36,-32.09 444.69,-32.92"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="374.08,-23.08 363.87,-25.88 373.6,-30.06 374.08,-23.08"/>
 </a>
 </g>
-<text text-anchor="middle" x="400.12" y="-35.6" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> sidesets</text>
+<text text-anchor="start" x="383.25" y="-35.38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">sidesets</text>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">

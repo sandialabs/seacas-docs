@@ -61,6 +61,7 @@ var classIoss_1_1GroupingEntity =
     [ "put_field_data", "classIoss_1_1GroupingEntity.html#a9b65d41c5f8ebe6a5b9d90be91c40d5c", null ],
     [ "really_delete_database", "classIoss_1_1GroupingEntity.html#af27bee6de570e447fa867fcaffdcefa7", null ],
     [ "reset_database", "classIoss_1_1GroupingEntity.html#a6a551e410415cddf8fb56336f416a85b", null ],
+    [ "reset_entity_count", "classIoss_1_1GroupingEntity.html#a6087c6b5f68f9543877d4d1acc47242d", null ],
     [ "set_database", "classIoss_1_1GroupingEntity.html#ae1ef12c499a3aaebd3aa48b8dac91f5b", null ],
     [ "set_name", "classIoss_1_1GroupingEntity.html#ae73cc0a8136e0b96813e29f1577d5979", null ],
     [ "set_state", "classIoss_1_1GroupingEntity.html#aaa8978249032116d810293fcce08b8ca", null ],
