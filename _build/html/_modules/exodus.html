@@ -276,7 +276,7 @@
                   
   <h1>Source code for exodus</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">exodus.py v 1.21.4 (seacas-py3) is a python wrapper of some of the exodus library</span>
+<span class="sd">exodus.py v 1.21.5 (seacas-py3) is a python wrapper of some of the exodus library</span>
 <span class="sd">(Python 3 Version)</span>
 
 <span class="sd">Exodus is a common database for multiple application codes (mesh</span>
@@ -355,10 +355,10 @@
 
 <span class="n">EXODUS_PY_COPYRIGHT_AND_LICENSE</span> <span class="o">=</span> <span class="vm">__doc__</span>
 
-<span class="n">EXODUS_PY_VERSION</span> <span class="o">=</span> <span class="s2">&quot;1.21.4 (seacas-py3)&quot;</span>
+<span class="n">EXODUS_PY_VERSION</span> <span class="o">=</span> <span class="s2">&quot;1.21.5 (seacas-py3)&quot;</span>
 
 <span class="n">EXODUS_PY_COPYRIGHT</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">You are using exodus.py v 1.21.4 (seacas-py3), a python wrapper of some of the exodus library.</span>
+<span class="s2">You are using exodus.py v 1.21.5 (seacas-py3), a python wrapper of some of the exodus library.</span>
 
 <span class="s2">Copyright (c) 2013-2023 National Technology &amp;</span>
 <span class="s2">Engineering Solutions of Sandia, LLC (NTESS).  Under the terms of</span>
@@ -1040,6 +1040,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">use_numpy</span> <span class="o">=</span> <span class="kc">False</span>
 
+        <span class="bp">self</span><span class="o">.</span><span class="n">numBlob</span> <span class="o">=</span> <span class="n">numBlob</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">EXODUS_LIB</span> <span class="o">=</span> <span class="n">EXODUS_LIB</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">fileName</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">basename</span> <span class="o">=</span> <span class="n">basename</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
@@ -3160,12 +3161,16 @@
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        get the number of blobs in the model</span>
 
-<span class="sd">        &gt;&gt;&gt; num_assembly = exo.num_blob()</span>
+<span class="sd">        &gt;&gt;&gt; num_blob = exo.num_blob()</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        num_blob : int</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">numBlob</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numBlob</span><span class="p">,</span> <span class="nb">int</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">numBlob</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">numBlob</span><span class="o">.</span><span class="n">value</span></div>
 
 
