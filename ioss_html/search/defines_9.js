@@ -6,6 +6,5 @@ var searchData=
   ['ioss_5fmaybe_5funused_3',['IOSS_MAYBE_UNUSED',['../Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11',1,'Ioss_CodeTypes.h']]],
   ['ioss_5fnodiscard_4',['IOSS_NODISCARD',['../Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9',1,'Ioss_CodeTypes.h']]],
   ['ioss_5fnoop_5fgfi_5',['IOSS_NOOP_GFI',['../Ioss__CodeTypes_8h.html#ab4fc25120249ef3e451a6543f1351144',1,'Ioss_CodeTypes.h']]],
-  ['ioss_5fnoop_5fpfi_6',['IOSS_NOOP_PFI',['../Ioss__CodeTypes_8h.html#a8b087b20a3bac9207f6f19a8545e7d64',1,'Ioss_CodeTypes.h']]],
-  ['ioss_5fpar_5funused_7',['IOSS_PAR_UNUSED',['../Ioss__CodeTypes_8h.html#ade618da39381934d0f1a32f3206d8369',1,'Ioss_CodeTypes.h']]]
+  ['ioss_5fnoop_5fpfi_6',['IOSS_NOOP_PFI',['../Ioss__CodeTypes_8h.html#a8b087b20a3bac9207f6f19a8545e7d64',1,'Ioss_CodeTypes.h']]]
 ];

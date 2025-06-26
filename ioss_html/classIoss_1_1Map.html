@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a175207a460c4410da64a705121cc38d8" id="r_a175207a460c4410da64a705121cc38d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a175207a460c4410da64a705121cc38d8">size</a> () const</td></tr>
 <tr class="memitem:a971600089854c1c40ed4293745978958" id="r_a971600089854c1c40ed4293745978958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a971600089854c1c40ed4293745978958">set_is_sequential</a> (bool yesno)</td></tr>
 <tr class="memitem:ade017633891fb2155441fdd29aa76bd5" id="r_ade017633891fb2155441fdd29aa76bd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade017633891fb2155441fdd29aa76bd5">is_sequential</a> (bool check_all=false) const</td></tr>
-<tr class="memitem:ab5b9f9efc6c50d676989ae6660bff073" id="r_ab5b9f9efc6c50d676989ae6660bff073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5b9f9efc6c50d676989ae6660bff073">global_to_local</a> (int64_t global, bool must_exist=true) const</td></tr>
+<tr class="memitem:adee1a2e4f2fd699691aba1430d593cf1" id="r_adee1a2e4f2fd699691aba1430d593cf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adee1a2e4f2fd699691aba1430d593cf1">global_to_local</a> (int64_t global, bool must_exist=true, bool output_error=false) const</td></tr>
 <tr class="memitem:a2e65d0ea8d6b141ed17a929e4c610b41" id="r_a2e65d0ea8d6b141ed17a929e4c610b41"><td class="memTemplParams" colspan="2">template&lt;typename INT&gt; </td></tr>
 <tr class="memitem:a2e65d0ea8d6b141ed17a929e4c610b41 template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e65d0ea8d6b141ed17a929e4c610b41">set_map</a> (INT *ids, size_t count, size_t offset, bool in_define_mode=true)</td></tr>
 <tr class="memitem:abfaa5f83928a9d0c3691387e86050275" id="r_abfaa5f83928a9d0c3691387e86050275"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfaa5f83928a9d0c3691387e86050275">set_default</a> (size_t count, size_t offset=0)</td></tr>
@@ -135,7 +135,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a1ca8dab50743f46ae4a02d6d23d7a99e template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ca8dab50743f46ae4a02d6d23d7a99e">map_data</a> (INT *data, size_t count) const</td></tr>
 <tr class="memitem:af1ad6013c22431a227b9845ef1cdfa98" id="r_af1ad6013c22431a227b9845ef1cdfa98"><td class="memTemplParams" colspan="2">template&lt;typename INT&gt; </td></tr>
 <tr class="memitem:af1ad6013c22431a227b9845ef1cdfa98 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1ad6013c22431a227b9845ef1cdfa98">map_implicit_data</a> (INT *data, size_t count, size_t offset) const</td></tr>
-<tr class="memitem:aba4b4191dd39da5f8a68ba89d3f5b868" id="r_aba4b4191dd39da5f8a68ba89d3f5b868"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba4b4191dd39da5f8a68ba89d3f5b868">global_to_local_nl</a> (int64_t global, bool must_exist=true) const</td></tr>
+<tr class="memitem:a8546312c8680e8ae384df9299142b452" id="r_a8546312c8680e8ae384df9299142b452"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8546312c8680e8ae384df9299142b452">global_to_local_nl</a> (int64_t global, bool must_exist=true, bool output_error=false) const</td></tr>
 <tr class="memitem:ac8f10357483c13a871c2dc9a53f80329" id="r_ac8f10357483c13a871c2dc9a53f80329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8f10357483c13a871c2dc9a53f80329">build_reorder_map_nl</a> (int64_t start, int64_t count)</td></tr>
 <tr class="memitem:aff1ddb3ddd930936d63531c0a5c7d35a" id="r_aff1ddb3ddd930936d63531c0a5c7d35a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff1ddb3ddd930936d63531c0a5c7d35a">build_reverse_map_nl</a> (int64_t num_to_get, int64_t offset)</td></tr>
 <tr class="memitem:a25512bfc7eaa63d30a2c68ba3979adbc" id="r_a25512bfc7eaa63d30a2c68ba3979adbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25512bfc7eaa63d30a2c68ba3979adbc">verify_no_duplicate_ids</a> (std::vector&lt; <a class="el" href="namespaceIoss.html#a82e13dda958648af3a02b265b1b7edd9">Ioss::IdPair</a> &gt; &amp;reverse_map)</td></tr>
@@ -375,8 +375,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab5b9f9efc6c50d676989ae6660bff073" name="ab5b9f9efc6c50d676989ae6660bff073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5b9f9efc6c50d676989ae6660bff073">&#9670;&#160;</a></span>global_to_local()</h2>
+<a id="adee1a2e4f2fd699691aba1430d593cf1" name="adee1a2e4f2fd699691aba1430d593cf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee1a2e4f2fd699691aba1430d593cf1">&#9670;&#160;</a></span>global_to_local()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,15 +389,20 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>must_exist</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) const</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>must_exist</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>output_error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aba4b4191dd39da5f8a68ba89d3f5b868" name="aba4b4191dd39da5f8a68ba89d3f5b868"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba4b4191dd39da5f8a68ba89d3f5b868">&#9670;&#160;</a></span>global_to_local_nl()</h2>
+<a id="a8546312c8680e8ae384df9299142b452" name="a8546312c8680e8ae384df9299142b452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8546312c8680e8ae384df9299142b452">&#9670;&#160;</a></span>global_to_local_nl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +418,12 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>must_exist</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) const</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>must_exist</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>output_error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;) const</td>
         </tr>
       </table>
   </td>

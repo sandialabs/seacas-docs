@@ -7,7 +7,6 @@ var Ioss__CodeTypes_8h =
     [ "IOSS_NODISCARD", "Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9", null ],
     [ "IOSS_NOOP_GFI", "Ioss__CodeTypes_8h.html#ab4fc25120249ef3e451a6543f1351144", null ],
     [ "IOSS_NOOP_PFI", "Ioss__CodeTypes_8h.html#a8b087b20a3bac9207f6f19a8545e7d64", null ],
-    [ "IOSS_PAR_UNUSED", "Ioss__CodeTypes_8h.html#ade618da39381934d0f1a32f3206d8369", null ],
     [ "SEACAS_HAVE_CGNS", "Ioss__CodeTypes_8h.html#a9c11b8eb30c70744f7e806e17f93065b", null ],
     [ "SEACAS_HAVE_EXODUS", "Ioss__CodeTypes_8h.html#a9d87d93b0f581266acdb536a69635d00", null ],
     [ "SEACAS_HAVE_EXONULL", "Ioss__CodeTypes_8h.html#a1c171d41949ece3e071f13a94c601584", null ],
