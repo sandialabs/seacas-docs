@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SEACAS &#8212; SEACAS 2025/03/20 documentation</title>
+    <title>SEACAS &#8212; SEACAS 2025/06/27 documentation</title>
   
   
   
@@ -38,7 +38,7 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="_static/documentation_options.js?v=8c6d9891"></script>
+    <script src="_static/documentation_options.js?v=1e3ac42e"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
@@ -108,7 +108,7 @@
   
   
   
-    <p class="title logo__title">SEACAS 2025/03/20 documentation</p>
+    <p class="title logo__title">SEACAS 2025/06/27 documentation</p>
   
 </a></div>
     
@@ -225,7 +225,7 @@
     <h3><a href="#">Table of Contents</a></h3>
     <ul>
 <li><a class="reference internal" href="#">SEACAS</a></li>
-<li><a class="reference internal" href="#exodus-library">Exodus Library</a></li>
+<li><a class="reference internal" href="#exodus">Exodus</a></li>
 <li><a class="reference internal" href="#exodus-python-modules">Exodus Python Modules</a></li>
 <li><a class="reference internal" href="#ioss-library">IOSS Library</a></li>
 <li><a class="reference internal" href="#supes-library">SUPES Library</a></li>
@@ -254,8 +254,7 @@
 <li><a class="reference internal" href="#io-info">IO_Info</a></li>
 <li><a class="reference internal" href="#io-modify">IO_Modify</a></li>
 <li><a class="reference internal" href="#io-shell">IO_Shell</a></li>
-<li><a class="reference internal" href="#mapvar">Mapvar</a></li>
-<li><a class="reference internal" href="#mapvar-kd">Mapvar-kd</a></li>
+<li><a class="reference internal" href="#mapvar-mapvar-kd">Mapvar / Mapvar-kd</a></li>
 <li><a class="reference internal" href="#mat2exo">Mat2Exo</a></li>
 <li><a class="reference internal" href="#nas2exo">Nas2Exo</a></li>
 <li><a class="reference internal" href="#nem-join">nem_join</a></li>
@@ -322,30 +321,31 @@ postprocessing, graphics, database translation applications, and
 support libraries. It is used by analysts at SNL and elsewhere and
 runs on laptops to large HPC systems.</p>
 <dl class="simple">
-<dt>WIKI: FAQ and Extensions</dt><dd><p>The <a class="reference external" href="https://github.com/sandialabs/seacas/wiki">SEACAS WIKI</a>
+<dt><a class="reference external" href="https://github.com/sandialabs/seacas/wiki">WIKI: FAQ and Extensions</a></dt><dd><p>The <a class="reference external" href="https://github.com/sandialabs/seacas/wiki">SEACAS WIKI</a>
 contains some FAQ-like answers and also a listing of proposed
 Exodus extensions.</p>
 </dd>
-<dt><a class="reference external" href="../../changes.html">Recent Changes</a> Documents changes to the SEACAS</dt><dd><p>applications and libraries that may not yet be covered in the
-documentation.</p>
+<dt><a class="reference external" href="../../changes.html">Recent Changes</a></dt><dd><p>Documents changes to the SEACAS applications and libraries that may
+not yet be covered in the documentation.</p>
 </dd>
 <dt><a class="reference external" href="../../Parallel_Instruction.pdf">Using SEACAS on Parallel Computers</a></dt><dd><p>Out-of-date, but some information is still useful.  Instructions to
 run the SEACAS/ACCESS system on Parallel computers. Currently
 specific to Sandia National Laboratories systems.</p>
 </dd>
-<dt><strong>Download</strong></dt><dd><p>SEACAS source code and build instructions can be accessed at &lt;<a class="github reference external" href="https://github.com/sandialabs/seacas">sandialabs/seacas</a>&gt;.</p>
+<dt><a class="reference external" href="https://github.com/sandialabs/seacas">Download</a></dt><dd><p>SEACAS source code and build instructions can be accessed at &lt;<a class="github reference external" href="https://github.com/sandialabs/seacas">sandialabs/seacas</a>&gt;.</p>
 </dd>
 </dl>
 </section>
-<section id="exodus-library">
-<h1>Exodus Library<a class="headerlink" href="#exodus-library" title="Link to this heading">#</a></h1>
-<p>Exodus is a model developed to store and retrieve data for finite
-element analyses. It is used for preprocessing (problem definition),
-postprocessing (results visualization), as well as code to code data
-transfer. An Exodus data file is a random access, machine independent,
-binary file that is written and read via C, C++, or Fortran library
-routines which comprise the Application Programming Interface. Exodus
-uses <a class="reference internal" href="#netcdf-library">NetCDF Library</a> as the on-disk storage format.</p>
+<section id="exodus">
+<h1>Exodus<a class="headerlink" href="#exodus" title="Link to this heading">#</a></h1>
+<p>The Exodus library is a model developed to store and retrieve data for
+finite element analyses. It is used for preprocessing (problem
+definition), postprocessing (results visualization), as well as code
+to code data transfer. An Exodus data file is a random access, machine
+independent, binary file that is written and read via C, C++, or
+Fortran library routines which comprise the Application Programming
+Interface. Exodus uses <a class="reference internal" href="#netcdf-library">NetCDF Library</a> as the on-disk storage
+format.</p>
 <p>The new version includes support for names, nodeset variables, sideset
 variables, named attributes, coordinate frames, concatenated element
 block definition, optional multiple named node and element maps,
@@ -405,7 +405,7 @@ and their status.</p>
 high-level database access API that has been designed to give a
 format-agnostic interface to I/O capabilities with multiple
 format-specic backends to output the data to a particular
-format. Currently supported input and output formats are Exodus, CGNS,
+format. Currently supported input and output formats are <a class="reference internal" href="#exodus">Exodus</a>, <a class="reference external" href="https://github.com/CGNS/CGNS">CGNS</a>,
 HeartBeat, History, <a class="reference external" href="../../ioss_html/classIogn_1_1GeneratedMesh.html">Generated</a>, <a class="reference external" href="../../pamgen.pdf">Pamgen</a>, TextMesh, <a class="reference external" href="https://adios2.readthedocs.io/en/v2.9.2/">ADIOS2</a>, <a class="reference external" href="https://github.com/sandialabs/faodel">FAODEL</a>, <a class="reference external" href="https://catalyst-in-situ.readthedocs.io/en/latest/introduction.html">Catalyst</a>,
 Null.</p>
 <p>It has been designed to support multiple database formats
@@ -416,22 +416,21 @@ restart file being written to yet another Exodus file. Each of these
 output databases can have a different schedule for when to write and
 what data is to be written.</p>
 <ul class="simple">
+<li><p><a class="reference external" href="../../ioss_html/index.html#properties">Properties</a> can be used to
+control the behavior of the IOSS library.</p></li>
 <li><p>The <a class="reference external" href="../../IOSystem.pdf">IOSystem.pdf</a> is a medium- to low-level
 view of the IO system (IOSS) targeted at developers who will be
 adding or modifying the database IO portion of the system. It should
 give enough detail that a new database type could be added by
 reading this document and looking at an existing database class. It
-is also helpful to have the doxygen-generated documentation for the
-.</p></li>
+is also helpful to have the doxygen-generated documentation for this.</p></li>
 <li><p><a class="reference external" href="../../Ioss-exodus-mapping.pdf">Ioss-exodus-mapping.pdf</a> describes
 how an Exodus model is mapped into the IOSS representation.</p></li>
-<li><p><a class="reference external" href="../../ioss_html/index.html#properties">Properties</a> can be used to
-control the behavior of the IOSS library.</p></li>
 </ul>
 </section>
 <section id="supes-library">
 <h1>SUPES Library<a class="headerlink" href="#supes-library" title="Link to this heading">#</a></h1>
-<p>The <a class="reference external" href="../../supes.pdf">SUPES</a> library is a collection of subprograms
+<p><a class="reference external" href="../../supes.pdf">SUPES</a> is a collection of subprograms
 which perform frequently used non-numerical services for the
 engineering applications programmer using FORTRAN-77. The three
 functional categories of SUPES are: (1) input command parsing, (2)
@@ -446,9 +445,10 @@ features.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>All of the functionality of the Nemesis library is available
-in the Exodus library.  The Nemesis library is only maintained for
+in the <a class="reference internal" href="#exodus">Exodus</a> library.  The Nemesis library is only maintained for
 backward compatability with older applications. If you need this
-capability, please use the Exodus library instead.</p>
+capability, please use the nemesis function from the Exodus library
+instead.</p>
 </div>
 <p>The <a class="reference external" href="../../Nemesis_Users_Guide.pdf">Nemesis</a> library is an
 enhancement to the Exodus finite element database model used to store
@@ -588,7 +588,7 @@ database. Similar to <a class="reference external" href="../../exo_util.pdf#page
 </section>
 <section id="decomp">
 <h1>Decomp<a class="headerlink" href="#decomp" title="Link to this heading">#</a></h1>
-<p>A script which calls <a class="reference external" href="../../nem_slice.pdf">nem_slice</a> and <a class="reference external" href="../../nem_spread.pdf">nem_spread</a> to decompose an Exodus
+<p>A script which calls <a class="reference external" href="../../nem_slice.pdf">nem_slice</a> and <a class="reference external" href="../../nem_spread.pdf">nem_spread</a> to decompose an <a class="reference internal" href="#exodus">Exodus</a>
 database for use in a parallel application which uses a file-per-rank
 method for the input mesh database.  <a class="reference external" href="../../exo_util.pdf#page=24">EPU</a> can be used to recombine
 decomposed parallel files into a single database.</p>
@@ -781,8 +781,8 @@ mesh option.  To see the generated mesh options, try: <code class="docutils lite
 <span class="pre">--in_type</span> <span class="pre">generated</span> <span class="pre">1x1x1+help</span> <span class="pre">output.g</span></code>  There is also a database
 comparision capability specified with the <code class="docutils literal notranslate"><span class="pre">--compare</span></code> option.</p>
 </section>
-<section id="mapvar">
-<h1>Mapvar<a class="headerlink" href="#mapvar" title="Link to this heading">#</a></h1>
+<section id="mapvar-mapvar-kd">
+<h1>Mapvar / Mapvar-kd<a class="headerlink" href="#mapvar-mapvar-kd" title="Link to this heading">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>MAPVAR is buggy and cannot correctly handle the mapping of
@@ -801,18 +801,6 @@ the computational algorithms used in MAPVAR are described. User
 instructions are presented. Example problems are included to
 demonstrate the operation of the code and the effects of various input
 options.</p>
-</section>
-<section id="mapvar-kd">
-<h1>Mapvar-kd<a class="headerlink" href="#mapvar-kd" title="Link to this heading">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>MAPVAR is buggy and cannot correctly handle the mapping of
-nodal variables in a mesh with multiple element blocks and multiple
-timesteps. It should work OK if there is only a single timestep;
-however, there may be an issue with nodes shared between multiple
-element blocks. Element variable interpolation should be OK in all
-cases.</p>
-</div>
 <p><a class="reference external" href="../../mapvar.pdf">Mapvar-kd</a> is almost exactly the same as mapvar
 except that it uses a KD algorithm for the internal search. It is much
 faster than mapvar in certain situations, and should never be slower.</p>
@@ -900,7 +888,7 @@ parallel application. Zellij is optimized for large files.</p>
 <section id="netcdf-library">
 <h1>NetCDF Library<a class="headerlink" href="#netcdf-library" title="Link to this heading">#</a></h1>
 <p>(External, not developed or maintained as part of SEACAS, but is used
-by Exodus, so included here).</p>
+by <a class="reference internal" href="#exodus">Exodus</a>, so included here).</p>
 <p>The <a class="reference external" href="https://github.com/Unidata/netcdf-c">netCDF</a> I/O library stores
 and retrieves data in self-describing, machine-independent files. Each
 netCDF file can contain an unlimited number of multi-dimensional,
@@ -947,7 +935,7 @@ from/to a text representation.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">SEACAS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus-library">Exodus Library</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus">Exodus</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exodus-python-modules">Exodus Python Modules</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ioss-library">IOSS Library</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#supes-library">SUPES Library</a></li>
@@ -976,8 +964,7 @@ from/to a text representation.</p>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#io-info">IO_Info</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#io-modify">IO_Modify</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#io-shell">IO_Shell</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mapvar">Mapvar</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mapvar-kd">Mapvar-kd</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mapvar-mapvar-kd">Mapvar / Mapvar-kd</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mat2exo">Mat2Exo</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nas2exo">Nas2Exo</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nem-join">nem_join</a></li>

@@ -17,33 +17,34 @@ postprocessing, graphics, database translation applications, and
 support libraries. It is used by analysts at SNL and elsewhere and
 runs on laptops to large HPC systems.
 
-WIKI: FAQ and Extensions 
+`WIKI: FAQ and Extensions <https://github.com/sandialabs/seacas/wiki>`_
    The `SEACAS WIKI <https://github.com/sandialabs/seacas/wiki>`_
    contains some FAQ-like answers and also a listing of proposed
    Exodus extensions.
 
-`Recent Changes <../../changes.html>`_ Documents changes to the SEACAS
-   applications and libraries that may not yet be covered in the
-   documentation.
+`Recent Changes <../../changes.html>`_
+   Documents changes to the SEACAS applications and libraries that may
+   not yet be covered in the documentation.
 
 `Using SEACAS on Parallel Computers <../../Parallel_Instruction.pdf>`_ 
   Out-of-date, but some information is still useful.  Instructions to
   run the SEACAS/ACCESS system on Parallel computers. Currently
   specific to Sandia National Laboratories systems.
 
-**Download**
+`Download <https://github.com/sandialabs/seacas>`_
   SEACAS source code and build instructions can be accessed at <https://github.com/sandialabs/seacas>.
 
-Exodus Library
---------------
+Exodus
+------
 
-Exodus is a model developed to store and retrieve data for finite
-element analyses. It is used for preprocessing (problem definition),
-postprocessing (results visualization), as well as code to code data
-transfer. An Exodus data file is a random access, machine independent,
-binary file that is written and read via C, C++, or Fortran library
-routines which comprise the Application Programming Interface. Exodus
-uses `NetCDF Library`_ as the on-disk storage format.
+The Exodus library is a model developed to store and retrieve data for
+finite element analyses. It is used for preprocessing (problem
+definition), postprocessing (results visualization), as well as code
+to code data transfer. An Exodus data file is a random access, machine
+independent, binary file that is written and read via C, C++, or
+Fortran library routines which comprise the Application Programming
+Interface. Exodus uses `NetCDF Library`_ as the on-disk storage
+format.
 
 The new version includes support for names, nodeset variables, sideset
 variables, named attributes, coordinate frames, concatenated element
@@ -115,7 +116,7 @@ The `IO Subsystem <../../ioss_html/index.html>`_ (IOSS) is a
 high-level database access API that has been designed to give a
 format-agnostic interface to I/O capabilities with multiple
 format-specic backends to output the data to a particular
-format. Currently supported input and output formats are Exodus, CGNS,
+format. Currently supported input and output formats are `Exodus`_, `CGNS <https://github.com/CGNS/CGNS>`_,
 HeartBeat, History, `Generated
 <../../ioss_html/classIogn_1_1GeneratedMesh.html>`_, `Pamgen
 <../../pamgen.pdf>`_, TextMesh, `ADIOS2
@@ -132,24 +133,24 @@ restart file being written to yet another Exodus file. Each of these
 output databases can have a different schedule for when to write and
 what data is to be written.
 
+* `Properties <../../ioss_html/index.html#properties>`_ can be used to
+  control the behavior of the IOSS library.
+
 * The `IOSystem.pdf <../../IOSystem.pdf>`_ is a medium- to low-level
   view of the IO system (IOSS) targeted at developers who will be
   adding or modifying the database IO portion of the system. It should
   give enough detail that a new database type could be added by
   reading this document and looking at an existing database class. It
-  is also helpful to have the doxygen-generated documentation for the
-  .
+  is also helpful to have the doxygen-generated documentation for this.
 
 * `Ioss-exodus-mapping.pdf <../../Ioss-exodus-mapping.pdf>`_ describes
   how an Exodus model is mapped into the IOSS representation.
 
-* `Properties <../../ioss_html/index.html#properties>`_ can be used to
-  control the behavior of the IOSS library.
 
 SUPES Library
 -------------
 
-The `SUPES <../../supes.pdf>`_ library is a collection of subprograms
+`SUPES <../../supes.pdf>`_ is a collection of subprograms
 which perform frequently used non-numerical services for the
 engineering applications programmer using FORTRAN-77. The three
 functional categories of SUPES are: (1) input command parsing, (2)
@@ -163,9 +164,10 @@ Nemesis Library
 ---------------
 
 .. note:: All of the functionality of the Nemesis library is available
-   in the Exodus library.  The Nemesis library is only maintained for
+   in the `Exodus`_ library.  The Nemesis library is only maintained for
    backward compatability with older applications. If you need this
-   capability, please use the Exodus library instead.
+   capability, please use the nemesis function from the Exodus library
+   instead.
 
 The `Nemesis <../../Nemesis_Users_Guide.pdf>`_ library is an
 enhancement to the Exodus finite element database model used to store
@@ -308,7 +310,7 @@ database. Similar to `EPU`_.
 Decomp
 ------
 
-A script which calls `nem_slice`_ and `nem_spread`_ to decompose an Exodus
+A script which calls `nem_slice`_ and `nem_spread`_ to decompose an `Exodus`_
 database for use in a parallel application which uses a file-per-rank
 method for the input mesh database.  `EPU`_ can be used to recombine
 decomposed parallel files into a single database.
@@ -523,8 +525,8 @@ mesh option.  To see the generated mesh options, try: ``io_shell
 comparision capability specified with the ``--compare`` option.
 
 
-Mapvar
-------
+Mapvar / Mapvar-kd
+------------------
 
 .. note::
    MAPVAR is buggy and cannot correctly handle the mapping of
@@ -543,17 +545,6 @@ the computational algorithms used in MAPVAR are described. User
 instructions are presented. Example problems are included to
 demonstrate the operation of the code and the effects of various input
 options.
-
-Mapvar-kd
---------- 
-
-.. note::
-   MAPVAR is buggy and cannot correctly handle the mapping of
-   nodal variables in a mesh with multiple element blocks and multiple
-   timesteps. It should work OK if there is only a single timestep;
-   however, there may be an issue with nodes shared between multiple
-   element blocks. Element variable interpolation should be OK in all
-   cases.
 
 `Mapvar-kd <../../mapvar.pdf>`_ is almost exactly the same as mapvar
 except that it uses a KD algorithm for the internal search. It is much
@@ -652,7 +643,7 @@ NetCDF Library
 --------------
 
 (External, not developed or maintained as part of SEACAS, but is used
-by Exodus, so included here). 
+by `Exodus`_, so included here). 
 
 The `netCDF <https://github.com/Unidata/netcdf-c>`_ I/O library stores
 and retrieves data in self-describing, machine-independent files. Each
