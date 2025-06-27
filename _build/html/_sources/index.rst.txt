@@ -281,24 +281,25 @@ must be a structured mesh in a CGNS format file.
 Conjoin
 -------
 
-`Conjoin <../../exo_util.pdf#page=36>`_ joins two or more Exodus databases
-into a single database. The input databases should represent the same
-model geometry with similar variables. The output database will
-contain the model geometry and all of the non-temporally-overlapping
-results data. If two databases have overlapping timestep ranges, the
-timesteps from the later database will be used. For example, if the
-first database contains time data from 0 to 5 seconds, and the second
-database contains time data from 4 to 10 seconds; the output database
-will contain time data from 0 to 4 seconds from the first database and
-time data from 4 to 10 seconds from the second database. If two nodes
-have the same global id and are also collocated, then they are
-combined to a single node in the output. Similarly, elements with the
-same global id and the same nodal connectivity are combined into a
-single element in the output file.  The output database will contain
-the union of the meta and bulk data entities (i.e., nodes, elements,
-element blocks, sidesets, and nodesets) from each input database. The
-existence of an entity at a particular timestep is indicated via a
-status variable. Replaces conex
+`Conjoin <../../exo_util.pdf#page=36>`_ joins two or more Exodus
+databases into a single database. The input databases should represent
+the same model geometry with similar variables. The output database
+will contain the model geometry and all of the
+non-temporally-overlapping results data. If two databases have
+overlapping timestep ranges, the timesteps from the later database
+will be used. For example, if the first database contains time data
+from 0 to 5 seconds, and the second database contains time data from 4
+to 10 seconds; the output database will contain time data from 0 to 4
+seconds from the first database and time data from 4 to 10 seconds
+from the second database. If two nodes have the same global id and are
+also collocated, then they are combined to a single node in the
+output. Similarly, elements with the same global id and the same nodal
+connectivity are combined into a single element in the output file.
+The output database will contain the union of the meta and bulk data
+entities (i.e., nodes, elements, element blocks, sidesets, nodesets,
+and variables) from each input database. The existence of an entity at
+a particular timestep is indicated via a status variable. Replaces
+conex.
 
 CPUP
 ----
@@ -318,15 +319,20 @@ decomposed parallel files into a single database.
 EJoin
 -----
 
-`EJoin <../../exo_util.pdf#page=32>`_ is used to join two or more Exodus
-databases into a single Exodus database. The input databases must have
-disjoint meta and bulk data. That is: element blocks are not combined
-in the output model. Each element block in each input file will
-produce an element block in the output file. Similarly for nodesets
-and sidesets.  Each node in each input file will produce a node in the
-output file unless one of the node matching options (-match node ids
-or -match node coordinates) is specified.  Each element in each input
-file will produce an element in the output file. Elements are never
+`EJoin <../../exo_util.pdf#page=32>`_ is used to join two or more
+Exodus databases into a single Exodus database. The input databases
+must have disjoint meta and bulk data. That is: elements are not
+combined in the output model. Each element in each input file will
+produce an element in the output file. By default, each element block,
+nodeset, and sideset in each input file will produce an element block,
+nodeset, or sideset in the output file.  This behavior can be changed
+with the `-combine_element_blocks`, `-combine_nodesets`, and
+`-combine_sidesets`, `-element_block_combines`, `-nodeset_combines`,
+and `-sideset_combines` options.  Each node in each input file will
+produce a node in the output file unless one of the node matching
+options (`-match_node_ids`, `-match_node_coordinates`, or
+`-match_nodeset_nodes`) is specified.  Each element in each input file
+will produce an element in the output file. Elements are never
 combined even if all of the nodes on two elements are combined, the
 output file would have two elements with identical connectivity which
 is usually not desired.  If any of the input databases have timesteps,
@@ -394,7 +400,9 @@ containing attributes.
 
 Exomatlab
 ---------
-ExoMatLab outputs selected global data to a text matlab file.
+
+ExoMatLab outputs selected global data from an exodus file to a text
+matlab file.
 
 Exotxt
 ------
@@ -624,8 +632,8 @@ TxtExo
 ------
 
 Txtexo converts a text file written by `ExoTxt`_ back to an exodus
-file. (The netCDF utilities ncdump/ncgen can also be used to convert
-an exodus files to/from text.)
+file. (The netCDF utilities ncdump/ncgen should be used to convert
+an exodus files to/from text instead of exotxt/txtexo.)
 
 Zellij
 ------
