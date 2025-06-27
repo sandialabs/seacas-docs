@@ -1,7 +1,5 @@
 var NAVTREEINDEX59 =
 {
-"classIotr_1_1VectorMagnitude.html#af6d16e13e3347230c971274fb376666e":[4,0,96,13,4],
-"classIovs_1_1CatalystLogging.html":[3,0,152,0],
 "classIovs_1_1CatalystLogging.html":[4,0,97,0],
 "classIovs_1_1CatalystLogging.html#a03bdaf8aa42d6a209272ba8b57036dfd":[3,0,152,0,17],
 "classIovs_1_1CatalystLogging.html#a03bdaf8aa42d6a209272ba8b57036dfd":[4,0,97,0,17],
@@ -249,5 +247,7 @@ var NAVTREEINDEX59 =
 "classIovs_1_1Utils.html#a0f847b68b40b18fde3a4c6696a0cfd5d":[4,0,97,5,4],
 "classIovs_1_1Utils.html#a191917baa34980703548c863e06c3032":[3,0,152,5,26],
 "classIovs_1_1Utils.html#a191917baa34980703548c863e06c3032":[4,0,97,5,26],
-"classIovs_1_1Utils.html#a1f58886cdc31396a0c3abb3ffc8f7d2a":[3,0,152,5,18]
+"classIovs_1_1Utils.html#a1f58886cdc31396a0c3abb3ffc8f7d2a":[3,0,152,5,18],
+"classIovs_1_1Utils.html#a1f58886cdc31396a0c3abb3ffc8f7d2a":[4,0,97,5,18],
+"classIovs_1_1Utils.html#a266927ccb2ccfb8afefcda07c7261da0":[3,0,152,5,35]
 };

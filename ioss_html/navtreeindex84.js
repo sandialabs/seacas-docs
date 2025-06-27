@@ -1,7 +1,5 @@
 var NAVTREEINDEX84 =
 {
-"structIoss_1_1MeshCopyOptions.html#a520f814ef5b792a1d4dc2e93882ea82b":[3,0,148,89,20],
-"structIoss_1_1MeshCopyOptions.html#a520f814ef5b792a1d4dc2e93882ea82b":[4,0,93,87,20],
 "structIoss_1_1MeshCopyOptions.html#a537856b4ea38a25a606bd6249371d416":[3,0,148,89,9],
 "structIoss_1_1MeshCopyOptions.html#a537856b4ea38a25a606bd6249371d416":[4,0,93,87,9],
 "structIoss_1_1MeshCopyOptions.html#a5465dc808e8f6418004d6c271f07037c":[3,0,148,89,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX84 =
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1CurrentAdjacency.html#ab16629bcbaec48b5a4b4009d592546e4":[3,0,150,0,12,0,3],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1CurrentAdjacency.html#ab16629bcbaec48b5a4b4009d592546e4":[4,0,95,0,12,0,3],
 "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html":[3,0,150,0,12,1],
-"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html":[4,0,95,0,12,1]
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html":[4,0,95,0,12,1],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#a67f2b4cb1e562adfb8f416c6933dd6af":[3,0,150,0,12,1,4],
+"structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1FaceConnection.html#a67f2b4cb1e562adfb8f416c6933dd6af":[4,0,95,0,12,1,4]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX73 =
 {
-"index.html#autotoc_md11":[0,2,9],
-"index.html#autotoc_md12":[0,2,10],
 "index.html#autotoc_md2":[0,2,1,0],
 "index.html#autotoc_md3":[0,2,2],
 "index.html#autotoc_md4":[0,2,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX73 =
 "namespaceIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a6a7b5422366193e3a2e86e4cdb30793a":[3,0,139,0,1],
 "namespaceIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#ad0042ba2dc7da0e3226b73fed3121897":[3,0,139,0,5],
 "namespaceIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#af444e8501d1db302967b7d55ec331dc0":[3,0,139,0,2],
-"namespaceIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#afbdf07bf288868f0ce487d6e38f03602":[3,0,139,0,3]
+"namespaceIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#afbdf07bf288868f0ce487d6e38f03602":[3,0,139,0,3],
+"namespaceIoex_1_1anonymous__namespace_02Ioex__DatabaseIO_8C_03.html":[3,0,139,1],
+"namespaceIoex_1_1anonymous__namespace_02Ioex__DatabaseIO_8C_03.html#a71709053b6f4e6e0a5a5b4d9106bc4d2":[3,0,139,1,0]
 };
