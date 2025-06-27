@@ -23,7 +23,7 @@ copyright = '1999-2025 National Technology & Engineering Solutions'
 author = 'Gregory Sjaardema'
 
 # The full version, including alpha/beta/rc tags
-release = '2025/03/20'
+release = '2025/06/27'
 
 
 # -- General configuration ---------------------------------------------------
