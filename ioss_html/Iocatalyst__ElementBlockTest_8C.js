@@ -7,6 +7,7 @@ var Iocatalyst__ElementBlockTest_8C =
     [ "TEST_F", "Iocatalyst__ElementBlockTest_8C.html#a0f3de96a985d2be2d6b21529e454f923", null ],
     [ "TEST_F", "Iocatalyst__ElementBlockTest_8C.html#a67aa9c4c3b6456656bb77788cf181f2c", null ],
     [ "TEST_F", "Iocatalyst__ElementBlockTest_8C.html#af2cef2bf2eb15d66cb3e087984e0accd", null ],
+    [ "TEST_F", "Iocatalyst__ElementBlockTest_8C.html#aa0b88658e12d850e39256694c4f89aa1", null ],
     [ "TEST_F", "Iocatalyst__ElementBlockTest_8C.html#a149fcfaf6378117116be5719de578b96", null ],
     [ "TEST_F", "Iocatalyst__ElementBlockTest_8C.html#aca9d1ecd716d108c50262026c3939f29", null ],
     [ "TEST_F", "Iocatalyst__ElementBlockTest_8C.html#a99652f079360df75b0c2acd31cb7dc1e", null ],
