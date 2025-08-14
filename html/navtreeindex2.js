@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"ex__put__partial__elem__conn_8c.html#ab01713d6c721b34436e4199e563717e6":[10,0,2,0,97,0],
 "ex__put__partial__elem__map_8c.html":[10,0,2,0,98],
 "ex__put__partial__elem__map_8c.html#a5463732b1aaba6fc0627973623151167":[10,0,2,0,98,0],
 "ex__put__partial__elem__num__map_8c.html":[10,0,2,0,99],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "exo__jack-windows_8c.html#ad4e27388c557e62eeaa6d48024b71f43":[10,0,0,0,1,117],
 "exo__jack-windows_8c.html#ad666765b7d4bbdd6a39ad40e7ee3c73a":[10,0,0,0,1,164],
 "exo__jack-windows_8c.html#ad74073a83f794c7f1ba70d60d6721c5b":[10,0,0,0,1,44],
-"exo__jack-windows_8c.html#ad80f53506c459a93ac7145abb773ebf4":[10,0,0,0,1,152],
-"exo__jack-windows_8c.html#ad926f386ccdbd5ee46e16495fd66a33b":[10,0,0,0,1,135]
+"exo__jack-windows_8c.html#ad80f53506c459a93ac7145abb773ebf4":[10,0,0,0,1,152]
 };

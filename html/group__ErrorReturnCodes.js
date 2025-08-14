@@ -12,6 +12,7 @@ var group__ErrorReturnCodes =
       [ "EX_DUPLICATEID", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a1f1cbdce345cbe31467734241241e3a6", null ],
       [ "EX_DUPLICATEOPEN", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a496f90cf2ef65545895841e6eec9b19e", null ],
       [ "EX_BADFILENAME", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a73f905fd32e9e9d6d23cb0007850f467", null ],
+      [ "EX_LONGFIELDNAME", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3acfb71e9624fbaf9dbc2e2326f541e907", null ],
       [ "EX_MSG", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a328df062e99900858aaa42b6e8f3f49f", null ],
       [ "EX_PRTLASTMSG", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a990583881cba3f2fabeb61c09a3c1b51", null ],
       [ "EX_NOTROOTID", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a8de93370b9c0aba02cb3761ebb7a0f47", null ],

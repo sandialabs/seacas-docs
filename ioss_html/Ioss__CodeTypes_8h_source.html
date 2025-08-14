@@ -195,20 +195,26 @@ $(function(){initNavTree('Ioss__CodeTypes_8h_source.html','',''); });
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="Ioss__CodeTypes_8h.html#a8ff3a52b4dc0d793a406b707ce67f5c1">  101</a></span><span class="preprocessor">#define IOSS_DEBUG_OUTPUT 0</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">// For use to create a no-op get or put_field_internal function...</span></div>
-<div class="foldopen" id="foldopen00105" data-start="" data-end="">
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="Ioss__CodeTypes_8h.html#ab4fc25120249ef3e451a6543f1351144">  105</a></span><span class="preprocessor">#define IOSS_NOOP_GFI(type)                                                                        \</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">  int64_t get_field_internal(const type *, const Ioss::Field &amp;, void *, size_t) const override     \</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">  {                                                                                                \</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">    return -1;                                                                                     \</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">  }</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#ifdef NDEBUG</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#define IOSS_ASSERT_USED(x) (void)x</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="Ioss__CodeTypes_8h.html#af49f4647de78055ac9ffd2358b49afab">  107</a></span><span class="preprocessor">#define IOSS_ASSERT_USED(x)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// For use to create a no-op get or put_field_internal function...</span></div>
+<div class="foldopen" id="foldopen00111" data-start="" data-end="">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="Ioss__CodeTypes_8h.html#ab4fc25120249ef3e451a6543f1351144">  111</a></span><span class="preprocessor">#define IOSS_NOOP_GFI(type)                                                                        \</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">  int64_t get_field_internal(const type *, const Ioss::Field &amp;, void *, size_t) const override     \</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">  {                                                                                                \</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">    return -1;                                                                                     \</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">  }</span></div>
 </div>
-<div class="foldopen" id="foldopen00110" data-start="" data-end="">
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="Ioss__CodeTypes_8h.html#a8b087b20a3bac9207f6f19a8545e7d64">  110</a></span><span class="preprocessor">#define IOSS_NOOP_PFI(type)                                                                        \</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">  int64_t put_field_internal(const type *, const Ioss::Field &amp;, void *, size_t) const override     \</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">  {                                                                                                \</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">    return -1;                                                                                     \</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">  }</span></div>
+<div class="foldopen" id="foldopen00116" data-start="" data-end="">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="Ioss__CodeTypes_8h.html#a8b087b20a3bac9207f6f19a8545e7d64">  116</a></span><span class="preprocessor">#define IOSS_NOOP_PFI(type)                                                                        \</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">  int64_t put_field_internal(const type *, const Ioss::Field &amp;, void *, size_t) const override     \</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">  {                                                                                                \</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">    return -1;                                                                                     \</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">  }</span></div>
 </div>
 <div class="ttc" id="aIoss__CodeTypes_8h_html_a0fc70f662b2e1eadb970c138b142538a"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a0fc70f662b2e1eadb970c138b142538a">IOSS_VECTOR_2D</a></div><div class="ttdeci">std::string IOSS_VECTOR_2D()</div><div class="ttdef"><b>Definition</b> Ioss_CodeTypes.h:28</div></div>
 <div class="ttc" id="aIoss__CodeTypes_8h_html_a9633ed5e22e786aa99c269f2fb0c005c"><div class="ttname"><a href="Ioss__CodeTypes_8h.html#a9633ed5e22e786aa99c269f2fb0c005c">Complex</a></div><div class="ttdeci">std::complex&lt; double &gt; Complex</div><div class="ttdef"><b>Definition</b> Ioss_CodeTypes.h:82</div></div>

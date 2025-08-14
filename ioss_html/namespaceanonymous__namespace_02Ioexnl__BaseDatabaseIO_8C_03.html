@@ -100,8 +100,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a232b0b812b31e118bf1c3f9c27eafa15" id="r_a232b0b812b31e118bf1c3f9c27eafa15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a232b0b812b31e118bf1c3f9c27eafa15">check_attribute_index_order</a> (<a class="el" href="classIoss_1_1GroupingEntity.html">Ioss::GroupingEntity</a> *block)</td></tr>
 <tr class="memitem:a327e7ee2a08f489c70e4e07eaa14f1ed" id="r_a327e7ee2a08f489c70e4e07eaa14f1ed"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a327e7ee2a08f489c70e4e07eaa14f1ed template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a327e7ee2a08f489c70e4e07eaa14f1ed">write_attribute_names</a> (int exoid, ex_entity_type type, const std::vector&lt; T * &gt; &amp;entities)</td></tr>
-<tr class="memitem:a9e2442170d2eac7b522281b646e12def" id="r_a9e2442170d2eac7b522281b646e12def"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e2442170d2eac7b522281b646e12def">get_name_array</a> (size_t count, int size)</td></tr>
-<tr class="memitem:a5c73e97fa2c775f13aa6393fa40e6ebf" id="r_a5c73e97fa2c775f13aa6393fa40e6ebf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c73e97fa2c775f13aa6393fa40e6ebf">delete_name_array</a> (char **names, int count)</td></tr>
+<tr class="memitem:a4e66ab190b43348a1f96df682db2135f" id="r_a4e66ab190b43348a1f96df682db2135f"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e66ab190b43348a1f96df682db2135f">get_name_array</a> (size_t count, size_t size)</td></tr>
+<tr class="memitem:ab03443696d956b1efb08a718a350755c" id="r_ab03443696d956b1efb08a718a350755c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab03443696d956b1efb08a718a350755c">delete_name_array</a> (char **names, size_t count)</td></tr>
 <tr class="memitem:a599b5bf73f3c50606b1b2c3aab1b3af7" id="r_a599b5bf73f3c50606b1b2c3aab1b3af7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a599b5bf73f3c50606b1b2c3aab1b3af7">check_variable_consistency</a> (<a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> const ex_var_params &amp;exo_params, <a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> int my_processor, <a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> const std::string &amp;filename, <a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp;util)</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
@@ -184,8 +184,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c73e97fa2c775f13aa6393fa40e6ebf" name="a5c73e97fa2c775f13aa6393fa40e6ebf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c73e97fa2c775f13aa6393fa40e6ebf">&#9670;&#160;</a></span>delete_name_array()</h2>
+<a id="ab03443696d956b1efb08a718a350755c" name="ab03443696d956b1efb08a718a350755c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab03443696d956b1efb08a718a350755c">&#9670;&#160;</a></span>delete_name_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +198,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -222,8 +222,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9e2442170d2eac7b522281b646e12def" name="a9e2442170d2eac7b522281b646e12def"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e2442170d2eac7b522281b646e12def">&#9670;&#160;</a></span>get_name_array()</h2>
+<a id="a4e66ab190b43348a1f96df682db2135f" name="a4e66ab190b43348a1f96df682db2135f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e66ab190b43348a1f96df682db2135f">&#9670;&#160;</a></span>get_name_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,7 +236,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

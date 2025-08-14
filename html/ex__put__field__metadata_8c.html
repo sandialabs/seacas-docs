@@ -99,6 +99,7 @@ $(function(){initNavTree('ex__put__field__metadata_8c.html','',''); });
 Functions</h2></td></tr>
 <tr class="memitem:a1c4ba89cbd612ae1f8230a942ca32dd0" id="r_a1c4ba89cbd612ae1f8230a942ca32dd0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c4ba89cbd612ae1f8230a942ca32dd0">exi_print_type_error</a> (int status, const char *name, const char *type, const char *attribute, int exoid, const char *func)</td></tr>
 <tr class="memitem:ac82b2bc1cfebd830fcb31c510a48d260" id="r_ac82b2bc1cfebd830fcb31c510a48d260"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac82b2bc1cfebd830fcb31c510a48d260">exi_print_attribute_error</a> (int status, const char *name, const char *attribute, <a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a> entity_type, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> <a class="el" href="exo__jack-windows_8c.html#a40ad44f36fa869224f44f26e26bbda41">entity_id</a>, int exoid, const char *func)</td></tr>
+<tr class="memitem:a92ff1f5ad0c66380c729964fd0e1b466" id="r_a92ff1f5ad0c66380c729964fd0e1b466"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ff1f5ad0c66380c729964fd0e1b466">exi_print_attribute_overflow_error</a> (const char *name, const char *attribute, <a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a> entity_type, <a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a> <a class="el" href="exo__jack-windows_8c.html#a40ad44f36fa869224f44f26e26bbda41">entity_id</a>, int exoid, const char *func)</td></tr>
 <tr class="memitem:adee95fbd2152fdf16cee2e88d1d5fb18" id="r_adee95fbd2152fdf16cee2e88d1d5fb18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adee95fbd2152fdf16cee2e88d1d5fb18">ex_put_multi_field_metadata</a> (int exoid, const <a class="el" href="structex__field.html">ex_field</a> field[], const int count)</td></tr>
 <tr class="memitem:ga3bf819db9891df849eb12a26a98f75de" id="r_ga3bf819db9891df849eb12a26a98f75de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ModelDescription.html#ga3bf819db9891df849eb12a26a98f75de">ex_put_field_metadata</a> (int exoid, const <a class="el" href="structex__field.html">ex_field</a> field)</td></tr>
 <tr class="memitem:af060d2c433b199674c313cdae5f868c0" id="r_af060d2c433b199674c313cdae5f868c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af060d2c433b199674c313cdae5f868c0">exi_put_type_attribute</a> (int exoid, const char *att_root, const char *name, const char *type, <a class="el" href="group__APIStructs.html#ga406916cd134c79e2e9d571ad4c99d032">ex_type</a> value_type, int cardinality, const void *entry)</td></tr>
@@ -152,6 +153,55 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>attribute</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#a1f649ed288d305ab55773ffd1d220490">ex_entity_type</a></td>          <td class="paramname"><span class="paramname"><em>entity_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="exodusII_8h.html#ac03e735ba54b290660f8424399684450">ex_entity_id</a></td>          <td class="paramname"><span class="paramname"><em>entity_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>exoid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>func</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92ff1f5ad0c66380c729964fd0e1b466" name="a92ff1f5ad0c66380c729964fd0e1b466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ff1f5ad0c66380c729964fd0e1b466">&#9670;&#160;</a></span>exi_print_attribute_overflow_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int exi_print_attribute_overflow_error </td>
+          <td>(</td>
           <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
         <tr>

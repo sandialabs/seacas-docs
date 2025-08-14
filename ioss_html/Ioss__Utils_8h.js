@@ -1,7 +1,6 @@
 var Ioss__Utils_8h =
 [
     [ "Ioss::Utils", "classIoss_1_1Utils.html", "classIoss_1_1Utils" ],
-    [ "IOSS_ASSERT_USED", "Ioss__Utils_8h.html#af49f4647de78055ac9ffd2358b49afab", null ],
     [ "Data", "Ioss__Utils_8h.html#a163c62640a1739238f91d66b99cf0f2f", null ],
     [ "Data", "Ioss__Utils_8h.html#a7eef89e0e1988d6c6590425cdbea0e69", null ],
     [ "Data", "Ioss__Utils_8h.html#a227a0c6ac936eeeec81563ec54db41d2", null ],
