@@ -227,7 +227,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a9a94f9cc46aff41ee8ad34830c830607" id="r_a9a94f9cc46aff41ee8ad34830c830607"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1array.html">array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a94f9cc46aff41ee8ad34830c830607">do_make_array</a> (double rows, double cols)</td></tr>
 <tr class="memitem:a9f16c2fd46c50c7234bbd0e3bf03e38e" id="r_a9f16c2fd46c50c7234bbd0e3bf03e38e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1array.html">array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f16c2fd46c50c7234bbd0e3bf03e38e">do_make_array_init</a> (double rows, double cols, double <a class="el" href="structinit.html">init</a>)</td></tr>
 <tr class="memitem:a8b49a4ee41c394ed31acefbe49b3ce5f" id="r_a8b49a4ee41c394ed31acefbe49b3ce5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1array.html">array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b49a4ee41c394ed31acefbe49b3ce5f">do_identity</a> (double size)</td></tr>
-<tr class="memitem:a5d576fccf6fa0fdc70360514a49bb415" id="r_a5d576fccf6fa0fdc70360514a49bb415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1array.html">array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d576fccf6fa0fdc70360514a49bb415">do_linear_array</a> (double <a class="el" href="structinit.html">init</a>, double final, double count)</td></tr>
+<tr class="memitem:a610184c5d198b238db320ecf5bb5dc68" id="r_a610184c5d198b238db320ecf5bb5dc68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1array.html">array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a610184c5d198b238db320ecf5bb5dc68">do_linear_array</a> (double <a class="el" href="structinit.html">init</a>, double last, double count)</td></tr>
 <tr class="memitem:ae281320dbd0625fd80bcc66abed12356" id="r_ae281320dbd0625fd80bcc66abed12356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1array.html">array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae281320dbd0625fd80bcc66abed12356">do_transpose</a> (const <a class="el" href="structSEAMS_1_1array.html">array</a> *a)</td></tr>
 <tr class="memitem:aea7483d6f5212cdba22f6733b48f7fcf" id="r_aea7483d6f5212cdba22f6733b48f7fcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1array.html">array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea7483d6f5212cdba22f6733b48f7fcf">do_principal</a> (const <a class="el" href="structSEAMS_1_1array.html">array</a> *a)</td></tr>
 <tr class="memitem:a29f56fc474e8c3453359e147b5c37794" id="r_a29f56fc474e8c3453359e147b5c37794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEAMS_1_1array.html">array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29f56fc474e8c3453359e147b5c37794">do_csv_array1</a> (const char *filename)</td></tr>
@@ -1825,8 +1825,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d576fccf6fa0fdc70360514a49bb415" name="a5d576fccf6fa0fdc70360514a49bb415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d576fccf6fa0fdc70360514a49bb415">&#9670;&#160;</a></span>do_linear_array()</h2>
+<a id="a610184c5d198b238db320ecf5bb5dc68" name="a610184c5d198b238db320ecf5bb5dc68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a610184c5d198b238db320ecf5bb5dc68">&#9670;&#160;</a></span>do_linear_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1839,7 +1839,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>final</em></span>, </td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>last</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3482,12 +3482,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">      {<span class="stringliteral">&quot;linear_array&quot;</span>, <a class="code hl_function" href="#a5d576fccf6fa0fdc70360514a49bb415">do_linear_array</a>, <span class="stringliteral">&quot;linear_array(init, final, count)&quot;</span>,</div>
+<div class="line">      {<span class="stringliteral">&quot;linear_array&quot;</span>, <a class="code hl_function" href="#a610184c5d198b238db320ecf5bb5dc68">do_linear_array</a>, <span class="stringliteral">&quot;linear_array(init, final, count)&quot;</span>,</div>
 <div class="line">       <span class="stringliteral">&quot;Create a 1D array of &#39;count&#39; rows. Values linearly spaced from &#39;init&#39; to &#39;final&#39;.&quot;</span>},</div>
 <div class="line">      {<span class="stringliteral">&quot;make_array&quot;</span>, <a class="code hl_function" href="#a9f16c2fd46c50c7234bbd0e3bf03e38e">do_make_array_init</a>, <span class="stringliteral">&quot;make_array(rows, cols, init=0)&quot;</span>,</div>
 <div class="line">       <span class="stringliteral">&quot;Create a 2D array of size &#39;rows&#39; by &#39;cols&#39; initialized to &#39;init&#39;. 0 if not specified.&quot;</span>},</div>
 <div class="line">      {<span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>}}</div>
-<div class="ttc" id="anamespaceSEAMS_html_a5d576fccf6fa0fdc70360514a49bb415"><div class="ttname"><a href="#a5d576fccf6fa0fdc70360514a49bb415">SEAMS::do_linear_array</a></div><div class="ttdeci">array * do_linear_array(double init, double final, double count)</div><div class="ttdef"><b>Definition</b> apr_builtin.cc:1045</div></div>
+<div class="ttc" id="anamespaceSEAMS_html_a610184c5d198b238db320ecf5bb5dc68"><div class="ttname"><a href="#a610184c5d198b238db320ecf5bb5dc68">SEAMS::do_linear_array</a></div><div class="ttdeci">array * do_linear_array(double init, double last, double count)</div><div class="ttdef"><b>Definition</b> apr_builtin.cc:1045</div></div>
 <div class="ttc" id="anamespaceSEAMS_html_a9f16c2fd46c50c7234bbd0e3bf03e38e"><div class="ttname"><a href="#a9f16c2fd46c50c7234bbd0e3bf03e38e">SEAMS::do_make_array_init</a></div><div class="ttdeci">array * do_make_array_init(double rows, double cols, double init)</div><div class="ttdef"><b>Definition</b> apr_builtin.cc:1024</div></div>
 </div><!-- fragment -->
 </div>
