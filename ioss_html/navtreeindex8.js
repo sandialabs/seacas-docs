@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"classIocatalyst_1_1CatalystManager.html#afb3d2583d73e73aff94b20019b47445f":[4,0,82,3,19],
+"classIocatalyst_1_1DatabaseIO.html":[3,0,137,5],
 "classIocatalyst_1_1DatabaseIO.html":[4,0,82,4],
 "classIocatalyst_1_1DatabaseIO.html#a04a7c6f801d6d5022780299185e8c062":[3,0,137,5,70],
 "classIocatalyst_1_1DatabaseIO.html#a04a7c6f801d6d5022780299185e8c062":[4,0,82,4,70],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#af76bec59a4120f463f693d0d36c2ab62":[4,0,82,4,0,30],
 "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#afe1ba87965bbcbd71fab6f76143ad303":[3,0,137,5,0,18],
 "classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#afe1ba87965bbcbd71fab6f76143ad303":[4,0,82,4,0,18],
-"classIocatalyst_1_1IOFactory.html":[3,0,137,7],
-"classIocatalyst_1_1IOFactory.html":[4,0,82,6],
-"classIocatalyst_1_1IOFactory.html#a41adf1d26a79f6e45310d6f778dcc2b8":[3,0,137,7,3]
+"classIocatalyst_1_1IOFactory.html":[3,0,137,7]
 };

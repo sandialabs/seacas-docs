@@ -21,6 +21,7 @@ var group__ErrorReturnCodes =
       [ "EX_NOENTITY", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a8c82b41910bfe282a5bc8c3e79fca2b3", null ],
       [ "EX_NOTFOUND", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a787044fad69dd9ac64ba860273eebfa9", null ],
       [ "EX_INTSIZEMISMATCH", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3aefe69d587914f4a36de87f5ee3215605", null ],
+      [ "EX_RANGE", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a3f20502a4894db41a3ff481810f1e73d", null ],
       [ "EX_FATAL", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3abaecf7e01fff58d8ee405370ab2b728d", null ],
       [ "EX_NOERR", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3ac7e56074541f92d4627a79cdabf0ddc1", null ],
       [ "EX_WARN", "group__ErrorReturnCodes.html#gga7a81ee2c77e4f32d79798f5948e0a5c3a5541126cd5ea93dff1653cc31e7e3fca", null ]
