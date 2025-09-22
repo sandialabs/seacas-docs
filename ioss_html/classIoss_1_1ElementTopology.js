@@ -1,6 +1,7 @@
 var classIoss_1_1ElementTopology =
 [
     [ "ElementTopology", "classIoss_1_1ElementTopology.html#a625fbc9f29cb3c05127e87b40a38fc4a", null ],
+    [ "ElementTopology", "classIoss_1_1ElementTopology.html#aa7060fadbe742dd2a42cdb037f7000ee", null ],
     [ "~ElementTopology", "classIoss_1_1ElementTopology.html#aaa8d60c2aa661a343829adccb5a18828", null ],
     [ "ElementTopology", "classIoss_1_1ElementTopology.html#a20e888db3fe83ffdb9d594a024f8200a", null ],
     [ "alias", "classIoss_1_1ElementTopology.html#aebb05d3060d648c95e263fb81be6dd84", null ],
@@ -38,6 +39,7 @@ var classIoss_1_1ElementTopology =
     [ "number_nodes_face", "classIoss_1_1ElementTopology.html#a7e3af243b18ea8322bb9f78a587bbe73", null ],
     [ "operator!=", "classIoss_1_1ElementTopology.html#ab6cd2acbb68203f6d983ab4d3f3bbf4f", null ],
     [ "operator=", "classIoss_1_1ElementTopology.html#afa0110599cea88610bee8a8bb96cb3ba", null ],
+    [ "operator=", "classIoss_1_1ElementTopology.html#ad0f55fe66f25fe6ca39f7475f9ee8084", null ],
     [ "operator==", "classIoss_1_1ElementTopology.html#ad6a3ea2a52f7080a028047c3743cbde5", null ],
     [ "order", "classIoss_1_1ElementTopology.html#a7a86470e27917b36759883ceebb14a21", null ],
     [ "parametric_dimension", "classIoss_1_1ElementTopology.html#a8dfe3c9b79fc2c7c6b61163605238c49", null ],

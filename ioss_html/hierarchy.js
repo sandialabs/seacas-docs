@@ -5,6 +5,9 @@ var hierarchy =
       [ "Ioad::AdiosWrapper", "classIoad_1_1AdiosWrapper.html", null ]
     ] ],
     [ "Adjacency", "structAdjacency.html", null ],
+    [ "std::allocator", null, [
+      [ "Ios3::helpers::default_init_allocator< T, A >", "classIos3_1_1helpers_1_1default__init__allocator.html", null ]
+    ] ],
     [ "Ioex::Assembly", "structIoex_1_1Assembly.html", null ],
     [ "Ioexnl::Assembly", "structIoexnl_1_1Assembly.html", null ],
     [ "Iotm::text_mesh::AssemblyParser", "classIotm_1_1text__mesh_1_1AssemblyParser.html", null ],
@@ -29,6 +32,9 @@ var hierarchy =
     ] ],
     [ "Ioss::glob::AstVisitor< charT >", "classIoss_1_1glob_1_1AstVisitor.html", null ],
     [ "Ioss::glob::Automata< charT >", "classIoss_1_1glob_1_1Automata.html", null ],
+    [ "Aws::Auth::AWSCredentialsProviderChain", null, [
+      [ "Ios3::helpers::AwsHelperCredentialsProviderChain", "classIos3_1_1helpers_1_1AwsHelperCredentialsProviderChain.html", null ]
+    ] ],
     [ "Ioss::AxisAlignedBoundingBox", "structIoss_1_1AxisAlignedBoundingBox.html", null ],
     [ "Ioss::glob::BasicGlob< charT, globT >", "classIoss_1_1glob_1_1BasicGlob.html", null ],
     [ "Ioss::Basis", "structIoss_1_1Basis.html", null ],
@@ -169,6 +175,7 @@ var hierarchy =
       [ "Iohb::DatabaseIO", "classIohb_1_1DatabaseIO.html", null ],
       [ "Ionull::DatabaseIO", "classIonull_1_1DatabaseIO.html", null ],
       [ "Iopg::DatabaseIO", "classIopg_1_1DatabaseIO.html", null ],
+      [ "Ios3::DatabaseIO", "classIos3_1_1DatabaseIO.html", null ],
       [ "Iotm::DatabaseIO", "classIotm_1_1DatabaseIO.html", null ],
       [ "Iovs_cgns::DatabaseIO", "classIovs__cgns_1_1DatabaseIO.html", null ],
       [ "Iovs_exodus::DatabaseIO", "classIovs__exodus_1_1DatabaseIO.html", null ]
@@ -349,6 +356,7 @@ var hierarchy =
     ] ],
     [ "Ioss::Field", "classIoss_1_1Field.html", null ],
     [ "Iofaodel::field_entry_t", "structIofaodel_1_1field__entry__t.html", null ],
+    [ "Ios3::field_entry_t", "structIos3_1_1field__entry__t.html", null ],
     [ "Ioad::DatabaseIO::FieldInfoType", "structIoad_1_1DatabaseIO_1_1FieldInfoType.html", null ],
     [ "Ioss::FieldManager", "classIoss_1_1FieldManager.html", null ],
     [ "Ioss::FileInfo", "classIoss_1_1FileInfo.html", null ],
@@ -414,6 +422,8 @@ var hierarchy =
       [ "tsl::detail_robin_hash::robin_hash< std::pair< Key, T >, KeySelect, ValueSelect, std::hash< Key >, std::equal_to< Key >, std::allocator< std::pair< Key, T > >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ],
       [ "tsl::detail_robin_hash::robin_hash< Key, KeySelect, void, std::hash< Key >, std::equal_to< Key >, std::allocator< Key >, false, tsl::rh::power_of_two_growth_policy< 2 > >", "classtsl_1_1detail__robin__hash_1_1robin__hash.html", null ]
     ] ],
+    [ "Ios3::helpers::HelperContext", "structIos3_1_1helpers_1_1HelperContext.html", null ],
+    [ "Ios3::helpers::HelperParameters", "structIos3_1_1helpers_1_1HelperParameters.html", null ],
     [ "tsl::detail_hopscotch_hash::hopscotch_bucket_hash< StoreHash >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket__hash.html", [
       [ "tsl::detail_hopscotch_hash::hopscotch_bucket< ValueType, NeighborhoodSize, StoreHash >", "classtsl_1_1detail__hopscotch__hash_1_1hopscotch__bucket.html", null ]
     ] ],
@@ -449,6 +459,7 @@ var hierarchy =
       [ "Iohb::IOFactory", "classIohb_1_1IOFactory.html", null ],
       [ "Ionull::IOFactory", "classIonull_1_1IOFactory.html", null ],
       [ "Iopg::IOFactory", "classIopg_1_1IOFactory.html", null ],
+      [ "Ios3::IOFactory", "classIos3_1_1IOFactory.html", null ],
       [ "Iotm::IOFactory", "classIotm_1_1IOFactory.html", null ],
       [ "Iovs_cgns::IOFactory", "classIovs__cgns_1_1IOFactory.html", null ],
       [ "Iovs_exodus::IOFactory", "classIovs__exodus_1_1IOFactory.html", null ]
@@ -485,6 +496,7 @@ var hierarchy =
     [ "Ioss::MeshCopyOptions", "structIoss_1_1MeshCopyOptions.html", null ],
     [ "ioss_region_report::Messages", "structioss__region__report_1_1Messages.html", null ],
     [ "Iofaodel::meta_entry_t", "structIofaodel_1_1meta__entry__t.html", null ],
+    [ "Ios3::meta_entry_t", "structIos3_1_1meta__entry__t.html", null ],
     [ "tsl::hh::mod_growth_policy< GrowthFactor >", "classtsl_1_1hh_1_1mod__growth__policy.html", null ],
     [ "tsl::rh::mod_growth_policy< GrowthFactor >", "classtsl_1_1rh_1_1mod__growth__policy.html", null ],
     [ "Ioex::NameTopoKeyCompare", "structIoex_1_1NameTopoKeyCompare.html", null ],
@@ -521,10 +533,12 @@ var hierarchy =
     [ "tsl::rh::prime_growth_policy", "classtsl_1_1rh_1_1prime__growth__policy.html", null ],
     [ "Ioss::Property", "classIoss_1_1Property.html", null ],
     [ "Iofaodel::property_entry_t", "structIofaodel_1_1property__entry__t.html", null ],
+    [ "Ios3::property_entry_t", "structIos3_1_1property__entry__t.html", null ],
     [ "Ioss::PropertyManager", "classIoss_1_1PropertyManager.html", null ],
     [ "Ioss::QuadraturePoint", "structIoss_1_1QuadraturePoint.html", null ],
     [ "anonymous_namespace{Iocgns_StructuredZoneData.C}::Range", "structanonymous__namespace_02Iocgns__StructuredZoneData_8C_03_1_1Range.html", null ],
     [ "anonymous_namespace{Iocgns_Utils.C}::Range", "structanonymous__namespace_02Iocgns__Utils_8C_03_1_1Range.html", null ],
+    [ "Ios3::helpers::default_init_allocator< T, A >::rebind< U >", "structIos3_1_1helpers_1_1default__init__allocator_1_1rebind.html", null ],
     [ "Ioex::Redefine", "classIoex_1_1Redefine.html", null ],
     [ "Ioexnl::Redefine", "classIoexnl_1_1Redefine.html", null ],
     [ "Ioss::RefHolder< T >", "classIoss_1_1RefHolder.html", null ],
@@ -557,6 +571,7 @@ var hierarchy =
       [ "Iotm::text_mesh::SidesetSkinner< EntityId, Iotm::TopologyMapEntry >", "classIotm_1_1text__mesh_1_1SidesetSkinner.html", null ]
     ] ],
     [ "Iofaodel::sideblock_entry_t", "structIofaodel_1_1sideblock__entry__t.html", null ],
+    [ "Ios3::sideblock_entry_t", "structIos3_1_1sideblock__entry__t.html", null ],
     [ "Iotm::text_mesh::SideBlockInfo", "structIotm_1_1text__mesh_1_1SideBlockInfo.html", null ],
     [ "SideEntryLess", "structSideEntryLess.html", null ],
     [ "Ioex::SideSet", "structIoex_1_1SideSet.html", null ],
@@ -580,11 +595,15 @@ var hierarchy =
       [ "Ioss::glob::StateStar< charT >", "classIoss_1_1glob_1_1StateStar.html", null ]
     ] ],
     [ "Iofaodel::state_entry_t", "structIofaodel_1_1state__entry__t.html", null ],
+    [ "Ios3::state_entry_t", "structIos3_1_1state__entry__t.html", null ],
     [ "Ioss::StorageInitializer", "classIoss_1_1StorageInitializer.html", null ],
     [ "anonymous_namespace{Ioss_SmartAssert.C}::stream_holder", "structanonymous__namespace_02Ioss__SmartAssert_8C_03_1_1stream__holder.html", null ],
     [ "Iotm::text_mesh::SideAdjacencyGraph< EntityId, Topology >::StringCaseCompLess", "structIotm_1_1text__mesh_1_1SideAdjacencyGraph_1_1StringCaseCompLess.html", null ],
     [ "Iocgns::StructuredZoneData", "classIocgns_1_1StructuredZoneData.html", null ],
     [ "Ioss::Suffix", "structIoss_1_1Suffix.html", null ],
+    [ "typename a_t::template rebind_alloc", null, [
+      [ "Ios3::helpers::default_init_allocator< U, typename a_t::template rebind_alloc< U > >", "classIos3_1_1helpers_1_1default__init__allocator.html", null ]
+    ] ],
     [ "testing::Test", null, [
       [ "BlockMeshTest", "classBlockMeshTest.html", null ],
       [ "Iocatalyst_DatabaseIOTest", "classIocatalyst__DatabaseIOTest.html", null ],
@@ -639,6 +658,7 @@ var hierarchy =
     [ "Ioss::Utils", "classIoss_1_1Utils.html", null ],
     [ "Iovs::Utils", "classIovs_1_1Utils.html", null ],
     [ "Iofaodel::value_entry_t", "structIofaodel_1_1value__entry__t.html", null ],
+    [ "Ios3::value_entry_t", "structIos3_1_1value__entry__t.html", null ],
     [ "tsl::bhopscotch_map< Key, T, Hash, KeyEqual, Compare, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >::ValueSelect", "classtsl_1_1bhopscotch__map_1_1ValueSelect.html", null ],
     [ "tsl::hopscotch_map< Key, T, Hash, KeyEqual, Allocator, NeighborhoodSize, StoreHash, GrowthPolicy >::ValueSelect", "classtsl_1_1hopscotch__map_1_1ValueSelect.html", null ],
     [ "tsl::robin_map< Key, T, Hash, KeyEqual, Allocator, StoreHash, GrowthPolicy >::ValueSelect", "classtsl_1_1robin__map_1_1ValueSelect.html", null ],

@@ -806,6 +806,7 @@ var namespaces_dup =
     [ "Iohb", "namespaceIohb.html", "namespaceIohb" ],
     [ "Ionull", "namespaceIonull.html", "namespaceIonull" ],
     [ "Iopg", "namespaceIopg.html", "namespaceIopg" ],
+    [ "Ios3", "namespaceIos3.html", "namespaceIos3" ],
     [ "IOShell", "namespaceIOShell.html", "namespaceIOShell" ],
     [ "Ioss", "namespaceIoss.html", "namespaceIoss" ],
     [ "ioss_region_report", "namespaceioss__region__report.html", "namespaceioss__region__report" ],

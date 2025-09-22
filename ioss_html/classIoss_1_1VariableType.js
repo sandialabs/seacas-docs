@@ -13,6 +13,7 @@ var classIoss_1_1VariableType =
       [ "QUADRATURE", "classIoss_1_1VariableType.html#a4c36b31f4b1980f144278df43f62c48aa01c086fd0662c6900067a19e17a8c904", null ]
     ] ],
     [ "VariableType", "classIoss_1_1VariableType.html#a62d077f86edeb22c10b84ce64d3cc5a4", null ],
+    [ "VariableType", "classIoss_1_1VariableType.html#a23190230d2c683b12dcb8fbf674fd35e", null ],
     [ "~VariableType", "classIoss_1_1VariableType.html#ab9fc61b4523aab02e5c5ab6946041d32", null ],
     [ "VariableType", "classIoss_1_1VariableType.html#a3a5ab22d5e75cb6aaa3031bf51ee9c83", null ],
     [ "add_field_type_mapping", "classIoss_1_1VariableType.html#ae3b36adf8ff650138535e6b50b021837", null ],
@@ -36,6 +37,7 @@ var classIoss_1_1VariableType =
     [ "name", "classIoss_1_1VariableType.html#a737316d0f49ca1a913f9c99d3132e742", null ],
     [ "numeric_label", "classIoss_1_1VariableType.html#abb6df4603afd79690025027170f0d208", null ],
     [ "operator=", "classIoss_1_1VariableType.html#a2e3b404ab16c23e96248ae1ae76708a3", null ],
+    [ "operator=", "classIoss_1_1VariableType.html#a8ccea1bf42a87b6c8ab1e5b2e3cf8ebf", null ],
     [ "print", "classIoss_1_1VariableType.html#a8ad3e995b5a3cad0209832370a6734ba", null ],
     [ "registry", "classIoss_1_1VariableType.html#aa5c4edcd3f73df0fcb07bd2ff35fcc50", null ],
     [ "suffix_count", "classIoss_1_1VariableType.html#aa7f2ba64a65c4e795fbb31598a7227af", null ],

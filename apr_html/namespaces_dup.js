@@ -74,7 +74,8 @@ var namespaces_dup =
     [ "anonymous_namespace{apr_scanner.cc}", "namespaceanonymous__namespace_02apr__scanner_8cc_03.html", [
       [ "string_is_ascii", "namespaceanonymous__namespace_02apr__scanner_8cc_03.html#a84fb4ae62bc8ecf4f7caba62556dcc34", null ],
       [ "begin_double_brace", "namespaceanonymous__namespace_02apr__scanner_8cc_03.html#af81507d9f67509e90b0d1d53e07dcd74", null ],
-      [ "end_double_brace", "namespaceanonymous__namespace_02apr__scanner_8cc_03.html#af85ba16cc68f2c228721ae2d9dd4dd98", null ]
+      [ "end_double_brace", "namespaceanonymous__namespace_02apr__scanner_8cc_03.html#af85ba16cc68f2c228721ae2d9dd4dd98", null ],
+      [ "newline_output", "namespaceanonymous__namespace_02apr__scanner_8cc_03.html#a9e5453e77c19327ace748cbd94d44837", null ]
     ] ],
     [ "anonymous_namespace{apr_util.cc}", "namespaceanonymous__namespace_02apr__util_8cc_03.html", [
       [ "copy_string", "namespaceanonymous__namespace_02apr__util_8cc_03.html#a011e35b9f1c8a46bfadc0a6074c4ad61", null ],

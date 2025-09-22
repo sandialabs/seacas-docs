@@ -2,7 +2,6 @@ var Ioex__BaseDatabaseIO_8C =
 [
     [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}::AssemblyTreeFilter", "classanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1AssemblyTreeFilter.html", "classanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1AssemblyTreeFilter" ],
     [ "Ioex::anonymous_namespace{Ioex_BaseDatabaseIO.C}::EX_attribute", "classIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1EX__attribute.html", "classIoex_1_1anonymous__namespace_02Ioex__BaseDatabaseIO_8C_03_1_1EX__attribute" ],
-    [ "GLOBALS_ARE_TRANSIENT", "Ioex__BaseDatabaseIO_8C.html#aa8c4cb3632ca993ad7224d670fc764aa", null ],
     [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}::check_attribute_index_order", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a45c1d1c49b3a3645814b7d03f52530f1", null ],
     [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}::check_variable_consistency", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a1a4aeaae8ae122376c4bf66af39fc538", null ],
     [ "anonymous_namespace{Ioex_BaseDatabaseIO.C}::check_variable_consistency", "namespaceanonymous__namespace_02Ioex__BaseDatabaseIO_8C_03.html#a411356af872300bf457f081da2fb35a3", null ],

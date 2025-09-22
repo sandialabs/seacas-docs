@@ -100,12 +100,11 @@ $(function(){initNavTree('Ioexnl__BaseDatabaseIO_8C.html','',''); });
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;ctime&gt;</code><br />
 <code>#include &lt;exodusII.h&gt;</code><br />
-<code>#include &lt;fmt/core.h&gt;</code><br />
+<code>#include &lt;fmt/format.h&gt;</code><br />
 <code>#include &lt;fmt/ostream.h&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;<a class="el" href="tokenize_8h_source.html">tokenize.h</a>&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="Ioexnl__Utils_8h_source.html">Ioexnl_Utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Assembly_8h_source.html">Ioss_Assembly.h</a>&quot;</code><br />
@@ -121,7 +120,6 @@ $(function(){initNavTree('Ioexnl__BaseDatabaseIO_8C.html','',''); });
 <code>#include &quot;<a class="el" href="Ioss__FaceBlock_8h_source.html">Ioss_FaceBlock.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__FaceSet_8h_source.html">Ioss_FaceSet.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Field_8h_source.html">Ioss_Field.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Ioss__FileInfo_8h_source.html">Ioss_FileInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__GroupingEntity_8h_source.html">Ioss_GroupingEntity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__Map_8h_source.html">Ioss_Map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ioss__MeshType_8h_source.html">Ioss_MeshType.h</a>&quot;</code><br />
@@ -147,10 +145,6 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespaceIoexnl"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for the exodus database format. <br /></td></tr>
 <tr class="memitem:Ioexnl_3A_3Aanonymous_5Fnamespace_7BIoexnl_5FBaseDatabaseIO_2EC_7D" id="r_Ioexnl_3A_3Aanonymous_5Fnamespace_7BIoexnl_5FBaseDatabaseIO_2EC_7D"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoexnl_1_1anonymous__namespace_02Ioexnl__BaseDatabaseIO_8C_03.html">Ioexnl::anonymous_namespace{Ioexnl_BaseDatabaseIO.C}</a></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:aa8c4cb3632ca993ad7224d670fc764aa" id="r_aa8c4cb3632ca993ad7224d670fc764aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8c4cb3632ca993ad7224d670fc764aa">GLOBALS_ARE_TRANSIENT</a>&#160;&#160;&#160;0</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad96db45a5324ca2fc94ad8f71047b963" id="r_ad96db45a5324ca2fc94ad8f71047b963"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ex_entity_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioexnl__BaseDatabaseIO_8C_03.html#ad96db45a5324ca2fc94ad8f71047b963">anonymous_namespace{Ioexnl_BaseDatabaseIO.C}::exodus_types</a> ({EX_GLOBAL, EX_BLOB, EX_ASSEMBLY, EX_NODE_BLOCK, EX_EDGE_BLOCK, EX_FACE_BLOCK, EX_ELEM_BLOCK, EX_NODE_SET, EX_EDGE_SET, EX_FACE_SET, EX_ELEM_SET, EX_SIDE_SET})</td></tr>
@@ -164,21 +158,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aa5e2c5f804d58215d4644bfbca2f6612 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIoexnl_1_1anonymous__namespace_02Ioexnl__BaseDatabaseIO_8C_03.html#aa5e2c5f804d58215d4644bfbca2f6612">Ioexnl::anonymous_namespace{Ioexnl_BaseDatabaseIO.C}::generate_block_truth_table</a> (const <a class="el" href="namespaceIoexnl.html#abf6e6b169855b7c765a5df718be1fb20">VariableNameMap</a> &amp;variables, <a class="el" href="namespaceIoss.html#aa639dfe4a3b61861236fcc418a2b0fef">Ioss::IntVector</a> &amp;truth_table, std::vector&lt; T * &gt; &amp;blocks, char field_suffix_separator)</td></tr>
 <tr class="memitem:a599b5bf73f3c50606b1b2c3aab1b3af7" id="r_a599b5bf73f3c50606b1b2c3aab1b3af7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02Ioexnl__BaseDatabaseIO_8C_03.html#a599b5bf73f3c50606b1b2c3aab1b3af7">anonymous_namespace{Ioexnl_BaseDatabaseIO.C}::check_variable_consistency</a> (<a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> const ex_var_params &amp;exo_params, <a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> int my_processor, <a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> const std::string &amp;filename, <a class="el" href="Ioss__CodeTypes_8h.html#a604cb0fb3e022b9f1b0cca33fb792b11">IOSS_MAYBE_UNUSED</a> const <a class="el" href="classIoss_1_1ParallelUtils.html">Ioss::ParallelUtils</a> &amp;util)</td></tr>
 </table>
-<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
-<a id="aa8c4cb3632ca993ad7224d670fc764aa" name="aa8c4cb3632ca993ad7224d670fc764aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8c4cb3632ca993ad7224d670fc764aa">&#9670;&#160;</a></span>GLOBALS_ARE_TRANSIENT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GLOBALS_ARE_TRANSIENT&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

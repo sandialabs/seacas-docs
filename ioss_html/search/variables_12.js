@@ -6,7 +6,7 @@ var searchData=
   ['rangebeg_3',['RANGEBEG',['../namespaceIocatalyst_1_1detail.html#a95ffe3ec5b773f9bb0f93a5d8175e47c',1,'Iocatalyst::detail']]],
   ['rangeend_4',['RANGEEND',['../namespaceIocatalyst_1_1detail.html#a5a3155ddad07b1e4594aa87d8cb68c6a',1,'Iocatalyst::detail']]],
   ['rank_5',['rank',['../classIoad_1_1DatabaseIO.html#afb79dedac95f75e7541e0ecf1a3ca811',1,'Ioad::DatabaseIO::rank'],['../namespaceanonymous__namespace_02io__shell__ts_8C_03.html#a906cd60117c80f679aac473ca1c33fc7',1,'anonymous_namespace{io_shell_ts.C}::rank'],['../namespaceanonymous__namespace_02struc__to__unstruc_8C_03.html#a9268c646b97401720e90e8ff5a97c2d1',1,'anonymous_namespace{struc_to_unstruc.C}::rank']]],
-  ['raw_5fcount_6',['raw_count',['../structIofaodel_1_1field__entry__t.html#aff7a598dbef8ac1f61eec92b7f33c5b7',1,'Iofaodel::field_entry_t']]],
+  ['raw_5fcount_6',['raw_count',['../structIofaodel_1_1field__entry__t.html#aff7a598dbef8ac1f61eec92b7f33c5b7',1,'Iofaodel::field_entry_t::raw_count'],['../structIos3_1_1field__entry__t.html#a8de46ae974a83172a5e50c337d46625a',1,'Ios3::field_entry_t::raw_count']]],
   ['rawcount_5f_7',['rawCount_',['../classIoss_1_1Field.html#a996915022615abdc9bfd822a6c1911e2',1,'Ioss::Field']]],
   ['rawstorage_5f_8',['rawStorage_',['../classIoss_1_1Field.html#a41d4c6733e5746f453498442fbc6bbde',1,'Ioss::Field']]],
   ['rd_9',['rd',['../namespaceanonymous__namespace_02Utst__sort_8C_03.html#aa2e4b75e4facf166bde3406ccc721b37',1,'anonymous_namespace{Utst_sort.C}']]],
@@ -34,7 +34,7 @@ var searchData=
   ['role_31',['role',['../structIoad_1_1DatabaseIO_1_1FieldInfoType.html#a1b3a6172b41b3a76fa9e7f0d89ec066f',1,'Ioad::DatabaseIO::FieldInfoType::role'],['../structanonymous__namespace_02io__shell__ts_8C_03_1_1param.html#a53825be2f7b1684653ff08c42eb62dcb',1,'anonymous_namespace{io_shell_ts.C}::param::role']]],
   ['role_5f_32',['role_',['../classIoss_1_1Field.html#a2cd53b0125a68215ee52c2735f497eae',1,'Ioss::Field']]],
   ['role_5fmeta_33',['Role_meta',['../namespaceIoad.html#a949491e2d6b7782977df1049872cdb18',1,'Ioad']]],
-  ['role_5ftype_34',['role_type',['../structIofaodel_1_1field__entry__t.html#ade6b3718caf50cc2e618715750e048b1',1,'Iofaodel::field_entry_t']]],
+  ['role_5ftype_34',['role_type',['../structIofaodel_1_1field__entry__t.html#ade6b3718caf50cc2e618715750e048b1',1,'Iofaodel::field_entry_t::role_type'],['../structIos3_1_1field__entry__t.html#a619c4671b7990f63d174cb35abccd170',1,'Ios3::field_entry_t::role_type']]],
   ['root_35',['Root',['../classIocatalyst_1_1DatabaseIO_1_1ImplementationT.html#a9f51f701926c5490f7a6f4cc420e1ff9',1,'Iocatalyst::DatabaseIO::ImplementationT']]],
   ['root_5f_36',['root_',['../classIoss_1_1SetDecompositionData.html#a3cbfb610b0bf63e3c7c7dd71b30b6ce6',1,'Ioss::SetDecompositionData']]],
   ['rotmat_37',['rotmat',['../classIogs_1_1GeneratedMesh.html#ad82ba56de126da29a863f82ea82edbc2',1,'Iogs::GeneratedMesh::rotmat'],['../classIogn_1_1GeneratedMesh.html#aff5f6e4487dae1419d598e8718555d80',1,'Iogn::GeneratedMesh::rotmat']]]

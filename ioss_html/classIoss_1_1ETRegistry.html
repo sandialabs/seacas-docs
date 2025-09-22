@@ -101,6 +101,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ebebd4ef25d85be609208301f979352" id="r_a6ebebd4ef25d85be609208301f979352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> ElementTopologyMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ebebd4ef25d85be609208301f979352">begin</a> ()</td></tr>
 <tr class="memitem:a66b4671b50a85555b31d3b6beb3802fb" id="r_a66b4671b50a85555b31d3b6beb3802fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> ElementTopologyMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66b4671b50a85555b31d3b6beb3802fb">end</a> ()</td></tr>
 <tr class="memitem:a569669cb702437a78aa13939cb28b14e" id="r_a569669cb702437a78aa13939cb28b14e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> ElementTopologyMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a569669cb702437a78aa13939cb28b14e">find</a> (const std::string &amp;type)</td></tr>
+<tr class="memitem:a7acaf0563bef2c1006013177028db440" id="r_a7acaf0563bef2c1006013177028db440"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7acaf0563bef2c1006013177028db440">ETRegistry</a> ()=default</td></tr>
+<tr class="memitem:a4bc93c2efe6d8c09e243e657560cc977" id="r_a4bc93c2efe6d8c09e243e657560cc977"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bc93c2efe6d8c09e243e657560cc977">ETRegistry</a> (const <a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;)=delete</td></tr>
+<tr class="memitem:aa252bb0095b9c6057aadf4e4d488718a" id="r_aa252bb0095b9c6057aadf4e4d488718a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa252bb0095b9c6057aadf4e4d488718a">operator=</a> (const <a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;)=delete</td></tr>
+<tr class="memitem:afcc64933794734c626efd249a2137674" id="r_afcc64933794734c626efd249a2137674"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcc64933794734c626efd249a2137674">ETRegistry</a> (<a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;&amp;)=delete</td></tr>
+<tr class="memitem:ab04092d9d9f2df4653eca6c33483d906" id="r_ab04092d9d9f2df4653eca6c33483d906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab04092d9d9f2df4653eca6c33483d906">operator=</a> (<a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;&amp;)=delete</td></tr>
 <tr class="memitem:a758ed4d643011e0699510c8778719169" id="r_a758ed4d643011e0699510c8778719169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a758ed4d643011e0699510c8778719169">~ETRegistry</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -109,6 +114,81 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a2e78a7d997464771158b0866799120ea" id="r_a2e78a7d997464771158b0866799120ea"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classIoss_1_1ElementTopology.html">Ioss::ElementTopology</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e78a7d997464771158b0866799120ea">m_deleteThese</a></td></tr>
 </table>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7acaf0563bef2c1006013177028db440" name="a7acaf0563bef2c1006013177028db440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7acaf0563bef2c1006013177028db440">&#9670;&#160;</a></span>ETRegistry() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ioss::ETRegistry::ETRegistry </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bc93c2efe6d8c09e243e657560cc977" name="a4bc93c2efe6d8c09e243e657560cc977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc93c2efe6d8c09e243e657560cc977">&#9670;&#160;</a></span>ETRegistry() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ioss::ETRegistry::ETRegistry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcc64933794734c626efd249a2137674" name="afcc64933794734c626efd249a2137674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc64933794734c626efd249a2137674">&#9670;&#160;</a></span>ETRegistry() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ioss::ETRegistry::ETRegistry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a758ed4d643011e0699510c8778719169" name="a758ed4d643011e0699510c8778719169"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a758ed4d643011e0699510c8778719169">&#9670;&#160;</a></span>~ETRegistry()</h2>
 
@@ -219,6 +299,56 @@ Private Attributes</h2></td></tr>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>delete_me</em></span>&#160;)</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa252bb0095b9c6057aadf4e4d488718a" name="aa252bb0095b9c6057aadf4e4d488718a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa252bb0095b9c6057aadf4e4d488718a">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp; Ioss::ETRegistry::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab04092d9d9f2df4653eca6c33483d906" name="ab04092d9d9f2df4653eca6c33483d906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04092d9d9f2df4653eca6c33483d906">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp; Ioss::ETRegistry::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classIoss_1_1ETRegistry.html">ETRegistry</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

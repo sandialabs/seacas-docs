@@ -1,6 +1,5 @@
 var Ioexnl__BaseDatabaseIO_8C =
 [
-    [ "GLOBALS_ARE_TRANSIENT", "Ioexnl__BaseDatabaseIO_8C.html#aa8c4cb3632ca993ad7224d670fc764aa", null ],
     [ "anonymous_namespace{Ioexnl_BaseDatabaseIO.C}::check_attribute_index_order", "namespaceanonymous__namespace_02Ioexnl__BaseDatabaseIO_8C_03.html#a232b0b812b31e118bf1c3f9c27eafa15", null ],
     [ "anonymous_namespace{Ioexnl_BaseDatabaseIO.C}::check_variable_consistency", "namespaceanonymous__namespace_02Ioexnl__BaseDatabaseIO_8C_03.html#aa14f68adf131a761c6fe9721c30b5370", null ],
     [ "anonymous_namespace{Ioexnl_BaseDatabaseIO.C}::check_variable_consistency", "namespaceanonymous__namespace_02Ioexnl__BaseDatabaseIO_8C_03.html#a599b5bf73f3c50606b1b2c3aab1b3af7", null ],
