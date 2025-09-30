@@ -182,9 +182,10 @@ Auto-Decomposition-Related Properties</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">DECOMPOSITION_EXTRA  </td><td class="markdownTableBodyCenter">{name},{multiplier}  </td><td class="markdownTableBodyNone">Specify the name of the element map or variable used if the decomposition method is <span class="tt">map</span> or <span class="tt">variable</span>. If it contains a comma, the value following the comma is used to scale (divide) the values in the map/variable. If it is 'auto', then all values will be scaled by <span class="tt">max_value/processorCount</span>  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">DECOMP_OMITTED_BLOCK_IDS  </td><td class="markdownTableBodyCenter">{id_list}  </td><td class="markdownTableBodyNone">A integer vector containing the  </td></tr>
+<td class="markdownTableBodyNone">DECOMP_OMITTED_BLOCK_IDS  </td><td class="markdownTableBodyCenter">{id_list}  </td><td class="markdownTableBodyNone">A integer vector containing the element block ids that should be ignored during the parallel decomposition. The blocks will still appear in the decomposition, but will not affect the load balance. If specified via <span class="tt">IOSS_PROPERTIES</span> can be a comma-separated string of ids.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DECOMP_OMITTED_BLOCK_NAMES  </td><td class="markdownTableBodyCenter">{name_list}  </td><td class="markdownTableBodyNone">A comma-separated list of block names that should be ignored during the parallel decomposition. The blocks will still appear in the decomposition, but will not affect the load balance.  </td></tr>
 </table>
-<p>element block ids that should be ignored during the parallel decomposition. The blocks will still appear in the decomposition, but will not affect the load balance. If specified via <span class="tt">IOSS_PROPERTIES</span> can be a comma-separated string of ids. DECOMP_OMITTED_BLOCK_NAMES | {name_list} | A comma-separated list of block names that should be ignored during the parallel decomposition. The blocks will still appear in the decomposition, but will not affect the load balance.</p>
 <h3 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 Valid values for Decomposition Method</h3>
 <table class="markdownTable">
