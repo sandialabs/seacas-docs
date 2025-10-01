@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>exodus &#8212; SEACAS 2025/03/20 documentation</title>
+    <title>exodus &#8212; SEACAS 2025/06/27 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=8c6d9891"></script>
+    <script src="../_static/documentation_options.js?v=1e3ac42e"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_modules/exodus';</script>
@@ -107,7 +107,7 @@
   
   
   
-    <p class="title logo__title">SEACAS 2025/03/20 documentation</p>
+    <p class="title logo__title">SEACAS 2025/06/27 documentation</p>
   
 </a></div>
     
@@ -355,10 +355,10 @@
 
 <span class="n">EXODUS_PY_COPYRIGHT_AND_LICENSE</span> <span class="o">=</span> <span class="vm">__doc__</span>
 
-<span class="n">EXODUS_PY_VERSION</span> <span class="o">=</span> <span class="s2">&quot;1.21.5 (seacas-py3)&quot;</span>
+<span class="n">EXODUS_PY_VERSION</span> <span class="o">=</span> <span class="s2">&quot;1.21.6 (seacas-py3)&quot;</span>
 
 <span class="n">EXODUS_PY_COPYRIGHT</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">You are using exodus.py v 1.21.5 (seacas-py3), a python wrapper of some of the exodus library.</span>
+<span class="s2">You are using exodus.py v 1.21.6 (seacas-py3), a python wrapper of some of the exodus library.</span>
 
 <span class="s2">Copyright (c) 2013-2023 National Technology &amp;</span>
 <span class="s2">Engineering Solutions of Sandia, LLC (NTESS).  Under the terms of</span>
@@ -402,7 +402,7 @@
 <span class="sd">    found.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">return</span> <span class="n">_parse_exodus_version</span><span class="p">(</span><span class="s1">&#39;#define EXODUS_VERSION       &quot;9.04&quot;&#39;</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_parse_exodus_version</span><span class="p">(</span><span class="s1">&#39;#define EXODUS_VERSION       &quot;9.06&quot;&#39;</span><span class="p">)</span></div>
 
 
 
@@ -462,7 +462,13 @@
     <span class="n">EXODUS_LIB</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="n">pip_so_path</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
     <span class="n">ACCESS</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;ACCESS&#39;</span><span class="p">,</span> <span class="s1">&#39;/Users/gdsjaar/src/seacas&#39;</span><span class="p">)</span>
-    <span class="n">EXODUS_SO</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ACCESS</span><span class="si">}</span><span class="s2">/lib/</span><span class="si">{</span><span class="n">so_prefix</span><span class="si">}</span><span class="s2">exodus.</span><span class="si">{</span><span class="n">so_suffix</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">paths</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ACCESS</span><span class="si">}</span><span class="s2">/lib/</span><span class="si">{</span><span class="n">so_prefix</span><span class="si">}</span><span class="s2">exodus.</span><span class="si">{</span><span class="n">so_suffix</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+             <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ACCESS</span><span class="si">}</span><span class="s2">/lib64/</span><span class="si">{</span><span class="n">so_prefix</span><span class="si">}</span><span class="s2">exodus.</span><span class="si">{</span><span class="n">so_suffix</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span>
+    <span class="n">EXODUS_SO</span> <span class="o">=</span> <span class="nb">next</span><span class="p">((</span><span class="n">path</span> <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">paths</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">path</span><span class="p">)),</span> <span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">EXODUS_SO</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exodus library not found at any of the paths expect from list:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">paths</span><span class="o">.</span><span class="n">join</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
     <span class="n">EXODUS_LIB</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="n">EXODUS_SO</span><span class="p">)</span>
 
 <span class="n">MAX_STR_LENGTH</span> <span class="o">=</span> <span class="mi">32</span>      <span class="c1"># match exodus default</span>
@@ -2989,7 +2995,7 @@
         <span class="n">var_id</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
         <span class="n">numVals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_entity_count</span><span class="p">(</span><span class="n">objType</span><span class="p">,</span> <span class="n">entityId</span><span class="p">)</span>
 
-        <span class="n">values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ex_get_var</span><span class="p">(</span><span class="n">begin_step</span><span class="p">,</span> <span class="n">end_step</span><span class="p">,</span> <span class="n">objType</span><span class="p">,</span> <span class="n">var_id</span><span class="p">,</span> <span class="n">entityId</span><span class="p">,</span> <span class="n">numVals</span><span class="p">)</span>
+        <span class="n">values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ex_get_var_multi_time</span><span class="p">(</span><span class="n">begin_step</span><span class="p">,</span> <span class="n">end_step</span><span class="p">,</span> <span class="n">objType</span><span class="p">,</span> <span class="n">var_id</span><span class="p">,</span> <span class="n">entityId</span><span class="p">,</span> <span class="n">numVals</span><span class="p">)</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_numpy</span><span class="p">:</span>
             <span class="n">values</span> <span class="o">=</span> <span class="n">ctype_to_numpy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">values</span></div>
