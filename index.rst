@@ -17,6 +17,11 @@ postprocessing, graphics, database translation applications, and
 support libraries. It is used by analysts at SNL and elsewhere and
 runs on laptops to large HPC systems.
 
+`SEACAS Capabilities <../../SEACAS-Capability.pdf>`_
+   An overview of most of the SEACAS codes and a short summary of their
+   capabilities.  A little dated, but can help point you to which code
+   to use to perform a specific task.
+   
 `WIKI: FAQ and Extensions <https://github.com/sandialabs/seacas/wiki>`_
    The `SEACAS WIKI <https://github.com/sandialabs/seacas/wiki>`_
    contains some FAQ-like answers and also a listing of proposed
