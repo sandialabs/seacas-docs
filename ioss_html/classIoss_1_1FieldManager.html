@@ -108,22 +108,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ab3a52b05cc93c054a643e9f9d59fa1" id="r_a5ab3a52b05cc93c054a643e9f9d59fa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ab3a52b05cc93c054a643e9f9d59fa1">FieldManager</a> ()=default</td></tr>
 <tr class="memitem:a629f01855cff17d931fa7b37595658ac" id="r_a629f01855cff17d931fa7b37595658ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a629f01855cff17d931fa7b37595658ac">FieldManager</a> (const <a class="el" href="classIoss_1_1FieldManager.html">FieldManager</a> &amp;other)</td></tr>
 <tr class="memitem:ab5b2663f4948718075d11055679e31d1" id="r_ab5b2663f4948718075d11055679e31d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIoss_1_1FieldManager.html">FieldManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5b2663f4948718075d11055679e31d1">operator=</a> (const <a class="el" href="classIoss_1_1FieldManager.html">FieldManager</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ab5b2663f4948718075d11055679e31d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a field with the same 'name' exists, an exception will be thrown.  <br /></td></tr>
 <tr class="memitem:a0da349bf5958db6702137da83f231c6a" id="r_a0da349bf5958db6702137da83f231c6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0da349bf5958db6702137da83f231c6a">add</a> (const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;new_field)</td></tr>
-<tr class="memdesc:a0da349bf5958db6702137da83f231c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a field to the field manager.  <br /></td></tr>
+<tr class="memdesc:a0da349bf5958db6702137da83f231c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all fields of type <span class="tt">role</span>  <br /></td></tr>
 <tr class="memitem:a6e307fb018f72aa7c230d090e1b335d2" id="r_a6e307fb018f72aa7c230d090e1b335d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e307fb018f72aa7c230d090e1b335d2">erase</a> (<a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Field::RoleType</a> role)</td></tr>
-<tr class="memdesc:a6e307fb018f72aa7c230d090e1b335d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all fields of type <span class="tt">role</span> from the field manager.  <br /></td></tr>
+<tr class="memdesc:a6e307fb018f72aa7c230d090e1b335d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes: <a class="el" href="classIoss_1_1Field.html" title="Holds metadata for bulk data associated with a GroupingEntity.">Field</a> 'name' must exist.  <br /></td></tr>
 <tr class="memitem:aae5f5c6ff4c0eebc35fc7d08f651c0ce" id="r_aae5f5c6ff4c0eebc35fc7d08f651c0ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae5f5c6ff4c0eebc35fc7d08f651c0ce">erase</a> (const std::string &amp;field_name)</td></tr>
-<tr class="memdesc:aae5f5c6ff4c0eebc35fc7d08f651c0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a field from the field manager.  <br /></td></tr>
+<tr class="memdesc:aae5f5c6ff4c0eebc35fc7d08f651c0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a field with 'field_name' exists in the database.  <br /></td></tr>
 <tr class="memitem:a4e14c1288743e88f738203161065d317" id="r_a4e14c1288743e88f738203161065d317"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e14c1288743e88f738203161065d317">exists</a> (const std::string &amp;field_name) const</td></tr>
 <tr class="memdesc:a4e14c1288743e88f738203161065d317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a field with a given name exists in the field manager.  <br /></td></tr>
 <tr class="memitem:ae9cd1e7fb10d1d58379fc8dda02e06a0" id="r_ae9cd1e7fb10d1d58379fc8dda02e06a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="classIoss_1_1Field.html">Field</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9cd1e7fb10d1d58379fc8dda02e06a0">get</a> (const std::string &amp;field_name) const</td></tr>
 <tr class="memdesc:ae9cd1e7fb10d1d58379fc8dda02e06a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a field from the field manager.  <br /></td></tr>
 <tr class="memitem:a3b6eb5509bbfa1ad8c23463bf5840b89" id="r_a3b6eb5509bbfa1ad8c23463bf5840b89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> const <a class="el" href="classIoss_1_1Field.html">Field</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b6eb5509bbfa1ad8c23463bf5840b89">getref</a> (const std::string &amp;field_name) const</td></tr>
-<tr class="memdesc:a3b6eb5509bbfa1ad8c23463bf5840b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to a field from the field manager.  <br /></td></tr>
+<tr class="memdesc:a3b6eb5509bbfa1ad8c23463bf5840b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of all fields.  <br /></td></tr>
 <tr class="memitem:ac8128863f1342eff50221313c5eac88b" id="r_ac8128863f1342eff50221313c5eac88b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8128863f1342eff50221313c5eac88b">describe</a> (<a class="el" href="namespaceIoss.html#ab29cad286ab89cf04cbfc3057a8e15d5">NameList</a> *names) const</td></tr>
 <tr class="memdesc:ac8128863f1342eff50221313c5eac88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the names of all fields in the field manager.  <br /></td></tr>
 <tr class="memitem:a18ccfda14cbe06c4945b5bc688d4d233" id="r_a18ccfda14cbe06c4945b5bc688d4d233"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#ab29cad286ab89cf04cbfc3057a8e15d5">NameList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18ccfda14cbe06c4945b5bc688d4d233">describe</a> () const</td></tr>
-<tr class="memdesc:a18ccfda14cbe06c4945b5bc688d4d233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the names of all fields in the field manager.  <br /></td></tr>
+<tr class="memdesc:a18ccfda14cbe06c4945b5bc688d4d233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of all fields with the specified 'RoleType'.  <br /></td></tr>
 <tr class="memitem:abb9d045bd7c07b9d4c89ac47ed5b616f" id="r_abb9d045bd7c07b9d4c89ac47ed5b616f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb9d045bd7c07b9d4c89ac47ed5b616f">describe</a> (<a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Field::RoleType</a> role, <a class="el" href="namespaceIoss.html#ab29cad286ab89cf04cbfc3057a8e15d5">NameList</a> *names) const</td></tr>
 <tr class="memdesc:abb9d045bd7c07b9d4c89ac47ed5b616f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the names of all fields of a specified RoleType in the field manager.  <br /></td></tr>
 <tr class="memitem:aef21438e857b3189369ebf5351bc6975" id="r_aef21438e857b3189369ebf5351bc6975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ioss__CodeTypes_8h.html#a851f3882d4fed18877fff42a13d1cdd9">IOSS_NODISCARD</a> <a class="el" href="namespaceIoss.html#ab29cad286ab89cf04cbfc3057a8e15d5">NameList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef21438e857b3189369ebf5351bc6975">describe</a> (<a class="el" href="classIoss_1_1Field.html#a4aa15b17d3fc1cd8701ddb1a6171db75">Field::RoleType</a> role) const</td></tr>
@@ -204,7 +205,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add a field to the field manager. </p>
+<p>Remove all fields of type <span class="tt">role</span> </p>
+<p>Add a field to the field manager.</p>
 <p>Assumes that a field with the same name does not already exist.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -250,7 +252,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the names of all fields in the field manager. </p>
+<p>Returns the names of all fields with the specified 'RoleType'. </p>
+<p>Get the names of all fields in the field manager.</p>
 <dl class="section return"><dt>Returns</dt><dd>names All field names in the field manager. </dd></dl>
 
 </div>
@@ -353,7 +356,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove a field from the field manager. </p>
+<p>Checks if a field with 'field_name' exists in the database. </p>
+<p>Remove a field from the field manager.</p>
 <p>Assumes that a field with the given name exists in the field manager.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -379,7 +383,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove all fields of type <span class="tt">role</span> from the field manager. </p>
+<p>Assumes: <a class="el" href="classIoss_1_1Field.html" title="Holds metadata for bulk data associated with a GroupingEntity.">Field</a> 'name' must exist. </p>
+<p>Remove all fields of type <span class="tt">role</span> from the field manager.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">role</td><td>Remove all fields (if any) of type <span class="tt">role</span> </td></tr>
@@ -456,7 +461,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get a reference to a field from the field manager. </p>
+<p>Returns the names of all fields. </p>
+<p>Get a reference to a field from the field manager.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">field_name</td><td>The name of the field to get. </td></tr>
@@ -489,6 +495,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If a field with the same 'name' exists, an exception will be thrown. </p>
 
 </div>
 </div>

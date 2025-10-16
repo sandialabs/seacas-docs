@@ -401,8 +401,9 @@ Debugging / Profiling</h2>
 <td class="markdownTableBodyNone">CHECK_PARALLEL_CONSISTENCY  </td><td class="markdownTableBodyCenter">on/[off]  </td><td class="markdownTableBodyNone">check Ioss::GroupingEntity parallel consistency  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">TIME_STATE_INPUT_OUTPUT  </td><td class="markdownTableBodyCenter">on/[off]  </td><td class="markdownTableBodyNone">show the elapsed time for reading/writing each timestep's data  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">NAN_DETECTION  </td><td class="markdownTableBodyCenter">on/[off]  </td><td class="markdownTableBodyNone">Output a warning if a NaN is detected while reading/writing field data.  </td></tr>
 </table>
-<p>NAN_DETECTION | on/[off] | </p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
 Setting properties via an environment variable</h2>
 <p>Although the properties are usually accessed internally in the application calling the IOSS library, it is possible to set the properties externally prior to running the application via the setting of the environment variable <span class="tt">IOSS_PROPERTIES</span>. The value of the variable is one or more colon-separated property/property-value pairs. For example, to set the <span class="tt">DECOMPOSITION_METHOD</span> and the <span class="tt">FILE_TYPE</span> externally, the following would be used: </p><div class="fragment"><div class="line"><span class="keyword">export</span> IOSS_PROPERTIES=<span class="stringliteral">&quot;DECOMPOSITION_METHOD=rib:FILE_TYPE=netcdf4&quot;</span></div>
